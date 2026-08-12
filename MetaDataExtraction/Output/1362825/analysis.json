@@ -1,0 +1,1061 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1362825.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1362825",
+  "generated_at": "2026-07-29T22:02:06",
+  "paper_metadata": {
+    "title": "A 25-MS/s 14-b 200-mW Modulator in 0.18-m CMOS",
+    "authors": [
+      "Pio Balmelli",
+      "Qiuting Huang"
+    ],
+    "abstract": "The design of a fifth-order 4-b quantizer single-loop modulator is presented that achieves 25-MS/s conversion rate matter of commercial development than the focus of A/D conwith 84 dB of dynamic range and 82 dB of signal-to-noise ratio. verter research, new challenges await the A/D converter. While m CMOS technology, the 0.95-mm2 chip Implemented in a 0.18the resolution requirement remains at the 13–14-b level, some has a power consumption of 200 mW from a 1.8-V supply. newer applications necessitate a tenfold increase in converter",
+    "keywords": [
+      "Analog–digital conversion",
+      "mixed analog–digital"
+    ],
+    "doi": "10.1109/JSSC.2004.836240",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2004
+  },
+  "paper_circuit_context": {
+    "circuit_type": "25-MS/s 14-b 200-mW Modulator in 0.18-m CMOS",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "output buffer",
+      "switch",
+      "differential pair",
+      "op-amp",
+      "clock / timing"
+    ],
+    "design_purpose": "The design of a fifth-order 4-b quantizer single-loop modulator is presented that achieves 25-MS/s conversion rate matter of commercial development than the focus of A/D conwith 84 dB of dynamic range and 82 dB of signal-to-noise ratio. verter research, new challenges await the A/D converter.",
+    "function_summary": "25-MS/s 14-b 200-mW Modulator in 0.18-m CMOS: The design of a fifth-order 4-b quantizer single-loop modulator is presented that achieves 25-MS/s conversion rate matter of commercial development than the focus of A/D conwith 84 dB of dynamic range and 82 dB of signal-to-noise ratio. verter research, new challenges await the A/D converter.",
+    "key_specs": [
+      "84 dB",
+      "82 dB",
+      "200 mW",
+      "33 mW",
+      "10 MHz",
+      "100 MHz",
+      "200 MHz",
+      "90 dB",
+      "32 dB",
+      "37 dB"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE achievable data rate of a digital communications receiver depends on several important factors such as signal bandwidth, modulation depth, and the level of anticipated interference. The performance of the receiver’s analog-to-digital (A/D) converters partially dictates if the signal bandwidth can be increased, more symbols can be accommodated in a modulation constellation, and if the receiver ..."
+    },
+    {
+      "number": "II",
+      "title": "MODULATOR ARCHITECTURE",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "For both accuracy and power consumption reasons, the sampling rates of the majority of 12-b-plus A/D converters m CMOS published to date are below 100 MHz. For a 0.18technology, it is therefore a reasonable starting point that the modulator will be below achievable sample rate of a 200 MHz. The corollary of this practical constraint is that the A/D converter attempting to oversampling ratio of any ..."
+    },
+    {
+      "number": "III",
+      "title": "SWITCH-LEVEL DESIGN",
+      "kind": "design",
+      "page": 4,
+      "text_preview": "The schematic diagram of the ﬁfth-order modulator is shown in single-ended form in Fig. 8. The summing of the switched-capacitor integrator outputs is performed passively by coupling them capacitively to the same node where the charges induced on each coupling capacitor are combined. The resulting voltage on the common node is related to the integrator output and coupling capacitances by voltages  ..."
+    },
+    {
+      "number": "IV",
+      "title": "DESIGN OF ANALOG BUILDING BLOCKS",
+      "kind": "design",
+      "page": 4,
+      "text_preview": "The combination of a high clock rate and a low supply voltage of 1.8 V make the design of the switches a matter of special consideration. Due to limited overdrive, the on-resistance of the - time constant sampling switch is too large to make the associated with the switch negligible at 200 MHz. To improve the overdrive, bootstrapped clock signals need to be used. The schematic shown in Fig. 11 has ..."
+    },
+    {
+      "number": "V",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 6,
+      "text_preview": "The ﬁfth-order 4-b modulator has been implemented in a one-poly six-metal 0.18m CMOS technology with MIM capacitor option. The chip microphotograph is shown in Fig. 15, . Fig. 16 shows of which the circuit core area measures 0.95 mm the measured output spectrum with a 2.5-MHz sinusoidal input with a differential swing of 650 mV. The noise ﬂoor has a specHz. Fig. 17 shows a similar output spectral  ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 7,
+      "text_preview": "A/D converters with more than 10 MHz of effective signal bandwidth and 13–14 b of dynamic range are important to the next-generation communications modems and transceivers. moduConsidered in conjunction with anti-alias ﬁlters, lator-based A/D converters could offer an alternative to better established Nyquist rate converters such as those based on the pipeline principle, even if the available over ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Achievable SQNR versus maximum input level for a single-loop single-bit modulator.",
+      "caption_bbox": [
+        302.6,
+        210.8,
+        553.7,
+        227.7
+      ],
+      "section_title": "II. MODULATOR ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "In practical implementations, however, matching the effective noise-shaping functions of the constituent modulator stages can be difﬁcult, partially because the analog circuit parameters do not match as well as desired, and partially because the NTF of an equivalent linear modulator model is often a IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 12, DECEMBER 2004 Fig. 1."
+        },
+        {
+          "section_title": "MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 1 shows the achievable SQNR versus maximum input level before the onset of instability for the oversam- ) of 3, 5, and 7, respectively. pling ratio of 8, and loop orders ( Since the oversampling ratio is very low, the achievable SQNR is as low as 32 dB for a third-order modulator."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Achievable SQNR versus maximum input level for a single-loop single-bit modulator",
+        "key_specs": [
+          "32 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 2,
+      "caption": "Fig. 2. Achievable SQNR versus maximum input level for different combinations of quantizer bits and loop order.",
+      "caption_bbox": [
+        38.1,
+        243.3,
+        289.2,
+        260.3
+      ],
+      "section_title": "II. MODULATOR ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 2 shows the achievable SQNR for different combinations of quantizer levels and loop order."
+        },
+        {
+          "section_title": "MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "It can be seen from Fig. 2 that in order to achieve a target of 95 dB, both the quantizer resolution and the modulator loop order need to be reasonably high."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "It can be seen from Fig. 2 that in order to achieve a target of 95 dB, both the quantizer resolution and the modulator loop order need to be reasonably high.",
+        "function_summary": "Achievable SQNR versus maximum input level for different combinations of quantizer bits and loop order. It can be seen from Fig. 2 that in order to achieve a target of 95 dB, both the quantizer resolution and the modulator loop order need to be reasonably high.",
+        "key_specs": [
+          "95 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Feedforward ﬁlter topology.",
+      "caption_bbox": [
+        301.1,
+        225.3,
+        420.0,
+        233.2
+      ],
+      "section_title": "II. MODULATOR ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "They are shown in Figs. 3 and 4, respectively."
+        },
+        {
+          "section_title": "MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "In Fig. 3(a), the weighted sum of all integrator outputs is fed forward to the quantizer, and the latter’s output is fed back to the input of the ﬁrst integrator."
+        },
+        {
+          "section_title": "MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "This is usually known as a feedback architecture. m CMOS Fig. 3."
+        },
+        {
+          "section_title": "MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The NTF of the feedforward architecture can be derived considering the linear equivalent block diagram in Fig. 3(b), which assumes an additive quantization noise."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.1,
+      "relevance_breakdown": {
+        "+topology": 2.5,
+        "section:proposed": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "25-MS/s 14-b 200-mW Modulator in 0.18-m CMOS",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Feedforward ﬁlter topology",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.7,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Feedback ﬁlter topology.",
+      "caption_bbox": [
+        301.1,
+        409.1,
+        409.9,
+        417.1
+      ],
+      "section_title": "II. MODULATOR ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "In Fig. 4(a), on the other hand, only the output of the last integrator is fed to the quantizer, but the latter’s output is fed back to the input of each integrator."
+        },
+        {
+          "section_title": "MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 4."
+        },
+        {
+          "section_title": "MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "(3) The STF of the feedback architecture can be similarly derived considering the linear equivalent block diagram in Fig. 4(b)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.7,
+      "relevance_breakdown": {
+        "+topology": 2.5,
+        "section:proposed": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "25-MS/s 14-b 200-mW Modulator in 0.18-m CMOS",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Feedback ﬁlter topology",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.85,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5.",
+      "caption_bbox": [
+        39.6,
+        199.0,
+        60.6,
+        207.0
+      ],
+      "section_title": "II. MODULATOR ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 5. architectures."
+        },
+        {
+          "section_title": "MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The ﬁfth-order modulator we have developed, therefore, has essentially a feedforward architecture, with the exception of the two local feedback loops around the last two pairs of integrators, as shown in Fig. 5."
+        },
+        {
+          "section_title": "MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The design of the modulator coefﬁcients in Fig. 5 follows three major considerations."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "delta-sigma modulator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.31,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "Fig. 6. Signal and noise transfer functions.",
+      "caption_bbox": [
+        38.1,
+        248.3,
+        180.5,
+        256.3
+      ],
+      "section_title": "II. MODULATOR ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "In preference for coefﬁcients that achieve higher attenuation of in-band quantization noise, the STF has been allowed to have some out-of-band gain, as shown in Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.4,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "25-MS/s 14-b 200-mW Modulator in 0.18-m CMOS",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Signal and noise transfer functions",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.17,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. Input transfer function of the internal nodes.",
+      "caption_bbox": [
+        301.1,
+        246.0,
+        471.8,
+        254.0
+      ],
+      "section_title": "II. MODULATOR ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "SWITCH-LEVEL DESIGN",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The reference voltages for the quantizer’s m CMOS Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.4,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "25-MS/s 14-b 200-mW Modulator in 0.18-m CMOS",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Input transfer function of the internal nodes",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.17,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 5,
+      "caption": "Fig. 8.",
+      "caption_bbox": [
+        39.6,
+        244.7,
+        60.5,
+        252.7
+      ],
+      "section_title": "IV. DESIGN OF ANALOG BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "SWITCH-LEVEL DESIGN",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The schematic diagram of the ﬁfth-order modulator is shown in single-ended form in Fig. 8."
+        },
+        {
+          "section_title": "DESIGN OF ANALOG BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "delta-sigma modulator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 5,
+      "caption": "Fig. 9. Block diagram of the DWA algorithm.",
+      "caption_bbox": [
+        39.6,
+        386.3,
+        191.7,
+        394.2
+      ],
+      "section_title": "IV. DESIGN OF ANALOG BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "SWITCH-LEVEL DESIGN",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 9 illustrates the block diagram of the implemented logic."
+        },
+        {
+          "section_title": "DESIGN OF ANALOG BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "25-MS/s 14-b 200-mW Modulator in 0.18-m CMOS",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the DWA algorithm",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.57,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. Fully differential input stage implementation.",
+      "caption_bbox": [
+        39.6,
+        590.9,
+        217.7,
+        598.8
+      ],
+      "section_title": "IV. DESIGN OF ANALOG BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "SWITCH-LEVEL DESIGN",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The fully differential implementation of the input stage is shown in Fig. 10, where the signal path and the D/A feedback path share the same set of 15 identical capacitors."
+        },
+        {
+          "section_title": "DESIGN OF ANALOG BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "25-MS/s 14-b 200-mW Modulator in 0.18-m CMOS",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor",
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "Fully differential input stage implementation",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 5,
+      "caption": "Fig. 11. Charge pump realization.",
+      "caption_bbox": [
+        302.6,
+        391.5,
+        416.6,
+        399.5
+      ],
+      "section_title": "IV. DESIGN OF ANALOG BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN OF ANALOG BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The schematic shown in Fig. 11 has been selected in our design as it achieves bootstrapping without stressing any of the transistors [14]."
+        },
+        {
+          "section_title": "DESIGN OF ANALOG BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "To reduce parasitic capacitances and push the nondominant poles toward the 10-GHz range, many of the main IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 12, DECEMBER 2004 Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "charge pump",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "To reduce parasitic capacitances and push the nondominant poles toward the 10-GHz range, many of the main IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 12, DECEMBER 2004 Fig. 11.",
+        "function_summary": "Charge pump realization. To reduce parasitic capacitances and push the nondominant poles toward the 10-GHz range, many of the main IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 12, DECEMBER 2004 Fig. 11.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 5,
+      "caption": "Fig. 12. Fully differential telescopic OTA.",
+      "caption_bbox": [
+        302.6,
+        591.0,
+        443.3,
+        598.9
+      ],
+      "section_title": "IV. DESIGN OF ANALOG BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN OF ANALOG BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 12 shows the telescopic OTA used in our design."
+        },
+        {
+          "section_title": "DESIGN OF ANALOG BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Fully differential telescopic OTA",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 6,
+      "caption": "Fig. 13.",
+      "caption_bbox": [
+        38.1,
+        217.0,
+        62.9,
+        225.0
+      ],
+      "section_title": "IV. DESIGN OF ANALOG BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN OF ANALOG BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 13."
+        },
+        {
+          "section_title": "DESIGN OF ANALOG BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 13 shows that it consists of a differential transconductance stage, followed by a transimpedance stage formed by and transistor ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "25-MS/s 14-b 200-mW Modulator in 0.18-m CMOS",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 6,
+      "caption": "Fig. 14.",
+      "caption_bbox": [
+        301.1,
+        177.4,
+        326.0,
+        185.4
+      ],
+      "section_title": "IV. DESIGN OF ANALOG BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN OF ANALOG BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 14."
+        },
+        {
+          "section_title": "DESIGN OF ANALOG BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "A ﬁrst-order stabilization of this product can be achieved using the circuit in Fig. 14 [15]."
+        },
+        {
+          "section_title": "DESIGN OF ANALOG BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Simulations have shown, however, that gain variations can still be reduced substantially, to less than 5% for typical variations of process parameters, using the circuit in Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "25-MS/s 14-b 200-mW Modulator in 0.18-m CMOS",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": [
+          "5%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 6,
+      "caption": "Fig. 15. Chip microphotograph. (1: reference buffer; 2: input stage; 3: bias circuitry; 4: ampliﬁer G; 5: integrator 2–5; 6: 4-b quantizer; 7: clock generator.).",
+      "caption_bbox": [
+        301.1,
+        408.4,
+        552.2,
+        425.3
+      ],
+      "section_title": "IV. DESIGN OF ANALOG BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN OF ANALOG BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 15."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The chip microphotograph is shown in Fig. 15, ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-reference": -1.0,
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "buffer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Chip microphotograph. (1: reference buffer; 2: input stage; 3: bias circuitry; 4: ampliﬁer G; 5: integrator 2–5; 6: 4-b quantizer; 7: clock generator.)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 7,
+      "caption": "Fig. 16. Measured output spectrum with a 2.5-MHz sinusoidal input.",
+      "caption_bbox": [
+        39.6,
+        210.2,
+        264.9,
+        218.1
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 16 shows of which the circuit core area measures 0.95 mm the measured output spectrum with a 2.5-MHz sinusoidal input with a differential swing of 650 mV."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Even at this frequency, no performance degradation is Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "25-MS/s 14-b 200-mW Modulator in 0.18-m CMOS",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured output spectrum with a 2.5-MHz sinusoidal input",
+        "key_specs": [
+          "650 mV"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 7,
+      "caption": "Fig. 17. Measured output spectrum with a 5-MHz sinusoidal input.",
+      "caption_bbox": [
+        39.6,
+        375.3,
+        259.0,
+        383.2
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 17 shows a similar output spectral density of 15 nV trum, where the input sine is at 5 MHz and the differential swing 1.13 V."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "25-MS/s 14-b 200-mW Modulator in 0.18-m CMOS",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured output spectrum with a 5-MHz sinusoidal input",
+        "key_specs": [
+          "5 MHz",
+          "1.13 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 7,
+      "caption": "Fig. 18. Measured SNR and SNDR curves.",
+      "caption_bbox": [
+        39.6,
+        571.4,
+        183.5,
+        579.3
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 18."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 18 shows the measured SNR and SNDR versus input signal power."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "25-MS/s 14-b 200-mW Modulator in 0.18-m CMOS",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured SNR and SNDR curves",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 7,
+      "caption": "Fig. 19. Breakdown of power consumption among the main building blocks of the modulator.",
+      "caption_bbox": [
+        302.6,
+        234.9,
+        553.7,
+        251.8
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 12, DECEMBER 2004 Fig. 19."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 19 illustrates the breakdown of power consumption among the main building blocks of the modulator."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Breakdown of power consumption among the main building blocks of the modulator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 3,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

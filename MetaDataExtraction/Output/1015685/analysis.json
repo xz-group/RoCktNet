@@ -1,0 +1,735 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1015685.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1015685",
+  "generated_at": "2026-07-29T21:29:49",
+  "paper_metadata": {
+    "title": "A Fully Integrated CMOS Receiver Front-End for Optic Gigabit Ethernet",
+    "authors": [
+      "Karl Schrödinger",
+      "Jaro Stimma",
+      "Manfred Mauthe"
+    ],
+    "abstract": "A fully integrated fiber-optic receiver chip in a CMOS technology is presented. The design was done in a low-cost mixed-signal analog pure CMOS technology with 0.35m gate length. It incorporates every building block needed for standard fiber-optic receiver application, e.g., transimpedance amplifier, postamplifier, signal detect, and several control circuits. The chip works without any external components, such as capacitors usually needed to ensure the broadband operation down to several tens of kilohertz. Three designs were processed for typical data applications between 155 Mb/s and 1.25 Gb/s. The difference in the designs can be created by changing only one metal mask and programming some bandwidth and noise-relevant components on the chip. The results in sensitivity, dynamic range, and other behaviors are fully compliant with the relevant standards, such as SONET or IEEE 802.3 (Gigabit Ethernet) and future IEEE 1394 plastic optical fiber (POF) communication.",
+    "keywords": [
+      "CMOS analog integrated circuit",
+      "fiber-optics receiver",
+      "high-frequency CMOS circuit",
+      "transimpedance amplifier"
+    ],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2002
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Fully Integrated CMOS Receiver Front-End",
+    "technology": "CMOS, 850-nm process",
+    "application_domain": "rf, wireless, thz, if",
+    "sub_blocks": [
+      "transistor/MOSFET",
+      "capacitor",
+      "resistor",
+      "current source",
+      "output buffer",
+      "switch",
+      "pre-amplifier"
+    ],
+    "design_purpose": "A fully integrated fiber-optic receiver chip in a CMOS technology is presented.",
+    "function_summary": "Fully Integrated CMOS Receiver Front-End: A fully integrated fiber-optic receiver chip in a CMOS technology is presented.",
+    "key_specs": [
+      "1 fF",
+      "40 GHz",
+      "5.5 V",
+      "2.85 V",
+      "2 V",
+      "1 pF",
+      "3 w",
+      "3V",
+      "100 kHz",
+      "12 dB"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "V ARIOUS CMOS gigabit receiver circuits have been published so far [1]–[3]. This work describes a fully integrated single-chip optical receiver circuit. The design was made m mixed-signal CMOS technology with three metal in a 0.35layers, linear capacitors, and high-ohmic resistors. The highat low parasitic capacitance and ohmic resistors have 1 k m . the linear poly–poly capacitors have a capacita ..."
+    },
+    {
+      "number": "II",
+      "title": "SYSTEM CONSIDERATIONS",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "Fig. 1 shows the block diagram of the whole circuit. It consists of: • two power regulators (voltage control); • a transimpedance amplifier (TIA); • a postamplifier; • a low-voltage differential signal (LVDS) output stage; • a signal-detect circuit; • an amplitude control circuit; • two offset cancellation circuits; • several bias and current sources. is the photodiode input (anode), the cathode I ..."
+    },
+    {
+      "number": "III",
+      "title": "TEST RESULTS",
+      "kind": "results",
+      "page": 4,
+      "text_preview": "Fig. 9 shows the sensitivity results for a gigabit receiver over the entire temperature range. The slightly lower sensitivity at a supply voltage of 5 V is due to higher junction temperature at higher power consumption. The relatively high temperature dependence of about 3 dB of the 1.25-Gb/s version is due to bandwidth limitations over temperature at this data rate and not due to noise variations ..."
+    },
+    {
+      "number": "IV",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 5,
+      "text_preview": "A completely integrated light-to-logic receiver circuit was 1.3 mm (Fig. 12). The work designed on a die of size 1.6 demonstrates that with a standard CMOS technology, a highly integrated circuit can be realized implementing all necessary stages and achieving high noise immunity. Sensitivity values are quite comparable to bipolar circuits for the cost of slightly higher currents in the noise-relev ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Block diagram of light-to-logic optical receiver circuit.",
+      "caption_bbox": [
+        302.6,
+        460.4,
+        507.0,
+        471.0
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1."
+        },
+        {
+          "section_title": "SYSTEM CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 1 shows the block diagram of the whole circuit."
+        },
+        {
+          "section_title": "SYSTEM CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "It consists of: • two power regulators (voltage control); • a transimpedance amplifier (TIA); • a postamplifier; • a low-voltage differential signal (LVDS) output stage; • a signal-detect circuit; • an amplitude control circuit; • two offset cancellation circuits; • several bias and current sources. is the photodiode input (anode), the cathode In Fig. 1, the differential output, and connection of the photodiode, are the various loop filter connections for testing the control loops or increasing the loop filter time constant using is the signal detect output, additional external capacitors. may switch the outputs quiet if no signal is attached and SCHRÖDINGER et al.: A FULLY INTEGRATED CMOS RECEIVER FRONT-END FOR OPTIC GIGABIT ETHERNET Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.7,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "+circuit": 1.0,
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS, 850-nm process",
+        "application_domain": "rf, wireless, thz, if",
+        "sub_blocks": [
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Block diagram of light-to-logic optical receiver circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.43,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Design candidates of optical preamplifiers for CMOS integration [4]–[8].",
+      "caption_bbox": [
+        38.1,
+        358.7,
+        302.5,
+        369.4
+      ],
+      "section_title": "II. SYSTEM CONSIDERATIONS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SYSTEM CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "It consists of: • two power regulators (voltage control); • a transimpedance amplifier (TIA); • a postamplifier; • a low-voltage differential signal (LVDS) output stage; • a signal-detect circuit; • an amplitude control circuit; • two offset cancellation circuits; • several bias and current sources. is the photodiode input (anode), the cathode In Fig. 1, the differential output, and connection of the photodiode, are the various loop filter connections for testing the control loops or increasing the loop filter time constant using is the signal detect output, additional external capacitors. may switch the outputs quiet if no signal is attached and SCHRÖDINGER et al.: A FULLY INTEGRATED CMOS RECEIVER FRONT-END FOR OPTIC GIGABIT ETHERNET Fig. 2."
+        },
+        {
+          "section_title": "SYSTEM CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 2 shows the evolution of some important circuits suitable for CMOS."
+        },
+        {
+          "section_title": "SYSTEM CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The first type [Fig. 2(a)] shows a circuit proposed about 20 years ago [4], at that time designed with n-p-n bipolar transistors."
+        },
+        {
+          "section_title": "SYSTEM CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "To avoid this, a cascode stage is introduced between the first and second transistor, so the voltage gain of the first transistor is approximately unity and no more multiplication of gate–drain capacitance is done [Fig. 2(b)] [5], [6]."
+        },
+        {
+          "section_title": "SYSTEM CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "For CMOS circuits, another type of amplifier which uses CMOS inverters [Fig. 2(c) and (d)] [7], [8] is sometimes published."
+        },
+        {
+          "section_title": "SYSTEM CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Using more than one stage [as in Fig. 2(d)], the circuits become more unstable and difficult to use."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, 850-nm process",
+        "application_domain": "rf, wireless, thz, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "switch"
+        ],
+        "design_purpose": "Fig. 2 shows the evolution of some important circuits suitable for CMOS.",
+        "function_summary": "Design candidates of optical preamplifiers for CMOS integration [4]–[8]. Fig. 2 shows the evolution of some important circuits suitable for CMOS.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.12,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Transimpedance amplifier schematic.",
+      "caption_bbox": [
+        39.6,
+        259.5,
+        188.0,
+        270.1
+      ],
+      "section_title": "II. SYSTEM CONSIDERATIONS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SYSTEM CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "For this transimpedance amplifier, we use a folded cascode amplifier, as shown in Fig. 3, also published earlier [9]."
+        },
+        {
+          "section_title": "SYSTEM CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The transistors and supply currents in the transimpedance amplifier are the same for all bandwidth types, because high currents and a large input transistor helps Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, 850-nm process",
+        "application_domain": "rf, wireless, thz, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Transimpedance amplifier schematic",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.45,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Controller of transimpedance amplifier.",
+      "caption_bbox": [
+        39.6,
+        555.7,
+        194.9,
+        566.3
+      ],
+      "section_title": "II. SYSTEM CONSIDERATIONS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SYSTEM CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 4."
+        },
+        {
+          "section_title": "SYSTEM CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 4 shows the detailed control circuitry."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, 850-nm process",
+        "application_domain": "rf, wireless, thz, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Controller of transimpedance amplifier",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. \u0016m.",
+      "caption_bbox": [
+        302.6,
+        230.7,
+        323.6,
+        250.3
+      ],
+      "section_title": "II. SYSTEM CONSIDERATIONS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SYSTEM CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "W = 96 \u0016m, L = 0.35 Fig. 5. \u0016m."
+        },
+        {
+          "section_title": "SYSTEM CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 5 shows the measured and simulated noise data for this transistor."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Fully Integrated CMOS Receiver Front-End",
+        "technology": "CMOS, 850-nm process",
+        "application_domain": "rf, wireless, thz, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "\u0016m",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Postamplifier schematic.",
+      "caption_bbox": [
+        38.1,
+        255.8,
+        146.1,
+        266.4
+      ],
+      "section_title": "II. SYSTEM CONSIDERATIONS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SYSTEM CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Postamplifier With Duty Cycle Control The postamplifier (Fig. 6) is a chain of drain-coupled differential amplifiers."
+        },
+        {
+          "section_title": "SYSTEM CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Because the gain of the postamplifier multiplies SCHRÖDINGER et al.: A FULLY INTEGRATED CMOS RECEIVER FRONT-END FOR OPTIC GIGABIT ETHERNET Fig. 6."
+        },
+        {
+          "section_title": "SYSTEM CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Signal-Detect Circuit The signal-detect circuit uses the signal from the linear part of the postamplifier from that stage where the first dc cancellation is done (see Fig. 6)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.2,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS, 850-nm process",
+        "application_domain": "rf, wireless, thz, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Postamplifier schematic",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.65,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Gain variation of postamplifier over temperature for different technology parameters and without control.",
+      "caption_bbox": [
+        38.1,
+        427.7,
+        289.2,
+        447.3
+      ],
+      "section_title": "II. SYSTEM CONSIDERATIONS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SYSTEM CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 7."
+        },
+        {
+          "section_title": "SYSTEM CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 7 shows simulated results for different technology variations (slow, nominal, fast) over temperature compared to a noncompensated amplifier."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, 850-nm process",
+        "application_domain": "rf, wireless, thz, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Gain variation of postamplifier over temperature for different technology parameters and without control",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Schematic of the LVDS output stage.",
+      "caption_bbox": [
+        39.6,
+        298.3,
+        188.6,
+        308.9
+      ],
+      "section_title": "II. SYSTEM CONSIDERATIONS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SYSTEM CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The circuit (Fig. 8) uses a differential stage (N5, N6) switching the current of about 3.5 mA of the current source N4 through the 100termination."
+        },
+        {
+          "section_title": "SYSTEM CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "After a differential rectifier and a low -pass filter, a comparator checks Fig. 8."
+        },
+        {
+          "section_title": "SYSTEM CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The total additional (parasitic) series resistance of this , which is tolerable in this application. structure is about 10 The influence of this structure is compensated, because this output structure is also used in the mirror circuit (Fig. 8)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.2,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, 850-nm process",
+        "application_domain": "rf, wireless, thz, if",
+        "sub_blocks": [
+          "current source"
+        ],
+        "design_purpose": "",
+        "function_summary": "Schematic of the LVDS output stage",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.55,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. Sensitivity of 1.25 Gb/s version versus temperature and supply voltage.",
+      "caption_bbox": [
+        39.6,
+        515.9,
+        290.6,
+        526.5
+      ],
+      "section_title": "III. TEST RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "SYSTEM CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 9."
+        },
+        {
+          "section_title": "TEST RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 9 shows the sensitivity results for a gigabit receiver over the entire temperature range."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS, 850-nm process",
+        "application_domain": "rf, wireless, thz, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Sensitivity of 1.25 Gb/s version versus temperature and supply voltage",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10. Jitter of the 1.25 Gb/s version at the digital output versus input power and supply voltage.",
+      "caption_bbox": [
+        302.6,
+        492.5,
+        553.7,
+        512.1
+      ],
+      "section_title": "III. TEST RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "SYSTEM CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 7, JULY 2002 Fig. 10."
+        },
+        {
+          "section_title": "TEST RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 10 shows that this circuit delivers nearly constant jitter over the whole 21 dBm (noise limit) and over the dynamic range above SCHRÖDINGER et al.: A FULLY INTEGRATED CMOS RECEIVER FRONT-END FOR OPTIC GIGABIT ETHERNET (a) Digital output signal at 1.25 Gb/s at (a) \u000021 dBm and (b) 0 dBm 70 (b) Fig. 11. mV/div, 160 ps/div; eye mask of Gigabit Ethernet is included in scope trace."
+        },
+        {
+          "section_title": "TEST RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "In these pictures, transmitter jitter is included, therefore jitter values are higher than in Fig. 10 noted."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS, 850-nm process",
+        "application_domain": "rf, wireless, thz, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Jitter of the 1.25 Gb/s version at the digital output versus input power and supply voltage",
+        "key_specs": [
+          "21 dBm",
+          "0 dBm",
+          "160 ps"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 5,
+      "caption": "Fig. 11. mV/div, 160 ps/div; eye mask of Gigabit Ethernet is included in scope trace.",
+      "caption_bbox": [
+        38.1,
+        296.8,
+        281.2,
+        316.5
+      ],
+      "section_title": "IV. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "TEST RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 10 shows that this circuit delivers nearly constant jitter over the whole 21 dBm (noise limit) and over the dynamic range above SCHRÖDINGER et al.: A FULLY INTEGRATED CMOS RECEIVER FRONT-END FOR OPTIC GIGABIT ETHERNET (a) Digital output signal at 1.25 Gb/s at (a) \u000021 dBm and (b) 0 dBm 70 (b) Fig. 11. mV/div, 160 ps/div; eye mask of Gigabit Ethernet is included in scope trace."
+        },
+        {
+          "section_title": "TEST RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The signal at the LVDS output for a 1.25-Gb/s receiver is 21 and 0 dBm. shown in Fig. 11 for optical input powers of 21 dBm is due to random jitter resulting The high jitter at 21 dBm."
+        },
+        {
+          "section_title": "TEST RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The from thermal noise due to sensitivity limit at jitter in Fig. 11(b) is purely systematic generated by bandwidth limitations within the amplifier."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.2,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, 850-nm process",
+        "application_domain": "rf, wireless, thz, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "mV/div, 160 ps/div; eye mask of Gigabit Ethernet is included in scope trace",
+        "key_specs": [
+          "21 dBm",
+          "0 dBm",
+          "160 ps"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 5,
+      "caption": "Fig. 12. Chip photo of the receiver.",
+      "caption_bbox": [
+        38.1,
+        573.8,
+        156.9,
+        584.4
+      ],
+      "section_title": "IV. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "TEST RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 12."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 5,
+          "sentence": "A completely integrated light-to-logic receiver circuit was 1.3 mm (Fig. 12)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-chip photo": -3.0,
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS, 850-nm process",
+        "application_domain": "rf, wireless, thz, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chip photo of the receiver",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 6,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

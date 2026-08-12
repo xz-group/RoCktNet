@@ -1,0 +1,616 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1362842.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1362842",
+  "generated_at": "2026-07-29T21:32:08",
+  "paper_metadata": {
+    "title": "A 4-\u0016A Quiescent-Current Dual-Mode Digitally Controlled Buck Converter IC for Cellular Phone Applications",
+    "authors": [
+      "Jinwen Xiao",
+      "Angel V. Peterchev",
+      "Jianhui Zhang",
+      "Seth R. Sanders"
+    ],
+    "abstract": "This paper describes a dual-mode digitally controlled buck converter IC for cellular phone applications. An architecture modes. The PFM-mode quiescent power is the fundamental employing internal power management is introduced to ensure limitation on light-load efficiency, and, in this study, an ultralow voltage compatibility between a single-cell lithium-ion battery quiescent current of 4 A is achieved in PFM mode. Details of voltage and a low-voltage integrated circuit technology. Special the dual-mode design are presented in Section II. purpose analog and digital interface elements are developed. These include a ring-oscillator-based A/D converter (ring-ADC), For a digital implementation, small feature size processes which is nearly entirely synthesizable, is robust against switching with low supply voltages are preferred for implementing the dignoise, and has flexible resolution control, and a very low power ital circuits to achieve small die area, high speed, and low power ring-oscillator-multiplexer-based digital pulse-width modulation consumption. In cellular phone applications, the power supply (PWM) generation module (ring-MUX DPWM). The chip, which includes an output power stage rated for 400 mA, occupies an of the buck converter system is usually a single-cell lithium-ion active area 2 mm2 in 0.25m CMOS. Very high efficiencies are battery, with voltage range of 2.8–5.5 V. Thus, the input voltage achieved over a load range of 0.1–400 mA. Measured quiescent of the converter may be higher than the allowed supply voltage current in PFM mode is 4 A. of the process (e.g., a maximum 2.75 V for a 0.25m CMOS",
+    "keywords": [
+      "Analog–digital conversion",
+      "CMOS integrated"
+    ],
+    "doi": "10.1109/JSSC.2004.836353",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2004
+  },
+  "paper_circuit_context": {
+    "circuit_type": "oscillator",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "transistor/MOSFET",
+      "cross-coupled pair",
+      "current source",
+      "switch",
+      "differential pair",
+      "latch",
+      "clock / timing"
+    ],
+    "design_purpose": "These include a ring-oscillator-based A/D converter (ring-ADC), For a digital implementation, small feature size processes which is nearly entirely synthesizable, is robust against switching with low supply voltages are preferred for implementing the dignoise, and has flexible resolution control, and a very low power ...",
+    "function_summary": "oscillator: These include a ring-oscillator-based A/D converter (ring-ADC), For a digital implementation, small feature size processes which is nearly entirely synthesizable, is robust against switching with low supply voltages are preferred for implementing the dignoise, and has flexible resolution control, and a very low power ...",
+    "key_specs": [
+      "5.5 V",
+      "2.75 V",
+      "90%",
+      "70%",
+      "16 mV",
+      "5.4 mV",
+      "-5.5 V",
+      "50 mV",
+      "100 mV",
+      "80 mV"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HIS paper presents an ultralow-quiescent-power dual-mode digitally controlled buck converter IC for cellular phone applications. While the cellular phone is in talk mode, the load on the buck converter is high and pulse-width modulation (PWM) is used to achieve high regulation quality as well as high efﬁciency. However, when the cellular phone is in standby mode, in which the load current is ver ..."
+    },
+    {
+      "number": "II",
+      "title": "ARCHITECTURE AND VOLTAGE COMPATIBILITY",
+      "kind": "proposed",
+      "page": 1,
+      "text_preview": "A. PWM Mode The PWM mode runs the converter in continuous conduction. As shown in Fig. 1, in PWM mode, the error voltage is quantized by the ADC to provide an error signal in the , and the digital PID compensation network digital domain [1] generates a duty ratio command . The DPWM converts the duty ratio command into a PWM signal that controls the high-side and the low-side switches. Subharmonic  ..."
+    },
+    {
+      "number": "III",
+      "title": "RING-OSCILLATOR ADC",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "In PWM mode, since is regulated to be in the vicinity of , an ADC that can handle a rail-to-rail input is not necessary, and a windowed ADC that realizes high resolution with a reduced quantization range can be used [3], [7]. The main idea variation is to reduce the quantization window to the possible range, which is usually tens of millivolts centered at . Due to switching activities of the power ..."
+    },
+    {
+      "number": "IV",
+      "title": "RING-MUX DPWM",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "One method to digitally create PWM signals is with a fastclocked counter-comparator scheme [10]. Such a design takes reasonable die area but the power consumption reported is on the order of milliwatts because of the high clock frequency in the counters [11]. A tapped delay-line scheme is proposed in [12]. Power is signiﬁcantly reduced with respect to the fastcounter-comparator scheme since the fa ..."
+    },
+    {
+      "number": "V",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 4,
+      "text_preview": "The complete dual-mode digitally controlled buck converter m CMOS process. The die phoIC is implemented in a 0.25tograph of the chip is shown in Fig. 7. The total chip area is , out of which 2 mm is the active area. A bandgap circuit 4 mm to generate the reference voltage for the output is not included on this chip. According to [14], the reference circuit can be imA current consumption. The requi ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 5,
+      "text_preview": "This paper describes an ultralow-quiescent-current dual-mode digital controller IC for high frequency dc–dc buck converters. Internal power management and power switch m) structures enable the use of a small feature size (0.25 CMOS process with voltages up to 5.5 V. The paper further demonstrates subthreshold operation of CMOS transistors as a viable very low-power option for analog–digital interf ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1.",
+      "caption_bbox": [
+        38.1,
+        241.9,
+        59.0,
+        249.9
+      ],
+      "section_title": "II. ARCHITECTURE AND VOLTAGE COMPATIBILITY",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Digital Object Identiﬁer 10.1109/JSSC.2004.836353 in Fig. 1."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1."
+        },
+        {
+          "section_title": "ARCHITECTURE AND VOLTAGE COMPATIBILITY",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "As shown in Fig. 1, in PWM mode, the error voltage is quantized by the ADC to provide an error signal in the , and the digital PID compensation network digital domain [1] generates a duty ratio command ."
+        },
+        {
+          "section_title": "ARCHITECTURE AND VOLTAGE COMPATIBILITY",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Referring again to Fig. 1, a comparator samat a ﬁxed frequency and ples the output voltage ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.6,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "analog-to-digital converter (ADC)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.4,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Zero-bias-current comparator.",
+      "caption_bbox": [
+        301.1,
+        494.2,
+        425.8,
+        502.2
+      ],
+      "section_title": "II. ARCHITECTURE AND VOLTAGE COMPATIBILITY",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ARCHITECTURE AND VOLTAGE COMPATIBILITY",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 2."
+        },
+        {
+          "section_title": "ARCHITECTURE AND VOLTAGE COMPATIBILITY",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "To reduce it, a clocked zero-dccurrent comparator [5] is used, as shown in Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "comparator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "clock / timing"
+        ],
+        "design_purpose": "To reduce it, a clocked zero-dccurrent comparator [5] is used, as shown in Fig. 2.",
+        "function_summary": "Zero-bias-current comparator. To reduce it, a clocked zero-dccurrent comparator [5] is used, as shown in Fig. 2.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Block diagram of internal power management.",
+      "caption_bbox": [
+        39.6,
+        244.5,
+        218.7,
+        252.4
+      ],
+      "section_title": "II. ARCHITECTURE AND VOLTAGE COMPATIBILITY",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ARCHITECTURE AND VOLTAGE COMPATIBILITY",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Input pair Fig. 3."
+        },
+        {
+          "section_title": "ARCHITECTURE AND VOLTAGE COMPATIBILITY",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "As shown in Fig. 3, a cascode structure is used to protect both switches from seeing excessive gate–drain or and gate–source voltage."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "Block diagram of internal power management",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.79,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 3,
+      "caption": "Fig. 4. Simulated frequency–current dependency of a four-stage differential ring oscillator biased in the subthreshold region.",
+      "caption_bbox": [
+        38.1,
+        249.2,
+        289.2,
+        266.1
+      ],
+      "section_title": "III. RING-OSCILLATOR ADC",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "RING-OSCILLATOR ADC",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The design of the ring-ADC is based on the observation that the oscillation frequency in a CMOS ring oscillator, biased in XIAO et al.: A 4A-QUIESCENT-CURRENT DUAL-MODE DIGITALLY CONTROLLED BUCK CONVERTER IC FOR CELLULAR PHONE APPLICATIONS Fig. 4."
+        },
+        {
+          "section_title": "RING-OSCILLATOR ADC",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Simulated frequency–current dependency of a four-stage differential ring oscillator biased in the subthreshold region. the subthreshold region, has a linear dependency on the bias current, as illustrated in Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "type_match:oscillator": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated frequency–current dependency of a four-stage differential ring oscillator biased in the subthreshold region",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 4,
+      "caption": "Fig. 5. Block diagram of a ring-ADC.",
+      "caption_bbox": [
+        39.6,
+        243.9,
+        167.7,
+        251.8
+      ],
+      "section_title": "IV. RING-MUX DPWM",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "RING-OSCILLATOR ADC",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The block diagram of the ring-ADC is shown in Fig. 5."
+        },
+        {
+          "section_title": "RING-MUX DPWM",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The falling edge of this PWM signal is generated when the rising edge of the propagating square wave reaches a speciﬁed Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of a ring-ADC",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "Fig. 6. the differential ring oscillator in the DPWM.",
+      "caption_bbox": [
+        39.6,
+        517.0,
+        183.0,
+        534.0
+      ],
+      "section_title": "IV. RING-MUX DPWM",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "RING-MUX DPWM",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "A ring-oscillator-MUX implementation of a DPWM module, with the block diagram shown in Fig. 6(a), has area and power considerations similar to those of the delay-line approach."
+        },
+        {
+          "section_title": "RING-MUX DPWM",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The delay stage in the differential ring oscillators in the DPWM is shown in Fig. 6(b)."
+        },
+        {
+          "section_title": "RING-MUX DPWM",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "(b) Delay stage of Fig. 6. the differential ring oscillator in the DPWM. tap in the ring."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "type_match:oscillator": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "the differential ring oscillator in the DPWM",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.31,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. Chip microphotograph.",
+      "caption_bbox": [
+        302.6,
+        471.5,
+        406.1,
+        479.4
+      ],
+      "section_title": "IV. RING-MUX DPWM",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The die phoIC is implemented in a 0.25tograph of the chip is shown in Fig. 7."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The required pin plemented with subcount for the buck converter IC is 10, and all of the other pins IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 12, DECEMBER 2004 Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -5.7,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chip microphotograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 5,
+      "caption": "Fig. 8. = 1 MHz. (b) PFM mode response with (a) PWM mode response with f = 600 kHz. f",
+      "caption_bbox": [
+        38.1,
+        373.8,
+        289.1,
+        399.7
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Experimental closed-loop load transient responses with a current load step of 100 mA for the PWM and PFM modes, respectively, are shown in Fig. 8."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Experimental load transient response with V Fig. 8. = 1 MHz."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "= 1 MHz. (b) PFM mode response with (a) PWM mode response with f = 600 kHz. f",
+        "key_specs": [
+          "1 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 5,
+      "caption": "Fig. 9. = 1.2 Hz, and f = 500 kHz. V",
+      "caption_bbox": [
+        38.1,
+        582.6,
+        148.0,
+        599.5
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "(b) PFM mode response with (a) PWM mode response with f = 600 kHz. f = 3.2 V, Experimental steady-state response in PWM mode with V Fig. 9. = 1.2 Hz, and f = 500 kHz."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Steady-state waveforms in the PWM mode are shown in Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "= 1.2 Hz, and f = 500 kHz. V",
+        "key_specs": [
+          "600 kHz",
+          "3.2 V",
+          "1.2 Hz",
+          "500 kHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. Measured PWM and PFM mode converter efﬁciency as functions of = 4 V and V = 1.5 V. output current, with V",
+      "caption_bbox": [
+        301.1,
+        222.3,
+        552.2,
+        239.2
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Efﬁciencies as a function of load current of the buck converter in both PWM mode and PFM mode are measured 4 V and 1.5 V, as illustrated in Fig. 10."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Furthermore, over a 20–200-mA load current range, high efﬁciency (over 80%) can be observed in each mode, and thus it is easy Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured PWM and PFM mode converter efﬁciency as functions of = 4 V and V = 1.5 V. output current, with V",
+        "key_specs": [
+          "4 V",
+          "1.5 V",
+          "80%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 3,
+  "warnings": []
+}

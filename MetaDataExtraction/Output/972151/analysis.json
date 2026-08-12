@@ -1,0 +1,1264 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\972151.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\972151",
+  "generated_at": "2026-07-29T22:03:39",
+  "paper_metadata": {
+    "title": "A 1.75-GHz Highly Integrated Narrow-Band CMOS Transmitter With Harmonic-Rejection Mixers",
+    "authors": [
+      "Jeffrey A. Weldon",
+      "R. Sekhar Narayanaswami",
+      "Jacques C. Rudell",
+      "Li Lin",
+      "Masanori Otsuka",
+      "Sebastien Dedieu",
+      "Luns Tee",
+      "King-Chun Tsai",
+      "Cheol-Woong Lee",
+      "Paul R. Gray"
+    ],
+    "abstract": "A highly integrated 1.75-GHz 0.35m CMOS transmitter is described. The modulator-based transmitter faciliHowever, maintaining high performance in a wireless system, tates integration through the use of a unique mixer, termed a harwith an integrated CMOS solution, requires advances at monic-rejection mixer, and a wide loop bandwidth phase-locked both the architectural and circuit level because many current loop (PLL) for the RF synthesizer. The harmonic-rejection mixers implementations are not amenable to integration in CMOS. are used to eliminate the need for a discrete IF filter and the use of Recently, significant effort has been directed toward the ima wide loop bandwidth PLL allowed for the complete integration of the synthesizers using lowcomponents while achieving low plementation of integrated CMOS receivers [3], [4]. The focus phase noise. The entire transmit signal path from the digital-toof this work is to demonstrate techniques that would allow analog converters to the power amplifier, including two fully intefor a highly integrated high-performance CMOS transmitter grated frequency synthesizers, is integrated into a single-chip soand eliminate the need for costly discrete components. The lution. The transmitter was tested with a testing buffer before the challenge was to maintain the high performance needed by power amplifier (PA) and achieved less than 1.3 rms phase error when modulating a DCS-1800 GMSK signal. The prototype concellular communications systems while using lowon-chip sumed 151 mA from a 3-V supply. A class-C PA, capable of driving components inherent to standard CMOS. A prototype was 25 dBm off-chip, was included and the output was compared to the m double-poly five-layer metal CMOS fabricated using a 0.35testing buffer with little change in the transmitter performance. technology. The transmitter operated at 1.75 GHz and was",
+    "keywords": [
+      "Class-C power amplifier",
+      "CMOS RF",
+      "digital-"
+    ],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2001
+  },
+  "paper_circuit_context": {
+    "circuit_type": "1.75-GHz Highly Integrated Narrow-Band CMOS Transmitter",
+    "technology": "CMOS",
+    "application_domain": "rf, wireless, baseband, if",
+    "sub_blocks": [
+      "LC tank / resonator",
+      "output buffer",
+      "mixer",
+      "inductor",
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "current source",
+      "transmission line",
+      "balun",
+      "switch"
+    ],
+    "design_purpose": "",
+    "function_summary": "1.75-GHz Highly Integrated Narrow-Band CMOS Transmitter: A highly integrated 1.75-GHz 0.35m CMOS transmitter is described.",
+    "key_specs": [
+      "25 dBm",
+      "1.75 GHz",
+      "1 w",
+      "2 w",
+      "9.5 dBc",
+      "14 dBc",
+      "1%",
+      "35 dB",
+      "1.4704 GHz",
+      "8 MHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE DEMAND for wireless connectivity supporting both voice and data has dramatically increased in recent years. Advancements in wireless technology have largely been driven by the desire for lower cost solutions. One method of achieving this price reduction is through increased levels of integration in both the transmitter and the receiver. In addition to reducing the number of ICs needed, elimin ..."
+    },
+    {
+      "number": "II",
+      "title": "TRANSMITTER ARCHITECTURES",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "Transmitter implementations to date have used a variety of architectures, each of which exhibits features making them well suited for implementing a specific standard. However, if the goal is multistandard operation, a transmitter architecture with high flexibility is desired. Furthermore, high performance is required if a difficult standard is among the targeted applications. In particular, RF sy ..."
+    },
+    {
+      "number": "III",
+      "title": "TRANSMITTER DETAILS",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "A. Harmonic-Rejection Mixer A key building block in the HRT is the harmonic-rejection mixer (HRM). Switching mixers are commonly used in RF transceivers because of their numerous advantages compared to other mixer topologies [9]. However, these mixers generate harmonics of the local oscillator frequency, which consequently need filtering. The top half of Fig. 5(a) shows a conventional switching mi ..."
+    },
+    {
+      "number": "IV",
+      "title": "CMOS PROTOTYPE",
+      "kind": "other",
+      "page": 5,
+      "text_preview": "A CMOS prototype HRT was fabricated in a 0.35m double-poly five-layer metal process. A block diagram of the HRT is shown in Fig. 11. The HRT integrated the entire transmit signal path from the DACs to the PA, including two and baseband sigfrequency synthesizers. Ten-bit digital nals are brought on chip and passed through two 10-bit resistor string DACs and then filtered by two Sallen & Key third-o ..."
+    },
+    {
+      "number": "V",
+      "title": "RESULTS",
+      "kind": "results",
+      "page": 8,
+      "text_preview": "Although the HRT was designed to facilitate multistandard operation, the performance of the transmitter was tested with the DCS 1800 specifications. This up-banded version of GSM was chosen for a number of reasons. First, it requires very high modulation accuracy from the transmitter. Second, DCS 1800 requires very low unwanted spurious transmission especially in the receive band. Finally, DCS 180 ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 10,
+      "text_preview": "A fully integrated CMOS transmitter has been demonstrated. The entire transmit signal path including the PA and the frem double-poly quency synthesizers were integrated in a 0.35five-layer metal CMOS process. The transmitter demonstrated cellular performance requiring only a single RF filter after the PA. The need for pre-PA filtering was removed through the use of a harmonic-rejection transmitter ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Direct upconversion transmitter block diagram.",
+      "caption_bbox": [
+        39.6,
+        169.7,
+        220.5,
+        180.4
+      ],
+      "section_title": "II. TRANSMITTER ARCHITECTURES",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "TRANSMITTER ARCHITECTURES",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "As Fig. 1."
+        },
+        {
+          "section_title": "TRANSMITTER ARCHITECTURES",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Direct-Upconversion Transmitter (Homodyne) The direct-upconversion transmitter, shown in Fig. 1, is attractive because of the simplicity of the signal path."
+        },
+        {
+          "section_title": "TRANSMITTER ARCHITECTURES",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The shaded components in Fig. 1 would likely remain discrete if components was attempted for CMOS integration with lowa number of reasons."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.2,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:proposed": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "transmitter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Direct upconversion transmitter block diagram",
+        "key_specs": [
+          "1 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.77,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Third-order intermodulation in PA.",
+      "caption_bbox": [
+        302.6,
+        373.6,
+        443.8,
+        384.3
+      ],
+      "section_title": "II. TRANSMITTER ARCHITECTURES",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "TRANSMITTER ARCHITECTURES",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "This can be seen in Fig. 2 when the third harmonic of the desired signal intermodulates with the desired signal to produce an unwanted third harmonic of the baseband signal."
+        },
+        {
+          "section_title": "TRANSMITTER ARCHITECTURES",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "First, the IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 12, DECEMBER 2001 Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "1.75-GHz Highly Integrated Narrow-Band CMOS Transmitter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Third-order intermodulation in PA",
+        "key_specs": [
+          "2 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Indirect upconversion transmitter block diagram.",
+      "caption_bbox": [
+        38.1,
+        164.3,
+        223.9,
+        175.0
+      ],
+      "section_title": "II. TRANSMITTER ARCHITECTURES",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "TRANSMITTER ARCHITECTURES",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Indirect Upconversion Transmitter (Heterodyne) The indirect upconversion transmitter, shown in Fig. 3, can be viewed as the transmitter version of the superheterodyne remodulator is ceiver."
+        },
+        {
+          "section_title": "TRANSMITTER ARCHITECTURES",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "To further improve performance a modiWELDON et al.: HIGHLY INTEGRATED NARROW-BAND CMOS TRANSMITTER WITH HARMONIC-REJECTION MIXERS Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "transmitter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Indirect upconversion transmitter block diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.69,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Harmonic-rejection transmitter block diagram.",
+      "caption_bbox": [
+        38.1,
+        303.8,
+        216.7,
+        314.5
+      ],
+      "section_title": "II. TRANSMITTER ARCHITECTURES",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "TRANSMITTER ARCHITECTURES",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 4."
+        },
+        {
+          "section_title": "TRANSMITTER ARCHITECTURES",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Harmonic-Rejection Transmitter The two-step transmitter shown in Fig. 4 is called the harmonic-rejection transmitter (HRT) because of the unique mixers used in the baseband to IF upconversion."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "transmitter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Harmonic-rejection transmitter block diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.69,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Harmonic-rejection signal generation.",
+      "caption_bbox": [
+        39.6,
+        450.4,
+        189.8,
+        461.1
+      ],
+      "section_title": "III. TRANSMITTER DETAILS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TRANSMITTER DETAILS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 6."
+        },
+        {
+          "section_title": "TRANSMITTER DETAILS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Current-commutating switching mixers allow for a relatively low LO swing, which is critical for integration components. using low- , three square waves are summed as To generate shown in Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Harmonic-rejection signal generation",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Harmonic-rejection with mismatch. (a) For third harmonic. (b) For fifth harmonic.",
+      "caption_bbox": [
+        302.6,
+        393.5,
+        553.6,
+        413.1
+      ],
+      "section_title": "III. TRANSMITTER DETAILS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TRANSMITTER DETAILS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The Fourier series representation of the three square waves up to the fifth-order component is given by (1) (2) IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 12, DECEMBER 2001 (a) (b) Fig. 7."
+        },
+        {
+          "section_title": "TRANSMITTER DETAILS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Shown in Fig. 7 is the harmonic rejection plotted as a function of phase error for different gain errors."
+        },
+        {
+          "section_title": "TRANSMITTER DETAILS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 7(a) shows the rejection of the third harmonic while Fig. 7(b) shows the rejection of the fifth harmonic."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "1.75-GHz Highly Integrated Narrow-Band CMOS Transmitter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Harmonic-rejection with mismatch. (a) For third harmonic. (b) For fifth harmonic",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Harmonic-rejection mixer circuit diagram.",
+      "caption_bbox": [
+        38.1,
+        223.0,
+        202.7,
+        233.7
+      ],
+      "section_title": "III. TRANSMITTER DETAILS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TRANSMITTER DETAILS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "For oneWELDON et al.: HIGHLY INTEGRATED NARROW-BAND CMOS TRANSMITTER WITH HARMONIC-REJECTION MIXERS Fig. 8."
+        },
+        {
+          "section_title": "TRANSMITTER DETAILS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The simplified circuit schematic for the HRM is shown in Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.8,
+      "relevance_breakdown": {
+        "+circuit diagram": 3.0,
+        "+circuit": 1.0,
+        "references": 0.8
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Harmonic-rejection mixer circuit diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.69,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. VCO phase-noise suppression in wide-loop-bandwidth PLL.",
+      "caption_bbox": [
+        301.1,
+        229.9,
+        523.1,
+        240.6
+      ],
+      "section_title": "III. TRANSMITTER DETAILS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TRANSMITTER DETAILS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "This may be better understood by evaluating the phase-noise transfer functions of the various components within a PLL to the output of the synthesizer, as illustrated in Fig. 9."
+        },
+        {
+          "section_title": "TRANSMITTER DETAILS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Because the channel tuning is performed using the lower frequency IF synthesizer, the comparison frequency of the RF synthesizer can be significantly raised, Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "VCO phase-noise suppression in wide-loop-bandwidth PLL",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10. Phase noise of low-frequency synthesizer.",
+      "caption_bbox": [
+        301.1,
+        418.3,
+        468.1,
+        428.9
+      ],
+      "section_title": "III. TRANSMITTER DETAILS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TRANSMITTER DETAILS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 10."
+        },
+        {
+          "section_title": "TRANSMITTER DETAILS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The concept of inherently lower phase noise at lower frequencies may be understood with a time-domain interpretation, which is illustrated in Fig. 10."
+        },
+        {
+          "section_title": "TRANSMITTER DETAILS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "This is illustrated in Fig. 10 for , where the time-domain waveform at the output of the synthesizer is shown at the bottom."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.3,
+      "relevance_breakdown": {
+        "-phase noise": -2.5,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "frequency synthesizer",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Phase noise of low-frequency synthesizer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 5,
+      "caption": "Fig. 11. CMOS prototype HRT block diagram.",
+      "caption_bbox": [
+        39.6,
+        237.9,
+        195.5,
+        248.5
+      ],
+      "section_title": "III. TRANSMITTER DETAILS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TRANSMITTER DETAILS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 11."
+        },
+        {
+          "section_title": "CMOS PROTOTYPE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "A block diagram of the HRT is shown in Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "1.75-GHz Highly Integrated Narrow-Band CMOS Transmitter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "CMOS prototype HRT block diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 5,
+      "caption": "Fig. 12. Die photo.",
+      "caption_bbox": [
+        302.6,
+        197.6,
+        369.5,
+        208.3
+      ],
+      "section_title": "III. TRANSMITTER DETAILS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CMOS PROTOTYPE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The IF signals are then upconverted to RF using IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 12, DECEMBER 2001 Fig. 12."
+        },
+        {
+          "section_title": "CMOS PROTOTYPE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "A die micrograph is shown in Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-die photo": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "1.75-GHz Highly Integrated Narrow-Band CMOS Transmitter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Die photo",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 6,
+      "caption": "Fig. 13. Dual resistor string DAC schematic.",
+      "caption_bbox": [
+        38.1,
+        214.5,
+        186.8,
+        225.1
+      ],
+      "section_title": "IV. CMOS PROTOTYPE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CMOS PROTOTYPE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "DAC Fig. 13 shows the basic structure of the resistor string DAC used in the transmitter."
+        },
+        {
+          "section_title": "CMOS PROTOTYPE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The digital-to-analog conversion is made WELDON et al.: HIGHLY INTEGRATED NARROW-BAND CMOS TRANSMITTER WITH HARMONIC-REJECTION MIXERS Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "resistor",
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Dual resistor string DAC schematic",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.45,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 6,
+      "caption": "Fig. 14. Glitch reduction circuit technique for DAC.",
+      "caption_bbox": [
+        38.1,
+        394.6,
+        210.4,
+        405.2
+      ],
+      "section_title": "IV. CMOS PROTOTYPE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CMOS PROTOTYPE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 14."
+        },
+        {
+          "section_title": "CMOS PROTOTYPE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The intermediate nodes in the resistor string should stay at a fixed voltage at all times, but as switches close and open and different intermediate nodes are tied to the output, there is an instantaneous change on the intermediate nodes (for example, node A in Fig. 14) that causes an increase in the settling time of the output."
+        },
+        {
+          "section_title": "CMOS PROTOTYPE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "This problem can be reduced through the use of a set of replica switches and a dummy capacitor, as shown in Fig. 14."
+        },
+        {
+          "section_title": "CMOS PROTOTYPE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The uncompensated voltage at node A is summed with the glitch reduction due to the switches 3 and 4, resulting in a reduced fluctuation voltage at node A, as shown in Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.6,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "capacitor",
+          "resistor",
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Glitch reduction circuit technique for DAC",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.2,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 7,
+      "caption": "Fig. 15. Improved rejection from Sallen & Key filter.",
+      "caption_bbox": [
+        39.6,
+        309.5,
+        216.5,
+        320.2
+      ],
+      "section_title": "IV. CMOS PROTOTYPE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CMOS PROTOTYPE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Shown on the left side of Fig. 15 is a conventional Sallen & Key filter."
+        },
+        {
+          "section_title": "CMOS PROTOTYPE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Alternatively, the effect of the zero may be reduced by adding a buffer in the feedback path as shown in the right side of the Fig. 15."
+        },
+        {
+          "section_title": "CMOS PROTOTYPE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Improved rejection from Sallen & Key filter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 7,
+      "caption": "Fig. 16. High-frequency (LO1) VCO buffer quadrature generator circuit schematic.",
+      "caption_bbox": [
+        39.6,
+        560.6,
+        312.5,
+        571.3
+      ],
+      "section_title": "IV. CMOS PROTOTYPE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CMOS PROTOTYPE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 16."
+        },
+        {
+          "section_title": "CMOS PROTOTYPE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The circuit shown in Fig. 16 reduces one mechanism of loss in the polyphase filter by using a buffer which drives the input of the filter with signals roughly in quadrature and thus eliminates the inherent 3-dB loss associated with converting a single phase to quadrature phases."
+        },
+        {
+          "section_title": "CMOS PROTOTYPE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The of the LC tank at duction in the VCO tank the buffer output, shown as L1-L4 in Fig. 16, is approximately 1.5 when loaded with the polyphase filter."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 8.7,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+circuit schematic": 3.5,
+        "+circuit": 1.0,
+        "references": 1.2
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "LC tank / resonator",
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "High-frequency (LO1) VCO buffer quadrature generator circuit schematic",
+        "key_specs": [
+          "1.5 w"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.55,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 8,
+      "caption": "Fig. 17. Class-C power amplifier circuit schematic.",
+      "caption_bbox": [
+        38.1,
+        245.6,
+        207.7,
+        256.2
+      ],
+      "section_title": "IV. CMOS PROTOTYPE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CMOS PROTOTYPE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "One drawback to switch-mode PAs, especially with respect to their potential for integration, is the need for a dc–dc converter in order to perform power control, which is WELDON et al.: HIGHLY INTEGRATED NARROW-BAND CMOS TRANSMITTER WITH HARMONIC-REJECTION MIXERS Fig. 17."
+        },
+        {
+          "section_title": "CMOS PROTOTYPE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 17 shows the circuit diagram of the three-stage fully differential class-C PA used in this work."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 8.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+circuit schematic": 3.5,
+        "+circuit": 1.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "power amplifier (PA)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "mixer",
+          "switch"
+        ],
+        "design_purpose": "One drawback to switch-mode PAs, especially with respect to their potential for integration, is the need for a dc–dc converter in order to perform power control, which is WELDON et al.: HIGHLY INTEGRATED NARROW-BAND CMOS TRANSMITTER WITH HARMONIC-REJECTION MIXERS Fig. 17.",
+        "function_summary": "Class-C power amplifier circuit schematic. One drawback to switch-mode PAs, especially with respect to their potential for integration, is the need for a dc–dc converter in order to perform power control, which is WELDON et al.: HIGHLY INTEGRATED NARROW-BAND CMOS TRANSMITTER WITH HARMONIC-REJECTION MIXERS Fig. 17.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.99,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 9,
+      "caption": "Fig. 18. Transmitter output with single-sideband test.",
+      "caption_bbox": [
+        39.6,
+        240.7,
+        215.4,
+        251.3
+      ],
+      "section_title": "V. RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "Shown in Fig. 18 is the output of the transmitter when a 50-kHz baseband tone is upconverted to RF."
+        },
+        {
+          "section_title": "RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "Meeting Fig. 18."
+        },
+        {
+          "section_title": "RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "Comparing Fig. 22 with Fig. 18 shows very little difference."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transmitter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Transmitter output with single-sideband test",
+        "key_specs": [
+          "22 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 9,
+      "caption": "Fig. 19. Transmitter output with modulated baseband signal.",
+      "caption_bbox": [
+        39.6,
+        472.0,
+        238.5,
+        482.7
+      ],
+      "section_title": "V. RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "Fig. 19."
+        },
+        {
+          "section_title": "RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "Shown in Fig. 19 is the measured output spectrum along with the DCS-1800 spectral mask requirement."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transmitter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Transmitter output with modulated baseband signal",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 20,
+      "label": "Fig. 20",
+      "page": 9,
+      "caption": "Fig. 20. Modulation accuracy of transmitter.",
+      "caption_bbox": [
+        302.6,
+        262.6,
+        450.1,
+        273.3
+      ],
+      "section_title": "V. RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "The DCS-1800 standard requires that the rms phase with a peak phase error no larger than 20 . error is less than 5 The measured results for the HRT are shown in Fig. 20 and the while the peak phase error is 3.7 ."
+        },
+        {
+          "section_title": "RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "Consequently, the limit for the transmitted noise measured at 20-MHz offset from the carrier is IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 12, DECEMBER 2001 Fig. 20."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transmitter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Modulation accuracy of transmitter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 21,
+      "label": "Fig. 21",
+      "page": 9,
+      "caption": "Fig. 21. Wide-band spectrum at transmitter output.",
+      "caption_bbox": [
+        302.6,
+        471.8,
+        470.9,
+        482.4
+      ],
+      "section_title": "V. RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "Fig. 21."
+        },
+        {
+          "section_title": "RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "The results are shown in Fig. 21."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "transmitter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Wide-band spectrum at transmitter output",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 22,
+      "label": "Fig. 22",
+      "page": 10,
+      "caption": "Fig. 22. Single-sideband test with PA output.",
+      "caption_bbox": [
+        38.1,
+        241.5,
+        188.1,
+        252.1
+      ],
+      "section_title": "V. RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "Shown in Fig. 22 are the results of a single-sideband test using the same 50-kHz signal."
+        },
+        {
+          "section_title": "RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "The test setup introduced approximately 2 dB of WELDON et al.: HIGHLY INTEGRATED NARROW-BAND CMOS TRANSMITTER WITH HARMONIC-REJECTION MIXERS Fig. 22."
+        },
+        {
+          "section_title": "RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "Comparing Fig. 22 with Fig. 18 shows very little difference."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Single-sideband test with PA output",
+        "key_specs": [
+          "2 dB",
+          "22 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 23,
+      "label": "Fig. 23",
+      "page": 10,
+      "caption": "Fig. 23. Transmitter current consumption.",
+      "caption_bbox": [
+        301.1,
+        194.6,
+        441.0,
+        205.3
+      ],
+      "section_title": "V. RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "Fig. 23."
+        },
+        {
+          "section_title": "RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "Shown in Fig. 23 is the power consumption of the transmitter excluding the testing buffer and the PA."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transmitter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Transmitter current consumption",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 16,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

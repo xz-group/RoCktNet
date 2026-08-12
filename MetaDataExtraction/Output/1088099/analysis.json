@@ -1,0 +1,1088 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1088099.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1088099",
+  "generated_at": "2026-07-29T22:00:30",
+  "paper_metadata": {
+    "title": "A Single-Chip Quad-Band (850/900/1800/1900 MHz) Direct Conversion GSM/GPRS RF Transceiver with Integrated VCOs and Fractional-N Synthesizer",
+    "authors": [
+      "Rahul Magoon",
+      "Alyosha Molnar",
+      "Jeff Zachan",
+      "Geoff Hatcher",
+      "Woogeun Rhee"
+    ],
+    "abstract": "Recent trends in the integration of entire systems on-chip have spurred the development of homodyne radios as signals. However, many direct conversion receiver (DCR) imalternatives to the more mature yet harder to integrate superplementations [1] and all low IF receivers still require wide dyheterodyne architectures. This paper presents a monolithic device namic range ADCs. that integrates all of the functions necessary to implement a multiThis work presents a DCR that avoids the traditional probband homodyne global system for mobile telecommunications lems by means of frequency planning, floor planning, and caliradio except for the power amplifier (PA) and radio frequency (RF) passives. The single BiCMOS chip includes a quad-band bration techniques. The receiver includes a low-dc-offset, highdirect conversion receiver that down converts RF to quadrainput-dynamic-range analog baseband chain capable of inture analog baseband. The front-end circuitry is followed by a terfacing to 9-b ADCs. The transmitter architecture is based on low-dc-offset, high-dynamic-range, analog baseband chain. the commonly used translational loop. A single integrated LO The transmit section is comprised of a quad-band up-conversion provides the channel selection for both the transmitter and the transmit phase-locked loop (PLL) including on chip transmit voltage-controlled oscillators (VCOs). The stringent GSM receive receiver. All VCOs and phase-locked loops (PLLs) are on chip band phase noise specifications are met without the use of surface [2]. acoustic wave filters. A single fractionalsynthesizer locking a fully integrated ultrahigh frequency VCO generates the",
+    "keywords": [
+      "BiCMOS",
+      "calibration",
+      "direct conversion",
+      "fre-"
+    ],
+    "doi": "10.1109/JSSC.2002.804356",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2002
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Single-Chip Quad-Band (850/900/1800/1900 MHz) Direct Conversion GSM/GPRS RF Transceiver",
+    "technology": "BICMOS",
+    "application_domain": "rf, radio frequency, wireless, baseband, if",
+    "sub_blocks": [
+      "varactor",
+      "inductor",
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "cross-coupled pair",
+      "current mirror",
+      "LC tank / resonator",
+      "output buffer",
+      "mixer",
+      "bias circuit",
+      "switch",
+      "differential pair",
+      "latch"
+    ],
+    "design_purpose": "",
+    "function_summary": "Single-Chip Quad-Band (850/900/1800/1900 MHz) Direct Conversion GSM/GPRS RF Transceiver: Recent trends in the integration of entire systems on-chip have spurred the development of homodyne radios as signals.",
+    "key_specs": [
+      "1900 MHz",
+      "900 MHz",
+      "99 dBm",
+      "3 dB",
+      "1650 MHz",
+      "550 MHz",
+      "1.1 GHz",
+      "50%",
+      "110 dBm",
+      "105 dBm"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "A S MODERN cell phones become ubiquitous, the critical factors in their manufacture become cost, size, and time to market. The high integration of radio ICs reduces board area and complexity while cutting component cost and system design time. Low-cost manufacturers desire freedom to choose the cheapest and most reliable IC for each main handset function. In this context, the interface between the ..."
+    },
+    {
+      "number": "II",
+      "title": "DEVICE OVERVIEW",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "A block diagram of the transceiver, including the necessary external RF components, is shown in Fig. 1. The only required external components, excluding impedance matching and loop filter components, are receive band select SAW filters, a switchplexer, and a power amplifier (PA). Standard differential analog interfaces are used for the transmitter inputs and for the receiver outputs. The receive p ..."
+    },
+    {
+      "number": "III",
+      "title": "DCR",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "The direct conversion approach presents several unique design challenges. All of these have to do with the generation of excessive or time-varying dc offsets at the outputs of the receiver. Aside from simple process and layout related mismatches, the two primary sources of dc are LO leakage to the RF inputs and even-order nonlinearities in the receive path. While constant dc offsets can be calibra ..."
+    },
+    {
+      "number": "IV",
+      "title": "LO AND FREQUENCY SYNTHESIS",
+      "kind": "other",
+      "page": 7,
+      "text_preview": "In order to accommodate a quad-band transceiver capable of GPRS operation, a wide-tuning, fast-locking PLL is necessary. architecture [14] is chosen with a nominal loop A fractionals. bandwidth of 25 kHz achieving lock times of less than 175 Due to stringent noise specifications and process limitations, a standard varactor-based VCO system is unacceptable. A hybrid technique is used where the UHF  ..."
+    },
+    {
+      "number": "V",
+      "title": "TRANSLATION LOOP TRANSMITTER",
+      "kind": "other",
+      "page": 7,
+      "text_preview": "The transmitter consists of a frequency translation up-conversion loop [17] with in-loop vector modulation. One LO signal provides both the down-converted and reference IF signals. Because it is generated by dividing down the LO, the channel-dependent IF prevents pulling between the VCOs and LO to IF crossover spurs. The use of selectable frequency dividers and programmable charge pump gain and po ..."
+    },
+    {
+      "number": "VI",
+      "title": "INTEGRATION ISSUES",
+      "kind": "other",
+      "page": 8,
+      "text_preview": "A. Observability and Controllability The device is made programmable via a serial bus to facilitate testing, debugging, and optimization. The simplest way to use digital control in an RF SOC is by turning off and bypassing blocks. An example is in a completely integrated LO chain. A bidirectional LO port buffer allows observation of the UHF VCO or the use of an external LO (Fig. 18). Normally, the ..."
+    },
+    {
+      "number": "VII",
+      "title": "PROCESS SELECTION",
+      "kind": "other",
+      "page": 8,
+      "text_preview": "The transceiver was designed in a 0.35m BiCMOS process GHz. The RF and analog signal paths [19] with NPN made extensive use of the high-performance NPN devices, benefiting from their higher speed, better matching, and lower flicker noise. The availability of bipolar junction transistors (BJTs) did not preclude the use of CMOS in those RF applications where CMOS is superior (e.g., in VCOs). Since B ..."
+    },
+    {
+      "number": "VIII",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 9,
+      "text_preview": "We have presented a quad-band GSM transceiver that integrates all of the active components of the radio except for the PA. The chip includes a direct conversion receiver, frequency synthesizer, transmitter, and all the VCOs. The IC meets the required specifications for GPRS class 12 with margin [3]. ACKNOWLEDGMENT The authors acknowledge M. Damgaard, W. Domino, and N. Vakilian for their technical  ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Top-level schematic of transceiver, with external RF components.",
+      "caption_bbox": [
+        38.1,
+        342.8,
+        277.6,
+        353.4
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "DEVICE OVERVIEW",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "A block diagram of the transceiver, including the necessary external RF components, is shown in Fig. 1."
+        },
+        {
+          "section_title": "DEVICE OVERVIEW",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "A test port is provided for MAGOON et al.: SINGLE-CHIP QUAD-BAND DIRECT CONVERSION GSM/GPRS RF TRANSCEIVER Fig. 1."
+        },
+        {
+          "section_title": "DCR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "In the LO chain presented here and shown in Fig. 1, a single LO provides a signal in the range from 1250 to 1650 MHz."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.7,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "transceiver",
+        "technology": "BICMOS",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Top-level schematic of transceiver, with external RF components",
+        "key_specs": [
+          "1650 MHz"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.76,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 2,
+      "caption": "Fig. 2. Coupling paths that can cause dc offsets. (a) LO to RF coupling. (b) RF to LO coupling.",
+      "caption_bbox": [
+        39.6,
+        425.6,
+        290.6,
+        445.2
+      ],
+      "section_title": "III. DCR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DCR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "As shown in Fig. 2(a), the LO signal may couple to the output and or the input of the LNA or reradiate and reflect off an external surface and be picked up by the antenna."
+        },
+        {
+          "section_title": "DCR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "See Figs. 2(b) and 4."
+        },
+        {
+          "section_title": "DCR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Since one of the resulting side bands corresponds to the original RF signal, the RF is down converted to dc as shown in (a) (b) Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "BICMOS",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Coupling paths that can cause dc offsets. (a) LO to RF coupling. (b) RF to LO coupling",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Second-order intercept diagram. Both axes are in dBm.",
+      "caption_bbox": [
+        302.6,
+        305.8,
+        507.7,
+        316.5
+      ],
+      "section_title": "III. DCR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DCR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "See Fig. 3."
+        },
+        {
+          "section_title": "DCR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The required IIP2 can be calculated as dBm dBm dB dBm dBm dB dB dBm at the antenna dBm at the LNA input, assuming (3) 3 dB front end loss IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 12, DECEMBER 2002 Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "BICMOS",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Second-order intercept diagram. Both axes are in dBm",
+        "key_specs": [
+          "3 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Modulation of LO by RF.",
+      "caption_bbox": [
+        302.6,
+        500.5,
+        414.0,
+        511.2
+      ],
+      "section_title": "III. DCR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DCR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.4,
+      "relevance_breakdown": {
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Single-Chip Quad-Band (850/900/1800/1900 MHz) Direct Conversion GSM/GPRS RF Transceiver",
+        "technology": "BICMOS",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Modulation of LO by RF",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.03,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Low-output harmonic doubler.",
+      "caption_bbox": [
+        38.1,
+        241.5,
+        164.9,
+        252.1
+      ],
+      "section_title": "III. DCR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DCR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Alternately, for high band operation, the signal is passed to a frequency doubler generating an LO signal from 830 MAGOON et al.: SINGLE-CHIP QUAD-BAND DIRECT CONVERSION GSM/GPRS RF TRANSCEIVER Fig. 5."
+        },
+        {
+          "section_title": "DCR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The circuit shown in Fig. 5 accomplishes frequency doubling as follows."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "frequency multiplier",
+        "technology": "BICMOS",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Low-output harmonic doubler",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Modulation of 1/2 LO by RF.",
+      "caption_bbox": [
+        301.1,
+        237.3,
+        424.8,
+        247.9
+      ],
+      "section_title": "III. DCR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DCR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Since (4) essentially represents the up conversion of one signal by the other, it should be clear that the sidebands of either signal will be up converted with their frequency offsets intact, as shown in Fig. 6."
+        },
+        {
+          "section_title": "DCR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The VCO generating the LO signal includes relatively large structures in its resonant tank and operates at relatively high Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "BICMOS",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [
+          "LC tank / resonator"
+        ],
+        "design_purpose": "",
+        "function_summary": "Modulation of 1/2 LO by RF",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Architecture of frequency divide-by-three with 50% duty cycle.",
+      "caption_bbox": [
+        301.1,
+        352.6,
+        532.8,
+        363.3
+      ],
+      "section_title": "III. DCR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DCR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 7."
+        },
+        {
+          "section_title": "DCR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Proper interconnection of latches (shown in Fig. 7) results in a signal of 1/3 the clock frequency propagating through the loop by one latch each 1/2 clock cycle."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "latch",
+        "technology": "BICMOS",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [
+          "latch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Architecture of frequency divide-by-three with 50% duty cycle",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. (a) Internal states of divide-by-three. (b) Output generated by summing two internal states.",
+      "caption_bbox": [
+        39.6,
+        211.7,
+        290.7,
+        231.3
+      ],
+      "section_title": "III. DCR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DCR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The resulting waveforms are shown in Fig. 8(a)."
+        },
+        {
+          "section_title": "DCR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "(a) (b) Fig. 8."
+        },
+        {
+          "section_title": "DCR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The resulting much more sinusoidal signal is shown in Fig. 8(b). phase split3) RF Path Quadrature Generation: Simple 90 reting of the subharmonic LO is insufficient to generate ceiver outputs because upon frequency doubling; the phase also ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Single-Chip Quad-Band (850/900/1800/1900 MHz) Direct Conversion GSM/GPRS RF Transceiver",
+        "technology": "BICMOS",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Internal states of divide-by-three. (b) Output generated by summing two internal states",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. LNA, RF path phase split, and mixer RF port.",
+      "caption_bbox": [
+        39.6,
+        502.2,
+        215.5,
+        512.8
+      ],
+      "section_title": "III. DCR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DCR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 9."
+        },
+        {
+          "section_title": "DCR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "An RF path phase splitter is shown in Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "BICMOS",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "LNA, RF path phase split, and mixer RF port",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. Effects of AM modulated blocker (bottom curve) on received signal with and without IIP2 calibration.",
+      "caption_bbox": [
+        38.1,
+        285.7,
+        399.1,
+        296.3
+      ],
+      "section_title": "III. DCR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DCR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 10 shows the effect on dc of a 30 to 24 dBm in blocker at a 6-MHz offset ramping from 99-dBm wanted signal. the presence of a MAGOON et al.: SINGLE-CHIP QUAD-BAND DIRECT CONVERSION GSM/GPRS RF TRANSCEIVER Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.4,
+      "relevance_breakdown": {
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transceiver",
+        "technology": "BICMOS",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Effects of AM modulated blocker (bottom curve) on received signal with and without IIP2 calibration",
+        "key_specs": [
+          "24 dBm"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.03,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 5,
+      "caption": "Fig. 11. Mixer output and baseband chain.",
+      "caption_bbox": [
+        301.1,
+        450.4,
+        442.9,
+        461.1
+      ],
+      "section_title": "III. DCR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DCR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "In this design, the distribution of gain and filtering is designed to attenuate far out blockers early in the chain to ease headroom requirements for later stages (see Figs. 11 and 12)."
+        },
+        {
+          "section_title": "DCR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "A continuous time filter [11] was used instead of a switched capacitor filter [12] due to concerns that the reference clock would couple to the on Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "BICMOS",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [
+          "capacitor",
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Mixer output and baseband chain",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 5,
+      "caption": "Fig. 12. Baseband chain level diagram.",
+      "caption_bbox": [
+        301.1,
+        645.7,
+        432.1,
+        656.3
+      ],
+      "section_title": "III. DCR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DCR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.4,
+      "relevance_breakdown": {
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Single-Chip Quad-Band (850/900/1800/1900 MHz) Direct Conversion GSM/GPRS RF Transceiver",
+        "technology": "BICMOS",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Baseband chain level diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.03,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 6,
+      "caption": "Fig. 13. In-band compression point and noise figure over gain.",
+      "caption_bbox": [
+        39.6,
+        313.7,
+        245.1,
+        324.3
+      ],
+      "section_title": "III. DCR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DCR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "See Fig. 13."
+        },
+        {
+          "section_title": "DCR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Every high gain stage Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Single-Chip Quad-Band (850/900/1800/1900 MHz) Direct Conversion GSM/GPRS RF Transceiver",
+        "technology": "BICMOS",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "In-band compression point and noise figure over gain",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 6,
+      "caption": "Fig. 14. Tunable g stage.",
+      "caption_bbox": [
+        302.6,
+        206.5,
+        395.0,
+        217.1
+      ],
+      "section_title": "III. DCR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DCR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Filter: The filters 2) Low-Offset, Low-Noise make use of feedback to minimize noise and dc offset genercell is shown in Fig. 14."
+        },
+        {
+          "section_title": "DCR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "In this design, area and power savings are realized by using only one predistortion IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 12, DECEMBER 2002 Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "BICMOS",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "Filter: The filters 2) Low-Offset, Low-Noise make use of feedback to minimize noise and dc offset genercell is shown in Fig. 14.",
+        "function_summary": "Tunable g stage. Filter: The filters 2) Low-Offset, Low-Noise make use of feedback to minimize noise and dc offset genercell is shown in Fig. 14.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 6,
+      "caption": "Fig. 15. Two implementations of a single pole g C filter.",
+      "caption_bbox": [
+        302.6,
+        410.4,
+        494.2,
+        421.0
+      ],
+      "section_title": "III. DCR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DCR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 15."
+        },
+        {
+          "section_title": "DCR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Separate and tunable stage which, together with shared predistortion implementations of a single pole design are shown in Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "BICMOS",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Two implementations of a single pole g C filter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 7,
+      "caption": "Fig. 16. LO spectrum.",
+      "caption_bbox": [
+        301.1,
+        287.8,
+        378.2,
+        298.4
+      ],
+      "section_title": "IV. LO AND FREQUENCY SYNTHESIS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "LO AND FREQUENCY SYNTHESIS",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "FractionalPLL [14] is used to offer fast channel The fractionalswitching and arbitrarily fine frequency resolution and to alleviate design constraints for phase noise and reference spurious, as shown in Fig. 16."
+        },
+        {
+          "section_title": "LO AND FREQUENCY SYNTHESIS",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "The fine frequency resolution is accomplished by interpolating a fractional division using an modulator with coarse integer divider. oversampled synthesizer consists of a P/FD and charge The fractionalpump that have four different settings for phase detector gain as Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.7,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "BICMOS",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "FractionalPLL [14] is used to offer fast channel The fractionalswitching and arbitrarily fine frequency resolution and to alleviate design constraints for phase noise and reference spurious, as shown in Fig. 16.",
+        "function_summary": "LO spectrum. FractionalPLL [14] is used to offer fast channel The fractionalswitching and arbitrarily fine frequency resolution and to alleviate design constraints for phase noise and reference spurious, as shown in Fig. 16.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 8,
+      "caption": "Fig. 17. GSM output spectrum.",
+      "caption_bbox": [
+        39.6,
+        308.2,
+        145.9,
+        318.9
+      ],
+      "section_title": "V. TRANSLATION LOOP TRANSMITTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TRANSLATION LOOP TRANSMITTER",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "The transmit PLL meets the required GSM spectral mask with margin, as shown in Fig. 17."
+        },
+        {
+          "section_title": "TRANSLATION LOOP TRANSMITTER",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "Since both PLLs are on the same chip and the transmit and UHF frequencies are related through known band select and divide ratio information, the transmit channel request for the digital centering Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.7,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "BICMOS",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "GSM output spectrum",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 8,
+      "caption": "Fig. 18. LO test buffer.",
+      "caption_bbox": [
+        302.6,
+        193.7,
+        382.5,
+        204.4
+      ],
+      "section_title": "V. TRANSLATION LOOP TRANSMITTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTEGRATION ISSUES",
+          "section_kind": "other",
+          "page": 8,
+          "sentence": "A bidirectional LO port buffer allows observation of the UHF VCO or the use of an external LO (Fig. 18)."
+        },
+        {
+          "section_title": "INTEGRATION ISSUES",
+          "section_kind": "other",
+          "page": 8,
+          "sentence": "For example, individually moduIEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 12, DECEMBER 2002 Fig. 18."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "buffer",
+        "technology": "BICMOS",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "A bidirectional LO port buffer allows observation of the UHF VCO or the use of an external LO (Fig. 18).",
+        "function_summary": "LO test buffer. A bidirectional LO port buffer allows observation of the UHF VCO or the use of an external LO (Fig. 18).",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 8,
+      "caption": "Fig. 19. Programmable bias in DCS/PCS transmitter VCO.",
+      "caption_bbox": [
+        302.6,
+        358.1,
+        497.0,
+        368.8
+      ],
+      "section_title": "V. TRANSLATION LOOP TRANSMITTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTEGRATION ISSUES",
+          "section_kind": "other",
+          "page": 8,
+          "sentence": "Fig. 19."
+        },
+        {
+          "section_title": "INTEGRATION ISSUES",
+          "section_kind": "other",
+          "page": 8,
+          "sentence": "See Fig. 19."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "BICMOS",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Programmable bias in DCS/PCS transmitter VCO",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 20,
+      "label": "Fig. 20",
+      "page": 9,
+      "caption": "Fig. 20. Microphotograph of transceiver.",
+      "caption_bbox": [
+        38.1,
+        266.0,
+        174.0,
+        276.7
+      ],
+      "section_title": "VII. PROCESS SELECTION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTEGRATION ISSUES",
+          "section_kind": "other",
+          "page": 8,
+          "sentence": "Specifically, as shown in Fig. 20, the sigma–delta UHF VCO transmit VCOs and LNAs have been situated in the extreme four corners of the chip."
+        },
+        {
+          "section_title": "PROCESS SELECTION",
+          "section_kind": "other",
+          "page": 8,
+          "sentence": "Although BJTs are often maligned for their nonlinearity, when combined with high speed, strongly nonMAGOON et al.: SINGLE-CHIP QUAD-BAND DIRECT CONVERSION GSM/GPRS RF TRANSCEIVER Fig. 20."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -5.7,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "transceiver",
+        "technology": "BICMOS",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Microphotograph of transceiver",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 1,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

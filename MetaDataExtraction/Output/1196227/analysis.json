@@ -1,0 +1,985 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1196227.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1196227",
+  "generated_at": "2026-07-29T22:00:53",
+  "paper_metadata": {
+    "title": "A 1-V 3.5-mW CMOS Switched-Opamp Quadrature IF Circuitry for Bluetooth Receivers",
+    "authors": [
+      "Vincent Sin-Luen Cheung",
+      "Howard C. Luong",
+      "Mansun Chan",
+      "Wing-Hung Ki"
+    ],
+    "abstract": "A 1-V switched-capacitor (SC) quadrature IF circuitry for Bluetooth receivers is demonstrated using tion mixer provided that good – voltage-controlled oscillator switched-opamp technique. To achieve double power efficiency (VCO) signals are available. Since the image-rejection requirewhile maintaining low sensitivity to finite opamp gain effects for ment is not high, a single-conversion architecture [5] with a low the SC IF circuitry, half-delay integrator-based filters and intermediate frequency (IF) of 0.65 MHz is chosen. This is to modulator have been proposed. The proposed quadrature IF minimize the power dissipation compared with using a high-IF circuitry employs a seventh-order IF filter for channel selection and a third-order modulator for analog-to-digital conversion. receiver [6] or dual-conversion [7] topology, while coherently A noise-shaping extension technique is employed to enhance avoiding dc offset and flicker-noise problems in direct-down the resolution of the low-pass modulator by 16 dB while systems [8]. operating at the same oversampling ratio and power consumption. In this paper, the design and implementation of a 1-V At a 1-V supply, the quadrature IF circuitry achieves a measured switched-capacitor (SC) quadrature IF circuitry for the IIP3 of 3 dBm at a nominal gain of 24 dB with a 48-dB variable gain control while consuming a total power dissipation of 3.5 mW. proposed Bluetooth receiver are demonstrated using the switched-opamp technique [9], [10]. In order to operate the",
+    "keywords": [
+      "Analog-to-digital conversion",
+      "Bluetooth",
+      "channel"
+    ],
+    "doi": "10.1109/JSSC.2003.810031",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "voltage-controlled oscillator (VCO)",
+    "technology": "CMOS",
+    "application_domain": "wireless, if",
+    "sub_blocks": [
+      "inductor",
+      "capacitor",
+      "transistor/MOSFET",
+      "current source",
+      "LC tank / resonator",
+      "mixer",
+      "switch",
+      "differential pair",
+      "op-amp",
+      "clock / timing"
+    ],
+    "design_purpose": "The proposed quadrature IF minimize the power dissipation compared with using a high-IF circuitry employs a seventh-order IF filter for channel selection and a third-order modulator for analog-to-digital conversion. receiver [6] or dual-conversion [7] topology, while coherently A noise-shaping extension technique is ...",
+    "function_summary": "voltage-controlled oscillator (VCO): The proposed quadrature IF minimize the power dissipation compared with using a high-IF circuitry employs a seventh-order IF filter for channel selection and a third-order modulator for analog-to-digital conversion. receiver [6] or dual-conversion [7] topology, while coherently A noise-shaping extension technique is ...",
+    "key_specs": [
+      "0.65 MHz",
+      "16 dB",
+      "3 dBm",
+      "24 dB",
+      "3.5 mW",
+      "1.8 V",
+      "20 dB",
+      "10 MHz",
+      "9.35 MHz",
+      "1.6 MHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "B LUETOOTH has been developed in recent years as a radio standard for short-distance communication applications using the unlicensed 2.4-GHz ISM band [1]. It has been widely adopted to provide a low-cost low-power solution for short-distance wireless communication among many devices like laptops, mobiles, and PDAs. To reduce the cost while improving the performance, single-chip Bluetooth transceiv ..."
+    },
+    {
+      "number": "II",
+      "title": "SYSTEM ARCHITECTURE",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "Fig. 1 shows the simplified block diagram of the proposed Bluetooth receiver. According to the specifications of the Bluetooth system [1], it requires an in-band image rejection of 20 dB, Manuscript received July 31, 2002; revised November 15, 2002. This work was supported by the Hong Kong Research Grants Council under Grant HKUST 6255/02E. The authors are with the Department of Electrical and Ele ..."
+    },
+    {
+      "number": "III",
+      "title": "DESIGN CONSIDERATIONS FOR SWITCHED-OPAMP",
+      "kind": "design",
+      "page": 1,
+      "text_preview": "CIRCUITS The switched-opamp technique [9], [10] has been shown to be a promising low-cost low-voltage solution to realize SC circuits in standard CMOS processes. The switched-opamp technique basically eliminates those critical MOS switches that set the minimum supply voltage to allow sub-1-V operation of SC circuits without reliability problems. Implemented in a standard CMOS process, switched-opa ..."
+    },
+    {
+      "number": "IV",
+      "title": "IMPLEMENTATION OF SWITCHED-OPAMP FILTERS",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "AND LOW-PASS MODULATOR USING HALF-DELAY INTEGRATORS A. Design of a Half-Delay Integrator-Based Switched-Opamp Biquadratic Filter Fig. 3 shows the proposed switched-opamp realization of a half-delay integrator-based SC biquadratic filter. The biquadratic filter prototype consists of two half-delay noninverting SC integrators [18] connected in a closed loop, as described in [10]. An important criter ..."
+    },
+    {
+      "number": "V",
+      "title": "CIRCUIT IMPLEMENTATION OF THE PROPOSED",
+      "kind": "proposed",
+      "page": 6,
+      "text_preview": "SWITCHABLE OPAMP By employing switched-opamp techniques to implement the modulator, all the half-delay SC-integrator-based filters and opamps employed in the IF circuitry can be turned off after their integration phases. As a result, the power consumption can be reduced as much as 50% compared with conventional SC implementation. Nevertheless, the input stage of the switchable opamp may be kept ac ..."
+    },
+    {
+      "number": "VI",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 8,
+      "text_preview": "Fig. 10 shows the chip photograph of the quadrature IF circuitry for the Bluetooth receiver. The quadrature IF circuitry m CMOS double-poly four-metal is implemented in a 0.35V, V) and occupies a chip process ( . Fig. 11 shows the measured frequency area of about 3.15 mm Fig. 11. Measured frequency response of the IF filter. Fig. 12. Differential output transient response of IF filter. response of ..."
+    },
+    {
+      "number": "VII",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 10,
+      "text_preview": "A single 1-V switched-opamp quadrature IF circuitry for m the Bluetooth receiver is demonstrated in a standard 0.35CMOS process with high threshold voltages. To achieve for the highest power efficiency, the whole quadrature IF circuitry is built using only half-delay SC integrators. To further remodulator, a novel duce the power consumption of the noise-shaping extension technique is proposed to a ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Single-IF Bluetooth receiver architecture using proposed quadrature IF filter and modulator.",
+      "caption_bbox": [
+        39.6,
+        328.1,
+        378.7,
+        338.8
+      ],
+      "section_title": "II. SYSTEM ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "SYSTEM ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 1 shows the simplified block diagram of the proposed Bluetooth receiver."
+        },
+        {
+          "section_title": "SYSTEM ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Section V discusses the optimization Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 7.8,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "+proposed": 3.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Single-IF Bluetooth receiver architecture using proposed quadrature IF filter and modulator",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.88,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 2,
+      "caption": "Fig. 2. (a) Conventional SC integrator. (b) Switched-opamp integrator.",
+      "caption_bbox": [
+        38.1,
+        387.4,
+        269.8,
+        398.1
+      ],
+      "section_title": "III. DESIGN CONSIDERATIONS FOR SWITCHED-OPAMP",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN CONSIDERATIONS FOR SWITCHED-OPAMP",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 2(a) shows a conventional stray-insensitive SC integrator."
+        },
+        {
+          "section_title": "DESIGN CONSIDERATIONS FOR SWITCHED-OPAMP",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 2(b) idle during shows a switched-opamp integrator equivalent to the conventional SC integrator."
+        },
+        {
+          "section_title": "DESIGN CONSIDERATIONS FOR SWITCHED-OPAMP",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Consequently, the switched-opamp technique [9] could maintain low sensitivity to opamp finite gain while CHEUNG et al.: SWITCHED-OPAMP QUADRATURE IF CIRCUITRY FOR BLUETOOTH RECEIVERS Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.3,
+      "relevance_breakdown": {
+        "-conventional": -3.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) Conventional SC integrator. (b) Switched-opamp integrator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 4,
+      "caption": "Fig. 3. Proposed switched-opamp biquadratic filter with 6-bit VGC.",
+      "caption_bbox": [
+        38.1,
+        346.3,
+        262.0,
+        356.9
+      ],
+      "section_title": "IV. IMPLEMENTATION OF SWITCHED-OPAMP FILTERS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION OF SWITCHED-OPAMP FILTERS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Design of a Half-Delay Integrator-Based Switched-Opamp Biquadratic Filter Fig. 3 shows the proposed switched-opamp realization of a half-delay integrator-based SC biquadratic filter."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF SWITCHED-OPAMP FILTERS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "As indicated in Fig. 3, a free sign inversion can be obtained by connecting the switched inversely at the differential outputs of opamp capacitors [19]."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF SWITCHED-OPAMP FILTERS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 4(a) shows a conventional SC gyrator cell that is employed in the conventional SC ladder filter. performs It can be observed from Fig. 4(a) that opamp OP while its output is fed back to opamp OP integration during CHEUNG et al.: SWITCHED-OPAMP QUADRATURE IF CIRCUITRY FOR BLUETOOTH RECEIVERS Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.7,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "capacitor",
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Proposed switched-opamp biquadratic filter with 6-bit VGC",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.85,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 4,
+      "caption": "Fig. 4. (a) Original SC gyrator in conventional SC low-pass ladder filter. (b) Modified SC gyrator using half-delay noninverting integrators.",
+      "caption_bbox": [
+        38.1,
+        653.2,
+        289.1,
+        672.9
+      ],
+      "section_title": "IV. IMPLEMENTATION OF SWITCHED-OPAMP FILTERS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION OF SWITCHED-OPAMP FILTERS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 4(a) shows a conventional SC gyrator cell that is employed in the conventional SC ladder filter. performs It can be observed from Fig. 4(a) that opamp OP while its output is fed back to opamp OP integration during CHEUNG et al.: SWITCHED-OPAMP QUADRATURE IF CIRCUITRY FOR BLUETOOTH RECEIVERS Fig. 3."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF SWITCHED-OPAMP FILTERS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "(a) (b) Fig. 4."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF SWITCHED-OPAMP FILTERS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "However, opamp OP as its output is fed back to OP right in . gration phase In fact, by interchanging the clock phases of the switches that and inserting an inversion connect at outputs of opamp OP TABLE III SUMMARY OF CAPACITOR VALUES FOR SC LOW-PASS LADDER FILTER sign to the output of opamp OP , an equivalent SC gyrator can be realized using only half-delay noninverting SC integrators as shown in Fig. 4(b)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.3,
+      "relevance_breakdown": {
+        "-conventional": -3.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "capacitor",
+          "switch",
+          "op-amp",
+          "clock / timing"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) Original SC gyrator in conventional SC low-pass ladder filter. (b) Modified SC gyrator using half-delay noninverting integrators",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 5,
+      "caption": "Fig. 5. Proposed switched-opamp ladder filter with 1-bit VGC.",
+      "caption_bbox": [
+        39.6,
+        331.6,
+        247.7,
+        342.3
+      ],
+      "section_title": "IV. IMPLEMENTATION OF SWITCHED-OPAMP FILTERS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION OF SWITCHED-OPAMP FILTERS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 5 shows the proposed half-delay SC-integrator-based SC low-pass ladder filter."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF SWITCHED-OPAMP FILTERS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "To avoid excessive loading effects to the switched-opamp channel-select filter, only 1-bit (bit G) VGC is employed at the input of the switched-opamp low-pass Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Proposed switched-opamp ladder filter with 1-bit VGC",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.79,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 5,
+      "caption": "Fig. 6. Linear model of the half-delay integrator-based low-pass modulator with noise-shaping extension.",
+      "caption_bbox": [
+        39.6,
+        528.4,
+        398.0,
+        539.0
+      ],
+      "section_title": "IV. IMPLEMENTATION OF SWITCHED-OPAMP FILTERS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION OF SWITCHED-OPAMP FILTERS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 6."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF SWITCHED-OPAMP FILTERS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 6 shows the linear model of the proposed modulator, which consists of three third-order low-pass half-delay noninverting integrators, a 1-bit digital-to-analog converter, and a quantizer."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "-model": -1.5,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Linear model of the half-delay integrator-based low-pass modulator with noise-shaping extension",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 6,
+      "caption": "Fig. 7. Half-delay integrator-based low-pass modulator with noise-shaping extension.",
+      "caption_bbox": [
+        38.1,
+        293.2,
+        333.1,
+        303.8
+      ],
+      "section_title": "IV. IMPLEMENTATION OF SWITCHED-OPAMP FILTERS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION OF SWITCHED-OPAMP FILTERS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The first integrator suppresses the quantization noise at the dc, while the second and third integrators can be configured as a resonator to suppress the CHEUNG et al.: SWITCHED-OPAMP QUADRATURE IF CIRCUITRY FOR BLUETOOTH RECEIVERS Fig. 7."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF SWITCHED-OPAMP FILTERS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 7 shows the simplified schematic of the switched-opamp modulator with implementation of the proposed third-order noise-shaping extension for 1-V operation. modulator employs only half-delay SC inThe proposed tegrators to reduce power consumption, as similarly described realizes the first integrator of the moduin [16]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "LC tank / resonator",
+          "op-amp"
+        ],
+        "design_purpose": "Fig. 7 shows the simplified schematic of the switched-opamp modulator with implementation of the proposed third-order noise-shaping extension for 1-V operation. modulator employs only half-delay SC inThe proposed tegrators to reduce power consumption, as similarly described realizes the first integrator of the moduin ...",
+        "function_summary": "Half-delay integrator-based low-pass modulator with noise-shaping extension. Fig. 7 shows the simplified schematic of the switched-opamp modulator with implementation of the proposed third-order noise-shaping extension for 1-V operation. modulator employs only half-delay SC inThe proposed tegrators to reduce power ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 7,
+      "caption": "Fig. 8. Two half-delay SC integrators operate in alternate clock phases.",
+      "caption_bbox": [
+        39.6,
+        266.9,
+        274.1,
+        277.6
+      ],
+      "section_title": "V. CIRCUIT IMPLEMENTATION OF THE PROPOSED",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION OF THE PROPOSED",
+          "section_kind": "proposed",
+          "page": 6,
+          "sentence": "The sharing of the input stages of the opamps would also result in better matching Fig. 8."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION OF THE PROPOSED",
+          "section_kind": "proposed",
+          "page": 6,
+          "sentence": "Considering two half-delay SC integra- -channel and -channel, respectors that are employed in the tively, of the quadrature path as shown in Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "op-amp",
+          "clock / timing"
+        ],
+        "design_purpose": "",
+        "function_summary": "Two half-delay SC integrators operate in alternate clock phases",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 7,
+      "caption": "Fig. 9. Proposed dual-input switchable opamp.",
+      "caption_bbox": [
+        39.6,
+        602.0,
+        195.7,
+        612.7
+      ],
+      "section_title": "V. CIRCUIT IMPLEMENTATION OF THE PROPOSED",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION OF THE PROPOSED",
+          "section_kind": "proposed",
+          "page": 6,
+          "sentence": "Fig. 9."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION OF THE PROPOSED",
+          "section_kind": "proposed",
+          "page": 6,
+          "sentence": "Fig. 9 shows the proposed dual-input switchable opamp, which consists of dual two-stage opamps."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.8,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Proposed dual-input switchable opamp",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.86,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 8,
+      "caption": "Fig. 10. Chip photograph of the IF circuitry.",
+      "caption_bbox": [
+        38.1,
+        335.8,
+        185.6,
+        346.4
+      ],
+      "section_title": "V. CIRCUIT IMPLEMENTATION OF THE PROPOSED",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION OF THE PROPOSED",
+          "section_kind": "proposed",
+          "page": 6,
+          "sentence": "The input stages CHEUNG et al.: SWITCHED-OPAMP QUADRATURE IF CIRCUITRY FOR BLUETOOTH RECEIVERS TABLE V SUMMARY OF MEASURED PERFORMANCE OF THE PROPOSED DUAL-INPUT SWITCHABLE OPAMP Fig. 10."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "Fig. 10 shows the chip photograph of the quadrature IF circuitry for the Bluetooth receiver."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-photograph": -3.0,
+        "-chip photo": -3.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Chip photograph of the IF circuitry",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 8,
+      "caption": "Fig. 11. Measured frequency response of the IF filter.",
+      "caption_bbox": [
+        301.1,
+        278.6,
+        478.0,
+        289.2
+      ],
+      "section_title": "V. CIRCUIT IMPLEMENTATION OF THE PROPOSED",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "Fig. 11 shows the measured frequency area of about 3.15 mm Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.6,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:proposed": 2.0,
+        "references": 0.4
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured frequency response of the IF filter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 8,
+      "caption": "Fig. 12. Differential output transient response of IF filter.",
+      "caption_bbox": [
+        301.1,
+        527.4,
+        489.8,
+        538.0
+      ],
+      "section_title": "V. CIRCUIT IMPLEMENTATION OF THE PROPOSED",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "Fig. 12."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "The differential output transient response of the IF filter with a 240-kHz in-band input with VGC sets at 0-dB gain is shown in 0.5-V Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Differential output transient response of IF filter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 9,
+      "caption": "Fig. 13. (a) Full-span output spectrum of the modulator. (b) In-band output spectrum of the modulator.",
+      "caption_bbox": [
+        39.6,
+        531.8,
+        290.6,
+        551.4
+      ],
+      "section_title": "VI. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "A 42-dB VGC is measured for the (a) (b) Fig. 13."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "Fig. 13(a) and (b) shows the full-span and in-band frequency modulator."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Full-span output spectrum of the modulator. (b) In-band output spectrum of the modulator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 9,
+      "caption": "Fig. 14. Measured SNDR versus input signal level.",
+      "caption_bbox": [
+        302.6,
+        276.4,
+        471.6,
+        287.1
+      ],
+      "section_title": "VI. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "Fig. 14 plots the SNDR against the input signal level."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 5, MAY 2003 Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured SNDR versus input signal level",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 9,
+      "caption": "Fig. 15. Output spectrum at the modulator output showing 3% THD.",
+      "caption_bbox": [
+        302.6,
+        531.7,
+        542.4,
+        542.4
+      ],
+      "section_title": "VI. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "Fig. 15."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "Fig. 15 shows the 3% third-harmonic distortion (THD) for the IF circuitry."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Output spectrum at the modulator output showing 3% THD",
+        "key_specs": [
+          "3%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 10,
+      "caption": "Fig. 16. IIP3 measurement of the proposed IF circuitry at a nominal gain of 24 dB.",
+      "caption_bbox": [
+        38.1,
+        273.1,
+        289.2,
+        292.6
+      ],
+      "section_title": "VII. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "Fig. 16 plots the IIP3 measurement result of the whole IF circuitry with the VGC circuit set at a gain of 24 dB."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "Fig. 17 shows the output spectrum CHEUNG et al.: SWITCHED-OPAMP QUADRATURE IF CIRCUITRY FOR BLUETOOTH RECEIVERS Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.8,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "+circuit": 1.0,
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "IIP3 measurement of the proposed IF circuitry at a nominal gain of 24 dB",
+        "key_specs": [
+          "24 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.45,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 10,
+      "caption": "Fig. 17. Output spectrum of modulator at a 0.9-V supply.",
+      "caption_bbox": [
+        38.1,
+        533.9,
+        241.9,
+        544.5
+      ],
+      "section_title": "VII. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "Fig. 17 shows the output spectrum CHEUNG et al.: SWITCHED-OPAMP QUADRATURE IF CIRCUITRY FOR BLUETOOTH RECEIVERS Fig. 16."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.7,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Output spectrum of modulator at a 0.9-V supply",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 1,
+  "warnings": []
+}

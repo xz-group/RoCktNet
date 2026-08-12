@@ -1,0 +1,51 @@
+{
+  "title": "A Sub-1.75W Full-Duplex 10GBASE-T Transceiver in 40nm CMOS Jan R. Westra, Jan Mulder, Yi Ke, Davide Vecchi, Xiaodong Liu, Erol Arslan, Jiansong Wan, Qiongna Zhang, Sijia Wang, Frank M.L. van der Goes, Klaas Bult",
+  "bibliography": {
+    "authors": [],
+    "venue": "",
+    "year": 2014,
+    "doi": "",
+    "keywords": []
+  },
+  "figure_number": "Figure 8.5.2 illustrates the design and layout of the merged main/hybrid DACs. The 12b DACs are clocked at 1.6GS/s and implemented as a 6+6 segmented current-steering architecture, similar to the one described in [5]. Each unit element consists of one main DAC section and two hybrid DAC sections. In the layout, the main/hybrid unit elements are interdigitated to achieve good matching, reducing the effect of layout gradients on the achievable hybrid cancellation. To minimize the effect of layout gradients on the main DAC output signal, a spatial scrambling is used in the layout. Each DAC cell is driven from a cascade of CMOS latches. This minimizes the data dependency of the transition time for the signals driving the switches and further improves the linearity of the DAC output signal. Clocking the DACs at 1.6GS/s enables 2× oversampling, which significantly reduces the high-frequency echo energy and common-mode glitches due to the switching of the DAC current cells. Together with the low-pass filter, this improves the EMI performance of the AFE. By directly driving the cable from the main DAC, cancelling the TX signal with scaled hybrid DACs, and implementing all clocking and latches in CMOS, the TX reaches high power efficiency. At 200mW per channel, including all bias circuits, the power dissipation approaches the theoretical limit for a Class-A circuit. The receiver chain, illustrated in Fig. 8.5.3, starts with a programmable-gain amplifier (PGA) that optimizes the loading of the subsequent ADC. In addition, it provides filtering of the RX input signal. At the PGA input, capacitor Cin, in combination with Rh, creates a 50MHz 1st-order high-pass. This high-pass",
+  "type": "Sub-1.75W Full-Duplex 10GBASE-T Transceiver in 40nm CMOS Jan R. Westra, Jan Mulder, Yi Ke, Davide Vecchi, Xiaodong Liu, Erol Arslan, Jiansong Wan, Qiongna Zhang, Sijia Wang, Frank M.L. van der Goes, Klaas Bult",
+  "technology": "CMOS, 40nm process",
+  "application": "",
+  "sub_blocks": [
+    "capacitor",
+    "resistor",
+    "transistor/MOSFET",
+    "transformer",
+    "output buffer",
+    "bias circuit",
+    "switch",
+    "differential pair",
+    "latch",
+    "clock / timing"
+  ],
+  "function_summary": "Sub-1.75W Full-Duplex 10GBASE-T Transceiver in 40nm CMOS Jan R. Westra, Jan Mulder, Yi Ke, Davide Vecchi, Xiaodong Liu, Erol Arslan, Jiansong Wan, Qiongna Zhang, Sijia Wang, Frank M.L. van der Goes, Klaas Bult",
+  "design_purpose": "",
+  "metrics": [
+    "Power consumption",
+    "Process node",
+    "Spurious / phase noise",
+    "Frequency",
+    "Gain"
+  ],
+  "numerical_performance": [
+    "-1.75W",
+    "40nm",
+    "62dBc",
+    "60dBc",
+    "400MHz",
+    "1.75W",
+    "45dB",
+    "54dB",
+    "38dB",
+    "200mW"
+  ],
+  "confidence": 0.8,
+  "warnings": [
+    "Recommended figure was classified as 'layout_photo', not a schematic; manual confirmation strongly recommended."
+  ]
+}

@@ -1,0 +1,434 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1035954.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1035954",
+  "generated_at": "2026-07-29T22:00:27",
+  "paper_metadata": {
+    "title": "Low-Voltage DRAM Sensing Scheme With Offset-Cancellation Sense Amplifier",
+    "authors": [
+      "Sanghoon Hong",
+      "Sejun Kim",
+      "Jae-Kyung Wee",
+      "Seongsoo Lee"
+    ],
+    "abstract": "A novel bitline sensing scheme is proposed for lowvoltage DRAM to achieve low power dissipation and compatibility pled noise on a bitline is induced by close proximity to the adjawith low-voltage CMOS. One of the major obstacles in low-voltage cent switching bitlines, which affects the bitline signals through DRAM is the degradation of data-retention time due to low coupling capacitance. For future geometries, offset noise will signal level at the memory cell, which requires power-consuming be a major obstacle for low-voltage operation for the following refresh operations more frequently. This paper proposes an reasons. offset-cancellation sense-amplifier scheme (OCSA) that improves data-retention time significantly even at low supply voltage. It 1) As the gate length decreases, the offset increases greatly also improves die efficiency, because the proposed scheme reduces due to high process sensitivity [1]. the number of sense amplifiers by supporting more cells in each 2) Although line pitch size decreases, bitline length also sense amplifier. Measurements show that the data-retention time decreases. Consequently, cross-coupled noise does not inof the proposed scheme at 1.5-V supply voltage is 2.4 times of the conventional scheme at 2.0 V. crease so much, since coupling capacitance depends on both pitch and length [2].",
+    "keywords": [
+      "Data-retention time",
+      "offset-cancellation sense"
+    ],
+    "doi": "10.1109/JSSC.2002.803052",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2002
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Low-Voltage DRAM Sensing Scheme",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "transistor/MOSFET",
+      "cross-coupled pair",
+      "sense amplifier",
+      "current mirror"
+    ],
+    "design_purpose": "A novel bitline sensing scheme is proposed for lowvoltage DRAM to achieve low power dissipation and compatibility pled noise on a bitline is induced by close proximity to the adjawith low-voltage CMOS.",
+    "function_summary": "Low-Voltage DRAM Sensing Scheme: A novel bitline sensing scheme is proposed for lowvoltage DRAM to achieve low power dissipation and compatibility pled noise on a bitline is induced by close proximity to the adjawith low-voltage CMOS.",
+    "key_specs": [
+      "2.0 V",
+      "11.1 mV",
+      "2002 v",
+      "40 mV",
+      "1.5 V",
+      "1.0 V",
+      "70%",
+      "25%",
+      "44%",
+      "90 w"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "R ECENTLY, low-voltage DRAM has become essential in mobile or handheld devices to achieve low power dissipation and for compatibility with low-voltage CMOS. Unfortunately, operating DRAM at low voltage is quite difficult because of data-retention time. At the beginning of a read operation, complementary bitlines Bit and BitB in Fig. 1 are . After the storage gate is initially precharged to half tu ..."
+    },
+    {
+      "number": "II",
+      "title": "OFFSET CANCELLATION SENSE AMPLIFIER",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "Figs. 2 and 3 show the proposed OCSA circuit and its sensing scheme during read operation. 1) Read operation starts with cutting off the precharge signal (blp low) to leave the floating bitline pairs precharged at . During this time, offset is cancelled by forming half a current mirror on the left side (conaz low). The input gate connected to BitB on the right side of the circuit is shorted to the ..."
+    },
+    {
+      "number": "III",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 3,
+      "text_preview": "Fig. 6 shows the microphotograph of the test chip using the conventional DRAM fabrication process. It was designed to compare the data-retention performance between the proposed OCSA scheme and the conventional BLSA scheme. The OCSA is approximately 70% larger in length than the BLSA. Furthermore, due to layout constraints of pitch matching, the shared sensing scheme (which requires three-level me ..."
+    },
+    {
+      "number": "IV",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 3,
+      "text_preview": "This paper presented a novel bitline sensing scheme for low-voltage DRAM. The proposed OCSA reduces offset noise of the conventional bitline sense amplifiers, and, consequently, it avoids degradation of the data-retention time at low supply voltage. It requires fewer sense amplifiers by supporting more cells in each sense amplifier; thus, the die efficiency is improved although each sense amplifie ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Noise sources and data-retention time in a BLSA.",
+      "caption_bbox": [
+        39.6,
+        372.7,
+        229.2,
+        383.3
+      ],
+      "section_title": "II. OFFSET CANCELLATION SENSE AMPLIFIER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "At the beginning of a read operation, complementary bitlines Bit and BitB in Fig. 1 are ."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "As illustrated in Fig. 1, there are two major noise sources in a BLSA."
+        },
+        {
+          "section_title": "OFFSET CANCELLATION SENSE AMPLIFIER",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The bitline signals at the locked IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 10, OCTOBER 2002 Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Low-Voltage DRAM Sensing Scheme",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Noise sources and data-retention time in a BLSA",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.2,
+      "warnings": [
+        "Recommended figure caption does not explicitly mention a schematic/topology/circuit; please confirm manually.",
+        "Recommended figure was classified as 'other', not a schematic; manual confirmation strongly recommended."
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Offset-cancellation sense amplifier.",
+      "caption_bbox": [
+        302.6,
+        681.5,
+        444.6,
+        692.2
+      ],
+      "section_title": "II. OFFSET CANCELLATION SENSE AMPLIFIER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "OFFSET CANCELLATION SENSE AMPLIFIER",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figs. 2 and 3 show the proposed OCSA circuit and its sensing scheme during read operation. 1) Read operation starts with cutting off the precharge signal (blp low) to leave the floating bitline pairs precharged at ."
+        },
+        {
+          "section_title": "OFFSET CANCELLATION SENSE AMPLIFIER",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "We made SPICE simulations based on layout Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "sense amplifier"
+        ],
+        "design_purpose": "",
+        "function_summary": "Offset-cancellation sense amplifier",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. OCSA sensing scheme.",
+      "caption_bbox": [
+        38.1,
+        468.8,
+        142.9,
+        479.4
+      ],
+      "section_title": "II. OFFSET CANCELLATION SENSE AMPLIFIER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "OFFSET CANCELLATION SENSE AMPLIFIER",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.4,
+      "relevance_breakdown": {
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Low-Voltage DRAM Sensing Scheme",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "OCSA sensing scheme",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.03,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Effective sensing signal of OCSA.",
+      "caption_bbox": [
+        38.1,
+        680.4,
+        177.3,
+        691.0
+      ],
+      "section_title": "II. OFFSET CANCELLATION SENSE AMPLIFIER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "OFFSET CANCELLATION SENSE AMPLIFIER",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 4 shows the analysis of the initialization noise and the charge injection noise, according to different supply voltages and bitline loads."
+        },
+        {
+          "section_title": "OFFSET CANCELLATION SENSE AMPLIFIER",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "( to Fig. 4."
+        },
+        {
+          "section_title": "OFFSET CANCELLATION SENSE AMPLIFIER",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "In Fig. 4, the sum of two intrinsic noises is only 11.1 mV at V and , where is the supply IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 10, OCTOBER 2002 voltage of the sense amplifier and is the ratio of bitline capacitance and cell capacitance."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "sense amplifier"
+        ],
+        "design_purpose": "",
+        "function_summary": "Effective sensing signal of OCSA",
+        "key_specs": [
+          "11.1 mV",
+          "2002 v"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Simulated waveforms of OCSA (Cb=Cs 10:0) and BLSA (Cb=Cs = 7:0) under 40-mV offset.",
+      "caption_bbox": [
+        39.6,
+        246.1,
+        290.7,
+        265.8
+      ],
+      "section_title": "II. OFFSET CANCELLATION SENSE AMPLIFIER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "OFFSET CANCELLATION SENSE AMPLIFIER",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 5 shows the simulated waveforms of the BLSA ) and the OCSA ( )."
+        },
+        {
+          "section_title": "OFFSET CANCELLATION SENSE AMPLIFIER",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Moreover, as shown in Fig. 5, the proposed OCSA scheme does not present timing overhead, because the offset-cancellation signal concz can be hidden IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 10, OCTOBER 2002 = Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "-waveform": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Low-Voltage DRAM Sensing Scheme",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated waveforms of OCSA (Cb=Cs 10:0) and BLSA (Cb=Cs = 7:0) under 40-mV offset",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Micrograph of the test chip.",
+      "caption_bbox": [
+        302.6,
+        290.5,
+        421.3,
+        301.1
+      ],
+      "section_title": "III. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Fig. 6 shows the microphotograph of the test chip using the conventional DRAM fabrication process."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Note that the data-retention time of the OCSA is significantly improved, Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-micrograph": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "DRAM / SDRAM",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Micrograph of the test chip",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Measured data retention time at 90 C.",
+      "caption_bbox": [
+        302.6,
+        554.6,
+        457.0,
+        565.2
+      ],
+      "section_title": "III. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "As shown in Fig. 7, the OCSA shows excellent refresh characteristics even at low supply voltages."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Low-Voltage DRAM Sensing Scheme",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured data retention time at 90 C",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 1,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

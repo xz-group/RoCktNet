@@ -1,0 +1,1373 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\972135.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\972135",
+  "generated_at": "2026-07-29T22:03:36",
+  "paper_metadata": {
+    "title": "A 6-b 1.3-Gsample/s A/D Converter in 0.35-m CMOS",
+    "authors": [
+      "Michael Choi",
+      "Asad A. Abidi"
+    ],
+    "abstract": "A 6-b Nyquist A/D converter (ADC) that converts at 1.3 GHz is reported. Using array averaging and a wideband track-and-hold, a 6-b flash ADC achieves better than 5.5 effective bits for input frequencies up to 630 MHz at 1 Gsample/s, and five effective bits for 650-MHz input at 1.3 Gsample/s. Peak INL and DNL are less than 0.35 LSB and 0.2 LSB, respectively. This ADC consumes about 500 mW from 3.3 V at 1 Gsample/s. The chip occupies 0.8-mm2 active area, fabricated in 0.35m CMOS.",
+    "keywords": [
+      "A/D converter",
+      "CMOS analog integrated circuits",
+      "comparators",
+      "flash converter",
+      "offset averaging",
+      "read channel",
+      "resistor averaging network",
+      "spatial filter",
+      "track-and-hold"
+    ],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2001
+  },
+  "paper_circuit_context": {
+    "circuit_type": "6-b 1.3-Gsample/s A/D Converter in 0.35-m CMOS",
+    "technology": "CMOS, GAAS, HBT",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "cross-coupled pair",
+      "current source",
+      "output buffer",
+      "switch",
+      "differential pair",
+      "pre-amplifier",
+      "latch",
+      "clock / timing"
+    ],
+    "design_purpose": "",
+    "function_summary": "6-b 1.3-Gsample/s A/D Converter in 0.35-m CMOS: A 6-b Nyquist A/D converter (ADC) that converts at 1.3 GHz is reported.",
+    "key_specs": [
+      "1.3 GHz",
+      "630 MHz",
+      "500 mW",
+      "3.3 V",
+      "1 GHz",
+      "45 dB",
+      "10 dB",
+      "55 dB",
+      "0.5 V",
+      "0.15 ns"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "D IGITAL receivers for high-bit-rate communications are spurring on the conversion rate of analog-to-digital converters (ADCs). State-of-the-art disk-drive read channels and high-speed Ethernet signals use partial-response signaling, which requires 6-b resolution at conversion rates of 1 GHz and beyond [1]. Furthermore, continuous DVD playback and certain Ethernet uses permit no idle times when th ..."
+    },
+    {
+      "number": "II",
+      "title": "ADC ARCHITECTURE",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "As Fig. 2 shows, this is a flash ADC. Balanced circuits in the T/H, reference ladder, and other preamplifiers largely cancel second-order distortion. The T/H is designed for 8-b linearity, but with the highest possible bandwidth. The preamplifier array with gain of 3 senses the difference between the differential input signal and the differential threshold to drive the latched Fig. 2. Block diagra ..."
+    },
+    {
+      "number": "III",
+      "title": "OFFSET AVERAGING",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "A. Accuracy Improvement With Averaging Network Fig. 3 shows a preamplifier array with averaging resistors connecting adjacent output nodes. In this work, offset averaging is treated and optimized based on the concept of spatial filtering – network forms a spatial filter with im- [13], [14]. The pulse response (1) represents the index of differential pairs in the array. where determines the width o ..."
+    },
+    {
+      "number": "IV",
+      "title": "CIRCUIT DESCRIPTIONS",
+      "kind": "design",
+      "page": 1,
+      "text_preview": "A. Track-and-Hold An input T/H improves the dynamic performance of an ADC. By holding the analog sample static during digitization, the T/H largely removes errors due to skews in clock delivery to a large number of comparators, limited input bandwidth prior to latch regeneration, signal-dependent dynamic nonlinearity, and aperture jitter [11]. The on-chip T/H circuit shown in Fig. 5 precedes the f ..."
+    },
+    {
+      "number": "V",
+      "title": "PERFORMANCE EVALUATION",
+      "kind": "results",
+      "page": 7,
+      "text_preview": "The chip occupies 2.2 2.2 mm with 0.8-mm active area fabricated through ST Microelectronics using MOSFETs only m four-metal single-poly BiCMOS6M technology. in the 0.35The process offers double-metal linear capacitors and precise poly resistors. More than half of the total pads (33 out of 64) are assigned to power and ground to lower series inductance. Digital and analog supplies are separately co ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 10,
+      "text_preview": "Fig. 24 compares the performance of this ADC with other CMOS 6-b converters reported in recent years. It is apparent how the ADC reported here advances the state of the art. The key features of this work are now summarized. A T/H for this 6-b ADC enables beyond-Nyquist input up to 1.3-GHz conversion rate. Reset switches in the preamplifier and comparator arrays give fast overdrive recovery. The se ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. 1-Gsample/s 6-b A/D converter intended for use in a disk-drive read channel.",
+      "caption_bbox": [
+        301.1,
+        318.6,
+        552.2,
+        338.2
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1 shows the block diagram of an ADC embedded in the front end of a 1-Gbit/s PRML read channel."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Publisher Item Identifier S 0018-9200(01)09318-0. 0018–9200/01$10.00 © 2001 IEEE Fig. 1. 1-Gsample/s 6-b A/D converter intended for use in a disk-drive read channel. quires complex clocking that is incompatible with high-speed operation [7]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "1-Gsample/s 6-b A/D converter intended for use in a disk-drive read channel",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Block diagram of 6-b flash A/D converter.",
+      "caption_bbox": [
+        39.6,
+        192.2,
+        204.2,
+        202.8
+      ],
+      "section_title": "II. ADC ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ADC ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "As Fig. 2 shows, this is a flash ADC."
+        },
+        {
+          "section_title": "ADC ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The preamplifier array with gain of 3 senses the difference between the differential input signal and the differential threshold to drive the latched Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "pre-amplifier"
+        ],
+        "design_purpose": "",
+        "function_summary": "Block diagram of 6-b flash A/D converter",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.82,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Preamplifier array with resistor averaging network.",
+      "caption_bbox": [
+        38.1,
+        246.9,
+        231.4,
+        257.5
+      ],
+      "section_title": "IV. CIRCUIT DESCRIPTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "OFFSET AVERAGING",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Accuracy Improvement With Averaging Network Fig. 3 shows a preamplifier array with averaging resistors connecting adjacent output nodes."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The main sources of distortion CHOI AND ABIDI: A 6-b 1.3-GSAMPLE/S A/D CONVERTER IN 0.35m CMOS Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "pre-amplifier",
+        "technology": "CMOS, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "resistor",
+          "pre-amplifier"
+        ],
+        "design_purpose": "",
+        "function_summary": "Preamplifier array with resistor averaging network",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Single differential amplifier.",
+      "caption_bbox": [
+        38.1,
+        401.2,
+        157.6,
+        411.8
+      ],
+      "section_title": "IV. CIRCUIT DESCRIPTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "OFFSET AVERAGING",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "With this network connected to sponse the outputs of a preamplifier array, a given accuracy is mainsmaller FETs than if no averaging were used. tained with 9 The bandwidth as set by the output pole of this differential pair, shown in Fig. 4, is (3) With averaging, the wiring and junction capacitance are 9 lower due to transistor scaling (3 less )."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 4."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Consider a simple onestage single-pole amplifier, shown in Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "differential pair",
+          "pre-amplifier"
+        ],
+        "design_purpose": "",
+        "function_summary": "Single differential amplifier",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. On-chip track-and-hold.",
+      "caption_bbox": [
+        38.1,
+        579.1,
+        144.2,
+        589.7
+      ],
+      "section_title": "IV. CIRCUIT DESCRIPTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The on-chip T/H circuit shown in Fig. 5 precedes the flash quantizer."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "track-and-hold / sample-and-hold",
+        "technology": "CMOS, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "On-chip track-and-hold",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Output transient response to a step input.",
+      "caption_bbox": [
+        39.6,
+        209.5,
+        199.8,
+        220.1
+      ],
+      "section_title": "IV. CIRCUIT DESCRIPTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "With a step input applied to completely unbalanced at Fig. 6."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Required amplifier bandwidth given the overdrive recovery time. the preamplifier stage, the output transient is shown in Fig. 6."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Now assume that the output step response does not settle in as shown in Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "pre-amplifier",
+        "technology": "CMOS, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "pre-amplifier"
+        ],
+        "design_purpose": "",
+        "function_summary": "Output transient response to a step input",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Required amplifier bandwidth given the overdrive recovery time.",
+      "caption_bbox": [
+        39.6,
+        373.7,
+        275.2,
+        384.4
+      ],
+      "section_title": "IV. CIRCUIT DESCRIPTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 7."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Solving this gives (10) LSB mV and V, Fig. 7 With shows the amplifier stage bandwidth requirement versus the IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 12, DECEMBER 2001 Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Required amplifier bandwidth given the overdrive recovery time",
+        "key_specs": [
+          "7 W"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. Required GBW of a single-pole amplifier to amplify by 3 within one period of 1.3 GHz.",
+      "caption_bbox": [
+        302.6,
+        209.0,
+        553.6,
+        228.6
+      ],
+      "section_title": "IV. CIRCUIT DESCRIPTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Solving this gives (10) LSB mV and V, Fig. 7 With shows the amplifier stage bandwidth requirement versus the IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 12, DECEMBER 2001 Fig. 8."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The output voltage at (11) gives Solving (11) for (12) The gain-bandwidth product (GBW) required to obtain gain of ) within one period of 1.3-GHz sampling rate is 3 ( , multiplying (12) by the dc gain shown in Fig. 8 for various ."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Therefore, the GBW specified in Fig. 8 cannot be met m CMOS. with 0.35However, it is possible to surmount this apparently fundamental limit by exploiting the clocked nature of this circuit. is inserted between the two output nodes, A reset switch as shown in Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "switch",
+          "clock / timing"
+        ],
+        "design_purpose": "The output voltage at (11) gives Solving (11) for (12) The gain-bandwidth product (GBW) required to obtain gain of ) within one period of 1.3-GHz sampling rate is 3 ( , multiplying (12) by the dc gain shown in Fig. 8 for various .",
+        "function_summary": "Required GBW of a single-pole amplifier to amplify by 3 within one period of 1.3 GHz. The output voltage at (11) gives Solving (11) for (12) The gain-bandwidth product (GBW) required to obtain gain of ) within one period of 1.3-GHz sampling rate is 3 ( , multiplying (12) by the dc gain shown in Fig. 8 for various .",
+        "key_specs": [
+          "7 W"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 3,
+      "caption": "Fig. 9. Achievable GBW of an NFET versus effective gate voltage V in 0.35-m CMOS.",
+      "caption_bbox": [
+        302.6,
+        384.2,
+        553.7,
+        403.8
+      ],
+      "section_title": "IV. CIRCUIT DESCRIPTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 9."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 9 shows the where based on extracted simulaachievable GBW with given CHOI AND ABIDI: A 6-b 1.3-GSAMPLE/S A/D CONVERTER IN 0.35m CMOS Fig. 10."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "As shown in Fig. 9, this can be obtained with V."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Achievable GBW of an NFET versus effective gate voltage V in 0.35-m CMOS",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10. Preamplifier with a reset switch.",
+      "caption_bbox": [
+        38.1,
+        228.8,
+        175.0,
+        239.4
+      ],
+      "section_title": "IV. CIRCUIT DESCRIPTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 9 shows the where based on extracted simulaachievable GBW with given CHOI AND ABIDI: A 6-b 1.3-GSAMPLE/S A/D CONVERTER IN 0.35m CMOS Fig. 10."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Therefore, the GBW specified in Fig. 8 cannot be met m CMOS. with 0.35However, it is possible to surmount this apparently fundamental limit by exploiting the clocked nature of this circuit. is inserted between the two output nodes, A reset switch as shown in Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "pre-amplifier",
+        "technology": "CMOS, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "switch",
+          "pre-amplifier",
+          "clock / timing"
+        ],
+        "design_purpose": "",
+        "function_summary": "Preamplifier with a reset switch",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 4,
+      "caption": "Fig. 11. Required GBW to obtain gains of 3, 4, and 5 with a reset amplifier.",
+      "caption_bbox": [
+        38.1,
+        395.4,
+        284.9,
+        406.0
+      ],
+      "section_title": "IV. CIRCUIT DESCRIPTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 11."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The is given by output voltage at (15) gives Solving (15) for (16) of 3, 4, and 5 at The GBW required to obtain amplification of 1.3-GHz sampling rate is shown the end of a half period in Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "The is given by output voltage at (15) gives Solving (15) for (16) of 3, 4, and 5 at The GBW required to obtain amplification of 1.3-GHz sampling rate is shown the end of a half period in Fig. 11.",
+        "function_summary": "Required GBW to obtain gains of 3, 4, and 5 with a reset amplifier. The is given by output voltage at (15) gives Solving (15) for (16) of 3, 4, and 5 at The GBW required to obtain amplification of 1.3-GHz sampling rate is shown the end of a half period in Fig. 11.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 5,
+      "caption": "Fig. 12. Circuit of first-stage comparator.",
+      "caption_bbox": [
+        39.6,
+        268.3,
+        178.0,
+        278.9
+      ],
+      "section_title": "IV. CIRCUIT DESCRIPTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "First-Stage Comparator Fig. 12 shows the first-stage comparator."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "(17) Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "comparator",
+        "technology": "CMOS, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Circuit of first-stage comparator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 5,
+      "caption": "Fig. 13. Two stages of averaging resistor networks.",
+      "caption_bbox": [
+        39.6,
+        509.1,
+        208.9,
+        519.7
+      ],
+      "section_title": "IV. CIRCUIT DESCRIPTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Two Stages of Averaging Fig. 13 shows the complete block diagram of the quantizer with cascaded averaging."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The Monte Carlo transient simulations are performed on the two-stage averaging resistor network in Fig. 13."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "6-b 1.3-Gsample/s A/D Converter in 0.35-m CMOS",
+        "technology": "CMOS, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "resistor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Two stages of averaging resistor networks",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 5,
+      "caption": "Fig. 14. Dynamic Monte-Carlo simulation of input-referred random offset of latched comparator.",
+      "caption_bbox": [
+        302.6,
+        471.4,
+        553.6,
+        491.0
+      ],
+      "section_title": "IV. CIRCUIT DESCRIPTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "With random variations added to the transistors and 10% mismatch in the load capacitance, Fig. 14 shows that the time the comparator changes polarity is randomly dispersed with respect to when the input crosses zero."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 14 is a composite plot of ( 60 Monte Carlo transient analyses."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "With IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 12, DECEMBER 2001 Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "comparator",
+        "technology": "CMOS, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Dynamic Monte-Carlo simulation of input-referred random offset of latched comparator",
+        "key_specs": [
+          "10%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 6,
+      "caption": "Fig. 15. Results of Monte Carlo simulation. (a) Without any averaging. (b) With averaging in the preamplifier stage only. (c) With averaging applied both to the preamplifier and comparator stages.",
+      "caption_bbox": [
+        38.1,
+        366.4,
+        289.2,
+        395.0
+      ],
+      "section_title": "IV. CIRCUIT DESCRIPTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Without averaging, the input-referred random offset in one comparator chain is about 11 mV, as shown in Fig. 15(a)."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Dynamic Monte-Carlo simulation of input-referred random offset of latched comparator. offset averaging applied only to the preamplifier stage, shown in Fig. 15(b), the offset sigma is reduced to 9 mV."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "With offset averaging applied both to the preamplifier and comparator stages, as shown in Fig. 15(c), the input-referred random offset sigma value is lowered to 3.7 mV, which is sufficient for 6-b linearity."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "We conclude that averaging after the preamplifier array and dynamic comparator array reduces the overall input-referred . random offset by about 3 CHOI AND ABIDI: A 6-b 1.3-GSAMPLE/S A/D CONVERTER IN 0.35m CMOS (a) (b) (c) Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.1,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "comparator",
+        "technology": "CMOS, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "pre-amplifier"
+        ],
+        "design_purpose": "",
+        "function_summary": "Results of Monte Carlo simulation. (a) Without any averaging. (b) With averaging in the preamplifier stage only. (c) With averaging applied both to the preamplifier and comparator stages",
+        "key_specs": [
+          "11 mV",
+          "9 mV",
+          "3.7 mV"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.29,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 7,
+      "caption": "Fig. 16. Circuit of second-stage comparator.",
+      "caption_bbox": [
+        39.6,
+        296.2,
+        187.4,
+        306.9
+      ],
+      "section_title": "IV. CIRCUIT DESCRIPTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Second-Stage Comparator Fig. 16 shows the second-stage comparator."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "comparator",
+        "technology": "CMOS, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Circuit of second-stage comparator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 7,
+      "caption": "Fig. 17. High-speed digital encoder.",
+      "caption_bbox": [
+        39.6,
+        501.8,
+        161.2,
+        512.5
+      ],
+      "section_title": "IV. CIRCUIT DESCRIPTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "With the three major bubble error sources removed, a ROMbased encoder maps thermometer code output from the flash array into quasi-Gray code (Fig. 17) [40], [41]."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "temperature reference / sensor",
+        "technology": "CMOS, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "High-speed digital encoder",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 7,
+      "caption": "Fig. 18. Clock generation circuit.",
+      "caption_bbox": [
+        39.6,
+        697.3,
+        152.0,
+        708.0
+      ],
+      "section_title": "V. PERFORMANCE EVALUATION",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 18."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Low-noise methods taken from analog circuit design are applied to the clock generator (Fig. 18)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "6-b 1.3-Gsample/s A/D Converter in 0.35-m CMOS",
+        "technology": "CMOS, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Clock generation circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 8,
+      "caption": "Fig. 19. Microphotograph of ADC active area, and connection topology of preamplifiers.",
+      "caption_bbox": [
+        38.1,
+        290.8,
+        329.7,
+        301.4
+      ],
+      "section_title": "V. PERFORMANCE EVALUATION",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "PERFORMANCE EVALUATION",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The larger on-chip decoupling capacitance CHOI AND ABIDI: A 6-b 1.3-GSAMPLE/S A/D CONVERTER IN 0.35m CMOS Fig. 19."
+        },
+        {
+          "section_title": "PERFORMANCE EVALUATION",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 19 shows a microphotograph of the ADC layout."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -5.2,
+      "relevance_breakdown": {
+        "+topology": 2.5,
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "pre-amplifier"
+        ],
+        "design_purpose": "",
+        "function_summary": "Microphotograph of ADC active area, and connection topology of preamplifiers",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 20,
+      "label": "Fig. 20",
+      "page": 8,
+      "caption": "Fig. 20. ADC test setup.",
+      "caption_bbox": [
+        38.1,
+        539.3,
+        122.6,
+        550.0
+      ],
+      "section_title": "V. PERFORMANCE EVALUATION",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "PERFORMANCE EVALUATION",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 20."
+        },
+        {
+          "section_title": "PERFORMANCE EVALUATION",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 20 shows the test setup of the ADC."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-setup": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "ADC test setup",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 21,
+      "label": "Fig. 21",
+      "page": 8,
+      "caption": "Fig. 21. Measured INL and DNL at 1 Gsample/s.",
+      "caption_bbox": [
+        301.1,
+        705.4,
+        464.8,
+        716.1
+      ],
+      "section_title": "V. PERFORMANCE EVALUATION",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "PERFORMANCE EVALUATION",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "To measure dynamic performance accurately, the ADC is clocked with a Fig. 21."
+        },
+        {
+          "section_title": "PERFORMANCE EVALUATION",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "When digitizing a 630-MHz sinusoid at 1 Gsample/s, peak DNL is less than 0.2 LSB, and peak INL is below 0.35 LSB (Fig. 21)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "clock / timing"
+        ],
+        "design_purpose": "",
+        "function_summary": "Measured INL and DNL at 1 Gsample/s",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 22,
+      "label": "Fig. 22",
+      "page": 9,
+      "caption": "Fig. 22. Reconstructed spectra. (a) 630-MHz at 1 Gsample/s. (b) 650-MHz at 1.3 Gsample/s.",
+      "caption_bbox": [
+        39.6,
+        246.7,
+        343.5,
+        257.4
+      ],
+      "section_title": "V. PERFORMANCE EVALUATION",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "PERFORMANCE EVALUATION",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Passive phase splitters (a) Fig. 22."
+        },
+        {
+          "section_title": "PERFORMANCE EVALUATION",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 22 shows the reconstructed spectra."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "6-b 1.3-Gsample/s A/D Converter in 0.35-m CMOS",
+        "technology": "CMOS, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Reconstructed spectra. (a) 630-MHz at 1 Gsample/s. (b) 650-MHz at 1.3 Gsample/s",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 23,
+      "label": "Fig. 23",
+      "page": 9,
+      "caption": "Fig. 23.",
+      "caption_bbox": [
+        39.6,
+        490.3,
+        64.3,
+        500.9
+      ],
+      "section_title": "V. PERFORMANCE EVALUATION",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "When the clock load: 5.9 pF for this ADC’s measurement (35-dB SNDR with 650-MHz input in Fig. 23) is applied to (21), the deduced clock jitter is less than 4.3 ps."
+        },
+        {
+          "section_title": "PERFORMANCE EVALUATION",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 23. generate differential analog input and clock signals in response to the single-ended versions emanating from the frequency synthesizers."
+        },
+        {
+          "section_title": "PERFORMANCE EVALUATION",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The signal-to-noise-plus-distortion ratios (SNDRs) at 1.025 and 1.312 GHz conversion rate with various input frequencies are plotted in Fig. 23(a)."
+        },
+        {
+          "section_title": "PERFORMANCE EVALUATION",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 23(b) shows SNDR with fixed low input frequency (100 MHz) but swept conversion rate."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.4,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "clock / timing"
+        ],
+        "design_purpose": "",
+        "function_summary": "analog-to-digital converter (ADC)",
+        "key_specs": [
+          "5.9 pF",
+          "4.3 ps",
+          "1.312 GHz",
+          "100 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 24,
+      "label": "Fig. 24",
+      "page": 10,
+      "caption": "Fig. 24.",
+      "caption_bbox": [
+        38.1,
+        257.2,
+        62.7,
+        267.8
+      ],
+      "section_title": "V. PERFORMANCE EVALUATION",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "PERFORMANCE EVALUATION",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 24."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 10,
+          "sentence": "Fig. 24 compares the performance of this ADC with other CMOS 6-b converters reported in recent years."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "analog-to-digital converter (ADC)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 2,
+  "warnings": []
+}

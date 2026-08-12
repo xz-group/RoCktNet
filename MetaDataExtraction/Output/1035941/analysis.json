@@ -1,0 +1,1213 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1035941.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1035941",
+  "generated_at": "2026-07-29T22:00:26",
+  "paper_metadata": {
+    "title": "Switched-Current Circuits in Digital CMOS Technology With Low Charge-Injection Errors",
+    "authors": [
+      "Ganesh Kumar Balachandran",
+      "Phillip E. Allen"
+    ],
+    "abstract": "In this paper, digital CMOS switched-current (SI) circuits with low charge-injection errors are presented. These circuits are based on the operation of the switches at virtual-ground nodes to result in signal-independent charge injection. Based on this scheme, different topologies for the memory cell are discussed. To verify the theoretical concepts developed, a third-order elliptic low-pass SI filter is implemented in a 0.25m digital CMOS process. The filter nominally operates with a clock frequency of 10 MHz, cutoff frequency of 1 MHz, and a power supply of 2.3 V, while consuming 29 mW of power and processing input signals as (a) large as 600A peak differential. The low-charge injection nature of the circuit is reflected in its low total harmonic distortion of 59 dB for a 0.3-MHz signal with a modulation index of 0.5.",
+    "keywords": [
+      "Analog",
+      "charge injection",
+      "circuits",
+      "current mode",
+      "filter",
+      "SI",
+      "switched current"
+    ],
+    "doi": "10.1109/JSSC.2002.803019",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2002
+  },
+  "paper_circuit_context": {
+    "circuit_type": "filter",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "transistor/MOSFET",
+      "current mirror",
+      "switch",
+      "clock / timing",
+      "resistor",
+      "output buffer",
+      "op-amp"
+    ],
+    "design_purpose": "",
+    "function_summary": "filter: In this paper, digital CMOS switched-current (SI) circuits with low charge-injection errors are presented.",
+    "key_specs": [
+      "10 MHz",
+      "1 MHz",
+      "2.3 V",
+      "29 mW",
+      "59 dB",
+      "0.6 dB",
+      "25 dB",
+      "10 pF",
+      "50%",
+      "32 dB"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "S WITCHED-CURRENT (SI) circuits are an alternative to switched-capacitor (SC) circuits in the realm of sampled-data (SD) signal processing. SI circuits are very attractive due to the fact that they do not need linear capacitors, unlike SC circuits, and thus are amenable for implementation in digital CMOS technologies, which rarely have high-density linear capacitors. However, SI circuits are serio ..."
+    },
+    {
+      "number": "II",
+      "title": "FUNDAMENTALS OF SI CIRCUIT OPERATION",
+      "kind": "design",
+      "page": 0,
+      "text_preview": "SI circuits process currents using the two basic sampled-data operations: ratioing and delaying [4]. Signal ratios are achieved using current mirrors and delays using memory cells which can hold current signals for a certain time interval. The memory cell at its simplest is a MOS transistor, also called the memory [Fig. 1(a)] is connected as transistor. When this transistor a MOS diode, it tracks  ..."
+    },
+    {
+      "number": "III",
+      "title": "CHARGE INJECTION AND WAYS TO SOLVE IT",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "Charge injection is a phenomemon that arises due to leakage of charge into a capacitive node during the turnoff of a switch that is connected to that node. Charge injection is illustrated in Fig. 2, where node A is the capacitive node with effective and transistor is an nMOS switch connected capacitance to node A. There are two mechanisms that result in charge injection: 1) charge injection from t ..."
+    },
+    {
+      "number": "IV",
+      "title": "CVS SCHEME",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "In this section, various memory cell topologies based on the CVS scheme are developed. The drain and source nodes of a transistor, into either of which an input signal current can flow, are starting points for the creation of virtual-ground nodes around a transistor by the use of negative feedback. Insertion of switches at these nodes gives rise to two topologies for the memory cells, as shown in  ..."
+    },
+    {
+      "number": "V",
+      "title": "ROBUST CAPACITIVE FEEDBACK CIRCUIT",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "This section will illustrate the general principle on which the RCFB circuit is based and also its implementation using MOS accumulation capacitors, the best available high-density capacitors in a digital CMOS process. The principle of the robust capacitive feedback is illustrated in Fig. 6, where the differential amplifier portrayed can be any one of those used in Fig. 5(a) and represent the equi ..."
+    },
+    {
+      "number": "VI",
+      "title": "COMPARISON OF DVGS AND DVGD TOPOLOGIES",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "In this section, the DVGS and DVGD topologies are compared from a high-level perspective to determine their relative merits and demerits. Circuits based on these topologies were designed and compared from various perspectives [13]. Simulations were done to corroborate the theoretical estimations. For reasons of brevity, only the important aspects in this comparison are IEEE JOURNAL OF SOLID-STATE  ..."
+    },
+    {
+      "number": "VII",
+      "title": "DESIGN OF THE DVGD CELL",
+      "kind": "design",
+      "page": 6,
+      "text_preview": "The memory cell designed based on the DVGD topology, for verifying the principles of CVS developed so far, is shown in Fig. 10. The schematic is similar to that of Fig. 5(a) except that and common-mode feedback (CMFB) amplifiers , the RCFB circuit (shown inside shaded boxes), and compensation circuitry for the operational transconductance amplifier (OTA) – and – are added. The common-mode amplifie ..."
+    },
+    {
+      "number": "VIII",
+      "title": "IMPLEMENTATION OF A PROTOTYPE FILTER",
+      "kind": "design",
+      "page": 7,
+      "text_preview": "To verify the principles that were illustrated in the preceding sections, a third-order low-pass elliptic SI filter was implem digital CMOS process. The filter was mented in a 0.25BALACHANDRAN AND ALLEN: SI CIRCUITS IN DIGITAL CMOS TECHNOLOGY designed to operate at a clock frequency of 10 MHz, with a cutoff frequency of 1 MHz, an in-band ripple of 0.6 dB, and a -domain filter minimum stop-band att ..."
+    },
+    {
+      "number": "IX",
+      "title": "TEST SETUP AND INTERPRETATION",
+      "kind": "other",
+      "page": 8,
+      "text_preview": "OF MEASUREMENT RESULTS A simple way to obtain the discrete-time Fourier spectrum (DTFT) of the output samples, from the Fourier spectrum of the output sampled-data (SD) waveform, is by using the following relationship: (10) is the Fourier spectrum of the SD waveform, where is the discrete-time Fourier transform of its samDTFT is the Fourier transform of the pulse-shaping ples, and (a) (b) Fig. 19. ..."
+    },
+    {
+      "number": "X",
+      "title": "MEASUREMENT RESULTS",
+      "kind": "results",
+      "page": 8,
+      "text_preview": "As described in Section IX, the DTFT of the output samples is obtained by dividing the Fourier spectrum of the output by TABLE I HARMONIC CONTENT OF FILTER OUTPUT FOR A 0.3-MHZ SIGNAL TABLE II SUMMARY OF FILTER PERFORMANCE that of the NRZ rectangular pulse. The magnitude and phase of MHz) thus obtained, the filter transfer function (for is shown in Fig. 19(a) and (b) in dark lines. The dashed line ..."
+    },
+    {
+      "number": "XI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 9,
+      "text_preview": "SI circuits with low charge-injection errors have been presented. Low charge injection is achieved by operating switches at virtual-ground nodes that are created using negative feedback. Operation of switches at virtual-ground nodes results in signal-independent charge injection that is cancelled using differential structures. The two topologies based on this scheme, the VGD and the VGS topologies ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Simple memory cell in (a) track mode and (b) hold mode.",
+      "caption_bbox": [
+        301.1,
+        395.9,
+        514.4,
+        406.6
+      ],
+      "section_title": "II. FUNDAMENTALS OF SI CIRCUIT OPERATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "(a) (b) Fig. 1."
+        },
+        {
+          "section_title": "FUNDAMENTALS OF SI CIRCUIT OPERATION",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "The memory cell at its simplest is a MOS transistor, also called the memory [Fig. 1(a)] is connected as transistor."
+        },
+        {
+          "section_title": "FUNDAMENTALS OF SI CIRCUIT OPERATION",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "This is done [Fig. 1(a)]."
+        },
+        {
+          "section_title": "FUNDAMENTALS OF SI CIRCUIT OPERATION",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "In the succeeding clock during the clock phase , the connection to its gate is broken by the switch phase [Fig. 1(b)]."
+        },
+        {
+          "section_title": "FUNDAMENTALS OF SI CIRCUIT OPERATION",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "The simple memory cell of Fig. 1 suffers from nonidealities that deteriorate its performance [5]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.5,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "memory",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "switch",
+          "clock / timing"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simple memory cell in (a) track mode and (b) hold mode",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.38,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Illustration of charge injection.",
+      "caption_bbox": [
+        39.6,
+        259.0,
+        167.7,
+        269.7
+      ],
+      "section_title": "II. FUNDAMENTALS OF SI CIRCUIT OPERATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "FUNDAMENTALS OF SI CIRCUIT OPERATION",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "The two important ones among them are: 1) non-unity current transfer between memory cells due to nonzero output conductance of the cell in the hold mode or nonzero input resistance of the cell in the track mode; . 2) charge injection from switch Fig. 2."
+        },
+        {
+          "section_title": "CHARGE INJECTION AND WAYS TO SOLVE IT",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Charge injection is illustrated in Fig. 2, where node A is the capacitive node with effective and transistor is an nMOS switch connected capacitance to node A."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "switch",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Illustration of charge injection",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Single-ended memory cells based on the CVS scheme. (a) VGD memory cell. (b) VGS memory cell.",
+      "caption_bbox": [
+        302.6,
+        394.6,
+        553.6,
+        414.2
+      ],
+      "section_title": "III. CHARGE INJECTION AND WAYS TO SOLVE IT",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CHARGE INJECTION AND WAYS TO SOLVE IT",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The first method of charge-injection cancellation relies on the creation of charge injection of two different polarities (such as those from an nMOS and a pMOS transistor in a CMOS IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 10, OCTOBER 2002 (a) (b) Fig. 3."
+        },
+        {
+          "section_title": "CVS SCHEME",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Insertion of switches at these nodes gives rise to two topologies for the memory cells, as shown in Fig. 3(a) and (b)."
+        },
+        {
+          "section_title": "CVS SCHEME",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Nairn [9] first proposed a topology for a memory cell based on the circuit of Fig. 3(a)."
+        },
+        {
+          "section_title": "CVS SCHEME",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Shah and Toumazou [10] then proposed another topology for a cell based on Fig. 3(b)."
+        },
+        {
+          "section_title": "COMPARISON OF DVGS AND DVGD TOPOLOGIES",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "In Figs. 3 and 5, for reasons of simplicity, no distinction was made between switches controlled by the same clock phase."
+        },
+        {
+          "section_title": "COMPARISON OF DVGS AND DVGD TOPOLOGIES",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "It can be seen from Fig. 3(a) that the VGD cell needs Miller compensation because of the presence of two dominant poles (at the outputs of the amplifier and the memory transistor) in ."
+        },
+        {
+          "section_title": "COMPARISON OF DVGS AND DVGD TOPOLOGIES",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "In a VGS cell its feedback loop during the track phase [Fig. 3(b)] with a cascode amplifier, the feedback loop during will have only one dominant pole."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "memory",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "switch",
+          "clock / timing"
+        ],
+        "design_purpose": "",
+        "function_summary": "Single-ended memory cells based on the CVS scheme. (a) VGD memory cell. (b) VGS memory cell",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.12,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Nonlinear transistor I–V characteristics.",
+      "caption_bbox": [
+        38.1,
+        225.8,
+        197.8,
+        236.4
+      ],
+      "section_title": "IV. CVS SCHEME",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CVS SCHEME",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "It BALACHANDRAN AND ALLEN: SI CIRCUITS IN DIGITAL CMOS TECHNOLOGY Fig. 4."
+        },
+        {
+          "section_title": "CVS SCHEME",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "However, this is not the case with an SI circuit, where a constant voltage error due to constant charge injection is converted into a signal-dependent current error by the – characteristics of the transistor (Fig. 4)."
+        },
+        {
+          "section_title": "COMPARISON OF DVGS AND DVGD TOPOLOGIES",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Because of the large signal operation of the memory cell, any error (even a fixed one) in the gate–source voltage of the memory transistor can produce a lot of harmonic – characteristics distortion due to the nonlinear nature of (Fig. 4)."
+        },
+        {
+          "section_title": "COMPARISON OF DVGS AND DVGD TOPOLOGIES",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Due to the mandated use of a high dc-gain amplifier in a VGS cell, the memory transistor’s source can be resistively de- – characteristics (Fig. 4)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.6,
+      "relevance_breakdown": {
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Nonlinear transistor I–V characteristics",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Differential versions of memory cells using the VGS scheme. (a) DVGD cell. (b) DVGS cell.",
+      "caption_bbox": [
+        301.1,
+        396.5,
+        552.2,
+        416.1
+      ],
+      "section_title": "IV. CVS SCHEME",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CVS SCHEME",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 5(a) and (b) show the differential versions of the VGD and VGS cells, respectively."
+        },
+        {
+          "section_title": "CVS SCHEME",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "These differential schemes rely on device (a) (b) Fig. 5."
+        },
+        {
+          "section_title": "CVS SCHEME",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "(b) DVGS cell. matching to ensure that the charge injected into the differential and in Fig. 5(a) and and virtual-ground nodes [ in Fig. 5(b)] are the same."
+        },
+        {
+          "section_title": "ROBUST CAPACITIVE FEEDBACK CIRCUIT",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The principle of the robust capacitive feedback is illustrated in Fig. 6, where the differential amplifier portrayed can be any one of those used in Fig. 5(a) and represent the equivalent input capacitances or (b)."
+        },
+        {
+          "section_title": "DESIGN OF THE DVGD CELL",
+          "section_kind": "design",
+          "page": 6,
+          "sentence": "The schematic is similar to that of Fig. 5(a) except that and common-mode feedback (CMFB) amplifiers , the RCFB circuit (shown inside shaded boxes), and compensation circuitry for the operational transconductance amplifier (OTA) – and – are added."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "memory",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Differential versions of memory cells using the VGS scheme. (a) DVGD cell. (b) DVGS cell",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.12,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Robust capacitive feedback circuit.",
+      "caption_bbox": [
+        39.6,
+        195.5,
+        180.5,
+        206.2
+      ],
+      "section_title": "V. ROBUST CAPACITIVE FEEDBACK CIRCUIT",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ROBUST CAPACITIVE FEEDBACK CIRCUIT",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The principle of the robust capacitive feedback is illustrated in Fig. 6, where the differential amplifier portrayed can be any one of those used in Fig. 5(a) and represent the equivalent input capacitances or (b)."
+        },
+        {
+          "section_title": "ROBUST CAPACITIVE FEEDBACK CIRCUIT",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 6."
+        },
+        {
+          "section_title": "ROBUST CAPACITIVE FEEDBACK CIRCUIT",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Since nodes and are pure capacitive nodes after the opening of switches and , capacitors and , and also and , act like voltage dividers resulting in a change in the voltage of nodes and by (3) (4) There is, thus, negative feedback with loop gain (5) and . where A slight modification needs to be made in the RCFB circuit of Fig. 6, if MOS accumulation capacitors (MOSACs) are used, since MOSACs require a positive bias voltage across their terminals to provide a significantly large value of capacitance [12]. and as This is accomplished by means of transistors shown in Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.7,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor",
+          "transistor/MOSFET",
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Robust capacitive feedback circuit",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.65,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. RCFB circuit using MOS accumulation capacitors.",
+      "caption_bbox": [
+        302.6,
+        170.9,
+        494.4,
+        181.6
+      ],
+      "section_title": "V. ROBUST CAPACITIVE FEEDBACK CIRCUIT",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ROBUST CAPACITIVE FEEDBACK CIRCUIT",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Since nodes and are pure capacitive nodes after the opening of switches and , capacitors and , and also and , act like voltage dividers resulting in a change in the voltage of nodes and by (3) (4) There is, thus, negative feedback with loop gain (5) and . where A slight modification needs to be made in the RCFB circuit of Fig. 6, if MOS accumulation capacitors (MOSACs) are used, since MOSACs require a positive bias voltage across their terminals to provide a significantly large value of capacitance [12]. and as This is accomplished by means of transistors shown in Fig. 7."
+        },
+        {
+          "section_title": "COMPARISON OF DVGS AND DVGD TOPOLOGIES",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "For reasons of brevity, only the important aspects in this comparison are IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 10, OCTOBER 2002 Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor",
+          "transistor/MOSFET",
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "RCFB circuit using MOS accumulation capacitors",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. Illustration of the effect of amplifier nonidealities on a VGS cell. (a) Input phase. (b) Output phase.",
+      "caption_bbox": [
+        302.6,
+        482.8,
+        553.7,
+        502.5
+      ],
+      "section_title": "V. ROBUST CAPACITIVE FEEDBACK CIRCUIT",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "COMPARISON OF DVGS AND DVGD TOPOLOGIES",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "(a) (b) Fig. 8."
+        },
+        {
+          "section_title": "COMPARISON OF DVGS AND DVGD TOPOLOGIES",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The effect of nonideal virtual-ground nodes (due to finite amplifier dc gains and amplifier input offset voltages) on the VGS and VGD cells are illustrated in Figs. 8 and 9, respectively."
+        },
+        {
+          "section_title": "COMPARISON OF DVGS AND DVGD TOPOLOGIES",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "However, in practice, the switch configuration will look as illustrated for the VGS and VGD cells in Figs. 8 and 9, respectively."
+        },
+        {
+          "section_title": "COMPARISON OF DVGS AND DVGD TOPOLOGIES",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "From Fig. 8, the voltages at the source of the memory transistor during successive clock phases are (6) and (7) where is the voltage drop across the switch, is the constant voltage of the virtual-ground node (the amplifier input) when the amplifier is ideal and has infinite gain, and is the finite input signal required by the amplifier to sustain a and finite signal at its output owing to its noninfinite gain. represent the input referred offset voltages for the first and second amplifiers, respectively."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.1,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "switch",
+          "clock / timing"
+        ],
+        "design_purpose": "",
+        "function_summary": "Illustration of the effect of amplifier nonidealities on a VGS cell. (a) Input phase. (b) Output phase",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.29,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. Illustration of the effect of amplifier nonidealities on a VGD cell. (a) Input phase. (b) Output phase.",
+      "caption_bbox": [
+        38.1,
+        407.8,
+        386.5,
+        418.5
+      ],
+      "section_title": "VI. COMPARISON OF DVGS AND DVGD TOPOLOGIES",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "COMPARISON OF DVGS AND DVGD TOPOLOGIES",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "BALACHANDRAN AND ALLEN: SI CIRCUITS IN DIGITAL CMOS TECHNOLOGY (a) (b) Fig. 9."
+        },
+        {
+          "section_title": "COMPARISON OF DVGS AND DVGD TOPOLOGIES",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "In the case of a VGD memory cell (Fig. 9), however, it can easily be seen that the amplifier finite-gain and offset errors cause a change only in the drain voltage of the memory transistor, from one phase to another."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Illustration of the effect of amplifier nonidealities on a VGD cell. (a) Input phase. (b) Output phase",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. DVGD memory cell.",
+      "caption_bbox": [
+        39.6,
+        322.1,
+        139.7,
+        332.8
+      ],
+      "section_title": "VI. COMPARISON OF DVGS AND DVGD TOPOLOGIES",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "COMPARISON OF DVGS AND DVGD TOPOLOGIES",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 10."
+        },
+        {
+          "section_title": "DESIGN OF THE DVGD CELL",
+          "section_kind": "design",
+          "page": 6,
+          "sentence": "The memory cell designed based on the DVGD topology, for verifying the principles of CVS developed so far, is shown in Fig. 10."
+        },
+        {
+          "section_title": "DESIGN OF THE DVGD CELL",
+          "section_kind": "design",
+          "page": 6,
+          "sentence": "The common-mode voltage of the drains and is fixed by the of the memory transistors in conjunction with the common-mode amplifier and . current-source loads To illustrate the frequency response of the differential feedback loop and its compensation, the single-ended equivalent of Fig. 10 is shown in Fig. 13, with the common-mode cir1 symbolizes the cuitry omitted."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF A PROTOTYPE FILTER",
+          "section_kind": "design",
+          "page": 7,
+          "sentence": "The current in the converter is mirrored into the filter by the current mirrors. ) contain a cascade of The delay cells (blocks denoted by two of the memory cells shown in Fig. 10, each memory cell achieving a delay of one clock phase."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.6,
+      "relevance_breakdown": {
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "memory",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "current mirror",
+          "clock / timing"
+        ],
+        "design_purpose": "",
+        "function_summary": "DVGD memory cell",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 5,
+      "caption": "Fig. 11. Common-mode amplifier.",
+      "caption_bbox": [
+        39.6,
+        489.6,
+        155.3,
+        500.2
+      ],
+      "section_title": "VI. COMPARISON OF DVGS AND DVGD TOPOLOGIES",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "COMPARISON OF DVGS AND DVGD TOPOLOGIES",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 11."
+        },
+        {
+          "section_title": "DESIGN OF THE DVGD CELL",
+          "section_kind": "design",
+          "page": 6,
+          "sentence": "They have the schematic shown in Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Common-mode amplifier",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 5,
+      "caption": "Fig. 12. Differential amplifier.",
+      "caption_bbox": [
+        39.6,
+        657.6,
+        142.3,
+        668.2
+      ],
+      "section_title": "VI. COMPARISON OF DVGS AND DVGD TOPOLOGIES",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "COMPARISON OF DVGS AND DVGD TOPOLOGIES",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 12."
+        },
+        {
+          "section_title": "DESIGN OF THE DVGD CELL",
+          "section_kind": "design",
+          "page": 6,
+          "sentence": "The OTA is a single-stage differential amplifier (Fig. 12) whose output common-mode voltage is fixed by the voltage CMFB loop comprising of the amplifier’s curand and the common-mode rent-source loads Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Differential amplifier",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 5,
+      "caption": "Fig. 13. VGD memory cell: single-ended version.",
+      "caption_bbox": [
+        302.6,
+        294.5,
+        467.5,
+        305.1
+      ],
+      "section_title": "VI. COMPARISON OF DVGS AND DVGD TOPOLOGIES",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "COMPARISON OF DVGS AND DVGD TOPOLOGIES",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Though generated to linearize the the effective transconductance of the linearized transistor decreases, a high amplifier dc gain will ensure the effectiveness of IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 10, OCTOBER 2002 Fig. 13."
+        },
+        {
+          "section_title": "DESIGN OF THE DVGD CELL",
+          "section_kind": "design",
+          "page": 6,
+          "sentence": "The common-mode voltage of the drains and is fixed by the of the memory transistors in conjunction with the common-mode amplifier and . current-source loads To illustrate the frequency response of the differential feedback loop and its compensation, the single-ended equivalent of Fig. 10 is shown in Fig. 13, with the common-mode cir1 symbolizes the cuitry omitted."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "memory",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "VGD memory cell: single-ended version",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 5,
+      "caption": "Fig. 14. Open-loop configuration of the feedback circuit in the VGD cell.",
+      "caption_bbox": [
+        302.6,
+        537.4,
+        542.3,
+        548.1
+      ],
+      "section_title": "VI. COMPARISON OF DVGS AND DVGD TOPOLOGIES",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "COMPARISON OF DVGS AND DVGD TOPOLOGIES",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 14."
+        },
+        {
+          "section_title": "DESIGN OF THE DVGD CELL",
+          "section_kind": "design",
+          "page": 6,
+          "sentence": "Fig. 14 shows the open-loop configuration of the feedback circuit in the VGD cell during the sample phase (switch resistances are neglected)."
+        },
+        {
+          "section_title": "DESIGN OF THE DVGD CELL",
+          "section_kind": "design",
+          "page": 6,
+          "sentence": "It can be seen from Fig. 14 that the feedback loop, when opened at the output of the OTA, reduces to a two-stage amplifier with compensation across and its second stage."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.2,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Open-loop configuration of the feedback circuit in the VGD cell",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.14,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 6,
+      "caption": "Fig. 15. Block-level structure of the filter.",
+      "caption_bbox": [
+        38.1,
+        330.7,
+        178.5,
+        341.3
+      ],
+      "section_title": "VI. COMPARISON OF DVGS AND DVGD TOPOLOGIES",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "COMPARISON OF DVGS AND DVGD TOPOLOGIES",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "BALACHANDRAN AND ALLEN: SI CIRCUITS IN DIGITAL CMOS TECHNOLOGY Fig. 15."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF A PROTOTYPE FILTER",
+          "section_kind": "design",
+          "page": 7,
+          "sentence": "The transfer function satisfying these characteristics is obtained from MATLAB as (9) The block-level structure of the entire filter system is shown in Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.3,
+      "relevance_breakdown": {
+        "-structure of": -1.5,
+        "type_match:filter": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block-level structure of the filter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 6,
+      "caption": "Fig. 16. V –I converter and current mirror.",
+      "caption_bbox": [
+        38.1,
+        634.3,
+        181.4,
+        644.9
+      ],
+      "section_title": "VII. DESIGN OF THE DVGD CELL",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "COMPARISON OF DVGS AND DVGD TOPOLOGIES",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 16."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF A PROTOTYPE FILTER",
+          "section_kind": "design",
+          "page": 7,
+          "sentence": "The input voltage signal to the filter system is sampled by a voltage sampler and is converted into a – ) converter, shown current by a linear voltage-to-current ( in Fig. 16."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF A PROTOTYPE FILTER",
+          "section_kind": "design",
+          "page": 7,
+          "sentence": "The trapezoidal blocks, also illustrated in Fig. 16, are differential current mirrors."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "regulator / converter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "current mirror"
+        ],
+        "design_purpose": "",
+        "function_summary": "V –I converter and current mirror",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 7,
+      "caption": "Fig. 17. Layout of the filter system.",
+      "caption_bbox": [
+        39.6,
+        309.4,
+        160.4,
+        320.1
+      ],
+      "section_title": "VII. DESIGN OF THE DVGD CELL",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN OF THE DVGD CELL",
+          "section_kind": "design",
+          "page": 6,
+          "sentence": "The OTA is a single-stage differential amplifier (Fig. 12) whose output common-mode voltage is fixed by the voltage CMFB loop comprising of the amplifier’s curand and the common-mode rent-source loads Fig. 17."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF A PROTOTYPE FILTER",
+          "section_kind": "design",
+          "page": 7,
+          "sentence": "The layout of the filter system is shown in Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "-layout": -2.0,
+        "section:design": 1.5,
+        "type_match:filter": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Layout of the filter system",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 7,
+      "caption": "Fig. 18. Simplified schematic of the PCB.",
+      "caption_bbox": [
+        39.6,
+        539.4,
+        180.7,
+        550.0
+      ],
+      "section_title": "VII. DESIGN OF THE DVGD CELL",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN OF THE DVGD CELL",
+          "section_kind": "design",
+          "page": 6,
+          "sentence": "Fig. 18."
+        },
+        {
+          "section_title": "TEST SETUP AND INTERPRETATION",
+          "section_kind": "other",
+          "page": 8,
+          "sentence": "(b) Passband phase. waveform , which is normally a nonreturn-to-zero (NRZ) rectangular pulse, and therefore (11) A simplified schematic of the printed circuit board (PCB) test circuit is shown in Fig. 18."
+        },
+        {
+          "section_title": "TEST SETUP AND INTERPRETATION",
+          "section_kind": "other",
+          "page": 8,
+          "sentence": "A set of discrete-component LC filters (one of which is shown in Fig. 18) are used for filtering the harmonics of the input signal at different frequencies so that accurate harmonic distortion measurements can be made."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.7,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "-simplified": -1.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simplified schematic of the PCB",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.67,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 8,
+      "caption": "Fig. 19. Ideal and translated DTFT. (a) Magnitude. (b) Passband phase.",
+      "caption_bbox": [
+        301.1,
+        507.7,
+        534.0,
+        518.3
+      ],
+      "section_title": "VIII. IMPLEMENTATION OF A PROTOTYPE FILTER",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "TEST SETUP AND INTERPRETATION",
+          "section_kind": "other",
+          "page": 8,
+          "sentence": "OF MEASUREMENT RESULTS A simple way to obtain the discrete-time Fourier spectrum (DTFT) of the output samples, from the Fourier spectrum of the output sampled-data (SD) waveform, is by using the following relationship: (10) is the Fourier spectrum of the SD waveform, where is the discrete-time Fourier transform of its samDTFT is the Fourier transform of the pulse-shaping ples, and (a) (b) Fig. 19."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "The magnitude and phase of MHz) thus obtained, the filter transfer function (for is shown in Fig. 19(a) and (b) in dark lines."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "OF MEASUREMENT RESULTS A simple way to obtain the discrete-time Fourier spectrum (DTFT) of the output samples, from the Fourier spectrum of the output sampled-data (SD) waveform, is by using the following relationship: (10) is the Fourier spectrum of the SD waveform, where is the discrete-time Fourier transform of its ...",
+        "function_summary": "Ideal and translated DTFT. (a) Magnitude. (b) Passband phase. OF MEASUREMENT RESULTS A simple way to obtain the discrete-time Fourier spectrum (DTFT) of the output samples, from the Fourier spectrum of the output sampled-data (SD) waveform, is by using the following relationship: (10) is the Fourier spectrum of the SD ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 6,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

@@ -1,0 +1,503 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1263664.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1263664",
+  "generated_at": "2026-07-29T22:01:33",
+  "paper_metadata": {
+    "title": "0.18-m CMOS Bluetooth Analog Receiver With 88-dBm Sensitivity",
+    "authors": [
+      "Willy Hioe",
+      "Kenji Maio",
+      "Takashi Oshima",
+      "Yoshiyuki Shibahara",
+      "Takeshi Doi",
+      "Kiyoharu Ozaki",
+      "Satoshi Arayashiki"
+    ],
+    "abstract": "A CMOS Bluetooth analog low-IF receiver that includes a low-noise amplifier, image-rejection mixer, IF bandpass make significant improvements to system NF. active filter, and programmable gain amplifier (PGA) was fabriOn the other hand, to satisfy blocking signal specifications, a cated in a 0.18m bulk CMOS process. In order to achieve good large third-order input intercept point (IIP3) is required. The resensitivity and tolerance against blocking signals, operational amlationship between the IIP3 of two cascaded stages is expressed plifiers were used in the active filter and PGA, the filter and PGA by were interleaved to minimize noise, and an on-chip automatic tuner adjusts the filter frequency. Other features included a feedforward IIP3 IIP3 IIP3 (2) automatic gain control with rapid convergence. When connected to the digital demodulator of a BiCMOS Bluetooth transceiver, Dynamic range may be expressed by IIP3 NF 88-dBm sensitivity was measured at 65-mW power dissipation. All blocking signal specifications were also satisfied. in decibel units, where is the minimum backoff from IIP3 due to intermodulation effects, is the thermal noise,",
+    "keywords": [
+      "Analog integrated circuits",
+      "gain control",
+      "IF sys-"
+    ],
+    "doi": "10.1109/JSSC.2003.821769",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2004
+  },
+  "paper_circuit_context": {
+    "circuit_type": "0.18-m CMOS Bluetooth Analog Receiver",
+    "technology": "CMOS, BICMOS",
+    "application_domain": "rf, wireless, wlan, if",
+    "sub_blocks": [
+      "inductor",
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "balun",
+      "output buffer",
+      "mixer",
+      "bias circuit",
+      "switch",
+      "op-amp",
+      "latch"
+    ],
+    "design_purpose": "The resensitivity and tolerance against blocking signals, operational amlationship between the IIP3 of two cascaded stages is expressed plifiers were used in the active filter and PGA, the filter and PGA by were interleaved to minimize noise, and an on-chip automatic tuner adjusts the filter frequency.",
+    "function_summary": "0.18-m CMOS Bluetooth Analog Receiver: The resensitivity and tolerance against blocking signals, operational amlationship between the IIP3 of two cascaded stages is expressed plifiers were used in the active filter and PGA, the filter and PGA by were interleaved to minimize noise, and an on-chip automatic tuner adjusts the filter frequency.",
+    "key_specs": [
+      "3 NF",
+      "88 dBm",
+      "5.4 dB",
+      "128 dBc",
+      "0.6 V",
+      "3 w",
+      "6 V",
+      "84.5 dB",
+      "22.6 dBm",
+      "3.1 dBm"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE use of CMOS for radio-frequency integrated circuits (RFICs) is no longer a question of whether there is a market for these chips, but how soon will it become a serious competitor to established technologies in Bluetooth and WLAN RFIC markets. Fully integrated Bluetooth CMOS transceivers [1], [2] are now available, and more recently, research results on integrated Bluetooth and wireless LAN (I ..."
+    },
+    {
+      "number": "II",
+      "title": "SYSTEM DYNAMIC RANGE",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "At minimum input, system NF may be approximated by NF NF NF (1) where and NF are the RF gain and NF, respectively, and is the IF noise figure (NF from further circuits is negligible NF as because of the large IF gain). For typical values in Bluetooth dB, NF dB, and NF dB, receivers, the second term of (1) is more than threee times larger than the Manuscript received April 8, 2003; revised October  ..."
+    },
+    {
+      "number": "III",
+      "title": "CIRCUIT DESIGN",
+      "kind": "design",
+      "page": 0,
+      "text_preview": "The prototype analog circuit for our CMOS Bluetooth receiver is shown in Fig. 1. It has a 2-MHz low-IF architecture, and, although not included in the prototype, assumes a 6-bit analog–digital converter (ADC) and digital demodulator, similar to that reported in [5] and implemented in the Hitachi HD157100 BiCMOS Bluetooth chip. An on-chip third-order high-pass, sixth-order low-pass analog active fi ..."
+    },
+    {
+      "number": "IV",
+      "title": "EVALUATION RESULTS",
+      "kind": "results",
+      "page": 2,
+      "text_preview": "A one-chip transceiver containing the receiver in Fig. 1 was m one-poly six-metal CMOS process. fabricated in a 0.18Fig. 7 shows the chip layout. Active silicon area for the analog . Table I summarizes the performance receiver was about 7 mm of the RF and IF circuits. The large IIP3 for the mixer was obtained by keeping its gain low. The IIP3 for the IF circuits was (4) IEEE JOURNAL OF SOLID-STATE ..."
+    },
+    {
+      "number": "V",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 3,
+      "text_preview": "A Bluetooth analog receiver prototype circuit has been dem bulk CMOS. BER measuresigned and fabricated in 0.1888-dBm sensitivity. An interleaved ments found that it has a filter and PGA configuration of the IF circuit contributed to the good sensitivity. The dynamic range of the RF circuits was found to be the main limiter of blocking performance. ACKNOWLEDGMENT The authors wish to thank E. Tamba  ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Low-IF receiver circuit with multistage interleaved IF filter and PGA.",
+      "caption_bbox": [
+        39.6,
+        184.8,
+        292.8,
+        192.8
+      ],
+      "section_title": "II. SYSTEM DYNAMIC RANGE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "The prototype analog circuit for our CMOS Bluetooth receiver is shown in Fig. 1."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 2, FEBRUARY 2004 Fig. 1."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "The low-pass filter stages are shown in Fig. 1."
+        },
+        {
+          "section_title": "EVALUATION RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "A one-chip transceiver containing the receiver in Fig. 1 was m one-poly six-metal CMOS process. fabricated in a 0.18Fig. 7 shows the chip layout."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.6,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wireless, wlan, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Low-IF receiver circuit with multistage interleaved IF filter and PGA",
+        "key_specs": [
+          "1 w"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.44,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Feedforward AGC for multistage PGA.",
+      "caption_bbox": [
+        302.6,
+        318.1,
+        457.7,
+        326.1
+      ],
+      "section_title": "II. SYSTEM DYNAMIC RANGE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "The required minimum suppression levels at 12 dB LPF1 LPF2 and 8.5 dB (LPF3), 2-MHz offset are Fig. 2."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "The feedforward automatic gain control (AGC) scheme [6] shown in Fig. 2 was used to reduce the AGC convergence time."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "0.18-m CMOS Bluetooth Analog Receiver",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wireless, wlan, if",
+        "sub_blocks": [],
+        "design_purpose": "The feedforward automatic gain control (AGC) scheme [6] shown in Fig. 2 was used to reduce the AGC convergence time.",
+        "function_summary": "Feedforward AGC for multistage PGA. The feedforward automatic gain control (AGC) scheme [6] shown in Fig. 2 was used to reduce the AGC convergence time.",
+        "key_specs": [
+          "12 dB",
+          "8.5 dB",
+          "2 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Two-stage differential LNA.",
+      "caption_bbox": [
+        38.1,
+        205.7,
+        157.6,
+        213.6
+      ],
+      "section_title": "II. SYSTEM DYNAMIC RANGE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Hence, if gains are set to at the of this are set to Fig. 3."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "The LNA has a two-stage common-source nMOS differential amplifier configuration (Fig. 3)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wireless, wlan, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Two-stage differential LNA",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Gilbert cell and buffer for LO signals used in double-balanced mixer.",
+      "caption_bbox": [
+        301.1,
+        207.6,
+        550.0,
+        215.5
+      ],
+      "section_title": "II. SYSTEM DYNAMIC RANGE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "The downconversion mixer uses a double-balanced Gilbert-cell configuration (Fig. 4)."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "The VCO core is shown IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 2, FEBRUARY 2004 Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wireless, wlan, if",
+        "sub_blocks": [
+          "output buffer",
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Gilbert cell and buffer for LO signals used in double-balanced mixer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. VCO core circuit.",
+      "caption_bbox": [
+        301.1,
+        393.9,
+        387.6,
+        401.8
+      ],
+      "section_title": "II. SYSTEM DYNAMIC RANGE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Fig. 5."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "VCO phase noise at 6-MHz offset versus core current. in Fig. 5, and its noise performance as a function of the core current, measured in a separate TEG circuit, is shown in Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "+core": 0.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wireless, wlan, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "VCO core circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. VCO phase noise at 6-MHz offset versus core current.",
+      "caption_bbox": [
+        301.1,
+        535.2,
+        503.5,
+        543.2
+      ],
+      "section_title": "IV. EVALUATION RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Fig. 6."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "VCO phase noise at 6-MHz offset versus core current. in Fig. 5, and its noise performance as a function of the core current, measured in a separate TEG circuit, is shown in Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "+core": 0.5,
+        "-phase noise": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wireless, wlan, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "VCO phase noise at 6-MHz offset versus core current",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Layout of fabricated CMOS transceiver.",
+      "caption_bbox": [
+        39.6,
+        269.5,
+        196.9,
+        277.5
+      ],
+      "section_title": "V. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "EVALUATION RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "The IIP3 for the IF circuits was (4) IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 2, FEBRUARY 2004 Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.6,
+      "relevance_breakdown": {
+        "-layout": -2.0,
+        "section:conclusion": -1.0,
+        "references": 0.4
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "transceiver",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wireless, wlan, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Layout of fabricated CMOS transceiver",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. Experimental set-up for BER measurement.",
+      "caption_bbox": [
+        39.6,
+        455.1,
+        208.6,
+        463.0
+      ],
+      "section_title": "V. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "EVALUATION RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "TABLE I SUMMARY OF PERFORMANCE FIGURES Fig. 8."
+        },
+        {
+          "section_title": "EVALUATION RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "For bit-error-rate (BER) measurements, IF output terminals of the prototype circuit were connected to the test input terminals between the IF and ADC blocks of the HD157100 BiCMOS Bluetooth chip mounted on a test board (Fig. 8)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wireless, wlan, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Experimental set-up for BER measurement",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 1,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

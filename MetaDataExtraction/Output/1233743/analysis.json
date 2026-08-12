@@ -1,0 +1,807 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1233743.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1233743",
+  "generated_at": "2026-07-29T21:30:57",
+  "paper_metadata": {
+    "title": "A Four-Input Beam-Forming Downconverter for Adaptive Antennas",
+    "authors": [
+      "Takafumi Yamaji",
+      "Daisuke Kurose",
+      "Osamu Watanabe",
+      "Shuichi Obayashi",
+      "Tetsuro Itakura"
+    ],
+    "abstract": "A four-input beam-forming downconverter for adaptive antennas is described. It consists of 2-bit variable gain amplifiers (VGAs), 5-bit local oscillator (LO) signal phase shifters using double RC-bridge circuits, and mixers. The VGAs adjust gain deviation between signal paths. A differential-signal-to-eightphase-signal converter is employed as a part of the LO phase shifter to reduce the chip size. A maximum phase error of 4.1 , which is less than 1 2 LSB, is achieved. This error value indicates that the required phase shifter accuracy and the necessary isolation between the VGAs has been achieved. This beam-forming IC is applicable to receivers with adaptive antennas, and is expected to help to reduce the costs of adaptive antenna systems.",
+    "keywords": [
+      "Beam forming",
+      "adaptive antenna",
+      "smart antenna"
+    ],
+    "doi": "10.1109/JSSC.2003.817262",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Four-Input Beam-Forming Downconverter",
+    "technology": "GAAS",
+    "application_domain": "microwave, wireless, if",
+    "sub_blocks": [
+      "inductor",
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "output buffer",
+      "mixer",
+      "switch",
+      "transmission line"
+    ],
+    "design_purpose": "This beam-forming IC is applicable to receivers with adaptive antennas, and is expected to help to reduce the costs of adaptive antenna systems.",
+    "function_summary": "Four-Input Beam-Forming Downconverter: This beam-forming IC is applicable to receivers with adaptive antennas, and is expected to help to reduce the costs of adaptive antenna systems.",
+    "key_specs": [
+      "11.25 ph",
+      "90 ph",
+      "45 ph",
+      "10%",
+      "300 MHz",
+      "1 dB",
+      "1.5 dB",
+      "1 v",
+      "0.5 dB",
+      "5.625 ph"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE USE OF adaptive antennas in wireless communication has two main advantages. First, the required transmission power is reduced because the transmitting antenna focuses energy on the receiving antenna by beam forming, and the adaptive antenna is sensitive to signals from a particular direction. The lower transmission power allows longer operation with a limited battery capacity. Second, the sys ..."
+    },
+    {
+      "number": "II",
+      "title": "ADAPTIVE ANTENNAS AND BEAM FORMING",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "Fig. 1 shows the basic functions of an adaptive antenna. The operation of an antenna array can be viewed as the spatial counterpart of finite-impulse response (FIR) filtering of discrete time signals. Assuming that the desired signal comes from upper left, as shown in Fig. 1, the signals arriving at each antenna element have different time delays. The time difference results in a phase difference. ..."
+    },
+    {
+      "number": "III",
+      "title": "CHIP ARCHITECTURE AND CIRCUIT DESIGN",
+      "kind": "proposed",
+      "page": 1,
+      "text_preview": "Fig. 3 is the block diagram of the beam-forming IC. It consists of a differential-signal-to-eight-phase-signal converter and four identical circuit blocks, which are indicated as units A, B, C, and D. Each unit has a variable gain amplifier, a 2-bit fine phase shifter, and a mixer. Our previous test chip had four RC phase shifters, which di- , 45 , 22.5 , and 11.25 phase split vided an input signa ..."
+    },
+    {
+      "number": "IV",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 3,
+      "text_preview": "Fig. 9 shows the die micrograph of our test chip. The chip 2.9 mm. area is 2.9 mm Fig. 10 shows the measured dependence of the conversion gain from each input port to output port on the LO signal amplitude. The curves show that the phase shifters can supply sufficiently large LO signals to the mixer circuits. Three of the four curves are almost the same, but the gain from input port A is 0.5 dB lo ..."
+    },
+    {
+      "number": "V",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 5,
+      "text_preview": "A four-input 5-bit beam-forming downconverter for adaptive antennas has been proposed. It has three advantages. First, it is low in cost because it can be implemented in silicon technology. Second, sufficient phase accuracy is achieved with the proposed double-bridge circuit. Third, the noise contribution of this phase shifter to the receiver is negligible because the LO signal phase-shifting arch ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Adaptive antenna.",
+      "caption_bbox": [
+        301.1,
+        319.9,
+        388.0,
+        330.5
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1."
+        },
+        {
+          "section_title": "ADAPTIVE ANTENNAS AND BEAM FORMING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 1 shows the basic functions of an adaptive antenna."
+        },
+        {
+          "section_title": "ADAPTIVE ANTENNAS AND BEAM FORMING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Assuming that the desired signal comes from upper left, as shown in Fig. 1, the signals arriving at each antenna element have different time delays."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 5,
+          "sentence": "Phase and Delay As shown in Fig. 1, the signals arriving at each antenna element have a different time delay, and the ideal way to compensate for the differences is RF phase shifting with variable or switched delay lines."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.1,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Four-Input Beam-Forming Downconverter",
+        "technology": "GAAS",
+        "application_domain": "microwave, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Adaptive antenna",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.05,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Receiver block diagram.",
+      "caption_bbox": [
+        39.6,
+        153.4,
+        146.8,
+        164.1
+      ],
+      "section_title": "II. ADAPTIVE ANTENNAS AND BEAM FORMING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ADAPTIVE ANTENNAS AND BEAM FORMING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "In addition, undesired signals from other directions are reduced, even if the signal frequencies are the same as those of the desired Fig. 2."
+        },
+        {
+          "section_title": "ADAPTIVE ANTENNAS AND BEAM FORMING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 2 shows a block diagram of the receiver."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "GAAS",
+        "application_domain": "microwave, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Receiver block diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Block diagram of the test chip.",
+      "caption_bbox": [
+        302.6,
+        212.8,
+        430.9,
+        223.5
+      ],
+      "section_title": "II. ADAPTIVE ANTENNAS AND BEAM FORMING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ADAPTIVE ANTENNAS AND BEAM FORMING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Another issue is that several projects on adaptive antennas have been pursued within Toshiba IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 10, OCTOBER 2003 Fig. 3."
+        },
+        {
+          "section_title": "CHIP ARCHITECTURE AND CIRCUIT DESIGN",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 3 is the block diagram of the beam-forming IC."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "Four-Input Beam-Forming Downconverter",
+        "technology": "GAAS",
+        "application_domain": "microwave, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the test chip",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 1,
+      "caption": "Fig. 4. Single-input four-output phase shifter.",
+      "caption_bbox": [
+        302.6,
+        350.3,
+        453.7,
+        360.9
+      ],
+      "section_title": "II. ADAPTIVE ANTENNAS AND BEAM FORMING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ADAPTIVE ANTENNAS AND BEAM FORMING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 4."
+        },
+        {
+          "section_title": "CHIP ARCHITECTURE AND CIRCUIT DESIGN",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 4 shows the block diagram of the single-input four-output phase shifter, which is equivalent to four 5-bit phase shifters."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "phase shifter",
+        "technology": "GAAS",
+        "application_domain": "microwave, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Single-input four-output phase shifter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. (a) Two-output double RC-bridge phase shifter for 45 phase shifting. (b) Single-output double RC-bridge phase shifter for 22.5 and 11.25 phase shifting.",
+      "caption_bbox": [
+        38.1,
+        392.5,
+        289.2,
+        421.0
+      ],
+      "section_title": "III. CHIP ARCHITECTURE AND CIRCUIT DESIGN",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "CHIP ARCHITECTURE AND CIRCUIT DESIGN",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "YAMAJI et al.: FOUR-INPUT BEAM-FORMING DOWNCONVERTER FOR ADAPTIVE ANTENNAS (a) (b) Fig. 5."
+        },
+        {
+          "section_title": "CHIP ARCHITECTURE AND CIRCUIT DESIGN",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The double RC-bridge are used as the 45 circuits are also used in the fine 2-bit phase shifter as the 22.5 and 11.25 phase shifters. phase shifters in the 2-to-8 As shown in Fig. 5(a), the two 45 converter each output two phase split signals, and fine phase shifters output one signal as shown in Fig. 5(b)."
+        },
+        {
+          "section_title": "CHIP ARCHITECTURE AND CIRCUIT DESIGN",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The phase curves change from to , and split away because R and C in Fig. 5 are 0 and C . set smaller than R Fig. 6."
+        },
+        {
+          "section_title": "CHIP ARCHITECTURE AND CIRCUIT DESIGN",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "As shown in Fig. 5(b), signal selection is done by switching ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.6,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "phase shifter",
+        "technology": "GAAS",
+        "application_domain": "microwave, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Two-output double RC-bridge phase shifter for 45 phase shifting. (b) Single-output double RC-bridge phase shifter for 22.5 and 11.25 phase shifting",
+        "key_specs": [
+          "11.25 ph"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.4,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. Frequency response of the double RC-bridge phase shifter and phase difference between the two outputs.",
+      "caption_bbox": [
+        301.1,
+        239.9,
+        552.2,
+        259.5
+      ],
+      "section_title": "III. CHIP ARCHITECTURE AND CIRCUIT DESIGN",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "CHIP ARCHITECTURE AND CIRCUIT DESIGN",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 6 shows the phase frequency response of the double-bridge circuit and the phase difference between two signals."
+        },
+        {
+          "section_title": "CHIP ARCHITECTURE AND CIRCUIT DESIGN",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The phase curves change from to , and split away because R and C in Fig. 5 are 0 and C . set smaller than R Fig. 6."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 5,
+          "sentence": "Therefore At the center frequency, (14) From (10) and (11) (15) Therefore, at (16) YAMAJI et al.: FOUR-INPUT BEAM-FORMING DOWNCONVERTER FOR ADAPTIVE ANTENNAS must be between 0 and as shown in Fig. 6, and is at ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "phase shifter",
+        "technology": "GAAS",
+        "application_domain": "microwave, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Frequency response of the double RC-bridge phase shifter and phase difference between the two outputs",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.31,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 2,
+      "caption": "Fig. 7. Schematic of the buffer amplifier.",
+      "caption_bbox": [
+        301.1,
+        429.7,
+        438.1,
+        440.4
+      ],
+      "section_title": "III. CHIP ARCHITECTURE AND CIRCUIT DESIGN",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "CHIP ARCHITECTURE AND CIRCUIT DESIGN",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 7."
+        },
+        {
+          "section_title": "CHIP ARCHITECTURE AND CIRCUIT DESIGN",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 7 shows the schematic of the buffer amplifier.The requirements for the buffers are: 1) high input impedance to avoid the phase error caused by current output from the RC-bridge circuit; 2) low output impedance to drive the capacitive load at the desired frequency."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "GAAS",
+        "application_domain": "microwave, wireless, if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Schematic of the buffer amplifier",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.5,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. Schematic of the VGA.",
+      "caption_bbox": [
+        39.6,
+        194.7,
+        144.0,
+        205.3
+      ],
+      "section_title": "III. CHIP ARCHITECTURE AND CIRCUIT DESIGN",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "CHIP ARCHITECTURE AND CIRCUIT DESIGN",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Note that inductors effectively compensate for the capacitive susceptance at higher frequencies [3], but our LO frequency of Fig. 8."
+        },
+        {
+          "section_title": "CHIP ARCHITECTURE AND CIRCUIT DESIGN",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 8 shows the schematic of the VGA."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "Four-Input Beam-Forming Downconverter",
+        "technology": "GAAS",
+        "application_domain": "microwave, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematic of the VGA",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.86,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 3,
+      "caption": "Fig. 9. Die micrograph.",
+      "caption_bbox": [
+        302.6,
+        244.3,
+        384.1,
+        254.9
+      ],
+      "section_title": "III. CHIP ARCHITECTURE AND CIRCUIT DESIGN",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "CHIP ARCHITECTURE AND CIRCUIT DESIGN",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "For higher input IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 10, OCTOBER 2003 Fig. 9."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Fig. 9 shows the die micrograph of our test chip."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "-micrograph": -3.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "Four-Input Beam-Forming Downconverter",
+        "technology": "GAAS",
+        "application_domain": "microwave, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Die micrograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10. Dependence of the conversion gain from four input ports on LO signal amplitude.",
+      "caption_bbox": [
+        38.1,
+        217.3,
+        289.1,
+        236.8
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "The chip 2.9 mm. area is 2.9 mm Fig. 10 shows the measured dependence of the conversion gain from each input port to output port on the LO signal amplitude."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "The phase difference between the reference 50downconverted signal and the output signal of the device under YAMAJI et al.: FOUR-INPUT BEAM-FORMING DOWNCONVERTER FOR ADAPTIVE ANTENNAS Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "GAAS",
+        "application_domain": "microwave, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Dependence of the conversion gain from four input ports on LO signal amplitude",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 4,
+      "caption": "Fig. 11. Phase measurement setup.",
+      "caption_bbox": [
+        38.1,
+        398.2,
+        155.4,
+        408.8
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Fig. 11 shows the phase measurement setup."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-setup": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Four-Input Beam-Forming Downconverter",
+        "technology": "GAAS",
+        "application_domain": "microwave, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Phase measurement setup",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 4,
+      "caption": "Fig. 12. Measured phase.",
+      "caption_bbox": [
+        38.1,
+        575.9,
+        124.9,
+        586.5
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "( Fig. 12."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Fig. 12 is the measured phase for the 5-bit control code."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Four-Input Beam-Forming Downconverter",
+        "technology": "GAAS",
+        "application_domain": "microwave, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured phase",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 4,
+      "caption": "Fig. 13. Measured phase error.",
+      "caption_bbox": [
+        301.1,
+        210.8,
+        405.2,
+        221.4
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Fig. 13 shows the phase error for the 5-bit code."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "This indicate that the main reason for the error is Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Four-Input Beam-Forming Downconverter",
+        "technology": "GAAS",
+        "application_domain": "microwave, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured phase error",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 4,
+      "caption": "Fig. 14. Frequency dependence of phase error.",
+      "caption_bbox": [
+        301.1,
+        384.4,
+        455.6,
+        395.0
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Fig. 14."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "The curves in Fig. 14 are measured phase errors for unit D at within the range different frequencies."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Four-Input Beam-Forming Downconverter",
+        "technology": "GAAS",
+        "application_domain": "microwave, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Frequency dependence of phase error",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 7,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

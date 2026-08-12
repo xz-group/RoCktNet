@@ -1,0 +1,1199 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1425717.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1425717",
+  "generated_at": "2026-07-29T22:02:37",
+  "paper_metadata": {
+    "title": "A 0.25-m CMOS Quad-Band GSM RF Transceiver Using an Efficient LO Frequency Plan",
+    "authors": [
+      "Eunseok Song",
+      "Yido Koo",
+      "Yeon-Jae Jung",
+      "Deok-Hee Lee",
+      "Sangyoung Chu",
+      "Soo-Ik Chae"
+    ],
+    "abstract": "This paper describes a single-chip CMOS quad-band (850/900/1800/1900 MHz) RF transceiver for GSM/GPRS appli- [2]. cations. It is the most important design issue to maximize resource The Global Systems for Mobile communication (GSM) sharing and reuse in designing the multiband transceivers. In network spanning over 200 countries is a rapidly growing and particular, reducing the number of voltage-controlled oscillators (VCOs) required for local oscillator (LO) frequency generation is evolving mobile standard [3]. It is the first cellular system that very important because the VCO and phase-locked loop (PLL) cirspecifies digital modulation and network-level architectures cuits occupy a relatively large area. We propose a quad-band GSM and services [4]. There are several frequency bands where GSM transceiver architecture that employs a direct conversion receiver terminals are or will shortly be operated. Therefore, a GSM and an offset PLL transmitter, which requires only one VCO/PLL terminal that can support all of the GSM frequency bands listed to generate LO signals by using an efficient LO frequency plan. In the receive path, four separate LNAs are used for each band, in Table I will be more useful for its global roaming [3], [5]. and two down-conversion mixers are used, one for the low bands Previously, there have been several works related to GSM (850/900 MHz) and the other for the high bands (1800/1900 MHz). transceivers [6]–[11]. Early GSM transceivers [6]–[8] employed A receiver baseband circuit is shared for all four bands because the super-heterodyne architecture to integrate the receiver and all of their channel spaces are the same. In the transmit path, most of the building blocks of the offset PLL, including a TX VCO transmitter in a single chip. However, they were implemented and IF filters, are integrated. The quad-band GSM transceiver with BJT technology and did not integrate all of the functions, m CMOS technology has a size that was implemented in 0.25requiring several external components, such as an IF filter. Al3.2 mm2, including its pad area. From the experimental of 3.3 though the GSM transceivers [9], [10] developed later were results, we found that the receiver provides a maximum noise implemented with low-cost CMOS technology, they still refigure of 2.9 dB and a minimum IIP3 of 13.2 dBm for the EGSM 900 band. The transmitter shows an rms phase error of 1.4 quired several off-chip filters for image rejection and channel and meets the GSM spectral mask specification. The prototype selection [9] or deferred these tasks to their baseband digital chip consumes 56 and 58 mA at 2.8 V in the RX and TX modes, signal processing (DSP) chip [10]. Moreover, they supported respectively. only single-band communication, that is, the GSM900 band in",
+    "keywords": [
+      "CMOS",
+      "dc offset",
+      "direct conversion",
+      "frequency di-"
+    ],
+    "doi": "10.1109/JSSC.2005.845990",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2005
+  },
+  "paper_circuit_context": {
+    "circuit_type": "0.25-m CMOS Quad-Band GSM RF Transceiver",
+    "technology": "CMOS, BICMOS, GAAS, BJT",
+    "application_domain": "rf, radio frequency, baseband, if",
+    "sub_blocks": [
+      "inductor",
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "current source",
+      "mixer",
+      "switch",
+      "output buffer"
+    ],
+    "design_purpose": "It is the most important design issue to maximize resource The Global Systems for Mobile communication (GSM) sharing and reuse in designing the multiband transceivers.",
+    "function_summary": "0.25-m CMOS Quad-Band GSM RF Transceiver: It is the most important design issue to maximize resource The Global Systems for Mobile communication (GSM) sharing and reuse in designing the multiband transceivers.",
+    "key_specs": [
+      "1900 MHz",
+      "900 MHz",
+      "2.9 dB",
+      "13.2 dBm",
+      "2.8 V",
+      "20%",
+      "-2 w",
+      "1592 MHz",
+      "1528 MHz",
+      "200 kHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE wide use of portable communication systems has created a great demand for low-cost, low-power, small formfactor transceivers. In the past, radio frequency (RF) front-end circuits have been implemented with GaAs or bipolar junction transistor (BJT) technologies while the low-frequency baseband circuits have used CMOS technologies. Such implementations using the technologies of different kinds, ..."
+    },
+    {
+      "number": "II",
+      "title": "QUAD-BAND TRANSCEIVER ARCHITECTURE AND ITS LO",
+      "kind": "proposed",
+      "page": 1,
+      "text_preview": "FREQUENCY PLAN In this section, we propose the architecture for the GSM quadband transceiver that employs a direct-conversion receiver and an offset PLL transmitter. Therefore, we can share the baseband ﬁlters among the four frequency bands and image rejection ﬁlters are not required in the receiver, which reduces the area of the transceiver. We employ an offset PLL transmitter in the proposed tra ..."
+    },
+    {
+      "number": "III",
+      "title": "CIRCUIT DESCRIPTIONS",
+      "kind": "design",
+      "page": 5,
+      "text_preview": "A. LNA For each LNA, we used a single-stage differential LNA, as shown in Fig. 6(a), to improve its linearity. The differential LNA was employed to achieve a good IIP2 characteristic, although it requires a large area and consumes more current. We used down-bond wires as series feedback inductors to lower both the noise ﬁgure and the input voltage standing wave ratio (VSWR). The load of the LNA is ..."
+    },
+    {
+      "number": "IV",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 9,
+      "text_preview": "The quad-band GSM transceiver described in the previous m 1-poly 5-metal CMOS section was implemented in 0.25technology, and its microphotograph is shown in Fig. 15. The (a) For the RX input power of 86 dBm. (b) For the RX input power of 102 Fig. 18. Constellations of the GMSK demodulated signal at the RX output. dBm. prototype chip occupies an area of 3.3 3.2 mm including its pads, which was asse ..."
+    },
+    {
+      "number": "V",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 10,
+      "text_preview": "In this paper, we proposed an efﬁcient frequency plan that is suitable for the GSM quad-band transceiver. We also presented a SONG et al.: 0.25m CMOS QUAD-BAND GSM RF TRANSCEIVER USING AN EFFICIENT LO FREQUENCY PLAN TABLE V PERFORMANCE SUMMARY OF THE QUAD-BAND GSM TRANSCEIVER CHIP single-chip 0.25m CMOS RF transceiver using the proposed frequency plan. The GSM quad-band transceiver includes only o ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Waveforms of input and I=Q signals generated with frequency dividers. (a) With a divide-by-2 circuit. (b) With a divide-by-4 circuit.",
+      "caption_bbox": [
+        301.1,
+        417.2,
+        552.2,
+        434.1
+      ],
+      "section_title": "II. QUAD-BAND TRANSCEIVER ARCHITECTURE AND ITS LO",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "QUAD-BAND TRANSCEIVER ARCHITECTURE AND ITS LO",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 1 shows the other method of generating I/Q signals with the divider circuits."
+        },
+        {
+          "section_title": "QUAD-BAND TRANSCEIVER ARCHITECTURE AND ITS LO",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "In the frequency-divide-by-2 method shown is rising-edge triggered and is fallingin Fig. 1(a), edge triggered."
+        },
+        {
+          "section_title": "QUAD-BAND TRANSCEIVER ARCHITECTURE AND ITS LO",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Therefore, the phase accuracy of the quadrature Fig. 1."
+        },
+        {
+          "section_title": "QUAD-BAND TRANSCEIVER ARCHITECTURE AND ITS LO",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "On the other hand, in the frequency-divide-by-4 method shown in Fig. 1(b), and are rising-edge triggered."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.6,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-waveform": -2.0,
+        "section:proposed": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "CMOS, BICMOS, GAAS, BJT",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Waveforms of input and I=Q signals generated with frequency dividers. (a) With a divide-by-2 circuit. (b) With a divide-by-4 circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.2,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 2,
+      "caption": "Fig. 2. LO frequency plans for the transceiver architecture that employs a direct conversion receiver and an offset PLL transmitter. (a) A general frequency plan. (b) Proposed frequency plan.",
+      "caption_bbox": [
+        39.6,
+        620.0,
+        290.7,
+        645.9
+      ],
+      "section_title": "II. QUAD-BAND TRANSCEIVER ARCHITECTURE AND ITS LO",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "QUAD-BAND TRANSCEIVER ARCHITECTURE AND ITS LO",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Although the VCOs using a ring oscillator have a wider tuning range, they are rarely used in the transceiver IC due to their large phase noise. is intended to loosen the VCO The constraint for away from pulling and pushing effect by separating TABLE II IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 5, MAY 2005 CONSTRAINTS FOR THE LO FREQUENCY PLAN FOR THE GSM QUAD-BAND TRANSCEIVER ARCHITECTURE THAT EMPLOYS A DIRECT-CONVERSION RECEIVER AND AN OFFSET PLL TRANSMITTER Fig. 2."
+        },
+        {
+          "section_title": "QUAD-BAND TRANSCEIVER ARCHITECTURE AND ITS LO",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 2(a) shows a general frequency plan that employs only one LO VCO/PLL and is suitable to the offset PLL transmitter for the quad-band transceiver, which can satisfy the requirement of separating away from in the direct conversion receiver."
+        },
+        {
+          "section_title": "QUAD-BAND TRANSCEIVER ARCHITECTURE AND ITS LO",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "For the frequency plan in Fig. 2(a), we can write the following equations: (1) (2) (3) where is the low-band frequency and is the high-band frequency."
+        },
+        {
+          "section_title": "QUAD-BAND TRANSCEIVER ARCHITECTURE AND ITS LO",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "We adopted the frequency Plan3 shown in Fig. 2(b), which satisﬁes all the constraints in Table II."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 8.6,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "+proposed": 3.0,
+        "section:proposed": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS, BICMOS, GAAS, BJT",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "LO frequency plans for the transceiver architecture that employs a direct conversion receiver and an offset PLL transmitter. (a) A general frequency plan. (b) Proposed frequency plan",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.7,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 3,
+      "caption": "Fig. 3. RX block diagram based on the proposed frequency plan. (a) GSM850/EGSM900 bands. (b) DCS1800/PCS1900 bands.",
+      "caption_bbox": [
+        38.1,
+        582.5,
+        289.2,
+        599.4
+      ],
+      "section_title": "II. QUAD-BAND TRANSCEIVER ARCHITECTURE AND ITS LO",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "QUAD-BAND TRANSCEIVER ARCHITECTURE AND ITS LO",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Quad-Band Frequency Plan Based on the frequency Plan3 in Table III, we describe the detailed frequency plan suitable to the GSM quad-band SONG et al.: 0.25m CMOS QUAD-BAND GSM RF TRANSCEIVER USING AN EFFICIENT LO FREQUENCY PLAN TABLE III LO FREQUENCY PLANS THAT SATISFIES THE CONSTRAINTS IN TABLE II Fig. 3."
+        },
+        {
+          "section_title": "QUAD-BAND TRANSCEIVER ARCHITECTURE AND ITS LO",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "In the low-band RX (GSM850/EGSM900) freof the quency plan shown in Fig. 3(a), the LO VCO runs at RF frequency, and the LO signal for direct down conversion is generated by the high-sided mixing of the signals from the divide-by-2 with the divide-by-8 signals of the LO VCO signals are generated through frequency."
+        },
+        {
+          "section_title": "QUAD-BAND TRANSCEIVER ARCHITECTURE AND ITS LO",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "For the high-band RX (DCS1800/PCS1900) frequency plan in Fig. 3(b), the LO VCO runs at 4/5 of the signals are generated through the RF frequency and the divide-by-4 of the LO VCO frequency."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 8.2,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "+proposed": 3.0,
+        "section:proposed": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, BICMOS, GAAS, BJT",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "RX block diagram based on the proposed frequency plan. (a) GSM850/EGSM900 bands. (b) DCS1800/PCS1900 bands",
+        "key_specs": [
+          "-2 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.99,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 4,
+      "caption": "Fig. 4.",
+      "caption_bbox": [
+        39.6,
+        452.4,
+        60.3,
+        460.4
+      ],
+      "section_title": "II. QUAD-BAND TRANSCEIVER ARCHITECTURE AND ITS LO",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "QUAD-BAND TRANSCEIVER ARCHITECTURE AND ITS LO",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "In the TX frequency plan shown in Fig. 4, we used the offset PLL architecture including a TX VCO to reduce the noise in the transmit signal."
+        },
+        {
+          "section_title": "QUAD-BAND TRANSCEIVER ARCHITECTURE AND ITS LO",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Similar to the RX frequency plan, the LO VCO in the TX frequency plan runs at 8/5 of the transmit RF for the of the transmit RF low-band RX (GSM850/EGSM900) and for the high-band RX (DCS1800/PCS1900), as shown in Fig. 4."
+        },
+        {
+          "section_title": "QUAD-BAND TRANSCEIVER ARCHITECTURE AND ITS LO",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, BICMOS, GAAS, BJT",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "In the TX frequency plan shown in Fig. 4, we used the offset PLL architecture including a TX VCO to reduce the noise in the transmit signal.",
+        "function_summary": "voltage-controlled oscillator (VCO). In the TX frequency plan shown in Fig. 4, we used the offset PLL architecture including a TX VCO to reduce the noise in the transmit signal.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.31,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 5,
+      "caption": "Fig. 5. Block diagram of the quad-band GSM transceiver based on the proposed frequency plan.",
+      "caption_bbox": [
+        38.1,
+        402.3,
+        352.7,
+        410.3
+      ],
+      "section_title": "III. CIRCUIT DESCRIPTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "QUAD-BAND TRANSCEIVER ARCHITECTURE AND ITS LO",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "As shown in Fig. 5, the proposed architecture integrates most of the building blocks for the quad-band transceiver."
+        },
+        {
+          "section_title": "QUAD-BAND TRANSCEIVER ARCHITECTURE AND ITS LO",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "SONG et al.: 0.25m CMOS QUAD-BAND GSM RF TRANSCEIVER USING AN EFFICIENT LO FREQUENCY PLAN Fig. 5."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "The offset DN mixer translates the VCO frequency into the IF frequency, which is applied to the phase frequency detector (PFD), as shown in Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 7.7,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "+proposed": 3.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "transceiver",
+        "technology": "CMOS, BICMOS, GAAS, BJT",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the quad-band GSM transceiver based on the proposed frequency plan",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.98,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 6,
+      "caption": "Fig. 6. LNA. (a) Schematic. (b) Equivalent circuit for a half circuit of the load.",
+      "caption_bbox": [
+        39.6,
+        481.6,
+        290.7,
+        489.6
+      ],
+      "section_title": "III. CIRCUIT DESCRIPTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "LNA For each LNA, we used a single-stage differential LNA, as shown in Fig. 6(a), to improve its linearity."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "The impedance of the half circuit of its load, shown in Fig. 6(b), can be written as follows: (8) From (8), we can write and as follows: At the frequency of , the load impedance has its min- , it is at its maximum value, and, at the frequency of should be designed to be , the receive imum value. band frequency, to achieve maximum LNA gain."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "The rms output noise voltage in Fig. 9(b) is Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+circuit": 1.0,
+        "-equivalent": -2.0,
+        "-half circuit": -2.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS, BICMOS, GAAS, BJT",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "The impedance of the half circuit of its load, shown in Fig. 6(b), can be written as follows: (8) From (8), we can write and as follows: At the frequency of , the load impedance has its min- , it is at its maximum value, and, at the frequency of should be designed to be , the receive imum value. band frequency, to ...",
+        "function_summary": "LNA. (a) Schematic. (b) Equivalent circuit for a half circuit of the load. The impedance of the half circuit of its load, shown in Fig. 6(b), can be written as follows: (8) From (8), we can write and as follows: At the frequency of , the load impedance has its min- , it is at its maximum value, and, at the frequency ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 6,
+      "caption": "Fig. 7. Simulation result for the PCS1900 LNA.",
+      "caption_bbox": [
+        39.6,
+        664.7,
+        199.1,
+        672.6
+      ],
+      "section_title": "III. CIRCUIT DESCRIPTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Fig. 7 shows the simulation result for the PCS1900 LNA."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS, BICMOS, GAAS, BJT",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulation result for the PCS1900 LNA",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 6,
+      "caption": "Fig. 8. Down-conversion mixer with common-mode feedback (CMFB).",
+      "caption_bbox": [
+        302.6,
+        318.9,
+        536.9,
+        326.8
+      ],
+      "section_title": "III. CIRCUIT DESCRIPTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Each shown in Fig. 8, where the NMOS current, , reduces the bias current of its correPMOS current source, noise sponding LO switch, which is the main source of the in Gilbert-type mixers [15]."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Instead of using the ac couplers, which have a long settling time and occupy a large area, we employed a common-mode feedback circuit with an operational ampliﬁer to overcome these problems [16], as shown in Fig. 8."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 5, MAY 2005 Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS, BICMOS, GAAS, BJT",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "current source",
+          "mixer",
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Down-conversion mixer with common-mode feedback (CMFB)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 6,
+      "caption": "Fig. 9. Simulation results for the down-conversion mixer. (a) Gain and IIP3 versus I . (b) RMS output noise versus I .",
+      "caption_bbox": [
+        302.6,
+        743.6,
+        553.7,
+        760.5
+      ],
+      "section_title": "III. CIRCUIT DESCRIPTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "The simulation results for the down-conversion mixer are shown in Fig. 9."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "The rms output noise voltage in Fig. 9(b) is Fig. 6."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Fig. 9."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "However, the conversion gain and IIP3 in Fig. 9(a) are seincreases more than verely degraded as the PMOS current 2 mA."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.1,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS, BICMOS, GAAS, BJT",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simulation results for the down-conversion mixer. (a) Gain and IIP3 versus I . (b) RMS output noise versus I",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.29,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 7,
+      "caption": "Fig. 10. RX baseband block diagram.",
+      "caption_bbox": [
+        38.1,
+        202.4,
+        164.7,
+        210.4
+      ],
+      "section_title": "III. CIRCUIT DESCRIPTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "SONG et al.: 0.25m CMOS QUAD-BAND GSM RF TRANSCEIVER USING AN EFFICIENT LO FREQUENCY PLAN Fig. 10."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "RX Baseband Circuits The block diagram of the RX baseband is shown in Fig. 10."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "The output of the RX down-conversion mixer is applied to the input of the PreAGC, as in Fig. 10."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "We used the active dc-offset cancellation circuits (DCCs), which are connected to each AGC, as shown in Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.1,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS, BICMOS, GAAS, BJT",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "RX baseband block diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.75,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 7,
+      "caption": "Fig. 11. VGA with DCC. (a) Schematic. (b) Its frequency response.",
+      "caption_bbox": [
+        301.1,
+        455.6,
+        522.8,
+        463.6
+      ],
+      "section_title": "III. CIRCUIT DESCRIPTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "An AGC cell with the DCC is shown in Fig. 11, where we used MOS capacitors to reduce the area."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "For the AGC circan be written as follows: cuit in Fig. 11(a), the AGC output (9) From (9), the transfer function of the AGC can be written as follows: (10) Fig. 11."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "The transfer function of (10) is drawn in Fig. 11(b)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.7,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "0.25-m CMOS Quad-Band GSM RF Transceiver",
+        "technology": "CMOS, BICMOS, GAAS, BJT",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "An AGC cell with the DCC is shown in Fig. 11, where we used MOS capacitors to reduce the area.",
+        "function_summary": "VGA with DCC. (a) Schematic. (b) Its frequency response. An AGC cell with the DCC is shown in Fig. 11, where we used MOS capacitors to reduce the area.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.85,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 8,
+      "caption": "Fig. 12. Offset UP mixer with improved linearity.",
+      "caption_bbox": [
+        39.6,
+        278.7,
+        204.1,
+        286.6
+      ],
+      "section_title": "III. CIRCUIT DESCRIPTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Fig. 12 shows the offset UP mixer used in this work, which improves linearity substantially using a gain-boosting operational ampliis a degeneration resistor and the transistors, M1 and ﬁer."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "From the simulation Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS, BICMOS, GAAS, BJT",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [
+          "resistor",
+          "transistor/MOSFET",
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Offset UP mixer with improved linearity",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 8,
+      "caption": "Fig. 13. Offset DN mixer with cascode stage.",
+      "caption_bbox": [
+        39.6,
+        567.2,
+        190.8,
+        575.2
+      ],
+      "section_title": "III. CIRCUIT DESCRIPTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Fig. 13."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Fig. 13 shows the offset DN mixer used in this work."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS, BICMOS, GAAS, BJT",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Offset DN mixer with cascode stage",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 8,
+      "caption": "Fig. 14. Simulation result for TX offset PLL: rms phase error and phase noise at 20-MHz offset versus loop bandwidth.",
+      "caption_bbox": [
+        302.6,
+        231.3,
+        553.7,
+        248.2
+      ],
+      "section_title": "III. CIRCUIT DESCRIPTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 5, MAY 2005 Fig. 14."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Fig. 14 shows the simulation result for the rms phase error along with the phase noise at 20-MHz offset versus the loop bandwidth of the offset PLL."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "-phase noise": -2.5,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS, BICMOS, GAAS, BJT",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulation result for TX offset PLL: rms phase error and phase noise at 20-MHz offset versus loop bandwidth",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 8,
+      "caption": "Fig. 15. Microphotograph of the quad-band GSM transceiver.",
+      "caption_bbox": [
+        302.6,
+        484.4,
+        505.0,
+        492.4
+      ],
+      "section_title": "III. CIRCUIT DESCRIPTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Fig. 15."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "The quad-band GSM transceiver described in the previous m 1-poly 5-metal CMOS section was implemented in 0.25technology, and its microphotograph is shown in Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "transceiver",
+        "technology": "CMOS, BICMOS, GAAS, BJT",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Microphotograph of the quad-band GSM transceiver",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 9,
+      "caption": "Fig. 16. RX noise ﬁgure versus frequency. (a) EGSM900 band. (b) PCS1900 band.",
+      "caption_bbox": [
+        38.1,
+        361.5,
+        289.2,
+        378.4
+      ],
+      "section_title": "III. CIRCUIT DESCRIPTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "SONG et al.: 0.25m CMOS QUAD-BAND GSM RF TRANSCEIVER USING AN EFFICIENT LO FREQUENCY PLAN Fig. 16."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "Each VCO consumes about 5 mA. size is about 0.7 Fig. 16 shows a graph of noise ﬁgure versus frequency for the receiver."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "Thus, the insertion loss variation of the SAW is included in the NF plot of Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, BICMOS, GAAS, BJT",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "RX noise ﬁgure versus frequency. (a) EGSM900 band. (b) PCS1900 band",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 9,
+      "caption": "Fig. 17. RX IIP3 versus frequency. (a) EGSM900 band. (b) PCS1900 band.",
+      "caption_bbox": [
+        38.1,
+        684.1,
+        284.3,
+        692.1
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Fig. 17."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "Fig. 17 shows a graph of IIP3 versus frequency for the receiver."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "The speciﬁcations shown in Fig. 17 were also calculated by assuming that the front-end loss is 4 dB."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS, BICMOS, GAAS, BJT",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "RX IIP3 versus frequency. (a) EGSM900 band. (b) PCS1900 band",
+        "key_specs": [
+          "3 v",
+          "17 w",
+          "4 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 9,
+      "caption": "Fig. 18. Constellations of the GMSK demodulated signal at the RX output. dBm.",
+      "caption_bbox": [
+        301.1,
+        488.2,
+        552.2,
+        514.1
+      ],
+      "section_title": "III. CIRCUIT DESCRIPTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "(b) For the RX input power of 102 Fig. 18."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "Fig. 18 shows the constellations of a GMSK demodulated dBm and (b) signal at the RX output for the input of (a) dBm."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "0.25-m CMOS Quad-Band GSM RF Transceiver",
+        "technology": "CMOS, BICMOS, GAAS, BJT",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Constellations of the GMSK demodulated signal at the RX output. dBm",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 10,
+      "caption": "Fig. 19. Measured rms phase error at the TX output for the GMSK modulated signal.",
+      "caption_bbox": [
+        39.6,
+        260.7,
+        290.7,
+        277.6
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "From this, we compensated for the insertion loss of the Fig. 19."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "Fig. 19 shows the rms phase error at the TX output for the GMSK modulated signal."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "0.25-m CMOS Quad-Band GSM RF Transceiver",
+        "technology": "CMOS, BICMOS, GAAS, BJT",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured rms phase error at the TX output for the GMSK modulated signal",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 20,
+      "label": "Fig. 20",
+      "page": 10,
+      "caption": "Fig. 20. GMSK modulated spectrums at the TX output. (a) EGSM900 band. (b) PCS1900 band.",
+      "caption_bbox": [
+        302.6,
+        459.6,
+        553.7,
+        476.6
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "The GMSK modulated spectrums at the TX output are shown in Fig. 20, which also meet the GSM spectral mask speciﬁcations [5]."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 5, MAY 2005 Fig. 20."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "0.25-m CMOS Quad-Band GSM RF Transceiver",
+        "technology": "CMOS, BICMOS, GAAS, BJT",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "GMSK modulated spectrums at the TX output. (a) EGSM900 band. (b) PCS1900 band",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 2,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

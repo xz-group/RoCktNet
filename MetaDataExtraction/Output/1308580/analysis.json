@@ -1,0 +1,1017 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1308580.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1308580",
+  "generated_at": "2026-07-29T22:01:43",
+  "paper_metadata": {
+    "title": "A 12-bit 320-MSample/s Current-Steering CMOS D/A Converter in 0.44 mm2",
+    "authors": [
+      "Kevin O’Sullivan",
+      "Chris Gorman",
+      "Michael Hennessy",
+      "Vincent Callaghan"
+    ],
+    "abstract": "A 12-bit 320-MSample/s current-steering D/A converter in 0.18m CMOS is presented. In order to achieve high request 12-bit resolution and the target specification for SFDR linearity and spurious free dynamic range (SFDR), a large degree was 60 dB up to signal frequencies of 60 MHz. Secondary specof segmentation has been used, with the seven most significant bits ification parameters were area and power consumption. As the (MSBs) being implemented as equally weighted current sources. A IC was implemented in a 0.18m process, an additional de- “design-for-layout” approach has allowed this to be done in an area of just 0.44 mm2. The increased switching noise associated with a sign goal was to derive maximum benefit from this relatively high degree of segmentation has been reduced by a new latch archiadvanced technology. It was also important that the techniques tecture. Differential nonlinearity of 0.3 LSB and integral nonlinused should be robust enough to allow porting of the converter earity of 0.4 LSB have been measured. Low-frequency SFDR of to other foundries. 95 dB has been achieved, while SFDR at 320 MS/s remains above The outline of the paper is as follows. In Section II, the im70 and 60 dB for input frequencies up to 10 and 60 MHz, respecplemented D/A architecture is presented, while in Section III the tively. The converter consumes a total of 82 mW from 1.8-V and 3.3-V supplies. The validity of the techniques used has been demondesign considerations that lead to this architecture are explained. strated by fabricating the converter in two separate 0.18m proIn D/A design, the choice of floorplan and the layout are themcesses with similar results measured for both. selves crucial design considerations, and these are discussed in Index Terms—CMOS, digital-to-analog converter (DAC), some detail in Sections IV and V. The dimensioning and strucmatching, mixed analog–digital integrated circuits. ture of the unit current cell is presented in Section VI. Some circuit aspects of the design are then described in Sections VII and VIII: a new latch architecture and a dynamic randomiza-",
+    "keywords": [],
+    "doi": "10.1109/JSSC.2004.829923",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2004
+  },
+  "paper_circuit_context": {
+    "circuit_type": "12-bit 320-MSample/s Current-Steering CMOS D/A Converter in 0.44 mm2",
+    "technology": "CMOS",
+    "application_domain": "wireless",
+    "sub_blocks": [
+      "resistor",
+      "transistor/MOSFET",
+      "current source",
+      "bias circuit",
+      "switch",
+      "latch",
+      "clock / timing",
+      "current mirror"
+    ],
+    "design_purpose": "In order to achieve high request 12-bit resolution and the target specification for SFDR linearity and spurious free dynamic range (SFDR), a large degree was 60 dB up to signal frequencies of 60 MHz.",
+    "function_summary": "12-bit 320-MSample/s Current-Steering CMOS D/A Converter in 0.44 mm2: In order to achieve high request 12-bit resolution and the target specification for SFDR linearity and spurious free dynamic range (SFDR), a large degree was 60 dB up to signal frequencies of 60 MHz.",
+    "key_specs": [
+      "60 dB",
+      "60 MHz",
+      "95 dB",
+      "82 mW",
+      "99.7%",
+      "800 mV",
+      "55 MHz",
+      "56 MHz",
+      "64 dB",
+      "1 MHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "D IGITAL-TO-ANALOG (D/A) converters are essential components of modern applications such as video signal processing, digital signal synthesis, and both wired and wireless transmitters. Formerly, time-domain applications such as high-resolution displays and video signal processing were the main drivers of high-speed D/A development [1], [2]. Accordingly, the emphasis was on specification parameters ..."
+    },
+    {
+      "number": "II",
+      "title": "D/A ARCHITECTURE",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "The converter architecture is shown in Fig. 1. It is a segmented architecture with the seven most significant bits (MSBs) converted using the linear approach with unary current sources, and the five least significant bits (LSBs) converted using binary-weighted current sources. To simplify bussing between the digital decoding circuitry and the analog part, the binary-to-thermometer encoding for the ..."
+    },
+    {
+      "number": "III",
+      "title": "DESIGN CONSIDERATIONS",
+      "kind": "design",
+      "page": 1,
+      "text_preview": "The primary specification for the converter is SFDR. As both static and dynamic performance contribute to SFDR, the error sources which affect both must be considered. Static performance is related to the matching of the converter current sources. It is limited by both random and structural mismatch of the current-source transistors. Structural mismatch can be due to layout edge effects, process g ..."
+    },
+    {
+      "number": "IV",
+      "title": "FLOORPLAN",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "As D/A converter performance is largely determined by matching and data-related interference, the choice of floorplan is a crucial design decision. There are two possible approaches for the floorplan as shown in simplified form in Fig. 3 for a 4-bit unary converter. One is the “row and column” approach Fig. 3. D/A floorplans. (a) Row and column. (b) Current-source array. [Fig. 3(a)] with the two r ..."
+    },
+    {
+      "number": "V",
+      "title": "CURRENT SOURCE ARRAY",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "The CSA is shown in Fig. 5 and contains the linear current sources, the binary current sources, and the input current mirror. The array is divided into 16 subarrays of 132 transistors. Each of the 16 subarrays contains one transistor of the 127 linear sources of the 7 MSBs. Randomization of mismatch errors is fundamental to improving not only the static linearity but also the dynamic performance b ..."
+    },
+    {
+      "number": "VI",
+      "title": "CURRENT CELL",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "Each current source transistor is laid out as two folded strips as shown in Fig. 6. This reduces drain capacitance, but also allows the LSB current source, which has a value 1/32 of the linear MSB sources, to use the same transistor structure, but with just one of the two strips connected. In this way, scaling errors between MSBs and LSBs are eliminated. Four output lines to the bit slice are prov ..."
+    },
+    {
+      "number": "VII",
+      "title": "LATCH ARCHITECTURE",
+      "kind": "proposed",
+      "page": 4,
+      "text_preview": "For each extra segmented bit, the number of switching latches doubles. The large transient current spikes generated when these latches switch can limit dynamic performance through crosstalk and through timing errors caused by voltage spikes on the power supply lines. A special latch architecture, shown in Fig. 7, has been developed to reduce power glitches due to current spikes from VDD to VSS dur ..."
+    },
+    {
+      "number": "VIII",
+      "title": "DYNAMIC RANDOMIZATION",
+      "kind": "other",
+      "page": 4,
+      "text_preview": "The goal of the design was to reduce random and systematic mismatch errors through good layout placement and routing. A selectable 4-bit dynamic randomization feature has been built-in to assess how successful this approach has been. This feature swaps the current sources of 4 MSBs in a data-dependent manner as shown in Fig. 8. This scrambling is updated on each clock signal so that errors in the  ..."
+    },
+    {
+      "number": "IX",
+      "title": "MEASUREMENT RESULTS",
+      "kind": "results",
+      "page": 4,
+      "text_preview": "A. Chip Photograph m The D/A converter has been fabricated in a 0.18single-poly 5-metal low-ohmic substrate process with thick-oxide transistor option.The full D/A converter layout is m high and 598 m wide for a shown in Fig. 9 and is 735 O’SULLIVAN et al.: A 12-BIT 320-MSAMPLE/S CURRENT-STEERING CMOS DAC IN 0.44 mm Fig. 10. Measurement setup. Fig. 11. Measured DNL. total area of 0.44 mm . It can  ..."
+    },
+    {
+      "number": "X",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 7,
+      "text_preview": "A 12-bit 320-MSample/s current-steering CMOS D/A converter with high linearity and SFDR has been realized in m CMOS. A design-for-layout approach and an optimal 0.18use of the technology has allowed a relatively large degree of segmentation to be combined with a CSA floorplan in an area of . The use of the CSA approach offers advantages just 0.44 mm in robustness to gradient effects and in layout  ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. D/A architecture.",
+      "caption_bbox": [
+        38.1,
+        291.6,
+        122.8,
+        299.5
+      ],
+      "section_title": "III. DESIGN CONSIDERATIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "D/A ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The converter architecture is shown in Fig. 1."
+        },
+        {
+          "section_title": "D/A ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "O’SULLIVAN et al.: A 12-BIT 320-MSAMPLE/S CURRENT-STEERING CMOS DAC IN 0.44 mm Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS",
+        "application_domain": "wireless",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "D/A architecture",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.88,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2.",
+      "caption_bbox": [
+        301.1,
+        616.4,
+        321.8,
+        624.3
+      ],
+      "section_title": "III. DESIGN CONSIDERATIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN CONSIDERATIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "In dealing with these error sources, the first decision to be made is how many bits will be segmented, that is, how many bits will be implemented as a unary DAC with equally weighted current sources [Fig. 2(a)], and how many will be implemented as a simple binary-weighted DAC [Fig. 2(b)]."
+        },
+        {
+          "section_title": "DESIGN CONSIDERATIONS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 2. silicon, it was concluded that for this technology 7 bits of segmentation represented an optimal solution."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS",
+        "application_domain": "wireless",
+        "sub_blocks": [
+          "current source"
+        ],
+        "design_purpose": "",
+        "function_summary": "digital-to-analog converter (DAC)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. D/A floorplans. (a) Row and column. (b) Current-source array.",
+      "caption_bbox": [
+        39.6,
+        194.3,
+        268.6,
+        202.3
+      ],
+      "section_title": "IV. FLOORPLAN",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FLOORPLAN",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "There are two possible approaches for the floorplan as shown in simplified form in Fig. 3 for a 4-bit unary converter."
+        },
+        {
+          "section_title": "FLOORPLAN",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "One is the “row and column” approach Fig. 3."
+        },
+        {
+          "section_title": "FLOORPLAN",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "(b) Current-source array. [Fig. 3(a)] with the two row and column decoders, and an array of unit cells, each containing a current-source transistor, a cascode, the switches, and a synchronization latch [4]."
+        },
+        {
+          "section_title": "FLOORPLAN",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "A second approach is the CSA approach, in which the current sources alone are laid out in an array separate from the rest of the circuitry which is then laid out in a bit-slice fashion [Fig. 3(b)]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.6,
+      "relevance_breakdown": {
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "switch",
+        "technology": "CMOS",
+        "application_domain": "wireless",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "current source",
+          "switch",
+          "latch"
+        ],
+        "design_purpose": "",
+        "function_summary": "D/A floorplans. (a) Row and column. (b) Current-source array",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. D/A floorplan.",
+      "caption_bbox": [
+        302.6,
+        288.8,
+        378.8,
+        296.8
+      ],
+      "section_title": "IV. FLOORPLAN",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FLOORPLAN",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The resulting floorplan is shown in Fig. 4."
+        },
+        {
+          "section_title": "FLOORPLAN",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 7, JULY 2004 Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "12-bit 320-MSample/s Current-Steering CMOS D/A Converter in 0.44 mm2",
+        "technology": "CMOS",
+        "application_domain": "wireless",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "D/A floorplan",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Current-source array.",
+      "caption_bbox": [
+        302.6,
+        505.4,
+        399.4,
+        513.4
+      ],
+      "section_title": "V. CURRENT SOURCE ARRAY",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FLOORPLAN",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 5."
+        },
+        {
+          "section_title": "CURRENT SOURCE ARRAY",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The CSA is shown in Fig. 5 and contains the linear current sources, the binary current sources, and the input current mirror."
+        },
+        {
+          "section_title": "CURRENT SOURCE ARRAY",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Randomization of mismatch errors is fundamental to improving not only the static linearity but also the dynamic performance by reducing the amplitudes of spurious spectral components.To achieve randomization of error sources, the transistors in each subarray are laid out using a random placement method as shown in Fig. 5 for the top-left-hand subarray."
+        },
+        {
+          "section_title": "CURRENT SOURCE ARRAY",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "This is shown in Fig. 5 for the placement of the 16 transistors of one linear source."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.6,
+      "relevance_breakdown": {
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "12-bit 320-MSample/s Current-Steering CMOS D/A Converter in 0.44 mm2",
+        "technology": "CMOS",
+        "application_domain": "wireless",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "current source",
+          "current mirror"
+        ],
+        "design_purpose": "Randomization of mismatch errors is fundamental to improving not only the static linearity but also the dynamic performance by reducing the amplitudes of spurious spectral components.To achieve randomization of error sources, the transistors in each subarray are laid out using a random placement method as shown in ...",
+        "function_summary": "Current-source array. Randomization of mismatch errors is fundamental to improving not only the static linearity but also the dynamic performance by reducing the amplitudes of spurious spectral components.To achieve randomization of error sources, the transistors in each subarray are laid out using a random placement ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Unit current cell layout.",
+      "caption_bbox": [
+        38.1,
+        263.5,
+        144.0,
+        271.5
+      ],
+      "section_title": "V. CURRENT SOURCE ARRAY",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CURRENT SOURCE ARRAY",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The remaining transistors in the subarrays are used for the 5 LSB O’SULLIVAN et al.: A 12-BIT 320-MSAMPLE/S CURRENT-STEERING CMOS DAC IN 0.44 mm Fig. 6."
+        },
+        {
+          "section_title": "CURRENT CELL",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Each current source transistor is laid out as two folded strips as shown in Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "-layout": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS",
+        "application_domain": "wireless",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "current source"
+        ],
+        "design_purpose": "",
+        "function_summary": "Unit current cell layout",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Current cell and synchronization latch.",
+      "caption_bbox": [
+        301.1,
+        432.1,
+        454.4,
+        440.1
+      ],
+      "section_title": "VI. CURRENT CELL",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CURRENT CELL",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The current cell, consisting of current source, cascode transistor, and current-steering switches, is shown along with the synchronization latch in Fig. 7."
+        },
+        {
+          "section_title": "CURRENT CELL",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The current-source transistors have been dimensioned for 99.7% yield on an INL specification 0.5 LSB according to the equation derived in [12] for the of relative standard deviation of the LSB unit current source: Using the mismatch model derived in [13], this can be expressed in terms of the process-matching parameters and the transistor biasing: Fig. 7."
+        },
+        {
+          "section_title": "LATCH ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "A special latch architecture, shown in Fig. 7, has been developed to reduce power glitches due to current spikes from VDD to VSS during transitions."
+        },
+        {
+          "section_title": "LATCH ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "But as, for example, a low-to-high transition on DIN is clocked through to NET1 in Fig. 7, MN3 turns on before MP1 is turned off."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.6,
+      "relevance_breakdown": {
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "latch",
+        "technology": "CMOS",
+        "application_domain": "wireless",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "current source",
+          "bias circuit",
+          "switch",
+          "latch",
+          "clock / timing"
+        ],
+        "design_purpose": "A special latch architecture, shown in Fig. 7, has been developed to reduce power glitches due to current spikes from VDD to VSS during transitions.",
+        "function_summary": "Current cell and synchronization latch. A special latch architecture, shown in Fig. 7, has been developed to reduce power glitches due to current spikes from VDD to VSS during transitions.",
+        "key_specs": [
+          "99.7%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Dynamic randomization.",
+      "caption_bbox": [
+        39.6,
+        311.7,
+        148.2,
+        319.7
+      ],
+      "section_title": "VI. CURRENT CELL",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CURRENT CELL",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 8."
+        },
+        {
+          "section_title": "DYNAMIC RANDOMIZATION",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "This feature swaps the current sources of 4 MSBs in a data-dependent manner as shown in Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "12-bit 320-MSample/s Current-Steering CMOS D/A Converter in 0.44 mm2",
+        "technology": "CMOS",
+        "application_domain": "wireless",
+        "sub_blocks": [
+          "current source"
+        ],
+        "design_purpose": "",
+        "function_summary": "Dynamic randomization",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. Chip photo.",
+      "caption_bbox": [
+        302.6,
+        526.9,
+        369.6,
+        534.9
+      ],
+      "section_title": "VIII. DYNAMIC RANDOMIZATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "LATCH ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 7, JULY 2004 Fig. 9."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Chip Photograph m The D/A converter has been fabricated in a 0.18single-poly 5-metal low-ohmic substrate process with thick-oxide transistor option.The full D/A converter layout is m high and 598 m wide for a shown in Fig. 9 and is 735 O’SULLIVAN et al.: A 12-BIT 320-MSAMPLE/S CURRENT-STEERING CMOS DAC IN 0.44 mm Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-chip photo": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS",
+        "application_domain": "wireless",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Chip photo",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. Measurement setup.",
+      "caption_bbox": [
+        38.1,
+        209.9,
+        135.5,
+        217.9
+      ],
+      "section_title": "IX. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Chip Photograph m The D/A converter has been fabricated in a 0.18single-poly 5-metal low-ohmic substrate process with thick-oxide transistor option.The full D/A converter layout is m high and 598 m wide for a shown in Fig. 9 and is 735 O’SULLIVAN et al.: A 12-BIT 320-MSAMPLE/S CURRENT-STEERING CMOS DAC IN 0.44 mm Fig. 10."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Measurement Setup The measurement setup is shown in Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-setup": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS",
+        "application_domain": "wireless",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Measurement setup",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 5,
+      "caption": "Fig. 11. Measured DNL.",
+      "caption_bbox": [
+        38.1,
+        390.3,
+        123.1,
+        398.3
+      ],
+      "section_title": "IX. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 11."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Static Performance The measured DNL is shown in Fig. 11 and is about 0.3 LSB."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "12-bit 320-MSample/s Current-Steering CMOS D/A Converter in 0.44 mm2",
+        "technology": "CMOS",
+        "application_domain": "wireless",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured DNL",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 5,
+      "caption": "Fig. 12. Measured INL.",
+      "caption_bbox": [
+        301.1,
+        219.2,
+        383.1,
+        227.1
+      ],
+      "section_title": "IX. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The measured INL is shown in Fig. 12 and is about 0.3 LSB."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The values for INL and DNL quoted in Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "12-bit 320-MSample/s Current-Steering CMOS D/A Converter in 0.44 mm2",
+        "technology": "CMOS",
+        "application_domain": "wireless",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured INL",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 6,
+      "caption": "Fig. 13. Output single-tone spectrum at 60 MHz, 320 MSample/s.",
+      "caption_bbox": [
+        39.6,
+        244.7,
+        255.8,
+        252.7
+      ],
+      "section_title": "IX. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Dynamic Performance The spectrum at the output with a full-scale input sine wave of 60 MHz sampled at 320 MSample/s is shown in Fig. 13."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The rolloff Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "12-bit 320-MSample/s Current-Steering CMOS D/A Converter in 0.44 mm2",
+        "technology": "CMOS",
+        "application_domain": "wireless",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Output single-tone spectrum at 60 MHz, 320 MSample/s",
+        "key_specs": [
+          "60 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 6,
+      "caption": "Fig. 14. Output dual-tone spectrum spectrum at 55 MHz, 56 MHz, 320 MSample/s.",
+      "caption_bbox": [
+        39.6,
+        449.6,
+        290.6,
+        466.5
+      ],
+      "section_title": "IX. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 14 shows the close-in spectrum at the output with the third-order intermodulation products caused by two half-scale sine waves of 55 MHz and 56 MHz again sampled at 320 MSample/s."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "12-bit 320-MSample/s Current-Steering CMOS D/A Converter in 0.44 mm2",
+        "technology": "CMOS",
+        "application_domain": "wireless",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Output dual-tone spectrum spectrum at 55 MHz, 56 MHz, 320 MSample/s",
+        "key_specs": [
+          "55 MHz",
+          "56 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 6,
+      "caption": "Fig. 15. Measured SFDR at 162, 232, and 320 MSample/s.",
+      "caption_bbox": [
+        302.6,
+        273.3,
+        496.8,
+        281.3
+      ],
+      "section_title": "IX. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 15 shows the single-tone SFDR as a function of the input frequency for three sample frequencies: 162, 232, and 320 MSample/s."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "DNL and INL IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 7, JULY 2004 Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "12-bit 320-MSample/s Current-Steering CMOS D/A Converter in 0.44 mm2",
+        "technology": "CMOS",
+        "application_domain": "wireless",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured SFDR at 162, 232, and 320 MSample/s",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 6,
+      "caption": "Fig. 16. Measured SFDR at 320 MSample/s for original and ported 0.18-m versions.",
+      "caption_bbox": [
+        302.6,
+        519.5,
+        553.8,
+        536.4
+      ],
+      "section_title": "IX. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 16."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The dynamic performance achieved for both processes is shown in Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "12-bit 320-MSample/s Current-Steering CMOS D/A Converter in 0.44 mm2",
+        "technology": "CMOS",
+        "application_domain": "wireless",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured SFDR at 320 MSample/s for original and ported 0.18-m versions",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 7,
+      "caption": "Fig. 17. Output single-tone spectrum at 100 MHz, 450 MSample/s.",
+      "caption_bbox": [
+        38.1,
+        239.7,
+        258.2,
+        247.6
+      ],
+      "section_title": "IX. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "This version has also been measured up to 450 MSample/s with SFDR of 50 dB measured for an input frequency of 100 MHz (Fig. 17)."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "O’SULLIVAN et al.: A 12-BIT 320-MSAMPLE/S CURRENT-STEERING CMOS DAC IN 0.44 mm Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS",
+        "application_domain": "wireless",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Output single-tone spectrum at 100 MHz, 450 MSample/s",
+        "key_specs": [
+          "50 dB",
+          "100 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 1,
+  "warnings": []
+}

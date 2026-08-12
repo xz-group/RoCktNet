@@ -1,0 +1,842 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\987087.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\987087",
+  "generated_at": "2026-07-29T21:33:57",
+  "paper_metadata": {
+    "title": "Embedded Anti-Aliasing in Switched-Capacitor Ladder Filters With Variable Gain and Offset Compensation",
+    "authors": [
+      "Shin’ichiro Azuma",
+      "Shuichi Kawama",
+      "Kunihiko Iizuka",
+      "Masayuki Miyamoto",
+      "Daniel Senderowicz"
+    ],
+    "abstract": "A combination of continuous-time and switched capacitor integrators in a simulated lossless ladder yields a reiting the input signal with a CT filter without tuning mechasponse with suppressed aliasing without the use of continuous-time nisms. Thus, the position of the transition band of this CT filter prefiltering. Fabricated in a 0.35m CMOS process, a fifth-order is determined by parametric RC products. Despite this resulting Cauer low-pass filter for a W-CDMA cellular phone receiver has a uncertainty, the passband response can be made to have very cutoff frequency of 1.92 MHz and aliasing suppression of better little ripple. In order to make the CT prefilter have the least efthan 40 dB for 30.72-MHz sampling. Without using any tuning mechanism, a 10% accuracy of the cutoff frequency is achieved. fect on the overall response, the design strategy should be to As additional features, the filter has variable gain from 13.3 to have the prefilter’s lowest possible cutoff frequency (maximum 16.4 dB and an offset compensation mechanism. With the latter, a RC product) land slightly above the overall desired response. 50-mV dc offset added to the input is suppressed to 11 mV or less On the other hand, if the RC product results in a minimum, the at the filter output under the maximum gain setting. The filter constopband still has to provide the required attenuation for signals sumes 2.81 mA at 1.8-V power supply in a die area of 0.62 mm2. near the sampling frequency of the SC filter. The combination",
+    "keywords": [
+      "Anti-aliasing",
+      "CMOS analog integrated circuit"
+    ],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2002
+  },
+  "paper_circuit_context": {
+    "circuit_type": "filter",
+    "technology": "CMOS",
+    "application_domain": "rf, baseband, if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "pre-amplifier",
+      "transistor/MOSFET",
+      "op-amp"
+    ],
+    "design_purpose": "In order to make the CT prefilter have the least efthan 40 dB for 30.72-MHz sampling.",
+    "function_summary": "filter: In order to make the CT prefilter have the least efthan 40 dB for 30.72-MHz sampling.",
+    "key_specs": [
+      "1.92 MHz",
+      "40 dB",
+      "10%",
+      "16.4 dB",
+      "11 mV",
+      "50%",
+      "12 mV",
+      "1 kHz",
+      "5000 pF",
+      "160 pF"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "B ASEBAND channel selection filters with accurate bandwidth are key building blocks in RF communication transceivers. Devices containing these blocks should be small in size and power consumption in order to be used in cellular telephones or other mobile equipment. This leads to devising suitable configurations for full integration with minimum use of external components and power consumption. Eme ..."
+    },
+    {
+      "number": "II",
+      "title": "PROPOSED ARCHITECTURE",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "A. Embedded Anti-Aliasing in an SC Filter Assuming the need for second-order continuous-time filtering for anti-aliasing, Fig. 1 depicts the front-end stages of the proFig. 1. Front-end stages of the proposed architecture. posed filter structure. The input signal is continuously integrated into op amp 1. The integrated output is by passing through forthesecondcontinuous-timeintegration. furtherapp ..."
+    },
+    {
+      "number": "III",
+      "title": "CIRCUIT IMPLEMENTATION",
+      "kind": "design",
+      "page": 3,
+      "text_preview": "A baseband channel selection filter for a W-CDMA cellular phone receiver has been implemented using the proposed architecture in a fully differential configuration to maximize dynamic range (Fig. 7). The sampled-data integrators use double-sampling to push the filter image location further away from the band edge [9]. The common-mode feedback is implemented using switched capacitors for all the op ..."
+    },
+    {
+      "number": "IV",
+      "title": "TEST RESULTS",
+      "kind": "results",
+      "page": 5,
+      "text_preview": "The fabricated device in a 0.35m CMOS double-metal . It consumes 2.81 double-poly process occupies 0.30 mm and 0.21 mA with power supplies of 1.8 V for the analog part and 3.0 V for the clock drivers, respectively. The upper cutoff frequency is 1.92 MHz. The stopband rejection is better than ( IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 3, MARCH 2002 Fig. 10. Simulated and measured group-de ..."
+    },
+    {
+      "number": "V",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 6,
+      "text_preview": "An SC network architecture that is a combination of continuousand discrete-time integrators has been introduced. This filter architecture eliminates the need for additional anti-aliasing blocks while providing robustness against RC spreading. In the implementation, variable gain functionality and dc offset compensation are also included to suit related W-CDMA specifications. Without using external ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Front-end stages of the proposed architecture.",
+      "caption_bbox": [
+        39.6,
+        171.4,
+        216.2,
+        182.1
+      ],
+      "section_title": "II. PROPOSED ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "PROPOSED ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Embedded Anti-Aliasing in an SC Filter Assuming the need for second-order continuous-time filtering for anti-aliasing, Fig. 1 depicts the front-end stages of the proFig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 7.4,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "+proposed": 3.0,
+        "section:proposed": 2.0,
+        "references": 0.4
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Front-end stages of the proposed architecture",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.97,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Lossless LC ladder prototype.",
+      "caption_bbox": [
+        302.6,
+        291.4,
+        427.4,
+        302.0
+      ],
+      "section_title": "II. PROPOSED ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "PROPOSED ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 2 shows the fifth-order Cauer LC ladder prototype [6] of the filter that has been implemented."
+        },
+        {
+          "section_title": "PROPOSED ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Since the evaluation of the integrating constants in a multirate sampled structure such as the above covIEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 3, MARCH 2002 Fig. 2."
+        },
+        {
+          "section_title": "PROPOSED ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "(a) Derived from the LC ladder prototype in Fig. 2 having a gain of 0.5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Lossless LC ladder prototype",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.31,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. having a gain of 3.",
+      "caption_bbox": [
+        38.1,
+        489.1,
+        99.2,
+        508.7
+      ],
+      "section_title": "II. PROPOSED ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "PROPOSED ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The signal flow graph (SFG) in Fig. 3(a) is derived from the prototype by using flow-graph techniques [7]."
+        },
+        {
+          "section_title": "PROPOSED ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The SFG of Fig. 3(a) is converted to the form in Fig. 3(b) so that it can be implemented with inverting integrators."
+        },
+        {
+          "section_title": "PROPOSED ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Given the system specifications, using scaling, the voltage gain within the SFG in Fig. 3(b) is made equal to 3."
+        },
+        {
+          "section_title": "PROPOSED ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "(b) Converted from (a) for active implementation Fig. 3. having a gain of 3. nology used in this device show to be on the order of several millivolts, even with the use of common-centroid structures."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.6,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "having a gain of 3",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.4,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 3,
+      "caption": "Fig. 4. Active implementation.",
+      "caption_bbox": [
+        39.6,
+        265.0,
+        143.9,
+        275.6
+      ],
+      "section_title": "II. PROPOSED ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "PROPOSED ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The resulting active filter simulating the LC ladder prototype is shown in Fig. 4."
+        },
+        {
+          "section_title": "PROPOSED ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Concerning the first factor, since the feedback integrator output multiplied by has to compensate for the minimum input dc offset multiplied , the following relation should be satisfied: by input offset integrator swing range Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Active implementation",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Architecture of the filter with offset compensation.",
+      "caption_bbox": [
+        39.6,
+        510.8,
+        232.3,
+        521.4
+      ],
+      "section_title": "II. PROPOSED ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "PROPOSED ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The filter architecture including the offset compensation feedback and its block diagrams are depicted in Figs. 5 and 6, respectively."
+        },
+        {
+          "section_title": "PROPOSED ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 5."
+        },
+        {
+          "section_title": "PROPOSED ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Block diagram of the filter with offset compensation. where the gain is (2) The second factor relates to the fact that since the low frequency component is eliminated by the feedback, the filter in Fig. 5 can be considered as a bandpass filter."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 7.2,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "section:proposed": 2.0,
+        "type_match:filter": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Architecture of the filter with offset compensation",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.96,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Block diagram of the filter with offset compensation.",
+      "caption_bbox": [
+        39.6,
+        606.1,
+        238.2,
+        616.7
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "PROPOSED ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The transfer function of the feedback system in Fig. 6 is (1) and is the transfer function of In (1), . is the transfer the filter core with its dc gain is . function of the feedback integrator, where is the gain from the feedback integrator to the filter core, that is, . , and are implemented as SCs , , and , respectively. of values and is set by two factors: The determination of the maximum input offset allowed and the minimum frequency component that the filter should allow to pass."
+        },
+        {
+          "section_title": "PROPOSED ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.3,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:design": 1.5,
+        "type_match:filter": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the filter with offset compensation",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.91,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. Entire filter schematic.",
+      "caption_bbox": [
+        38.1,
+        297.4,
+        140.5,
+        308.1
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "A baseband channel selection filter for a W-CDMA cellular phone receiver has been implemented using the proposed architecture in a fully differential configuration to maximize dynamic range (Fig. 7)."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The outputs of the first two integrators are AZUMA et al.: EMBEDDED ANTI-ALIASING IN SWITCHED-CAPACITOR LADDER FILTERS Fig. 7."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The input resistor in Fig. 7 is actually a variable resistor array with values so that the overall filter dc gain ranging from 11.49 to 344.8 k 13.3 to 16.4 dB. can be controlled from The offset compensation part allows the filter to handle up to a 50-mV offset on the input signal as well as the internally gener- , , and are ated offsets."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The op amps used for integrators number 1 and 2 in Fig. 7 must operate with an input bias equal to since they are connected to their preceding stages by resistors."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 8.1,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "type_match:filter": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [
+          "capacitor",
+          "resistor"
+        ],
+        "design_purpose": "The input resistor in Fig. 7 is actually a variable resistor array with values so that the overall filter dc gain ranging from 11.49 to 344.8 k 13.3 to 16.4 dB. can be controlled from The offset compensation part allows the filter to handle up to a 50-mV offset on the input signal as well as the internally gener- , , ...",
+        "function_summary": "Entire filter schematic. The input resistor in Fig. 7 is actually a variable resistor array with values so that the overall filter dc gain ranging from 11.49 to 344.8 k 13.3 to 16.4 dB. can be controlled from The offset compensation part allows the filter to handle up to a 50-mV offset on the input signal as well as ...",
+        "key_specs": [
+          "16.4 dB"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.73,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Op amp used for first integrator.",
+      "caption_bbox": [
+        38.1,
+        519.4,
+        171.3,
+        530.1
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 8."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 8 shows the op amp used for the first integrator."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Op amp used for first integrator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 5,
+      "caption": "Fig. 9. Simulated and measured amplitude response. (a) Wide range response. (b) Around the passband.",
+      "caption_bbox": [
+        39.6,
+        444.4,
+        290.7,
+        464.0
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The phase compensation is made with (a) (b) Fig. 9."
+        },
+        {
+          "section_title": "TEST RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 9(a) shows a plot of the measured frequency response superimposed to simulations for a maximum spread of RC product that is ."
+        },
+        {
+          "section_title": "TEST RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 9(b) zooms into the passband region."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.3,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated and measured amplitude response. (a) Wide range response. (b) Around the passband",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. Simulated and measured group-delay response.",
+      "caption_bbox": [
+        302.6,
+        244.6,
+        486.6,
+        255.3
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "TEST RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The stopband rejection is better than ( IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 3, MARCH 2002 Fig. 10."
+        },
+        {
+          "section_title": "TEST RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 10 shows the simulated and measured group-delay response."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated and measured group-delay response",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 5,
+      "caption": "Fig. 11. Intermodulation distortion.",
+      "caption_bbox": [
+        302.6,
+        454.9,
+        421.6,
+        465.5
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "TEST RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 11."
+        },
+        {
+          "section_title": "TEST RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "When two inputs of 0.4 Vpp at 0.98 MHz and 1.02 MHz are applied to the filter input, the resulting plot of intermodulation distortion with 0-dB filter gain is shown in Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Intermodulation distortion",
+        "key_specs": [
+          "0.4 V",
+          "0.98 MHz",
+          "1.02 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 6,
+      "caption": "Fig. 12. Effects of offset compensation by comparing with or without compensation. (a) Shows internal offset of the filter. (b) Shows the dependence on the gain varying.",
+      "caption_bbox": [
+        38.1,
+        445.1,
+        289.2,
+        473.7
+      ],
+      "section_title": "V. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "TEST RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 12 summarizes the measurement results of the offset compensation."
+        },
+        {
+          "section_title": "TEST RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 12(a) shows that under the maximum gain setting, with no external dc offset, the maximum output offset is 48 mV without the compensation, but 3.5 mV with the compensation."
+        },
+        {
+          "section_title": "TEST RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 12(b) plots the relation between the filter gain and the output offset with 50-mV input dc offset with or without the compensation."
+        },
+        {
+          "section_title": "TEST RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "AZUMA et al.: EMBEDDED ANTI-ALIASING IN SWITCHED-CAPACITOR LADDER FILTERS (a) (b) Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.6,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "type_match:filter": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Effects of offset compensation by comparing with or without compensation. (a) Shows internal offset of the filter. (b) Shows the dependence on the gain varying",
+        "key_specs": [
+          "48 mV",
+          "3.5 mV"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.2,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 6,
+      "caption": "Fig. 13. Bandpass characteristic of the filter.",
+      "caption_bbox": [
+        38.1,
+        705.4,
+        186.0,
+        716.1
+      ],
+      "section_title": "V. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "TEST RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 13 shows the bandpass characteristic of the filter with the offset compensation."
+        },
+        {
+          "section_title": "TEST RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.8,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "type_match:filter": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Bandpass characteristic of the filter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.1,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 6,
+      "caption": "Fig. 14. Die photograph.",
+      "caption_bbox": [
+        301.1,
+        178.8,
+        386.1,
+        189.4
+      ],
+      "section_title": "IV. TEST RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "TEST RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The die photograph is shown in Fig. 14, and the device performance is summarized in Table I."
+        },
+        {
+          "section_title": "TEST RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -7.2,
+      "relevance_breakdown": {
+        "-photograph": -3.0,
+        "-die photo": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Die photograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 7,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

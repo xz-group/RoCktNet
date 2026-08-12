@@ -1,0 +1,741 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1425718.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1425718",
+  "generated_at": "2026-07-29T22:02:39",
+  "paper_metadata": {
+    "title": "A Study of Phase Noise in Colpitts and LC-Tank CMOS Oscillators",
+    "authors": [
+      "Pietro Andreani",
+      "Xiaoyan Wang",
+      "Luca Vandi",
+      "Ali Fard"
+    ],
+    "abstract": "This paper presents a study of phase noise in CMOS Colpitts and LC-tank oscillators. Closed-form symbolic formulas of Impulse Sensitivity Function (ISF, with symbol ), whose 2 phase-noise region are derived for both the Colpitts for the 1 lesson is that the impact of any noise source on the oscillator oscillator (either single-ended or differential) and the LC-tank phase noise varies across the oscillation period. This key insight oscillator, yielding highly accurate results under very general ascan be rephrased in the following way: the same amount of noise sumptions. A comparison between the differential Colpitts and the generates a different level of phase noise, depending on when LC-tank oscillator is also carried out, which shows that the latter is capable of a 2-dB lower phase-noise figure-of-merit (FoM) when the noise source is active. An impressive example of this fact simplified oscillator designs and ideal MOS models are adopted. will be demonstrated in Section III. Several prototypes of both Colpitts and LC-tank oscillators Hajimiri was able to show that numerical results derived from have been implemented in a 0.35m CMOS process. The best the ISF theory matched well experimental results from a number performance of the LC-tank oscillators shows a phase noise of of oscillators, including a single-ended Colpitts. A differential 142 dBc/Hz at 3-MHz offset frequency from a 2.9-GHz carrier with a 16-mW power consumption, resulting in an excellent FoM CMOS Colpitts oscillator design making partial use of a nuof 189 dBc/Hz. For the same oscillation frequency, the FoM merical ISF approach was presented in [4], while an analysis displayed by the differential Colpitts oscillators is 5 dB lower. leading to a mixed numerical-symbolic phase noise equation",
+    "keywords": [
+      "CMOS",
+      "Colpitts",
+      "LC-tank",
+      "oscillators",
+      "phase"
+    ],
+    "doi": "10.1109/JSSC.2005.845991",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2005
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Study of Phase Noise in Colpitts and LC-Tank CMOS Oscillators",
+    "technology": "CMOS",
+    "application_domain": "rf, if",
+    "sub_blocks": [
+      "inductor",
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "current source",
+      "LC tank / resonator",
+      "switch",
+      "differential pair",
+      "varactor"
+    ],
+    "design_purpose": "",
+    "function_summary": "Study of Phase Noise in Colpitts and LC-Tank CMOS Oscillators: This paper presents a study of phase noise in CMOS Colpitts and LC-tank oscillators.",
+    "key_specs": [
+      "2 ph",
+      "142 dBc/Hz",
+      "189 dBc/Hz",
+      "5 dB",
+      "-72123 V",
+      "2005.845991 ph",
+      "3v",
+      "4.8 dB",
+      "2 w",
+      "37%"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE continuing massive research production in the area of integrated radio-frequency (RF) voltage-controlled oscillators (VCOs) has probably not escaped the attention of any JSSC reader with but a superﬁcial interest in RF applications. Such a focus on VCOs is certainly not unwarranted, as they still are the performance bottleneck in many radio receiver/transmitter designs. While the classical di ..."
+    },
+    {
+      "number": "II",
+      "title": "PHASE-NOISE ANALYSIS IN COLPITTS OSCILLATORS",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "A. Conduction Angle and Oscillation Amplitude The single-ended Colpitts oscillator under analysis is shown accounts for the losses in both in Fig. 1(a), where resistance 1The deﬁnition “LC-tank oscillator” is actually rather vague, since a Colpitts oscillator is of course a kind of LC oscillator as well. Nevertheless, following the current praxis, we assume in this work that the LC-tank oscillator ..."
+    },
+    {
+      "number": "III",
+      "title": "TIME-INVARIANT VERSUS TIME-VARIANT",
+      "kind": "other",
+      "page": 5,
+      "text_preview": "PHASE-NOISE ANALYSIS It is interesting to compare the phase noise expression in (39) with what would be obtained with a time-invariant analysis. As clear from (25), the ISF theory leads to a conversion factor of , or a fraction of it through in general, between total noise and phase-noise-generating noise, under the assumption that the noise source is stationary and the oscillation waveform is oft ..."
+    },
+    {
+      "number": "IV",
+      "title": "PHASE NOISE ANALYSIS IN LC-TANK OSCILLATORS",
+      "kind": "proposed",
+      "page": 5,
+      "text_preview": "phase noise of the LC-tank oscillator in Fig. 2 will The be treated in this section. In particular, we will derive an expression for the phase noise generated by the noise in the transistor channels, thereby showing that such a phase noise and the phase , and this noise generated by the tank resistors are in a ratio ANDREANI et al.: PHASE NOISE IN COLPITTS AND LC-TANK CMOS OSCILLATORS for a very w ..."
+    },
+    {
+      "number": "V",
+      "title": "COMPARISON BETWEEN THE DIFFERENTIAL COLPITTS",
+      "kind": "other",
+      "page": 8,
+      "text_preview": "OSCILLATOR AND THE DIFFERENTIAL LC-TANK OSCILLATOR Let us assume that a differential Colpitts and an LC-tank oscillator are designed for the same oscillation frequency, use the same power consumption, are built around the same inductors ISF of the tail noise current for = 10 Fig. 8. . , suffer from the same losses, and generate sinusoidal oscillations. In the following, we are going to compare the ..."
+    },
+    {
+      "number": "VI",
+      "title": "MEASUREMENT RESULTS",
+      "kind": "results",
+      "page": 9,
+      "text_preview": ") and three LC-tank Three differential Colpitts (with oscillators have been fabricated in a 4-M 0.35m CMOS m-thick top Aluminum process with MIM capacitors and a 2metal layer for RF inductor design. The oscillators have been designed pairwise for three different center frequencies (2.6, 3.0, and 3.4 GHz, respectively), each pair displaying the same center frequency. The die photograph of the 3-GHz ..."
+    },
+    {
+      "number": "VII",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 11,
+      "text_preview": "This paper has shown that CMOS Colpitts and LC-tank oscillators are both capable of very good phase noise performances, achieved however through very different strategies for phase noise suppression: transistors in Colpitts oscillators generate a great amount of noise, but the conversion of this noise into phase noise is minimal; LC-tank transistors generate little noise due to source degeneration ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. (a) Single-ended Colpitts oscillator. (b) Differential Colpitts oscillator.",
+      "caption_bbox": [
+        39.6,
+        368.9,
+        290.7,
+        376.9
+      ],
+      "section_title": "II. PHASE-NOISE ANALYSIS IN COLPITTS OSCILLATORS",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The present work has two main goals: 1) to provide a closedform symbolic expression for the phase noise displayed by the CMOS Colpitts oscillator (either single-ended or differential, region, making use of the ISF theory and see Fig. 1) in the 2) based on this result, to compare the phase-noise performance of the differential Colpitts oscillator with that of the more popular differential LC-tank oscillator, in order to ascertain whether it is justiﬁed to target the Colpitts oscillator as a better substitute for the LC-tank oscillator.1 The rest of this paper is organized as follows."
+        },
+        {
+          "section_title": "PHASE-NOISE ANALYSIS IN COLPITTS OSCILLATORS",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Conduction Angle and Oscillation Amplitude The single-ended Colpitts oscillator under analysis is shown accounts for the losses in both in Fig. 1(a), where resistance 1The deﬁnition “LC-tank oscillator” is actually rather vague, since a Colpitts oscillator is of course a kind of LC oscillator as well."
+        },
+        {
+          "section_title": "PHASE-NOISE ANALYSIS IN COLPITTS OSCILLATORS",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 1."
+        },
+        {
+          "section_title": "PHASE-NOISE ANALYSIS IN COLPITTS OSCILLATORS",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Using the actual values of becomes (12) Assuming a high quality factor for the resonator, it is straightforward to show [8], and will not be repeated here, that the use of (12) results in an angular frequency of oscillation (13) where (14) and in an equal to (15) with (16) Further, the voltage at the Colpitts output (see Fig. 1) is given by (17) with peak amplitude (18) Through (11) and (18), can be expressed as a function of bias current and conduction angle:3 (19) 1) Single-Ended Versus Differential: Although the previous equations have been obtained in the single-ended case, it is straightforward to extend them to the differential Colpitts of Fig. 1(b), where a differential mode of operation is enforced either by coupling the two single-ended oscillators through , or, new in this work, by coupling the ﬂoating capacitor4 3Equation (19) yields A in an implicit way, since is itself a function of A , and consequently of A ."
+        },
+        {
+          "section_title": "PHASE-NOISE ANALYSIS IN COLPITTS OSCILLATORS",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Both techniques may of course be employed in the same design, as in Fig. 1(b)."
+        },
+        {
+          "section_title": "PHASE-NOISE ANALYSIS IN COLPITTS OSCILLATORS",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Assuming now that differential-mode oscillations are produced, it is clear that we can analyze the behavior of each of the two oscillators in Fig. 1(b) as if it were a standalone singleended oscillator, with an inductance value (20) and a capacitance value (21) Equations (3)–(19) describe, therefore, both the single-ended and differential Colpitts oscillator, provided that all parameters are referred to the single-ended oscillator also when considering the differential case."
+        },
+        {
+          "section_title": "PHASE-NOISE ANALYSIS IN COLPITTS OSCILLATORS",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Table I shows results of phase-noise simulations performed with spectreRF, for the 2.5-GHz differential Colpitts oscillator of 12, equivalent inductance of Fig. 1(b), having a resonatornH, MOS transistors of dimensions value m m, and a bias current of 2 4 mA."
+        },
+        {
+          "section_title": "TIME-INVARIANT VERSUS TIME-VARIANT",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Turning therefore without further delay to the relevant equations, if we choose to neglect the different impact that noise has IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 5, MAY 2005 V TABLE I AND PHASE NOISE (IN dBc/Hz) AT 1-MHz OFFSET FREQUENCY, FOR THE CALCULATED AND SIMULATED NOISE CONTRIBUTIONS (IN 10 /Hz) 2.5-GHz DIFFERENTIAL COLPITTS OSCILLATOR OF FIG. 1(b) on phase noise at different instants across the signal period, the has to go."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "While it is always possible that some of the difference between simulations and measurements could be ascribed to deﬁciencies in the MOS model with the associated parameter values, a cause of systematic performance bias in favor of the LC-tank oscillators could actually be traced back to the parasitic components present at the gates of the transistors in the Colpitts oscillators in Fig. 1(b)]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.0,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "LC tank / resonator"
+        ],
+        "design_purpose": "The present work has two main goals: 1) to provide a closedform symbolic expression for the phase noise displayed by the CMOS Colpitts oscillator (either single-ended or differential, region, making use of the ISF theory and see Fig. 1) in the 2) based on this result, to compare the phase-noise performance of the ...",
+        "function_summary": "(a) Single-ended Colpitts oscillator. (b) Differential Colpitts oscillator. The present work has two main goals: 1) to provide a closedform symbolic expression for the phase noise displayed by the CMOS Colpitts oscillator (either single-ended or differential, region, making use of the ISF theory and see Fig. 1) in the ...",
+        "key_specs": [
+          "2005 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.5,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2.",
+      "caption_bbox": [
+        39.6,
+        542.3,
+        60.5,
+        550.3
+      ],
+      "section_title": "II. PHASE-NOISE ANALYSIS IN COLPITTS OSCILLATORS",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "PHASE-NOISE ANALYSIS IN COLPITTS OSCILLATORS",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Nevertheless, following the current praxis, we assume in this work that the LC-tank oscillator is the one in Fig. 2, and nothing else."
+        },
+        {
+          "section_title": "PHASE-NOISE ANALYSIS IN COLPITTS OSCILLATORS",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 2. inductor and capacitors."
+        },
+        {
+          "section_title": "PHASE NOISE ANALYSIS IN LC-TANK OSCILLATORS",
+          "section_kind": "proposed",
+          "page": 5,
+          "sentence": "phase noise of the LC-tank oscillator in Fig. 2 will The be treated in this section."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "on-chip inductor",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "inductor",
+          "capacitor",
+          "LC tank / resonator"
+        ],
+        "design_purpose": "",
+        "function_summary": "on-chip inductor",
+        "key_specs": [
+          "2 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.31,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 3,
+      "caption": "Fig. 3. Circuit for ISF calculations in a Colpitts oscillator.",
+      "caption_bbox": [
+        302.6,
+        170.1,
+        493.4,
+        178.0
+      ],
+      "section_title": "II. PHASE-NOISE ANALYSIS IN COLPITTS OSCILLATORS",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "PHASE-NOISE ANALYSIS IN COLPITTS OSCILLATORS",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "It is convenient to model the drain noise current and , each as two fully correlated grounded sources , as in Fig. 3(b), where all circuit components except equal to the two capacitors have been neglected, since impulsive currents ﬂow entirely through the capacitive impedances (if present). lies in parallel to , we can conclude immediately Since and possess identical ISFs: that (27) , measured at node and Referring again to Fig. 3, voltage ﬂowing into node , generated by a current impulse of area is (28) while voltage , still measured at node , and generated by a current impulse of the same area , ﬂowing this time out of , is node (29) Considering that results in the ISF , (29) yields the as expression for (30) 5Equation (24) was obtained under the assumption that the state equations for the oscillator were those provided by the voltage across the capacitor and the current through the inductor in each LC tank [9]."
+        },
+        {
+          "section_title": "PHASE-NOISE ANALYSIS IN COLPITTS OSCILLATORS",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 5, MAY 2005 Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.8,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "inductor",
+          "capacitor",
+          "LC tank / resonator"
+        ],
+        "design_purpose": "",
+        "function_summary": "Circuit for ISF calculations in a Colpitts oscillator",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.65,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 5,
+      "caption": "Fig. 5.",
+      "caption_bbox": [
+        39.6,
+        209.7,
+        59.9,
+        217.6
+      ],
+      "section_title": "II. PHASE-NOISE ANALYSIS IN COLPITTS OSCILLATORS",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "PHASE-NOISE ANALYSIS IN COLPITTS OSCILLATORS",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Straightforward derivation of for (40) for for for is shown in A normalized plot of (39) versus Fig. 5, from which it is clear that the phase-noise minimum is a relatively ﬂat one. [For the slightly different Colpitts oscillator in [7], it can be shown that (41) Comparing (39) and (41), it is clear that both Colpitts designs are capable of exactly the same minimum value of phase noise, ."
+        },
+        {
+          "section_title": "PHASE-NOISE ANALYSIS IN COLPITTS OSCILLATORS",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 5. where and are the phase-noise-generating noise contributions from one parallel tank resistance and one MOS transistor, the factor 2 at the numerator accounts for the presence of two noise sources of the same kind in a differential oscillator (noise contributions from any bias sources are neglected for simis the peak value of the sinusoidal oscillation. plicity), and As in the preceding analysis, we assume that both noise contributions and oscillation waveforms are referred to a single-ended output of each oscillator."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "LC tank / resonator"
+        ],
+        "design_purpose": "",
+        "function_summary": "oscillator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 6,
+      "caption": "Fig. 6. Excess noise factor in Colpitts phase-noise analysis, as from (45).",
+      "caption_bbox": [
+        301.1,
+        215.0,
+        539.5,
+        222.9
+      ],
+      "section_title": "IV. PHASE NOISE ANALYSIS IN LC-TANK OSCILLATORS",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "TIME-INVARIANT VERSUS TIME-VARIANT",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "A plot of the excess phase noise given by (45) between 0.6 and 1.4; as an example, is shown in Fig. 6, for of one radian, becomes approxeven for a moderate imately 2.93, which corresponds to an overestimation as large as 4.8 dB for the phase noise caused by the transistor (the overdB)."
+        },
+        {
+          "section_title": "PHASE NOISE ANALYSIS IN LC-TANK OSCILLATORS",
+          "section_kind": "proposed",
+          "page": 5,
+          "sentence": "Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Study of Phase Noise in Colpitts and LC-Tank CMOS Oscillators",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Excess noise factor in Colpitts phase-noise analysis, as from (45)",
+        "key_specs": [
+          "4.8 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 7,
+      "caption": "Fig. 7.",
+      "caption_bbox": [
+        39.6,
+        358.0,
+        60.3,
+        366.0
+      ],
+      "section_title": "IV. PHASE NOISE ANALYSIS IN LC-TANK OSCILLATORS",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "PHASE NOISE ANALYSIS IN LC-TANK OSCILLATORS",
+          "section_kind": "proposed",
+          "page": 5,
+          "sentence": "To ﬁnd , we must send the same current impulse between drain and source , as in Fig. 7; is again charged to , while is of to some voltage ."
+        },
+        {
+          "section_title": "PHASE NOISE ANALYSIS IN LC-TANK OSCILLATORS",
+          "section_kind": "proposed",
+          "page": 5,
+          "sentence": "If is small, so that the time constant is much smaller than is moved from the period of the oscillations, the charge to approximately at the same instant when is charged by , as shown in Fig. 7(a)."
+        },
+        {
+          "section_title": "PHASE NOISE ANALYSIS IN LC-TANK OSCILLATORS",
+          "section_kind": "proposed",
+          "page": 5,
+          "sentence": "Reasoning again on the one depicted in Fig. 7(b)."
+        },
+        {
+          "section_title": "PHASE NOISE ANALYSIS IN LC-TANK OSCILLATORS",
+          "section_kind": "proposed",
+          "page": 5,
+          "sentence": "ISF derivation in the LC-tank oscillator, when: (a) only M Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.6,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "LC tank / resonator"
+        ],
+        "design_purpose": "",
+        "function_summary": "oscillator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.4,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 8,
+      "caption": "Fig. 8. .",
+      "caption_bbox": [
+        301.1,
+        268.7,
+        465.7,
+        276.7
+      ],
+      "section_title": "IV. PHASE NOISE ANALYSIS IN LC-TANK OSCILLATORS",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "COMPARISON BETWEEN THE DIFFERENTIAL COLPITTS",
+          "section_kind": "other",
+          "page": 8,
+          "sentence": "OSCILLATOR AND THE DIFFERENTIAL LC-TANK OSCILLATOR Let us assume that a differential Colpitts and an LC-tank oscillator are designed for the same oscillation frequency, use the same power consumption, are built around the same inductors ISF of the tail noise current for = 10 Fig. 8. . , suffer from the same losses, and generate sinusoidal oscillations."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.4,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "on-chip inductor",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "inductor",
+          "LC tank / resonator"
+        ],
+        "design_purpose": "",
+        "function_summary": "on-chip inductor",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.17,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 9,
+      "caption": "Fig. 9.",
+      "caption_bbox": [
+        39.6,
+        247.7,
+        60.3,
+        255.7
+      ],
+      "section_title": "VI. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "PHASE NOISE ANALYSIS IN LC-TANK OSCILLATORS",
+          "section_kind": "proposed",
+          "page": 5,
+          "sentence": "It is easy to see has double the frequency of , as expected; that for . , found by numeriFig. 8 shows cally integrating over its period, is (67) is plotted in Fig. 9."
+        },
+        {
+          "section_title": "COMPARISON BETWEEN THE DIFFERENTIAL COLPITTS",
+          "section_kind": "other",
+          "page": 8,
+          "sentence": "Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Study of Phase Noise in Colpitts and LC-Tank CMOS Oscillators",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 10,
+      "caption": "Fig. 10. Die photograph of (a) Colpitts and (b) LC-tank differential oscillators.",
+      "caption_bbox": [
+        38.1,
+        306.8,
+        296.9,
+        314.8
+      ],
+      "section_title": "VI. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "The die photograph of the 3-GHz oscillator pair is shown in Fig. 10. pMOS varactors working in the accumulation and depletion regions have been used to implement a 5% ﬁne tuning, while a matrix of switchable MIM capacitors extends the overall tuning range to 15% with four overlapping bands."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "Deﬁning as usual the phase-noise FoM as (72) where is the angular frequency of oscillation, and is the power (in mW) consumed by the oscillator, the FoM difference ANDREANI et al.: PHASE NOISE IN COLPITTS AND LC-TANK CMOS OSCILLATORS Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -7.2,
+      "relevance_breakdown": {
+        "-photograph": -3.0,
+        "-die photo": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "varactor",
+          "capacitor",
+          "transistor/MOSFET",
+          "LC tank / resonator"
+        ],
+        "design_purpose": "",
+        "function_summary": "Die photograph of (a) Colpitts and (b) LC-tank differential oscillators",
+        "key_specs": [
+          "5%",
+          "15%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 10,
+      "caption": "Fig. 11. Photograph of PCB with ﬂipped, bump-soldered Colpitts chip.",
+      "caption_bbox": [
+        38.1,
+        532.5,
+        270.3,
+        540.4
+      ],
+      "section_title": "VI. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "Fig. 11."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "In order to observe this deleterious phenomenon, both the LC-tank and the Colpitts oscillator in the 3-GHz pair were ﬂipped and bump-soldered directly on the PCB (Fig. 11), thereby removing any uncertainty associated to the bondwire inductors and package parasitics."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-photograph": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "on-chip inductor",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "inductor",
+          "LC tank / resonator"
+        ],
+        "design_purpose": "In order to observe this deleterious phenomenon, both the LC-tank and the Colpitts oscillator in the 3-GHz pair were ﬂipped and bump-soldered directly on the PCB (Fig. 11), thereby removing any uncertainty associated to the bondwire inductors and package parasitics.",
+        "function_summary": "Photograph of PCB with ﬂipped, bump-soldered Colpitts chip. In order to observe this deleterious phenomenon, both the LC-tank and the Colpitts oscillator in the 3-GHz pair were ﬂipped and bump-soldered directly on the PCB (Fig. 11), thereby removing any uncertainty associated to the bondwire inductors and package ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 10,
+      "caption": "Fig. 12. oscillators, for a carrier frequency of 2.9 GHz.",
+      "caption_bbox": [
+        301.1,
+        513.4,
+        450.2,
+        530.4
+      ],
+      "section_title": "VI. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "This spurious resonance has two effects: it reduces the amplitude of the desired oscillation, and boosts the losses Phase-noise measurements for Colpitts and LC-tank differential Fig. 12. oscillators, for a carrier frequency of 2.9 GHz. of the otherwise negligible parasitic interconnection resistance between transistor gates and pad."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "As an example, Fig. 12 shows the phase noise plots for the oscillator pair for a carrier frequency of 2.9 GHz."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "LC tank / resonator"
+        ],
+        "design_purpose": "",
+        "function_summary": "oscillators, for a carrier frequency of 2.9 GHz",
+        "key_specs": [
+          "2.9 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 3,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

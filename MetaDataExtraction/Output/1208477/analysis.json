@@ -1,0 +1,941 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1208477.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1208477",
+  "generated_at": "2026-07-29T21:30:46",
+  "paper_metadata": {
+    "title": "Brief Papers_______________________________________________________________________________",
+    "authors": [
+      "Jens Sauerbrey",
+      "Doris Schmitt-Landsiedel",
+      "Roland Thewes"
+    ],
+    "abstract": "A successive approximation analog-to-digital converter (ADC) is presented operating at ultralow supply voltages. The circuit is realized in a 0.18m standard CMOS technology. Neither lowdevices nor voltage boosting techniques are used. All voltage levels are between supply voltage and ground . A passive sample-and-hold stage and a capacitor-based digital-to-analog converter are used to avoid application of Fig. 1. Successive approximation converter architecture. operational amplifiers, since opamp operation requires higher values for the lowest possible supply voltage. The ADC has In this paper, a successive approximation analog-to-digital signal-to-noise-and-distortion ratios of 51.2 and 43.3 dB for supply voltages of 1 and 0.5 V, at sampling rates of 150 and 4.1 kS/s and converter (ADC) technique based on another approach is prepower consumptions of 30 and 0.85 W, respectively. Proper sented which is suitable for medium-speed/medium-resolution operation is achieved down to a supply voltage of 0.4 V. converters. Similar to switched-opamp or reset-opamp circuits,",
+    "keywords": [
+      "Analog-to-digital converters (ADCs)",
+      "CMOS"
+    ],
+    "doi": "10.1109/JSSC.2003.813217",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "analog-to-digital converter (ADC)",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "switch",
+      "op-amp"
+    ],
+    "design_purpose": "Proper sented which is suitable for medium-speed/medium-resolution operation is achieved down to a supply voltage of 0.4 V. converters.",
+    "function_summary": "analog-to-digital converter (ADC): Proper sented which is suitable for medium-speed/medium-resolution operation is achieved down to a supply voltage of 0.4 V. converters.",
+    "key_specs": [
+      "43.3 dB",
+      "0.5 V",
+      "0.85 W",
+      "0.4 V",
+      "20 fF",
+      "10 pF",
+      "0 V",
+      "113 mV",
+      "47 pF",
+      "0.38 V"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "I N MODERN CMOS processes, the maximally allowed is continuously decreasing, but the supply voltage of the devices is not scaled in proportion threshold voltage due to off-state currents and the related static power to consumption in logic circuits [1]. In the digital world, the is usually acceptable, however, increasing ratio of for analog circuits, decreased signal swings and crucial design valu ..."
+    },
+    {
+      "number": "II",
+      "title": "CONVERTER PRINCIPLE",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "A. Basic Principle of Successive Approximation Converters In Fig. 1, the basic architecture of a successive approximation ADC is shown. The converter consists of a S&H stage, a comparator, a successive approximation register (SAR), and a DAC. Using a binary search algorithm, the DAC output voltage successively approximates the sampled input voltage . is obIn each clock cycle, one bit of the digita ..."
+    },
+    {
+      "number": "III",
+      "title": "CIRCUIT IMPLEMENTATION",
+      "kind": "design",
+      "page": 1,
+      "text_preview": "A. Capacitor Array – in Fig. 3 are realized as multiples of The capacitors a unit capacitor of 20 fF. The chosen values result from the fact that approximately 10 pF are needed to guarantee the 9-bit linearity requirement, further, 10 pF are required to realize the . Since small differences of the value of shunt capacitor referred to the value of capacitances provided by the capacitor array only r ..."
+    },
+    {
+      "number": "IV",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 2,
+      "text_preview": "The ADC is fabricated in a standard 0.18m n-well CMOS process with a single poly layer, four metal layers, and a metal–insulator–metal capacitor (MIMCAP) option. The 0.38 V for threshold voltages are 0.43 V for the nMOS and the pMOS device. A chip photograph is shown in Fig. 6. Chip . area is 0.11 mm Fig. 7. Measured INL and DNL in 9-bit mode at V = 1 V. Fig. 8. Measured FFT spectrum at V = 0:5 V, ..."
+    },
+    {
+      "number": "V",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 4,
+      "text_preview": "A successive approximation converter suitable for operation m at ultralow supply voltage is realized in a standard 0.18CMOS technology using transistors with threshold voltages of approximately 400 mV and avoiding bootstrapping techniques. Test results indicate that the circuit is well suited for operation far below 1 V. Proper operation is shown down to a supply voltage of 0.4 V, which is approxi ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Successive approximation converter architecture.",
+      "caption_bbox": [
+        301.1,
+        240.1,
+        486.6,
+        250.7
+      ],
+      "section_title": "",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1."
+        },
+        {
+          "section_title": "CONVERTER PRINCIPLE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Basic Principle of Successive Approximation Converters In Fig. 1, the basic architecture of a successive approximation ADC is shown."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Successive approximation converter architecture",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Successive approximation architecture based on a charge redistribution principle.",
+      "caption_bbox": [
+        39.6,
+        153.3,
+        290.6,
+        172.9
+      ],
+      "section_title": "II. CONVERTER PRINCIPLE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "CONVERTER PRINCIPLE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Successive Approximation Converter Based on a Charge Redistribution Principle In Fig. 2, a converter based on a charge redistribution principle is depicted."
+        },
+        {
+          "section_title": "CONVERTER PRINCIPLE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The switching point of the comparator is independent of the value of Fig. 2."
+        },
+        {
+          "section_title": "CONVERTER PRINCIPLE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "On the other be adjusted in the middle between hand, switch operation at ultralow supply voltages (e.g., under conditions) is only possible if the or . dc level of the signal to be switched is close to Since theses requirements cannot be fulfilled simultaneously, the approach shown in Fig. 2 is not suitable for ultralow voltage applications."
+        },
+        {
+          "section_title": "CONVERTER PRINCIPLE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "In this architecture, the S&H function is no longer realized by the capacitor array itself as in Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.6,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "section:proposed": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "comparator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor",
+          "switch"
+        ],
+        "design_purpose": "On the other be adjusted in the middle between hand, switch operation at ultralow supply voltages (e.g., under conditions) is only possible if the or . dc level of the signal to be switched is close to Since theses requirements cannot be fulfilled simultaneously, the approach shown in Fig. 2 is not suitable for ...",
+        "function_summary": "Successive approximation architecture based on a charge redistribution principle. On the other be adjusted in the middle between hand, switch operation at ultralow supply voltages (e.g., under conditions) is only possible if the or . dc level of the signal to be switched is close to Since theses requirements cannot be ...",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.75,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Modified architecture.",
+      "caption_bbox": [
+        39.6,
+        308.0,
+        139.9,
+        318.6
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CONVERTER PRINCIPLE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 3."
+        },
+        {
+          "section_title": "CONVERTER PRINCIPLE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Modified Successive Approximation Converter A modified architecture using a capacitor-based DAC is shown in Fig. 3."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Capacitor Array – in Fig. 3 are realized as multiples of The capacitors a unit capacitor of 20 fF."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.7,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Modified architecture",
+        "key_specs": [
+          "20 fF"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.67,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 1,
+      "caption": "Fig. 4. Comparator circuit.",
+      "caption_bbox": [
+        302.6,
+        296.4,
+        394.2,
+        307.0
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CONVERTER PRINCIPLE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 7, JULY 2003 TABLE I CAPACITOR VALUES Fig. 4."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Comparator The comparator is designed as a simple regenerative resetable circuit (Fig. 4) [3] followed by inverters for signal level recovery."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "comparator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Comparator circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Sample-and-hold circuit.",
+      "caption_bbox": [
+        38.1,
+        146.2,
+        146.5,
+        156.9
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The related logic circuit block also generates the clock signals for the comparator IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 7, JULY 2003 Fig. 5."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "S&H Circuit The S&H circuit block diagram is given in Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "comparator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Sample-and-hold circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. Chip photograph.",
+      "caption_bbox": [
+        38.1,
+        271.1,
+        123.1,
+        281.7
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 6."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "A chip photograph is shown in Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-photograph": -3.0,
+        "-chip photo": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chip photograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 2,
+      "caption": "Fig. 7. Measured INL and DNL in 9-bit mode at V = 1 V.",
+      "caption_bbox": [
+        301.1,
+        212.1,
+        506.5,
+        222.7
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Chip . area is 0.11 mm Fig. 7."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Static Measurements Fig. 7 shows measured data of the integral nonlinearity (INL) and the differential nonlinearity (DNL) in the 9-bit mode at V."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured INL and DNL in 9-bit mode at V = 1 V",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 2,
+      "caption": "Fig. 8. Measured FFT spectrum at V = 0:5 V, 200 Hz input signal frequency, 0.125 V input signal swing, and 4.1 kS/s sampling rate (8-bit mode, = 47 pF).",
+      "caption_bbox": [
+        301.1,
+        391.0,
+        552.2,
+        419.6
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 8."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Dynamic Measurements Fig. 8 shows a full-scale 200-Hz sine-wave spectrum meaV at a sampling rate of 4.1 kS/s in the sured at = 0 dB (0.125 V), \u00003, \u00006, \u000010, \u000020, \u000030, and \u000040 dB (8-bit Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-spectrum": -2.5,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured FFT spectrum at V = 0:5 V, 200 Hz input signal frequency, 0.125 V input signal swing, and 4.1 kS/s sampling rate (8-bit mode, = 47 pF)",
+        "key_specs": [
+          "0 dB",
+          "0.125 V",
+          "40 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 2,
+      "caption": "Fig. 9. Measured FFT spectrum at V = 1 V, 6.4 kHz input signal frequency, 0.5 V input signal swing, and 150 kS/s sampling rate (9-bit mode, = 47 pF).",
+      "caption_bbox": [
+        301.1,
+        589.6,
+        552.2,
+        618.1
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 9."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "In Fig. 9, a 6.4-kHz sine-wave spectrum measured V at a sampling rate of 150 kS/s in 9-bit mode is at depicted."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-spectrum": -2.5,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured FFT spectrum at V = 1 V, 6.4 kHz input signal frequency, 0.5 V input signal swing, and 150 kS/s sampling rate (9-bit mode, = 47 pF)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 3,
+      "caption": "Fig. 10. SNDR versus input frequency at V = 0:5 V, sampling rate = 4:1 kS=s, V mode, C = 47 pF).",
+      "caption_bbox": [
+        39.6,
+        206.1,
+        290.8,
+        234.7
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Dynamic Measurements Fig. 8 shows a full-scale 200-Hz sine-wave spectrum meaV at a sampling rate of 4.1 kS/s in the sured at = 0 dB (0.125 V), \u00003, \u00006, \u000010, \u000020, \u000030, and \u000040 dB (8-bit Fig. 10."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Signal-to-noise-plus-distortion ratio (SNDR) versus sinu40 dB soidal input frequency at input levels between 0 and is shown in Figs. 10 and 11 at supply voltages of 0.5 and 1 V, respectively."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "At low frequencies, however, only minor deviations compared to the data obtained pF (Fig. 10) are obtained. with Fig. 15 shows the low-frequency SNDR as a function of the used sampling capacitor value for supply voltages of 1 and 0.5 V, IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 7, JULY 2003 = 0 dB (0.125 V), \u00003, \u00006, \u000010, \u000020, \u000030, and \u000040 dB (8-bit Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "SNDR versus input frequency at V = 0:5 V, sampling rate = 4:1 kS=s, V mode, C = 47 pF)",
+        "key_specs": [
+          "0 dB",
+          "0.125 V",
+          "40 dB",
+          "1 V",
+          "0.5 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 3,
+      "caption": "Fig. 11. SNDR versus input frequency at V = 1 V, sampling rate = 150 kS=s, V mode, C = 47 pF).",
+      "caption_bbox": [
+        39.6,
+        401.5,
+        290.8,
+        430.0
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "SNDR versus input frequency at V = 0:5 V, sampling rate = 4:1 kS=s, V mode, C = 47 pF). = 0 dB (0.5 V), \u00003, \u00006, \u000010, \u000020, \u000030, and \u000040 dB (9-bit Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.6,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.4
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "SNDR versus input frequency at V = 1 V, sampling rate = 150 kS=s, V mode, C = 47 pF)",
+        "key_specs": [
+          "5 V",
+          "47 pF",
+          "0 dB",
+          "0.5 V",
+          "40 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 3,
+      "caption": "Fig. 12. Maximum sampling rate and power dissipation versus supply voltage.",
+      "caption_bbox": [
+        302.6,
+        204.8,
+        553.6,
+        215.5
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 12) since only small capacitive loads have to be driven by this subcircuit."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 12 shows the maximum sampling rate and the related power dissipation as a function of supply voltage."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 7, JULY 2003 Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Maximum sampling rate and power dissipation versus supply voltage",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 3,
+      "caption": "Fig. 13. SNDR versus supply voltage (C = 47 pF).",
+      "caption_bbox": [
+        302.6,
+        384.3,
+        480.7,
+        394.9
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "The maximum clock frequency is determined by malfunction of the digital circuitry, proven by incorrect codes at higher clock rates. is shown in Fig. 13."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 13."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Comparison With Other Approaches Also in Fig. 13, published data about low-voltage successive approximation converters from the literature are considered Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "SNDR versus supply voltage (C = 47 pF)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 4,
+      "caption": "Fig. 14. SNDR versus input frequency at V = 0:5 V, sampling rate = 4:1 kS=s, V mode, C = 5 pF).",
+      "caption_bbox": [
+        38.1,
+        205.6,
+        289.3,
+        234.2
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 14 shows SNDR versus sinusoidal 40 dB at input frequency at input levels between 0 and V using a sampling capacitor of 5 pF."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "At low frequencies, however, only minor deviations compared to the data obtained pF (Fig. 10) are obtained. with Fig. 15 shows the low-frequency SNDR as a function of the used sampling capacitor value for supply voltages of 1 and 0.5 V, IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 7, JULY 2003 = 0 dB (0.125 V), \u00003, \u00006, \u000010, \u000020, \u000030, and \u000040 dB (8-bit Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "SNDR versus input frequency at V = 0:5 V, sampling rate = 4:1 kS=s, V mode, C = 5 pF)",
+        "key_specs": [
+          "40 dB",
+          "5 pF",
+          "0.5 V",
+          "0 dB",
+          "0.125 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 4,
+      "caption": "Fig. 15. Low-frequency SNDR versus sampling capacitor value C .",
+      "caption_bbox": [
+        38.1,
+        378.5,
+        263.3,
+        389.1
+      ],
+      "section_title": "V. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "At low frequencies, however, only minor deviations compared to the data obtained pF (Fig. 10) are obtained. with Fig. 15 shows the low-frequency SNDR as a function of the used sampling capacitor value for supply voltages of 1 and 0.5 V, IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 7, JULY 2003 = 0 dB (0.125 V), \u00003, \u00006, \u000010, \u000020, \u000030, and \u000040 dB (8-bit Fig. 14."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Low-frequency SNDR versus sampling capacitor value C",
+        "key_specs": [
+          "0.5 V",
+          "0 dB",
+          "0.125 V",
+          "40 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 4,
+      "caption": "Fig. 16. Figure of merit versus supply voltage (C = 47 pF).",
+      "caption_bbox": [
+        301.1,
+        192.6,
+        505.9,
+        203.2
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Figure of Merit As a commonly used figure of merit (FOM) for ADCs considering resolution, bandwidth, and power, we use Sampling rate (1) FOM Power dissipation FOM as a function of supply voltage is shown in Fig. 16 for 8-bit and 9-bit operation."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Comparison With Other Approaches Also in Fig. 13, published data about low-voltage successive approximation converters from the literature are considered Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Figure of merit versus supply voltage (C = 47 pF)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 2,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

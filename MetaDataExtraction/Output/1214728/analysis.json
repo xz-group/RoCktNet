@@ -1,0 +1,1239 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1214728.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1214728",
+  "generated_at": "2026-07-29T22:01:10",
+  "paper_metadata": {
+    "title": "On the Design and Characterization of Femtoampere Current-Mode Circuits",
+    "authors": [
+      "Bernabé Linares-Barranco",
+      "Teresa Serrano-Gotarredona"
+    ],
+    "abstract": "In this paper, we show and validate a reliable circuit design technique based on source voltage shifting for current-mode signal processing down to femtoamperes. The technique involves specific-current extractors and logarithmic current splitters for obtaining on-chip subpicoampere currents. It also uses a special on-chip sawtooth oscillator to monitor and measure currents down to a few femtoamperes. This way, subpicoampere currents are characterized without driving them off chip and requiring expensive instrumentation with complicated low leakage setups. (a) A special current mirror is also introduced for reliably replicating such low currents. As an example, a simple log-domain first-order low-pass filter is implemented that uses a 100-fF capacitor and a 3.5-fA bias current to achieve a cutoff frequency of 0.5 Hz. A technique for characterizing noise at these currents is also described and verified. Finally, transistor mismatch measurements are provided and discussed. Experimental measurements are shown throughout the paper, obtained from prototypes fabricated in the AMS 0.35m three-metal two-poly standard CMOS process.",
+    "keywords": [
+      "Analog VLSI design",
+      "leakage currents",
+      "mismatch",
+      "noise",
+      "subthreshold",
+      "ultralow currents",
+      "weak inversion"
+    ],
+    "doi": "10.1109/JSSC.2003.814415",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "oscillator",
+    "technology": "CMOS",
+    "application_domain": "rf, if",
+    "sub_blocks": [
+      "capacitor",
+      "transistor/MOSFET",
+      "current mirror",
+      "resistor",
+      "output buffer",
+      "bias circuit",
+      "switch"
+    ],
+    "design_purpose": "As an example, a simple log-domain first-order low-pass filter is implemented that uses a 100-fF capacitor and a 3.5-fA bias current to achieve a cutoff frequency of 0.5 Hz.",
+    "function_summary": "oscillator: As an example, a simple log-domain first-order low-pass filter is implemented that uses a 100-fF capacitor and a 3.5-fA bias current to achieve a cutoff frequency of 0.5 Hz.",
+    "key_specs": [
+      "0.5 Hz",
+      "400 mV",
+      "5 w",
+      "3 w",
+      "13 w",
+      "25 Hz",
+      "16 w",
+      "20 dB",
+      "20%"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "H OW SMALL can we make the current in MOS transistors and still be able to build reliable circuits with them? The smallest MOS transistor current is limited by its leakage current. For example, in a typical present-day submicron CMOS process, the room temperature reverse diode leakage current of the drain or source diffusions of a minimum size transistor A). However, this current is is typically a ..."
+    },
+    {
+      "number": "II",
+      "title": "SOURCE VOLTAGE SHIFTING",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "The fundamental method for exploiting the complete available current range (down to the diffusion diodes reverse leakage currents) is by either biasing the gate voltages beyond the power supply rails [as done in Fig. 1(c)] or by slightly shifting the source voltages. For example, if for the transistors in Fig. 1 the source voltages are connected to around 400 mV with respect to the power supply ra ..."
+    },
+    {
+      "number": "III",
+      "title": "ON-CHIP INVERSION-LEVEL-BASED",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "CURRENT REFERENCES The process of threshold voltage adjustment in modern CMOS processes renders significant variations in the position versus exponential curve [see of the weak inversion Fig. 1(b) and Fig. 2(b)]. Consequently, biasing transistors deep inside the weak inversion region results in important variations voltages. Furthermore, when working in the required voltage can turn the below pico ..."
+    },
+    {
+      "number": "IV",
+      "title": "CURRENT SPLITTING",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "I The circuit in Fig. 3 is capable of providing a reference current in the order of nanoamperes. If we want to generate currents well below picoamperes, we can use the current splitting technique [5], [6]. The circuit in Fig. 4(a) illustrates this tech- , nique. The transistors have a size ratio of either , or . This way, the current produced at the different output branches is progressively divid ..."
+    },
+    {
+      "number": "V",
+      "title": "ON-CHIP LOW-CURRENT SAWTOOTH OSCILLATOR",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "Measuring femtoampere currents off chip is a cumbersome and tedious task which requires expensive instrumentation and very careful wiring and handling to avoid undesired parasitic leakage. To avoid all this, we designed a simple on-chip sawtooth oscillator driven by a current that sets its frequency of operation. The oscillator should keep operating for currents as small as the diffusion diodes’ r ..."
+    },
+    {
+      "number": "VI",
+      "title": "SUBPICOAMPERE CURRENT MIRRORS",
+      "kind": "other",
+      "page": 4,
+      "text_preview": "A fundamental building block for any current-mode signal processing circuit is the current mirror. Fig. 9(a) shows the schematic of a conventional simple nMOS current mirror. Simulating its input–output characteristics by sweeping from 10 A to 1 A while performing corner analysis reveals of the results shown in Fig. 9(b) (drain voltage of output transistor was connected to ). The worst case minimu ..."
+    },
+    {
+      "number": "VII",
+      "title": "LOG-DOMAIN LOW-PASS FILTER WITH",
+      "kind": "other",
+      "page": 5,
+      "text_preview": "SUBHERTZ CUTOFF FREQUENCY A very interesting application of subpicoampere current-mode signal processing is the capability of implementing extremely high time constant circuits. To illustrate this, a conventional first-order log-domain CMOS filter was fabricated and tested. The schematic of the selected first-order section IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 8, AUGUST 2003 (a) (b) F ..."
+    },
+    {
+      "number": "VIII",
+      "title": "NOISE ESTIMATION",
+      "kind": "other",
+      "page": 7,
+      "text_preview": "It is possible to estimate the noise produced by the subpicoampere MOS transistors by simply observing the sawtooth oscillator waveforms. Measuring its frequency jitter is not a good way because it is produced not only by the input current noise but also by the comparator input equivalent noise. However, if we look at the sawtooth oscillator wave only during the time intervals that capacitor is be ..."
+    },
+    {
+      "number": "IX",
+      "title": "MISMATCH CONSIDERATIONS",
+      "kind": "other",
+      "page": 8,
+      "text_preview": "Mismatch is a nonideal effect that becomes stronger for weak inversion operation. However, present-day MOS transistor models predict that relative current mismatch should tend to stay constant when entering this bias regime [2]. We have performed mismatch measurements on devices of 30 different m CMOS process, for currents ranging from sizes in a 0.35strong to weak inversion. The currents were mea ..."
+    },
+    {
+      "number": "X",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 9,
+      "text_preview": "We have shown that it is possible to design and reliably exploit femtoampere current-mode circuits. The fundamental method is to use source voltage shifting. Currents in the range of picoamperes and well below can be reliably generated on-chip by means of inversion-level-based specific-current extractors and logarithmic current splitters. To monitor subpicoampere currents, a simple current-driven  ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Typical modern submicron CMOS nMOS and pMOS transistor I versus V characteristics. (a) Schematic. (b) Corner analysis simulation. (c) Experimental measurements.",
+      "caption_bbox": [
+        301.1,
+        661.6,
+        552.2,
+        690.1
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "For example, Fig. 1(b) shows versus curves (with , the simulated V) of minimum size nMOS and pMOS transism CMOS process, using tors [as seen in Fig. 1(a)] for a 0.35the corner analysis parameters provided by the manufacturer."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The authors are with the Instituto de Microelectrónica de Sevilla, 41012 Sevilla, Spain (e-mail: bernabe@imse.cnm.es). a (a) (b) (c) Fig. 1."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1(c) shows two experimentally versus curves."
+        },
+        {
+          "section_title": "SOURCE VOLTAGE SHIFTING",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The fundamental method for exploiting the complete available current range (down to the diffusion diodes reverse leakage currents) is by either biasing the gate voltages beyond the power supply rails [as done in Fig. 1(c)] or by slightly shifting the source voltages."
+        },
+        {
+          "section_title": "SOURCE VOLTAGE SHIFTING",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "For example, if for the transistors in Fig. 1 the source voltages are connected to around 400 mV with respect to the power supply rails [as shown in Fig. 2(a)], we recover the complete current range that the device physics allows us, as seen in the corner analysis simulation of Fig. 2(b)."
+        },
+        {
+          "section_title": "ON-CHIP INVERSION-LEVEL-BASED",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "CURRENT REFERENCES The process of threshold voltage adjustment in modern CMOS processes renders significant variations in the position versus exponential curve [see of the weak inversion Fig. 1(b) and Fig. 2(b)]."
+        },
+        {
+          "section_title": "ON-CHIP INVERSION-LEVEL-BASED",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The position of the weak inversion exponential curve changes significantly not only from chip to chip (or wafer to wafer) but also with temperature [see Fig. 1(b) and Fig. 2(b)]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.5,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:intro": -0.5,
+        "references": 2.0
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "current reference",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "bias circuit"
+        ],
+        "design_purpose": "For example, if for the transistors in Fig. 1 the source voltages are connected to around 400 mV with respect to the power supply rails [as shown in Fig. 2(a)], we recover the complete current range that the device physics allows us, as seen in the corner analysis simulation of Fig. 2(b).",
+        "function_summary": "Typical modern submicron CMOS nMOS and pMOS transistor I versus V characteristics. (a) Schematic. (b) Corner analysis simulation. (c) Experimental measurements. For example, if for the transistors in Fig. 1 the source voltages are connected to around 400 mV with respect to the power supply rails [as shown in Fig. ...",
+        "key_specs": [
+          "400 mV"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.62,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Illustration of the source voltage shifting technique. (a) Circuit versus V characteristics. schematic. (b) Corner analysis simulated I",
+      "caption_bbox": [
+        39.6,
+        398.2,
+        290.6,
+        417.9
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The minimum cur- (a) 6 (b) Fig. 2."
+        },
+        {
+          "section_title": "SOURCE VOLTAGE SHIFTING",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "For example, if for the transistors in Fig. 1 the source voltages are connected to around 400 mV with respect to the power supply rails [as shown in Fig. 2(a)], we recover the complete current range that the device physics allows us, as seen in the corner analysis simulation of Fig. 2(b)."
+        },
+        {
+          "section_title": "ON-CHIP INVERSION-LEVEL-BASED",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "CURRENT REFERENCES The process of threshold voltage adjustment in modern CMOS processes renders significant variations in the position versus exponential curve [see of the weak inversion Fig. 1(b) and Fig. 2(b)]."
+        },
+        {
+          "section_title": "ON-CHIP INVERSION-LEVEL-BASED",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The position of the weak inversion exponential curve changes significantly not only from chip to chip (or wafer to wafer) but also with temperature [see Fig. 1(b) and Fig. 2(b)]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.1,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+circuit": 1.0,
+        "-simulated": -3.0,
+        "section:intro": -0.5,
+        "references": 1.6
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "current reference",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "For example, if for the transistors in Fig. 1 the source voltages are connected to around 400 mV with respect to the power supply rails [as shown in Fig. 2(a)], we recover the complete current range that the device physics allows us, as seen in the corner analysis simulation of Fig. 2(b).",
+        "function_summary": "Illustration of the source voltage shifting technique. (a) Circuit versus V characteristics. schematic. (b) Corner analysis simulated I. For example, if for the transistors in Fig. 1 the source voltages are connected to around 400 mV with respect to the power supply rails [as shown in Fig. 2(a)], we recover the ...",
+        "key_specs": [
+          "400 mV"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.13,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Specific current extractor circuit.",
+      "caption_bbox": [
+        302.6,
+        215.9,
+        437.2,
+        226.6
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "SOURCE VOLTAGE SHIFTING",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 8, AUGUST 2003 Fig. 3."
+        },
+        {
+          "section_title": "ON-CHIP INVERSION-LEVEL-BASED",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "In our case, we used the branch to circuit shown in Fig. 3 [4]."
+        },
+        {
+          "section_title": "ON-CHIP INVERSION-LEVEL-BASED",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "For the sizes in Fig. 3, it the at ."
+        },
+        {
+          "section_title": "CURRENT SPLITTING",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "I The circuit in Fig. 3 is capable of providing a reference current in the order of nanoamperes."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.1,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:intro": -0.5,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Specific current extractor circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.13,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. (a) Circuit schematic for generic current splitting ratio N. (b) Implemented current splitter.",
+      "caption_bbox": [
+        38.1,
+        399.7,
+        359.2,
+        410.3
+      ],
+      "section_title": "III. ON-CHIP INVERSION-LEVEL-BASED",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ON-CHIP INVERSION-LEVEL-BASED",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fortunately, it suffers little variations for LINARES-BARRANCO AND SERRANO-GOTARREDONA: DESIGN AND CHARACTERIZATION OF FEMPTOAMPERE CURRENT-MODE CIRCUITS (a) (b) Fig. 4."
+        },
+        {
+          "section_title": "CURRENT SPLITTING",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The circuit in Fig. 4(a) illustrates this tech- , nique."
+        },
+        {
+          "section_title": "CURRENT SPLITTING",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The rest of the branches are connected to a voltage source providing a path for the currents, as shown in selects one output branch to Fig. 4(b)."
+        },
+        {
+          "section_title": "CURRENT SPLITTING",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "According to 7, the output current would be requires transistor to be Fig. 4(a), a splitter for to be nine unit transistors, and to be a unit transistor, unit transistors."
+        },
+        {
+          "section_title": "ON-CHIP LOW-CURRENT SAWTOOTH OSCILLATOR",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "By combining the oscillator of Fig. 5 with the current splitter in Fig. 4(b), we can produce and measure extremely small currents."
+        },
+        {
+          "section_title": "MISMATCH CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 8,
+          "sentence": "Mismatch measurements for the current splitter in Fig. 4."
+        },
+        {
+          "section_title": "MISMATCH CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 8,
+          "sentence": "As an illustrative example, we measured the four fabricated samples of the current splitter in Fig. 4, using an off-chip instrument, and sweeping the input current from 100 fA to A."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 9.5,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+circuit schematic": 3.5,
+        "+circuit": 1.0,
+        "references": 2.0
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) Circuit schematic for generic current splitting ratio N. (b) Implemented current splitter",
+        "key_specs": [
+          "5 w"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.98,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Sawtooth oscillator inferred input currents versus measured slopes. = 1 nA and digital control word w was set from 7 to 0.",
+      "caption_bbox": [
+        302.6,
+        259.4,
+        553.7,
+        279.0
+      ],
+      "section_title": "IV. CURRENT SPLITTING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ON-CHIP LOW-CURRENT SAWTOOTH OSCILLATOR",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Note that and sistors have their source voltages shifted so that when their gates IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 8, AUGUST 2003 Fig. 6."
+        },
+        {
+          "section_title": "ON-CHIP LOW-CURRENT SAWTOOTH OSCILLATOR",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 6 shows the inferred currents versus the measured slopes for the eight possible values of ."
+        },
+        {
+          "section_title": "ON-CHIP LOW-CURRENT SAWTOOTH OSCILLATOR",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "According to Fig. 6, this slope corresponds to an case is oscillator input current of approximately 7 pA which also correnA. sponds to the measurement shown in Fig. 7 for"
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "type_match:oscillator": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Sawtooth oscillator inferred input currents versus measured slopes. = 1 nA and digital control word w was set from 7 to 0",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. Sawtooth oscillator inferred current versus I while setting w constant equal to 3.",
+      "caption_bbox": [
+        38.1,
+        259.9,
+        288.9,
+        279.4
+      ],
+      "section_title": "V. ON-CHIP LOW-CURRENT SAWTOOTH OSCILLATOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ON-CHIP LOW-CURRENT SAWTOOTH OSCILLATOR",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 7 shows the oscillator inferred input constant and currents when setting the digital control word from 2 A to 30 pA."
+        },
+        {
+          "section_title": "ON-CHIP LOW-CURRENT SAWTOOTH OSCILLATOR",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 8 equal to 3 while sweeping LINARES-BARRANCO AND SERRANO-GOTARREDONA: DESIGN AND CHARACTERIZATION OF FEMPTOAMPERE CURRENT-MODE CIRCUITS Fig. 7."
+        },
+        {
+          "section_title": "ON-CHIP LOW-CURRENT SAWTOOTH OSCILLATOR",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "According to Fig. 6, this slope corresponds to an case is oscillator input current of approximately 7 pA which also correnA. sponds to the measurement shown in Fig. 7 for"
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "type_match:oscillator": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Sawtooth oscillator inferred current versus I while setting w constant equal to 3",
+        "key_specs": [
+          "3 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.31,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Snapshots of oscillator for I = 100 nA while the control digital word w is maintained constant set to 3 (I = 7 pA).",
+      "caption_bbox": [
+        38.1,
+        498.1,
+        289.2,
+        517.6
+      ],
+      "section_title": "V. ON-CHIP LOW-CURRENT SAWTOOTH OSCILLATOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ON-CHIP LOW-CURRENT SAWTOOTH OSCILLATOR",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 8 equal to 3 while sweeping LINARES-BARRANCO AND SERRANO-GOTARREDONA: DESIGN AND CHARACTERIZATION OF FEMPTOAMPERE CURRENT-MODE CIRCUITS Fig. 7."
+        },
+        {
+          "section_title": "ON-CHIP LOW-CURRENT SAWTOOTH OSCILLATOR",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 8."
+        },
+        {
+          "section_title": "NOISE ESTIMATION",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "However, if we look at the sawtooth oscillator wave only during the time intervals that capacitor is being discharged, the voltage noise observed at the capacitor is produced by the input current noise and the analog buffer noise (see Fig. 8)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "type_match:oscillator": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "capacitor",
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Snapshots of oscillator for I = 100 nA while the control digital word w is maintained constant set to 3 (I = 7 pA)",
+        "key_specs": [
+          "3 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.31,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. Conventional simple current mirror. (a) Schematics. (b) Input–output current characteristics corner analysis.",
+      "caption_bbox": [
+        301.1,
+        300.8,
+        552.2,
+        320.4
+      ],
+      "section_title": "V. ON-CHIP LOW-CURRENT SAWTOOTH OSCILLATOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SUBPICOAMPERE CURRENT MIRRORS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 9(a) shows the schematic of a conventional simple nMOS current mirror."
+        },
+        {
+          "section_title": "SUBPICOAMPERE CURRENT MIRRORS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Simulating its input–output characteristics by sweeping from 10 A to 1 A while performing corner analysis reveals of the results shown in Fig. 9(b) (drain voltage of output transistor was connected to )."
+        },
+        {
+          "section_title": "SUBPICOAMPERE CURRENT MIRRORS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "This is (a) (b) Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "-conventional": -3.0,
+        "references": 1.2
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "current mirror"
+        ],
+        "design_purpose": "",
+        "function_summary": "Conventional simple current mirror. (a) Schematics. (b) Input–output current characteristics corner analysis",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10. New current mirror topology suitable for subpicoampere current operation. (a) Schematics. (b) Input–output characteristics corner analysis.",
+      "caption_bbox": [
+        301.1,
+        590.9,
+        552.2,
+        610.6
+      ],
+      "section_title": "VI. SUBPICOAMPERE CURRENT MIRRORS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SUBPICOAMPERE CURRENT MIRRORS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "(a) (b) Fig. 10."
+        },
+        {
+          "section_title": "SUBPICOAMPERE CURRENT MIRRORS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Using the topology in Fig. 10(a) allows the gate voltage to adapt below the shifted source voltages."
+        },
+        {
+          "section_title": "SUBPICOAMPERE CURRENT MIRRORS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Performing corner analysis simulations on this topology provides the results shown in Fig. 10(b)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.7,
+      "relevance_breakdown": {
+        "+topology": 2.5,
+        "+schematic": 3.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "current mirror"
+        ],
+        "design_purpose": "Using the topology in Fig. 10(a) allows the gate voltage to adapt below the shifted source voltages.",
+        "function_summary": "New current mirror topology suitable for subpicoampere current operation. (a) Schematics. (b) Input–output characteristics corner analysis. Using the topology in Fig. 10(a) allows the gate voltage to adapt below the shifted source voltages.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.94,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 5,
+      "caption": "Fig. 11. Testing of subpicoampere current mirrors using current splitters and low current sawtooth oscillator.",
+      "caption_bbox": [
+        39.6,
+        160.5,
+        290.7,
+        180.1
+      ],
+      "section_title": "VI. SUBPICOAMPERE CURRENT MIRRORS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SUBPICOAMPERE CURRENT MIRRORS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "The high-temperature corners saturate at the diffusion diodes leakage currents (69 fA), while the others A). remain fully operative down to 10 aA (10 Fig. 11."
+        },
+        {
+          "section_title": "SUBPICOAMPERE CURRENT MIRRORS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "In order to experimentally test this current mirror topology, pMOS and nMOS versions were used in combination with the current splitter and the sawtooth oscillator, as shown in Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "type_match:oscillator": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "current mirror"
+        ],
+        "design_purpose": "In order to experimentally test this current mirror topology, pMOS and nMOS versions were used in combination with the current splitter and the sawtooth oscillator, as shown in Fig. 11.",
+        "function_summary": "Testing of subpicoampere current mirrors using current splitters and low current sawtooth oscillator. In order to experimentally test this current mirror topology, pMOS and nMOS versions were used in combination with the current splitter and the sawtooth oscillator, as shown in Fig. 11.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 5,
+      "caption": "Fig. 12. Experimental results of the subpicoampere new current mirror topology. (a) Input current inferred in the sawtooth oscillator versus measured slopes when the current splitter is connected to the oscillator input and when the current goes through the nMOS and pMOS subpicoampere current mirrors. (b) Inferred input–output current behavior of the compound nMOS and pMOS subpicoampere current mirrors.",
+      "caption_bbox": [
+        302.6,
+        479.6,
+        553.7,
+        535.0
+      ],
+      "section_title": "VI. SUBPICOAMPERE CURRENT MIRRORS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SUBPICOAMPERE CURRENT MIRRORS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 12 shows the experimental results of this new subpicoampere current mirror topology."
+        },
+        {
+          "section_title": "SUBPICOAMPERE CURRENT MIRRORS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 12(a) shows the inferred input currents in the sawtooth oscillator versus the measured slope for the two above-mentioned situations: when the current splitter is directly connected to the input of the oscillator [curve marked with circles in Fig. 12(a)] and when the current goes through the combination of the nMOS and pMOS subpicoampere current mirrors [curve marked with stars in Fig. 12(a)]."
+        },
+        {
+          "section_title": "SUBPICOAMPERE CURRENT MIRRORS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "From the results shown in Fig. 12(a), the curve in Fig. 12(b) can be inferred, which shows the current at the oscillator when the current splitter is connected directly to the oscillator [labelled Ics in Fig. 12(b)] versus the input current in the oscillator when the current from the current splitter goes through the combination of the nMOS and pMOS subpicoampere current mirrors [labelled Icm in Fig. 12(b)]."
+        },
+        {
+          "section_title": "SUBPICOAMPERE CURRENT MIRRORS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "This way, the curve in Fig. 12(b) represents the input current (Ics)–output current (Icm) relation of the combination of the nMOS and pMOS subpicoampere current mirrors."
+        },
+        {
+          "section_title": "LOG-DOMAIN LOW-PASS FILTER WITH",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The schematic of the selected first-order section IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 8, AUGUST 2003 (a) (b) Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.5,
+      "relevance_breakdown": {
+        "+topology": 2.5,
+        "-measured": -3.0,
+        "type_match:oscillator": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "current mirror"
+        ],
+        "design_purpose": "",
+        "function_summary": "Experimental results of the subpicoampere new current mirror topology. (a) Input current inferred in the sawtooth oscillator versus measured slopes when the current splitter is connected to the oscillator input and when the current goes through the nMOS and pMOS subpicoampere current mirrors. (b) Inferred input–output ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.38,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 5,
+      "caption": "Fig. 13. Schematic of first-order log-domain low-pass filter section for subpicoampere operation.",
+      "caption_bbox": [
+        302.6,
+        738.3,
+        553.7,
+        757.9
+      ],
+      "section_title": "VII. LOG-DOMAIN LOW-PASS FILTER WITH",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "LOG-DOMAIN LOW-PASS FILTER WITH",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 13."
+        },
+        {
+          "section_title": "LOG-DOMAIN LOW-PASS FILTER WITH",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Measured frequency response of the log-domain low-pass filter for different I values. is shown in Fig. 13 [8]. and are cascode transistors and equal."
+        },
+        {
+          "section_title": "LOG-DOMAIN LOW-PASS FILTER WITH",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The log-domain low-pass filter of Fig. 13 with pF was fabricated in a 0.3m CMOS process together with an nMOS current splitter, a sawtooth oscillator, and a set of subpicoampere current mirrors, as shown in Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.2,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "current mirror"
+        ],
+        "design_purpose": "",
+        "function_summary": "Schematic of first-order log-domain low-pass filter section for subpicoampere operation",
+        "key_specs": [
+          "13 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.55,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 6,
+      "caption": "Fig. 14. Fabricated circuitry for test of subpicoampere log-domain low-pass filter.",
+      "caption_bbox": [
+        38.1,
+        222.3,
+        306.3,
+        232.9
+      ],
+      "section_title": "VII. LOG-DOMAIN LOW-PASS FILTER WITH",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "LOG-DOMAIN LOW-PASS FILTER WITH",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "LINARES-BARRANCO AND SERRANO-GOTARREDONA: DESIGN AND CHARACTERIZATION OF FEMPTOAMPERE CURRENT-MODE CIRCUITS Fig. 14."
+        },
+        {
+          "section_title": "LOG-DOMAIN LOW-PASS FILTER WITH",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The log-domain low-pass filter of Fig. 13 with pF was fabricated in a 0.3m CMOS process together with an nMOS current splitter, a sawtooth oscillator, and a set of subpicoampere current mirrors, as shown in Fig. 14."
+        },
+        {
+          "section_title": "LOG-DOMAIN LOW-PASS FILTER WITH",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The low-pass transfer function was measured from setup in Fig. 14 allows us to control the value of of the low-pass filter, while inferring that value by means of the sawtooth oscillator."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.2,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "current mirror"
+        ],
+        "design_purpose": "The low-pass transfer function was measured from setup in Fig. 14 allows us to control the value of of the low-pass filter, while inferring that value by means of the sawtooth oscillator.",
+        "function_summary": "Fabricated circuitry for test of subpicoampere log-domain low-pass filter. The low-pass transfer function was measured from setup in Fig. 14 allows us to control the value of of the low-pass filter, while inferring that value by means of the sawtooth oscillator.",
+        "key_specs": [
+          "13 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.14,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 6,
+      "caption": "Fig. 15. Measured frequency response of the log-domain low-pass filter for different I values.",
+      "caption_bbox": [
+        38.1,
+        448.1,
+        289.2,
+        467.7
+      ],
+      "section_title": "VII. LOG-DOMAIN LOW-PASS FILTER WITH",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "LOG-DOMAIN LOW-PASS FILTER WITH",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 15."
+        },
+        {
+          "section_title": "LOG-DOMAIN LOW-PASS FILTER WITH",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 15 shows the measured low-pass filter ."
+        },
+        {
+          "section_title": "LOG-DOMAIN LOW-PASS FILTER WITH",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Figs. 15 and 16 were not measured using a spectrum/network analyzer, because the frequencies were too low."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.8,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured frequency response of the log-domain low-pass filter for different I values",
+        "key_specs": [
+          "16 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 6,
+      "caption": "Fig. 16. Measured 3-dB cutoff frequency of low-pass filter when setting control word w = 3 and sweeping I from 55 nA to 70 pA.",
+      "caption_bbox": [
+        301.1,
+        450.1,
+        552.2,
+        469.6
+      ],
+      "section_title": "VII. LOG-DOMAIN LOW-PASS FILTER WITH",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "LOG-DOMAIN LOW-PASS FILTER WITH",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "For a 1-Hz cutoff frequency with frequency pF, , and mV, the bias current fA. should be Fig. 16."
+        },
+        {
+          "section_title": "LOG-DOMAIN LOW-PASS FILTER WITH",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "When keeping from 55 nA down to 70 pA, the set of values and changing versus of Fig. 16 were measured."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured 3-dB cutoff frequency of low-pass filter when setting control word w = 3 and sweeping I from 55 nA to 70 pA",
+        "key_specs": [
+          "16 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 6,
+      "caption": "Fig. 17. Measured spectral noise density at discharging oscillator capacitor.",
+      "caption_bbox": [
+        301.1,
+        686.9,
+        547.0,
+        697.5
+      ],
+      "section_title": "VII. LOG-DOMAIN LOW-PASS FILTER WITH",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "LOG-DOMAIN LOW-PASS FILTER WITH",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 17."
+        },
+        {
+          "section_title": "NOISE ESTIMATION",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "The results are shown in Fig. 17 for capacitor discharge currents equal to 7 fA, 40 fA, 600 fA, and 7 pA."
+        },
+        {
+          "section_title": "NOISE ESTIMATION",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "As can be seen in Fig. 17, all 20 dB/dec slope. four noise measurements show the expected Consequently, only white noise is being produced by the input currents for the observed frequency ranges."
+        },
+        {
+          "section_title": "NOISE ESTIMATION",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "Since this current noise is inwhere during the discharging ramps, the tegrated on capacitor voltage noise present at its terminal will be (10) This theoretical noise is also shown in Fig. 17, for each discharging current, with straight lines."
+        },
+        {
+          "section_title": "NOISE ESTIMATION",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "Note that all these frequencies and for fall outside the measured ranges in Fig. 17, limited by the sawtooth waveform frequencies."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 9,
+          "sentence": "Since the the ratio noise model used in (11) is the same as used in Fig. 17 to compare theory and measurements for current as low as 7 fA, we have solid reasons to believe that this noise model is still valid for such low currents."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.0,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "type_match:oscillator": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Measured spectral noise density at discharging oscillator capacitor",
+        "key_specs": [
+          "20 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.05,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 7,
+      "caption": "Fig. 18. deviation in percent. Horizontal scale shows bias current.",
+      "caption_bbox": [
+        39.6,
+        423.5,
+        224.0,
+        443.1
+      ],
+      "section_title": "VII. LOG-DOMAIN LOW-PASS FILTER WITH",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "LOG-DOMAIN LOW-PASS FILTER WITH",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Vertical scale shows relative current mismatch standard Fig. 18. deviation in percent."
+        },
+        {
+          "section_title": "MISMATCH CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 8,
+          "sentence": "The results can be seen in Fig. 18, where the minimum current for which mismatch could be measured was around 100 pA."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 9,
+          "sentence": "From Fig. 18, we may expect that further current reductions will not degrade mismatch, as predicted by the theory."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "deviation in percent. Horizontal scale shows bias current",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 8,
+      "caption": "Fig. 19. Mismatch measurements for the current splitter in Fig. 4. (a) Measured input–output currents for the top seven splitter outputs and the four fabricated samples. (b) Computed relative standard deviation for the currents in (a).",
+      "caption_bbox": [
+        301.1,
+        513.1,
+        552.2,
+        550.6
+      ],
+      "section_title": "VIII. NOISE ESTIMATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MISMATCH CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 8,
+          "sentence": "The currents were measured using an external instrument, thus limiting the minimum measurable (a) (b) Fig. 19."
+        },
+        {
+          "section_title": "MISMATCH CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 8,
+          "sentence": "Fig. 19(a) shows the measured output current versus the input reference current for the seven top output branches of the splitter."
+        },
+        {
+          "section_title": "MISMATCH CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 8,
+          "sentence": "Fig. 19(b) is the result of computing the relative standard deviation for the curves in Fig. 19(a), expressed in percentages."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.8,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Mismatch measurements for the current splitter in Fig. 4. (a) Measured input–output currents for the top seven splitter outputs and the four fabricated samples. (b) Computed relative standard deviation for the currents in (a)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 4,
+  "warnings": []
+}

@@ -1,0 +1,949 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1208465.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1208465",
+  "generated_at": "2026-07-29T22:01:05",
+  "paper_metadata": {
+    "title": "A 35-mW 3.6-mm2 Fully Integrated 0.18-m CMOS GPS Radio",
+    "authors": [
+      "Giampiero Montagna",
+      "Giuseppe Gramegna",
+      "Ivan Bietti",
+      "Massimo Franciotta",
+      "Andrea Baschirotto",
+      "Placido De Vita",
+      "Roberto Pelleriti",
+      "Mario Paparo",
+      "Rinaldo Castello"
+    ],
+    "abstract": "A single-chip CMOS Global Positioning System (GPS) radio has been integrated using only a couple of external pabilities into mobile products. This motivated the development passive components for the input matching network and one exof GPS macro blocks and radios in CMOS technology [1], [2]. ternal reference for the synthesizer. The receiver downconverts the However, the cost effectiveness of this solution depends on GPS L1 signal at 1575.42 MHz to an IF of 9.45 MHz. The complete both reduction of external components and die area of the GPS front-end and frequency synthesizer section have been integrated: radio. Since the silicon area of RF CMOS circuits, including low noise amplifier, image rejection mixer, IF active filter, and the full phase-locked loop synthesizer, including voltage-controlled on-chip inductors, does not shrink at the same rate as technology oscillator and loop filter. The front-end measured performances scaling, the reduction of the total cost poses a severe challenge. are 81-dB maximum gain, 5.3-dB noise figure, and 30-dB image This paper describes the design and measurement of a fully rejection. The synthesizer features a phase noise of 95 dBc/Hz at integrated CMOS GPS receiver targeting active antenna appli1-MHz offset and a total integrated phase noise of less than 7 rms cations with an architecture geared to highest integration and in the 500-Hz–1.5-MHz band. The front-end and the synthesizer draw, respectively, 11 and 9 mA from a 1.8-V supply. The architecminimal silicon area at the lowest possible power consumption ture of the front-end and synthesizer has been geared to high level (i.e., comparable to the best ones available [1], [2]). of integration and reduction of silicon area at the lowest possible The paper is organized as follows. The GPS system, archipower consumption. Consequently, the one reported here is the tecture, and specifications are summarized in Section II, and smallest and most integrated CMOS GPS receiver reported so far. the chip design is reported in Section III. Implementation de-",
+    "keywords": [
+      "CMOS analog integrated circuit",
+      "communication"
+    ],
+    "doi": "10.1109/JSSC.2003.813298",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "low-noise amplifier (LNA)",
+    "technology": "CMOS, BICMOS, SIGE",
+    "application_domain": "rf, satellite, baseband, if",
+    "sub_blocks": [
+      "varactor",
+      "inductor",
+      "resistor",
+      "transistor/MOSFET",
+      "current source",
+      "current mirror",
+      "mixer",
+      "op-amp",
+      "pre-amplifier",
+      "clock / timing",
+      "output buffer"
+    ],
+    "design_purpose": "",
+    "function_summary": "low-noise amplifier (LNA): A single-chip CMOS Global Positioning System (GPS) radio has been integrated using only a couple of external pabilities into mobile products.",
+    "key_specs": [
+      "1575.42 MHz",
+      "9.45 MHz",
+      "95 dBc/Hz",
+      "20 MHz",
+      "1.575 GHz",
+      "130 dBm",
+      "111 dBm",
+      "19 dB",
+      "200 MHz",
+      "10 MHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "G LOBAL Positioning System (GPS) receivers for the consumer market require solutions that are compact, cheap, and low power. Manufacturers of cellular telephones, portable computers, watches, and other mobile devices are looking for ways to embed GPS into their products. Thus, there is a strong motivation to provide highly integrated solutions at the lowest possible power consumption. GPS radios c ..."
+    },
+    {
+      "number": "II",
+      "title": "ARCHITECTURE AND SPECIFICATIONS",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "The GPS signal code is a direct-sequence spread spectrum, and the type of spread spectrum employed by GPS is known as binary phase-shift keying direct-sequence spread spectrum (BPSK DSSS). In a spread-spectrum system, data are modulated onto the carrier such that the transmitted signal has a larger bandwidth than the information rate of the data. The term “direct sequence” is used when the spreadi ..."
+    },
+    {
+      "number": "III",
+      "title": "CHIP DESIGN",
+      "kind": "design",
+      "page": 1,
+      "text_preview": "As stated, the overall design has been geared to a high level of integration and reduction of silicon area at the lowest possible power consumption. Below, the detailed design choices in the various sections are described. A. RF Section The LNA has been designed to have a very low noise since it sets a lower bound for the total receiver sensitivity. A high voltage gain is necessary to sufficiently ..."
+    },
+    {
+      "number": "IV",
+      "title": "IMPLEMENTATION DETAILS",
+      "kind": "design",
+      "page": 4,
+      "text_preview": "The GPS radio has been integrated in a 0.18m RF CMOS in excess of 55 GHz, process with six metal levels, nMOS m MIM capacitances and 10cm high linearity 0.85-fF/ substrate resistivity. The availability of the triple well allows isolation of the nMOS transistors from the substrate. High for inducquality factor MOS varactors are available, while tors is about 7 at 1.6 GHz. A photograph of the fabric ..."
+    },
+    {
+      "number": "V",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 5,
+      "text_preview": "The full GPS radio (i.e., receiver chain RX and synthesizer working together), housed in a VFQFPN52 package and soldered into an application board, has been characterized with the three DNS generators turned off. The RX features S11 dB, NF dB, and conversion gain dB. The measured VGA range is 60 dB. The measured S11 is reported in Fig. 12. The wanted and image signal after downconversion performed ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION AND FUTURE WORK",
+      "kind": "conclusion",
+      "page": 6,
+      "text_preview": "A comparison with recently published data is reported in Table IV. This GPS radio features the smallest area and the highest level of integration ever reported. The better power performance achieved by [1] can be attributed to the lower IF frequency that allows for a gain-bandwidth reduction in the IF filter opamps and the use of a low-power (but large area) quadrature LC VCO instead of a ring osc ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. GPS L1 band signal spectrum.",
+      "caption_bbox": [
+        39.6,
+        209.3,
+        166.6,
+        220.0
+      ],
+      "section_title": "II. ARCHITECTURE AND SPECIFICATIONS",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ARCHITECTURE AND SPECIFICATIONS",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "They are known as the P code (or precision code) and the C/A code (or coarse acquisition code) (Fig. 1)."
+        },
+        {
+          "section_title": "ARCHITECTURE AND SPECIFICATIONS",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "For instance, a dual-conversion architecture with a first IF between 100–200 MHz and a second close to dc relaxes the constraints between selectivity and sensitivity of the Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, satellite, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "GPS L1 band signal spectrum",
+        "key_specs": [
+          "200 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. GPS Radio embedded in application from downconversion to code de-spreading.",
+      "caption_bbox": [
+        302.6,
+        213.8,
+        553.6,
+        233.4
+      ],
+      "section_title": "II. ARCHITECTURE AND SPECIFICATIONS",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ARCHITECTURE AND SPECIFICATIONS",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "A detailed architecture block diagram of the receiver is shown in Fig. 2."
+        },
+        {
+          "section_title": "ARCHITECTURE AND SPECIFICATIONS",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The reported GPS radio downconverts the GPS L1 spreadspectrum BPSK-modulated signal to an IF of 9.45 MHz (fully differential outputs) and provides two programmable CMOS IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 7, JULY 2003 Fig. 2."
+        },
+        {
+          "section_title": "CHIP DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "IF Section After downconversion, the signal is amplified using a variable-gain amplifier (VGA) with 20-dB gain programmability (Fig. 2)."
+        },
+        {
+          "section_title": "CHIP DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The filter also provides an antialiasing function before the baseband ADC (Fig. 2), assuring 20-dB attenuation at 28 MHz. 10–30 dB) in two stages A gain programmability of 40 dB ( has been implemented in the filter by digitally selecting the and ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.6,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, satellite, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "GPS Radio embedded in application from downconversion to code de-spreading",
+        "key_specs": [
+          "9.45 MHz",
+          "28 MHz",
+          "30 dB",
+          "40 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.4,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. LNA and mixer.",
+      "caption_bbox": [
+        38.1,
+        221.5,
+        119.6,
+        232.2
+      ],
+      "section_title": "III. CHIP DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CHIP DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "A common source configuration with inductive degeneration provides high voltage gain and low NF, as shown in Fig. 3."
+        },
+        {
+          "section_title": "CHIP DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "A single-ended LNA MONTAGNA et al.: FULLY INTEGRATED CMOS GPS RADIO Fig. 3."
+        },
+        {
+          "section_title": "CHIP DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "LNA features NF - mixers that are ac-coupled The LNA is followed by the to the LNA and are based on a modified Gilbert cell (Fig. 3)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "type_match:lna": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, satellite, baseband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "LNA and mixer",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.58,
+      "warnings": [
+        "Recommended figure caption does not explicitly mention a schematic/topology/circuit; please confirm manually.",
+        "Recommended figure was classified as 'other', not a schematic; manual confirmation strongly recommended."
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Second-order IF polyphase.",
+      "caption_bbox": [
+        301.1,
+        370.5,
+        418.8,
+        381.1
+      ],
+      "section_title": "III. CHIP DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CHIP DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The has been used to recombine the polyphase filter is an RC structure with inputs and outputs symmetrically disposed (Fig. 4)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.9,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, satellite, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Second-order IF polyphase",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.11,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. IF filter.",
+      "caption_bbox": [
+        301.1,
+        516.7,
+        356.4,
+        527.3
+      ],
+      "section_title": "III. CHIP DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CHIP DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 5."
+        },
+        {
+          "section_title": "CHIP DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The filter is built as a cascade of a bandpass and a low-pass cell, implementing a fourth-order transfer function (Fig. 5)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, satellite, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "IF filter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Interface between polyphase and first biquad.",
+      "caption_bbox": [
+        39.6,
+        188.0,
+        214.1,
+        198.6
+      ],
+      "section_title": "III. CHIP DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CHIP DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "This condition is achieved using the solution shown in Fig. 6."
+        },
+        {
+          "section_title": "CHIP DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "This is due to the different feedback conditions in Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, satellite, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Interface between polyphase and first biquad",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Connection between the first and the second biquad cells.",
+      "caption_bbox": [
+        39.6,
+        350.8,
+        252.2,
+        361.5
+      ],
+      "section_title": "III. CHIP DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CHIP DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 7."
+        },
+        {
+          "section_title": "CHIP DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "This problem has been overcome by using the scheme of Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, satellite, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Connection between the first and the second biquad cells",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. PLL synthesizer.",
+      "caption_bbox": [
+        302.6,
+        216.5,
+        385.4,
+        227.2
+      ],
+      "section_title": "III. CHIP DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CHIP DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Synthesizer The synthesizer, depicted in Fig. 8, provides LO quadrature signals for the image-reject mixer and two clock signals needed to synchronize the correlator inside the external baseband processor."
+        },
+        {
+          "section_title": "CHIP DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The use of a ring oscillator requires IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 7, JULY 2003 Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, satellite, baseband, if",
+        "sub_blocks": [
+          "mixer",
+          "clock / timing"
+        ],
+        "design_purpose": "",
+        "function_summary": "PLL synthesizer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 3,
+      "caption": "Fig. 9. VCO: dual paths indicated with thin lines.",
+      "caption_bbox": [
+        302.6,
+        408.4,
+        466.8,
+        419.1
+      ],
+      "section_title": "III. CHIP DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CHIP DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 9."
+        },
+        {
+          "section_title": "CHIP DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "A 500-kHz band is implemented with 12 pF in parallel with the series of 300 pF and . 6.4 k The ring oscillator is implemented, cascading a transconductance stage to a current-controlled oscillator (CCO) (Fig. 9)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, satellite, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "VCO: dual paths indicated with thin lines",
+        "key_specs": [
+          "12 pF",
+          "300 pF"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10. Inverter used in the CCO. In dashed box: the pMOS inputs used by the dual paths.",
+      "caption_bbox": [
+        38.1,
+        217.6,
+        289.2,
+        237.2
+      ],
+      "section_title": "III. CHIP DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CHIP DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The basic CCO cell, together with the tail current generator (Mtail) is depicted in Fig. 10."
+        },
+        {
+          "section_title": "CHIP DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Alternate delay paths, shown in Fig. 10 with thin lines, are used to achieve higher oscillation frequencies with the same power budget [5]."
+        },
+        {
+          "section_title": "CHIP DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The dual scheme is implemented using the complementary pMOS inputs of each cell of the CCO, reported in Fig. 10."
+        },
+        {
+          "section_title": "CHIP DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "In order to reduce overall power conwith sumption and complexity, the 41 divider has been implemented MONTAGNA et al.: FULLY INTEGRATED CMOS GPS RADIO Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.1,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, satellite, baseband, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "current source"
+        ],
+        "design_purpose": "In order to reduce overall power conwith sumption and complexity, the 41 divider has been implemented MONTAGNA et al.: FULLY INTEGRATED CMOS GPS RADIO Fig. 10.",
+        "function_summary": "Inverter used in the CCO. In dashed box: the pMOS inputs used by the dual paths. In order to reduce overall power conwith sumption and complexity, the 41 divider has been implemented MONTAGNA et al.: FULLY INTEGRATED CMOS GPS RADIO Fig. 10.",
+        "key_specs": [
+          "10 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.29,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 4,
+      "caption": "Fig. 11. GPS radio plus DNS generators.",
+      "caption_bbox": [
+        38.1,
+        460.2,
+        175.2,
+        470.8
+      ],
+      "section_title": "III. CHIP DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CHIP DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 11."
+        },
+        {
+          "section_title": "IMPLEMENTATION DETAILS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "A photograph of the fabricated test chip is shown in Fig. 11."
+        },
+        {
+          "section_title": "IMPLEMENTATION DETAILS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The VCO with its decoupling capacitances (VCO Dec in Fig. 11) and and the integrated loop filter take, respectively, 0.38 mm ."
+        },
+        {
+          "section_title": "IMPLEMENTATION DETAILS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The two bias generators are labeled as B1 in Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.1,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, satellite, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "GPS radio plus DNS generators",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.29,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 4,
+      "caption": "Fig. 12. Measured S11.",
+      "caption_bbox": [
+        301.1,
+        258.7,
+        382.2,
+        269.3
+      ],
+      "section_title": "III. CHIP DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION DETAILS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "This includes the GPS radio and three digital noise and spurs Fig. 12."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The measured S11 is reported in Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, satellite, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured S11",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 4,
+      "caption": "Fig. 13. Image rejection bandwidth at IF.",
+      "caption_bbox": [
+        301.1,
+        430.4,
+        438.4,
+        441.1
+      ],
+      "section_title": "III. CHIP DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION DETAILS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 13."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The wanted and image signal after downconversion performed by the GPS radio are reported in Fig. 13 for one sample."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, satellite, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Image rejection bandwidth at IF",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 5,
+      "caption": "Fig. 14. PLL phase noise measured at fo=4.",
+      "caption_bbox": [
+        39.6,
+        238.0,
+        188.5,
+        248.7
+      ],
+      "section_title": "IV. IMPLEMENTATION DETAILS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION DETAILS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 14."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The PLL with its on-chip loop filter has been characterized and the total phase noise, integrated between 500 Hz and rms in all measured samples (Fig. 14). 1.5 MHz, is below 7 Another version of the GPS radio has been integrated in a pure CMOS process (i.e., low resistivity substrate and low quality factor on-chip inductors) in order to experimentally verify the technology portability of this solution."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-phase noise": -2.5,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, satellite, baseband, if",
+        "sub_blocks": [
+          "inductor"
+        ],
+        "design_purpose": "The PLL with its on-chip loop filter has been characterized and the total phase noise, integrated between 500 Hz and rms in all measured samples (Fig. 14). 1.5 MHz, is below 7 Another version of the GPS radio has been integrated in a pure CMOS process (i.e., low resistivity substrate and low quality factor on-chip ...",
+        "function_summary": "PLL phase noise measured at fo=4. The PLL with its on-chip loop filter has been characterized and the total phase noise, integrated between 500 Hz and rms in all measured samples (Fig. 14). 1.5 MHz, is below 7 Another version of the GPS radio has been integrated in a pure CMOS process (i.e., low resistivity substrate ...",
+        "key_specs": [
+          "500 Hz",
+          "1.5 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 5,
+      "caption": "Fig. 15. RF signal downconverted by the GPS radio to 9.45 MHz.",
+      "caption_bbox": [
+        39.6,
+        488.6,
+        255.3,
+        499.3
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION DETAILS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 15."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 7, JULY 2003 TABLE II RX CHAIN TABLE III SYNTHESIZER AND LO BUFFERS An RF carrier downconverted at IF by the GPS radio is reported in Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "frequency synthesizer",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, satellite, baseband, if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "RF signal downconverted by the GPS radio to 9.45 MHz",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 6,
+      "caption": "Fig. 16. IF interferer generated by DNS downconverted by the GPS radio to IF.",
+      "caption_bbox": [
+        38.1,
+        384.3,
+        289.1,
+        403.9
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "MONTAGNA et al.: FULLY INTEGRATED CMOS GPS RADIO TABLE IV STATE-OF-THE-ART GPS RADIOS Fig. 16."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The measured 33 dBm, therefore, the amplitude (as shown in Fig. 16) is 124 dBm. input signal is"
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, satellite, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "IF interferer generated by DNS downconverted by the GPS radio to IF",
+        "key_specs": [
+          "33 dBm",
+          "124 dBm"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 3,
+  "warnings": []
+}

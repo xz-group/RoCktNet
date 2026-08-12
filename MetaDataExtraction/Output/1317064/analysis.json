@@ -1,0 +1,675 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1317064.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1317064",
+  "generated_at": "2026-07-29T22:01:48",
+  "paper_metadata": {
+    "title": "A 39-to-45-Gbit/s Multi-Data-Rate Clock and Data Recovery Circuit With a Robust Lock Detector",
+    "authors": [
+      "Hideyuki Nosaka",
+      "Eiichi Sano",
+      "Kiyoshi Ishii",
+      "Minoru Ida",
+      "Kenji Kurishima",
+      "Shoji Yamahata",
+      "Tsugumichi Shibata",
+      "Hiroyuki Fukuyama",
+      "Mikio Yoneyama",
+      "Takatomo Enoki",
+      "Masahiro Muraguchi"
+    ],
+    "abstract": "We describe a 40-Gbit/s-class clock and data recovery (CDR) circuit with an extremely wide pull-in range. A Darlingtontype voltage-controlled oscillator (VCO) is newly designed to cover the STM-256/OC-768 full-rate-clock frequencies with a wide frequency margin. We also describe a new lock detector using an exclusive-NOR gate. The CDR IC was fabricated using InP/InGaAs HBTs. Error-free operation and wide eye opening were confirmed for 40-, 43-, and 45-Gbit/s PRBS with a word length of 231 1. We attached a frequency search and phase control (FSPC) circuit to the chip as a new frequency acquisition aid, and this allows the CDR circuit to pull in throughout a 39–45-Gbit/s range. The peak-to-peak and rms jitter of the recovered clock were 3.6 and 0.48 ps, respectively.",
+    "keywords": [
+      "Clock and data recovery (CDR)",
+      "HBT",
+      "InP",
+      "jitter",
+      "phase-locked loop (PLL)",
+      "voltage-controlled oscillator (VCO)",
+      "40 G"
+    ],
+    "doi": "10.1109/JSSC.2004.831463",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2004
+  },
+  "paper_circuit_context": {
+    "circuit_type": "39-to-45-Gbit/s Multi-Data-Rate Clock and Data Recovery Circuit",
+    "technology": "SIGE, HBT, HEMT",
+    "application_domain": "microwave, rf",
+    "sub_blocks": [
+      "transistor/MOSFET",
+      "output buffer",
+      "bias circuit",
+      "switch",
+      "clock / timing",
+      "capacitor",
+      "resistor"
+    ],
+    "design_purpose": "We attached a frequency search and phase control (FSPC) circuit to the chip as a new frequency acquisition aid, and this allows the CDR circuit to pull in throughout a 39–45-Gbit/s range.",
+    "function_summary": "39-to-45-Gbit/s Multi-Data-Rate Clock and Data Recovery Circuit: We attached a frequency search and phase control (FSPC) circuit to the chip as a new frequency acquisition aid, and this allows the CDR circuit to pull in throughout a 39–45-Gbit/s range.",
+    "key_specs": [
+      "0.48 ps",
+      "-0198 J",
+      "400 mV",
+      "149 GHz",
+      "248 GHz",
+      "47.3 GHz",
+      "40 mV",
+      "4.2 V",
+      "10 ps",
+      "200 mV"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "A PROMISING technique for realizing terabits-per-second optical ﬁber transmission systems using wavelength-division multiplexing (WDM) is 40-Gbit/s time-division multiplexing (TDM). A clock and data recovery (CDR) circuit is required in an optical receiver in order to extract the clock signal from the incoming random data stream. Some 40-Gbit/s-class CDR circuits have been reported that use SiGe h ..."
+    },
+    {
+      "number": "II",
+      "title": "CIRCUIT DESIGN",
+      "kind": "design",
+      "page": 1,
+      "text_preview": "Fig. 1 shows a block diagram of the CDR circuit. It consists of an input buffer, a master–slave D-FF, an additional delay, which compensates the D-FF delay, a half-bit delay, a modiﬁed Hoggetype phase detector, a lock detector, a Darlington-type VCO, and output drivers. The linear-CDR circuit contains only one clock distribution (from the VCO to the D-FF and the output driver) because it detects p ..."
+    },
+    {
+      "number": "III",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 2,
+      "text_preview": "We fabricated the CDR IC using nonself-aligned InP/InGaAs HBTs [8]. The epitaxial layers were grown on a 3-inch wafer by metal–organic vapor phase epitaxy (MOVPE). The lateral m m. The emitter dimensions of the standard HBT are of 149 GHz, and an of 248 GHz fabricated HBTs had an A/cm with V. Fig. 7 at a current density of 2 mm. is a photograph of the CDR IC. The chip size is 2 mm Measurements wer ..."
+    },
+    {
+      "number": "IV",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 4,
+      "text_preview": "We described a 39-to-45-Gbit/s CDR circuit with a new lock detector. The newly designed Darlington-type VCO described in this paper exhibits a wide tuning range of 37.9–47.3 GHz, which covers the STM-256/OC-768 full-rate-clock frequencies with a wide frequency margin. We conﬁrmed error-free operation and wide eye opening at 40-, 43-, and 45-Gbit/s. By attaching an FSPC circuit to the chip, the CDR ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Block diagram of CDR circuit.",
+      "caption_bbox": [
+        301.1,
+        319.5,
+        429.4,
+        327.5
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Digital Object Identiﬁer 10.1109/JSSC.2004.831463 Fig. 1."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 1 shows a block diagram of the CDR circuit."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "+circuit": 1.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "clock and data recovery (CDR)",
+        "technology": "SIGE, HBT, HEMT",
+        "application_domain": "microwave, rf",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of CDR circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Modiﬁed Hogge-type phase detector. (a) Conﬁguration. (b) Equivalent circuit.",
+      "caption_bbox": [
+        39.6,
+        266.6,
+        319.3,
+        274.5
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 2."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 2 shows a modiﬁed Hogge-type phase detector that is basically the same as that described in [7]."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The transistor-level conﬁguration [Fig. 2(a)] is expressed as a gate-level equivalent circuit that consists of two exclusive-OR (EX-OR) gates [Fig. 2(b)]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-equivalent": -2.0,
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "phase detector",
+        "technology": "SIGE, HBT, HEMT",
+        "application_domain": "microwave, rf",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Modiﬁed Hogge-type phase detector. (a) Conﬁguration. (b) Equivalent circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Differential cascode ampliﬁer.",
+      "caption_bbox": [
+        39.6,
+        482.3,
+        165.5,
+        490.3
+      ],
+      "section_title": "II. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 3."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Differential cascode ampliﬁers [Fig. 3] are used in the input buffer to sharpen the rising and falling edges of the input data pulses."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "buffer",
+        "technology": "SIGE, HBT, HEMT",
+        "application_domain": "microwave, rf",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Differential cascode ampliﬁer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 1,
+      "caption": "Fig. 4. Ring-oscillator-type VCO. (a) VCO conﬁguration. (b) Darlington-type VCO core. (c) Bias circuit.",
+      "caption_bbox": [
+        302.6,
+        562.7,
+        553.7,
+        579.6
+      ],
+      "section_title": "II. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Differential cascode IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 8, AUGUST 2004 Fig. 4."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "With this design, a two-stage ring oscillator [Fig. 4(a)] is used as the VCO to achieve a wide tuning range."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "We use Darlingtontype differential ampliﬁers [Fig. 4(b)] to achieve 43-GHz oscillation with a wide frequency margin."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "An emitter follower is used for a bias circuit to provide a control [Fig. 4(c)]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.6,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "+core": 0.5,
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "SIGE, HBT, HEMT",
+        "application_domain": "microwave, rf",
+        "sub_blocks": [
+          "bias circuit"
+        ],
+        "design_purpose": "We use Darlingtontype differential ampliﬁers [Fig. 4(b)] to achieve 43-GHz oscillation with a wide frequency margin.",
+        "function_summary": "Ring-oscillator-type VCO. (a) VCO conﬁguration. (b) Darlington-type VCO core. (c) Bias circuit. We use Darlingtontype differential ampliﬁers [Fig. 4(b)] to achieve 43-GHz oscillation with a wide frequency margin.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.65,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Lock detector circuit.",
+      "caption_bbox": [
+        38.1,
+        254.6,
+        136.0,
+        262.5
+      ],
+      "section_title": "II. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 8, AUGUST 2004 Fig. 5."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "A new analog-based lock detector that employs an exclusive-NOR gate (Fig. 5) was adopted to ensure robust operation."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "39-to-45-Gbit/s Multi-Data-Rate Clock and Data Recovery Circuit",
+        "technology": "SIGE, HBT, HEMT",
+        "application_domain": "microwave, rf",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Lock detector circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. FSPC architecture and operation. (a) Block diagram. (b) Acquisition process.",
+      "caption_bbox": [
+        301.1,
+        364.4,
+        552.2,
+        381.3
+      ],
+      "section_title": "II. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "An FSPC circuit (Fig. 6) is attached to the CDR circuit to widen the pull-in range and locking range."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "It consists of an integrator, a hysteresis comparator, and an SPDT switch [Fig. 6(a)]."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "This widens the locking range and Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.7,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "+architecture": 2.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "comparator",
+        "technology": "SIGE, HBT, HEMT",
+        "application_domain": "microwave, rf",
+        "sub_blocks": [
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "FSPC architecture and operation. (a) Block diagram. (b) Acquisition process",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.9,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Photograph of CDR IC.",
+      "caption_bbox": [
+        39.6,
+        278.0,
+        145.0,
+        286.0
+      ],
+      "section_title": "III. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 7 at a current density of 2 mm. is a photograph of the CDR IC."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "We conﬁrmed error-free operation for 40-, 43-, and 45-Gbit/s PRBS in the CDR IC. with a word length of Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-photograph": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "clock and data recovery (CDR)",
+        "technology": "SIGE, HBT, HEMT",
+        "application_domain": "microwave, rf",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Photograph of CDR IC",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. VCO oscillation frequency.",
+      "caption_bbox": [
+        39.6,
+        521.4,
+        156.2,
+        529.4
+      ],
+      "section_title": "III. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 8 shows the measured free-running frequency of the ."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "SIGE, HBT, HEMT",
+        "application_domain": "microwave, rf",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "VCO oscillation frequency",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 3,
+      "caption": "Fig. 9. Lock detector characteristics.",
+      "caption_bbox": [
+        302.6,
+        284.8,
+        425.6,
+        292.8
+      ],
+      "section_title": "III. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 9 shows the lock detector output versus the VCO coarse tuning voltage at 43 Gbit/s."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 9 shows a single curve for locking in."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "The eye opening was very was a 43.01841-Gbit/s IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 8, AUGUST 2004 Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "SIGE, HBT, HEMT",
+        "application_domain": "microwave, rf",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Lock detector characteristics",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 3,
+      "caption": "Fig. 10. Measured waveforms of recovered clock (upper) and recovered data (lower) for 43.018 41-Gbit/s 2",
+      "caption_bbox": [
+        302.6,
+        441.1,
+        553.7,
+        458.0
+      ],
+      "section_title": "III. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 10 shows the waveforms of the recovered clock (upper trace) and recovered data (lower trace) observed by an oscilloscope (Agilent 86100B)."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-waveform": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "39-to-45-Gbit/s Multi-Data-Rate Clock and Data Recovery Circuit",
+        "technology": "SIGE, HBT, HEMT",
+        "application_domain": "microwave, rf",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured waveforms of recovered clock (upper) and recovered data (lower) for 43.018 41-Gbit/s 2",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 3,
+      "caption": "Fig. 11. PRBS word length dependence of measured clock jitter for 43.018 41-Gbit/s PRBS.",
+      "caption_bbox": [
+        302.6,
+        633.9,
+        553.7,
+        650.9
+      ],
+      "section_title": "III. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Measured waveforms of recovered clock (upper) and recovered data (lower) for 43.018 41-Gbit/s 2 Fig. 11."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "The pattern dependence of the clock jitter is shown in Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "PRBS generator",
+        "technology": "SIGE, HBT, HEMT",
+        "application_domain": "microwave, rf",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "PRBS word length dependence of measured clock jitter for 43.018 41-Gbit/s PRBS",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 6,
+  "warnings": []
+}

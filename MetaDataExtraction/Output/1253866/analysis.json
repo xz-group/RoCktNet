@@ -1,0 +1,1124 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1253866.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1253866",
+  "generated_at": "2026-07-29T22:01:25",
+  "paper_metadata": {
+    "title": "A 610-mW Zero-Overhead Class-G Full-Rate ADSL CO Line Driver",
+    "authors": [
+      "Kenneth Maclean",
+      "Marco Corsi",
+      "Richard K. Hester",
+      "James Quarfoot",
+      "Peter Melsa",
+      "Robert Halbach",
+      "Carmen Kozak",
+      "Tobin Hagan"
+    ],
+    "abstract": "With the drive to increase the number of ports that can be incorporated onto a single linecard in an ADSL Central pation occurs. Shown in Fig. 1 is a simplified block diagram of Office (CO), and the consequent power consumption and thermal a typical ADSL system consisting of transmitters and receivers management issues that this increased density raises, power at each end of the telephone line. This paper focuses on a new dissipation is a key parameter in the design of an ADSL modem. approach for power reduction in the line driver located in the This paper presents a full-rate ADSL CO line driver, consuming CO transmitter path. 610 mW through active termination and a zero-overhead class-G technique. The supply switching scheme used features very low overhead voltage, logic control, and controlled supply rail ramp",
+    "keywords": [
+      "ADSL",
+      "Central Office",
+      "class G",
+      "line driver",
+      "silicon"
+    ],
+    "doi": "10.1109/JSSC.2003.818574",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "610-mW Zero-Overhead Class-G Full-Rate ADSL CO Line Driver",
+    "technology": "CMOS, BICMOS, BJT",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "transistor/MOSFET",
+      "current source",
+      "transformer",
+      "bias circuit",
+      "switch",
+      "differential pair",
+      "op-amp",
+      "resistor",
+      "sense amplifier"
+    ],
+    "design_purpose": "With the drive to increase the number of ports that can be incorporated onto a single linecard in an ADSL Central pation occurs.",
+    "function_summary": "610-mW Zero-Overhead Class-G Full-Rate ADSL CO Line Driver: With the drive to increase the number of ports that can be incorporated onto a single linecard in an ADSL Central pation occurs.",
+    "key_specs": [
+      "610 mW",
+      "69 dBC",
+      "2.5 W",
+      "80%",
+      "16 dB",
+      "5 V",
+      "8 V",
+      "4 V",
+      "250 mV",
+      "2.5 V"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "O VER THE PAST several years, both the installed base of ADSL equipment and the demand for ADSL service has increased. This increased demand has made the telephone companies that provide the ADSL equipment ask the semiconductor suppliers to increase the circuit density and lower the power dissipation for each new chip set design. This higher density circuitry is required because, in the central of ..."
+    },
+    {
+      "number": "II",
+      "title": "BACKGROUND",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "Power dissipation in the line driver of an ADSL system is dependant on several system parameters. These parameters include the root-mean-square power of the signal put onto the line, the impedance termination scheme used for line matching at the line driver, the power efficiency of the line driver topology/architecture, the peak-to-average ratio (PAR) of the transmitted signal that the line driver ..."
+    },
+    {
+      "number": "III",
+      "title": "CONTINUOUS CLASS G",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "The next major topology change to ADSL line drivers was the adaptation of an audio amplifier topology [4] to the higher Fig. 1. ADSL system. Fig. 2. Class-AB sine wave efficiency versus output swing/differential supply voltage. Fig. 3. Typical ADSL DMT waveform. frequencies required by ADSL. This “continuous” class-G topology offers significant power savings with high PAR signals. As shown in Fig. ..."
+    },
+    {
+      "number": "IV",
+      "title": "ZERO-OVERHEAD CLASS-G CONCEPT",
+      "kind": "proposed",
+      "page": 2,
+      "text_preview": "A method was sought which would offer the ability to select power supply voltages, dependant on the signal amplitude, but without the considerable overhead voltage requirements of the continuous class-G scheme described in the previous section. The principle drawback of the continuous class-G scheme was that it stacked two bipolar junction transistor (BJT) emitter-follower output stages on top of  ..."
+    },
+    {
+      "number": "V",
+      "title": "DESIGN CHALLENGES AND SOLUTIONS",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "The implementation of zero-overhead class-G presents a number of design challenges: 1) prediction of when the high supply rails will be required; 2) the requirement for low on-resistance switches; 3) prevention of shoot-through currents; 4) TVCC and TVEE switching edge coupling onto the transmitter output signal. Fig. 8. Shoot-through currents. The solution to each of these challenges is described ..."
+    },
+    {
+      "number": "VI",
+      "title": "MEASURED RESULTS",
+      "kind": "results",
+      "page": 5,
+      "text_preview": "Several device specifications needed to be measured in order to verify the performance of the zero-overhead class-G design. These measurements included the delay between a VPSW transition and the completion of the TVCC/TVEE transition, transmitter missing tone power ratio (MTPR) with zero-overhead class-G active, and echo distortion also with the zero-overhead class-G active. One of the design req ..."
+    },
+    {
+      "number": "VII",
+      "title": "PROCESS TECHNOLOGY",
+      "kind": "other",
+      "page": 7,
+      "text_preview": "This part was implemented in a complementary Bipolar BiCMOS process. This process is summarized in Table II. Transistor isolation is provided by the use of bonded wafers and deep polysilicon-filled oxide-lined trenches. Such isolation plays a big part in the implementation of a dual channel device, since transistor-to-transistor crosstalk is minimized. Both the n-p-n’s and p-n-p’s use a single-lev ..."
+    },
+    {
+      "number": "VIII",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 8,
+      "text_preview": "A new variation of a class-G amplifier has been presented which provides improved efficiency when compared with previous designs, when applied to an ADSL CO line driver application. This technique is capable of delivering 20 dBm of downstream power, while supporting a PAR of 16 dB, and has exhibited 69 dBc of MTPR and 90 dBc of upstream spillover while consuming 610 mW, which includes the 100 mW o ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. ADSL system.",
+      "caption_bbox": [
+        39.6,
+        326.1,
+        115.9,
+        336.7
+      ],
+      "section_title": "III. CONTINUOUS CLASS G",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Shown in Fig. 1 is a simplified block diagram of a typical ADSL system consisting of transmitters and receivers at each end of the telephone line."
+        },
+        {
+          "section_title": "CONTINUOUS CLASS G",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The next major topology change to ADSL line drivers was the adaptation of an audio amplifier topology [4] to the higher Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, BICMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "ADSL system",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Class-AB sine wave efficiency versus output swing/differential supply voltage.",
+      "caption_bbox": [
+        39.6,
+        435.2,
+        290.6,
+        454.8
+      ],
+      "section_title": "III. CONTINUOUS CLASS G",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "BACKGROUND",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "As shown in Fig. 2, a class-AB stage can be no more efficient than about 80% [2] even if the output could swing to the rails."
+        },
+        {
+          "section_title": "CONTINUOUS CLASS G",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "610-mW Zero-Overhead Class-G Full-Rate ADSL CO Line Driver",
+        "technology": "CMOS, BICMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Class-AB sine wave efficiency versus output swing/differential supply voltage",
+        "key_specs": [
+          "80%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Typical ADSL DMT waveform.",
+      "caption_bbox": [
+        39.6,
+        602.8,
+        171.3,
+        613.5
+      ],
+      "section_title": "III. CONTINUOUS CLASS G",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "BACKGROUND",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "This is exactly the case for a typical ADSL waveform [3] (Fig. 3) which has a high PAR (approximately 16 dB) but spends most of its time at lower signal levels."
+        },
+        {
+          "section_title": "CONTINUOUS CLASS G",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "-waveform": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "610-mW Zero-Overhead Class-G Full-Rate ADSL CO Line Driver",
+        "technology": "CMOS, BICMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Typical ADSL DMT waveform",
+        "key_specs": [
+          "16 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 1,
+      "caption": "Fig. 4. Class-G amplifier technique.",
+      "caption_bbox": [
+        302.6,
+        467.5,
+        423.6,
+        478.2
+      ],
+      "section_title": "III. CONTINUOUS CLASS G",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CONTINUOUS CLASS G",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "As shown in Fig. 4, the technique uses two sets of supply rails for the amplifier, one set at a lower voltage than the other set."
+        },
+        {
+          "section_title": "CONTINUOUS CLASS G",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "As is smaller than the 5 V supplies then long as the signal IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 12, DECEMBER 2003 Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, BICMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Class-G amplifier technique",
+        "key_specs": [
+          "5 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 1,
+      "caption": "Fig. 5. Simplified continuous class-G circuit.",
+      "caption_bbox": [
+        302.6,
+        684.5,
+        452.7,
+        695.1
+      ],
+      "section_title": "III. CONTINUOUS CLASS G",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CONTINUOUS CLASS G",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "A simplified schematic [5] of this implementation is shown in Fig. 5."
+        },
+        {
+          "section_title": "CONTINUOUS CLASS G",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-simplified": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "610-mW Zero-Overhead Class-G Full-Rate ADSL CO Line Driver",
+        "technology": "CMOS, BICMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simplified continuous class-G circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. Zero-overhead class-G concept: Block diagram.",
+      "caption_bbox": [
+        38.1,
+        252.8,
+        220.0,
+        263.5
+      ],
+      "section_title": "III. CONTINUOUS CLASS G",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CONTINUOUS CLASS G",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "In this MACLEAN et al.: 610-mW ZERO-OVERHEAD CLASS-G FULL-RATE ADSL CO LINE DRIVER Fig. 6."
+        },
+        {
+          "section_title": "ZERO-OVERHEAD CLASS-G CONCEPT",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "A simplified block diagram of the zero-overhead class-G scheme is shown in Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "line / output driver",
+        "technology": "CMOS, BICMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Zero-overhead class-G concept: Block diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 2,
+      "caption": "Fig. 7. Zero-overhead class-G concept: Waveforms.",
+      "caption_bbox": [
+        301.1,
+        226.0,
+        472.1,
+        236.6
+      ],
+      "section_title": "III. CONTINUOUS CLASS G",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ZERO-OVERHEAD CLASS-G CONCEPT",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "In the BJT circuit, the combination of high current density and Fig. 7."
+        },
+        {
+          "section_title": "ZERO-OVERHEAD CLASS-G CONCEPT",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "The timing diagram for the zero-overhead class-G scheme is shown in Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "-waveform": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "610-mW Zero-Overhead Class-G Full-Rate ADSL CO Line Driver",
+        "technology": "CMOS, BICMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Zero-overhead class-G concept: Waveforms",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. Shoot-through currents.",
+      "caption_bbox": [
+        39.6,
+        230.1,
+        144.5,
+        240.7
+      ],
+      "section_title": "V. DESIGN CHALLENGES AND SOLUTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN CHALLENGES AND SOLUTIONS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 8."
+        },
+        {
+          "section_title": "DESIGN CHALLENGES AND SOLUTIONS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The channel widths required were 20 K m for the of 0.7 m for the pmOS. nMOS and 60 K If simple two-transistor inverters were used, then with such large devices the shoot-through current, which occurs during a switching edge, in the period when the nMOS and pMOS devices are both on, would be several amps (Fig. 8)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "610-mW Zero-Overhead Class-G Full-Rate ADSL CO Line Driver",
+        "technology": "CMOS, BICMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Shoot-through currents",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 3,
+      "caption": "Fig. 9. Shoot-through currents: Waveforms.",
+      "caption_bbox": [
+        302.6,
+        228.1,
+        447.9,
+        238.7
+      ],
+      "section_title": "V. DESIGN CHALLENGES AND SOLUTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN CHALLENGES AND SOLUTIONS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The supply rails could also be disturbed due to these very large transient currents being drawn out of the high rail and dumped into the low rail (Fig. 9)."
+        },
+        {
+          "section_title": "DESIGN CHALLENGES AND SOLUTIONS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The transmitter output transistors are large devices, with emitter IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 12, DECEMBER 2003 Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "-waveform": -2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "transmitter",
+        "technology": "CMOS, BICMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Shoot-through currents: Waveforms",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 3,
+      "caption": "Fig. 10. Switching edge coupling to amplifier output.",
+      "caption_bbox": [
+        302.6,
+        360.2,
+        478.9,
+        370.9
+      ],
+      "section_title": "V. DESIGN CHALLENGES AND SOLUTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN CHALLENGES AND SOLUTIONS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "If the switching edge speed of TVCC and TVEE is very high, say, several hundred volts per microsecond, then this signal can couple onto the transmitter outputs (Fig. 10)."
+        },
+        {
+          "section_title": "DESIGN CHALLENGES AND SOLUTIONS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 10."
+        },
+        {
+          "section_title": "DESIGN CHALLENGES AND SOLUTIONS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "When a very fast edged signal is applied to the collector of this transistor, the signal will be capacitively coupled to the base and will, therefore, also appear on the emitter terminal, and so cause the output voltage to be distorted (Fig. 10)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, BICMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Switching edge coupling to amplifier output",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 3,
+      "caption": "Fig. 11. Block diagram of zero-overhead class-G scheme.",
+      "caption_bbox": [
+        302.6,
+        542.3,
+        492.8,
+        552.9
+      ],
+      "section_title": "V. DESIGN CHALLENGES AND SOLUTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN CHALLENGES AND SOLUTIONS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 11."
+        },
+        {
+          "section_title": "DESIGN CHALLENGES AND SOLUTIONS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "A simplified schematic of the circuit solution to the shoot-through current and switching edge coupling challenges is shown in Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "610-mW Zero-Overhead Class-G Full-Rate ADSL CO Line Driver",
+        "technology": "CMOS, BICMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of zero-overhead class-G scheme",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.57,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 4,
+      "caption": "Fig. 12. Opamp topology.",
+      "caption_bbox": [
+        38.1,
+        225.7,
+        126.6,
+        236.3
+      ],
+      "section_title": "V. DESIGN CHALLENGES AND SOLUTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN CHALLENGES AND SOLUTIONS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "An opamp replaces the MACLEAN et al.: 610-mW ZERO-OVERHEAD CLASS-G FULL-RATE ADSL CO LINE DRIVER to Fig. 12."
+        },
+        {
+          "section_title": "DESIGN CHALLENGES AND SOLUTIONS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "In order to understand how the operational amplifier prevents shoot-through, the topology of this amplifier, shown in Fig. 12, will be described."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.8,
+      "relevance_breakdown": {
+        "+topology": 2.5,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, BICMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "op-amp"
+        ],
+        "design_purpose": "In order to understand how the operational amplifier prevents shoot-through, the topology of this amplifier, shown in Fig. 12, will be described.",
+        "function_summary": "Opamp topology. In order to understand how the operational amplifier prevents shoot-through, the topology of this amplifier, shown in Fig. 12, will be described.",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.71,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 4,
+      "caption": "Fig. 13. Shoot-through control.",
+      "caption_bbox": [
+        38.1,
+        418.0,
+        143.8,
+        428.7
+      ],
+      "section_title": "V. DESIGN CHALLENGES AND SOLUTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN CHALLENGES AND SOLUTIONS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 13."
+        },
+        {
+          "section_title": "DESIGN CHALLENGES AND SOLUTIONS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "In reference to Fig. 13, the output stage biasing is as folis driven through mn2 and mn3, which lows."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "610-mW Zero-Overhead Class-G Full-Rate ADSL CO Line Driver",
+        "technology": "CMOS, BICMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "bias circuit"
+        ],
+        "design_purpose": "",
+        "function_summary": "Shoot-through control",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 5,
+      "caption": "Fig. 14. Opamp and switch modes: Circuit.",
+      "caption_bbox": [
+        39.6,
+        362.9,
+        184.9,
+        373.6
+      ],
+      "section_title": "V. DESIGN CHALLENGES AND SOLUTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN CHALLENGES AND SOLUTIONS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The circuit diagram illustrating this is shown in Fig. 14."
+        },
+        {
+          "section_title": "DESIGN CHALLENGES AND SOLUTIONS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "To Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "switch",
+        "technology": "CMOS, BICMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "switch",
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Opamp and switch modes: Circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 5,
+      "caption": "Fig. 15. Opamp and switch modes: Waveforms.",
+      "caption_bbox": [
+        39.6,
+        559.3,
+        198.0,
+        570.0
+      ],
+      "section_title": "V. DESIGN CHALLENGES AND SOLUTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN CHALLENGES AND SOLUTIONS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The timing diagram is shown in Fig. 15."
+        },
+        {
+          "section_title": "DESIGN CHALLENGES AND SOLUTIONS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "-waveform": -2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "switch",
+        "technology": "CMOS, BICMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "switch",
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Opamp and switch modes: Waveforms",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 5,
+      "caption": "Fig. 16. Measured supply switching waveform.",
+      "caption_bbox": [
+        302.6,
+        550.9,
+        459.5,
+        561.6
+      ],
+      "section_title": "V. DESIGN CHALLENGES AND SOLUTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "One of the design requirements was to assure that the delay between a VPSW transition and the completion of the IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 12, DECEMBER 2003 Fig. 16."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 16 shows the measured supply switching waveform."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-waveform": -2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "610-mW Zero-Overhead Class-G Full-Rate ADSL CO Line Driver",
+        "technology": "CMOS, BICMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured supply switching waveform",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 6,
+      "caption": "Fig. 17. Supply switching test setup.",
+      "caption_bbox": [
+        38.1,
+        289.6,
+        161.1,
+        300.3
+      ],
+      "section_title": "VI. MEASURED RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The test setup is shown in Fig. 17."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 18 shows the transmitter MTPR being greater than 69 dBc with MACLEAN et al.: 610-mW ZERO-OVERHEAD CLASS-G FULL-RATE ADSL CO LINE DRIVER Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-setup": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "transmitter",
+        "technology": "CMOS, BICMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Supply switching test setup",
+        "key_specs": [
+          "69 dBc"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 6,
+      "caption": "Fig. 18. Transmitter MTPR with zero-overhead class-G active.",
+      "caption_bbox": [
+        38.1,
+        490.2,
+        243.9,
+        500.8
+      ],
+      "section_title": "VI. MEASURED RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 18 shows the transmitter MTPR being greater than 69 dBc with MACLEAN et al.: 610-mW ZERO-OVERHEAD CLASS-G FULL-RATE ADSL CO LINE DRIVER Fig. 17."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 18."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transmitter",
+        "technology": "CMOS, BICMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Transmitter MTPR with zero-overhead class-G active",
+        "key_specs": [
+          "69 dBc"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 7,
+      "caption": "Fig. 19. Echo distortion test setup.",
+      "caption_bbox": [
+        39.6,
+        349.7,
+        156.5,
+        360.3
+      ],
+      "section_title": "VI. MEASURED RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The test setup for the echo distortion measurement is presented in Fig. 19."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The device was a dual and the area per port was 3 Fig. 19."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-setup": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "610-mW Zero-Overhead Class-G Full-Rate ADSL CO Line Driver",
+        "technology": "CMOS, BICMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "The test setup for the echo distortion measurement is presented in Fig. 19.",
+        "function_summary": "Echo distortion test setup. The test setup for the echo distortion measurement is presented in Fig. 19.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 21,
+      "label": "Fig. 21",
+      "page": 7,
+      "caption": "Fig. 21. Full die photomicrograph showing entire class-G implementation.",
+      "caption_bbox": [
+        302.6,
+        633.7,
+        545.6,
+        644.4
+      ],
+      "section_title": "VII. PROCESS TECHNOLOGY",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The die photograph is shown in Fig. 21."
+        },
+        {
+          "section_title": "PROCESS TECHNOLOGY",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "One key advantage of this process was the incluIEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 12, DECEMBER 2003 Fig. 21."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -5.2,
+      "relevance_breakdown": {
+        "-micrograph": -3.0,
+        "-die photo": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "610-mW Zero-Overhead Class-G Full-Rate ADSL CO Line Driver",
+        "technology": "CMOS, BICMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Full die photomicrograph showing entire class-G implementation",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 12,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

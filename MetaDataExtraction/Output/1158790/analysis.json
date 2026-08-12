@@ -1,0 +1,939 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1158790.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1158790",
+  "generated_at": "2026-07-29T21:30:11",
+  "paper_metadata": {
+    "title": "DC-Coupled IF Stage Design for a 900-MHz ISM Receiver",
+    "authors": [
+      "Ramesh Harjani",
+      "Jonghae Kim",
+      "Jackson Harvey"
+    ],
+    "abstract": "This paper presents a dc-coupled 900-MHz ISM band RF front-end for a short-range wireless receiver. The front-end, tween 55 and 100 dB of power gain. This level of gain is usually fabricated in a 0.5m CMOS process, is intended as a test vehicle realized using multiple stages. However, the dc bias levels of to verify the proposed dc-coupled topology. In this topology, a lowthese stages may not be identical and offsets and low-frequency frequency feedback circuit suppresses the dc offset and low-frenoise can easily saturate the amplifier. Therefore, these stages quency noise at the mixer output. The dc-coupled topology is comare usually ac-coupled as shown in Fig. 2. pared with traditional ac coupling. We show that there is a tradeoff between bandwidth and midband loss in a fully integrated ac-couThis figure shows the output of one stage ( ) being conpled system. The proposed dc-coupling technique does not impose nected via the coupling capacitor to the input of the next this tradeoff. The dc-coupled topology was verified via simulation stage ( ). The input to the next stage is connected to an and measurements from the test vehicle. appropriate dc bias level using the large bias resistor . The small-signal model for this circuit is shown in Fig. 3. Here,",
+    "keywords": [],
+    "doi": "10.1109/JSSC.2002.806259",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "amplifier",
+    "technology": "CMOS",
+    "application_domain": "rf, wireless, baseband, if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "mixer",
+      "transistor/MOSFET",
+      "current source",
+      "current mirror",
+      "balun",
+      "output buffer"
+    ],
+    "design_purpose": "",
+    "function_summary": "amplifier: This paper presents a dc-coupled 900-MHz ISM band RF front-end for a short-range wireless receiver.",
+    "key_specs": [
+      "100 dB",
+      "70 dBm",
+      "120 dBm",
+      "20 dB",
+      "100 pF",
+      "3 dB",
+      "15 dB",
+      "10%",
+      "30%",
+      "5 w"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE demand for low-cost wireless systems has soared in the recent past. There is a rapidly growing market for lowpower short-range wireless systems for alarm systems, sensors, and controls. Because of their limited range and low data rates, to these short-range systems often operate in the ISM bands. There is a tradeoff among antenna size, power consumption, and design feasibility that depends on ..."
+    },
+    {
+      "number": "II",
+      "title": "INTERSTAGE COUPLING",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "A. AC Coupling The typical input sensitivity levels for wireless systems vary 70 dBm for Bluetooth [5] to 120 dBm or lower for between first-tier wireless systems. Typical signal levels at the baseband are in the 0–5-dBm range. If the combined LNA/mixer gain is Manuscript received April 10, 2001; revised August 27, 2002. The authors are with the Department of Electrical and Computer Engineering, U ..."
+    },
+    {
+      "number": "III",
+      "title": "A DC-COUPLED RF FRONT-END",
+      "kind": "other",
+      "page": 5,
+      "text_preview": "To verify the viability of the proposed dc-coupling technique, a complete 900-MHz receiver front-end for a short-range wireless telemetry system was implemented. The RF receiver front-end (LNA, mixer, and local oscillator) is followed by a dc-coupled IF stage. The final circuit was fabricated in the HP m CMOS process. An RF balun is used externally to con0.5vert the single-ended signal to fully di ..."
+    },
+    {
+      "number": "IV",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 8,
+      "text_preview": "A dc-coupled topology in which low-frequency feedback is used to remove offset and low-frequency noise was proposed. A method of determining the optimal component values for ac-coupling was also discussed. It was shown that there is a tradeoff between bandwidth and midband loss in a fully integrated ac-coupled system. The proposed dc-coupling technique does not impose this tradeoff, allowing the d ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Block diagram of a typical wireless receiver frontend.",
+      "caption_bbox": [
+        39.6,
+        223.3,
+        242.0,
+        233.9
+      ],
+      "section_title": "II. INTERSTAGE COUPLING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1 shows a block diagram of a typical RF front-end."
+        },
+        {
+          "section_title": "INTERSTAGE COUPLING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 1, JANUARY 2003 Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of a typical wireless receiver frontend",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Typical ac-coupling scenario.",
+      "caption_bbox": [
+        39.6,
+        407.8,
+        162.8,
+        418.4
+      ],
+      "section_title": "II. INTERSTAGE COUPLING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTERSTAGE COUPLING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Therefore, these stages are usually ac-coupled as shown in Fig. 2. ) being conThis figure shows the output of one stage ( to the input of the next nected via the coupling capacitor )."
+        },
+        {
+          "section_title": "INTERSTAGE COUPLING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 2."
+        },
+        {
+          "section_title": "INTERSTAGE COUPLING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Equation (4) shows and not of . that the midband gain is only a function of is with its bottom Therefore, the optimal orientation for plate to the left as shown in Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Typical ac-coupling scenario",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Simplified small-signal model for ac-coupling.",
+      "caption_bbox": [
+        302.6,
+        366.8,
+        481.1,
+        377.5
+      ],
+      "section_title": "II. INTERSTAGE COUPLING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTERSTAGE COUPLING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The appropriate dc bias level using the large bias resistor small-signal model for this circuit is shown in Fig. 3."
+        },
+        {
+          "section_title": "INTERSTAGE COUPLING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "To maximize bandwidth the designer just has no impact on Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.7,
+      "relevance_breakdown": {
+        "-model": -1.5,
+        "-simplified": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "resistor"
+        ],
+        "design_purpose": "To maximize bandwidth the designer just has no impact on Fig. 3.",
+        "function_summary": "Simplified small-signal model for ac-coupling. To maximize bandwidth the designer just has no impact on Fig. 3.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 1,
+      "caption": "Fig. 4. AC-coupling signal transfer function.",
+      "caption_bbox": [
+        302.6,
+        523.4,
+        451.2,
+        534.0
+      ],
+      "section_title": "II. INTERSTAGE COUPLING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTERSTAGE COUPLING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "In a similar manner, is the sum of of , the paraand the right-hand side parasitic of . sitic due to to is given by (1), The voltage transfer function from shown at the bottom of the next page, and is plotted in Fig. 4. and , then , and the midband gain ) can be approximated by (2) (3) and (4), shown at the bottom of the next page."
+        },
+        {
+          "section_title": "INTERSTAGE COUPLING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "AC-coupling signal transfer function",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Lumped approximation of distributed bias resistor.",
+      "caption_bbox": [
+        39.6,
+        128.9,
+        230.3,
+        139.6
+      ],
+      "section_title": "II. INTERSTAGE COUPLING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTERSTAGE COUPLING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Note that the capacitance per IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 1, JANUARY 2003 Fig. 5."
+        },
+        {
+          "section_title": "INTERSTAGE COUPLING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "As shown in Fig. 5, the distributed resistor-capacitor can be approximated to first order by the lumped element circuit shown on the right-hand side of this figure."
+        },
+        {
+          "section_title": "INTERSTAGE COUPLING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The distributed model shown in Fig. 5 was used to calculate the effective parasitic capacitance of the bias resistor."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "capacitor",
+          "resistor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Lumped approximation of distributed bias resistor",
+        "key_specs": [
+          "5 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "Fig. 6. Single-stage low-pass pole versus bias resistance.",
+      "caption_bbox": [
+        38.1,
+        251.3,
+        226.3,
+        262.0
+      ],
+      "section_title": "II. INTERSTAGE COUPLING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTERSTAGE COUPLING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "A plot of the calculated low-pass pole of a single ac-coupled stage versus the value of the bias resistor (subject to the constraints given above) is shown in Fig. 6."
+        },
+        {
+          "section_title": "INTERSTAGE COUPLING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "If it is again assumed that and that then the transfer function can be shown to be given by (19) Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "resistor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Single-stage low-pass pole versus bias resistance",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. Single-stage midband loss versus bias resistance.",
+      "caption_bbox": [
+        38.1,
+        470.1,
+        224.7,
+        480.7
+      ],
+      "section_title": "II. INTERSTAGE COUPLING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTERSTAGE COUPLING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 7 shows the midband loss of a single stage versus the bias resistance and the optimum bias resistance and associated loss [from (12) and (13)]."
+        },
+        {
+          "section_title": "INTERSTAGE COUPLING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Single-stage midband loss versus bias resistance",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Single-stage parasitic capacitance versus bias resistance.",
+      "caption_bbox": [
+        38.1,
+        685.7,
+        248.5,
+        696.3
+      ],
+      "section_title": "II. INTERSTAGE COUPLING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTERSTAGE COUPLING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Finally, a plot of the parasitic capacitance due to the coupling capacitor and the bias resistor and the total parasitic capacitance versus bias resistance is shown in Fig. 8."
+        },
+        {
+          "section_title": "INTERSTAGE COUPLING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "-capacitance": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "capacitor",
+          "resistor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Single-stage parasitic capacitance versus bias resistance",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 5,
+      "caption": "Fig. 9. Block diagram of direct coupling.",
+      "caption_bbox": [
+        39.6,
+        154.6,
+        177.1,
+        165.3
+      ],
+      "section_title": "II. INTERSTAGE COUPLING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTERSTAGE COUPLING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The technique is best illustrated using the block diagram shown in Fig. 9."
+        },
+        {
+          "section_title": "INTERSTAGE COUPLING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "By an appropriate choice of , fied by the noise and offset can be made to have little impact on the output. , which was previously neglected, was introThe variable duced in Fig. 9 to model the impact of offset and noise that is contributed by the feedback stage."
+        },
+        {
+          "section_title": "INTERSTAGE COUPLING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Recall that the IF amplifier has to have extremely large gain and IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 1, JANUARY 2003 Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of direct coupling",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.67,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. Direct coupling transfer function.",
+      "caption_bbox": [
+        39.6,
+        312.7,
+        179.8,
+        323.3
+      ],
+      "section_title": "III. A DC-COUPLED RF FRONT-END",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTERSTAGE COUPLING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "With the further It will be temporarily assumed that and that assumption that , it can be shown that the transfer function is given by (18) , , and , This is shown in Fig. 10."
+        },
+        {
+          "section_title": "INTERSTAGE COUPLING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Direct coupling transfer function",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 6,
+      "caption": "Fig. 11. Use of local feedback to reduce constraints on feedback path.",
+      "caption_bbox": [
+        38.1,
+        145.3,
+        269.0,
+        155.9
+      ],
+      "section_title": "III. A DC-COUPLED RF FRONT-END",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTERSTAGE COUPLING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "One method to circumvent this problem is to make the feedback more local, that is, to apply feedback around fewer stages as shown in Fig. 11."
+        },
+        {
+          "section_title": "A DC-COUPLED RF FRONT-END",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The mixer conversion gain is given by (25) Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Use of local feedback to reduce constraints on feedback path",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 6,
+      "caption": "Fig. 12. Simplified circuit for the RF section.",
+      "caption_bbox": [
+        38.1,
+        411.1,
+        189.9,
+        421.8
+      ],
+      "section_title": "III. A DC-COUPLED RF FRONT-END",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "A DC-COUPLED RF FRONT-END",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "LNA, Mixer, and Compensation Circuit Fig. 12 shows a simplified schematic for the LNA, mixer, and gm-compensation circuit."
+        },
+        {
+          "section_title": "A DC-COUPLED RF FRONT-END",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The low-frequency amplified output from the IF amplifier is - filter stage to transistors and fed back via a low-pass in Fig. 12."
+        },
+        {
+          "section_title": "A DC-COUPLED RF FRONT-END",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 12."
+        },
+        {
+          "section_title": "A DC-COUPLED RF FRONT-END",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The outputs of the - the inputs of the low-pass filter are then connected to the gates of and in the mixer in Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.6,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-simplified": -1.0,
+        "references": 1.6
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simplified circuit for the RF section",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 6,
+      "caption": "Fig. 13. Low-frequency feedback circuit.",
+      "caption_bbox": [
+        301.1,
+        585.9,
+        438.3,
+        596.5
+      ],
+      "section_title": "III. A DC-COUPLED RF FRONT-END",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "A DC-COUPLED RF FRONT-END",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The operation of the dc-coupled low-frequency feedback stage is best understood with the help of Fig. 13."
+        },
+        {
+          "section_title": "A DC-COUPLED RF FRONT-END",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "In the worst case, these dc errors IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 1, JANUARY 2003 Fig. 13."
+        },
+        {
+          "section_title": "A DC-COUPLED RF FRONT-END",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Since the current noise contributed and is not band-limited, the sizes of and by in Fig. 13 were made much smaller than those of the mixer and )."
+        },
+        {
+          "section_title": "A DC-COUPLED RF FRONT-END",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "In this manner, the compensation circuit loads ( in Fig. 13 has little impact on normal mixer performance."
+        },
+        {
+          "section_title": "A DC-COUPLED RF FRONT-END",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "However, the most constraining bound is imposed by the amount of current flowing and in Fig. 13 and is shown as through transistors (28) is the tail current connected to the sources of where and in Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.0,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "references": 2.0
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "current source",
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Low-frequency feedback circuit",
+        "key_specs": [
+          "13 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.27,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 7,
+      "caption": "Fig. 14. Simulation results for the front-end.",
+      "caption_bbox": [
+        39.6,
+        363.8,
+        188.4,
+        374.4
+      ],
+      "section_title": "III. A DC-COUPLED RF FRONT-END",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "A DC-COUPLED RF FRONT-END",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 1, JANUARY 2003 Fig. 14."
+        },
+        {
+          "section_title": "A DC-COUPLED RF FRONT-END",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 14(a) shows the IF signals at the mixer output with 3-mV dc offset, which was added to the simulation to exercise the dc offset cancellation circuit."
+        },
+        {
+          "section_title": "A DC-COUPLED RF FRONT-END",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 14(b) shows the IF output signals at the IF amplifier, both with and without the dc offset cancellation circuit."
+        },
+        {
+          "section_title": "A DC-COUPLED RF FRONT-END",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The IF stages saturate without dc offset cancellation, as shown in Fig. 14(b), but operate linearly with the low-frequency feedback loop."
+        },
+        {
+          "section_title": "A DC-COUPLED RF FRONT-END",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "These two IF output signals are similar to the simulation results in Fig. 14(b)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simulation results for the front-end",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.12,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 8,
+      "caption": "Fig. 15. Measured IF outputs without feedback.",
+      "caption_bbox": [
+        38.1,
+        239.8,
+        196.6,
+        250.5
+      ],
+      "section_title": "IV. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "A DC-COUPLED RF FRONT-END",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 15."
+        },
+        {
+          "section_title": "A DC-COUPLED RF FRONT-END",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 15 shows the measured IF outputs with the low-frequency feedback disabled."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured IF outputs without feedback",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 8,
+      "caption": "Fig. 16. Measured IF amplifier outputs with feedback.",
+      "caption_bbox": [
+        38.1,
+        445.8,
+        217.5,
+        456.4
+      ],
+      "section_title": "IV. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "A DC-COUPLED RF FRONT-END",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 16."
+        },
+        {
+          "section_title": "A DC-COUPLED RF FRONT-END",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 16 shows the measured IF output signals at the IF amplifiers with the feedback enabled."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:conclusion": -1.0,
+        "type_match:amplifier": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured IF amplifier outputs with feedback",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 9,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

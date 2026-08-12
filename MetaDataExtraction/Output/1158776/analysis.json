@@ -1,0 +1,951 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1158776.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1158776",
+  "generated_at": "2026-07-29T22:00:35",
+  "paper_metadata": {
+    "title": "High-Gain SiGe Transimpedance Amplifier Array for 10 Gb/s Parallel Optical-Fiber Link a 12",
+    "authors": [
+      "Alexander Schild",
+      "Hans-Martin Rein",
+      "Jens Müllrich",
+      "Lars Altenhain",
+      "Jürgen Blank",
+      "Karl Schrödinger"
+    ],
+    "abstract": "A transimpedance amplifier array for 12 parallel optical-fiber channels each operating at 10 Gb/s is presented, which is used in the receiver of short-distance links. It stands out for the following features: high gain (transimpedance 25 k in the limiting mode), high input sensitivity and wide input dynamic range (input current swing from 20 to 240 A ), – constant output voltage swing (differential 0.5 V at 50 load), – and low power consumption (1.4 W) at a single supply voltage Fig. 1. Simplified block diagram of a parallel optical-fiber link with the (5 V). Each channel has its own offset-current control circuit. transimpedance amplifier array presented in this paper. To the best of the authors’ knowledge, the total throughput of 10 Gb/s = 120 Gb/s is the highest value reported for a 12 single-chip amplifier array. The target specifications have been Transmitter and receiver modules with 12 channels and data achieved with the first technological run without needing any rates up to 3.4 Gb/s per channel have just been put on the market redesign. This fact demonstrates that the inherent severe crosstalk (for an overview see [4] and [5] and references therein). Now the problems of such high-gain amplifier arrays can reliably be solved question arises: can the data rate per fiber be further increased, by applying adequate decoupling measures and simulation tools. e.g., up to 10 Gb/s, at reasonable costs? From several announceTerms—Amplifier array, crosstalk, parallel optical Index ments and publications, it is expected that 10-Gb/s VCSEL arreceiver, substrate coupling, transimpedance amplifier. rays will be available in the near future. An amplifier array with four channels operating at 10 Gb/s each has recently been an-",
+    "keywords": [],
+    "doi": "10.1109/JSSC.2002.806271",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "High-Gain SiGe Transimpedance Amplifier Array",
+    "technology": "SIGE",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "current source",
+      "transmission line",
+      "bias circuit",
+      "current mirror",
+      "output buffer",
+      "switch",
+      "pre-amplifier"
+    ],
+    "design_purpose": "A transimpedance amplifier array for 12 parallel optical-fiber channels each operating at 10 Gb/s is presented, which is used in the receiver of short-distance links.",
+    "function_summary": "High-Gain SiGe Transimpedance Amplifier Array: A transimpedance amplifier array for 12 parallel optical-fiber channels each operating at 10 Gb/s is presented, which is used in the receiver of short-distance links.",
+    "key_specs": [
+      "0.5 V",
+      "1.4 W",
+      "5 V",
+      "12 v",
+      "12%",
+      "0.3 V",
+      "1.2 V",
+      "7.5 GHz",
+      "5 GHz",
+      "3.3 V"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE dramatically increasing demands for high bandwidth in advanced electronic systems, like multiprocessor units and terabit/s-class switching systems, require high-speed interconnections [1], [2]. For short distances (up to several hundred meters) multimode parallel optical-fiber links are one of the favored solutions. Fig. 1 shows the simplified block diagram of such a parallel link. A linear a ..."
+    },
+    {
+      "number": "II",
+      "title": "CIRCUIT PRINCIPLE AND DESIGN ASPECTS",
+      "kind": "proposed",
+      "page": 1,
+      "text_preview": "Before going into details, the layout and the chip photo of the amplifier array with its 12 differential inputs and outputs are given in Fig. 2(a) and (b), respectively. The layout is drawn by superposing the four metallization layers. It is more informative than the chip photo since there the active areas of the amplifier array are masked by ground and power supply metallization layers [see Fig.  ..."
+    },
+    {
+      "number": "III",
+      "title": "OFFSET-CURRENT CONTROL",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "Since the driving photodiode is dc coupled to the input of the amplifier (Fig. 3), an automatic offset control (AOC) is required to compensate for the average value of the input signal ). Each current (i.e., at least half of the input current swing amplifier needs its own offset control because the input currents of the 12 channels as well as the inherent offsets (due to process spread) can differ ..."
+    },
+    {
+      "number": "IV",
+      "title": "CROSSTALK PROBLEMS AND THEIR MINIMIZATION",
+      "kind": "other",
+      "page": 4,
+      "text_preview": "As the most challenging and time-consuming part of the design, the crosstalk between the channels had to be investigated and minimized. This is a severe problem of such an array due to the high number of interacting channels, the high bandwidth and high gain of the amplifiers, the small channel pitch (250 m), and the long on-chip power supply and ground lines (see Fig. 2). The input nodes of the a ..."
+    },
+    {
+      "number": "V",
+      "title": "REALIZATION AND EXPERIMENTAL RESULTS",
+      "kind": "design",
+      "page": 4,
+      "text_preview": "The chip was fabricated in a 0.35m SiGe bipolar production technology [17]. It is a self-aligned double-polysilicon technology with four metallization layers (Al). A germanium graand thus to values dient in the epitaxial base increases between 70 and 75 GHz. Vertical pnp transistors as well as MIS and MIM capacitors are available and were used in this circuit. 6This problem may be less pronounced  ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 7,
+      "text_preview": "A single-chip transimpedance amplifier array for the receiver 10 Gb/s parallel optical-fiber link is presented. To of a 12 the best of the authors’ knowledge, the total throughput of 120 Gb/s is the highest value reported for such an integrated circuit. Crosstalk problems between the high-gain channels, with only m pitch on the chip, have been solved by careful design considerations and simulation ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Simplified block diagram of a parallel optical-fiber link with the transimpedance amplifier array presented in this paper.",
+      "caption_bbox": [
+        302.6,
+        251.8,
+        553.7,
+        271.5
+      ],
+      "section_title": "",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1 shows the simplified block diagram of such a parallel link."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "-simplified": -1.0,
+        "type_match:amplifier": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "transimpedance amplifier (TIA)",
+        "technology": "SIGE",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simplified block diagram of a parallel optical-fiber link with the transimpedance amplifier array presented in this paper",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.45,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2.",
+      "caption_bbox": [
+        38.1,
+        440.4,
+        58.9,
+        451.0
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "A row consists Fig. 2. of three amplifier cells connected by differential microstrip lines (ML)."
+        },
+        {
+          "section_title": "CIRCUIT PRINCIPLE AND DESIGN ASPECTS",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Before going into details, the layout and the chip photo of the amplifier array with its 12 differential inputs and outputs are given in Fig. 2(a) and (b), respectively."
+        },
+        {
+          "section_title": "CIRCUIT PRINCIPLE AND DESIGN ASPECTS",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "It is more informative than the chip photo since there the active areas of the amplifier array are masked by ground and power supply metallization layers [see Fig. 2(b)]."
+        },
+        {
+          "section_title": "OFFSET-CURRENT CONTROL",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The AOCs with their large caof about 34 000 pacitors are placed in the third column in Fig. 2."
+        },
+        {
+          "section_title": "CROSSTALK PROBLEMS AND THEIR MINIMIZATION",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "This is a severe problem of such an array due to the high number of interacting channels, the high bandwidth and high gain of the amplifiers, the small channel pitch (250 m), and the long on-chip power supply and ground lines (see Fig. 2)."
+        },
+        {
+          "section_title": "CROSSTALK PROBLEMS AND THEIR MINIMIZATION",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 2); • comparatively long distances between the cells (see rows in Fig. 2), with the channel stopper eliminated between them to increase the lateral substrate impedance; • guard rings around each cell; • decoupling capacitors between on-chip power supply and ground at each amplifier cell, realized by special metal–insulator–metal (MIM) capacitors with a specific capacim and by the capacitances between the tance of 1.1 fF four metallization layers; • common shield for each pair of input pads, connected to the emitter node of the first transimpedance stage."
+        },
+        {
+          "section_title": "CROSSTALK PROBLEMS AND THEIR MINIMIZATION",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Moreover, as is obvious from Fig. 2, the cells in the middle of the first and second columns have long ground and power supply lines and suffer, therefore, under comparatively large parasitic inductances (in addition to the bond inductances).6 As a consequence, the ground nodes of these cells are quite noisy for the reasons mentioned above."
+        },
+        {
+          "section_title": "CROSSTALK PROBLEMS AND THEIR MINIMIZATION",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Therefore, the following additional measures, which proved to be very effective, must be taken to reduce crosstalk to a tolerable level. • A large ground plane for the third column is used, which is connected via numerous bonds to the external ground [see Fig. 2(b)]."
+        },
+        {
+          "section_title": "CROSSTALK PROBLEMS AND THEIR MINIMIZATION",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "If the influences of the parasitic capacitances and , and the bond inductances of the PD, (see Fig. 3) were negligible, noise compensation would be perfect. is used between input and the internal • A resistor ground node GND1 to damp parasitic oscillations, which , , and are caused by the resonant circuit built by (see Fig. 3). • Decoupling resistors are used in the (long) offset control output line (OL in Fig. 2), which runs over the chip from the third column to the amplifier inputs."
+        },
+        {
+          "section_title": "REALIZATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 2) at 10 Gb/s for the interesting range of (20–240 A )."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.5,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "SIGE",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor",
+          "resistor",
+          "transmission line"
+        ],
+        "design_purpose": "Fig. 2); • comparatively long distances between the cells (see rows in Fig. 2), with the channel stopper eliminated between them to increase the lateral substrate impedance; • guard rings around each cell; • decoupling capacitors between on-chip power supply and ground at each amplifier cell, realized by special ...",
+        "function_summary": "amplifier. Fig. 2); • comparatively long distances between the cells (see rows in Fig. 2), with the channel stopper eliminated between them to increase the lateral substrate impedance; • guard rings around each cell; • decoupling capacitors between on-chip power supply and ground at each amplifier cell, realized by ...",
+        "key_specs": [
+          "1.1 fF"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. circuit (AOC). Moreover, the driving and loading conditions (incl. the bond inductances) are shown.",
+      "caption_bbox": [
+        39.6,
+        255.1,
+        360.9,
+        274.7
+      ],
+      "section_title": "II. CIRCUIT PRINCIPLE AND DESIGN ASPECTS",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Narrow lines (OL) connect the offset control circuits (AOC in Fig. 3), located in the third column, with the circuit inputs (first column)."
+        },
+        {
+          "section_title": "CIRCUIT PRINCIPLE AND DESIGN ASPECTS",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The simplified block diagram is shown in Fig. 3."
+        },
+        {
+          "section_title": "CIRCUIT PRINCIPLE AND DESIGN ASPECTS",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Here, an amplifier cell (see Fig. 4) starts with a transimpedance stage (TIS) succeeded by 6 IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 1, JANUARY 2003 Simplified block diagram of the limiting transimpedance amplifier in a row of the array, consisting of three amplifier cells and an automatic offset control Fig. 3. circuit (AOC)."
+        },
+        {
+          "section_title": "CIRCUIT PRINCIPLE AND DESIGN ASPECTS",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "In series to the complementary , an on-chip dummy capacitor is used input (see which roughly matches the PD capacitance Fig. 3) [18]."
+        },
+        {
+          "section_title": "CIRCUIT PRINCIPLE AND DESIGN ASPECTS",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Simplified circuit diagram of the amplifier cell in Fig. 3."
+        },
+        {
+          "section_title": "OFFSET-CURRENT CONTROL",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Since the driving photodiode is dc coupled to the input of the amplifier (Fig. 3), an automatic offset control (AOC) is required to compensate for the average value of the input signal )."
+        },
+        {
+          "section_title": "OFFSET-CURRENT CONTROL",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 3)."
+        },
+        {
+          "section_title": "OFFSET-CURRENT CONTROL",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The output nodes are defined in Fig. 3."
+        },
+        {
+          "section_title": "CROSSTALK PROBLEMS AND THEIR MINIMIZATION",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Since all 12 amplifiers usually operate simultaneously, the internal ground node GND1 (Fig. 3) may become quite noisy."
+        },
+        {
+          "section_title": "CROSSTALK PROBLEMS AND THEIR MINIMIZATION",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "If the influences of the parasitic capacitances and , and the bond inductances of the PD, (see Fig. 3) were negligible, noise compensation would be perfect. is used between input and the internal • A resistor ground node GND1 to damp parasitic oscillations, which , , and are caused by the resonant circuit built by (see Fig. 3). • Decoupling resistors are used in the (long) offset control output line (OL in Fig. 2), which runs over the chip from the third column to the amplifier inputs."
+        },
+        {
+          "section_title": "REALIZATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "It should be mentioned that, due to the is still as low as 10 limited resistance7 used to approximate the PD current source in Fig. 3), the input sensitivity measured in this way is worse ( compared to the value expected if the circuit is driven by a real PD (current source)."
+        },
+        {
+          "section_title": "REALIZATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "It should be pointed out that the conditions of these (purely electrical) measurements and thus the results presented below are too pessimistic compared to the intended practical application for the following reasons. • All channels within a disturbing amplifier block are driven by the same pulse sequence and are switched simultaneously, so that the generated noise peaks are added. and of the electrical • The parasitic capacitances PD model (see Fig. 3, not shown in Fig. 8) cannot be made as low as in the case of a real PD."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.0,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:proposed": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "transimpedance amplifier (TIA)",
+        "technology": "SIGE",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor",
+          "resistor",
+          "current source"
+        ],
+        "design_purpose": "",
+        "function_summary": "circuit (AOC). Moreover, the driving and loading conditions (incl. the bond inductances) are shown",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.65,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Simplified circuit diagram of the amplifier cell in Fig. 3. (a) First cell. (b) Second and third cells. In the first cell, a transimpedance state (TIS) without emitter followers in the feedback path is chosen because of its lower group delay variation at high frequencies. In the second and third cells, an emitter follower (EF) is used in the feedback path of the TIS to simplify dc biasing of the succeeding stages. The additional EF pair in the second and third cells steepens the pulse edges.",
+      "caption_bbox": [
+        302.6,
+        693.5,
+        553.7,
+        757.9
+      ],
+      "section_title": "II. CIRCUIT PRINCIPLE AND DESIGN ASPECTS",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "CIRCUIT PRINCIPLE AND DESIGN ASPECTS",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "It consists of three similar amplifier cells, which are given in Fig. 4."
+        },
+        {
+          "section_title": "CIRCUIT PRINCIPLE AND DESIGN ASPECTS",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Here, an amplifier cell (see Fig. 4) starts with a transimpedance stage (TIS) succeeded by 6 IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 1, JANUARY 2003 Simplified block diagram of the limiting transimpedance amplifier in a row of the array, consisting of three amplifier cells and an automatic offset control Fig. 3. circuit (AOC)."
+        },
+        {
+          "section_title": "CIRCUIT PRINCIPLE AND DESIGN ASPECTS",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 4."
+        },
+        {
+          "section_title": "OFFSET-CURRENT CONTROL",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 4(b)]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 8.6,
+      "relevance_breakdown": {
+        "+circuit diagram": 3.0,
+        "+circuit": 1.0,
+        "-simplified": -1.0,
+        "section:proposed": 2.0,
+        "type_match:amplifier": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "SIGE",
+        "application_domain": "if",
+        "sub_blocks": [
+          "bias circuit"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simplified circuit diagram of the amplifier cell in Fig. 3. (a) First cell. (b) Second and third cells. In the first cell, a transimpedance state (TIS) without emitter followers in the feedback path is chosen because of its lower group delay variation at high frequencies. In the second and third cells, an emitter ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.99,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Driving the CDR + DEMUX chip by the output stage of an amplifier channel via a terminated (50 ) transmission line for (a) negative and (b) positive supply voltage, respectively. For clearness, only a single channel of the array is shown.",
+      "caption_bbox": [
+        301.1,
+        395.5,
+        552.2,
+        433.0
+      ],
+      "section_title": "III. OFFSET-CURRENT CONTROL",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CIRCUIT PRINCIPLE AND DESIGN ASPECTS",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "SCHILD et al.: HIGH-GAIN SiGe TRANSIMPEDANCE AMPLIFIER ARRAY in Fig. 5(a) and (b) for negative and positive supply voltage, respectively."
+        },
+        {
+          "section_title": "CIRCUIT PRINCIPLE AND DESIGN ASPECTS",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Moreover, in order to improve circuit performance and reduce module costs, large decoupling capacitors are provided 2 output on the chip between the connected ends of all 12 3.3 V node) and the supply voltage node 5 V as resistors ( well as the ground node of the amplifier array [see Fig. 5(b)]."
+        },
+        {
+          "section_title": "OFFSET-CURRENT CONTROL",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "When the average input voltage of the AOC becomes 7 Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "type_match:amplifier": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "clock and data recovery (CDR)",
+        "technology": "SIGE",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor",
+          "resistor",
+          "transmission line"
+        ],
+        "design_purpose": "Moreover, in order to improve circuit performance and reduce module costs, large decoupling capacitors are provided 2 output on the chip between the connected ends of all 12 3.3 V node) and the supply voltage node 5 V as resistors ( well as the ground node of the amplifier array [see Fig. 5(b)].",
+        "function_summary": "Driving the CDR + DEMUX chip by the output stage of an amplifier channel via a terminated (50 ) transmission line for (a) negative and (b) positive supply voltage, respectively. For clearness, only a single channel of the array is shown. Moreover, in order to improve circuit performance and reduce module costs, large ...",
+        "key_specs": [
+          "3.3 V",
+          "5 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.31,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Simplified circuit diagram of the AOC. The output nodes are defined in Fig. 3. The input signal is picked up at the output of the second EF pair of the third cell.",
+      "caption_bbox": [
+        301.1,
+        547.4,
+        552.2,
+        576.0
+      ],
+      "section_title": "III. OFFSET-CURRENT CONTROL",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "OFFSET-CURRENT CONTROL",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The simplified circuit diagram of the AOC is shown in Fig. 6."
+        },
+        {
+          "section_title": "OFFSET-CURRENT CONTROL",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.8,
+      "relevance_breakdown": {
+        "+circuit diagram": 3.0,
+        "+circuit": 1.0,
+        "-simplified": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "High-Gain SiGe Transimpedance Amplifier Array",
+        "technology": "SIGE",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simplified circuit diagram of the AOC. The output nodes are defined in Fig. 3. The input signal is picked up at the output of the second EF pair of the third cell",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.45,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 5,
+      "caption": "Fig. 7. Measured output eye diagrams (v ) of an amplifier channel (no. 7) at 10 Gb/s for different input current swings I : (a) undisturbed and (b) disturbed by the other 11 channels (see Fig. 8). In all cases, the output voltage swing is 500 mV . Vertical: 160 mV/div; horizontal: 50 ps/div. –",
+      "caption_bbox": [
+        38.1,
+        287.5,
+        289.2,
+        326.0
+      ],
+      "section_title": "V. REALIZATION AND EXPERIMENTAL RESULTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "REALIZATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "SCHILD et al.: HIGH-GAIN SiGe TRANSIMPEDANCE AMPLIFIER ARRAY Fig. 7."
+        },
+        {
+          "section_title": "REALIZATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 7(a) shows the measured output eye diagrams of a single channel (no. 7, cf."
+        },
+        {
+          "section_title": "REALIZATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 7(b) shows the output eye diagrams of the channel under test if disturbed by all other 11 channels under the (too pessimistic) crosstalk conditions described above."
+        },
+        {
+          "section_title": "REALIZATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 7(a), top) and much lower than for 11 disturbing channels (cf."
+        },
+        {
+          "section_title": "REALIZATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 7(b), top)."
+        },
+        {
+          "section_title": "REALIZATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 11 demonstrates that, under about 30 the pessimistic crosstalk conditions discussed above (11 disturbing channels), no acceptable eye diagram at minimum input current swing is obtained—in contrast to strong backside coupling, shown in Fig. 7(b) (top)."
+        },
+        {
+          "section_title": "REALIZATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "I – Fig. 7 (top)."
+        },
+        {
+          "section_title": "REALIZATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The slight differences compared to the purely electrical measurement result (Fig. 7(a), top and bottom) are partly caused by the too-high capacitance of the available PD (250 fF, instead of the nominal value of 150 fF), but might also be a consequence of the different measurement sockets and signal sources used."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.5,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "type_match:amplifier": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "SIGE",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured output eye diagrams (v ) of an amplifier channel (no. 7) at 10 Gb/s for different input current swings I : (a) undisturbed and (b) disturbed by the other 11 channels (see Fig. 8). In all cases, the output voltage swing is 500 mV . Vertical: 160 mV/div; horizontal: 50 ps/div. –",
+        "key_specs": [
+          "250 fF",
+          "150 fF"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.18,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 6,
+      "caption": "Fig. 8.",
+      "caption_bbox": [
+        39.6,
+        397.4,
+        60.6,
+        408.1
+      ],
+      "section_title": "V. REALIZATION AND EXPERIMENTAL RESULTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "REALIZATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Measured output eye diagrams (v ) of an amplifier channel (no. 7) at 10 Gb/s for different input current swings I : (a) undisturbed and (b) disturbed by the other 11 channels (see Fig. 8)."
+        },
+        {
+          "section_title": "REALIZATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "To analyze crosstalk, two disturbing amplifier blocks were built with the disturbed amplifier channel under test (no. 7) located between them (see Fig. 8)."
+        },
+        {
+          "section_title": "REALIZATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "It should be pointed out that the conditions of these (purely electrical) measurements and thus the results presented below are too pessimistic compared to the intended practical application for the following reasons. • All channels within a disturbing amplifier block are driven by the same pulse sequence and are switched simultaneously, so that the generated noise peaks are added. and of the electrical • The parasitic capacitances PD model (see Fig. 3, not shown in Fig. 8) cannot be made as low as in the case of a real PD."
+        },
+        {
+          "section_title": "REALIZATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "All Fig. 8. amplifiers have the same input current swing."
+        },
+        {
+          "section_title": "REALIZATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 8)."
+        },
+        {
+          "section_title": "REALIZATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Vertical: 160 the numbering of the channels see Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.5,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "SIGE",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "amplifier",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.38,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 6,
+      "caption": "Fig. 9. Photograph of the measurement socket, which includes line termination and PD models (cf. Fig. 8). The size of the substrate is 29 mm 29 mm.",
+      "caption_bbox": [
+        39.6,
+        640.0,
+        290.7,
+        668.6
+      ],
+      "section_title": "V. REALIZATION AND EXPERIMENTAL RESULTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "REALIZATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "A photograph of the measurement socket is shown in Fig. 9."
+        },
+        {
+          "section_title": "REALIZATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-model": -1.5,
+        "-photograph": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "termination network",
+        "technology": "SIGE",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Photograph of the measurement socket, which includes line termination and PD models (cf. Fig. 8). The size of the substrate is 29 mm 29 mm",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 6,
+      "caption": "Fig. 10. Measured output eye diagrams (channel 7) at 10 Gb/s with different combinations of disturbing channels: (a) disturbed by the six nearest channels (4–6 and 8–10), (b) disturbed by the six farthest channels (1–3 and 10–12). For = 20 A . Vertical: 160 the numbering of the channels see Fig. 8. I – mV/div.; horizontal: 50 ps/div.",
+      "caption_bbox": [
+        302.6,
+        532.4,
+        553.7,
+        578.9
+      ],
+      "section_title": "V. REALIZATION AND EXPERIMENTAL RESULTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "REALIZATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "It is worthwhile to note that the eye diagram is drastically improved if the number of disturbing channels is reduced, e.g., A . from eleven to six, as shown in Fig. 10 for – The time jitter is nearly as low as in the undisturbed case (cf."
+        },
+        {
+          "section_title": "REALIZATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Moreover, this result is almost independent of the location of the disturbing channels as confirmed by the comparison of Fig. 10(a) and (b) where the extreme cases are shown: in Fig. 10(a), the six nearest channels and in Fig. 10(b) the six farthest channels are activated."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "High-Gain SiGe Transimpedance Amplifier Array",
+        "technology": "SIGE",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured output eye diagrams (channel 7) at 10 Gb/s with different combinations of disturbing channels: (a) disturbed by the six nearest channels (4–6 and 8–10), (b) disturbed by the six farthest channels (1–3 and 10–12). For = 20 A . Vertical: 160 the numbering of the channels see Fig. 8. I – mV/div.; horizontal: 50 ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 6,
+      "caption": "Fig. 11. Measured output eye diagrams (channel 7) at 10 Gb/s with the backside of the chip only weakly coupled to the measurement socket: (a) = 20 A . Compare undisturbed and (b) disturbed by 11 channels. I –",
+      "caption_bbox": [
+        302.6,
+        681.6,
+        553.7,
+        711.1
+      ],
+      "section_title": "V. REALIZATION AND EXPERIMENTAL RESULTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "REALIZATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 11 demonstrates that, under about 30 the pessimistic crosstalk conditions discussed above (11 disturbing channels), no acceptable eye diagram at minimum input current swing is obtained—in contrast to strong backside coupling, shown in Fig. 7(b) (top)."
+        },
+        {
+          "section_title": "REALIZATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "High-Gain SiGe Transimpedance Amplifier Array",
+        "technology": "SIGE",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured output eye diagrams (channel 7) at 10 Gb/s with the backside of the chip only weakly coupled to the measurement socket: (a) = 20 A . Compare undisturbed and (b) disturbed by 11 channels. I –",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 7,
+      "caption": "Fig. 12. Measured output eye diagrams (channel 7) at 12.5 Gb/s: (a) I = 20 A and (b) I = 240 A . Vertical: 160 mV/div.; horizontal: 40 – – ps/div.",
+      "caption_bbox": [
+        38.1,
+        143.2,
+        289.3,
+        171.8
+      ],
+      "section_title": "V. REALIZATION AND EXPERIMENTAL RESULTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "REALIZATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "A , respectively) are shown in Fig. 12."
+        },
+        {
+          "section_title": "REALIZATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The word length of the pseudorandom bit pattern SCHILD et al.: HIGH-GAIN SiGe TRANSIMPEDANCE AMPLIFIER ARRAY Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "transimpedance amplifier (TIA)",
+        "technology": "SIGE",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured output eye diagrams (channel 7) at 12.5 Gb/s: (a) I = 20 A and (b) I = 240 A . Vertical: 160 mV/div.; horizontal: 40 – – ps/div",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 7,
+      "caption": "Fig. 13. Measured output eye diagrams (channel 7) at 10 Gb/s, but now driven 20 A and (b) I by an optical signal and a real photodiode: (a) I – 240 A . Vertical: 160 mV/div.; horizontal: 50 ps/div. –",
+      "caption_bbox": [
+        38.1,
+        271.4,
+        289.3,
+        301.0
+      ],
+      "section_title": "V. REALIZATION AND EXPERIMENTAL RESULTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "REALIZATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 13 shows a first optical measurement result at 10 Gb/s for the minimum and maxFig. 10."
+        },
+        {
+          "section_title": "REALIZATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "High-Gain SiGe Transimpedance Amplifier Array",
+        "technology": "SIGE",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured output eye diagrams (channel 7) at 10 Gb/s, but now driven 20 A and (b) I by an optical signal and a real photodiode: (a) I – 240 A . Vertical: 160 mV/div.; horizontal: 50 ps/div. –",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 3,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

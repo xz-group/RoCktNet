@@ -1,0 +1,445 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1347335.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1347335",
+  "generated_at": "2026-07-29T22:02:04",
+  "paper_metadata": {
+    "title": "A 1-V 10.7-MHz Fourth-Order Bandpass Modulators Using Two Switched Opamps",
+    "authors": [
+      "Chien-Hung Kuo",
+      "Shen-Iuan Liu"
+    ],
+    "abstract": "A 1-V 10.7-MHz fourth-order bandpass delta-sigma modulator using two switched opamps (SOPs) is presented. The 3/4 sampling frequency and the double-sampling techniques are Since the zeros of the noise transfer function are located at adapted for this modulator to relax the required clocking rate. The both the 1/4 and 3/4 of the sampling frequency in the presented modulator can not only reduce the number of SOPs, but conventional bandpass DSM, the 3/4 of the sampling frequency m also the number of capacitors. It has been implemented in 0.25can be chosen as the desired signal to reduce the 1P5M CMOS process with MIM capacitors. The modulator can rerequired sampling rate in a bandpass DSM [6], [7]. In addition, ceive 10.7-MHz IF signals by using a clock frequency of 7.13 MHz. the double-sampling technique can be adopted to halve the A dynamic range of 62 dB within bandwidth of 200 kHz is achieved and the power consumption of 8.45 mW is measured at 1-V supply clock rate further. Therefore, a clock frequency of 7.13 MHz voltage. The image tone can be suppressed by 44 dB with respect could be used for a modulator to capture an input to the carrier. The in-band third-order intermodulation (IM3) dissignal of 10.7 MHz, and the operating speed requirements of tortion is 65 dBc below the desired signal. the SOPs could be relaxed. The resonator and the resulted bandpass DSM are described in the following sections.",
+    "keywords": [],
+    "doi": "10.1109/JSSC.2004.835792",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2004
+  },
+  "paper_circuit_context": {
+    "circuit_type": "1-V 10.7-MHz Fourth-Order Bandpass Modulators",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "LC tank / resonator",
+      "switch",
+      "op-amp",
+      "clock / timing",
+      "balun"
+    ],
+    "design_purpose": "It has been implemented in 0.25can be chosen as the desired signal to reduce the 1P5M CMOS process with MIM capacitors.",
+    "function_summary": "1-V 10.7-MHz Fourth-Order Bandpass Modulators: It has been implemented in 0.25can be chosen as the desired signal to reduce the 1P5M CMOS process with MIM capacitors.",
+    "key_specs": [
+      "7.13 MHz",
+      "62 dB",
+      "200 kHz",
+      "8.45 mW",
+      "44 dB",
+      "10.7 MHz",
+      "65 dBc",
+      "42.8 MHz",
+      "1 V",
+      "0.25 V"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE pseudo-n-path and the n-path topologies have been widely adopted to implement a conventional switched-capacitor bandpass delta-sigma modulator (DSM) [1]–[3]. The pseudo-n-path architecture requires fewer operational ampliﬁers (opamps) at the expense of multiple capacitors and complex timing clocks [2]. The n-path approach [3] exhibits faster operating speed with penalty of additional power-hu ..."
+    },
+    {
+      "number": "II",
+      "title": "CIRCUIT DESCRIPTION",
+      "kind": "design",
+      "page": 0,
+      "text_preview": "Since the zeros of the noise transfer function are located at in the both the 1/4 and 3/4 of the sampling frequency conventional bandpass DSM, the 3/4 of the sampling frequency to reduce the can be chosen as the desired signal required sampling rate in a bandpass DSM [6], [7]. In addition, the double-sampling technique can be adopted to halve the clock rate further. Therefore, a clock frequency of ..."
+    },
+    {
+      "number": "III",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 2,
+      "text_preview": "The fourth-order BPDSM has been fabricated in a 0.25m one-poly ﬁve-metal (1P5M) CMOS process with MIM capaci6-dB differentors. Its die photograph is shown in Fig. 4. A tial sinusoidal signal of 10.7 MHz is applied to the modulator under a clock frequency of 7.13 MHz. The single-ended signal is fed to a balun (North Hills 0300BB) to generate a differential Fig. 5. Measured output spectrum with 10.7 ..."
+    },
+    {
+      "number": "IV",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 4,
+      "text_preview": "A 1-V resonator with the lowest quantities of capacitors and SOPs to date has been presented. A 1-V fourth-order bandpass modulator with only two SOPs has also been presented. It was m CMOS process. The measured peak fabricated in a 0.25SNDR/input dynamic range of 59.5 dB/62 dB with 1-V supply and the bandwidth of 200 kHz is reached. ACKNOWLEDGMENT The authors would like to thank the Chip Implemen ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Schematic of the ﬁrst resonator and its corresponding clock timing diagram.",
+      "caption_bbox": [
+        39.6,
+        306.9,
+        313.1,
+        314.8
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Resonator The resonator [6] with feedback DACs is shown in Fig. 1, represents the sampling capacitor and where denotes the integrating capacitor."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "According to charge conservation at the input node of SOP, which is implemented as [8], and neglecting the feedback DACs in Fig. 1, the following equations in different phases can be derived."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Since the input signal is periodic, from (1a) and (1c), one can ﬁnd that (2) Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.7,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor",
+          "LC tank / resonator"
+        ],
+        "design_purpose": "",
+        "function_summary": "Schematic of the ﬁrst resonator and its corresponding clock timing diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.43,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Schematic of the low-voltage quantizer without dc compensation circuits.",
+      "caption_bbox": [
+        39.6,
+        607.1,
+        304.9,
+        615.0
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Fig. 2."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Low-Voltage Quantizer Fig. 2 shows the low-voltage quantizer."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+circuit": 1.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "1-V 10.7-MHz Fourth-Order Bandpass Modulators",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematic of the low-voltage quantizer without dc compensation circuits",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.72,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Total schematic of the fourth-order bandpass modulator.",
+      "caption_bbox": [
+        38.1,
+        752.5,
+        246.2,
+        760.5
+      ],
+      "section_title": "III. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 11, NOVEMBER 2004 Fig. 3."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Fourth-Order Bandpass DSM Fig. 3 gives the total schematic of the fourth-order BPDSM using two SOPs."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Total schematic of the fourth-order bandpass modulator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.1,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Microphotograph of the 1-V fourth-order bandpass modulator.",
+      "caption_bbox": [
+        301.1,
+        196.5,
+        529.0,
+        204.5
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Fig. 4."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Its die photograph is shown in Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.2,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Microphotograph of the 1-V fourth-order bandpass modulator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Measured output spectrum with 10.7-MHz input.",
+      "caption_bbox": [
+        39.6,
+        274.5,
+        225.4,
+        282.5
+      ],
+      "section_title": "III. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "The single-ended signal is fed to a balun (North Hills 0300BB) to generate a differential Fig. 5."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 5 shows the measured output power spectrum derived from 65 535 samples."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "balun",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "balun"
+        ],
+        "design_purpose": "",
+        "function_summary": "Measured output spectrum with 10.7-MHz input",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Measured SNDR versus input power.",
+      "caption_bbox": [
+        39.6,
+        512.0,
+        187.8,
+        520.0
+      ],
+      "section_title": "III. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 6."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "The plot of the measured SNDR versus the input power for different bandwidths is shown in Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "1-V 10.7-MHz Fourth-Order Bandpass Modulators",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured SNDR versus input power",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. (a) Image tone testing with an input signal of 10.67 MHz. (b) A two-tone testing for the proposed bandpass modulator.",
+      "caption_bbox": [
+        302.6,
+        488.4,
+        553.7,
+        505.3
+      ],
+      "section_title": "III. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 7(a) shows the measured output spectrum."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Two sinusoidal signals with frequencies of 10.81 and 10.86 MHz are sent to the modulator, and two spurious tones are detected, as shown in Fig. 7(b)."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 11, NOVEMBER 2004 Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.2,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Image tone testing with an input signal of 10.67 MHz. (b) A two-tone testing for the proposed bandpass modulator",
+        "key_specs": [
+          "10.86 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.14,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 2,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

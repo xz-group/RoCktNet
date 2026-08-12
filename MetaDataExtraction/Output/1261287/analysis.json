@@ -1,0 +1,748 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1261287.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1261287",
+  "generated_at": "2026-07-29T22:01:28",
+  "paper_metadata": {
+    "title": "A CMOS Self-Regulating VCO With Low Supply Sensitivity",
+    "authors": [
+      "In-Chul Hwang",
+      "Chulwoo Kim",
+      "Sung-Mo (Steve) Kang"
+    ],
+    "abstract": "This paper presents a self-regulating voltage-controlled oscillator (VCO) with low supply sensitivity. With an adaptive delay cell, the self-regulating VCO achieves a low supply sensitivity of 0.15%-delay/1%-supply or less. This delay cell has a built-in compensation circuit that senses and corrects the delay variation caused by supply fluctuation. The proposed scheme rejects device noise as well and hence achieves a low phase noise of 101.4 dBc Hz at 600-kHz offset when it runs at 900 MHz. The prototype phase-locked loop with the VCO fabricated in 0.35m CMOS process shows a cycle-to-cycle rms jitter of 2.1 ps at 450 MHz (VCO at 900 MHz) under quiet supply condition.",
+    "keywords": [
+      "Low supply sensitivity",
+      "phase-locked loop",
+      "phase"
+    ],
+    "doi": "10.1109/JSSC.2003.820881",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2004
+  },
+  "paper_circuit_context": {
+    "circuit_type": "CMOS Self-Regulating VCO",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "transistor/MOSFET",
+      "cross-coupled pair",
+      "current source",
+      "output buffer",
+      "bias circuit",
+      "latch",
+      "clock / timing",
+      "switch"
+    ],
+    "design_purpose": "",
+    "function_summary": "CMOS Self-Regulating VCO: This paper presents a self-regulating voltage-controlled oscillator (VCO) with low supply sensitivity.",
+    "key_specs": [
+      "0.15%",
+      "1%",
+      "101.4 dBc",
+      "900 MHz",
+      "2.1 ps",
+      "450 MHz",
+      "30%",
+      "50%",
+      "4 kHz",
+      "1.1 GHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "R ING OSCILLATORS have been widely used for integrated voltage-controlled oscillators (VCOs) due to easy integration, wide range of tuning property, small area, and low current consumption. The poor noise performance of ring oscillators, however, creates many difficulties in securing timing margin for synchronizing such clocked systems as processors, DSP chips, and memories. The problem becomes mo ..."
+    },
+    {
+      "number": "II",
+      "title": "NOISE PERFORMANCE ANALYSIS OF DELAY CELLS",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "To analyze the noise performance of ring oscillators, two representative delay cells—a differential buffer and a single-ended inverter—are used as shown in Fig. 1. A source-coupled differential delay cell, shown in Fig. 1(a), provides high common-mode rejection because the tail current HWANG et al.: CMOS SR-VCO WITH LOW SUPPLY SENSITIVITY 43 Latch-embedded delay cell for supply regulation. (a) Cir ..."
+    },
+    {
+      "number": "V",
+      "title": "MEASUREMENT RESULTS",
+      "kind": "results",
+      "page": 3,
+      "text_preview": "For the purpose of evaluation, a chip was fabricated in a 0.35m CMOS process that includes the standalone VCO and the VCO-embedded PLL. The PLL was designed for a clock synthesizer with 2–33 times frequency multiplication, as shown in Fig. 7(a). For the design of the dual-modulus prescaler (DMP), a new NAND-embedded flip-flop was developed, as shown in Fig. 7(b). The pass transistor flip-flop give ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 5,
+      "text_preview": "An SR-VCO with inherent device and supply noise rejection properties was presented in this paper. With the proposed 47 supply regulation technique, the SR-VCO senses the delay deviation caused by the supply variation and then adjusts the delay of each delay cell against the deviation. Experimental results show that the SR-VCO has a wide range of tuning capability, with improved supply-noise and de ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Primitive delay cells for ring-type VCO design. (a) Source-coupled differential buffer. (b) CMOS inverter.",
+      "caption_bbox": [
+        302.6,
+        287.5,
+        553.7,
+        304.4
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1."
+        },
+        {
+          "section_title": "NOISE PERFORMANCE ANALYSIS OF DELAY CELLS",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "To analyze the noise performance of ring oscillators, two representative delay cells—a differential buffer and a single-ended inverter—are used as shown in Fig. 1."
+        },
+        {
+          "section_title": "NOISE PERFORMANCE ANALYSIS OF DELAY CELLS",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "A source-coupled differential delay cell, shown in Fig. 1(a), provides high common-mode rejection because the tail current HWANG et al.: CMOS SR-VCO WITH LOW SUPPLY SENSITIVITY 43 Latch-embedded delay cell for supply regulation."
+        },
+        {
+          "section_title": "NOISE PERFORMANCE ANALYSIS OF DELAY CELLS",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Even in terms of common-mode rejection, the source-coupled differential delay cells pose many problems in deep-submicron designs because of the low drain–source . impedance of M1 and the nonlinearity of active Another popularly used delay cell is a CMOS inverter shown in Fig. 1(b)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.1,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "current source",
+          "output buffer",
+          "latch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Primitive delay cells for ring-type VCO design. (a) Source-coupled differential buffer. (b) CMOS inverter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.05,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2.",
+      "caption_bbox": [
+        38.1,
+        229.5,
+        58.8,
+        237.5
+      ],
+      "section_title": "II. NOISE PERFORMANCE ANALYSIS OF DELAY CELLS",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "NOISE PERFORMANCE ANALYSIS OF DELAY CELLS",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 2. through M1, independent of common-mode voltage deviation, determines the delay of the cell."
+        },
+        {
+          "section_title": "NOISE PERFORMANCE ANALYSIS OF DELAY CELLS",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "One alternative to using on-chip regulators is to insert a cross-coupled latch as shown in Fig. 2(a) [7]."
+        },
+        {
+          "section_title": "NOISE PERFORMANCE ANALYSIS OF DELAY CELLS",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 2(b) shows that the ) oscillator achieves better immunity as the size ratio ( between the NMOS transistors in the latch and the inverter becomes larger."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage regulator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "cross-coupled pair",
+          "latch"
+        ],
+        "design_purpose": "",
+        "function_summary": "voltage regulator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.31,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. adjustment.",
+      "caption_bbox": [
+        39.6,
+        251.5,
+        76.6,
+        268.5
+      ],
+      "section_title": "II. NOISE PERFORMANCE ANALYSIS OF DELAY CELLS",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "NOISE PERFORMANCE ANALYSIS OF DELAY CELLS",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "TRANSMISSION-GATE VCO (TG-VCO) It is nontrivial to define the large-signal equivalent resistance of a transmission gate as shown in Fig. 3(a), because its voltage transmission is a nonlinear process."
+        },
+        {
+          "section_title": "NOISE PERFORMANCE ANALYSIS OF DELAY CELLS",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "If a rising step pulse as a characterizing input is injected into one terminal of the transmission gate in Fig. 3(a), its pulse edge is spread out at the other end by time delay."
+        },
+        {
+          "section_title": "NOISE PERFORMANCE ANALYSIS OF DELAY CELLS",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "(b) Distribution of equivalent gate resistance by gate-voltage Fig. 3. adjustment. where is a constant equal to ."
+        },
+        {
+          "section_title": "NOISE PERFORMANCE ANALYSIS OF DELAY CELLS",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 3(b) compares the resistance results obtained from the above equation and HSPICE simulation."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.6,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "adjustment",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.4,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Three-stage TG-VCO.",
+      "caption_bbox": [
+        302.6,
+        433.8,
+        403.5,
+        441.7
+      ],
+      "section_title": "II. NOISE PERFORMANCE ANALYSIS OF DELAY CELLS",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "NOISE PERFORMANCE ANALYSIS OF DELAY CELLS",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 4 shows the TG-VCO composed of the three-stage delay cells."
+        },
+        {
+          "section_title": "NOISE PERFORMANCE ANALYSIS OF DELAY CELLS",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Under the nominal supply voltage, the rising edge of either of the signals is aligned with the falling edge of the opposite signal in time domain, but any supply deviation away from VDD e a c M2 M1 d b f VCTRL VCTRL Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Three-stage TG-VCO",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5.",
+      "caption_bbox": [
+        38.1,
+        371.6,
+        58.8,
+        379.6
+      ],
+      "section_title": "II. NOISE PERFORMANCE ANALYSIS OF DELAY CELLS",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "NOISE PERFORMANCE ANALYSIS OF DELAY CELLS",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "SELF-REGULATING VCO (SR-VCO) As shown in Fig. 5(a), the addition of two feedback loops transforms the single-ended TG-VCO into a differential and supply-insensitive VCO."
+        },
+        {
+          "section_title": "NOISE PERFORMANCE ANALYSIS OF DELAY CELLS",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 5(b) plots the output frequency normalized to its on V, versus , with as a parameter. value for By virtue of the regulating effect, a good frequency immunity to supply voltage variation is obtained for the supply range of ."
+        },
+        {
+          "section_title": "NOISE PERFORMANCE ANALYSIS OF DELAY CELLS",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 5(c) shows the three-stage ring connections, . and the VCO is constructed to have a total phase shift of 180 The device noise rejection property can be measured by the impulse sensitivity function (ISF) given in [1]."
+        },
+        {
+          "section_title": "NOISE PERFORMANCE ANALYSIS OF DELAY CELLS",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 5. the CMOS inverter ring is 0.281."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.6,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "voltage-controlled oscillator (VCO)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.4,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. ISF comparison between the five-stage inverter ring oscillator and the SR-VCO.",
+      "caption_bbox": [
+        301.1,
+        562.5,
+        552.2,
+        579.4
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "NOISE PERFORMANCE ANALYSIS OF DELAY CELLS",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Plotted for comparison in Fig. 6 are the ISF of a fivestage inverter ring oscillator and that of the SR-VCO."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "In Fig. 8, the SR-VCO exhibits a wide tuning range of 4 kHz to 1.1 GHz because the transmission gate can conduct even in 0.6 impuse sensitivity function 5-staged inverter ring oscillator 0.4 ON node 0.2 in SR-VCO 0 OP node -0.2 in SR-VCO -0.4 -0.6 -0.8 0 1 2 3 4 5 6 7 x [radians] Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "ISF comparison between the five-stage inverter ring oscillator and the SR-VCO",
+        "key_specs": [
+          "4 kHz",
+          "1.1 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. PLL implementation. (a) Block diagram of the designed PLL. (b) Proposed NAND-embedded flip-flop for the DMP block.",
+      "caption_bbox": [
+        39.6,
+        298.2,
+        290.7,
+        315.1
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "The PLL was designed for a clock synthesizer with 2–33 times frequency multiplication, as shown in Fig. 7(a)."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "For the design of the dual-modulus prescaler (DMP), a new NAND-embedded flip-flop was developed, as shown in Fig. 7(b)."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "The frequency span is plotted in Fig. 9 to show the dc sensiis varied by 10% around tivity to supply voltage when 46 Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.2,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "+proposed": 3.0,
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "PLL implementation. (a) Block diagram of the designed PLL. (b) Proposed NAND-embedded flip-flop for the DMP block",
+        "key_specs": [
+          "10%"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.72,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Measured tuning property of the SR-VCO.",
+      "caption_bbox": [
+        39.6,
+        521.6,
+        205.6,
+        529.5
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "In Fig. 8, the SR-VCO exhibits a wide tuning range of 4 kHz to 1.1 GHz because the transmission gate can conduct even in 0.6 impuse sensitivity function 5-staged inverter ring oscillator 0.4 ON node 0.2 in SR-VCO 0 OP node -0.2 in SR-VCO -0.4 -0.6 -0.8 0 1 2 3 4 5 6 7 x [radians] Fig. 6."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "(b) Proposed NAND-embedded flip-flop for the DMP block. 0 0.5 1 1.5 2 2.5 3 3.5 10G Log-scaled Frequency 1G Frequency [MHz] 100M 10M [Hz] 1M 100K 10 K 0 1K 0 0.5 1 1.5 2 2.5 3 3.5 Control Voltage(VCTRL ) [V] Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured tuning property of the SR-VCO",
+        "key_specs": [
+          "4 kHz",
+          "1.1 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. DC supply sensitivity of the SR-VCO.",
+      "caption_bbox": [
+        302.6,
+        217.6,
+        454.8,
+        225.6
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "The frequency span is plotted in Fig. 9 to show the dc sensiis varied by 10% around tivity to supply voltage when 46 Fig. 7."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Since the output clock is divided by a factor of two for duty cycle correction, its output frequency is at 450 MHz and the power consumption IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 1, JANUARY 2004 VCTRL 1.03 3V 2.75V fo/fo(V DD=3.3V) 1.02 2.5V 1.01 2.25V 1 2V 0.99 1.75V 1.5V 0.98 1.25V 0.97 1V 0.96 2.97 3.1 3.2 3.3 3.4 3.5 3.63 VDD [V] Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "DC supply sensitivity of the SR-VCO",
+        "key_specs": [
+          "10%",
+          "450 MHz",
+          "2004 V",
+          "3V",
+          "2.75V",
+          "3.3V",
+          "2.5V",
+          "2.25V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10. SSB phase noise measurement at 900 MHz.",
+      "caption_bbox": [
+        302.6,
+        452.3,
+        475.9,
+        460.2
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Fig. 10 indicates that the free-running VCO at 900 MHz achieves 101.4 dBc Hz at 600-kHz offset from the carrier."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "DC supply sensitivity of the SR-VCO. -30 SSB Phase Noise [dBc/Hz] -40 -50 -60 -70 -30dB/dec -80 -90 -100 -110 -120 Frequency Offset [Hz] Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-phase noise": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "SSB phase noise measurement at 900 MHz",
+        "key_specs": [
+          "900 MHz",
+          "101.4 dBc",
+          "-30dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 4,
+      "caption": "Fig. 11. Jitter measurement for PLL output clock at 450 MHz.",
+      "caption_bbox": [
+        302.6,
+        684.9,
+        507.5,
+        692.8
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Fig. 11 shows the output large enough to suppress clock when the PLL is locked at 900 MHz."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Jitter measurement for PLL output clock at 450 MHz",
+        "key_specs": [
+          "900 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 5,
+      "caption": "Fig. 12. Die photograph.",
+      "caption_bbox": [
+        38.1,
+        253.7,
+        123.1,
+        261.6
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "When we measure the jitter of an oscillating HWANG et al.: CMOS SR-VCO WITH LOW SUPPLY SENSITIVITY Fig. 12."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Fig. 12 shows the die photograph of , and the PLL."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -7.2,
+      "relevance_breakdown": {
+        "-photograph": -3.0,
+        "-die photo": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Die photograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 7,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

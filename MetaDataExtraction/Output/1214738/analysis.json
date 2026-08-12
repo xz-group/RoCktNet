@@ -1,0 +1,417 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1214738.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1214738",
+  "generated_at": "2026-07-29T22:01:12",
+  "paper_metadata": {
+    "title": "A 3.3-V ISDN U-Interface Line Driver With a New IQ-Control Circuit",
+    "authors": [
+      "Jinup Lim",
+      "Sungwon Noh",
+      "Kwangoh Kim",
+      "Joongho Choi"
+    ],
+    "abstract": "In this brief, we propose a new quiescent current Q) control circuit applicable to line drivers for digital subscriber ( line (DSL) applications. The line driver consists of pre-amplifier, error amplifiers, output transistors, and Q control circuits. A new method is proposed for controlling Q values in order to obtain high linearity performance. It also helps to determine the minimum off-current value of the class-AB output stage to reduce crossover distortion. The line driver is implemented for ISDN U-interface applications. It is fabricated in a 0.35m CMOS technology for a single power supply voltage of 3.3 V, and a total harmonic distortion of less than 64 dB is achieved.",
+    "keywords": [
+      "Class AB",
+      "CMOS",
+      "line driver",
+      "low power",
+      "low voltage"
+    ],
+    "doi": "10.1109/JSSC.2003.814422",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "3.3-V ISDN U-Interface Line Driver",
+    "technology": "CMOS",
+    "application_domain": "",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "current source",
+      "transformer",
+      "differential pair",
+      "pre-amplifier",
+      "current mirror"
+    ],
+    "design_purpose": "In this brief, we propose a new quiescent current Q) control circuit applicable to line drivers for digital subscriber ( line (DSL) applications.",
+    "function_summary": "3.3-V ISDN U-Interface Line Driver: In this brief, we propose a new quiescent current Q) control circuit applicable to line drivers for digital subscriber ( line (DSL) applications.",
+    "key_specs": [
+      "3.3 V",
+      "64 dB",
+      "70 dB",
+      "45 mW",
+      "6 dB",
+      "67.5 w",
+      "4.76 V",
+      "80.261 kHz",
+      "2003 V"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "A S THE demand for computer networking and data communication increases, techniques for data transmission over digital subscriber lines (DSL) have been significantly improved with the help of communication systems, signal processing, and VLSI technology [1], [2]. The advent of VLSI technologies has allowed various digital processing systems and analog front-end blocks to be integrated into one chi ..."
+    },
+    {
+      "number": "II",
+      "title": "LINE DRIVER DESIGN",
+      "kind": "design",
+      "page": 0,
+      "text_preview": "The block diagram of the line driver is shown in Fig. 1. It , error amplifiers ( , , consists of a pre-amplifier , ), output transistors ( , , , ), -compensation circuits ( , ). The line driver and operates using the fully differential signals in order to reduce the common-mode noise and suppress even-order harmonic distortions. The total open-loop voltage gain is the sum of the cascade of the pre ..."
+    },
+    {
+      "number": "III",
+      "title": "NEW",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "Fig. 2(a) shows the circuit schematic of the error amplifier and the output transistor along with the offset voltage and -control current sources , , and . For the sake for nMOS output transistor of brevity, the error amplifier is shown only as a block diagram. The proper bias points of output transistors are provided by the driving error amplifiers. and determines The tail current of the differen ..."
+    },
+    {
+      "number": "IV",
+      "title": "IMPLEMENTATIONS",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "A line driver with the proposed -compensation circuit was m CMOS technology for designed and fabricated in a 0.35ISDN U-interface applications. It was designed to meet the requirements of large-swing operation and high linearity perforFig. 6. Measured results of the line driver with respect to various values of input frequency, load resistance, and output swing. mance with a reduced supply voltage ..."
+    },
+    {
+      "number": "V",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 3,
+      "text_preview": "Development of VLSI and data transmission technologies has resulted in faster data rates through digital subscriber lines. However, the analog front-end is more difficult to implement because the power supply voltage is being continuously reduced as more system blocks are integrated into one chip. The line driver is one of the most challenging building blocks since a large output swing and high li ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Block diagram of the line driver.",
+      "caption_bbox": [
+        301.1,
+        375.5,
+        434.8,
+        386.1
+      ],
+      "section_title": "II. LINE DRIVER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1."
+        },
+        {
+          "section_title": "LINE DRIVER DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "The block diagram of the line driver is shown in Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "line / output driver",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the line driver",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.57,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Circuit schematic of the I -compensation block. (a) Error amplifiers and output transistors with I -control current sources. (b) Current monitoring and current-to-voltage conversion block.",
+      "caption_bbox": [
+        39.6,
+        380.6,
+        290.7,
+        409.2
+      ],
+      "section_title": "II. LINE DRIVER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "LINE DRIVER DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Resistors to are placed around (a) (b) Fig. 2."
+        },
+        {
+          "section_title": "NEW",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 2(a) shows the circuit schematic of the error amplifier and the output transistor along with the offset voltage and -control current sources , , and ."
+        },
+        {
+          "section_title": "NEW",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "It can also determine the stable minimum current level that is required when one of the output transistors shuts off in the push-pull configuration to reduce the crossover distortion. , , and are applied to the correThe output currents sponding current sources of Fig. 2(a) through current mirrors. is the gate node of the pMOS output transistor, tranSince and monitor the current flowing in the pMOS sistors and convert it into a voltage ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 10.2,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+circuit schematic": 3.5,
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [
+          "resistor",
+          "transistor/MOSFET",
+          "current source",
+          "current mirror"
+        ],
+        "design_purpose": "It can also determine the stable minimum current level that is required when one of the output transistors shuts off in the push-pull configuration to reduce the crossover distortion. , , and are applied to the correThe output currents sponding current sources of Fig. 2(a) through current mirrors. is the gate node of ...",
+        "function_summary": "Circuit schematic of the I -compensation block. (a) Error amplifiers and output transistors with I -control current sources. (b) Current monitoring and current-to-voltage conversion block. It can also determine the stable minimum current level that is required when one of the output transistors shuts off in the ...",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.85,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Simulated operations of the I -compensation block. (a) For the common-mode signals. (b) For the differential-mode signals.",
+      "caption_bbox": [
+        302.6,
+        485.9,
+        553.7,
+        505.5
+      ],
+      "section_title": "II. LINE DRIVER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "NEW",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The proper bias points of output transistors are provided by the driving error amplifiers. and determines The tail current of the differential pair IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 8, AUGUST 2003 (a) (b) Fig. 3."
+        },
+        {
+          "section_title": "NEW",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 3(a) shows the simulated behavior of the compensation currents when the common-mode output signal changes."
+        },
+        {
+          "section_title": "NEW",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "When the differential output increases as shown in Fig. 3(b), node increases and the node decreases through the the output current monitoring circuits consisting of transistors – ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.3,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "current source",
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simulated operations of the I -compensation block. (a) For the common-mode signals. (b) For the differential-mode signals",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Die photograph of the line driver.",
+      "caption_bbox": [
+        38.1,
+        280.3,
+        174.4,
+        290.9
+      ],
+      "section_title": "III. NEW",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "NEW",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "This limited voltage gain reduces the overall open-loop voltage gain and increases IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 8, AUGUST 2003 Fig. 4."
+        },
+        {
+          "section_title": "IMPLEMENTATIONS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The photomicrograph is shown in Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -5.2,
+      "relevance_breakdown": {
+        "-photograph": -3.0,
+        "-die photo": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "line / output driver",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Die photograph of the line driver",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Measured results of the line driver for ISDN-U interface applications. (a) Transient waveform. (b) FFT result.",
+      "caption_bbox": [
+        301.1,
+        486.4,
+        552.2,
+        506.0
+      ],
+      "section_title": "III. NEW",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "NEW",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "(a) (b) Fig. 5."
+        },
+        {
+          "section_title": "IMPLEMENTATIONS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Measurement results of the ISDN U-interface line driver are shown in Fig. 5."
+        },
+        {
+          "section_title": "IMPLEMENTATIONS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The typical output waveform data are shown in Fig. 5(a)."
+        },
+        {
+          "section_title": "IMPLEMENTATIONS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The waveform data are captured through a digital storage oscilloscope to get fast Fourier transform (FFT) spectrum results as shown in Fig. 5(b)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.4,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-waveform": -2.0,
+        "references": 1.6
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "line / output driver",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured results of the line driver for ISDN-U interface applications. (a) Transient waveform. (b) FFT result",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Measured results of the line driver with respect to various values of input frequency, load resistance, and output swing.",
+      "caption_bbox": [
+        39.6,
+        243.3,
+        290.7,
+        262.9
+      ],
+      "section_title": "V. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATIONS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Measured results of distortion is shown to be about the line driver’s total harmonic distortion (THD) performance are shown in Fig. 6, where various operating conditions such as , load resistance , and output swing the input frequency are considered."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.6,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:conclusion": -1.0,
+        "references": 0.4
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "line / output driver",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured results of the line driver with respect to various values of input frequency, load resistance, and output swing",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 2,
+  "warnings": []
+}

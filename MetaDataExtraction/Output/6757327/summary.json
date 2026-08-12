@@ -1,0 +1,51 @@
+{
+  "title": "28Gb/s 560mW Multi-Standard SerDes with SingleStage Analog Front-End and 14-Tap DecisionFeedback Equalizer in 28nm CMOS Hiroshi Kimura, Pervez Aziz, Tai Jing, Ashutosh Sinha, Ram Narayan, Hairong Gao, Ping Jing, Gary Hom, Anshi Liang, Eric Zhang, Aniket Kadkol, Ruchi Kothari, Gordon Chan, Yehui Sun, Benjamin Ge, Jason Zeng, Kathy Ling, Michael Wang, Amaresh Malipatil, Shiva Kotagiri, Lijun Li, Chris Abel, Freeman Zhong",
+  "bibliography": {
+    "authors": [],
+    "venue": "",
+    "year": 2014,
+    "doi": "",
+    "keywords": []
+  },
+  "figure_number": "Figure 2.1.1 shows the entire SerDes block diagram. For the receiver (RX) input stage, the use of a bump inductor improves the return-loss performance and saves die area since it is placed under the bump. Also, on-chip capacitance decouples the dc bias voltage from transmitter (TX) side and the AFE inputcommon-mode voltage can be set to the optimum voltage. After ac-coupling, the differential signal of long-run-length data can droop. A baseline-wandercorrection (BLWC) circuit compensates the low-frequency drift. The AFE is a single-stage circuit and incorporates both the variable-gain adjustment (VGA) and linear equalizer (LEQ) functions. The buffer drives the DFE input stages. The offset-cancellation loop monitors the buffer output offset and feeds back to the AFE. The DFE uses a half-rate 1st-tap unrolled architecture with sign-sign least mean square (LMS) algorithm for tap adaptation. For a 1-tap unrolled architecture based on even/odd data path slices, 8 error latches are required, 4 per even/odd slice. However, in order to minimize power dissipation, this architecture employs one error latch per even/odd slice (total of 2 vs. 8) and allows the choice of error-latch threshold placement via programmable controls. Moreover, the error-latch threshold choices can be dynamically rotated to minimize sensitivity to pattern variations. For clock-and-data recovery (CDR), a mostly digital decimated CDR is used. We have two PLLs for different frequency ranges. Each PLL has two LC tank VCOs to generate the low-jitter clock. The PLL block generates a 2T IQ clock and sends it to RX and TX lanes. On the RX side, a phase interpolator (PI) block receives the 2T IQ clock and generates the sampling clock for DFE. There are several buffer stages before and after the PI to maintain clock quality. These clock buffers employ active-inductor circuits with a common-mode feedback (CMFB) circuit. An IQ calibration circuit is employed to maintain the phase relationship before the clocks reach the DFE latches. The DFE latches are calibrated according to their DC value with forced value onto the 1st-tap unrolling muxes. The TX block consists of a serializer and source-series-terminated (SST) driver. The clock path for TX uses a duty-cycledistortion (DCD) correction circuit similar to the one described in [3]. The AFE is an important block not only for equalization but also in terms of robustness and power consumption. In order to address these aspects, a simple and minimum-stage construction is preferable. Hence, we use a single-stage",
+  "type": "equalizer",
+  "technology": "CMOS, 28nm process",
+  "application": "",
+  "sub_blocks": [
+    "inductor",
+    "capacitor",
+    "resistor",
+    "transistor/MOSFET",
+    "current source",
+    "LC tank / resonator",
+    "output buffer",
+    "differential pair",
+    "latch"
+  ],
+  "function_summary": "equalizer",
+  "design_purpose": "",
+  "metrics": [
+    "Power consumption",
+    "Process node",
+    "Efficiency / ratio",
+    "Gain",
+    "Supply / voltage",
+    "Inductance"
+  ],
+  "numerical_performance": [
+    "560mW",
+    "28nm",
+    "75%",
+    "15dB",
+    "15mV",
+    "2 v",
+    "800pH",
+    "25μm",
+    "3dB",
+    "3 ph"
+  ],
+  "confidence": 0.8,
+  "warnings": [
+    "Recommended figure was classified as 'result_plot', not a schematic; manual confirmation strongly recommended."
+  ]
+}

@@ -1,0 +1,373 @@
+{
+  "image_path": "D:\\InfoExtractPipeline\\AllScripts\\pipeline\\result\\images\\Book1000.png",
+  "image_width": 636,
+  "image_height": 742,
+  "source_bbox_txt": "D:\\InfoExtractPipeline\\AllScripts\\pipeline\\result\\component_bbox\\Book1000.txt",
+  "orientation_weights": "D:\\InfoExtractPipeline\\AllScripts\\pipeline\\pretrainedWeights\\orientationDetection\\best_model.pt",
+  "resnet_orientation_classes": {
+    "u": 0,
+    "r": 1,
+    "d": 2,
+    "l": 3
+  },
+  "orientation_required_classes": [
+    "amplifier",
+    "diode",
+    "nmos",
+    "nmos-bulk",
+    "npn",
+    "pmos",
+    "pmos-bulk",
+    "pnp"
+  ],
+  "num_components": 17,
+  "num_orientation_predictions": 8,
+  "components": [
+    {
+      "component_id": 1,
+      "component_class": "current_src",
+      "component_class_id": 14,
+      "yolo_confidence": 0.9661,
+      "bbox_xyxy": {
+        "x1": 40,
+        "y1": 336,
+        "x2": 121,
+        "y2": 415
+      },
+      "crop_path": null,
+      "orientation": null,
+      "orientation_id": null,
+      "orientation_confidence": null,
+      "orientation_probabilities": null,
+      "status": "orientation_not_required"
+    },
+    {
+      "component_id": 2,
+      "component_class": "pmos",
+      "component_class_id": 4,
+      "yolo_confidence": 0.9623,
+      "bbox_xyxy": {
+        "x1": 73,
+        "y1": 118,
+        "x2": 128,
+        "y2": 186
+      },
+      "crop_path": "orientation\\crops\\Book1000\\Book1000_0002_pmos.jpg",
+      "orientation": "r",
+      "orientation_id": 1,
+      "orientation_confidence": 0.9999958276748657,
+      "orientation_probabilities": {
+        "u": 1.6218787379784771e-07,
+        "r": 0.9999958276748657,
+        "d": 4.0435993469145615e-06,
+        "l": 4.8844611910681124e-08
+      },
+      "status": "ok"
+    },
+    {
+      "component_id": 3,
+      "component_class": "pmos",
+      "component_class_id": 4,
+      "yolo_confidence": 0.9568,
+      "bbox_xyxy": {
+        "x1": 481,
+        "y1": 118,
+        "x2": 535,
+        "y2": 184
+      },
+      "crop_path": "orientation\\crops\\Book1000\\Book1000_0003_pmos.jpg",
+      "orientation": "l",
+      "orientation_id": 3,
+      "orientation_confidence": 0.9999985694885254,
+      "orientation_probabilities": {
+        "u": 8.052066391428525e-07,
+        "r": 3.5435326140031975e-07,
+        "d": 3.022059900104068e-07,
+        "l": 0.9999985694885254
+      },
+      "status": "ok"
+    },
+    {
+      "component_id": 4,
+      "component_class": "pmos-bulk",
+      "component_class_id": 5,
+      "yolo_confidence": 0.9538,
+      "bbox_xyxy": {
+        "x1": 481,
+        "y1": 220,
+        "x2": 535,
+        "y2": 286
+      },
+      "crop_path": "orientation\\crops\\Book1000\\Book1000_0004_pmos-bulk.jpg",
+      "orientation": "l",
+      "orientation_id": 3,
+      "orientation_confidence": 0.9999992847442627,
+      "orientation_probabilities": {
+        "u": 2.451137248726809e-08,
+        "r": 7.418503855660674e-07,
+        "d": 1.809901206684117e-08,
+        "l": 0.9999992847442627
+      },
+      "status": "ok"
+    },
+    {
+      "component_id": 5,
+      "component_class": "nmos-bulk",
+      "component_class_id": 3,
+      "yolo_confidence": 0.9512,
+      "bbox_xyxy": {
+        "x1": 73,
+        "y1": 220,
+        "x2": 129,
+        "y2": 287
+      },
+      "crop_path": "orientation\\crops\\Book1000\\Book1000_0005_nmos-bulk.jpg",
+      "orientation": "r",
+      "orientation_id": 1,
+      "orientation_confidence": 1.0,
+      "orientation_probabilities": {
+        "u": 5.175526673895092e-09,
+        "r": 1.0,
+        "d": 2.5172377959847836e-08,
+        "l": 2.9062945827718067e-08
+      },
+      "status": "ok"
+    },
+    {
+      "component_id": 6,
+      "component_class": "nmos-bulk",
+      "component_class_id": 3,
+      "yolo_confidence": 0.951,
+      "bbox_xyxy": {
+        "x1": 73,
+        "y1": 463,
+        "x2": 129,
+        "y2": 530
+      },
+      "crop_path": "orientation\\crops\\Book1000\\Book1000_0006_nmos-bulk.jpg",
+      "orientation": "r",
+      "orientation_id": 1,
+      "orientation_confidence": 1.0,
+      "orientation_probabilities": {
+        "u": 1.506298419329255e-10,
+        "r": 1.0,
+        "d": 1.357426726578126e-09,
+        "l": 3.9863501388737177e-10
+      },
+      "status": "ok"
+    },
+    {
+      "component_id": 7,
+      "component_class": "nmos-bulk",
+      "component_class_id": 3,
+      "yolo_confidence": 0.9465,
+      "bbox_xyxy": {
+        "x1": 479,
+        "y1": 463,
+        "x2": 536,
+        "y2": 529
+      },
+      "crop_path": "orientation\\crops\\Book1000\\Book1000_0007_nmos-bulk.jpg",
+      "orientation": "l",
+      "orientation_id": 3,
+      "orientation_confidence": 1.0,
+      "orientation_probabilities": {
+        "u": 9.08665018228838e-11,
+        "r": 1.313083419773875e-09,
+        "d": 1.4020441752027324e-10,
+        "l": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "component_id": 8,
+      "component_class": "nmos",
+      "component_class_id": 2,
+      "yolo_confidence": 0.9432,
+      "bbox_xyxy": {
+        "x1": 73,
+        "y1": 565,
+        "x2": 129,
+        "y2": 634
+      },
+      "crop_path": "orientation\\crops\\Book1000\\Book1000_0008_nmos.jpg",
+      "orientation": "r",
+      "orientation_id": 1,
+      "orientation_confidence": 0.999974250793457,
+      "orientation_probabilities": {
+        "u": 2.117097392329015e-05,
+        "r": 0.999974250793457,
+        "d": 2.771831304926309e-06,
+        "l": 1.7364180848744581e-06
+      },
+      "status": "ok"
+    },
+    {
+      "component_id": 9,
+      "component_class": "nmos",
+      "component_class_id": 2,
+      "yolo_confidence": 0.9416,
+      "bbox_xyxy": {
+        "x1": 480,
+        "y1": 565,
+        "x2": 535,
+        "y2": 633
+      },
+      "crop_path": "orientation\\crops\\Book1000\\Book1000_0009_nmos.jpg",
+      "orientation": "l",
+      "orientation_id": 3,
+      "orientation_confidence": 0.9999996423721313,
+      "orientation_probabilities": {
+        "u": 3.7765235560982546e-07,
+        "r": 2.691617240202504e-08,
+        "d": 5.994068352777049e-09,
+        "l": 0.9999996423721313
+      },
+      "status": "ok"
+    },
+    {
+      "component_id": 10,
+      "component_class": "switch_ideal",
+      "component_class_id": 17,
+      "yolo_confidence": 0.9285,
+      "bbox_xyxy": {
+        "x1": 335,
+        "y1": 569,
+        "x2": 393,
+        "y2": 608
+      },
+      "crop_path": null,
+      "orientation": null,
+      "orientation_id": null,
+      "orientation_confidence": null,
+      "orientation_probabilities": null,
+      "status": "orientation_not_required"
+    },
+    {
+      "component_id": 11,
+      "component_class": "switch_ideal",
+      "component_class_id": 17,
+      "yolo_confidence": 0.9285,
+      "bbox_xyxy": {
+        "x1": 337,
+        "y1": 345,
+        "x2": 394,
+        "y2": 387
+      },
+      "crop_path": null,
+      "orientation": null,
+      "orientation_id": null,
+      "orientation_confidence": null,
+      "orientation_probabilities": null,
+      "status": "orientation_not_required"
+    },
+    {
+      "component_id": 12,
+      "component_class": "capacitor",
+      "component_class_id": 9,
+      "yolo_confidence": 0.928,
+      "bbox_xyxy": {
+        "x1": 274,
+        "y1": 431,
+        "x2": 334,
+        "y2": 463
+      },
+      "crop_path": null,
+      "orientation": null,
+      "orientation_id": null,
+      "orientation_confidence": null,
+      "orientation_probabilities": null,
+      "status": "orientation_not_required"
+    },
+    {
+      "component_id": 13,
+      "component_class": "switch_ideal",
+      "component_class_id": 17,
+      "yolo_confidence": 0.9276,
+      "bbox_xyxy": {
+        "x1": 217,
+        "y1": 345,
+        "x2": 276,
+        "y2": 387
+      },
+      "crop_path": null,
+      "orientation": null,
+      "orientation_id": null,
+      "orientation_confidence": null,
+      "orientation_probabilities": null,
+      "status": "orientation_not_required"
+    },
+    {
+      "component_id": 14,
+      "component_class": "switch_ideal",
+      "component_class_id": 17,
+      "yolo_confidence": 0.9236,
+      "bbox_xyxy": {
+        "x1": 336,
+        "y1": 121,
+        "x2": 393,
+        "y2": 161
+      },
+      "crop_path": null,
+      "orientation": null,
+      "orientation_id": null,
+      "orientation_confidence": null,
+      "orientation_probabilities": null,
+      "status": "orientation_not_required"
+    },
+    {
+      "component_id": 15,
+      "component_class": "capacitor",
+      "component_class_id": 9,
+      "yolo_confidence": 0.9227,
+      "bbox_xyxy": {
+        "x1": 276,
+        "y1": 292,
+        "x2": 333,
+        "y2": 322
+      },
+      "crop_path": null,
+      "orientation": null,
+      "orientation_id": null,
+      "orientation_confidence": null,
+      "orientation_probabilities": null,
+      "status": "orientation_not_required"
+    },
+    {
+      "component_id": 16,
+      "component_class": "switch_ideal",
+      "component_class_id": 17,
+      "yolo_confidence": 0.9216,
+      "bbox_xyxy": {
+        "x1": 219,
+        "y1": 121,
+        "x2": 277,
+        "y2": 161
+      },
+      "crop_path": null,
+      "orientation": null,
+      "orientation_id": null,
+      "orientation_confidence": null,
+      "orientation_probabilities": null,
+      "status": "orientation_not_required"
+    },
+    {
+      "component_id": 17,
+      "component_class": "switch_ideal",
+      "component_class_id": 17,
+      "yolo_confidence": 0.8918,
+      "bbox_xyxy": {
+        "x1": 219,
+        "y1": 568,
+        "x2": 275,
+        "y2": 610
+      },
+      "crop_path": null,
+      "orientation": null,
+      "orientation_id": null,
+      "orientation_confidence": null,
+      "orientation_probabilities": null,
+      "status": "orientation_not_required"
+    }
+  ]
+}

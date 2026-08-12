@@ -1,0 +1,49 @@
+{
+  "title": "A 1-to-2.5GHz Phased-Array IC Based on gm-RC All-Pass Time-Delay Cells Seyed Kasra Garakoui, Eric A.M. Klumperink, Bram Nauta, Frank F.E Van Vliet",
+  "bibliography": {
+    "authors": [],
+    "venue": "",
+    "year": 2012,
+    "doi": "",
+    "keywords": []
+  },
+  "figure_number": "Figure 4.4.1 shows the architecture of the 4-element phased-array receiver frontend IC. The four received signals are first amplified by an LNA with differential output [4], which takes care of a broadband 50 W matching to the antennas. This matching is important to reduce mutual coupling between adjacent antenna elements. The LNA is followed by a delay chain which is subdivided into fine and coarse delay cells, of which several are cascaded. The desired delay in path i is coarsely selected via control signals Ci,0..Ci,4, which actives one particular V-I converter. The delay is then adjusted by setting the delay of the fine-tune bits via the Δτ control bits. The output signals of the four active V-I converters (one per channel) can now be added in the current domain, in which the effective beamforming takes place. The summed signals are downconverted in a mixer. The mixer is loaded with an output buffer that provides 50Ω matching at the output of the IC. Provisions to measure or use the time-delayed signal before downconversion are also implemented. The use of known time-delay cells turned out to add unacceptable dispersion. A new time-delay circuit was designed based on the H(s) expression shown in Fig. 4.4.2. This all-pass transfer function features a delay tD = 2C/gmp. This transfer function is realized by two parallel paths: a unity gain path (G1RL=1) and a firstorder low-pass filter, designed for a gain of two (G2R1G3RL=2) and pole at 1/R1C=gmp/C. Implementing the capacitor as a variable capacitor allows for delay control. On the transistor level G1, G2, G3, R1 and RL are realized by M1,M2,M5,M4 and M3 respectively. The capacitor was implemented both fixed (for the coarse-tune bits) and variable (for the fine-tune bits). The fine control was implemented by means of 3 binary weighted capacitors (3b resolution), while coarse control involves selecting another output (see Fig. 4.4.1). Features of this time-delay cell include an accurately adjustable delay (by C), low delay variation versus frequency and an accurately controllable unity gain.The DC-coupled nature allows for cascading cells without DC-blocking capacitors. The circuit works down to low supply voltages and exploits current re-use to limit dissipation. Comparison to [2,3] in the same technology shows a better delay approximation over a wider bandwidth, especially because floating capacitors are avoided, removing the most significant parasitic poles. The remaining parasitic pole at the output was shifted up by inductive peaking via active inductors (resistor in the gate line to M3, not shown for simplicity).",
+  "type": "delay line / delay element",
+  "technology": "CMOS, GAAS, 14μm process",
+  "application": "rf, radio frequency, radar, uwb, if",
+  "sub_blocks": [
+    "inductor",
+    "capacitor",
+    "resistor",
+    "transistor/MOSFET",
+    "current source",
+    "balun",
+    "output buffer",
+    "mixer"
+  ],
+  "function_summary": "delay line / delay element",
+  "design_purpose": "",
+  "metrics": [
+    "Operating / oscillation frequency",
+    "Timing / delay",
+    "Power consumption",
+    "Impedance",
+    "Gain"
+  ],
+  "numerical_performance": [
+    "-2.5GHz",
+    "1GHz",
+    "550ps",
+    "2.5GHz",
+    "0.14 μm",
+    "50 W",
+    "50Ω",
+    "1.5 GHz",
+    "10ps",
+    "0.4dB"
+  ],
+  "confidence": 0.8,
+  "warnings": [
+    "Recommended figure was classified as 'result_plot', not a schematic; manual confirmation strongly recommended."
+  ]
+}

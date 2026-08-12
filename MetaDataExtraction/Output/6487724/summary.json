@@ -1,0 +1,46 @@
+{
+  "title": "A 2.5GHz 2.2mW/25μW On/Off-State Power 2psrmsLong-Term-Jitter Digital Clock Multiplier with 3-Reference-Cycles Power-On Time Tejasvi Anand, Mrunmay Talegaonkar, Amr Elshazly, Brian Young, Pavan Kumar Hanumolu",
+  "bibliography": {
+    "authors": [],
+    "venue": "",
+    "year": 2013,
+    "doi": "",
+    "keywords": []
+  },
+  "figure_number": "Figure 14.5.1 shows the block diagram of the proposed digital clock multiplier. It employs a split-tuned architecture wherein a coarse frequency-tuning loop consisting of a frequency detector, a digital accumulator, and a fast-settling 8b DAC combined with the static current source I1, drives the ring oscillator close to a frequency lock. A fine phase-tuning loop uses a bang-bang phase detector and first-order digital loop filter to bring the oscillator’s frequency to the desired output frequency. Stability of the phase-tuning loop is ensured by periodically resetting the oscillator’s phase with the input reference clock phase using the edge replacement logic (ERL) [7]. Ideally, this also ensures phase-locking in one reference cycle if the oscillator frequency is accurately tuned. When the START signal is de-asserted, the clock multiplier enters the off-state. The SEL signal goes high which breaks the oscillator’s feedback and turns-off OUTCLK. Consequently, the static current source I1 charges the VCTRL node to VDD. The DACs are powered off, and the accumulators’ states are held by gating both the digital input and the clock. The DAC’s bias circuitry is not turned off to reduce the power-on time penalty caused by slow-settling transients. Instead, bias voltages are maintained at the expense of a small power penalty of approximately 17μW during the off-state. When the START signal is asserted, the clock multiplier exits the off state and enters the on state, as shown in the timing diagram of Fig. 14.5.1. The DACs power-on and rapidly drive the VCTRL node from VDD towards its steady-state value, thus locking the oscillator’s frequency almost instantaneously. The ERL receives the retimed divided-by-N rising edge signal (COUNT), and asserts SEL. Logic high of the SEL signal breaks up the digitally controlled oscillator’s (DCO) feedback momentarily and allows a clean reference edge to replace the Nth DCO edge, thus aligning the DCO’s phase to the REF phase. The rising edge of the REF signal de-asserts the SEL signal and closes the ring for the next N DCO cycles. Hence, a clean reference edge insertion at every reference cycle instantaneously locks the DCO’s phase and resets the DCO’s jitter accumulation due to phase noise and supply noise. This rapid phase locking results in a small power-on time and regular phase realignment results in superior jitter performance.",
+  "type": "2.2mW/25μW On/Off-State Power 2psrmsLong-Term-Jitter Digital Clock Multiplier",
+  "technology": "CMOS",
+  "application": "if",
+  "sub_blocks": [
+    "capacitor",
+    "current source",
+    "clock / timing"
+  ],
+  "function_summary": "2.2mW/25μW On/Off-State Power 2psrmsLong-Term-Jitter Digital Clock Multiplier",
+  "design_purpose": "",
+  "metrics": [
+    "Operating / oscillation frequency",
+    "Power consumption",
+    "Timing / delay",
+    "Energy per operation",
+    "Process node",
+    "Supply voltage",
+    "Capacitance"
+  ],
+  "numerical_performance": [
+    "2.5GHz",
+    "2.2mW",
+    "25μW",
+    "2ps",
+    "10ns",
+    "12pJ",
+    "17μW",
+    "90nm",
+    "1.1V",
+    "20pF"
+  ],
+  "confidence": 0.8,
+  "warnings": [
+    "Recommended figure was classified as 'result_plot', not a schematic; manual confirmation strongly recommended."
+  ]
+}

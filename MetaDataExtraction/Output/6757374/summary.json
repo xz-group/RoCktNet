@@ -1,0 +1,46 @@
+{
+  "title": "A 28Gb/s 1pJ/b Shared-Inductor Optical Receiver with 56% Chip-Area Reduction in 28nm CMOS Tsung-Ching Huang1, Tao-Wen Chung2, Chan-Hong Chern1, Ming-Chieh Huang1, Chih-Chang Lin1, Fu-Lung Hsueh3",
+  "bibliography": {
+    "authors": [],
+    "venue": "",
+    "year": 2014,
+    "doi": "",
+    "keywords": []
+  },
+  "figure_number": "Figure 8.4.2 shows the circuit schematics of the pseudo-differential CMOS pushpull TIA with series-peaking inductors. The CMOS push-pull TIA has good signal gain and input-referred noise at low supply voltage because of current re-use of NMOS and PMOS [4]. Compared with CMOS inverter TIA in [4], the presented TIA employs a current tail to make the gm of M1~M4 refer to the bias current instead of the supply voltage for better supply noise rejection. In order to provide better single-ended to differential conversion for LA input, we include the crosscoupled pair M7 and M8, which act as common-source amplifiers to provide negative voltage gain through the feedback resistor RF. The pseudo-differential configuration of the TIA provides better supply-noise rejection as well as jitter performance than the singled-ended TIA. The simulated gain of TIA is 46dBΩ and the input-referred noise is 2.5μArms with 20GHz BW. The DC-offset cancellation circuit in Fig. 8.4.2 receives pseudo-differential outputs from the TIA and adjusts the output DC levels for the LA, based on the offset voltage provided by the LPF as shown in Fig. 8.4.1. Circuit schematics of LAs using both conventional and shared-inductor peaking are shown in Fig. 8.4.2. For the LA using conventional inductive peaking, two inductors L1are required for each stage. On the other hand, the LA using sharedinductor peaking requires only two inductors L2 for every two adjacent stages, wherein the inductance value of L2 is half of L1. The reason that L2 can be only half of L1 is because by sharing the inductor L2 between two adjacent stages, the in-phase current IL through the inductor L2 is doubled. Particularly when the voltage swing in LA is sufficiently large and the switching current IL through the inductor is close to the bias current IB, the switching current flowing through the shared-inductor becomes 2IB because of sharing two bias currents IB. Since the voltage swing VL across the inductor is proportional to the time rate of change of the current IL through the inductor L2, doubling the in-phase current IL will simply need only half of the inductance to obtain the same voltage swing VL across the inductor. The chip area of the shared-inductor LA can therefore be reduced by 56% if including the output buffer and by 60% if not including the buffer, when compared with conventional inductive peaking. Main pole locations of the transfer functions for two different types of LA are illustrated in Fig. 8.4.3. Here L2 is half of L1 and the output capacitance CL and drain resistance RD are identical for both cases. Identical pole locations for both cases imply that the bandwidth enhancement of shared-inductor peaking is not degraded, compared to conventional inductive peaking, but the chip area is significantly reduced. To further improve the signal bandwidth of LA, both LA circuits apply interleaving active-feedback as shown in Fig. 8.4.3 [6]. The simulated BW and gain for LA",
+  "type": "1pJ/b Shared-Inductor Optical Receiver",
+  "technology": "CMOS, 28nm process",
+  "application": "rf, if",
+  "sub_blocks": [
+    "inductor",
+    "resistor",
+    "transistor/MOSFET",
+    "output buffer"
+  ],
+  "function_summary": "1pJ/b Shared-Inductor Optical Receiver",
+  "design_purpose": "",
+  "metrics": [
+    "Energy per operation",
+    "Efficiency / ratio",
+    "Process node",
+    "Capacitance",
+    "Gain",
+    "Operating / oscillation frequency"
+  ],
+  "numerical_performance": [
+    "1pJ",
+    "56%",
+    "28nm",
+    "100fF",
+    "46dB",
+    "20GHz",
+    "60%",
+    "19.4GHz",
+    "30dB",
+    "19.1GHz"
+  ],
+  "confidence": 0.38,
+  "warnings": [
+    "Recommended figure was classified as 'conventional', not a schematic; manual confirmation strongly recommended."
+  ]
+}

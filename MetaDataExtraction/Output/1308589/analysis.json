@@ -1,0 +1,1381 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1308589.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1308589",
+  "generated_at": "2026-07-29T22:01:44",
+  "paper_metadata": {
+    "title": "Yield and Speed Optimization of a Latch-Type Voltage Sense Amplifier",
+    "authors": [
+      "Bernhard Wicht",
+      "Thomas Nirschl",
+      "Doris Schmitt-Landsiedel"
+    ],
+    "abstract": "A quantitative yield analysis of a latch-type voltage sense amplifier with a high-impedance differential input stage is presented. It investigates the impact of supply voltage, input dc level, transistor sizing, and temperature on the input offset voltage. The input dc level turns out to be most significant. Also, an analytical expression for the sensing delay is derived which shows low sensitivity on the input dc bias voltage. A figure of merit indicates that an input dc level of 0.7 is optimal regarding speed and yield. Experimental results in 130-nm CMOS technology confirm that the yield can be significantly improved by lowering the input dc voltage to about 70% of the supply voltage. Thereby, the offset standard deviation decreases from 19 to 8.5 mV without affecting the delay.",
+    "keywords": [
+      "Current sensing",
+      "latch delay",
+      "latch-type sense amplifier",
+      "sense amplifier",
+      "SRAM circuits",
+      "SRAM yield",
+      "yield optimization"
+    ],
+    "doi": "10.1109/JSSC.2004.829399",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2004
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Yield and Speed Optimization of a Latch-Type Voltage Sense Amplifier",
+    "technology": "CMOS, 130-nm process",
+    "application_domain": "automotive, if",
+    "sub_blocks": [
+      "resistor",
+      "transistor/MOSFET",
+      "cross-coupled pair",
+      "bias circuit",
+      "differential pair",
+      "latch",
+      "sense amplifier",
+      "output buffer",
+      "switch"
+    ],
+    "design_purpose": "A quantitative yield analysis of a latch-type voltage sense amplifier with a high-impedance differential input stage is presented.",
+    "function_summary": "Yield and Speed Optimization of a Latch-Type Voltage Sense Amplifier: A quantitative yield analysis of a latch-type voltage sense amplifier with a high-impedance differential input stage is presented.",
+    "key_specs": [
+      "70%",
+      "8.5 mV",
+      "0.7 V",
+      "6 w",
+      "60%",
+      "9 w",
+      "5 w",
+      "2 V",
+      "70 mV",
+      "10%"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "L ATCH-TYPE sense amplifiers are applied to read the contents of several types of memory since they achieve a fast decision due to strong positive feedback [1]. Fig. 1(a) shows the well-known conventional latch. Two cross-coupled inverters provide positive feedback. The enable signal EN turns on the amplifier and starts the sensing operation. Depending on the polarity of the voltage difference bet ..."
+    },
+    {
+      "number": "II",
+      "title": "TRANSIENT BEHAVIOR",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "The transient behavior is shown in Fig. 2 (at a large value for better visibility). During the off state, there is no of major current flowing and the internal node voltages are defined by leakage currents or precharge transistors (not shown). The by the switch output terminals SO and SON are pulled to transistors M7 and M8. The sense-enable signal EN starts the sensing operation by turning on M9. ..."
+    },
+    {
+      "number": "III",
+      "title": "DELAY",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "For pure voltage sensing, the sense amplifier is usually con- . However, the nected to the bitline with a potential near power consumption during write recovery can significantly be reduced if the bitline voltage is set to a value far below [10], [11]. In an application as a second stage of a current sense amplifier, the input dc voltage can become nearly any value between ground and . In this pap ..."
+    },
+    {
+      "number": "IV",
+      "title": "YIELD",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "As for all latch-type sense amplifiers, it is essential that the circuit is not activated until the input voltage difference is large enough to ensure a correct decision. Due to local variations during the fabrication, mismatch occurs, causing the sense to amplifier structure to become asymmetrical. The root causes may be many (geometry variations, random dopant fluctuations, oxide thickness varia ..."
+    },
+    {
+      "number": "V",
+      "title": "YIELD IMPROVEMENT",
+      "kind": "other",
+      "page": 4,
+      "text_preview": "In Fig. 5, the input potential was set equal to . As pointed out before, in some applications (e.g., current will be below . Its influence on the sensing) yield is investigated below. Fig. 7 shows the functional yield for values of down according to (11) versus . Obviously, there is a significant influence to 40% of on the yield. In this case, it improves almost by of 30% if the input dc potential ..."
+    },
+    {
+      "number": "VI",
+      "title": "OPTIMUM INPUT DC LEVEL",
+      "kind": "other",
+      "page": 6,
+      "text_preview": "Fig. 9 suggests that the smallest possible gives best results regarding yield. On the other hand, the delay curve of Fig. 3 shows an opposite relation with respect to sensing delay. can be derived by introducing a An optimum value of figure of merit (FOM) (18) This expression incorporates the ratio between the functional and sense amplifier delay . The optimum yield corresponds to the maximum FOM. ..."
+    },
+    {
+      "number": "VII",
+      "title": "TRANSISTOR SIZING AND TEMPERATURE",
+      "kind": "other",
+      "page": 6,
+      "text_preview": "So far, a fixed transistor size has been assumed. Indeed, there is low influence of the ratio on the performance except for the turn-on transistor M9. But, unlike for the voltage sense amplifier of Fig. 1(a), the n-channel switch transistor M9 of the WICHT et al.: YIELD AND SPEED OPTIMIZATION OF A LATCH-TYPE VOLTAGE SENSE AMPLIFIER latch does not turn out to be critical due to the different princi ..."
+    },
+    {
+      "number": "VIII",
+      "title": "COMPARISON TO CONVENTIONAL LATCH",
+      "kind": "other",
+      "page": 7,
+      "text_preview": "Compared to the sense amplifier of Fig. 1(a), the circuit structure of Fig. 1(b) can be considered as two stages. Besides the cross-coupled inverters, which both circuits have in common, the sense amplifier of Fig. 1(b) consists of a differential input transistor pair M5 and M6. Although this transistor pair is responsible for the desired high input resistance, it increases the . In comparison to  ..."
+    },
+    {
+      "number": "IX",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 8,
+      "text_preview": "A 4 K 32-bit SRAM with the considered voltage sense amplifier has been published previously [8]. In order to measure speed and yield, a separate sense amplifier has been placed beside the memory on the same chip as shown in Fig. 15. Small metal pads for contactless electron beam measurement have been placed at both output pins, at the enable signal and supply. Fig. 16 shows a typical transient res ..."
+    },
+    {
+      "number": "X",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 9,
+      "text_preview": "Due to strong positive feedback, latch-type sense amplifiers are fast, but in the presence of mismatch and noise an incorrect decision may occur if the input voltage difference is small. In this paper, a latch-type sense amplifier has been analyzed which is competitive with the conventional latch circuit but does not require any input decoupling that may deteriorate noise margin and speed. An anal ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Latch-type voltage sense amplifiers. (a) Conventional latch. (b) Sense amplifier according to [2].",
+      "caption_bbox": [
+        302.6,
+        523.4,
+        553.7,
+        540.4
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1(a) shows the well-known conventional latch."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "This drawback does not occur for the latch circuit shown in Fig. 1(b) because of a high-impedance input differential stage."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The circuit has been used as an alternative to the conventional latch of Fig. 1(a) [3]."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "This paper investigates the design issues for the latch-type sense amplifier of Fig. 1(b) to ensure a fast and correct decision even for small input signals [9]."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "In such an application, the conventional circuit of Fig. 1(a) is not suitable as a second stage because it would draw a current out of a first current-sensing stage."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "A comparison to the conventional latch-type amplifier of Fig. 1(a) is presented in Section VIII."
+        },
+        {
+          "section_title": "TRANSIENT BEHAVIOR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Simulated transient behavior of the latch-type sense amplifier of Fig. 1(b)."
+        },
+        {
+          "section_title": "DELAY",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Simulated delay of the sense amplifier of Fig. 1(b) versus dc input potential V ."
+        },
+        {
+          "section_title": "YIELD",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Its dependence on several parameters, espe- , , and , is analyzed below for the cially on latch-type sense amplifier of Fig. 1(b)."
+        },
+        {
+          "section_title": "TRANSISTOR SIZING AND TEMPERATURE",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "But, unlike for the voltage sense amplifier of Fig. 1(a), the n-channel switch transistor M9 of the WICHT et al.: YIELD AND SPEED OPTIMIZATION OF A LATCH-TYPE VOLTAGE SENSE AMPLIFIER latch does not turn out to be critical due to the different principle of operation.1 Fig. 12 shows that a sizing of m nm gives good results regarding yield and speed."
+        },
+        {
+          "section_title": "COMPARISON TO CONVENTIONAL LATCH",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "Compared to the sense amplifier of Fig. 1(a), the circuit structure of Fig. 1(b) can be considered as two stages."
+        },
+        {
+          "section_title": "COMPARISON TO CONVENTIONAL LATCH",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "Besides the cross-coupled inverters, which both circuits have in common, the sense amplifier of Fig. 1(b) consists of a differential input transistor pair M5 and M6."
+        },
+        {
+          "section_title": "COMPARISON TO CONVENTIONAL LATCH",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "In comparison to the conventional cirinput offset voltage cuit of Fig. 1(b), a larger total offset voltage can be expected since it is determined by the superposition of the offset of both stages."
+        },
+        {
+          "section_title": "COMPARISON TO CONVENTIONAL LATCH",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "The results of the Monte Carlo simulation for the versus conventional latch-type sense amplifier [Fig. 1(a)] are plotted in relation to the curves shown in Fig. 7 for the latch-type sense amplifier of Fig. 1(b)."
+        },
+        {
+          "section_title": "COMPARISON TO CONVENTIONAL LATCH",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "Since the circuit of Fig. 1(a) is not suitable for current sense amplifiers, an input dc voltage different from only makes sense for voltage sensing if the bitlines are V ."
+        },
+        {
+          "section_title": "COMPARISON TO CONVENTIONAL LATCH",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "If the latch of Fig. 1(b) opprecharged to a value below it is quite competitive to the conerates at ventional latch."
+        },
+        {
+          "section_title": "COMPARISON TO CONVENTIONAL LATCH",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "Moreover, due to the voltage drop across the passgates at the inputs of the conventional latch-type sense am- , e.g., between the plifier the real input voltage difference bitlines, has to be much larger than the values of Fig. 13. 1For the conventional latch it was found that the enable transistor [M5 in Fig. 1(a)] must not be too strong [18]."
+        },
+        {
+          "section_title": "COMPARISON TO CONVENTIONAL LATCH",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "Yield versus V [Fig. 1(a)] at V and of the sense amplifier of Fig. 1(b) at = V is nearly equal. = 0:6 V Fig. 14 compares the delay of both latch types with respect ."
+        },
+        {
+          "section_title": "COMPARISON TO CONVENTIONAL LATCH",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "If the width of M9 is increased to 3 latch of Fig. 1(b) becomes as fast as the conventional latch-type sense amplifier."
+        },
+        {
+          "section_title": "COMPARISON TO CONVENTIONAL LATCH",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "Microphotograph of the 4 K 32-bit SRAM in 130-nm CMOS Fig. 15. technology with a separate sense amplifier according to Fig. 1(b) (enlargement)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.5,
+      "relevance_breakdown": {
+        "-conventional": -3.0,
+        "section:intro": -0.5,
+        "type_match:voltage": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, 130-nm process",
+        "application_domain": "automotive, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "cross-coupled pair",
+          "switch",
+          "latch",
+          "sense amplifier"
+        ],
+        "design_purpose": "Since the circuit of Fig. 1(a) is not suitable for current sense amplifiers, an input dc voltage different from only makes sense for voltage sensing if the bitlines are V .",
+        "function_summary": "Latch-type voltage sense amplifiers. (a) Conventional latch. (b) Sense amplifier according to [2]. Since the circuit of Fig. 1(a) is not suitable for current sense amplifiers, an input dc voltage different from only makes sense for voltage sensing if the bitlines are V .",
+        "key_specs": [
+          "6 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.03,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Simulated transient behavior of the latch-type sense amplifier of",
+      "caption_bbox": [
+        301.1,
+        253.4,
+        552.2,
+        261.3
+      ],
+      "section_title": "III. DELAY",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TRANSIENT BEHAVIOR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The transient behavior is shown in Fig. 2 (at a large value for better visibility)."
+        },
+        {
+          "section_title": "TRANSIENT BEHAVIOR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "During phase 2, strong positive feedback enhances the output voltage difference starting from , as marked in Fig. 2."
+        },
+        {
+          "section_title": "TRANSIENT BEHAVIOR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 2."
+        },
+        {
+          "section_title": "DELAY",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 3 also proves that the speed inactual value of and larger input voltage creases for higher supply voltage . difference The influence of but also of and on the sense amplifier speed can be analyzed by estimating the total delay (1) is the sum of the delay in the first According to Fig. 2, and , respectively."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.6,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "type_match:amplifier": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, 130-nm process",
+        "application_domain": "automotive, if",
+        "sub_blocks": [
+          "latch",
+          "sense amplifier"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simulated transient behavior of the latch-type sense amplifier of",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.03,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Simulated delay of the sense amplifier of Fig. 1(b) versus dc input potential V .",
+      "caption_bbox": [
+        39.6,
+        279.2,
+        290.6,
+        296.1
+      ],
+      "section_title": "II. TRANSIENT BEHAVIOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DELAY",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 3 shows how the sensing delay does Obviously, there is no speed penalty as long as ."
+        },
+        {
+          "section_title": "DELAY",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 3 also proves that the speed inactual value of and larger input voltage creases for higher supply voltage . difference The influence of but also of and on the sense amplifier speed can be analyzed by estimating the total delay (1) is the sum of the delay in the first According to Fig. 2, and , respectively."
+        },
+        {
+          "section_title": "DELAY",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Since M6 has been assumed to have larger input potential, causes faster discharge of output SON comits drain current . pared to SO which is driven by M5 with smaller current Fig. 3."
+        },
+        {
+          "section_title": "DELAY",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "This agrees with the simulation results of Fig. 3."
+        },
+        {
+          "section_title": "DELAY",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "This matches well slight influence of with the simulated results of Fig. 3 even though they include short-channel effects, etc., which have been neglected in the above equations."
+        },
+        {
+          "section_title": "OPTIMUM INPUT DC LEVEL",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "On the other hand, the delay curve of Fig. 3 shows an opposite relation with respect to sensing delay. can be derived by introducing a An optimum value of figure of merit (FOM) (18) This expression incorporates the ratio between the functional and sense amplifier delay ."
+        },
+        {
+          "section_title": "TRANSISTOR SIZING AND TEMPERATURE",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "A consequence of Fig. 3 and Fig. 12 is that has a large influence on the yield while the delay remains almost constant within a certain range of ."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "The delay for different supply voltages and . input differences is plotted in Fig. 17 as a function of The same characteristic behavior as in Figs. 3 and 4 can be observed, even though the measured delay is larger due to a different load at the outputs."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.0,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "type_match:amplifier": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, 130-nm process",
+        "application_domain": "automotive, if",
+        "sub_blocks": [
+          "sense amplifier"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simulated delay of the sense amplifier of Fig. 1(b) versus dc input potential V",
+        "key_specs": [
+          "5 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.05,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 3,
+      "caption": "Fig. 4. according to (10). The total delay t is the sum of the output discharge delay and the latching delay t = 2 V, of the cross-coupled inverters (V t V = 70 mV).",
+      "caption_bbox": [
+        38.1,
+        251.7,
+        289.2,
+        286.6
+      ],
+      "section_title": "II. TRANSIENT BEHAVIOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DELAY",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Based on this theoretical analysis, Fig. 4 shows the total delay of the voltage sense amplifier and its components and as a function of ."
+        },
+        {
+          "section_title": "DELAY",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "This is due to the fact that (10) is based WICHT et al.: YIELD AND SPEED OPTIMIZATION OF A LATCH-TYPE VOLTAGE SENSE AMPLIFIER Theoretical dependence of the sense amplifier delay on V Fig. 4. according to (10)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, 130-nm process",
+        "application_domain": "automotive, if",
+        "sub_blocks": [
+          "cross-coupled pair",
+          "latch",
+          "sense amplifier"
+        ],
+        "design_purpose": "",
+        "function_summary": "according to (10). The total delay t is the sum of the output discharge delay and the latching delay t = 2 V, of the cross-coupled inverters (V t V = 70 mV)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. . ECL = 0 the number of correct decisions, the yield increases with V corresponds to fully matched output capacitances. Increased capacitance mismatch causes lower yield as shown for a standard deviation of 10% of C .",
+      "caption_bbox": [
+        301.1,
+        253.2,
+        552.3,
+        288.0
+      ],
+      "section_title": "II. TRANSIENT BEHAVIOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "YIELD",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Being a measure for Fig. 5. ."
+        },
+        {
+          "section_title": "YIELD",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 5 more likely the larger V and different degrees of shows this relation for means that only tranoutput capacitance matching. asymmetry affects the yield."
+        },
+        {
+          "section_title": "YIELD",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The yield is properly described by the in the form normalized Gaussian distribution (12) Probability density function of the input offset voltage V Fig. 6. according to Fig. 5. with the normalized probability density function given by (13) The distribution of , and consequently , is well-defined by just one parameter, the standard deviation of the input offset . voltage The probability density function is plotted in Fig. 6."
+        },
+        {
+          "section_title": "YIELD",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The required standard deviation taken from Fig. 5."
+        },
+        {
+          "section_title": "YIELD",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "For the two curves of Fig. 5, a stansponds to dard deviation of 27.2 and 53.5 mV can be read off."
+        },
+        {
+          "section_title": "YIELD",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Therefore, half ]. of the samples will fail [see also Fig. 5: is determined by the mismatch beThe offset voltage tween the differential input transistors and between the crosscoupled inverters."
+        },
+        {
+          "section_title": "YIELD",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "In addition, even though Fig. 6 is a the yield instead of measure for the possible offset voltage, for the design process curves like Fig. 5 are more appropriate since they directly for a given yield provide a minimum input difference target."
+        },
+        {
+          "section_title": "YIELD IMPROVEMENT",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "In Fig. 5, the input potential was set equal to ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.0,
+      "relevance_breakdown": {
+        "-capacitance": -2.0,
+        "references": 2.0
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Yield and Speed Optimization of a Latch-Type Voltage Sense Amplifier",
+        "technology": "CMOS, 130-nm process",
+        "application_domain": "automotive, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "ECL = 0 the number of correct decisions, the yield increases with V corresponds to fully matched output capacitances. Increased capacitance mismatch causes lower yield as shown for a standard deviation of 10% of C",
+        "key_specs": [
+          "53.5 mV"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "Fig. 6. according to Fig. 5.",
+      "caption_bbox": [
+        39.6,
+        251.4,
+        322.7,
+        259.3
+      ],
+      "section_title": "IV. YIELD",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "YIELD",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The yield is properly described by the in the form normalized Gaussian distribution (12) Probability density function of the input offset voltage V Fig. 6. according to Fig. 5. with the normalized probability density function given by (13) The distribution of , and consequently , is well-defined by just one parameter, the standard deviation of the input offset . voltage The probability density function is plotted in Fig. 6."
+        },
+        {
+          "section_title": "YIELD",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Using the inverse function standard deviation of the Gaussian distribution, can be extracted based on (14) to , Fig. 6 also illustrates how the integral from i.e., the area under the curve, defines the yield for mV."
+        },
+        {
+          "section_title": "YIELD",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "In addition, even though Fig. 6 is a the yield instead of measure for the possible offset voltage, for the design process curves like Fig. 5 are more appropriate since they directly for a given yield provide a minimum input difference target."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Yield and Speed Optimization of a Latch-Type Voltage Sense Amplifier",
+        "technology": "CMOS, 130-nm process",
+        "application_domain": "automotive, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "according to Fig. 5",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 5,
+      "caption": "Fig. 7. for different input dc levels V .",
+      "caption_bbox": [
+        38.1,
+        249.2,
+        289.2,
+        266.1
+      ],
+      "section_title": "V. YIELD IMPROVEMENT",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "YIELD IMPROVEMENT",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 7 shows the functional yield for values of down according to (11) versus ."
+        },
+        {
+          "section_title": "YIELD IMPROVEMENT",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "WICHT et al.: YIELD AND SPEED OPTIMIZATION OF A LATCH-TYPE VOLTAGE SENSE AMPLIFIER Yield versus input voltage difference V Fig. 7. for different input dc levels V ."
+        },
+        {
+          "section_title": "COMPARISON TO CONVENTIONAL LATCH",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "The results of the Monte Carlo simulation for the versus conventional latch-type sense amplifier [Fig. 1(a)] are plotted in relation to the curves shown in Fig. 7 for the latch-type sense amplifier of Fig. 1(b)."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "TABLE I INFLUENCE OF DESIGN PARAMETERS AND TEMPERATURE ON YIELD AND SENSING DELAY Fig. 19 indicates a better matching of the transistors and load capacitances than assumed in Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.6,
+      "relevance_breakdown": {
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, 130-nm process",
+        "application_domain": "automotive, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "latch",
+          "sense amplifier"
+        ],
+        "design_purpose": "",
+        "function_summary": "for different input dc levels V",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 5,
+      "caption": "Fig. 8. Transient simulation of the sense amplifier output voltages showing the impact of V .",
+      "caption_bbox": [
+        38.1,
+        447.7,
+        289.1,
+        464.7
+      ],
+      "section_title": "V. YIELD IMPROVEMENT",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "YIELD IMPROVEMENT",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Therefore, the yield increases inversely to . inBy means of a transient simulation, Fig. 8 shows how is lowered to 60% of ."
+        },
+        {
+          "section_title": "YIELD IMPROVEMENT",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 8."
+        },
+        {
+          "section_title": "YIELD IMPROVEMENT",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Due to larger , during the first phase the case is faster ( ps and ps, the right-hand plot of Fig. 8) but it results in an initial difference . of only 9.93 mV compared to 26.3 mV for This is the reason why the yield significantly increases by low- ."
+        },
+        {
+          "section_title": "YIELD IMPROVEMENT",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 8 also illustrates how influences ering during the first the sensing speed."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.6,
+      "relevance_breakdown": {
+        "type_match:amplifier": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, 130-nm process",
+        "application_domain": "automotive, if",
+        "sub_blocks": [
+          "sense amplifier"
+        ],
+        "design_purpose": "",
+        "function_summary": "Transient simulation of the sense amplifier output voltages showing the impact of V",
+        "key_specs": [
+          "60%",
+          "9.93 mV",
+          "26.3 mV"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.5,
+      "warnings": [
+        "Recommended figure caption does not explicitly mention a schematic/topology/circuit; please confirm manually.",
+        "Recommended figure was classified as 'other', not a schematic; manual confirmation strongly recommended."
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 5,
+      "caption": "Fig. 9. . (a) Yield versus input voltage difference V for different supply voltages. at V = 30 mV for different input (b) Yield versus supply voltage V potential V .",
+      "caption_bbox": [
+        301.1,
+        483.6,
+        552.2,
+        518.4
+      ],
+      "section_title": "V. YIELD IMPROVEMENT",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "YIELD IMPROVEMENT",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "In addition to the theoretical equations this is shown by Fig. 9."
+        },
+        {
+          "section_title": "YIELD IMPROVEMENT",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Even though there is a considerable increase in yield for lower supply voltages, an acceptable yield at a V can only be achieved by decreasing given value of (a) (b) Influence of V on the functional yield Y in relation to V Fig. 9. ."
+        },
+        {
+          "section_title": "OPTIMUM INPUT DC LEVEL",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "Fig. 9 suggests that the smallest possible gives best results regarding yield."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "type_match:voltage": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Yield and Speed Optimization of a Latch-Type Voltage Sense Amplifier",
+        "technology": "CMOS, 130-nm process",
+        "application_domain": "automotive, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Yield versus input voltage difference V for different supply voltages. at V = 30 mV for different input (b) Yield versus supply voltage V potential V",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.31,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. .",
+      "caption_bbox": [
+        301.1,
+        740.6,
+        326.0,
+        757.5
+      ],
+      "section_title": "V. YIELD IMPROVEMENT",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "YIELD IMPROVEMENT",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Minimum input voltage difference V at a given yield Y versus Fig. 10. ."
+        },
+        {
+          "section_title": "YIELD IMPROVEMENT",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 10 shows that there is nearly a and ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Yield and Speed Optimization of a Latch-Type Voltage Sense Amplifier",
+        "technology": "CMOS, 130-nm process",
+        "application_domain": "automotive, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 6,
+      "caption": "Fig. 11. normalized delay.",
+      "caption_bbox": [
+        39.6,
+        476.7,
+        96.6,
+        493.6
+      ],
+      "section_title": "V. YIELD IMPROVEMENT",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "YIELD IMPROVEMENT",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "FOM is defined as the ratio between yield and Fig. 11. normalized delay. as the comparison between and shows."
+        },
+        {
+          "section_title": "OPTIMUM INPUT DC LEVEL",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "The results are plotted in Fig. 11 (bottom) in relation to the yield (top) and delay diagram (center)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Yield and Speed Optimization of a Latch-Type Voltage Sense Amplifier",
+        "technology": "CMOS, 130-nm process",
+        "application_domain": "automotive, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "normalized delay",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 7,
+      "caption": "Fig. 12. Influence of temperature and turn on transistor (M9) sizing. (a) Delay ) and (b) yield versus W=L of M9. = 0:6 V",
+      "caption_bbox": [
+        301.1,
+        364.1,
+        552.2,
+        381.3
+      ],
+      "section_title": "VIII. COMPARISON TO CONVENTIONAL LATCH",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TRANSISTOR SIZING AND TEMPERATURE",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "But, unlike for the voltage sense amplifier of Fig. 1(a), the n-channel switch transistor M9 of the WICHT et al.: YIELD AND SPEED OPTIMIZATION OF A LATCH-TYPE VOLTAGE SENSE AMPLIFIER latch does not turn out to be critical due to the different principle of operation.1 Fig. 12 shows that a sizing of m nm gives good results regarding yield and speed."
+        },
+        {
+          "section_title": "TRANSISTOR SIZING AND TEMPERATURE",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "Fig. 12(a) also includes the behavior at different temperatures . with the highest speed at low temperature Since the transistor matching improves with the size of the gate area [13] there is always a tradeoff with respect to the given area limitation."
+        },
+        {
+          "section_title": "TRANSISTOR SIZING AND TEMPERATURE",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "Fig. 12(b) shows for M9 that the impact can be neglected compared to the considerable yield improvement due to ."
+        },
+        {
+          "section_title": "TRANSISTOR SIZING AND TEMPERATURE",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "A consequence of Fig. 3 and Fig. 12 is that has a large influence on the yield while the delay remains almost constant within a certain range of ."
+        },
+        {
+          "section_title": "COMPARISON TO CONVENTIONAL LATCH",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "references": 2.0
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, 130-nm process",
+        "application_domain": "automotive, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "switch",
+          "latch",
+          "sense amplifier"
+        ],
+        "design_purpose": "",
+        "function_summary": "Influence of temperature and turn on transistor (M9) sizing. (a) Delay ) and (b) yield versus W=L of M9. = 0:6 V",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.12,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 7,
+      "caption": "Fig. 13. Yield versus V [Fig. 1(a)] at V and of the sense amplifier of Fig. 1(b) at = V is nearly equal. = 0:6 V",
+      "caption_bbox": [
+        301.1,
+        606.1,
+        552.2,
+        632.3
+      ],
+      "section_title": "VIII. COMPARISON TO CONVENTIONAL LATCH",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "COMPARISON TO CONVENTIONAL LATCH",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "This is confirmed by Fig. 13 where the yield is plotted ."
+        },
+        {
+          "section_title": "COMPARISON TO CONVENTIONAL LATCH",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "Moreover, due to the voltage drop across the passgates at the inputs of the conventional latch-type sense am- , e.g., between the plifier the real input voltage difference bitlines, has to be much larger than the values of Fig. 13. 1For the conventional latch it was found that the enable transistor [M5 in Fig. 1(a)] must not be too strong [18]."
+        },
+        {
+          "section_title": "COMPARISON TO CONVENTIONAL LATCH",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "The yield of the conventional latch circuit Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "type_match:amplifier": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, 130-nm process",
+        "application_domain": "automotive, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "latch",
+          "sense amplifier"
+        ],
+        "design_purpose": "",
+        "function_summary": "Yield versus V [Fig. 1(a)] at V and of the sense amplifier of Fig. 1(b) at = V is nearly equal. = 0:6 V",
+        "key_specs": [
+          "13 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.31,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 8,
+      "caption": "Fig. 14. . If the width of transistor M9 is increased to 3 m the same speed can be achieved for both sense amplifier types.",
+      "caption_bbox": [
+        39.6,
+        252.6,
+        290.7,
+        278.5
+      ],
+      "section_title": "VIII. COMPARISON TO CONVENTIONAL LATCH",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "COMPARISON TO CONVENTIONAL LATCH",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "Yield versus V [Fig. 1(a)] at V and of the sense amplifier of Fig. 1(b) at = V is nearly equal. = 0:6 V Fig. 14 compares the delay of both latch types with respect ."
+        },
+        {
+          "section_title": "COMPARISON TO CONVENTIONAL LATCH",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "The delay dependence on is defined by rent Simulated delay versus V Fig. 14. ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "type_match:amplifier": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, 130-nm process",
+        "application_domain": "automotive, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "latch",
+          "sense amplifier"
+        ],
+        "design_purpose": "",
+        "function_summary": "If the width of transistor M9 is increased to 3 m the same speed can be achieved for both sense amplifier types",
+        "key_specs": [
+          "6 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 8,
+      "caption": "Fig. 15. technology with a separate sense amplifier according to Fig. 1(b) (enlargement).",
+      "caption_bbox": [
+        39.6,
+        464.0,
+        290.7,
+        481.0
+      ],
+      "section_title": "IX. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "COMPARISON TO CONVENTIONAL LATCH",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "Microphotograph of the 4 K 32-bit SRAM in 130-nm CMOS Fig. 15. technology with a separate sense amplifier according to Fig. 1(b) (enlargement)."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "In order to measure speed and yield, a separate sense amplifier has been placed beside the memory on the same chip as shown in Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "type_match:amplifier": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, 130-nm process",
+        "application_domain": "automotive, if",
+        "sub_blocks": [
+          "sense amplifier"
+        ],
+        "design_purpose": "In order to measure speed and yield, a separate sense amplifier has been placed beside the memory on the same chip as shown in Fig. 15.",
+        "function_summary": "technology with a separate sense amplifier according to Fig. 1(b) (enlargement). In order to measure speed and yield, a separate sense amplifier has been placed beside the memory on the same chip as shown in Fig. 15.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 8,
+      "caption": "Fig. 16. Measured transient response.",
+      "caption_bbox": [
+        39.6,
+        673.4,
+        165.7,
+        681.4
+      ],
+      "section_title": "IX. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "COMPARISON TO CONVENTIONAL LATCH",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "Fig. 16."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "Fig. 16 shows a typical transient response."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Yield and Speed Optimization of a Latch-Type Voltage Sense Amplifier",
+        "technology": "CMOS, 130-nm process",
+        "application_domain": "automotive, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured transient response",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 8,
+      "caption": "Fig. 17. Measured sensing delay versus input dc voltage.",
+      "caption_bbox": [
+        302.6,
+        249.1,
+        490.0,
+        257.1
+      ],
+      "section_title": "VIII. COMPARISON TO CONVENTIONAL LATCH",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "COMPARISON TO CONVENTIONAL LATCH",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 7, JULY 2004 Fig. 17."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "The delay for different supply voltages and . input differences is plotted in Fig. 17 as a function of The same characteristic behavior as in Figs. 3 and 4 can be observed, even though the measured delay is larger due to a different load at the outputs."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "type_match:voltage": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Yield and Speed Optimization of a Latch-Type Voltage Sense Amplifier",
+        "technology": "CMOS, 130-nm process",
+        "application_domain": "automotive, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured sensing delay versus input dc voltage",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 8,
+      "caption": "Fig. 18. = 0:7V (top) and V (bottom).",
+      "caption_bbox": [
+        302.6,
+        467.6,
+        432.2,
+        484.5
+      ],
+      "section_title": "IX. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "COMPARISON TO CONVENTIONAL LATCH",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "Measured sensing delay versus input dc voltage. = V = 1:5 V Histogram of the input offset voltage for V Fig. 18. = 0:7V (top) and V (bottom)."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "Fig. 18 shows the histogram of the input offset voltage and Fig. 19 the corresponding yield obtained from 45 samples."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "In any case, the general behavior will be as shown in Figs. 18 and 19."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Yield and Speed Optimization of a Latch-Type Voltage Sense Amplifier",
+        "technology": "CMOS, 130-nm process",
+        "application_domain": "automotive, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "= 0:7V (top) and V (bottom)",
+        "key_specs": [
+          "5 V",
+          "7V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 9,
+      "caption": "Fig. 19. Measured yield versus input voltage difference.",
+      "caption_bbox": [
+        38.1,
+        228.0,
+        222.8,
+        235.9
+      ],
+      "section_title": "IX. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "Fig. 18 shows the histogram of the input offset voltage and Fig. 19 the corresponding yield obtained from 45 samples."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "WICHT et al.: YIELD AND SPEED OPTIMIZATION OF A LATCH-TYPE VOLTAGE SENSE AMPLIFIER Fig. 19."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "TABLE I INFLUENCE OF DESIGN PARAMETERS AND TEMPERATURE ON YIELD AND SENSING DELAY Fig. 19 indicates a better matching of the transistors and load capacitances than assumed in Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.8,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "type_match:voltage": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, 130-nm process",
+        "application_domain": "automotive, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "latch",
+          "sense amplifier"
+        ],
+        "design_purpose": "",
+        "function_summary": "Measured yield versus input voltage difference",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 8,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

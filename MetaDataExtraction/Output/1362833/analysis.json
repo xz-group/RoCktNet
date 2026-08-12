@@ -1,0 +1,672 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1362833.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1362833",
+  "generated_at": "2026-07-29T22:02:09",
+  "paper_metadata": {
+    "title": "A Single-Chip CMOS Transceiver for 802.11a/b/g Wireless LANs",
+    "authors": [
+      "Rami Ahola",
+      "Adem Aktas",
+      "James Wilson",
+      "Kishore Rama Rao",
+      "Fredrik Jonsson",
+      "Isto Hyyryläinen",
+      "Anders Brolin",
+      "Timo Hakala",
+      "Aki Friman",
+      "Tuula Mäkiniemi",
+      "Jenny Hanze",
+      "Martin Sandén",
+      "Daniel Wallner",
+      "Yuxin Guo",
+      "Timo Lagerstam",
+      "Laurent Noguer",
+      "Timo Knuuttila",
+      "Peter Olofsson",
+      "Mohammed Ismail"
+    ],
+    "abstract": "A dual-band trimode radio fully compliant with the IEEE 802.11a, b, and g standards is implemented in a 0.18m rates, WLAN chips must be able to cover WLAN standards in CMOS process and packaged in a 48-pin QFN package. The both the ISM and UNII bands for smooth migration to higher transceiver achieves a receiver noise figure of 4.9/5.6 dB for the data rates and transition between different standards. In this 2.4-GHz/5-GHz bands, respectively, and a transmit error vector context, a single-chip dual-band radio transceiver capable of magnitude (EVM) of 2.5% for both bands. The transmit output supporting the three different WLAN standards (802.11a/b/g) power is digitally controlled, allowing per-packet power control as required by the forthcoming 802.11 h standard. A quadrature should achieve the best performance/price ratio and is therefore accuracy of 0.3 in phase and 0.05 dB in amplitude is achieved a very desirable solution for WLAN applications. through careful analysis and design of the I/Q generation parts of Single-chip CMOS radio transceivers for wireless LAN the local oscillator. The local oscillators achieve a total integrated applications targeting either the 5-GHz band (802.11a) or the phase noise of better than 34 dBc. Compatibility with multiple baseband chips is ensured by flexible interfaces toward the A/D 2.4-GHz band (802.11b) have recently been reported [2], [3]. and D/A converters, as well as a calibration scheme not requiring Dual-band solutions have also been reported in SiGe techany baseband support. The chip passes 2 kV human body model nology [4] or in a two-chip CMOS solution [5]. This study ESD testing on all pins, including the RF pins. The total die area is describes a single-chip dual-band tri-mode 0.18m CMOS 12 mm2. The power consumption is 207 mW in the receive mode radio transceiver compliant with the IEEE 802.11a, b, and g and 247 mW in the transmit mode using a 1.8-V supply. standards.",
+    "keywords": [
+      "Dual conversion",
+      "IEEE 802"
+    ],
+    "doi": "10.1109/JSSC.2004.836334",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2004
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Single-Chip CMOS Transceiver",
+    "technology": "CMOS, SIGE",
+    "application_domain": "rf, wireless, wlan, baseband, if",
+    "sub_blocks": [
+      "varactor",
+      "inductor",
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "LC tank / resonator",
+      "output buffer",
+      "mixer",
+      "bias circuit",
+      "switch",
+      "differential pair",
+      "op-amp"
+    ],
+    "design_purpose": "",
+    "function_summary": "Single-Chip CMOS Transceiver: A dual-band trimode radio fully compliant with the IEEE 802.11a, b, and g standards is implemented in a 0.18m rates, WLAN chips must be able to cover WLAN standards in CMOS process and packaged in a 48-pin QFN package.",
+    "key_specs": [
+      "5.6 dB",
+      "2.5%",
+      "0.05 dB",
+      "34 dBc",
+      "2 kV",
+      "207 mW",
+      "247 mW",
+      "2004.836334 W",
+      "5 GHz",
+      "2.4 GHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "L OCAL-AREA networks (LANs) are being deployed extensively worldwide using a well-established copper cable infrastructure. Wireless LANs (WLANs), on the other hand, have become available in the 2.4-GHz Instrumentation, Scientiﬁc and Medical (ISM) band [1] and are currently witnessing signiﬁcant growth. A 2.4-GHz higher data rate (54 Mb/s) WLAN standard (802.11g) based on orthogonal frequency-divis ..."
+    },
+    {
+      "number": "II",
+      "title": "ARCHITECTURE",
+      "kind": "proposed",
+      "page": 1,
+      "text_preview": "The transceiver architecture (Fig. 1) is based on a wideband IF receiver and a two-step upconversion transmitter. The RF band, 5 GHz or 2.4 GHz, is ﬁrst downconverted to a common IF frequency using a ﬁxed ﬁrst local oscillator (LO1). The LO1 frequency is chosen to be approximately halfway between the two RF bands. The IF signal (1300–1500 MHz) is then down converted to baseband using a complex I/Q ..."
+    },
+    {
+      "number": "III",
+      "title": "CIRCUIT DESIGN",
+      "kind": "design",
+      "page": 1,
+      "text_preview": "A. Receiver The receiver has two differential cascode LNAs, one for each band, providing the necessary front-end gain and low noise. The unused LNA is always switched off to minimize the overall current consumption. The LNA inputs are internally matched using a detailed package model and an on-chip LC network. The input impedance as seen from outside the package is 100differential. After the LNAs, ..."
+    },
+    {
+      "number": "IV",
+      "title": "HIGH-ACCURACY QUADRATURE GENERATION",
+      "kind": "other",
+      "page": 4,
+      "text_preview": "In complex modulation schemes, such as 64-QAM, the quadrature accuracy (both phase and amplitude) is extremely important. Typically, a phase accuracy better than 1 and an amplitude accuracy better than 1% are required to guarantee that the quadrature inaccuracy is not limiting the overall performance. In previously published work [9], [10], the required accuracy is only achievable with the help of ..."
+    },
+    {
+      "number": "V",
+      "title": "CHIP IMPLEMENTATION AND PERFORMANCE SUMMARY",
+      "kind": "design",
+      "page": 5,
+      "text_preview": "The transceiver has been implemented in a 0.18m single-poly six-metal CMOS process and occupies a total . It is packaged in a 48-pin QFN package die area of 12 mm with an exposed ground paddle. A die microphotograph is shown in Fig. 11. To provide better isolation between different blocks, the chip is divided into ﬁve supply domains. The grounds for these domains are all downbonded to the ground T ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 6,
+      "text_preview": "This paper presented a dual-band tri-mode WLAN CMOS radio transceiver solution having the smallest die size and lowest IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 12, DECEMBER 2004 power consumption reported to date. The wideband IF architecture used provides implicit image rejection and maximum hardware share between the two bands. The chip is designed to work with a multitude of different ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Block diagram of the transceiver.",
+      "caption_bbox": [
+        38.1,
+        230.4,
+        173.6,
+        238.4
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Section III covers the circuit design of the receiver, transmitter, and AHOLA et al.: A SINGLE-CHIP CMOS TRANSCEIVER FOR 802.11a/b/g WIRELESS LANs Fig. 1."
+        },
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The transceiver architecture (Fig. 1) is based on a wideband IF receiver and a two-step upconversion transmitter."
+        },
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "In addition to the blocks shown in Fig. 1, the chip also integrates a crystal oscillator generating the 20-MHz reference for the phase-locked loops (PLLs), a bandgap bias generation block, a received signal strength indicator (RSSI), and a four-wire serial digital interface for programming various radio parameters."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "transceiver",
+        "technology": "CMOS, SIGE",
+        "application_domain": "rf, wireless, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the transceiver",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Frequency plan of the transceiver.",
+      "caption_bbox": [
+        301.1,
+        224.2,
+        438.7,
+        232.2
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 2 shows the frequency plan adopted in this design."
+        },
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "More importantly, I/Q modulation and Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transceiver",
+        "technology": "CMOS, SIGE",
+        "application_domain": "rf, wireless, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Frequency plan of the transceiver",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Simpliﬁed schematic of the dual-input RF-to-IF receiver mixer.",
+      "caption_bbox": [
+        39.6,
+        297.6,
+        270.4,
+        305.6
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 3."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "However, to save area, the two mixers are merged into a single dual-input mixer, as shown in Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS, SIGE",
+        "application_domain": "rf, wireless, wlan, baseband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simpliﬁed schematic of the dual-input RF-to-IF receiver mixer",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.8,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Measured gain and NF of the 2.4-GHz receiver as a function of channel number.",
+      "caption_bbox": [
+        302.6,
+        211.5,
+        553.7,
+        228.4
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "In this design, the receiver baseband ﬁlter has two highpass poles, one in front of the variable-gain ampliﬁer to handle offsets from the preceding stages, and a IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 12, DECEMBER 2004 Fig. 4."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 4 shows the measured gain and noise ﬁgure (referred to the differential input of the chip) of the 2.4-GHz receiver as a function of the channel number, and Fig. 5 shows the same measurement for the 5-GHz receiver."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS, SIGE",
+        "application_domain": "rf, wireless, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured gain and NF of the 2.4-GHz receiver as a function of channel number",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Measured gain and NF of the 5-GHz receiver as a function of channel number.",
+      "caption_bbox": [
+        38.1,
+        212.9,
+        289.1,
+        229.8
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 4 shows the measured gain and noise ﬁgure (referred to the differential input of the chip) of the 2.4-GHz receiver as a function of the channel number, and Fig. 5 shows the same measurement for the 5-GHz receiver."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "A statistical measurement of a hundred samples on a middle channel gives an average gain of 85 dB/83 dB with a standard deviation of 0.5 dB/0.6 dB for AHOLA et al.: A SINGLE-CHIP CMOS TRANSCEIVER FOR 802.11a/b/g WIRELESS LANs Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS, SIGE",
+        "application_domain": "rf, wireless, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured gain and NF of the 5-GHz receiver as a function of channel number",
+        "key_specs": [
+          "85 dB",
+          "83 dB",
+          "0.5 dB",
+          "0.6 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "Fig. 6. Measured spectrum mask and signal constellation diagram of the 2.4-GHz transmitter.",
+      "caption_bbox": [
+        39.6,
+        274.7,
+        345.3,
+        282.6
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 6 shows the measured spectrum mask and the signal constellation diagram of the 2.4-GHz transmitter, measured at the highest data rate supported by the 802.11g standard, 54-Mb/s."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The phase noise proﬁle is somewhat different from traditional PLL designs, because the loop parameters were optimized with two conﬂicting goals: low phase noise and good stability during Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-spectrum": -2.5,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "transmitter",
+        "technology": "CMOS, SIGE",
+        "application_domain": "rf, wireless, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured spectrum mask and signal constellation diagram of the 2.4-GHz transmitter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. Measured spectrum mask and signal constellation diagram of the 5-GHz transmitter.",
+      "caption_bbox": [
+        39.6,
+        502.4,
+        339.4,
+        510.4
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 7 shows the same measurement for the 5-GHz transmitter."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-spectrum": -2.5,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "transmitter",
+        "technology": "CMOS, SIGE",
+        "application_domain": "rf, wireless, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured spectrum mask and signal constellation diagram of the 5-GHz transmitter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Composite phase noise of the two PLLs, measured at the output of the preampliﬁer.",
+      "caption_bbox": [
+        302.6,
+        648.8,
+        553.7,
+        665.7
+      ],
+      "section_title": "IV. HIGH-ACCURACY QUADRATURE GENERATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 8 shows the composite phase noise of the two synthesizers, measured at the output of the preampliﬁer."
+        },
+        {
+          "section_title": "HIGH-ACCURACY QUADRATURE GENERATION",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "The transfer function of the polyphase ﬁlter from the LO input to the IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 12, DECEMBER 2004 Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-phase noise": -2.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS, SIGE",
+        "application_domain": "rf, wireless, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Composite phase noise of the two PLLs, measured at the output of the preampliﬁer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 5,
+      "caption": "Fig. 9. Switchable resistive ladder implementing the amplitude tuning.",
+      "caption_bbox": [
+        38.1,
+        218.4,
+        268.8,
+        226.3
+      ],
+      "section_title": "IV. HIGH-ACCURACY QUADRATURE GENERATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "HIGH-ACCURACY QUADRATURE GENERATION",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "AHOLA et al.: A SINGLE-CHIP CMOS TRANSCEIVER FOR 802.11a/b/g WIRELESS LANs Fig. 9."
+        },
+        {
+          "section_title": "HIGH-ACCURACY QUADRATURE GENERATION",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "The quadrature amplitude tuning circuit, shown in Fig. 9, is a simple switchable resistive ladder, placed between the baseband ﬁlter and the output driver in the receive path and between the baseband ﬁlter and the IF mixer in the transmit path."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS, SIGE",
+        "application_domain": "rf, wireless, wlan, baseband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Switchable resistive ladder implementing the amplitude tuning",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. Quadrature phase-tuning implementation in the limiting buffer.",
+      "caption_bbox": [
+        301.1,
+        269.5,
+        534.8,
+        277.5
+      ],
+      "section_title": "IV. HIGH-ACCURACY QUADRATURE GENERATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "HIGH-ACCURACY QUADRATURE GENERATION",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "The last stage of the limiting buffer, shown in Fig. 10, is a pair of source followers that drive the mixer LO ports."
+        },
+        {
+          "section_title": "HIGH-ACCURACY QUADRATURE GENERATION",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "The current in the limiters in both channels Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "buffer",
+        "technology": "CMOS, SIGE",
+        "application_domain": "rf, wireless, wlan, baseband, if",
+        "sub_blocks": [
+          "output buffer",
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Quadrature phase-tuning implementation in the limiting buffer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 5,
+      "caption": "Fig. 11. Chip microphotograph.",
+      "caption_bbox": [
+        301.1,
+        505.5,
+        408.6,
+        513.5
+      ],
+      "section_title": "IV. HIGH-ACCURACY QUADRATURE GENERATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "HIGH-ACCURACY QUADRATURE GENERATION",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 11."
+        },
+        {
+          "section_title": "CHIP IMPLEMENTATION AND PERFORMANCE SUMMARY",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "A die microphotograph is shown in Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -5.7,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "Single-Chip CMOS Transceiver",
+        "technology": "CMOS, SIGE",
+        "application_domain": "rf, wireless, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chip microphotograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 3,
+  "warnings": []
+}

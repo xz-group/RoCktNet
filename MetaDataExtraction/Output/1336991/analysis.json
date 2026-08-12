@@ -1,0 +1,571 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1336991.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1336991",
+  "generated_at": "2026-07-29T22:01:52",
+  "paper_metadata": {
+    "title": "IF-Sampling Fourth-Order Bandpass Modulator for Digital Receiver Applications",
+    "authors": [
+      "Albert E. Cosand",
+      "Joseph F. Jensen",
+      "H. Chris Choe",
+      "Charles H. Fields"
+    ],
+    "abstract": "Bandpass modulators sampling at high IFs 200 MHz) allow direct sampling of an IF signal, reducing ( olution has led to the development of the continuous-time, analog hardware, and make it easier to realize completely high-sample-rate bandpass modulator described in software-programmable receivers. This paper presents the cirthis study. The first generation design of the IF-sampling cuit design of and test results from a continuous-time tunable fourth-order bandpass modulator was described in [1] and IF-sampling fourth-order bandpass modulator implemented was developed for a multimode digital receiver application in InP HBT IC technology for use in a multimode digital receiver application. The bandpass modulator is fabricated that requires both wide-band and narrow-band modes. The in AlInAs–GaInAs heterojunction bipolar technology with a equivalent receiver using conventional technology uses triple peak unity current gain cutoff frequency ( ) of 130 GHz and downconversion into four baseband analog-to-digital converters a maximum frequency of oscillation ( MAX) of 130 GHz. The (ADCs) (an I and Q ADC pair for each mode). This bandpass fourth-order bandpass modulator consists of two bandpass modulator was used to move the ADC to the second IF of resonators that can be tuned to optimize both wide-band and narrow-band operation. The IF is tunable from 140 to 210 MHz in this digital receiver and replace five mixers and four ADCs with this modulator for use in multiple platform applications. Optwo mixers and one ADC. Fig. 1 compares the conventional erating from V power supplies, the fabricated fourth-order 5 analog multimode receiver approach to the IF receiver with the modulator sampling at 4 GSPS demonstrates stable behavior bandpass modulator. and achieves a signal-to-(noise + distortion) ratio (SNDR) of This paper describes the design improvements to a second78 dB at 1 MHz BW and 50 dB at 60 MHz BW. The average SNDR performance measured on over 250 parts is 72.5 dB at 1 MHz BW generation design of the fourth-order bandpass modulator and 47.7 dB at 60 MHz BW. for similar applications. This modulator has a tunable IF from",
+    "keywords": [
+      "Analog–digital conversion",
+      "bandpass delta-sigma"
+    ],
+    "doi": "10.1109/JSSC.2004.833544",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2004
+  },
+  "paper_circuit_context": {
+    "circuit_type": "IF-Sampling Fourth-Order Bandpass Modulator",
+    "technology": "HBT",
+    "application_domain": "baseband, if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "current source",
+      "LC tank / resonator",
+      "output buffer",
+      "mixer",
+      "switch",
+      "differential pair",
+      "op-amp",
+      "latch",
+      "clock / timing"
+    ],
+    "design_purpose": "",
+    "function_summary": "IF-Sampling Fourth-Order Bandpass Modulator: Bandpass modulators sampling at high IFs 200 MHz) allow direct sampling of an IF signal, reducing ( olution has led to the development of the continuous-time, analog hardware, and make it easier to realize completely high-sample-rate bandpass modulator described in software-programmable receivers.",
+    "key_specs": [
+      "200 MHz",
+      "130 GHz",
+      "210 MHz",
+      "78 dB",
+      "1 MHz",
+      "50 dB",
+      "60 MHz",
+      "72.5 dB",
+      "47.7 dB",
+      "4 GHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HEtrendinmodernreceiverdesignistomovetheanalog-todigital interface as far forward in the signal path as possible modutoward the antenna or sensor. Use of a bandpass (BP) latorpermitsdirectconversionofananalogsignaltodigitalformat IFfrequencies.SamplingatthesecondIFortheﬁrstIFofareceiver eliminates stages of downconversion including I/Q mixing. Additionally, performing the inphase-quadrature(I/Q) ..."
+    },
+    {
+      "number": "II",
+      "title": "FABRICATION TECHNOLOGY",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "Higher sampling rates require faster devices (higher ) in order to reduce comparator metastability rates. The modulators reported in this study are clocked at 4 GHz and fabricated in an improved version of the HRL Laboratories ﬁrst-generation (G1) AlInAs–GaInAs heterojunction bipolar transistor (HBT) IC process [2]. This process utilizes NPN HBTs with an AlInAs emitter and a GaInAs collector and b ..."
+    },
+    {
+      "number": "III",
+      "title": "ARCHITECTURE",
+      "kind": "proposed",
+      "page": 1,
+      "text_preview": "The fourth-order bandpass modulator contains two tunable active resonators and uses single-bit feedback. Two variations of the architecture have been considered; one is a feedback conﬁguration and the other a feedforward conﬁguration. Simpliﬁed block diagrams of the two conﬁgurations are shown in Fig. 2. They both use nominally the same resonator and quantizer structure, shown inside the dashed li ..."
+    },
+    {
+      "number": "IV",
+      "title": "CIRCUIT DESIGN",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "The basic building blocks of the modulator are ﬁxed value gm-cells, variable value gm-cells, ampliﬁers, current-switched DACs, and comparators. All of the circuitry in the signal path, as well as the latches and digital output is fully differential to minimize noise coupling and to avoid signal-related currents in modulator design used the power supplies. Our previous feedforward correction in the ..."
+    },
+    {
+      "number": "V",
+      "title": "CIRCUIT SIMULATIONS",
+      "kind": "design",
+      "page": 3,
+      "text_preview": "Feedback coefﬁcients were determined by matching the continuous time impulse response of a Matlab behavioral model to an equivalent ideal discrete time modulator. Both behavioral and transistor level simulations done with Spectre were used in the course of the circuit design. One of the signiﬁcant results of the behavioral simulations was to show that high order intermodulation terms can be genera ..."
+    },
+    {
+      "number": "VI",
+      "title": "MEASURED RESULTS",
+      "kind": "results",
+      "page": 4,
+      "text_preview": "modFig. 7 shows the die photograph of the fourth-order 2.6 mm. The chip operulator which has a die size of 3.3 mm volt supply and dissipates 3.5 W. The modates off of a ulator was tested by using low-phase-noise sources for both the clock and input signal (HP 8665B). The input clock was set to 4 GSPS and the IF was tuned from 140 to 210 MHz. The 4-GSPS data output was captured using a 1-to-16 DEMU ..."
+    },
+    {
+      "number": "VII",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 5,
+      "text_preview": "We have demonstrated two versions of fourth-order bandmodulator fabricated in a 130-GHz , 130-GHz pass AlInAs–GaInAs SHBT process on InP substrates. A feedback and a feedfoward version of the fourth-order bandpass modulator were demonstrated. We used a continuous-time, fully differential circuit approach to realize the modulator. The 5-V power supplies and consumes modulator operates from 3.2 W. T ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1.",
+      "caption_bbox": [
+        39.6,
+        262.1,
+        60.2,
+        270.1
+      ],
+      "section_title": "II. FABRICATION TECHNOLOGY",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1 compares the conventional analog multimode receiver approach to the IF receiver with the modulator. bandpass This paper describes the design improvements to a secondmodulator generation design of the fourth-order bandpass for similar applications."
+        },
+        {
+          "section_title": "FABRICATION TECHNOLOGY",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 1. of 130 GHz, and a maximum frequency of oscillation of about 130 GHz."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "HBT",
+        "application_domain": "baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "delta-sigma modulator",
+        "key_specs": [
+          "130 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 2,
+      "caption": "Fig. 2.",
+      "caption_bbox": [
+        38.1,
+        461.0,
+        58.8,
+        468.9
+      ],
+      "section_title": "III. ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Simpliﬁed block diagrams of the two conﬁgurations are shown in Fig. 2."
+        },
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "IF-Sampling Fourth-Order Bandpass Modulator",
+        "technology": "HBT",
+        "application_domain": "baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.26,
+      "warnings": [
+        "Recommended figure caption does not explicitly mention a schematic/topology/circuit; please confirm manually.",
+        "Recommended figure was classified as 'other', not a schematic; manual confirmation strongly recommended."
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 3,
+      "caption": "Fig. 4. (a) Fixed gm-cell input stage showing negative feedback ampliﬁers around emitter resistance-degenerated transconductors. (b) Simulated third-order intermodulation intercept.",
+      "caption_bbox": [
+        39.6,
+        367.5,
+        290.7,
+        393.4
+      ],
+      "section_title": "V. CIRCUIT SIMULATIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 4(a) shows the design approach of the ﬁxed gm-cell."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "This approach, given the gain–bandwidth achievable with the InP process, provides quite low distortion, as shown in the simulated results in Fig. 4(b) for the input gm-cell."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 4."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The achieved about predicted IM3 level from the simulation data shown in Fig. 4 94 dB FS at 170 MHz, which suggests that should be about there is still some distortion from sources other than the input gm in the feedforward modulator."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.1,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "HBT",
+        "application_domain": "baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Fixed gm-cell input stage showing negative feedback ampliﬁers around emitter resistance-degenerated transconductors. (b) Simulated third-order intermodulation intercept",
+        "key_specs": [
+          "94 dB",
+          "170 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 4,
+      "caption": "Fig. 5. Transconductor with both continuously variable and switched tuning.",
+      "caption_bbox": [
+        38.1,
+        220.8,
+        289.6,
+        228.7
+      ],
+      "section_title": "V. CIRCUIT SIMULATIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "A simpliﬁed schematic of the tunable gm-cell is shown in Fig. 5."
+        },
+        {
+          "section_title": "CIRCUIT SIMULATIONS",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Another source of noise that is not readily quantiﬁed is timing jitter in the DAC, arising from jitter in the incoming COSAND et al.: IF-SAMPLING FOURTH-ORDER BANDPASS Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "HBT",
+        "application_domain": "baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Transconductor with both continuously variable and switched tuning",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "Fig. 6. SPICE-simulated SNR due to quantization noise overlaid with the thermal noise limit as a function of bandwidth for the fourth-order BP modulator.",
+      "caption_bbox": [
+        38.1,
+        455.4,
+        289.2,
+        481.3
+      ],
+      "section_title": "V. CIRCUIT SIMULATIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT SIMULATIONS",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 6."
+        },
+        {
+          "section_title": "CIRCUIT SIMULATIONS",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 6 shows the simuat about lated output SNDR due to quantization noise overlaid with the expected thermal noise limit as a function of bandwidth."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "HBT",
+        "application_domain": "baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "SPICE-simulated SNR due to quantization noise overlaid with the thermal noise limit as a function of bandwidth for the fourth-order BP modulator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. 2.6 mm.",
+      "caption_bbox": [
+        301.1,
+        440.6,
+        336.0,
+        457.5
+      ],
+      "section_title": "V. CIRCUIT SIMULATIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Die size is 3.3 mm Fig. 7. 2.6 mm."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.9,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "IF-Sampling Fourth-Order Bandpass Modulator",
+        "technology": "HBT",
+        "application_domain": "baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "2.6 mm",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.11,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Size = 1.92 kHz.",
+      "caption_bbox": [
+        301.1,
+        632.1,
+        357.9,
+        649.0
+      ],
+      "section_title": "VI. MEASURED RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Bin Fig. 8."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 8 shows the measured output spectrum of the modulator tuned to a 210-MHz IF with the input tone at 210 MHz and with the input power at the Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "HBT",
+        "application_domain": "baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Size = 1.92 kHz",
+        "key_specs": [
+          "210 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 5,
+      "caption": "Fig. 9. Measured SNR as the center frequency is tuned.",
+      "caption_bbox": [
+        39.6,
+        260.3,
+        222.7,
+        268.2
+      ],
+      "section_title": "VII. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 8 shows the measured output spectrum of the modulator tuned to a 210-MHz IF with the input tone at 210 MHz and with the input power at the Fig. 9."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The peak SNDR performance was achieved across the entire tuning range from 140 to 210 MHz for both narrow-band and wide-band modes and is independent of the IF, as shown in Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "HBT",
+        "application_domain": "baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured SNR as the center frequency is tuned",
+        "key_specs": [
+          "210 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. Measured IM3 versus the level of the two input tones.",
+      "caption_bbox": [
+        39.6,
+        399.6,
+        244.8,
+        407.6
+      ],
+      "section_title": "VII. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 10."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Measured third-order intermodulation distortion for the two versions is shown in Fig. 10."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The feedforward version does provide substantially improved suppression of third-order intermodulation distortion, resulting from a two-tone input, as shown in Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.8,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:conclusion": -1.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "IF-Sampling Fourth-Order Bandpass Modulator",
+        "technology": "HBT",
+        "application_domain": "baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured IM3 versus the level of the two input tones",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 2,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

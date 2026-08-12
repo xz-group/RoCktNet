@@ -1,0 +1,60 @@
+# A Micropower Battery Current Sensor with ±0.03% (3σ) Inaccuracy from -40 to +85°C Saleh Heidary Shalmany1, Dieter Draxelmayr2, Kofi A.A. Makinwa1
+
+VENUE
+"2013"
+
+DOI
+"10.1007/s10470-011-9784-5"
+
+FIGURE NUMBER
+"Figure 22.4.2 shows the 2nd-order feed-forward ΔΣ ADC used in the CSS. The 1st and 2nd integrators are based on folded-cascode OTAs, which draw 18μA and 1.6μA, respectively. The first integrator uses correlated double-sampling (CDS) to mitigate its offset and 1/f noise. Further suppression is achieved by systemlevel chopping, i.e. by averaging the results of two conversions, each with a different polarity of Vshunt and VRef. The capacitors CS2 (10pF) and CS3 (=CS2/8), which sample ΔVBE and VBE, respectively, accurately combine these voltages to generate a reverse-BGR voltage VRef = ΔVBE + VBE/α ~ 152mV, where α = CS2/CS3 = 8. As shown in Fig. 22.4.3, the simulated VRef suffers from process spread, mainly due to the spread of VBE. Without trimming, the resulting error may be as large as ±1%. Since the PNPs and the current sources are dynamically matched, the spread in ΔVBE is negligible, while the spread in the capacitance ratio α, although not mitigated by DEM, is below 0.1% in the 0.13μm process used. The spread in VBE (Fig. 22.4.3) can then be significantly reduced by a single PTAT trim at room temperature [4]. Both the PTAT trimming and curvature correction of VRef are implemented via the correction polynomial g(Tdie), whose coefficients are initially determined by a batch calibration. Each chip is then PTAT-trimmed by modifying these coefficients based on the results of a room-temperature voltage calibration, i.e. by digitizing Vext with respect to VRef. Simulations show that this approach works quite well: resulting in less than ±0.01% error over the industrial range (Fig. 22.4.3, right)."
+
+TYPE
+"Micropower Battery Current Sensor"
+
+TECHNOLOGY
+"CMOS, 13μm process"
+
+SUB-BLOCKS
+[
+  "capacitor",
+  "resistor",
+  "current source",
+  "bias circuit",
+  "op-amp"
+]
+
+FUNCTION SUMMARY
+"Micropower Battery Current Sensor"
+
+METRICS
+[
+  "Efficiency / ratio",
+  "Supply voltage",
+  "Capacitance",
+  "Supply / voltage"
+]
+
+NUMERICAL PERFORMANCE
+[
+  "0.03%",
+  "1.35V",
+  "10pF",
+  "152mV",
+  "1%",
+  "0.1%",
+  "0.13μm",
+  "0.01%",
+  "200μm",
+  "15%"
+]
+
+CONFIDENCE
+0.2
+
+WARNINGS
+[
+  "No figure scored positively as a proposed-circuit schematic; recommendation is low-confidence.",
+  "Recommended figure caption does not explicitly mention a schematic/topology/circuit; please confirm manually.",
+  "Recommended figure was classified as 'result_plot', not a schematic; manual confirmation strongly recommended."
+]

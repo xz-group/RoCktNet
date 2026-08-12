@@ -1,0 +1,1100 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1408098.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1408098",
+  "generated_at": "2026-07-29T21:32:31",
+  "paper_metadata": {
+    "title": "A Programmable Integrated Digital Controller for Switching Converters With Dual-Band Switching and Complex Pole-Zero Compensation",
+    "authors": [
+      "Martin Yeung-Kei Chui",
+      "Wing-Hung Ki",
+      "Chi-Ying Tsui"
+    ],
+    "abstract": "The design of a 0.6m CMOS programmable integrated digital PID controller for a buck converter is presented. a particular algorithm [7]. Moreover, digital controllers can be Several novel features are implemented. These include: 1) a seamlessly interfaced with digital system-on-chip (SOC) dedual-band switching scheme for sampling the output voltage for signs to provide variable supply voltages to implement dynamic better output resolution; 2) a dual-band switching PWM generator voltage scheduling (DVS) for energy reduction [8]–[10], and a with a modified tapped delay line for area efficiency; 3) a VCO multiphase voltage regulation module (VRM) for load current driving a counter to serve as an ADC; 4) a programmable PID compensator employing variable integration times for enhancing sharing can have precise control of the various phases using a accuracy and stability; and 5) complex pole-zero cancellation in digital controller [11]. One major restriction of digital control extending the bandwidth of the control loop. The converter is is the finite resolution limitation, which degrades the accuracy designed for variable output applications, and the fast digital loop of the output voltage and introduces limit cycle oscillation in achieves a tracking time of 50 for a 1-V step change of the the steady state [12]–[14]. A double pulsewidth modulation reference voltage. The converter switches at 1 MHz and attains a maximum efficiency of 90% when delivering a load of 125 mW. (PWM) scheme was proposed to improve the PWM resolution in [13], but it introduced additional ac ripple at the output of",
+    "keywords": [
+      "Digital control",
+      "digital PID controller",
+      "switching"
+    ],
+    "doi": "10.1109/JSSC.2005.843626",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2005
+  },
+  "paper_circuit_context": {
+    "circuit_type": "voltage-controlled oscillator (VCO)",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "inductor",
+      "capacitor",
+      "transistor/MOSFET",
+      "switch",
+      "clock / timing",
+      "current mirror"
+    ],
+    "design_purpose": "The design of a 0.6m CMOS programmable integrated digital PID controller for a buck converter is presented. a particular algorithm [7].",
+    "function_summary": "voltage-controlled oscillator (VCO): The design of a 0.6m CMOS programmable integrated digital PID controller for a buck converter is presented. a particular algorithm [7].",
+    "key_specs": [
+      "1 MHz",
+      "90%",
+      "125 mW",
+      "100 pF",
+      "0 V",
+      "80 MHz",
+      "2.2 w",
+      "92%",
+      "2 V",
+      "0.2 V"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T RADITIONAL controllers for switching converters were designed using analog circuits. Stability of the controller is governed by compensating the error ampliﬁer, which often requires a compensation network that is not cost effective to be fabricated on-chip. For example, the compensation capacitor may be in the order of 100 pF that already consume much of PiP capacitor area. For a complete integr ..."
+    },
+    {
+      "number": "II",
+      "title": "CONVERTER ARCHITECTURE",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "A. Principle of Operation Fig. 1 shows the overall architecture of our proposed digital is compared to the controller. The converter output voltage reference voltage to produce an error voltage at the output , which is equal to of the error ampliﬁer (1) where is the closed-loop gain of the error ampliﬁer, which is used is set equal to 1 in this design. The offset voltage to bias the analog error s ..."
+    },
+    {
+      "number": "III",
+      "title": "IMPLEMENTATION OF THE FUNCTIONAL BLOCKS",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "A. Voltage-Controlled Oscillator as ADC The digital controller handles only digital inputs and the analog output voltage of the buck converter has to be converted to its binary equivalence ﬁrst. A typical implementation would require an ADC. This design uses a VCO to drive a counter and serves as the A/D conversion. Fig. 3 shows the conversion scheme and the timing diagram of the control signals,  ..."
+    },
+    {
+      "number": "IV",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 4,
+      "text_preview": "To demonstrate the feasibility of the control scheme, a buck converter with the above digital controller was designed and fabm CMOS technology. Since the circuit is a ricated using a 0.6mixed-signal one, high-level modeling and simulation was employed to reduce the design cycle. System simulation on the digital controller and the buck converter was ﬁrst carried out using Mathlab Simulink [20] to v ..."
+    },
+    {
+      "number": "V",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 7,
+      "text_preview": "An integrated digital controller for dc–dc switching converters is presented. The dual-band switching scheme improves the effective resolution of the digital controller, and the variable integration time technique enhances the system stability without increasing the steady-state error. Experimental results show that the proposed converter has fast dynamic response, high conversion efﬁciency, and w ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Proposed buck converter with digital controller.",
+      "caption_bbox": [
+        38.1,
+        243.2,
+        220.4,
+        251.2
+      ],
+      "section_title": "II. CONVERTER ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "CONVERTER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Principle of Operation Fig. 1 shows the overall architecture of our proposed digital is compared to the controller."
+        },
+        {
+          "section_title": "CONVERTER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "A conventional implementation would digitize the error CHUI et al.: A PROGRAMMABLE INTEGRATED DIGITAL CONTROLLER FOR SWITCHING CONVERTERS Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.8,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Proposed buck converter with digital controller",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.86,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Dual-band switching scheme.",
+      "caption_bbox": [
+        301.1,
+        365.0,
+        425.0,
+        372.9
+      ],
+      "section_title": "II. CONVERTER ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "CONVERTER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Dual-Band Switching Regulation For a converter with a ﬁxed output , the output voltage of the error ampliﬁer (with unity gain in this design) only varies Fig. 2."
+        },
+        {
+          "section_title": "CONVERTER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 2 shows our the full input range of the source voltage proposed dual-band switching sampling scheme."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Dual-band switching scheme",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. The quantizer circuit and timing diagram.",
+      "caption_bbox": [
+        301.1,
+        555.3,
+        463.6,
+        563.2
+      ],
+      "section_title": "II. CONVERTER ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "CONVERTER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 3."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF THE FUNCTIONAL BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 3 shows the conversion scheme and the timing diagram of the control signals, which are derived from the signals of the PWM delay taps."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.8,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "The quantizer circuit and timing diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.45,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Voltage-controlled oscillator.",
+      "caption_bbox": [
+        39.6,
+        255.6,
+        161.3,
+        263.6
+      ],
+      "section_title": "III. IMPLEMENTATION OF THE FUNCTIONAL BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CONVERTER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 4."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF THE FUNCTIONAL BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 4 shows the circuit schematic of the proposed VCO."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "type_match:controlled": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Voltage-controlled oscillator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.57,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Simulation of the voltage-to-frequency conversion characteristics.",
+      "caption_bbox": [
+        302.6,
+        423.5,
+        541.3,
+        431.4
+      ],
+      "section_title": "III. IMPLEMENTATION OF THE FUNCTIONAL BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION OF THE FUNCTIONAL BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "An approximately linear – characteristic is thus achieved, where (3) Fig. 5 shows the – relationship of the VCO."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF THE FUNCTIONAL BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 3, MARCH 2005 Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "type_match:voltage": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulation of the voltage-to-frequency conversion characteristics",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.57,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. PID compensator.",
+      "caption_bbox": [
+        38.1,
+        180.8,
+        124.4,
+        188.7
+      ],
+      "section_title": "III. IMPLEMENTATION OF THE FUNCTIONAL BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION OF THE FUNCTIONAL BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Programmable PID Controller and Complex Pole-Zero Cancellation Fig. 6 shows the PID compensator with a 6-bit resolution. based on the digital error It produces the digital duty ratio ."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF THE FUNCTIONAL BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The frequency response of the power stage compensator CHUI et al.: A PROGRAMMABLE INTEGRATED DIGITAL CONTROLLER FOR SWITCHING CONVERTERS Fig. 6."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF THE FUNCTIONAL BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Delay line architecture. the sampling of in Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "PID compensator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Frequency response of the converter.",
+      "caption_bbox": [
+        301.1,
+        393.5,
+        447.8,
+        401.5
+      ],
+      "section_title": "III. IMPLEMENTATION OF THE FUNCTIONAL BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION OF THE FUNCTIONAL BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Hence, the loop gain of the converter is (11) The PID controller provides a pair of complex zeros, which could be designed to achieve pole-zero compensation for the phase drop due to the pair of poles of the power stage, as shown in Fig. 7."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF THE FUNCTIONAL BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "From (10), integral control would less Fig. 7."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "With which translates to a tracking speed of more than 330 complex pole-zero cancellation, the unity gain bandwidth increased to 20 kHz (simulation result shown in Fig. 7), and a s was achieved."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "Hence, the loop gain of the converter is (11) The PID controller provides a pair of complex zeros, which could be designed to achieve pole-zero compensation for the phase drop due to the pair of poles of the power stage, as shown in Fig. 7.",
+        "function_summary": "Frequency response of the converter. Hence, the loop gain of the converter is (11) The PID controller provides a pair of complex zeros, which could be designed to achieve pole-zero compensation for the phase drop due to the pair of poles of the power stage, as shown in Fig. 7.",
+        "key_specs": [
+          "20 kHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. Dual-band switching PWM generator.",
+      "caption_bbox": [
+        301.1,
+        567.2,
+        451.8,
+        575.2
+      ],
+      "section_title": "III. IMPLEMENTATION OF THE FUNCTIONAL BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION OF THE FUNCTIONAL BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 8."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF THE FUNCTIONAL BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 8 shows our proposed band-switching PWM generator, which corresponds to the dual-band switching technique described in Section II-B."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Dual-band switching PWM generator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. Delay line architecture.",
+      "caption_bbox": [
+        39.6,
+        238.8,
+        143.9,
+        246.8
+      ],
+      "section_title": "III. IMPLEMENTATION OF THE FUNCTIONAL BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION OF THE FUNCTIONAL BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The control of the integration time is changed through Fig. 9."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF THE FUNCTIONAL BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "To prevent the compensator from being saturated, the low band should be selected when the target voltage is IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 3, MARCH 2005 , and the high band should be selected when smaller than . the target voltage is larger than The delay element is implemented using two inverters, with the ﬁrst inverter controlling the charging and discharge rates is of the second inverter (Fig. 9)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Delay line architecture",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.65,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. Chip microphotograph.",
+      "caption_bbox": [
+        38.1,
+        226.0,
+        145.6,
+        234.0
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "CHUI et al.: A PROGRAMMABLE INTEGRATED DIGITAL CONTROLLER FOR SWITCHING CONVERTERS Fig. 10."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The chip microphotograph is shown in Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -7.7,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chip microphotograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 5,
+      "caption": "Fig. 11. Efﬁciency at various loads and output voltages.",
+      "caption_bbox": [
+        38.1,
+        448.8,
+        222.1,
+        456.8
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 11."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 11 summarizes the efﬁciency of the converter is 2.2 with different loading and output voltages."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Efﬁciency at various loads and output voltages",
+        "key_specs": [
+          "2.2 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 5,
+      "caption": "Fig. 12. V/div).",
+      "caption_bbox": [
+        301.1,
+        412.0,
+        326.2,
+        428.9
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Figs. 12–18 show the transient measurement of the work presented."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 12(a) and (b) shows the proper operation of the low band and high band, respectively."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "From (11), the location of the complex zeros can be Operation region: (a) low band and (b) high band (x: 5 ms/div, y: 1 Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "V/div)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 5,
+      "caption": "Fig. 13.",
+      "caption_bbox": [
+        301.1,
+        596.0,
+        325.7,
+        604.0
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The scheme, the resolution of 1 LSB is 34 mV ( experimental result showed that the output could track a change in the reference voltage of 40 mV (Fig. 13)."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 13. adjusted by choosing different coefﬁcients of the PID controller."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": [
+          "34 mV",
+          "40 mV"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 6,
+      "caption": "Fig. 14. y: 0.5 V/div).",
+      "caption_bbox": [
+        39.6,
+        237.3,
+        82.7,
+        254.2
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 14 shows the transient response with different values of the ."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 16 shows the transient response of the Transient response with different derivative gain (x: 50 \u0016s/div, Fig. 14. y: 0.5 V/div)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "y: 0.5 V/div)",
+        "key_specs": [
+          "0.5 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 6,
+      "caption": "Fig. 15. y: 0.5 V/div).",
+      "caption_bbox": [
+        39.6,
+        446.1,
+        82.7,
+        463.0
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The locations of the compensation zeros as shown in Fig. 15. can also be adjusted by the integral gain to ensure system stability."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Transient response with different integral gains (x: 50 \u0016s/div, Fig. 15. y: 0.5 V/div)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "y: 0.5 V/div)",
+        "key_specs": [
+          "0.5 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 6,
+      "caption": "Fig. 16. y: 0.5 V/div).",
+      "caption_bbox": [
+        39.6,
+        654.2,
+        82.7,
+        671.2
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 16 shows the transient response of the Transient response with different derivative gain (x: 50 \u0016s/div, Fig. 14. y: 0.5 V/div)."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Transient response with different integration times (x: 50 \u0016s/div, Fig. 16. y: 0.5 V/div). converter output by choosing different integration times."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "y: 0.5 V/div)",
+        "key_specs": [
+          "0.5 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 6,
+      "caption": "Fig. 17. steps down (x: 20 \u0016s/div, y: 0.5 V/div).",
+      "caption_bbox": [
+        302.6,
+        425.9,
+        553.7,
+        442.8
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Hence, the best transient can be achieved by properly IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 3, MARCH 2005 In-band transient response when (a) V steps up, and (b) V Fig. 17. steps down (x: 20 \u0016s/div, y: 0.5 V/div). choosing the correct control parameters to match with the power stage parameters."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 17(a) and (b) show the step-up and step-down transient response in the low band, where the buck converter is connected to ensure the converter is tested to a resistive load of 10 from under the desirable load region."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "steps down (x: 20 \u0016s/div, y: 0.5 V/div)",
+        "key_specs": [
+          "0.5 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 7,
+      "caption": "Fig. 18. steps down (x: 20 \u0016s/div, y: 1 V/div).",
+      "caption_bbox": [
+        38.1,
+        434.4,
+        158.6,
+        451.3
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "A tracking time of 70 s was measured for both cases, as shown in Fig. 18(a) and (b)."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The output from voltage was regulated at 1.5 V and the converter was subjected CHUI et al.: A PROGRAMMABLE INTEGRATED DIGITAL CONTROLLER FOR SWITCHING CONVERTERS Band-jump transient response when (a) V steps up; and (b) V Fig. 18. steps down (x: 20 \u0016s/div, y: 1 V/div)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "steps down (x: 20 \u0016s/div, y: 1 V/div)",
+        "key_specs": [
+          "1.5 V",
+          "1 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 7,
+      "caption": "Fig. 19. Load transient testing circuit.",
+      "caption_bbox": [
+        38.1,
+        615.0,
+        165.1,
+        623.0
+      ],
+      "section_title": "V. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Note that the ESR zero is tracking time of 50 m , and can safely be neglected. at 720 kHz with Fig. 19 shows the setup for measuring the load transient."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 19."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Load transient testing circuit",
+        "key_specs": [
+          "720 kHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 20,
+      "label": "Fig. 20",
+      "page": 7,
+      "caption": "Fig. 20. Load transient response.",
+      "caption_bbox": [
+        301.1,
+        279.9,
+        412.2,
+        287.9
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 20 shows the converter output and the 15 inductor current."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 20."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "inductor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Load transient response",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 9,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

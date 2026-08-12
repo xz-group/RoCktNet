@@ -1,0 +1,1046 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\913741.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\913741",
+  "generated_at": "2026-07-29T22:03:21",
+  "paper_metadata": {
+    "title": "A 3.3-V CMOS 10.7-MHz Sixth-Order Bandpass Modulator with 74-dB Dynamic Range",
+    "authors": [
+      "Paolo Cusinato",
+      "Davide Tonietto",
+      "Fabrizio Stefani",
+      "Andrea Baschirotto"
+    ],
+    "abstract": "A 3.3-V bandpass modulator for IF sampling at 10.7 MHz in digital radio applications has been developed. The fact in this case, demodulation becomes a trivial multiplimodulator presents a sixth-order single-loop architecture and feacation by 1, 0, 1, 0. Recent works [1]–[6] proved the feasibility tures a 74-dB dynamic range in a 200-kHz signal bandwidth (FM of these two approaches. signal), while for a 9-kHz signal bandwidth (AM signal) the dyIn this paper, a bandpass modulator for this kind of applinamic range is 88 dB. The modulator has been integrated in a stancation is presented. In a standard 0.35m 3.3-V CMOS techdard 0.35m CMOS technology using switched-capacitor technique and consumes 76 mW from a single 3.3-V supply. nology, a sixth-order bandpass modulator has been realized: it operates at 42.8 MHz, and features 74-dB DR in a 200-kHz",
+    "keywords": [
+      "Analog–digital conversion",
+      "IF systems",
+      "mixed"
+    ],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2001
+  },
+  "paper_circuit_context": {
+    "circuit_type": "3.3-V CMOS 10.7-MHz Sixth-Order Bandpass Modulator",
+    "technology": "CMOS",
+    "application_domain": "baseband, if",
+    "sub_blocks": [
+      "capacitor",
+      "transistor/MOSFET",
+      "LC tank / resonator",
+      "bias circuit",
+      "switch",
+      "op-amp",
+      "pre-amplifier",
+      "latch",
+      "clock / timing",
+      "output buffer"
+    ],
+    "design_purpose": "The modulator has been integrated in a stancation is presented.",
+    "function_summary": "3.3-V CMOS 10.7-MHz Sixth-Order Bandpass Modulator: The modulator has been integrated in a stancation is presented.",
+    "key_specs": [
+      "10.7 MHz",
+      "88 dB",
+      "76 mW",
+      "42.8 MHz",
+      "9 kHz",
+      "20 ps",
+      "9 ps",
+      "14.27 MHz",
+      "0.5%",
+      "50 dB"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "I N THE LAST years, the trend for digital radio receivers development has been toward the full integration of the channel in a single CMOS chip. This solution should allow to implement in a single device a complete mixed-signal (analog and digital) system. In this way, the baseband processing, up to now realized with analog techniques, can be implemented in a digital fashion. By moving the analog- ..."
+    },
+    {
+      "number": "II",
+      "title": "ARCHITECTURAL CONSIDERATIONS",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "In a radio receiver, the IF signal is centered at 10.7 MHz and presents a 200-kHz bandwidth for the FM signal (or 9 kHz for the AM signal). The baseband signal processing requires both phase and quadrature information, which must then be properly extracted. One of the challenges in integrating a digital channel receiver is to obtain high selectivity at IF with the minimum amount of external filter ..."
+    },
+    {
+      "number": "III",
+      "title": "CIRCUIT DESIGN",
+      "kind": "design",
+      "page": 3,
+      "text_preview": "In this application, some features of the blocks are very important and must be optimized. The use of a high sampling frequency forces to use large bandwidths in any block. Particular attention was devoted to the design of the operational amplifier, which is the most demanding cell of the architecture, and thus requires a settling since it has to settle in time less than 12 ns and a high dc gain i ..."
+    },
+    {
+      "number": "IV",
+      "title": "TIMING",
+      "kind": "other",
+      "page": 4,
+      "text_preview": "Fig. 11(a) shows the architecture of a generic resonator. During each clock phase, in any resonator, one integrator is in sampling mode while the second one is in integration mode. An adaptive biasing circuit biases the operational amplifiers with different currents depending on the operation phase, thus allowing a high power saving. The comparator has to perform both the sampling and the . compar ..."
+    },
+    {
+      "number": "V",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 6,
+      "text_preview": "The proposed bandpass modulator has been integrated in m CMOS 3.3-V technology with a standard double-poly 0.35five metal layers. The chip photograph is shown in Fig. 13. The . The complete active die area (excluding pads) is about 1 mm modulator consumes about 76 mW from a single 3.3-V power supply (126 mW when the adaptive biasing circuit is disabled). In the actual implementation, fully differe ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 8,
+      "text_preview": "An SC bandpass modulator, suitable to be used in digital radio applications for the conversion of the FM radio signal at IF (10.7 MHz), has been successfully developed in a standard m 3.3-V CMOS technology. Although a production ver0.35sion of the chip would need an improved operational amplifier (particularly to improve settling time and also to further reduce power consumption), the actual imple ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Block diagram of a FM digital channel.",
+      "caption_bbox": [
+        39.6,
+        178.4,
+        196.6,
+        189.0
+      ],
+      "section_title": "II. ARCHITECTURAL CONSIDERATIONS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ARCHITECTURAL CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 1 shows the block diagram of a typical FM digital channel; in this case, some external ceramic filters have been used to achieve the desired channel selectivity."
+        },
+        {
+          "section_title": "ARCHITECTURAL CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "Fig. 1 shows the block diagram of a typical FM digital channel; in this case, some external ceramic filters have been used to achieve the desired channel selectivity.",
+        "function_summary": "Block diagram of a FM digital channel. Fig. 1 shows the block diagram of a typical FM digital channel; in this case, some external ceramic filters have been used to achieve the desired channel selectivity.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Block diagram of the sixth-order bandpass modulator.",
+      "caption_bbox": [
+        39.6,
+        321.8,
+        257.8,
+        332.4
+      ],
+      "section_title": "II. ARCHITECTURAL CONSIDERATIONS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ARCHITECTURAL CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 2."
+        },
+        {
+          "section_title": "ARCHITECTURAL CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Bandpass modulator is shown in The block diagram of the bandpass Fig. 2."
+        },
+        {
+          "section_title": "ARCHITECTURAL CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 3 shows the ideal NTF and STF, while Fig. 4 reports modulator. the pole-zero locations of the bandpass The resonators embedded in the structure of Fig. 2 have been realized by means of a cascade of SC integrators with local feedbacks."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "In addition to the standard preamplification stage, an input preamplifier has been inserted between the last resonator and the comparator in order to avoid the kickback noise of the comparator to propagate ). back into the analog loop (as shown in Fig. 2, i.e., the block"
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.6,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "baseband, if",
+        "sub_blocks": [
+          "LC tank / resonator",
+          "pre-amplifier"
+        ],
+        "design_purpose": "In addition to the standard preamplification stage, an input preamplifier has been inserted between the last resonator and the comparator in order to avoid the kickback noise of the comparator to propagate ). back into the analog loop (as shown in Fig. 2, i.e., the block",
+        "function_summary": "Block diagram of the sixth-order bandpass modulator. In addition to the standard preamplification stage, an input preamplifier has been inserted between the last resonator and the comparator in order to avoid the kickback noise of the comparator to propagate ). back into the analog loop (as shown in Fig. 2, i.e., the ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.4,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. (a) NTF and (b) STF for the sixth-order modulator architecture.",
+      "caption_bbox": [
+        38.1,
+        421.9,
+        269.8,
+        432.5
+      ],
+      "section_title": "II. ARCHITECTURAL CONSIDERATIONS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ARCHITECTURAL CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "In order to implement this transfer function, the CUSINATO et al.: SIXTH-ORDER BANDPASS MODULATOR (a) (b) Fig. 3."
+        },
+        {
+          "section_title": "ARCHITECTURAL CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 3 shows the ideal NTF and STF, while Fig. 4 reports modulator. the pole-zero locations of the bandpass The resonators embedded in the structure of Fig. 2 have been realized by means of a cascade of SC integrators with local feedbacks."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "baseband, if",
+        "sub_blocks": [
+          "LC tank / resonator"
+        ],
+        "design_purpose": "In order to implement this transfer function, the CUSINATO et al.: SIXTH-ORDER BANDPASS MODULATOR (a) (b) Fig. 3.",
+        "function_summary": "(a) NTF and (b) STF for the sixth-order modulator architecture. In order to implement this transfer function, the CUSINATO et al.: SIXTH-ORDER BANDPASS MODULATOR (a) (b) Fig. 3.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Pole-zero diagrams of the sixth-order bandpass modulator.",
+      "caption_bbox": [
+        301.1,
+        265.7,
+        531.9,
+        276.4
+      ],
+      "section_title": "II. ARCHITECTURAL CONSIDERATIONS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ARCHITECTURAL CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 3 shows the ideal NTF and STF, while Fig. 4 reports modulator. the pole-zero locations of the bandpass The resonators embedded in the structure of Fig. 2 have been realized by means of a cascade of SC integrators with local feedbacks."
+        },
+        {
+          "section_title": "ARCHITECTURAL CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "A Monte Carlo analysis of the DR Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "baseband, if",
+        "sub_blocks": [
+          "LC tank / resonator"
+        ],
+        "design_purpose": "",
+        "function_summary": "Pole-zero diagrams of the sixth-order bandpass modulator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Distribution of the simulated SNR with 0.5% capacitor mismatch.",
+      "caption_bbox": [
+        301.1,
+        436.7,
+        548.6,
+        447.4
+      ],
+      "section_title": "II. ARCHITECTURAL CONSIDERATIONS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ARCHITECTURAL CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 5."
+        },
+        {
+          "section_title": "ARCHITECTURAL CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The is related to by standard deviation of a capacitor The results of a 3000-cycles simulation are shown in Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "3.3-V CMOS 10.7-MHz Sixth-Order Bandpass Modulator",
+        "technology": "CMOS",
+        "application_domain": "baseband, if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Distribution of the simulated SNR with 0.5% capacitor mismatch",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Operational amplifier schematic.",
+      "caption_bbox": [
+        39.6,
+        302.5,
+        173.8,
+        313.1
+      ],
+      "section_title": "II. ARCHITECTURAL CONSIDERATIONS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ARCHITECTURAL CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 6."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Operational Amplifier A single-stage class-AB operational amplifier [11] with regulated cascode output stage has been used (Fig. 6)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "baseband, if",
+        "sub_blocks": [
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Operational amplifier schematic",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.45,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. Bode diagram of the operational amplifier.",
+      "caption_bbox": [
+        38.1,
+        368.5,
+        203.5,
+        379.1
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The designed operational amplifier features over 90-dB dc 2 load (Fig. 7). gain and a bandwidth of 250 MHz with a 30 pF CUSINATO et al.: SIXTH-ORDER BANDPASS MODULATOR Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.9,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "baseband, if",
+        "sub_blocks": [
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Bode diagram of the operational amplifier",
+        "key_specs": [
+          "250 MHz",
+          "30 pF"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.11,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. SC integrator schematic.",
+      "caption_bbox": [
+        301.1,
+        173.8,
+        409.0,
+        184.5
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The operation of switches S2 and S4 in the integrator scheme of Fig. 8 (they are connected to analog ground, i.e., to 1.65 V) are optimized by using a single nMOS device (this also reduces the number of clock phases to be generated and distributed)."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "For instance, in this design a Fig. 8."
+        },
+        {
+          "section_title": "TIMING",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "This technique allows to achieve better stability conditions of the operational amplifiers during the sampling phase, which IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 4, APRIL 2001 (b) should be critical for two reasons: during this phase, the cell does not have the load of the following integration stage (Fig. 8), and it is operating with unitary feedback factor."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.7,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "baseband, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "switch",
+          "op-amp",
+          "clock / timing"
+        ],
+        "design_purpose": "This technique allows to achieve better stability conditions of the operational amplifiers during the sampling phase, which IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 4, APRIL 2001 (b) should be critical for two reasons: during this phase, the cell does not have the load of the following integration stage ...",
+        "function_summary": "SC integrator schematic. This technique allows to achieve better stability conditions of the operational amplifiers during the sampling phase, which IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 4, APRIL 2001 (b) should be critical for two reasons: during this phase, the cell does not have the load of the ...",
+        "key_specs": [
+          "1.65 V"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.82,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 5,
+      "caption": "Fig. 9. Schematic. (a) Low charge-injection switch. (b) Boosted switch.",
+      "caption_bbox": [
+        39.6,
+        253.9,
+        275.4,
+        264.6
+      ],
+      "section_title": "IV. TIMING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Switch S3 [Fig. 9(a)] is implemented with an nMOS device with a dummy nMOS switch (with source and drain shunted and half ratio) in series, controlled with the opposite phase, in order to reduce the charge-injection."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "For switch S1, which has to handle the entire signal swing, a clock boosted switch scheme [12] is used [Fig. 9(b)], in order to ensure linear behavior over the full swing."
+        },
+        {
+          "section_title": "TIMING",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "In the high-current state, the generic current generator mirrors device (or , for symmetry) (a) Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.2,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "references": 1.2
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "switch",
+        "technology": "CMOS",
+        "application_domain": "baseband, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "switch"
+        ],
+        "design_purpose": "Switch S3 [Fig. 9(a)] is implemented with an nMOS device with a dummy nMOS switch (with source and drain shunted and half ratio) in series, controlled with the opposite phase, in order to reduce the charge-injection.",
+        "function_summary": "Schematic. (a) Low charge-injection switch. (b) Boosted switch. Switch S3 [Fig. 9(a)] is implemented with an nMOS device with a dummy nMOS switch (with source and drain shunted and half ratio) in series, controlled with the opposite phase, in order to reduce the charge-injection.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.55,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. Latched-based comparator structure with input preamplifier.",
+      "caption_bbox": [
+        39.6,
+        540.4,
+        265.8,
+        551.0
+      ],
+      "section_title": "IV. TIMING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Therefore, a latch-based comparator structure followed by a clocked D-flip-flop has been chosen (Fig. 10)."
+        },
+        {
+          "section_title": "TIMING",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "comparator",
+        "technology": "CMOS",
+        "application_domain": "baseband, if",
+        "sub_blocks": [
+          "pre-amplifier",
+          "latch",
+          "clock / timing"
+        ],
+        "design_purpose": "",
+        "function_summary": "Latched-based comparator structure with input preamplifier",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 6,
+      "caption": "Fig. 11. (a) Resonator architecture. (b) Modulator timing diagram.",
+      "caption_bbox": [
+        38.1,
+        448.8,
+        255.7,
+        459.4
+      ],
+      "section_title": "IV. TIMING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TIMING",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 11(a) shows the architecture of a generic resonator."
+        },
+        {
+          "section_title": "TIMING",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "The comparator has to perform both the sampling and the . comparison phase in Fig. 11(b) reports the timing diagram of the whole modulator."
+        },
+        {
+          "section_title": "TIMING",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "In the implemodulator, during each clock phase, mented sixth-order three integrators are in the sampling mode while the other three are in the integration mode [Fig. 11(b)]; thus, during each phase, the power consumption required by the modulator is approximately constant."
+        },
+        {
+          "section_title": "TIMING",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "This does not cause detrimental effects for two reasons: during this phase the output signal is not read and so an eventual transient does not affect the modulator performance, and the information to be saved for the next time slot is stored as charge of CUSINATO et al.: SIXTH-ORDER BANDPASS MODULATOR TABLE I OPERATIONAL AMPLIFIER MEASURED PERFORMANCE Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.6,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "baseband, if",
+        "sub_blocks": [
+          "LC tank / resonator",
+          "op-amp",
+          "clock / timing"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) Resonator architecture. (b) Modulator timing diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.4,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 7,
+      "caption": "Fig. 12. Adaptive biasing scheme.",
+      "caption_bbox": [
+        39.6,
+        477.9,
+        155.1,
+        488.5
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "TIMING",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "However, since high performance of the amplifier is required only during the integration phase, a fast clocked reference generator, operating the integrators under different biasing conditions during the integration phase and the sampling phase, has been implemented (Fig. 12)."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "TABLE III SUMMARY OF EXPERIMENTAL RESULTS Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "baseband, if",
+        "sub_blocks": [
+          "bias circuit",
+          "clock / timing"
+        ],
+        "design_purpose": "",
+        "function_summary": "Adaptive biasing scheme",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 7,
+      "caption": "Fig. 13. Chip photograph.",
+      "caption_bbox": [
+        39.6,
+        707.5,
+        128.6,
+        718.2
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The chip photograph is shown in Fig. 13."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "( Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -7.2,
+      "relevance_breakdown": {
+        "-photograph": -3.0,
+        "-chip photo": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "3.3-V CMOS 10.7-MHz Sixth-Order Bandpass Modulator",
+        "technology": "CMOS",
+        "application_domain": "baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chip photograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 8,
+      "caption": "Fig. 14. spectrum.",
+      "caption_bbox": [
+        38.1,
+        431.2,
+        69.3,
+        450.8
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 14 shows the output spectrum of a 65 536 samples bit20-dB input signal amstream (using Blackman window) for a amplitude), plitude (0 dB corresponds to a differential 4.4 V using a 42.8-MHz sampling frequency."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "(b) Detail of the output (b) Fig. 14. spectrum."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "3.3-V CMOS 10.7-MHz Sixth-Order Bandpass Modulator",
+        "technology": "CMOS",
+        "application_domain": "baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "spectrum",
+        "key_specs": [
+          "0 dB",
+          "4.4 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 8,
+      "caption": "Fig. 15. SNR and SNDR versus input amplitude for 200-kHz (FM) and 9-kHz (AM) bandwidth.",
+      "caption_bbox": [
+        38.1,
+        696.5,
+        289.2,
+        716.1
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The achieved signal-to-noise ratio (SNR) and signal-to-noiseplus-distortion ratio (SNDR) versus input signal amplitude is modulator performs a 74-dB DR with shown in Fig. 15."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "SNR and SNDR versus input amplitude for 200-kHz (FM) and 9-kHz (AM) bandwidth",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 8,
+      "caption": "Fig. 16. SNR and SNDR versus input amplitude for F",
+      "caption_bbox": [
+        301.1,
+        268.3,
+        479.3,
+        278.9
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "In fact, reducing the sampling frequency to 21.4 MHz (1/2 of the nominal value) and maintaining the same OSR, the DR rises up to 82 dB and the SNDR peak up to 72 dB, as shown in Fig. 16."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "3.3-V CMOS 10.7-MHz Sixth-Order Bandpass Modulator",
+        "technology": "CMOS",
+        "application_domain": "baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "SNR and SNDR versus input amplitude for F",
+        "key_specs": [
+          "21.4 MHz",
+          "82 dB",
+          "72 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 8,
+      "caption": "Fig. 17. IMD versus input amplitude.",
+      "caption_bbox": [
+        301.1,
+        500.3,
+        426.6,
+        511.0
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 17 grades and products are suppressed by 61 dB at shows the behavior of IMD as a function of the amplitude of the input tones, while Fig. 18 shows the measured output spectrum 9-dB tones."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "SNR and SNDR versus input amplitude for F Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "3.3-V CMOS 10.7-MHz Sixth-Order Bandpass Modulator",
+        "technology": "CMOS",
+        "application_domain": "baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "IMD versus input amplitude",
+        "key_specs": [
+          "61 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 8,
+      "caption": "Fig. 18.",
+      "caption_bbox": [
+        301.1,
+        694.0,
+        325.8,
+        704.7
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 17 grades and products are suppressed by 61 dB at shows the behavior of IMD as a function of the amplitude of the input tones, while Fig. 18 shows the measured output spectrum 9-dB tones."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 18."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "3.3-V CMOS 10.7-MHz Sixth-Order Bandpass Modulator",
+        "technology": "CMOS",
+        "application_domain": "baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": [
+          "61 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 8,
+  "warnings": []
+}

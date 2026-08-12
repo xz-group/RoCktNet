@@ -1,0 +1,648 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1435603.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1435603",
+  "generated_at": "2026-07-29T22:02:45",
+  "paper_metadata": {
+    "title": "A Low-Voltage Folded-Switching Mixer in 0.18-m CMOS",
+    "authors": [
+      "Vojkan Vidojkovic",
+      "Johan van der Tang",
+      "Arjan Leeuwenburgh",
+      "Arthur H. M. van Roermund"
+    ],
+    "abstract": "Scaling of CMOS technologies has a great impact on analog design. The most severe consequence is the reduction of the sistors that comprise the transconductor ( and ). Also, voltage supply. In this paper, a low voltage, low power, ac-coupled the load resistor is placed on top of the switching stage. folded-switching mixer with current-reuse is presented. The main This way of connecting the transconductor, the switching stage, advantages of the introduced mixer topology are: high voltage gain, and the load resistors is conflicting with operation at low supply moderate noise figure, moderate linearity, and operation at low voltages. All dc tail current flows through the transconductor, supply voltages. Insight into the mixer operation is given by analyzing voltage gain, noise figure (NF), linearity (IIP3), and dc stathe switching stage and the load resistors. Therefore, at a low bility. The mixer is designed and implemented in 0.18m CMOS voltage supply (for example at V) the voltage drops, technology with metal–insulator–metal (MIM) capacitors as an opacross the load resistors, the switching transistors and the trantion. The active chip area is 160 m 200 m. At 2.4 GHz a single sistors in the transconductor become critical. In this particular side band (SSB) noise figure of 13.9 dB, a voltage gain of 11.9 dB case it is difficult to keep all the transistors to operate in their and an IIP3 of 3 dBm are measured at a supply voltage of 1 V and with a power consumption of only 3.2 mW. At a supply voltage saturation region and this causes a significant drop in perforof 1.8 V, an SSB noise figure of 12.9 dB, a voltage gain of 16 dB and mance. Hence, it is of interest to find new mixer topologies that an IIP3 of 1 dBm are measured at a power consumption of 8.1 mW. can handle successfully low supply voltages.",
+    "keywords": [
+      "CMOS mixers",
+      "switching mixers",
+      "folded mixers"
+    ],
+    "doi": "10.1109/JSSC.2005.848034",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2005
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Low-Voltage Folded-Switching Mixer in 0.18-m CMOS",
+    "technology": "CMOS",
+    "application_domain": "rf",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "current source",
+      "mixer",
+      "transformer",
+      "bias circuit"
+    ],
+    "design_purpose": "In this paper, a low voltage, low power, ac-coupled the load resistor is placed on top of the switching stage. folded-switching mixer with current-reuse is presented.",
+    "function_summary": "Low-Voltage Folded-Switching Mixer in 0.18-m CMOS: In this paper, a low voltage, low power, ac-coupled the load resistor is placed on top of the switching stage. folded-switching mixer with current-reuse is presented.",
+    "key_specs": [
+      "2.4 GHz",
+      "13.9 dB",
+      "11.9 dB",
+      "3 dBm",
+      "1 V",
+      "3.2 mW",
+      "1.8 V",
+      "12.9 dB",
+      "16 dB",
+      "1 dBm"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "F OR digital circuits, CMOS technology scaling yields an improvement in power consumption, operating speed, and number of transistors per unit area. While CMOS technology scaling is quite beneﬁcial for digital circuits, this is not the case for RF analog circuits. The most severe consequence of technology scaling that affects the RF analog design is a reduction of the voltage supply. Insufﬁcient v ..."
+    },
+    {
+      "number": "II",
+      "title": "TRANSCONDUCTORS FOR FOLDED-SWITCHING MIXERS",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "In the case of the double-balanced switching mixer (see Fig. 1), the single nMOS transistor is used as the transconductor. Fig. 2 shows three different transconductors suitable for application in the low-voltage folded-switching mixer. Actually, they represent improvement of the single nMOS transconductor with respect to operation at low supply voltages. Fig. 1. Double-balanced switching mixer. Th ..."
+    },
+    {
+      "number": "III",
+      "title": "AC-COUPLED FOLDED-SWITCHING MIXER WITH",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "CURRENT-REUSE A. Gain and Noise Figure Assuming that LO voltage is an ideal square wave, the voltage gain of the mixer in Fig. 3 can be approximated by (5) is the transconductance of and is the and and is the load resistor transconductance of VIDOJKOVIC et al.: A LOW-VOLTAGE FOLDED-SWITCHING MIXER IN 0.18 m CMOS Fig. 3. AC-coupled folded-switching mixer with current-reuse. (see Fig. 3). Since only ..."
+    },
+    {
+      "number": "IV",
+      "title": "SIMULATION AND EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 3,
+      "text_preview": "Fig. 5 shows the die photograph of the realized ac-coupled folded-switching mixer with current-reuse. The active chip area m m. Total dissipation of the IC is 8.1 mW at a is 160 supply voltage of 1.8 V and 3.2 mW at a supply voltage of 1 V. Fig. 6 shows the measured mixer voltage gain as a func- . In Fig. 6 the tion of the differential LO voltage swing numbers on the x axis denote the peak values  ..."
+    },
+    {
+      "number": "V",
+      "title": "MIXER BENCHMARKING",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "In order to evaluate the performance of the ac-coupled folded-switching mixer with current-reuse, the performance of relevant CMOS mixers are given in Table I. It is important to mention that mixer performance given in the ﬁfth row are extrapolated based on the measurement results presented in [7]. Whencomparingthemeasuredperformanceoftheac-coupled folded-switching mixer with current-reuse with th ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 4,
+      "text_preview": "A high-gain, low-voltage, low-power ac-coupled foldedswitching mixer with current-reuse is presented. This mixer m CMOS technology. is designed and implemented in 0.18The main advantages of the proposed new mixer topology are high voltage gain (15.7 dB), moderate noise ﬁgure (12.9 dB), dBm), operation at low supply moderate linearity ( voltages ( V), and simplicity since common-mode feedback is no ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Double-balanced switching mixer.",
+      "caption_bbox": [
+        39.6,
+        259.2,
+        178.3,
+        267.1
+      ],
+      "section_title": "II. TRANSCONDUCTORS FOR FOLDED-SWITCHING MIXERS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "In the double-balanced switching mixer (see Fig. 1) the transistors in the switching Manuscript received August 23, 2004; revised December 20, 2004."
+        },
+        {
+          "section_title": "TRANSCONDUCTORS FOR FOLDED-SWITCHING MIXERS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "In the case of the double-balanced switching mixer (see Fig. 1), the single nMOS transistor is used as the transconductor."
+        },
+        {
+          "section_title": "TRANSCONDUCTORS FOR FOLDED-SWITCHING MIXERS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "type_match:mixer": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Double-balanced switching mixer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.31,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Transconductors for folded-switching mixers.",
+      "caption_bbox": [
+        302.6,
+        301.6,
+        477.5,
+        309.6
+      ],
+      "section_title": "II. TRANSCONDUCTORS FOR FOLDED-SWITCHING MIXERS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TRANSCONDUCTORS FOR FOLDED-SWITCHING MIXERS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 2 shows three different transconductors suitable for application in the low-voltage folded-switching mixer."
+        },
+        {
+          "section_title": "TRANSCONDUCTORS FOR FOLDED-SWITCHING MIXERS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The transconductor with resistive load is the most simple modiﬁcation of the single nMOS transconductor [see Fig. 2(a)]. , which is generated in the nMOS transistor, The ac current splits to the currents ﬂowing through the switching stage and through the resistor ."
+        },
+        {
+          "section_title": "TRANSCONDUCTORS FOR FOLDED-SWITCHING MIXERS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The drawback of the transconductor with resistive load can be alleviated by using the transconductor with active load [see with the pMOS transistor Fig. 2(b)]."
+        },
+        {
+          "section_title": "TRANSCONDUCTORS FOR FOLDED-SWITCHING MIXERS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Hence, a CMOS inverter, which is used as the transconductor, is obtained [see Fig. 2(c)]."
+        },
+        {
+          "section_title": "TRANSCONDUCTORS FOR FOLDED-SWITCHING MIXERS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The overdrive voltages of and tors can be calculated using (1) (2) IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 6, JUNE 2005 Fig. 2."
+        },
+        {
+          "section_title": "TRANSCONDUCTORS FOR FOLDED-SWITCHING MIXERS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "In this way an ac-coupled complementary transconis the biasing of ductor is obtained [see Fig. 2(d)]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf",
+        "sub_blocks": [
+          "resistor",
+          "transistor/MOSFET",
+          "mixer",
+          "bias circuit"
+        ],
+        "design_purpose": "Fig. 2 shows three different transconductors suitable for application in the low-voltage folded-switching mixer.",
+        "function_summary": "Transconductors for folded-switching mixers. Fig. 2 shows three different transconductors suitable for application in the low-voltage folded-switching mixer.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.12,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. AC-coupled folded-switching mixer with current-reuse.",
+      "caption_bbox": [
+        38.1,
+        296.9,
+        244.4,
+        304.9
+      ],
+      "section_title": "III. AC-COUPLED FOLDED-SWITCHING MIXER WITH",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TRANSCONDUCTORS FOR FOLDED-SWITCHING MIXERS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "It is presented in Fig. 3."
+        },
+        {
+          "section_title": "AC-COUPLED FOLDED-SWITCHING MIXER WITH",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Gain and Noise Figure Assuming that LO voltage is an ideal square wave, the voltage gain of the mixer in Fig. 3 can be approximated by (5) is the transconductance of and is the and and is the load resistor transconductance of VIDOJKOVIC et al.: A LOW-VOLTAGE FOLDED-SWITCHING MIXER IN 0.18 m CMOS Fig. 3."
+        },
+        {
+          "section_title": "AC-COUPLED FOLDED-SWITCHING MIXER WITH",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "(see Fig. 3)."
+        },
+        {
+          "section_title": "AC-COUPLED FOLDED-SWITCHING MIXER WITH",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The switching transistors will be turned off by the high voltage swing at the nodes A and A’ (see Fig. 3)."
+        },
+        {
+          "section_title": "AC-COUPLED FOLDED-SWITCHING MIXER WITH",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Transfer function of the ac-coupled folded-switching mixer with current-reuse. voltage swing at the nodes A and A’ (see Fig. 3)."
+        },
+        {
+          "section_title": "AC-COUPLED FOLDED-SWITCHING MIXER WITH",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "This can be done by applying the large signal analysis and Kirchoff’s law on the node A (see Fig. 3): (7) is the current through the transistor through and through and ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.0,
+      "relevance_breakdown": {
+        "type_match:mixer": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf",
+        "sub_blocks": [
+          "resistor",
+          "transistor/MOSFET",
+          "mixer"
+        ],
+        "design_purpose": "It is presented in Fig. 3.",
+        "function_summary": "AC-coupled folded-switching mixer with current-reuse. It is presented in Fig. 3.",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.5,
+      "warnings": [
+        "Recommended figure caption does not explicitly mention a schematic/topology/circuit; please confirm manually.",
+        "Recommended figure was classified as 'other', not a schematic; manual confirmation strongly recommended."
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Transfer function of the ac-coupled folded-switching mixer with current-reuse.",
+      "caption_bbox": [
+        301.1,
+        190.2,
+        552.2,
+        207.1
+      ],
+      "section_title": "III. AC-COUPLED FOLDED-SWITCHING MIXER WITH",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "AC-COUPLED FOLDED-SWITCHING MIXER WITH",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Linearity is shown The transfer function of the mixer in Fig. 4."
+        },
+        {
+          "section_title": "AC-COUPLED FOLDED-SWITCHING MIXER WITH",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The input voltage range between the points A (see Fig. 4)."
+        },
+        {
+          "section_title": "AC-COUPLED FOLDED-SWITCHING MIXER WITH",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "In Fig. 4 ."
+        },
+        {
+          "section_title": "AC-COUPLED FOLDED-SWITCHING MIXER WITH",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "In the can be increased folded-switching mixer with current-reuse, by decreasing the voltages and , and by reducing the Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.6,
+      "relevance_breakdown": {
+        "type_match:mixer": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Transfer function of the ac-coupled folded-switching mixer with current-reuse",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.4,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Die microphotograph of the ac-coupled folded-switching mixer with current-reuse.",
+      "caption_bbox": [
+        39.6,
+        190.8,
+        290.6,
+        207.7
+      ],
+      "section_title": "III. AC-COUPLED FOLDED-SWITCHING MIXER WITH",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "AC-COUPLED FOLDED-SWITCHING MIXER WITH",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Under of 10% and temperature variations ( Fig. 5."
+        },
+        {
+          "section_title": "SIMULATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Fig. 5 shows the die photograph of the realized ac-coupled folded-switching mixer with current-reuse."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "type_match:mixer": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Die microphotograph of the ac-coupled folded-switching mixer with current-reuse",
+        "key_specs": [
+          "10%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Measured voltage gain versus LO voltage swing.",
+      "caption_bbox": [
+        39.6,
+        390.2,
+        224.7,
+        398.1
+      ],
+      "section_title": "III. AC-COUPLED FOLDED-SWITCHING MIXER WITH",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "AC-COUPLED FOLDED-SWITCHING MIXER WITH",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 6."
+        },
+        {
+          "section_title": "SIMULATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Fig. 6 shows the measured mixer voltage gain as a func- ."
+        },
+        {
+          "section_title": "SIMULATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "In Fig. 6 the tion of the differential LO voltage swing numbers on the x axis denote the peak values of the applied differential LO voltage swing."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "type_match:voltage": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Measured voltage gain versus LO voltage swing",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Measured and simulated voltage gain versus frequency.",
+      "caption_bbox": [
+        302.6,
+        233.6,
+        508.2,
+        241.5
+      ],
+      "section_title": "III. AC-COUPLED FOLDED-SWITCHING MIXER WITH",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SIMULATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Measured and simulated voltage gain at supply voltages of 1 V and 1.8 V versus frequency are shown in Fig. 7."
+        },
+        {
+          "section_title": "SIMULATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 6, JUNE 2005 Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "-measured": -3.0,
+        "type_match:voltage": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Low-Voltage Folded-Switching Mixer in 0.18-m CMOS",
+        "technology": "CMOS",
+        "application_domain": "rf",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured and simulated voltage gain versus frequency",
+        "key_specs": [
+          "1 V",
+          "1.8 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. Measured IIP3 at a supply voltage of 1 V.",
+      "caption_bbox": [
+        302.6,
+        482.3,
+        465.1,
+        490.3
+      ],
+      "section_title": "IV. SIMULATION AND EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "SIMULATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Fig. 8."
+        },
+        {
+          "section_title": "SIMULATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Fig. 8 shows a measured IIP3 at a supply voltage of 1 V."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "type_match:voltage": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Low-Voltage Folded-Switching Mixer in 0.18-m CMOS",
+        "technology": "CMOS",
+        "application_domain": "rf",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured IIP3 at a supply voltage of 1 V",
+        "key_specs": [
+          "1 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. Mixer benchmarking",
+      "caption_bbox": [
+        38.1,
+        369.1,
+        134.2,
+        377.1
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "MIXER BENCHMARKING",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Whencomparingthemeasuredperformanceoftheac-coupled folded-switching mixer with current-reuse with the performance VIDOJKOVIC et al.: A LOW-VOLTAGE FOLDED-SWITCHING MIXER IN 0.18 m CMOS TABLE I PERFORMANCE OF SOME CMOS MIXERS Fig. 9."
+        },
+        {
+          "section_title": "MIXER BENCHMARKING",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The calculated FOM for the ac-coupled folded-switching mixer with current-reuse and for CMOS mixers from Table I is presented in Fig. 9."
+        },
+        {
+          "section_title": "MIXER BENCHMARKING",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "As it is evident from Fig. 9, the ac-coupled folded-switching mixer with current-reuse shows very good FOM compared to the CMOS mixers presented in Table I."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.2,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "type_match:mixer": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "The calculated FOM for the ac-coupled folded-switching mixer with current-reuse and for CMOS mixers from Table I is presented in Fig. 9.",
+        "function_summary": "Mixer benchmarking. The calculated FOM for the ac-coupled folded-switching mixer with current-reuse and for CMOS mixers from Table I is presented in Fig. 9.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.14,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 3,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

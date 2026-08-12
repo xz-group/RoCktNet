@@ -1,0 +1,1044 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1208458.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1208458",
+  "generated_at": "2026-07-29T22:01:03",
+  "paper_metadata": {
+    "title": "A 85-dB Dynamic Range Multibit Delta–Sigma ADC for ADSL-CO Applications in 0.18-m CMOS",
+    "authors": [
+      "Richard Gaggl",
+      "Andreas Wiesbauer",
+      "Gerhard Fritz",
+      "Christian Schranz",
+      "Peter Pessl"
+    ],
+    "abstract": "A high-resolution multibit sigma–delta analog-todigital converter (ADC) implemented in a 0.18m CMOS technology is introduced. The circuit is targeted for an asymmetrical digital subscriber line (ADSL) central-office (CO) application [3]. An areaand power-efficient realization of a second-order single-loop 3-bit modulator with an oversampling ratio of 96 is presented. The modulator features an 85-dB dynamic range over a 300-kHz signal bandwidth. The measured power consumption of the ADC core is only 15 mW. An innovative biasing Fig. 1. ADSL band allocation (DUS, FDD). circuitry is introduced for the switched-capacitor integrators.",
+    "keywords": [
+      "Analog-to-digital converter (ADC)",
+      "asymmetrical"
+    ],
+    "doi": "10.1109/JSSC.2003.813216",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "85-dB Dynamic Range Multibit Delta–Sigma ADC",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "transistor/MOSFET",
+      "current source",
+      "output buffer",
+      "bias circuit",
+      "switch",
+      "differential pair",
+      "op-amp",
+      "latch",
+      "clock / timing"
+    ],
+    "design_purpose": "An areaand power-efficient realization of a second-order single-loop 3-bit modulator with an oversampling ratio of 96 is presented.",
+    "function_summary": "85-dB Dynamic Range Multibit Delta–Sigma ADC: An areaand power-efficient realization of a second-order single-loop 3-bit modulator with an oversampling ratio of 96 is presented.",
+    "key_specs": [
+      "15 mW",
+      "3.3 V",
+      "300 kHz",
+      "80 dBc",
+      "-9500 V",
+      "53 MHz",
+      "0 dB",
+      "1.8 V",
+      "30%",
+      "1 MHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE growing market for asymmetrical digital subscriber line (ADSL) applications is the driving force for increasing the integration level of such transceiver ASICs. Digital design demands deep-submicron technologies in order to reduce power consumption and to enlarge the integrated functionality. For analog modules, migration to supply voltages below 3.3 V is more critical. Multichip packaging is ..."
+    },
+    {
+      "number": "II",
+      "title": "ARCHITECTURE",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "In ADSL-CO applications, the power consumption is one of the most important criteria for the AFE. This has a strong impact Manuscript received November 25, 2002; revised February 20, 2003. The authors are with Infineon Technologies Austria, A-9500 Villach, Austria (e-mail: richard.gaggl@infineon.com). 1ITU G.dmt, G.lite, ANSI T1.413. Fig. 1. ADSL band allocation (DUS, FDD). on the architectural co ..."
+    },
+    {
+      "number": "III",
+      "title": "CIRCUIT DESIGN",
+      "kind": "design",
+      "page": 1,
+      "text_preview": "Mixed-signal design becomes quite challenging at low supply voltages. A major concern is the implementation of switches. Clock-boosting techniques are a possible solution [9] which were not used in this design. The provided technology makes it m regular devices and 0.45m dual-gatepossible to use 0.18oxide MOS devices running at 1.8 and 3.3 V, respectively. The target product demands a dual-gate-ox ..."
+    },
+    {
+      "number": "IV",
+      "title": "MEASUREMENT SETUP",
+      "kind": "results",
+      "page": 4,
+      "text_preview": "During evaluation of the prototype, we experienced several difficulties. Therefore, we will outline some solutions to practical constraints in measurement. Fig. 8. Bias current of second transistor-stage. Fig. 9. Settling of first integrator. A fully differential voltage generator is applied to an on-chip antialiasing filter (prefilter) which drives the sigma–delta ADC. The whole signal path is im ..."
+    },
+    {
+      "number": "V",
+      "title": "MEASUREMENT RESULTS",
+      "kind": "results",
+      "page": 6,
+      "text_preview": "The modulator was implemented in a 0.18m four-metal CMOS technology using a dual-gate-oxide process option for the switches. The linear capacitors were implemented as metal–insulator–metal (MIM) devices. An on-chip gain-programmable antialiasing filter drives the modulator. The second-order Butterworth filter has a 3-dB corner frequency Fig. 12. Analytical leakage compensation of fundamental. Fig. ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 8,
+      "text_preview": "A low-voltage SC modulator has been implemented in m technology. At 1.8-V supplies, Miller opamps are a 0.18more power efficient than single-stage opamps. An innovative dynamic biasing circuit is introduced for lowering the power consumption of the SC integrators. Fourteen-bit performance was achieved without DEM algorithms, due to the excellent capacitor matching of the deep-submicron process. As ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. ADSL band allocation (DUS, FDD).",
+      "caption_bbox": [
+        301.1,
+        250.0,
+        447.6,
+        260.6
+      ],
+      "section_title": "",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "As illustrated in Fig. 1, in an ADSL modem the downstream data (DS) are transferred at higher frequencies in a wider band as compared to the upstream data (US)."
+        },
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "85-dB Dynamic Range Multibit Delta–Sigma ADC",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "ADSL band allocation (DUS, FDD)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Second-order noise shaping loop.",
+      "caption_bbox": [
+        39.6,
+        173.4,
+        175.8,
+        184.0
+      ],
+      "section_title": "II. ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Thus, careful design and layout can fulfill the linearity Fig. 2."
+        },
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 2 depicts a standard second-order sigma–delta ADC."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Second-order noise shaping loop",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Noise contribution, output referred.",
+      "caption_bbox": [
+        302.6,
+        255.1,
+        445.0,
+        265.8
+      ],
+      "section_title": "II. ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 3 shows the noise contributors at the output of the modulator in the frequency band up to 300 kHz."
+        },
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "(0 dBFS refers to a .) The dashed line marks the second-order sinewave with 1.8 V IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 7, JULY 2003 Fig. 3."
+        },
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "As illustrated in Fig. 3, the specification for noise contributors are balanced in such a way that the capacitor values can be chosen relatively small."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Within the operating band, the noise contribution of the noise-shaped 3-bit ADC is very small compared to other noise sources (Fig. 3)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.6,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Noise contribution, output referred",
+        "key_specs": [
+          "300 kHz",
+          "0 dB",
+          "1.8 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.4,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Overall timing diagram.",
+      "caption_bbox": [
+        38.1,
+        339.7,
+        144.3,
+        350.4
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "During PHI1, the first integrator has its integrating phase, and the second integrator has its sampling phase,and vice versaduringPHI2.AsdiscussedinSectionII, the secondintegratorcanbedownscaledduetoarelaxednoisespecification.Inthisway,thesamplingcapacitorcanbereducedsothatit GAGGL et al.: DYNAMIC RANGE MULTIBIT DELTA–SIGMA A/D CONVERTER FOR ADSL-CO APPLICATIONS Fig. 4."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "As depicted in Fig. 4, the overall timing of the modulator was adapted in order to permit the introduction of a dynamic biasing technique."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "bias circuit"
+        ],
+        "design_purpose": "As depicted in Fig. 4, the overall timing of the modulator was adapted in order to permit the introduction of a dynamic biasing technique.",
+        "function_summary": "Overall timing diagram. As depicted in Fig. 4, the overall timing of the modulator was adapted in order to permit the introduction of a dynamic biasing technique.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Switched-capacitor DAC and integrator.",
+      "caption_bbox": [
+        301.1,
+        302.9,
+        458.1,
+        313.5
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Integrator The implemented integrator is depicted in Fig. 5, including the sampling capacitors and the fully differential 3-bit DAC."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "This choice provides a sufficiently small RC time constant, resulting in a fast settling Fig. 5."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The 3-bit DAC is implemented in the SC technique, utilizing seven unity capacitors (see Fig. 5)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Switched-capacitor DAC and integrator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Schematic of the latch circuit.",
+      "caption_bbox": [
+        39.6,
+        271.7,
+        164.8,
+        282.3
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Simulations revealed that a standard de0.05% is suffiviation of the 3-bit DAC element mismatch cient not to degrade the modulator SNR performance signifi100 dB full cantly and to achieve harmonic distortion below Fig. 6."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Quantizer The internally used 3-bit flash ADC is implemented fully differentially in the SC technique employing a single-stage comparator, as depicted in Fig. 6 and described in [11]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "latch",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "latch"
+        ],
+        "design_purpose": "Simulations revealed that a standard de0.05% is suffiviation of the 3-bit DAC element mismatch cient not to degrade the modulator SNR performance signifi100 dB full cantly and to achieve harmonic distortion below Fig. 6.",
+        "function_summary": "Schematic of the latch circuit. Simulations revealed that a standard de0.05% is suffiviation of the 3-bit DAC element mismatch cient not to degrade the modulator SNR performance signifi100 dB full cantly and to achieve harmonic distortion below Fig. 6.",
+        "key_specs": [
+          "0.05%",
+          "100 dB"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.96,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. Operational amplifier.",
+      "caption_bbox": [
+        38.1,
+        267.5,
+        137.7,
+        278.2
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The circuit of a two-stage fully differential amplifier (Fig. 7) includes a differential input stage, two output stages, and a common-mode feedback (CMFB) circuit coupled to the output nodes of the amplifier."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The main requirements for the CMFB control loop are the inherent stability and no degradation of the output voltage headroom, GAGGL et al.: DYNAMIC RANGE MULTIBIT DELTA–SIGMA A/D CONVERTER FOR ADSL-CO APPLICATIONS Fig. 7."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Keeping the circuit as simple as possible,thebiasingforeachoutputtransistorconsistsoftwocurrent sources:devicesMda,Mb6afortheoutputtransistorM2aanddevicesMdb,Mb6bforM2b(Fig.7).ThecurrentsourcesMb6aand Mb6b provide continuously flowing dc current."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "differential pair",
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Operational amplifier",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 5,
+      "caption": "Fig. 8. Bias current of second transistor-stage.",
+      "caption_bbox": [
+        39.6,
+        281.0,
+        194.1,
+        291.6
+      ],
+      "section_title": "IV. MEASUREMENT SETUP",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "This relaxed specification has been employed to reduce the drain current of the output stage (M2a and M2b) by 70%, as depicted in Fig. 8."
+        },
+        {
+          "section_title": "MEASUREMENT SETUP",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "85-dB Dynamic Range Multibit Delta–Sigma ADC",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "This relaxed specification has been employed to reduce the drain current of the output stage (M2a and M2b) by 70%, as depicted in Fig. 8.",
+        "function_summary": "Bias current of second transistor-stage. This relaxed specification has been employed to reduce the drain current of the output stage (M2a and M2b) by 70%, as depicted in Fig. 8.",
+        "key_specs": [
+          "70%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 5,
+      "caption": "Fig. 9. Settling of first integrator.",
+      "caption_bbox": [
+        39.6,
+        502.4,
+        151.8,
+        513.0
+      ],
+      "section_title": "IV. MEASUREMENT SETUP",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Thisdescribedmode is called the power-savemode.Fig.9shows the settling behavior for disabled and enabled power-save mode."
+        },
+        {
+          "section_title": "MEASUREMENT SETUP",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "85-dB Dynamic Range Multibit Delta–Sigma ADC",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Settling of first integrator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 6,
+      "caption": "Fig. 10. Block schematic of test setup.",
+      "caption_bbox": [
+        38.1,
+        255.7,
+        167.9,
+        266.3
+      ],
+      "section_title": "IV. MEASUREMENT SETUP",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT SETUP",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The middle tap of the signal generator is defined by an external voltage source (see Fig. 10)."
+        },
+        {
+          "section_title": "MEASUREMENT SETUP",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Thus, measurement of discrete tones with is influenced by noise. power GAGGL et al.: DYNAMIC RANGE MULTIBIT DELTA–SIGMA A/D CONVERTER FOR ADSL-CO APPLICATIONS Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "-setup": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block schematic of test setup",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 6,
+      "caption": "Fig. 11. Schematic of prefilter.",
+      "caption_bbox": [
+        38.1,
+        457.8,
+        142.4,
+        468.4
+      ],
+      "section_title": "IV. MEASUREMENT SETUP",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT SETUP",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Thus, a common-mode change of the signal generator has also an impact on the input of the prefilter. • The common-mode control loop of the prefilter opamp in Fig. 11 adjusts the common-mode voltage on the output of this opamp."
+        },
+        {
+          "section_title": "MEASUREMENT SETUP",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "85-dB Dynamic Range Multibit Delta–Sigma ADC",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Schematic of prefilter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.1,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 7,
+      "caption": "Fig. 12. Analytical leakage compensation of fundamental.",
+      "caption_bbox": [
+        39.6,
+        311.9,
+        232.0,
+        322.6
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT SETUP",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Nevertheless, the sidelobes of the fundamental frequency and the harmonics are broadening as depicted in Fig. 12."
+        },
+        {
+          "section_title": "MEASUREMENT SETUP",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The thick line in Fig. 12 shows the result of the signal decompensation, a complete subtraction of the fundamental signal component with no residual tones."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The second-order Butterworth filter has a 3-dB corner frequency Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Analytical leakage compensation of fundamental",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 7,
+      "caption": "Fig. 13. Averaging of ten spectra.",
+      "caption_bbox": [
+        39.6,
+        537.8,
+        153.1,
+        548.4
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT SETUP",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "For the relative error of the signal- : power estimator (5) captured signal frames of length , the statistical error For . of the determined signal amplitude decreases by Fig. 13 shows an overlay plot of ten subsequent signal 7-dBFS input signal. captures of the ADC output for a The thick line represents the average of the spectra."
+        },
+        {
+          "section_title": "MEASUREMENT SETUP",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "According to Fig. 13, for a 97 dBFS bin and a dynamic range of 85 dB signal power of within 0–276 kHz, the calculation results of the estimation error by means of (5) are shown in Table I."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Averaging of ten spectra",
+        "key_specs": [
+          "97 dB",
+          "85 dB",
+          "276 kHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 7,
+      "caption": "Fig. 14.",
+      "caption_bbox": [
+        302.6,
+        502.1,
+        327.4,
+        512.8
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 18 shows the complete layout of the test chip. 7-dBFS input signal is depicted in The FFT result for a Fig. 14 in which the spectrum was averaged ten times as dis- )."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "85-dB Dynamic Range Multibit Delta–Sigma ADC",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 7,
+      "caption": "Fig. 15. Measured signal-to-noise and distortion ratio.",
+      "caption_bbox": [
+        302.6,
+        675.5,
+        481.3,
+        686.2
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 15 shows the measured SNR and signal-to-noise plus distortion (SNDR) versus the normalized ."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "85-dB Dynamic Range Multibit Delta–Sigma ADC",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured signal-to-noise and distortion ratio",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 8,
+      "caption": "Fig. 16. Impact of power-save mode on performance.",
+      "caption_bbox": [
+        38.1,
+        225.5,
+        214.5,
+        236.2
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 16 shows the SNDR of the ADC with and without both integrators in power-save mode, as previously discussed."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Additionally, enabling GAGGL et al.: DYNAMIC RANGE MULTIBIT DELTA–SIGMA A/D CONVERTER FOR ADSL-CO APPLICATIONS Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Impact of power-save mode on performance",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 8,
+      "caption": "Fig. 17. Influence of integrator bias on performance.",
+      "caption_bbox": [
+        38.1,
+        423.3,
+        212.2,
+        433.9
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Reducing the overall bias current of the integrators by 25% results in lower performance (Fig. 17)."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "85-dB Dynamic Range Multibit Delta–Sigma ADC",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Influence of integrator bias on performance",
+        "key_specs": [
+          "25%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 8,
+      "caption": "Fig. 18. Layout of the test chip.",
+      "caption_bbox": [
+        38.1,
+        658.3,
+        145.8,
+        669.0
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 18 shows the complete layout of the test chip. 7-dBFS input signal is depicted in The FFT result for a Fig. 14 in which the spectrum was averaged ten times as dis- )."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 18."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The layout plot in Fig. 18 demonstrates that this presented design strategy results in an attractive silicon area compared to TABLE II MEASURED PERFORMANCE SUMMARY OF THE SECOND-ORDER SIGMA–DELTA A/D CONVERTER similar sigma–delta converters [8]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.8,
+      "relevance_breakdown": {
+        "-layout": -2.0,
+        "section:conclusion": -1.0,
+        "references": 1.2
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "The layout plot in Fig. 18 demonstrates that this presented design strategy results in an attractive silicon area compared to TABLE II MEASURED PERFORMANCE SUMMARY OF THE SECOND-ORDER SIGMA–DELTA A/D CONVERTER similar sigma–delta converters [8].",
+        "function_summary": "Layout of the test chip. The layout plot in Fig. 18 demonstrates that this presented design strategy results in an attractive silicon area compared to TABLE II MEASURED PERFORMANCE SUMMARY OF THE SECOND-ORDER SIGMA–DELTA A/D CONVERTER similar sigma–delta converters [8].",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 6,
+  "warnings": []
+}

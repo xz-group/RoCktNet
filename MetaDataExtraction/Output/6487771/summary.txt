@@ -1,0 +1,56 @@
+# An AC-Coupled Hybrid Envelope Modulator for HSUPA Transmitters with 80% Modulator Efficiency Patrick Riehl1, Paul Fowers2, Hao-Ping Hong3, Michael Ashburn1
+
+VENUE
+"2013"
+
+FIGURE NUMBER
+"Figure 21.2.1 shows the architecture of the hybrid ac-coupled envelope modulator. Setting the MODE signal to zero configures the modulator as a buck regulator. The low-side output device of the Class-AB amplifier is fully on, shunting the els. bottom plate of C1 to ground. The inductor L1 and capacitor C1 thus form a conventional buck output filter. With the PA supply voltage Vpa selected as the feedback input to the buck controller, the current-mode control loop produces a constant output voltage at Vpa proportional to the reference voltage Vset. Vset is produced by an internal DAC that can be adjusted at slot boundaries to select the optimum fixed-drain PA supply voltage. Setting the MODE signal to one configures the circuit as an envelope tracking modulator with Venv as the envelope reference input. The Class-AB amplifier operates in voltage feedback, controlling Vpa to track Venv. The buck regulator is configured to regulate the average value of the Class-AB output voltage Vab to track Vset. The value of Vset is chosen to maintain a desired level-shifting voltage on the ac-coupling capacitor. The error amplifier provides low-pass filtering of the feedback signal so that the buck controller is not overwhelmed by signal content at the envelope frequency. The dynamics of this control loop are equivalent to conventional buck dynamics, except for a sign inversion that is resolved by a fixed negative gain stage. A schematic of the Class-AB amplifier is shown in Fig. 21.2.2. The Class-AB amplifier uses a folded transconductance input stage supplied from the battery followed by a push-pull output stage supplied from the secondary switching regulator. The quiescent current in the output stage can be adjusted using the variable current generators I1 and I2. The switching regulator synchronous output stages are integrated on-chip, along with replica current-sense circuits. We used a segmentation scheme for the buck regulator output stage to optimize the resistive and capacitive losses at different output power levels."
+
+TYPE
+"AC-Coupled Hybrid Envelope Modulator"
+
+TECHNOLOGY
+"CMOS, 15μm process"
+
+APPLICATION
+"microwave, rf, wireless, if"
+
+SUB-BLOCKS
+[
+  "inductor",
+  "capacitor",
+  "switch"
+]
+
+FUNCTION SUMMARY
+"AC-Coupled Hybrid Envelope Modulator"
+
+METRICS
+[
+  "Efficiency / ratio",
+  "Supply voltage",
+  "Frequency"
+]
+
+NUMERICAL PERFORMANCE
+[
+  "80%",
+  "0.15μm",
+  "1.8V",
+  "3.3V",
+  "4.3V",
+  "1μF",
+  "1.6MHz",
+  "3.8V",
+  "1.7V",
+  "89.6%"
+]
+
+CONFIDENCE
+0.2
+
+WARNINGS
+[
+  "No figure scored positively as a proposed-circuit schematic; recommendation is low-confidence.",
+  "Recommended figure was classified as 'conventional', not a schematic; manual confirmation strongly recommended."
+]

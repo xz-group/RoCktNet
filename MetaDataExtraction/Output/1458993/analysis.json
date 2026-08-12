@@ -1,0 +1,810 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1458993.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1458993",
+  "generated_at": "2026-07-29T22:02:52",
+  "paper_metadata": {
+    "title": "A 6-bit 1.2-GS/s Low-Power Flash-ADC in 0.13-m Digital CMOS",
+    "authors": [
+      "Christoph Sandner",
+      "Martin Clara",
+      "Andreas Santner",
+      "Thomas Hartig",
+      "Franz Kuttner"
+    ],
+    "abstract": "We present a 6-bit 1.2-GS/s flash-ADC with wide analog bandwidth and low power, realized in a standard digital ADCs employ resistive interpolation and averaging requiring a 0.13 m CMOS copper technology. Employing capacitive interdedicated sample-and-hold at the converter input, the capacitive polation gives various advantages when designing for low power: interpolation structure with distributed front-end sample-andno need for a reference resistor ladder, implicit sample-and-hold hold has advantages in terms of power, even at GS/s speed. The operation, no edge effects in the interpolation network (as comoutstanding figure of merit (FoM) numbers prove the efficiency pared to resistive interpolation), and a very low input capacitance of only 400 fF, which leads to an easily drivable analog converter of the implemented architecture, when compared to state-ofinterface. the-art 6-bit flash ADCs. Operating at 1.2 GS/s the ADC achieves an effective resolution bandwidth (ERBW) of 700 MHz, while consuming 160 mW of power. At 600 MS/s we achieve an ERBW of 600 MHz with",
+    "keywords": [
+      "Capacitive interpolation",
+      "data converter",
+      "flash"
+    ],
+    "doi": "10.1109/JSSC.2005.847215",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2005
+  },
+  "paper_circuit_context": {
+    "circuit_type": "6-bit 1.2-GS/s Low-Power Flash-ADC in 0.13-m Digital CMOS",
+    "technology": "CMOS",
+    "application_domain": "wireless, ultra-wideband, uwb, if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "cross-coupled pair",
+      "current mirror",
+      "switch",
+      "differential pair",
+      "latch",
+      "clock / timing",
+      "balun"
+    ],
+    "design_purpose": "",
+    "function_summary": "6-bit 1.2-GS/s Low-Power Flash-ADC in 0.13-m Digital CMOS: We present a 6-bit 1.2-GS/s flash-ADC with wide analog bandwidth and low power, realized in a standard digital ADCs employ resistive interpolation and averaging requiring a 0.13 m CMOS copper technology.",
+    "key_specs": [
+      "400 fF",
+      "700 MHz",
+      "160 mW",
+      "600 MHz",
+      "90 mW",
+      "1.5 V",
+      "1.5 pJ",
+      "-9500 V",
+      "3 dB",
+      "80 mV"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "F LASH analog-to-digital converters (ADCs) are still the architecture of choice, where maximum sample rate and low to moderate resolution is required. A typical example is the readwrite channel of a disk drive system, where customers often ask for the maximum sample rate that can be achieved by the currently available technology generation. However, there are additional applications in the wireles ..."
+    },
+    {
+      "number": "II",
+      "title": "CONVERTER ARCHITECTURE",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "Averaging is a well-known technique to improve the linearity of a ﬂash-type ADC beyond the matching limit of the single comparator [2], [4]. Multiple gain-stage architectures allow the use of interpolation to reduce the number of front-end ampliﬁers and thus the input capacitance of the converter. By scaling the ampliﬁers in the analog preprocessing chain from front to back also the overall power  ..."
+    },
+    {
+      "number": "III",
+      "title": "IMPLEMENTED DESIGN",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "The block diagram of the implemented A/D-converter is shown in Fig. 5. The circuitry is fully differential, although drawn single ended for simplicity. The input signal is sampled by the front-end ampliﬁers forming in the ﬁrst clock phase a distributed sample-and-hold, while the subsequent stages sample the offset voltage. During the second clock phase the reference voltage is applied to the botto ..."
+    },
+    {
+      "number": "IV",
+      "title": "MEASUREMENTS",
+      "kind": "results",
+      "page": 4,
+      "text_preview": "All measurements are done on a standard PCB with ceramic TQFP-44 package and no socket, at room temperature and nominal supply of 1.5 V. Both analog input and sampling clock are applied differentially to the chip by using baluns. Fig. 10 shows the DNL of the converter, measured at 600 MS/s with a full-scale 50-MHz sine-wave input employing a histogram method. The measured peak DNL of 0.4 LSB thus  ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. ADC front-end portion using capacitive interpolation.",
+      "caption_bbox": [
+        302.6,
+        321.8,
+        503.2,
+        329.7
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "CONVERTER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The principle of capacitive interpolation combined with the distributed front-end sample-and-hold is explained in Fig. 2, showing a portion of the converter input."
+        },
+        {
+          "section_title": "CONVERTER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "During the input voltage and the offset voltage of are both sampled on the capacitor the ampliﬁer with gain IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 7, JULY 2005 Fig. 2."
+        },
+        {
+          "section_title": "IMPLEMENTED DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Instead, the reference voltages are generated by capacitive voltage division (referring to the single-ended during the ampliﬁcation phase representation in Fig. 2) (4) Using the interpolation topology described above, and taking into account matching and noise requirements for the sampling capacitors at the input stage, it was possible to reach a very low input capacitance of only 400 fF."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.7,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "wireless, ultra-wideband, uwb, if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "ADC front-end portion using capacitive interpolation",
+        "key_specs": [
+          "400 fF"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Input offset sampling for a single stage.",
+      "caption_bbox": [
+        38.1,
+        158.4,
+        195.3,
+        166.4
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "CONVERTER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "One critical issue of the capacitive interpolation structure is and the capacitive divider formed by the sampling capacitor during the the parasitic input capacitance of the ampliﬁer ampliﬁcation phase (see Fig. 3)."
+        },
+        {
+          "section_title": "CONVERTER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The principle of input offset sampling is shown in Fig. 3."
+        },
+        {
+          "section_title": "CONVERTER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "With the size of the sampling capacitor at each stage ﬁxed ) or mismatch considerations (as in this by either noise ( SANDNER et al.: A 6-bit 1.2-GS/s LOW-POWER FLASH-ADC IN 0.13 m DIGITAL CMOS Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.7,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "CMOS",
+        "application_domain": "wireless, ultra-wideband, uwb, if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Input offset sampling for a single stage",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Multi-stage input and output offset sampling.",
+      "caption_bbox": [
+        38.1,
+        250.4,
+        212.8,
+        258.3
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "CONVERTER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "In the multistage architecture of Fig. 4 each stage not only performs input-offset sampling (IOS) of its own offset, but also output offset sampling (OOS) of the and the ampliﬁer previous stage."
+        },
+        {
+          "section_title": "CONVERTER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "6-bit 1.2-GS/s Low-Power Flash-ADC in 0.13-m Digital CMOS",
+        "technology": "CMOS",
+        "application_domain": "wireless, ultra-wideband, uwb, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Multi-stage input and output offset sampling",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Implemented ADC block diagram.",
+      "caption_bbox": [
+        38.1,
+        522.9,
+        178.8,
+        530.8
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "CONVERTER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 5."
+        },
+        {
+          "section_title": "IMPLEMENTED DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The block diagram of the implemented A/D-converter is shown in Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "wireless, ultra-wideband, uwb, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Implemented ADC block diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Ampliﬁer block diagram.",
+      "caption_bbox": [
+        39.6,
+        204.5,
+        149.8,
+        212.5
+      ],
+      "section_title": "III. IMPLEMENTED DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CONVERTER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Since the 3 dB bandwidth for a given power consumption and gain of a differential pair , the (Fig. 6) is inversely proportional to the load capacitance speed is also nearly inversely proportional to the interpolation factor."
+        },
+        {
+          "section_title": "IMPLEMENTED DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "A fourth gain stage directly drives the latching comparator, leading Fig. 6."
+        },
+        {
+          "section_title": "IMPLEMENTED DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Each ampliﬁer block (Fig. 6) consists of a differential pair with resistive load."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.7,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "comparator",
+        "technology": "CMOS",
+        "application_domain": "wireless, ultra-wideband, uwb, if",
+        "sub_blocks": [
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "Ampliﬁer block diagram",
+        "key_specs": [
+          "3 dB"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.93,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Final comparator latch.",
+      "caption_bbox": [
+        302.6,
+        227.0,
+        406.2,
+        234.9
+      ],
+      "section_title": "III. IMPLEMENTED DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTED DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The ﬁnal comparator latch is shown in Fig. 7."
+        },
+        {
+          "section_title": "IMPLEMENTED DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The use of a single nMOS IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 7, JULY 2005 Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "comparator",
+        "technology": "CMOS",
+        "application_domain": "wireless, ultra-wideband, uwb, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "latch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Final comparator latch",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. Digital backend of ADC.",
+      "caption_bbox": [
+        302.6,
+        447.5,
+        412.4,
+        455.5
+      ],
+      "section_title": "III. IMPLEMENTED DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTED DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 8."
+        },
+        {
+          "section_title": "IMPLEMENTED DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "For decreasing the BER the 64 outputs of the comparator row are again latched twice by differential latches, before entering a ﬁrst order bubble correction stage, which also converts the thercode (see Fig. 8)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "wireless, ultra-wideband, uwb, if",
+        "sub_blocks": [
+          "latch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Digital backend of ADC",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. ADC layout.",
+      "caption_bbox": [
+        38.1,
+        237.4,
+        108.1,
+        245.4
+      ],
+      "section_title": "III. IMPLEMENTED DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTED DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The subsequent gain stages are progressively scaled down by a factor of 2, thus achieving a very compact layout, since all four gain stages end up to have the same height (Fig. 9)."
+        },
+        {
+          "section_title": "IMPLEMENTED DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 9 shows the layout plot of the implemented test chip. m digital CMOS technology with It was fabricated in a 0.13option), single standard-threshold MOS devices (no lowpoly, four thin copper metals, and two thick copper metals."
+        },
+        {
+          "section_title": "IMPLEMENTED DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "SANDNER et al.: A 6-bit 1.2-GS/s LOW-POWER FLASH-ADC IN 0.13 m DIGITAL CMOS Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.7,
+      "relevance_breakdown": {
+        "-layout": -2.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "wireless, ultra-wideband, uwb, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "ADC layout",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10.",
+      "caption_bbox": [
+        38.1,
+        408.0,
+        62.8,
+        415.9
+      ],
+      "section_title": "IV. MEASUREMENTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "IMPLEMENTED DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 10."
+        },
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 10 shows the DNL of the converter, measured at 600 MS/s with a full-scale 50-MHz sine-wave input employing a histogram method."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "regulator / converter",
+        "technology": "CMOS",
+        "application_domain": "wireless, ultra-wideband, uwb, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "regulator / converter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 4,
+      "caption": "Fig. 11. Measured dynamic performance versus fsample (fsig = 121 MHz).",
+      "caption_bbox": [
+        301.1,
+        245.2,
+        552.0,
+        253.4
+      ],
+      "section_title": "III. IMPLEMENTED DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "INL is measured In Fig. 11 the maximum sampling rate of the ADC is explored for nominal bias current."
+        },
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "SNDR starts at 35.8 dB for low frequencies Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "wireless, ultra-wideband, uwb, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured dynamic performance versus fsample (fsig = 121 MHz)",
+        "key_specs": [
+          "35.8 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 4,
+      "caption": "Fig. 12. Measured dynamic performance versus fsignal at 600 MS/s.",
+      "caption_bbox": [
+        301.1,
+        430.9,
+        525.6,
+        438.9
+      ],
+      "section_title": "IV. MEASUREMENTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 12 shows the signal-to-noise ratio (SNR) and signal-to-noise-plus-distortion ratio (SNDR) for a sample rate of 600 MS/s, at reduced bias current to save power."
+        },
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "6-bit 1.2-GS/s Low-Power Flash-ADC in 0.13-m Digital CMOS",
+        "technology": "CMOS",
+        "application_domain": "wireless, ultra-wideband, uwb, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured dynamic performance versus fsignal at 600 MS/s",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 4,
+      "caption": "Fig. 13. Measured dynamic performance versus fsignal at 1.2 GS/s.",
+      "caption_bbox": [
+        301.1,
+        627.0,
+        522.4,
+        634.9
+      ],
+      "section_title": "IV. MEASUREMENTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "In Fig. 13 the same measurement is done for 1.2 GS/s at nominal bias current."
+        },
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "6-bit 1.2-GS/s Low-Power Flash-ADC in 0.13-m Digital CMOS",
+        "technology": "CMOS",
+        "application_domain": "wireless, ultra-wideband, uwb, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured dynamic performance versus fsignal at 1.2 GS/s",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 5,
+      "caption": "Fig. 14. Measured ADC spectrum at 1.2 GS/s and 701 MHz input frequency.",
+      "caption_bbox": [
+        39.6,
+        214.4,
+        290.2,
+        222.3
+      ],
+      "section_title": "IV. MEASUREMENTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 14 shows a measured spectrum of the ADC output at 1.2 GS/s and 701-MHz analog input frequency (close to the ERBW)."
+        },
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "wireless, ultra-wideband, uwb, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured ADC spectrum at 1.2 GS/s and 701 MHz input frequency",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 5,
+      "caption": "Fig. 15. Comparison to state-of-the-art 6-bit ﬂash ADCs.",
+      "caption_bbox": [
+        39.6,
+        403.5,
+        227.4,
+        411.5
+      ],
+      "section_title": "IV. MEASUREMENTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 15."
+        },
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "As can be seen in Fig. 15 these are the best FoM numbers for ﬂash ADCs ever published [4], [6]–[9]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "wireless, ultra-wideband, uwb, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Comparison to state-of-the-art 6-bit ﬂash ADCs",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 6,
+  "warnings": []
+}

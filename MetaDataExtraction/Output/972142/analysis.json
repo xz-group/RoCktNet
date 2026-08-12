@@ -1,0 +1,904 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\972142.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\972142",
+  "generated_at": "2026-07-29T22:03:38",
+  "paper_metadata": {
+    "title": "A Filtering Technique to Lower LC Oscillator Phase Noise",
+    "authors": [
+      "Emad Hegazi",
+      "Henrik Sjöland",
+      "Asad A. Abidi"
+    ],
+    "abstract": "Based on a physical understanding of phase-noise mechanisms, a passive LC filter is found to lower the phase-noise factor in a differential oscillator to its fundamental minimum. Three fully integrated LC voltage-controlled oscillators (VCOs) serve as a proof of concept. Two 1.1-GHz VCOs achieve 153 dBc/Hz at 3 MHz offset, biased at 3.7 mA from 2.5 V. A 2.1-GHz VCO achieves 148 dBc/Hz at 15 MHz offset, taking 4 mA from a 2.7-V supply. All oscillators use fully integrated resonators, and the first two exceed discrete transistor modules in figure of merit. Practical aspects and repercussions of the technique are discussed.",
+    "keywords": [
+      "Analog integrated circuits",
+      "CMOS oscillators",
+      "noise filtering",
+      "optimization",
+      "phase noise",
+      "radio frequency",
+      "spiral inductors",
+      "voltage-controlled oscillators"
+    ],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2001
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Filtering Technique to Lower LC Oscillator Phase Noise",
+    "technology": "CMOS",
+    "application_domain": "rf, radio frequency, wireless",
+    "sub_blocks": [
+      "inductor",
+      "transistor/MOSFET",
+      "LC tank / resonator",
+      "varactor",
+      "capacitor",
+      "resistor",
+      "cross-coupled pair",
+      "current source",
+      "mixer",
+      "bias circuit",
+      "switch",
+      "differential pair"
+    ],
+    "design_purpose": "",
+    "function_summary": "Filtering Technique to Lower LC Oscillator Phase Noise: Based on a physical understanding of phase-noise mechanisms, a passive LC filter is found to lower the phase-noise factor in a differential oscillator to its fundamental minimum.",
+    "key_specs": [
+      "153 dBc/Hz",
+      "3 MHz",
+      "2.5 V",
+      "148 dBc/Hz",
+      "15 MHz",
+      "3 V",
+      "75%",
+      "26 nH",
+      "1.1 GHz",
+      "1.2 GHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "A SINGLE-CHIP radio remains a challenging problem due to technology limitations on passive component quality and lack of efficient optimization procedures. Of all RF blocks, voltage-controlled oscillators (VCOs) have received the most attention in recent years, as evidenced by the large number of publications reporting improved performance [1], [2], higher operating frequency [3], or use of a diff ..."
+    },
+    {
+      "number": "II",
+      "title": "FUNDAMENTALS OF LC OSCILLATORS",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "Phase noise in LC feedback oscillators is usually captured by Leeson’s proportionality [6] (1) noise that is In this formulation, phase noise is given as shaped in frequency by the LC tank and normalized to the power in the oscillation amplitude. Phase noise is scaled by a circuit , the constant of proportionality that comspecific noise factor prises noise contributions from various circuit elemen ..."
+    },
+    {
+      "number": "III",
+      "title": "ROLE OF THE CURRENT SOURCE",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "Consider the differential LC oscillator where the current source is replaced by low impedance to ground, in the extreme case a short circuit [Fig. 4(a)]. This circuit still produces steady-state oscillation. Let us take a closer look at the roles of HEGAZI et al.: FILTERING TECHNIQUE TO LOWER LC OSCILLATOR PHASE NOISE Fig. 3. Model of the switch noise. (a) (b) Fig. 4. Role of the current source. ( ..."
+    },
+    {
+      "number": "IV",
+      "title": "NOISE FILTERING",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "To recapitulate, for the current source: 1) Only thermal noise in the current-source transistor around the second harmonic of the oscillation causes phase noise, and 2) a high impedance at the tail is only required at the second harmonic to stop the differential-pair FETs in triode from loading the resonator. This suggests use of a narrowband circuit to suppress the troublesome noise frequencies i ..."
+    },
+    {
+      "number": "V",
+      "title": "DISCRETE FREQUENCY TUNING",
+      "kind": "other",
+      "page": 4,
+      "text_preview": "A CMOS oscillator must be designed with a large tuning range to overcome process variations, which create a large spread in the center frequency from wafer to wafer. The simplest way to do so is with a strong varactor, that is, one that gives a large capacitance swing relative to the fixed resonator capacitance as the tuning voltage is swept over its full range . Irrespective of how the limited by ..."
+    },
+    {
+      "number": "VI",
+      "title": "HIGH-",
+      "kind": "other",
+      "page": 4,
+      "text_preview": "RESONATOR INDUCTOR It was the intent of this work to show how a noise filter can lower phase noise to a record level in a prototype CMOS oscillator with fully on-chip resonator. From (1), it is seen that must be low (the task of the noise filter), the amplitude should be large, and the inherent quality factor of the resonator must also be large. The latter two yield quadratic improvement in phase  ..."
+    },
+    {
+      "number": "VII",
+      "title": "PROTOTYPE OSCILLATOR",
+      "kind": "other",
+      "page": 5,
+      "text_preview": "A tail-biased differential oscillator is implemented in m CMOS. The oscillator consumes 3.7 mA from 2.5-V 0.35supply. Measured phase noise 3 MHz away from a 1.2-GHz 153 dBc/Hz, as shown in Fig. 9. A reference oscillation is oscillator, which is identical except it has no noise filter, is fabricated on the same wafer. Its phase noise at 1.2 GHz and the same offset is 7 dB worse. A top-biased oscill ..."
+    },
+    {
+      "number": "VIII",
+      "title": "DISCUSSION AND EXTENSIONS",
+      "kind": "results",
+      "page": 5,
+      "text_preview": "It is not easy to compare the performance of different oscillators. The oscillator design space entails phase noise, power consumption, and oscillation frequency, and to a lesser degree, HEGAZI et al.: FILTERING TECHNIQUE TO LOWER LC OSCILLATOR PHASE NOISE (a) (b) Fig. 11. (a) Die photo of one of the oscillators (b) Close-up of metal shield pattern under octagonal inductor. tuning range. The best  ..."
+    },
+    {
+      "number": "IX",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 8,
+      "text_preview": "We have presented a technique to lower the noise factor of LC oscillators to its fundamental minimum. The technique is based on physical understanding of phase-noise mechanisms in LC oscillators and is extendable to other topologies, as we showed. As a result, we were able to implement fully integrated oscillators with on-chip resonators that outperform discrete transistor module oscillators. [1]  ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Basic LC oscillator. (a) Ideal negative resistance. (b) Nonlinear negative resistance.",
+      "caption_bbox": [
+        301.1,
+        324.8,
+        552.2,
+        344.4
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Publisher Item Identifier S 0018-9200(01)09316-7. 0018–9200/01$10.00 © 2001 IEEE (a) (b) Fig. 1."
+        },
+        {
+          "section_title": "FUNDAMENTALS OF LC OSCILLATORS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Consider the oscillator shown in Fig. 1(a), where Fig. 2."
+        },
+        {
+          "section_title": "FUNDAMENTALS OF LC OSCILLATORS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "In practice, a nonlinear active circuit, as shown in Fig. 1(b), provides the negative resistance."
+        },
+        {
+          "section_title": "FUNDAMENTALS OF LC OSCILLATORS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The analysis shows that the noise , spectral density is the same as that due to a linear resistor equal in magnitude to the effective steady-state negative resis- : tance, but with a noise factor of (5) Referring to Fig. 1(b), it is now evident how (4) arises."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.1,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "type_match:oscillator": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless",
+        "sub_blocks": [
+          "resistor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Basic LC oscillator. (a) Ideal negative resistance. (b) Nonlinear negative resistance",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.29,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Current-biased differential LC oscillator.",
+      "caption_bbox": [
+        39.6,
+        237.5,
+        198.5,
+        248.2
+      ],
+      "section_title": "II. FUNDAMENTALS OF LC OSCILLATORS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FUNDAMENTALS OF LC OSCILLATORS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Consider the oscillator shown in Fig. 1(a), where Fig. 2."
+        },
+        {
+          "section_title": "FUNDAMENTALS OF LC OSCILLATORS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The cross-coupled differential pair (Fig. 2) gives a smallacross the signal negative differential conductance of tuned circuit."
+        },
+        {
+          "section_title": "DISCUSSION AND EXTENSIONS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Consider the tail-biased differential oscillator (Fig. 2) without noise filter or parasitic capaci- , fluctuations tances."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "type_match:oscillator": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless",
+        "sub_blocks": [
+          "cross-coupled pair",
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "Current-biased differential LC oscillator",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.46,
+      "warnings": [
+        "Recommended figure caption does not explicitly mention a schematic/topology/circuit; please confirm manually.",
+        "Recommended figure was classified as 'other', not a schematic; manual confirmation strongly recommended."
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Model of the switch noise.",
+      "caption_bbox": [
+        38.1,
+        187.0,
+        153.4,
+        197.6
+      ],
+      "section_title": "III. ROLE OF THE CURRENT SOURCE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FUNDAMENTALS OF LC OSCILLATORS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 3 shows an equivalent circuit representing these two actions."
+        },
+        {
+          "section_title": "ROLE OF THE CURRENT SOURCE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Let us take a closer look at the roles of HEGAZI et al.: FILTERING TECHNIQUE TO LOWER LC OSCILLATOR PHASE NOISE Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-model": -1.5,
+        "references": 0.8
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "switch",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless",
+        "sub_blocks": [
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Model of the switch noise",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Role of the current source. (a) No current source. (b) Ideal noiseless current source.",
+      "caption_bbox": [
+        38.1,
+        432.3,
+        289.2,
+        451.9
+      ],
+      "section_title": "III. ROLE OF THE CURRENT SOURCE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ROLE OF THE CURRENT SOURCE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Consider the differential LC oscillator where the current source is replaced by low impedance to ground, in the extreme case a short circuit [Fig. 4(a)]."
+        },
+        {
+          "section_title": "ROLE OF THE CURRENT SOURCE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "(a) (b) Fig. 4."
+        },
+        {
+          "section_title": "ROLE OF THE CURRENT SOURCE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Now, suppose an ideal noiseless current source is present in the tail of the differential pair, as shown in Fig. 4(b)."
+        },
+        {
+          "section_title": "NOISE FILTERING",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "This reverts to the voltage-biased oscillator [Fig. 4(a)]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.6,
+      "relevance_breakdown": {
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless",
+        "sub_blocks": [
+          "current source",
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "Role of the current source. (a) No current source. (b) Ideal noiseless current source",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Tail-biased VCO with noise filter. (a) Capacitor alone. (b) Complete noise filter.",
+      "caption_bbox": [
+        39.6,
+        299.5,
+        325.7,
+        310.2
+      ],
+      "section_title": "IV. NOISE FILTERING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ROLE OF THE CURRENT SOURCE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "(a) Fig. 5."
+        },
+        {
+          "section_title": "NOISE FILTERING",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Then, Fig. 5(a), shorts noise frequencies around to raise the impedance, an inductor is inserted between the current source and the tail, as shown in Fig. 5(b)."
+        },
+        {
+          "section_title": "DISCUSSION AND EXTENSIONS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "With the filter present [Fig. 5(b)], the oscillator responds in exactly the same way to low-frequency noise on the supply."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless",
+        "sub_blocks": [
+          "inductor",
+          "capacitor",
+          "current source"
+        ],
+        "design_purpose": "",
+        "function_summary": "Tail-biased VCO with noise filter. (a) Capacitor alone. (b) Complete noise filter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Top-biased VCO with noise filter.",
+      "caption_bbox": [
+        302.6,
+        537.1,
+        440.2,
+        547.7
+      ],
+      "section_title": "IV. NOISE FILTERING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "NOISE FILTERING",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "A variant of the tail-biased LC oscillator described in the literature is the top-biased differential LC oscillator, where the current source is connected from the positive supply to the center tap of the differential inductor (Fig. 6)."
+        },
+        {
+          "section_title": "NOISE FILTERING",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "As before, a large caIEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 12, DECEMBER 2001 (b) Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless",
+        "sub_blocks": [
+          "inductor",
+          "current source"
+        ],
+        "design_purpose": "",
+        "function_summary": "Top-biased VCO with noise filter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. Voltage-biased VCO with noise filter.",
+      "caption_bbox": [
+        38.1,
+        235.5,
+        187.6,
+        246.1
+      ],
+      "section_title": "IV. NOISE FILTERING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "NOISE FILTERING",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The instantaneous negative voltage HEGAZI et al.: FILTERING TECHNIQUE TO LOWER LC OSCILLATOR PHASE NOISE Fig. 7."
+        },
+        {
+          "section_title": "NOISE FILTERING",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Without a noise filter, the FETs will load the resonator throughout the os- . cillation while the differential resonator voltage is larger than A noise filter in the tail tuned to the second harmonic removes this loading (Fig. 7)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless",
+        "sub_blocks": [
+          "LC tank / resonator"
+        ],
+        "design_purpose": "",
+        "function_summary": "Voltage-biased VCO with noise filter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 5,
+      "caption": "Fig. 8. (a) Tuning arrangement. (b) Resulting tuning characteristics.",
+      "caption_bbox": [
+        39.6,
+        200.6,
+        263.2,
+        211.3
+      ],
+      "section_title": "V. DISCRETE FREQUENCY TUNING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DISCRETE FREQUENCY TUNING",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "For instance, a 3-b binary-weighted switched-capacitor array [Fig. 8(a)] tunes the oscillator center frequency to eight discrete frequencies."
+        },
+        {
+          "section_title": "DISCRETE FREQUENCY TUNING",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Then, a small-size MOS varactor interpolates continuously around these frequencies, giving rise to a family of overlapping tuning curves which guarantee continuous frequency coverage over the tuning range, as shown in Fig. 8(b)."
+        },
+        {
+          "section_title": "HIGH-",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "However, the shield geometry must be designed very carefully because the high conductivity of metal, (a) Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless",
+        "sub_blocks": [
+          "varactor",
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) Tuning arrangement. (b) Resulting tuning characteristics",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 5,
+      "caption": "Fig. 9. Phase-noise measurement of tail-biased VCO with and without noise filter, compared against VARI-L module.",
+      "caption_bbox": [
+        39.6,
+        416.8,
+        290.7,
+        436.5
+      ],
+      "section_title": "V. DISCRETE FREQUENCY TUNING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "HIGH-",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 9."
+        },
+        {
+          "section_title": "PROTOTYPE OSCILLATOR",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Measured phase noise 3 MHz away from a 1.2-GHz 153 dBc/Hz, as shown in Fig. 9."
+        },
+        {
+          "section_title": "PROTOTYPE OSCILLATOR",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Measured phase noise at 1 GHz and 150 dBc/Hz (Fig. 9). 3 MHz offset is Now, let us use Leeson’s proportionality (1) combined with Rael’s noise factor (4) to manually calculate this oscillator’s for the FETs, phase noise."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Phase-noise measurement of tail-biased VCO with and without noise filter, compared against VARI-L module",
+        "key_specs": [
+          "3 MHz",
+          "153 dBc/Hz",
+          "1 GHz",
+          "150 dBc/Hz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. Phase-noise measurement of top-biased VCO, with and without noise filter.",
+      "caption_bbox": [
+        302.6,
+        404.5,
+        553.7,
+        424.1
+      ],
+      "section_title": "V. DISCRETE FREQUENCY TUNING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "PROTOTYPE OSCILLATOR",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "This circuit tunes from 1 to 1.2 GHz, also consuming 3.7 mA. 152 dBc/Hz, an Measured phase noise at 3 MHz offset is 8-dB improvement over its reference oscillator, Fig. 10."
+        },
+        {
+          "section_title": "PROTOTYPE OSCILLATOR",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "A third oscillator implemented in the same process IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 12, DECEMBER 2001 (b) Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Phase-noise measurement of top-biased VCO, with and without noise filter",
+        "key_specs": [
+          "1.2 GHz",
+          "152 dBc/Hz",
+          "3 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 6,
+      "caption": "Fig. 11. (a) Die photo of one of the oscillators (b) Close-up of metal shield pattern under octagonal inductor.",
+      "caption_bbox": [
+        38.1,
+        446.4,
+        289.1,
+        466.0
+      ],
+      "section_title": "VIII. DISCUSSION AND EXTENSIONS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "PROTOTYPE OSCILLATOR",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 11 shows the chip photograph of one of the oscillators."
+        },
+        {
+          "section_title": "DISCUSSION AND EXTENSIONS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The oscillator design space entails phase noise, power consumption, and oscillation frequency, and to a lesser degree, HEGAZI et al.: FILTERING TECHNIQUE TO LOWER LC OSCILLATOR PHASE NOISE (a) (b) Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-die photo": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "on-chip inductor",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless",
+        "sub_blocks": [
+          "inductor"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) Die photo of one of the oscillators (b) Close-up of metal shield pattern under octagonal inductor",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 6,
+      "caption": "Fig. 12. Comparison of state-of-the-art FOM.",
+      "caption_bbox": [
+        301.1,
+        272.3,
+        452.7,
+        283.0
+      ],
+      "section_title": "VIII. DISCUSSION AND EXTENSIONS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "DISCUSSION AND EXTENSIONS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "At a given oscillation frequency, this current is lowered Fig. 12."
+        },
+        {
+          "section_title": "DISCUSSION AND EXTENSIONS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The chart in Fig. 12 compares the FOM of various RF oscillators using resonators that are fully integrated, partly integrated, or discrete."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless",
+        "sub_blocks": [
+          "LC tank / resonator"
+        ],
+        "design_purpose": "",
+        "function_summary": "Comparison of state-of-the-art FOM",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 7,
+      "caption": "Fig. 13. to phase noise at 10-kHz offset. (c) Simulated conversion gain from V",
+      "caption_bbox": [
+        39.6,
+        458.9,
+        263.8,
+        478.5
+      ],
+      "section_title": "VIII. DISCUSSION AND EXTENSIONS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "DISCUSSION AND EXTENSIONS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "(b) Simulated conversion gain of current-source noise Fig. 13. to phase noise at 10-kHz offset."
+        },
+        {
+          "section_title": "DISCUSSION AND EXTENSIONS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 13(a) plots the simulated conversion gain from gate-referred voltage noise in one of the differential-pair FETs to phase noise, versus discrete frequencies of voltage noise which will produce close-in phase noise."
+        },
+        {
+          "section_title": "DISCUSSION AND EXTENSIONS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 13(b) shows that the noise filter dramatically lowers the conversion gain of noise in the current source at frequencies around the second harmonic."
+        },
+        {
+          "section_title": "DISCUSSION AND EXTENSIONS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Finally, Fig. 13(c) shows that the noise filter improves power-supply rejection at all frequencies."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -5.9,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "-phase noise": -2.5,
+        "section:results": -2.0,
+        "references": 1.6
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless",
+        "sub_blocks": [
+          "current source"
+        ],
+        "design_purpose": "",
+        "function_summary": "to phase noise at 10-kHz offset. (c) Simulated conversion gain from V",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 8,
+      "caption": "Fig. 14. Colpitts oscillator with noise filter applied to the current source.",
+      "caption_bbox": [
+        38.1,
+        220.3,
+        274.9,
+        230.9
+      ],
+      "section_title": "VIII. DISCUSSION AND EXTENSIONS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "DISCUSSION AND EXTENSIONS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Moreover, ferential pair to load the resonator and degrade although outside the scope of this paper, it should be noted that HEGAZI et al.: FILTERING TECHNIQUE TO LOWER LC OSCILLATOR PHASE NOISE Fig. 14."
+        },
+        {
+          "section_title": "DISCUSSION AND EXTENSIONS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 14 shows a noise filter at the bias current source in a should remain unaffected Colpitts oscillator."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "type_match:oscillator": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless",
+        "sub_blocks": [
+          "current source",
+          "LC tank / resonator"
+        ],
+        "design_purpose": "",
+        "function_summary": "Colpitts oscillator with noise filter applied to the current source",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 2,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

@@ -1,0 +1,1249 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\RNDatasetPapers\\jssc.2013.2265494.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output_rerun_128\\jssc.2013.2265494",
+  "generated_at": "2026-07-29T22:45:55",
+  "paper_metadata": {
+    "title": "A Study of SiGe HBT Signal Sources in the 220–330-GHz Range",
+    "authors": [
+      "Sorin P. Voinigescu",
+      "Alexander Tomkins",
+      "Eric Dacquay",
+      "Pascal Chevalier",
+      "Juergen Hasch",
+      "Alain Chantre",
+      "Bernard Sautreuil"
+    ],
+    "abstract": "The paper presents design optimization strategies and a comparison of the performance of SiGe HBT fundamental and enabled the demonstration of the first silicon subharmonic push–push Colpitts and Colpitts–Clapp voltage-controlled oscillareceivers and amplifiers operating in the 220–240-GHz range tors (VCOs), with and without doublers and buffers, as possible so- [4]–[6] and of 150–180-GHz prescalers based on fundamental lutions for efficient milliwatt-level, low-noise signal sources at subfrequency VCOs and Miller dividers [3], [7]. As the data in millimeter-wave frequencies. The fundamental frequency Colpitts Fig. 1 indicate, the of MOSFETs has peaked at the 45-nm VCO covers a 12% tuning range between 218 and 246 GHz (the highest for SiGe HBTs) with up to 3.6-dBm output power and node. Despite using metal in the gate, the gate resistance and 0.8% efficiency. The 300-GHz signal source, consisting of a Colthe via resistance are significantly higher than in the 45and pitts–Clapp VCO followed by a buffer amplifier and a doubler, 65-nm nodes and degrade . shows 1.7-dBm output power around 290 GHz, 101-dBc/Hz The 200–300-GHz band is particularly attractive for passive phase noise at 10-MHz offset, 7.5% tuning range, and 0.4% effiimaging [8], [9] and for indoor and outdoor wireless commuciency. Finally, the push-push Colpitts–Clapp VCO exhibits the highest operation frequency, from 309 to 325 GHz, but with renications links at data rates of hundreds of Gb/s. It offers a duced efficiency of only 0.07% and 5% tuning range. It was concontiguous 100-GHz-wide spectrum, the largest below 1 THz, cluded that the differential cascode buffer placed between the VCO unimpeded by atmospheric attenuation maxima, and with simand doubler was instrumental in achieving the best phase noise ilar rain attenuation levels as in the 60–100-GHz range. One of and output power with good efficiency and without compromising the biggest challenges that must be overcome in order to develop tuning range. silicon radio transceivers and active imaging sensors operating",
+    "keywords": [
+      "Colpitts oscillator",
+      "Colpitts–Clapp oscillator",
+      "dou-"
+    ],
+    "doi": "10.1109/JSSC.2013.2265494",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2013
+  },
+  "paper_circuit_context": {
+    "circuit_type": "voltage-controlled oscillator (VCO)",
+    "technology": "CMOS, SIGE, SOI, HBT, 45-nm process",
+    "application_domain": "millimeter-wave, mm-wave, rf, wireless, thz, if",
+    "sub_blocks": [
+      "varactor",
+      "inductor",
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "cross-coupled pair",
+      "current source",
+      "current mirror",
+      "LC tank / resonator",
+      "transmission line",
+      "output buffer",
+      "mixer",
+      "bias circuit",
+      "differential pair"
+    ],
+    "design_purpose": "One of and output power with good efficiency and without compromising the biggest challenges that must be overcome in order to develop tuning range. silicon radio transceivers and active imaging sensors operating",
+    "function_summary": "voltage-controlled oscillator (VCO): One of and output power with good efficiency and without compromising the biggest challenges that must be overcome in order to develop tuning range. silicon radio transceivers and active imaging sensors operating",
+    "key_specs": [
+      "12%",
+      "246 GHz",
+      "0.8%",
+      "290 GHz",
+      "7.5%",
+      "0.4%",
+      "325 GHz",
+      "0.07%",
+      "5%",
+      "380 GHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "R ECENT progress in SiGe HBT technology has resulted in transistors with cutoff and maximum oscillation , which simultaneously exceed 280 and frequencies 380 GHz, respectively [1], [2]. These values were measured without removing the parasitics of the wiring stack which connects the transistor terminals to the top metal layer, typically employed for realizing inductors and matching networks in mil ..."
+    },
+    {
+      "number": "II",
+      "title": "VCO DESIGN",
+      "kind": "design",
+      "page": 1,
+      "text_preview": "Ever since the ﬁrst fully integrated differential Colpitts VCO was reported [20], it has become the preferred topology for integrated bipolar VCOs, especially at mm-wave frequencies. 111 dBc/Hz at 1-MHz offset at The lowest phase noise of 120 GHz [21] and the highest fundamental frequency of 614 GHz [22] have been achieved using this topology with SiGe and InP HBT technologies, respectively. Altho ..."
+    },
+    {
+      "number": "III",
+      "title": "VCO-DOUBLER SIGNAL SOURCE DESIGN",
+      "kind": "design",
+      "page": 4,
+      "text_preview": "The schematic of the 150–300-GHz doubler is shown in Fig. 8 along with its simulated transfer characteristics for an input signal at 150 GHz. The 700-fF capacitor is implemented with two 350-fF MIM capacitors connected in parallel to reduce its parasitic inductance and increase the self-resonance frequency. Unlike in other doubler designs in this frequency range [14], the output signal is collecte ..."
+    },
+    {
+      "number": "IV",
+      "title": "FABRICATION",
+      "kind": "other",
+      "page": 5,
+      "text_preview": "The circuits were manufactured in a 120-nm emitter width SiGe HBT technology with approximately 300 GHz and [2]. The measured maximum available gain re400 GHz mains higher than 1.1 dB up to 325 GHz. Fig. 10 reproduces the measured HBT base-collector (also HBT varactor) capacitance per unit emitter length in the 0–170 GHz at HBT/varactor bias 0.5 to 2.5 V. The capacitance ratio voltages varying fro ..."
+    },
+    {
+      "number": "V",
+      "title": "MEASUREMENTS",
+      "kind": "results",
+      "page": 6,
+      "text_preview": "Power measurements were conducted with an Erickson calorimeter. First, as illustrated in Fig. 12, a small-signal test setup was employed to unambiguously identify the tuning Fig. 11. Die photographs: (a) 245-GHz VCO and (b) 300-GHz VCO-bufferdoubler core. range of all three signal sources from -parameter measure- -band (220–325 GHz). The tuning range was ments in the independently veriﬁed by conne ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 9,
+      "text_preview": "Using an algorithmic design methodology, the highest frequency fundamental-wave and push–push SiGe HBT VCOs were demonstrated at 220–245 GHz and 310–330 GHz, respectively. However, the largest output power, which is 1.7 dBm at 290 GHz, and the lowest phase noise, about 101 dBc/Hz at 10-MHz offset and 309 GHz, were obtained with a 150-GHz fundamental-wave VCO followed by a cascode buffer and double ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Comparison of the measured (a)",
+      "caption_bbox": [
+        39.5,
+        306.3,
+        168.9,
+        315.0
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Digital Object Identiﬁer 10.1109/JSSC.2013.2265494 0018-9200 © 2013 IEEE nanoscale n-MOSFETs measured in our lab (Fig. 1), has enabled the demonstration of the ﬁrst silicon subharmonic receivers and ampliﬁers operating in the 220–240-GHz range [4]–[6] and of 150–180-GHz prescalers based on fundamental frequency VCOs and Miller dividers [3], [7]."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "As the data in of MOSFETs has peaked at the 45-nm Fig. 1 indicate, the node."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The question then arises whether any of these signal source (a) and (b) of the 0.12 m 4.5 Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.3,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SIGE, SOI, HBT, 45-nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, thz, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Comparison of the measured (a)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Testbench for -parameter and transient simulations of Colpitts and Colpitts–Clapp VCOs.",
+      "caption_bbox": [
+        303.5,
+        472.2,
+        555.4,
+        489.9
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "VCO DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 2."
+        },
+        {
+          "section_title": "VCO DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "A testbench for the half-circuit of Colpitts (when ) and Colpitts–Clapp VCOs is shown in Fig. 2."
+        },
+        {
+          "section_title": "VCO DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Simulated input resistance, reactance, and output resistance as the varis changed from 20 to 50 fF for the idealized Colpitts actor capacitance VCO half-circuit in Fig. 2. oscillator is a strongly nonlinear circuit which operates under large-signal conditions, an efﬁcient method to gain insight into the limitations of the available transistor technology is to start off with a small signal ( -parameter) analysis of this half-circuit."
+        },
+        {
+          "section_title": "VCO DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "It should be noted that the test bench in Fig. 2 can also be employed to run transient and phasenoise simulations before assembling the ﬁnal differential VCO schematic."
+        },
+        {
+          "section_title": "VCO DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Using the schematic in Fig. 2 with a simpliﬁed small-signal equivalent circuit for the transistor consisting only of the transconductance current source and junction capacitances, as- , suming lossless capacitors and inductors, and making one can derive expressions for the input resistance and reactance looking towards the base of the transistor (1) (2) is the total base-emitter capacitance of the where is the varactor capacitance connected in HBT, the emitter, and , where is the varactor capacitance connected to the base of the HBT and which is only present in the Colpitts–Clapp VCO topology."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.5,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SIGE, SOI, HBT, 45-nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, thz, if",
+        "sub_blocks": [
+          "varactor",
+          "inductor",
+          "capacitor",
+          "transistor/MOSFET",
+          "current source"
+        ],
+        "design_purpose": "",
+        "function_summary": "Testbench for -parameter and transient simulations of Colpitts and Colpitts–Clapp VCOs",
+        "key_specs": [
+          "50 fF",
+          "2 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Simulated input resistance, reactance, and output resistance as the varis changed from 20 to 50 fF for the idealized Colpitts actor capacitance VCO half-circuit in Fig. 2.",
+      "caption_bbox": [
+        38.0,
+        211.2,
+        290.1,
+        238.0
+      ],
+      "section_title": "II. VCO DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "VCO DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Although an VOINIGESCU et al.: STUDY OF SIGE HBT SIGNAL SOURCES IN THE 220–330-GHZ RANGE Fig. 3."
+        },
+        {
+          "section_title": "VCO DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "As illustrated in Fig. 3, by plotting the real and imaginary parts of the impedance looking into the base of the HBT, and , respectively, one can quickly assess whether the circuit produces an adequate negative resistance at the desired , (approximately the frequency at oscillation frequency, which and ), and one can estimate the tuning range of the oscillator."
+        },
+        {
+          "section_title": "VCO DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "In the simulations of Fig. 3, the 2 m HBT was biased at 15 mA, close to the peakcurrent density, pH, was set to zero, and was set to 20 and 50 fF, respectively."
+        },
+        {
+          "section_title": "VCO DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "In contrast, the Colpitts VCO achieves the highest oscillation frequency, with the maximum value of 295 GHz (not shown) reached for a varactor 6.5pH. capacitance of 17 fF and The simulation results in Figs. 3–5 were obtained with ideal varactors and inductors with inﬁnite quality factor."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.1,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-simulated": -3.0,
+        "-capacitance": -2.0,
+        "section:design": 1.5,
+        "type_match:vco": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SIGE, SOI, HBT, 45-nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, thz, if",
+        "sub_blocks": [
+          "varactor",
+          "inductor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simulated input resistance, reactance, and output resistance as the varis changed from 20 to 50 fF for the idealized Colpitts actor capacitance VCO half-circuit in Fig. 2",
+        "key_specs": [
+          "50 fF",
+          "295 GHz",
+          "6.5pH",
+          "17 fF",
+          "5 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.05,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 3,
+      "caption": "Fig. 4. Simulated maximum frequency below which the input resistance re7pH and the 2 120 nm 5 m HBT is mains negative. biased at 20 mA.",
+      "caption_bbox": [
+        39.5,
+        245.0,
+        291.5,
+        271.8
+      ],
+      "section_title": "II. VCO DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "VCO DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 4."
+        },
+        {
+          "section_title": "VCO DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "This of is accurately captured by the small signal simulation results reproduced in Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SIGE, SOI, HBT, 45-nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, thz, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated maximum frequency below which the input resistance re7pH and the 2 120 nm 5 m HBT is mains negative. biased at 20 mA",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Comparison of (a) the tuning range (from large-signal simulations) and (b) output rms voltage of the Colpitts and Colpitts–Clapp VCO half-circuits.",
+      "caption_bbox": [
+        303.5,
+        406.9,
+        555.4,
+        424.6
+      ],
+      "section_title": "II. VCO DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "VCO DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "This also implies that, in order to compare to set IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 48, NO. 9, SEPTEMBER 2013 Fig. 5."
+        },
+        {
+          "section_title": "VCO DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "VCO, and Fig. 5 compares the simulated tuning range and rms output for Colpitts and Colpitts–Clapp VCO half-cirvoltage in 50 cuits with identical transistor sizes, bias currents, and where the sum of the and capacitances was chosen to be the same."
+        },
+        {
+          "section_title": "VCO DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "However, as the output rms voltage plot in Fig. 5(b) shows, it did not oscillate for total VOINIGESCU et al.: STUDY OF SIGE HBT SIGNAL SOURCES IN THE 220–330-GHZ RANGE Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-tuning range": -2.5,
+        "section:design": 1.5,
+        "type_match:vco": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SIGE, SOI, HBT, 45-nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, thz, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "This also implies that, in order to compare to set IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 48, NO. 9, SEPTEMBER 2013 Fig. 5.",
+        "function_summary": "Comparison of (a) the tuning range (from large-signal simulations) and (b) output rms voltage of the Colpitts and Colpitts–Clapp VCO half-circuits. This also implies that, in order to compare to set IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 48, NO. 9, SEPTEMBER 2013 Fig. 5.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.31,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "Fig. 6. Schematics of (a) 245-GHz fundamental Colpitts and (b) 320-GHz Colpitts–Clapp push-push VCOs.",
+      "caption_bbox": [
+        38.0,
+        311.7,
+        290.0,
+        329.4
+      ],
+      "section_title": "II. VCO DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "VCO DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "However, as the output rms voltage plot in Fig. 5(b) shows, it did not oscillate for total VOINIGESCU et al.: STUDY OF SIGE HBT SIGNAL SOURCES IN THE 220–330-GHZ RANGE Fig. 6."
+        },
+        {
+          "section_title": "VCO DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 6 depicts the ﬁnal schematics of the differential fundamental-wave 245-GHz Colpitts VCO and of the push–push 320-GHz Colpitts–Clapp VCO."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SIGE, SOI, HBT, 45-nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, thz, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematics of (a) 245-GHz fundamental Colpitts and (b) 320-GHz Colpitts–Clapp push-push VCOs",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.79,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. Comparison of the simulated input resistance and reactance and of the output resistance of the Colpitts–Clapp and Colpitts VCO half-circuits.",
+      "caption_bbox": [
+        302.0,
+        219.7,
+        554.0,
+        237.5
+      ],
+      "section_title": "II. VCO DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "VCO DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The emitter varactor pair Fig. 7."
+        },
+        {
+          "section_title": "VCO DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "As illustrated in Fig. 7, the beneﬁts of the Colpitts–Clapp topology are diminished above 250 GHz due to the additional capacitance at the tank node which reduces the negative resistance in half and quenches the oscillation."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-simulated": -3.0,
+        "section:design": 1.5,
+        "type_match:vco": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SIGE, SOI, HBT, 45-nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, thz, if",
+        "sub_blocks": [
+          "varactor",
+          "LC tank / resonator"
+        ],
+        "design_purpose": "",
+        "function_summary": "Comparison of the simulated input resistance and reactance and of the output resistance of the Colpitts–Clapp and Colpitts VCO half-circuits",
+        "key_specs": [
+          "250 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 5,
+      "caption": "Fig. 8. (a) Doubler schematic. (b) Simulated transfer characteristics at 150–300 GHz.",
+      "caption_bbox": [
+        39.5,
+        264.7,
+        318.4,
+        273.4
+      ],
+      "section_title": "III. VCO-DOUBLER SIGNAL SOURCE DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "VCO-DOUBLER SIGNAL SOURCE DESIGN",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The schematic of the 150–300-GHz doubler is shown in Fig. 8 along with its simulated transfer characteristics for an input signal at 150 GHz."
+        },
+        {
+          "section_title": "VCO-DOUBLER SIGNAL SOURCE DESIGN",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The Fourier series expansion of the collector current through each of the two differential pair transistors can be employed to understand and optimize the design (7) Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "-simulated": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SIGE, SOI, HBT, 45-nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, thz, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) Doubler schematic. (b) Simulated transfer characteristics at 150–300 GHz",
+        "key_specs": [
+          "150 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 6,
+      "caption": "Fig. 9. Schematics of 300-GHz VCO-buffer-doubler signal source. The bias current mirrors are not shown.",
+      "caption_bbox": [
+        38.0,
+        351.4,
+        386.1,
+        360.2
+      ],
+      "section_title": "IV. FABRICATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "VCO-DOUBLER SIGNAL SOURCE DESIGN",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "As illustrated in Fig. 9, a differential cascode topology was chosen for the buffer."
+        },
+        {
+          "section_title": "FABRICATION",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The inductors on VOINIGESCU et al.: STUDY OF SIGE HBT SIGNAL SOURCES IN THE 220–330-GHZ RANGE Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "type_match:vco": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SIGE, SOI, HBT, 45-nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, thz, if",
+        "sub_blocks": [
+          "inductor",
+          "current mirror",
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Schematics of 300-GHz VCO-buffer-doubler signal source. The bias current mirrors are not shown",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.56,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 6,
+      "caption": "Fig. 10. Measured base-collector varactor capacitance (symbols) per unit m 4.5 m HBT as a function of frequency and emitter length for a 0.12 2.5 V. The simulated capacitance base-collector voltage from 0.5 V to (dashed and solid lines) using the design kit HICUM L2 model is shown for reference with solid and dashed lines for the two extreme bias values.",
+      "caption_bbox": [
+        38.0,
+        541.2,
+        290.0,
+        585.9
+      ],
+      "section_title": "IV. FABRICATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FABRICATION",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 10 reproduces the measured HBT base-collector (also HBT varactor) capacitance per unit emitter length in the 0–170 GHz at HBT/varactor bias 0.5 to 2.5 V."
+        },
+        {
+          "section_title": "FABRICATION",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -7.7,
+      "relevance_breakdown": {
+        "-reference": -1.0,
+        "-model": -1.5,
+        "-simulated": -3.0,
+        "-measured": -3.0,
+        "-capacitance": -2.0,
+        "type_match:voltage": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SIGE, SOI, HBT, 45-nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, thz, if",
+        "sub_blocks": [
+          "varactor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Measured base-collector varactor capacitance (symbols) per unit m 4.5 m HBT as a function of frequency and emitter length for a 0.12 2.5 V. The simulated capacitance base-collector voltage from 0.5 V to (dashed and solid lines) using the design kit HICUM L2 model is shown for reference with solid and dashed lines for ...",
+        "key_specs": [
+          "170 GHz",
+          "2.5 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 6,
+      "caption": "Fig. 11. Die photographs: (a) 245-GHz VCO and (b) 300-GHz VCO-bufferdoubler core.",
+      "caption_bbox": [
+        302.0,
+        528.7,
+        554.0,
+        546.4
+      ],
+      "section_title": "IV. FABRICATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FABRICATION",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The die photographs of the 245-GHz fundamental VCO and of the 300-GHz VCO-buffer-doubler source are reproduced in Fig. 11."
+        },
+        {
+          "section_title": "FABRICATION",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "As can be observed in Fig. 11, all inductors smaller than 20 pH are realized as simple interconnect lines either directly over the silicon substrate, or over a ground plane formed by shunting metals 1, 2, and 3 together."
+        },
+        {
+          "section_title": "FABRICATION",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The simulated capacitance base-collector voltage from 0.5 V to (dashed and solid lines) using the design kit HICUM L2 model is shown for reference with solid and dashed lines for the two extreme bias values. the bias paths, all larger than 80 pH, are realized with rectangular coils and modeled using the public-domain software ASITIC. microstrip lines at the outputs of the 240-GHz VCO The 50- [Fig. 11(a)] and of the doubler [Fig. 11(b)] were modeled using Agilent’s MOMENTUM."
+        },
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "First, as illustrated in Fig. 12, a small-signal test setup was employed to unambiguously identify the tuning Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.9,
+      "relevance_breakdown": {
+        "+core": 0.5,
+        "-photograph": -3.0,
+        "-die photo": -3.0,
+        "type_match:vco": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SIGE, SOI, HBT, 45-nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, thz, if",
+        "sub_blocks": [
+          "inductor",
+          "transmission line",
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Die photographs: (a) 245-GHz VCO and (b) 300-GHz VCO-bufferdoubler core",
+        "key_specs": [
+          "20 pH",
+          "0.5 V",
+          "80 pH"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 7,
+      "caption": "Fig. 12. Test setup for characterizing the tuning range of (a) single-ended push-push VCO, (b) the fundamental-wave differential VCO, and (c) VCO-doubler",
+      "caption_bbox": [
+        39.5,
+        165.9,
+        555.5,
+        174.7
+      ],
+      "section_title": "V. MEASUREMENTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "First, as illustrated in Fig. 12, a small-signal test setup was employed to unambiguously identify the tuning Fig. 11."
+        },
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The two VCOs show similar output power levels and IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 48, NO. 9, SEPTEMBER 2013 Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-tuning range": -2.5,
+        "-setup": -2.0,
+        "section:results": -2.0,
+        "type_match:vco": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SIGE, SOI, HBT, 45-nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, thz, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Test setup for characterizing the tuning range of (a) single-ended push-push VCO, (b) the fundamental-wave differential VCO, and (c) VCO-doubler",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 7,
+      "caption": "Fig. 13. Comparison of the tuning range of the 300-GHz VCO-buffer-doubler -parameter measurements and from the downconsignal source obtained from verted spectrum measurements.",
+      "caption_bbox": [
+        39.5,
+        334.9,
+        291.5,
+        361.6
+      ],
+      "section_title": "V. MEASUREMENTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 13 compares the tuning range of the 300-GHz VCO- -parameter buffer-doubler source obtained from small-signal measurements with that determined from the measured spectrum after down conversion at the IF port of the 220–325-GHz OML TR module."
+        },
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "-tuning range": -2.5,
+        "section:results": -2.0,
+        "type_match:vco": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SIGE, SOI, HBT, 45-nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, thz, if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Comparison of the tuning range of the 300-GHz VCO-buffer-doubler -parameter measurements and from the downconsignal source obtained from verted spectrum measurements",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 7,
+      "caption": "Fig. 14. Measured output power and tuning range for the 150and 245-GHz fundamental-wave VCOs.",
+      "caption_bbox": [
+        39.5,
+        506.8,
+        291.5,
+        524.5
+      ],
+      "section_title": "V. MEASUREMENTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The measured output power and tuning range of the fundamental 150-GHz [3] and 245-GHz VCOs are reproduced in Fig. 14 when only the control voltage of the bottom varactor pair is varied."
+        },
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -8.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-tuning range": -2.5,
+        "-output power": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SIGE, SOI, HBT, 45-nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, thz, if",
+        "sub_blocks": [
+          "varactor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Measured output power and tuning range for the 150and 245-GHz fundamental-wave VCOs",
+        "key_specs": [
+          "14 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 7,
+      "caption": "Fig. 15. 245-GHz VCO output power and phase noise versus current density.",
+      "caption_bbox": [
+        303.5,
+        334.5,
+        554.1,
+        343.2
+      ],
+      "section_title": "V. MEASUREMENTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The measured phase noise and output power of the 245-GHz VCO are depicted in Fig. 15 as a function of the collector current density for a ﬁxed varactor control voltage."
+        },
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "In general, the phase noise improves at the upper control voltage range because the varactor capacitance decreases and Fig. 15. 245-GHz VCO output power and phase noise versus current density."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-phase noise": -2.5,
+        "-output power": -2.0,
+        "section:results": -2.0,
+        "type_match:vco": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SIGE, SOI, HBT, 45-nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, thz, if",
+        "sub_blocks": [
+          "varactor"
+        ],
+        "design_purpose": "",
+        "function_summary": "245-GHz VCO output power and phase noise versus current density",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 7,
+      "caption": "Fig. 16. Measured phase-noise spectrum of the VCO-buffer-doubler source at 309.5 GHz.",
+      "caption_bbox": [
+        303.5,
+        541.9,
+        555.5,
+        559.6
+      ],
+      "section_title": "V. MEASUREMENTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 16."
+        },
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The best phase noise of the 300-GHz VCOits buffer-doubler source, of 101.6 dBc/Hz at 10-MHz offset, was measured at 309.5 GHz, and the associated zoomed in spectrum, at the IF output of the VNA downconverter is shown Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "type_match:vco": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SIGE, SOI, HBT, 45-nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, thz, if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Measured phase-noise spectrum of the VCO-buffer-doubler source at 309.5 GHz",
+        "key_specs": [
+          "101.6 dBc/Hz",
+          "309.5 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 8,
+      "caption": "Fig. 17. Comparison of the peak output power vs. frequency for 320-GHz push–push, VCO-doubler, and VCO-buffer-doubler.",
+      "caption_bbox": [
+        38.0,
+        356.2,
+        290.0,
+        374.0
+      ],
+      "section_title": "V. MEASUREMENTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Finally, Figs. 17 and 18 compare the measured output power and phase noise of the three alternate solutions for signal generation at 300 GHz: unbuffered push-push VCO, VCO-doubler, and VCO-buffer-doubler."
+        },
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "ALL PHASE-NOISE VALUES ARE AT 10-MHZ OFFSET EXCEPT FOR [18] WHICH REPORTS BOTH 10AND 1-MHZ OFFSET VALUES Fig. 17."
+        },
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Comparison of the measured phase noise for the signal sources in Fig. 17. problems."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "-output power": -2.0,
+        "section:results": -2.0,
+        "type_match:vco": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SIGE, SOI, HBT, 45-nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, thz, if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Comparison of the peak output power vs. frequency for 320-GHz push–push, VCO-doubler, and VCO-buffer-doubler",
+        "key_specs": [
+          "300 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 8,
+      "caption": "Fig. 18. Comparison of the measured phase noise for the signal sources in",
+      "caption_bbox": [
+        38.0,
+        528.6,
+        290.0,
+        537.4
+      ],
+      "section_title": "V. MEASUREMENTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 18."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -7.1,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-phase noise": -2.5,
+        "section:results": -2.0,
+        "references": 0.4
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SIGE, SOI, HBT, 45-nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, thz, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Comparison of the measured phase noise for the signal sources in",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 8,
+      "caption": "Fig. 19. Comparison of phase noise of the fundamental-wave 150-GHz VCO [3] and of the 300-GHz VCO-buffer-doubler signal source.",
+      "caption_bbox": [
+        302.0,
+        385.0,
+        554.0,
+        402.8
+      ],
+      "section_title": "V. MEASUREMENTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Indeed, this conclusion appears to be supported by the phase noise measurements reproduced in Fig. 19 for the standalone 150-GHz fundamental-wave VCO [3], the 150-GHz fundamental-wave VCO driving a divider chain [3], and for the-300 GHz VCO-buffer-doubler signal source which employs the same 150 GHz fundamental-wave VCO."
+        },
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "In contrast, the phase noise measured at the output of the divide-by-8 chain [3] remains constant throughout the VCO tuning range because it is neither limited by the VCO output power nor by the noise ﬂoor of the spectrum analyzer and Fig. 19."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.7,
+      "relevance_breakdown": {
+        "-phase noise": -2.5,
+        "section:results": -2.0,
+        "type_match:vco": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SIGE, SOI, HBT, 45-nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, thz, if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Comparison of phase noise of the fundamental-wave 150-GHz VCO [3] and of the 300-GHz VCO-buffer-doubler signal source",
+        "key_specs": [
+          "-300 GHz",
+          "150 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 20,
+      "label": "Fig. 20",
+      "page": 8,
+      "caption": "Fig. 20. Comparison of the measured (lines with symbols) and simulated (solid or dashed line) output power and tuning range as a function of control voltage for the 240-GHz fundamental-wave and 300-GHz VCO-buffer-doubler signal sources.",
+      "caption_bbox": [
+        302.0,
+        632.2,
+        554.0,
+        667.9
+      ],
+      "section_title": "V. MEASUREMENTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 20."
+        },
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "A comparison of the measured and simulated tuning characteristics and output power of the fundamental-wave 240-GHz VCO and of the 300-GHz multiplier-with-buffer signal source using HICUM Level2 transistor models extracted from -parameter measurements is shown in Fig. 20."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -9.7,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "-measured": -3.0,
+        "-tuning range": -2.5,
+        "-output power": -2.0,
+        "section:results": -2.0,
+        "type_match:vco": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SIGE, SOI, HBT, 45-nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, thz, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Comparison of the measured (lines with symbols) and simulated (solid or dashed line) output power and tuning range as a function of control voltage for the 240-GHz fundamental-wave and 300-GHz VCO-buffer-doubler signal sources",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 9,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

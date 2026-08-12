@@ -1,0 +1,739 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1487607.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1487607",
+  "generated_at": "2026-07-29T22:02:58",
+  "paper_metadata": {
+    "title": "A Time-to-Digital-Converter-Based CMOS Smart Temperature Sensor",
+    "authors": [
+      "Poki Chen",
+      "Chun-Chi Chen",
+      "Chin-Chung Tsai",
+      "Wen-Fu Lu"
+    ],
+    "abstract": "A time-to-digital-converter-based CMOS smart temperature sensor without a voltage/current analog-to-digital converter (ADC) or bandgap reference is proposed for high-accuracy portable applications. Conventional smart temperature sensors rely on voltage/current ADCs for digital output code conversion. For the purpose of cost reduction and power savings, the proposed smart temperature sensor first generates a pulse with a width proportional to the measured temperature. Then, a cyclic time-to-digital converter is utilized to convert the pulse into Fig. 1. Smart temperature sensor. a corresponding digital code. The test chips have an extremely small area of 0.175 mm2 and were fabricated in the TSMC CMOS 0.35m 2P4M process. Due to the excellent linearity TABLE I of the digital output, the achieved measurement error is merely COMMON SPECIFICATIONS FOR SMART TEMPERATURE SENSORS 0 7 +0 9 C after two point calibration, but without any curvature correction or dynamic offset cancellation. The effective resolution is better than 0.16 C, and the power consumption is under 10 W at a sample rate of 2 samples/s.",
+    "keywords": [
+      "Delay line",
+      "intelligent sensor",
+      "temperature sensor",
+      "time-to-digital converter (TDC)"
+    ],
+    "doi": "10.1109/JSSC.2005.852041",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2005
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Time-to-Digital-Converter-Based CMOS Smart Temperature Sensor",
+    "technology": "CMOS, BJT",
+    "application_domain": "if",
+    "sub_blocks": [
+      "transistor/MOSFET",
+      "capacitor",
+      "current mirror",
+      "output buffer"
+    ],
+    "design_purpose": "A time-to-digital-converter-based CMOS smart temperature sensor without a voltage/current analog-to-digital converter (ADC) or bandgap reference is proposed for high-accuracy portable applications.",
+    "function_summary": "Time-to-Digital-Converter-Based CMOS Smart Temperature Sensor: A time-to-digital-converter-based CMOS smart temperature sensor without a voltage/current analog-to-digital converter (ADC) or bandgap reference is proposed for high-accuracy portable applications.",
+    "key_specs": [
+      "10 W",
+      "0.49 mW",
+      "3.8 V",
+      "10 kHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "D UE TO THE remarkable market growth of portable systems, the demand for low-cost but high-performance smart temperature sensors is becoming stronger than ever. The important applications of smart temperature sensors include: 1) the power consumption control in VLSI chips, such as CPU and chip sets; 2) the thermal compensation in single-chip systems and micro systems with built-in sensors; 3) the  ..."
+    },
+    {
+      "number": "II",
+      "title": "TEMPERATURE-TO-PULSE GENERATOR",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "The conventional temperature sensor in Fig. 1 cannot be used to generate the output pulse required for the succeeding TDC. A temperature-to-pulse generator should be designed ﬁrst to produce an output pulse with a width as linearly proportional to the measured temperature as possible. A simple circuit utilizing Fig. 3. Circuit of the simple temperature-to-pulse generator. gate delays to generate t ..."
+    },
+    {
+      "number": "III",
+      "title": "CYCLIC TIME-TO-DIGITAL CONVERTER",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "Another important modiﬁcation of the proposed smart temperature sensor is the replacement of the conventional voltage or current ADC by a cyclic TDC depicted by the block diagram shown in Fig. 8. The delay line is composed of even number of NOT gates. Since there are two stable states for a cyclic TDC, a RESET pin is required to set the circuit to the desired stable . During measurement, the input ..."
+    },
+    {
+      "number": "IV",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 4,
+      "text_preview": "The smart temperature sensor was fabricated in the TSMC m 2P4M CMOS process sponsored by National standard 0.35Chip Implementation Center (CIC). The microphotograph of the . To minimize chip is shown in Fig. 10 with an area of 0.175 mm IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 8, AUGUST 2005 Fig. 11. Measurement results of 25 test chips. Fig. 12. Measurement errors of 25 test chips after  ..."
+    },
+    {
+      "number": "V",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 5,
+      "text_preview": "A CMOS smart temperature sensor featured with extremely small chip area and low power consumption has been presented. By the replacement of voltage ADC used in conventional versions with a cyclic TDC, the achieved chip area is as small as , which is less than one-tenth of that of most former 0.175 mm versions. Accordingly, a temperature-to-pulse generator rather than the bandgap reference is utili ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Smart temperature sensor.",
+      "caption_bbox": [
+        302.6,
+        259.4,
+        415.1,
+        267.3
+      ],
+      "section_title": "",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Digital Object Identiﬁer 10.1109/JSSC.2005.852041 Fig. 1."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The typical block diagram of the conventional smart temperature sensor is depicted in Fig. 1 [1]."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "With standard digital CMOS processes, a silicon bandgap reference is usually utilized in temperature sensors as the reference in Fig. 1 [2], [3]."
+        },
+        {
+          "section_title": "TEMPERATURE-TO-PULSE GENERATOR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The conventional temperature sensor in Fig. 1 cannot be used to generate the output pulse required for the succeeding TDC."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.6,
+      "relevance_breakdown": {
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "sensor",
+        "technology": "CMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Smart temperature sensor",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Block diagram of the proposed smart temperature sensor.",
+      "caption_bbox": [
+        38.1,
+        129.0,
+        249.7,
+        136.9
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "A complicated and time-consuming CHEN et al.: TIME-TO-DIGITAL-CONVERTER-BASED CMOS SMART TEMPERATURE SENSOR Fig. 2."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "In order to eliminate the burden of the curvature calibration for BJT-based temperature sensing circuits, a new architecture for smart temperature sensors is presented in this paper, as shown in Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "+proposed": 3.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "sensor",
+        "technology": "CMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "In order to eliminate the burden of the curvature calibration for BJT-based temperature sensing circuits, a new architecture for smart temperature sensors is presented in this paper, as shown in Fig. 2.",
+        "function_summary": "Block diagram of the proposed smart temperature sensor. In order to eliminate the burden of the curvature calibration for BJT-based temperature sensing circuits, a new architecture for smart temperature sensors is presented in this paper, as shown in Fig. 2.",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.71,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Circuit of the simple temperature-to-pulse generator.",
+      "caption_bbox": [
+        301.1,
+        151.2,
+        498.2,
+        159.2
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "TEMPERATURE-TO-PULSE GENERATOR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "A simple circuit utilizing Fig. 3."
+        },
+        {
+          "section_title": "TEMPERATURE-TO-PULSE GENERATOR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Circuit of the simple temperature-to-pulse generator. gate delays to generate the thermally sensitive pulse is shown in Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "Time-to-Digital-Converter-Based CMOS Smart Temperature Sensor",
+        "technology": "CMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Circuit of the simple temperature-to-pulse generator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Circuit of the proposed temperature-to-pulse generator.",
+      "caption_bbox": [
+        39.6,
+        215.2,
+        244.5,
+        223.2
+      ],
+      "section_title": "II. TEMPERATURE-TO-PULSE GENERATOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TEMPERATURE-TO-PULSE GENERATOR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "To reduce the offset, the proposed temperature-to-pulse generator is modiﬁed as shown in Fig. 4."
+        },
+        {
+          "section_title": "TEMPERATURE-TO-PULSE GENERATOR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.8,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "+circuit": 1.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "Time-to-Digital-Converter-Based CMOS Smart Temperature Sensor",
+        "technology": "CMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "To reduce the offset, the proposed temperature-to-pulse generator is modiﬁed as shown in Fig. 4.",
+        "function_summary": "Circuit of the proposed temperature-to-pulse generator. To reduce the offset, the proposed temperature-to-pulse generator is modiﬁed as shown in Fig. 4.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.69,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Width offset reduction accomplished by delay line 2.",
+      "caption_bbox": [
+        39.6,
+        352.1,
+        237.6,
+        360.0
+      ],
+      "section_title": "II. TEMPERATURE-TO-PULSE GENERATOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TEMPERATURE-TO-PULSE GENERATOR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 5."
+        },
+        {
+          "section_title": "TEMPERATURE-TO-PULSE GENERATOR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The XOR gate is used to generate the propagation delay difference of the two delay lines as the output pulse which is shown in Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "delay line / delay element",
+        "technology": "CMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Width offset reduction accomplished by delay line 2",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. Delay cell used in delay line 2.",
+      "caption_bbox": [
+        39.6,
+        533.9,
+        168.4,
+        541.8
+      ],
+      "section_title": "II. TEMPERATURE-TO-PULSE GENERATOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TEMPERATURE-TO-PULSE GENERATOR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 6."
+        },
+        {
+          "section_title": "TEMPERATURE-TO-PULSE GENERATOR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "As shown in Fig. 6, a simple thermal compensation circuit is used to reduce the sensitivity of the NOT gates in delay line 2."
+        },
+        {
+          "section_title": "CYCLIC TIME-TO-DIGITAL CONVERTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "To reduce the thermal sensitivity of same thermal compensation scheme shown in Fig. 6 is applied to all of the gates in cyclic TDC."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "delay line / delay element",
+        "technology": "CMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "To reduce the thermal sensitivity of same thermal compensation scheme shown in Fig. 6 is applied to all of the gates in cyclic TDC.",
+        "function_summary": "Delay cell used in delay line 2. To reduce the thermal sensitivity of same thermal compensation scheme shown in Fig. 6 is applied to all of the gates in cyclic TDC.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Simulation result of the temperature-to-pulse generator.",
+      "caption_bbox": [
+        38.1,
+        252.9,
+        244.3,
+        260.8
+      ],
+      "section_title": "II. TEMPERATURE-TO-PULSE GENERATOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TEMPERATURE-TO-PULSE GENERATOR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The width offset at the lower bound of the measurement range can be made relatively small, as shown in the simulation result plotted in Fig. 7."
+        },
+        {
+          "section_title": "TEMPERATURE-TO-PULSE GENERATOR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "CHEN et al.: TIME-TO-DIGITAL-CONVERTER-BASED CMOS SMART TEMPERATURE SENSOR Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "sensor",
+        "technology": "CMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulation result of the temperature-to-pulse generator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. Block diagram of the cyclic TDC.",
+      "caption_bbox": [
+        38.1,
+        386.4,
+        176.4,
+        394.4
+      ],
+      "section_title": "II. TEMPERATURE-TO-PULSE GENERATOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TEMPERATURE-TO-PULSE GENERATOR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 8."
+        },
+        {
+          "section_title": "CYCLIC TIME-TO-DIGITAL CONVERTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Another important modiﬁcation of the proposed smart temperature sensor is the replacement of the conventional voltage or current ADC by a cyclic TDC depicted by the block diagram shown in Fig. 8."
+        },
+        {
+          "section_title": "CYCLIC TIME-TO-DIGITAL CONVERTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Otherwise, the input pulse will be shrunk or , respectively. or expanded for In reality, the AND and OR gates of the cyclic delay line in Fig. 8 are used as the inhomogeneous gates."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the cyclic TDC",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.31,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 3,
+      "caption": "Fig. 9. Effect of the gates’ inhomogeneity on pulse width.",
+      "caption_bbox": [
+        301.1,
+        230.8,
+        492.0,
+        238.8
+      ],
+      "section_title": "II. TEMPERATURE-TO-PULSE GENERATOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CYCLIC TIME-TO-DIGITAL CONVERTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The pulse-shrinking mechanism is controlled by the inhomogeneity of the gates in the cyclic delay line as shown in Fig. 9 [14]."
+        },
+        {
+          "section_title": "CYCLIC TIME-TO-DIGITAL CONVERTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "When the pulse goes from the Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "delay line / delay element",
+        "technology": "CMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Effect of the gates’ inhomogeneity on pulse width",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10. Microphotograph of the realized chip.",
+      "caption_bbox": [
+        39.6,
+        145.5,
+        194.2,
+        153.4
+      ],
+      "section_title": "III. CYCLIC TIME-TO-DIGITAL CONVERTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CYCLIC TIME-TO-DIGITAL CONVERTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The total amount of Fig. 10."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "To minimize chip is shown in Fig. 10 with an area of 0.175 mm IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 8, AUGUST 2005 Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -5.7,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "Time-to-Digital-Converter-Based CMOS Smart Temperature Sensor",
+        "technology": "CMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "To minimize chip is shown in Fig. 10 with an area of 0.175 mm IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 8, AUGUST 2005 Fig. 11.",
+        "function_summary": "Microphotograph of the realized chip. To minimize chip is shown in Fig. 10 with an area of 0.175 mm IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 8, AUGUST 2005 Fig. 11.",
+        "key_specs": [
+          "10 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 4,
+      "caption": "Fig. 11. Measurement results of 25 test chips.",
+      "caption_bbox": [
+        302.6,
+        231.0,
+        455.0,
+        239.0
+      ],
+      "section_title": "III. CYCLIC TIME-TO-DIGITAL CONVERTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "To minimize chip is shown in Fig. 10 with an area of 0.175 mm IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 8, AUGUST 2005 Fig. 11."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Unlike the conventional versions, the measurement results possess excellent linearity as shown in Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Time-to-Digital-Converter-Based CMOS Smart Temperature Sensor",
+        "technology": "CMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "To minimize chip is shown in Fig. 10 with an area of 0.175 mm IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 8, AUGUST 2005 Fig. 11.",
+        "function_summary": "Measurement results of 25 test chips. To minimize chip is shown in Fig. 10 with an area of 0.175 mm IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 8, AUGUST 2005 Fig. 11.",
+        "key_specs": [
+          "10 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 4,
+      "caption": "Fig. 12. Measurement errors of 25 test chips after two-point calibration.",
+      "caption_bbox": [
+        302.6,
+        417.3,
+        537.5,
+        425.3
+      ],
+      "section_title": "III. CYCLIC TIME-TO-DIGITAL CONVERTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 12."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The corresponding measurement error without subtle C, as plotted in Fig. 12. curvature correction is To demonstrate the supply voltage sensitivity of the proposed smart temperature sensor, the supply voltage was adjusted from 3.0 to 3.8 V in 0.05-V steps."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "sensor",
+        "technology": "CMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measurement errors of 25 test chips after two-point calibration",
+        "key_specs": [
+          "3.8 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 4,
+      "caption": "Fig. 13. Supply voltage sensitivity of the proposed circuit.",
+      "caption_bbox": [
+        302.6,
+        606.7,
+        494.4,
+        614.7
+      ],
+      "section_title": "III. CYCLIC TIME-TO-DIGITAL CONVERTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 13."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The corresponding resolution C to 0.177 C as shown in Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.8,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "+circuit": 1.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "Time-to-Digital-Converter-Based CMOS Smart Temperature Sensor",
+        "technology": "CMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Supply voltage sensitivity of the proposed circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.69,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 2,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

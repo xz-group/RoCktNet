@@ -1,0 +1,1131 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1175495.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1175495",
+  "generated_at": "2026-07-29T21:30:12",
+  "paper_metadata": {
+    "title": "A 2-GHz CMOS Image-Reject Receiver With LMS Calibration",
+    "authors": [
+      "Lawrence Der",
+      "Behzad Razavi"
+    ],
+    "abstract": "This paper describes a sign–sign least-mean squares (LMS) technique to calibrate gain and phase errors in the signal path of a Weaver image-reject receiver. The calibration occurs at startup and the results are stored digitally, allowing continuous signal reception thereafter. Fabricated in a standard digital 0.25m CMOS technology, the receiver achieves an image-rejection ratio of 57 dB after calibration, a noise figure of 5.2 dB, and a third-order input intercept point of 17 dBm. The circuit consumes 55 mW in calibration mode and 50 mW in normal receiver mode from a 2.5-V power supply. The prototype occupies an area of 1.23 1.84 mm2. (a)",
+    "keywords": [
+      "Digital-to-analog conversion",
+      "image rejection",
+      "least mean square (LMS) calibration",
+      "low-noise amplifier",
+      "mixer",
+      "radio frequency (RF) CMOS",
+      "variable-delay circuit"
+    ],
+    "doi": "10.1109/JSSC.2002.807407",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "2-GHz CMOS Image-Reject Receiver",
+    "technology": "CMOS",
+    "application_domain": "rf, radio frequency, baseband, if",
+    "sub_blocks": [
+      "inductor",
+      "resistor",
+      "transistor/MOSFET",
+      "mixer"
+    ],
+    "design_purpose": "",
+    "function_summary": "2-GHz CMOS Image-Reject Receiver: This paper describes a sign–sign least-mean squares (LMS) technique to calibrate gain and phase errors in the signal path of a Weaver image-reject receiver.",
+    "key_specs": [
+      "57 dB",
+      "5.2 dB",
+      "17 dBm",
+      "55 mW",
+      "50 mW",
+      "60 dB",
+      "40 dB",
+      "35 dB",
+      "2.4 GHz",
+      "190 MHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE TRADEOFF between image rejection and channel selection in heterodyne radio-frequency (RF) receivers poses many difficulties in both the choice of the system’s frequency planning and the design of the building blocks. Various alternatives such as direct conversion, image-reject mixing, and heterodyning with low intermediate frequency (IF) have been introduced so as to relax the above tradeoff, ..."
+    },
+    {
+      "number": "II",
+      "title": "ARCHITECTURE ISSUES",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "Fig. 1 shows the Hartley [2] and Weaver image-reject receivers. The IRR is limited by mismatches between the local Manuscript received March 18, 2002; revised September 12, 2002. The authors are with the Department of Electrical Engineering, University of California, Los Angeles, CA 90095-1594 USA (e-mail: razavi@icsl.ucla.edu). (a) (b) Fig. 1. (a) Hartley and (b) Weaver image-reject architectures ..."
+    },
+    {
+      "number": "III",
+      "title": "RECEIVER ARCHITECTURE",
+      "kind": "proposed",
+      "page": 1,
+      "text_preview": "Fig. 3 shows the architecture in simplified form, illustrating independent gain and phase calibration. An LMS adaptation circuit adjusts the phase and gain of the second downconversion stage without disturbing the RF mixers or the first LO. In the calibration mode, an image tone is applied at the RF input, is measured, and the coefficients and are updated in disapproaches zero. crete steps until U ..."
+    },
+    {
+      "number": "IV",
+      "title": "BUILDING BLOCKS",
+      "kind": "design",
+      "page": 3,
+      "text_preview": "A. LNA and RF Mixers Fig. 6 shows a simplified diagram of the LNA and RF mixers. A cascode LNA topology using inductive degeneration is followed by single-balanced active mixers with inductive loads. The combined circuit employs a current reuse technique similar to that in [13] except that two quadrature mixers are stacked on top of the LNA. Since the RF mixers require a large current to exhibit a ..."
+    },
+    {
+      "number": "V",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 6,
+      "text_preview": "The receiver along with the LMS calibration has been dem CMOS technology. signed and fabricated in a digital 0.25Fig. 15 shows a photograph of the die, which occupies an area 1.84 mm. The circuit has been tested with a 2.5-V of 1.23 supply. The measured input return loss of the receiver is plotted in 11 dB across the WCDMA band Fig. 16, indicating a value of (2.11–2.17 GHz). The measured noise fig ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 7,
+      "text_preview": "A sign–sign LMS calibration technique has been introduced that substantially improves the image-rejection of a Weaver receiver without compromising the noise, linearity, or gain of the IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 2, FEBRUARY 2003 receiver at the expense of a small increase in power dissipation. The Weaver architecture was chosen because it offers wideband image-rejection cap ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. (a) Hartley and (b) Weaver image-reject architectures.",
+      "caption_bbox": [
+        301.1,
+        411.0,
+        502.2,
+        421.6
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "ARCHITECTURE ISSUES",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 1 shows the Hartley [2] and Weaver image-reject receivers."
+        },
+        {
+          "section_title": "ARCHITECTURE ISSUES",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "(a) (b) Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "2-GHz CMOS Image-Reject Receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Hartley and (b) Weaver image-reject architectures",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Effect of threshold mismatch on IRR.",
+      "caption_bbox": [
+        39.6,
+        198.0,
+        189.1,
+        208.6
+      ],
+      "section_title": "II. ARCHITECTURE ISSUES",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ARCHITECTURE ISSUES",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Shown in Fig. 2, Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.4,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "2-GHz CMOS Image-Reject Receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Effect of threshold mismatch on IRR",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.17,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Simplified receiver architecture.",
+      "caption_bbox": [
+        302.6,
+        198.7,
+        434.3,
+        209.3
+      ],
+      "section_title": "II. ARCHITECTURE ISSUES",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 3 shows the architecture in simplified form, illustrating independent gain and phase calibration."
+        },
+        {
+          "section_title": "RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "In the calibration mode, an image tone is applied at the RF input, is measured, and the coefficients and are updated in disapproaches zero. crete steps until Unlike single-variable negative feedback systems, where a large loop gain is typically sufficient to force the error to zero, the architecture of Fig. 3 must simultaneously adjust the phase and gain so as to arrive at the global minimum for the error."
+        },
+        {
+          "section_title": "RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "A ( method of multivariable feedback is the LMS update algorithm, given by [10] (2) denotes the values of and at diswhere , is the step size, is the error, crete-time point represents the values of two input “regressors,” and IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 2, FEBRUARY 2003 Fig. 3."
+        },
+        {
+          "section_title": "RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "To determine how ated, we return to the general LMS algorithm [10] and, as outand lined in the Appendix, prove that where and denote the sigand in Fig. 3, respectively."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 7,
+          "sentence": "APPENDIX Fig. 3 shows the simplified architecture, illustrating gain and phase calibration."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 7,
+          "sentence": "To determine regressors, and must be generated, we return to the general LMS how and algorithm [10] and show that , where and denote the sigand in Fig. 3, respectively. nals at nodes From [10], the LMS algorithm is based on the iterative method of steepest descent where the updated value of the is equal to the current value of coefficient vector plus a change proportional to the the coefficient vector . negative gradient (6) The key result of the LMS algorithm is that it approximates the by taking the partial derivatives of with respect to gradient the coefficient vector rather than taking the partial derivatives with respect to the coefficient vector, as of the expectation of follows: (7) Comparing (5)–(7), we find that the input regressor vector is equal to the samples of ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.0,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "-simplified": -1.0,
+        "section:proposed": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simplified receiver architecture",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.73,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Overall receiver architecture.",
+      "caption_bbox": [
+        38.1,
+        272.0,
+        160.6,
+        282.6
+      ],
+      "section_title": "III. RECEIVER ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The above observations lead to the receiver architecture are varishown in Fig. 4, where the blocks denoted by able-delay stages used to adjust the phase of the second LO."
+        },
+        {
+          "section_title": "RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Differential signaling minimizes the effect of supply and DER AND RAZAVI: 2-GHz CMOS IMAGE-REJECT RECEIVER WITH LMS CALIBRATION Fig. 4."
+        },
+        {
+          "section_title": "RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The accuracy of calibration is limited by the offset voltage of the comparator in Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.2,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "section:proposed": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Overall receiver architecture",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.77,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Behavioral simulation of the LMS calibration.",
+      "caption_bbox": [
+        38.1,
+        590.5,
+        215.9,
+        601.1
+      ],
+      "section_title": "III. RECEIVER ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 5."
+        },
+        {
+          "section_title": "RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 5 shows the calibration behavior of the receiver as predicted by Simulink."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Behavioral simulation of the LMS calibration",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Simplified schematic of the LNA and RF mixers.",
+      "caption_bbox": [
+        39.6,
+        292.4,
+        225.8,
+        303.0
+      ],
+      "section_title": "III. RECEIVER ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 6."
+        },
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "LNA and RF Mixers Fig. 6 shows a simplified diagram of the LNA and RF mixers."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "-simplified": -1.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simplified schematic of the LNA and RF mixers",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.69,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Inductor structure.",
+      "caption_bbox": [
+        302.6,
+        191.9,
+        390.7,
+        202.6
+      ],
+      "section_title": "III. RECEIVER ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 2, FEBRUARY 2003 Fig. 7."
+        },
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 7 shows the stacked spirals used here so as to achieve a 20-fold increase in the equivalent inductance [14]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "2-GHz CMOS Image-Reject Receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [
+          "inductor"
+        ],
+        "design_purpose": "Fig. 7 shows the stacked spirals used here so as to achieve a 20-fold increase in the equivalent inductance [14].",
+        "function_summary": "Inductor structure. Fig. 7 shows the stacked spirals used here so as to achieve a 20-fold increase in the equivalent inductance [14].",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. Simplified diagram of the IF mixer.",
+      "caption_bbox": [
+        302.6,
+        371.5,
+        445.5,
+        382.2
+      ],
+      "section_title": "III. RECEIVER ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 8."
+        },
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 8 the IF mixers must provide a high IP3, nearly depicts the IF mixer implementation."
+        },
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 9(b) shows the transistor-level realization, omitting the and in Fig. 8) for clarity."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.2,
+      "relevance_breakdown": {
+        "-simplified": -1.0,
+        "section:proposed": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simplified diagram of the IF mixer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.14,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. (a) Gain control concept. (b) Implementation.",
+      "caption_bbox": [
+        38.1,
+        405.5,
+        213.0,
+        416.2
+      ],
+      "section_title": "IV. BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Current sources – carry less current, they are on simultaneously for Since DER AND RAZAVI: 2-GHz CMOS IMAGE-REJECT RECEIVER WITH LMS CALIBRATION (a) (b) Fig. 9."
+        },
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 9(a) illustrates the gain control concept."
+        },
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 9(b) shows the transistor-level realization, omitting the and in Fig. 8) for clarity."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) Gain control concept. (b) Implementation",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10. Simulated gain and noise figure (NF) of IF mixer as a function of . \u0001V",
+      "caption_bbox": [
+        301.1,
+        259.0,
+        552.2,
+        278.6
+      ],
+      "section_title": "IV. BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 10."
+        },
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 10 plots the simulated gain and noise figure of the cir- ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simulated gain and noise figure (NF) of IF mixer as a function of . \u0001V",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 4,
+      "caption": "Fig. 11. Variable-delay circuit. (a) Conceptual. (b) Schematic.",
+      "caption_bbox": [
+        301.1,
+        524.3,
+        504.7,
+        534.9
+      ],
+      "section_title": "IV. BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Simulated gain and noise figure (NF) of IF mixer as a function of . .V (a) (b) Fig. 11."
+        },
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Illustrated in Fig. 11, the circuit is realized by interpolating between the – and a slow signal path phases of a fast signal path – and – )."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Variable-delay circuit. (a) Conceptual. (b) Schematic",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.78,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 5,
+      "caption": "Fig. 12. Simulated phase noise of the variable-delay circuit.",
+      "caption_bbox": [
+        39.6,
+        241.4,
+        236.3,
+        252.0
+      ],
+      "section_title": "IV. BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 12."
+        },
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 12 plots the simulated phase noise of the variable-delay circuit for a 200-MHz sine wave input."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-simulated": -3.0,
+        "-phase noise": -2.5,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "2-GHz CMOS Image-Reject Receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated phase noise of the variable-delay circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 5,
+      "caption": "Fig. 13. Implementation of the SS-LMS adaptation circuit.",
+      "caption_bbox": [
+        302.6,
+        199.1,
+        496.1,
+        209.8
+      ],
+      "section_title": "IV. BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Sign–Sign LMS Adaptation Circuit The SS-LMS machine lends itself to a compact mixed-signal implementation as shown in Fig. 13."
+        },
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 2, FEBRUARY 2003 Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "2-GHz CMOS Image-Reject Receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Implementation of the SS-LMS adaptation circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 5,
+      "caption": "Fig. 14. One slice of the DAC.",
+      "caption_bbox": [
+        302.6,
+        451.1,
+        407.1,
+        461.8
+      ],
+      "section_title": "IV. BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "As shown in Fig. 14, the binary input is decomposed and converted code and a 6-bit fine 1-ofcode. into a 5-bit coarse 1-of4Even if accumulation of DNL yields a large INL, the small coefficient steps guaranteed by 11-bit monotonicity minimize the overall error."
+        },
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "One slice of the DAC",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 5,
+      "caption": "Fig. 15. Die photo of the prototype.",
+      "caption_bbox": [
+        302.6,
+        638.9,
+        423.0,
+        649.5
+      ],
+      "section_title": "IV. BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.1,
+      "relevance_breakdown": {
+        "-die photo": -3.0,
+        "section:design": 1.5,
+        "references": 0.4
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "2-GHz CMOS Image-Reject Receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Die photo of the prototype",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 6,
+      "caption": "Fig. 16. Measured input return loss.",
+      "caption_bbox": [
+        38.1,
+        243.7,
+        158.9,
+        254.4
+      ],
+      "section_title": "IV. BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "This benefit accrues because the DER AND RAZAVI: 2-GHz CMOS IMAGE-REJECT RECEIVER WITH LMS CALIBRATION Fig. 16."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The measured input return loss of the receiver is plotted in 11 dB across the WCDMA band Fig. 16, indicating a value of (2.11–2.17 GHz)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured input return loss",
+        "key_specs": [
+          "11 dB",
+          "2.17 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 6,
+      "caption": "Fig. 17. Measured IIP3 of the receiver.",
+      "caption_bbox": [
+        38.1,
+        454.6,
+        168.3,
+        465.3
+      ],
+      "section_title": "IV. BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 17."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "As shown in Fig. 17, the IIP3 is extrapolated to 17 dBm."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured IIP3 of the receiver",
+        "key_specs": [
+          "17 dBm"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 6,
+      "caption": "Fig. 18. Measured transient response of the SS-LMS algorithm.",
+      "caption_bbox": [
+        301.1,
+        269.8,
+        510.2,
+        280.5
+      ],
+      "section_title": "IV. BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "These measurements indicate the linearity of the Fig. 18."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 18 shows the measured convergence of the LMS machine during calibration with the image signal downconverted to 1 MHz and a clock rate of 5 MHz."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "2-GHz CMOS Image-Reject Receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured transient response of the SS-LMS algorithm",
+        "key_specs": [
+          "1 MHz",
+          "5 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 6,
+      "caption": "Fig. 19. Output spectrum (a) before calibration and (b) after calibration.",
+      "caption_bbox": [
+        301.1,
+        705.5,
+        536.0,
+        716.2
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "(a) (b) Fig. 19."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "As shown in Fig. 19, the SS-LMS calibration improves the IRR from 25 to 57 dB."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "2-GHz CMOS Image-Reject Receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Output spectrum (a) before calibration and (b) after calibration",
+        "key_specs": [
+          "57 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 20,
+      "label": "Fig. 20",
+      "page": 7,
+      "caption": "Fig. 20. Measured IRR versus input frequency.",
+      "caption_bbox": [
+        39.6,
+        242.3,
+        195.6,
+        253.0
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 20."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 20 plots the IRR, indicating only 1 dB of degradation as the input frequency deviates from the calibration point."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "2-GHz CMOS Image-Reject Receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured IRR versus input frequency",
+        "key_specs": [
+          "1 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 11,
+  "warnings": []
+}

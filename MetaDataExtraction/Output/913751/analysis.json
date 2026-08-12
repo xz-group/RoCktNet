@@ -1,0 +1,647 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\913751.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\913751",
+  "generated_at": "2026-07-29T22:03:23",
+  "paper_metadata": {
+    "title": "LVDS I/O Interface for Gb/s-per-Pin Operation in 0.35-m CMOS",
+    "authors": [
+      "Andrea Boni",
+      "Andrea Pierazzi",
+      "Davide Vecchi"
+    ],
+    "abstract": "This paper presents the design and the implementation of input/output (I/O) interface circuits for Gb/s-per-pin nor trimming procedures are required. At the same time, the operation, fully compatible with low-voltage differential signaling very large variation tolerated for the common-mode voltage at (LVDS) standard. Due to the differential transmission technique the input of a LVDS receiver requires several design improveand the low voltage swing, LVDS allows high transmission speeds ments over the typical architecture if transmission speeds in the and low power consumption at the same time. In the proposed gigabits-per-second range must be achieved. It should be retransmitter, the required tolerance on the dc output levels was achieved over process, temperature, and supply voltage variations marked that a recent standard [3] recommends a maximum data with neither external components nor trimming procedures, by rate of 655 Mb/s, forecasting data rates of 1.5 Gb/s in the near means of a closed-loop control circuit and an internal voltage future with low-loss media. At the moment, commercial LVDS reference. The proposed receiver implements a dual-gain-stage chipsets are specified for operation in the megabits-per-second folded-cascode architecture which allows a 1.2-Gb/s transmission range [6]–[9]. speed with the minimum common-mode and differential voltage at the input. The circuits were implemented in a 3.3-V 0.35m This paper describes the design and the implementation of a CMOS technology in a couple of test chips. Transmission operacomplete LVDS I/O interface in 0.35m CMOS technology. tions up to 1.2 Gb/s with random data patterns and up to 2 Gb/s The interface was tested up to 1.2 Gb/s with 8-bit random data in asynchronous mode were demonstrated. The transmitter and patterns and up to 2 Gb/s in asynchronous mode. Complete comreceiver pad cells exhibit a power consumption of 43 and 33 mW, patibility of the output levels with the requirements of standards respectively. [2], [3] was achieved by means of an internal reference.",
+    "keywords": [
+      "Back-plane drivers",
+      "CMOS integrated circuits",
+      "high-speed integrated circuits",
+      "input/output (I/O)",
+      "low-power design",
+      "low-voltage differential signaling (LVDS)"
+    ],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2001
+  },
+  "paper_circuit_context": {
+    "circuit_type": "receiver",
+    "technology": "CMOS, 100-nm process",
+    "application_domain": "if",
+    "sub_blocks": [
+      "resistor",
+      "transistor/MOSFET",
+      "current source",
+      "current mirror",
+      "transmission line",
+      "transformer",
+      "output buffer",
+      "bias circuit",
+      "switch"
+    ],
+    "design_purpose": "Due to the differential transmission technique the input of a LVDS receiver requires several design improveand the low voltage swing, LVDS allows high transmission speeds ments over the typical architecture if transmission speeds in the and low power consumption at the same time.",
+    "function_summary": "receiver: Due to the differential transmission technique the input of a LVDS receiver requires several design improveand the low voltage swing, LVDS allows high transmission speeds ments over the typical architecture if transmission speeds in the and low power consumption at the same time.",
+    "key_specs": [
+      "33 mW",
+      "1 GHz",
+      "3.6 V",
+      "3 V",
+      "90%",
+      "1.7 pF",
+      "10 GHz",
+      "25 mV",
+      "50 mV",
+      "1.25 V"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE EVER-increasing processing speed of microprocessor motherboards, optical transmission links, intelligent hubs and routers, etc., is pushing the off-chip data rate into the gigabits-per-second range. However, unlike internal clocks, chip-to-board signaling gains little benefit in terms of operating frequency from the increased silicon integration. In the last decade, high data rates were achie ..."
+    },
+    {
+      "number": "II",
+      "title": "LVDS LINK",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "LVDS uses differential data transmission and the transmitter is configured as a switched-polarity current generator. A differential load resistor at the receiver end provides current-tovoltage conversion and optimum line matching at the same time, Fig. 1(a). For operation in the gigabits-per-second range, an additional termination resistor is usually placed at the source end to suppress reflected  ..."
+    },
+    {
+      "number": "III",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 3,
+      "text_preview": "The two circuits were implemented in a couple of test chips in m CMOS technology [16], Fig. 6. The transmitter is a a 0.35shifted clock serializer transmitting a 8-bit data burst with a 90 reference over two pairs of 3-cm-long, 0.6-mm-large 50- -strip lines (FR4 thickness is 360 m). The transmission speed is set by means of an internal current-controlled oscillator. The receiver is a serial-to-par ..."
+    },
+    {
+      "number": "IV",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 4,
+      "text_preview": "A complete transmission link fully compatible with the m CMOS techLVDS standards and implemented in a 0.35nology was presented. Thanks to the differential transmission and the low voltage swing, a significant power saving is achieved with respect to conventional ECL circuits, but the reduced noise margin requires a tight control of the dc output levels over PVT variations. The proposed closed loop ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Different solutions for high-speed data links. All the transmission lines, with the characteristic impedance R , are ground referenced. (a) Data link using LVDS with line termination at the receiver end. (b) LVDS link with termination at the receiver and source ends for gigabits-per-second operation. (c) Single-ended and (d) differential PECL links.",
+      "caption_bbox": [
+        39.6,
+        428.6,
+        290.7,
+        475.2
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "LVDS LINK",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "A differential load resistor at the receiver end provides current-tovoltage conversion and optimum line matching at the same time, Fig. 1(a)."
+        },
+        {
+          "section_title": "LVDS LINK",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "For operation in the gigabits-per-second range, an additional termination resistor is usually placed at the source end to suppress reflected waves caused by crosstalk [10] or by imperfect termination, due to package parasitics and component tolerance, Fig. 1(b)."
+        },
+        {
+          "section_title": "LVDS LINK",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "From Fig. 1, the power saving achieved with LVDS against either differential or single-ended PECL is evident."
+        },
+        {
+          "section_title": "LVDS LINK",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The implemented transmitter, Fig. 2, uses the typical configurations with four MOS switches in bridge configuration, : with and switched on, the polarity of the IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 4, APRIL 2001 TABLE I OUTPUT LEVELS FOR LVDS AND 100K PECL Fig. 1."
+        },
+        {
+          "section_title": "LVDS LINK",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Since the proposed transmission link is intended for operation in the gigabits-per-second range, the double termination scheme, Fig. 1(b), was used and the termination resistors were integrated in the ) and in the receiver cell ( ). transmitter ( load at the receiver, both the With a nominal 100common-mode voltage and the differential swing at the output should fall within the LVDS standard specifications [2], [3] 3.6 V, and over the full range of process, supply voltage, 3 V 40 C C (PVT) temperature variations, mV mV (1) V V (2) and are the differential output voltage and the where common-mode voltage at the transmitter output, respectively."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.5,
+      "relevance_breakdown": {
+        "-reference": -1.0,
+        "section:intro": -0.5,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "termination network",
+        "technology": "CMOS, 100-nm process",
+        "application_domain": "if",
+        "sub_blocks": [
+          "resistor",
+          "transmission line",
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Different solutions for high-speed data links. All the transmission lines, with the characteristic impedance R , are ground referenced. (a) Data link using LVDS with line termination at the receiver end. (b) LVDS link with termination at the receiver and source ends for gigabits-per-second operation. (c) Single-ended ...",
+        "key_specs": [
+          "3.6 V",
+          "3 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.03,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Schematic diagram of the LVDS transmitter (top part) and the closedloop control circuit (bottom part).",
+      "caption_bbox": [
+        302.6,
+        510.2,
+        553.6,
+        529.8
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "LVDS LINK",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The implemented transmitter, Fig. 2, uses the typical configurations with four MOS switches in bridge configuration, : with and switched on, the polarity of the IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 4, APRIL 2001 TABLE I OUTPUT LEVELS FOR LVDS AND 100K PECL Fig. 1."
+        },
+        {
+          "section_title": "LVDS LINK",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "In order to define the correct output levels, a feedback loop across Fig. 2."
+        },
+        {
+          "section_title": "LVDS LINK",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "In order to achieve higher precision and lower circuit complexity, a simple low-power common-mode feedback control was implemented in the transmitter, Fig. 2, bottom part."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "The bottom graph shows the output and input waveforms at 600 MHz and mV and mV at the input. with To verify the robustness of the proposed closed-loop bias control in the LVDS transmitter, Fig. 2, the dc output common-mode and differential voltages were measured over a large temperature range."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.1,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+circuit": 1.0,
+        "section:intro": -0.5,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "transmitter",
+        "technology": "CMOS, 100-nm process",
+        "application_domain": "if",
+        "sub_blocks": [
+          "switch"
+        ],
+        "design_purpose": "In order to achieve higher precision and lower circuit complexity, a simple low-power common-mode feedback control was implemented in the transmitter, Fig. 2, bottom part.",
+        "function_summary": "Schematic diagram of the LVDS transmitter (top part) and the closedloop control circuit (bottom part). In order to achieve higher precision and lower circuit complexity, a simple low-power common-mode feedback control was implemented in the transmitter, Fig. 2, bottom part.",
+        "key_specs": [
+          "600 MHz"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.81,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Simulation of a differential signal transmitted over two 7-cm-long 50- -strips. Chip-level parasitics, ESD protections, LRC package model and lossy transmission line model are included.",
+      "caption_bbox": [
+        38.1,
+        197.6,
+        289.2,
+        226.2
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "LVDS LINK",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "To this aim, is set equal to , where is the gain of current mirrors and ; a large Fig. 3."
+        },
+        {
+          "section_title": "LVDS LINK",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 3 shows a simulated differential signal transmitted over two -strip lines (FR4 thickness 7-cm-long and 0.6-mm-large 50m)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "-model": -1.5,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "ESD protection circuit",
+        "technology": "CMOS, 100-nm process",
+        "application_domain": "if",
+        "sub_blocks": [
+          "current mirror",
+          "transmission line"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simulation of a differential signal transmitted over two 7-cm-long 50- -strips. Chip-level parasitics, ESD protections, LRC package model and lossy transmission line model are included",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Schematic diagram of a typical LVDS receiver.",
+      "caption_bbox": [
+        301.1,
+        276.1,
+        480.8,
+        286.7
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "LVDS LINK",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "In the simulation a full back-annotated schematic of is 360the transmitter (including ESD protections) was used together IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 4, APRIL 2001 Fig. 4."
+        },
+        {
+          "section_title": "LVDS LINK",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Receiver A typical LVDS receiver is shown in Fig. 4 [14]."
+        },
+        {
+          "section_title": "LVDS LINK",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The second stage is a nMOS version of the typical LVDS receiver, Fig. 4, where the choice of pMOS input devices was mainly determined by the input common-mode range to be supported."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.7,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS, 100-nm process",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Schematic diagram of a typical LVDS receiver",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.43,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Schematic diagram of the improved LVDS receiver supporting the full input range of the LVDS standard.",
+      "caption_bbox": [
+        39.6,
+        370.9,
+        290.6,
+        390.4
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "LVDS LINK",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "In the proposed LVDS receiver, Fig. 5, a large gain-bandwidth product independent on the input common-mode voltage is achieved by means of a folded-cascode input amplifier, , with resistive load, ."
+        },
+        {
+          "section_title": "LVDS LINK",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The common-gate nMOS de- , set a low dc voltage at the drain terminal of vices, IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 4, APRIL 2001 Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS, 100-nm process",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Schematic diagram of the improved LVDS receiver supporting the full input range of the LVDS standard",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Chip photograph of the transmitter chipset: SR is the serializer circuitry, CCO is the controlled oscillator, and B.G.REF. is the biasing circuitry.",
+      "caption_bbox": [
+        39.6,
+        588.8,
+        290.6,
+        608.5
+      ],
+      "section_title": "III. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "LVDS LINK",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 6."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "The two circuits were implemented in a couple of test chips in m CMOS technology [16], Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.2,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-photograph": -3.0,
+        "-chip photo": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, 100-nm process",
+        "application_domain": "if",
+        "sub_blocks": [
+          "bias circuit"
+        ],
+        "design_purpose": "",
+        "function_summary": "Chip photograph of the transmitter chipset: SR is the serializer circuitry, CCO is the controlled oscillator, and B.G.REF. is the biasing circuitry",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Measured CK and DATA waveforms with a 11 010 010 pattern transmitted at 1 Gb/s.",
+      "caption_bbox": [
+        302.6,
+        221.6,
+        553.7,
+        241.2
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "LVDS LINK",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Since the aspect ratio of the nMOS input devices of the Fig. 7."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Fig. 7 shows the measured CK and DATA waveforms with a 11 010 010 pattern transmitted at 1 Gb/s, while the eye pattern at 1 Gb/s is shown in Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-waveform": -2.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS, 100-nm process",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Measured CK and DATA waveforms with a 11 010 010 pattern transmitted at 1 Gb/s",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. Measured eye pattern at 1 Gb/s. The probe bandwidth is limited to 1 GHz.",
+      "caption_bbox": [
+        302.6,
+        369.3,
+        553.7,
+        388.9
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "LVDS LINK",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 8."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Fig. 7 shows the measured CK and DATA waveforms with a 11 010 010 pattern transmitted at 1 Gb/s, while the eye pattern at 1 Gb/s is shown in Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS, 100-nm process",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured eye pattern at 1 Gb/s. The probe bandwidth is limited to 1 GHz",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. Top: 1 GHz waveform measured at the output of the LVDS transmitter = 100 mV and V = 1:25 V at the input of the LVDS cell, with V receiver. Bottom: IN is the input sine-wave provided to the LVDS receiver, = 100 mV and V = 100 mV) corresponding to worst case conditions (V at 600 MHz and OUT is the correspondent LVDS output.",
+      "caption_bbox": [
+        38.1,
+        257.5,
+        289.2,
+        303.9
+      ],
+      "section_title": "IV. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Fig. 9."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "The measurement results are reported in Fig. 9: the top graph shows the measured mV output waveform at 1 GHz, i.e., 2 Gb/s, with V at the input of the LVDS receiver."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -5.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-waveform": -2.0,
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS, 100-nm process",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Top: 1 GHz waveform measured at the output of the LVDS transmitter = 100 mV and V = 1:25 V at the input of the LVDS cell, with V receiver. Bottom: IN is the input sine-wave provided to the LVDS receiver, = 100 mV and V = 100 mV) corresponding to worst case conditions (V at 600 MHz and OUT is the correspondent LVDS ...",
+        "key_specs": [
+          "1 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10. Measured dc common-mode and differential output voltage of the C to 150 C) temperature range.",
+      "caption_bbox": [
+        38.1,
+        506.9,
+        289.1,
+        526.5
+      ],
+      "section_title": "IV. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Bottom: IN is the input sine-wave provided to the LVDS receiver, = 100 mV and V = 100 mV) corresponding to worst case conditions (V at 600 MHz and OUT is the correspondent LVDS output. implemented LVDS transmitter, over a (40 Fig. 10."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "The measurement results, Fig. 10, 40 C up to 150 C. show correct LVDS output levels from IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 4, APRIL 2001 TABLE II PERFORMANCE SUMMARY OF THE LVDS TRANSMITTER AND RECEIVER Table II reports a performance summary of the implemented pad cells."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS, 100-nm process",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured dc common-mode and differential output voltage of the C to 150 C) temperature range",
+        "key_specs": [
+          "100 mV",
+          "600 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 2,
+  "warnings": []
+}

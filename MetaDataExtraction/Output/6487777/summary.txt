@@ -1,0 +1,49 @@
+# A Soft Self-Commutating Method Using Minimum Control Circuitry for Multiple-String LED Drivers Junsik Kim, Jiyong Lee, Shihong Park
+
+VENUE
+"2013"
+
+FIGURE NUMBER
+"Figure 21.8.1 shows the circuit of the proposed LED driver, taking two LED strings as an example to explain the operation principle. It consists of a bridge diode, high-voltage n-channel MOSFET Source-Coupled-Pair (SCP) and voltage references. LEDs in Fig. 21.8.1 represent the group of seriesand parallel-connected LEDs. In SCP operations, if the voltage difference between two input gates is higher than √2VOV, where VOV = VGS - VT, the high-biased transistor (M2) carries all the current and the other (M1) has no current. This is true only when VD1 and VD2 are available at the same time. In other words, the high-biased M2 cannot carry the LED current while VD2 remains in a low voltage condition. If VIN > VLED1 + VLED2, VD2 starts to rise and M2 takes the LED current from M1. Therefore, the combination of an SCP with a incremental gate voltages and the LED strings in series enables self-commutation without any additional sensing circuitry."
+
+TYPE
+"line / output driver"
+
+APPLICATION
+"if"
+
+SUB-BLOCKS
+[
+  "resistor",
+  "transistor/MOSFET",
+  "current source",
+  "op-amp"
+]
+
+FUNCTION SUMMARY
+"line / output driver"
+
+METRICS
+[
+  "Efficiency / ratio",
+  "Power consumption",
+  "Supply voltage",
+  "Frequency"
+]
+
+NUMERICAL PERFORMANCE
+[
+  "92.2%",
+  "8.6%",
+  "22W",
+  "110V",
+  "2V",
+  "60 Hz",
+  "220V",
+  "1 kHz",
+  "1kHz",
+  "450V"
+]
+
+CONFIDENCE
+1.0

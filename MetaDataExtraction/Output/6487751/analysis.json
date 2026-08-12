@@ -1,0 +1,209 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\RNDatasetPapers\\6487751.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output_rerun_128\\6487751",
+  "generated_at": "2026-07-29T22:45:38",
+  "paper_metadata": {
+    "title": "An SRAM Using Output Prediction to Reduce BL-Switching Activity and Statistically-Gated SA for up to 1.9× Reduction in Energy/Access Mahmut E. Sinangil1, Anantha P. Chandrakasan2",
+    "authors": [],
+    "abstract": "",
+    "keywords": [],
+    "doi": "",
+    "venue": "",
+    "year": 2013
+  },
+  "paper_circuit_context": {
+    "circuit_type": "SRAM",
+    "technology": "CMOS, SOI, 65nm process",
+    "application_domain": "if",
+    "sub_blocks": [
+      "transistor/MOSFET",
+      "output buffer",
+      "latch",
+      "sense amplifier"
+    ],
+    "design_purpose": "",
+    "function_summary": "SRAM: An SRAM Using Output Prediction to Reduce BL-Switching Activity and Statistically-Gated SA for up to 1.9× Reduction in Energy/Access Mahmut E.",
+    "key_specs": [
+      "76%",
+      "65nm",
+      "50%",
+      "0.6V",
+      "20%",
+      "1W",
+      "5%",
+      "40%",
+      "100%",
+      "1100 v"
+    ]
+  },
+  "sections": [],
+  "figures": [
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 0,
+      "caption": "Fig. 18.2.1, the deviation of each pixel’s intensity from its block average for a 16×16 block shows that 76% of pixels lie within 3 LSB of the average. This additional information can be used to design an SRAM where correlation of data is used to reduce bitline activity factor which, for an 8T SRAM in a 65nm lowpower CMOS process, accounts for ~50% of total energy consumption during read accesses at 0.6V. In this work, we present a prediction-based reduced-bitline-switching-activity (PB-RBSA) scheme along with a hierarchical sensing network with statistical sense-amplifier gating to exploit the correlation of storage data. Reduction of switching activity on the bitlines and in the sensing network of the memory provide up to 1.9× reduction in energy/access. PB-RBSA scheme and the bit-cell are shown in Fig. 18.2.2. Differential read buffers are controlled with RWL0 and RWL1 signals and the footer of these buffers are connected to the bit-wise prediction (pred) or its complement (predB), both of which are routed in column direction parallel to BL/BLB and RBL0/RBL1 pairs (Fig. 18.2.2). Second read buffer introduces an area overhead of 20% over the conventional 8T cell. During a read operation, RBL0 and RBL1 are pre-charged to VDD and pred/predB settle to their final values prior to the assertion of RWL0 and RWL1. pred and predB are actively driven by drivers in column circuit at all times. When the prediction is correct, both RBL0 and RBL1 stay high, saving energy of pre-charging large RBL0/RBL1 capacitances after the read access (Fig. 18.2.3). In the case of an incorrect prediction, RBL0 or RBL1 is discharged by the bit-cell due to its differential nature. The activity factor of the RBLs can be greatly reduced if the prediction is correct most of the time. Note that an incorrect prediction does not lead to an erroneous output but results in the discharging of one of the RBLs. Figure 18.2.3 also shows the prediction-generation circuit where 64b (8×8b/pixel) memory outputs are accumulated to create a pixel average over 2N cycles. This predictor is used for every 8 bits of an SRAM word corresponding to individual pixels. The value of N can be adjusted to minimize energy/access based on the following trade-off. With smaller N, the predictor is updated more frequently and the correct prediction percentage increases resulting in a reduction of the switching activity of RBL0/RBL1. However, with smaller N, the switching activity of pred/predB signals increase. In our measurements, we found N = 4 to 5 provides a good balance for most video frames minimizing the energy consumption. Also note that RWL0 and RWL1 signals are routed separately which provides an option to use PB-RBSA SRAMs in a high-throughput (HT) mode where pred and predB are driven to ‘0’, RWL0 and RWL1 are asserted on different addresses and SRAMs can support 2R1W access.",
+      "caption_bbox": [
+        28.0,
+        330.7,
+        279.7,
+        718.7
+      ],
+      "section_title": "",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "For the video image frame in Fig. 18.2.1, the deviation of each pixel’s intensity from its block average for a 16×16 block shows that 76% of pixels lie within 3 LSB of the average."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "PB-RBSA scheme and the bit-cell are shown in Fig. 18.2.2."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Differential read buffers are controlled with RWL0 and RWL1 signals and the footer of these buffers are connected to the bit-wise prediction (pred) or its complement (predB), both of which are routed in column direction parallel to BL/BLB and RBL0/RBL1 pairs (Fig. 18.2.2)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "When the prediction is correct, both RBL0 and RBL1 stay high, saving energy of pre-charging large RBL0/RBL1 capacitances after the read access (Fig. 18.2.3)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 18.2.3 also shows the prediction-generation circuit where 64b (8×8b/pixel) memory outputs are accumulated to create a pixel average over 2N cycles."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 18.2.4 shows the sensing network consisting of a larger size sense-amp (M-SA) and a smaller one (S-SA)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The offset distribution of S-SA in Fig. 18.2.4 shows that erroneous outputs occur for <5% of total S-SAs."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 18.2.5 shows the energy savings with statistically gated sense-amplifier and having only MSA."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "A test-chip is fabricated in a 65nm low-power CMOS process with two blocks for each PB-RBSA SRAMs and conventional 8T SRAMs (Fig. 18.2.7)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 18.2.5 shows normalized energy/access for PB-RBSA SRAM with varying correct prediction percentage and for 8T SRAMs."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 18.2.6 shows distribution of average measured energy/access savings with PB-RBSA SRAMs with respect to the 8T SRAMs for 1100 video frames from 11 different video sequences with different contents and properties."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Finally, Fig. 18.2.6 shows a summary table for the 65nm test-chip and operating frequency measurement results."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Sinangil, et al., “Hardware-Aware Motion Estimation Search Algorithm Development for High-Efficiency Video Coding (HEVC) Standard,” 2012 IEEE ICIP, pp. 1529-1532, Sep. 2012. 978-1-4673-4516-3/13/$31.00 ©2013 IEEE Figure 18.2.1: For pixels belonging to the same object or background, intensities are highly correlated."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 18.2.3: Correct prediction prevents RBLs from being discharged by the bit-cell."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 18.2.5: Gated sense-amps provide energy savings when correct prediction percentage is >40%."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "ISSCC 2013 / February 20, 2013 / 10:45 AM Figure 18.2.2: Bit-cell design and array organization for PB-RBSA scheme."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 18.2.4: Hierarchical sensing with S-SA."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 18.2.6: Measured energy savings with PB-RBSA SRAMs with respect to the 8T SRAMs."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "DIGEST OF TECHNICAL PAPERS • ISSCC 2013 PAPER CONTINUATIONS Figure 18.2.7: Die micrograph of the test-chip fabricated in 65nm low-power CMOS process."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.0,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-conventional": -3.0,
+        "-prior": -2.0,
+        "-capacitance": -2.0,
+        "references": 2.0
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "SRAM",
+        "technology": "CMOS, SOI, 65nm process",
+        "application_domain": "if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "2.1, the deviation of each pixel’s intensity from its block average for a 16×16 block shows that 76% of pixels lie within 3 LSB of the average. This additional information can be used to design an SRAM where correlation of data is used to reduce bitline activity factor which, for an 8T SRAM in a 65nm lowpower CMOS ...",
+        "key_specs": [
+          "76%",
+          "5%",
+          "65nm",
+          "1100 v",
+          "40%"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.2,
+      "warnings": [
+        "Recommended figure was classified as 'conventional', not a schematic; manual confirmation strongly recommended."
+      ]
+    }
+  ],
+  "recommended_figure_id": 18,
+  "warnings": [
+    "No figure scored positively as a proposed-circuit schematic; recommendation is low-confidence."
+  ]
+}

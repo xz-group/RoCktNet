@@ -1,0 +1,400 @@
+{
+  "image": "Book1000",
+  "nodes": [
+    "n0",
+    "n1",
+    "n2",
+    "n3",
+    "n4",
+    "n5",
+    "n6",
+    "n7",
+    "n8",
+    "n9",
+    "n10",
+    "n11",
+    "n12",
+    "n13",
+    "label_net_0",
+    "label_net_1"
+  ],
+  "node_origins": {
+    "n0": [
+      1
+    ],
+    "n1": [
+      2
+    ],
+    "n2": [
+      3
+    ],
+    "n3": [
+      4
+    ],
+    "n4": [
+      5
+    ],
+    "n5": [
+      6
+    ],
+    "n6": [
+      7
+    ],
+    "n7": [
+      8
+    ],
+    "n8": [
+      10
+    ],
+    "n9": [
+      11
+    ],
+    "n10": [
+      12
+    ],
+    "n11": [
+      13
+    ],
+    "n12": [
+      14
+    ],
+    "n13": [
+      18
+    ],
+    "label_net_0": [
+      21
+    ],
+    "label_net_1": [
+      19
+    ]
+  },
+  "components": [
+    {
+      "name": "I1",
+      "class": "current_src",
+      "bbox_idx": 0,
+      "bbox": [
+        40.34,
+        335.54,
+        120.66,
+        415.49
+      ],
+      "orientation": null,
+      "pins": {
+        "+": "n2",
+        "-": "n4"
+      },
+      "flags": [],
+      "red_flags": []
+    },
+    {
+      "name": "M1",
+      "class": "pmos",
+      "bbox_idx": 1,
+      "bbox": [
+        72.9,
+        117.75,
+        128.11,
+        185.66
+      ],
+      "orientation": "r",
+      "pins": {
+        "G": "n11",
+        "S": "n13",
+        "D": "n11",
+        "B": "VDD"
+      },
+      "flags": [],
+      "red_flags": []
+    },
+    {
+      "name": "M2",
+      "class": "pmos",
+      "bbox_idx": 2,
+      "bbox": [
+        481.3,
+        118.29,
+        534.81,
+        184.14
+      ],
+      "orientation": "l",
+      "pins": {
+        "G": "n12",
+        "S": "n13",
+        "D": "n10",
+        "B": "VDD"
+      },
+      "flags": [],
+      "red_flags": []
+    },
+    {
+      "name": "M3",
+      "class": "pmos-bulk",
+      "bbox_idx": 3,
+      "bbox": [
+        480.7,
+        220.03,
+        535.33,
+        286.31
+      ],
+      "orientation": "l",
+      "pins": {
+        "G": "n2",
+        "S": "n10",
+        "B": "n13",
+        "D": "n9"
+      },
+      "flags": [],
+      "red_flags": []
+    },
+    {
+      "name": "M4",
+      "class": "nmos-bulk",
+      "bbox_idx": 4,
+      "bbox": [
+        73.31,
+        219.68,
+        128.97,
+        287.46
+      ],
+      "orientation": "r",
+      "pins": {
+        "G": "n2",
+        "D": "n11",
+        "B": "n13",
+        "S": "n2"
+      },
+      "flags": [],
+      "red_flags": []
+    },
+    {
+      "name": "M5",
+      "class": "nmos-bulk",
+      "bbox_idx": 5,
+      "bbox": [
+        73.29,
+        463.23,
+        128.58,
+        529.96
+      ],
+      "orientation": "r",
+      "pins": {
+        "G": "n4",
+        "D": "n4",
+        "B": "n0",
+        "S": "n1"
+      },
+      "flags": [],
+      "red_flags": []
+    },
+    {
+      "name": "M6",
+      "class": "nmos-bulk",
+      "bbox_idx": 6,
+      "bbox": [
+        479.02,
+        462.76,
+        535.77,
+        528.74
+      ],
+      "orientation": "l",
+      "pins": {
+        "G": "n4",
+        "D": "n9",
+        "B": "n0",
+        "S": "n5"
+      },
+      "flags": [],
+      "red_flags": []
+    },
+    {
+      "name": "M7",
+      "class": "nmos",
+      "bbox_idx": 7,
+      "bbox": [
+        72.96,
+        565.41,
+        128.78,
+        634.49
+      ],
+      "orientation": "r",
+      "pins": {
+        "G": "n1",
+        "D": "n1",
+        "S": "n0",
+        "B": "GND"
+      },
+      "flags": [],
+      "red_flags": []
+    },
+    {
+      "name": "M8",
+      "class": "nmos",
+      "bbox_idx": 8,
+      "bbox": [
+        480.5,
+        565.12,
+        534.82,
+        632.63
+      ],
+      "orientation": "l",
+      "pins": {
+        "G": "n8",
+        "D": "n5",
+        "S": "n0",
+        "B": "GND"
+      },
+      "flags": [],
+      "red_flags": []
+    },
+    {
+      "name": "S1",
+      "class": "switch_ideal",
+      "bbox_idx": 9,
+      "bbox": [
+        335.44,
+        569.17,
+        392.8,
+        608.17
+      ],
+      "orientation": null,
+      "pins": {
+        "1": "n3",
+        "2": "n8"
+      },
+      "flags": [],
+      "red_flags": []
+    },
+    {
+      "name": "S2",
+      "class": "switch_ideal",
+      "bbox_idx": 10,
+      "bbox": [
+        336.74,
+        344.6,
+        393.99,
+        386.78
+      ],
+      "orientation": null,
+      "pins": {
+        "1": "n7",
+        "2": "label_net_0"
+      },
+      "flags": [
+        "pin2_via_single_bbox_port"
+      ],
+      "red_flags": []
+    },
+    {
+      "name": "C1",
+      "class": "capacitor",
+      "bbox_idx": 11,
+      "bbox": [
+        273.6,
+        430.77,
+        333.51,
+        463.47
+      ],
+      "orientation": null,
+      "pins": {
+        "1": "n3",
+        "2": "n7"
+      },
+      "flags": [],
+      "red_flags": []
+    },
+    {
+      "name": "S3",
+      "class": "switch_ideal",
+      "bbox_idx": 12,
+      "bbox": [
+        217.02,
+        344.82,
+        276.36,
+        386.89
+      ],
+      "orientation": null,
+      "pins": {
+        "1": "n7",
+        "2": "label_net_1"
+      },
+      "flags": [
+        "pin2_via_single_bbox_port"
+      ],
+      "red_flags": []
+    },
+    {
+      "name": "S4",
+      "class": "switch_ideal",
+      "bbox_idx": 13,
+      "bbox": [
+        336.37,
+        120.87,
+        393.46,
+        161.39
+      ],
+      "orientation": null,
+      "pins": {
+        "1": "n6",
+        "2": "n12"
+      },
+      "flags": [],
+      "red_flags": []
+    },
+    {
+      "name": "C2",
+      "class": "capacitor",
+      "bbox_idx": 14,
+      "bbox": [
+        275.75,
+        292.16,
+        332.86,
+        322.12
+      ],
+      "orientation": null,
+      "pins": {
+        "1": "n6",
+        "2": "n7"
+      },
+      "flags": [],
+      "red_flags": []
+    },
+    {
+      "name": "S5",
+      "class": "switch_ideal",
+      "bbox_idx": 15,
+      "bbox": [
+        219.4,
+        121.23,
+        276.6,
+        161.42
+      ],
+      "orientation": null,
+      "pins": {
+        "1": "n6",
+        "2": "n11"
+      },
+      "flags": [],
+      "red_flags": []
+    },
+    {
+      "name": "S6",
+      "class": "switch_ideal",
+      "bbox_idx": 16,
+      "bbox": [
+        219.0,
+        568.01,
+        274.77,
+        609.63
+      ],
+      "orientation": null,
+      "pins": {
+        "1": "n1",
+        "2": "n3"
+      },
+      "flags": [],
+      "red_flags": []
+    }
+  ],
+  "flags": []
+}

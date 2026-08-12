@@ -1,0 +1,826 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\924851.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\924851",
+  "generated_at": "2026-07-29T21:33:34",
+  "paper_metadata": {
+    "title": "Frequency-Scalable SiGe Bipolar RF Front-End Design",
+    "authors": [
+      "Osama Shana’a",
+      "Ivan Linscott",
+      "Len Tyler"
+    ],
+    "abstract": "The optimum collector current density, at the global minimum noise figure (NF) point for a bipolar transistor, scales linfuture wireless communication systems with their challenging early with frequency. The optimum source impedance, on the other complexity. This process enjoys the quality of having a higher hand, remains constant if the device area is scaled inversely with performance compared to CMOS at a relatively low price frequency. As a result, transforming the design from one frequency compared to GaAs. This paper uses a 30-GHz SiGe bipolar to another can be achieved by simple circuit scaling. Taking advantechnology to build RF front-ends with GaAs-like performance tage of the shallow nature of the NFmin global minima, it is possible to increase the linearity of the low-noise amplifier (LNA) or but at much lower dc power consumption. decrease its power consumption, which is required for multimode To build a high-performance RF front-end, not only is a good designs, with little degradation in NF. These theoretical results have technology needed, but also innovative RF circuit design techbeen applied to LNA and active mixer designs, and verified by conniques are necessary to make the most out of a given technology. structing a 1.8-GHz frequency-scaled SiGe bipolar test chip. The Modern and future wireless systems are getting more and more measured LNA NF is 1.3 dB at 4.5 mA, while the double-balanced mixer achieves a single-sideband (SSB) NF of 6.1 dB for the low-lincomplex especially in portable personal wireless communicaearity mode and an IIP3 and an SSB NF of +3 dBm and 6.6 dB, tions. This is mainly due to the many existing mutually incomrespectively, for the high-linearity mode. patible wireless standards which lead current and future hand-",
+    "keywords": [
+      "Amplifier noise",
+      "bipolar integrated circuits",
+      "cir-"
+    ],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2001
+  },
+  "paper_circuit_context": {
+    "circuit_type": "low-noise amplifier (LNA)",
+    "technology": "CMOS, BICMOS, SIGE, GAAS, BJT",
+    "application_domain": "rf, wireless, if",
+    "sub_blocks": [
+      "inductor",
+      "transistor/MOSFET",
+      "LC tank / resonator",
+      "mixer",
+      "bias circuit",
+      "differential pair"
+    ],
+    "design_purpose": "Taking advantechnology to build RF front-ends with GaAs-like performance tage of the shallow nature of the NFmin global minima, it is possible to increase the linearity of the low-noise amplifier (LNA) or but at much lower dc power consumption. decrease its power consumption, which is required for multimode To build a ...",
+    "function_summary": "low-noise amplifier (LNA): Taking advantechnology to build RF front-ends with GaAs-like performance tage of the shallow nature of the NFmin global minima, it is possible to increase the linearity of the low-noise amplifier (LNA) or but at much lower dc power consumption. decrease its power consumption, which is required for multimode To build a ...",
+    "key_specs": [
+      "1.3 dB",
+      "6.1 dB",
+      "3 dBm",
+      "6.6 dB",
+      "5%",
+      "1.8 GHz",
+      "900 MHz",
+      "10%",
+      "0.6 dB",
+      "20.5 w"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "W IRELESS communication systems continue to stimulate the demand for more innovative low-cost and robust architectural and circuit solutions. To achieve this goal, intensive research among academics and industry was launched on two different tracks: the process and technology track and the architecture and circuit design track. On the technology track, the goal is to find a better semiconductor pr ..."
+    },
+    {
+      "number": "III",
+      "title": "AN EXPRESSION FOR THE OPTIMUM COLLECTOR",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "CURRENT DENSITY There has not been in the literature so far any developed expression for the optimum collector current density at the optimum NF point. Designers assume a rough value equal to onepoint regardless of the optenth the current density at the erating frequency [13]. In this section, we will derive a mathematical expression for the optimum collector current density (2) Constant for fixed ..."
+    },
+    {
+      "number": "IV",
+      "title": "FREQUENCY-SCALABLE LNA DESIGN",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "In modern wireless systems, there is a great demand for handsets that can communicate with different wireless standards. IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 6, JUNE 2001 Fig. 3. Dual-band RF front-end, architecture example. Fig. 4. Optimum LNA bias current density, J , versus frequency. - This growing demand is due mainly to the existing mutually incompatible wireless standards. Mos ..."
+    },
+    {
+      "number": "V",
+      "title": "LNA FREQUENCY-SCALING DESIGN EXAMPLE",
+      "kind": "design",
+      "page": 3,
+      "text_preview": "The technology chosen for this example is a 30-GHz SiGe bipolar. In this example, a 900-MHz LNA is designed, and its point. input common-emitter device set to operate at the NF The design is then scaled for the 1.8-GHz band. - Fig. 6. versus scaling factor \". R - For now, the parameter in Fig. 1 is assumed equal to one is the frequency-scaling factor). The NF function versus current density has be ..."
+    },
+    {
+      "number": "VI",
+      "title": "LNA DESIGN UNDER POWER CONSTRAINT",
+      "kind": "design",
+      "page": 4,
+      "text_preview": "In some wireless applications, the dc power consumption of the LNA is a primary concern. Such systems can tolerate a small degradation in noise figure if it results in a large reduction in the LNA power consumption. The design method demonstrated in the example of Section V achieves the best NF out of a bipolar technology assuming that power consumption is flexible. This method searches for the op ..."
+    },
+    {
+      "number": "VII",
+      "title": "LNA DESIGN FOR LINEARITY",
+      "kind": "design",
+      "page": 4,
+      "text_preview": "In multimode wireless systems, there is usually a need to adjust the linearity of the LNA during reception. This usually happens in full duplex systems where the power amplifier (PA) of the transmitter is turned on during the receive cycle. An example for such a system is CDMA. In such narrow-band system, both the receiver and transmitter share the same antenna, as seen in = J 2The device is said  ..."
+    },
+    {
+      "number": "VIII",
+      "title": "THE MIXER",
+      "kind": "other",
+      "page": 5,
+      "text_preview": "Fig. 11 shows a modified Gilbert-cell mixer. Unlike [16], the tank is tuned at the input RF frequency to proon-chip vide the necessary common-mode rejection at the RF frequency while consuming no dc voltage headroom or contributing any significant noise. The input differential-pair circuit is a linear transconductance stage, so the design technique discussed in Section II and Section IV can be app ..."
+    },
+    {
+      "number": "IX",
+      "title": "IMPLEMENTATION AND EXPERIMENTAL RESULTS",
+      "kind": "design",
+      "page": 6,
+      "text_preview": "A 1.8-GHz front-end (LNA and mixer) is designed by merely scaling an existing 900-MHz design in a 30-GHz SiGe bipolar process. Fig. 12 shows the die micrograph of the designed chip. Two metal layers are sandwiched to implement the circular spiral inductors to reduce their series resistance. An epi-trench pattern is laid beneath the inductors to reduce the eddy current . A TSSOP exposed paddle pack ..."
+    },
+    {
+      "number": "X",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 6,
+      "text_preview": "A frequency-scalable design technique for multiband front-ends is presented. The optimum bias current density at the optimum NF point for the bipolar device has been derived. The technique significantly cuts the design time for multiband front-ends. Designing the LNA under power constraint was discussed. It ensures the best NF for a given dc power. The frequency scalable optimization technique was ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Simplified cascode LNA circuit.",
+      "caption_bbox": [
+        38.1,
+        253.4,
+        170.8,
+        264.0
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The circuit topology commonly used for bipolar LNAs is the cascode-based common-emitter topology shown in Fig. 1 (ig- , , and , as they nore for the moment the parameters will be defined later in this paper)."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fukui showed that the minimum achievable NF cally 50 SHANA’A et al.: FREQUENCY-SCALABLE SIGE BIPOLAR RF FRONT-END DESIGN Fig. 1."
+        },
+        {
+          "section_title": "FREQUENCY-SCALABLE LNA DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "As a ature dependency of - result, the LNA bias current is preferred to be proportional to ( value the absolute temperature (PTAT) to keep track of - versus temperature. with frequency will be done by keeping the Scaling - total bias current constant and scaling the device size to scale ) as seen in Fig. 5 for an the current density (so scaling example. in (2) as a function of the freLet us now investigate - for the common-emitter device Q1 in quency-scaling factor Fig. 1, which is optimized to work in general at frequency when replacing its by , by , and by , is as shown in (11), shown at the bottom of the page, and given by (12) changes Fig. 6 is a direct plot of (11) which shows that - by less that 10% with frequency scaling and remains close to ."
+        },
+        {
+          "section_title": "FREQUENCY-SCALABLE LNA DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "In summary, the results in (10) and (11) suggest that in 50 order to keep the device Q1 of the LNA in Fig. 1 operating at point when changing the operating frequency from the NF to , its size has to be scaled by while the total bias current . is kept constant to force the current density to scale by"
+        },
+        {
+          "section_title": "LNA FREQUENCY-SCALING DESIGN EXAMPLE",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "R - For now, the parameter in Fig. 1 is assumed equal to one is the frequency-scaling factor)."
+        },
+        {
+          "section_title": "LNA FREQUENCY-SCALING DESIGN EXAMPLE",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Therefore, one can start by using the optimized 900-MHz LNA in design, and by cutting the circuit half in size (setting Fig. 1) keeping the same total bias current, so the current density is doubled, an optimized 1.8 GHz LNA will be automatically obtained with the same gain and IIP3."
+        },
+        {
+          "section_title": "LNA FREQUENCY-SCALING DESIGN EXAMPLE",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Note that in order to keep the output impedance of the LNA in Fig. 1 constant with frequency scaling, the size, , of the cascode device, Q2, should be scaled inversely with to scale also inversely with frefrequency."
+        },
+        {
+          "section_title": "LNA FREQUENCY-SCALING DESIGN EXAMPLE",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Same applies for the input impedance and the value of and as derived in the Appendix and shown in Fig. 1."
+        },
+        {
+          "section_title": "LNA DESIGN FOR LINEARITY",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The third-order intermodulation component, IM3, of the LNA in Fig. 1 is dominated by that of the input device Q1."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 6,
+          "sentence": "APPENDIX For the common-emitter bipolar device, Q1 in Fig. 1, with inductive degeneration, the input impedance looking into the base terminal can be expressed as (13) value to get a 50 match is given Therefore, the required by (14) is given by (12) making to scale inversely with where ."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 6,
+          "sentence": "Consequently, can be expressed as a function of the frequency inductor as scaling factor (15) to scale inversely with The pull-up which results in resonates with the parasitic capacitance at the inductor collector node of the cascode device Q2 in Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.5,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-simplified": -1.0,
+        "section:intro": -0.5,
+        "type_match:lna": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS, BICMOS, SIGE, GAAS, BJT",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [
+          "inductor"
+        ],
+        "design_purpose": "Note that in order to keep the output impedance of the LNA in Fig. 1 constant with frequency scaling, the size, , of the cascode device, Q2, should be scaled inversely with to scale also inversely with frefrequency.",
+        "function_summary": "Simplified cascode LNA circuit. Note that in order to keep the output impedance of the LNA in Fig. 1 constant with frequency scaling, the size, , of the cascode device, Q2, should be scaled inversely with to scale also inversely with frefrequency.",
+        "key_specs": [
+          "10%",
+          "1.8 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.38,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. NF versus collector current density.",
+      "caption_bbox": [
+        301.1,
+        234.9,
+        455.8,
+        245.5
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Consequently, it is useful to plot i.e., they are a function of versus collector current very carefully taking the bias the NF dependencies into account, as shown in Fig. 2."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Although each , Fig. 2 shows that the NF plot point on Fig. 2 is called NF has indeed an absolute minima."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "To minimize the complexity of the matching network, it is necessary to have simultaneous input power and optimum NF 1A unit device is the minimum size transistor in a given bipolar technology. - Fig. 2."
+        },
+        {
+          "section_title": "AN EXPRESSION FOR THE OPTIMUM COLLECTOR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Moreover, the point (see Fig. 2) makes the inacshallow nature of the NF in SPICE relatively unimportant in curacies associated with the overall design."
+        },
+        {
+          "section_title": "LNA FREQUENCY-SCALING DESIGN EXAMPLE",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The NF function versus current density has been constructed for this technology similar was found to be 0.6 dB at to the graph in Fig. 2, and the NF A unit-device for an operating frea current density of 20.5 was calquency of 900 MHz."
+        },
+        {
+          "section_title": "LNA DESIGN UNDER POWER CONSTRAINT",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The depoint, rather vice in this case will no longer operate at the NF points on the left half it will operate at one of the many NF plot in Fig. 2, depending on the obtained current of the NF density."
+        },
+        {
+          "section_title": "LNA DESIGN FOR LINEARITY",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "This is because of the shallow nature of the optimum noise figure point, as seen in Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.5,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 2.0
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS, BICMOS, SIGE, GAAS, BJT",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "To minimize the complexity of the matching network, it is necessary to have simultaneous input power and optimum NF 1A unit device is the minimum size transistor in a given bipolar technology. - Fig. 2.",
+        "function_summary": "NF versus collector current density. To minimize the complexity of the matching network, it is necessary to have simultaneous input power and optimum NF 1A unit device is the minimum size transistor in a given bipolar technology. - Fig. 2.",
+        "key_specs": [
+          "0.6 dB",
+          "20.5 w",
+          "900 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Dual-band RF front-end, architecture example.",
+      "caption_bbox": [
+        302.6,
+        167.1,
+        481.4,
+        177.7
+      ],
+      "section_title": "III. AN EXPRESSION FOR THE OPTIMUM COLLECTOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FREQUENCY-SCALABLE LNA DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 6, JUNE 2001 Fig. 3."
+        },
+        {
+          "section_title": "FREQUENCY-SCALABLE LNA DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "One radio is optimized to work for example at the GSM 1.8 GHz while another is optimized at the CDMA 900 MHz, as shown in Fig. 3 for a dual-band front-end example."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS, BICMOS, SIGE, GAAS, BJT",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Dual-band RF front-end, architecture example",
+        "key_specs": [
+          "1.8 GHz",
+          "900 MHz"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.4,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Optimum LNA bias current density, J , versus frequency. -",
+      "caption_bbox": [
+        302.6,
+        355.3,
+        530.0,
+        366.9
+      ],
+      "section_title": "III. AN EXPRESSION FOR THE OPTIMUM COLLECTOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FREQUENCY-SCALABLE LNA DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 4."
+        },
+        {
+          "section_title": "FREQUENCY-SCALABLE LNA DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Let us first begin by investigating the optimum collector current density in (9), which is plotted versus frequency as shown in Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "type_match:lna": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS, BICMOS, SIGE, GAAS, BJT",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Optimum LNA bias current density, J , versus frequency. -",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Scaling the current density, J , and device size, M, with frequency for a special case of 900 MHz to 1.8 GHz scaling.",
+      "caption_bbox": [
+        38.1,
+        182.5,
+        289.2,
+        202.0
+      ],
+      "section_title": "IV. FREQUENCY-SCALABLE LNA DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "FREQUENCY-SCALABLE LNA DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "For frequencies well below becomes and so (9) in this case can be term approximated to be (10) - SHANA’A et al.: FREQUENCY-SCALABLE SIGE BIPOLAR RF FRONT-END DESIGN Fig. 5."
+        },
+        {
+          "section_title": "FREQUENCY-SCALABLE LNA DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "As a ature dependency of - result, the LNA bias current is preferred to be proportional to ( value the absolute temperature (PTAT) to keep track of - versus temperature. with frequency will be done by keeping the Scaling - total bias current constant and scaling the device size to scale ) as seen in Fig. 5 for an the current density (so scaling example. in (2) as a function of the freLet us now investigate - for the common-emitter device Q1 in quency-scaling factor Fig. 1, which is optimized to work in general at frequency when replacing its by , by , and by , is as shown in (11), shown at the bottom of the page, and given by (12) changes Fig. 6 is a direct plot of (11) which shows that - by less that 10% with frequency scaling and remains close to ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS, BICMOS, SIGE, GAAS, BJT",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Scaling the current density, J , and device size, M, with frequency for a special case of 900 MHz to 1.8 GHz scaling",
+        "key_specs": [
+          "10%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. versus scaling factor \". R -",
+      "caption_bbox": [
+        301.1,
+        228.8,
+        429.4,
+        240.4
+      ],
+      "section_title": "IV. FREQUENCY-SCALABLE LNA DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "FREQUENCY-SCALABLE LNA DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "As a ature dependency of - result, the LNA bias current is preferred to be proportional to ( value the absolute temperature (PTAT) to keep track of - versus temperature. with frequency will be done by keeping the Scaling - total bias current constant and scaling the device size to scale ) as seen in Fig. 5 for an the current density (so scaling example. in (2) as a function of the freLet us now investigate - for the common-emitter device Q1 in quency-scaling factor Fig. 1, which is optimized to work in general at frequency when replacing its by , by , and by , is as shown in (11), shown at the bottom of the page, and given by (12) changes Fig. 6 is a direct plot of (11) which shows that - by less that 10% with frequency scaling and remains close to ."
+        },
+        {
+          "section_title": "LNA FREQUENCY-SCALING DESIGN EXAMPLE",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "In this example, a 900-MHz LNA is designed, and its point. input common-emitter device set to operate at the NF The design is then scaled for the 1.8-GHz band. - Fig. 6. versus scaling factor \"."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS, BICMOS, SIGE, GAAS, BJT",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "versus scaling factor \". R -",
+        "key_specs": [
+          "10%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. NF and NF of the 900-MHz LNA versus frequency.",
+      "caption_bbox": [
+        39.6,
+        235.4,
+        245.5,
+        246.0
+      ],
+      "section_title": "VI. LNA DESIGN UNDER POWER CONSTRAINT",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "LNA FREQUENCY-SCALING DESIGN EXAMPLE",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The noise figure of the is resonated via the load inductor assuming an match LNA as well as the theoretical NF - are plotted versus frequency as shown in Fig. 7."
+        },
+        {
+          "section_title": "LNA FREQUENCY-SCALING DESIGN EXAMPLE",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "It can be seen from Fig. 7 that the two plots touch with a value of 0.8 dB at the (11) Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "type_match:lna": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS, BICMOS, SIGE, GAAS, BJT",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [
+          "inductor"
+        ],
+        "design_purpose": "",
+        "function_summary": "NF and NF of the 900-MHz LNA versus frequency",
+        "key_specs": [
+          "0.8 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.57,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. NF and NF of the scaled 1.8-GHz LNA versus frequency.",
+      "caption_bbox": [
+        39.6,
+        431.9,
+        263.8,
+        442.6
+      ],
+      "section_title": "VI. LNA DESIGN UNDER POWER CONSTRAINT",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "LNA FREQUENCY-SCALING DESIGN EXAMPLE",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 8."
+        },
+        {
+          "section_title": "LNA FREQUENCY-SCALING DESIGN EXAMPLE",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 8 shows the NF simulation of the scaled 1.8 GHz which achieves a NF of 1.1 dB at 1.8 GHz."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "type_match:lna": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS, BICMOS, SIGE, GAAS, BJT",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "NF and NF of the scaled 1.8-GHz LNA versus frequency",
+        "key_specs": [
+          "1.8 GHz",
+          "1.1 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.57,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 5,
+      "caption": "Fig. 9. Transmitted power leakage to the LNA input in a CDMA system.",
+      "caption_bbox": [
+        38.1,
+        187.0,
+        275.4,
+        197.7
+      ],
+      "section_title": "VII. LNA DESIGN FOR LINEARITY",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "LNA DESIGN FOR LINEARITY",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "SHANA’A et al.: FREQUENCY-SCALABLE SIGE BIPOLAR RF FRONT-END DESIGN Fig. 9."
+        },
+        {
+          "section_title": "LNA DESIGN FOR LINEARITY",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "type_match:lna": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS, BICMOS, SIGE, GAAS, BJT",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Transmitted power leakage to the LNA input in a CDMA system",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.57,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. LNA IIP3 versus bias current.",
+      "caption_bbox": [
+        38.1,
+        372.7,
+        167.3,
+        383.3
+      ],
+      "section_title": "VII. LNA DESIGN FOR LINEARITY",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "LNA DESIGN FOR LINEARITY",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 10."
+        },
+        {
+          "section_title": "LNA DESIGN FOR LINEARITY",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Roughly, the IIP3 increases by 6 dB if the bias current is doubled, as seen in Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "type_match:lna": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS, BICMOS, SIGE, GAAS, BJT",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "LNA IIP3 versus bias current",
+        "key_specs": [
+          "6 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.57,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 5,
+      "caption": "Fig. 11. Improved Gilbert-cell mixer.",
+      "caption_bbox": [
+        301.1,
+        248.3,
+        425.9,
+        258.9
+      ],
+      "section_title": "VII. LNA DESIGN FOR LINEARITY",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "LNA DESIGN FOR LINEARITY",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Therefore, the gain Fig. 11."
+        },
+        {
+          "section_title": "THE MIXER",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 11 shows a modified Gilbert-cell mixer."
+        },
+        {
+          "section_title": "THE MIXER",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "If the input differential pair Q1–Q2 in Fig. 11 are biased at the optimum NF point, to take advantage of its shallow nature, the current in the mixer can be increased to improve its IIP3 without causing much degradation in the overall mixer NF."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS, BICMOS, SIGE, GAAS, BJT",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [
+          "mixer",
+          "differential pair"
+        ],
+        "design_purpose": "If the input differential pair Q1–Q2 in Fig. 11 are biased at the optimum NF point, to take advantage of its shallow nature, the current in the mixer can be increased to improve its IIP3 without causing much degradation in the overall mixer NF.",
+        "function_summary": "Improved Gilbert-cell mixer. If the input differential pair Q1–Q2 in Fig. 11 are biased at the optimum NF point, to take advantage of its shallow nature, the current in the mixer can be increased to improve its IIP3 without causing much degradation in the overall mixer NF.",
+        "key_specs": [
+          "3 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 6,
+      "caption": "Fig. 12. Microelectronic chip photograph.",
+      "caption_bbox": [
+        39.6,
+        269.2,
+        179.7,
+        279.8
+      ],
+      "section_title": "VIII. THE MIXER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "THE MIXER",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The switching quad, however, does not scale perfectly due to its nonlinear operation and so another round of Fig. 12."
+        },
+        {
+          "section_title": "IMPLEMENTATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "design",
+          "page": 6,
+          "sentence": "Fig. 12 shows the die micrograph of the designed chip."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -5.2,
+      "relevance_breakdown": {
+        "-photograph": -3.0,
+        "-chip photo": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS, BICMOS, SIGE, GAAS, BJT",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Microelectronic chip photograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 3,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

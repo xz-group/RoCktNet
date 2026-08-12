@@ -1,0 +1,1232 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1196228.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1196228",
+  "generated_at": "2026-07-29T22:00:53",
+  "paper_metadata": {
+    "title": "A 1.8-V Operation RF CMOS Transceiver for 2.4-GHz-Band GFSK Applications",
+    "authors": [
+      "Hiroshi Komurasaki",
+      "Tomohiro Sano",
+      "Tetsuya Heima",
+      "Kazuya Yamamoto",
+      "Hideyuki Wakada",
+      "Ikuo Yasui",
+      "Masayoshi Ono",
+      "Toshitsugu Miwa",
+      "Hisayasu Sato",
+      "Takahiro Miki",
+      "Naoyuki Kato"
+    ],
+    "abstract": "This paper describes a single-chip RF transceiver LSI for 2.4-GHz-band Gaussian frequency shift-keying applicatooth transceiver with BiCMOS technology. In this paper, tions, such as Bluetooth. This chip uses a 0.18m bulk CMOS because of the power consumption requirements, we show a process for lower current consumption. The LSI consists of almost Bluetooth RF transceiver LSI in 0.18m bulk CMOS with all the required RF and IF building blocks: a transmit/receive both low-voltage operation and low current consumption, antenna switch, a power amplifier, a low noise amplifier, an image the transceiver achieving 1.8-V operation. Also, in order to rejection mixer, channel-selection filters, a limiter, a received signal strength indicator, a frequency discriminator, a voltage realize a competitive chip size for the wireless communications controlled oscillator, and a phase-locked loop synthesizer. The market, we adopted a circuit design technique with a minimum bandpass filter for channel selection was difficult to achieve since usage of resistors and capacitors in the IF section of the RF it operates at a low supply voltage. However, because large interCMOS transceiver. Thus, the transceiver has a smaller chip size ference is roughly rejected at the output of the image rejection than the BiCMOS transceiver [3]. mixer and a wide-input-range bandpass filter with an optimized input bias is realized, the transceiver can operate at a supply In Section II, the characteristics of the 0.18m CMOS techvoltage of 1.8 V. In the IF section, we adopted a circuit design nology are presented. Section III describes the chip architecture. using the minimum number of passive elements, resistors and The circuit design is then discussed in Section IV. Finally, the capacitors, for a lower chip area of 10.2 mm2. experimental results are given in Section V.",
+    "keywords": [
+      "CMOS",
+      "low voltage",
+      "RF",
+      "S band",
+      "transceiver"
+    ],
+    "doi": "10.1109/JSSC.2003.810063",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "1.8-V Operation RF CMOS Transceiver",
+    "technology": "CMOS, BICMOS",
+    "application_domain": "rf, wireless, baseband, if",
+    "sub_blocks": [
+      "inductor",
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "cross-coupled pair",
+      "output buffer",
+      "mixer",
+      "bias circuit",
+      "switch",
+      "differential pair",
+      "pre-amplifier"
+    ],
+    "design_purpose": "Thus, the transceiver has a smaller chip size ference is roughly rejected at the output of the image rejection than the BiCMOS transceiver [3]. mixer and a wide-input-range bandpass filter with an optimized input bias is realized, the transceiver can operate at a supply In Section II, the characteristics of the 0.18m ...",
+    "function_summary": "1.8-V Operation RF CMOS Transceiver: Thus, the transceiver has a smaller chip size ference is roughly rejected at the output of the image rejection than the BiCMOS transceiver [3]. mixer and a wide-input-range bandpass filter with an optimized input bias is realized, the transceiver can operate at a supply In Section II, the characteristics of the 0.18m ...",
+    "key_specs": [
+      "1.8 V",
+      "3.0 V",
+      "2.0 V",
+      "0.6 V",
+      "2.4 GHz",
+      "1.0 V",
+      "50 GHz",
+      "1.9 fF",
+      "3.0 fF",
+      "3 MHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "B LUETOOTH is a 2.4-GHz-band short-range wireless communication with a Gaussian frequency shift-keying (GFSK) modulation scheme, and is becoming a consumer-oriented standard for wireless LANs. In recent years, several Bluetooth transceivers have been designed [1]–[5]. Because a Bluetooth LSI must include all of the RF, IF, and baseband blocks for the market, and because CMOS technology is more sui ..."
+    },
+    {
+      "number": "II",
+      "title": "PROCESS DESCRIPTION",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "We used 0.18m bulk CMOS technology for the RF of the nMOSFETs transceiver. The threshold voltage is 0.6 V. It has four-level aluminum interconnect lines and polysilicon-to-polysilicon capacitors. The top aluminum interm to improve the quality of the connect layer thickness is 1.2 on-chip spiral inductors. The thickness of the others is as thin m and the substrate resistivity is less than 10 cm. as ..."
+    },
+    {
+      "number": "III",
+      "title": "CHIP ARCHITECTURE",
+      "kind": "proposed",
+      "page": 1,
+      "text_preview": "A block diagram of the RF CMOS transceiver LSI for Bluetooth is shown in Fig. 2. In this LSI, we successfully integrated almost of all the required RF and IF building blocks: a transmit/receive antenna switch (SW), a power amplifier (PA), a low-noise amplifier (LNA), an image rejection mixer (IRM), channel-selection filters, a limiter, a received signal strength indicator (RSSI), a frequency discr ..."
+    },
+    {
+      "number": "IV",
+      "title": "CIRCUIT DESIGN",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "A. Receiver IF Blocks Building a bandpass filter for channel selection is difficult because it has to operate over a wide input voltage range at the low supply voltage of 1.8 V, even though large interference signals are roughly rejected. Fig. 4 shows a block diagram of the bandpass filter. Each stage of the bandpass filter is the second-order biquad, and there are eight cascaded stages. The cente ..."
+    },
+    {
+      "number": "V",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 5,
+      "text_preview": "A photomicrograph and a layout of the transceiver are shown in Fig. 15. The chip is covered by dummy metal patterns in order to improve the densities of the aluminum layers for chemical and mechanical polishing (CMP) technique, as shown in Fig. 15(a). 3.4 mm, about 60% of This transceiver is very small, 3.0 mm the size of the previous BiCMOS transceiver chip. The results described in this paper we ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 7,
+      "text_preview": "A single-chip RF transceiver with a low-loss antenna switch m bulk CMOS. The current dishas been developed using 0.18sipation was reduced to 34 mA in RX mode and to 26 mA in TX mode at the low supply voltage of 1.8 V. In order to realize the 1.8-V operation of the transceiver, large interference signals are slightly rejected at the output of the IRM and simple linearized source-coupled pairs with  ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Comparison of transition frequency.",
+      "caption_bbox": [
+        39.6,
+        207.3,
+        183.9,
+        217.9
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "PROCESS DESCRIPTION",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 1 between the shows a comparison of the transition frequency m CMOS and a 0.35m bipolar as a function of the bias 0.18current."
+        },
+        {
+          "section_title": "PROCESS DESCRIPTION",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Each CMOS transistor in Fig. 1 is an nMOSFET with m and a finger gate width of 5 m in the a gate width of 100 m CMOS."
+        },
+        {
+          "section_title": "PROCESS DESCRIPTION",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "For analog circuits, especially transceiver IF circuits, the sheet resistance and unit-area capacitance dominate the and 1.9 fF m , respectively. resulting chip size, being 200 and In the BiCMOS process used in [3], they are 300 Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.7,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transceiver",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Comparison of transition frequency",
+        "key_specs": [
+          "1.9 fF"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Block diagram of the RF CMOS transceiver.",
+      "caption_bbox": [
+        39.6,
+        378.1,
+        211.3,
+        388.8
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "PROCESS DESCRIPTION",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 2."
+        },
+        {
+          "section_title": "CHIP ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "A block diagram of the RF CMOS transceiver LSI for Bluetooth is shown in Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "transceiver",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the RF CMOS transceiver",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Diagram between IRM and bandpass filter.",
+      "caption_bbox": [
+        38.1,
+        186.4,
+        204.7,
+        197.1
+      ],
+      "section_title": "III. CHIP ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "CHIP ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "In order to satisfy the interference performance of Bluetooth specifications, a large interference signal 8 MHz at IF input 5 MHz away from the desired signal ( 3 MHz IF MHz) is slightly rejected by a simple RC KOMURASAKI et al.: RF CMOS TRANSCEIVER FOR 2.4-GHz-BAND GFSK APPLICATIONS Fig. 3."
+        },
+        {
+          "section_title": "CHIP ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The low-pass function of the RC network is handled by an output buffer of the IRM, shown in Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "In order to satisfy the interference performance of Bluetooth specifications, a large interference signal 8 MHz at IF input 5 MHz away from the desired signal ( 3 MHz IF MHz) is slightly rejected by a simple RC KOMURASAKI et al.: RF CMOS TRANSCEIVER FOR 2.4-GHz-BAND GFSK APPLICATIONS Fig. 3.",
+        "function_summary": "Diagram between IRM and bandpass filter. In order to satisfy the interference performance of Bluetooth specifications, a large interference signal 8 MHz at IF input 5 MHz away from the desired signal ( 3 MHz IF MHz) is slightly rejected by a simple RC KOMURASAKI et al.: RF CMOS TRANSCEIVER FOR 2.4-GHz-BAND GFSK ...",
+        "key_specs": [
+          "8 MHz",
+          "5 MHz",
+          "3 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Block diagram of bandpass filter.",
+      "caption_bbox": [
+        38.1,
+        356.7,
+        173.7,
+        367.3
+      ],
+      "section_title": "III. CHIP ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "CHIP ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 4."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 4 shows a block diagram of the bandpass filter."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of bandpass filter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.69,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Schematic of gm cell.",
+      "caption_bbox": [
+        301.1,
+        212.8,
+        402.1,
+        223.6
+      ],
+      "section_title": "III. CHIP ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Since the cascode number of transistors has to be reduced, the simple linearized source-coupled pair shown in Fig. 5 cell [10]."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "To maximize the input range ( was decided range), the bias voltage of the input terminal as (1) where (2) Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "1.8-V Operation RF CMOS Transceiver",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "To maximize the input range ( was decided range), the bias voltage of the input terminal as (1) where (2) Fig. 5.",
+        "function_summary": "Schematic of gm cell. To maximize the input range ( was decided range), the bias voltage of the input terminal as (1) where (2) Fig. 5.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.86,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. Schematic of common-mode feedback for gm cell.",
+      "caption_bbox": [
+        301.1,
+        382.4,
+        494.0,
+        393.2
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 6."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "In this Fig. 6 is used to offer the optimized bias voltage cell consists of Mp3, Mn7, and figure, a half circuit of the cells, 5 and 6, are replica circuits without Mn9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "1.8-V Operation RF CMOS Transceiver",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematic of common-mode feedback for gm cell",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.79,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Simulated results of the IP of the gm cell.",
+      "caption_bbox": [
+        39.6,
+        242.3,
+        217.4,
+        253.1
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Since cell does not need any resistors and the configuration of the the number of the common-mode feedback circuits, which uses cells, a small-area bandpass two resistors, is only half of the Fig. 7."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The simulation results of input-referred 1-dB compression of the cells at 3 MHz are shown in Fig. 7. points IP The results are single input voltages, and the fixed bias of is the optimized bias voltage at 1.8 V."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "1.8-V Operation RF CMOS Transceiver",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "resistor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simulated results of the IP of the gm cell",
+        "key_specs": [
+          "3 MHz",
+          "1.8 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. Block diagram of frequency discriminator.",
+      "caption_bbox": [
+        39.6,
+        409.8,
+        204.6,
+        420.4
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 8."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 8 shows the details of the frequency discriminator of a delay-line type with a locked loop [3]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "1.8-V Operation RF CMOS Transceiver",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of frequency discriminator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.57,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 3,
+      "caption": "Fig. 9. Schematic of delay-line circuit for frequency discriminator.",
+      "caption_bbox": [
+        302.6,
+        314.9,
+        520.8,
+        325.6
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "BeIEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 5, MAY 2003 Fig. 9."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The CMOS inverter type is shown in Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "1.8-V Operation RF CMOS Transceiver",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematic of delay-line circuit for frequency discriminator",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.71,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10. Schematic of antenna switch.",
+      "caption_bbox": [
+        38.1,
+        197.2,
+        165.1,
+        207.8
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "RF Front-End Circuit The schematics of the antenna switch and power amplifier are shown in Figs. 10 and 11, respectively."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Using simulaKOMURASAKI et al.: RF CMOS TRANSCEIVER FOR 2.4-GHz-BAND GFSK APPLICATIONS Fig. 10."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The rising and the falling times are about 1.2 Fig. 10)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.7,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "switch",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Schematic of antenna switch",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.85,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 4,
+      "caption": "Fig. 11. Schematic of power amplifier.",
+      "caption_bbox": [
+        38.1,
+        418.1,
+        167.8,
+        428.8
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.9,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.4
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "power amplifier (PA)",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematic of power amplifier",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.71,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 4,
+      "caption": "Fig. 12. Schematic of LNA.",
+      "caption_bbox": [
+        301.1,
+        188.6,
+        396.5,
+        199.2
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 12 shows a schematic of the LNA, which consists of a common-source stage and a source-coupled pair."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The return Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematic of LNA",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.79,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 4,
+      "caption": "Fig. 13. Schematic of IRM.",
+      "caption_bbox": [
+        301.1,
+        329.1,
+        395.5,
+        339.7
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 13."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The LNA offers a 9.7-dB gain, a 15-dBm input IP3 at 2.4 GHz. 5.2-dB noise figure, and a The IRM is of the Hartley type, as shown in Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematic of IRM",
+        "key_specs": [
+          "2.4 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.79,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 4,
+      "caption": "Fig. 14. Schematic of VCO.",
+      "caption_bbox": [
+        301.1,
+        573.8,
+        397.2,
+        584.4
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 14."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 14 is a schematic of the 1.2-GHz VCO, which consists of a cross-coupled differential pair loaded by inductors."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "inductor",
+          "cross-coupled pair",
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "Schematic of VCO",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.79,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 5,
+      "caption": "Fig. 15. (a) Chip micrograph. (b) Layout of the transceiver.",
+      "caption_bbox": [
+        39.6,
+        425.1,
+        234.6,
+        435.7
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The VCO has two input terminals, one (Vcon) used to control the channel selection, and the other (Vmod) used to modulate the transmitted GFSK RF (a) (b) Fig. 15."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "A photomicrograph and a layout of the transceiver are shown in Fig. 15."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The chip is covered by dummy metal patterns in order to improve the densities of the aluminum layers for chemical and mechanical polishing (CMP) technique, as shown in Fig. 15(a). 3.4 mm, about 60% of This transceiver is very small, 3.0 mm the size of the previous BiCMOS transceiver chip."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.3,
+      "relevance_breakdown": {
+        "-micrograph": -3.0,
+        "-layout": -2.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "transceiver",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "The chip is covered by dummy metal patterns in order to improve the densities of the aluminum layers for chemical and mechanical polishing (CMP) technique, as shown in Fig. 15(a). 3.4 mm, about 60% of This transceiver is very small, 3.0 mm the size of the previous BiCMOS transceiver chip.",
+        "function_summary": "(a) Chip micrograph. (b) Layout of the transceiver. The chip is covered by dummy metal patterns in order to improve the densities of the aluminum layers for chemical and mechanical polishing (CMP) technique, as shown in Fig. 15(a). 3.4 mm, about 60% of This transceiver is very small, 3.0 mm the size of the previous ...",
+        "key_specs": [
+          "60%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 5,
+      "caption": "Fig. 16. Frequency response of bandpass filter.",
+      "caption_bbox": [
+        302.6,
+        197.3,
+        458.2,
+        208.0
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 5, MAY 2003 Fig. 16."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The measurement results of the bandpass filter only are shown in Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Frequency response of bandpass filter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 5,
+      "caption": "Fig. 17. Third-order intermodulation of bandpass filter.",
+      "caption_bbox": [
+        302.6,
+        366.3,
+        484.6,
+        376.9
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 17."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The relation between the IF input and the output is shown in Fig. 17 MHz MHz kHz . 3 dBm is obtained, and the IP The input IP3 of about is more than 1 dBm with this two-tone measurement."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Third-order intermodulation of bandpass filter",
+        "key_specs": [
+          "17 MHz",
+          "3 dBm",
+          "1 dBm"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 5,
+      "caption": "Fig. 18. Measured eye diagram of the transceiver.",
+      "caption_bbox": [
+        302.6,
+        514.3,
+        467.3,
+        525.0
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 18."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 18 shows the measured output eye diagram at the final LPF for a PRBS9 pattern of 1.0-Mb/s data."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "transceiver",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured eye diagram of the transceiver",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 6,
+      "caption": "Fig. 19. Simulated eye diagram of RX system level.",
+      "caption_bbox": [
+        38.1,
+        362.6,
+        210.1,
+        373.3
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "These outputs are close to our target eye diagram shown in Fig. 19, and show the complete achievement of the RX chain."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "KOMURASAKI et al.: RF CMOS TRANSCEIVER FOR 2.4-GHz-BAND GFSK APPLICATIONS TABLE I COMPARISON OF BLUETOOTH TRANSCEIVERS Fig. 19."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "transceiver",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated eye diagram of RX system level",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 20,
+      "label": "Fig. 20",
+      "page": 6,
+      "caption": "Fig. 20. Receiver sensitivity.",
+      "caption_bbox": [
+        38.1,
+        564.8,
+        135.3,
+        575.4
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 20."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 20 shows the receiver BER versus the input RF signal power by applying a 1-Mb/s GFSK-modulated input."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Receiver sensitivity",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 21,
+      "label": "Fig. 21",
+      "page": 6,
+      "caption": "Fig. 21. Measured output frequency of the transceiver.",
+      "caption_bbox": [
+        301.1,
+        372.4,
+        480.6,
+        383.0
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 21 shows the measured output frequency in the time domain at the PA output for a repetitive 01 010 101 pattern, to probe the TX chain operation."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The strates the lock time of the PLL, which is about 170 Fig. 21."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "transceiver",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured output frequency of the transceiver",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 22,
+      "label": "Fig. 22",
+      "page": 6,
+      "caption": "Fig. 22. Output spectrum at SW output with PRBS9 pattern.",
+      "caption_bbox": [
+        301.1,
+        613.1,
+        499.7,
+        623.8
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 22."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Output spectrum at SW output with PRBS9 pattern. modulated output spectrum for a TX output with a PRBS9 pattern in the burst mode is shown in Fig. 22."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "1.8-V Operation RF CMOS Transceiver",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Output spectrum at SW output with PRBS9 pattern",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 9,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

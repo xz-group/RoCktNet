@@ -1,0 +1,1100 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1408085.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1408085",
+  "generated_at": "2026-07-29T22:02:27",
+  "paper_metadata": {
+    "title": "Ultra-Low-Voltage High-Performance CMOS VCOs Using Transformer Feedback",
+    "authors": [
+      "KaChun Kwok",
+      "Howard C. Luong"
+    ],
+    "abstract": "A transformer-feedback voltage-controlled oscillator (TF-VCO) is proposed to achieve low-phase-noise and low-power carrier power is necessary to lower the phase noise. designs even at a supply below the threshold voltage. The advanAs a critical and power-hungry building block in any transtages of the proposed TF-VCO are described together with its ceiver system, the VCO needs to achieve low phase-noise detailed analysis and its cyclo-stationary characteristic. Two properformance while consuming minimum power. Existing totypes using the proposed TF-VCO techniques are demonstrated techniques for low-voltage low-power VCO design employ m CMOS process. The first design using in a standard 0.18two single-ended transformers is operated at 1.4 GHz at a 0.35-V either nonstandard processes or external tank components with supply using PMOS transistors whose threshold voltage is around high quality factor. For nonstandard processes, the transistors’ 0.52 V. The power consumption is 1.46 mW while the measured threshold voltages are reduced to enable low-voltage operaphase noise is 128.6 dBc/Hz at 1-MHz frequency offset. Using tion. Using a silicon-on-insulator (SOI) process with undoped an optimum differential transformer to maximize quality factor channel MOSFETs, the threshold voltages of nFET and pFET and to minimize the chip area, the second design is operated at 3.8 GHz at a 0.5-V supply with power consumption of 570 W and a are reduced to 0.22 and 0.16 V, respectively, and a VCO was measured phase noise of 119 dBc/Hz at 1-MHz frequency offset. demonstrated at 0.5-V supply [3]. With some special processing The figures of merits are comparable or better to that of other steps, an oscillator using bulk dynamic threshold voltage MOSstate-of-the-art VCO designs operating at much higher supply FETs with controllable body diode was implemented at a voltage. supply of 0.3 V [4]. On the other hand, lossy on-chip inductors",
+    "keywords": [
+      "Inductor",
+      "low phase noise",
+      "low power",
+      "low voltage"
+    ],
+    "doi": "10.1109/JSSC.2005.843614",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2005
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Ultra-Low-Voltage High-Performance CMOS VCOs",
+    "technology": "CMOS, SOI",
+    "application_domain": "wireless, wlan",
+    "sub_blocks": [
+      "inductor",
+      "capacitor",
+      "transistor/MOSFET",
+      "cross-coupled pair",
+      "current source",
+      "LC tank / resonator",
+      "transformer",
+      "varactor",
+      "transmission line",
+      "output buffer",
+      "bias circuit",
+      "differential pair",
+      "op-amp"
+    ],
+    "design_purpose": "Using a silicon-on-insulator (SOI) process with undoped an optimum differential transformer to maximize quality factor channel MOSFETs, the threshold voltages of nFET and pFET and to minimize the chip area, the second design is operated at 3.8 GHz at a 0.5-V supply with power consumption of 570 W and a are reduced to ...",
+    "function_summary": "Ultra-Low-Voltage High-Performance CMOS VCOs: Using a silicon-on-insulator (SOI) process with undoped an optimum differential transformer to maximize quality factor channel MOSFETs, the threshold voltages of nFET and pFET and to minimize the chip area, the second design is operated at 3.8 GHz at a 0.5-V supply with power consumption of 570 W and a are ...",
+    "key_specs": [
+      "1.4 GHz",
+      "0.52 V",
+      "1.46 mW",
+      "128.6 dBc/Hz",
+      "3.8 GHz",
+      "570 W",
+      "0.16 V",
+      "119 dBc/Hz",
+      "0.3 V",
+      "3.8 W"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE continuous growth of personal wireless communications demands low-cost low-power solutions in the design of wireless systems. Wireless transceivers for many standards—including GSM, Bluetooth, WLAN, Wireless Personal Area Network (WPAN) [1], and PicoRadios Wireless Sensor Network [2]—require low-power design techniques to enhance their battery lifetime and to improve their portability. Having ..."
+    },
+    {
+      "number": "II",
+      "title": "PROBLEMS WITH CONVENTIONAL LC VCOS",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "A typical LC tank circuit is shown in Fig. 1(a), where only inductor series loss is considered. Fig. 1(b) shows the equivalent circuit using series to parallel transformation. The tank is impedance (1) Relevant design parameters are the tank quality factor which is deﬁned by the 3-dB bandwidth and the tank at the resonant frequency. For the tank in Fig. 1 impedance (2) (3) As shown in Fig. 2(a), a ..."
+    },
+    {
+      "number": "III",
+      "title": "PROPOSED TRANSFORMER-FEEDBACK VCO",
+      "kind": "proposed",
+      "page": 1,
+      "text_preview": "To improve the VCO performance in terms of low supply voltage, low power, and low phase noise, a TF-VCO is proposed to provide extra voltage swings, improved loaded quality factor, and minimum noise-to-phase-noise transfer. As shown in Fig. 3(a), the proposed TF-VCO employs an integrated transformer in place of the inductor in the conventional VCOs. The is connected transformer’s primary coil with ..."
+    },
+    {
+      "number": "IV",
+      "title": "DETAILED ANALYSIS OF THE PROPOSED",
+      "kind": "proposed",
+      "page": 2,
+      "text_preview": "TRANSFORMER-FEEDBACK VCO Using a half-circuit, the proposed TF-VCO could be viewed as two independent VCOs with the cross-coupling as an injection-locking mechanism to synchronize the two half-circuit VCOs into differential operation. The idea is schematically drawn in Fig. 4(a) with each stage given in Fig. 4(b). The transformer coupling between the drain and source node contributed a positive fe ..."
+    },
+    {
+      "number": "V",
+      "title": "MEASUREMENT RESULTS",
+      "kind": "results",
+      "page": 4,
+      "text_preview": "The proposed TF-VCO was demonstrated with two designs m CMOS process. The process has six using a standard 0.18metal layers with the top metal of 2 m thick. The substrate -cm. The threshold voltages of the NMOS resistivity is about 8 0.52 V, respectively. and PMOS devices are around 0.45 and The ﬁrst design is a 0.35-V 1.46-mW 1.4-GHz oscillator using PMOS transistors and two single-ended transfor ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 7,
+      "text_preview": "A transformer-feedback voltage-controlled oscillator (TF-VCO) is proposed as the architecture choice for low-voltage low-power low-phase-noise application. Transformer feedback enables dual signal swings across the supply voltage and the ground potential and provides a large oscillation amplitude even at supply voltages below the devices’ threshold voltages. The proposed design also increases the  ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Typical tank circuit. (a) Series network. (b) Parallel equivalent.",
+      "caption_bbox": [
+        38.1,
+        138.3,
+        267.5,
+        146.2
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Measurement KWOK AND LUONG: ULTRA-LOW-VOLTAGE HIGH-PERFORMANCE CMOS VCOs USING TRANSFORMER FEEDBACK Fig. 1."
+        },
+        {
+          "section_title": "PROBLEMS WITH CONVENTIONAL LC VCOS",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "A typical LC tank circuit is shown in Fig. 1(a), where only inductor series loss is considered."
+        },
+        {
+          "section_title": "PROBLEMS WITH CONVENTIONAL LC VCOS",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 1(b) shows the equivalent circuit using series to parallel transformation."
+        },
+        {
+          "section_title": "PROBLEMS WITH CONVENTIONAL LC VCOS",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "For the tank in Fig. 1 impedance (2) (3) As shown in Fig. 2(a), a generic LC-type VCO consists of a frequency tuned LC tank and a negative conductance cross-coupled differential pair."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.1,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-equivalent": -2.0,
+        "section:intro": -0.5,
+        "references": 1.6
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SOI",
+        "application_domain": "wireless, wlan",
+        "sub_blocks": [
+          "inductor",
+          "cross-coupled pair",
+          "LC tank / resonator",
+          "transformer",
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "Typical tank circuit. (a) Series network. (b) Parallel equivalent",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Conventional VCO design. (a) Schematic. (b) Single-ended voltage waveform.",
+      "caption_bbox": [
+        301.1,
+        419.7,
+        552.2,
+        436.6
+      ],
+      "section_title": "II. PROBLEMS WITH CONVENTIONAL LC VCOS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "PROBLEMS WITH CONVENTIONAL LC VCOS",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "For the tank in Fig. 1 impedance (2) (3) As shown in Fig. 2(a), a generic LC-type VCO consists of a frequency tuned LC tank and a negative conductance cross-coupled differential pair."
+        },
+        {
+          "section_title": "PROBLEMS WITH CONVENTIONAL LC VCOS",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The single-ended oscillation waveform is given in Fig. 2(b)."
+        },
+        {
+          "section_title": "PROBLEMS WITH CONVENTIONAL LC VCOS",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Due to the loading inductor, the output signal swings with a (a) (b) Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "-conventional": -3.0,
+        "-waveform": -2.0,
+        "type_match:voltage": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SOI",
+        "application_domain": "wireless, wlan",
+        "sub_blocks": [
+          "inductor",
+          "cross-coupled pair",
+          "LC tank / resonator",
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "Conventional VCO design. (a) Schematic. (b) Single-ended voltage waveform",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Proposed transformer-feedback VCO design. (a) Schematic. (b) Single-ended voltage waveforms.",
+      "caption_bbox": [
+        39.6,
+        449.4,
+        290.7,
+        466.3
+      ],
+      "section_title": "IV. DETAILED ANALYSIS OF THE PROPOSED",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "PROPOSED TRANSFORMER-FEEDBACK VCO",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "As shown in Fig. 3(a), the proposed TF-VCO employs an integrated transformer in place of the inductor in the conventional VCOs."
+        },
+        {
+          "section_title": "PROPOSED TRANSFORMER-FEEDBACK VCO",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The is connected transformer’s primary coil with self-inductance Fig. 3."
+        },
+        {
+          "section_title": "PROPOSED TRANSFORMER-FEEDBACK VCO",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The single-ended voltage waveforms are depicted in Fig. 3(b)."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "A 0.35-V PMOS TF-oscillator output spectrum. the NMOS in Fig. 3(a) being replaced with PMOS transistors."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The schematic is given in Fig. 3(a) with a deep n-well as the source-bulk isolation to the substrate."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 10.0,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+proposed": 3.0,
+        "-waveform": -2.0,
+        "section:proposed": 2.0,
+        "type_match:voltage": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SOI",
+        "application_domain": "wireless, wlan",
+        "sub_blocks": [
+          "inductor",
+          "transistor/MOSFET",
+          "transformer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Proposed transformer-feedback VCO design. (a) Schematic. (b) Single-ended voltage waveforms",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 1.0,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Half-circuit analysis. (a) TF-VCO. (b) Half-circuit VCO.",
+      "caption_bbox": [
+        302.6,
+        170.7,
+        513.4,
+        178.6
+      ],
+      "section_title": "III. PROPOSED TRANSFORMER-FEEDBACK VCO",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "PROPOSED TRANSFORMER-FEEDBACK VCO",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Compared to the conventional topology, this phase synchronization provides extra IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 3, MARCH 2005 Fig. 4."
+        },
+        {
+          "section_title": "DETAILED ANALYSIS OF THE PROPOSED",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "The idea is schematically drawn in Fig. 4(a) with each stage given in Fig. 4(b)."
+        },
+        {
+          "section_title": "DETAILED ANALYSIS OF THE PROPOSED",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "In Fig. 4(b), the tanks at the source and the drain are modeled by two RLC networks with a magbetween and ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.2,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:proposed": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SOI",
+        "application_domain": "wireless, wlan",
+        "sub_blocks": [
+          "LC tank / resonator"
+        ],
+        "design_purpose": "",
+        "function_summary": "Half-circuit analysis. (a) TF-VCO. (b) Half-circuit VCO",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.65,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Simulated loaded quality factor of a conventional VCO and a TF-VCO.",
+      "caption_bbox": [
+        301.1,
+        272.3,
+        552.2,
+        280.3
+      ],
+      "section_title": "IV. DETAILED ANALYSIS OF THE PROPOSED",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "DETAILED ANALYSIS OF THE PROPOSED",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "The term equals to 4. optimized with a maximum value of 1/4 when Because the resonant frequency of the secondary tank of the proposed TF-VCO is far above the oscillation frequency , the unloaded parallel quality factor of the secondary inductor at is (9) and thus and (8) could be approximated as (10) Fig. 5."
+        },
+        {
+          "section_title": "DETAILED ANALYSIS OF THE PROPOSED",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "Fig. 5 compares the simulated of the TF-VCO and the conventional differential LC-type VCO as a function of bias current with ﬁxed 0.5-V supply."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-conventional": -3.0,
+        "-simulated": -3.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SOI",
+        "application_domain": "wireless, wlan",
+        "sub_blocks": [
+          "inductor",
+          "LC tank / resonator"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simulated loaded quality factor of a conventional VCO and a TF-VCO",
+        "key_specs": [
+          "4 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "Fig. 6. Simulated transfer function of a conventional VCO and a TF-VCO.",
+      "caption_bbox": [
+        39.6,
+        254.0,
+        283.1,
+        261.9
+      ],
+      "section_title": "IV. DETAILED ANALYSIS OF THE PROPOSED",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "DETAILED ANALYSIS OF THE PROPOSED",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "Fig. 6 shows and compares even higher the simulated transfer functions of the corresponding VCOs at four different bias levels."
+        },
+        {
+          "section_title": "DETAILED ANALYSIS OF THE PROPOSED",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "These capacitors constitute an (5) (6) Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-conventional": -3.0,
+        "-simulated": -3.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SOI",
+        "application_domain": "wireless, wlan",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simulated transfer function of a conventional VCO and a TF-VCO",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. Cyclo-stationary noise effect. (a) Colpitts. (b) TF-VCO.",
+      "caption_bbox": [
+        39.6,
+        378.4,
+        246.8,
+        386.4
+      ],
+      "section_title": "IV. DETAILED ANALYSIS OF THE PROPOSED",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "DETAILED ANALYSIS OF THE PROPOSED",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "Fig. 7(a) and (b) shows a comparison between a common-gate Colpitts VCO and the half-circuit TF-VCO, where the transformer is represented by an equivaand lent model."
+        },
+        {
+          "section_title": "DETAILED ANALYSIS OF THE PROPOSED",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SOI",
+        "application_domain": "wireless, wlan",
+        "sub_blocks": [
+          "transformer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Cyclo-stationary noise effect. (a) Colpitts. (b) TF-VCO",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Voltage, current waveforms, and ISF curves of TF-VCO.",
+      "caption_bbox": [
+        302.6,
+        267.8,
+        512.7,
+        275.7
+      ],
+      "section_title": "IV. DETAILED ANALYSIS OF THE PROPOSED",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "DETAILED ANALYSIS OF THE PROPOSED",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "A current source between transistor’s drain and source nodes is included and acts as a noise IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 3, MARCH 2005 Fig. 8."
+        },
+        {
+          "section_title": "DETAILED ANALYSIS OF THE PROPOSED",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "Figs. 8 and 9 show the voltage and current waveforms, and the ISF of the two topologies."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "-waveform": -2.0,
+        "section:proposed": 2.0,
+        "type_match:voltage": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SOI",
+        "application_domain": "wireless, wlan",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "current source"
+        ],
+        "design_purpose": "",
+        "function_summary": "Voltage, current waveforms, and ISF curves of TF-VCO",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. Voltage, current waveforms, and ISF curves of conventional VCO.",
+      "caption_bbox": [
+        302.6,
+        503.1,
+        543.0,
+        511.0
+      ],
+      "section_title": "IV. DETAILED ANALYSIS OF THE PROPOSED",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "DETAILED ANALYSIS OF THE PROPOSED",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.6,
+      "relevance_breakdown": {
+        "-conventional": -3.0,
+        "-waveform": -2.0,
+        "section:proposed": 2.0,
+        "type_match:voltage": 2.0,
+        "references": 0.4
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SOI",
+        "application_domain": "wireless, wlan",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Voltage, current waveforms, and ISF curves of conventional VCO",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. A 0.35-V PMOS TF-oscillator microphotograph.",
+      "caption_bbox": [
+        38.1,
+        254.4,
+        227.6,
+        262.4
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The threshold voltages of the NMOS resistivity is about 8 0.52 V, respectively. and PMOS devices are around 0.45 and The ﬁrst design is a 0.35-V 1.46-mW 1.4-GHz oscillator using PMOS transistors and two single-ended transformers with KWOK AND LUONG: ULTRA-LOW-VOLTAGE HIGH-PERFORMANCE CMOS VCOs USING TRANSFORMER FEEDBACK Fig. 10."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The chip microphotograph is given in Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -7.7,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, SOI",
+        "application_domain": "wireless, wlan",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "transformer"
+        ],
+        "design_purpose": "",
+        "function_summary": "A 0.35-V PMOS TF-oscillator microphotograph",
+        "key_specs": [
+          "0.52 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 5,
+      "caption": "Fig. 11. A 0.35-V PMOS TF-oscillator output spectrum.",
+      "caption_bbox": [
+        38.1,
+        475.1,
+        224.4,
+        483.1
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 11."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "A 0.35-V PMOS TF-oscillator supply sensitivity. spectrum is given in Fig. 11 and the phase noise is measured 128.6 dBc/Hz at 1-MHz frequency offset from a center to be frequency of 1.38 GHz."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, SOI",
+        "application_domain": "wireless, wlan",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "A 0.35-V PMOS TF-oscillator output spectrum",
+        "key_specs": [
+          "128.6 dBc/Hz",
+          "1.38 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 5,
+      "caption": "Fig. 12. A 0.35-V PMOS TF-oscillator supply sensitivity.",
+      "caption_bbox": [
+        301.1,
+        261.4,
+        491.1,
+        269.4
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The output Fig. 12."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The measured and simulated frequency sensitivities to the supply voltage are given in Fig. 12 with values 230 and 383 MHz/V, respectively."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, SOI",
+        "application_domain": "wireless, wlan",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "A 0.35-V PMOS TF-oscillator supply sensitivity",
+        "key_specs": [
+          "12 w",
+          "383 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 6,
+      "caption": "Fig. 13. A 0.5-V NMOS TF-VCO microphotograph.",
+      "caption_bbox": [
+        39.6,
+        322.4,
+        213.7,
+        330.3
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 13 depicts the microphotograph with excluding pads."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The self-inductance most turn and 9 of the primary and secondary coils and the coupling factor are Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -7.7,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SOI",
+        "application_domain": "wireless, wlan",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "A 0.5-V NMOS TF-VCO microphotograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 6,
+      "caption": "Fig. 14. A 0.5-V NMOS TF-VCO output spectrum.",
+      "caption_bbox": [
+        39.6,
+        554.7,
+        210.6,
+        562.7
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 14."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 14 shows the full frequency spectrum at 3.7 GHz."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SOI",
+        "application_domain": "wireless, wlan",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "A 0.5-V NMOS TF-VCO output spectrum",
+        "key_specs": [
+          "3.7 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 6,
+      "caption": "Fig. 15. A 0.5-V NMOS TF-VCO closed-in spectrum.",
+      "caption_bbox": [
+        302.6,
+        266.2,
+        482.3,
+        274.2
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The closed-in spectrum in Fig. 15 shows the measured VCO phase noise."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The frequency is tuned from IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 3, MARCH 2005 Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SOI",
+        "application_domain": "wireless, wlan",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "A 0.5-V NMOS TF-VCO closed-in spectrum",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 6,
+      "caption": "Fig. 16. A 0.5-V NMOS TF-VCO frequency tuning curve.",
+      "caption_bbox": [
+        302.6,
+        477.5,
+        495.5,
+        485.5
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The TF-VCO is tuned by a simple accumulation mode varactor and the measured and simulated frequency tuning curves are given in Fig. 16."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 16."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Phase noise performance across the tuning range is also given in Fig. 16 and it gives the highest value at the high gain region which is degraded by 6 dB."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SOI",
+        "application_domain": "wireless, wlan",
+        "sub_blocks": [
+          "varactor",
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "A 0.5-V NMOS TF-VCO frequency tuning curve",
+        "key_specs": [
+          "6 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 7,
+      "caption": "Fig. 17. A 0.5-V NMOS TF-VCO supply sensitivity.",
+      "caption_bbox": [
+        38.1,
+        525.7,
+        212.8,
+        533.7
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The measured and simulated frequency sensitivities to the supply voltage are given in Fig. 17 at a ﬁxed tuning voltage at 0.9 V."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The two proposed TF-VCOs achieve KWOK AND LUONG: ULTRA-LOW-VOLTAGE HIGH-PERFORMANCE CMOS VCOs USING TRANSFORMER FEEDBACK TABLE I COMPARISON OF PERFORMANCE OF MOST RECENT LOW-POWER VCOS Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SOI",
+        "application_domain": "wireless, wlan",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "transformer"
+        ],
+        "design_purpose": "",
+        "function_summary": "A 0.5-V NMOS TF-VCO supply sensitivity",
+        "key_specs": [
+          "0.9 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 7,
+      "caption": "Fig. 18. Comparison of FOMs of reported VCOs at different supply voltages.",
+      "caption_bbox": [
+        38.1,
+        701.4,
+        289.1,
+        709.3
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 18."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 18 compares the FOMs of state-of-the-art VCOs at different supply voltages."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SOI",
+        "application_domain": "wireless, wlan",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Comparison of FOMs of reported VCOs at different supply voltages",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 4,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

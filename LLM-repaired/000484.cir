@@ -1,0 +1,13 @@
+M1 N1 latch VSS VSS nmos
+M2 N2 inp N1 VSS nmos
+M3 N2 vrefn N1 VSS nmos
+M4 N3 vrefp N1 VSS nmos
+M5 N3 inn N1 VSS nmos
+M6 Vout_minus Vout_plus N2 VSS nmos
+M7 Vout_plus Vout_minus N3 VSS nmos
+M8 N2 latch VDD VDD pmos
+M9 Vout_minus latch VDD VDD pmos
+M10 Vout_minus Vout_plus VDD VDD pmos
+M11 Vout_plus Vout_minus VDD VDD pmos
+M12 Vout_plus latch VDD VDD pmos
+M13 N3 latch VDD VDD pmos

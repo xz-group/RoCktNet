@@ -1,0 +1,2059 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\RNDatasetPapers\\jssc.2011.2104553.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output_rerun_128\\jssc.2011.2104553",
+  "generated_at": "2026-07-29T22:45:54",
+  "paper_metadata": {
+    "title": "High Power Terahertz and Millimeter-Wave Oscillator Design: A Systematic Approach",
+    "authors": [
+      "Omeed Momeni",
+      "Ehsan Afshari"
+    ],
+    "abstract": "A systematic approach to designing high frequency and high power oscillators using activity condition is introduced. tion frequency of 600 GHz. SiGe HBTs with an This method finds the best topology to achieve frequencies close of 160 GHz are used in [24] to achieve a fundamental oscillato the max of the transistors. It also determines the maximum tion frequency of 100 GHz. A 104 GHz fundamental oscillator frequency of oscillation for a fixed circuit topology, considering is also reported in [22], which employs 90 nm CMOS transistors the quality factor of the passive components. Using this technique, with an of 300 GHz. In all of these oscillators, the oscillain a 0.13 m CMOS process, we design and implement 121 GHz and 104 GHz fundamental oscillators with the output power of tion frequency is around half of the of the transistors. The 3.5 dBm and 2.7 dBm, respectively. Next, we introduce a novel question that arises is whether the oscillators have exploited the triple-push structure to realize 256 GHz and 482 GHz oscillators. full capacity of the active devices in terms of output power and The 256 GHz oscillator was implemented in a 0.13 m CMOS frequency. In other words, in any given process, it is essential process and the output power of 17 dBm was measured. The to find the maximum oscillation frequency of a circuit topology, 482 GHz oscillator generates 7.9 dBm (0.16 mW) in a 65 nm CMOS process. considering the quality factor of the passive components. Furthermore, for a fixed frequency, it is important to determine the",
+    "keywords": [
+      "Activity condition",
+      "CMOS",
+      "harmonic generation",
+      "maximum oscillation frequency",
+      "millimeter-wave",
+      "oscillator",
+      "ring"
+    ],
+    "doi": "10.1109/JSSC.2011.2104553",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2011
+  },
+  "paper_circuit_context": {
+    "circuit_type": "High Power Terahertz and Millimeter-Wave Oscillator Design: A Systematic Approach",
+    "technology": "CMOS, SIGE, HBT, HEMT, 90nm process",
+    "application_domain": "millimeter-wave, mm-wave, rf, wireless, radar, uwb, terahertz, thz, if",
+    "sub_blocks": [
+      "inductor",
+      "capacitor",
+      "transistor/MOSFET",
+      "cross-coupled pair",
+      "transmission line",
+      "output buffer",
+      "mixer",
+      "bias circuit",
+      "LC tank / resonator"
+    ],
+    "design_purpose": "SiGe HBTs with an This method finds the best topology to achieve frequencies close of 160 GHz are used in [24] to achieve a fundamental oscillato the max of the transistors.",
+    "function_summary": "High Power Terahertz and Millimeter-Wave Oscillator Design: A Systematic Approach: SiGe HBTs with an This method finds the best topology to achieve frequencies close of 160 GHz are used in [24] to achieve a fundamental oscillato the max of the transistors.",
+    "key_specs": [
+      "600 GHz",
+      "160 GHz",
+      "100 GHz",
+      "104 GHz",
+      "90 nm",
+      "300 GHz",
+      "121 GHz",
+      "3.5 dBm",
+      "2.7 dBm",
+      "256 GHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HERE is growing interest in signal generation in the millimeter-wave and terahertz frequency ranges [1], [2]. There are numerous applications for mm-wave frequencies such as broadband wireless access (e.g., WiMax), vehicular radar, short-range communication, and ultra-narrow pulse generation for UWB radar [3], [4]. Imaging and bio/molecular spectroscopy were the ﬁrst and the main applications of ..."
+    },
+    {
+      "number": "II",
+      "title": "OVERVIEW OF THE ACTIVITY CONDITION OF",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "A TWO-PORT DEVICE Activity condition determines the criterion in which the device can generate power. This is the basis for deﬁning the max- . Before discussing the activity imum oscillation frequency, of a device, it is useful to understand Mason’s invariant, . A. Unilateral Power Gain and the Origin of In 1954, Mason introduced the invariant function for a linear two-port network [31]. For a thr ..."
+    },
+    {
+      "number": "III",
+      "title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "In this section we expand the theory of activity condition to design oscillators with operation frequencies close to the of the active devices. First, we ﬁnd the maximum frequency of multi-stage ring structures. Note that the popular cross-coupled oscillator is a special case of the ring oscillator with two stages. After that, we present a method to design an oscillator that exploits the full capa ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 12,
+      "text_preview": "We have introduced a systematic method to design high power oscillators that can achieve frequencies close to the of the transistors. We have also demonstrated a novel triple-push TABLE I COMPARISON WITH PRIOR ART structure to realize CMOS oscillators in the terahertz band. This approach has applications in millimeter-wave frequencies for communication and radar systems as well as terahertz band f ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. A three-terminal two-port device.",
+      "caption_bbox": [
+        39.6,
+        182.1,
+        174.0,
+        190.1
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1."
+        },
+        {
+          "section_title": "OVERVIEW OF THE ACTIVITY CONDITION OF",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "For a three-terminal device as a is deﬁned as linear two-port network shown in Fig. 1, (1) ’s are the elements of the admittance matrix of the in which network, , and , , 2."
+        },
+        {
+          "section_title": "OVERVIEW OF THE ACTIVITY CONDITION OF",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "For example, in a FET device, if we connect gate, source, and drain nodes to any of the three terminals of Fig. 1, the value of remains the same."
+        },
+        {
+          "section_title": "OVERVIEW OF THE ACTIVITY CONDITION OF",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "For the device in Fig. 1, we can write the total power going into the device as (2) ” denotes the complex conjugate."
+        },
+        {
+          "section_title": "OVERVIEW OF THE ACTIVITY CONDITION OF",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "By substituting (7) and (8) into (6), we arrive at (9) For the device to be active, (9) should be positive, which means that the activity condition of the device in Fig. 1 can be written as (10) This kind of activity is called transfer activity and is of particular importance for transistors."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.5,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "High Power Terahertz and Millimeter-Wave Oscillator Design: A Systematic Approach",
+        "technology": "CMOS, SIGE, HBT, HEMT, 90nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, radar, uwb, terahertz, thz, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "A three-terminal two-port device",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. A device embedded in a 4-port, linear, lossless, reciprocal network.",
+      "caption_bbox": [
+        39.6,
+        340.5,
+        280.7,
+        348.5
+      ],
+      "section_title": "II. OVERVIEW OF THE ACTIVITY CONDITION OF",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 2."
+        },
+        {
+          "section_title": "OVERVIEW OF THE ACTIVITY CONDITION OF",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The intriguing propis that it is invariant under any 4-port, linear, losserty of less, reciprocal embedding shown in Fig. 2 [32]."
+        },
+        {
+          "section_title": "OVERVIEW OF THE ACTIVITY CONDITION OF",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Thus, is the embedded setting of Fig. 2 is zero: also called the unilateral power gain."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "High Power Terahertz and Millimeter-Wave Oscillator Design: A Systematic Approach",
+        "technology": "CMOS, SIGE, HBT, HEMT, 90nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, radar, uwb, terahertz, thz, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "A device embedded in a 4-port, linear, lossless, reciprocal network",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. An N-stage ring oscillator with inductive loading.",
+      "caption_bbox": [
+        301.1,
+        197.2,
+        488.9,
+        207.0
+      ],
+      "section_title": "II. OVERVIEW OF THE ACTIVITY CONDITION OF",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Maximum Frequency of Ring Oscillators Consider an N-stage ring oscillator with inductive loading as shown in Fig. 3."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Even though Fig. 3 shows an Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "type_match:oscillator": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, SIGE, HBT, HEMT, 90nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, radar, uwb, terahertz, thz, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "An N-stage ring oscillator with inductive loading",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 3,
+      "caption": "Fig. 4. (a) A stand-alone transistor and (b) a transistor inside a ring oscillator with inductive loading.",
+      "caption_bbox": [
+        39.6,
+        224.4,
+        290.7,
+        241.3
+      ],
+      "section_title": "III. ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 4(a) shows a stand-alone transistor and Fig. 4(b) shows a transistor inside the ring structure."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Combining (6), (12), and parameters of both networks in Fig. 4, we can write the activity condition of the two-port network in Fig. 4(b) to be (13) where is the real power ﬂowing out of the device inside is the parallel conductance of the inductor."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "These correspond to and per section. the phase shift of Fig. 4."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "This is the start-up condition and it leads to an increase in the voltage ) of the section in Fig. 4(b)."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The parameters of the section in Fig. 4(b) is simulated for different voltage amplitudes, , and are inserted in (13) to ﬁnd of Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.5,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "type_match:oscillator": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, SIGE, HBT, HEMT, 90nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, radar, uwb, terahertz, thz, if",
+        "sub_blocks": [
+          "inductor",
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) A stand-alone transistor and (b) a transistor inside a ring oscillator with inductive loading",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.45,
+      "warnings": [
+        "Recommended figure caption does not explicitly mention a schematic/topology/circuit; please confirm manually.",
+        "Recommended figure was classified as 'other', not a schematic; manual confirmation strongly recommended."
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Simulation of G and the maximum frequency of oscillation (f ) for a cross-coupled oscillator (two-stage ring oscillator) in the employed 0.13 m CMOS process.",
+      "caption_bbox": [
+        302.6,
+        245.9,
+        553.7,
+        271.9
+      ],
+      "section_title": "III. ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 5 shows the plot of using a transistor width of 10 m with 10 ﬁngers in a common source conﬁguration."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 5 shows that no power can ﬂow and hence no oscilout of transistor for the mode lation would be sustained in that mode."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "For example Fig. 5 shows that to oscillate at 100 GHz, the of 1.5 mS."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The same biasing conditions as in Fig. 5 are used in this graph."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "As shown in for 100 GHz oscillation is Fig. 6, the maximum in the cross-coupled 3 mS and is twice the maximum IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 46, NO. 3, MARCH 2011 Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.5,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "type_match:oscillator": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, SIGE, HBT, HEMT, 90nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, radar, uwb, terahertz, thz, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "cross-coupled pair",
+          "bias circuit"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simulation of G and the maximum frequency of oscillation (f ) for a cross-coupled oscillator (two-stage ring oscillator) in the employed 0.13 m CMOS process",
+        "key_specs": [
+          "100 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.82,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Simulation of G and the maximum frequency of oscillation (f ) for a three-stage ring oscillator in the employed 0.13 m CMOS process.",
+      "caption_bbox": [
+        302.6,
+        472.5,
+        553.7,
+        489.5
+      ],
+      "section_title": "III. ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "As will be inductors can have a maximum discussed in the next section, this will put a limit on the inductor quality factor. b) Three-Stage Ring Oscillator: Fig. 6 shows for three distinct modes of a three-stage ring oscillator."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "As shown in for 100 GHz oscillation is Fig. 6, the maximum in the cross-coupled 3 mS and is twice the maximum IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 46, NO. 3, MARCH 2011 Fig. 5."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 6."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "In step 6 we need to go back to Fig. 6 and ﬁnd that can sustain the oscillation."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.1,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "type_match:oscillator": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, SIGE, HBT, HEMT, 90nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, radar, uwb, terahertz, thz, if",
+        "sub_blocks": [
+          "inductor",
+          "cross-coupled pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simulation of G and the maximum frequency of oscillation (f ) for a three-stage ring oscillator in the employed 0.13 m CMOS process",
+        "key_specs": [
+          "100 GHz",
+          "6 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.75,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. Simulation of the maximum frequency of oscillation (f ) of a ring ) in the employed 0.13 m oscillator as a function of phase shift per section ( CMOS process.",
+      "caption_bbox": [
+        38.1,
+        235.3,
+        289.2,
+        261.3
+      ],
+      "section_title": "III. ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 7 shows the plot of as a function of oscillation, for the employed CMOS process."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "In in order to ﬁnd the maximum frequency of oscillation, Section III-C we discuss a methodology to design oscillators of the transistors. that oscillate at frequencies close to the MOMENI AND AFSHARI: HIGH POWER TERAHERTZ AND MILLIMETER-WAVE OSCILLATOR DESIGN: A SYSTEMATIC APPROACH Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "type_match:oscillator": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, SIGE, HBT, HEMT, 90nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, radar, uwb, terahertz, thz, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "In in order to ﬁnd the maximum frequency of oscillation, Section III-C we discuss a methodology to design oscillators of the transistors. that oscillate at frequencies close to the MOMENI AND AFSHARI: HIGH POWER TERAHERTZ AND MILLIMETER-WAVE OSCILLATOR DESIGN: A SYSTEMATIC APPROACH Fig. 7.",
+        "function_summary": "Simulation of the maximum frequency of oscillation (f ) of a ring ) in the employed 0.13 m oscillator as a function of phase shift per section ( CMOS process. In in order to ﬁnd the maximum frequency of oscillation, Section III-C we discuss a methodology to design oscillators of the transistors. that oscillate at ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.57,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Simulated large-signal G as a function of different voltage amplitudes j = jV (jV j = jV j) in (a) two-stage and (b) three-stage ring oscillators.",
+      "caption_bbox": [
+        301.1,
+        412.2,
+        552.2,
+        429.4
+      ],
+      "section_title": "III. ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "As an example, Fig. 8 shows for twoand three-stage ring osthe simulated large-signal cillators in the same 0.13 m CMOS process."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The parameters of the section in Fig. 4(b) is simulated for different voltage amplitudes, , and are inserted in (13) to ﬁnd of Fig. 8."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "For example if both twoand three-stage oscillators are set to oscillate at 100 GHz using ideal inductors, Fig. 8 shows that the twoand three-stage oscillators will have a voltage swing of around 1.2 V and 1.5 V, respectively."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Since is a linear conductance associated with the inductor, it can be linearly subtracted from the curves in Fig. 8 to ﬁnd the voltage swings."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.5,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:design": 1.5,
+        "references": 2.0
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, SIGE, HBT, HEMT, 90nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, radar, uwb, terahertz, thz, if",
+        "sub_blocks": [
+          "inductor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simulated large-signal G as a function of different voltage amplitudes j = jV (jV j = jV j) in (a) two-stage and (b) three-stage ring oscillators",
+        "key_specs": [
+          "100 GHz",
+          "1.2 V",
+          "1.5 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.03,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 5,
+      "caption": "Fig. 9. Active device embedded in a passive network.",
+      "caption_bbox": [
+        302.6,
+        210.8,
+        477.4,
+        218.7
+      ],
+      "section_title": "III. ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "We can model most using of the other oscillators as an active device embedded in a and reppassive network, as shown in Fig. 9."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "We can simulate the oscillator and verify that the voltage swing is large IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 46, NO. 3, MARCH 2011 Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, SIGE, HBT, HEMT, 90nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, radar, uwb, terahertz, thz, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Active device embedded in a passive network",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 6,
+      "caption": "Fig. 10. Flowchart of the proposed design methodology for high-frequency fundamental oscillators.",
+      "caption_bbox": [
+        38.1,
+        538.3,
+        289.2,
+        555.3
+      ],
+      "section_title": "III. ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The ﬂowchart of the above methodology is illustrated in Fig. 10."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "This ﬁgure is the maximum , , and the same transistor size. is plotted for is 2.4 mS and 2.9 mS for of 120 GHz and 105 GHz, MOMENI AND AFSHARI: HIGH POWER TERAHERTZ AND MILLIMETER-WAVE OSCILLATOR DESIGN: A SYSTEMATIC APPROACH Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, SIGE, HBT, HEMT, 90nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, radar, uwb, terahertz, thz, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Flowchart of the proposed design methodology for high-frequency fundamental oscillators",
+        "key_specs": [
+          "120 GHz",
+          "105 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.79,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 6,
+      "caption": "Fig. 11. Simulation of the optimum A and for a 0.13 m CMOS transistor.",
+      "caption_bbox": [
+        301.1,
+        236.0,
+        551.3,
+        244.0
+      ],
+      "section_title": "III. ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "For step 3 we plot and as lower than the typical a function of frequency in Fig. 11."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "However, we decide to keep the frequencies Fig. 11."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "From Fig. 11 we know that the optimum conditions and for a stand-alone transistor at 85 GHz are ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "High Power Terahertz and Millimeter-Wave Oscillator Design: A Systematic Approach",
+        "technology": "CMOS, SIGE, HBT, HEMT, 90nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, radar, uwb, terahertz, thz, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simulation of the optimum A and for a 0.13 m CMOS transistor",
+        "key_specs": [
+          "3 w",
+          "11 w",
+          "85 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 6,
+      "caption": "Fig. 12. A three-stage ring oscillator with buffer.",
+      "caption_bbox": [
+        301.1,
+        502.2,
+        461.2,
+        510.2
+      ],
+      "section_title": "III. ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Next, in step 5 we use the topology of Fig. 12 to size the transistors and inductors."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 12."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "As shown in Fig. 12, a m is used to minimize small buffer transistor size of the loading of the oscillator."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "type_match:oscillator": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, SIGE, HBT, HEMT, 90nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, radar, uwb, terahertz, thz, if",
+        "sub_blocks": [
+          "inductor",
+          "transistor/MOSFET",
+          "output buffer"
+        ],
+        "design_purpose": "As shown in Fig. 12, a m is used to minimize small buffer transistor size of the loading of the oscillator.",
+        "function_summary": "A three-stage ring oscillator with buffer. As shown in Fig. 12, a m is used to minimize small buffer transistor size of the loading of the oscillator.",
+        "key_specs": [
+          "5 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.67,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 6,
+      "caption": "Fig. 13. (a) Layout of a double-gate connection transistor that is used in all the oscillators and (b) cross section of the shielded coplanar transmission line in the employed 0.13 m CMOS process.",
+      "caption_bbox": [
+        301.1,
+        640.8,
+        552.2,
+        666.7
+      ],
+      "section_title": "III. ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The transistor is implemented using a conventional double gate connection and a substrate contact ring around the transistor as shown in Fig. 13(a). pH Using the transistor size, the inductors would be and pH for an of 120 GHz and 105 GHz, respecwhich tively."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The cross section of the shielded coplanar transmission lines is presented is the distance between the shield in Fig. 13(b)."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 13."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "To match the buffer to the 50 load, a transm and mission line similar to that of Fig. 13(b) with length of along with a capacitor, fF, are used. , and the DC supply bypass caThe matching capacitor, , were constructed using the metal-to-metal capacpacitor, itors of the probing pads and hence a quality factor of 150 is achieved at 120 GHz."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Simulation of G of one section of the enhanced triple-push oscillator shown in Fig. 20 with different L values using the 65 nm CMOS process. transistor is implemented using a conventional double gate connection and a substrate contact ring around the transistor similar to Fig. 13(a)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.5,
+      "relevance_breakdown": {
+        "-layout": -2.0,
+        "section:design": 1.5,
+        "references": 2.0
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, SIGE, HBT, HEMT, 90nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, radar, uwb, terahertz, thz, if",
+        "sub_blocks": [
+          "inductor",
+          "capacitor",
+          "transistor/MOSFET",
+          "transmission line",
+          "output buffer"
+        ],
+        "design_purpose": "The cross section of the shielded coplanar transmission lines is presented is the distance between the shield in Fig. 13(b).",
+        "function_summary": "(a) Layout of a double-gate connection transistor that is used in all the oscillators and (b) cross section of the shielded coplanar transmission line in the employed 0.13 m CMOS process. The cross section of the shielded coplanar transmission lines is presented is the distance between the shield in Fig. 13(b).",
+        "key_specs": [
+          "120 GHz",
+          "105 GHz",
+          "20 w",
+          "65 nm"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 7,
+      "caption": "Fig. 14. Simulation of one period of V , buffered V and unbuffered V signals in time domain for the 123 GHz oscillator.",
+      "caption_bbox": [
+        39.6,
+        227.3,
+        283.3,
+        246.0
+      ],
+      "section_title": "III. ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The buffer consumes 2.7 mW from Fig. 14."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 14 and , buffered and shows the simulation of one period of unbuffered signals in time domain for the 123 GHz oscilamplitude lator."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "type_match:oscillator": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, SIGE, HBT, HEMT, 90nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, radar, uwb, terahertz, thz, if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simulation of one period of V , buffered V and unbuffered V signals in time domain for the 123 GHz oscillator",
+        "key_specs": [
+          "2.7 mW",
+          "123 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.57,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 7,
+      "caption": "Fig. 15. Die photo of the fundamental oscillators at (a) 121 GHz and (b) 104 GHz.",
+      "caption_bbox": [
+        302.6,
+        239.0,
+        553.7,
+        255.9
+      ],
+      "section_title": "III. ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 15 shows the chip photo of these oscillators."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The measured oscillation frequency for the two oscillators are 121 GHz and 104 GHz, IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 46, NO. 3, MARCH 2011 Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-die photo": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, SIGE, HBT, HEMT, 90nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, radar, uwb, terahertz, thz, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Die photo of the fundamental oscillators at (a) 121 GHz and (b) 104 GHz",
+        "key_specs": [
+          "121 GHz",
+          "104 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 7,
+      "caption": "Fig. 16. The measured IF spectrum of the 121 GHz oscillator.",
+      "caption_bbox": [
+        302.6,
+        423.2,
+        504.3,
+        431.1
+      ],
+      "section_title": "III. ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 16."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Figs. 16 and 17 show the measured output spectrum of the two oscillators."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-spectrum": -2.5,
+        "section:design": 1.5,
+        "type_match:oscillator": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, SIGE, HBT, HEMT, 90nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, radar, uwb, terahertz, thz, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "The measured IF spectrum of the 121 GHz oscillator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 7,
+      "caption": "Fig. 17. The measured IF spectrum of the 104 GHz oscillator.",
+      "caption_bbox": [
+        302.6,
+        600.3,
+        504.3,
+        608.3
+      ],
+      "section_title": "III. ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.6,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-spectrum": -2.5,
+        "section:design": 1.5,
+        "type_match:oscillator": 2.0,
+        "references": 0.4
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, SIGE, HBT, HEMT, 90nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, radar, uwb, terahertz, thz, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "The measured IF spectrum of the 104 GHz oscillator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 8,
+      "caption": "Fig. 18. A triple-push oscillator based on a three-stage ring.",
+      "caption_bbox": [
+        301.1,
+        222.4,
+        495.9,
+        230.4
+      ],
+      "section_title": "III. ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The proposed topology is shown in Fig. 18."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Although the topology in Fig. 18 can achieve high frequencies in fundamental oscillation, it is not optimized for high power harmonic generation."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "To increase the voltage swing Fig. 18."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "However, in a regular three-stage ring in Fig. 18 and ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.1,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "type_match:oscillator": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, SIGE, HBT, HEMT, 90nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, radar, uwb, terahertz, thz, if",
+        "sub_blocks": [],
+        "design_purpose": "To increase the voltage swing Fig. 18.",
+        "function_summary": "A triple-push oscillator based on a three-stage ring. To increase the voltage swing Fig. 18.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.75,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 8,
+      "caption": "Fig. 19. Enhanced triple-push oscillator for high power generation.",
+      "caption_bbox": [
+        301.1,
+        436.8,
+        518.6,
+        444.8
+      ],
+      "section_title": "III. ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 19."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Enhanced triple-push oscillator for high power generation. and hence generate a stronger third harmonic, we propose the topology of Fig. 19."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "By using an inductor in the gate of the transistor as in Fig. 19 we can get closer to the optimum from values: The inductor delays the voltage and can change to the optimum value of 144 ."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Because the two-port network in Fig. 20 is a section of the oscillator shown in Fig. 19, the gain and phase and ."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Similarly, maximum gate voltage swing in the oscillator in Fig. 19 value."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The gate voltage amplihappens for around the same tude at 85 GHz changes from 1.1 V with no to 1.8 V with pH in Fig. 19."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "As shown in Fig. 19, looking into the drain of the transistor and is the impedance and are looking from the drain of the transistor."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.5,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "type_match:oscillator": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, SIGE, HBT, HEMT, 90nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, radar, uwb, terahertz, thz, if",
+        "sub_blocks": [
+          "inductor",
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "Enhanced triple-push oscillator for high power generation. and hence generate a stronger third harmonic, we propose the topology of Fig. 19.",
+        "function_summary": "Enhanced triple-push oscillator for high power generation. Enhanced triple-push oscillator for high power generation. and hence generate a stronger third harmonic, we propose the topology of Fig. 19.",
+        "key_specs": [
+          "19 w",
+          "19 v",
+          "85 GHz",
+          "1.1 V",
+          "1.8 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.82,
+      "warnings": []
+    },
+    {
+      "id": 20,
+      "label": "Fig. 20",
+      "page": 9,
+      "caption": "Fig. 20. The model of one section of the enhanced triple-push oscillator used to optimize the gate inductor value.",
+      "caption_bbox": [
+        39.6,
+        146.9,
+        290.7,
+        163.9
+      ],
+      "section_title": "III. ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The inductor also resonates with the input capacitance of the transistor and increases the (i.e., voltage gain of a stand-alone gate voltage to reduce transistor) from 1 to the optimum value of 0.84. we redraw a transistor and its gate To ﬁnd the optimum inductor in Fig. 20."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Because the two-port network in Fig. 20 is a section of the oscillator shown in Fig. 19, the gain and phase and ."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Therefore, the shift of this stage are activity condition of the network in Fig. 20 can be found from (6) to be (15) Fig. 20."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "As discussed in network, is not a direct function of and that is why Section III-A, in (15) is plotted in Fig. 21 for it is not included in Fig. 20. ."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "This also implies that for a ﬁxed loss, i.e., ﬁxed and at 85 GHz, the transistor shown in Fig. 20 ﬁxed ."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "In our creases if the quality factor of different example, for pH and pH fortunately the inpH pH is less than the crease in increase in ( mS mS from Fig. 21) and hence the pH compared to . voltage swing is higher with Optimum of 55 pH results in maximum in Fig. 20."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Simulation of G of one section of the enhanced triple-push oscillator shown in Fig. 20 with different L values using the 0.13 m CMOS process."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The activity condition of a twoport network similar to that of Fig. 20 is plotted in Fig. 26. is plotted for different values which are realized using microstrip transmission lines with a signal metal thickness of m and distance between the signal metal layer and the 1.3 m."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.0,
+      "relevance_breakdown": {
+        "-model": -1.5,
+        "section:design": 1.5,
+        "type_match:oscillator": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "on-chip inductor",
+        "technology": "CMOS, SIGE, HBT, HEMT, 90nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, radar, uwb, terahertz, thz, if",
+        "sub_blocks": [
+          "inductor",
+          "transistor/MOSFET",
+          "transmission line"
+        ],
+        "design_purpose": "The inductor also resonates with the input capacitance of the transistor and increases the (i.e., voltage gain of a stand-alone gate voltage to reduce transistor) from 1 to the optimum value of 0.84. we redraw a transistor and its gate To ﬁnd the optimum inductor in Fig. 20.",
+        "function_summary": "The model of one section of the enhanced triple-push oscillator used to optimize the gate inductor value. The inductor also resonates with the input capacitance of the transistor and increases the (i.e., voltage gain of a stand-alone gate voltage to reduce transistor) from 1 to the optimum value of 0.84. we redraw a ...",
+        "key_specs": [
+          "85 GHz",
+          "55 pH",
+          "20 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.5,
+      "warnings": []
+    },
+    {
+      "id": 21,
+      "label": "Fig. 21",
+      "page": 9,
+      "caption": "Fig. 21. Simulation of G of one section of the enhanced triple-push oscillator shown in Fig. 20 with different L values using the 0.13 m CMOS process.",
+      "caption_bbox": [
+        302.6,
+        245.9,
+        553.7,
+        262.9
+      ],
+      "section_title": "III. ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "As discussed in network, is not a direct function of and that is why Section III-A, in (15) is plotted in Fig. 21 for it is not included in Fig. 20. ."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 21 shows that the transistor is increases with ."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "In our creases if the quality factor of different example, for pH and pH fortunately the inpH pH is less than the crease in increase in ( mS mS from Fig. 21) and hence the pH compared to . voltage swing is higher with Optimum of 55 pH results in maximum in Fig. 20."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "However, based on Fig. 21, of greater than 85 pH results in a at 85 GHz and therefore the tranvery low or even negative pH. sistor can not support the high voltage swing for This means that for each frequency there is a minimum value and makes the oscillation imposthat results in a negative sible as shown in Fig. 21."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "To summarize, as shown in Fig. 21, there is a trade-off between the maximum frequency of oscillation and the power at lower frequency as we change the value of ."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "If matched at the third harmonic then the transistor delivers the IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 46, NO. 3, MARCH 2011 Fig. 21."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.5,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "type_match:oscillator": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, SIGE, HBT, HEMT, 90nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, radar, uwb, terahertz, thz, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simulation of G of one section of the enhanced triple-push oscillator shown in Fig. 20 with different L values using the 0.13 m CMOS process",
+        "key_specs": [
+          "55 pH",
+          "85 pH",
+          "85 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.82,
+      "warnings": []
+    },
+    {
+      "id": 22,
+      "label": "Fig. 22",
+      "page": 9,
+      "caption": "Fig. 22. Simulated reﬂection coefﬁcient at the drain of the transistor with and without the gate inductor, L .",
+      "caption_bbox": [
+        302.6,
+        442.7,
+        553.7,
+        459.6
+      ],
+      "section_title": "III. ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 22."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 22 shows the reﬂection coefﬁcient at the drain of the transistor with and without an optimum for matching the third harmonic."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "on-chip inductor",
+        "technology": "CMOS, SIGE, HBT, HEMT, 90nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, radar, uwb, terahertz, thz, if",
+        "sub_blocks": [
+          "inductor",
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simulated reﬂection coefﬁcient at the drain of the transistor with and without the gate inductor, L",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 23,
+      "label": "Fig. 23",
+      "page": 10,
+      "caption": "Fig. 23. Simulated gate voltage (V ) and output voltage (V ) in time domain for L = 0 and the optimum case of L = 30 pH.",
+      "caption_bbox": [
+        38.1,
+        295.4,
+        289.2,
+        314.3
+      ],
+      "section_title": "III. ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Initial simulation shows that with the optimum component values of pH and pH, 3 dBm at 255 GHz. the circuit generates maximum power of Fig. 23 shows the gate voltage and output voltage in and the optimum case of pH. time domain for By using this value of , the output power increases by 6 dB."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "MOMENI AND AFSHARI: HIGH POWER TERAHERTZ AND MILLIMETER-WAVE OSCILLATOR DESIGN: A SYSTEMATIC APPROACH Fig. 23."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, SIGE, HBT, HEMT, 90nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, radar, uwb, terahertz, thz, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated gate voltage (V ) and output voltage (V ) in time domain for L = 0 and the optimum case of L = 30 pH",
+        "key_specs": [
+          "3 dBm",
+          "255 GHz",
+          "6 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 24,
+      "label": "Fig. 24",
+      "page": 10,
+      "caption": "Fig. 24. Simulated output spectrum for the 260 GHz oscillator in the 0.13 m CMOS process.",
+      "caption_bbox": [
+        38.1,
+        476.5,
+        289.2,
+        493.5
+      ],
+      "section_title": "III. ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 24."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The output spectrum is shown in Fig. 24."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 24 is based on the actual layout simulation that includes all of the non-symmetric effects of parasitics and lines."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "-spectrum": -2.5,
+        "section:design": 1.5,
+        "type_match:oscillator": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, SIGE, HBT, HEMT, 90nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, radar, uwb, terahertz, thz, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated output spectrum for the 260 GHz oscillator in the 0.13 m CMOS process",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 25,
+      "label": "Fig. 25",
+      "page": 10,
+      "caption": "Fig. 25. Simulation of the optimum A and of a stand-alone transistor in a 65 nm CMOS process.",
+      "caption_bbox": [
+        301.1,
+        228.0,
+        552.2,
+        245.0
+      ],
+      "section_title": "III. ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 25 shows the sim- ( and ) as a function of freulated optimum A and quency for a transistor with bias current of 12.5 mA and width of m with 20 ﬁngers in a 65 nm CMOS process."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The Fig. 25."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "High Power Terahertz and Millimeter-Wave Oscillator Design: A Systematic Approach",
+        "technology": "CMOS, SIGE, HBT, HEMT, 90nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, radar, uwb, terahertz, thz, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simulation of the optimum A and of a stand-alone transistor in a 65 nm CMOS process",
+        "key_specs": [
+          "65 nm"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 26,
+      "label": "Fig. 26",
+      "page": 10,
+      "caption": "Fig. 26. Simulation of G of one section of the enhanced triple-push oscillator shown in Fig. 20 with different L values using the 65 nm CMOS process.",
+      "caption_bbox": [
+        301.1,
+        404.4,
+        552.2,
+        421.4
+      ],
+      "section_title": "III. ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 26."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The activity condition of a twoport network similar to that of Fig. 20 is plotted in Fig. 26. is plotted for different values which are realized using microstrip transmission lines with a signal metal thickness of m and distance between the signal metal layer and the 1.3 m."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "It is shown in Fig. 26 that the from 9 mS to the maximum value of 33 mS at 150 GHz by pH."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "type_match:oscillator": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, SIGE, HBT, HEMT, 90nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, radar, uwb, terahertz, thz, if",
+        "sub_blocks": [
+          "transmission line"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simulation of G of one section of the enhanced triple-push oscillator shown in Fig. 20 with different L values using the 65 nm CMOS process",
+        "key_specs": [
+          "150 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.67,
+      "warnings": []
+    },
+    {
+      "id": 27,
+      "label": "Fig. 27",
+      "page": 11,
+      "caption": "Fig. 27. Simulated output spectrum of the 450 GHz oscillator in the 65 nm CMOS process.",
+      "caption_bbox": [
+        39.6,
+        213.0,
+        290.7,
+        229.9
+      ],
+      "section_title": "III. ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Simulation shows Fig. 27."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The sim- , ulated output spectrum is shown in Fig. 27."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "-spectrum": -2.5,
+        "section:design": 1.5,
+        "type_match:oscillator": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, SIGE, HBT, HEMT, 90nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, radar, uwb, terahertz, thz, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated output spectrum of the 450 GHz oscillator in the 65 nm CMOS process",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 28,
+      "label": "Fig. 28",
+      "page": 11,
+      "caption": "Fig. 28. Chip photo of the (a) 256 GHz and (b) 482 GHz oscillators.",
+      "caption_bbox": [
+        302.6,
+        204.2,
+        524.2,
+        212.1
+      ],
+      "section_title": "III. ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Measurement Results Fig. 28 shows the die photos of the triple-push oscillators."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "This IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 46, NO. 3, MARCH 2011 Fig. 28."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-chip photo": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, SIGE, HBT, HEMT, 90nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, radar, uwb, terahertz, thz, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chip photo of the (a) 256 GHz and (b) 482 GHz oscillators",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 29,
+      "label": "Fig. 29",
+      "page": 12,
+      "caption": "Fig. 29. Test setup for measuring (a) output frequency and (b) output power of the 482 GHz oscillator.",
+      "caption_bbox": [
+        38.1,
+        302.7,
+        370.8,
+        310.6
+      ],
+      "section_title": "III. ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 29(a) shows the test setup for the frequency measurement of the 482 GHz oscillator."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "A Cascade i500-GSG probe with a built in bias-tee is used to probe the output signal as shown in Fig. 29(a)."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "As shown in Fig. 29(a) a VDI WR-2.2EHM harmonic mixer is connected to the probe to mix down the signal."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "With the same setup as Fig. 29(a), we measured the output power at 482 GHz versus DC power shown in Fig. 31."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "To be more accurate, we also used an Erickson PM4 power meter as illustrated in Fig. 29(b)."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "A similar test setup as in Fig. 29 was used to measure the output frequency and power of the triple-push oscillator in m CMOS."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "To measure the noise is around output power we used the same Erickson PM4 power meter as illustrated in Fig. 29(b)."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "To the best of the authors’ MOMENI AND AFSHARI: HIGH POWER TERAHERTZ AND MILLIMETER-WAVE OSCILLATOR DESIGN: A SYSTEMATIC APPROACH Fig. 29."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.5,
+      "relevance_breakdown": {
+        "-output power": -2.0,
+        "-setup": -2.0,
+        "section:design": 1.5,
+        "type_match:oscillator": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, SIGE, HBT, HEMT, 90nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, radar, uwb, terahertz, thz, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Test setup for measuring (a) output frequency and (b) output power of the 482 GHz oscillator",
+        "key_specs": [
+          "482 GHz",
+          "29 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 30,
+      "label": "Fig. 30",
+      "page": 12,
+      "caption": "Fig. 30. (a) The measured IF spectrum of the 482 GHz signal for the 16th harmonic of the LO frequency when the power consumption is 35 mW from a 1.2 V supply and (b) its measured phase noise.",
+      "caption_bbox": [
+        38.1,
+        687.2,
+        289.2,
+        713.1
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The IF spectrum of the signal is shown in Fig. 30(a) when the 16th harmonic of the LO frequency is used."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The phase noise is measured to be 76 dBc/Hz at 1 MHz offset as shown in Fig. 30(b)."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 30."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -7.8,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-spectrum": -2.5,
+        "-phase noise": -2.5,
+        "section:conclusion": -1.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "High Power Terahertz and Millimeter-Wave Oscillator Design: A Systematic Approach",
+        "technology": "CMOS, SIGE, HBT, HEMT, 90nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, radar, uwb, terahertz, thz, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) The measured IF spectrum of the 482 GHz signal for the 16th harmonic of the LO frequency when the power consumption is 35 mW from a 1.2 V supply and (b) its measured phase noise",
+        "key_specs": [
+          "76 dBc/Hz",
+          "1 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 31,
+      "label": "Fig. 31",
+      "page": 12,
+      "caption": "Fig. 31. The measured output power at 482 GHz as a function of DC power consumption.",
+      "caption_bbox": [
+        301.1,
+        486.7,
+        552.2,
+        503.6
+      ],
+      "section_title": "III. ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "With the same setup as Fig. 29(a), we measured the output power at 482 GHz versus DC power shown in Fig. 31."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Chip photo of the (a) 256 GHz and (b) 482 GHz oscillators. measured output power is also shown in Fig. 31."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 31."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.3,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-output power": -2.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, SIGE, HBT, HEMT, 90nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, radar, uwb, terahertz, thz, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "The measured output power at 482 GHz as a function of DC power consumption",
+        "key_specs": [
+          "482 GHz",
+          "256 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 32,
+      "label": "Fig. 32",
+      "page": 12,
+      "caption": "Fig. 32. The measured IF spectrum of the 256 GHz signal for the 48th harmonic of the LO frequency when the power consumption is 38 mW from a 1.25 V supply.",
+      "caption_bbox": [
+        301.1,
+        672.8,
+        552.2,
+        698.7
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 32 shows the IF spectrum of this oscillator when the 48th harmonic of the LO frequency is used and the DC power consumption is 38 mW from a 1.25 V supply."
+        },
+        {
+          "section_title": "ACTIVITY CONDITION AND OSCILLATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 32."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -5.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-spectrum": -2.5,
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, SIGE, HBT, HEMT, 90nm process",
+        "application_domain": "millimeter-wave, mm-wave, rf, wireless, radar, uwb, terahertz, thz, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "The measured IF spectrum of the 256 GHz signal for the 48th harmonic of the LO frequency when the power consumption is 38 mW from a 1.25 V supply",
+        "key_specs": [
+          "38 mW",
+          "1.25 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 4,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

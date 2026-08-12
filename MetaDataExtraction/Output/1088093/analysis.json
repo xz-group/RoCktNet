@@ -1,0 +1,1143 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1088093.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1088093",
+  "generated_at": "2026-07-29T22:00:29",
+  "paper_metadata": {
+    "title": "A 0.7-V MOSFET-Only Switched-Opamp Modulator in Standard Digital CMOS Technology",
+    "authors": [
+      "Jens Sauerbrey",
+      "Thomas Tille",
+      "Doris Schmitt-Landsiedel",
+      "Roland Thewes"
+    ],
+    "abstract": "A 0.7-V MOSFET-only modulator for voice band applications is presented. The second-order modulator is realized using a switched-opamp technique. All capacitors are realized using compensated MOS devices operated in the depletion region. A combination of parallel and series compensated depletion-mode MOSCAPs is used to obtain high area efficiency. The circuit is fabricated in a 0.18m CMOS process. The only components used are standard n-MOS and p-MOS transistors with threshold voltages of approximately 400 mV. All transistors Fig. 1. Cross section of a standard MOSCAP (example: are operated within the supply voltage window of 0.7 V; voltage NFET-in-n-well-capacitor). boosting techniques are not used. The active area is 0.082 mm2. The modulator achieves 67-dB signal-to-noise-and-distortion ratio, 70-dB signal-to-noise ratio, and 75-dB dynamic range at as well. However, such process options lead to increased process 8-kHz signal bandwidth and consumes 80 W of power. complexity and to increased costs. Terms—Analog-to-digital converters, CMOS analog Index Adapted analog design approaches avoiding such options integrated circuits, depletion-mode MOS-capacitor, low power, but providing the same performance thus represent an attractive low supply, MOSCAP, MOSFET-only, sigma–delta modulators, alternative. The switched-opamp (SO) technique combined switched capacitor circuits, switched-opamp technique. with a dc level shift has been proven to allow proper operation under low VDD conditions [2], [3]. SOmodulators for",
+    "keywords": [],
+    "doi": "10.1109/JSSC.2002.804330",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2002
+  },
+  "paper_circuit_context": {
+    "circuit_type": "0.7-V MOSFET-Only Switched-Opamp Modulator in Standard Digital CMOS Technology",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "transistor/MOSFET",
+      "current source",
+      "bias circuit",
+      "switch",
+      "op-amp",
+      "clock / timing",
+      "latch"
+    ],
+    "design_purpose": "However, such process options lead to increased process 8-kHz signal bandwidth and consumes 80 W of power. complexity and to increased costs.",
+    "function_summary": "0.7-V MOSFET-Only Switched-Opamp Modulator in Standard Digital CMOS Technology: However, such process options lead to increased process 8-kHz signal bandwidth and consumes 80 W of power. complexity and to increased costs.",
+    "key_specs": [
+      "400 mV",
+      "0.7 V",
+      "80 W",
+      "67 dB",
+      "1 V",
+      "3 V",
+      "3.6 V",
+      "1.8 V",
+      "1.6 fF",
+      "0.4 fF"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "I N MODERN CMOS processes, the maximally allowed is continuously decreasing. The supply voltage VDD is not scaled in proportion threshold voltage of the devices since the related increase of off-state currents to VDD would result in unacceptable static power consumption in logic circuits [1]. At low supply voltage VDD, many known analog design concepts fail if classical analog design approaches ar ..."
+    },
+    {
+      "number": "II",
+      "title": "MOSCAP DESIGN",
+      "kind": "design",
+      "page": 0,
+      "text_preview": "A. Standard MOSCAP In Figs. 1 and 2, a cross section of a typical MOSCAP and characteristics are schematically depicted. the related A “NFET-in-n-well-capacitor” is shown in this example. The behavior of such a MOSCAP shows a strong voltage dependence if the dc voltage drop is low. This nonlinearity SAUERBREY et al.: 0.7-V MOSFET-ONLY SWITCHED-OPAMP MODULATOR Fig. 2. Schematic plot of the C=V char ..."
+    },
+    {
+      "number": "III",
+      "title": "MODULATOR DESIGN",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "A. Modulator Architecture In Fig. 8, the modulator architecture is shown. We use a second-order noncascaded modulator since this architecture is robust against nonidealities caused by finite opamp gain, opamp bandwidth, and coefficient mismatch. The latter is an important criterion, as the demand concerning accurate coefficient ratios is harder to fulfill using different types of SAUERBREY et al.: ..."
+    },
+    {
+      "number": "IV",
+      "title": "CIRCUIT IMPLEMENTATION",
+      "kind": "design",
+      "page": 3,
+      "text_preview": "A. Switched-Opamp In Fig. 10, the operational amplifier and the common mode feedback (CMFB) circuit used are depicted. For these circuits, an approach similar to that presented in [12] is used. The twostage design guarantees the desired gain. The fully differential amplifier consists of a folded cascode with active load (M1–M6) followed by a simple class A output stage (M7–M8). The current flow in ..."
+    },
+    {
+      "number": "V",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 4,
+      "text_preview": "The modulator is realized in an 0.18m n-well CMOS process. Only standard digital transistors with V and V are used in our circuit. Three layers of metal are used for wiring. VDD is 0.7 V. The majority of transistors are biased in moderate inversion with –100 mV. The clock frequency is 1.024 MHz. A chip microphotograph is shown in Fig. 14. The relatively large series-compensated sampling capacitors ..."
+    },
+    {
+      "number": "VI",
+      "title": "REFERENCE MODULATOR USING MIMCAPS",
+      "kind": "other",
+      "page": 5,
+      "text_preview": "In order to investigate the influence of the MOSCAPs on the system behavior of the modulator, we consider a reference modulator. In this modulator, all MOSCAPs are replaced by linear capacitors using a MIMCAP capacitor option [13]. This type = 10 dB up to 8 kHz. Fig. 17. Measured output spectra for f = 1:024 MHz, f = 2 kHz, and Fig. 18. Measured SNDR and SNR versus input signal level. TABLE II MEA ..."
+    },
+    {
+      "number": "VII",
+      "title": "DISCUSSION",
+      "kind": "results",
+      "page": 6,
+      "text_preview": "In Fig. 21, SNDRs versus supply voltage are shown for the modulator presented in this work and for published data from modulators designed for low supply voltage op- (low-pass) eration. IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 12, DECEMBER 2002 Fig. 21. SNDRs versus supply voltage of modulators for ultralow supply voltages. In Table III, important specifications of these converters and a ..."
+    },
+    {
+      "number": "VIII",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 6,
+      "text_preview": "A 0.7-V MOSFET-only modulator is realized using an SO technique with common mode level shift. A standard digital CMOS process is used. Transistors with threshold voltages around 400 mV are the only components used in the circuit. Capacitors are realized using compensated depletion-mode MOSCAPs. As these MOSCAPs do not need large bias voltSAUERBREY et al.: 0.7-V MOSFET-ONLY SWITCHED-OPAMP MODULATOR ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Schematic plot of the C=V characteristics of a standard MOSCAP.",
+      "caption_bbox": [
+        38.1,
+        179.1,
+        280.9,
+        189.7
+      ],
+      "section_title": "II. MOSCAP DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "MOSCAP DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "This nonlinearity SAUERBREY et al.: 0.7-V MOSFET-ONLY SWITCHED-OPAMP MODULATOR Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.9,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.4
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Schematic plot of the C=V characteristics of a standard MOSCAP",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.71,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. SNDR (**SNR) versus supply voltage of MOSFET-only SC modulators.",
+      "caption_bbox": [
+        38.1,
+        386.8,
+        289.1,
+        406.5
+      ],
+      "section_title": "II. MOSCAP DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "MOSCAP DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Fig. 3."
+        },
+        {
+          "section_title": "MOSCAP DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Fig. 3 shows the signal-to-noise-and-distortion ratio (SNDR) or the signal-to-noise ratio (SNR), respectively, modulators of MOSFET-only switched-capacitor (SC) published in the literature so far."
+        },
+        {
+          "section_title": "MOSCAP DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Depletion-Mode MOSCAP The modulators on the right of the dashed line in Fig. 3 use MOSCAPs operated in the depletion region."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor",
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "SNDR (**SNR) versus supply voltage of MOSFET-only SC modulators",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 1,
+      "caption": "Fig. 4. Cross section of a depletion-mode MOSCAP (example: standard p-MOS transistor in n-well).",
+      "caption_bbox": [
+        301.1,
+        147.1,
+        552.2,
+        166.6
+      ],
+      "section_title": "II. MOSCAP DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "MOSCAP DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "There a supply Fig. 4."
+        },
+        {
+          "section_title": "MOSCAP DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "A cross section of a typical depletion-mode MOSCAP and the characteristics are schematically shown in Figs. 4 related and 5, respectively."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "0.7-V MOSFET-Only Switched-Opamp Modulator in Standard Digital CMOS Technology",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Cross section of a depletion-mode MOSCAP (example: standard p-MOS transistor in n-well)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 1,
+      "caption": "Fig. 5. Schematic plot of the C=V characteristics of a depletion-mode MOSCAP.",
+      "caption_bbox": [
+        301.1,
+        298.4,
+        552.2,
+        318.0
+      ],
+      "section_title": "II. MOSCAP DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "MOSCAP DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.9,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.4
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "0.7-V MOSFET-Only Switched-Opamp Modulator in Standard Digital CMOS Technology",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematic plot of the C=V characteristics of a depletion-mode MOSCAP",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.71,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. Measured C=V characteristics of a parallel compensated MOSCAP operated in the depletion region. Inset: circuit diagram of the parallel compensated MOSCAP.",
+      "caption_bbox": [
+        39.6,
+        210.3,
+        290.7,
+        238.9
+      ],
+      "section_title": "II. MOSCAP DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "MOSCAP DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "In the insets of Figs. 6 and 7, the circuit diagrams of parallel and series-compensated depletion-mode MOSCAPs are shown."
+        },
+        {
+          "section_title": "MOSCAP DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "As can be seen in case of the series-compensated MOSCAP, a Fig. 6."
+        },
+        {
+          "section_title": "MOSCAP DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "MOSCAPs data for a parallel-compensated Fig. 6 shows measured MOSCAP operated in depletion region."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.7,
+      "relevance_breakdown": {
+        "+circuit diagram": 3.0,
+        "+circuit": 1.0,
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "0.7-V MOSFET-Only Switched-Opamp Modulator in Standard Digital CMOS Technology",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured C=V characteristics of a parallel compensated MOSCAP operated in the depletion region. Inset: circuit diagram of the parallel compensated MOSCAP",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.43,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 2,
+      "caption": "Fig. 7. Measured C=V characteristics of a series-compensated MOSCAP operated in the depletion region. Thick line: averaged data. Inset: circuit diagram of the series compensated MOSCAP with a high-resistance element.",
+      "caption_bbox": [
+        39.6,
+        417.8,
+        290.6,
+        446.4
+      ],
+      "section_title": "II. MOSCAP DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "MOSCAP DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Fig. 7."
+        },
+        {
+          "section_title": "MOSCAP DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "In the 0.18m is used in this work, a capacitance per unit area of 1.6 fF/ obtained. data for a series-compensated In Fig. 7, measured MOSCAP operated in depletion region is plotted."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+circuit diagram": 3.0,
+        "+circuit": 1.0,
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "0.7-V MOSFET-Only Switched-Opamp Modulator in Standard Digital CMOS Technology",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured C=V characteristics of a series-compensated MOSCAP operated in the depletion region. Thick line: averaged data. Inset: circuit diagram of the series compensated MOSCAP with a high-resistance element",
+        "key_specs": [
+          "1.6 fF"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 2,
+      "caption": "Fig. 8. Scaled modulator topology. The hatched areas of the voltage bars represent the permitted voltage levels at the respected nodes.",
+      "caption_bbox": [
+        302.6,
+        208.5,
+        553.7,
+        228.1
+      ],
+      "section_title": "II. MOSCAP DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "MOSCAP DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "For area unit area of 0.4 fF/ IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 12, DECEMBER 2002 Fig. 8."
+        },
+        {
+          "section_title": "MODULATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Modulator Architecture In Fig. 8, the modulator architecture is shown."
+        },
+        {
+          "section_title": "MODULATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Permitted voltage levels at the modulator input, the integrator outputs, and the comparator output are symbolized by the hatched areas of the “voltage bars” in Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.2,
+      "relevance_breakdown": {
+        "+topology": 2.5,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Scaled modulator topology. The hatched areas of the voltage bars represent the permitted voltage levels at the respected nodes",
+        "key_specs": [
+          "0.4 fF"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.69,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 3,
+      "caption": "Fig. 9. Second-order MOSFET-only switched-opamp modulator.",
+      "caption_bbox": [
+        38.1,
+        237.2,
+        267.5,
+        247.8
+      ],
+      "section_title": "III. MODULATOR DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "MODULATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The latter is an important criterion, as the demand concerning accurate coefficient ratios is harder to fulfill using different types of SAUERBREY et al.: 0.7-V MOSFET-ONLY SWITCHED-OPAMP MODULATOR Fig. 9."
+        },
+        {
+          "section_title": "MODULATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "MOSFET-Only SC Implementation The simplified modulator circuit is shown in Fig. 9."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 9), additional delayed clock phases “latch1” and “latch2” are used to achieve suitable timing , the common mode level shift at the margin (Fig. 13)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "op-amp",
+          "clock / timing"
+        ],
+        "design_purpose": "Fig. 9), additional delayed clock phases “latch1” and “latch2” are used to achieve suitable timing , the common mode level shift at the margin (Fig. 13).",
+        "function_summary": "Second-order MOSFET-only switched-opamp modulator. Fig. 9), additional delayed clock phases “latch1” and “latch2” are used to achieve suitable timing , the common mode level shift at the margin (Fig. 13).",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 3,
+      "caption": "Fig. 10. Switched-opamp and CMFB circuit.",
+      "caption_bbox": [
+        38.1,
+        422.0,
+        188.1,
+        432.6
+      ],
+      "section_title": "III. MODULATOR DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "MODULATOR DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 10."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Switched-Opamp In Fig. 10, the operational amplifier and the common mode feedback (CMFB) circuit used are depicted."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Switched-opamp and CMFB circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 4,
+      "caption": "Fig. 11. Bias circuit.",
+      "caption_bbox": [
+        39.6,
+        277.2,
+        111.4,
+        287.8
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "TABLE I SIMULATED OPAMP PERFORMANCE Fig. 11."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Bias Circuit The requested bias voltages are generated using a current is mirror based circuit (Fig. 11)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "bias circuit",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "bias circuit",
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Bias circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 4,
+      "caption": "Fig. 12. Comparator circuit.",
+      "caption_bbox": [
+        39.6,
+        439.3,
+        135.2,
+        450.0
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 12."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Comparator For the comparator (Fig. 12), a simple regenerative resetable circuit [4] is used since the demands concerning hysteresis and offset are relatively low in the used modulator topology."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "comparator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Comparator circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 4,
+      "caption": "Fig. 13. Timing diagram.",
+      "caption_bbox": [
+        302.6,
+        157.3,
+        389.1,
+        167.9
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 9), additional delayed clock phases “latch1” and “latch2” are used to achieve suitable timing , the common mode level shift at the margin (Fig. 13)."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 12, DECEMBER 2002 Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "0.7-V MOSFET-Only Switched-Opamp Modulator in Standard Digital CMOS Technology",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "clock / timing"
+        ],
+        "design_purpose": "Fig. 9), additional delayed clock phases “latch1” and “latch2” are used to achieve suitable timing , the common mode level shift at the margin (Fig. 13).",
+        "function_summary": "Timing diagram. Fig. 9), additional delayed clock phases “latch1” and “latch2” are used to achieve suitable timing , the common mode level shift at the margin (Fig. 13).",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 4,
+      "caption": "Fig. 14. Chip microphotograph.",
+      "caption_bbox": [
+        302.6,
+        281.0,
+        410.1,
+        291.7
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 14."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "A chip microphotograph is shown in Fig. 14."
+        },
+        {
+          "section_title": "REFERENCE MODULATOR USING MIMCAPS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Compared to Fig. 14, the different types of capacitors used here are in evidence."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.8,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "0.7-V MOSFET-Only Switched-Opamp Modulator in Standard Digital CMOS Technology",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Chip microphotograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 5,
+      "caption": "Fig. 15. Measured output spectra for f = 2 kHz, and V V",
+      "caption_bbox": [
+        38.1,
+        235.7,
+        306.1,
+        257.1
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The chip area is 0.082 . mm SAUERBREY et al.: 0.7-V MOSFET-ONLY SWITCHED-OPAMP MODULATOR = 12 dB. = 1:024 MHz, f Fig. 15."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 15 shows the full output spectrum of the modulator."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Measured output spectra for f = 2 kHz, and V V",
+        "key_specs": [
+          "12 dB",
+          "024 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 5,
+      "caption": "Fig. 16. Measured output spectra for f = 1:024 MHz, f = 2 kHz, and V",
+      "caption_bbox": [
+        38.1,
+        443.5,
+        289.2,
+        462.6
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 16."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Figs. 16 and 17 show the extended range of the output spectrum 12 dB and 10 dB, for sinusoidal input amplitudes of respectively."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "0.7-V MOSFET-Only Switched-Opamp Modulator in Standard Digital CMOS Technology",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured output spectra for f = 1:024 MHz, f = 2 kHz, and V",
+        "key_specs": [
+          "12 dB",
+          "10 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 5,
+      "caption": "Fig. 17. Measured output spectra for f = 1:024 MHz, f = 2 kHz, and",
+      "caption_bbox": [
+        301.1,
+        238.0,
+        552.2,
+        248.7
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "REFERENCE MODULATOR USING MIMCAPS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.6,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.4
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "0.7-V MOSFET-Only Switched-Opamp Modulator in Standard Digital CMOS Technology",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured output spectra for f = 1:024 MHz, f = 2 kHz, and",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 5,
+      "caption": "Fig. 18. Measured SNDR and SNR versus input signal level.",
+      "caption_bbox": [
+        301.1,
+        424.1,
+        501.0,
+        434.7
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Measured SNDR and SNR versus sinusoidal input amplitude are shown in Fig. 18."
+        },
+        {
+          "section_title": "REFERENCE MODULATOR USING MIMCAPS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Measured output spectra for f = 1:024 MHz, f = 2 kHz, and Fig. 18."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "0.7-V MOSFET-Only Switched-Opamp Modulator in Standard Digital CMOS Technology",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured SNDR and SNR versus input signal level",
+        "key_specs": [
+          "024 MHz",
+          "2 kHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 6,
+      "caption": "Fig. 19. Chip microphotograph of MIMCAP reference modulator.",
+      "caption_bbox": [
+        39.6,
+        420.7,
+        255.8,
+        431.4
+      ],
+      "section_title": "VI. REFERENCE MODULATOR USING MIMCAPS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "REFERENCE MODULATOR USING MIMCAPS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 19 shows a chip microphotograph of the is 0.7 fF/ MIMCAP reference modulator."
+        },
+        {
+          "section_title": "REFERENCE MODULATOR USING MIMCAPS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "TABLE III COMPARISON WITH PUBLISHED DATA Fig. 19."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.7,
+      "relevance_breakdown": {
+        "-reference": -1.0,
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chip microphotograph of MIMCAP reference modulator",
+        "key_specs": [
+          "0.7 fF"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 20,
+      "label": "Fig. 20",
+      "page": 6,
+      "caption": "Fig. 20. Measured SNDR and SNR versus input signal level of the MIMCAP reference modulator.",
+      "caption_bbox": [
+        39.6,
+        592.3,
+        290.7,
+        611.8
+      ],
+      "section_title": "VI. REFERENCE MODULATOR USING MIMCAPS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "REFERENCE MODULATOR USING MIMCAPS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The active . chip area of the MIMCAP reference modulator is 0.096 mm Measured SNDR and SNR versus sinusoidal input amplitude of the reference modulator are shown in Fig. 20."
+        },
+        {
+          "section_title": "REFERENCE MODULATOR USING MIMCAPS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 20."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-reference": -1.0,
+        "-measured": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured SNDR and SNR versus input signal level of the MIMCAP reference modulator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 21,
+      "label": "Fig. 21",
+      "page": 6,
+      "caption": "Fig. 21. SNDRs versus supply voltage of modulators for ultralow supply voltages.",
+      "caption_bbox": [
+        302.6,
+        490.7,
+        553.7,
+        510.3
+      ],
+      "section_title": "VI. REFERENCE MODULATOR USING MIMCAPS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DISCUSSION",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "In Fig. 21, SNDRs versus supply voltage are shown for the modulator presented in this work and for published data from modulators designed for low supply voltage op- (low-pass) eration."
+        },
+        {
+          "section_title": "DISCUSSION",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 12, DECEMBER 2002 Fig. 21."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "SNDRs versus supply voltage of modulators for ultralow supply voltages",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 8,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

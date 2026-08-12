@@ -1,0 +1,15 @@
+M16 N_M18_S Vb1 VDD VDD pmos
+M5 N_TAIL Vb1 VDD VDD pmos
+M6 N_M8_S Vb1 VDD VDD pmos
+M18 Vo_plus G_M18 N_M18_S VDD pmos
+M8 Vo_minus G_M8 N_M8_S VDD pmos
+M1 N_M19_S Vi_minus N_TAIL VDD pmos
+M2 N_M9_S Vi_plus N_TAIL VDD pmos
+M19 Vo_plus G_M19 N_M19_S GND nmos
+M9 Vo_minus G_M9 N_M9_S GND nmos
+M4 N_M19_S Vb4 GND GND nmos
+M3 N_M9_S Vb4 GND GND nmos
+X1 (N_M18_S Vb2 G_M18) amplifier
+X2 (N_M8_S Vb2 G_M8) amplifier
+X3 (Vb3 N_M19_S G_M19) amplifier
+X4 (Vb3 N_M9_S G_M9) amplifier

@@ -1,0 +1,1231 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1158783.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1158783",
+  "generated_at": "2026-07-29T22:00:38",
+  "paper_metadata": {
+    "title": "An Evaluation of MOS Interface-Trap Charge Pump as an Ultralow Constant-Current Generator",
+    "authors": [
+      "U˘gur Çilingiro˘glu",
+      "Adriana Becker-Gómez",
+      "Kenton T. Veeder"
+    ],
+    "abstract": "In this work, we explore the MOS interface-trap charge-pump as an ultralow constant-current generator for analog stable resistive element with which this level of reference curCMOS applications. Charge pumping techniques in general are rent can be generated. An alternative is the switched-capacitor more suitable than conventional continuous-time techniques for (SC) technique, which has already been adopted in a number ultralow current generation because the linear controllability of architectures generating conventional levels of reference curof current by frequency is maintained regardless of the level rent [8]–[10]. The current of an SC can be scaled of current. An interface-trap pump has the same property but the minimum charge it puts out per cycle is at least two orders down by decreasing the clock frequency or the charge of magnitude smaller than that of a switched-capacitor charge pumped per cycle. Decreasing is highly desirable also bepump. This helps generate the same current more accurately cause the current ripple of a subthreshold MOSFET biased by an at a much higher frequency with a much smaller filter capacSC is an exponentially increasing function of , as described itance. The paper presents a simplified model of the terminal approximately by , where characteristics of the interface-trap pump and an evaluation of its performance as a stand-alone current generator. Cascoding and is the MOSFET subthreshold slope in V/decade and is complementary pumping are introduced as measures of perforthe filter capacitance. Unfortunately, the cost of generating a mance improvement. Temperature sensitivity, pulse feedthrough, slow clock generally increases significantly with a decreasing controllability, matching, reliability, and trimming issues are and the accuracy of degrades as approaches its physaddressed. Transconductor circuits built with the charge pump ical limit. Therefore, the key to generating a given ultralow curare presented and experimentally evaluated. rent with a high , a small , and a high accuracy is to have a",
+    "keywords": [
+      "Charge pumping",
+      "CMOS transconductors",
+      "inter-"
+    ],
+    "doi": "10.1109/JSSC.2002.806282",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Evaluation of MOS Interface-Trap Charge Pump as an Ultralow Constant-Current Generator",
+    "technology": "CMOS",
+    "application_domain": "biomedical, if",
+    "sub_blocks": [
+      "capacitor",
+      "transistor/MOSFET",
+      "current source",
+      "switch",
+      "bias circuit",
+      "differential pair",
+      "pre-amplifier"
+    ],
+    "design_purpose": "",
+    "function_summary": "Evaluation of MOS Interface-Trap Charge Pump as an Ultralow Constant-Current Generator: In this work, we explore the MOS interface-trap charge-pump as an ultralow constant-current generator for analog stable resistive element with which this level of reference curCMOS applications.",
+    "key_specs": [
+      "1%",
+      "1 w",
+      "14 nm",
+      "0.35 V",
+      "2 V",
+      "4.65 V",
+      "1 MHz",
+      "100 kHz",
+      "10 V",
+      "5 w"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE low-current frontier of analog CMOS remained mostly unexplored until the beginning of 1990s. Since then, it has been challenged indirectly by a growing demand for low-power/low-voltage architectures and directly by the emergence of MOSFET log-domain processors and fully integrated low-frequency continuous-time filters [1]–[3]. Bias levels have already been reduced to the order of nanoamps in  ..."
+    },
+    {
+      "number": "II",
+      "title": "PRIMARY MODEL OF ITCP",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "ITCP is a transient recombination effect activated by cycling interface of a MOSFET between accumulation and the Si-SiO inversion. For a brief explanation of its primary model, consider the PMOS device shown in Fig. 1. Note that the source and drain junctions are interconnected to form a single source terminal, . The n-well conwhose voltage with respect to ground is stitutes a second current condu ..."
+    },
+    {
+      "number": "III",
+      "title": "WELL AND SOURCE TERMINAL CHARACTERISTICS",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "OF A BARE PUMP The pump in its simplest “bare” form of a single PMOS device can be configured into a current source by dc biasing the and designating the well as the output terminal source with as shown in Fig. 2(a). Transposing the roles of these two terof minals as in Fig. 2(b) results in a current-sink configuration. Since neither terminal needs to be tied to a supply rail, it is also of possib ..."
+    },
+    {
+      "number": "V",
+      "title": "V, where",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "and inversion is observed for rapidly increase with . No significant disparity between the two currents is observed in this region because the inverting hole population of the channel is too small to generate any sig- . The pump enters a saturation region once the invernificant IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 1, JANUARY 2003 Fig. 6. Variation of bare-pump source and well current ..."
+    },
+    {
+      "number": "IV",
+      "title": "CASCODED PUMP",
+      "kind": "other",
+      "page": 4,
+      "text_preview": "The shortcomings of the bare pump in current source/sink/generator applications are obvious from the properties just itemized. By cascoding the pump, however, all of these can be either eliminated or vastly improved. Shown in Fig. 7 are the schematics of a cascoded pump for all three applications. - terminal A typical set of cascoded current-source MHz and ns are characteristics measured for given ..."
+    },
+    {
+      "number": "V",
+      "title": "TEMPERATURE SENSITIVITY",
+      "kind": "other",
+      "page": 4,
+      "text_preview": "The temperature coefficient TC of the output current of a cascoded pump operating as a current source can be expressed as TC VC (9) TC and VC are, where TC respectively, the temperature and voltage coefficients of the bare represents the temperature sensitivity pump, whereas of the source–gate voltage of the cascoding MOSFET. , TC is attributible to the temperature Assuming . If accumulation and i ..."
+    },
+    {
+      "number": "VI",
+      "title": "PULSE FEEDTHROUGH AND COMPLEMENTARY PUMPING",
+      "kind": "other",
+      "page": 5,
+      "text_preview": "The mobile charge exchanged between the channel and is many orders source/well nodes during each transition of pumped via interface of magnitude larger than the charge traps. The resulting pulse feedthrough makes the bare pump totally useless as an integrated current source/sink because the terminal capacitance required for suppression is prohibitively large. This problem is greatly facilitated by ..."
+    },
+    {
+      "number": "VII",
+      "title": "CONTROLLABILITY, MATCHING, RELIABILITY, AND",
+      "kind": "other",
+      "page": 8,
+      "text_preview": "TRIMMING Gate area and charge pumping frequency provide two degrees of freedom for setting and controlling the current with a reasonable linearity in a wide range. Shown in Fig. 12 is the variation with channel length for a fixed channel width of 23.7 m. of The linear relationship predicted by (6) between the current and m area holds with the exception of the smallest pump of 0.5 in length. This d ..."
+    },
+    {
+      "number": "VIII",
+      "title": "TRANSCONDUCTOR AND LOW-FREQUENCY OTA-C",
+      "kind": "other",
+      "page": 9,
+      "text_preview": "FILTER APPLICATIONS We have built single-ended and fully differential OTA circuits biased with complementary cascoded charge pumps. Shown in Fig. 15 is the circuit schematic of the single-ended OTA. All devices, including charge pumps, are m m. The measured transconducsized ns and tance characteristics are given in Fig. 16 for varying in octaves in the range 15 kHz–16 MHz corresponding to a bias-c ..."
+    },
+    {
+      "number": "IX",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 10,
+      "text_preview": "In this work, we have explored the MOS interface-trap charge pump as an ultralow current generator for analog CMOS applications. Charge pumping techniques in general are suitable for ultralow current generation because the linear controllability of current by frequency is maintained regardless of the level of current. What is fundamentally attractive about the interface-trap pump is that it exhibi ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. PMOS transistor configured as an interface-trap charge pump.",
+      "caption_bbox": [
+        39.6,
+        279.5,
+        266.5,
+        290.1
+      ],
+      "section_title": "II. PRIMARY MODEL OF ITCP",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Finally, the conclusions are summarized in Section IX. 72 Fig. 1."
+        },
+        {
+          "section_title": "PRIMARY MODEL OF ITCP",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "For a brief explanation of its primary model, consider the PMOS device shown in Fig. 1."
+        },
+        {
+          "section_title": "PRIMARY MODEL OF ITCP",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "As depicted in Fig. 1, is given by (5) The average current resulting from the periodic transfer of from source to well is defined as the ITCP current and is described by (6) is the frequency of gate excitation.1 where is not the sole current resulting from pulsing the gate."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "charge pump",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "PMOS transistor configured as an interface-trap charge pump",
+        "key_specs": [
+          "1 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 2,
+      "caption": "Fig. 2. Bare pump current-generator configurations. (a) Current source. (b) Current sink. (c) Floating current generator.",
+      "caption_bbox": [
+        38.1,
+        294.2,
+        289.2,
+        313.8
+      ],
+      "section_title": "II. PRIMARY MODEL OF ITCP",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "PRIMARY MODEL OF ITCP",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Therefore, the charge pump is indeed a current generator. ÇILINGIRO ˘GLU et al.: EVALUATION OF MOS ITCP AS AN ULTRALOW CONSTANT-CURRENT GENERATOR (a) (b) (c) Fig. 2."
+        },
+        {
+          "section_title": "WELL AND SOURCE TERMINAL CHARACTERISTICS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "OF A BARE PUMP The pump in its simplest “bare” form of a single PMOS device can be configured into a current source by dc biasing the and designating the well as the output terminal source with as shown in Fig. 2(a)."
+        },
+        {
+          "section_title": "WELL AND SOURCE TERMINAL CHARACTERISTICS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Transposing the roles of these two terof minals as in Fig. 2(b) results in a current-sink configuration."
+        },
+        {
+          "section_title": "WELL AND SOURCE TERMINAL CHARACTERISTICS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Since neither terminal needs to be tied to a supply rail, it is also of possible to utilize the pump as a floating current-generator as depicted in Fig. 2(c), provided that an acceptable equality beand is achieved by minimizing in (8)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.6,
+      "relevance_breakdown": {
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "charge pump",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "current source",
+          "bias circuit"
+        ],
+        "design_purpose": "",
+        "function_summary": "Bare pump current-generator configurations. (a) Current source. (b) Current sink. (c) Floating current generator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 3,
+      "caption": "Fig. 4. Bare-pump well–terminal characteristics for A = 194 m and f = 1 MHz. Channel length: 5.3 m.",
+      "caption_bbox": [
+        39.6,
+        218.0,
+        290.8,
+        237.6
+      ],
+      "section_title": "III. WELL AND SOURCE TERMINAL CHARACTERISTICS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "WELL AND SOURCE TERMINAL CHARACTERISTICS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Quite obviously, the interface-trap charge pump of- . fers at least two orders of magnitude reduction in Shown in Fig. 4 is a set of well–terminal characteristics relevant to current-source applications."
+        },
+        {
+          "section_title": "WELL AND SOURCE TERMINAL CHARACTERISTICS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "For less than increasing 74 Fig. 4."
+        },
+        {
+          "section_title": "WELL AND SOURCE TERMINAL CHARACTERISTICS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The pump remains in this saturation , i.e, larger than 2 V in region of operation as long as forward biases the case of Fig. 4."
+        },
+        {
+          "section_title": "CASCODED PUMP",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "They belong to the same pump whose bare characteristics are shown in Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.6,
+      "relevance_breakdown": {
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "charge pump",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Bare-pump well–terminal characteristics for A = 194 m and f = 1 MHz. Channel length: 5.3 m",
+        "key_specs": [
+          "2 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Variation of the bare-pump source and well currents with well voltage for A = 251 m and f = 100 kHz. Channel length: 5.3 m.",
+      "caption_bbox": [
+        39.6,
+        421.0,
+        290.6,
+        440.6
+      ],
+      "section_title": "III. WELL AND SOURCE TERMINAL CHARACTERISTICS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "WELL AND SOURCE TERMINAL CHARACTERISTICS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 5."
+        },
+        {
+          "section_title": "WELL AND SOURCE TERMINAL CHARACTERISTICS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "For all practical purposes, therefore, sets the lower limit of applicable terminal voltage . - relevant to A set of source–terminal characteristics current-sink applications is given in Fig. 5 which also includes ."
+        },
+        {
+          "section_title": "V, where",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The inverse voltage coefcreasing ficient of the source-terminal characteristic is also significantly . lowered by the presence of The channel length of the pump on which the data of Fig. 5 m."
+        },
+        {
+          "section_title": "V, where",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The condichannel length 1.7 tions of operation are otherwise the same as those of Fig. 5."
+        },
+        {
+          "section_title": "V, where",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "A (25 ns) curve of Fig. 5 reveals that is comparison with the indeed a strongly increasing function of channel length, as predicted in Section II."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Evaluation of MOS Interface-Trap Charge Pump as an Ultralow Constant-Current Generator",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Variation of the bare-pump source and well currents with well voltage for A = 251 m and f = 100 kHz. Channel length: 5.3 m",
+        "key_specs": [
+          "5 w",
+          "25 ns"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.12,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Variation of bare-pump source and well currents with well voltage for A = 80:6 m , f = 100 kHz and T = 25 ns. Channel length: 1.7 m.",
+      "caption_bbox": [
+        302.6,
+        226.0,
+        553.7,
+        245.6
+      ],
+      "section_title": "III. WELL AND SOURCE TERMINAL CHARACTERISTICS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "V, where",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The pump enters a saturation region once the invernificant IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 1, JANUARY 2003 Fig. 6."
+        },
+        {
+          "section_title": "V, where",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Shown in Fig. 6 is the source–terhave been extracted is 5.3 ns on a pump of minal characteristic extracted for m and gate area of 80.6 m ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Evaluation of MOS Interface-Trap Charge Pump as an Ultralow Constant-Current Generator",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Variation of bare-pump source and well currents with well voltage for A = 80:6 m , f = 100 kHz and T = 25 ns. Channel length: 1.7 m",
+        "key_specs": [
+          "5.3 ns"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. Cascoded pump current-generator configurations. (a) Current source. (b) Current sink. (c) Floating current generator.",
+      "caption_bbox": [
+        38.1,
+        423.9,
+        289.2,
+        443.5
+      ],
+      "section_title": "V. TEMPERATURE SENSITIVITY",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "V, where",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "However, parity is achieved if inversion or accumulation is weak is long, the channel is short, and is and/or large. ÇILINGIRO ˘GLU et al.: EVALUATION OF MOS ITCP AS AN ULTRALOW CONSTANT-CURRENT GENERATOR (a) (b) of (c) Fig. 7."
+        },
+        {
+          "section_title": "CASCODED PUMP",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Shown in Fig. 7 are the schematics of a cascoded pump for all three applications. - terminal A typical set of cascoded current-source MHz and ns are characteristics measured for given in Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Evaluation of MOS Interface-Trap Charge Pump as an Ultralow Constant-Current Generator",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [
+          "current source"
+        ],
+        "design_purpose": "",
+        "function_summary": "Cascoded pump current-generator configurations. (a) Current source. (b) Current sink. (c) Floating current generator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Cascoded current-source terminal characteristics for A = 194 m , f = 1 MHz, and T = 100 ns. Channel length: 5.3 m. V is the cascode bias.",
+      "caption_bbox": [
+        301.1,
+        200.6,
+        552.2,
+        220.2
+      ],
+      "section_title": "V. V, where",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CASCODED PUMP",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Shown in Fig. 7 are the schematics of a cascoded pump for all three applications. - terminal A typical set of cascoded current-source MHz and ns are characteristics measured for given in Fig. 8."
+        },
+        {
+          "section_title": "CASCODED PUMP",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "It is also worth noting that, although cascoding desensitizes the current against variations in the terminal voltage, the sensitivity of the current to the binary levels of the gate excitation remains to be determined solely by the bare pump. 75 Fig. 8."
+        },
+        {
+          "section_title": "CASCODED PUMP",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "It is obvious from Fig. 8 that can even eliminate compliance because a sufficiently high the pump remains operative even for a well voltage exceeding by a few hundred millivolts as required by the saturated operation of the cascode device."
+        },
+        {
+          "section_title": "TEMPERATURE SENSITIVITY",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Shown in Fig. 9 are the teristic where VC C terminal characteristics of the cascoded pump whose room-temperature characteristics are given in Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.6,
+      "relevance_breakdown": {
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Evaluation of MOS Interface-Trap Charge Pump as an Ultralow Constant-Current Generator",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Cascoded current-source terminal characteristics for A = 194 m , f = 1 MHz, and T = 100 ns. Channel length: 5.3 m. V is the cascode bias",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 6,
+      "caption": "Fig. 10. (f) Output voltage.",
+      "caption_bbox": [
+        38.1,
+        589.1,
+        98.4,
+        608.8
+      ],
+      "section_title": "VI. PULSE FEEDTHROUGH AND COMPLEMENTARY PUMPING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "PULSE FEEDTHROUGH AND COMPLEMENTARY PUMPING",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "For a quantitative evaluation of pulse feedthrough, first, consider the cascoded current source given in Fig. 10(a)."
+        },
+        {
+          "section_title": "PULSE FEEDTHROUGH AND COMPLEMENTARY PUMPING",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The simulated transient response of the circuit to the trapezoidal gate drive of Fig. 10(b) is shown in the rest of the same figure. , initially the accumuDuring the downward transition of lating electrons are transported to the well until the flatband condition is reached."
+        },
+        {
+          "section_title": "PULSE FEEDTHROUGH AND COMPLEMENTARY PUMPING",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The rate of charge transfer is represented by the negative well–current pulse observed in Fig. 10(c) and the in Fig. 10(d). resulting drop in well voltage is identified as The magnitude of the total charge transported can be estimated from (10) is the oxide capacitance per unit area and is where the (negative) equilibrium Fermi potential of the well."
+        },
+        {
+          "section_title": "PULSE FEEDTHROUGH AND COMPLEMENTARY PUMPING",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Since the latter is many orders the well but also reclaims on the well of magnitude larger than the former, the drop and is voltage is determined almost solely by the bilateral given by (11) represents the total capacitance of the well node. where forces the channel current of the cascoding MOSFET to to an as observed in Fig. 10(e). drop from an Considering the fact that the cascoding MOSFET operates in the subthreshold mode, the ratio of these two current levels can be described as (12) denotes the subthreshold slope."
+        },
+        {
+          "section_title": "PULSE FEEDTHROUGH AND COMPLEMENTARY PUMPING",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 10."
+        },
+        {
+          "section_title": "PULSE FEEDTHROUGH AND COMPLEMENTARY PUMPING",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The fC simulated pump of Fig. 10, for example, puts out mV/decade, sets a as calculated from (10), which, for ."
+        },
+        {
+          "section_title": "PULSE FEEDTHROUGH AND COMPLEMENTARY PUMPING",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The simulated circuit, mined by m m PMOS device emulating the twin whose load is a around 40 fF drivers of a differential pair, has a parasitic mV, which agrees well for which (17) yields can be augmented with Fig. 10(f)."
+        },
+        {
+          "section_title": "PULSE FEEDTHROUGH AND COMPLEMENTARY PUMPING",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "(g) Load current. ÇILINGIRO ˘GLU et al.: EVALUATION OF MOS ITCP AS AN ULTRALOW CONSTANT-CURRENT GENERATOR are simulated with the same conditions as Fig. 10 with the only m pumps are deployed instead of one exception that two 10m ."
+        },
+        {
+          "section_title": "PULSE FEEDTHROUGH AND COMPLEMENTARY PUMPING",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "A comparison between the well–current waveforms of 20is considerably Figs. 10(c) and 11(c) clearly indicates that reduced by mobile charge sharing between the two pumps."
+        },
+        {
+          "section_title": "PULSE FEEDTHROUGH AND COMPLEMENTARY PUMPING",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "As a final word of caution about feedthrough in the currentsource configurations of Figs. 10(a) and 11(a), we emphasize the importance of building the cascoding PMOS in an indi- , because if it shares vidual well tied to a dc voltage, say the same well with the pumps the capacitive coupling between the common well and the output node will create another path for pulse feedthrough."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "line / output driver",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "current source",
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "(f) Output voltage",
+        "key_specs": [
+          "40 fF",
+          "10 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.12,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 7,
+      "caption": "Fig. 11. (e) Output current. (f) Output voltage. (g) Load current.",
+      "caption_bbox": [
+        39.6,
+        738.3,
+        219.3,
+        757.9
+      ],
+      "section_title": "VI. PULSE FEEDTHROUGH AND COMPLEMENTARY PUMPING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "PULSE FEEDTHROUGH AND COMPLEMENTARY PUMPING",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "In this scheme two identical pumps operate in parallel with complementary gate excitation as shown in Fig. 11(a) and (b)."
+        },
+        {
+          "section_title": "PULSE FEEDTHROUGH AND COMPLEMENTARY PUMPING",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The waveforms shown in the rest of Fig. 11 78 (a) (c) (e) (g) IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 1, JANUARY 2003 (b) (d) (f) Spice-simulated waveforms of a cascoded complemetary current source."
+        },
+        {
+          "section_title": "PULSE FEEDTHROUGH AND COMPLEMENTARY PUMPING",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 11."
+        },
+        {
+          "section_title": "PULSE FEEDTHROUGH AND COMPLEMENTARY PUMPING",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "This as observed in Fig. 11(d), but, more causes a smaller is now reduced from to importantly, the duration of ."
+        },
+        {
+          "section_title": "PULSE FEEDTHROUGH AND COMPLEMENTARY PUMPING",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The waveform in Fig. 11(f), V, verifies this prediction for the simindicating ulated circuit."
+        },
+        {
+          "section_title": "PULSE FEEDTHROUGH AND COMPLEMENTARY PUMPING",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The corresponding load-current relative ripple, as calculated from (15), is about 5000 ppm, which is also verified by the waveform shown in Fig. 11(g)."
+        },
+        {
+          "section_title": "PULSE FEEDTHROUGH AND COMPLEMENTARY PUMPING",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The reason is that, unless the magnitude of the root cause, , even a very small well node is equipped with a very large is more than enough to effectively suppress during the transition periods, as seen in Fig. 11(e)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Evaluation of MOS Interface-Trap Charge Pump as an Ultralow Constant-Current Generator",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [
+          "current source"
+        ],
+        "design_purpose": "",
+        "function_summary": "(e) Output current. (f) Output voltage. (g) Load current",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.12,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 8,
+      "caption": "Fig. 12. Variation of well current with pump channel length. Channel width is fixed at 23.7 m.",
+      "caption_bbox": [
+        301.1,
+        224.6,
+        552.2,
+        244.5
+      ],
+      "section_title": "VI. PULSE FEEDTHROUGH AND COMPLEMENTARY PUMPING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CONTROLLABILITY, MATCHING, RELIABILITY, AND",
+          "section_kind": "other",
+          "page": 8,
+          "sentence": "Shown in Fig. 12 is the variation with channel length for a fixed channel width of 23.7 m. of The linear relationship predicted by (6) between the current and m area holds with the exception of the smallest pump of 0.5 in length."
+        },
+        {
+          "section_title": "CONTROLLABILITY, MATCHING, RELIABILITY, AND",
+          "section_kind": "other",
+          "page": 8,
+          "sentence": "As shown in Section III, channel length is and also an influential parameter of the disparity between of 79 Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Evaluation of MOS Interface-Trap Charge Pump as an Ultralow Constant-Current Generator",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Variation of well current with pump channel length. Channel width is fixed at 23.7 m",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 8,
+      "caption": "Fig. 13. Variation of well current with frequency. Channel width is fixed at 23.7 m. Also shown are the regression line and absolute deviation from linearity.",
+      "caption_bbox": [
+        301.1,
+        413.0,
+        552.2,
+        441.6
+      ],
+      "section_title": "VI. PULSE FEEDTHROUGH AND COMPLEMENTARY PUMPING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CONTROLLABILITY, MATCHING, RELIABILITY, AND",
+          "section_kind": "other",
+          "page": 8,
+          "sentence": "Fig. 13."
+        },
+        {
+          "section_title": "CONTROLLABILITY, MATCHING, RELIABILITY, AND",
+          "section_kind": "other",
+          "page": 8,
+          "sentence": "Although biasing the pump to weak accumulation or inversion with the cascode MOSFET greatly reduces the disparity, it is still prudent to minimize the channel length if parity is crucial and then adjust the channel width to set the desired area. - characteristic of our 194m test pump extracted The ns is given in Fig. 13 together with the regression line for fA/Hz ."
+        },
+        {
+          "section_title": "CONTROLLABILITY, MATCHING, RELIABILITY, AND",
+          "section_kind": "other",
+          "page": 8,
+          "sentence": "Although not shown in Fig. 13, the rents below linear range actually extends into higher frequencies and eventually starts breaking down as the accumulation and inversion half periods become too short for the traps to complete carrier capture processes."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Evaluation of MOS Interface-Trap Charge Pump as an Ultralow Constant-Current Generator",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "bias circuit"
+        ],
+        "design_purpose": "Although biasing the pump to weak accumulation or inversion with the cascode MOSFET greatly reduces the disparity, it is still prudent to minimize the channel length if parity is crucial and then adjust the channel width to set the desired area. - characteristic of our 194m test pump extracted The ns is given in Fig. ...",
+        "function_summary": "Variation of well current with frequency. Channel width is fixed at 23.7 m. Also shown are the regression line and absolute deviation from linearity. Although biasing the pump to weak accumulation or inversion with the cascode MOSFET greatly reduces the disparity, it is still prudent to minimize the channel length if ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 9,
+      "caption": "Fig. 14. Variation of well current with source voltage for A = 194 m and f = 100 kHz on five different chips of the same run.",
+      "caption_bbox": [
+        39.6,
+        223.4,
+        290.7,
+        243.0
+      ],
+      "section_title": "VII. CONTROLLABILITY, MATCHING, RELIABILITY, AND",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CONTROLLABILITY, MATCHING, RELIABILITY, AND",
+          "section_kind": "other",
+          "page": 8,
+          "sentence": "Repeatibility and matching properties of the interface-trap charge pump are most likely to be determined by the distribution , which is not one of the tightly controlled parameters of 80 Fig. 14."
+        },
+        {
+          "section_title": "CONTROLLABILITY, MATCHING, RELIABILITY, AND",
+          "section_kind": "other",
+          "page": 8,
+          "sentence": "Shown in Fig. 14 are the experimental m pump as extracted for kHz acteristics of our 194on five different chips of the same run."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "charge pump",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Variation of well current with source voltage for A = 194 m and f = 100 kHz on five different chips of the same run",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 9,
+      "caption": "Fig. 15. Circuit schematic of the single-ended transconductor circuit biased with a cascoded complementary charge-pump current source.",
+      "caption_bbox": [
+        302.6,
+        281.6,
+        553.7,
+        301.2
+      ],
+      "section_title": "VII. CONTROLLABILITY, MATCHING, RELIABILITY, AND",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TRANSCONDUCTOR AND LOW-FREQUENCY OTA-C",
+          "section_kind": "other",
+          "page": 9,
+          "sentence": "Shown in Fig. 15 is the circuit schematic of the single-ended OTA."
+        },
+        {
+          "section_title": "TRANSCONDUCTOR AND LOW-FREQUENCY OTA-C",
+          "section_kind": "other",
+          "page": 9,
+          "sentence": "As discussed in Section VII, the linearity of tuning by frequency deteriorates IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 1, JANUARY 2003 Fig. 15."
+        },
+        {
+          "section_title": "TRANSCONDUCTOR AND LOW-FREQUENCY OTA-C",
+          "section_kind": "other",
+          "page": 9,
+          "sentence": "Characteristics of the transconductor of Fig. 15. due to leakage at the lower end and due to incomplete capture processes at the higher end."
+        },
+        {
+          "section_title": "TRANSCONDUCTOR AND LOW-FREQUENCY OTA-C",
+          "section_kind": "other",
+          "page": 9,
+          "sentence": "Input-referred offset of the transconductor of Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 9.1,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+circuit schematic": 3.5,
+        "+circuit": 1.0,
+        "references": 1.6
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [
+          "current source"
+        ],
+        "design_purpose": "",
+        "function_summary": "Circuit schematic of the single-ended transconductor circuit biased with a cascoded complementary charge-pump current source",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.55,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 9,
+      "caption": "Fig. 16. Characteristics of the transconductor of Fig. 15.",
+      "caption_bbox": [
+        302.6,
+        614.1,
+        488.4,
+        624.7
+      ],
+      "section_title": "VIII. TRANSCONDUCTOR AND LOW-FREQUENCY OTA-C",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TRANSCONDUCTOR AND LOW-FREQUENCY OTA-C",
+          "section_kind": "other",
+          "page": 9,
+          "sentence": "The measured transconducsized ns and tance characteristics are given in Fig. 16 for varying in octaves in the range 15 kHz–16 MHz corresponding to a bias-current tuning range of 16 pA–6 nA."
+        },
+        {
+          "section_title": "TRANSCONDUCTOR AND LOW-FREQUENCY OTA-C",
+          "section_kind": "other",
+          "page": 9,
+          "sentence": "Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Characteristics of the transconductor of Fig. 15",
+        "key_specs": [
+          "15 kHz",
+          "16 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 10,
+      "caption": "Fig. 17. Input-referred offset of the transconductor of Fig. 15.",
+      "caption_bbox": [
+        38.1,
+        225.9,
+        241.0,
+        236.5
+      ],
+      "section_title": "VIII. TRANSCONDUCTOR AND LOW-FREQUENCY OTA-C",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TRANSCONDUCTOR AND LOW-FREQUENCY OTA-C",
+          "section_kind": "other",
+          "page": 9,
+          "sentence": "The measured input offset of the OTA is plotted in Fig. 17 as a function of bias current."
+        },
+        {
+          "section_title": "TRANSCONDUCTOR AND LOW-FREQUENCY OTA-C",
+          "section_kind": "other",
+          "page": 9,
+          "sentence": "We have also put to test the floating current-generator property of the complementary cascoded charge pump by biasing a fully differential OTA with it, as shown in ÇILINGIRO ˘GLU et al.: EVALUATION OF MOS ITCP AS AN ULTRALOW CONSTANT-CURRENT GENERATOR Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [
+          "bias circuit"
+        ],
+        "design_purpose": "",
+        "function_summary": "Input-referred offset of the transconductor of Fig. 15",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 10,
+      "caption": "Fig. 18. Circuit schematic of the fully differential transconductor circuit biased with a cascoded complementary floating charge-pump current generator.",
+      "caption_bbox": [
+        38.1,
+        364.0,
+        289.2,
+        383.5
+      ],
+      "section_title": "VIII. TRANSCONDUCTOR AND LOW-FREQUENCY OTA-C",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TRANSCONDUCTOR AND LOW-FREQUENCY OTA-C",
+          "section_kind": "other",
+          "page": 9,
+          "sentence": "Fig. 18."
+        },
+        {
+          "section_title": "TRANSCONDUCTOR AND LOW-FREQUENCY OTA-C",
+          "section_kind": "other",
+          "page": 9,
+          "sentence": "Characteristics of the transconductor of Fig. 18 for T = 25 ns."
+        },
+        {
+          "section_title": "TRANSCONDUCTOR AND LOW-FREQUENCY OTA-C",
+          "section_kind": "other",
+          "page": 9,
+          "sentence": "Characteristics of the transconductor of Fig. 18 for T = 100 ns."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 8.7,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+circuit schematic": 3.5,
+        "+circuit": 1.0,
+        "references": 1.2
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Circuit schematic of the fully differential transconductor circuit biased with a cascoded complementary floating charge-pump current generator",
+        "key_specs": [
+          "25 ns",
+          "100 ns"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.99,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 10,
+      "caption": "Fig. 19. Characteristics of the transconductor of Fig. 18 for T = 25 ns.",
+      "caption_bbox": [
+        301.1,
+        212.8,
+        536.9,
+        223.5
+      ],
+      "section_title": "VIII. TRANSCONDUCTOR AND LOW-FREQUENCY OTA-C",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TRANSCONDUCTOR AND LOW-FREQUENCY OTA-C",
+          "section_kind": "other",
+          "page": 9,
+          "sentence": "As explained in Section III, selecting under these conditions may result in a significant a short and and therefore lead to a current disparity between offset when the OTA is balanced with identical input voltages. 60 pA is clearly observable on the Such an offset of about experimental transconductance characteristics extracted for ns by varying for a constant V and shown in Fig. 19."
+        },
+        {
+          "section_title": "TRANSCONDUCTOR AND LOW-FREQUENCY OTA-C",
+          "section_kind": "other",
+          "page": 9,
+          "sentence": "Tests 81 Fig. 19."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Characteristics of the transconductor of Fig. 18 for T = 25 ns",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 20,
+      "label": "Fig. 20",
+      "page": 10,
+      "caption": "Fig. 20. Characteristics of the transconductor of Fig. 18 for T = 100 ns.",
+      "caption_bbox": [
+        301.1,
+        390.3,
+        540.9,
+        400.9
+      ],
+      "section_title": "VIII. TRANSCONDUCTOR AND LOW-FREQUENCY OTA-C",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TRANSCONDUCTOR AND LOW-FREQUENCY OTA-C",
+          "section_kind": "other",
+          "page": 9,
+          "sentence": "When the experiment is repeated for ns, however, the offset virtually disappears, as shown in Fig. 20."
+        },
+        {
+          "section_title": "TRANSCONDUCTOR AND LOW-FREQUENCY OTA-C",
+          "section_kind": "other",
+          "page": 9,
+          "sentence": "Fig. 20."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Characteristics of the transconductor of Fig. 18 for T = 100 ns",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 21,
+      "label": "Fig. 21",
+      "page": 10,
+      "caption": "Fig. 21. Photomicrograph of the AMIS 0.5-m CMOS chip containing an OTA-C bandpass filter in addition to stand-alone low-pass and high-pass filter sections, OTAs, and charge-pump current generator structures. The blow-up shows a typical cascoded current source built with complementary charge pumps.",
+      "caption_bbox": [
+        301.1,
+        531.8,
+        552.2,
+        578.4
+      ],
+      "section_title": "VIII. TRANSCONDUCTOR AND LOW-FREQUENCY OTA-C",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TRANSCONDUCTOR AND LOW-FREQUENCY OTA-C",
+          "section_kind": "other",
+          "page": 9,
+          "sentence": "Shown in Fig. 21 is the photomicro2.2 mm MOSIS tiny chip carrying this graph of the 2.2 mm fully integrated filter in addition to stand-alone filter sections, OTAs, and charge-pump current generator structures."
+        },
+        {
+          "section_title": "TRANSCONDUCTOR AND LOW-FREQUENCY OTA-C",
+          "section_kind": "other",
+          "page": 9,
+          "sentence": "Fig. 21."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-micrograph": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "charge pump",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [
+          "current source"
+        ],
+        "design_purpose": "",
+        "function_summary": "Photomicrograph of the AMIS 0.5-m CMOS chip containing an OTA-C bandpass filter in addition to stand-alone low-pass and high-pass filter sections, OTAs, and charge-pump current generator structures. The blow-up shows a typical cascoded current source built with complementary charge pumps",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 15,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

@@ -1,0 +1,66 @@
+# A 105dB-Gain 500MHz-Bandwidth 0.1Ω-OutputImpedance Amplifier for an Amplitude Modulator in 65nm CMOS Chul Kim1,2, Chang-seok Chae1, Young-sub Yuk1, Yi-Gyeong Kim3, Jong-Kee Kwon3, Gyu-Hyeong Cho1
+
+VENUE
+"2010"
+
+FIGURE NUMBER
+"Fig. 4.8.2. In the BS-Class-AB structure, the large output stage MOSFETs, M4N and M4P, of the linear amplifier are driven by source followers, M6N and M6P, instead of the second stage output, i.e., node A, to control the damping factor, ς, without an increase in gm of the second stage. This means that the power consumption of the linear amplifier can be reduced. Considering the trade-off between power consumption and bandwidth, the BS-Class-AB scheme can widen the -3dB bandwidth of the linear amplifier. Not only wide-bandwidth but also low-voltage operation is possible because a switched capacitor in the BSClass-AB structure shifts DC level of the bias node A to VGS-Vt (VN). In the BSClass-AB, the charged voltage in the switched capacitor is VN+VGS_M5P-VGS_M3P. Therefore, if VGS_M5P is the same as VGS_M6P, then VGS_M3N is the same as VGS_M4N. As a result of this BS-Class-AB structure, the linear amplifier can drive 60mA peak current at 1.2V supply voltage with 500MHz bandwidth. Figure 4.8.3 shows the complete linear amplifier structure using the BHCM and the BS-Class-AB structure. The three-stage amplifier has an output impedance of 0.1Ω at 5MHz. It can operate well from a 0.9 to 1.2V supply. Figure 4.8.4 shows a simulated -3dB bandwidth and a measured step response of the circuit. From the measured rise and falling time, it can be seen that the bandwidth of the linear amplifier is about 500MHz. An accurate current-sensing circuit is also proposed in this paper. The conventional current-sensing scheme is to use a current mirror with an N:1 ratio. [1, 3]. Small ro, in 65nm devices, however, makes it difficult to copy accurately. Although current sensing with local feedback works well [2], it consists of two resistors and two amplifiers which result in large area and high power consumption. In Fig. 4.8.5, we present an accurate current-sensing circuit using only one amplifier and one resistor. The amplifier, ASENSE, with feedback resistor, RS, guarantees that VO and VOS have the same voltage to reduce the effect of the small ro in 65nm devices, which results in an accurate current sense with a 50:1 ratio. The copied current induces a voltage drop at RS, which is the input signal of the integrator in the switching amplifier. With the use of 50dB gain rail-to-rail inputswing Class-AB amplifier, the current sensing circuit achieves a bandwidth of about 75MHz. As shown in Fig. 4.8.6, the linear amplifier can cancel the switching ripple current with a small DC current. This result confirms that the proposed current sensing circuit works well. As a result of the ripple cancellation, output voltage shows practically no ripple. Figure 4.8.7 shows the micrograph of the chip. The chip is fabricated in 65nm CMOS and occupies 1.35mm2. Acknowledgement: This work was supported by the IT R&D program of MKE/KEIT (2008-S-015-01, Development of Analog Circuit Techniques for Mixed SoC based on 45nm CMOS Technology). References: [1] T. -W. Kwak, M. -C. Lee, B. -G. Choi et al., “A 2W CMOS Hybrid Switching Amplitude Modulator for EDGE Polar Transmitters,” ISSCC Dig. Tech. Papers, pp. 518-519, Feb., 2007. [2] W. –Y. Chu, B. Bakkaloglu, S. Kiaei, “A 10MHz-Bandwidth 2mV-Ripple PASupply Regulator for CDMA Transmitters,” ISSCC Dig. Tech. Papers, pp. 448449, Feb., 2008. [3] R. Shrestha, R.A.R Van der Zee, A.J.M. de Graauw et al., “A Wideband Supply Modulator for 20MHz RF Bandwidth Polar Pas in 65nm CMOS,” Dig. Symp. VLSI Circuits, pp. 92-93, June, 2008. [4] V.V. Ivanov and I.M. Filanovsky, Operational Amplifier Speed and Accuracy Improvement, pp.51-52, 1st Ed., Kluwer Academic Publishers, 2004."
+
+TYPE
+"105dB-Gain 500MHz-Bandwidth 0.1Ω-OutputImpedance Amplifier"
+
+TECHNOLOGY
+"CMOS, 65nm process"
+
+APPLICATION
+"rf, if"
+
+SUB-BLOCKS
+[
+  "capacitor",
+  "resistor",
+  "transistor/MOSFET",
+  "current source",
+  "current mirror",
+  "output buffer",
+  "switch",
+  "op-amp"
+]
+
+FUNCTION SUMMARY
+"105dB-Gain 500MHz-Bandwidth 0.1Ω-OutputImpedance Amplifier"
+
+DESIGN PURPOSE
+"With the help of the BHCM, about 95dB of gain can be obtained at the first output stage of the linear amplifier. 88 • 2010 IEEE International Solid-State Circuits Conference To track the high bandwidth and large PAPR input envelope signal with high efficiency, a buffered switching Class-AB (BS-Class-AB) bias scheme is ..."
+
+METRICS
+[
+  "Gain",
+  "Frequency",
+  "Impedance",
+  "Process node",
+  "Operating / oscillation frequency"
+]
+
+NUMERICAL PERFORMANCE
+[
+  "105dB",
+  "500MHz",
+  "0.1Ω",
+  "65nm",
+  "-5dB",
+  "8Ω",
+  "45dB",
+  "1.3GHz",
+  "95dB",
+  "-3dB"
+]
+
+CONFIDENCE
+0.2
+
+WARNINGS
+[
+  "No figure scored positively as a proposed-circuit schematic; recommendation is low-confidence.",
+  "Recommended figure was classified as 'conventional', not a schematic; manual confirmation strongly recommended."
+]

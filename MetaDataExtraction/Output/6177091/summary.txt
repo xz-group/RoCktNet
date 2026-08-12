@@ -1,0 +1,54 @@
+# A 5.37mW 10b 200MS/s Dual-Path Pipelined ADC Yun Chai, Jieh-Tsorng Wu
+
+VENUE
+"2012"
+
+FIGURE NUMBER
+"Figure 27.3.1 shows the ADC architecture. It consists of 8 pipeline stages. Each pipeline stage resolves one bit and provides a residue amplification of 2. Each pipeline stage is split into a coarse stage and a fine stage. Consider the 2nd stage. It includes a coarse stage 2C and a fine stage 2F. It receives a coarse input V2c and a fine input V2f, and generates a coarse output V3c and a fine output V3f. The implicit regular input is V2=V2c+V2f and the implicit regular output is V3=V3c+V3f. The coarse signal is an estimate of the implicit regular signal and is much larger than the corresponding fine signal. Each pipeline stage also contains a 3-level (1.5b) sub-ADC consisting of 2 latch-type comparators. It digitizes the coarse signal and generates an output code among {-1, 0, +1}. The back-end sub-ADC that digitizes V9c is a flash ADC consisting of 7 latch-type comparators. An encoder combines the digital outputs, D1 to D9, to generate the final ADC output. Along the analog pipeline, all coarse signals are generated during φ1, and all fine signals are generated during φ2. All sub-ADCs have the entire φ2 period to generate their digital outputs, except the first sub-ADC that produces D1. D1 is required by stage 1C during φ1b."
+
+TYPE
+"10b 200MS/s Dual-Path Pipelined ADC Yun Chai, Jieh-Tsorng Wu"
+
+TECHNOLOGY
+"CMOS, 65nm process"
+
+APPLICATION
+"wireless"
+
+SUB-BLOCKS
+[
+  "capacitor",
+  "transistor/MOSFET",
+  "switch",
+  "op-amp",
+  "latch"
+]
+
+FUNCTION SUMMARY
+"10b 200MS/s Dual-Path Pipelined ADC Yun Chai, Jieh-Tsorng Wu"
+
+METRICS
+[
+  "Power consumption",
+  "Process node",
+  "Gain",
+  "Supply voltage",
+  "Operating / oscillation frequency"
+]
+
+NUMERICAL PERFORMANCE
+[
+  "5.37mW",
+  "65nm",
+  "56.7dB",
+  "1V",
+  "49dB",
+  "1.1GHz",
+  "29dB",
+  "1.4GHz",
+  "1.0V",
+  "0.23mW"
+]
+
+CONFIDENCE
+1.0

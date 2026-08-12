@@ -1,0 +1,626 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\918920.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\918920",
+  "generated_at": "2026-07-29T21:33:33",
+  "paper_metadata": {
+    "title": "A Mixed-Signal Approach to High-Performance Low-Power Linear Filters",
+    "authors": [
+      "Miguel Figueroa",
+      "David Hsu",
+      "Chris Diorio"
+    ],
+    "abstract": "We present a new approach to the design of high-performance low-power linear filters. We use p-channel synapse long-term analog coefficient storage complicates the implementransistors as analog memory cells, and mixed-signal circuits for tation of these systems, forcing designers to use digital memofast low-power arithmetic. To demonstrate the effectiveness of ries and implement computations in the digital domain [5]. our approach, we have built a 16-tap 7-b 200-MHz mixed-signal The Silicon Learning Group at the University of Washington, finite-impulse response (FIR) filter that consumes 3 mW at 3.3 V. Seattle, studies the integration of adaptation and computation in The filter uses synapse pFETs to store the analog tap coefficients, electron tunneling and hot-electron injection to modify the coefVLSI circuits. Our approach is based on a new silicon primificient values, digital registers for the delay line, and multiplying tive which we call a synapse transistor [6], [7]. This device is a digital-to-analog converters to multiply the digital delay-line floating-gate MOSFET that provides permanent analog weight values with the analog tap coefficients. The measured maximum storage, bidirectional updates for weight adaptation, and simulclock speed is 225 MHz; the measured tap-multiplier resolution is taneous adaptation and computation. We have developed analog 7 b at 200 MHz. The total die area is 0.13 mm2. We can readily scale our design to longer delay lines. and mixed-signal circuits around these devices that enable small high-throughput low-power VLSI systems. We are currently in-",
+    "keywords": [
+      "Adaptive filters",
+      "delay lines",
+      "high-speed integrated circuits",
+      "hot carriers",
+      "mixed analog–digital integrated"
+    ],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2001
+  },
+  "paper_circuit_context": {
+    "circuit_type": "frequency multiplier",
+    "technology": "CMOS",
+    "application_domain": "wireless",
+    "sub_blocks": [
+      "transistor/MOSFET",
+      "switch",
+      "latch",
+      "clock / timing"
+    ],
+    "design_purpose": "",
+    "function_summary": "frequency multiplier: We present a new approach to the design of high-performance low-power linear filters.",
+    "key_specs": [
+      "3 mW",
+      "3.3 V",
+      "225 MHz",
+      "200 MHz",
+      "9.5 V",
+      "4 V",
+      "48%",
+      "35%",
+      "17%",
+      "10 MHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HERE IS an ever-present need for low-power high-performance signal-processing chips. For example, to support higher data rates and provide better channel separation, wireless communications devices implement signal-processing algorithms that require high computational throughput. At the same time, these devices require low-power compact circuits to maximize battery life and minimize off-chip com ..."
+    },
+    {
+      "number": "II",
+      "title": "SYNAPSE TRANSISTORS",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "A synapse transistor is a floating-gate MOSFET with the following attributes: 1) nonvolatile analog weight storage, 2) locally computed bidirectional weight updates, and 3) simultaneous memory reads and writes. Fig. 1 illustrates the four-terminal pFET synapse that we use to store coefficient values in our filter. It comprises a single MOSFET (with poly1 floating well tunneling gate and poly2 cont ..."
+    },
+    {
+      "number": "III",
+      "title": "ANALOG MEMORY CELL WITH SELF-CONVERGENT",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "If WRITES As (3)–(6) show, the weight-update rules defined by tunneling and IHEI depend exponentially on the control voltages ( and , respectively). In addition, the tunneling rule is pro- , and the injection rule is proportional to portional to [substitute (6) into (5)]. Because the rules are multiplicative and exponential, writing an accurate value to the synapse transistor is difficult. Consequ ..."
+    },
+    {
+      "number": "IV",
+      "title": "FILTER",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "Fig. 4 shows the filter architecture. Because scaleable analog delay lines are difficult to implement in VLSI, we use a 7-b digital delay line to shift the input signal across the filter taps. We store each tap weight in an analog memory cell, which we can selectively erase and write. We implement the multipliers with multiplying digital-to-analog converters (MDACs) [17] which provide a differenti ..."
+    },
+    {
+      "number": "V",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 5,
+      "text_preview": "We fabricated the filter in a 0.35m double-poly three-metal CMOS process available from MOSIS. The die area of the entire , and each tap measures 28 m by 295 m. circuit is 0.13 mm Fig. 8 shows the filter layout. The digital components account for about 48% of the die area, 35% is devoted to the MDACs, and the remaining 17% is occupied by the analog memory cells. differWe tested the chip using a di ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 6,
+      "text_preview": "We have built a 16-tap FIR filter that uses synapse transistors for analog weight storage and weight updates. This approach allows us to use mixed-signal arithmetic units, resulting in a compact high-speed low-power design. Because we use a digital delay line, we can scale our solution to a larger number of 16). On a DS-CDMA decoding application, our filter taps ( demonstrated an input dynamic ran ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. (a) Layout view of a pFET synapse. The synapse comprises a single MOSFET, with poly1 floating gate and poly2 control gate, and an associated well tunneling implant. (b) Circuit symbol for a pFET synapse. n",
+      "caption_bbox": [
+        38.1,
+        325.0,
+        289.2,
+        353.6
+      ],
+      "section_title": "II. SYNAPSE TRANSISTORS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SYNAPSE TRANSISTORS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 1 illustrates the four-terminal pFET synapse that we use to store coefficient values in our filter."
+        },
+        {
+          "section_title": "SYNAPSE TRANSISTORS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "FIGUEROA et al.: MIXED-SIGNAL APPROACH TO HIGH-PERFORMANCE LOW-POWER LINEAR FILTERS ( (a) (b) Fig. 1."
+        },
+        {
+          "section_title": "SYNAPSE TRANSISTORS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Consequently, we can substantially alter the source current with small changes in the floating-gate charge [see Fig. 1(b)]: (1) where pre-exponential current; coupling coefficient from floating gate to channel; source voltage; floating-gate voltage; thermal voltage ; input (poly1 to poly2) coupling capacitance; control-gate voltage; as floating-gate charge; total capacitance seen by the floating gate. as the transistor’s source curWe define the synapse weight , so that the rent, and tie the source and the control gate to : weight value depends only on (2) where and . just by Equation (2) shows that we can control the value of varying the amount of charge on the floating gate."
+        },
+        {
+          "section_title": "SYNAPSE TRANSISTORS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "We where using a simplified FN fit [15] [see Fig. 1(b)] approximate (4) where pre-exponential constant; voltage applied to the tunneling junction; oxide voltage, defined as . is positive because tunneling increases the floating-gate versus , charge."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.6,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-layout": -2.0,
+        "references": 1.6
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "wireless",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) Layout view of a pFET synapse. The synapse comprises a single MOSFET, with poly1 floating gate and poly2 control gate, and an associated well tunneling implant. (b) Circuit symbol for a pFET synapse. n",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.03,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 2,
+      "caption": "Fig. 2. (a) Tunneling (gate) current I . We define V to be the potential difference between the n well contact and the floating gate. We show a fit according to a Fowler–Nordheim expression. (b) IHEI efficiency versus source-to-drain voltage. For this experiment, we held the floating-gate voltage, , and the source current, I , fixed, and we measured the gate current I for V different source-to-drain voltages.",
+      "caption_bbox": [
+        39.6,
+        469.1,
+        290.7,
+        524.6
+      ],
+      "section_title": "II. SYNAPSE TRANSISTORS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SYNAPSE TRANSISTORS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 2(a) shows experimental data for along with a fit according to (4)."
+        },
+        {
+          "section_title": "SYNAPSE TRANSISTORS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "(a) versus \u00001=V (b) Fig. 2."
+        },
+        {
+          "section_title": "SYNAPSE TRANSISTORS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 2(b) shows experimental data for injection efficiency versus , along with a fit from (6)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.8,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "frequency multiplier",
+        "technology": "CMOS",
+        "application_domain": "wireless",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Tunneling (gate) current I . We define V to be the potential difference between the n well contact and the floating gate. We show a fit according to a Fowler–Nordheim expression. (b) IHEI efficiency versus source-to-drain voltage. For this experiment, we held the floating-gate voltage, , and the source current, I ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. (a) An analog memory cell with self-convergent writes. We apply a reference current I to the drain of the injection transistor (left) to cause IHEI onto the common floating gate. A self-limited feedback path (through the drain . The weight voltage) stops the injection when the transistor is able to source I transistor (right) shares the floating gate with the injection transistor, thus it also sources I once the writing process has stopped. (b) Source-to-drain voltage at time and source current during the writing process (we close switch sw t = 0). At first, the pFET is not able to source I , and therefore its drain voltage drops to ground. As IEHI causes the floating-gate voltage to decrease, rises, exponentially approaching I . When I , the source current I = I the drain voltage rises, stopping the injection process.",
+      "caption_bbox": [
+        302.6,
+        339.9,
+        553.7,
+        440.2
+      ],
+      "section_title": "II. SYNAPSE TRANSISTORS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ANALOG MEMORY CELL WITH SELF-CONVERGENT",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 5, MAY 2001 (a) (b) Fig. 3."
+        },
+        {
+          "section_title": "ANALOG MEMORY CELL WITH SELF-CONVERGENT",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 3(a) depicts our analog memory cell, comprising two synapse transistors with a common floating gate and tunneling junction."
+        },
+        {
+          "section_title": "ANALOG MEMORY CELL WITH SELF-CONVERGENT",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 3(b) shows the source current and source-to-drain voltage of the weight transistor during a simulated memory write."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.2,
+      "relevance_breakdown": {
+        "-reference": -1.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "frequency multiplier",
+        "technology": "CMOS",
+        "application_domain": "wireless",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) An analog memory cell with self-convergent writes. We apply a reference current I to the drain of the injection transistor (left) to cause IHEI onto the common floating gate. A self-limited feedback path (through the drain . The weight voltage) stops the injection when the transistor is able to source I transistor ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 3,
+      "caption": "Fig. 4. Filter architecture. We use a 7-b delay line and store the tap coefficients on analog weight cells. We implement the multipliers using differential multiplying digital-to-analog converters (MDACs). The chip output is a differential current, comprising the sum of the currents from the 16 MDACs.",
+      "caption_bbox": [
+        38.1,
+        255.7,
+        289.2,
+        302.2
+      ],
+      "section_title": "III. ANALOG MEMORY CELL WITH SELF-CONVERGENT",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ANALOG MEMORY CELL WITH SELF-CONVERGENT",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "In practice, we find the self-convergent mechanism attractive FIGUEROA et al.: MIXED-SIGNAL APPROACH TO HIGH-PERFORMANCE LOW-POWER LINEAR FILTERS Fig. 4."
+        },
+        {
+          "section_title": "FILTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 4 shows the filter architecture."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "wireless",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Filter architecture. We use a 7-b delay line and store the tap coefficients on analog weight cells. We implement the multipliers using differential multiplying digital-to-analog converters (MDACs). The chip output is a differential current, comprising the sum of the currents from the 16 MDACs",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.52,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Weight-storage cell. We store the tap-coefficient magnitude on a synapse transistor-based memory cell, and the sign on a static latch. We can change the coefficient magnitude using selectable tunneling and injection circuitry.",
+      "caption_bbox": [
+        301.1,
+        204.0,
+        552.2,
+        241.6
+      ],
+      "section_title": "III. ANALOG MEMORY CELL WITH SELF-CONVERGENT",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FILTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Tap Coefficient Storage Fig. 5 shows the coefficient-storage cell."
+        },
+        {
+          "section_title": "FILTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Based on this memory cell and the requirements of the mulusing a sign-magnitude tiplier, we define the tap-coefficient Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.8,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "frequency multiplier",
+        "technology": "CMOS",
+        "application_domain": "wireless",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "latch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Weight-storage cell. We store the tap-coefficient magnitude on a synapse transistor-based memory cell, and the sign on a static latch. We can change the coefficient magnitude using selectable tunneling and injection circuitry",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.1,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. (a) We used a digital shift-register to implement the delay line. (b) True-single-phase flip-flop used to build the shift register. This circuit is a dynamic positive-edge-triggered D-flip-flop with split outputs. (c) Offset-binary code used to represent the input (only four bits shown). In this code, each bit represents a signed contribution to the word value. The code is symmetric, so if the tap coefficient is negative, we only need to invert every bit of the input prior to computing the product of the input and the tap-coefficient magnitude.",
+      "caption_bbox": [
+        301.1,
+        582.6,
+        552.2,
+        656.0
+      ],
+      "section_title": "IV. FILTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FILTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "(a) (b) (c) Fig. 6."
+        },
+        {
+          "section_title": "FILTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Delay Line As shown in Fig. 6(a) and (b), we implemented the digital delay line as a 7-b shift register composed of true-single-phaseclock (TSPC) D-flip-flops [18]."
+        },
+        {
+          "section_title": "FILTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 6(c) shows the digital representation of the coding scheme."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.2,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-prior": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "frequency multiplier",
+        "technology": "CMOS",
+        "application_domain": "wireless",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) We used a digital shift-register to implement the delay line. (b) True-single-phase flip-flop used to build the shift register. This circuit is a dynamic positive-edge-triggered D-flip-flop with split outputs. (c) Offset-binary code used to represent the input (only four bits shown). In this code, each bit ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7.",
+      "caption_bbox": [
+        39.6,
+        265.1,
+        60.2,
+        275.8
+      ],
+      "section_title": "IV. FILTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FILTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "We compute the sign arithmetic using XOR gates: If the sign of Fig. 7. the coefficient is negative (a binary value of 1), we invert every bit of the input word."
+        },
+        {
+          "section_title": "FILTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "From (7) and (8), we can derive an expression for the multiplication: (9) Fig. 7 shows the multiplier implementation."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "frequency multiplier",
+        "technology": "CMOS",
+        "application_domain": "wireless",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "frequency multiplier",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8.",
+      "caption_bbox": [
+        39.6,
+        510.5,
+        60.8,
+        521.1
+      ],
+      "section_title": "IV. FILTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FILTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The digital Fig. 8. circuitry takes 48% of the die area, while 35% and 17% are allocated to the MDACs and analog memory cells, respectively."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The die area of the entire , and each tap measures 28 m by 295 m. circuit is 0.13 mm Fig. 8 shows the filter layout."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "wireless",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "filter",
+        "key_specs": [
+          "48%",
+          "35%",
+          "17%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 5,
+      "caption": "Fig. 9. Filter output amplitude versus clock frequency. We set all the tap weights to the same positive value, and applied a one-clock-cycle impulse input waveform, so that the output shows the contribution of only one tap at any time. We measured the output amplitude as we clocked the pulse from tap to tap. The graph shows the filter output normalized to a base clock speed of 10 MHz. With clock speeds up to 220 MHz, we measured an output resolution of 7 b. For higher clock speeds, the output amplitude quickly decays.",
+      "caption_bbox": [
+        38.1,
+        195.1,
+        289.2,
+        259.5
+      ],
+      "section_title": "IV. FILTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FILTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The first segcurrents ( by 8, and multiplies this ment (bottom) of the MDAC divides FIGUEROA et al.: MIXED-SIGNAL APPROACH TO HIGH-PERFORMANCE LOW-POWER LINEAR FILTERS Fig. 9."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 9 shows the output of the filter versus clock frequency, normalized to its response at a reference clock frequency of 10 MHz."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-waveform": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "wireless",
+        "sub_blocks": [
+          "clock / timing"
+        ],
+        "design_purpose": "",
+        "function_summary": "Filter output amplitude versus clock frequency. We set all the tap weights to the same positive value, and applied a one-clock-cycle impulse input waveform, so that the output shows the contribution of only one tap at any time. We measured the output amplitude as we clocked the pulse from tap to tap. The graph shows ...",
+        "key_specs": [
+          "10 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. Application to DS-CDMA despreading. We applied a 100 Mb/s CDMA-like input, comprising two bit streams encoded using orthogonal bases, to the filter. We set the tap coefficients to decode the shown basis. (a) Input bit stream and the basis used to encode it. (b) Filter output and the strobe pulse used to recover the data. (c) Reconstructed data, for 64 (superimposed) experiments, showing the logic-level variance at the output. We used the oscilloscope as a differential 50transimpedance amplifier, low-pass filter and track–hold, and reconstructed the output data in software using the oscilloscope measurements. In this application, the filter supports an input dynamic range of 42.6 dB (7 b).",
+      "caption_bbox": [
+        301.1,
+        542.9,
+        552.2,
+        625.2
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "(a) (b) (c) Fig. 10."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 10 shows the results of this experiment."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "wireless",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Application to DS-CDMA despreading. We applied a 100 Mb/s CDMA-like input, comprising two bit streams encoded using orthogonal bases, to the filter. We set the tap coefficients to decode the shown basis. (a) Input bit stream and the basis used to encode it. (b) Filter output and the strobe pulse used to recover the ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 4,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

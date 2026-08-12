@@ -1,0 +1,917 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\910495.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\910495",
+  "generated_at": "2026-07-29T22:03:20",
+  "paper_metadata": {
+    "title": "Dynamic Current Mode Logic (DyCML): A New Low-Power High-Performance Logic Style",
+    "authors": [
+      "Mohamed W. Allam",
+      "Mohamed I. Elmasry"
+    ],
+    "abstract": "This paper introduces a new reduced swing logic style called dynamic current mode logic (DyCML) that reduces both gate and interconnect power dissipation. DyCML circuits combine the advantages of MOS current mode logic (MCML) circuits with those of dynamic logic families to achieve high performance at a low-supply voltage with low-power dissipation. Unlike CML circuits, DyCML gates do not have a static current source, which makes DyCML a good candidate for portable devices and batterypowered systems. Simulation and test results show that DyCML circuits are superior to other logic styles in terms of power and delay. A 16-bit DyCML carry look-ahead adder (CLA), fabricated in 0.6m CMOS technology, attains a delay of 1.24 ns and dissipates 19.2 mW at 400 MHz.",
+    "keywords": [
+      "CMOS integrated circuits",
+      "current mode logic"
+    ],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2001
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Dynamic Current Mode Logic (DyCML): A New Low-Power High-Performance Logic Style",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "current source",
+      "output buffer",
+      "bias circuit",
+      "switch",
+      "differential pair",
+      "latch",
+      "clock / timing"
+    ],
+    "design_purpose": "DyCML circuits combine the advantages of MOS current mode logic (MCML) circuits with those of dynamic logic families to achieve high performance at a low-supply voltage with low-power dissipation.",
+    "function_summary": "Dynamic Current Mode Logic (DyCML): A New Low-Power High-Performance Logic Style: DyCML circuits combine the advantages of MOS current mode logic (MCML) circuits with those of dynamic logic families to achieve high performance at a low-supply voltage with low-power dissipation.",
+    "key_specs": [
+      "1.24 ns",
+      "19.2 mW",
+      "400 MHz",
+      "20%",
+      "4%",
+      "0.9 V",
+      "10 w",
+      "3.3 V",
+      "30%",
+      "17%"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "L OW-POWER design has become a critical issue in VLSI design, especially for portable devices and high-density systems [1]. Usually, switching power dominates the power dissipation in most digital systems. Switching power is calculated using the following equation [1]: (1) is the switching rate of the logic gate output, where is the supply voltage, and is the output voltage swing, and is the load  ..."
+    },
+    {
+      "number": "IV",
+      "title": "CIRCUIT IMPLEMENTATION AND SIMULATION RESULTS",
+      "kind": "design",
+      "page": 4,
+      "text_preview": "To evaluate the performance of the DyCML logic style, a set of logic gates were designed and simulated using 0.6m CMOS (HP/MOSIS/CMC) technology. This technology has an effecIEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 3, MARCH 2001 tive channel length of 0.5 m and threshold voltages of about 0.7 and 0.9 V for the NMOS and PMOS transistors, respectively. To compare the performance of DyCML w ..."
+    },
+    {
+      "number": "V",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 7,
+      "text_preview": "The 16-bit DyCML(CD) CLA adder test chip was fabricated m CMOS process. The chip has a built-in clock rein a 0.6covery circuit and a scan chain to force the CLA inputs into the chip. To monitor the outputs, reduced-to-full-swing buffers are used to convert the outputs of the CLA to full swing signals before the output pads. The adder and buffers are designed on m compared to 870 m , for the equiva ..."
+    },
+    {
+      "number": "VI",
+      "title": "SUMMARY",
+      "kind": "conclusion",
+      "page": 8,
+      "text_preview": "In this paper, a new logic-style DyCML is introduced. The DyCML family combines the advantages of both MCML logic circuits and dynamic logic styles. A major advantage of the DyCML is the dynamic current source, which achieves smaller delays compared to the basic MCML circuits. Other advantages inherited from MCML are high performance, noise immunity, and robustness to supply voltage scaling. DyCML ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. MCML logic gate.",
+      "caption_bbox": [
+        302.6,
+        301.1,
+        391.6,
+        311.7
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Publisher Item Identifier S 0018-9200(01)01469-X. 0018–9200/01$10.00 © 2001 IEEE Fig. 1."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "MOS CURRENT MODE LOGIC (MCML) In order to explain the architecture and operation of MCML circuits, an MCML inverter is shown in Fig. 1 [2]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "logic style / logic family",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "MOS CURRENT MODE LOGIC (MCML) In order to explain the architecture and operation of MCML circuits, an MCML inverter is shown in Fig. 1 [2].",
+        "function_summary": "MCML logic gate. MOS CURRENT MODE LOGIC (MCML) In order to explain the architecture and operation of MCML circuits, an MCML inverter is shown in Fig. 1 [2].",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Architecture of a DyCML gate.",
+      "caption_bbox": [
+        301.1,
+        252.0,
+        431.1,
+        262.6
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Finally, the Fig. 2."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 2 shows the basic architecture of a DyCML logic gate."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "section:intro": -0.5,
+        "type_match:dycml": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "logic style / logic family",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Architecture of a DyCML gate",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.57,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Voltages at different nodes in the DyCML gate.",
+      "caption_bbox": [
+        39.6,
+        198.4,
+        220.3,
+        209.1
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 3 shows the voltages at different nodes in a back to DyCML gate. is used as a capacitor."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The value of this capacitor is dependent on the value of the load capacitance (fan out), and the required output Fig. 3."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "From Fig. 3, it is clear that of transistor after the evaluation, and the voltage of node is ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "type_match:dycml": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Dynamic Current Mode Logic (DyCML): A New Low-Power High-Performance Logic Style",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor",
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Voltages at different nodes in the DyCML gate",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Dynamic current source voltages and current. (a) Voltages on transistor . (b) Current passing through transistor Q .",
+      "caption_bbox": [
+        302.6,
+        379.3,
+        553.7,
+        398.8
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 3, MARCH 2001 (a) (b) Fig. 4."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The instantaneous current is and of transhown in Fig. 4(b) whereas Fig. 4(a) shows . sistor Dynamic power dissipation of DyCML gates is small compared with other dynamic differential logic styles because of the reduced output swing and small input transistors."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "logic style / logic family",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "current source"
+        ],
+        "design_purpose": "",
+        "function_summary": "Dynamic current source voltages and current. (a) Voltages on transistor . (b) Current passing through transistor Q",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Self-timed clocking scheme.",
+      "caption_bbox": [
+        38.1,
+        242.5,
+        158.8,
+        253.1
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "ALLAM AND ELMASRY: DYNAMIC CURRENT MODE LOGIC (DyCML) Fig. 5."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Therefore this condition is satisfied because of the speed of the DyCML gate. 2) Self-Timed Scheme (ST): Self-timing requires each gate to generate a completion signal for the following logic level as shown in Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Dynamic Current Mode Logic (DyCML): A New Low-Power High-Performance Logic Style",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Self-timed clocking scheme",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Self-timing buffer.",
+      "caption_bbox": [
+        38.1,
+        358.0,
+        126.3,
+        368.6
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 6."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 6 shows the architecture of this buffer."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "buffer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Self-timing buffer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Voltages at different nodes in the self-timing buffer.",
+      "caption_bbox": [
+        301.1,
+        450.0,
+        495.0,
+        460.6
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 7."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 7 shows the voltages of various nodes in the buffer."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "buffer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Voltages at different nodes in the self-timing buffer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. Differential single-ended buffer.",
+      "caption_bbox": [
+        301.1,
+        556.0,
+        432.7,
+        566.6
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 8."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "To take advantage of the presence of a clocksignalinDyCMLlogic,anewconversioncircuitisdesigned as shown in Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "buffer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Differential single-ended buffer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. Voltages at different nodes in the reduced-full swing buffer.",
+      "caption_bbox": [
+        39.6,
+        302.5,
+        260.2,
+        313.1
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The ST clocking scheme is more appropriate for circuits with large variations in the operating conditions like supply voltage, Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.1,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "buffer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Voltages at different nodes in the reduced-full swing buffer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. Simulation setup for logic gates.",
+      "caption_bbox": [
+        38.1,
+        226.1,
+        175.8,
+        236.8
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION AND SIMULATION RESULTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION AND SIMULATION RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Thus, the setup shown in Fig. 10 was used to compare the different logic gates."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION AND SIMULATION RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "ALLAM AND ELMASRY: DYNAMIC CURRENT MODE LOGIC (DyCML) Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "-setup": -2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "logic style / logic family",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulation setup for logic gates",
+        "key_specs": [
+          "10 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 6,
+      "caption": "Fig. 11. Block diagram of a 16-bit CLA adder.",
+      "caption_bbox": [
+        39.6,
+        189.7,
+        196.1,
+        200.3
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION AND SIMULATION RESULTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION AND SIMULATION RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 11 illustrates the architecture of the 16-bit CLA adder."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.9,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:design": 1.5,
+        "references": 0.4
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "arithmetic logic unit (ALU)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of a 16-bit CLA adder",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.48,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 6,
+      "caption": "Fig. 12. Generate gate of a 4-bit carry look-ahead adder.",
+      "caption_bbox": [
+        39.6,
+        484.8,
+        225.4,
+        495.4
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION AND SIMULATION RESULTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION AND SIMULATION RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 12."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION AND SIMULATION RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Figs. 12 and 13 illustrate a block generate gate and a carry propagation gate implemented in DyCML."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "arithmetic logic unit (ALU)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Generate gate of a 4-bit carry look-ahead adder",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 6,
+      "caption": "Fig. 13. Carry propagation gate.",
+      "caption_bbox": [
+        302.6,
+        402.5,
+        411.4,
+        413.1
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION AND SIMULATION RESULTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION AND SIMULATION RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The logic expression for the generate gate is (4) while the logic expression for the carry propagation gate is (5) ranges from one to three. where Table II presents the power (including clock power if applicable), delay, power–delay product, and energy–delay product IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 3, MARCH 2001 Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.9,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Dynamic Current Mode Logic (DyCML): A New Low-Power High-Performance Logic Style",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Carry propagation gate",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.11,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 7,
+      "caption": "Fig. 14. Divide-by-2 DyCML circuit.",
+      "caption_bbox": [
+        38.1,
+        184.1,
+        163.5,
+        194.8
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION AND SIMULATION RESULTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION AND SIMULATION RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Stability A divide-by-2 circuit (T F/F) is designed to determine the effect of supply voltage scaling on the performance of the DyCML ALLAM AND ELMASRY: DYNAMIC CURRENT MODE LOGIC (DyCML) Fig. 14."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION AND SIMULATION RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The schematic of the circuit is shown in Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "type_match:dycml": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "Dynamic Current Mode Logic (DyCML): A New Low-Power High-Performance Logic Style",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Divide-by-2 DyCML circuit",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.77,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 7,
+      "caption": "Fig. 15. Maximum operating frequency versus supply voltage.",
+      "caption_bbox": [
+        38.1,
+        355.0,
+        243.0,
+        365.7
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION AND SIMULATION RESULTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION AND SIMULATION RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 15."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION AND SIMULATION RESULTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 15 erate a voltage swing of 20% shows the maximum frequency versus supply voltage for the divide-by-2 circuit."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Dynamic Current Mode Logic (DyCML): A New Low-Power High-Performance Logic Style",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Maximum operating frequency versus supply voltage",
+        "key_specs": [
+          "20%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 7,
+      "caption": "Fig. 16. Microphotograph of the 16-bit CLA adder chip.",
+      "caption_bbox": [
+        301.1,
+        241.3,
+        487.1,
+        251.9
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION AND SIMULATION RESULTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The microphotograph of the chip is shown in Fig. 16."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The test vector generation and validation is carried out Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "arithmetic logic unit (ALU)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Microphotograph of the 16-bit CLA adder chip",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 7,
+      "caption": "Fig. 17. Measured delay.",
+      "caption_bbox": [
+        301.1,
+        514.4,
+        386.5,
+        525.1
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 17."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 17 shows the measured waveforms."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Dynamic Current Mode Logic (DyCML): A New Low-Power High-Performance Logic Style",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured delay",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 14,
+  "warnings": []
+}

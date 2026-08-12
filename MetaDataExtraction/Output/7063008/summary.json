@@ -1,0 +1,46 @@
+{
+  "title": "A Power-Management ASIC with Q-Modulation Capability for Efficient Inductive Power Transmission Mehdi Kiani1, Byunghun Lee2, Pyungwoo Yeon2, Maysam Ghovanloo2",
+  "bibliography": {
+    "authors": [],
+    "venue": "",
+    "year": 2015,
+    "doi": "",
+    "keywords": []
+  },
+  "figure_number": "Figure 12.7.3 shows the detailed schematic diagram of the ADCC block. A charge pump adjusts a variable voltage, VCP, to be used by a mono-stable pulse generator to generate the SC waveform with dynamic duty cycle. By default, a finite state machine (FSM) forces the charge pump to either charge or discharge its output capacitor (CCP) until the voltage envelope across the L3C3-tank (VENV) reduces by 100mV. Then, the charge/discharge state changes, which results in VENV to increase, until VENV reaches to its maximum while achieving the optimal RL condition and again reduces by 100mV by transitioning form the optimal condition. This up-and-down cycle ensures that VENV remains close to its peak value, which results in transformation of RL to the optimal load required for high PTE. In the ADCC, VENV is first detected by a passive rectifier, divided by 1.4, and then buffered before being sampled. Two non-overlapping clocks, CLKC and CLKS, are generated from a 31kHz (fp/64) signal inside a clock-recovery block. The first sampler, S1, always samples VENV at the rising edge of CLKS while S2",
+  "type": "rectifier",
+  "technology": "CMOS",
+  "application": "wireless, biomedical",
+  "sub_blocks": [
+    "inductor",
+    "capacitor",
+    "transistor/MOSFET",
+    "LC tank / resonator",
+    "switch"
+  ],
+  "function_summary": "circuit",
+  "design_purpose": "Figure 12.7.4a shows the schematic diagram of the full-wave passive rectifier, consisting of NMOS transistors (N1,2) for full-wave rectification and PMOS pass transistors equipped with Vth-cancellation circuit to reduce the dropout voltage of the main pass transistors, P1 and P4, and improve power conversion ...",
+  "metrics": [
+    "Impedance",
+    "Supply voltage",
+    "Frequency",
+    "Capacitance",
+    "Supply / voltage"
+  ],
+  "numerical_performance": [
+    "34 v",
+    "10Ω",
+    "3V",
+    "2MHz",
+    "100nF",
+    "4.8V",
+    "100mV",
+    "31kHz",
+    "3 w",
+    "2 v"
+  ],
+  "confidence": 0.8,
+  "warnings": [
+    "Recommended figure was classified as 'result_plot', not a schematic; manual confirmation strongly recommended."
+  ]
+}

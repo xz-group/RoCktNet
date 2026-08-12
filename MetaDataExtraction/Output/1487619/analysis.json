@@ -1,0 +1,856 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1487619.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1487619",
+  "generated_at": "2026-07-29T22:03:01",
+  "paper_metadata": {
+    "title": "A CMOS Integrated Capacitive Fingerprint Sensor With 32-bit RISC Microcontroller",
+    "authors": [
+      "Seung-Min Jung",
+      "Jin-Moon Nam",
+      "Dong-Hoon Yang",
+      "Moon-Key Lee"
+    ],
+    "abstract": "The SOC implementation of a capacitive fingerprint sensor, which embeds the 32-bit microcontroller for performing an identification algorithm, is described for user authentication on small, thin, and portable equipment. The SOC is composed of a 160 192 pixel array with a sensor detection circuit and the embedded 32-bit RISC microcontroller. The proposed sensor detection circuit increases the voltage difference between a ridge and valley about 180% more than conventional detection circuit does and minimizes any electrostatic discharge influence by applying an effective isolation structure. The test chip was fabricated on a m standard CMOS 1-poly 4-metal process. 0.35-",
+    "keywords": [
+      "Capacitive sensor",
+      "charge sharing",
+      "electrostatic discharge (ESD)",
+      "fingerprint",
+      "pixel array"
+    ],
+    "doi": "10.1109/JSSC.2005.852019",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2005
+  },
+  "paper_circuit_context": {
+    "circuit_type": "CMOS Integrated Capacitive Fingerprint Sensor",
+    "technology": "CMOS",
+    "application_domain": "",
+    "sub_blocks": [
+      "capacitor",
+      "transistor/MOSFET",
+      "output buffer",
+      "switch",
+      "latch"
+    ],
+    "design_purpose": "",
+    "function_summary": "CMOS Integrated Capacitive Fingerprint Sensor: The SOC implementation of a capacitive fingerprint sensor, which embeds the 32-bit microcontroller for performing an identification algorithm, is described for user authentication on small, thin, and portable equipment.",
+    "key_specs": [
+      "180%",
+      "1 w",
+      "0 V",
+      "2%",
+      "0.01%",
+      "4.3 fF",
+      "86 fF",
+      "0.1 fF",
+      "610 mV",
+      "1720 mV"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE ﬁngerprint is known to be the most representative biometric for authentication of individual persons. Recently, some small, thin, and inexpensive direct-touch semiconductor ﬁngerprint sensors have been proposed [1]–[5]. Some research organizations have published papers on semiconductor-based capacitive sensing schemes and demonstrated the possibility of a single-chip solution. Fingerprint ide ..."
+    },
+    {
+      "number": "II",
+      "title": "FINGERPRINT SENSOR DETECTION CIRCUIT DESIGN",
+      "kind": "design",
+      "page": 0,
+      "text_preview": "By measuring the variances of the capacitance according to the distance from the chip surface to the ﬁnger’s skin, the pattern of a ﬁngerprint, i.e., ridges and valleys, can be obtained. The charge-sharing scheme [1], charge transfer scheme [3], sample and hold scheme [4], and feedback capacitive sensing scheme [5] have been designed to detect the weak sensor signal. A charge-sharing sensing schem ..."
+    },
+    {
+      "number": "III",
+      "title": "VERIFICATION OF THE FINGERPRINT ALGORITHM",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "USING THE 32-B RISC CORE The embedded 32-bit microprocessor for processing the ﬁngerprint algorithm is described as shown in Fig. 7. The processor has a three-stage pipeline, six register banks, 32-bit ALU, and four-cycle MAC. The core described here was designed by a latch base for low power and low complexity. Its functional operation was veriﬁed by comparing the results of the logic simulation  ..."
+    },
+    {
+      "number": "IV",
+      "title": "ASIC IMPLEMENTATION OF THE FINGERPRINT SENSOR",
+      "kind": "design",
+      "page": 3,
+      "text_preview": "To check the effectiveness of the proposed architecture, a m CMOS 4 M test chip was fabricated using a standard 0.35process. Fig. 9 is a microphotograph of the chip. The die size 12.7 mm , and the sensor region is 10 11.7 mm . is 12 192, and there are 30 720 pixels in the The array size is 160 array. Each pixel contains 24 MOSFETs. The sensor plate is 60 m . The density built above these transisto ..."
+    },
+    {
+      "number": "V",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 4,
+      "text_preview": "In this paper, we proposed a new ﬁngerprint sensor SOC that integrates the sensor and 32-bit RISC microprocessor in a single chip. This paper also proposed an advanced detection circuit for TABLE I CHARACTERISTICS OF TEST CHIP WITH 32-B RISC CORE the capacitive-type ﬁngerprint sensor signal processing and an effective isolation structure for removing any ESD inﬂuence. The new detection circuit of  ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Conventional detection circuit of a charge-sharing scheme.",
+      "caption_bbox": [
+        301.1,
+        323.9,
+        517.5,
+        331.8
+      ],
+      "section_title": "II. FINGERPRINT SENSOR DETECTION CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Digital Object Identiﬁer 10.1109/JSSC.2005.852019 Fig. 1."
+        },
+        {
+          "section_title": "FINGERPRINT SENSOR DETECTION CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Fig. 1 shows a conventional charge-sharing sensing scheme."
+        },
+        {
+          "section_title": "FINGERPRINT SENSOR DETECTION CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "From this point of view, an application of sitic capacitance the unit-gain buffer (U-BUF) of Fig. 1 was an effective method [1]."
+        },
+        {
+          "section_title": "FINGERPRINT SENSOR DETECTION CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Therefore, ideally calculated voltage [1] is not sufﬁcient to discriminate easily a ridge and valley because the reference ) in Fig. 1 cannot be made uniform by voltage drop voltage ( in each pixel of a wide sensor area."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.1,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-conventional": -3.0,
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "sensor",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Conventional detection circuit of a charge-sharing scheme",
+        "key_specs": [
+          "1 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.05,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Proposed detecting circuit of a charge-sharing scheme.",
+      "caption_bbox": [
+        39.6,
+        265.9,
+        243.3,
+        273.9
+      ],
+      "section_title": "II. FINGERPRINT SENSOR DETECTION CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "FINGERPRINT SENSOR DETECTION CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Here, is the detected voltage of a ridge, tion layer capacitance, is the detected voltage of a valley. and Fig. 2."
+        },
+        {
+          "section_title": "FINGERPRINT SENSOR DETECTION CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "This paper presents the advanced charge-sharing scheme shown in Fig. 2."
+        },
+        {
+          "section_title": "FINGERPRINT SENSOR DETECTION CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "In the precharge mode, all nodes of Fig. 2 are precharged."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.7,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "CMOS Integrated Capacitive Fingerprint Sensor",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Proposed detecting circuit of a charge-sharing scheme",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.93,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Operating phase of the detecting circuit.",
+      "caption_bbox": [
+        39.6,
+        499.2,
+        197.2,
+        507.1
+      ],
+      "section_title": "II. FINGERPRINT SENSOR DETECTION CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "FINGERPRINT SENSOR DETECTION CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Fig. 3."
+        },
+        {
+          "section_title": "FINGERPRINT SENSOR DETECTION CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "The proposed sensor detection circuit has three operating phases shown in Fig. 3."
+        },
+        {
+          "section_title": "FINGERPRINT SENSOR DETECTION CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "In the operating phase of the detecting circuit as shown in Fig. 3, an ampliﬁcation mode makes it easy to identify a ﬁngerprint pattern, but the image capture time is increased."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.7,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "sensor",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Operating phase of the detecting circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.43,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 1,
+      "caption": "Fig. 4. Equivalent circuit of the ampliﬁcation and sensing mode.",
+      "caption_bbox": [
+        302.6,
+        304.5,
+        513.9,
+        312.5
+      ],
+      "section_title": "II. FINGERPRINT SENSOR DETECTION CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "FINGERPRINT SENSOR DETECTION CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "In the ampliﬁcation and sensing the inﬂuence of IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 8, AUGUST 2005 Fig. 4."
+        },
+        {
+          "section_title": "FINGERPRINT SENSOR DETECTION CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Fig. 4 shows an equivalent circuit of the ampliﬁcation and sensing mode."
+        },
+        {
+          "section_title": "FINGERPRINT SENSOR DETECTION CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "The SA is composed of only ﬁve MOSFETs for the restricted pixel area below the sensor plate such as in Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.7,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-equivalent": -2.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "sensor",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Equivalent circuit of the ampliﬁcation and sensing mode",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.09,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Effectiveness of the sensor plate’s parasitic capacitance compensation and ampliﬁcation technique.",
+      "caption_bbox": [
+        38.1,
+        228.9,
+        289.2,
+        245.8
+      ],
+      "section_title": "II. FINGERPRINT SENSOR DETECTION CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "FINGERPRINT SENSOR DETECTION CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "An improve- ( ment can be seen by the HSPICE simulation of the cell with a JUNG et al.: CMOS INTEGRATED CAPACITIVE FINGERPRINT SENSOR WITH 32-BIT RISC MICROCONTROLLER Fig. 5."
+        },
+        {
+          "section_title": "FINGERPRINT SENSOR DETECTION CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Horizontal and vertical isolation structure. condition of 0.35 m as a typical parameter and 3.0-V power supply after layout extraction in Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "-capacitance": -2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "sensor",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Effectiveness of the sensor plate’s parasitic capacitance compensation and ampliﬁcation technique",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. Horizontal and vertical isolation structure.",
+      "caption_bbox": [
+        38.1,
+        415.1,
+        202.3,
+        423.0
+      ],
+      "section_title": "II. FINGERPRINT SENSOR DETECTION CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "FINGERPRINT SENSOR DETECTION CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Fig. 6."
+        },
+        {
+          "section_title": "FINGERPRINT SENSOR DETECTION CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "In Fig. 6, we applied a ground-connected metal2 plate and a stacked via to remove ESD, which is the most important problem in a semiconductor ﬁngerprint sensor."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "ESD protection circuit",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Horizontal and vertical isolation structure",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 2,
+      "caption": "Fig. 7. Embedded 32-bit RISC core structure.",
+      "caption_bbox": [
+        301.1,
+        288.2,
+        453.1,
+        296.1
+      ],
+      "section_title": "II. FINGERPRINT SENSOR DETECTION CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "FINGERPRINT SENSOR DETECTION CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Fig. 7."
+        },
+        {
+          "section_title": "VERIFICATION OF THE FINGERPRINT ALGORITHM",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "USING THE 32-B RISC CORE The embedded 32-bit microprocessor for processing the ﬁngerprint algorithm is described as shown in Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "+core": 0.5,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "microcontroller",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Embedded 32-bit RISC core structure",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 2,
+      "caption": "Fig. 8. Identiﬁcation algorithm.",
+      "caption_bbox": [
+        301.1,
+        456.5,
+        407.7,
+        464.4
+      ],
+      "section_title": "III. VERIFICATION OF THE FINGERPRINT ALGORITHM",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FINGERPRINT SENSOR DETECTION CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Fig. 8."
+        },
+        {
+          "section_title": "VERIFICATION OF THE FINGERPRINT ALGORITHM",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The core was implemented by FPGA to check its proper operation for a ﬁngerprint image algorithm shown in Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "CMOS Integrated Capacitive Fingerprint Sensor",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Identiﬁcation algorithm",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 3,
+      "caption": "Fig. 9. Chip microphotograph.",
+      "caption_bbox": [
+        39.6,
+        313.4,
+        143.2,
+        321.3
+      ],
+      "section_title": "III. VERIFICATION OF THE FINGERPRINT ALGORITHM",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "VERIFICATION OF THE FINGERPRINT ALGORITHM",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 9."
+        },
+        {
+          "section_title": "ASIC IMPLEMENTATION OF THE FINGERPRINT SENSOR",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 9 is a microphotograph of the chip."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -5.7,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "CMOS Integrated Capacitive Fingerprint Sensor",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chip microphotograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 3,
+      "caption": "Fig. 10. Layout pattern of the pixel.",
+      "caption_bbox": [
+        39.6,
+        586.6,
+        160.3,
+        594.6
+      ],
+      "section_title": "IV. ASIC IMPLEMENTATION OF THE FINGERPRINT SENSOR",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "VERIFICATION OF THE FINGERPRINT ALGORITHM",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 10."
+        },
+        {
+          "section_title": "ASIC IMPLEMENTATION OF THE FINGERPRINT SENSOR",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 10 shows the layout pattern of one pixel."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "-layout": -2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "CMOS Integrated Capacitive Fingerprint Sensor",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Layout pattern of the pixel",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 3,
+      "caption": "Fig. 11. SEM microphotograph of the pixel array.",
+      "caption_bbox": [
+        302.6,
+        266.6,
+        467.5,
+        274.5
+      ],
+      "section_title": "III. VERIFICATION OF THE FINGERPRINT ALGORITHM",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ASIC IMPLEMENTATION OF THE FINGERPRINT SENSOR",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 11 shows the scanning electron microscope (SEM) microphotograph of IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 8, AUGUST 2005 Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.1,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "references": 0.4
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "CMOS Integrated Capacitive Fingerprint Sensor",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "SEM microphotograph of the pixel array",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 3,
+      "caption": "Fig. 12. Binarized ﬁngerprint image (left) from sensing circuits without any additional signal processing, and the result of image processing (center and right).",
+      "caption_bbox": [
+        302.6,
+        405.8,
+        553.7,
+        431.7
+      ],
+      "section_title": "III. VERIFICATION OF THE FINGERPRINT ALGORITHM",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ASIC IMPLEMENTATION OF THE FINGERPRINT SENSOR",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 12."
+        },
+        {
+          "section_title": "ASIC IMPLEMENTATION OF THE FINGERPRINT SENSOR",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 12 shows a binary ﬁngerprint image obtained from the sensing circuits and the result of identiﬁcation."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.8,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "CMOS Integrated Capacitive Fingerprint Sensor",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Binarized ﬁngerprint image (left) from sensing circuits without any additional signal processing, and the result of image processing (center and right)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.1,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 4,
+      "caption": "Fig. 13. ESD tolerance test result (before and after ESD).",
+      "caption_bbox": [
+        38.1,
+        173.7,
+        227.5,
+        181.6
+      ],
+      "section_title": "IV. ASIC IMPLEMENTATION OF THE FINGERPRINT SENSOR",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ASIC IMPLEMENTATION OF THE FINGERPRINT SENSOR",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The ESD JUNG et al.: CMOS INTEGRATED CAPACITIVE FINGERPRINT SENSOR WITH 32-BIT RISC MICROCONTROLLER Fig. 13."
+        },
+        {
+          "section_title": "ASIC IMPLEMENTATION OF THE FINGERPRINT SENSOR",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fingerprint imsamples could exceed ages obtained before and after the ESD tests are the same shown 2.0 kV, which is the standard in conin Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "ESD protection circuit",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "ESD tolerance test result (before and after ESD)",
+        "key_specs": [
+          "2.0 kV"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 4,
+      "caption": "Fig. 14. Testboard system architecture including external memory.",
+      "caption_bbox": [
+        38.1,
+        269.6,
+        255.8,
+        277.5
+      ],
+      "section_title": "IV. ASIC IMPLEMENTATION OF THE FINGERPRINT SENSOR",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ASIC IMPLEMENTATION OF THE FINGERPRINT SENSOR",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 14."
+        },
+        {
+          "section_title": "ASIC IMPLEMENTATION OF THE FINGERPRINT SENSOR",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 14 shows test system architecture including external memory, and Fig. 15 shows the test board of the ﬁngerprint sensor chip."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "memory",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Testboard system architecture including external memory",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.57,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 4,
+      "caption": "Fig. 15. Test board of the ﬁngerprint sensor chip.",
+      "caption_bbox": [
+        38.1,
+        435.8,
+        201.2,
+        443.8
+      ],
+      "section_title": "IV. ASIC IMPLEMENTATION OF THE FINGERPRINT SENSOR",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ASIC IMPLEMENTATION OF THE FINGERPRINT SENSOR",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 15."
+        },
+        {
+          "section_title": "ASIC IMPLEMENTATION OF THE FINGERPRINT SENSOR",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 14 shows test system architecture including external memory, and Fig. 15 shows the test board of the ﬁngerprint sensor chip."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "sensor",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Test board of the ﬁngerprint sensor chip",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 2,
+  "warnings": []
+}

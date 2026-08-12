@@ -1,0 +1,1310 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1308576.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1308576",
+  "generated_at": "2026-07-29T22:01:42",
+  "paper_metadata": {
+    "title": "A CMOS 10-Gb/s SONET Transceiver",
+    "authors": [
+      "Harish S. Muthali",
+      "Thomas P. Thomas",
+      "Ian A. Young"
+    ],
+    "abstract": "This paper presents a single-chip SONET OC-192 90-nm CMOS PROCESS PARAMETERS transceiver (transmitter and receiver) fabricated in a 90-nm mixed-signal CMOS process. The transmitter consists of a 10-GHz clock multiplier unit (CMU), 16:1 multiplexer, and 10-Gb/s output buffer. The receiver consists of a 10-Gb/s limiting input amplifier, clock and data recovery circuit (CDR), 1:16 demultiplexer, and drivers for low-voltage differential signal (LVDS) outputs. Both transmit and receive phase-locked loops employ a 10-GHz on-chip LC voltage-controlled oscillator (VCO). This transceiver exceeds all SONET OC-192 specifications with ample margin. Jitter generation at 10.66-Gb/s data rate is 18 mUIpp (unit interval, peak-to-peak) and jitter tolerance is 0.6 UIpp at 4-MHz jitter frequency. This transceiver requires 1.2 V for the core logic and 1.8 V for input/output LVDS buffers. Multiple power supply domains are implemented here to mitigate crosstalk between receiver and transmitter. The overall power dissipation of this chip is 1.65 W.",
+    "keywords": [
+      "Clock and data recovery (CDR)",
+      "CMOS integrated circuits",
+      "LC VCO",
+      "optical communication",
+      "phase-locked loops",
+      "SONET OC-192",
+      "transceiver"
+    ],
+    "doi": "10.1109/JSSC.2004.829935",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2004
+  },
+  "paper_circuit_context": {
+    "circuit_type": "CMOS 10-Gb/s SONET Transceiver",
+    "technology": "CMOS, 90-nm process",
+    "application_domain": "rf",
+    "sub_blocks": [
+      "inductor",
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "current source",
+      "output buffer",
+      "bias circuit",
+      "op-amp",
+      "varactor",
+      "cross-coupled pair",
+      "LC tank / resonator",
+      "transformer",
+      "differential pair"
+    ],
+    "design_purpose": "",
+    "function_summary": "CMOS 10-Gb/s SONET Transceiver: This paper presents a single-chip SONET OC-192 90-nm CMOS PROCESS PARAMETERS transceiver (transmitter and receiver) fabricated in a 90-nm mixed-signal CMOS process.",
+    "key_specs": [
+      "1.2 V",
+      "1.8 V",
+      "1.65 W",
+      "10 GHz",
+      "50 kHz",
+      "80 MHz",
+      "10 kHz",
+      "500 mV",
+      "22.5 mV",
+      "100 nF"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "M OST 10-Gb/s SONET transmitter and receiver designs are implemented as two separate chips [3]. Integration of the transmitter and the receiver on the same silicon substrate will result in lower power dissipation and also require less area on the system board, resulting in cost savings. However, there is a risk of degraded jitter performance due to crosstalk between the transmitter and receiver ph ..."
+    },
+    {
+      "number": "II",
+      "title": "SONET TRANSCEIVER",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "A simplified application example of a SONET transceiver is shown in Fig. 1. The transceiver chip consists of the transmitter (TX) and receiver (RX). The optical data signal is fed into the receiver after being converted to an electrical signal by a transimpedance amplifier (TIA). The receiver extracts a 10-GHz clock from the nonreturn-to-zero (NRZ) data stream and deserializes this into 16 paralle ..."
+    },
+    {
+      "number": "III",
+      "title": "CURRENT-MODE LOGIC DESIGN",
+      "kind": "design",
+      "page": 1,
+      "text_preview": "All logic functions on the chip are implemented based on current-mode logic (CML). Fig. 2 shows the schematic of a CML 2:1 multiplexer. The load resistors are fabricated with Tantalum (thin-film metal resistor). The differential nature of CML makes it immune to power-supply variations and substrate noise. Since CML gates are biased at a constant current, no data-dependent current spikes are create ..."
+    },
+    {
+      "number": "IV",
+      "title": "BIAS NETWORK DESIGN",
+      "kind": "design",
+      "page": 1,
+      "text_preview": "The bias voltage for the CML gates is derived from an on-chip bandgap reference (not shown) in conjunction with a replica bias circuit, shown in Fig. 3. which is The bandgap reference produces a voltage constant over temperature and process skews. The operational amplifier (opamp) M1 and the accurate thin-film resistor R1 generate a reference current from this constant voltage output . This curren ..."
+    },
+    {
+      "number": "V",
+      "title": "LC VCO",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "An LC-type VCO has been implemented since it has superior phase-noise performance compared to a ring-oscillator-based on-chip spiral inductor VCO. The tank is realized with a highand an accumulation MOS varactor. Fig. 4 shows a schematic of the LC VCO. Cross-coupled nMOS transistors provide negative resistance to the lossy LC tank and help sustain oscillations. The oscillation amplitude is large e ..."
+    },
+    {
+      "number": "VI",
+      "title": "OUTPUT BUFFER",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "The high-speed output buffer is designed to drive 10.66-Gb/s load, with an effective impedance of 25 . The data into a 50output buffer is realized as a series of CML buffers. The final stage of the output buffer is shown in Fig. 7. The tail current of this stage is 20 mA for an output swing of 500 mV."
+    },
+    {
+      "number": "VII",
+      "title": "LIMITING INPUT AMPLIFIER",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "The input data amplifier consists of a cascade of CML buffers. The first stage of the LIA is shown in Fig. 8. In the design of IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 7, JULY 2004 Fig. 6. Differential varactor cross-section. Fig. 7. 10-Gb/s output stage. Fig. 8. Limiting input amplifier. the LIA, care has been taken to size the differential pair devices for optimum gain bandwidth produc ..."
+    },
+    {
+      "number": "VIII",
+      "title": "TRANSMITTER",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "The block diagram of the transmitter is shown in Fig. 9. The transmitter consists of a CMU, 16–bit-wide first-in-first-out (FIFO) and a 16:1 multiplexer. The FIFO receives 16 bits of parallel data from low-voltage differential signal (LVDS) input buffers at a rate of 622 Mb/s. The FIFO decouples the internal and external clock domains. The deskew PLL phase locks the internal clock with the framer  ..."
+    },
+    {
+      "number": "IX",
+      "title": "RECEIVER",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "The receiver block diagram is shown in Fig. 12. The receiver is a high-speed deserializer with the LIA, a PLL-based CDR unit, and a 1:16 demultiplexer. The LIA amplifies the small amplitude input signal at a data rate of 10 Gb/s. The CDR PLL generates a 10-GHz receive clock and retimes the serial input data. The demultiplexer deserializes the serial input data to 16-bit parallel LVDS data. Fig. 13 ..."
+    },
+    {
+      "number": "X",
+      "title": "PLL BEHAVIORAL MODELING",
+      "kind": "other",
+      "page": 4,
+      "text_preview": "Behavioral modeling and simulation of the TX clock generation PLL and RX CDR PLL were used to analyze the PLLs and compare the architectural tradeoffs such as the choice of phase detector (PD), charge pump, and the VCO transfer curve. This is much faster than a full-circuit simulation. A mixed-mode behavioral model (with discrete-time and continuous-time components) was written using Matlab Simuli ..."
+    },
+    {
+      "number": "XI",
+      "title": "MEASUREMENT RESULTS",
+      "kind": "results",
+      "page": 4,
+      "text_preview": "This chip was fabricated in 90-nm CMOS technology and packaged with a flip-chip ball grid array (FCBGA). The die IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 7, JULY 2004 Fig. 14. Matlab/Simulink model of the dual-loop CDR. Phase error and V ctrl (Matlab simulation). Fig. 15. Fig. 16. Die-photo of the 10-Gb/s transceiver. photo is shown in Fig. 16. This die is I/O pad limited. The test board ..."
+    },
+    {
+      "number": "XII",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 6,
+      "text_preview": "A single chip containing both transmitter and receiver for SONET OC-192 has been described. This chip was fabricated in 90-nm mixed-signal CMOS technology with RF and precision passive elements. Jitter transfer on transmitter and jitter tolerance on receiver exceed SONET specifications. Table II summarizes the performance metrics of this design. ACKNOWLEDGMENT The authors would like to thank M. Le ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. SONET transceiver application example.",
+      "caption_bbox": [
+        38.1,
+        212.1,
+        198.0,
+        220.1
+      ],
+      "section_title": "IV. BIAS NETWORK DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "SONET TRANSCEIVER",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "A simplified application example of a SONET transceiver is shown in Fig. 1."
+        },
+        {
+          "section_title": "SONET TRANSCEIVER",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The transmitter serial output modulates a laser diode (LD) which generates a optical MUTHALI et al.: CMOS 10-Gb/s SONET TRANSCEIVER Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transceiver",
+        "technology": "CMOS, 90-nm process",
+        "application_domain": "rf",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "SONET transceiver application example",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. CML multiplexer.",
+      "caption_bbox": [
+        38.1,
+        419.5,
+        124.7,
+        427.5
+      ],
+      "section_title": "V. LC VCO",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SONET TRANSCEIVER",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 2."
+        },
+        {
+          "section_title": "CURRENT-MODE LOGIC DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 2 shows the schematic of a CML 2:1 multiplexer."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "multiplexer (MUX)",
+        "technology": "CMOS, 90-nm process",
+        "application_domain": "rf",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "CML multiplexer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Replica bias circuit for CML gates.",
+      "caption_bbox": [
+        301.1,
+        226.4,
+        443.3,
+        234.3
+      ],
+      "section_title": "IV. BIAS NETWORK DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CURRENT-MODE LOGIC DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 3."
+        },
+        {
+          "section_title": "BIAS NETWORK DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The bias voltage for the CML gates is derived from an on-chip bandgap reference (not shown) in conjunction with a replica bias circuit, shown in Fig. 3. which is The bandgap reference produces a voltage constant over temperature and process skews."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "bias circuit",
+        "technology": "CMOS, 90-nm process",
+        "application_domain": "rf",
+        "sub_blocks": [
+          "bias circuit"
+        ],
+        "design_purpose": "",
+        "function_summary": "Replica bias circuit for CML gates",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4.",
+      "caption_bbox": [
+        39.6,
+        252.6,
+        60.3,
+        260.6
+      ],
+      "section_title": "III. CURRENT-MODE LOGIC DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "LC VCO",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 4 shows a schematic of the LC VCO."
+        },
+        {
+          "section_title": "LC VCO",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, 90-nm process",
+        "application_domain": "rf",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "voltage-controlled oscillator (VCO)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Transformer inductor.",
+      "caption_bbox": [
+        39.6,
+        434.4,
+        138.5,
+        442.4
+      ],
+      "section_title": "III. CURRENT-MODE LOGIC DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "LC VCO",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 5 As a result, the inductor shows the die photo of the transformer inductor."
+        },
+        {
+          "section_title": "LC VCO",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "on-chip inductor",
+        "technology": "CMOS, 90-nm process",
+        "application_domain": "rf",
+        "sub_blocks": [
+          "inductor",
+          "transformer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Transformer inductor",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. Differential varactor cross-section.",
+      "caption_bbox": [
+        302.6,
+        171.6,
+        442.4,
+        179.5
+      ],
+      "section_title": "III. CURRENT-MODE LOGIC DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "LC VCO",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 6 shows the cross-section improvement of the varactor of the differential varactor. unlike [6], and This varactor requires a single-ended this leads to simpler implementation of the charge pump and loop filter in the PLL, as described in Section VIII."
+        },
+        {
+          "section_title": "LIMITING INPUT AMPLIFIER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "In the design of IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 7, JULY 2004 Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS, 90-nm process",
+        "application_domain": "rf",
+        "sub_blocks": [
+          "varactor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Differential varactor cross-section",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 2,
+      "caption": "Fig. 7. 10-Gb/s output stage.",
+      "caption_bbox": [
+        302.6,
+        430.7,
+        400.5,
+        438.6
+      ],
+      "section_title": "III. CURRENT-MODE LOGIC DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "OUTPUT BUFFER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The final stage of the output buffer is shown in Fig. 7."
+        },
+        {
+          "section_title": "LIMITING INPUT AMPLIFIER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 7. 10-Gb/s output stage."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "buffer",
+        "technology": "CMOS, 90-nm process",
+        "application_domain": "rf",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "10-Gb/s output stage",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 2,
+      "caption": "Fig. 8. Limiting input amplifier.",
+      "caption_bbox": [
+        302.6,
+        659.9,
+        410.9,
+        667.9
+      ],
+      "section_title": "VII. LIMITING INPUT AMPLIFIER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "LIMITING INPUT AMPLIFIER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The first stage of the LIA is shown in Fig. 8."
+        },
+        {
+          "section_title": "LIMITING INPUT AMPLIFIER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, 90-nm process",
+        "application_domain": "rf",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Limiting input amplifier",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 3,
+      "caption": "Fig. 9. Transmitter block diagram.",
+      "caption_bbox": [
+        38.1,
+        234.5,
+        154.2,
+        242.4
+      ],
+      "section_title": "VII. LIMITING INPUT AMPLIFIER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "LIMITING INPUT AMPLIFIER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "MUTHALI et al.: CMOS 10-Gb/s SONET TRANSCEIVER Fig. 9."
+        },
+        {
+          "section_title": "TRANSMITTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The block diagram of the transmitter is shown in Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "transmitter",
+        "technology": "CMOS, 90-nm process",
+        "application_domain": "rf",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Transmitter block diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 3,
+      "caption": "Fig. 10. Clock multiplier unit.",
+      "caption_bbox": [
+        38.1,
+        455.2,
+        140.4,
+        463.2
+      ],
+      "section_title": "VIII. TRANSMITTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "LIMITING INPUT AMPLIFIER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 10."
+        },
+        {
+          "section_title": "TRANSMITTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "CMU Design The architecture of the CMU is shown in Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "frequency multiplier",
+        "technology": "CMOS, 90-nm process",
+        "application_domain": "rf",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Clock multiplier unit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 3,
+      "caption": "Fig. 11. Charge-pump schematic.",
+      "caption_bbox": [
+        301.1,
+        282.2,
+        413.8,
+        290.2
+      ],
+      "section_title": "VII. LIMITING INPUT AMPLIFIER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TRANSMITTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The Fig. 11."
+        },
+        {
+          "section_title": "TRANSMITTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The tristate charge-pump schematic is shown in Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "CMOS 10-Gb/s SONET Transceiver",
+        "technology": "CMOS, 90-nm process",
+        "application_domain": "rf",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Charge-pump schematic",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.71,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 3,
+      "caption": "Fig. 12. Receiver block diagram.",
+      "caption_bbox": [
+        301.1,
+        479.3,
+        412.3,
+        487.2
+      ],
+      "section_title": "VIII. TRANSMITTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TRANSMITTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 12."
+        },
+        {
+          "section_title": "RECEIVER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The receiver block diagram is shown in Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS, 90-nm process",
+        "application_domain": "rf",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Receiver block diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 4,
+      "caption": "Fig. 13. Dual-loop clock and data recovery.",
+      "caption_bbox": [
+        39.6,
+        210.2,
+        184.7,
+        218.2
+      ],
+      "section_title": "IX. RECEIVER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "RECEIVER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 13."
+        },
+        {
+          "section_title": "RECEIVER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The CDR PLL is a dual-loop PLL as shown in Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "clock and data recovery (CDR)",
+        "technology": "CMOS, 90-nm process",
+        "application_domain": "rf",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Dual-loop clock and data recovery",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 4,
+      "caption": "Fig. 14. Matlab/Simulink model of the dual-loop CDR.",
+      "caption_bbox": [
+        302.6,
+        200.9,
+        485.2,
+        208.8
+      ],
+      "section_title": "IX. RECEIVER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "PLL BEHAVIORAL MODELING",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "A mixed-mode behavioral model (with discrete-time and continuous-time components) was written using Matlab Simulink software, an example of which is shown in Fig. 14."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The die IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 7, JULY 2004 Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-model": -1.5,
+        "references": 0.8
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "clock and data recovery (CDR)",
+        "technology": "CMOS, 90-nm process",
+        "application_domain": "rf",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Matlab/Simulink model of the dual-loop CDR",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 4,
+      "caption": "Fig. 15.",
+      "caption_bbox": [
+        302.6,
+        420.6,
+        327.4,
+        428.5
+      ],
+      "section_title": "X. PLL BEHAVIORAL MODELING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "PLL BEHAVIORAL MODELING",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "A phase error plot from this model for a specific set of loop parameters is shown in Fig. 15."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "CMOS 10-Gb/s SONET Transceiver",
+        "technology": "CMOS, 90-nm process",
+        "application_domain": "rf",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 4,
+      "caption": "Fig. 16. Die-photo of the 10-Gb/s transceiver.",
+      "caption_bbox": [
+        302.6,
+        676.6,
+        454.7,
+        684.6
+      ],
+      "section_title": "XI. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 16."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Die-photo of the 10-Gb/s transceiver. photo is shown in Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transceiver",
+        "technology": "CMOS, 90-nm process",
+        "application_domain": "rf",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Die-photo of the 10-Gb/s transceiver",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 5,
+      "caption": "Fig. 17. Test board.",
+      "caption_bbox": [
+        38.1,
+        243.5,
+        106.7,
+        251.4
+      ],
+      "section_title": "XI. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The test board used for characterization is shown in Fig. 17."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "MUTHALI et al.: CMOS 10-Gb/s SONET TRANSCEIVER Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transceiver",
+        "technology": "CMOS, 90-nm process",
+        "application_domain": "rf",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Test board",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 5,
+      "caption": "Fig. 18.",
+      "caption_bbox": [
+        38.1,
+        422.0,
+        62.8,
+        429.9
+      ],
+      "section_title": "XI. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 18."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The frequency versus voltage curve of the TX and RX VCO is shown in Fig. 18."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, 90-nm process",
+        "application_domain": "rf",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "voltage-controlled oscillator (VCO)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 5,
+      "caption": "Fig. 19. Jitter generation for TX data output.",
+      "caption_bbox": [
+        301.1,
+        233.1,
+        450.0,
+        241.0
+      ],
+      "section_title": "XI. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Transmitter Performance Jitter generation for the transmitter is shown in Fig. 19 for three temperature settings (15 C, 40 C and 60 C)."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Jitter tolerance measurement is done from Fig. 19."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transmitter",
+        "technology": "CMOS, 90-nm process",
+        "application_domain": "rf",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Jitter generation for TX data output",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 20,
+      "label": "Fig. 20",
+      "page": 5,
+      "caption": "Fig. 20.",
+      "caption_bbox": [
+        301.1,
+        461.5,
+        325.8,
+        469.5
+      ],
+      "section_title": "XI. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The peak-to-peak jitter (to 22 mUI ) at 60 C. increases by 4 mUI The output eye from the transmitter is shown in Fig. 20."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Output eye at 10.66 Gb/s (with PRBS 2 Fig. 20."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "PRBS generator",
+        "technology": "CMOS, 90-nm process",
+        "application_domain": "rf",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "PRBS generator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 21,
+      "label": "Fig. 21",
+      "page": 5,
+      "caption": "Fig. 21. Jitter transfer for transmitter.",
+      "caption_bbox": [
+        301.1,
+        647.0,
+        426.3,
+        655.0
+      ],
+      "section_title": "XI. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Jitter transfer for peaking is three temperature settings is shown in Fig. 21."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 21."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transmitter",
+        "technology": "CMOS, 90-nm process",
+        "application_domain": "rf",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Jitter transfer for transmitter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 22,
+      "label": "Fig. 22",
+      "page": 6,
+      "caption": "Fig. 22. Jitter tolerance.",
+      "caption_bbox": [
+        39.6,
+        230.9,
+        122.0,
+        238.8
+      ],
+      "section_title": "XI. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Jitter tolerance data is shown in Fig. 22."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 22."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "CMOS 10-Gb/s SONET Transceiver",
+        "technology": "CMOS, 90-nm process",
+        "application_domain": "rf",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Jitter tolerance",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 23,
+      "label": "Fig. 23",
+      "page": 6,
+      "caption": "Fig. 23. Jitter transfer for the CDR PLL.",
+      "caption_bbox": [
+        39.6,
+        400.1,
+        175.3,
+        408.0
+      ],
+      "section_title": "XII. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The jitter transfer measurement for the CDR PLL is shown in Fig. 23 for three temperature settings."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 23."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS, 90-nm process",
+        "application_domain": "rf",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Jitter transfer for the CDR PLL",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 24,
+      "label": "Fig. 24",
+      "page": 6,
+      "caption": "Fig. 24. Crosstalk measurement (spectrum of TX data output).",
+      "caption_bbox": [
+        39.6,
+        603.3,
+        244.8,
+        611.2
+      ],
+      "section_title": "XII. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 24."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "This increased the transmitter data output jitter by 2 mUI , resulting in an overall . jitter of 20 mUI Fig. 24 shows the spectrum of serial data output of the transmitter."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.7,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "transmitter",
+        "technology": "CMOS, 90-nm process",
+        "application_domain": "rf",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Crosstalk measurement (spectrum of TX data output)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 11,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

@@ -1,0 +1,929 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\953477.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\953477",
+  "generated_at": "2026-07-29T22:03:33",
+  "paper_metadata": {
+    "title": "An 8-bit 80-Msample/s Pipelined Analog-to-Digital Converter With Background Calibration",
+    "authors": [
+      "Jun Ming",
+      "Stephen H. Lewis"
+    ],
+    "abstract": "An 8-bit 80-Msample/s pipelined analog-to-digital converter (ADC) uses monolithic background calibration to reduce the nonlinearity caused by interstage gain errors. Test results show that the ADC achieves a peak signal-to-noise-and-distortion ratio of 43.8 dB, a peak integral nonlinearity of 0.51 least significant bit (LSB), and a peak differential nonlinearity of 0.32 LSB with active background calibration. It dissipates 268 mW from a 3-V supply and occupies 10.3 mm2 in a single-poly 0.5m CMOS technology.",
+    "keywords": [
+      "Adaptive systems",
+      "analog–digital conversion",
+      "calibration",
+      "CMOS analog integrated circuits"
+    ],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2001
+  },
+  "paper_circuit_context": {
+    "circuit_type": "8-bit 80-Msample/s Pipelined Analog-to-Digital Converter",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "output buffer",
+      "op-amp",
+      "clock / timing",
+      "switch"
+    ],
+    "design_purpose": "An 8-bit 80-Msample/s pipelined analog-to-digital converter (ADC) uses monolithic background calibration to reduce the nonlinearity caused by interstage gain errors.",
+    "function_summary": "8-bit 80-Msample/s Pipelined Analog-to-Digital Converter: An 8-bit 80-Msample/s pipelined analog-to-digital converter (ADC) uses monolithic background calibration to reduce the nonlinearity caused by interstage gain errors.",
+    "key_specs": [
+      "43.8 dB",
+      "268 mW",
+      "-056 w",
+      "2001 w",
+      "0.25 pF",
+      "0.1 pF",
+      "0.1%",
+      "4 ns",
+      "3.0 V",
+      "1 MHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "H IGH-PERFORMANCE digital communication and waveform acquisition or instrumentation require analogto-digital converters (ADCs) with resolutions of at least 7 bits and sampling rates higher than 50 Msample/s. In the past decade, the pipelined multistage ADC architecture has become suitable for such applications because it can be insensitive to offsets in comparators and operational amplifiers by us ..."
+    },
+    {
+      "number": "II",
+      "title": "REVIEW",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "A. Pipelined ADC Architecture Fig. 1 shows a block diagram of a conventional multistage pipelined ADC. The whole system consists of cascaded stages. -bit analog-to-digital-sub-converter Each stage contains a -bit digital-to-analog-sub-converter (DASC), and (ADSC), a . The use of a sample-and-hold amplifier (SHA) with gain SHAs allows all stages to process (residues from) different samples simultan ..."
+    },
+    {
+      "number": "III",
+      "title": "BACKGROUND-CALIBRATION ALGORITHM",
+      "kind": "intro",
+      "page": 1,
+      "text_preview": "A. Interstage Gain-Error Compensation The following analysis shows that the effect of inaccurate interstage gains in a pipelined ADC can be transformed to only an ADC gain error by independently adjusting the internal DASC reference voltages. Fig. 3(a) shows a block diagram of a two-stage pipelined ADC, where the first stage is shown in detail and the second to represent the back stage is shown as ..."
+    },
+    {
+      "number": "IV",
+      "title": "PROTOTYPE IMPLEMENTATION",
+      "kind": "design",
+      "page": 4,
+      "text_preview": "To demonstrate the concept in Section III, a prototype has m single-poly three-metal CMOS been fabricated in a 0.5process. Fig. 7 shows the block diagram of the background-calibrated pipelined ADC prototype. It consists of two calibrated stages, ten uncalibrated stages, and two calibration systems. The resolution of each stage is 1.5 bits. To compensate for gain error between the first and second  ..."
+    },
+    {
+      "number": "V",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 6,
+      "text_preview": "The following conditions were used for all tests described below unless stated otherwise. The power supply voltage is C. The sampling rate is 3.0 V, and the temperature is 25 = 4:1 MHz, f Fig. 12. Differential nonlinearity (f = 80 Msample/s, and = 3 V). 80 Msample/s, and the input frequency is 4.1 MHz. The power dissipation is 268 mW with active background calibration. About 40% of this power is d ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 8,
+      "text_preview": "This paper shows that applying background calibration to the design of pipelined ADCs is of potential interest to overcome the ADC nonlinearity that would otherwise result from interstage gain errors. This technique can be extended to more stages and higher resolution as long as the dominant source of nonlinearity stems from interstage gain error. ACKNOWLEDGMENT The authors would like to thank S.  ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Block diagram of a pipelined ADC.",
+      "caption_bbox": [
+        301.1,
+        345.3,
+        444.7,
+        355.9
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Publisher Item Identifier S 0018-9200(01)08424-4. 0018–9200/01$10.00 © 2001 IEEE Fig. 1."
+        },
+        {
+          "section_title": "REVIEW",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Pipelined ADC Architecture Fig. 1 shows a block diagram of a conventional multistage pipelined ADC."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of a pipelined ADC",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. SHA schematic.",
+      "caption_bbox": [
+        39.6,
+        175.7,
+        120.6,
+        186.4
+      ],
+      "section_title": "II. REVIEW",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "REVIEW",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Conventional Sample-and-Hold Amplifier (SHA) Fig. 2 shows a schematic of a conventional SHA."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.4,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "references": 0.4
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "track-and-hold / sample-and-hold",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "SHA schematic",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.35,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. (a) Block diagram of a two-stage pipelined ADC with interstage gain G = G , where G is the gain error and G is the ideal interstage gain. (b) Equivalent block diagram with the gain error moved to the input branch.",
+      "caption_bbox": [
+        38.1,
+        325.0,
+        289.2,
+        353.6
+      ],
+      "section_title": "III. BACKGROUND-CALIBRATION ALGORITHM",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "BACKGROUND-CALIBRATION ALGORITHM",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "Fig. 3(a) shows a block diagram of a two-stage pipelined ADC, where the first stage is shown in detail and the second to represent the back stage is shown as a block labeled , where end of the ADC."
+        },
+        {
+          "section_title": "BACKGROUND-CALIBRATION ALGORITHM",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "Then the gain error in the branch leading to the positive input of the subtracter can be pushed into the input branch as long as the reciprocal of the gain error is placed in the branch leading to the ADSC, so that the path from the ADC input to the ADSC input continues to have no gain error, as in Fig. 3(a)."
+        },
+        {
+          "section_title": "BACKGROUND-CALIBRATION ALGORITHM",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "Fig. 3(b) shows the result of these manipulations."
+        },
+        {
+          "section_title": "BACKGROUND-CALIBRATION ALGORITHM",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "This term is removed by the redundancy and digital correction as long as the shifts in the comparator thresholds are within the MING AND LEWIS: PIPELINED ANALOG-TO-DIGITAL CONVERTER WITH BACKGROUND CALIBRATION ( G to Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.1,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "-equivalent": -2.0,
+        "section:intro": -0.5,
+        "references": 1.6
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Block diagram of a two-stage pipelined ADC with interstage gain G = G , where G is the gain error and G is the ideal interstage gain. (b) Equivalent block diagram with the gain error moved to the input branch",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.05,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 3,
+      "caption": "Fig. 4.",
+      "caption_bbox": [
+        39.6,
+        308.3,
+        60.2,
+        318.9
+      ],
+      "section_title": "III. BACKGROUND-CALIBRATION ALGORITHM",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "BACKGROUND-CALIBRATION ALGORITHM",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "Fig. 4 shows a block diagram of the background gain and represent the calibration loop for one stage."
+        },
+        {
+          "section_title": "BACKGROUND-CALIBRATION ALGORITHM",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "For the calibration in Fig. 4 to work properly, the back-end ADC must measure the calibration signal introduced in the first stage."
+        },
+        {
+          "section_title": "BACKGROUND-CALIBRATION ALGORITHM",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "In Fig. 4, a calibration-signal is chosen along with . magnitude of Therefore, the magnitude of the calibration signal arriving in , the first stage of the back-end ADC is approximately which is 1/2 LSB at a 2-bit level with a full-scale voltage of in the back-end ADC."
+        },
+        {
+          "section_title": "BACKGROUND-CALIBRATION ALGORITHM",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "Fig. 4. are no more than the other half of the correction range, the calibration signal can be added to the signal path without saturating the next stage, allowing measurement of the calibration signal. and , the calibration signal Also, since will occupy about one-eighth of the full-scale range of the ADC."
+        },
+        {
+          "section_title": "BACKGROUND-CALIBRATION ALGORITHM",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "Since the back-end ADC is used to measure the calibration signal injected into the first stage in Fig. 4, nonideality directly affects the measurement of the gain error."
+        },
+        {
+          "section_title": "BACKGROUND-CALIBRATION ALGORITHM",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "Furthermore, digital in Fig. 4 uses instead of correction on the output of so that the injected calibration signal the raw output of does not affect the correction of the MSBs."
+        },
+        {
+          "section_title": "PROTOTYPE IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "(See Fig. 4.) In the prototype, 12 bits wide, the accumulator is 32 bits wide, and the RNG uses a maximum-length shift-register structure with 39 stages in the shift register [15]."
+        },
+        {
+          "section_title": "PROTOTYPE IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "In particular, offset in the slow-butaccurate ADC would affect the average value to which the loop in Fig. 4 converges."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.5,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "analog-to-digital converter (ADC)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Detailed block diagram of the back-end ADC.",
+      "caption_bbox": [
+        302.6,
+        441.4,
+        479.4,
+        452.0
+      ],
+      "section_title": "III. BACKGROUND-CALIBRATION ALGORITHM",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "BACKGROUND-CALIBRATION ALGORITHM",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "Therefore, since 1.5-bit stages have been used in this project, the most important nonideality in the back-end ADC is gain Fig. 5."
+        },
+        {
+          "section_title": "BACKGROUND-CALIBRATION ALGORITHM",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "Fig. 5 shows a block diagram of the back-end ADC, where the first stage is shown in detail, and the rest of the back-end ADC is shown as a block la- ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Detailed block diagram of the back-end ADC",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "Fig. 6. Residue plot in the first stage of the back-end ADC.",
+      "caption_bbox": [
+        38.1,
+        229.5,
+        235.2,
+        240.1
+      ],
+      "section_title": "III. BACKGROUND-CALIBRATION ALGORITHM",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "BACKGROUND-CALIBRATION ALGORITHM",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "Therefore, the input to the by LSB from the value that would 1 LSB, reducing had been constant. have been generated if MING AND LEWIS: PIPELINED ANALOG-TO-DIGITAL CONVERTER WITH BACKGROUND CALIBRATION Fig. 6."
+        },
+        {
+          "section_title": "BACKGROUND-CALIBRATION ALGORITHM",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "Since the RNG output is either or with a mean value of zero, one natural approach is to let the first case described above happen for one sign of the calibration signal and the second case happen for the other sign of the calibration signal. for which the two cases occur To find the range of equally, a residue plot of the first stage in the back-end ADC is drawn in Fig. 6."
+        },
+        {
+          "section_title": "BACKGROUND-CALIBRATION ALGORITHM",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "Since the amplitude of with nominal thresholds of , the residue change the added calibration signal is about caused by the injected calibration signal is obtained by moving without the calibration signal to the left from the value of in Fig. 6."
+        },
+        {
+          "section_title": "BACKGROUND-CALIBRATION ALGORITHM",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "To meet the requirement that the or right by two cases described earlier are equally probable, one and only one of the two movements must cross a comparator threshold. , the signals falling With comparator offsets between into the two shaded areas in Fig. 6 satisfy this requirement. without the calibration signal For example, suppose (which is inside the shaded area on the right). is moves with the calibration signal to Then adding , which crosses the upper comparator threshold even if ."
+        },
+        {
+          "section_title": "BACKGROUND-CALIBRATION ALGORITHM",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "According to this scheme, the calibration is only performed on the signals that fall into one of the two shaded regions in Fig. 6. lies outside these regions, the accumulator is not When updated, and the RNG is frozen so that its previous output is is uncorrelated with reused to maintain the property that the input."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.5,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Residue plot in the first stage of the back-end ADC",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. Block diagram of the prototype.",
+      "caption_bbox": [
+        301.1,
+        487.9,
+        432.9,
+        498.6
+      ],
+      "section_title": "IV. PROTOTYPE IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "BACKGROUND-CALIBRATION ALGORITHM",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "Fig. 7."
+        },
+        {
+          "section_title": "PROTOTYPE IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 7 shows the block diagram of the background-calibrated pipelined ADC prototype."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the prototype",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.57,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 5,
+      "caption": "Fig. 8. Die photograph.",
+      "caption_bbox": [
+        39.6,
+        327.4,
+        120.7,
+        338.1
+      ],
+      "section_title": "IV. PROTOTYPE IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "PROTOTYPE IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The analog part of each calibration system Fig. 8."
+        },
+        {
+          "section_title": "PROTOTYPE IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 8 shows the die photo."
+        },
+        {
+          "section_title": "PROTOTYPE IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The extra SHA in the first stage, this reference voltage is Fig. 8 is not fundamentally required but is added to avoid cascading the settling times of the corresponding 7-bit DAC and the following three-input summer."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.3,
+      "relevance_breakdown": {
+        "-photograph": -3.0,
+        "-die photo": -3.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Die photograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 5,
+      "caption": "Fig. 9. Block diagram of the first calibrated stage.",
+      "caption_bbox": [
+        302.6,
+        226.3,
+        468.4,
+        236.9
+      ],
+      "section_title": "IV. PROTOTYPE IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "PROTOTYPE IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 10, OCTOBER 2001 Fig. 9."
+        },
+        {
+          "section_title": "PROTOTYPE IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Calibrated Pipelined ADC Stage Fig. 9 shows the block diagram of the first pipelined ADC stage on the prototype."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the first calibrated stage",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.57,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. Schematic of the three-input summer.",
+      "caption_bbox": [
+        302.6,
+        407.2,
+        455.9,
+        417.9
+      ],
+      "section_title": "IV. PROTOTYPE IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "PROTOTYPE IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 10."
+        },
+        {
+          "section_title": "PROTOTYPE IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "This requirement is satisfied using the three-input summer shown in Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "8-bit 80-Msample/s Pipelined Analog-to-Digital Converter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematic of the three-input summer",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.77,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 6,
+      "caption": "Fig. 11. Block diagram of the slow-but-accurate ADC.",
+      "caption_bbox": [
+        38.1,
+        157.5,
+        218.5,
+        168.1
+      ],
+      "section_title": "IV. PROTOTYPE IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "PROTOTYPE IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "MING AND LEWIS: PIPELINED ANALOG-TO-DIGITAL CONVERTER WITH BACKGROUND CALIBRATION Fig. 11."
+        },
+        {
+          "section_title": "PROTOTYPE IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 11 shows a block diagram of the slow-but-accurate ADC used in each calibrated stage [21]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the slow-but-accurate ADC",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.57,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 6,
+      "caption": "Fig. 12. Differential nonlinearity (f = 80 Msample/s, and = 3 V).",
+      "caption_bbox": [
+        301.1,
+        312.4,
+        552.2,
+        332.0
+      ],
+      "section_title": "IV. PROTOTYPE IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The sampling rate is 3.0 V, and the temperature is 25 = 4:1 MHz, f Fig. 12."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 12(a) shows the measured differential nonlinearity (DNL) without calibration, using a code-density test [22]."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 12(b) shows the DNL with active background calibration, and Fig. 12(c) shows the DNL with the calibration frozen after convergence."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "DNL is Figs. 12(b) and 13(b) show the DNL and INL plots with active background calibration."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Figs. 12(c) and 13(c) show the DNL and INL plots after background calibration is turned on first and then turned off."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.5,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "8-bit 80-Msample/s Pipelined Analog-to-Digital Converter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Differential nonlinearity (f = 80 Msample/s, and = 3 V)",
+        "key_specs": [
+          "3.0 V",
+          "1 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.38,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 7,
+      "caption": "Fig. 13. Integral nonlinearity (f = 80 Msample/s, and = 3 V). V",
+      "caption_bbox": [
+        39.6,
+        310.4,
+        290.7,
+        330.0
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "With an integrator scale factor of the maximum frequency at which the calibration system can = 4:1 MHz, f Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.6,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "8-bit 80-Msample/s Pipelined Analog-to-Digital Converter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Integral nonlinearity (f = 80 Msample/s, and = 3 V). V",
+        "key_specs": [
+          "1 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 7,
+      "caption": "Fig. 14. ADC output spectrums (f = 4:1 MHz, f = 80 Msample/s, and = 3 V). V",
+      "caption_bbox": [
+        39.6,
+        581.2,
+        290.7,
+        600.8
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "V Fig. 14."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 14(a) shows a 65 536-point fast Fourier transform (FFT) plot of the ADC output without calibration and without aversine wave with frequency of 4.1 MHz is aging."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "T = 25 and the total harmonic distortion (THD) for the first nine har41.7 dB. monics is Fig. 14(b) shows the spectrum of the pipelined ADC with active background calibration."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "To see how much noise comes from the calibration circuits, Fig. 14(c) shows the spectrum of the pipelined ADC with the calibration frozen after convergence (so the reference voltages are not updated)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.9,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 1.6
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "ADC output spectrums (f = 4:1 MHz, f = 80 Msample/s, and = 3 V). V",
+        "key_specs": [
+          "4.1 MHz",
+          "41.7 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 7,
+      "caption": "Fig. 15. SNDR versus input frequency with frozen calibration (f = 80 Msample/s, and V = 3 V).",
+      "caption_bbox": [
+        302.6,
+        165.2,
+        553.7,
+        184.8
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The signal-to-noise-and-distortion ratio (SNDR) is 38.2 dB; the spurious-free dynamic range (SFDR) is 42.8 dB, IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 10, OCTOBER 2001 Fig. 15."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 15 shows a plot of the SNDR versus input frequency with frozen calibration."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "8-bit 80-Msample/s Pipelined Analog-to-Digital Converter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "SNDR versus input frequency with frozen calibration (f = 80 Msample/s, and V = 3 V)",
+        "key_specs": [
+          "38.2 dB",
+          "42.8 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 10,
+  "warnings": []
+}

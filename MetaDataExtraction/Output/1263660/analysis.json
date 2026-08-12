@@ -1,0 +1,918 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1263660.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1263660",
+  "generated_at": "2026-07-29T22:01:32",
+  "paper_metadata": {
+    "title": "A Micropower Programmable DSP Using Approximate Signal Processing Based on Distributed Arithmetic",
+    "authors": [
+      "Rajeevan Amirtharajah",
+      "Anantha P. Chandrakasan"
+    ],
+    "abstract": "A recent trend in low-power design has been the employment of reduced precision processing methods for decreasing arithmetic activity and average power dissipation. Such designs can trade off power and arithmetic precision as system requirements change. This work explores the potential of distributed arithmetic (DA) computation structures for low-power precision-on-demand computation. We present an ultralow-power DSP which uses variable precision arithmetic, low-voltage circuits, and conditional clocks to implement a biomedical detection and classification algorithm using only 560 nW. Low energy consumption enables self-powered operation using ambient mechanical vibrations, converted to electric energy by a MEMS transducer and accompanying power electronics. The MEMS energy scavenging system is estimated to deliver 4.3 to 5.6 W of power to the DSP load. Fig. 1. System block diagram.",
+    "keywords": [
+      "Digital signal processing (DSP)",
+      "distributed arithmetic",
+      "energy scavenging",
+      "low power"
+    ],
+    "doi": "10.1109/JSSC.2003.821774",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2004
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Micropower Programmable DSP",
+    "technology": "CMOS",
+    "application_domain": "biomedical, if",
+    "sub_blocks": [
+      "capacitor",
+      "transistor/MOSFET",
+      "output buffer",
+      "bias circuit",
+      "switch",
+      "latch",
+      "sense amplifier",
+      "clock / timing"
+    ],
+    "design_purpose": "Low energy consumption enables self-powered operation using ambient mechanical vibrations, converted to electric energy by a MEMS transducer and accompanying power electronics.",
+    "function_summary": "Micropower Programmable DSP: Low energy consumption enables self-powered operation using ambient mechanical vibrations, converted to electric energy by a MEMS transducer and accompanying power electronics.",
+    "key_specs": [
+      "560 nW",
+      "5.6 W",
+      "20%",
+      "200 Hz",
+      "99.8%",
+      "1.2 kHz",
+      "250 kHz",
+      "1 V",
+      "32 w",
+      "1.1 V"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "A RECENT trend in low-power design has been the employment of reduced precision “approximate processing” methods for reducing arithmetic activity and average chip power dissipation. Such designs treat power and arithmetic precision as system parameters that can be traded off versus each other on an ad hoc basis. Ludwig et al. [1] have demonstrated an approximate filtering technique which dynamical ..."
+    },
+    {
+      "number": "II",
+      "title": "SUCCESSIVE APPROXIMATION USING",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "DISTRIBUTED ARITHMETIC DA [5], [6] is a bit-serial operation that computes the inner product of two vectors (one of which is a constant) in parallel. Its main advantage is the efficiency of mechanization and the fact that no multiply operations are necessary. DA has an inherent bit-serial nature, but this disadvantage can be completely hidden if the number of bits in each variable vector coefficie ..."
+    },
+    {
+      "number": "III",
+      "title": "DETECTION AND CLASSIFICATION SIGNAL PROCESSING",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "FOR PHYSIOLOGICAL MONITORING Recent work has demonstrated power consumption on the order of a few hundred microwatts for wearable [14] and implantable [15] biomedical devices. An application of power scalable processing using DA is a low-power DSP for physiological monitoring that uses a wearable microphone as a biomedical sensor for recording heartbeats, breathing sounds, and voice data. This dat ..."
+    },
+    {
+      "number": "IV",
+      "title": "SENSOR DSP ARCHITECTURE",
+      "kind": "proposed",
+      "page": 3,
+      "text_preview": "Fig. 5 shows the architecture of the sensor DSP chip, which follows the algorithmic architecture described in Section III. The discrete-time matched filter is implemented using the DA unit. Its output is then passed to a nonlinear filtering unit to calculate quantities used in segmentation. The final segmentation, feature extraction, and classification is performed by the IEEE JOURNAL OF SOLID-STA ..."
+    },
+    {
+      "number": "V",
+      "title": "VLSI IMPLEMENTATION",
+      "kind": "design",
+      "page": 4,
+      "text_preview": "Much of the power reduction in this DSP chip is due to aggressive voltage scaling, selective clock gating, and minimization of switched capacitance. Operation of logic circuits on the edge of subthreshold conduction requires minimizing capacitance to further reduce power consumption. Since much of the die area is devoted to memories (DA unit tables, buffers, and instruction and data memories), red ..."
+    },
+    {
+      "number": "VI",
+      "title": "DSP TEST RESULTS",
+      "kind": "results",
+      "page": 7,
+      "text_preview": "The chip described in this section was fabricated in a 0.6m standard CMOS process with three levels of metallization. The implementation of the matched filter using DA results in the ability to scale the power consumption for this unit with the required performance. Fig. 14 shows the simulated power reduction in the DA unit as fewer bits of the input are shifted into the filter. As expected, the p ..."
+    },
+    {
+      "number": "VII",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 9,
+      "text_preview": "We have described how DA may be used to implement power scalable approximate signal processing by allowing a DSP to vary the input data bitwidth according to performance requirements. This type of data truncation causes increased noise at the input of the implemented filter, degrading output SNR and resulting in reduced recognition performance in detection and classification algorithms. However, t ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. System block diagram.",
+      "caption_bbox": [
+        301.1,
+        341.1,
+        403.8,
+        349.1
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "It is the key computational component of the three-chip system shown in Fig. 1, which also incorporates a MEMS transducer that converts vibration to a voltage and a power electronics IC that provides a stable power supply to the sensor DSP load."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "digital signal processor (DSP)",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "System block diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Distributed arithmetic ROM and accumulator (RAC) structure.",
+      "caption_bbox": [
+        302.6,
+        307.5,
+        531.5,
+        315.5
+      ],
+      "section_title": "II. SUCCESSIVE APPROXIMATION USING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SUCCESSIVE APPROXIMATION USING",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 2 shows a detailed example of a DA computation."
+        },
+        {
+          "section_title": "SUCCESSIVE APPROXIMATION USING",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "All 16 possible linear comvector binations of the constant vector elements are stored in a IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 2, FEBRUARY 2004 Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Micropower Programmable DSP",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Distributed arithmetic ROM and accumulator (RAC) structure",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Heartbeat detection and classification algorithm.",
+      "caption_bbox": [
+        38.1,
+        297.7,
+        222.8,
+        305.7
+      ],
+      "section_title": "II. SUCCESSIVE APPROXIMATION USING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SUCCESSIVE APPROXIMATION USING",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The underlying stochastic experiment is random acable cesses of the DA coefficient ROM in the presence of random AMIRTHARAJAH AND CHANDRAKASAN: MICROPOWER PROGRAMMABLE DSP USING APPROXIMATE SIGNAL PROCESSING Fig. 3."
+        },
+        {
+          "section_title": "DETECTION AND CLASSIFICATION SIGNAL PROCESSING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The algorithm is summarized in the block diagram of Fig. 3."
+        },
+        {
+          "section_title": "DETECTION AND CLASSIFICATION SIGNAL PROCESSING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Recognition performance tradeoffs with DA unit power (simulated). in Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "digital signal processor (DSP)",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Heartbeat detection and classification algorithm",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 3,
+      "caption": "Fig. 4. Recognition performance tradeoffs with DA unit power (simulated).",
+      "caption_bbox": [
+        39.6,
+        265.0,
+        285.4,
+        273.0
+      ],
+      "section_title": "III. DETECTION AND CLASSIFICATION SIGNAL PROCESSING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DETECTION AND CLASSIFICATION SIGNAL PROCESSING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The template used in the classification algorithm and an example of a correlation peak are also shown Fig. 4."
+        },
+        {
+          "section_title": "DETECTION AND CLASSIFICATION SIGNAL PROCESSING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 4 shows the classifier performance reduction as the DA unit power is decreased."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Micropower Programmable DSP",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Recognition performance tradeoffs with DA unit power (simulated)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 4,
+      "caption": "Fig. 5. Signal processing chip architecture.",
+      "caption_bbox": [
+        38.1,
+        150.5,
+        181.9,
+        158.4
+      ],
+      "section_title": "V. VLSI IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "SENSOR DSP ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 3,
+          "sentence": "Fig. 5 shows the architecture of the sensor DSP chip, which follows the algorithmic architecture described in Section III."
+        },
+        {
+          "section_title": "SENSOR DSP ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 3,
+          "sentence": "Fig. 7 shows the power scaling for DA units with AMIRTHARAJAH AND CHANDRAKASAN: MICROPOWER PROGRAMMABLE DSP USING APPROXIMATE SIGNAL PROCESSING Fig. 5."
+        },
+        {
+          "section_title": "DSP TEST RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The tradeoff between recognition performance and power consumption shown in Fig. 5 was verified."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.7,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "digital signal processor (DSP)",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Signal processing chip architecture",
+        "key_specs": [
+          "5 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.67,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "Fig. 6. DA unit with clock gating.",
+      "caption_bbox": [
+        38.1,
+        357.3,
+        152.9,
+        365.2
+      ],
+      "section_title": "V. VLSI IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "SENSOR DSP ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 3,
+          "sentence": "Fig. 6 shows the implementation of a DA unit."
+        },
+        {
+          "section_title": "SENSOR DSP ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 3,
+          "sentence": "Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Micropower Programmable DSP",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "DA unit with clock gating",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. DA power versus MAC power scaling with filter length.",
+      "caption_bbox": [
+        38.1,
+        543.4,
+        246.1,
+        551.4
+      ],
+      "section_title": "V. VLSI IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "SENSOR DSP ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 3,
+          "sentence": "Fig. 7 shows the power scaling for DA units with AMIRTHARAJAH AND CHANDRAKASAN: MICROPOWER PROGRAMMABLE DSP USING APPROXIMATE SIGNAL PROCESSING Fig. 5."
+        },
+        {
+          "section_title": "SENSOR DSP ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 3,
+          "sentence": "Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "DA power versus MAC power scaling with filter length",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 5,
+      "caption": "Fig. 8. Full adder cell schematic.",
+      "caption_bbox": [
+        39.6,
+        402.8,
+        151.6,
+        410.8
+      ],
+      "section_title": "V. VLSI IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "VLSI IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The full adder design of Fig. 8 is a low-area low-switchedcapacitance implementation."
+        },
+        {
+          "section_title": "VLSI IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The low throughput requirements imply that pipelining is undesirable for this design, as the required clock loads and switched capacitance overhead would Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "arithmetic logic unit (ALU)",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Full adder cell schematic",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.79,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 6,
+      "caption": "Fig. 9. Positive edge-triggered flip-flop with asynchronous clear schematic.",
+      "caption_bbox": [
+        38.1,
+        332.2,
+        286.2,
+        340.2
+      ],
+      "section_title": "V. VLSI IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "VLSI IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 9 is a schematic of a typical edge-triggered flip-flop used in the DSP design."
+        },
+        {
+          "section_title": "VLSI IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "To eliminate these problems, the bitline (labeled BL in the figure) is precharged high, but through an AMIRTHARAJAH AND CHANDRAKASAN: MICROPOWER PROGRAMMABLE DSP USING APPROXIMATE SIGNAL PROCESSING Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "flip-flop",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Positive edge-triggered flip-flop with asynchronous clear schematic",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.79,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 6,
+      "caption": "Fig. 10. SRAM sensing circuit.",
+      "caption_bbox": [
+        301.1,
+        535.2,
+        407.4,
+        543.1
+      ],
+      "section_title": "V. VLSI IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "VLSI IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "A diagram of the circuit is shown in Fig. 10."
+        },
+        {
+          "section_title": "VLSI IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The second pass gate of the 6-T cell is not shown in Fig. 10 for clarity of presentation."
+        },
+        {
+          "section_title": "VLSI IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.7,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "SRAM",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "SRAM sensing circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.43,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 7,
+      "caption": "Fig. 11. Simulated SRAM read waveforms.",
+      "caption_bbox": [
+        39.6,
+        242.5,
+        184.6,
+        250.5
+      ],
+      "section_title": "V. VLSI IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "VLSI IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The simulation results of the read operation are presented in Fig. 11."
+        },
+        {
+          "section_title": "VLSI IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 12 shows the main contributions to power within a bank: predecoded address lines, normal Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.7,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "-waveform": -2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "SRAM",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated SRAM read waveforms",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 7,
+      "caption": "Fig. 12. SRAM bank schematic for high-level power estimation.",
+      "caption_bbox": [
+        39.6,
+        396.5,
+        250.8,
+        404.5
+      ],
+      "section_title": "V. VLSI IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "VLSI IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 12 shows a schematic representation of a single SRAM bank for purposes of power estimation."
+        },
+        {
+          "section_title": "VLSI IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 12 shows the main contributions to power within a bank: predecoded address lines, normal Fig. 11."
+        },
+        {
+          "section_title": "VLSI IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.7,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "SRAM",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "SRAM bank schematic for high-level power estimation",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.7,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 7,
+      "caption": "Fig. 13. Optimal size of SRAM banks for various levels of predecoding.",
+      "caption_bbox": [
+        302.6,
+        231.3,
+        538.6,
+        239.3
+      ],
+      "section_title": "V. VLSI IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "VLSI IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Since power consumption in this implementation is dominated by dynamic power dissipation, each , where is the acof the terms in (12) is proportional to is the capacitance associated with the switching tivity factor, IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 2, FEBRUARY 2004 Fig. 13."
+        },
+        {
+          "section_title": "VLSI IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 13 shows a plot of the estimated SRAM power for a fixed memory size and varying levels of bank partitioning and address predecoding."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "SRAM",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Optimal size of SRAM banks for various levels of predecoding",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 8,
+      "caption": "Fig. 14. Power reduction versus input quantization (simulated).",
+      "caption_bbox": [
+        38.1,
+        234.9,
+        245.7,
+        242.9
+      ],
+      "section_title": "VI. DSP TEST RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "DSP TEST RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 14 shows the simulated power reduction in the DA unit as fewer bits of the input are shifted into the filter."
+        },
+        {
+          "section_title": "DSP TEST RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "As expected, the power varies roughly linearly with AMIRTHARAJAH AND CHANDRAKASAN: MICROPOWER PROGRAMMABLE DSP USING APPROXIMATE SIGNAL PROCESSING Fig. 14."
+        },
+        {
+          "section_title": "DSP TEST RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The graph shows that the power decreases monotonically as the bitwidth decreases, however, the range of power scalability in relative terms (not absolute microwatts) is substantially less than in Fig. 14 because we have reduced the power of the filter so much that the microcontroller now dominates the total power."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.8,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "digital signal processor (DSP)",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Power reduction versus input quantization (simulated)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 8,
+      "caption": "Fig. 15. Measured sensor DSP chip power, DA unit and microcontroller active.",
+      "caption_bbox": [
+        38.1,
+        458.0,
+        289.2,
+        465.9
+      ],
+      "section_title": "VI. DSP TEST RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "DSP TEST RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 15."
+        },
+        {
+          "section_title": "DSP TEST RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 15 shows the measured power consumption of the DSP chip as it is configured for decreasing input data bitwidth."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "digital signal processor (DSP)",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured sensor DSP chip power, DA unit and microcontroller active",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 8,
+      "caption": "Fig. 16. Sensor DSP chip photograph.",
+      "caption_bbox": [
+        301.1,
+        236.3,
+        429.0,
+        244.2
+      ],
+      "section_title": "VI. DSP TEST RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "DSP TEST RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Only Fig. 16."
+        },
+        {
+          "section_title": "DSP TEST RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "A chip m technology is not photo is shown in Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -7.2,
+      "relevance_breakdown": {
+        "-photograph": -3.0,
+        "-chip photo": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "digital signal processor (DSP)",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Sensor DSP chip photograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 12,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

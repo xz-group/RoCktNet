@@ -1,0 +1,58 @@
+# 9.9 A 2.72fJ/conv 13b 2MS/s SAR ADC Using Dynamic Capacitive Comparator with Wide Input Common Mode Sewon Lee, Hyein Kang, Minjae Lee
+
+VENUE
+"2024"
+
+DOI
+"10.1109/ISSCC49657.2024.10454566"
+
+FIGURE NUMBER
+"Figure 9.9.2 shows the overall CSPC structure, consisting of the 1st and 2nd pre-ampliﬁers, gain-boosting, and a CMOS latch. Variation in VICM and PVT changes the output commonmode voltage of the 1st pre-ampliﬁer. Directly delivering these outputs (Vup,1+, Vup,1-, Vdn,1+, and Vdn,1-) to the latch could lead to decision failure or speed degradation due to the uncontrolled output common-mode voltage. To address this issue, a 2nd pre-ampliﬁer and a gain-boosting circuit were introduced. The 2nd pre-ampliﬁer uses a structure similar to the 1st pre-ampliﬁer, reducing the impact of the output common-mode voltage. Additionally, through positive-feedback-based gain-boosting, the outputs (Vdn,2+, Vdn,2-, Vup,2+, and Vup,2-) are shifted to the 0 or VDD domain, preventing the decision speed degradation at the latch. The CMOS Latch takes inputs from all outputs of the 2nd preampliﬁer without a clock for the self-timed operation. These gain stages help reduce the input-referred noise of the comparator."
+
+TYPE
+"A 2.72fJ/conv 13b 2MS/s SAR ADC"
+
+TECHNOLOGY
+"CMOS"
+
+SUB-BLOCKS
+[
+  "capacitor",
+  "transistor/MOSFET",
+  "bias circuit",
+  "differential pair",
+  "pre-amplifier",
+  "latch"
+]
+
+FUNCTION SUMMARY
+"A 2.72fJ/conv 13b 2MS/s SAR ADC"
+
+DESIGN PURPOSE
+"The 1st pre-ampliﬁer of the CSPC is proposed to alleviate the aforementioned issues, as shown in Fig. 9.9.1 (bottom-left)."
+
+METRICS
+[
+  "Energy per operation",
+  "Gain",
+  "Efficiency / ratio",
+  "Supply voltage",
+  "Capacitance"
+]
+
+NUMERICAL PERFORMANCE
+[
+  "2.72fJ",
+  "70.6dB",
+  "87.4%",
+  "85μV",
+  "0.75V",
+  "0.375V",
+  "222fF",
+  "285fF",
+  "95fF",
+  "20fF"
+]
+
+CONFIDENCE
+1.0

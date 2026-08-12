@@ -1,0 +1,196 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\RNDatasetPapers\\6487763.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output_rerun_128\\6487763",
+  "generated_at": "2026-07-29T22:45:38",
+  "paper_metadata": {
+    "title": "A 2.5-to-3.3GHz CMOS Class-D VCO Luca Fanori, Pietro Andreani",
+    "authors": [],
+    "abstract": "",
+    "keywords": [],
+    "doi": "",
+    "venue": "",
+    "year": 2013
+  },
+  "paper_circuit_context": {
+    "circuit_type": "2.5-to-3.3GHz CMOS Class-D VCO Luca Fanori, Pietro Andreani",
+    "technology": "CMOS, 65nm process",
+    "application_domain": "wireless, if",
+    "sub_blocks": [
+      "varactor",
+      "inductor",
+      "capacitor",
+      "transistor/MOSFET",
+      "LC tank / resonator",
+      "switch"
+    ],
+    "design_purpose": "",
+    "function_summary": "2.5-to-3.3GHz CMOS Class-D VCO Luca Fanori, Pietro Andreani",
+    "key_specs": [
+      "-3.3GHz",
+      "90%",
+      "3.2V",
+      "3V",
+      "2 ω",
+      "9%",
+      "0.77ω",
+      "10%",
+      "25%",
+      "-1V"
+    ]
+  },
+  "sections": [],
+  "figures": [
+    {
+      "id": 20,
+      "label": "Fig. 20",
+      "page": 0,
+      "caption": "Figure 20.1.3 shows the simplified expressions of phase noise and figure-ofmerit FoMD when C is wholly floating; even assuming a 25% contribution of each MOS switch to phase noise, FoMD is close to or even higher (if RL >> RC) than the ideal Class-B FoMB [5], for the same LC tank and the same values of RL and RC. Furthermore, compared to Class-B/C, the Class-D oscillator offers the great advantage of an unsurpassed design simplicity, disposing of any current-bias circuitry and bias voltages, which deteriorate the dynamic range and contribute to phase noise as well (and in fact, the practically achievable FoMB is several dB lower than the ideal FoMB). To fully exploit the Class-D performance, a tunable low-output-voltage DC-DC converter should be available; this is not, however, a serious burden, since such a converter is already needed for powering sub-1V digital logic in state-of-the-art radio ICs. The VCO has been designed in a standard 65nm CMOS process without any thick metal layer. The LC tank, employing a single-turn four-finger 0.59nH inductor, has a Q of 10-11 at 3GHz, estimated from post-layout simulations (including PCB) fitting the measured power consumption. The low-Vt MOS switches have a width of 1.35mm and a minimum length of 65nm, for a negligible contribution to the overall losses. The VCO is tunable between 2.5GHz and 3.3 GHz (27% tuning range) with a 6b MOM capacitor bank and a small AMOS varactor for continuous tuning. Figure 20.1.5 shows the phase noise plots at maximum and minimum oscillation frequencies, with a Vdd of 0.4V. While the phase noise in the 1/f2 region fits well with the simulations, the 1/f3 noise corner is around 2MHz, which is a factor of 7 higher than expected. A partial explanation is the presence of bond-wire inductors at Vdd and ground, whose impact was underestimated. On the other hand, it is possible that the 1/f MOS noise is not particularly carefully modeled in the regions where the switches are working, i.e. in subthreshold (very shortly) and in the triode/linear region. At any rate, the 1/f3 phase noise performance is expected to improve in finer CMOS processes, where the MOS device operates closer to the ideal swit-",
+      "caption_bbox": [
+        291.8,
+        111.8,
+        543.5,
+        404.8
+      ],
+      "section_title": "",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The schematic of the NMOS Class-D oscillator in Fig. 20.1.1 shows that it is equivalent to a Class-B oscillator without any current control."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Neglecting tank losses, the peak value of the oscillation waveforms (Figure 20.1.1) is approx. 3.2Vdd, while a value close to 3Vdd is achievable in practice (assuming a MOS threshold voltage Vt well below Vdd)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "To understand why, the Class-D oscillator during the two semi-periods of oscillation T1 and T2 is shown in Fig. 20.1.2, together with the waveform ILa of the current across inductor La (La = Lb = L/2). ch."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "As is clear from Fig. 20.1.2, T2 is somewhat longer than half of the semi-period of the sinusoidal current; circuit analysis shows that ωD = ωB √2/α, with α ≅1.30."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "A simplified but very accurate expression of the Class-D power consumption with Ca and Cb floating is shown in Fig. 20.1.3."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The voltage-domain ISFs for RLa and RCa are reported and plotted in Fig. 20.1.4."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 20.1.3 shows the simplified expressions of phase noise and figure-ofmerit FoMD when C is wholly floating; even assuming a 25% contribution of each MOS switch to phase noise, FoMD is close to or even higher (if RL >> RC) than the ideal Class-B FoMB [5], for the same LC tank and the same values of RL and RC."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 20.1.5 shows the phase noise plots at maximum and minimum oscillation frequencies, with a Vdd of 0.4V."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "A die micrograph of the VCO, with core dimensions 500μm×370μm, is shown in Fig. 20.1.7."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Solid-State Circuits, vol. 47, no.6, pp. 1295-1308, June 2012. 978-1-4673-4516-3/13/$31.00 ©2013 IEEE Figure 20.1.1: Class-D oscillator with voltage waveforms."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 20.1.3: Relevant formulas for the Class-D oscillator with floating tank capacitance."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 20.1.5: Phase noise plots at minimum and maximum oscillation frequencies."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "ISSCC 2013 / February 20, 2013 / 8:30 AM Figure 20.1.2: Class-D oscillator during the two half-periods of oscillation, with current waveform for inductor La."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 20.1.4: Impulse sensitivity functions for the voltage noise generated by inductor and capacitor losses (floating tank capacitance is assumed). 20 Figure 20.1.6: Current consumption, phase noise and figure-of-merit at minimum and maximum oscillation frequencies."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "DIGEST OF TECHNICAL PAPERS • ISSCC 2013 PAPER CONTINUATIONS Figure 20.1.7: Die micrograph of the VCO (core dimensions: 500μm × 370μm). • 2013 IEEE International Solid-State Circuits Conference 978-1-4673-4516-3/13/$31.00 ©2013 IEEE"
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -9.5,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-model": -1.5,
+        "-simplified": -1.0,
+        "-measured": -3.0,
+        "-layout": -2.0,
+        "-phase noise": -2.5,
+        "-tuning range": -2.5,
+        "references": 2.0
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, 65nm process",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "varactor",
+          "inductor",
+          "capacitor",
+          "transistor/MOSFET",
+          "LC tank / resonator",
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "1.3 shows the simplified expressions of phase noise and figure-ofmerit FoMD when C is wholly floating; even assuming a 25% contribution of each MOS switch to phase noise, FoMD is close to or even higher (if RL >> RC) than the ideal Class-B FoMB [5], for the same LC tank and the same values of RL and RC. Furthermore, ...",
+        "key_specs": [
+          "3.2V",
+          "3V",
+          "25%",
+          "0.4V",
+          "500μm",
+          "370μm"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.2,
+      "warnings": [
+        "Recommended figure was classified as 'result_plot', not a schematic; manual confirmation strongly recommended."
+      ]
+    }
+  ],
+  "recommended_figure_id": 20,
+  "warnings": [
+    "No figure scored positively as a proposed-circuit schematic; recommendation is low-confidence."
+  ]
+}

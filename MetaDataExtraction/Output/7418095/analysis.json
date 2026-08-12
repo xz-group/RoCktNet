@@ -1,0 +1,190 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\RNDatasetPapers\\7418095.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output_rerun_128\\7418095",
+  "generated_at": "2026-07-29T22:45:50",
+  "paper_metadata": {
+    "title": "An Ultra-Low-Power Receiver Using TransmittedReference and Shifted Limiters for In-Band Interference Resilience Dawei Ye, Ronan van der Zee, Bram Nauta",
+    "authors": [],
+    "abstract": "",
+    "keywords": [],
+    "doi": "",
+    "venue": "",
+    "year": 2016
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Ultra-Low-Power Receiver",
+    "technology": "CMOS, 65nm process",
+    "application_domain": "rf, wireless, if",
+    "sub_blocks": [
+      "inductor",
+      "output buffer",
+      "mixer",
+      "bias circuit",
+      "switch"
+    ],
+    "design_purpose": "",
+    "function_summary": "Ultra-Low-Power Receiver",
+    "key_specs": [
+      "1MHz",
+      "12dB",
+      "10dB",
+      "30dB",
+      "65nm",
+      "-45dB",
+      "-11dB",
+      "915MHz",
+      "20MHz",
+      "-3 v"
+    ]
+  },
+  "sections": [],
+  "figures": [
+    {
+      "id": 26,
+      "label": "Fig. 26",
+      "page": 0,
+      "caption": "Figure 26.2.1 shows the spread-spectrum transmitted-reference modulation. A spreading sequence is generated and transmitted together with a copy that is modulated with the data and shifted by a frequency Δω. Normally, to recover the data from a spread-spectrum-modulated signal, the spread sequence has to be locally generated as the reference to synchronize the received signal. It takes time to synchronize these two, which would prevent the extreme duty-cycling common in wireless sensor networks. In the TR system, the spread data and reference sequences are sent simultaneously, so synchronization can be instantaneous by using an x2 Envelope Detector (ED) that de-spreads the signal through crossmodulation. Further, because of the frequency offset Δω (=2π×1MHz), the signal of the RX is downconverted to Δω after the ED, avoiding sensitivity degradation caused by ﬂicker noise. Unlike [5], the interferer will be spread over a wide frequency range and then ﬁltered out by the IF ﬁlter, therefore the in-band SIR becomes largely independent of the frequency distance between the signal and interferer. Also, the increased bandwidth of the signal will make it more robust to fading dips in the channel. In front of the ED, considerable voltage gain is needed to obtain a decent NF [4,5], but this reduces the linearity. In the presence of a strong in-band interferer Vintcos(ωintt), the RF ampliﬁer will become a limiter, reducing the conversion gain of the signal (Gsig) more than the conversion gain of the interferer (Gint), which decreases the SIR, as shown in the left side of Fig. 26.2.2. However, when we shift the linear range of the ampliﬁer to higher amplitudes, as shown in the right part of Fig. 26.2.2, the peaks of the envelope are now in the linear range of this Shifted Limiter (SL), which can make the conversion gain of the signal (Gsig) larger than the conversion gain of the interferer (Gint), improving the SIR [6]. The SL hardly consumes extra power to improve the SIR since the linear range of the limiter is not increased but just shifted by Vint, which can be easily implemented by adjusting the DC biasing voltage, as will be shown next. Envelope tracking is needed, and needs to be fast enough to cope with varying interferer levels. The performance is ultimately limited by this tracking speed.",
+      "caption_bbox": [
+        28.0,
+        348.0,
+        279.8,
+        641.0
+      ],
+      "section_title": "",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 26.2.1 shows the spread-spectrum transmitted-reference modulation."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "In the presence of a strong in-band interferer Vintcos(ωintt), the RF ampliﬁer will become a limiter, reducing the conversion gain of the signal (Gsig) more than the conversion gain of the interferer (Gint), which decreases the SIR, as shown in the left side of Fig. 26.2.2."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "However, when we shift the linear range of the ampliﬁer to higher amplitudes, as shown in the right part of Fig. 26.2.2, the peaks of the envelope are now in the linear range of this Shifted Limiter (SL), which can make the conversion gain of the signal (Gsig) larger than the conversion gain of the interferer (Gint), improving the SIR [6]."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 26.2.3 shows the RX front-end combining the Transmitted Reference and Shifted Limiter techniques."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The maximum SIR improvement (Gsig/Gint) of one SL is limited by Vclip (see Fig. 26.2.2), but multiple SLs can further increase the SIR."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The proposed RX was fabricated in CMOS 65nm technology (micrograph shown in Fig. 26.2.7)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 26.2.4 shows the SIR improvement of the SLs (path 3) from the antenna input to the output of the 4th SL for sinusoidal signal and interferer."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 26.2.5 (left side) shows the measured SIR for sinusoidal interferers at different frequencies for paths 1, 2 and 3."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "This is shown in the right side of Fig. 26.2.5, which shows good performance for ASK-modulated interferers (50% modulation depth, 920MHz centre frequency) up to a bandwidth of 1MHz."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 26.2.6 shows a comparison with other ULP radios."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Blachman, “Band-Pass Nonlinearities”, IEEE Trans. on Information Theory, vol. 10, no. 2, pp.162-164, April 1964. • 2016 IEEE International Solid-State Circuits Conference 978-1-4673-9467-3/16/$31.00 ©2016 IEEE Figure 26.2.1: Principle of the Transmitted-Reference (TR) system."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 26.2.3: Schematic of the receiver."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 26.2.5: Measured permissible Signal-to-Interference-Ratio."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "ISSCC 2016 / February 3, 2016 / 2:00 PM Figure 26.2.2: Principle of the Shifted Limiter (SL)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 26.2.4: Measured SIR improvement of shifted limiters using two-tone input. 26 Figure 26.2.6: Performance comparison table of state-of-the-art."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "DIGEST OF TECHNICAL PAPERS • ISSCC 2016 PAPER CONTINUATIONS Figure 26.2.7: Die micrograph. • 2016 IEEE International Solid-State Circuits Conference 978-1-4673-9467-3/16/$31.00 ©2016 IEEE"
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.5,
+      "relevance_breakdown": {
+        "-reference": -1.0,
+        "-spectrum": -2.5,
+        "references": 2.0
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "sensor",
+        "technology": "CMOS, 65nm process",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [
+          "bias circuit"
+        ],
+        "design_purpose": "",
+        "function_summary": "2.1 shows the spread-spectrum transmitted-reference modulation. A spreading sequence is generated and transmitted together with a copy that is modulated with the data and shifted by a frequency Δω. Normally, to recover the data from a spread-spectrum-modulated signal, the spread sequence has to be locally generated as ...",
+        "key_specs": [
+          "65nm",
+          "50%",
+          "920MHz",
+          "1MHz"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.2,
+      "warnings": [
+        "Recommended figure caption does not explicitly mention a schematic/topology/circuit; please confirm manually.",
+        "Recommended figure was classified as 'result_plot', not a schematic; manual confirmation strongly recommended."
+      ]
+    }
+  ],
+  "recommended_figure_id": 26,
+  "warnings": [
+    "No figure scored positively as a proposed-circuit schematic; recommendation is low-confidence."
+  ]
+}

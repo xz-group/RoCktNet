@@ -1,0 +1,1079 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\997850.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\997850",
+  "generated_at": "2026-07-29T22:03:49",
+  "paper_metadata": {
+    "title": "A 0-dB IL 2140 30 MHz Bandpass Filter Utilizing Q-Enhanced Spiral Inductors in Standard CMOS",
+    "authors": [
+      "Theerachet Soorapanth",
+      "S. Simon Wong"
+    ],
+    "abstract": "A 3-pole Chebyshev bandpass filter, that employs on-chip passive elements with -enhancement technique, achieves an insertion loss of 0 dB and a passband of 60 MHz around a center frequency of 2140 MHz. The -enhancement technique is based on coupled-inductor negative resistance generator. In contrast to conventional negative resistance generator, this technique compensates resonator loss without introducing distortion in the filter response in the passband. Fabricated in a 0.25m CMOS, the filter consumes 7 mA from a 2.5-V supply. The filter occupies an area of 1.3 mm 2.7 mm. Terms—Bandpass filters, CMOS analog integrated Index circuits, coupled inductor, negative resistance, enhancement, resonator, spiral inductor, W-CDMA.",
+    "keywords": [],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2002
+  },
+  "paper_circuit_context": {
+    "circuit_type": "0-dB IL 2140 30 MHz Bandpass Filter Utilizing Q-Enhanced Spiral Inductors in Standard CMOS",
+    "technology": "CMOS",
+    "application_domain": "rf, wireless, if",
+    "sub_blocks": [
+      "inductor",
+      "capacitor",
+      "transistor/MOSFET",
+      "LC tank / resonator",
+      "bias circuit",
+      "varactor",
+      "cross-coupled pair",
+      "transformer"
+    ],
+    "design_purpose": "",
+    "function_summary": "0-dB IL 2140 30 MHz Bandpass Filter Utilizing Q-Enhanced Spiral Inductors in Standard CMOS: A 3-pole Chebyshev bandpass filter, that employs on-chip passive elements with -enhancement technique, achieves an insertion loss of 0 dB and a passband of 60 MHz around a center frequency of 2140 MHz.",
+    "key_specs": [
+      "30 MHz",
+      "0 dB",
+      "60 MHz",
+      "2140 MHz",
+      "270 ph",
+      "40 dB",
+      "1.3 dB",
+      "2 GHz",
+      "5 w",
+      "2.5 GHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "R F FILTERS are one of the key functional blocks in wireless communication systems and are used to attenuate interference signal in undesired frequency bands while allowing signals in desired frequency bands to pass through with minimal loss. Currently, commercial RF filters are implemented in various discrete technologies including surface-acoustic-wave (SAW) filters and ceramic filters. The inte ..."
+    },
+    {
+      "number": "II",
+      "title": "LOSS COMPENSATION USING NEGATIVE RESISTANCES",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "An on-chip spiral inductor can be physically modeled as represents the ohmic shown in Fig. 2. The series resistance loss of the metal and the loss due to eddy current in the represents the loss associated with substrate, whereas substrate resistance. With the help of a patterned ground shield, the substrate resistive loss can be minimized by shielding the electric field from the lossy substrate [1 ..."
+    },
+    {
+      "number": "III",
+      "title": "COUPLED-INDUCTOR NEGATIVE RESISTANCE GENERATOR",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "Fig. 6(a) shows the proposed -enhancement technique to generate a negative resistance to cancel the series resistance of an on-chip spiral inductor, by utilizing two coupled inductors. The quality of the primary inductor can be greatly enhanced by coupling energy from the secondary inductor. The effective , inductance , and quality factor series resistance seen from the primary inductor terminals  ..."
+    },
+    {
+      "number": "IV",
+      "title": "CIRCUIT IMPLEMENTATION",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "A circuit implementation of (4) is shown in Fig. 7(a), where the current in the primary inductor flows through an effective which creates a voltage drop that is 90 out series capacitor of phase. The nMOS transistor, in turn, creates a current in out of phase from the the secondary inductor that is also 90 primary inductor current. The negative resistance generated which is independent of frequency ..."
+    },
+    {
+      "number": "V",
+      "title": "BANDPASS FILTER DESIGN",
+      "kind": "design",
+      "page": 3,
+      "text_preview": "A filter can be constructed using the aforementioned -enhanced resonator as the filter building block. Two common bandpass filter topologies are ladder and narrowband-coupled-resonator topologies (Fig. 9). The ladder topology [Fig. 9(a)] utilizes both series and parallel resonators. The SOORAPANTH AND WONG: BANDPASS FILTER UTILIZING -ENHANCED SPIRAL INDUCTORS Fig. 10. Shunt-C-coupled bandpass filt ..."
+    },
+    {
+      "number": "VI",
+      "title": "MEASUREMENTS",
+      "kind": "results",
+      "page": 5,
+      "text_preview": "Fig. 14 plots bandpass filter insertion and return losses which were measured using a vector network analyzer thru on-wafer -enhancement, the filter achieves a 0-dB inprobing. Through sertion loss, a 12-dB return loss, and a 0.7-dB in-band ripple. Filter attenuation at 1.9 and 2.5 GHz are 24 and 27 dB, respectively. As shown in Fig. 15, the filter achieves an input 4.9 dBm and a 1-dB compresthird- ..."
+    },
+    {
+      "number": "VII",
+      "title": "AUTOMATIC FILTER TUNING",
+      "kind": "other",
+      "page": 6,
+      "text_preview": "To obtain accurate frequency response and provide correction for any manufacturing process tolerances and operating conditions, an automatic filter tuning mechanism is required for real commercial applications. One tuning loop provides tracking of the resonator center frequency and another provides loss conat maximum. Voltagetrol to keep the resonator enhanced controlled filter (VCF) tuning [8] an ..."
+    },
+    {
+      "number": "VIII",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 6,
+      "text_preview": "A fully integrated 2140 30 MHz CMOS bandpass filter -enhanced resonators has been presented. The filter consists of which utilize coupled inductors to enhance the effective quality factor without introducing distortion in filter response associ- -enhancement schemes. ated with conventional APPENDIX SHUNT-C-COUPLED BPF DESIGN A bandpass filter design begins with filter specifications including cent ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Impact of resonator Q on filter loss.",
+      "caption_bbox": [
+        301.1,
+        321.2,
+        446.0,
+        331.9
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "As illustrated in Fig. 1, a typical on-chip quality factor of 6 in CMOS yields 27-dB insertion loss Manuscript received August, 2001; revised Dec., 2001."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "type_match:filter": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [
+          "LC tank / resonator"
+        ],
+        "design_purpose": "",
+        "function_summary": "Impact of resonator Q on filter loss",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 0,
+      "caption": "Fig. 2. Top view of an on-chip spiral inductor and its physical model.",
+      "caption_bbox": [
+        301.1,
+        451.9,
+        527.9,
+        462.6
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 2."
+        },
+        {
+          "section_title": "LOSS COMPENSATION USING NEGATIVE RESISTANCES",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "An on-chip spiral inductor can be physically modeled as represents the ohmic shown in Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "-model": -1.5,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "on-chip inductor",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [
+          "inductor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Top view of an on-chip spiral inductor and its physical model",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Typical negative resistance/conductance generators.",
+      "caption_bbox": [
+        39.6,
+        203.5,
+        233.5,
+        214.1
+      ],
+      "section_title": "II. LOSS COMPENSATION USING NEGATIVE RESISTANCES",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "LOSS COMPENSATION USING NEGATIVE RESISTANCES",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Thus, the only , and dominant loss is the loss due to the series resistance to cancel it, it is necessary to implement a loss compensation mechanism that effectively introduces a negative resistance of . the same magnitude in series with Fig. 3."
+        },
+        {
+          "section_title": "LOSS COMPENSATION USING NEGATIVE RESISTANCES",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Two common negative resistance/conductance generators are shown in Fig. 3."
+        },
+        {
+          "section_title": "LOSS COMPENSATION USING NEGATIVE RESISTANCES",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The cross-coupled differential nMOS pair in Fig. 3(a) is widely used in integrated LC oscillators to generate a negaacross the drains of the nMOS pair. tive conductance of The circuit in Fig. 3(b), commonly seen in a form of Colpitts oscillator, implements a negative resistance of looking into the gate of the nMOS."
+        },
+        {
+          "section_title": "LOSS COMPENSATION USING NEGATIVE RESISTANCES",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Filters using the circuit shown in Fig. 3(b) possess a nonflat passband because the generated negative resistance is strongly frequency dependent."
+        },
+        {
+          "section_title": "LOSS COMPENSATION USING NEGATIVE RESISTANCES",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Although the negative conductance in Fig. 3(a) is frequency independent, it presents a frequency-dependent negative resistance in series with a positive resistance of an inductor connected across the cross-coupled nMOS pair, causing the filter passband to be distorted, as illustrated in Fig. 4 [6]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.5,
+      "relevance_breakdown": {
+        "-conductance": -1.5,
+        "references": 2.0
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "on-chip inductor",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [
+          "inductor",
+          "transistor/MOSFET",
+          "cross-coupled pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "Typical negative resistance/conductance generators",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.03,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 1,
+      "caption": "Fig. 4. Passband distortion due to frequency-dependent negative resistance.",
+      "caption_bbox": [
+        39.6,
+        388.2,
+        285.1,
+        398.8
+      ],
+      "section_title": "II. LOSS COMPENSATION USING NEGATIVE RESISTANCES",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "LOSS COMPENSATION USING NEGATIVE RESISTANCES",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 4."
+        },
+        {
+          "section_title": "LOSS COMPENSATION USING NEGATIVE RESISTANCES",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Although the negative conductance in Fig. 3(a) is frequency independent, it presents a frequency-dependent negative resistance in series with a positive resistance of an inductor connected across the cross-coupled nMOS pair, causing the filter passband to be distorted, as illustrated in Fig. 4 [6]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "on-chip inductor",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [
+          "inductor",
+          "transistor/MOSFET",
+          "cross-coupled pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "Passband distortion due to frequency-dependent negative resistance",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 1,
+      "caption": "Fig. 5. Series-to-parallel transformation of an R-L network.",
+      "caption_bbox": [
+        302.6,
+        228.3,
+        498.7,
+        238.9
+      ],
+      "section_title": "II. LOSS COMPENSATION USING NEGATIVE RESISTANCES",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "LOSS COMPENSATION USING NEGATIVE RESISTANCES",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 5 illuscompensatrates the frequency dependency of the negativetion by considering a series-to-parallel transformation of a series RL network to a parallel RL equivalent circuit."
+        },
+        {
+          "section_title": "LOSS COMPENSATION USING NEGATIVE RESISTANCES",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 5, MAY 2002 Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "0-dB IL 2140 30 MHz Bandpass Filter Utilizing Q-Enhanced Spiral Inductors in Standard CMOS",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Series-to-parallel transformation of an R-L network",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 1,
+      "caption": "Fig. 6. (a) Coupled-inductor negative resistance generator. (b) Effective series resistance, inductance, and quality factor.",
+      "caption_bbox": [
+        302.6,
+        434.9,
+        553.7,
+        454.5
+      ],
+      "section_title": "II. LOSS COMPENSATION USING NEGATIVE RESISTANCES",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "LOSS COMPENSATION USING NEGATIVE RESISTANCES",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 6."
+        },
+        {
+          "section_title": "COUPLED-INDUCTOR NEGATIVE RESISTANCE GENERATOR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 6(a) shows the proposed -enhancement technique to generate a negative resistance to cancel the series resistance of an on-chip spiral inductor, by utilizing two coupled inductors."
+        },
+        {
+          "section_title": "COUPLED-INDUCTOR NEGATIVE RESISTANCE GENERATOR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 6(b) illustrates as a function of ."
+        },
+        {
+          "section_title": "COUPLED-INDUCTOR NEGATIVE RESISTANCE GENERATOR",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "According to Fig. 6(b), when is near 90 , satisthe effective resistance reaches a minimum value [0 if fies (4)], whereas the effective inductance remains the same as its intrinsic value and the effective quality factor is maximized. deviates from 90 , the effective inOn the other hand, when ductance can vary from its intrinsic value and the effective resistance is no longer minimum."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.6,
+      "relevance_breakdown": {
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "on-chip inductor",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [
+          "inductor"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) Coupled-inductor negative resistance generator. (b) Effective series resistance, inductance, and quality factor",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 2,
+      "caption": "Fig. 7. Circuit implementations of Q-enhanced resonator. (a) Single-ended. (b) Differential.",
+      "caption_bbox": [
+        301.1,
+        239.1,
+        552.2,
+        258.7
+      ],
+      "section_title": "III. COUPLED-INDUCTOR NEGATIVE RESISTANCE GENERATOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "A circuit implementation of (4) is shown in Fig. 7(a), where the current in the primary inductor flows through an effective which creates a voltage drop that is 90 out series capacitor of phase."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "However, due to can parasitic capacitance, there is a constraint on how small a can be chosen in practice. be achieved and thus how large an Moreover, due to parasitic capacitances of the inductors at the drain terminal, the actual required transconductance will Fig. 7."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 7(b) illustrates -enhanced resonator a differential implementation of the using two single-ended resonators of Fig. 7(a) with a slight modification."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Together with the RF chokes shown in Fig. 7(b), the secondary inductors form a passive current subtractor, allowing only differential current to flow through."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The circuit shown in Fig. 7(a) has been implemented in a m CMOS process."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Insertion Loss of When using the circuit in Fig. 7(a) as a series LC resonator, the resonator insertion loss can be derived from the inverse ratio Fig. 8."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "In contrast, this component is minimized in the differential resonator of Fig. 7(b) as even-order nonlinearities are suppressed."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.0,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "references": 2.0
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "on-chip inductor",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [
+          "inductor",
+          "capacitor",
+          "LC tank / resonator"
+        ],
+        "design_purpose": "",
+        "function_summary": "Circuit implementations of Q-enhanced resonator. (a) Single-ended. (b) Differential",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.65,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. Measured jS j of notch filter using Q-enhanced resonator.",
+      "caption_bbox": [
+        39.6,
+        244.9,
+        259.0,
+        255.5
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 8 illustrates the measured notch filter."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Insertion Loss of When using the circuit in Fig. 7(a) as a series LC resonator, the resonator insertion loss can be derived from the inverse ratio Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.3,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "type_match:filter": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [
+          "LC tank / resonator"
+        ],
+        "design_purpose": "",
+        "function_summary": "Measured jS j of notch filter using Q-enhanced resonator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 3,
+      "caption": "Fig. 9. Bandpass filter topologies. (a) Ladder. (b) Top-C-coupled. (c) Top-L-coupled. (d) Shunt-C-coupled.",
+      "caption_bbox": [
+        302.6,
+        184.7,
+        553.7,
+        204.3
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "(8) IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 5, MAY 2002 Fig. 9."
+        },
+        {
+          "section_title": "BANDPASS FILTER DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Two common bandpass filter topologies are ladder and narrowband-coupled-resonator topologies (Fig. 9)."
+        },
+        {
+          "section_title": "BANDPASS FILTER DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The ladder topology [Fig. 9(a)] utilizes both series and parallel resonators."
+        },
+        {
+          "section_title": "BANDPASS FILTER DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The first type is called top-C-coupled topology [Fig. 9(b)] where a capacitor is used to couple parallel resonators together."
+        },
+        {
+          "section_title": "BANDPASS FILTER DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Inductors can also be used to couple resonators together, resulting in top-L coupled topology [Fig. 9(c)]."
+        },
+        {
+          "section_title": "BANDPASS FILTER DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Furthermore, this topology maximizes, rather than minimizes, the number of inductors that -enhanced. need to be A more suitable topology is a shunt-C-coupled topology [Figs. 9(d) and 10] where only series resonators are used and shunt capacitors are reasonably sized for on-chip realization."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.5,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "type_match:filter": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [
+          "inductor",
+          "capacitor",
+          "LC tank / resonator"
+        ],
+        "design_purpose": "",
+        "function_summary": "Bandpass filter topologies. (a) Ladder. (b) Top-C-coupled. (c) Top-L-coupled. (d) Shunt-C-coupled",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.82,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10. Shunt-C-coupled bandpass filter.",
+      "caption_bbox": [
+        38.1,
+        230.2,
+        175.9,
+        240.9
+      ],
+      "section_title": "V. BANDPASS FILTER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "BANDPASS FILTER DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The SOORAPANTH AND WONG: BANDPASS FILTER UTILIZING -ENHANCED SPIRAL INDUCTORS Fig. 10."
+        },
+        {
+          "section_title": "BANDPASS FILTER DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The shunt capacitors are part elements in Fig. 10."
+        },
+        {
+          "section_title": "BANDPASS FILTER DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Noise Factor of Noise factor of shunt-C-coupled bandpass filter using the -enhanced resonator can be expressed as (15) is the resonator noise factor and is the path where voltage gain, as illustrated in Fig. 10. -Enhancement Control C."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 6,
+          "sentence": "From the lowin (18), a bandpass filter pass filter component denoted by component in Fig. 10 can be computed as follows."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.1,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "type_match:filter": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [
+          "inductor",
+          "capacitor",
+          "LC tank / resonator"
+        ],
+        "design_purpose": "",
+        "function_summary": "Shunt-C-coupled bandpass filter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.75,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 4,
+      "caption": "Fig. 11. 2140 30 MHz third-order Chebyshev bandpass filters. (a) Single-ended. (b) Differential.",
+      "caption_bbox": [
+        301.1,
+        250.4,
+        552.2,
+        270.0
+      ],
+      "section_title": "V. BANDPASS FILTER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "BANDPASS FILTER DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Insertion Loss of Filter insertion loss in decibels can be approximated as dB (13) dB Fig. 11. 2140 30 MHz third-order Chebyshev bandpass filters."
+        },
+        {
+          "section_title": "BANDPASS FILTER DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Implementation To prove the concept, we have designed both single-ended and differential 3-pole Chebyshev bandpass filters with a center frequency of 2140 MHz and a bandwidth of 60 MHz for a WCDMA receive-band filter (Fig. 11)."
+        },
+        {
+          "section_title": "BANDPASS FILTER DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The filters as shown in Fig. 11 are implemented on both lightly doped nonepi and heavily doped epi substrates for comparison."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "2140 30 MHz third-order Chebyshev bandpass filters. (a) Single-ended. (b) Differential",
+        "key_specs": [
+          "30 MHz",
+          "2140 MHz",
+          "60 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 5,
+      "caption": "Fig. 12. Coupled-inductor structures. (a) Interleaved. (b) Tapped. (c) Stacked.",
+      "caption_bbox": [
+        39.6,
+        226.5,
+        290.7,
+        237.1
+      ],
+      "section_title": "V. BANDPASS FILTER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "BANDPASS FILTER DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The single-layer interleaved topology is chosen over the double-layer stacked topology in order to minimize parasitic capacitive coupling between the two coupled inductors while achieving a medium magnetic coupling (Fig. 12)."
+        },
+        {
+          "section_title": "BANDPASS FILTER DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Large capacitive coupling can cause the phase difference of the currents in the two inductors Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "on-chip inductor",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [
+          "inductor"
+        ],
+        "design_purpose": "The single-layer interleaved topology is chosen over the double-layer stacked topology in order to minimize parasitic capacitive coupling between the two coupled inductors while achieving a medium magnetic coupling (Fig. 12).",
+        "function_summary": "Coupled-inductor structures. (a) Interleaved. (b) Tapped. (c) Stacked. The single-layer interleaved topology is chosen over the double-layer stacked topology in order to minimize parasitic capacitive coupling between the two coupled inductors while achieving a medium magnetic coupling (Fig. 12).",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 5,
+      "caption": "Fig. 13. Microphotographs of fabricated filters. (a) Notch filter. (b) Bandpass filters.",
+      "caption_bbox": [
+        39.6,
+        392.7,
+        290.6,
+        412.3
+      ],
+      "section_title": "V. BANDPASS FILTER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "BANDPASS FILTER DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 13."
+        },
+        {
+          "section_title": "BANDPASS FILTER DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Die photographs are shown on Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "section:design": 1.5,
+        "type_match:filter": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Microphotographs of fabricated filters. (a) Notch filter. (b) Bandpass filters",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 5,
+      "caption": "Fig. 14. Measured bandpass filter insertion and return losses.",
+      "caption_bbox": [
+        302.6,
+        234.7,
+        503.2,
+        245.3
+      ],
+      "section_title": "V. BANDPASS FILTER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 14 plots bandpass filter insertion and return losses which were measured using a vector network analyzer thru on-wafer -enhancement, the filter achieves a 0-dB inprobing."
+        },
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Due to responding second-harmonic power level is the common-mode rejection property, the second harmonic of IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 5, MAY 2002 Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.3,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "type_match:filter": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured bandpass filter insertion and return losses",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 5,
+      "caption": "Fig. 15. 1-dB compression and third-order intercept points.",
+      "caption_bbox": [
+        302.6,
+        440.5,
+        497.5,
+        451.2
+      ],
+      "section_title": "V. BANDPASS FILTER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "As shown in Fig. 15, the filter achieves an input 4.9 dBm and a 1-dB compresthird-order intercept point of 13.4 dBm."
+        },
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 15. 1-dB compression and third-order intercept points."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "1-dB compression and third-order intercept points",
+        "key_specs": [
+          "4.9 dBm",
+          "13.4 dBm"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 5,
+      "caption": "Fig. 16. Single-ended filter output spectrum at 1-dB compression point.",
+      "caption_bbox": [
+        302.6,
+        672.8,
+        536.7,
+        683.5
+      ],
+      "section_title": "VI. MEASUREMENTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 16 illustrates the single-ended sion point of filter output spectrum at 1-dB compression point, and the cor46 dBc."
+        },
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.7,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "type_match:filter": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Single-ended filter output spectrum at 1-dB compression point",
+        "key_specs": [
+          "46 dBc"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 6,
+      "caption": "Fig. 17. Block diagram of a filter with automatic tuning.",
+      "caption_bbox": [
+        301.1,
+        246.3,
+        487.3,
+        256.9
+      ],
+      "section_title": "VI. MEASUREMENTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "AUTOMATIC FILTER TUNING",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "On the contrary, VCO tuning does not have these problems and can be used for both frequency and loss control, as shown in Fig. 17."
+        },
+        {
+          "section_title": "AUTOMATIC FILTER TUNING",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "The loss control is implemented by obtaining envelope information Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:results": -2.0,
+        "type_match:filter": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of a filter with automatic tuning",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 7,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

@@ -1,0 +1,845 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1347326.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1347326",
+  "generated_at": "2026-07-29T22:02:03",
+  "paper_metadata": {
+    "title": "Analysis and Design of HBT Cherry–Hooper Amplifiers With Emitter-Follower Feedback for Optical Communications",
+    "authors": [
+      "Chris D. Holdenried",
+      "James W. Haslett",
+      "Michael W. Lynch"
+    ],
+    "abstract": "In this article, the large-signal, small-signal, and noise performance of the Cherry–Hooper amplifier with emitter-follower feedback are analyzed from a design perspective. A method for choosing the component values to obtain a low group delay distortion or Bessel transfer function is given. The design theory is illustrated with an implementation of the circuit in a 47-GHz SiGe process. The amplifier has 19.7-dB gain, 13.7-GHz bandwidth, and 10-ps group delay distortion. The amplifier core consumes 34 mW from a 3.3-V supply.",
+    "keywords": [
+      "Bessel response",
+      "Cherry–Hooper",
+      "emitter-follower feedback",
+      "optical communications",
+      "SiGe HBT"
+    ],
+    "doi": "10.1109/JSSC.2004.835819",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2004
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Analysis and Design of HBT Cherry–Hooper Amplifiers",
+    "technology": "SIGE, HBT",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "output buffer",
+      "bias circuit",
+      "current source",
+      "differential pair"
+    ],
+    "design_purpose": "A method for choosing the component values to obtain a low group delay distortion or Bessel transfer function is given.",
+    "function_summary": "Analysis and Design of HBT Cherry–Hooper Amplifiers: A method for choosing the component values to obtain a low group delay distortion or Bessel transfer function is given.",
+    "key_specs": [
+      "34 mW",
+      "26 mV",
+      "50%",
+      "-75%",
+      "15 fF",
+      "25 fF",
+      "14.5 GHz",
+      "24.0 dB",
+      "12.9 GHz",
+      "20.5 dB"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE CHERRY–HOOPER ampliﬁer with emitter-follower feedback (CHEF), shown in Fig. 1, is widely used in limiting ampliﬁers and decision circuits in ﬁber-optic receivers [1]–[4]. The use of these ampliﬁers operating at 40 Gb/s in InP technology has recently been demonstrated [5], [6]. The , an addition suggested ampliﬁer shown includes resistor by Greshishchev and Schvan in order to raise the gain [7 ..."
+    },
+    {
+      "number": "II",
+      "title": "LARGE-SIGNAL PERFORMANCE",
+      "kind": "results",
+      "page": 0,
+      "text_preview": "The large-signal performance of the ampliﬁer may be understood by ﬁrst considering the dc transfer characteristic. In Fig. 1, uppercase variables are used to represent dc voltages and currents. In Appendix I, (1) and (2) are derived for the ampliﬁer in Fig. 1. (1) (2) In these equations, is the dc common emitter current gain is the thermal voltage of approximately of the transistors and 26 mV at r ..."
+    },
+    {
+      "number": "III",
+      "title": "SMALL-SIGNAL ANALYSIS",
+      "kind": "proposed",
+      "page": 1,
+      "text_preview": "Fig. 2 shows the small-signal differential-mode half circuit of the ampliﬁer with only the dominant parasitics. It is assumed that the circuit is symmetrical, so that the small-signal paramand , for example, are equal. In the following eters of will be deanalysis, the base-emitter capacitance of transistor , the base-collector capacitance as , and the noted as collector-substrate capacitance as .  ..."
+    },
+    {
+      "number": "IV",
+      "title": "AMPLIFIER NOISE PERFORMANCE",
+      "kind": "results",
+      "page": 3,
+      "text_preview": "The CHEF ampliﬁer often follows the transimpedance ampliﬁer (TIA) in a ﬁber optic receiver. Hence, in addition to having a good frequency response, low-noise operation is desired in the ﬁrst ampliﬁer following the TIA. In this section, a simple expression is given for the output noise power spectral density (PSD) of the ampliﬁer. In the following analysis, the mean square thermal noise will be exp ..."
+    },
+    {
+      "number": "V",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 4,
+      "text_preview": "The design described in Section III-A was fabricated in a SiGe process. The schematic diagram of the ampli47-GHz ﬁer is shown in Fig. 8. The input of the circuit is an emitter-follower input buffer, with resistors and a capacitor arranged to maintain an impedance match up to 10 GHz when the input resistor leads are wire bonded. It was found that if a simple 50was used, the parasitic capacitance at ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 6,
+      "text_preview": "When used for optical transceiver applications, the CHEF ampliﬁer must have high gain and bandwidth, low noise, and acceptable large-signal behavior. Design techniques for achieving all of these goals simultaneously were given in this paper. A pair of complex poles was found to dominate the ampliﬁer frequency response. The relative values of resistors which result in optimum pole quality factor we ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Cherry–Hooper ampliﬁer with emitter-follower feedback.",
+      "caption_bbox": [
+        301.1,
+        347.4,
+        513.6,
+        355.4
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "T HE CHERRY–HOOPER ampliﬁer with emitter-follower feedback (CHEF), shown in Fig. 1, is widely used in limiting ampliﬁers and decision circuits in ﬁber-optic receivers [1]–[4]."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Digital Object Identiﬁer 10.1109/JSSC.2004.835819 Fig. 1."
+        },
+        {
+          "section_title": "LARGE-SIGNAL PERFORMANCE",
+          "section_kind": "results",
+          "page": 0,
+          "sentence": "In Fig. 1, uppercase variables are used to represent dc voltages and currents."
+        },
+        {
+          "section_title": "LARGE-SIGNAL PERFORMANCE",
+          "section_kind": "results",
+          "page": 0,
+          "sentence": "In Appendix I, (1) and (2) are derived for the ampliﬁer in Fig. 1."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 6,
+          "sentence": "APPENDIX I AMPLIFIER DC TRANSFER CHARACTERISTIC The notation labeled in Fig. 1 is used throughout this appendix."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.5,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "decision circuit",
+        "technology": "SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Cherry–Hooper ampliﬁer with emitter-follower feedback",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Ampliﬁer small-signal differential-mode half circuit including source and load impedances.",
+      "caption_bbox": [
+        302.6,
+        282.2,
+        553.7,
+        299.1
+      ],
+      "section_title": "II. LARGE-SIGNAL PERFORMANCE",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "SMALL-SIGNAL ANALYSIS",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 2 shows the small-signal differential-mode half circuit of the ampliﬁer with only the dominant parasitics."
+        },
+        {
+          "section_title": "SMALL-SIGNAL ANALYSIS",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Also in Fig. 2, the capacitance will be much less than base-emitter resistance for a transistor has been rewritten IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 11, NOVEMBER 2004 Fig. 2."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 6,
+          "sentence": "APPENDIX III DERIVATION OF (8) was found for the circuit in Using nodal analysis, Fig. 2 and is given by (20), shown at the bottom of the page."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 6,
+          "sentence": "Furthermore, in Fig. 2, emitter-follower feedback circuit."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.4,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-half circuit": -2.0,
+        "section:results": -2.0,
+        "references": 1.6
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "Analysis and Design of HBT Cherry–Hooper Amplifiers",
+        "technology": "SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Ampliﬁer small-signal differential-mode half circuit including source and load impedances",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Magnitude and group delay responses for a second-order system.",
+      "caption_bbox": [
+        38.1,
+        379.1,
+        274.3,
+        387.1
+      ],
+      "section_title": "III. SMALL-SIGNAL ANALYSIS",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "SMALL-SIGNAL ANALYSIS",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "With the as- , may be approximately sumption that expressed as (8) HOLDENRIED et al.: HBT CHERRY–HOOPER AMPLIFIERS WITH EMITTER-FOLLOWER FEEDBACK FOR OPTICAL COMMUNICATIONS Fig. 3."
+        },
+        {
+          "section_title": "SMALL-SIGNAL ANALYSIS",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 3 shows the magnitude and group and delay responses for such a system for different values of for rad s."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Magnitude and group delay responses for a second-order system",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Eye diagrams for a 10-Gb/s signal ﬁltered with second-order systems having (a) Q = 1= 3 and (b) Q = 1:0. p",
+      "caption_bbox": [
+        301.1,
+        338.1,
+        552.2,
+        355.2
+      ],
+      "section_title": "III. SMALL-SIGNAL ANALYSIS",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "SMALL-SIGNAL ANALYSIS",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "This is consistent with the observation of in the Greshishchev and Schvan, who noted that increasing had little effect on the bandwidth but range increased the gain signiﬁcantly [7]. are a complex conjugate The two poles in (8) located at pair for and they dominate the frequency response Fig. 4."
+        },
+        {
+          "section_title": "SMALL-SIGNAL ANALYSIS",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 4 shows eye diagrams of 10-Gb/s signals which have passed through second-order sysvalues of and , respectively, and with tems with rad s."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Analysis and Design of HBT Cherry–Hooper Amplifiers",
+        "technology": "SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Eye diagrams for a 10-Gb/s signal ﬁltered with second-order systems having (a) Q = 1= 3 and (b) Q = 1:0. p",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. .",
+      "caption_bbox": [
+        39.6,
+        278.9,
+        248.4,
+        286.9
+      ],
+      "section_title": "III. SMALL-SIGNAL ANALYSIS",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "SMALL-SIGNAL ANALYSIS",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The emitter length of and Plot of Q factor for different values of R , R , and R Fig. 5. . in the ﬁrst stage of a limiting ampliﬁer chain should be chosen based on noise considerations as well, as will be shown in Section IV."
+        },
+        {
+          "section_title": "SMALL-SIGNAL ANALYSIS",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Figs. 5–7 show , 3-dB bandwidth, and low-frequency gain, respecplots of for different values of ."
+        },
+        {
+          "section_title": "SMALL-SIGNAL ANALYSIS",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "From Fig. 5, it is , should be in seen that in order to have the range from 2.3 to 2.7."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 6,
+          "sentence": "When this was done, it was found that there are still two complex poles which largely determine the ampliﬁer frequency response and whose pole quality factor behaves in roughly the same way as shown in Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.6,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Analysis and Design of HBT Cherry–Hooper Amplifiers",
+        "technology": "SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "From Fig. 5, it is , should be in seen that in order to have the range from 2.3 to 2.7.",
+        "function_summary": ". From Fig. 5, it is , should be in seen that in order to have the range from 2.3 to 2.7.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.4,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6.",
+      "caption_bbox": [
+        302.6,
+        274.2,
+        323.3,
+        282.1
+      ],
+      "section_title": "III. SMALL-SIGNAL ANALYSIS",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "SMALL-SIGNAL ANALYSIS",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "From Figs. 6 and 7, it may be seen that for the bandwidth ranges from 11.5 to 14.5 GHz and . the gain ranges from 14.4 to 24.0 dB for different values of gives a reasonable compromise, Choosing leading to a theoretical bandwidth of 12.9 GHz and a gain of 20.5 dB. and need not be equal."
+        },
+        {
+          "section_title": "SMALL-SIGNAL ANALYSIS",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Analysis and Design of HBT Cherry–Hooper Amplifiers",
+        "technology": "SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": [
+          "14.5 GHz",
+          "24.0 dB",
+          "12.9 GHz",
+          "20.5 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. .",
+      "caption_bbox": [
+        302.6,
+        509.4,
+        545.2,
+        517.3
+      ],
+      "section_title": "III. SMALL-SIGNAL ANALYSIS",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "SMALL-SIGNAL ANALYSIS",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Plot of low-frequency gain for different values of R , R , and R Fig. 7. . , must be 3.0 mA to obtain near peak ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.4,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Analysis and Design of HBT Cherry–Hooper Amplifiers",
+        "technology": "SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "Plot of low-frequency gain for different values of R , R , and R Fig. 7. . , must be 3.0 mA to obtain near peak .",
+        "function_summary": ". Plot of low-frequency gain for different values of R , R , and R Fig. 7. . , must be 3.0 mA to obtain near peak .",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.17,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Schematic diagram of ampliﬁer test circuit.",
+      "caption_bbox": [
+        38.1,
+        367.0,
+        206.8,
+        375.0
+      ],
+      "section_title": "IV. AMPLIFIER NOISE PERFORMANCE",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "AMPLIFIER NOISE PERFORMANCE",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "HOLDENRIED et al.: HBT CHERRY–HOOPER AMPLIFIERS WITH EMITTER-FOLLOWER FEEDBACK FOR OPTICAL COMMUNICATIONS Fig. 8."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The schematic diagram of the ampli47-GHz ﬁer is shown in Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+circuit": 1.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematic diagram of ampliﬁer test circuit",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.4,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 5,
+      "caption": "Fig. 9. Integrated circuit microphotograph.",
+      "caption_bbox": [
+        39.6,
+        301.8,
+        182.2,
+        309.7
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "A microphotograph of the integrated circuit is shown in Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -7.1,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "section:results": -2.0,
+        "references": 0.4
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "integrated circuit / system",
+        "technology": "SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Integrated circuit microphotograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. Comparison of theoretical gain based on (6) and (20), simulated gain, and measured gain.",
+      "caption_bbox": [
+        302.6,
+        275.9,
+        553.7,
+        292.8
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 10 shows the theoretical transfer function of the ampliﬁer predicted by (6) and (20), the simulated transfer function with and without resistive and capacitive layout parasitics, and the deembedded measured transfer function."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The measured NF and output terminals were terminated in 50 IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 11, NOVEMBER 2004 Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -7.2,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Analysis and Design of HBT Cherry–Hooper Amplifiers",
+        "technology": "SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Comparison of theoretical gain based on (6) and (20), simulated gain, and measured gain",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 5,
+      "caption": "Fig. 11. Comparison of theoretical group delay based on (6) and (20), as well as simulated and measured group delay.",
+      "caption_bbox": [
+        302.6,
+        522.4,
+        553.7,
+        539.3
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 11 shows a comparison of the theoretical group delay, the simulated group delay with and without resistive and capacitive layout parasitics, and the measured group delay."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -7.2,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Analysis and Design of HBT Cherry–Hooper Amplifiers",
+        "technology": "SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Comparison of theoretical group delay based on (6) and (20), as well as simulated and measured group delay",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 6,
+      "caption": "Fig. 12. Measured eye diagrams at 10 Gb/s: (a) through measurement at 20 mVpp and single-ended ampliﬁer output for differential input signals of amplitude (b) 7 mVpp, (c) 20 mVpp, and (d) 400 mVpp.",
+      "caption_bbox": [
+        38.1,
+        569.9,
+        289.2,
+        595.8
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 12 shows measured eye diagrams for a data rate of was 10 GB/s."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 12(a) shows the signal at the output of the pattern generator, and Fig. 12(b)–(d) shows the single-ended ampliﬁer output eye for a differential input signal with amplitudes of 7, 20, and 400 mVpp, respectively."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "A bandwidth of 15 GHz could be HOLDENRIED et al.: HBT CHERRY–HOOPER AMPLIFIERS WITH EMITTER-FOLLOWER FEEDBACK FOR OPTICAL COMMUNICATIONS Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.8,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured eye diagrams at 10 Gb/s: (a) through measurement at 20 mVpp and single-ended ampliﬁer output for differential input signals of amplitude (b) 7 mVpp, (c) 20 mVpp, and (d) 400 mVpp",
+        "key_specs": [
+          "400 mV",
+          "15 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 7,
+      "caption": "Fig. 13. Schematic diagram of (a) emitter-follower output buffers and differential pair load and (b) high frequency small-signal circuit of one emitter-follower and a differential-mode half circuit of the differential pair.",
+      "caption_bbox": [
+        39.6,
+        351.8,
+        290.7,
+        377.7
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 6,
+          "sentence": "Fig. 13(a) shows one example, where the output of the emitter-follower is connected to a differential pair."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 6,
+          "sentence": "Fig. 13(b) shows the high-frequency small-signal circuit of one emitter-follower and a differential-mode half ciris cuit of the differential-pair input."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 6,
+          "sentence": "Using this circuit, given by (18) Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.2,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+circuit": 1.0,
+        "-half circuit": -2.0,
+        "section:conclusion": -1.0,
+        "references": 1.2
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "buffer",
+        "technology": "SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "output buffer",
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "Schematic diagram of (a) emitter-follower output buffers and differential pair load and (b) high frequency small-signal circuit of one emitter-follower and a differential-mode half circuit of the differential pair",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.14,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 7,
+      "caption": "Fig. 14. Half of the ampliﬁer small-signal circuit including dominant noise sources.",
+      "caption_bbox": [
+        302.6,
+        266.5,
+        553.7,
+        283.4
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 6,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 11, NOVEMBER 2004 Fig. 14."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 6,
+          "sentence": "APPENDIX IV EXAMPLE CALCULATION OF AN AMPLIFIER NOISE CONTRIBUTION Fig. 14 shows half of the small-signal circuit of the ampliﬁer including the dominant noise sources."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Half of the ampliﬁer small-signal circuit including dominant noise sources",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 8,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

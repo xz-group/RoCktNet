@@ -1,0 +1,875 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1253849.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1253849",
+  "generated_at": "2026-07-29T21:31:06",
+  "paper_metadata": {
+    "title": "A 69-mW 10-bit 80-MSample/s Pipelined CMOS ADC",
+    "authors": [
+      "Byung-Moo Min",
+      "Peter Kim",
+      "Frederick W. Bowman",
+      "David M. Boisvert",
+      "Arlo J. Aude"
+    ],
+    "abstract": "A 10-bit 80-MS/s analog-to-digital converter (ADC) with an areaand power-efficient architecture is described. By techniques include sharing an amplifier between two successive sharing an amplifier between two successive pipeline stages, pipeline stages to obtain an areaand power-efficient architeca 10-bit pipeline is realized using just four amplifiers with a ture. Using a high-bandwidth low-power telescopic amplifier, separate sample-and-hold block. The proposed feedback signal which exploits a wide-swing gain-boosting circuit and the polarity inverting (FSPI) technique addresses the drawback high transconductance and relatively low gate capacitance of the conventional amplifier sharing technique. A wide-swing wide-bandwidth telescopic amplifier and an early comparison of 0.18m channel length devices in a dual-gate-oxidation technique with a constant delay circuit have been developed to (DGO) CMOS process technology. An early comparison further reduce power consumption. The ADC is implemented in a scheme with high-precision current-controlled delay circuit 0.18m dual-gate-oxidation CMOS process technology, achieves shows much less sensitivity to the variation of power supply, 72.8-dBc spurious free dynamic range, 57.92-dBc signal-to-noise process, and temperature. Each of these techniques are preratio, 9.29 effective number of bits (ENOB) for a 99-MHz input at full sampling rate, and consumes 69 mW from a 3-V supply. The sented in terms of their motivation, principle of operation, and ADC occupies 1.85 mm2. related design considerations. This paper is organized as follows. Section II reviews the Terms—Analog-to-digital conversion, early comparIndex ison scheme with constant delay circuit, low-power pipelined pipelined ADC architecture, Section III describes the limits of analog-to-digital conversion, opamp sharing technique. the conventional amplifier sharing technique, while addressing how it can be improved, Section IV describes the design of the ADC including further power reduction techniques at the circuit",
+    "keywords": [],
+    "doi": "10.1109/JSSC.2003.819166",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "69-mW 10-bit 80-MSample/s Pipelined CMOS ADC",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "transistor/MOSFET",
+      "cross-coupled pair",
+      "current source",
+      "output buffer",
+      "switch",
+      "differential pair",
+      "op-amp",
+      "pre-amplifier",
+      "latch",
+      "clock / timing"
+    ],
+    "design_purpose": "By techniques include sharing an amplifier between two successive sharing an amplifier between two successive pipeline stages, pipeline stages to obtain an areaand power-efficient architeca 10-bit pipeline is realized using just four amplifiers with a ture.",
+    "function_summary": "69-mW 10-bit 80-MSample/s Pipelined CMOS ADC: By techniques include sharing an amplifier between two successive sharing an amplifier between two successive pipeline stages, pipeline stages to obtain an areaand power-efficient architeca 10-bit pipeline is realized using just four amplifiers with a ture.",
+    "key_specs": [
+      "69 mW",
+      "50%",
+      "200 MHz",
+      "65 dBc",
+      "32 mW",
+      "34%",
+      "3.6 V",
+      "58 dBc",
+      "73 dBc",
+      "68 dBc"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "H IGH-SPEED medium-resolution analog-to-digital converters (ADCs) are important in a wide variety of commercial applications including data communications and image signal processing. In such applications, the reduction of power consumption associated with high-speed sampling and quantization is one key design issue in enhancing portability and battery operation. In general, pipelined ADCs have pr ..."
+    },
+    {
+      "number": "II",
+      "title": "ARCHITECTURE REVIEW OF PIPELINED A/D CONVERSION",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "A typical pipeline architecture uses a number of similar pipelined stages as shown in Fig. 1. All of these pipelined stages are similar in structure, consisting of a sample-and-hold amplifier (SHA), a digital-to-analog converter (DAC), and ADC. Each stage performs a coarse quantization, a DAC function on the quantization result, subtraction, and amplification of the remainder. Fig. 1 illustrates t ..."
+    },
+    {
+      "number": "III",
+      "title": "AMPLIFIER SHARING TECHNIQUE",
+      "kind": "proposed",
+      "page": 1,
+      "text_preview": "Significant power reduction can be achieved by sharing an amplifier between successive stages in a pipelined ADC [3]. Amplifier sharing is motivated by the fact that in an SC architecture, the amplifier is used for only half of a clock cycle, which is during the amplification/integration phase. For example, in MIN et al.: 69-mW 10-bit 80-MS/s PIPELINED CMOS ADC TABLE I COMPARISON OF LOW-POWER ARCH ..."
+    },
+    {
+      "number": "IV",
+      "title": "FURTHER POWER-REDUCTION TECHNIQUES",
+      "kind": "proposed",
+      "page": 3,
+      "text_preview": "Fig. 4 shows the overall SC pipelined ADC architecture. The wide-band low-noise SHA is capable of IF sampling up to sampling 200 MHz with low distortion by using constant switches, which are designed to observe device reliability considerations and use a bootstrapping circuit similar to previous work [5]. Also, the SHA allows for a wide input common-mode and feedback range by using a separate samp ..."
+    },
+    {
+      "number": "V",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 5,
+      "text_preview": "The ADC has been fabricated in a 0.18m two-poly five-metal DGO CMOS process. The die photograph is shown in Fig. 10. The upper side shows the bandgap reference voltage generator and the reference buffer opamps, the center side has the SHA and the four opamp sharing stages, and the bottom shows the digital error correction logic block. The total active , area excluding the PAD and ESD cells is abou ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 7,
+      "text_preview": "A 10-bit 80-MS/s ADC with an areaand power-efficient architecture has been described. By sharing an amplifier between two successive pipeline stages, a 10-bit pipeline is realized IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 12, DECEMBER 2003 using just four amplifiers with a separate sample-and-hold block. The proposed feedback signal polarity inverting technique addresses the drawback of t ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Typical pipeline architecture implemented with an SC circuit.",
+      "caption_bbox": [
+        39.6,
+        222.7,
+        266.8,
+        233.3
+      ],
+      "section_title": "II. ARCHITECTURE REVIEW OF PIPELINED A/D CONVERSION",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ARCHITECTURE REVIEW OF PIPELINED A/D CONVERSION",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "A typical pipeline architecture uses a number of similar pipelined stages as shown in Fig. 1."
+        },
+        {
+          "section_title": "ARCHITECTURE REVIEW OF PIPELINED A/D CONVERSION",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 1 illustrates that these functions are implemented by a switched-capacitor (SC) circuit, with a bits per stage and an interstage gain of . resolution of The input signal is sampled on a set of capacitors of and simultaneously quantized into a per-stage resolution of bits through the ADC function."
+        },
+        {
+          "section_title": "ARCHITECTURE REVIEW OF PIPELINED A/D CONVERSION",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Then, Fig. 1."
+        },
+        {
+          "section_title": "ARCHITECTURE REVIEW OF PIPELINED A/D CONVERSION",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The feedoutput load capacitance, and of the th stage SC circuit shown in Fig. 1 is given back factor by (2) is the input capacitance of the opamp."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.6,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "+circuit": 1.0,
+        "section:proposed": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor",
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Typical pipeline architecture implemented with an SC circuit",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.86,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 2,
+      "caption": "Fig. 2. Motivation of opamp sharing technique.",
+      "caption_bbox": [
+        38.1,
+        376.1,
+        195.4,
+        386.7
+      ],
+      "section_title": "III. AMPLIFIER SHARING TECHNIQUE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "AMPLIFIER SHARING TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "For example, in MIN et al.: 69-mW 10-bit 80-MS/s PIPELINED CMOS ADC TABLE I COMPARISON OF LOW-POWER ARCHITECTURES FOR 10-bit 80-MS/s PIPELINED ADC Fig. 2."
+        },
+        {
+          "section_title": "AMPLIFIER SHARING TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 2, gain stage is in the sampling mode."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Motivation of opamp sharing technique",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Opamp sharing (FSPI) technique.",
+      "caption_bbox": [
+        301.1,
+        472.0,
+        437.7,
+        482.7
+      ],
+      "section_title": "III. AMPLIFIER SHARING TECHNIQUE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "AMPLIFIER SHARING TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "In order to solve this problem, we propose a feedback signal polarity inverting (FSPI) technique between two sharing phases, as shown in Fig. 3."
+        },
+        {
+          "section_title": "AMPLIFIER SHARING TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Therefore, in the 1.5-bit/stage architecture, the first and second th sample, and , are residue signals of the given by (4) Fig. 3."
+        },
+        {
+          "section_title": "AMPLIFIER SHARING TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 3 Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "69-mW 10-bit 80-MSample/s Pipelined CMOS ADC",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "op-amp"
+        ],
+        "design_purpose": "In order to solve this problem, we propose a feedback signal polarity inverting (FSPI) technique between two sharing phases, as shown in Fig. 3.",
+        "function_summary": "Opamp sharing (FSPI) technique. In order to solve this problem, we propose a feedback signal polarity inverting (FSPI) technique between two sharing phases, as shown in Fig. 3.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.31,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 3,
+      "caption": "Fig. 4. Block diagram of the ADC.",
+      "caption_bbox": [
+        39.6,
+        257.0,
+        158.4,
+        267.7
+      ],
+      "section_title": "III. AMPLIFIER SHARING TECHNIQUE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "AMPLIFIER SHARING TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 3 Fig. 4."
+        },
+        {
+          "section_title": "FURTHER POWER-REDUCTION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 3,
+          "sentence": "Fig. 4 shows the overall SC pipelined ADC architecture."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the ADC",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.69,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Scaling of pipeline stages.",
+      "caption_bbox": [
+        302.6,
+        424.5,
+        416.0,
+        435.1
+      ],
+      "section_title": "IV. FURTHER POWER-REDUCTION TECHNIQUES",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "FURTHER POWER-REDUCTION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 3,
+          "sentence": "In IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 12, DECEMBER 2003 Fig. 5."
+        },
+        {
+          "section_title": "FURTHER POWER-REDUCTION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 3,
+          "sentence": "Also, in order to further reduce the power consumption, the scaling technique for the opamps and the capacitors is applied as shown in Fig. 5 [7]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "69-mW 10-bit 80-MSample/s Pipelined CMOS ADC",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "Also, in order to further reduce the power consumption, the scaling technique for the opamps and the capacitors is applied as shown in Fig. 5 [7].",
+        "function_summary": "Scaling of pipeline stages. Also, in order to further reduce the power consumption, the scaling technique for the opamps and the capacitors is applied as shown in Fig. 5 [7].",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "Fig. 6. Low-power high-bandwidth opamp.",
+      "caption_bbox": [
+        301.1,
+        274.8,
+        445.2,
+        285.4
+      ],
+      "section_title": "IV. FURTHER POWER-REDUCTION TECHNIQUES",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "FURTHER POWER-REDUCTION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 3,
+          "sentence": "In this implementation, the conventional telescopic amplifier, shown in Fig. 6, has an improved dynamic range as differential well as bandwidth."
+        },
+        {
+          "section_title": "FURTHER POWER-REDUCTION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 3,
+          "sentence": "Fig. 6 shows the proposed amplifier architecture. m The nMOS inputs and the tail current source use 0.18channel length devices, which have lower threshold voltages Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "current source",
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Low-power high-bandwidth opamp",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 5,
+      "caption": "Fig. 7. Constant delay clock generation.",
+      "caption_bbox": [
+        39.6,
+        224.4,
+        173.6,
+        235.0
+      ],
+      "section_title": "IV. FURTHER POWER-REDUCTION TECHNIQUES",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "FURTHER POWER-REDUCTION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 3,
+          "sentence": "Simulation results show Fig. 7."
+        },
+        {
+          "section_title": "FURTHER POWER-REDUCTION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 3,
+          "sentence": "Fig. 7 shows the delay clock generation scheme for the early comparison."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "69-mW 10-bit 80-MSample/s Pipelined CMOS ADC",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Constant delay clock generation",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 5,
+      "caption": "Fig. 8. Early comparison with constant delay clock.",
+      "caption_bbox": [
+        39.6,
+        362.5,
+        210.8,
+        373.1
+      ],
+      "section_title": "IV. FURTHER POWER-REDUCTION TECHNIQUES",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "FURTHER POWER-REDUCTION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 3,
+          "sentence": "Fig. 8."
+        },
+        {
+          "section_title": "FURTHER POWER-REDUCTION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 3,
+          "sentence": "Fig. 8 shows a simulation graph of the output of SHA block and the delayed clock, which illustrates the early comparison timing."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "69-mW 10-bit 80-MSample/s Pipelined CMOS ADC",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Early comparison with constant delay clock",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 6,
+      "caption": "Fig. 9. Dynamic comparator. (a) Conventional. (b) Proposed.",
+      "caption_bbox": [
+        38.1,
+        244.4,
+        239.8,
+        255.0
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "FURTHER POWER-REDUCTION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 3,
+          "sentence": "In order to reduce power consumption, a dynamic comparator as shown in Fig. 9 is used in this ADC."
+        },
+        {
+          "section_title": "FURTHER POWER-REDUCTION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 3,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 12, DECEMBER 2003 The operating principle of the conventional comparator shown in Fig. 9(a) is as follows."
+        },
+        {
+          "section_title": "FURTHER POWER-REDUCTION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 3,
+          "sentence": "For this purpose, the proposed comparator shown in Fig. 9(b) has and ."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The measured SNR is about 58 dBc, the spurious free dynamic MIN et al.: 69-mW 10-bit 80-MS/s PIPELINED CMOS ADC (a) Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.4,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "-conventional": -3.0,
+        "section:results": -2.0,
+        "references": 1.6
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "comparator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "In order to reduce power consumption, a dynamic comparator as shown in Fig. 9 is used in this ADC.",
+        "function_summary": "Dynamic comparator. (a) Conventional. (b) Proposed. In order to reduce power consumption, a dynamic comparator as shown in Fig. 9 is used in this ADC.",
+        "key_specs": [
+          "58 dBc"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 6,
+      "caption": "Fig. 10. Die photograph.",
+      "caption_bbox": [
+        38.1,
+        434.4,
+        123.1,
+        445.0
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The die photograph is shown in Fig. 10."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -7.2,
+      "relevance_breakdown": {
+        "-photograph": -3.0,
+        "-die photo": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "69-mW 10-bit 80-MSample/s Pipelined CMOS ADC",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Die photograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 6,
+      "caption": "Fig. 11. Measured nonlinearity.",
+      "caption_bbox": [
+        38.1,
+        636.3,
+        144.6,
+        646.9
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The measured nonlinearity of the ADC is is about 1 mm shown in Fig. 11."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured nonlinearity",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 6,
+      "caption": "Fig. 12. Measured FFT spectrum.",
+      "caption_bbox": [
+        301.1,
+        457.6,
+        414.8,
+        468.3
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The measured output fast Fourier transform (FFT) spectrum with a 99-MHz input frequency at 80 MS/s is shown in Fig. 12."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The measured dynamic performance versus input frequency is (b) Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "69-mW 10-bit 80-MSample/s Pipelined CMOS ADC",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured FFT spectrum",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 6,
+      "caption": "Fig. 13. Dynamic performance versus input frequency.",
+      "caption_bbox": [
+        301.1,
+        662.2,
+        481.7,
+        672.8
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 13."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Dynamic performance versus input frequency. shown in Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "69-mW 10-bit 80-MSample/s Pipelined CMOS ADC",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Dynamic performance versus input frequency",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 7,
+      "caption": "Fig. 14. Dynamic performance versus duty cycle.",
+      "caption_bbox": [
+        39.6,
+        228.2,
+        203.6,
+        238.8
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The measured dynamic performance versus duty cycle with a Nyquist input frequency at 80 MS/s is shown in Fig. 14."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The 30% duty cycle still Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "69-mW 10-bit 80-MSample/s Pipelined CMOS ADC",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Dynamic performance versus duty cycle",
+        "key_specs": [
+          "30%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 7,
+      "caption": "Fig. 15. Offset voltage of ADC.",
+      "caption_bbox": [
+        39.6,
+        441.9,
+        147.7,
+        452.5
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 15."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The histogram of the measured offset voltage of the ADC is shown in Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Offset voltage of ADC",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 1,
+  "warnings": []
+}

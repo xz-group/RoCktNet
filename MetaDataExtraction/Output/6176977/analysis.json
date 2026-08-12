@@ -1,0 +1,198 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\RNDatasetPapers\\6176977.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output_rerun_128\\6176977",
+  "generated_at": "2026-07-29T22:45:37",
+  "paper_metadata": {
+    "title": "A Temperature-to-Digital Converter for a MEMSBased Programmable Oscillator with Better Than ±0.5ppm Frequency Stability Michael Perrott1, Jim Salvia2, Fred Lee3, Aaron Partridge2, Shouvik Mukherjee2, Carl Arft2, Jin-Tae Kim2, Niveditha Arumugam2, Pavan Gupta2, Sassan Tabatabaei2, Sudhakar Pamarti4, Haechang Lee2, Fari Assaderaghi2",
+    "authors": [],
+    "abstract": "",
+    "keywords": [],
+    "doi": "",
+    "venue": "",
+    "year": 2012
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Temperature-to-Digital Converter",
+    "technology": "CMOS, 18μm process",
+    "application_domain": "rf",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "current mirror",
+      "LC tank / resonator",
+      "bias circuit",
+      "switch",
+      "clock / timing"
+    ],
+    "design_purpose": "",
+    "function_summary": "Temperature-to-Digital Converter",
+    "key_specs": [
+      "0.18μm",
+      "5Hz",
+      "25kHz",
+      "480MHz",
+      "48MHz",
+      "150MHz",
+      "24MHz",
+      "3.3V",
+      "7.4μW",
+      "3.2μW"
+    ]
+  },
+  "sections": [],
+  "figures": [
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 0,
+      "caption": "Figure 11.6.1 illustrates our programmable oscillator. It consists of a MEMS resonator die which is wire bonded to a 0.18μm CMOS die that includes an oscillator sustaining circuit, TDC, fractional-N synthesizer, and digital logic [1]. Placement of a thermistor on the MEMS die allows excellent tracking of temperature-induced fluctuations of the MEMS resonator frequency, Fres. Compensation of nonlinear temperature dependence of the thermistor resistance and Fres is achieved with on-chip digital 5th-order polynomial correction. Since Fres varies by approximately -31ppm/K, it is challenging to obtain ±0.5ppm frequency stability from -40 to 85°C. The current state of the art is ±10ppm frequency stability for temperature compensated (non-ovenized) MEMS oscillators [4]. Further, noise lower than 0.16mK (rms) in a 5Hz bandwidth (i.e., 10S/s) is required to achieve Allan Deviation less than 0.005ppm at 0.1 second stride – a challenging requirement given the current state of the art of 2mK at 1S/s [2], 15mK at 10 S/s [3] and 40mK at 32 S/s [4]. The TDC’s front-end circuit, shown in Fig. 11.6.2, consists of a resistive bridge that is balanced by digitally tuning a reference resistor, Rref, to match the thermistor’s resistance, RMEMS. Comparison of Rref and RMEMS is achieved by using a CMOS switch to periodically short them together at frequency fchop (25kHz), and then amplifying the sum of the two voltages, VR(t) and VC(t), to yield an output voltage, Vamp(t). As shown in Fig. 11.6.2, VR(t) and VC(t) move in opposite directions, and, regardless of the small resistance of the shorting switch, will have equal changes in magnitude only when Rref and RMEMS are equal in value (assuming well matched Cac capacitors). As such, sampling the change in Vamp(t) between each phase of fchop, Vavg1[k] -Vavg2[k], provides an accurate error signal for tuning Rref to match RMEMS. An advantage of this CDS technique is that it rejects the 1/f noise and DC offset of the front-end amplifier. Further, the amplifier’s DC input biasing can be done in an essentially noise free manner via a feedback resistor, Rf, which is periodically switched into the circuit for brief intervals outside the measurement window of Vavg1[k] and Vavg2[k].",
+      "caption_bbox": [
+        37.9,
+        284.1,
+        289.2,
+        581.7
+      ],
+      "section_title": "",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 11.6.1 illustrates our programmable oscillator."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The TDC’s front-end circuit, shown in Fig. 11.6.2, consists of a resistive bridge that is balanced by digitally tuning a reference resistor, Rref, to match the thermistor’s resistance, RMEMS."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "As shown in Fig. 11.6.2, VR(t) and VC(t) move in opposite directions, and, regardless of the small resistance of the shorting switch, will have equal changes in magnitude only when Rref and RMEMS are equal in value (assuming well matched Cac capacitors)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 11.6.3 reveals that Rref = Tclk/C2 is implemented with a switched-capacitor (SC) network, where fclk =1/Tclk is the frequency, in the tens of MHz range, of the non-overlapping clocks clkph1(t) and clkph2(t)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Similar to the pulsed resistor biasing shown in Fig. 11.6.2, Fig. 11.6.3 reveals that a simple voltage regulator to reduce supply noise is achieved for the amplifier by pulse biasing the gate of a native NMOS device."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "A system-level view of the TDC is shown in Fig. 11.6.4."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Details of the VCO-based quantizer are shown in Fig. 11.6.5."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 11.6.7 shows a die photo of the MEMS resonator die (with thermistor) wire-bonded to the 0.18μm CMOS die."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 11.6.6(a) shows better than ±0.5ppm stability from -40 to 85°C with frequency compensation consisting solely of the on-chip TDC and digital 5th-order polynomial correction."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 11.6.6(b) displays measured output phase noise under several different conditions related to the TDC."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Finally, Fig. 11.6.6(c) shows measured Allan Deviation <0.005ppm at room temperature at 0.1, 1, and 10-second strides."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Doubler, Synthesizer 2 FRES Divider Continuously and Charge Pump Programmable from MEMS Freq Compensation (ppm) Thermistor 0.5 to 220 MHz Resonator Temp Digital 5th order Temperature Polynomial to Digital Correction and Converter Programmable Lowpass Filter Synthesizer Setting Figure 11.6.1: MEMS-based oscillator circuit consisting of a MEMS die with resonator and thermistor wire-bonded to a CMOS die with sustaining circuit, frequency doubler, fractional-N synthesizer, programmable frequency divider, and temperature compensation circuits."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Tchop Tchop Native Vreg Vreg NMOS VRm(t) VRp(t) Creg Vreg VCm(t) VCp(t) clkchop(t) clkchop(t) Gnd Gnd VRp(t) VRm(t) pulse Cac Cac R RMEMS bias Vsum_p(t) Vsum_m(t) clkchop(t) clkchop(t) signals Cf Rref = Tclk/C2 Cac Cac Cf Vamp_p(t) Vamp_m(t) VCp(t) VCm(t) Rf /2 Rf /2 Rf /2 Rf /2 C1 C2 C1 clkchop(t) clkchop(t) Iref ~100pF ~2pF ~100pF Ibias Ibias clkph1(t) clkph2(t) Rbias Cbias Figure 11.6.3: Detailed view of pseudo-differential TDC frontend showing the switched-capacitor implementation of Rref and the pulsed bias current mirror and voltage regulator for reduced noise. 3-stage ring osc. 150-600MHz Vbp+ Vin Counter Vbn+ (with wrapping) First Sample Quantizer Order and Output VbpDifference unwrap Vin Counter Vbn- (with wrapping) Oscillator clk24(t) Delay Cell Vbp+ VbpVbp+ Ibias Iblead Iblead Vbn+ VbnVin Vin Vin Vin Vbn+ Rbias Cbias Figure 11.6.5: Pseudo-differential VCO-based quantizer in which counters are leveraged to lower the required sampling rate of the quantizer and pulsed current biasing for reduced noise."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "ISSCC 2012 / February 21, 2012 / 10:45 AM Vreg Tchop=1/25kHz Vreg Cac RMEMS VR(t) gain = Cf Cac VR(t) VC(t) Gnd clkchop(t) Vsum(t) clkres(t) VC(t) Cf Vamp(t) Cac Rref Rf /2 Rf /2 Vavg1[k] Vavg2[k] Gnd clkres(t) Rref RMEMS Cac Ibias Vreg Vavg1[k]-Vavg2[k] = Rref+RMEMS 2Cf Figure 11.6.2: Simplified view of TDC frontend in which Rref is matched to RMEMS with error sensed using an amplifier with pulsed resistor feedback biasing for reduced noise. 11 RMEMS clk24(t) pulse bias signals Analog Vavg1[k] Frontend: Vamp_p(t) clkchop(t) Resistor Digital VCO-Based Comparison Averaging Quantizer Vavg2[k] Vamp_m(t) and Amplification Vamp_p(t) clkph1(t) clkph2(t) clkchop(t) Tchop Frequency Vamp_m(t)t) m Divider and pulsed Switch Phasing Vavg1[k] Vavg2[k] bias signals clk480(t) out_done[k] Digital N[k] outsd[k] Clock 2nd Order Re-Timer Multiplier out[k] Sigma-Delta Kacc Modulator 2 Fres out[k] Figure 11.6.4: System-level view of TDC."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Stability 0.1 (ppm) (a) 0 -0.1 -0.2 -40 -20 0 20 40 60 80 Temperature (degrees Celsius) Measured Output Phase Noise at Room Temperature -20 TDC On-Chip Filter TDC On-Chip Filter -40 Phase Noise Set to 12Hz Bandwidth Disengaged (dBc/Hz) -60 (TDC Feedback Dynamics (b) -80 Have ~500 Hz Bandwidth) TDC Disabled: -100 No Temperature Compensation -120 Occurs for Output Frequency -140 1 10 1k 10k 100k Offset Frequency (Hz) Measured Allan Deviation at Room Temperature (20 Devices) 5 Allan Deviation 4 (ppb) 3 (c) 2 1 0 0.1 1 10 Stride (seconds) Figure 11.6.6: Measured results for (a) compensated frequency stability, (b) output phase noise at several TDC settings, and (c) Allan Deviation."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "DIGEST OF TECHNICAL PAPERS • ISSCC 2012 PAPER CONTINUATIONS Figure 11.6.7: Micrograph of the 0.18μm CMOS die with MEMS die of the resonator and thermistor attached on top. • 2012 IEEE International Solid-State Circuits Conference 978-1-4673-0377-4/12/$31.00 ©2012 IEEE"
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-reference": -1.0,
+        "references": 2.0
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "frequency synthesizer",
+        "technology": "CMOS, 18μm process",
+        "application_domain": "rf",
+        "sub_blocks": [
+          "capacitor",
+          "resistor",
+          "transistor/MOSFET",
+          "current mirror",
+          "LC tank / resonator",
+          "bias circuit",
+          "switch"
+        ],
+        "design_purpose": "Similar to the pulsed resistor biasing shown in Fig. 11.6.2, Fig. 11.6.3 reveals that a simple voltage regulator to reduce supply noise is achieved for the amplifier by pulse biasing the gate of a native NMOS device.",
+        "function_summary": "6.1 illustrates our programmable oscillator. It consists of a MEMS resonator die which is wire bonded to a 0.18μm CMOS die that includes an oscillator sustaining circuit, TDC, fractional-N synthesizer, and digital logic [1]. Placement of a thermistor on the MEMS die allows excellent tracking of temperature-induced ...",
+        "key_specs": [
+          "0.18μm",
+          "220 MHz",
+          "100pF",
+          "2pF",
+          "-600MHz",
+          "25kHz",
+          "2 V",
+          "-40 Ph"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.48,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 11,
+  "warnings": []
+}

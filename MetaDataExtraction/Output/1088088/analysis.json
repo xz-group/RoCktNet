@@ -1,0 +1,1123 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1088088.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1088088",
+  "generated_at": "2026-07-29T22:00:28",
+  "paper_metadata": {
+    "title": "A 10-b 120-Msample/s Time-Interleaved Analog-to-Digital Converter With Digital Background Calibration",
+    "authors": [
+      "Shafiq M. Jamal",
+      "Daihong Fu",
+      "Nick C.-J. Chang",
+      "Paul J. Hurst",
+      "Stephen H. Lewis"
+    ],
+    "abstract": "Digital calibration using adaptive signal processing corrects for offset mismatch, gain mismatch, and sample-time [9]–[12], [15], but a front-rank SHA limits the overall speed error between time-interleaved channels in a 10-b 120-Msample/s and therefore the number of channels that can be interleaved pipelined analog-to-digital converter (ADC). Offset mismatch in practice. Digital calibration of sample-time errors has been between channels is overcome with a random chopper-based offset proposed to overcome this limitation [13]; however, the procalibration. Gain mismatch and sample-time error are overcome posed technique requires an accurate ramp signal to be applied with correlation-based algorithms, which drive the correlation between a signal and its chopped image or its chopped and delayed to measure the timing errors. image to zero. Test results show that, with a 0.99-MHz sinusoidal To solve all these problems, this paper presents a time-ininput, the ADC achieves a peak signal-to-noise-and-distortion terleaved ADC that uses digital-background calibration to ratio (SNDR) of 56.8 dB, a peak integral nonlinearity of 0.88 least overcome offset, gain, and sample-time errors between chansignificant bit (LSB), and a peak differential nonlinearity of 0.44 nels. The proposed structure does not use a front-rank SHA. LSB. For a 39.9-MHz sinusoidal input, the ADC achieves a peak SNDR of 50.2 dB. The active area is 5.2 mm2, and the power The remainder of this paper is divided into five sections. dissipation is 234 mW from a 3.3-V supply. Section II gives a brief review of time-interleaved ADCs and their limitations. Section III shows how the mismatch problems",
+    "keywords": [
+      "Adaptive systems",
+      "analog-to-digital conversion",
+      "calibration",
+      "CMOS analog integrated circuits"
+    ],
+    "doi": "10.1109/JSSC.2002.804327",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2002
+  },
+  "paper_circuit_context": {
+    "circuit_type": "10-b 120-Msample/s Time-Interleaved Analog-to-Digital Converter",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "switch",
+      "op-amp",
+      "pre-amplifier"
+    ],
+    "design_purpose": "",
+    "function_summary": "10-b 120-Msample/s Time-Interleaved Analog-to-Digital Converter: Digital calibration using adaptive signal processing corrects for offset mismatch, gain mismatch, and sample-time [9]–[12], [15], but a front-rank SHA limits the overall speed error between time-interleaved channels in a 10-b 120-Msample/s and therefore the number of channels that can be ...",
+    "key_specs": [
+      "56.8 dB",
+      "50.2 dB",
+      "234 mW",
+      "10 dB",
+      "200 ps",
+      "54 MHz",
+      "90%",
+      "5 w",
+      "95%",
+      "1 dB"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "D IGITAL SIGNAL processing (DSP) systems operating on analog inputs are often limited by the sampling rates of analog-to-digital converters (ADCs). Time interleaving more than one ADC is a well-known technique used to increase the maximum sample rate [1]–[15]. Unfortunately, the performance of time-interleaved ADCs is sensitive to offset and gain mismatches as well as aperture errors between the i ..."
+    },
+    {
+      "number": "II",
+      "title": "TIME-INTERLEAVED ADC ARCHITECTURE",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "Fig. 1 shows a simplified block diagram of a time-interleaved ADCs in parallel, an analog demulADC. It consists of tiplexer at the input, and a digital multiplexer at the output. divided Each channel operates at the overall sampling rate . During operation, the analog demultiplexer selects each by channel in turn to process the analog input signal. The corresponding digital multiplexer selects the ..."
+    },
+    {
+      "number": "III",
+      "title": "DIGITAL BACKGROUND CALIBRATION",
+      "kind": "intro",
+      "page": 1,
+      "text_preview": "One method of doing background calibration in a time-interleaved ADC is to calibrate for the mismatches in the digital domain [11], as shown in Fig. 2. In this scheme, an analog calis added to the input and the same value is ibration signal digitally subtracted from the output to measure the gain mismatch. Then, one of the interleaved channels is multiplied by the appropriate gain to correct for t ..."
+    },
+    {
+      "number": "IV",
+      "title": "PROTOTYPE IMPLEMENTATION",
+      "kind": "design",
+      "page": 4,
+      "text_preview": "To demonstrate the capabilities and limitations of the digital background calibration techniques, a prototype with two m ADCs in parallel was designed and fabricated in a 0.35CMOS technology. Fig. 9 shows the block diagram of one JAMAL et al.: 10-b 120-MSAMPLE/S TIME-INTERLEAVED ADC WITH DIGITAL BACKGROUND CALIBRATION Fig. 9. Block diagram of the pipelined ADC in each channel. The resolution is 14 ..."
+    },
+    {
+      "number": "V",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 6,
+      "text_preview": "The following conditions were used for all tests described below unless stated otherwise. The power supply voltage is 3.3 C. The input amplitude is 3 V , V, and the temperature is 25 and the input frequency is 0.99 MHz. The sampling and conversion rate is 120 Msample/s, but the ADC output was down-sampled by a factor of five so that our logic analyzer could collect the ADC output data. The calibra ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 8,
+      "text_preview": "Time-interleaving of monolithic ADCs was first described in a paper by Black and Hodges 22 years ago [1]. However, the use of time interleaving in ADC products has been limited since then mainly by offset, gain, and timing mismatches between the interleaved channels. This paper describes the first demonstration of digital-background-calibration techniques to overcome the effects of all three of th ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Block diagram of the time-interleaved ADC architecture.",
+      "caption_bbox": [
+        38.1,
+        181.7,
+        249.1,
+        192.4
+      ],
+      "section_title": "II. TIME-INTERLEAVED ADC ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "TIME-INTERLEAVED ADC ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 1 shows a simplified block diagram of a time-interleaved ADCs in parallel, an analog demulADC."
+        },
+        {
+          "section_title": "TIME-INTERLEAVED ADC ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Deviations from after the previous channel, where the ideal sampling instants can be represented as a sequence JAMAL et al.: 10-b 120-MSAMPLE/S TIME-INTERLEAVED ADC WITH DIGITAL BACKGROUND CALIBRATION Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "+architecture": 2.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the time-interleaved ADC architecture",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.82,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Calibration system described by Fu et al. [11].",
+      "caption_bbox": [
+        38.1,
+        319.7,
+        216.0,
+        330.4
+      ],
+      "section_title": "II. TIME-INTERLEAVED ADC ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "TIME-INTERLEAVED ADC ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 2."
+        },
+        {
+          "section_title": "DIGITAL BACKGROUND CALIBRATION",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "One method of doing background calibration in a time-interleaved ADC is to calibrate for the mismatches in the digital domain [11], as shown in Fig. 2."
+        },
+        {
+          "section_title": "DIGITAL BACKGROUND CALIBRATION",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "Furthermore, in Fig. 2, a front-rank SHA is used to avoid sampling time errors [2]; however, this SHA limits the overall speed and therefore also the number of channels that can be interleaved in practice."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Calibration system described by Fu et al. [11]",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.31,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Chopper-based offset calibration system for one channel. (V represents the input-referred offset from the SHA and the ADC combined.)",
+      "caption_bbox": [
+        301.1,
+        128.0,
+        541.9,
+        147.6
+      ],
+      "section_title": "II. TIME-INTERLEAVED ADC ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "DIGITAL BACKGROUND CALIBRATION",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "Fig. 3."
+        },
+        {
+          "section_title": "DIGITAL BACKGROUND CALIBRATION",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "Random Chopper-Based Offset Calibration Fig. 3 shows a block diagram of a single channel that uses chopper-based offset calibration."
+        },
+        {
+          "section_title": "DIGITAL BACKGROUND CALIBRATION",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "As a result, the offset of the channel stemming from both SHA and ADC offset is canceled in steady state by effectively introducing a notch at dc before the second chopper in Fig. 3."
+        },
+        {
+          "section_title": "DIGITAL BACKGROUND CALIBRATION",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "The controls the bandwidth of the notch, the speed of scale factor at convergence [17]. convergence, and the variance of The offset calibration method in Fig. 3 can be extended to more than one channel by applying the same technique to each channel."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.6,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chopper-based offset calibration system for one channel. (V represents the input-referred offset from the SHA and the ADC combined.)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.4,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. ADC output spectrum for two time-interleaved channels with (a) a and gain mismatch between the channels and (b) spectrum sinusoidal input at f of chopped output.",
+      "caption_bbox": [
+        39.6,
+        219.9,
+        290.7,
+        248.5
+      ],
+      "section_title": "III. DIGITAL BACKGROUND CALIBRATION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "DIGITAL BACKGROUND CALIBRATION",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "Gain Calibration Fig. 4(a) shows the output spectrum of a two-channel time-inand gain mismatch terleaved ADC with a sinusoidal input at between the channels."
+        },
+        {
+          "section_title": "DIGITAL BACKGROUND CALIBRATION",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "The concept of the gain calibration here is to use (a) (b) Fig. 4."
+        },
+        {
+          "section_title": "DIGITAL BACKGROUND CALIBRATION",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "This multiplication causes the image to shift to and the input to shift to as shown in Fig. 4(b)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.8,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "ADC output spectrum for two time-interleaved channels with (a) a and gain mismatch between the channels and (b) spectrum sinusoidal input at f of chopped output",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Block diagram of the gain-calibration scheme.",
+      "caption_bbox": [
+        39.6,
+        350.6,
+        216.9,
+        361.3
+      ],
+      "section_title": "III. DIGITAL BACKGROUND CALIBRATION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "DIGITAL BACKGROUND CALIBRATION",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "Fig. 5."
+        },
+        {
+          "section_title": "DIGITAL BACKGROUND CALIBRATION",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "Fig. 5 shows a block diagram of this gain-calibration scheme. and are the outputs of the two ADC channels after is upsampled by a factor of two to prooffset calibration. by inserting zero samples to produce a signal at duce . is multiplied by a variable the ADC sample rate of , upsampled by a factor of two, and delayed by one gain ."
+        },
+        {
+          "section_title": "DIGITAL BACKGROUND CALIBRATION",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "Since the feedback controls the gain for the bottom ADC channel , the feedback in Fig. 5 is negative, and the average and accumulator input converges to zero in the steady state."
+        },
+        {
+          "section_title": "DIGITAL BACKGROUND CALIBRATION",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "Fig. 6 shows a block diagram of the basic and are the digital outputs of the gain-calibraconcept. tion system shown in Fig. 5."
+        },
+        {
+          "section_title": "DIGITAL BACKGROUND CALIBRATION",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "The phase detector and accumulator here are the same as the detector in the gain-error calibration loop in Fig. 5 with one exception."
+        },
+        {
+          "section_title": "DIGITAL BACKGROUND CALIBRATION",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "Fortunately, the chopped image components arising from timing errors remain orthogonal to the corresponding input components in the gain-calibration loop in Fig. 5."
+        },
+        {
+          "section_title": "DIGITAL BACKGROUND CALIBRATION",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "After the gain-calibration loop in Fig. 5 converges, the timing loop in Fig. 8 converges to find the correct timing error."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.5,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:intro": -0.5,
+        "references": 2.0
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the gain-calibration scheme",
+        "key_specs": [
+          "5 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.38,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. Block diagram of the digital sample-time error-correction scheme.",
+      "caption_bbox": [
+        302.6,
+        129.3,
+        543.0,
+        139.9
+      ],
+      "section_title": "III. DIGITAL BACKGROUND CALIBRATION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "DIGITAL BACKGROUND CALIBRATION",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "The scale factor IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 12, DECEMBER 2002 Fig. 6."
+        },
+        {
+          "section_title": "DIGITAL BACKGROUND CALIBRATION",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "Fig. 6 shows a block diagram of the basic and are the digital outputs of the gain-calibraconcept. tion system shown in Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "10-b 120-Msample/s Time-Interleaved Analog-to-Digital Converter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the digital sample-time error-correction scheme",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Impulse response of the fractional-delay FIR filter (a) for no timing error (t = 0) and (b) with a timing error (t > 0).",
+      "caption_bbox": [
+        38.1,
+        212.0,
+        289.2,
+        231.6
+      ],
+      "section_title": "III. DIGITAL BACKGROUND CALIBRATION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "DIGITAL BACKGROUND CALIBRATION",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "The key idea is most easily explained by conis a sinusoid with frequency sidering a simple case, where JAMAL et al.: 10-b 120-MSAMPLE/S TIME-INTERLEAVED ADC WITH DIGITAL BACKGROUND CALIBRATION (a) (b) Fig. 7."
+        },
+        {
+          "section_title": "DIGITAL BACKGROUND CALIBRATION",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "Fig. 7 shows two plots of example 11-tap causal impulse responses. function and the The filter coefficients are samples of a circles designate the values of the filter coefficients."
+        },
+        {
+          "section_title": "DIGITAL BACKGROUND CALIBRATION",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "When no sample-time error between the interleaved channels exists, and all of the filter coefficients are zero except the center tap, which is one, as shown in Fig. 7(a)."
+        },
+        {
+          "section_title": "DIGITAL BACKGROUND CALIBRATION",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "However, when a timing error exists as shown in Fig. 7(b), all of the filter coefficients will have nonzero values and the filter delays its input signal by a noninteger number of samples."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.1,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Impulse response of the fractional-delay FIR filter (a) for no timing error (t = 0) and (b) with a timing error (t > 0)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.05,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Block diagram of the adaptive sampling-time calibration system.",
+      "caption_bbox": [
+        39.6,
+        189.2,
+        274.9,
+        199.8
+      ],
+      "section_title": "III. DIGITAL BACKGROUND CALIBRATION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "DIGITAL BACKGROUND CALIBRATION",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "Fig. 8 shows a block diagram of the adaptive sample-time and are outputs of the gain-calibracalibration scheme. goes through a fixed delay that equals the delay tion system. . goes through an through the adaptive FIR filter when adaptive FIR filter."
+        },
+        {
+          "section_title": "DIGITAL BACKGROUND CALIBRATION",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "Fig. 8."
+        },
+        {
+          "section_title": "DIGITAL BACKGROUND CALIBRATION",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "Fig. 8 uses the simplest approximation to this filter, which is just a delay of one sample."
+        },
+        {
+          "section_title": "DIGITAL BACKGROUND CALIBRATION",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "Also, with this aptroduced by the proximation, the phase detector in Fig. 8 not only senses timing error but also gain mismatch."
+        },
+        {
+          "section_title": "DIGITAL BACKGROUND CALIBRATION",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "As a result, chopped image components stemming from gain mismatch are not orthogonal to their corresponding input components in Fig. 8."
+        },
+        {
+          "section_title": "DIGITAL BACKGROUND CALIBRATION",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "After the gain-calibration loop in Fig. 5 converges, the timing loop in Fig. 8 converges to find the correct timing error."
+        },
+        {
+          "section_title": "PROTOTYPE IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "(The calibration loop can run at sample rate in 0.35a slower rate, but the adaptive FIR filter in Fig. 8 must run at full speed and would consume about 90% of the calibration power.) m CMOS, however, the area and power dissipation With 0.15and 40 for the calibration circuit would scale to about 0.9 mm mW, making the overhead small enough to consider using these techniques in products."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.5,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:intro": -0.5,
+        "references": 2.0
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "phase detector",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the adaptive sampling-time calibration system",
+        "key_specs": [
+          "90%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.38,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 5,
+      "caption": "Fig. 9. Block diagram of the pipelined ADC in each channel. The resolution is 14 b, but testing shows that 12-b resolution is adequate.",
+      "caption_bbox": [
+        38.1,
+        203.2,
+        289.1,
+        222.8
+      ],
+      "section_title": "IV. PROTOTYPE IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "PROTOTYPE IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 9 shows the block diagram of one JAMAL et al.: 10-b 120-MSAMPLE/S TIME-INTERLEAVED ADC WITH DIGITAL BACKGROUND CALIBRATION Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.9,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:design": 1.5,
+        "references": 0.4
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the pipelined ADC in each channel. The resolution is 14 b, but testing shows that 12-b resolution is adequate",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.48,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. Chopping SHA (if C[m] = 1, , and = = 0, and ). =",
+      "caption_bbox": [
+        38.1,
+        353.2,
+        217.0,
+        372.8
+      ],
+      "section_title": "IV. PROTOTYPE IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "PROTOTYPE IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The resolution is 14 b, but testing shows that 12-b resolution is adequate. = 0;if C[m] = 1, Fig. 10."
+        },
+        {
+          "section_title": "PROTOTYPE IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "(For example, using a 12-b output in each channel and then truncating the final output to 10 b after calibration improves the performance by at most 1 dB.) Fig. 10 shows the chopping SHA used in the prototype."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "10-b 120-Msample/s Time-Interleaved Analog-to-Digital Converter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chopping SHA (if C[m] = 1, , and = = 0, and ). =",
+        "key_specs": [
+          "1 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 5,
+      "caption": "Fig. 11. Opamp schematic.",
+      "caption_bbox": [
+        301.1,
+        265.0,
+        393.6,
+        275.7
+      ],
+      "section_title": "IV. PROTOTYPE IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "PROTOTYPE IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "When the chopping signal is connected to the bottom input capacitor are crossed so is connected to the top input capacitor. and Fig. 11 shows the schematic of the operational amplifier (opamp)."
+        },
+        {
+          "section_title": "PROTOTYPE IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Also, to reach a conversion rate of 60 Msample/s for each channel, the opamps must settle within Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor",
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Opamp schematic",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.79,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 6,
+      "caption": "Fig. 12. Die photograph. (f",
+      "caption_bbox": [
+        39.6,
+        291.7,
+        309.3,
+        307.2
+      ],
+      "section_title": "IV. PROTOTYPE IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "PROTOTYPE IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "At a sample rate of 60 Msample/s, it yields a Fig. 12."
+        },
+        {
+          "section_title": "PROTOTYPE IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 12 shows the die photo of the prototype."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-photograph": -3.0,
+        "-die photo": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "10-b 120-Msample/s Time-Interleaved Analog-to-Digital Converter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Die photograph. (f",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 6,
+      "caption": "Fig. 13. ADC output spectrum (a) without calibration and (b) with calibration. = 120 Msample/s, V = 3 V , and f = 0:99 MHz).",
+      "caption_bbox": [
+        302.6,
+        287.6,
+        553.7,
+        307.2
+      ],
+      "section_title": "IV. PROTOTYPE IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 13 shows the ADC output spectrum with and without axes in both plots in Fig. 13 are normalized calibration."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 13(a) shows the output of the ADC without calibration."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The tone caused by gain and timing mismatch is at the channel sampling rate minus 0.99 MHz, which appears IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 12, DECEMBER 2002 (a) (b) Fig. 13."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 13(b) shows the output of the ADC with calibration."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.6,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "ADC output spectrum (a) without calibration and (b) with calibration. = 120 Msample/s, V = 3 V , and f = 0:99 MHz)",
+        "key_specs": [
+          "0.99 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.03,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 6,
+      "caption": "Fig. 14. SNDR versus input amplitude (f = 120 Msample/s, f = 0:99 MHz).",
+      "caption_bbox": [
+        302.6,
+        515.9,
+        553.9,
+        535.5
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 14."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 14 shows four plots of the SNDR versus input amplitude."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 15 shows four plots of the SNDR versus input amplitude for the same cases as in Fig. 14 with one exception."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "In Fig. 15, the input frequency is 9.90 MHz, which is a factor of 10 higher than in Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.4,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.6
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "10-b 120-Msample/s Time-Interleaved Analog-to-Digital Converter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "SNDR versus input amplitude (f = 120 Msample/s, f = 0:99 MHz)",
+        "key_specs": [
+          "14 w",
+          "9.90 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 7,
+      "caption": "Fig. 15. SNDR versus input amplitude (f = 9:90 MHz). The plot “With Gain and Offset Cal” is almost identical to the plot “With Offset Cal.”",
+      "caption_bbox": [
+        38.1,
+        260.5,
+        289.3,
+        289.0
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "With offset calibration, the dynamic range improves by 18.3–61.5 dB, and the maximum SNDR increases JAMAL et al.: 10-b 120-MSAMPLE/S TIME-INTERLEAVED ADC WITH DIGITAL BACKGROUND CALIBRATION = 120 Msample/s, f Fig. 15."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 15 shows four plots of the SNDR versus input amplitude for the same cases as in Fig. 14 with one exception."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "In Fig. 15, the input frequency is 9.90 MHz, which is a factor of 10 higher than in Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "SNDR versus input amplitude (f = 9:90 MHz). The plot “With Gain and Offset Cal” is almost identical to the plot “With Offset Cal.”",
+        "key_specs": [
+          "61.5 dB",
+          "14 w",
+          "9.90 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 7,
+      "caption": "Fig. 16. SNDR versus input frequency f (f = 120 Msample/s).",
+      "caption_bbox": [
+        301.1,
+        234.1,
+        518.5,
+        244.7
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 16 shows three plots of SNDR versus input frequency."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "10-b 120-Msample/s Time-Interleaved Analog-to-Digital Converter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "SNDR versus input frequency f (f = 120 Msample/s)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 7,
+      "caption": "Fig. 17. INL versus code (a) without calibration and (b) with calibration (f = 120 Msample/s, f = 0:99 MHz).",
+      "caption_bbox": [
+        301.1,
+        471.6,
+        552.2,
+        491.2
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "(a) (b) Fig. 17."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 17 shows the integral nonlinearity (INL) plots."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 17(a) shows the plot of INL without calibration, and Fig. 17(b) shows the plot of INL with calibration."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "10-b 120-Msample/s Time-Interleaved Analog-to-Digital Converter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "INL versus code (a) without calibration and (b) with calibration (f = 120 Msample/s, f = 0:99 MHz)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 7,
+      "caption": "Fig. 18. DNL versus code (a) without calibration and (b) with calibration = 120 Msample/s, f = 0:99 MHz).",
+      "caption_bbox": [
+        301.1,
+        702.7,
+        552.2,
+        722.2
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "(a) (b) Fig. 18."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 18 shows the differenpeak INL decreases to tial nonlinearity (DNL) plots."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 18(a) shows the plot of DNL without calibration, and Fig. 18(b) shows the plot of DNL with 0.75 LSB calibration."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "10-b 120-Msample/s Time-Interleaved Analog-to-Digital Converter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "DNL versus code (a) without calibration and (b) with calibration = 120 Msample/s, f = 0:99 MHz)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 1,
+  "warnings": []
+}

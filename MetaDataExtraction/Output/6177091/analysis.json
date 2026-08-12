@@ -1,0 +1,171 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\RNDatasetPapers\\6177091.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output_rerun_128\\6177091",
+  "generated_at": "2026-07-29T22:45:37",
+  "paper_metadata": {
+    "title": "A 5.37mW 10b 200MS/s Dual-Path Pipelined ADC Yun Chai, Jieh-Tsorng Wu",
+    "authors": [],
+    "abstract": "",
+    "keywords": [],
+    "doi": "",
+    "venue": "",
+    "year": 2012
+  },
+  "paper_circuit_context": {
+    "circuit_type": "10b 200MS/s Dual-Path Pipelined ADC Yun Chai, Jieh-Tsorng Wu",
+    "technology": "CMOS, 65nm process",
+    "application_domain": "wireless",
+    "sub_blocks": [
+      "capacitor",
+      "transistor/MOSFET",
+      "switch",
+      "op-amp",
+      "latch"
+    ],
+    "design_purpose": "",
+    "function_summary": "10b 200MS/s Dual-Path Pipelined ADC Yun Chai, Jieh-Tsorng Wu",
+    "key_specs": [
+      "5.37mW",
+      "65nm",
+      "56.7dB",
+      "1V",
+      "49dB",
+      "1.1GHz",
+      "29dB",
+      "1.4GHz",
+      "1.0V",
+      "0.23mW"
+    ]
+  },
+  "sections": [],
+  "figures": [
+    {
+      "id": 27,
+      "label": "Fig. 27",
+      "page": 0,
+      "caption": "Figure 27.3.1 shows the ADC architecture. It consists of 8 pipeline stages. Each pipeline stage resolves one bit and provides a residue amplification of 2. Each pipeline stage is split into a coarse stage and a fine stage. Consider the 2nd stage. It includes a coarse stage 2C and a fine stage 2F. It receives a coarse input V2c and a fine input V2f, and generates a coarse output V3c and a fine output V3f. The implicit regular input is V2=V2c+V2f and the implicit regular output is V3=V3c+V3f. The coarse signal is an estimate of the implicit regular signal and is much larger than the corresponding fine signal. Each pipeline stage also contains a 3-level (1.5b) sub-ADC consisting of 2 latch-type comparators. It digitizes the coarse signal and generates an output code among {-1, 0, +1}. The back-end sub-ADC that digitizes V9c is a flash ADC consisting of 7 latch-type comparators. An encoder combines the digital outputs, D1 to D9, to generate the final ADC output. Along the analog pipeline, all coarse signals are generated during φ1, and all fine signals are generated during φ2. All sub-ADCs have the entire φ2 period to generate their digital outputs, except the first sub-ADC that produces D1. D1 is required by stage 1C during φ1b.",
+      "caption_bbox": [
+        37.9,
+        246.1,
+        289.2,
+        405.7
+      ],
+      "section_title": "",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 27.3.1 shows the ADC architecture."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 27.3.2 shows the coarse stage 2C schematic and its operation."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 27.3.3 shows the fine stage 2F schematic and its operation."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Since |E2f|<<|E2c| and also |E2c|<<|V3|, this E2f error can be considered to be negligible for this design. • 2012 IEEE International Solid-State Circuits Conference Figure 27.3.4 shows the schematic of the opamps."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 27.3.7 shows the die micrograph."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The differential input range is 1.3Vpp. Figure 27.3.5 shows the measured DNL and INL."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 27.3.6 shows the ADC output spectrum with 1MHz sinewave input."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Also shown in Fig. 27.3.6 are the measured SNDR and SFDR at different input sinewave frequencies."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Papers, pp. 242-243, Feb. 2007. 978-1-4673-0377-4/12/$31.00 ©2012 IEEE Figure 27.3.1: ADC architecture."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 27.3.3: Fine-stage 2F schematic and operation."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 27.3.5: Measured INL and DNL."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "ISSCC 2012 / February 22, 2012 / 2:30 PM Figure 27.3.2: Coarse-stage 2C schematic and operation."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 27.3.4: Schematics of coarse-stage and fine-stage opamps. 27 Figure 27.3.6: Measured dynamic performance and output spectrum."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "DIGEST OF TECHNICAL PAPERS • ISSCC 2012 PAPER CONTINUATIONS Figure 27.3.7: Chip micrograph. • 2012 IEEE International Solid-State Circuits Conference 978-1-4673-0377-4/12/$31.00 ©2012 IEEE"
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.0,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS, 65nm process",
+        "application_domain": "wireless",
+        "sub_blocks": [
+          "op-amp",
+          "latch"
+        ],
+        "design_purpose": "",
+        "function_summary": "3.1 shows the ADC architecture. It consists of 8 pipeline stages. Each pipeline stage resolves one bit and provides a residue amplification of 2. Each pipeline stage is split into a coarse stage and a fine stage. Consider the 2nd stage. It includes a coarse stage 2C and a fine stage 2F. It receives a coarse input V2c ...",
+        "key_specs": [
+          "1.3V",
+          "1MHz"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 1.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 27,
+  "warnings": []
+}

@@ -1,0 +1,57 @@
+# A CMOS Temperature Sensor with a VoltageCalibrated Inaccuracy of ±0.15°C (3σ) From -55 to 125°C Kamran Souri, Youngcheol Chae, Kofi Makinwa
+
+VENUE
+"2012"
+
+FIGURE NUMBER
+"Figure 11.7.1 shows the sensor’s block diagram. A bias circuit drives substrate PNPs QR and QL at a 1:5 current ratio. The base-emitter voltage VBE1 of QR is a complementary-to-absolute-temperature (CTAT) voltage, while the voltage difference VBE2 – VBE1 = ΔVBE is a proportional-to-absolute-temperature (PTAT) voltage. These voltages are applied to the zoom ADC, which outputs the ratio X=VBE/ΔVBE. A digital backend then computes a PTAT function of temperature μ = α/(α+X) = α·ΔVBE/(VBE+α·ΔVBE),where α is a fixed gain factor. To compensate for the PTAT spread of VBE, a PTAT trim is implemented in the digital backend [6]. The bias circuit generates a PTAT current with the help of a self-biased opamp and two auxiliary PNPs. This ensures that QR and QL are biased with βF-independent collector currents (I=90nA at 25°C) [2]. To decrease the spread in I, the opamp is chopped to reduce its offset. Dynamic element matching of QR and QL, as well as the six current sources in the bipolar core also increases the accuracy of ΔVBE. At 25°C, the bias circuit and the bipolar core draw 2.5μA from a 1.8V supply. In this work, an energy-efficient 2nd-order zoom ADC is used to digitize the output of the bipolar core. As shown in Fig. 11.7.1, this employs a fast SAR conversion followed by a fine ΔΣ conversion to generate the ratio X=VBE/ΔVBE [2]. X ranges from 6 to 28 from -55 to 125°C (Fig. 11.7.2), and can be expressed as X=n+ μ’, where n and μ’ are its integer and fractional parts, respectively. By comparing VBE with integer multiples of ΔVBE, a 5b SAR-ADC determines n in five comparison steps (Fig. 11.7.2). The fraction μ’ is then determined by an incremental 2nd-order 10b ΔΣ-ADC, whose reference voltages are set to n·ΔVBE and (n+1) ·ΔVBE (Fig. 11.7.2). When the quantizer’s output bs=0, (VBE – n·ΔVBE) is integrated, and when bs=1, (VBE – (n+1) ·ΔVBE) is integrated. This charge-balancing scheme ensures that the bitstream average is the unknown μ’= (VBE – n·ΔVBE)/ΔVBE. To avoid out-of-range errors, which would lead to nonmonotonicity, the range of the fine conversion is set to 2ΔVBE. This ensures that VBE is always roughly in the middle of a 2ΔVBE range, and also relaxes the requirements on the accuracy of the coarse conversion. In contrast to [2], a key feature of this work is that VBE and ΔVBE are sampled simultaneously, and so a charge proportional to (VBE – k·ΔVBE) is integrated during each clock cycle, where k is the number of capacitors that sample ΔVBE. This halves the conversion time, while requiring no extra supply current. As shown in"
+
+TYPE
+"CMOS Temperature Sensor"
+
+TECHNOLOGY
+"CMOS, 16μm process"
+
+APPLICATION
+"wireless"
+
+SUB-BLOCKS
+[
+  "capacitor",
+  "resistor",
+  "current source",
+  "bias circuit",
+  "switch",
+  "op-amp",
+  "pre-amplifier"
+]
+
+FUNCTION SUMMARY
+"CMOS Temperature Sensor"
+
+METRICS
+[
+  "Energy per operation",
+  "Supply voltage",
+  "Supply / voltage",
+  "Capacitance",
+  "Gain",
+  "Frequency"
+]
+
+NUMERICAL PERFORMANCE
+[
+  "27nJ",
+  "1.8V",
+  "100mV",
+  "120fF",
+  "76dB",
+  "40dB",
+  "0.16μm",
+  "25kHz",
+  "-2V",
+  "11pJ"
+]
+
+CONFIDENCE
+0.85

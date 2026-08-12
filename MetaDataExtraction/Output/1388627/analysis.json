@@ -1,0 +1,1134 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1388627.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1388627",
+  "generated_at": "2026-07-29T22:02:18",
+  "paper_metadata": {
+    "title": "Simulation and Measurement of Supply and Substrate Noise in Mixed-Signal ICs",
+    "authors": [
+      "Brian E. Owens",
+      "Sirisha Adluri",
+      "Patrick Birrer",
+      "Robert Shreeve",
+      "Sasi Kumar Arunachalam",
+      "Kartikeya Mayaram",
+      "Terri S. Fiez"
+    ],
+    "abstract": "Digital noise in mixed-signal circuits is characterized using a scalable macromodel for substrate noise coupling. The noise coupling obtained through simulations is verified with measured data from a digital noise generator and noise sensitive analog circuits fabricated in the 0.35m heavily doped CMOS process. The simulations and measurements also demonstrate the effectiveness of including grounded guard rings and separating bulk and supply pins in digital circuits to reduce substrate coupling. Fig. 1. Lumped substrate model for (a) p+ to p+ contacts and (b) n+ to p+",
+    "keywords": [
+      "Coupling noise",
+      "integrated circuit noise",
+      "mixed-"
+    ],
+    "doi": "10.1109/JSSC.2004.841039",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2005
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Simulation and Measurement of Supply and Substrate Noise in Mixed-Signal ICs",
+    "technology": "CMOS",
+    "application_domain": "rf, if",
+    "sub_blocks": [
+      "transistor/MOSFET",
+      "switch",
+      "capacitor",
+      "resistor",
+      "output buffer",
+      "op-amp",
+      "clock / timing"
+    ],
+    "design_purpose": "The simulations and measurements also demonstrate the effectiveness of including grounded guard rings and separating bulk and supply pins in digital circuits to reduce substrate coupling.",
+    "function_summary": "Simulation and Measurement of Supply and Substrate Noise in Mixed-Signal ICs: The simulations and measurements also demonstrate the effectiveness of including grounded guard rings and separating bulk and supply pins in digital circuits to reduce substrate coupling.",
+    "key_specs": [
+      "5 nH",
+      "3 mV",
+      "24 mV",
+      "780 kHz",
+      "10 MHz",
+      "0.15 nH",
+      "0.07 nH",
+      "3 dB",
+      "1 MHz",
+      "0.8 pF"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE integration of digital, analog, and RF circuitry to create systems-on-chips (SoCs) has become a reality in present day integrated circuits (ICs). Creating SoCs has major advantages including reduced size, reduced cost and lower power dissipation. However, this high level of complexity and integration causes noise coupling from the digital circuitry to the sensitive RF and analog circuitry. If ..."
+    },
+    {
+      "number": "II",
+      "title": "SUBSTRATE COUPLING MACROMODEL",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "For efﬁcient simulation of large SoCs, a simple model that accurately predicts substrate coupling must be used. Approaches including ﬁnite element methods [1], [15], [16], boundary element methods [3], [5], and polynomial curve ﬁtting methods [17], [18] provide accurate post-layout simulation but they are computationally intensive particularly for full chip simulation. Additionally, they do not al ..."
+    },
+    {
+      "number": "III",
+      "title": "DEPENDENCE OF POWER SUPPLY AND TRANSISTOR",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "SWITCHING NOISE ON PACKAGE PARASITICS The power supply noise and transistor switching noise of a seven stage stepped buffer are simulated to illustrate the contributions of each to the substrate coupling noise. Stepped buffers are often a major source of substrate and supply noise in mixedsignal ICs as they provide buffering for clock signals as well as for output buffers to drive large off-chip c ..."
+    },
+    {
+      "number": "IV",
+      "title": "MEASUREMENT OF SUBSTRATE NOISE",
+      "kind": "results",
+      "page": 3,
+      "text_preview": "Three different noise-sensing methods were used to characsubstrate terize the substrate coupling. The ﬁrst method uses taps connected to pads that can be directly probed as shown in Fig. 7. This method is the simplest because it does not require additional on-chip circuitry for the measurement; however, it is generally not as accurate since the probe impedance may load the substrate. In the second ..."
+    },
+    {
+      "number": "V",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 4,
+      "text_preview": "A test chip was fabricated in a 0.35m heavily doped CMOS quad-metal, double poly process. It consisted of a stepped buffer, a folded-cascode ampliﬁer connected in unity gain and two substrate noise sensing ampliﬁers as shown in Fig. 11. A single 3-V supply was used for all measurements. m away The stepped buffer was placed approximately 100 from the folded-cascode ampliﬁer and 400 m and 800 m away ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 7,
+      "text_preview": "An approach for simulating digital noise coupling has been discussed and veriﬁed using measurements from a test-chip fabm heavily doped CMOS process. Measurericated in a 0.35ments were shown for noise coupled from a stepped buffer to an analog noise-sensing ampliﬁer, folded-cascode ampliﬁer, and substrate tap. These measurements match closely with the simulated results. Based on these measurements ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Lumped substrate model for (a) p+ to p+ contacts and (b) n+ to p+ contacts.",
+      "caption_bbox": [
+        302.6,
+        271.2,
+        553.7,
+        288.2
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Digital Object Identiﬁer 10.1109/JSSC.2004.841039 Fig. 1."
+        },
+        {
+          "section_title": "SUBSTRATE COUPLING MACROMODEL",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The lumped reto contacts and to contacts sistive model for is shown in Fig. 1(a) and (b), respectively."
+        },
+        {
+          "section_title": "SUBSTRATE COUPLING MACROMODEL",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Notice that if these resistor values are used in the model shown in Fig. 1 and are and the backplane is left ﬂoating, the resistors indeed the dominant contact coupling path. -parameters from The scalable macromodel is based on which the resistances can be derived or vice versa [12]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "-model": -1.5,
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "Simulation and Measurement of Supply and Substrate Noise in Mixed-Signal ICs",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "resistor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Lumped substrate model for (a) p+ to p+ contacts and (b) n+ to p+ contacts",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 0,
+      "caption": "Fig. 2. Typical cross-section for a heavily doped substrate.",
+      "caption_bbox": [
+        302.6,
+        412.2,
+        495.2,
+        420.1
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 2."
+        },
+        {
+          "section_title": "SUBSTRATE COUPLING MACROMODEL",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "A typical heavily doped substrate proﬁle is shown in Fig. 2 and consists of three distinct layers: a heavily doped channelstop implant, a lightly doped epitaxial (epi) layer, and a heavily bulk [3]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "Simulation and Measurement of Supply and Substrate Noise in Mixed-Signal ICs",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Typical cross-section for a heavily doped substrate",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. noise at the substrate.",
+      "caption_bbox": [
+        38.1,
+        521.0,
+        108.0,
+        537.9
+      ],
+      "section_title": "II. SUBSTRATE COUPLING MACROMODEL",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SUBSTRATE COUPLING MACROMODEL",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "(c) Setup used to measure switching-only Fig. 3. noise at the substrate. contact to p-type substrate junction capacitance is modeled by ."
+        },
+        {
+          "section_title": "DEPENDENCE OF POWER SUPPLY AND TRANSISTOR",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The supply and switching noise generated by the stepped buffer are simulated using the approach in [7] and using the circuits shown IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 2, FEBRUARY 2005 TABLE II RANGE OF PIN PARASITICS FOR DIFFERENT PACKAGES [20], [21] in Fig. 3."
+        },
+        {
+          "section_title": "DEPENDENCE OF POWER SUPPLY AND TRANSISTOR",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 3(a) is the equivalent circuit used to simulate both the supply and substrate noise contribution."
+        },
+        {
+          "section_title": "DEPENDENCE OF POWER SUPPLY AND TRANSISTOR",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Figs. 3(b) and (c) are the equivalent circuits to simulate the supply-only and substrate-only coupling."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.6,
+      "relevance_breakdown": {
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "buffer",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "noise at the substrate",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.29,
+      "warnings": [
+        "Recommended figure caption does not explicitly mention a schematic/topology/circuit; please confirm manually.",
+        "Recommended figure was classified as 'other', not a schematic; manual confirmation strongly recommended."
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Simulated plots of supply noise (top) and switching noise (bottom) for a stepped buffer.",
+      "caption_bbox": [
+        39.6,
+        332.8,
+        350.0,
+        340.8
+      ],
+      "section_title": "II. SUBSTRATE COUPLING MACROMODEL",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SUBSTRATE COUPLING MACROMODEL",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The Fig. 4."
+        },
+        {
+          "section_title": "DEPENDENCE OF POWER SUPPLY AND TRANSISTOR",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The simulated results are shown in Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "buffer",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simulated plots of supply noise (top) and switching noise (bottom) for a stepped buffer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5.",
+      "caption_bbox": [
+        38.1,
+        353.0,
+        58.4,
+        361.0
+      ],
+      "section_title": "III. DEPENDENCE OF POWER SUPPLY AND TRANSISTOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DEPENDENCE OF POWER SUPPLY AND TRANSISTOR",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The stepped buffer is again simulated using the average values for each package in Table II and the results are shown in Fig. 5."
+        },
+        {
+          "section_title": "DEPENDENCE OF POWER SUPPLY AND TRANSISTOR",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The input frequency of the stepped buffer Fig. 5. is 780 kHz."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "buffer",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "buffer",
+        "key_specs": [
+          "780 kHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Affect of transistor sizing on the substrate noise coupling as a function of the supply inductance. The input frequency of the buffer is 10 MHz. (W=L) 1 m/0:6 m, (W=L) 2 m/0:6 m, = = = 5 m/0:6 m, (W=L) = 10 m/0:6 m. (W=L)",
+      "caption_bbox": [
+        38.1,
+        612.0,
+        289.2,
+        647.2
+      ],
+      "section_title": "IV. MEASUREMENT OF SUBSTRATE NOISE",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "DEPENDENCE OF POWER SUPPLY AND TRANSISTOR",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 6."
+        },
+        {
+          "section_title": "DEPENDENCE OF POWER SUPPLY AND TRANSISTOR",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Both are simulated as a function of the supply inductance with an input frequency of 10 MHz and the results are plotted in Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "buffer",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Affect of transistor sizing on the substrate noise coupling as a function of the supply inductance. The input frequency of the buffer is 10 MHz. (W=L) 1 m/0:6 m, (W=L) 2 m/0:6 m, = = = 5 m/0:6 m, (W=L) = 10 m/0:6 m. (W=L)",
+        "key_specs": [
+          "10 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Measurement setup used for directly probing the substrate. Noise was measured via a p+ substrate tap connected directly to a probe pad.",
+      "caption_bbox": [
+        301.1,
+        451.0,
+        552.2,
+        468.2
+      ],
+      "section_title": "III. DEPENDENCE OF POWER SUPPLY AND TRANSISTOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DEPENDENCE OF POWER SUPPLY AND TRANSISTOR",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 7."
+        },
+        {
+          "section_title": "MEASUREMENT OF SUBSTRATE NOISE",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "The ﬁrst method uses taps connected to pads that can be directly probed as shown in Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-setup": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Simulation and Measurement of Supply and Substrate Noise in Mixed-Signal ICs",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measurement setup used for directly probing the substrate. Noise was measured via a p+ substrate tap connected directly to a probe pad",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Noise-sensing ampliﬁer used to measure the noise in the substrate. One input is sensitive to substrate noise while the other is connected to a quiet ground.",
+      "caption_bbox": [
+        39.6,
+        247.9,
+        290.7,
+        264.9
+      ],
+      "section_title": "IV. MEASUREMENT OF SUBSTRATE NOISE",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT OF SUBSTRATE NOISE",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "The ampliﬁer, shown in Fig. 8, has one input connected to the substrate via a large MOS capacitor and the other input is connected to a separate quiet bias voltage."
+        },
+        {
+          "section_title": "MEASUREMENT OF SUBSTRATE NOISE",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "The ampliﬁer has Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Simulation and Measurement of Supply and Substrate Noise in Mixed-Signal ICs",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Noise-sensing ampliﬁer used to measure the noise in the substrate. One input is sensitive to substrate noise while the other is connected to a quiet ground",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. Noise coupling measurement setup for the folded-cascode ampliﬁer connected in a unity-gain conﬁguration.",
+      "caption_bbox": [
+        39.6,
+        353.6,
+        290.7,
+        370.6
+      ],
+      "section_title": "IV. MEASUREMENT OF SUBSTRATE NOISE",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT OF SUBSTRATE NOISE",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Fig. 9."
+        },
+        {
+          "section_title": "MEASUREMENT OF SUBSTRATE NOISE",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "A block diagram illustrating the setup is shown in Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-setup": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Simulation and Measurement of Supply and Substrate Noise in Mixed-Signal ICs",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Noise coupling measurement setup for the folded-cascode ampliﬁer connected in a unity-gain conﬁguration",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10. Diagram depicting one stage of the digital stepped buffer showing the parasitics and the substrate network. Separate source and bulk power supplies were used.",
+      "caption_bbox": [
+        302.6,
+        361.4,
+        553.7,
+        387.3
+      ],
+      "section_title": "IV. MEASUREMENT OF SUBSTRATE NOISE",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT OF SUBSTRATE NOISE",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "This noise couples into the bulks of the input transistors and the IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 2, FEBRUARY 2005 Fig. 10."
+        },
+        {
+          "section_title": "MEASUREMENT OF SUBSTRATE NOISE",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Fig. 10 shows the inclusion of critical parasitic elements as well as the substrate resistances for one inverter stage of a digital stepped buffer."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "buffer",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Diagram depicting one stage of the digital stepped buffer showing the parasitics and the substrate network. Separate source and bulk power supplies were used",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 5,
+      "caption": "Fig. 11. Microphotograph of the test chip containing the folded-cascode ampliﬁer, noise-sensing ampliﬁers, and stepped buffer.",
+      "caption_bbox": [
+        38.1,
+        248.2,
+        289.2,
+        265.2
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "It consisted of a stepped buffer, a folded-cascode ampliﬁer connected in unity gain and two substrate noise sensing ampliﬁers as shown in Fig. 11."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "At distances above m, the cross-coupling resistance between approximately 100 OWENS et al.: SIMULATION AND MEASUREMENT OF SUPPLY AND SUBSTRATE NOISE IN MIXED-SIGNAL ICs Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -7.7,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "buffer",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Microphotograph of the test chip containing the folded-cascode ampliﬁer, noise-sensing ampliﬁers, and stepped buffer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 5,
+      "caption": "Fig. 12. Simulation and measurement of the substrate noise picked up by the noise-sensing ampliﬁer with the stepped buffer running at a frequency of 780-kHz.",
+      "caption_bbox": [
+        38.1,
+        458.6,
+        289.2,
+        484.5
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 12."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Shown in Fig. 12 are the simulations and measurements at the output of the noise-sensing ampliﬁer when the stepped buffer is clocked with a 3.3-V 780-kHz input waveform."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "buffer",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "output buffer",
+          "clock / timing"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simulation and measurement of the substrate noise picked up by the noise-sensing ampliﬁer with the stepped buffer running at a frequency of 780-kHz",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 5,
+      "caption": "Fig. 13. Simulation and measurement of the substrate noise sensed at the substrate tap with the stepped buffer running at a frequency of 780 kHz.",
+      "caption_bbox": [
+        301.1,
+        246.5,
+        552.2,
+        263.4
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 13 shows simulations and measurements made using substrate tap as the means of measuring noise from the the stepped buffer."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "In Fig. 14 the measurement and simulation of the folded-cascode ampliﬁer output in the unity-gain conﬁguration is shown when the Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "buffer",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simulation and measurement of the substrate noise sensed at the substrate tap with the stepped buffer running at a frequency of 780 kHz",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 5,
+      "caption": "Fig. 14. Simulation and measurement of the substrate noise sensed by the folded-cascode ampliﬁer connected in a unity-gain conﬁguration. The stepped buffer was operating at 1 MHz.",
+      "caption_bbox": [
+        301.1,
+        460.2,
+        552.2,
+        486.1
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "In Fig. 14 the measurement and simulation of the folded-cascode ampliﬁer output in the unity-gain conﬁguration is shown when the Fig. 13."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "buffer",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simulation and measurement of the substrate noise sensed by the folded-cascode ampliﬁer connected in a unity-gain conﬁguration. The stepped buffer was operating at 1 MHz",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 6,
+      "caption": "Fig. 15. Digital bulk and source power supply routing using (a) one pin and (b) using two pins.",
+      "caption_bbox": [
+        39.6,
+        356.7,
+        350.7,
+        364.7
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Figs. 15(a) and (b) illustrate the two different scenarios, where the bulks and sources are connected to a single pin, Fig. 15(a), and to separate pins, Fig. 15(b)."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 16 shows the simulation and measurement results for the noise picked up by the substrate tap when the stepped buffer’s bulks and sources are connected as shown in Fig. 15(a)."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Our results are different from those in [22] due to the smaller amount Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "buffer",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Digital bulk and source power supply routing using (a) one pin and (b) using two pins",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 6,
+      "caption": "Fig. 16. (a) Simulation (top) and measurement (bottom) of the noise picked up by the substrate tap when the stepped buffer’s bulks and sources are connected to separate pins. (b) Simulation of the noise at the substrate tap when the bulks and sources are tied together and routed to a single pin.",
+      "caption_bbox": [
+        39.6,
+        685.4,
+        290.7,
+        720.3
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 16 shows the simulation and measurement results for the noise picked up by the substrate tap when the stepped buffer’s bulks and sources are connected as shown in Fig. 15(a)."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "By tying the sources and bulks together on chip, the peak-to-peak noise picked up approximately doubles as shown in Fig. 16(b)."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "buffer",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) Simulation (top) and measurement (bottom) of the noise picked up by the substrate tap when the stepped buffer’s bulks and sources are connected to separate pins. (b) Simulation of the noise at the substrate tap when the bulks and sources are tied together and routed to a single pin",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 6,
+      "caption": "Fig. 17. Conceptual representation of the die-perimeter ring connections to reduce the noise coupling through the substrate.",
+      "caption_bbox": [
+        302.6,
+        580.2,
+        553.7,
+        597.1
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "For chips dominated by digital circuitry, separating the transistor sources and bulks may IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 2, FEBRUARY 2005 Fig. 17."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "A schematic of the setup is shown in Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Simulation and Measurement of Supply and Substrate Noise in Mixed-Signal ICs",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Conceptual representation of the die-perimeter ring connections to reduce the noise coupling through the substrate",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 7,
+      "caption": "Fig. 18. Simulation (top) and measurement (bottom) of the folded-cascode ampliﬁer with the die-perimeter ring left ﬂoating.",
+      "caption_bbox": [
+        38.1,
+        241.5,
+        289.2,
+        258.4
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Interestingly, the negative noise peaks remain relatively unaffected by the change, while the positive spikes triple in amplitude for the case where the source and bulk nodes are tied OWENS et al.: SIMULATION AND MEASUREMENT OF SUPPLY AND SUBSTRATE NOISE IN MIXED-SIGNAL ICs Fig. 18."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Figs. 18 and 19 show the simulations and measurements of the folded-cascode ampliﬁer with and without the die-perimeter ring grounded [13]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "integrated circuit / system",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulation (top) and measurement (bottom) of the folded-cascode ampliﬁer with the die-perimeter ring left ﬂoating",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 7,
+      "caption": "Fig. 19. Simulation (top) and measurement (bottom) of the folded-cascode ampliﬁer with the die-perimeter ring grounded.",
+      "caption_bbox": [
+        301.1,
+        242.4,
+        552.2,
+        259.3
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "There is approximately a 15-dB reduction in substrate noise when the source and bulk nodes of the transistors are tied separately and when the backplane is grounded, Fig. 19."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.6,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Simulation and Measurement of Supply and Substrate Noise in Mixed-Signal ICs",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simulation (top) and measurement (bottom) of the folded-cascode ampliﬁer with the die-perimeter ring grounded",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 20,
+      "label": "Fig. 20",
+      "page": 7,
+      "caption": "Fig. 20. Comparison of total substrate noise generated by the stepped buffer for different cases: bulk and source nodes tied together and separate, back plane grounded and not grounded. The input frequency of the buffer is 10 MHz.",
+      "caption_bbox": [
+        301.1,
+        484.3,
+        552.2,
+        510.2
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Simulations shown in Fig. 20 summarize the effects of grounding the backplane and separating the bulk and supply connections for the PMOS devices."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 20."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "buffer",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Comparison of total substrate noise generated by the stepped buffer for different cases: bulk and source nodes tied together and separate, back plane grounded and not grounded. The input frequency of the buffer is 10 MHz",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 3,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

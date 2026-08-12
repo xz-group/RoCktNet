@@ -1,0 +1,50 @@
+{
+  "title": "A 95fJ/b Current-Mode Transceiver for 10mm On-Chip Interconnect Seon-Kyoo Lee1,2, Seung-Hun Lee1, Dennis Sylvester3, David Blaauw3, Jae-Yoon Sim1",
+  "bibliography": {
+    "authors": [],
+    "venue": "",
+    "year": 2013,
+    "doi": "",
+    "keywords": []
+  },
+  "figure_number": "Figure 14.8.1 shows a simplified circuit diagram of the proposed current-mode transceiver. The transmitter drives IDRV on the differential channel with an opendrain-type CML buffer circuit. IDRV and an extra current source (IBIAS) provide pull-down current for the sense-amplifier load in the receiver side. The function of IBIAS is required for guaranteed non-zero pull-down current while the CML driver is switching. However, in actual implementation, IBIAS is not used. Instead, the non-zero pull-down current is realized by employing a pre-emphasis driver which is explained below. The current sense amplifier load is formed by stacking a PMOS diode stage and a cross-coupled NMOS stage. This stacking configuration nulls the change in VGSP+VGSN for differential current input by designing gmn and gmp to have the same value, resulting in an RIN of zero. This can be achieved by tuning the size ratio between PMOS and NMOS. In this work, the size ratio was chosen to be 50Ω through simulations and fixed without employing an adaptive calibration scheme, yet this fixed design still gives robust near2007. optimum eye openings under ±20-percent deviation from the designed ratio. Further research could accompany an adaptive size-tuning scheme to obtain a stable lower input resistance under worst-case process variations. The received input current is converted to a voltage output (ΔVOUT) by an equivalent load resistance (~1.2KΩ) given by a series connection of a diode-connected PMOS and RL. Then, ΔVOUT is processed with a clocked slicer for data recovery. The M8 layer was used for the channel implementation with a line width and spacing of 0.5μm and 1μm, respectively, giving a total RCH of 500Ω and CCH of 2.5pF. Therefore, the voltage swing at the transmitter side (ΔVTX) is significant due to series resistance (RCH) in the current signal path, while the input swing at the receiver side (ΔVRX) is negligible (2.5mV). The proposed current-mode signaling is compared with the conventional voltage-mode signaling with the same equivalent load resistance of 1.2KΩ to have the same voltage swing (Fig. 14.8.2). Simulations show a 7× increase in 3dB bandwidth and 17.1dB less loss at the Nyquist frequency of 1.5GHz (for 3Gb/s), which lessens the need for equalization and helps reduce power. The bandwidth is further widened by employing simple equalization schemes. As shown in Fig. 14.8.3, a one-tap pre-emphasis driver is added in the transmitter. Without any extra DC bias current, this pre-emphasis driver guarantees non-zero",
+  "type": "Current-Mode Transceiver",
+  "technology": "CMOS, 65nm process",
+  "application": "",
+  "sub_blocks": [
+    "inductor",
+    "resistor",
+    "transistor/MOSFET",
+    "cross-coupled pair",
+    "current source",
+    "output buffer",
+    "clock / timing",
+    "sense amplifier"
+  ],
+  "function_summary": "Current-Mode Transceiver",
+  "design_purpose": "",
+  "metrics": [
+    "Energy per operation",
+    "Process node",
+    "Impedance",
+    "Capacitance",
+    "Supply / voltage",
+    "Gain"
+  ],
+  "numerical_performance": [
+    "95fJ",
+    "65nm",
+    "50Ω",
+    "0.5μm",
+    "1μm",
+    "500Ω",
+    "2.5pF",
+    "2.5mV",
+    "3dB",
+    "17.1dB"
+  ],
+  "confidence": 0.8,
+  "warnings": [
+    "Recommended figure was classified as 'conventional', not a schematic; manual confirmation strongly recommended."
+  ]
+}

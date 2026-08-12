@@ -1,0 +1,286 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1233801.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1233801",
+  "generated_at": "2026-07-29T22:01:21",
+  "paper_metadata": {
+    "title": "An Integrated CMOS RF Synthesizer for 802.11a Wireless LAN",
+    "authors": [
+      "Frank Herzel",
+      "Gunter Fischer",
+      "Hans Gustat"
+    ],
+    "abstract": "A frequency synthesizer combining a relatively large tuning range (4.12–4.72 GHz) with a low noise sensitivity is presented. A stable fine-tuning loop is combined with an unstable coarse-tuning loop in parallel. As a result, a stable phase-locked loop (PLL) with a relatively wide tuning range and a moderate level of reference spurs is obtained. By adding a resistorless coarse-tuning loop, the tuning range was increased by a factor of four with no penalty in terms of phase noise, reference spurs, and settling speed. Also, the additional chip area and power consumption are negligible. The CMOS PLL circuit fabricated in a 0.25m technology is aimed at multiband WLAN transceivers.",
+    "keywords": [
+      "Dual-loop phase-locked loop",
+      "frequency synthe-"
+    ],
+    "doi": "10.1109/JSSC.2003.817601",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Integrated CMOS RF Synthesizer",
+    "technology": "CMOS",
+    "application_domain": "rf, wireless, wlan, if",
+    "sub_blocks": [
+      "varactor",
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "switch",
+      "inductor"
+    ],
+    "design_purpose": "A frequency synthesizer combining a relatively large tuning range (4.12–4.72 GHz) with a low noise sensitivity is presented.",
+    "function_summary": "Integrated CMOS RF Synthesizer: A frequency synthesizer combining a relatively large tuning range (4.12–4.72 GHz) with a low noise sensitivity is presented.",
+    "key_specs": [
+      "4.72 GHz",
+      "4.66 GHz",
+      "5.825 GHz",
+      "4.8 GHz",
+      "200 MHz",
+      "4.5 GHz",
+      "3 dB",
+      "470 pF",
+      "2.2 nF",
+      "30 pF"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "I NTEGRATED phase-locked loops (PLLs) have to cope with variations in the device parameters with process and temperature resulting in frequency variations of the voltage-controlled oscillator (VCO). Therefore, the tuning range must be relatively large in order to cover the desired band and the VCO frequency variations. A still larger tuning range is required for multiband transceivers. For the 802 ..."
+    },
+    {
+      "number": "II",
+      "title": "PLL ARCHITECTURE",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "Fig. 1 show schematic views of the frequency synthesizer and the VCO. The synthesizer is composed of two parallel loops sharing the same phase-frequency detector (PFD). The charge ) is capacitively loaded, while pump of the upper loop (current ) is loaded with the charge pump of the lower loop (current a capacitor and a resistor in series. A smaller capacitance is added in parallel to this RC comb ..."
+    },
+    {
+      "number": "III",
+      "title": "LINEAR ANALYSIS",
+      "kind": "proposed",
+      "page": 1,
+      "text_preview": "The linear analysis of the PLL basically follows [10], where a single-loop charge pump PLL has been discussed. Strictly speaking, a charge pump PLL represents a discrete-time system. However, if the loop bandwidth is much less than the input frequency, the loop can be studied as a continuous-time system [12]. We disregard the frequency divider whose effect could be with . A considered by replacing ..."
+    },
+    {
+      "number": "IV",
+      "title": "SIMULATION RESULTS",
+      "kind": "results",
+      "page": 2,
+      "text_preview": "In this section, we investigate the influence of the capacitance in the coarse-tuning loop on the settling behavior and the control voltage ripple using transient behavioral simulation. From transient simulation, we obtain the total settling time, 150 kHz. Fig. 2(a) where the settling accuracy is defined to be shows the settling behavior of the effective control voltage representing the sum of the ..."
+    },
+    {
+      "number": "V",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 2,
+      "text_preview": "The CMOS test chip was fabricated in the IHP 0.25m SiGe:C BiCMOS technology [13], but no bipolar devices were (a) (b) (c) Fig. 2. (a) Effective control voltage V during settling. (b) Settling time and (c) steady-state peak-to-peak value of V versus C . used in our design. The charge pump in the coarse-tuning loop can be disabled by using a CMOS switch (for measurement purposes only). The measured  ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 3,
+      "text_preview": "We have introduced a PLL architecture combining a conventional charge pump PLL with a second loop in parallel to inIEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 10, OCTOBER 2003 crease the PLL tuning range. Since the two loops share most of the PLL components, the complexity is only slightly increased. The charge pump in the second loop is loaded with a relatively large capacitor only. It was ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Schematic view of (a) the frequency synthesizer and (b) the VCO.",
+      "caption_bbox": [
+        301.1,
+        484.3,
+        540.6,
+        495.0
+      ],
+      "section_title": "II. PLL ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "(a) (b) Fig. 1."
+        },
+        {
+          "section_title": "PLL ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 1 show schematic views of the frequency synthesizer and the VCO."
+        },
+        {
+          "section_title": "PLL ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "According to the transistor sizes shown in Fig. 1(b), the ratio between the coarse-tuning and the fine-tuning range equals 2.5."
+        },
+        {
+          "section_title": "PLL ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The parameters of the integrated low-pass filter in pF, the fine-tuning loop according to Fig. 1(a) are k and pF."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.6,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:proposed": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, wlan, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Schematic view of (a) the frequency synthesizer and (b) the VCO",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 1.0,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 2,
+      "caption": "Fig. 2. (a) Effective control voltage V during settling. (b) Settling time and (c) steady-state peak-to-peak value of V versus C .",
+      "caption_bbox": [
+        301.1,
+        565.6,
+        552.2,
+        585.1
+      ],
+      "section_title": "IV. SIMULATION RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "SIMULATION RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 2(a) where the settling accuracy is defined to be shows the settling behavior of the effective control voltage representing the sum of the two control voltages weighted with the corresponding VCO gain."
+        },
+        {
+          "section_title": "SIMULATION RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "We have simulated the settling behavior and the steady-state . control voltage ripple for three orders of magnitude in Fig. 2(b) and (c) shows the settling time and the ripple as ."
+        },
+        {
+          "section_title": "SIMULATION RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "From Fig. 2(c) we conclude that for , a value below 200 pF is hard to accept because of the large ripple."
+        },
+        {
+          "section_title": "SIMULATION RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "The settling time increases only slightly between 200 pF and 2 nF, as evident from Fig. 2(b)."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "The CMOS test chip was fabricated in the IHP 0.25m SiGe:C BiCMOS technology [13], but no bipolar devices were (a) (b) (c) Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.0,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 2.0
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, wlan, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Effective control voltage V during settling. (b) Settling time and (c) steady-state peak-to-peak value of V versus C",
+        "key_specs": [
+          "200 pF",
+          "2 nF"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 3,
+      "caption": "Fig. 3. Output spectrum with the coarse-tuning loop (a) disabled and (b) enabled. (c) Relative spur level over the whole tuning range.",
+      "caption_bbox": [
+        39.6,
+        646.7,
+        290.7,
+        666.3
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 3(a) and (b) shows the PLL output spectrum for single-loop PLL and dual-loop operation, respectively, where is composed of a 30-pF integrated the filter capacitance MIM capacitor and a 470-pF external capacitor in parallel."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 3(c) compares the spur level of the single-loop and the dual-loop over the whole tuning range."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "The synthesizer draws at total current of 47 mA from a (a) (b) (c) Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -5.8,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "-tuning range": -2.5,
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, wlan, if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Output spectrum with the coarse-tuning loop (a) disabled and (b) enabled. (c) Relative spur level over the whole tuning range",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 1,
+  "warnings": []
+}

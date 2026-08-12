@@ -1,0 +1,1004 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1020241.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1020241",
+  "generated_at": "2026-07-29T22:00:24",
+  "paper_metadata": {
+    "title": "A Wide-Range Delay-Locked Loop With a Fixed Latency of One Clock Cycle",
+    "authors": [
+      "Hsiang-Hui Chang",
+      "Jyh-Woei Lin",
+      "Ching-Yuan Yang",
+      "Shen-Iuan Liu"
+    ],
+    "abstract": "A delay-locked loop (DLL) with wide-range operation and fixed latency of one clock cycle is proposed. This DLL uses a phase selection circuit and a start-controlled circuit to enlarge the operating frequency range and eliminate harmonic locking problems. Theoretically, the operating frequency range of the DLL can be from 1 max) to 1 min), where ( (3 min and max are the minimum and maximum delay of a delay cell, respectively, and is the number of delay cells used in the delay line. Fabricated in a 0.35m single-poly triple-metal CMOS process, the measurement results show that the proposed DLL can operate from 6 to 130 MHz, and the total delay time between input and output of this DLL is just one clock cycle. From the entire operating frequency range, the maximum rms jitter does not exceed 25 ps. The DLL occupies an active area of 880 m 515 m and consumes a maximum power of 132 mW Fig. 1. Block diagram of the conventional analog DLL. at 130 MHz.",
+    "keywords": [
+      "Delay-locked loops",
+      "latency",
+      "phase-locked loops"
+    ],
+    "doi": "10.1109/JSSC.2002.800922",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2002
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Wide-Range Delay-Locked Loop",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "transistor/MOSFET",
+      "current source",
+      "switch",
+      "latch",
+      "clock / timing",
+      "output buffer"
+    ],
+    "design_purpose": "Fabricated in a 0.35m single-poly triple-metal CMOS process, the measurement results show that the proposed DLL can operate from 6 to 130 MHz, and the total delay time between input and output of this DLL is just one clock cycle.",
+    "function_summary": "Wide-Range Delay-Locked Loop: Fabricated in a 0.35m single-poly triple-metal CMOS process, the measurement results show that the proposed DLL can operate from 6 to 130 MHz, and the total delay time between input and output of this DLL is just one clock cycle.",
+    "key_specs": [
+      "130 MHz",
+      "25 ps",
+      "132 mW",
+      "2 w",
+      "50%",
+      "1 v",
+      "6 MHz",
+      "400 MHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "W ITH THE evolution and continuing scaling of CMOS technologies, the demand for high-speed and high integration density VLSI systems has recently grown exponentially. However, the important synchronization problem among IC modules is becoming one of the bottlenecks for high-performance systems. Phase-locked loops (PLLs) [1]–[3] and delay-locked loops (DLLs) [4]–[7] have been typically employed for ..."
+    },
+    {
+      "number": "II",
+      "title": "RANGE PROBLEM OF CONVENTIONAL DLLS",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "A conventional DLL, as shown in Fig. 1, consists of four major blocks: the phase detector (PD), the charge-pump circuit, the loop filter, and the VCDL. In the DLL, the reference clock, ref_clk, is propagated through VCDL. The output signal, vcdl_clk, at the end of the delay line is compared with the reference input. If delay different from integer multiples of clock period is detected, the closed  ..."
+    },
+    {
+      "number": "III",
+      "title": "ARCHITECTURE OF THE PROPOSED DLL",
+      "kind": "proposed",
+      "page": 1,
+      "text_preview": "The architecture of the proposed DLL is shown in Fig. 3. It is composed of a conventional analog DLL, a phase selection circuit, and a start-controlled circuit. Before the DLL begins to lock, the phase selection circuit will choose an appropriate delay cell to be a feedback signal (vcdl_clk) according to different frequencies of input signal. In other words, the number of the delay cells may chang ..."
+    },
+    {
+      "number": "IV",
+      "title": "CIRCUIT DESCRIPTION",
+      "kind": "design",
+      "page": 3,
+      "text_preview": "A. Phase Selection Circuit The phase selection circuit consists of two blocks: an edge detector and a multiplexer with a decoder, as shown in Fig. 5. The schematic and timing diagram of the edge detector are shown in Figs. 6 and 7, respectively. To guarantee that the latency of the DLL is just one clock cycle, the first two clock phases in Fig. 6 are reserved for measurement. In practice, the firs ..."
+    },
+    {
+      "number": "V",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 5,
+      "text_preview": "The prototype chip is fabricated in a 0.35m single-poly triple-metal standard CMOS process. The microphotograph of the chip is shown in Fig. 14. The capacitors used in the loop filter are integrated in the chip and formed by metal-to-metal capacitors. The experimental results show that the DLL can operate in the frequency range of 6–130 MHz. Figs. 15 and 16 IEEE JOURNAL OF SOLID-STATE CIRCUITS, VO ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 6,
+      "text_preview": "A DLL with wide-range operation and fixed latency of one clock cycle is proposed. First, the multiphase outputs of the VCDL are all sent to the phase selection circuit. Then the phase selection circuit will automatically select one of the delayed outputs to feedback. As a result, this DLL can operate over a wide range without suffering from harmonic locking problems. Ideally, this DLL can operate  ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Block diagram of the conventional analog DLL.",
+      "caption_bbox": [
+        301.1,
+        323.6,
+        483.6,
+        334.2
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1."
+        },
+        {
+          "section_title": "RANGE PROBLEM OF CONVENTIONAL DLLS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "A conventional DLL, as shown in Fig. 1, consists of four major blocks: the phase detector (PD), the charge-pump circuit, the loop filter, and the VCDL."
+        },
+        {
+          "section_title": "RANGE PROBLEM OF CONVENTIONAL DLLS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Nevertheless, in some cases, especially for high-frequency operations, the initial delay between ref_clk and vcdl_clk, as shown in Fig. 1, may be larger than two clock cycles and harmonic locking will occur."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.3,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "-conventional": -3.0,
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "delay-locked loop (DLL)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the conventional analog DLL",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. DLL in normal lock and false lock conditions.",
+      "caption_bbox": [
+        39.6,
+        249.8,
+        216.7,
+        260.4
+      ],
+      "section_title": "II. RANGE PROBLEM OF CONVENTIONAL DLLS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "RANGE PROBLEM OF CONVENTIONAL DLLS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "However, the conventional DLL will fail to lock or falsely lock to two or more pe- , of the input signal if the initial delay of the VCDL is riods, or longer than 1.5 , as shown in Fig. 2. shorter than 0.5 Therefore, if the DLL is required to lock the delay to one clock cycle of the input reference signal, the initial delay of the VCDL and 1.5 [7], regardless needs to be located between 0.5 of the initial voltage of the loop filter."
+        },
+        {
+          "section_title": "RANGE PROBLEM OF CONVENTIONAL DLLS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Assume that the maximum and the minimum delay of the VCDL are Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "delay-locked loop (DLL)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "DLL in normal lock and false lock conditions",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. System architecture of the proposed DLL.",
+      "caption_bbox": [
+        302.6,
+        259.7,
+        466.3,
+        270.4
+      ],
+      "section_title": "II. RANGE PROBLEM OF CONVENTIONAL DLLS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "RANGE PROBLEM OF CONVENTIONAL DLLS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "A new start-controlled circuit is also IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 8, AUGUST 2002 Fig. 3."
+        },
+        {
+          "section_title": "ARCHITECTURE OF THE PROPOSED DLL",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The architecture of the proposed DLL is shown in Fig. 3."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Therefore, setupb is low and pulls the , as shown in Fig. 3 (i.e., set the VCDL control voltage to delay to its minimum value)."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Since the signal startb will set the control voltage in Fig. 3 to , the proposed phase detector and the current-pump circuit will discharge the loop filter to increase the delay of the VCDL."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.6,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "+proposed": 3.0,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "delay-locked loop (DLL)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "Since the signal startb will set the control voltage in Fig. 3 to , the proposed phase detector and the current-pump circuit will discharge the loop filter to increase the delay of the VCDL.",
+        "function_summary": "System architecture of the proposed DLL. Since the signal startb will set the control voltage in Fig. 3 to , the proposed phase detector and the current-pump circuit will discharge the loop filter to increase the delay of the VCDL.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.93,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 1,
+      "caption": "Fig. 4. Small-signal model of the conventional analog DLL.",
+      "caption_bbox": [
+        302.6,
+        355.3,
+        499.9,
+        366.0
+      ],
+      "section_title": "II. RANGE PROBLEM OF CONVENTIONAL DLLS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "RANGE PROBLEM OF CONVENTIONAL DLLS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 4."
+        },
+        {
+          "section_title": "ARCHITECTURE OF THE PROPOSED DLL",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The linear model of the DLL is shown in Fig. 4, where the is the charge-pump cursummer stands for a phase detector, CHANG et al.: WIDE-RANGE DELAY-LOCKED LOOP WITH FIXED LATENCY OF ONE CLOCK CYCLE Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-conventional": -3.0,
+        "-model": -1.5,
+        "references": 0.8
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "delay-locked loop (DLL)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Small-signal model of the conventional analog DLL",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 1,
+      "caption": "Fig. 5. Block diagram of the phase selection circuit.",
+      "caption_bbox": [
+        302.6,
+        500.3,
+        474.6,
+        511.0
+      ],
+      "section_title": "II. RANGE PROBLEM OF CONVENTIONAL DLLS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "RANGE PROBLEM OF CONVENTIONAL DLLS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 5."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Phase Selection Circuit The phase selection circuit consists of two blocks: an edge detector and a multiplexer with a decoder, as shown in Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "+circuit": 1.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "multiplexer (MUX)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the phase selection circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.45,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. Schematic of edge detection circuit. (a) Edge detection circuits. (b) Clock edge generation. (c) Latch N.",
+      "caption_bbox": [
+        38.1,
+        273.4,
+        401.0,
+        284.1
+      ],
+      "section_title": "III. ARCHITECTURE OF THE PROPOSED DLL",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ARCHITECTURE OF THE PROPOSED DLL",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The linear model of the DLL is shown in Fig. 4, where the is the charge-pump cursummer stands for a phase detector, CHANG et al.: WIDE-RANGE DELAY-LOCKED LOOP WITH FIXED LATENCY OF ONE CLOCK CYCLE Fig. 6."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The schematic and timing diagram of the edge detector are shown in Figs. 6 and 7, respectively."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "To guarantee that the latency of the DLL is just one clock cycle, the first two clock phases in Fig. 6 are reserved for measurement."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 7.2,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+circuit": 1.0,
+        "section:proposed": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "latch",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "latch",
+          "clock / timing"
+        ],
+        "design_purpose": "",
+        "function_summary": "Schematic of edge detection circuit. (a) Edge detection circuits. (b) Clock edge generation. (c) Latch N",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.7,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 2,
+      "caption": "Fig. 7. Timing diagram of edge detection circuit.",
+      "caption_bbox": [
+        38.1,
+        510.1,
+        201.3,
+        520.7
+      ],
+      "section_title": "III. ARCHITECTURE OF THE PROPOSED DLL",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ARCHITECTURE OF THE PROPOSED DLL",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "(a) Fig. 7."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Referring to Fig. 7(a), suppose that the signals all have rising edges in sequence during d10) are all high one clock cycle, therefore, the outputs (d3 and the multiplexer will select phase 10 as the output signal, vcdl_clk."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "However, if the input frequency is higher, suppose that the timing diagram is similar to Fig. 7(b)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.2,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:proposed": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "multiplexer (MUX)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Timing diagram of edge detection circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.55,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. Schematic of start-controlled circuit associated with PFD.",
+      "caption_bbox": [
+        39.6,
+        215.6,
+        254.6,
+        226.2
+      ],
+      "section_title": "III. ARCHITECTURE OF THE PROPOSED DLL",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ARCHITECTURE OF THE PROPOSED DLL",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Therefore, the delay between Fig. 8."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Start-Controlled Circuit The schematic of the start-controlled circuit and the associated PFD are shown in Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+circuit": 1.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "Wide-Range Delay-Locked Loop",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematic of start-controlled circuit associated with PFD",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.94,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 3,
+      "caption": "Fig. 9. Timing diagram of start-controlled circuit.",
+      "caption_bbox": [
+        39.6,
+        384.6,
+        204.0,
+        395.2
+      ],
+      "section_title": "III. ARCHITECTURE OF THE PROPOSED DLL",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ARCHITECTURE OF THE PROPOSED DLL",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 9."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The timing diagram of this start-controlled circuit is shown in Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.8,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "Wide-Range Delay-Locked Loop",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Timing diagram of start-controlled circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.45,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 3,
+      "caption": "Fig. 10. Schematic of the PFD circuit [12].",
+      "caption_bbox": [
+        302.6,
+        614.4,
+        446.2,
+        625.0
+      ],
+      "section_title": "IV. CIRCUIT DESCRIPTION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "After IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 8, AUGUST 2002 Fig. 10."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The schematics of these circuits are shown in Figs. 10–12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "Wide-Range Delay-Locked Loop",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematic of the PFD circuit [12]",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.91,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 4,
+      "caption": "Fig. 11. Schematic of the charge-pump circuit [11].",
+      "caption_bbox": [
+        38.1,
+        273.2,
+        209.7,
+        283.8
+      ],
+      "section_title": "IV. CIRCUIT DESCRIPTION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "It is composed of only two rising-edge trigger D-flip-flops (DFFs), two NAND gates, and CHANG et al.: WIDE-RANGE DELAY-LOCKED LOOP WITH FIXED LATENCY OF ONE CLOCK CYCLE Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.9,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.4
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "delay-locked loop (DLL)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematic of the charge-pump circuit [11]",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.87,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 4,
+      "caption": "Fig. 12. Schematic of the delay cell with replica bias [12].",
+      "caption_bbox": [
+        38.1,
+        486.5,
+        230.0,
+        497.1
+      ],
+      "section_title": "IV. CIRCUIT DESCRIPTION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.9,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.4
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "delay line / delay element",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematic of the delay cell with replica bias [12]",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.71,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 4,
+      "caption": "Fig. 13. Simulated transfer curve of the VCDL.",
+      "caption_bbox": [
+        38.1,
+        675.2,
+        196.1,
+        685.8
+      ],
+      "section_title": "IV. CIRCUIT DESCRIPTION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 13."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Therefore, the transfer curve of delay versus control voltage is monotonic decreasing, as shown in Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Wide-Range Delay-Locked Loop",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated transfer curve of the VCDL",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 4,
+      "caption": "Fig. 14. Microphotograph of the chip.",
+      "caption_bbox": [
+        301.1,
+        579.9,
+        428.5,
+        590.5
+      ],
+      "section_title": "IV. CIRCUIT DESCRIPTION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "In this way, the two inputs of the Fig. 14."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The microphotograph of the chip is shown in Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "Wide-Range Delay-Locked Loop",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Microphotograph of the chip",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 5,
+      "caption": "Fig. 15. DLL at initial state when operating frequency is 6 MHz.",
+      "caption_bbox": [
+        39.6,
+        253.3,
+        252.1,
+        263.9
+      ],
+      "section_title": "IV. CIRCUIT DESCRIPTION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "In comparison with [6], this start-controlled circuit Fig. 15."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Figs. 15 and 16 IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 8, AUGUST 2002 Fig. 17."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Figs. 15 and 16 also show that after the signal startb is high, the first rising edge of CHANG et al.: WIDE-RANGE DELAY-LOCKED LOOP WITH FIXED LATENCY OF ONE CLOCK CYCLE the output clock of the VCDL, vcdl_clk, leads that of the input clock, ref_clk."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "delay-locked loop (DLL)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "DLL at initial state when operating frequency is 6 MHz",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 5,
+      "caption": "Fig. 16. DLL at initial state when operating frequency is 130 MHz.",
+      "caption_bbox": [
+        39.6,
+        464.3,
+        259.9,
+        474.9
+      ],
+      "section_title": "IV. CIRCUIT DESCRIPTION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.9,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "delay-locked loop (DLL)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "DLL at initial state when operating frequency is 130 MHz",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.11,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 5,
+      "caption": "Fig. 17. Jitter histogram when DLL operates at 130 MHz.",
+      "caption_bbox": [
+        302.6,
+        313.3,
+        493.3,
+        323.9
+      ],
+      "section_title": "IV. CIRCUIT DESCRIPTION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Figs. 15 and 16 IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 8, AUGUST 2002 Fig. 17."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 17 shows the jitter histogram when the DLL operates at 130 MHz."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "delay-locked loop (DLL)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Jitter histogram when DLL operates at 130 MHz",
+        "key_specs": [
+          "130 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 5,
+      "caption": "Fig. 18. Measurement results of rms jitter over different frequencies.",
+      "caption_bbox": [
+        302.6,
+        466.0,
+        527.2,
+        476.7
+      ],
+      "section_title": "IV. CIRCUIT DESCRIPTION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 18."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 18 shows the measurement results of rms jitter over different frequencies."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Wide-Range Delay-Locked Loop",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measurement results of rms jitter over different frequencies",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 6,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

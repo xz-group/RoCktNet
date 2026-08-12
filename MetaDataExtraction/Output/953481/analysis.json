@@ -1,0 +1,1337 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\953481.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\953481",
+  "generated_at": "2026-07-29T22:03:34",
+  "paper_metadata": {
+    "title": "A 2-V 300-MHz 1-Mb Current-Sensed Double-Density SRAM for Low-Power 0.3-m CMOS/SIMOX ASICs",
+    "authors": [
+      "Nobutaro Shibata",
+      "Mayumi Watanabe",
+      "Yasuhiro Sato",
+      "Takako Ishihara",
+      "Yukio Komine"
+    ],
+    "abstract": "Silicon-on-insulator (SOI) devices have the great advantage of high operating speed in low supply voltages. This paper to 3.3 V. presents megabit-class high-speed and low-power embedded In recent ULSI design, low power dissipation is in strong deSRAM techniques for high data-throughput CMOS/SIMOX mand. Reducing supply voltage is an effective way to reduce ASICs. In order to reduce the power dissipation of high-operatingpower dissipation at the expense of data throughput. Lowering frequency SRAMs, the multi-VDD scheme using a low-voltage MOSFET threshold voltage improves the throughput, yet power supply only for restricted functional blocks is proposed along with the voltage-swing-matching circuit for “low-voltage” results in large power dissipation due to greatly increased subblocks. A squashed double-density layout of six-transistor-type threshold leakage currents [8]. An ultimate solution for reducing m2 under a 0.3memory cell realizes a small size of 8.64 m operating power dissipation is to minimize the parasitic capacCMOS/SIMOX logic process including LOCOS isolation and itance in devices and interconnections. To address these issues, plain local interconnections (e.g., tungsten-deposited diffusion post-bulk device is thoroughly studied and the silicon-on-insulayer and pseudocontacts). A new resistor-coupled current-sense amplifier makes it possible to detect the small readout signal from lator (SOI) device is mainly targeted. the memory cell with a short sensing time. To shorten the writing SOI MOSFET presents small parasitic source and/or drain catime, each bitline has an individual writing driver (per-bitline pacitance owing to the reduced p–n junction area. The value architecture). The recovery time of bitlines lowered to write data is (subthreshold-swing factor) of the fully depleted type is close also shortened with an accelerator combined with the pulse-reset to a theoretical lower limit of 63 mV/dec. The smaller value, wordline. A 64K-words 16-bits SRAM test chip, fabricated with the 0.3m pseudomultith CMOS/SIMOX process (a short gate compared with the 80–90 mV/dec. of bulk devices, enables the length of 0.2 m is available for the fully depleted MOSFETs), has lowering of under the same subthreshold leakage current demonstrated the 300-MHz operation under a typical condition condition. Moreover, SOI structures have a great advantage of with 2and 1-V power supplies. The power dissipation in standby being latchup free. Shortened isolation distance between MOSis less than 0.1 mW and that at 200-MHz operation with a modified FETs reduces chip size, resulting in increased operating speed checkerboard test pattern is 35.6 mW for single fan-out loads. and reduced power dissipation. In addition, the better soft-error",
+    "keywords": [
+      "Current sense",
+      "double-density cell",
+      "high speed"
+    ],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2001
+  },
+  "paper_circuit_context": {
+    "circuit_type": "2-V 300-MHz 1-Mb Current-Sensed Double-Density SRAM",
+    "technology": "CMOS, SOI",
+    "application_domain": "if",
+    "sub_blocks": [
+      "resistor",
+      "transistor/MOSFET",
+      "cross-coupled pair",
+      "current source",
+      "output buffer",
+      "switch",
+      "latch",
+      "sense amplifier",
+      "bias circuit"
+    ],
+    "design_purpose": "A 64K-words 16-bits SRAM test chip, fabricated with the 0.3m pseudomultith CMOS/SIMOX process (a short gate compared with the 80–90 mV/dec. of bulk devices, enables the length of 0.2 m is available for the fully depleted MOSFETs), has lowering of under the same subthreshold leakage current demonstrated the 300-MHz ...",
+    "function_summary": "2-V 300-MHz 1-Mb Current-Sensed Double-Density SRAM: A 64K-words 16-bits SRAM test chip, fabricated with the 0.3m pseudomultith CMOS/SIMOX process (a short gate compared with the 80–90 mV/dec. of bulk devices, enables the length of 0.2 m is available for the fully depleted MOSFETs), has lowering of under the same subthreshold leakage current demonstrated ...",
+    "key_specs": [
+      "3.3 V",
+      "63 mV",
+      "90 mV",
+      "0.1 mW",
+      "35.6 mW",
+      "0198 J",
+      "-0198 J",
+      "2.3 V",
+      "18%",
+      "200 MHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE packing density of static random-access memories (SRAMs) increases with the progress in LSI fabrication techniques, and 4–16-Mb CMOS SRAMs with a sub-10-ns access time have been developed [1]–[3]. Also, a 512-KB single-chip cache SRAM and a 18-Mb pipeline-burst cache SRAM for referenced data storage were reported in 1998 and 1999, respectively [4], [5]. As to the embedded type, various-size S ..."
+    },
+    {
+      "number": "II",
+      "title": "STRATEGY IN REDUCING MEMORY-CELL SIZE",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "Conventional layout of the six-transistor-type CMOS memory-cell has the drawback that wiring capacitance occupies a large part of the parasitic capacitance in bitlines [13]. To minimize the memory-cell size along bitlines, the squashed layouts are used in our previous works [14], [15]. The length along bitlines (i.e., the double of interconnection pitch) is set to the minimum size of two-input NAN ..."
+    },
+    {
+      "number": "III",
+      "title": "DESIGN CONCEPT OF MULTI-V",
+      "kind": "proposed",
+      "page": 2,
+      "text_preview": "SRAM Our goal is to reduce the power dissipation of high operating frequency SRAMs. The critical response time (i.e., time constant) limiting maximum operating frequency is in the operation of wordlines and/or bitlines because these lines have SHIBATA et al.: A 1-Mb CURRENT-SENSED DOUBLE-DENSITY 0.3m CMOS/SIMOX SRAM Fig. 5. Bird’s-eye view of DD-cell array by scanning-electron microscopy. large pa ..."
+    },
+    {
+      "number": "IV",
+      "title": "CIRCUIT DESIGN",
+      "kind": "design",
+      "page": 3,
+      "text_preview": "The multi-V SRAM needs a large number of voltageswing-matching circuits, and hence reducing the complexity of the matching circuit is desirable. The configuration requiring a static power-supply current is not applicable on the basis of power consideration. In order to shorten the bitline delay in read cycles, current-sense amplifier is used; thus high resistance is necessary for bitline pull-ups  ..."
+    },
+    {
+      "number": "V",
+      "title": "FABRICATION TECHNIQUES",
+      "kind": "proposed",
+      "page": 7,
+      "text_preview": "Key features of our SIMOX technology are summarized m CMOS design rules are used in Table IV. Although 0.3for major feature sizes including an interconnection pitch of m, an advanced gate length of 0.2 m is available for 1.2 s surface-channel-type dual-gate MOSFETs. The typical are listed in Table V, under a 2-V drain-to-source voltage of nMOS increases extremely in a narrow where the 1.5 m). The  ..."
+    },
+    {
+      "number": "VI",
+      "title": "EXPERIMENT",
+      "kind": "results",
+      "page": 9,
+      "text_preview": "We fabricated a 1-Mb SRAM test chip with the 0.3m CMOS/SIMOXprocess.Themicrophotograph pseudomulti4-mm test chip is shown in Fig. 17. SRAM core of a 6-mm 16-bits subarrays. In order to test consists of eight 8K-words under high operating frequencies, I/O buffers have special test circuitrythatreducesexternaltestfrequencytoone-quarter[26]. Table VI lists the SRAM characteristics under a typical con ..."
+    },
+    {
+      "number": "VII",
+      "title": "DISCUSSION",
+      "kind": "results",
+      "page": 10,
+      "text_preview": "Lowering supply voltage is the most effective way to reduce the power dissipation of SRAMs [27], but the degraded operating speed is not acceptable in high-end applications. Moreover, asynchronous specification becomes more difficult to design because static sense amplifiers, including the high-speed of more than . As current-sense type, require a high V described in Section III, lowering supply v ..."
+    },
+    {
+      "number": "VIII",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 11,
+      "text_preview": "Megabit-class high-speed and low-power embedded SRAM techniques are described. To reduce the power dissipation scheme without degrading data throughput, the multi-V using a low-voltage power supply only for restricted functional . (b) Irregular operation under negative Z . blocks is proposed. Using plain local interconnections, a 8.64m (double density) memory cell is realized under a m CMOS/SIMOX  ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Local interconnections required in a six-transistor-type dual-gate - and CMOS memory cell. LI-1: connecting the gate electrodes with p -polysilicon; LI-2: connecting the gate electrode and drain; LI-3: connecting the drains of pMOS and nMOS.",
+      "caption_bbox": [
+        301.1,
+        337.3,
+        552.2,
+        374.8
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "STRATEGY IN REDUCING MEMORY-CELL SIZE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Plain Local Interconnections Fig. 1 shows the local interconnections used in a dual-gate CMOS memory cell."
+        },
+        {
+          "section_title": "STRATEGY IN REDUCING MEMORY-CELL SIZE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "These local interconnections have three Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "memory",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Local interconnections required in a six-transistor-type dual-gate - and CMOS memory cell. LI-1: connecting the gate electrodes with p -polysilicon; LI-2: connecting the gate electrode and drain; LI-3: connecting the drains of pMOS and nMOS",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 2,
+      "caption": "Fig. 2. Schematic layout of inverter. (a) Under bulk CMOS process. (b) Under CMOS/SIMOX process with metal-deposited diffusion layers. D: drain; G: gate; S: source.",
+      "caption_bbox": [
+        39.6,
+        244.0,
+        290.7,
+        272.6
+      ],
+      "section_title": "II. STRATEGY IN REDUCING MEMORY-CELL SIZE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "STRATEGY IN REDUCING MEMORY-CELL SIZE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "These process modules are commonly used in fine LSI fabrication processes to reduce the high gate resistance. 2) Metal-Deposited (or Silicided) Diffusion Layer: Fig. 2 compares an inverter layout with that in bulk technology."
+        },
+        {
+          "section_title": "STRATEGY IN REDUCING MEMORY-CELL SIZE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Hence, sufficiently overlapping the polysilicon with diffusion Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "-layout": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "2-V 300-MHz 1-Mb Current-Sensed Double-Density SRAM",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "These process modules are commonly used in fine LSI fabrication processes to reduce the high gate resistance. 2) Metal-Deposited (or Silicided) Diffusion Layer: Fig. 2 compares an inverter layout with that in bulk technology.",
+        "function_summary": "Schematic layout of inverter. (a) Under bulk CMOS process. (b) Under CMOS/SIMOX process with metal-deposited diffusion layers. D: drain; G: gate; S: source. These process modules are commonly used in fine LSI fabrication processes to reduce the high gate resistance. 2) Metal-Deposited (or Silicided) Diffusion Layer: ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.1,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Interconnection between polysilicon and diffusion layers. (a) Conventional layout using the first metal layer. (b) Present work with a pseudocontact.",
+      "caption_bbox": [
+        39.6,
+        437.9,
+        290.6,
+        457.5
+      ],
+      "section_title": "II. STRATEGY IN REDUCING MEMORY-CELL SIZE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "STRATEGY IN REDUCING MEMORY-CELL SIZE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "These process modules also reduce the high source and/or drain resistance in thin-film SOI structures [20]. 3) Pseudocontact: Fig. 3 compares the pseudocontact with conventional polysilicon and/or diffusion contact."
+        },
+        {
+          "section_title": "STRATEGY IN REDUCING MEMORY-CELL SIZE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 3."
+        },
+        {
+          "section_title": "STRATEGY IN REDUCING MEMORY-CELL SIZE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The relationship allows for L2 in Fig. 3 to be sufficiently smaller than L1, and a reduced interconnection area is obtained."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.8,
+      "relevance_breakdown": {
+        "-conventional": -3.0,
+        "-layout": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "2-V 300-MHz 1-Mb Current-Sensed Double-Density SRAM",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "The relationship allows for L2 in Fig. 3 to be sufficiently smaller than L1, and a reduced interconnection area is obtained.",
+        "function_summary": "Interconnection between polysilicon and diffusion layers. (a) Conventional layout using the first metal layer. (b) Present work with a pseudocontact. The relationship allows for L2 in Fig. 3 to be sufficiently smaller than L1, and a reduced interconnection area is obtained.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Double-density CMOS/SIMOX memory cell. (a) MOSFET layers. (b) Metal layers.",
+      "caption_bbox": [
+        302.6,
+        452.8,
+        553.7,
+        472.3
+      ],
+      "section_title": "II. STRATEGY IN REDUCING MEMORY-CELL SIZE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "STRATEGY IN REDUCING MEMORY-CELL SIZE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Double-Density Memory Cell Fig. 4 shows the DD cell using an advanced squashed layout."
+        },
+        {
+          "section_title": "STRATEGY IN REDUCING MEMORY-CELL SIZE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Each MOSFET in Fig. 4(a) has a short isolation distance of m."
+        },
+        {
+          "section_title": "STRATEGY IN REDUCING MEMORY-CELL SIZE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "A short gate length of 0.2 m is used for the access 0.4 IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 10, OCTOBER 2001 Fig. 4."
+        },
+        {
+          "section_title": "STRATEGY IN REDUCING MEMORY-CELL SIZE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "As to the metal layers shown in Fig. 4(b), the first metal is not used for interconnections so as not to cross the pseudocontacts. m m under our 0.3m The memory-cell size is m along bitlines CMOS/SIMOX design rules."
+        },
+        {
+          "section_title": "DISCUSSION",
+          "section_kind": "results",
+          "page": 10,
+          "sentence": "The drawing, replacing that of Fig. 4(b), is shown in Fig. 23. lines are reassigned to the fourth-metal wiring along bitV lines instead of the third-metal wiring along a wordline, while two GND nodes in a memory cell are connected to a different fourth-metal virtual-GND line though a third via-hole."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "memory",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Double-density CMOS/SIMOX memory cell. (a) MOSFET layers. (b) Metal layers",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.12,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Bird’s-eye view of DD-cell array by scanning-electron microscopy.",
+      "caption_bbox": [
+        38.1,
+        276.8,
+        281.5,
+        287.5
+      ],
+      "section_title": "III. DESIGN CONCEPT OF MULTI-V",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "STRATEGY IN REDUCING MEMORY-CELL SIZE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "A scanning-electron microscopy of the DD-cell array is shown in Fig. 5, where metal layers including via-hole plugs are removed with HF solutions."
+        },
+        {
+          "section_title": "DESIGN CONCEPT OF MULTI-V",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "The critical response time (i.e., time constant) limiting maximum operating frequency is in the operation of wordlines and/or bitlines because these lines have SHIBATA et al.: A 1-Mb CURRENT-SENSED DOUBLE-DENSITY 0.3m CMOS/SIMOX SRAM Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "SRAM",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Bird’s-eye view of DD-cell array by scanning-electron microscopy",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "Fig. 6. Low-power SRAM with the multi-V (prime V ): power supply with a typical voltage; V SSSB: simple swing-suppression buffer; V V and V are used in the interface blocks.",
+      "caption_bbox": [
+        39.6,
+        402.8,
+        358.2,
+        431.4
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN CONCEPT OF MULTI-V",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "Based on the idea, a 1-Mb SRAM using the multi-V scheme is shown in Fig. 6, where each 128-Kb subarray is personalized with a via-hole-programmed address comparator."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "SRAM",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Low-power SRAM with the multi-V (prime V ): power supply with a typical voltage; V SSSB: simple swing-suppression buffer; V V and V are used in the interface blocks",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. Small-to-large voltage-swing-matching circuit. (a) Conventional. (b) Present work.",
+      "caption_bbox": [
+        39.6,
+        610.7,
+        333.8,
+        621.3
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Compared with a conventional configuration using eight MOSFETs [21], our solution is shown in Fig. 7, where Q1–Q4 and Q5–Q9 are pMOSs and nMOSs, respectively."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-conventional": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "2-V 300-MHz 1-Mb Current-Sensed Double-Density SRAM",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Small-to-large voltage-swing-matching circuit. (a) Conventional. (b) Present work",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 5,
+      "caption": "Fig. 8. Double-ended configuration of the resistor-coupled current-sense amplifier.",
+      "caption_bbox": [
+        301.1,
+        226.3,
+        552.2,
+        245.8
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The results obtained under this situation are shown in Table II along with those for a conventional configuration. 2) Double-Ended Configuration: Fig. 8 shows a doubleended configuration of the resistor-coupled current-sense amplifier."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 8."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "(8) The configuration shown in Fig. 8 presents a positive value for , though the value is sufficiently small so that the voltage swing of the input nodes is suppressed."
+        },
+        {
+          "section_title": "DISCUSSION",
+          "section_kind": "results",
+          "page": 10,
+          "sentence": "As a result, the differential output between N3 and N4 is opposite to that in Fig. 8; a noninverted output is obtained. is shown in An irregular sense operation under negative Fig. 22, compared with a normal current-sense operation."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.1,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [
+          "resistor",
+          "sense amplifier"
+        ],
+        "design_purpose": "",
+        "function_summary": "Double-ended configuration of the resistor-coupled current-sense amplifier",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.29,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 6,
+      "caption": "Fig. 9. Current flows at the writing-recovery acceleration. Y 0–Y 7: decoded column-address signals. current.",
+      "caption_bbox": [
+        39.6,
+        375.2,
+        370.9,
+        394.8
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Data-I/O Scheme With a Writing-Recovery Accelerator A data-I/O scheme for high-speed SRAMs is shown in Fig. 9."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The large recovery acceleration current, including prime , charges the bitline lowered to write data recovery current (e.g., BL-0 in Fig. 9), resulting in a greatly shorter recovery time."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "clock and data recovery (CDR)",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Current flows at the writing-recovery acceleration. Y 0–Y 7: decoded column-address signals. current",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 6,
+      "caption": "Fig. 10. Timing diagram of the writing cycle using the recovery accelerator.",
+      "caption_bbox": [
+        302.6,
+        612.3,
+        549.7,
+        622.9
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The timing diagram of a writing cycle is shown in Fig. 10."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "I : prime recovery Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "2-V 300-MHz 1-Mb Current-Sensed Double-Density SRAM",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Timing diagram of the writing cycle using the recovery accelerator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 7,
+      "caption": "Fig. 11. Major waveforms in writing and reading data to/from memory cells. SA: sense amplifier.",
+      "caption_bbox": [
+        38.1,
+        234.1,
+        289.2,
+        253.6
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Circuit Simulation 16-bits The simulated 200-MHz operation of a 64K-words SRAM under a typical 2-V power supply is shown in Fig. 11, where every bitline has 1.2-pF parasitic capacitance with 1024 memory cells."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The address decoder occupies only SHIBATA et al.: A 1-Mb CURRENT-SENSED DOUBLE-DENSITY 0.3m CMOS/SIMOX SRAM Fig. 11."
+        },
+        {
+          "section_title": "DISCUSSION",
+          "section_kind": "results",
+          "page": 10,
+          "sentence": "As described in Fig. 11, reading data under uncompleted writing recovery is a dominant operation limiting the maximum operating frequency."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.7,
+      "relevance_breakdown": {
+        "-waveform": -2.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [
+          "sense amplifier"
+        ],
+        "design_purpose": "",
+        "function_summary": "Major waveforms in writing and reading data to/from memory cells. SA: sense amplifier",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 7,
+      "caption": "Fig. 12. Address access time estimated by HSPICE simulation.",
+      "caption_bbox": [
+        38.1,
+        377.0,
+        245.5,
+        387.6
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 12 shows the address access time estimated under various power supplies."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "2-V 300-MHz 1-Mb Current-Sensed Double-Density SRAM",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Address access time estimated by HSPICE simulation",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 7,
+      "caption": "Fig. 13. Cross section of SIMOX devices with a deposited tungsten layer.",
+      "caption_bbox": [
+        301.1,
+        577.4,
+        541.0,
+        588.1
+      ],
+      "section_title": "V. FABRICATION TECHNIQUES",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "FABRICATION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 7,
+          "sentence": "The fluctuation due to floating body is little for the dynamic MOSFETs operating in the fully depleted region, and hence TABLE IV 0.3-m CMOS/SIMOX TECHNOLOGY TABLE V MOSFET THRESHOLD VOLTAGES PRESENTED BY A 0.3-m PSEUDO CMOS/SIMOX PROCESS MULTI-V Fig. 13."
+        },
+        {
+          "section_title": "FABRICATION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 7,
+          "sentence": "Ultrathin-Film SOI MOSFETs The cross section of the MOSFETs is shown in Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "2-V 300-MHz 1-Mb Current-Sensed Double-Density SRAM",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Cross section of SIMOX devices with a deposited tungsten layer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 8,
+      "caption": "Fig. 14. Pseudomulti-V nMOSs using edge-leakage-stop implantation. D: drain; G: gate; S: source.",
+      "caption_bbox": [
+        302.6,
+        160.6,
+        553.7,
+        180.2
+      ],
+      "section_title": "V. FABRICATION TECHNIQUES",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "FABRICATION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 7,
+          "sentence": "Morefor edge-leakage stop and for setting the required over, extra channel doping is necessary for every nMOS with a . different target The required implantation processes are reduced by simultaneously implanting edge-leakage stopper and extra channel nMOSs (Fig. 14)."
+        },
+        {
+          "section_title": "FABRICATION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 7,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 10, OCTOBER 2001 Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "2-V 300-MHz 1-Mb Current-Sensed Double-Density SRAM",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Pseudomulti-V nMOSs using edge-leakage-stop implantation. D: drain; G: gate; S: source",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 8,
+      "caption": "Fig. 15. characteristics of an nMOS access transistor in the DD cell. I",
+      "caption_bbox": [
+        302.6,
+        317.9,
+        553.7,
+        328.5
+      ],
+      "section_title": "V. FABRICATION TECHNIQUES",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "FABRICATION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 7,
+          "sentence": "Fig. 15 shows a measured for an nMOS access transistor in memory cells."
+        },
+        {
+          "section_title": "FABRICATION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 7,
+          "sentence": "V Fig. 15. characteristics of an nMOS access transistor in the DD cell."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "memory",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "characteristics of an nMOS access transistor in the DD cell. I",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 9,
+      "caption": "Fig. 16. Alternative realization of the pseudocontact. (a) Two-step deposition of first insulator. (b) Present work.",
+      "caption_bbox": [
+        38.1,
+        239.7,
+        403.0,
+        250.3
+      ],
+      "section_title": "V. FABRICATION TECHNIQUES",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "FABRICATION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 7,
+          "sentence": "Fig. 16 shows our alternative ideas to realize the pseudocontact."
+        },
+        {
+          "section_title": "FABRICATION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 7,
+          "sentence": "The basic idea described in Fig. 16(a) uses a two-step deposition of the first insulator so that the pseudocontact plug does not touch the first metal layer."
+        },
+        {
+          "section_title": "FABRICATION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 7,
+          "sentence": "Fig. 16(b) shows our low-cost solution for current LSI fabrication processes in which both the polysilicon and diffusion contacts are made simultaneously."
+        },
+        {
+          "section_title": "FABRICATION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 7,
+          "sentence": "The solution features the SHIBATA et al.: A 1-Mb CURRENT-SENSED DOUBLE-DENSITY 0.3m CMOS/SIMOX SRAM Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.6,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "SRAM",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Alternative realization of the pseudocontact. (a) Two-step deposition of first insulator. (b) Present work",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.51,
+      "warnings": [
+        "Recommended figure caption does not explicitly mention a schematic/topology/circuit; please confirm manually.",
+        "Recommended figure was classified as 'other', not a schematic; manual confirmation strongly recommended."
+      ]
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 9,
+      "caption": "Fig. 17. Microphotograph of a 1-Mb CMOS/SIMOX SRAM test chip.",
+      "caption_bbox": [
+        38.1,
+        431.9,
+        268.1,
+        442.6
+      ],
+      "section_title": "V. FABRICATION TECHNIQUES",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "FABRICATION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 7,
+          "sentence": "Fig. 17."
+        },
+        {
+          "section_title": "EXPERIMENT",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "We fabricated a 1-Mb SRAM test chip with the 0.3m CMOS/SIMOXprocess.Themicrophotograph pseudomulti4-mm test chip is shown in Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "SRAM",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Microphotograph of a 1-Mb CMOS/SIMOX SRAM test chip",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 9,
+      "caption": "Fig. 18. Shmoo plot of supply voltage versus cycle time at 25 C.",
+      "caption_bbox": [
+        301.1,
+        404.4,
+        517.0,
+        415.0
+      ],
+      "section_title": "V. FABRICATION TECHNIQUES",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "EXPERIMENT",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "In the test, a modified checkerboard pattern is used so that half of the address bits Fig. 18."
+        },
+        {
+          "section_title": "EXPERIMENT",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "Under the test with the marching pattern, Fig. 18 shows the minimum cycle time dependence on a higher supply voltage ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "2-V 300-MHz 1-Mb Current-Sensed Double-Density SRAM",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Shmoo plot of supply voltage versus cycle time at 25 C",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 10,
+      "caption": "Fig. 19. Power dissipation dependence on operating frequency under a single 2-V power supply.",
+      "caption_bbox": [
+        39.6,
+        241.1,
+        290.6,
+        260.7
+      ],
+      "section_title": "VI. EXPERIMENT",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENT",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "The power dissipation measured for various operating frequencies is shown in Fig. 19, where the modified checkerboard test pattern is used under a single 2-V power supply."
+        },
+        {
+          "section_title": "EXPERIMENT",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "However, in low voltage applications, the Fig. 19."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "2-V 300-MHz 1-Mb Current-Sensed Double-Density SRAM",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Power dissipation dependence on operating frequency under a single 2-V power supply",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 20,
+      "label": "Fig. 20",
+      "page": 10,
+      "caption": "Fig. 20. Reduced power dissipation and increased address access time under a 200-MHz power-saving condition using 2and 1-V power supplies.",
+      "caption_bbox": [
+        39.6,
+        409.1,
+        290.7,
+        428.7
+      ],
+      "section_title": "VI. EXPERIMENT",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENT",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "Dynamic power-supply current occupies a large part of power dissipation at a high operating frequency region. scheme at a Fig. 20 shows the effects of our multi-V 200-MHz read operation."
+        },
+        {
+          "section_title": "EXPERIMENT",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "Fig. 20."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "2-V 300-MHz 1-Mb Current-Sensed Double-Density SRAM",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Reduced power dissipation and increased address access time under a 200-MHz power-saving condition using 2and 1-V power supplies",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 21,
+      "label": "Fig. 21",
+      "page": 10,
+      "caption": "Fig. 21. Resistor-coupled pseudocurrent-sense amplifier.",
+      "caption_bbox": [
+        302.6,
+        230.7,
+        489.2,
+        241.3
+      ],
+      "section_title": "VI. EXPERIMENT",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "DISCUSSION",
+          "section_kind": "results",
+          "page": 10,
+          "sentence": "Fig. 21 shows a pseudocurrent-sense amplifier proposed originally by the authors in 1999 [28]."
+        },
+        {
+          "section_title": "DISCUSSION",
+          "section_kind": "results",
+          "page": 10,
+          "sentence": "In Fig. 21, Q1–Q4 and Q5 work in a saturation region and linear region, respectively."
+        },
+        {
+          "section_title": "DISCUSSION",
+          "section_kind": "results",
+          "page": 10,
+          "sentence": "Employing the small-signal analysis, we obtain the same results of Table III ex- : cept for the following for differential-mode signals (9) IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 10, OCTOBER 2001 Fig. 21."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [
+          "resistor",
+          "sense amplifier"
+        ],
+        "design_purpose": "",
+        "function_summary": "Resistor-coupled pseudocurrent-sense amplifier",
+        "key_specs": [
+          "5 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 22,
+      "label": "Fig. 22",
+      "page": 11,
+      "caption": "Fig. 22. Operating mode of current-sense amplifiers. (a) Normal operation under positive Z",
+      "caption_bbox": [
+        38.1,
+        307.5,
+        336.4,
+        318.1
+      ],
+      "section_title": "VII. DISCUSSION",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "DISCUSSION",
+          "section_kind": "results",
+          "page": 10,
+          "sentence": "As a result, the differential output between N3 and N4 is opposite to that in Fig. 8; a noninverted output is obtained. is shown in An irregular sense operation under negative Fig. 22, compared with a normal current-sense operation."
+        },
+        {
+          "section_title": "DISCUSSION",
+          "section_kind": "results",
+          "page": 10,
+          "sentence": "In Fig. 22(a), the voltage drop across R1 is equal to that under an ideal condition, across R2 because and are the differential-mode current signal where and the memory-cell readout current, respectively; the voltage swing of bitlines is suppressed in any data read. is negative, both the 2 and flow through When the same bitline pull-up R1 or R2, resulting in an increased voltage swing."
+        },
+        {
+          "section_title": "DISCUSSION",
+          "section_kind": "results",
+          "page": 10,
+          "sentence": "In the case of Fig. 22(b), the voltage drop across R1 decreases, while that across R2 increases."
+        },
+        {
+          "section_title": "DISCUSSION",
+          "section_kind": "results",
+          "page": 10,
+          "sentence": "Because of an extra second-metal wiring to realize the double-rail virtual-GND line along bitlines, the scheme increases memory cell size along a m 2.4m). wordline by 33% (i.e., 4.8SHIBATA et al.: A 1-Mb CURRENT-SENSED DOUBLE-DENSITY 0.3m CMOS/SIMOX SRAM Fig. 22."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.4,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [
+          "sense amplifier"
+        ],
+        "design_purpose": "",
+        "function_summary": "Operating mode of current-sense amplifiers. (a) Normal operation under positive Z",
+        "key_specs": [
+          "33%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 23,
+      "label": "Fig. 23",
+      "page": 11,
+      "caption": "Fig. 23. Double-rail virtual-GND-line-sensed SRAM cell using an extra fourth metal layer.",
+      "caption_bbox": [
+        38.1,
+        558.6,
+        336.0,
+        569.2
+      ],
+      "section_title": "VII. DISCUSSION",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "DISCUSSION",
+          "section_kind": "results",
+          "page": 10,
+          "sentence": "(a) Normal operation under positive Z Fig. 23."
+        },
+        {
+          "section_title": "DISCUSSION",
+          "section_kind": "results",
+          "page": 10,
+          "sentence": "The drawing, replacing that of Fig. 4(b), is shown in Fig. 23. lines are reassigned to the fourth-metal wiring along bitV lines instead of the third-metal wiring along a wordline, while two GND nodes in a memory cell are connected to a different fourth-metal virtual-GND line though a third via-hole."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "SRAM",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Double-rail virtual-GND-line-sensed SRAM cell using an extra fourth metal layer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 16,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

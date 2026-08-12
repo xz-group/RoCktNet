@@ -1,0 +1,558 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1035952.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1035952",
+  "generated_at": "2026-07-29T21:29:55",
+  "paper_metadata": {
+    "title": "Low-Voltage Pulsewidth Control Loops for SOC Applications",
+    "authors": [
+      "Po-Hui Yang",
+      "Jinn-Shyan Wang"
+    ],
+    "abstract": "The proposed pulsewidth control loop (PWCL) adopts the same architecture as the conventional PWCL, but with a new duty-cycle detector and a new pulse generator. Using the new building circuits, the clock frequency can be increased tremendously, and the output of the PWCL has fixed rising edge, which will not disturb the phase-locking result by a preceding phase-locked loop (PLL) or delay-locked loop (DLL). This means that the clock buffer can include a PLL/DLL and a PWCL to perform phase locking as well as pulsewidth adjustment simultaneously. All the building blocks used in the new PWCL have simple circuit structures that are suitable for low-voltage operation. A test chip is implemented in a 0.35m CMOS process with only 1.8-V V successfully generates a clock signal with a 0.6-ns pulsewidth for a heavily pipelined multiplier to operate (a) at 400 MHz. The features of operating at low voltage, providing variable duty cycle, and being able to cooperate with PLL/DLL make the new PWCL suitable for system-on-chip applications.",
+    "keywords": [
+      "DLL",
+      "low voltage",
+      "PLL",
+      "pulsewidth control loop",
+      "SOC"
+    ],
+    "doi": "10.1109/JSSC.2002.803050",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2002
+  },
+  "paper_circuit_context": {
+    "circuit_type": "phase-locked loop (PLL)",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "current source",
+      "output buffer",
+      "clock / timing"
+    ],
+    "design_purpose": "The features of operating at low voltage, providing variable duty cycle, and being able to cooperate with PLL/DLL make the new PWCL suitable for system-on-chip applications.",
+    "function_summary": "phase-locked loop (PLL): The features of operating at low voltage, providing variable duty cycle, and being able to cooperate with PLL/DLL make the new PWCL suitable for system-on-chip applications.",
+    "key_specs": [
+      "400 MHz",
+      "50%",
+      "600 MHz",
+      "0.5 ns",
+      "0.45 ns",
+      "4 V",
+      "800 MHz",
+      "0.62 ns",
+      "92 ps"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE CLOCK signal is used to synchronize different parts of a digital system, and the quality of the clock signal, including frequency, amplitude, phase, and duty cycle, undoubtedly influences the system performance. The frequency is usually a system specification, and the amplitude of a clock signal . Currently, the phase-locked loops is, in general, equal to (PLLs) or delay-locked loops (DLLs) [ ..."
+    },
+    {
+      "number": "II",
+      "title": "CONVENTIONAL PWCL",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "The conventional PWCL [1] is shown in Fig. 1(a). Although analytical equations have been derived to facilitate the design, the work in [1] still pointed out the difficulty of designing this Manuscript received October 1, 2001; revised May 8, 2002. This work was supported by the National Science Council under Research Grant NSC 89-2215-E-194-008 and Grant 90-2215-E-194-007. The authors are with the ..."
+    },
+    {
+      "number": "III",
+      "title": "NEW BUILDING BLOCKS",
+      "kind": "design",
+      "page": 1,
+      "text_preview": "There are two kinds of voltage-controlled pulse generator. The first is AND-gate-based, as shown in Fig. 2(a). The odd-stage between its input and delay chain induces a delay time output. If there is no even-stage delay chain in the circuit, the is ideally equal to . The delay time pulsewidth of is actually composed of two components. One is the non- , and the other is the adjustable controllable  ..."
+    },
+    {
+      "number": "IV",
+      "title": "PERFORMANCE EVALUATION AND EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 2,
+      "text_preview": "Fig. 5 shows the relationship between the control voltage and the duty cycle in terms of phase angle for three kinds of pulse generators, including the pseudoinverter, the AND-gatebased generator and the flip-flop-based generator designed in a m CMOS technology with 1.8-V . It is found that 0.35both new pulse generators can generate a smaller pulsewidth. Fig. 6 shows the simulation waveforms for d ..."
+    },
+    {
+      "number": "V",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 3,
+      "text_preview": "The new PWCL adopts the same architecture as the conventional PWCL [1], but with the building blocks replaced by new circuits. With the new building blocks, the maximum clock frequency can be increased tremendously, and the clock signal is generated with a fixed rising edge. This feature makes it possible to design a clock generator with the use of both PLL/DLL (b) and PWCL to perform phase lockin ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. (a) Conventional PWCL. (b) Simulations showing oscillation.",
+      "caption_bbox": [
+        301.1,
+        525.7,
+        526.9,
+        536.4
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "CONVENTIONAL PWCL",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The conventional PWCL [1] is shown in Fig. 1(a)."
+        },
+        {
+          "section_title": "CONVENTIONAL PWCL",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "(a) (b) Fig. 1."
+        },
+        {
+          "section_title": "CONVENTIONAL PWCL",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "When designing the PWCL m CMOS technology [4] with V, based on a 0.35simulation results as shown in Fig. 1(b) indicate that the PWCL and pF."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.3,
+      "relevance_breakdown": {
+        "-conventional": -3.0,
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Conventional PWCL. (b) Simulations showing oscillation",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. (a) AND-gate-based pulse generator. (b) Simulations waveforms.",
+      "caption_bbox": [
+        39.6,
+        434.7,
+        272.6,
+        445.3
+      ],
+      "section_title": "II. CONVENTIONAL PWCL",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CONVENTIONAL PWCL",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "When the gain cannot converge for IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 10, OCTOBER 2002 (a) (b) Fig. 2."
+        },
+        {
+          "section_title": "NEW BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The first is AND-gate-based, as shown in Fig. 2(a)."
+        },
+        {
+          "section_title": "NEW BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 2(b) shows the simulation waveforms, and it can be is always fixed."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "-waveform": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) AND-gate-based pulse generator. (b) Simulations waveforms",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. (a) Circuit and (b) simulation waveforms of the flip-flop-based pulse generator.",
+      "caption_bbox": [
+        302.6,
+        441.9,
+        553.7,
+        461.5
+      ],
+      "section_title": "III. NEW BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "NEW BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "This feature seen that the rising edge of makes the cooperation of the PWCL and PLL/DLL feasible. exceeds half the cycle If the amount of adjusted delay time, the pulsewidth generated by the above circuit will remains- (a) (b) Fig. 3."
+        },
+        {
+          "section_title": "NEW BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "To obtain a fixed-rising-edge clock signal with 50% or even larger duty cycle, we propose a flip-flop-based pulse generator shown in Fig. 3(a)."
+        },
+        {
+          "section_title": "NEW BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 3(b), we see that The new duty-cycle detector is actually a push–pull charge pump, as shown in Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.7,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-waveform": -2.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "clock / timing"
+        ],
+        "design_purpose": "To obtain a fixed-rising-edge clock signal with 50% or even larger duty cycle, we propose a flip-flop-based pulse generator shown in Fig. 3(a).",
+        "function_summary": "(a) Circuit and (b) simulation waveforms of the flip-flop-based pulse generator. To obtain a fixed-rising-edge clock signal with 50% or even larger duty cycle, we propose a flip-flop-based pulse generator shown in Fig. 3(a).",
+        "key_specs": [
+          "50%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.09,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 1,
+      "caption": "Fig. 4. Charge-pump-based duty-cycle detector.",
+      "caption_bbox": [
+        302.6,
+        602.2,
+        461.0,
+        612.9
+      ],
+      "section_title": "III. NEW BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "NEW BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 4."
+        },
+        {
+          "section_title": "NEW BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 3(b), we see that The new duty-cycle detector is actually a push–pull charge pump, as shown in Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "charge pump",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Charge-pump-based duty-cycle detector",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Duty cycle versus control voltage.",
+      "caption_bbox": [
+        38.1,
+        238.4,
+        176.5,
+        249.0
+      ],
+      "section_title": "III. NEW BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "NEW BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Therefore, the push–pull charge pump Fig. 5."
+        },
+        {
+          "section_title": "PERFORMANCE EVALUATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 5 shows the relationship between the control voltage and the duty cycle in terms of phase angle for three kinds of pulse generators, including the pseudoinverter, the AND-gatebased generator and the flip-flop-based generator designed in a m CMOS technology with 1.8-V ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "charge pump",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Duty cycle versus control voltage",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. Simulation results of the duty-cycle detector for various pulsewidth difference.",
+      "caption_bbox": [
+        38.1,
+        441.1,
+        289.2,
+        460.8
+      ],
+      "section_title": "III. NEW BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "NEW BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 6."
+        },
+        {
+          "section_title": "PERFORMANCE EVALUATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 6 shows the simulation waveforms for different amounts of pulsewidth difference when operated at 600 MHz."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulation results of the duty-cycle detector for various pulsewidth difference",
+        "key_specs": [
+          "600 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 2,
+      "caption": "Fig. 7. Proposed phase-fixed PWCL.",
+      "caption_bbox": [
+        301.1,
+        231.4,
+        425.1,
+        242.0
+      ],
+      "section_title": "III. NEW BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "PERFORMANCE EVALUATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Simulation results show that the sensitivity to the variation of is about 4 V/ns. the pulsewidth difference The proposed phase-fixed PWCL with an AND-gate-based pulse generator is shown in Fig. 7."
+        },
+        {
+          "section_title": "PERFORMANCE EVALUATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "The flip-flop-based pulse IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 10, OCTOBER 2002 Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Proposed phase-fixed PWCL",
+        "key_specs": [
+          "4 V"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.8,
+      "warnings": [
+        "Recommended figure caption does not explicitly mention a schematic/topology/circuit; please confirm manually.",
+        "Recommended figure was classified as 'other', not a schematic; manual confirmation strongly recommended."
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 2,
+      "caption": "Fig. 8. (a) Block diagram and (b) photograph of the test chip.",
+      "caption_bbox": [
+        301.1,
+        550.0,
+        502.8,
+        560.7
+      ],
+      "section_title": "IV. PERFORMANCE EVALUATION AND EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "PERFORMANCE EVALUATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "(a) (b) Fig. 8."
+        },
+        {
+          "section_title": "PERFORMANCE EVALUATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "The block diagram is shown in Fig. 8(a) with the chip photomicrograph shown in Fig. 8(b)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "-photograph": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Block diagram and (b) photograph of the test chip",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 3,
+      "caption": "Fig. 9. (a) Measured waveforms. (b) Zoom-in of clock signals. (c) Measured jitter.",
+      "caption_bbox": [
+        39.6,
+        461.9,
+        310.1,
+        472.6
+      ],
+      "section_title": "IV. PERFORMANCE EVALUATION AND EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "PERFORMANCE EVALUATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "The ADDLL is included to observe the IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 10, OCTOBER 2002 (a) (c) Fig. 9."
+        },
+        {
+          "section_title": "PERFORMANCE EVALUATION AND EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "The fabricated chip successfully works at 400 MHz, and Fig. 9 shows the measured results."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-waveform": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Measured waveforms. (b) Zoom-in of clock signals. (c) Measured jitter",
+        "key_specs": [
+          "400 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 7,
+  "warnings": []
+}

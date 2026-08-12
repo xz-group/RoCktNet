@@ -1,0 +1,1316 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1253873.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1253873",
+  "generated_at": "2026-07-29T22:01:26",
+  "paper_metadata": {
+    "title": "An Experimental Coin-Sized Radio for Extremely Low-Power WPAN (IEEE 802.15.4) Application at 2.4 GHz",
+    "authors": [
+      "Pilsoon Choi",
+      "Hyung Chul Park",
+      "Sohyeong Kim",
+      "Sungchung Park",
+      "Ilku Nam",
+      "Tae Wook Kim",
+      "Seokjong Park",
+      "Sangho Shin",
+      "Myeung Su Kim",
+      "Kyucheol Kang",
+      "Yeonwoo Ku",
+      "Hyokjae Choi",
+      "Sook Min Park",
+      "Kwyro Lee"
+    ],
+    "abstract": "An experimental 2.4-GHz CMOS radio composed of TABLE I IEEE802.15.4 DRAFT STANDARD VERSUS THIS WORK RF and digital circuits for the low-power and low-rate preliminary IEEE802.15.4 WPAN is reported, consuming 21 mW in receive mode and 30 mW in transmit mode. The RF design focus is to maximize linearity for a given power consumption using linearization methods which lead an order of magnitude improvement in LNA/mixer IIP3/power performance. Chip-on-PCB technology allows implementation of a coin-sized radio at very low cost, which also provides 3 dBi gain patch antenna and high ( 50) inductors.",
+    "keywords": [],
+    "doi": "10.1109/JSSC.2003.819083",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "low-noise amplifier (LNA)",
+    "technology": "CMOS",
+    "application_domain": "rf, wireless, baseband, if",
+    "sub_blocks": [
+      "inductor",
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "cross-coupled pair",
+      "LC tank / resonator",
+      "mixer",
+      "transmission line"
+    ],
+    "design_purpose": "The RF design focus is to maximize linearity for a given power consumption using linearization methods which lead an order of magnitude improvement in LNA/mixer IIP3/power performance.",
+    "function_summary": "low-noise amplifier (LNA): The RF design focus is to maximize linearity for a given power consumption using linearization methods which lead an order of magnitude improvement in LNA/mixer IIP3/power performance.",
+    "key_specs": [
+      "2.4 GHz",
+      "15.4 W",
+      "21 mW",
+      "30 mW",
+      "3 dB",
+      "0.1%",
+      "99%",
+      "50%",
+      "4 MHz",
+      "3 MHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "A NEW wireless communication with higher density of nodes and simple protocol is emerging for low-data-rate distributed sensor network applications such as those in home automation and industrial control. A low-power Bluetooth radio [1], [2] is standardized as IEEE802.15.1,1 but it is relatively expensive and consumes too much power for this purpose. In 2000, IEEE started to standardize IEEE 802.1 ..."
+    },
+    {
+      "number": "II",
+      "title": "RADIO ARCHITECTURE",
+      "kind": "proposed",
+      "page": 1,
+      "text_preview": "Fig. 2 shows the architecture of a radio chip, which consists of a receiver, a transmitter, and a frequency synthesizer. The receiver adopts a low-IF architecture to have immunity against noise. Note that a GMSK signal corruption by dc offset and modulated signal with a time-bandwidth product BT of 0.5 has about 99% of information within 50% of its bandwidth. If the IF noise, frequency is too low, ..."
+    },
+    {
+      "number": "III",
+      "title": "RF TRANSCEIVER DESIGN",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "RF transceiver design using 0.18m CMOS technology as m CMOS well as PCBs are discussed in this section. The 0.18m-thick top metal prodevices and six metal layers with 2for on-chip inducvide high gain and good quality factor tors, resulting in low power consumption in RF/analog circuits. and/or large inOff-chip PCB inductors are used when high ductance are necessary. Otherwise, we pursue as much on ..."
+    },
+    {
+      "number": "IV",
+      "title": "DIGITAL MODEM/PROCESSOR DESIGN",
+      "kind": "design",
+      "page": 6,
+      "text_preview": "Fig. 16 shows the wireless connection procedure between node and base station. Once a controller is initialized, it alternates between Wakeup and Sleep modes at a programmable duty cycle. The duty cycle can be chosen less than 0.1% to extend battery life. When it receives a Wakeup frame from the base station, it leaves Sleep state, performing carrier sensing using RSSI, and determines whether it i ..."
+    },
+    {
+      "number": "V",
+      "title": "SYSTEM IMPLEMENTATION RESULTS",
+      "kind": "design",
+      "page": 6,
+      "text_preview": "A radio transceiver die micrograph, fabricated using 0.18m CMOS and six-metal-layer technology with thick top metal is CHOI et al.: EXPERIMENTAL COIN-SIZED RADIO FOR EXTREMELY LOW-POWER WPAN APPLICATION Fig. 17. Frame format. Fig. 18. Baseband chip architecture. shown in Fig. 19. The die area is 3.5 mm 2.5 mm and it consumes only 30 mW in the transmitter chain and 21 mW in the receiver chain, resp ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 8,
+      "text_preview": "An experimental 2.4-GHz radio for the low-power and low-rate preliminary IEEE802.15.4 WPAN is reported, implem CMOS technology. mented in a two-chip solution in 0.18IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 12, DECEMBER 2003 Fig. 24. Implemented radio. TABLE III RADIO PERFORMANCE SUMMARY The highly integrated radio transceiver with 3.5 mm 2.5 mm die size consumes 21 mW in receive mode and ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Block diagram of the LR-WPAN radio and baseband chips.",
+      "caption_bbox": [
+        38.1,
+        252.4,
+        258.6,
+        263.1
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The third design focus is the maximum utilization of modern CMOS digital technology, which provides CHOI et al.: EXPERIMENTAL COIN-SIZED RADIO FOR EXTREMELY LOW-POWER WPAN APPLICATION Fig. 1."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "One chip consists mostly of RF circuits, and the other digital circuitry for the modem/processor as shown in Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "microprocessor",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the LR-WPAN radio and baseband chips",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 2,
+      "caption": "Fig. 2. The 2.4-GHz radio chip architecture. (a) Receiver. (b) Transmitter. (c) Frequency synthesizer.",
+      "caption_bbox": [
+        39.6,
+        458.8,
+        367.9,
+        469.5
+      ],
+      "section_title": "III. RF TRANSCEIVER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "RADIO ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 2 shows the architecture of a radio chip, which consists of a receiver, a transmitter, and a frequency synthesizer."
+        },
+        {
+          "section_title": "RADIO ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "frequency synthesizer",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "The 2.4-GHz radio chip architecture. (a) Receiver. (b) Transmitter. (c) Frequency synthesizer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.57,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 3,
+      "caption": "Fig. 3. Receiver front-end schematic. MGTR is adopted for the transconductor in the mixer.",
+      "caption_bbox": [
+        38.1,
+        250.4,
+        338.6,
+        261.0
+      ],
+      "section_title": "III. RF TRANSCEIVER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "RF TRANSCEIVER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Receiver Fig. 3 shows the schematic of the front-end of the receiver."
+        },
+        {
+          "section_title": "RF TRANSCEIVER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "To obtain both noise immunity and low power consumption concurrently, a single-ended LNA and single-balanced mixer CHOI et al.: EXPERIMENTAL COIN-SIZED RADIO FOR EXTREMELY LOW-POWER WPAN APPLICATION Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "To obtain both noise immunity and low power consumption concurrently, a single-ended LNA and single-balanced mixer CHOI et al.: EXPERIMENTAL COIN-SIZED RADIO FOR EXTREMELY LOW-POWER WPAN APPLICATION Fig. 3.",
+        "function_summary": "Receiver front-end schematic. MGTR is adopted for the transconductor in the mixer. To obtain both noise immunity and low power consumption concurrently, a single-ended LNA and single-balanced mixer CHOI et al.: EXPERIMENTAL COIN-SIZED RADIO FOR EXTREMELY LOW-POWER WPAN APPLICATION Fig. 3.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.79,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 3,
+      "caption": "Fig. 4. Active polyphase filter schematic.",
+      "caption_bbox": [
+        38.1,
+        519.7,
+        176.5,
+        530.4
+      ],
+      "section_title": "III. RF TRANSCEIVER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "RF TRANSCEIVER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 4."
+        },
+        {
+          "section_title": "RF TRANSCEIVER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 4 shows the schematic of a fifth-order active polyphase filter, which consists of two biquad filters with two poles each and one uniquad filter with one pole."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Active polyphase filter schematic",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.79,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 4,
+      "caption": "Fig. 5. Measured frequency characteristic for digitally trimmed polyphase filter. The binary number in the inset indicates the trimming code.",
+      "caption_bbox": [
+        39.6,
+        216.8,
+        290.7,
+        236.4
+      ],
+      "section_title": "III. RF TRANSCEIVER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "RF TRANSCEIVER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 5 shows the frequency response characteristic of the polyphase filter, whose center frequency is tuned by 5-bit digital codes."
+        },
+        {
+          "section_title": "RF TRANSCEIVER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The demodulator is composed of a bandpass filter (BPF), differentiators, mixers, and a low-pass filter (LPF), as shown in Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Measured frequency characteristic for digitally trimmed polyphase filter. The binary number in the inset indicates the trimming code",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "Fig. 6. Five-stage limiting amplifiers with 4-bit RSSI.",
+      "caption_bbox": [
+        39.6,
+        334.6,
+        217.3,
+        345.2
+      ],
+      "section_title": "III. RF TRANSCEIVER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "RF TRANSCEIVER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "A 4-bit RSSI is generated from the output of the limiters, as shown in Fig. 6, by using a quadruple rectifier and a comparator."
+        },
+        {
+          "section_title": "RF TRANSCEIVER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Five-stage limiting amplifiers with 4-bit RSSI",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. Limiter schematic.",
+      "caption_bbox": [
+        39.6,
+        537.2,
+        128.6,
+        547.8
+      ],
+      "section_title": "III. RF TRANSCEIVER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "RF TRANSCEIVER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 7 shows the schematic of the limiter circuit designed in differential amplifier with common-mode feedback (CMFB)."
+        },
+        {
+          "section_title": "RF TRANSCEIVER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "To be robust against the fluctuation for the limiter is also fed from the in supply voltage, the same replica of Fig. 7."
+        },
+        {
+          "section_title": "RF TRANSCEIVER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.7,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Limiter schematic",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.85,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Demodulator block diagram.",
+      "caption_bbox": [
+        302.6,
+        163.6,
+        423.8,
+        174.3
+      ],
+      "section_title": "III. RF TRANSCEIVER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "RF TRANSCEIVER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 8."
+        },
+        {
+          "section_title": "RF TRANSCEIVER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "An 8-bit IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 12, DECEMBER 2003 Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "demodulator",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Demodulator block diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.57,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. Measured demodulator characteristic.",
+      "caption_bbox": [
+        302.6,
+        328.7,
+        452.0,
+        339.4
+      ],
+      "section_title": "III. RF TRANSCEIVER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "RF TRANSCEIVER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 9 shows the demodulator characteristic, which generates an analog baseband signal depending on the input frequency deviation."
+        },
+        {
+          "section_title": "RF TRANSCEIVER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "demodulator",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured demodulator characteristic",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10. Measured LPF gain and group delay characteristics. Feedback resistor changes the LPF gain.",
+      "caption_bbox": [
+        302.6,
+        457.4,
+        553.7,
+        477.0
+      ],
+      "section_title": "III. RF TRANSCEIVER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "RF TRANSCEIVER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 10."
+        },
+        {
+          "section_title": "RF TRANSCEIVER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 10 shows the measured characteristics of a variable gain LPF with constant group delay. mixers convert each baseband signal Double-balanced 15 dBm differendirectly up to 2.4-GHz frequency and deliver tial signal to the input of a drive amplifier by current summing, as shown in Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "resistor",
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Measured LPF gain and group delay characteristics. Feedback resistor changes the LPF gain",
+        "key_specs": [
+          "15 dBm"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 5,
+      "caption": "Fig. 11. Up-mixer schematic.",
+      "caption_bbox": [
+        38.1,
+        232.4,
+        138.0,
+        243.0
+      ],
+      "section_title": "III. RF TRANSCEIVER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "RF TRANSCEIVER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 10 shows the measured characteristics of a variable gain LPF with constant group delay. mixers convert each baseband signal Double-balanced 15 dBm differendirectly up to 2.4-GHz frequency and deliver tial signal to the input of a drive amplifier by current summing, as shown in Fig. 11."
+        },
+        {
+          "section_title": "RF TRANSCEIVER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "CHOI et al.: EXPERIMENTAL COIN-SIZED RADIO FOR EXTREMELY LOW-POWER WPAN APPLICATION Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Up-mixer schematic",
+        "key_specs": [
+          "15 dBm"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.79,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 5,
+      "caption": "Fig. 12. Drive amplifier schematic (single path).",
+      "caption_bbox": [
+        38.1,
+        416.8,
+        198.4,
+        427.5
+      ],
+      "section_title": "III. RF TRANSCEIVER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "RF TRANSCEIVER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "As shown in Fig. 12, the drive amplifier includes a gain stage with on-chip load and a driving stage with off-chip output matching components, which operates as a class-C amplifier with 33% of drain efficiency."
+        },
+        {
+          "section_title": "RF TRANSCEIVER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 7.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "type_match:amplifier": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Drive amplifier schematic (single path)",
+        "key_specs": [
+          "33%"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.84,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 5,
+      "caption": "Fig. 13. Measured VCO tuning range. The binary number in inset indicates codes for coarse tuning.",
+      "caption_bbox": [
+        301.1,
+        197.2,
+        552.2,
+        216.8
+      ],
+      "section_title": "III. RF TRANSCEIVER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "RF TRANSCEIVER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 13 shows the VCO tuning characteristic controlled by 2-bit digital codes."
+        },
+        {
+          "section_title": "RF TRANSCEIVER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The loop bandwidth for the phase-locked loop (PLL) is 20 kHz adjusted by external resistors and capacitors, with the s. settling time of the synthesizer less than 150 Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-tuning range": -2.5,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "capacitor",
+          "resistor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Measured VCO tuning range. The binary number in inset indicates codes for coarse tuning",
+        "key_specs": [
+          "20 kHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 5,
+      "caption": "Fig. 14. Measured quality factor Q and effective inductance L for a PCB inductor.",
+      "caption_bbox": [
+        301.1,
+        480.0,
+        552.2,
+        499.6
+      ],
+      "section_title": "III. RF TRANSCEIVER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "RF TRANSCEIVER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "TABLE II FR-4 CHARACTERISTIC AS PCB SUBSTRATE Fig. 14."
+        },
+        {
+          "section_title": "RF TRANSCEIVER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "An 8-nH inductor with more than 50 is obtained within 3 mm 3 mm, as shown in Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "on-chip inductor",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "inductor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Measured quality factor Q and effective inductance L for a PCB inductor",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 6,
+      "caption": "Fig. 15. Inverted-F patch antenna structure on PCB.",
+      "caption_bbox": [
+        39.6,
+        236.8,
+        212.3,
+        247.4
+      ],
+      "section_title": "III. RF TRANSCEIVER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "RF TRANSCEIVER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Using PCB technology, an inverted-F patch anis fabricated as shown tenna [9]–[11] as small as 4.5 cm in Fig. 15, providing 3-dBi gain and transmitter bandwidth VSWR of 120 MHz at 2.4 GHz."
+        },
+        {
+          "section_title": "RF TRANSCEIVER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The 3-dB beam width . is about 120 Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transmitter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Inverted-F patch antenna structure on PCB",
+        "key_specs": [
+          "120 MHz",
+          "2.4 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 6,
+      "caption": "Fig. 16. Wireless connection procedure of designed LR-WPAN radio.",
+      "caption_bbox": [
+        39.6,
+        489.3,
+        267.7,
+        499.9
+      ],
+      "section_title": "IV. DIGITAL MODEM/PROCESSOR DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "RF TRANSCEIVER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 16."
+        },
+        {
+          "section_title": "DIGITAL MODEM/PROCESSOR DESIGN",
+          "section_kind": "design",
+          "page": 6,
+          "sentence": "Fig. 16 shows the wireless connection procedure between node and base station."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Wireless connection procedure of designed LR-WPAN radio",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 7,
+      "caption": "Fig. 17. Frame format.",
+      "caption_bbox": [
+        38.1,
+        205.6,
+        117.1,
+        216.2
+      ],
+      "section_title": "V. SYSTEM IMPLEMENTATION RESULTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DIGITAL MODEM/PROCESSOR DESIGN",
+          "section_kind": "design",
+          "page": 6,
+          "sentence": "The frame format chosen in this work is shown in Fig. 17."
+        },
+        {
+          "section_title": "SYSTEM IMPLEMENTATION RESULTS",
+          "section_kind": "design",
+          "page": 6,
+          "sentence": "A radio transceiver die micrograph, fabricated using 0.18m CMOS and six-metal-layer technology with thick top metal is CHOI et al.: EXPERIMENTAL COIN-SIZED RADIO FOR EXTREMELY LOW-POWER WPAN APPLICATION Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transceiver",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Frame format",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 7,
+      "caption": "Fig. 18. Baseband chip architecture.",
+      "caption_bbox": [
+        38.1,
+        512.4,
+        160.1,
+        523.0
+      ],
+      "section_title": "V. SYSTEM IMPLEMENTATION RESULTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DIGITAL MODEM/PROCESSOR DESIGN",
+          "section_kind": "design",
+          "page": 6,
+          "sentence": "The digital chip shown in Fig. 18 supports PHY functions including modulation, spreading and error-correction coding, MAC functions including simplified carrier sensing multiple access with collision avoidance (CSMA-CA), and system conIEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 12, DECEMBER 2003 trol functions such as power management."
+        },
+        {
+          "section_title": "SYSTEM IMPLEMENTATION RESULTS",
+          "section_kind": "design",
+          "page": 6,
+          "sentence": "Fig. 18."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Baseband chip architecture",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.57,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 7,
+      "caption": "Fig. 19. Die micrograph for the fabricated radio transceiver.",
+      "caption_bbox": [
+        301.1,
+        707.3,
+        498.0,
+        718.0
+      ],
+      "section_title": "V. SYSTEM IMPLEMENTATION RESULTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "SYSTEM IMPLEMENTATION RESULTS",
+          "section_kind": "design",
+          "page": 6,
+          "sentence": "Baseband chip architecture. shown in Fig. 19."
+        },
+        {
+          "section_title": "SYSTEM IMPLEMENTATION RESULTS",
+          "section_kind": "design",
+          "page": 6,
+          "sentence": "A digital chip is packaged and embedded Fig. 19."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-micrograph": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "transceiver",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Die micrograph for the fabricated radio transceiver",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 20,
+      "label": "Fig. 20",
+      "page": 8,
+      "caption": "Fig. 20. Output signal and its eye diagram in the receiver chain.",
+      "caption_bbox": [
+        39.6,
+        147.5,
+        248.7,
+        158.2
+      ],
+      "section_title": "V. SYSTEM IMPLEMENTATION RESULTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "SYSTEM IMPLEMENTATION RESULTS",
+          "section_kind": "design",
+          "page": 6,
+          "sentence": "Fig. 20 shows the demodulated output signal and its eye diagram at the output of the receiver chain. waveforms after the DACs Fig. 21 shows the baseband and LPFs in the transmitter chain, which are directly upconverted and amplified through up-mixers and a drive amplifier."
+        },
+        {
+          "section_title": "SYSTEM IMPLEMENTATION RESULTS",
+          "section_kind": "design",
+          "page": 6,
+          "sentence": "Fig. 20."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Output signal and its eye diagram in the receiver chain",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 21,
+      "label": "Fig. 21",
+      "page": 8,
+      "caption": "Fig. 21. Baseband I=Q waveforms in the transmitter chain.",
+      "caption_bbox": [
+        39.6,
+        326.6,
+        235.9,
+        337.3
+      ],
+      "section_title": "V. SYSTEM IMPLEMENTATION RESULTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "SYSTEM IMPLEMENTATION RESULTS",
+          "section_kind": "design",
+          "page": 6,
+          "sentence": "Fig. 20 shows the demodulated output signal and its eye diagram at the output of the receiver chain. waveforms after the DACs Fig. 21 shows the baseband and LPFs in the transmitter chain, which are directly upconverted and amplified through up-mixers and a drive amplifier."
+        },
+        {
+          "section_title": "SYSTEM IMPLEMENTATION RESULTS",
+          "section_kind": "design",
+          "page": 6,
+          "sentence": "Fig. 21."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "-waveform": -2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "transmitter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Baseband I=Q waveforms in the transmitter chain",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 22,
+      "label": "Fig. 22",
+      "page": 8,
+      "caption": "Fig. 22. Spectrum measured at the transmitter output.",
+      "caption_bbox": [
+        39.6,
+        504.4,
+        216.5,
+        515.1
+      ],
+      "section_title": "V. SYSTEM IMPLEMENTATION RESULTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "SYSTEM IMPLEMENTATION RESULTS",
+          "section_kind": "design",
+          "page": 6,
+          "sentence": "The spectrum at the output of a drive amplifier satisfies the required spectrum mask as shown in Fig. 22."
+        },
+        {
+          "section_title": "SYSTEM IMPLEMENTATION RESULTS",
+          "section_kind": "design",
+          "page": 6,
+          "sentence": "Fig. 22."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-spectrum": -2.5,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "transmitter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Spectrum measured at the transmitter output",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 23,
+      "label": "Fig. 23",
+      "page": 8,
+      "caption": "Fig. 23. Die micrograph for the fabricated digital modem/processor.",
+      "caption_bbox": [
+        39.6,
+        680.9,
+        262.2,
+        691.5
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "SYSTEM IMPLEMENTATION RESULTS",
+          "section_kind": "design",
+          "page": 6,
+          "sentence": "A digital modem/processor die micrograph, fabricated using the same process with a radio chip, is shown in Fig. 23."
+        },
+        {
+          "section_title": "SYSTEM IMPLEMENTATION RESULTS",
+          "section_kind": "design",
+          "page": 6,
+          "sentence": "Fig. 23."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-micrograph": -3.0,
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "microprocessor",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Die micrograph for the fabricated digital modem/processor",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 24,
+      "label": "Fig. 24",
+      "page": 8,
+      "caption": "Fig. 24. Implemented radio.",
+      "caption_bbox": [
+        302.6,
+        175.2,
+        398.2,
+        185.8
+      ],
+      "section_title": "V. SYSTEM IMPLEMENTATION RESULTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "SYSTEM IMPLEMENTATION RESULTS",
+          "section_kind": "design",
+          "page": 6,
+          "sentence": "The die area 2.4 mm. of the digital chip is 3.4 mm Fig. 24 shows the final implementation feature of the coin3 cm, most of which is ocsized radio."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 8,
+          "sentence": "An experimental 2.4-GHz radio for the low-power and low-rate preliminary IEEE802.15.4 WPAN is reported, implem CMOS technology. mented in a two-chip solution in 0.18IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 12, DECEMBER 2003 Fig. 24."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Implemented radio",
+        "key_specs": [
+          "15.4 W"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 12,
+  "warnings": []
+}

@@ -1,0 +1,895 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1269917.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1269917",
+  "generated_at": "2026-07-29T22:01:33",
+  "paper_metadata": {
+    "title": "A 0.18-m CMOS 3.5-Gb/s Continuous-Time Adaptive Cable Equalizer Using Enhanced Low-Frequency Gain Control Method",
+    "authors": [
+      "Jong-Sang Choi",
+      "Moon-Sang Hwang",
+      "Deog-Kyoon Jeong"
+    ],
+    "abstract": "This paper describes a high-speed CMOS adaptive cable equalizer using an enhanced low-frequency gain control between the equalizer adaptation loop and the timing recovery method. The additional low-frequency gain control loop enloop complicates the convergence process of each loop. Thus, ables the use of an open-loop equalizing filter, which alleviates the reported high-speed discrete-time post-equalizers operate the speed bottleneck of the conventional adaptation method. only in a fixed mode (manual adjustment) [6]–[8]. On the other In addition, combined adaptation of low-frequency gain and hand, the continuous-time equalizer does not require sampling high-frequency boosting improves the adaptation accuracy while supporting high-frequency operation. The open-loop equalizing phase recovery so that the equalizer adaptation can be realized filter incorporates a merged-path topology and offers infinite independently with the timing recovery [10]–[13]. Still another input impedance, which are suitable for higher frequency opcandidate for high-speed equalization is the combined usage eration and cascaded design. This equalizing filter controls its of pre-emphasis and post-equalization [7], [9]. This method common-mode output voltage level in a feedforward manner, thereby improving bandwidth. A prototype chip was fabricated can alleviate the burden of equalization in very high-frequency in 0.18m four-metal mixed-mode CMOS technology. The operation, but adaptation in both sides of the transceiver must 73 mm2. The prototype adaptive realized active area is 0 48 0 be jointly considered. equalizer operates up to 3.5 Gb/s over a 15-m RG-58 coaxial cable For these reasons, we selected a continuous-time adaptive with 1.8-V supply and dissipates 80 mW. Moreover, the equalizing post-equalizer as our target architecture for high-frequency filter in manual adjustment mode operates up to 5 Gb/s over a 15-m RG-58 coaxial cable. adaptive cable equalizer design [10]–[13]. A continuous-time adaptive cable equalizer in the bipolar junction transistor (BJT)",
+    "keywords": [
+      "Adaptation",
+      "adaptive equalizer",
+      "cable equalizer",
+      "common-mode feedback (CMFB)",
+      "CMOS",
+      "enhanced low-fre-"
+    ],
+    "doi": "10.1109/JSSC.2003.822774",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2004
+  },
+  "paper_circuit_context": {
+    "circuit_type": "0.18-m CMOS 3.5-Gb/s Continuous-Time Adaptive Cable Equalizer",
+    "technology": "CMOS, BJT",
+    "application_domain": "if",
+    "sub_blocks": [
+      "varactor",
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "bias circuit",
+      "switch"
+    ],
+    "design_purpose": "Still another input impedance, which are suitable for higher frequency opcandidate for high-speed equalization is the combined usage eration and cascaded design.",
+    "function_summary": "0.18-m CMOS 3.5-Gb/s Continuous-Time Adaptive Cable Equalizer: Still another input impedance, which are suitable for higher frequency opcandidate for high-speed equalization is the combined usage eration and cascaded design.",
+    "key_specs": [
+      "80 mW",
+      "15%",
+      "8 MHz",
+      "1 MHz",
+      "20 dB",
+      "16 dB",
+      "1.8 GHz",
+      "110 ps",
+      "21 dB",
+      "2.5 GHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "A S THE transmission speed increases, frequency-dependent loss of a cable becomes more severe. This causes intersymbol interference (ISI) and limits the transmission speed and length over the cable [1]. To overcome this limit, several equalization methods have been proposed in high-speed serial links. One of them is the well-known pre-emphasis method [2]–[4], where adaptation for different cable l ..."
+    },
+    {
+      "number": "II",
+      "title": "LIMITATIONS OF CONVENTIONAL CONTINUOUS-TIME",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "ADAPTIVE CABLE EQUALIZER Fig. 1 shows the block diagram of the conventional CMOS continuous-time adaptive cable equalizer [12], [13]. The received input signal first goes through an equalizing filter, which has two signal paths: the unity-gain path and the high-frequency-boosting path. The high-frequency-boosting path compensates for the high-frequency loss of the channel Fig. 1. Block diagram of  ..."
+    },
+    {
+      "number": "III",
+      "title": "PROPOSED LOW-FREQUENCY GAIN CONTROL METHOD",
+      "kind": "proposed",
+      "page": 2,
+      "text_preview": "To overcome the limitations described in Section II, an enhanced low-frequency gain control method, which is combined with the high-frequency boosting control loop as shown in Fig. 3 [14], is proposed. The operation of the high-frequency boosting control loop is the same as the conventional adaptation method as described in Section II, and the operation of the low-frequency gain control loop is si ..."
+    },
+    {
+      "number": "IV",
+      "title": "EQUALIZER IMPLEMENTATION",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "Fig. 5 shows the overall architecture of the implemented prototype chip. The differential input signals are terminated on-chip n-well resistors. This received signal goes using 50through the equalizing filter block. The low-frequency gain and high-frequency boosting of the equalizing filter are adjusted by the aforementioned joint adaptation method. To monitor the equalized signal, the regulating  ..."
+    },
+    {
+      "number": "V",
+      "title": "MEASUREMENT SETUP AND RESULTS",
+      "kind": "results",
+      "page": 4,
+      "text_preview": "Fig. 10 is a photomicrograph of the prototype chip. The chip includes a continuous-time joint adaptive cable equalizer and an output driver. The output driver is included to monitor the equalm ized eyes. The prototype chip was fabricated in TSMC 0.18four-metal mixed-mode CMOS process. The active area of the (a) PRBS pattern. (b) After equalizer in adaptive mode at 3.5 Gb/s. (b) Fig. 11. Eye diagra ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 6,
+      "text_preview": "A new low-frequency gain control method in a continuous-time adaptive cable equalizer has been proposed so that the adaptation servo loop would jointly compensate not only the high-frequency loss but also the low-frequency gain variation. This joint adaptation method enables the use of an open-loop equalizing filter to mitigate the speed bottleneck of the conventional adaptive cable equalizer. Thi ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Block diagram of conventional continuous-time adaptive cable equalizer.",
+      "caption_bbox": [
+        39.6,
+        195.0,
+        290.6,
+        211.9
+      ],
+      "section_title": "II. LIMITATIONS OF CONVENTIONAL CONTINUOUS-TIME",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "LIMITATIONS OF CONVENTIONAL CONTINUOUS-TIME",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "ADAPTIVE CABLE EQUALIZER Fig. 1 shows the block diagram of the conventional CMOS continuous-time adaptive cable equalizer [12], [13]."
+        },
+        {
+          "section_title": "LIMITATIONS OF CONVENTIONAL CONTINUOUS-TIME",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The high-frequency-boosting path compensates for the high-frequency loss of the channel Fig. 1."
+        },
+        {
+          "section_title": "LIMITATIONS OF CONVENTIONAL CONTINUOUS-TIME",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "In the equalizing filter design, the conventional adaptation method shown in Fig. 1 requires a fixed-gain low-frequency path."
+        },
+        {
+          "section_title": "LIMITATIONS OF CONVENTIONAL CONTINUOUS-TIME",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The underlying assumption for the proper adaptation of the conventional method shown in Fig. 1 is that the settled amplitudes (the final voltage level after long consecutive ones or zeros) at and are the same."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.6,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "-conventional": -3.0,
+        "references": 1.6
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of conventional continuous-time adaptive cable equalizer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.03,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. loss. (b) Signal-dependent attenuations.",
+      "caption_bbox": [
+        302.6,
+        295.4,
+        429.3,
+        312.3
+      ],
+      "section_title": "II. LIMITATIONS OF CONVENTIONAL CONTINUOUS-TIME",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "LIMITATIONS OF CONVENTIONAL CONTINUOUS-TIME",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "(a) Sources of effective flat Fig. 2. loss."
+        },
+        {
+          "section_title": "LIMITATIONS OF CONVENTIONAL CONTINUOUS-TIME",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "As shown in (1) is the combined and Fig. 2(a), the settled amplitude at point effect of the driving signal’s amplitude of the TX driver and the dc gains of the channel and equalizing filter."
+        },
+        {
+          "section_title": "LIMITATIONS OF CONVENTIONAL CONTINUOUS-TIME",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Thus, is the composite the settled amplitude variation at point effect of the EFL and LFL, as shown in Fig. 2(b)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "loss. (b) Signal-dependent attenuations",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Block diagram of proposed joint adaptive equalizer.",
+      "caption_bbox": [
+        38.1,
+        199.5,
+        232.5,
+        207.5
+      ],
+      "section_title": "II. LIMITATIONS OF CONVENTIONAL CONTINUOUS-TIME",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "LIMITATIONS OF CONVENTIONAL CONTINUOUS-TIME",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "CHOI et al.: CONTINUOUS-TIME ADAPTIVE CABLE EQUALIZER USING ENHANCED LOW-FREQUENCY GAIN CONTROL METHOD Fig. 3."
+        },
+        {
+          "section_title": "PROPOSED LOW-FREQUENCY GAIN CONTROL METHOD",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "To overcome the limitations described in Section II, an enhanced low-frequency gain control method, which is combined with the high-frequency boosting control loop as shown in Fig. 3 [14], is proposed."
+        },
+        {
+          "section_title": "PROPOSED LOW-FREQUENCY GAIN CONTROL METHOD",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "To compare the adaptation accuracy with different EFL, the jitter is plotted with respect to the ratio of the signal amplitudes at the transmitter output and at point in Fig. 3."
+        },
+        {
+          "section_title": "PROPOSED LOW-FREQUENCY GAIN CONTROL METHOD",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "However, the joint adaptation method can compensate this settled amplitude variation between points and in Fig. 3 so that can be controlled around 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.6,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "+proposed": 3.0,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "To overcome the limitations described in Section II, an enhanced low-frequency gain control method, which is combined with the high-frequency boosting control loop as shown in Fig. 3 [14], is proposed.",
+        "function_summary": "Block diagram of proposed joint adaptive equalizer. To overcome the limitations described in Section II, an enhanced low-frequency gain control method, which is combined with the high-frequency boosting control loop as shown in Fig. 3 [14], is proposed.",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.66,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Comparison of performance by high-level simulation.",
+      "caption_bbox": [
+        301.1,
+        213.8,
+        501.7,
+        221.8
+      ],
+      "section_title": "II. LIMITATIONS OF CONVENTIONAL CONTINUOUS-TIME",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "PROPOSED LOW-FREQUENCY GAIN CONTROL METHOD",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "Fig. 4 shows the high-level simulation result (by MATLAB Simulink) with 1-Gb/s nonreturn-to-zero (NRZ) data stream in both cases of using the joint and conventional adaptation methods."
+        },
+        {
+          "section_title": "PROPOSED LOW-FREQUENCY GAIN CONTROL METHOD",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "Fig. 4."
+        },
+        {
+          "section_title": "MEASUREMENT SETUP AND RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "This deviation from the high-level simulation result shown in Fig. 4 is related with the capability of high-frequency boosting of the implemented equalizing filter."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Comparison of performance by high-level simulation",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Block diagram of implemented equalizer.",
+      "caption_bbox": [
+        301.1,
+        392.6,
+        462.8,
+        400.5
+      ],
+      "section_title": "IV. EQUALIZER IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "PROPOSED LOW-FREQUENCY GAIN CONTROL METHOD",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "Fig. 5."
+        },
+        {
+          "section_title": "EQUALIZER IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 5 shows the overall architecture of the implemented prototype chip."
+        },
+        {
+          "section_title": "MEASUREMENT SETUP AND RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "To characterize the adaptive equalizer in more detail and to test the maximum operating frequency of the equalizing filter, the option to disable the error amplifiers in the adaptation servo loop and to externally adjust the two control signals, gctrl and zctrl (Fig. 5), was added."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.7,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of implemented equalizer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.67,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6.",
+      "caption_bbox": [
+        39.6,
+        403.1,
+        60.3,
+        411.0
+      ],
+      "section_title": "IV. EQUALIZER IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "EQUALIZER IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 6 shows the block and circuit diagrams of the realized equalizing filter."
+        },
+        {
+          "section_title": "EQUALIZER IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The equalizing filter is composed of three cascaded filter cells to obtain enough high-frequency boosting and bandwidth [Fig. 6(a)]."
+        },
+        {
+          "section_title": "EQUALIZER IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 6."
+        },
+        {
+          "section_title": "EQUALIZER IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The circuitry of a unit equalizing filter cell is shown in Fig. 6(b)."
+        },
+        {
+          "section_title": "EQUALIZER IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The merged-path topology of the unit equalizing filter cell shown in Fig. 6(b) has benefits in higher frequency operation compared with the separated-path topology [9], [12], [13]."
+        },
+        {
+          "section_title": "EQUALIZER IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "On the other hand, the implemented equalizing filter cell in Fig. 6(b) can reduce these parasitics by using merged-path topology."
+        },
+        {
+          "section_title": "EQUALIZER IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "In addition, since it adopted source degenerated capacitor-based tuning, the parasitic capacitances at nodes sp and sn in Fig. 6(b) are used as part of the tuning capacitance so that the additional node parasitics that disturb the high-speed operation of the equalizing filter can be reduced."
+        },
+        {
+          "section_title": "EQUALIZER IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 6(c) shows the replica common-mode biasing circuit, , M2 , and M4 are equal to , M2, and M4 in where Fig. 6(b), respectively."
+        },
+        {
+          "section_title": "EQUALIZER IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The simulated frequency response of the equalizing filter in Fig. 6(a) is shown in Fig. 6(d)."
+        },
+        {
+          "section_title": "EQUALIZER IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Since the transconductance of the transistors in Fig. 6(b) is dependent on PVT variations, the frequency response [Fig. 6(d)] can vary."
+        },
+        {
+          "section_title": "EQUALIZER IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "In the worst case, the peak high-frequency boosting 15%, which results [about 20 dB in Fig. 6(d)] can vary about in the change of maximum boosting capability of the equalizing filter."
+        },
+        {
+          "section_title": "EQUALIZER IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Chip photomicrograph. range enables the proper control of the two control signals of the equalizing filter cell shown in Fig. 6(b)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.5,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor",
+          "transistor/MOSFET",
+          "bias circuit"
+        ],
+        "design_purpose": "The equalizing filter is composed of three cascaded filter cells to obtain enough high-frequency boosting and bandwidth [Fig. 6(a)].",
+        "function_summary": "filter. The equalizing filter is composed of three cascaded filter cells to obtain enough high-frequency boosting and bandwidth [Fig. 6(a)].",
+        "key_specs": [
+          "15%",
+          "20 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.38,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. Regulating comparator. (a) Block diagram. (b) Circuitry of unit comparator cell. (c) Circuitry of Vlow controller.",
+      "caption_bbox": [
+        38.1,
+        329.1,
+        289.2,
+        346.0
+      ],
+      "section_title": "IV. EQUALIZER IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "EQUALIZER IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "CHOI et al.: CONTINUOUS-TIME ADAPTIVE CABLE EQUALIZER USING ENHANCED LOW-FREQUENCY GAIN CONTROL METHOD (a) (b) (c) Fig. 7."
+        },
+        {
+          "section_title": "EQUALIZER IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 7 shows the block and circuit diagrams of the regulating comparator."
+        },
+        {
+          "section_title": "EQUALIZER IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The comparator has four cascaded regulating comparator cells to obtain enough gain and bandwidth [Fig. 7(a)]."
+        },
+        {
+          "section_title": "EQUALIZER IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The regulating comparator cell is realized with a simple differential amplifier with passive poly resistors [Fig. 7(b)]."
+        },
+        {
+          "section_title": "EQUALIZER IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The output node voltage regulation is controlled by , M1 , and the replica biasing circuit [Fig. 7(c)], where the M3 are equal to , M1, and M3 in Fig. 7(b), respectively."
+        },
+        {
+          "section_title": "EQUALIZER IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The unit comparator cell used in Fig. 7(b) does not require additional devices for voltage regulation and can achieve bandwidth improvement."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.5,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 2.0
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "comparator",
+        "technology": "CMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "resistor",
+          "bias circuit"
+        ],
+        "design_purpose": "The comparator has four cascaded regulating comparator cells to obtain enough gain and bandwidth [Fig. 7(a)].",
+        "function_summary": "Regulating comparator. (a) Block diagram. (b) Circuitry of unit comparator cell. (c) Circuitry of Vlow controller. The comparator has four cascaded regulating comparator cells to obtain enough gain and bandwidth [Fig. 7(a)].",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.92,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Filters. (a) High-pass filter. (b) Low-pass filter with dc-decoupling capability.",
+      "caption_bbox": [
+        301.1,
+        352.5,
+        552.2,
+        369.4
+      ],
+      "section_title": "IV. EQUALIZER IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "EQUALIZER IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 8 shows the circuit diagrams of the high-pass and low-pass filters used in the adaptation servo loop."
+        },
+        {
+          "section_title": "EQUALIZER IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The CR-type high-pass filter [Fig. 8(a)] has inherent dc-blocking capability, while the conventional RC-type low-pass filter does not."
+        },
+        {
+          "section_title": "EQUALIZER IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "So we added a dc-decoupling high-pass filter in front of the implemented low-pass filter as shown in Fig. 8(b)."
+        },
+        {
+          "section_title": "EQUALIZER IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "This wide output voltage (a) (b) Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.1,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Filters. (a) High-pass filter. (b) Low-pass filter with dc-decoupling capability",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.29,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. Rectifier and error amplifier.",
+      "caption_bbox": [
+        301.1,
+        490.4,
+        422.0,
+        498.4
+      ],
+      "section_title": "IV. EQUALIZER IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "EQUALIZER IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 9 shows the circuit diagram of the rectifier and error amplifier used in the adaptation servo loops."
+        },
+        {
+          "section_title": "EQUALIZER IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "rectifier",
+        "technology": "CMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Rectifier and error amplifier",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10. Chip photomicrograph.",
+      "caption_bbox": [
+        301.1,
+        623.7,
+        408.6,
+        631.7
+      ],
+      "section_title": "V. MEASUREMENT SETUP AND RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EQUALIZER IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 10."
+        },
+        {
+          "section_title": "MEASUREMENT SETUP AND RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 10 is a photomicrograph of the prototype chip."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -7.2,
+      "relevance_breakdown": {
+        "-micrograph": -3.0,
+        "-chip photo": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "0.18-m CMOS 3.5-Gb/s Continuous-Time Adaptive Cable Equalizer",
+        "technology": "CMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chip photomicrograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 5,
+      "caption": "Fig. 11. Eye diagrams. (a) After 15-m RG-58 coaxial cable at 3.5 Gb/s with 2",
+      "caption_bbox": [
+        39.6,
+        567.5,
+        290.6,
+        582.5
+      ],
+      "section_title": "V. MEASUREMENT SETUP AND RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT SETUP AND RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "(b) Fig. 11."
+        },
+        {
+          "section_title": "MEASUREMENT SETUP AND RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 11(a) shows the IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 3, MARCH 2004 Fig. 12."
+        },
+        {
+          "section_title": "MEASUREMENT SETUP AND RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 11(b) shows the equalized eye after the prototype chip."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "0.18-m CMOS 3.5-Gb/s Continuous-Time Adaptive Cable Equalizer",
+        "technology": "CMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Eye diagrams. (a) After 15-m RG-58 coaxial cable at 3.5 Gb/s with 2",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 5,
+      "caption": "Fig. 12. Measured equalizer jitter with various cable lengths at 3.5 Gb/s.",
+      "caption_bbox": [
+        302.6,
+        216.0,
+        539.1,
+        224.0
+      ],
+      "section_title": "V. MEASUREMENT SETUP AND RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT SETUP AND RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 11(a) shows the IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 3, MARCH 2004 Fig. 12."
+        },
+        {
+          "section_title": "MEASUREMENT SETUP AND RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The measured equalizer jitter at 3.5-Gb/s transmission speed is summarized in Fig. 12 with various cable lengths both in adaptive and manual adjustment mode."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured equalizer jitter with various cable lengths at 3.5 Gb/s",
+        "key_specs": [
+          "12 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 6,
+      "caption": "Fig. 13. Measured equalizer jitter with different transmitter signal amplitudes with 15-m RG-58 coaxial cable in adaptive mode.",
+      "caption_bbox": [
+        38.1,
+        214.2,
+        289.2,
+        231.1
+      ],
+      "section_title": "V. MEASUREMENT SETUP AND RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT SETUP AND RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 13 shows the jitter variation with respect to the transmitter signal amplitude over a 15-m RG-58 coaxial cable at 2.5-Gb/s and 3.5-Gb/s data transmission speed."
+        },
+        {
+          "section_title": "MEASUREMENT SETUP AND RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "As the transmitter signal amplitude reduces, CHOI et al.: CONTINUOUS-TIME ADAPTIVE CABLE EQUALIZER USING ENHANCED LOW-FREQUENCY GAIN CONTROL METHOD Fig. 13."
+        },
+        {
+          "section_title": "MEASUREMENT SETUP AND RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "This phenomenon, however, is alleviated as the operating frequency is lowered as shown in Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.8,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured equalizer jitter with different transmitter signal amplitudes with 15-m RG-58 coaxial cable in adaptive mode",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 3,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

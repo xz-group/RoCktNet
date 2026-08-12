@@ -1,0 +1,14 @@
+R3 VDD N1
+R4 VDD N2
+RF1 N1 input_p
+RF2 N2 input_n
+R1 N3 VSS
+R2 N4 VSS
+Q1 N1 N2 N3 npn
+Q2 VDD N1 N4 npn
+Q3 N1 input_p N5 npn
+Q6 N2 input_n N5 npn
+Q5 output_p N4 N6 npn
+Q4 output_n N3 N6 npn
+I1 N5 VSS
+I2 N6 VSS

@@ -1,0 +1,855 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\982416.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\982416",
+  "generated_at": "2026-07-29T22:03:42",
+  "paper_metadata": {
+    "title": "An Adaptive Analog Noise-Predictive Decision-Feedback Equalizer",
+    "authors": [
+      "Michael Q. Le",
+      "Paul J. Hurst",
+      "John P. Keane"
+    ],
+    "abstract": "In this paper, an adaptive noise-predictive decisionfeedback equalizer (NPDFE) is presented. The NPDFE architecground. Section III introduces the noise-predictive DFE. The IC ture and its implementation are described. The NPDFE consists implementation is covered in Sections IV–VI. Measured results of an analog finite-impulse-response (FIR) forward equalizer, a are presented in Section VII, which is followed by the conclurecursive analog equalizer for noise prediction, and a decisionsion in Section VIII. feedback equalizer (DFE). The recursive equalizer reduces noise enhancement and improves the signal-to-noise ratio (SNR) at the decision slicer input. The prototype targets a magnetic recording",
+    "keywords": [
+      "Adaptive equalizer",
+      "decision-feedback equalizer"
+    ],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2002
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Adaptive Analog Noise-Predictive Decision-Feedback Equalizer",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "output buffer",
+      "switch",
+      "pre-amplifier",
+      "latch",
+      "clock / timing"
+    ],
+    "design_purpose": "In this paper, an adaptive noise-predictive decisionfeedback equalizer (NPDFE) is presented.",
+    "function_summary": "Adaptive Analog Noise-Predictive Decision-Feedback Equalizer: In this paper, an adaptive noise-predictive decisionfeedback equalizer (NPDFE) is presented.",
+    "key_specs": [
+      "2 dB",
+      "130 mW",
+      "1.9 dB",
+      "2V",
+      "800 MHz",
+      "2 ns",
+      "1%",
+      "500 mV",
+      "15 mV",
+      "0.25 dB"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "I N MODERN disk drives and many digital communication systems, intersymbol interference (ISI) is severe. Systems using partial-response maximum-likelihood (PRML) detection have been developed and used extensively to combat this problem [1]. Detection methods other than PRML, such as decision-feedback equalization and fixed-delay tree search with decision feedback, have also been proposed [2], [3]. ..."
+    },
+    {
+      "number": "II",
+      "title": "BACKGROUND",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "Fig. 1 shows a block diagram of a conventional decisionfeedback equalizer-based read channel that can remove ISI. The read signal is first passed through a low-noise preamp and automatic gain control (AGC) circuit that adjusts the signal amplitude to a desired level. Then, the output of the AGC is sent through a low-pass filter (LPF) to remove out-of-band noise. Finally, the output of the LPF is p ..."
+    },
+    {
+      "number": "III",
+      "title": "NOISE-PREDICTIVE DFE",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "A block diagram of the proposed NPDFE is shown in Fig. 2. This architecture uses a noise-predictive equalizer (NPE) along with a forward equalizer and a feedback equalizer . , , and are FIR transfer functions. The added at the forward equalizer input models channel noise noise and is assumed to be white. To minimize the noise power at the slicer input, the noise at the slicer input should also be  ..."
+    },
+    {
+      "number": "IV",
+      "title": "IMPLEMENTATION",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "A block diagram of the analog NPDFE is shown in Fig. 4. The forward and noise-predictive equalizers are both discrete-time analog equalizers. All three equalizers produce analog current outputs, which are summed by connecting their outputs together. The result is converted into a voltage using . a resistor and then sliced to produce the binary decision The feedback equalizer in a conventional DFE  ..."
+    },
+    {
+      "number": "V",
+      "title": "ADAPTATION",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "The forward equalizer is adapted using a sign–sign leastmean squared (LMS) algorithm, and the feedback equalizer is adapted using a sign-error LMS algorithm. Each integrator used in the adaptive loops is formed by cascading a 4-b precounter and a 6-b up/down counter. The operation of the 4-b precounter and 6-b digital up/down counter (which together act as a discrete-time integrator) is similar to ..."
+    },
+    {
+      "number": "VI",
+      "title": "CIRCUIT BLOCKS",
+      "kind": "design",
+      "page": 4,
+      "text_preview": "Fig. 7 shows the SHA used in the forward equalizer and noisepredictive equalizer. The cascode transistors connected to operate in saturation to boost the output impedance. sets A in each branch. The clock the bias current of about 500 and are nonoverlapping. Phase has duration phases , while lasts the remainder of the clock period, where Fig. 7. Sample and hold amplifier. is the bit rate. For the  ..."
+    },
+    {
+      "number": "VII",
+      "title": "MEASURED RESULTS",
+      "kind": "results",
+      "page": 6,
+      "text_preview": "Shown in Fig. 12 is the measured BER performance of the analog noise-predictive DFE during steady-state operation at a data rate of 100 Mb/s. The prototype was designed to run at a higher data rate, but an alignment problem between the multiple clock phases prevented the prototype from operating properly at higher clock speeds. The thick solid line plots the BER performance of the noise-predictive ..."
+    },
+    {
+      "number": "VIII",
+      "title": "CONCLUSIONS",
+      "kind": "conclusion",
+      "page": 7,
+      "text_preview": "A mixed-signal DFE-based read channel that uses a recursive noise-predictive equalizer has been presented. The described NPDFE is simpler than but achieves performance that is similar to an all-pass forward equalizer plus DFE. The NPDFE read channel outperforms the typical FIR forward equalizer and DFE combination. The measured SNR improvement is about 2 dB, and this improvement is achieved with a ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Conventional DFE-based read channel.",
+      "caption_bbox": [
+        39.6,
+        173.0,
+        194.4,
+        183.6
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "BACKGROUND",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1 shows a block diagram of a conventional decisionfeedback equalizer-based read channel that can remove ISI."
+        },
+        {
+          "section_title": "BACKGROUND",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The DFE consists of the feedback equalizer, summer, and slicer, as shown in the dashed box of Fig. 1."
+        },
+        {
+          "section_title": "BACKGROUND",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "To see how the APFE removes precursor ISI, assume that Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.3,
+      "relevance_breakdown": {
+        "-conventional": -3.0,
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Conventional DFE-based read channel",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 2,
+      "caption": "Fig. 2. Proposed noise-predictive DFE.",
+      "caption_bbox": [
+        38.1,
+        178.1,
+        169.1,
+        188.8
+      ],
+      "section_title": "III. NOISE-PREDICTIVE DFE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "NOISE-PREDICTIVE DFE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "A block diagram of the proposed NPDFE is shown in Fig. 2."
+        },
+        {
+          "section_title": "NOISE-PREDICTIVE DFE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Due to the nonlinear operation of the slicer in Fig. 2, the deis noise free assuming no decision error."
+        },
+        {
+          "section_title": "NOISE-PREDICTIVE DFE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "From this relation, where the in the noise-predictive equalizer can be comthe coefficients as puted from the forward equalizer coefficients (7) In the read channel, the front-end automatic gain control can so we can set without loss scale the input signal LE et al.: ADAPTIVE ANALOG NOISE-PREDICTIVE DECISION-FEEDBACK EQUALIZER Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.2,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Proposed noise-predictive DFE",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.55,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. (a) FIR + DFE. (b) NPDFE.",
+      "caption_bbox": [
+        301.1,
+        304.9,
+        421.1,
+        315.5
+      ],
+      "section_title": "III. NOISE-PREDICTIVE DFE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "NOISE-PREDICTIVE DFE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 3(a) shows a conventional FIR forward equalizer and DFE combination that can be used instead of a NPDFE."
+        },
+        {
+          "section_title": "NOISE-PREDICTIVE DFE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 3(b) shows structure will be referred to as the FIR the proposed NPDFE."
+        },
+        {
+          "section_title": "NOISE-PREDICTIVE DFE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "If we linearize the slicers, compute the dictive equalizer to in Fig. 3(a) and (b) and then transfer functions from equate these transfer functions, the feedback equalizers in the two structures can be related as (9) DFE has optimum coefficients and (i.e., coefIf the FIR ficients that minimize the mean-squared value of the error [8], where is defined in Section V), then the coefficients in the NPDFE can be computed using (9) as (10) in the forward equalizer are the same in both The coefficients is fixed and set to 1, the noise-prestructures."
+        },
+        {
+          "section_title": "NOISE-PREDICTIVE DFE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Since the coefficients of the transfer function (a) (b) Fig. 3."
+        },
+        {
+          "section_title": "ADAPTATION",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The NPE is disabled (i.e., all initial adaptation period, and the FE and DFE in Fig. 3(a) are adapted using the LMS adaptation."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) FIR + DFE. (b) NPDFE",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.12,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 3,
+      "caption": "Fig. 4. Block diagram of the NPDFE using erasure.",
+      "caption_bbox": [
+        39.6,
+        184.0,
+        211.5,
+        194.7
+      ],
+      "section_title": "IV. IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "A block diagram of the analog NPDFE is shown in Fig. 4."
+        },
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "In each of these equalizers at any given time, one of the Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the NPDFE using erasure",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.57,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Detailed block diagram of the NPDFE. Adaptive loops are not shown.",
+      "caption_bbox": [
+        39.6,
+        435.2,
+        294.0,
+        445.8
+      ],
+      "section_title": "IV. IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 5 shows a detailed block diagram of the analog NPDFE prototype."
+        },
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 5."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The erasure in Fig. 5) is plotted as a fraction of the ideal peak threshold ( slicer input voltage, which is 500-mV differential."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.7,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "Adaptive Analog Noise-Predictive Decision-Feedback Equalizer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Detailed block diagram of the NPDFE. Adaptive loops are not shown",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.7,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "Fig. 6. Forward equalizer showing the adaptive loops.",
+      "caption_bbox": [
+        38.1,
+        348.1,
+        217.1,
+        358.7
+      ],
+      "section_title": "V. ADAPTATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ADAPTATION",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The output of the 6-b up/down LE et al.: ADAPTIVE ANALOG NOISE-PREDICTIVE DECISION-FEEDBACK EQUALIZER Fig. 6."
+        },
+        {
+          "section_title": "ADAPTATION",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "A block diagram of the adaptive forward equalizer is shown in Fig. 6."
+        },
+        {
+          "section_title": "ADAPTATION",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The output of this comparator feeds a shift register and the adaptive circuitry for the forward equalizer as shown in Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Forward equalizer showing the adaptive loops",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 5,
+      "caption": "Fig. 7. Sample and hold amplifier.",
+      "caption_bbox": [
+        39.6,
+        270.8,
+        155.9,
+        281.4
+      ],
+      "section_title": "VI. CIRCUIT BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT BLOCKS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 7 shows the SHA used in the forward equalizer and noisepredictive equalizer."
+        },
+        {
+          "section_title": "CIRCUIT BLOCKS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Phase has duration phases , while lasts the remainder of the clock period, where Fig. 7."
+        },
+        {
+          "section_title": "CIRCUIT BLOCKS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The simulated unity-gain frequency of the open-loop amplifier in Fig. 7 is about 800 MHz with a phase margin of 70 degrees when driving a 250-fF load capacitance."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "track-and-hold / sample-and-hold",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Sample and hold amplifier",
+        "key_specs": [
+          "800 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 5,
+      "caption": "Fig. 8. Gm cell used in each MDAC.",
+      "caption_bbox": [
+        302.6,
+        494.6,
+        429.0,
+        505.3
+      ],
+      "section_title": "VI. CIRCUIT BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT BLOCKS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 8 shows one of the cell is the MDAC."
+        },
+        {
+          "section_title": "CIRCUIT BLOCKS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "An equation that describes the operation of the MDAC is (15) IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 2, FEBRUARY 2002 Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Adaptive Analog Noise-Predictive Decision-Feedback Equalizer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Gm cell used in each MDAC",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 6,
+      "caption": "Fig. 9. DFE tap.",
+      "caption_bbox": [
+        38.1,
+        266.9,
+        96.2,
+        277.6
+      ],
+      "section_title": "VI. CIRCUIT BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT BLOCKS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 9 shows the structure of one feedback equalizer tap."
+        },
+        {
+          "section_title": "CIRCUIT BLOCKS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The current output of each 6-b 1, 1, or 0 (which is the output DAC is then multiplied by of the quantizer in the feedback loop) using the multiplier that consists of the four nMOS transistors shown in Fig. 9."
+        },
+        {
+          "section_title": "CIRCUIT BLOCKS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "LE et al.: ADAPTIVE ANALOG NOISE-PREDICTIVE DECISION-FEEDBACK EQUALIZER Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "frequency multiplier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "DFE tap",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 6,
+      "caption": "Fig. 10. Flash ADC structure.",
+      "caption_bbox": [
+        38.1,
+        467.5,
+        139.5,
+        478.2
+      ],
+      "section_title": "VI. CIRCUIT BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT BLOCKS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 10."
+        },
+        {
+          "section_title": "CIRCUIT BLOCKS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "A block diagram of the ADC is shown in Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Flash ADC structure",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 6,
+      "caption": "Fig. 11. Photograph of active die area.",
+      "caption_bbox": [
+        301.1,
+        257.3,
+        430.0,
+        268.0
+      ],
+      "section_title": "VI. CIRCUIT BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT BLOCKS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The core area is 1.0 mm Fig. 11."
+        },
+        {
+          "section_title": "CIRCUIT BLOCKS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "A photograph of the die core is shown in Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-photograph": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "Adaptive Analog Noise-Predictive Decision-Feedback Equalizer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Photograph of active die area",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 6,
+      "caption": "Fig. 12. Measured BER at 100 Mb/s and P W = 2:5T.",
+      "caption_bbox": [
+        301.1,
+        496.1,
+        491.7,
+        506.8
+      ],
+      "section_title": "VI. CIRCUIT BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT BLOCKS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 12."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Shown in Fig. 12 is the measured BER performance of the analog noise-predictive DFE during steady-state operation at a data rate of 100 Mb/s."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Adaptive Analog Noise-Predictive Decision-Feedback Equalizer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured BER at 100 Mb/s and P W = 2:5T",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 7,
+      "caption": "Fig. 13. Effect of normalized erasure threshold on BER.",
+      "caption_bbox": [
+        39.6,
+        226.3,
+        224.9,
+        236.9
+      ],
+      "section_title": "VII. MEASURED RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The thin solid line plots the BER of the NPDFE with the noise-predictive equalizer disabled, and the dashed line plots the measured BER of a conventional mixed-signal FE and DFE by Brown et al. [16] that Fig. 13."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The measured plots in Fig. 13 show the effect of the erasure threshold on the BER for three SNR values."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Effect of normalized erasure threshold on BER",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 7,
+      "caption": "Fig. 14. Error histogram with erasure on and off.",
+      "caption_bbox": [
+        39.6,
+        431.5,
+        201.8,
+        442.2
+      ],
+      "section_title": "VIII. CONCLUSIONS",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 14."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 14 shows measured histograms of the number of error events versus the length in bits of the error bursts when operating the NPDFE at an input SNR of 12 dB."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "As seen in Fig. 14, using erasures effectively reduces the probability of long error bursts by a factor of two or better."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.2,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Adaptive Analog Noise-Predictive Decision-Feedback Equalizer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Error histogram with erasure on and off",
+        "key_specs": [
+          "12 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 5,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

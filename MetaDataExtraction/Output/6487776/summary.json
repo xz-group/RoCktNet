@@ -1,0 +1,45 @@
+{
+  "title": "A 93% Efficiency Reconfigurable Switched-Capacitor DC-DC Converter Using On-Chip Ferroelectric Capacitors Dina El-Damak, Saurav Bandyopadhyay, Anantha P. Chandrakasan",
+  "bibliography": {
+    "authors": [],
+    "venue": "",
+    "year": 2013,
+    "doi": "",
+    "keywords": []
+  },
+  "figure_number": "Figure 21.7.1 shows the top level architecture of the whole power management IC. It consists of reconfigurable switched capacitor DC-DC converter split in four modules (M1-M4) that are interleaved for output voltage ripple reduction [3,4], pulse frequency modulation (PFM) regulation logic, clock generator, gain selection block that include programmable low duty cycle timers, and a voltage reference. The transistor level implementation of the SC module is shown in Figure 21.7.2a which can be reconfigured for four gain settings (1-2/3-1/2-1/3) as shown in Fig. 21.7.2b. Each module consists of two charge transfer capacitors, 1nF each, and ten switches. Since the implementation of gain settings (2/3, 1/3) requires two capacitors while (1,1/2) can be achieved with one only, thus, for the latter each module is reconfigured into two identical sub-modules running with 180 degree phase shifted clocks for further ripple reduction. The losses due to the bottom plate parasitic capacitance of on-chip capacitors usually limit the peak efficiency of the converter. These losses occur as SC converters supply power to the load through the charge and discharge of flying capacitors (C1 and C2). A direct non-desirable impact to this process is the charge and discharge of the bottom plate parasitic capacitance, αC, every clock cycle [2]. As an example, for gain setting 1/2, the converter charges C1 to (VinVout) in phase 1 and discharges it to Vout in phase 2. In companion to this process the bottom plate capacitance gets charged to Vout and discharged to ground wasting an energy of αC1Vout 2 per cycle where α is technology dependent (the same process applied for capacitor C2 but with the reverse order of phases). Highly efficient conversion is achieved by utilizing the ferroelectric capacitors, that posses extremely low bottom plate parasitics, for charge transfer. In addition, the architectures utilized for each gain setting are selected to minimize the voltage swing across the bottom plate capacitors for maximizing efficiency. Since the output load current is directly proportional to the capacitance of the flying caps [8], therefore, the Fe-Caps high density allows for supplying the power demands of the load without a highly significant area overhead.",
+  "type": "93% Efficiency Reconfigurable Switched-Capacitor DC-DC Converter",
+  "technology": "CMOS",
+  "application": "",
+  "sub_blocks": [
+    "capacitor",
+    "inductor",
+    "resistor",
+    "transistor/MOSFET",
+    "switch"
+  ],
+  "function_summary": "93% Efficiency Reconfigurable Switched-Capacitor DC-DC Converter",
+  "design_purpose": "",
+  "metrics": [
+    "Efficiency / ratio",
+    "Capacitance",
+    "Supply voltage",
+    "Frequency"
+  ],
+  "numerical_performance": [
+    "93%",
+    "90%",
+    "1nF",
+    "1V",
+    "2V",
+    "0.963V",
+    "92%",
+    "94%",
+    "10nF",
+    "8.2MHz"
+  ],
+  "confidence": 0.32,
+  "warnings": [
+    "Recommended figure was classified as 'result_plot', not a schematic; manual confirmation strongly recommended."
+  ]
+}

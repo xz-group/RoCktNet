@@ -1,0 +1,903 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1425723.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1425723",
+  "generated_at": "2026-07-29T22:02:39",
+  "paper_metadata": {
+    "title": "Design Techniques for Single-Low-VDD CMOS Systems",
+    "authors": [
+      "Jinn-Shyan Wang",
+      "Hung-Yu Li",
+      "Chingwei Yeh",
+      "Tien-Fu Chen"
+    ],
+    "abstract": "In this paper, a new CMOS design scheme called the single-lowDD CMOS (SLVCMOS) is proposed. With this [5] was proposed to solve the problems encountered when using scheme, a CMOS design implemented in a multiTH CMOS techSCCMOS. By using the ZSCCMOS, the wake-up time can nology can be operated with a very low external supply voltage, be shortened. However, the use of the ZSCCMOS is typically say 0.5-V, with a sleep current at the level of only picoampere per restricted to a particular pipeline stage, where a special input gate. The key items for a single-chip SLVCMOS design include flip-flop with phase-forcing circuit and a traditional flip-flop as a sleepless mixedTH flip-flop, a boosted sleeping clock signal, and three low-power hard blocks. Analysis shows that additional the output flip-flop must be employed in pair. This requirement benefits of using the SLVCMOS include higher performance and causes difficulty in connecting such blocks into a pipelined lower power consumption in the active mode, smaller leakage system. Although the ZSCCMOS is a single-lowdesign, current in the sleep mode, shorter wake-up time and reduced their flip-flops use more sleep control lines and therefore more wake-up energy during the sleep-to-active transition, and a rerouting resources are required. duced number of sleep-control signals, saving precious routing resources and reducing the chip area. A dual-rail SLVCMOS This paper proposes another low-voltage CMOS design cell library and two test chips, one 32-b RISC core and the other scheme, called the true single-low-V CMOS (SLVCMOS). verifying the design of hard blocks, are designed and implemented Several circuit techniques are proposed to achieve the folto show the feasibility of the proposed design scheme and the lowing goals. First, we want to realize a true single-lowdesign techniques. MTCMOS design so as to remove the system design difficulty.",
+    "keywords": [
+      "Cell library",
+      "charge pump",
+      "flip-flop",
+      "low power"
+    ],
+    "doi": "10.1109/JSSC.2005.845979",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2005
+  },
+  "paper_circuit_context": {
+    "circuit_type": "flip-flop",
+    "technology": "CMOS, SOI",
+    "application_domain": "if",
+    "sub_blocks": [
+      "transistor/MOSFET",
+      "cross-coupled pair",
+      "output buffer",
+      "switch",
+      "latch",
+      "clock / timing"
+    ],
+    "design_purpose": "A dual-rail SLVCMOS This paper proposes another low-voltage CMOS design cell library and two test chips, one 32-b RISC core and the other scheme, called the true single-low-V CMOS (SLVCMOS). verifying the design of hard blocks, are designed and implemented Several circuit techniques are proposed to achieve the folto ...",
+    "function_summary": "flip-flop: A dual-rail SLVCMOS This paper proposes another low-voltage CMOS design cell library and two test chips, one 32-b RISC core and the other scheme, called the true single-low-V CMOS (SLVCMOS). verifying the design of hard blocks, are designed and implemented Several circuit techniques are proposed to achieve the folto ...",
+    "key_specs": [
+      "0.5 V",
+      "15 MHz",
+      "10%",
+      "8.72%",
+      "3.39%",
+      "29%",
+      "40%",
+      "0.7 V",
+      "24%",
+      "26%"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE supply voltage of an integrated chip keeps falling [1]. The supply voltage of several designs, based on the multithreshold CMOS technology (MTCMOS) has been reduced to as small as 0.5 V. They can be implemented in very complex SOI [2] or bulk [3] MTCMOS technology, and many kinds of MOSFET’s with different threshold voltages are needed. Recently, the super cut-off CMOS (SCCMOS) [4] has been s ..."
+    },
+    {
+      "number": "II",
+      "title": "SLVCMOS DESIGN SCHEME AND THE",
+      "kind": "design",
+      "page": 0,
+      "text_preview": "SINGLE-LOW-VOLTAGE FLIP-FLOP The SLVCMOS scheme is shown in Fig. 1. Similar to conventional low-voltage schemes, the SLVCMOS can be operated in the active mode or the sleep mode. Similar to the SCCMOS, all combinational gates in the SLVCMOS are made of lowMOSFET’s, and are tied to the real ground and the virtual power line, . The is then connected to the real power line, , through a lowpMOS power  ..."
+    },
+    {
+      "number": "III",
+      "title": "PERFORMANCE EVALUATION OF THE SLVCMOS DESIGN",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "The performance evaluation is accomplished through a test circuit shown in Fig. 3. It is designed with both SCCMOS and SLVCMOS schemes. The ZSCCMOS scheme is not evaluated because it can not be used everywhere. Designs are based on Fig. 4. Delay penalty of the combinational gates. TABLE II PERFORMANCE AND POWER CONSUMPTION OF THE FLIP-FLOPS m bulk CMOS technology [8]. Low and high nMOS 0.25thresho ..."
+    },
+    {
+      "number": "IV",
+      "title": "HARD BLOCKS",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "The hard blocks for realizing a single-chip SLVCMOS design include a clock driver, a sleep controller, and a high-voltage generator (HV generator), as shown in Fig. 7(a). The timing relationships are illustrated in Fig. 7(b). In the active mode, the signal is held low to turn on the power switch. Now, the output of the HV generator is kept at , and the internal clock CK runs normal with a voltage  ..."
+    },
+    {
+      "number": "V",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 5,
+      "text_preview": "The proposed SLVCMOS design techniques have been proved in silicon by a 32-bit RISC core, which is basically designed by a cell-based approach. Hard blocks need more design attention. Another test chip for verifying their behaviors has been implemented. A. Test Chip for Hard Blocks The photograph of this chip is shown in Fig. 11, and the experimental results are as follows. The ﬁrst measurement re ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 7,
+      "text_preview": "In this paper, we proposed a single-lowCMOS (SLVCMOS) scheme and described several design techniques. IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 5, MAY 2005 Fig. 15. Photograph of the 32-b RISC core. We evaluated this scheme with a 0.25m multibulk CMOS technology. The key items for a single-chip SLVCMOS ﬂip-ﬂop, a boosted design included a sleepless mixedsleeping clock signal, and three lo ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. SLVCMOS design scheme.",
+      "caption_bbox": [
+        39.6,
+        277.7,
+        156.9,
+        285.6
+      ],
+      "section_title": "II. SLVCMOS DESIGN SCHEME AND THE",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "SLVCMOS DESIGN SCHEME AND THE",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "SINGLE-LOW-VOLTAGE FLIP-FLOP The SLVCMOS scheme is shown in Fig. 1."
+        },
+        {
+          "section_title": "SLVCMOS DESIGN SCHEME AND THE",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Also similar to the SCCMOS, a charge pump circuit is used to provide a confor the power switch, and the control signal can trol signal Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "charge pump",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "SLVCMOS design scheme",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. (a) Schematic and (b) clocking scheme of the SLVFF.",
+      "caption_bbox": [
+        39.6,
+        581.9,
+        241.9,
+        589.8
+      ],
+      "section_title": "II. SLVCMOS DESIGN SCHEME AND THE",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "SLVCMOS DESIGN SCHEME AND THE",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Fig. 2."
+        },
+        {
+          "section_title": "SLVCMOS DESIGN SCHEME AND THE",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "The schematic of the SLVFF is depicted in Fig. 2(a)."
+        },
+        {
+          "section_title": "SLVCMOS DESIGN SCHEME AND THE",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Furthermore, in sleep mode the clock signal as shown for the ﬂip-ﬂop is boosted to a level higher than and will be pulled down to cut in Fig. 2(b), and the signals - latches."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.7,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "latch",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [
+          "latch",
+          "clock / timing"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) Schematic and (b) clocking scheme of the SLVFF",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.82,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Test circuit for evaluating different CMOS schemes.",
+      "caption_bbox": [
+        38.1,
+        383.3,
+        233.8,
+        391.3
+      ],
+      "section_title": "II. SLVCMOS DESIGN SCHEME AND THE",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "SLVCMOS DESIGN SCHEME AND THE",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "The boosted off the pull-down paths of the clock signal will also super cut off the pull-up paths of both WANG et al.: DESIGN TECHNIQUES FOR SINGLE-LOWCMOS SYSTEMS TABLE I FEATURES SUMMARY OF DIFFERENT LOW-VOLTAGE FLIP-FLOPS Fig. 3."
+        },
+        {
+          "section_title": "PERFORMANCE EVALUATION OF THE SLVCMOS DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The performance evaluation is accomplished through a test circuit shown in Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "flip-flop",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [
+          "clock / timing"
+        ],
+        "design_purpose": "",
+        "function_summary": "Test circuit for evaluating different CMOS schemes",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Delay penalty of the combinational gates.",
+      "caption_bbox": [
+        301.1,
+        260.0,
+        463.5,
+        268.0
+      ],
+      "section_title": "II. SLVCMOS DESIGN SCHEME AND THE",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "PERFORMANCE EVALUATION OF THE SLVCMOS DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Designs are based on Fig. 4."
+        },
+        {
+          "section_title": "PERFORMANCE EVALUATION OF THE SLVCMOS DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Simulation results of the delay penalty of combination gates are shown in Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "flip-flop",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Delay penalty of the combinational gates",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Wake-up time of the SLVCMOS.",
+      "caption_bbox": [
+        39.6,
+        314.2,
+        175.2,
+        322.2
+      ],
+      "section_title": "III. PERFORMANCE EVALUATION OF THE SLVCMOS DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "PERFORMANCE EVALUATION OF THE SLVCMOS DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "TABLE III COMPARISON OF THE LEAKAGE CURRENT OF THE TEST CIRCUITS Fig. 5."
+        },
+        {
+          "section_title": "PERFORMANCE EVALUATION OF THE SLVCMOS DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Simulation result of the SLVCMOS circuit during wakeup is is deﬁned as the shown in Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "flip-flop",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Wake-up time of the SLVCMOS",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Wake-up currents of the SLVCMOS.",
+      "caption_bbox": [
+        302.6,
+        353.0,
+        449.6,
+        360.9
+      ],
+      "section_title": "III. PERFORMANCE EVALUATION OF THE SLVCMOS DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "PERFORMANCE EVALUATION OF THE SLVCMOS DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Simulation results for characterizing the wake-up energy are shown in Fig. 6, and the extracted data are summarized in m power switch, the wake-up energy of the Table V."
+        },
+        {
+          "section_title": "HARD BLOCKS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The clock driver is designed as a tapered buffer, and initially all tranIEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 5, MAY 2005 TABLE IV WAKE-UP SPEED OF SCCMOS AND SLVCMOS TEST CIRCUITS Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "switch",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [
+          "output buffer",
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Wake-up currents of the SLVCMOS",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. (a) Block diagram and (b) timing relationships of hard blocks.",
+      "caption_bbox": [
+        38.1,
+        272.3,
+        267.4,
+        280.3
+      ],
+      "section_title": "IV. HARD BLOCKS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "HARD BLOCKS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The hard blocks for realizing a single-chip SLVCMOS design include a clock driver, a sleep controller, and a high-voltage generator (HV generator), as shown in Fig. 7(a)."
+        },
+        {
+          "section_title": "HARD BLOCKS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The timing relationships are illustrated in Fig. 7(b)."
+        },
+        {
+          "section_title": "HARD BLOCKS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The PVD is used to control the PCK to determine whether the WANG et al.: DESIGN TECHNIQUES FOR SINGLE-LOWCMOS SYSTEMS Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "line / output driver",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Block diagram and (b) timing relationships of hard blocks",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.31,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Schematics of (a) the clock driver and (b) NAND-1.",
+      "caption_bbox": [
+        38.1,
+        444.9,
+        235.0,
+        452.8
+      ],
+      "section_title": "IV. HARD BLOCKS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "HARD BLOCKS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The schematic of the clock driver is shown in Fig. 8(a)."
+        },
+        {
+          "section_title": "HARD BLOCKS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fourth, NAND-1 has a special design as shown in Fig. 8(b)."
+        },
+        {
+          "section_title": "HARD BLOCKS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.2,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "references": 1.2
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "line / output driver",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematics of (a) the clock driver and (b) NAND-1",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.55,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 5,
+      "caption": "Fig. 9.",
+      "caption_bbox": [
+        39.6,
+        396.2,
+        60.3,
+        404.1
+      ],
+      "section_title": "IV. HARD BLOCKS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "HARD BLOCKS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The proposed HV generator, with its block diagram shown in Fig. 9(a), is comprised of a pumped-voltage detector (PVD), a two-phase clock generator (PCK), and a charge pump (CP)."
+        },
+        {
+          "section_title": "HARD BLOCKS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The expected operation of the HV generator is shown in Fig. 9(b)."
+        },
+        {
+          "section_title": "HARD BLOCKS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The PVD, as illustrated in Fig. 9(c), is mainly composed of a voltage divider for detecting the pumped voltage level and a Schmitt trigger for keeping a transition band. is low, and pstr also When the system is in active mode, becomes low to disable the charge pump."
+        },
+        {
+          "section_title": "HARD BLOCKS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The proposed charge pump as shown in Fig. 9(d) consists of a main pump, an auxiliary pump, and a multiplexer."
+        },
+        {
+          "section_title": "HARD BLOCKS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "frequency divider",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.12,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10.",
+      "caption_bbox": [
+        39.6,
+        582.6,
+        64.4,
+        590.5
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "HARD BLOCKS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "When the pump is idle, the leakage current can be retarded by devices. the used highSimulation waveforms of the HV generator using the Dickson-type charge pump and the proposed HV generator are shown in Fig. 10(a)."
+        },
+        {
+          "section_title": "HARD BLOCKS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Simulation waveforms of a long period are shown in s, and Fig. 10(b)."
+        },
+        {
+          "section_title": "HARD BLOCKS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "charge pump",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "charge pump",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 6,
+      "caption": "Fig. 11. Test chip for hard blocks.",
+      "caption_bbox": [
+        38.1,
+        317.0,
+        153.1,
+        324.9
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Test Chip for Hard Blocks The photograph of this chip is shown in Fig. 11, and the experimental results are as follows."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The measured power WANG et al.: DESIGN TECHNIQUES FOR SINGLE-LOWCMOS SYSTEMS Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "flip-flop",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Test chip for hard blocks",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 6,
+      "caption": "Fig. 12. The measured clock waveforms.",
+      "caption_bbox": [
+        38.1,
+        534.8,
+        174.8,
+        542.7
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The measurement waveforms of 0.4-V 100-mV 10-MHz clocks are shown in Fig. 12."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-waveform": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "flip-flop",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "The measured clock waveforms",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 6,
+      "caption": "Fig. 13. Measured waveforms during (a) active-to-sleep transition, (b) sleep mode, and (c) sleep-to-active transition.",
+      "caption_bbox": [
+        301.1,
+        653.9,
+        552.2,
+        670.8
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Second, Fig. 13(a) shows the measurement results of active-to-sleep transition."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "In the and steady state of the sleep mode, the average values of CK are 904 and 709.3 mV, respectively, and the ripples of and CK are 256 and 157 mV, respectively, as shown in Fig. 13(b)."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The waveforms in Fig. 13(c) illustrate that to be about 3the measurement results of sleep-to-active transition coincide with the simulation results, where the number of ﬂip-ﬂops used in the sleep controller is four."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The hard blocks in the ﬁrst chip are embedded Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -5.4,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-waveform": -2.0,
+        "section:results": -2.0,
+        "references": 1.6
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "flip-flop",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured waveforms during (a) active-to-sleep transition, (b) sleep mode, and (c) sleep-to-active transition",
+        "key_specs": [
+          "709.3 mV",
+          "157 mV"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 7,
+      "caption": "Fig. 14. Diagram showing the derivation of the SLVCMOS cell library.",
+      "caption_bbox": [
+        39.6,
+        603.6,
+        272.2,
+        611.6
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The mapping method is shown in Fig. 14."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "When the is successfully at 5 MHz for a 0.5-V TABLE VIII MEASURED POWER CONSUMPTION OF HARD BLOCKS TABLE IX MEASURED POWER CONSUMPTIONS IN ACTIVE AND SLEEP MODES Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "flip-flop",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Diagram showing the derivation of the SLVCMOS cell library",
+        "key_specs": [
+          "5 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 7,
+      "caption": "Fig. 15. Photograph of the 32-b RISC core.",
+      "caption_bbox": [
+        302.6,
+        296.6,
+        447.6,
+        304.5
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "A 32-b ARM7-like RISC CPU core, as shown in Fig. 15, is designed adopting the SLVCMOS scheme and the SLVCMOS cell library."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The hard block area indicated in Fig. 15 also contains a power switch of - - m ."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 7,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 5, MAY 2005 Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.3,
+      "relevance_breakdown": {
+        "+core": 0.5,
+        "-photograph": -3.0,
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "microcontroller",
+        "technology": "CMOS, SOI",
+        "application_domain": "if",
+        "sub_blocks": [
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Photograph of the 32-b RISC core",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 2,
+  "warnings": []
+}

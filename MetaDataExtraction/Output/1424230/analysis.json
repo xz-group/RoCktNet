@@ -1,0 +1,1062 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1424230.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1424230",
+  "generated_at": "2026-07-29T22:02:34",
+  "paper_metadata": {
+    "title": "A 5–6.4-Gb/s 12-Channel Transceiver With Pre-Emphasis and Equalization",
+    "authors": [
+      "Hirohito Higashi",
+      "Syunitirou Masaki",
+      "Masaya Kibune",
+      "Satoshi Matsubara",
+      "Takaya Chiba",
+      "Yoshiyasu Doi",
+      "Hisakatsu Yamaguchi",
+      "Hideki Takauchi",
+      "Hideki Ishida",
+      "Kohtaroh Gotoh",
+      "Hirotaka Tamura"
+    ],
+    "abstract": "A 5–6.4 Gb/s transceiver, consisting of a parallel 12-channel transmitter (Tx), 12-channel receiver (Rx), clock genposed of twelve 5–6.4-Gb/s CMOS transceiver channels that erators based on LC-VCO phase-locked loops (PLLs), and a clock can compensate for transmission-line losses up to 35 dB using a recovery unit, was developed. The Tx has a five-tap pre-emphasis combination of a pre-emphasis filter and adaptive equalization. filter, and the Rx has an equalizer with an intersymbol interferSection II describes the architecture of the multichannel transence (ISI) monitor. Monitoring the ISI enables fine adjustment ceiver. Section III describes the details of each circuit block. of loss compensation. The pre-emphasis filter in the Tx and the equalizer in the Rx compensate for transmission losses of up to Section IV describes the test chip and measurement results. Sec20 dB at 6.4 Gb/s, respectively. Both the Tx and Rx channels, tion V is the conclusion. including the PLLs, are 3.92 mm2 in area. The transmitter dissipates 150 mW/channel at 6.4 Gb/s when compensating for a loss of 20 dB, and the receiver 90 mW/channel when compensating for",
+    "keywords": [
+      "Adaptive equalization",
+      "CMOS integrated circuits"
+    ],
+    "doi": "10.1109/JSSC.2005.845562",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2005
+  },
+  "paper_circuit_context": {
+    "circuit_type": "5–6.4-Gb/s 12-Channel Transceiver",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "transistor/MOSFET",
+      "current source",
+      "current mirror",
+      "transmission line",
+      "output buffer",
+      "differential pair",
+      "op-amp",
+      "latch",
+      "clock / timing",
+      "varactor",
+      "inductor",
+      "switch"
+    ],
+    "design_purpose": "Monitoring the ISI enables fine adjustment ceiver.",
+    "function_summary": "5–6.4-Gb/s 12-Channel Transceiver: Monitoring the ISI enables fine adjustment ceiver.",
+    "key_specs": [
+      "35 dB",
+      "20 dB",
+      "150 mW",
+      "90 mW",
+      "3.2 GHz",
+      "2.2 nH",
+      "10 ps",
+      "1 ps",
+      "30 ps",
+      "40 dB"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "A S THE DATA rate increases in high-speed serial wireline communications, transmission line losses and the resulting intersymbol interference (ISI) also increase. To compensate for the losses, transmitter (Tx) pre-emphasis ﬁlters and receiver (Rx) equalization can be used [1]. Recently, a variety of techniques that adaptively compensate for transmission line losses have been reported. In transmitt ..."
+    },
+    {
+      "number": "II",
+      "title": "PARALLEL 12-CHANNEL TRANSCEIVER",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "The transceiver consists of a parallel 12-channel Tx, 12-channel Rx, and LC-VCO phase-locked loops (PLLs) (Fig. 1). In the transmitter circuit, incoming 32-bit parallel data is multiplexed to 5–6.4-Gb/s differential serial data. In contrast, in the receiver circuit, incoming 5–6.4-Gb/s differential serial data is demultiplexed to 32-bit parallel data. A quadrature LC-VCO oscillating at 2.5–3.2 GHz ..."
+    },
+    {
+      "number": "III",
+      "title": "CIRCUIT IMPLEMENTATION",
+      "kind": "design",
+      "page": 1,
+      "text_preview": "A. Transmitter With Pre-Emphasis Filter The transmitter output stage consists of ﬁve blocks of differential drivers, forming a ﬁve-tap FIR ﬁlter (Fig. 5). The delay per tap is 1 UI, and a dedicated 8:1 MUX generates an appropriate delayed signal that drives each tap. We found that it was difﬁcult to achieve good linearity over the tap weights if the weights were controlled using independent curren ..."
+    },
+    {
+      "number": "IV",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 4,
+      "text_preview": "Fig. 12 is a microphotograph of the 12-channel transceiver macro fabricated in 0.11m CMOS technology. The circular objects seen in the microphotograph are solder bumps for ﬂipchip bonding into a package. The transceiver consists of a parallel 12-channel Tx, a parallel 12-channel Rx, and PLLs. The characteristics of the design and performance measurement are shown in Table I. The transmitter and re ..."
+    },
+    {
+      "number": "V",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 6,
+      "text_preview": "We implemented a 5–6.4-Gb/s 12-channel high-speed transm CMOS technology. To reduce the skew ceiver using 0.11between channels, we used a skew-compensated clock, resulting in less than 0.08-UI skew between channels. To compensate for transmission-line losses, we implemented a ﬁve-tap Tx pre-emphasis ﬁlter and an Rx second-order equalizer, each of which compensate for losses of up to 20 dB. We also ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Multichannel architecture.",
+      "caption_bbox": [
+        38.1,
+        257.7,
+        151.6,
+        265.6
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "PARALLEL 12-CHANNEL TRANSCEIVER",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The transceiver consists of a parallel 12-channel Tx, 12-channel Rx, and LC-VCO phase-locked loops (PLLs) (Fig. 1)."
+        },
+        {
+          "section_title": "PARALLEL 12-CHANNEL TRANSCEIVER",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "SPICE simulation showed that the systematic skew between the channels is less than 1 ps, whereas the maximum skew is 30 ps if the buffer HIGASHI et al.: A 5–6.4-Gb/s 12-CHANNEL TRANSCEIVER WITH PRE-EMPHASIS AND EQUALIZATION Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Multichannel architecture",
+        "key_specs": [
+          "1 ps",
+          "30 ps"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Skew-compensated clock.",
+      "caption_bbox": [
+        38.1,
+        452.7,
+        150.2,
+        460.6
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "PARALLEL 12-CHANNEL TRANSCEIVER",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "To reduce the skew between the channels caused by the clockpropagation delay, we used skew-compensated clock delivery for both the Tx and Rx (Fig. 2)."
+        },
+        {
+          "section_title": "PARALLEL 12-CHANNEL TRANSCEIVER",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "5–6.4-Gb/s 12-Channel Transceiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "To reduce the skew between the channels caused by the clockpropagation delay, we used skew-compensated clock delivery for both the Tx and Rx (Fig. 2).",
+        "function_summary": "Skew-compensated clock. To reduce the skew between the channels caused by the clockpropagation delay, we used skew-compensated clock delivery for both the Tx and Rx (Fig. 2).",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Diagram of transmitter block.",
+      "caption_bbox": [
+        39.6,
+        255.4,
+        164.4,
+        263.4
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "PARALLEL 12-CHANNEL TRANSCEIVER",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The Tx channel consists of a synchronizer, a 32:8 multiplexer (MUX), an 8:1 MUX, and an output buffer (Fig. 3)."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The transfer function Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transmitter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Diagram of transmitter block",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Diagram of receiver block.",
+      "caption_bbox": [
+        39.6,
+        476.2,
+        155.2,
+        484.2
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "PARALLEL 12-CHANNEL TRANSCEIVER",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "In the output buffer, the weight of each tap and the amplitude of the output buffer are controlled by signals called “weight control” and “amplitude control.” The Rx consists of an equalizer, a decision latch, a 2:32 synchronizer, a clock-recovery unit (CRU), an ISI monitor circuit, and an equalizer-gain controller (Fig. 4)."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "output buffer",
+          "latch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Diagram of receiver block",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Five-tap pre-emphasis ﬁlter.",
+      "caption_bbox": [
+        39.6,
+        667.2,
+        158.3,
+        675.2
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Transmitter With Pre-Emphasis Filter The transmitter output stage consists of ﬁve blocks of differential drivers, forming a ﬁve-tap FIR ﬁlter (Fig. 5)."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "In Fig. 5, blocks A1–A5 control the weight of each tap, and block B controls the overall amplitude of the buffer."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Five-tap pre-emphasis ﬁlter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Second-order equalizer.",
+      "caption_bbox": [
+        38.1,
+        242.7,
+        143.0,
+        250.6
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Second-Order Equalizer The receiver equalizer is a second-order high-pass ﬁlter composed of three pre-ﬁlters followed by variable-gain ampliﬁers (VGAs) and a linear combiner (Fig. 6)."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "By combining VGAs and pre-ﬁlters as shown in Fig. 6, we achieved second-order equalization with sufﬁcient bandwidth and control range."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "This amplitude is almost equal to the input offset voltage of the pre-ﬁlters HIGASHI et al.: A 5–6.4-Gb/s 12-CHANNEL TRANSCEIVER WITH PRE-EMPHASIS AND EQUALIZATION Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Second-order equalizer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Schematic of pre-ﬁlter.",
+      "caption_bbox": [
+        38.1,
+        385.4,
+        140.9,
+        393.3
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The pre-ﬁlters consist of differential pairs with resistive and capacitive degeneration (Fig. 7)."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 7."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Feeding a differential current into the output nodes of the pre-ﬁlters enables us to cancel the dc offset (Fig. 7)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.7,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "5–6.4-Gb/s 12-Channel Transceiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "differential pair"
+        ],
+        "design_purpose": "Feeding a differential current into the output nodes of the pre-ﬁlters enables us to cancel the dc offset (Fig. 7).",
+        "function_summary": "Schematic of pre-ﬁlter. Feeding a differential current into the output nodes of the pre-ﬁlters enables us to cancel the dc offset (Fig. 7).",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.85,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. Schematic of VGA.",
+      "caption_bbox": [
+        301.1,
+        193.9,
+        393.6,
+        201.9
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 8 shows the VGA, which consists of a common-mode feedback ampliﬁer."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "5–6.4-Gb/s 12-Channel Transceiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematic of VGA",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.79,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 3,
+      "caption": "Fig. 9. Schematic of op-amp in ISI monitor circuit.",
+      "caption_bbox": [
+        301.1,
+        382.0,
+        470.5,
+        390.0
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Both the ADC and S/H use the same op-amp, which has a rail-to-rail input common-mode voltage range (Fig. 9)."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Schematic of op-amp in ISI monitor circuit",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.72,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 3,
+      "caption": "Fig. 10. Adaptive equalization.",
+      "caption_bbox": [
+        301.1,
+        579.2,
+        406.1,
+        587.1
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 10."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The block diagram of the equalizer-gain , where controller is shown in Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Adaptive equalization",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 4,
+      "caption": "Fig. 11. Adaptive operation (simulation results).",
+      "caption_bbox": [
+        39.6,
+        188.4,
+        199.6,
+        196.3
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 11."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 11 shows the simulation results for our adaptive equalization."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "5–6.4-Gb/s 12-Channel Transceiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Adaptive operation (simulation results)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 4,
+      "caption": "Fig. 12. Microphotograph.",
+      "caption_bbox": [
+        302.6,
+        193.2,
+        393.3,
+        201.2
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 12 is a microphotograph of the 12-channel transceiver macro fabricated in 0.11m CMOS technology."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The Tx output data was a 6.4-Gb/s pseudorandom IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 4, APRIL 2005 Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "transceiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Microphotograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 5,
+      "caption": "Fig. 13. Measurement setup.",
+      "caption_bbox": [
+        38.1,
+        297.7,
+        135.6,
+        305.7
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The measurement setup is shown in Fig. 13."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The upper traces show the equalizer input, and the lower ones HIGASHI et al.: A 5–6.4-Gb/s 12-CHANNEL TRANSCEIVER WITH PRE-EMPHASIS AND EQUALIZATION Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-setup": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "transceiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measurement setup",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 5,
+      "caption": "Fig. 14. Maximum skew between Tx channels.",
+      "caption_bbox": [
+        38.1,
+        436.1,
+        194.2,
+        444.1
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The characteristics of the skew-compensated clock are shown in Fig. 14."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "5–6.4-Gb/s 12-Channel Transceiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Maximum skew between Tx channels",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 5,
+      "caption": "Fig. 15. Tx bathtub curve (loss 6 dB, 01 periodic pattern).",
+      "caption_bbox": [
+        38.1,
+        588.0,
+        229.2,
+        595.9
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 15 shows a bathtub curve for the Tx output jitter."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "5–6.4-Gb/s 12-Channel Transceiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Tx bathtub curve (loss 6 dB, 01 periodic pattern)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 5,
+      "caption": "Fig. 16. Transmitter eye diagrams (differential measurement, 6.4 Gb/s, PRBS 2",
+      "caption_bbox": [
+        301.1,
+        483.0,
+        552.2,
+        498.1
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 16 shows the Tx eye diagram at 6.4 Gb/s using PRBS data."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "PRBS generator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Transmitter eye diagrams (differential measurement, 6.4 Gb/s, PRBS 2",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 5,
+      "caption": "Fig. 17. Equalizer eye diagrams (differential measurement, 6.4 Gb/s, PRBS 2",
+      "caption_bbox": [
+        301.1,
+        676.9,
+        552.2,
+        692.0
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 17 shows eye diagrams for the equalizer at 6.4 Gb/s using PRBS data."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Equalizer eye diagrams (differential measurement, 6.4 Gb/s, PRBS 2",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 6,
+      "caption": "Fig. 18. DC input-output characteristics of ADC.",
+      "caption_bbox": [
+        39.6,
+        193.5,
+        202.5,
+        201.5
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The dc input-to-output characteristics of the ISI monitor circuit and equalizer offset were measured (Fig. 18)."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "This result meets the OIF Fig. 18."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "DC input-output characteristics of ADC",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 6,
+      "caption": "Fig. 19. Jitter tolerance.",
+      "caption_bbox": [
+        39.6,
+        354.3,
+        122.0,
+        362.2
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Equalizer eye diagrams (differential measurement, 6.4 Gb/s, PRBS 2 In Fig. 19, the jitter-tolerance curve was measured while the equalizer was active at an input amplitude of 180 mV (20-dB data)."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 19."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Jitter tolerance",
+        "key_specs": [
+          "180 mV"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 9,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "image": "a122",
+  "nodes": [
+    "GND",
+    "VDD",
+    "n0",
+    "n1",
+    "label_net_0"
+  ],
+  "node_origins": {
+    "GND": [
+      1
+    ],
+    "VDD": [
+      2
+    ],
+    "n0": [
+      0
+    ],
+    "n1": [
+      3
+    ],
+    "label_net_0": [
+      4
+    ]
+  },
+  "components": [
+    {
+      "name": "I1",
+      "class": "current_src",
+      "bbox_idx": 0,
+      "bbox": [
+        200.46,
+        149.01,
+        268.02,
+        217.84
+      ],
+      "orientation": null,
+      "pins": {
+        "+": "VDD",
+        "-": "n1"
+      },
+      "flags": [],
+      "red_flags": []
+    },
+    {
+      "name": "M1",
+      "class": "nmos",
+      "bbox_idx": 1,
+      "bbox": [
+        170.94,
+        337.7,
+        241.93,
+        409.99
+      ],
+      "orientation": "l",
+      "pins": {
+        "G": "label_net_0",
+        "D": "n1",
+        "S": "n0",
+        "B": "GND"
+      },
+      "flags": [
+        "non_g_touches=3_distinct_nodes=2_treated_as_wire_wrap",
+        "g_pin_via_single_bbox_port"
+      ],
+      "red_flags": []
+    },
+    {
+      "name": "V1",
+      "class": "voltage_src",
+      "bbox_idx": 2,
+      "bbox": [
+        199.69,
+        572.37,
+        281.4,
+        662.96
+      ],
+      "orientation": null,
+      "pins": {
+        "+": "n0",
+        "-": "GND"
+      },
+      "flags": [],
+      "red_flags": []
+    },
+    {
+      "name": "R1",
+      "class": "resistor",
+      "bbox_idx": 4,
+      "bbox": [
+        269.78,
+        344.18,
+        320.77,
+        405.1
+      ],
+      "orientation": null,
+      "pins": {
+        "1": "n0",
+        "2": "n1"
+      },
+      "flags": [],
+      "red_flags": []
+    }
+  ],
+  "flags": []
+}

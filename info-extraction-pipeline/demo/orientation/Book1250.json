@@ -1,0 +1,371 @@
+{
+  "image_path": "D:\\InfoExtractPipeline\\AllScripts\\pipeline\\result\\images\\Book1250.png",
+  "image_width": 1260,
+  "image_height": 812,
+  "source_bbox_txt": "D:\\InfoExtractPipeline\\AllScripts\\pipeline\\result\\component_bbox\\Book1250.txt",
+  "orientation_weights": "D:\\InfoExtractPipeline\\AllScripts\\pipeline\\pretrainedWeights\\orientationDetection\\best_model.pt",
+  "resnet_orientation_classes": {
+    "u": 0,
+    "r": 1,
+    "d": 2,
+    "l": 3
+  },
+  "orientation_required_classes": [
+    "amplifier",
+    "diode",
+    "nmos",
+    "nmos-bulk",
+    "npn",
+    "pmos",
+    "pmos-bulk",
+    "pnp"
+  ],
+  "num_components": 18,
+  "num_orientation_predictions": 4,
+  "components": [
+    {
+      "component_id": 1,
+      "component_class": "current_src",
+      "component_class_id": 14,
+      "yolo_confidence": 0.9571,
+      "bbox_xyxy": {
+        "x1": 1126,
+        "y1": 176,
+        "x2": 1200,
+        "y2": 249
+      },
+      "crop_path": null,
+      "orientation": null,
+      "orientation_id": null,
+      "orientation_confidence": null,
+      "orientation_probabilities": null,
+      "status": "orientation_not_required"
+    },
+    {
+      "component_id": 2,
+      "component_class": "amplifier",
+      "component_class_id": 16,
+      "yolo_confidence": 0.9472,
+      "bbox_xyxy": {
+        "x1": 765,
+        "y1": 408,
+        "x2": 883,
+        "y2": 544
+      },
+      "crop_path": "orientation\\crops\\Book1250\\Book1250_0002_amplifier.jpg",
+      "orientation": "l",
+      "orientation_id": 3,
+      "orientation_confidence": 0.9999886751174927,
+      "orientation_probabilities": {
+        "u": 1.6716418258511112e-06,
+        "r": 8.726094165467657e-06,
+        "d": 1.005677972898411e-06,
+        "l": 0.9999886751174927
+      },
+      "status": "ok"
+    },
+    {
+      "component_id": 3,
+      "component_class": "amplifier",
+      "component_class_id": 16,
+      "yolo_confidence": 0.9451,
+      "bbox_xyxy": {
+        "x1": 463,
+        "y1": 376,
+        "x2": 578,
+        "y2": 507
+      },
+      "crop_path": "orientation\\crops\\Book1250\\Book1250_0003_amplifier.jpg",
+      "orientation": "l",
+      "orientation_id": 3,
+      "orientation_confidence": 0.9999872446060181,
+      "orientation_probabilities": {
+        "u": 6.7935789047623985e-06,
+        "r": 5.440344466478564e-06,
+        "d": 4.971375915374665e-07,
+        "l": 0.9999872446060181
+      },
+      "status": "ok"
+    },
+    {
+      "component_id": 4,
+      "component_class": "nmos",
+      "component_class_id": 2,
+      "yolo_confidence": 0.9245,
+      "bbox_xyxy": {
+        "x1": 358,
+        "y1": 176,
+        "x2": 405,
+        "y2": 250
+      },
+      "crop_path": "orientation\\crops\\Book1250\\Book1250_0004_nmos.jpg",
+      "orientation": "l",
+      "orientation_id": 3,
+      "orientation_confidence": 0.9999978542327881,
+      "orientation_probabilities": {
+        "u": 1.2111060243569227e-07,
+        "r": 1.615359565221297e-06,
+        "d": 3.282230807144515e-07,
+        "l": 0.9999978542327881
+      },
+      "status": "ok"
+    },
+    {
+      "component_id": 5,
+      "component_class": "capacitor",
+      "component_class_id": 9,
+      "yolo_confidence": 0.9197,
+      "bbox_xyxy": {
+        "x1": 1025,
+        "y1": 216,
+        "x2": 1074,
+        "y2": 241
+      },
+      "crop_path": null,
+      "orientation": null,
+      "orientation_id": null,
+      "orientation_confidence": null,
+      "orientation_probabilities": null,
+      "status": "orientation_not_required"
+    },
+    {
+      "component_id": 6,
+      "component_class": "gnd",
+      "component_class_id": 0,
+      "yolo_confidence": 0.9153,
+      "bbox_xyxy": {
+        "x1": 109,
+        "y1": 283,
+        "x2": 161,
+        "y2": 316
+      },
+      "crop_path": null,
+      "orientation": null,
+      "orientation_id": null,
+      "orientation_confidence": null,
+      "orientation_probabilities": null,
+      "status": "orientation_not_required"
+    },
+    {
+      "component_id": 7,
+      "component_class": "resistor",
+      "component_class_id": 8,
+      "yolo_confidence": 0.9122,
+      "bbox_xyxy": {
+        "x1": 1036,
+        "y1": 137,
+        "x2": 1061,
+        "y2": 187
+      },
+      "crop_path": null,
+      "orientation": null,
+      "orientation_id": null,
+      "orientation_confidence": null,
+      "orientation_probabilities": null,
+      "status": "orientation_not_required"
+    },
+    {
+      "component_id": 8,
+      "component_class": "gnd",
+      "component_class_id": 0,
+      "yolo_confidence": 0.9117,
+      "bbox_xyxy": {
+        "x1": 1025,
+        "y1": 288,
+        "x2": 1075,
+        "y2": 321
+      },
+      "crop_path": null,
+      "orientation": null,
+      "orientation_id": null,
+      "orientation_confidence": null,
+      "orientation_probabilities": null,
+      "status": "orientation_not_required"
+    },
+    {
+      "component_id": 9,
+      "component_class": "gnd",
+      "component_class_id": 0,
+      "yolo_confidence": 0.9078,
+      "bbox_xyxy": {
+        "x1": 375,
+        "y1": 282,
+        "x2": 425,
+        "y2": 316
+      },
+      "crop_path": null,
+      "orientation": null,
+      "orientation_id": null,
+      "orientation_confidence": null,
+      "orientation_probabilities": null,
+      "status": "orientation_not_required"
+    },
+    {
+      "component_id": 10,
+      "component_class": "gnd",
+      "component_class_id": 0,
+      "yolo_confidence": 0.9044,
+      "bbox_xyxy": {
+        "x1": 1137,
+        "y1": 288,
+        "x2": 1187,
+        "y2": 321
+      },
+      "crop_path": null,
+      "orientation": null,
+      "orientation_id": null,
+      "orientation_confidence": null,
+      "orientation_probabilities": null,
+      "status": "orientation_not_required"
+    },
+    {
+      "component_id": 11,
+      "component_class": "capacitor",
+      "component_class_id": 9,
+      "yolo_confidence": 0.8953,
+      "bbox_xyxy": {
+        "x1": 789,
+        "y1": 189,
+        "x2": 817,
+        "y2": 237
+      },
+      "crop_path": null,
+      "orientation": null,
+      "orientation_id": null,
+      "orientation_confidence": null,
+      "orientation_probabilities": null,
+      "status": "orientation_not_required"
+    },
+    {
+      "component_id": 12,
+      "component_class": "inductor",
+      "component_class_id": 10,
+      "yolo_confidence": 0.8953,
+      "bbox_xyxy": {
+        "x1": 601,
+        "y1": 79,
+        "x2": 686,
+        "y2": 113
+      },
+      "crop_path": null,
+      "orientation": null,
+      "orientation_id": null,
+      "orientation_confidence": null,
+      "orientation_probabilities": null,
+      "status": "orientation_not_required"
+    },
+    {
+      "component_id": 13,
+      "component_class": "capacitor",
+      "component_class_id": 9,
+      "yolo_confidence": 0.8916,
+      "bbox_xyxy": {
+        "x1": 685,
+        "y1": 550,
+        "x2": 737,
+        "y2": 577
+      },
+      "crop_path": null,
+      "orientation": null,
+      "orientation_id": null,
+      "orientation_confidence": null,
+      "orientation_probabilities": null,
+      "status": "orientation_not_required"
+    },
+    {
+      "component_id": 14,
+      "component_class": "resistor",
+      "component_class_id": 8,
+      "yolo_confidence": 0.8906,
+      "bbox_xyxy": {
+        "x1": 609,
+        "y1": 198,
+        "x2": 671,
+        "y2": 228
+      },
+      "crop_path": null,
+      "orientation": null,
+      "orientation_id": null,
+      "orientation_confidence": null,
+      "orientation_probabilities": null,
+      "status": "orientation_not_required"
+    },
+    {
+      "component_id": 15,
+      "component_class": "pmos",
+      "component_class_id": 4,
+      "yolo_confidence": 0.8897,
+      "bbox_xyxy": {
+        "x1": 233,
+        "y1": 103,
+        "x2": 308,
+        "y2": 151
+      },
+      "crop_path": "orientation\\crops\\Book1250\\Book1250_0015_pmos.jpg",
+      "orientation": "d",
+      "orientation_id": 2,
+      "orientation_confidence": 0.9999794960021973,
+      "orientation_probabilities": {
+        "u": 1.1951139811117173e-07,
+        "r": 1.5107712897588499e-05,
+        "d": 0.9999794960021973,
+        "l": 5.259165845927782e-06
+      },
+      "status": "ok"
+    },
+    {
+      "component_id": 16,
+      "component_class": "resistor",
+      "component_class_id": 8,
+      "yolo_confidence": 0.8852,
+      "bbox_xyxy": {
+        "x1": 781,
+        "y1": 98,
+        "x2": 824,
+        "y2": 120
+      },
+      "crop_path": null,
+      "orientation": null,
+      "orientation_id": null,
+      "orientation_confidence": null,
+      "orientation_probabilities": null,
+      "status": "orientation_not_required"
+    },
+    {
+      "component_id": 17,
+      "component_class": "voltage_src",
+      "component_class_id": 12,
+      "yolo_confidence": 0.8505,
+      "bbox_xyxy": {
+        "x1": 98,
+        "y1": 167,
+        "x2": 171,
+        "y2": 241
+      },
+      "crop_path": null,
+      "orientation": null,
+      "orientation_id": null,
+      "orientation_confidence": null,
+      "orientation_probabilities": null,
+      "status": "orientation_not_required"
+    },
+    {
+      "component_id": 18,
+      "component_class": "switch_ideal",
+      "component_class_id": 17,
+      "yolo_confidence": 0.3822,
+      "bbox_xyxy": {
+        "x1": 598,
+        "y1": 543,
+        "x2": 647,
+        "y2": 616
+      },
+      "crop_path": null,
+      "orientation": null,
+      "orientation_id": null,
+      "orientation_confidence": null,
+      "orientation_probabilities": null,
+      "status": "orientation_not_required"
+    }
+  ]
+}

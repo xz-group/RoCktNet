@@ -1,0 +1,176 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\RNDatasetPapers\\6487817.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output_rerun_128\\6487817",
+  "generated_at": "2026-07-29T22:45:40",
+  "paper_metadata": {
+    "title": "A 14b 2.5GS/s 8-Way-Interleaved Pipelined ADC with Background Calibration and Digital Dynamic Linearity Correction Brian Setterberg1, Ken Poulton1, Sourja Ray1, Dan J. Huber1, Valentin Abramzon1, Guenter Steinbach1, John P. Keane1, Bernd Wuppermann1, Mathew Clayson1, Matthew Martin2, Rizwan Pasha2, Edda Peeters3, Annemie Jacobs3, Filip Demarsin3, Adnan Al-Adnani3, Peter Brandt3",
+    "authors": [],
+    "abstract": "",
+    "keywords": [],
+    "doi": "",
+    "venue": "",
+    "year": 2013
+  },
+  "paper_circuit_context": {
+    "circuit_type": "2.5GS/s 8-Way-Interleaved Pipelined ADC",
+    "technology": "CMOS, BICMOS, BJT, 130nm process",
+    "application_domain": "5g",
+    "sub_blocks": [
+      "resistor",
+      "transistor/MOSFET",
+      "output buffer",
+      "differential pair",
+      "clock / timing"
+    ],
+    "design_purpose": "",
+    "function_summary": "2.5GS/s 8-Way-Interleaved Pipelined ADC",
+    "key_specs": [
+      "78dB",
+      "1GHz",
+      "130nm",
+      "2.5GHz",
+      "90fs",
+      "70fs",
+      "4 w",
+      "0.1%",
+      "6dB",
+      "8dB"
+    ]
+  },
+  "sections": [],
+  "figures": [
+    {
+      "id": 26,
+      "label": "Fig. 26",
+      "page": 1,
+      "caption": "Figure 26.3.1: ADC architecture.",
+      "caption_bbox": [
+        34.0,
+        261.1,
+        140.5,
+        269.1
+      ],
+      "section_title": "",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The metastability error rate goal motivated the ADC architecture shown in Fig. 26.3.1."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "This accuracy is achieved through a combination of a low-noise clock path and a 2-rank T/H architecture, as shown in Fig. 26.3.1."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "For gain calibration, an analog dither signal is injected into the signal path between the firstand second-rank T/H as shown in Fig. 26.3.2."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 26.3.2 also shows how the signal path is pseudo-randomly chopped for offset calibration."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "When the chop polarity changes, transistors M3 and M4 in Fig. 26.3.2 experience a large change in Vds that causes the device power dissipation to change."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "An on-chip digital filter corrects this chopper-induced thermal artifact (Fig. 26.3.1)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The digital dynamic linearity corrector (DLC) shown in Fig. 26.3.3 improves 2ndand 3rd-order dynamic harmonic distortion."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "As shown in Fig. 26.3.4, the DLC provides an SFDR improvement of more than 8dB for input signals between 200MHz and 1GHz."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "As shown in Fig. 26.3.5, INL is ±1.5LSB, limited by third harmonic distortion."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The power spectrum in Fig. 26.3.6 demonstrates the effectiveness of the 224 continuously operating background calibration loops that reduce interleaving spurs to below -82dBc."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Instrumentation and Measurement, vol. 55, no. 44, pp. 1094-1100, Aug. 2006. 978-1-4673-4516-3/13/$31.00 ©2013 IEEE Dynamic Linearity Corrector Dither Output MUX Rank 1 T/H Input Chop Rank 2 Filter T/H Output MUX Radix ADC Converter Slice Dither DAC Chop Dither PRBS Chop PRBS Background Calibration Engine Signal Input Figure 26.3.1: ADC architecture."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Slope estimation filter x’ Product terms dx/dt x·x’ x’·x2 (x’)2 x2 SFDR (dB) x3 x· (x’)2 Programmable Correction Coefficients Output Input x Figure 26.3.3: Dynamic linearity corrector. +2.0 +1.5 +1.0 Magnitude (dBFS) INL (14b LSB) +0.5 0 -0.5 -1.0 -1.5 -2.0 -8000 -6000 -4000 -2000 0 +2000 +4000 +6000 +8000 Code Figure 26.3.5: Integral nonlinearity."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "ISSCC 2013 / February 20, 2013 / 2:30 PM R2 R1 M4 M3 Chopped and Dithered Signal Out BUF1 Q4 Q2 Q3 Q1 BUF2 M2 M1 Figure 26.3.2: Chopand dither-injection buffer schematic. 95 90 85 80 75 70 65 SFDR with dynamic linearity correction 60 SFDR without linearity correction 55 0 200 400 600 800 1000 1200 Frequency (MHz) Figure 26.3.4: SFDR vs. frequency with a -1dBFS input. 0 -1 dBFS at 1052MHz -10 -20 -30 -40 -50 -60 -70 HD2 HD3 -80 0 200 400 600 800 1000 1200 Frequency (MHz) 26 Figure 26.3.6: Welch power spectrum of 256 1024-point FFTs."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "DIGEST OF TECHNICAL PAPERS • ISSCC 2013 PAPER CONTINUATIONS Figure 26.3.7: Micrograph of the 7.4mm x 14.0mm chip. • 2013 IEEE International Solid-State Circuits Conference 978-1-4673-4516-3/13/$31.00 ©2013 IEEE"
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.0,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS, BICMOS, BJT, 130nm process",
+        "application_domain": "5g",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "3.1: ADC architecture",
+        "key_specs": [
+          "8dB",
+          "200MHz",
+          "1GHz",
+          "-82dBc",
+          "-1dB",
+          "-1 dB",
+          "1052MHz"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 1.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 26,
+  "warnings": []
+}

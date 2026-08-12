@@ -1,0 +1,440 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1208480.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1208480",
+  "generated_at": "2026-07-29T22:01:08",
+  "paper_metadata": {
+    "title": "A Subpicosecond Jitter PLL for Clock Generation in 0.12-m Digital CMOS",
+    "authors": [
+      "Nicola Da Dalt",
+      "Christoph Sandner"
+    ],
+    "abstract": "A fully integrated subpicosecond jitter phase-locked loop (PLL)-based frequency synthesizer in a standard digital option for the second divider. The second DMD enables produc0.12m CMOS technology with 1.5-V supply is presented. Two tion test with lower reference clock frequency. differentially tuned LC-VCOs are implemented to support difThe basic structure for all CML blocks is an nMOS differferent standards for serial data transmission. A fully differential ential pair with resistive load. The CML dividers have been decharge pump and an active loop filter are used for reduction signed for a nominal output voltage swing of 300-mV peak to of charge-pump current mismatch. Operating with a 311-MHz reference clock, the PLL achieves typically 860-fs integrated peak. The current consumption of the first 2:1 CML prescaler is jitter, and a phase noise of 115 dBc/Hz at 1-MHz offset, on a A, plus 600 A for a buffer driving the following stages. 600 2.488-GHz output. The power consumption is 35 mW, and the A CML test multiplexer with simple current steering pseudoarea is 0.7 mm2. emitter-coupled logic (PECL) output structure using external",
+    "keywords": [
+      "Clock generation",
+      "frequency synthesizer",
+      "jitter"
+    ],
+    "doi": "10.1109/JSSC.2003.813287",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Subpicosecond Jitter PLL",
+    "technology": "CMOS",
+    "application_domain": "",
+    "sub_blocks": [
+      "varactor",
+      "inductor",
+      "resistor",
+      "transistor/MOSFET",
+      "current source",
+      "LC tank / resonator",
+      "output buffer",
+      "bias circuit",
+      "switch",
+      "differential pair",
+      "op-amp",
+      "capacitor",
+      "transformer"
+    ],
+    "design_purpose": "The second DMD enables produc0.12m CMOS technology with 1.5-V supply is presented.",
+    "function_summary": "Subpicosecond Jitter PLL: The second DMD enables produc0.12m CMOS technology with 1.5-V supply is presented.",
+    "key_specs": [
+      "115 dBc/Hz",
+      "35 mW",
+      "622 MHz",
+      "311 MHz",
+      "3.11 GHz",
+      "-9500 V",
+      "100 MHz",
+      "13 pF",
+      "2.8 GHz",
+      "22%"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "A CLOCK with very low integrated jitter is a prerequisite for high-speed transceiver circuits or sampling applications using high-performance analog-to-digital (ADCs) or digital-to-analog converters (DACs). In this brief, we present the concept and design of a subpicosecond jitter phase-locked loop (PLL) for clock generation. We focus on the most important design issues relevant for optimum jitter ..."
+    },
+    {
+      "number": "II",
+      "title": "CONCEPT AND IMPLEMENTATION",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "Fig. 1 shows the block diagram of the test chip implemencharge-pump PLL tation. The module is a classical integertopology and is fully integrated. To minimize supply and substrate noise injection, all clock and analog signal paths are differential, although drawn single-ended in the block diagram for simplicity. The input clock is designed to operate at 311 or 622 MHz. For the latter frequency, a  ..."
+    },
+    {
+      "number": "III",
+      "title": "PHASE NOISE AND JITTER SIMULATIONS",
+      "kind": "results",
+      "page": 1,
+      "text_preview": "Fig. 4 shows the simulated phase-noise performance of the domain Matlab model. It can be seen that in PLL using an the case of a bandwidth programmed to maximum (15 MHz), the noise is not dominated by the VCO. This changes when the PLL is programmed to a lower bandwidth. Then, the VCO noise gives major contributions at a PLL corner frequency below 2 MHz. From the phase-noise simulation, the accumu ..."
+    },
+    {
+      "number": "IV",
+      "title": "MEASUREMENT RESULTS",
+      "kind": "results",
+      "page": 2,
+      "text_preview": "A test chip was fabricated in a 0.12m CMOS technology, using standard digital devices only (regular VT MOS, polysilicon resistors, sandwich capacitors). Fig. 6 shows a layout plot . Fig. 7 of the PLL module, which occupies an area of 0.7 mm shows, in the upper graph, the phase-noise performance on the 2.488-GHz clock at the PECL outputs. For comparison, the lower graph shows the phase noise of the ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. PLL block diagram.",
+      "caption_bbox": [
+        39.6,
+        218.8,
+        133.3,
+        229.5
+      ],
+      "section_title": "II. CONCEPT AND IMPLEMENTATION",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "CONCEPT AND IMPLEMENTATION",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 1 shows the block diagram of the test chip implemencharge-pump PLL tation."
+        },
+        {
+          "section_title": "CONCEPT AND IMPLEMENTATION",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "To ensure stability, the unity Fig. 1."
+        },
+        {
+          "section_title": "CONCEPT AND IMPLEMENTATION",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "As can be seen in Fig. 1, a separate buffer is used to monitor the loop filter voltages without fringing the performance on the noise-sensitive VCO input nodes."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.2,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:proposed": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "PLL block diagram",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.93,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Charge pump with common-mode control loop.",
+      "caption_bbox": [
+        39.6,
+        446.0,
+        221.2,
+        456.6
+      ],
+      "section_title": "II. CONCEPT AND IMPLEMENTATION",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "CONCEPT AND IMPLEMENTATION",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The differential CHP architecture (Fig. 2) is made out of two identical units, each of which is connected to one of the loop filter (LF) inputs (Lfp, Lfn)."
+        },
+        {
+          "section_title": "CONCEPT AND IMPLEMENTATION",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "charge pump",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Charge pump with common-mode control loop",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Differentially tuned LC-VCO structure.",
+      "caption_bbox": [
+        302.6,
+        459.5,
+        457.9,
+        470.2
+      ],
+      "section_title": "II. CONCEPT AND IMPLEMENTATION",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "CONCEPT AND IMPLEMENTATION",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "For its good characteristics with respect to low phase noise and power, an LC-VCO (see Fig. 3) was chosen as the core oscillator [5]."
+        },
+        {
+          "section_title": "CONCEPT AND IMPLEMENTATION",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Each of with IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 7, JULY 2003 Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Differentially tuned LC-VCO structure",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Simulated phase noise performance over frequency offset. f 2:488 GHz.",
+      "caption_bbox": [
+        38.1,
+        268.7,
+        264.8,
+        288.3
+      ],
+      "section_title": "III. PHASE NOISE AND JITTER SIMULATIONS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "PHASE NOISE AND JITTER SIMULATIONS",
+          "section_kind": "results",
+          "page": 1,
+          "sentence": "Fig. 4 shows the simulated phase-noise performance of the domain Matlab model."
+        },
+        {
+          "section_title": "PHASE NOISE AND JITTER SIMULATIONS",
+          "section_kind": "results",
+          "page": 1,
+          "sentence": "From the phase-noise simulation, the accumulated jitter graph [5] can be calculated and, furthermore, the IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 7, JULY 2003 = Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.7,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "-phase noise": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Subpicosecond Jitter PLL",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated phase noise performance over frequency offset. f 2:488 GHz",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Simulated accumulated jitter. f = 2:488 GHz.",
+      "caption_bbox": [
+        38.1,
+        414.8,
+        230.0,
+        425.5
+      ],
+      "section_title": "III. PHASE NOISE AND JITTER SIMULATIONS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "PHASE NOISE AND JITTER SIMULATIONS",
+          "section_kind": "results",
+          "page": 1,
+          "sentence": "Fig. 5."
+        },
+        {
+          "section_title": "PHASE NOISE AND JITTER SIMULATIONS",
+          "section_kind": "results",
+          "page": 1,
+          "sentence": "This simulation result is shown in Fig. 5 for typical conditions."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Subpicosecond Jitter PLL",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated accumulated jitter. f = 2:488 GHz",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. Layout plot.",
+      "caption_bbox": [
+        301.1,
+        218.8,
+        369.4,
+        229.5
+      ],
+      "section_title": "III. PHASE NOISE AND JITTER SIMULATIONS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 6 shows a layout plot ."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "The PLL bandwidth can be Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-layout": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Layout plot",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 2,
+      "caption": "Fig. 7. Phase noise performance. Upper graph: 2.488 GHz; lower graph: 311 MHz input reference.",
+      "caption_bbox": [
+        301.1,
+        401.7,
+        552.2,
+        421.3
+      ],
+      "section_title": "III. PHASE NOISE AND JITTER SIMULATIONS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 7 of the PLL module, which occupies an area of 0.7 mm shows, in the upper graph, the phase-noise performance on the 2.488-GHz clock at the PECL outputs."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.7,
+      "relevance_breakdown": {
+        "-reference": -1.0,
+        "-phase noise": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Phase noise performance. Upper graph: 2.488 GHz; lower graph: 311 MHz input reference",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 1,
+  "warnings": []
+}

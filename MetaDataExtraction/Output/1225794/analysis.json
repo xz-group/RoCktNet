@@ -1,0 +1,1260 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1225794.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1225794",
+  "generated_at": "2026-07-29T22:01:15",
+  "paper_metadata": {
+    "title": "High Dynamic Range InP HBT Delta-Sigma Analog-to-Digital Converters",
+    "authors": [
+      "Michael Inerfield",
+      "William Skones",
+      "Steve Nelson",
+      "Daniel Ching",
+      "Peter Cheng",
+      "Colin Wong"
+    ],
+    "abstract": "To date, the development of multifunction multicarrier digital receivers for cellular base station and military communications applications has been limited by the demanding dynamic range requirements for the analog-to-digital converter (ADC). The use of oversampling delta-sigma modulators provides a promising approach to overcoming the dynamic range barriers Nyquist-rate converters face in the same applications. This paper discusses issues involved in the design of high-speed high dynamic range wide-band delta-sigma ADCs for such communications applications. Test results of prototype designs are also presented. The delta-sigma modulators described in this paper operate at sampling frequencies ranging from 1 to 2.5 GHz with center frequencies ranging from dc to 100 MHz, providing between 74 Fig. 1. 1-bit delta-sigma modulator simplified block diagram. and 84.2 dB signal-to-noise ratio (12 and 13.7 bits) for bandwidths of 25 and 12.5 MHz, respectively. The loop filters are continuous-time low-pass and bandpass implementations of order 6 and the larger conversion bandwidth exposes the ADC to unwanted 10, and were fabricated in an InP heterojunction bipolar (HBT) blocking signals. Single-carrier receivers have narrow-band filtechnology. A typical tenth-order design consumes 6 W of power ters before the ADC, which remove blocking signals and only and occupies a die area of 23.5 mm2. pass a single channel to be converted.",
+    "keywords": [
+      "Continuous-time",
+      "delta-sigma",
+      "analog-to-digital"
+    ],
+    "doi": "10.1109/JSSC.2003.815920",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "High Dynamic Range InP HBT Delta-Sigma Analog-to-Digital Converters",
+    "technology": "CMOS, GAAS, HBT, BJT",
+    "application_domain": "rf, if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "LC tank / resonator",
+      "output buffer",
+      "op-amp",
+      "pre-amplifier",
+      "latch"
+    ],
+    "design_purpose": "",
+    "function_summary": "High Dynamic Range InP HBT Delta-Sigma Analog-to-Digital Converters: To date, the development of multifunction multicarrier digital receivers for cellular base station and military communications applications has been limited by the demanding dynamic range requirements for the analog-to-digital converter (ADC).",
+    "key_specs": [
+      "2.5 GHz",
+      "100 MHz",
+      "84.2 dB",
+      "12.5 MHz",
+      "6 W",
+      "98 dB",
+      "25 MHz",
+      "74 dB",
+      "1 GHz",
+      "60 MHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "C URRENTLY, receivers for high-performance cellular base stations and military communications utilize complex, bulky, and expensive RF electronics. Multiple receivers are needed to accommodate more than one carrier and to handle the multiplicity of communication formats now in use. Receivers must be added or replaced as new formats are fielded, the consequences of which are considerable in terms o ..."
+    },
+    {
+      "number": "II",
+      "title": "DESIGN",
+      "kind": "design",
+      "page": 1,
+      "text_preview": "Several modulators based on a common architecture were designed. The modulator architecture (Fig. 1) consists of a loop filter, comparator, 1-bit feedback digital-to-analog converter (DAC), and output demultiplexer. Single-bit resolution is used to avoid the transistor count penalty of DAC reorder schemes commonly used in CMOS SC designs to compensate nonlinearity in the multibit DAC. A single DAC ..."
+    },
+    {
+      "number": "III",
+      "title": "CHIP FABRICATION AND TEST RESULTS",
+      "kind": "results",
+      "page": 5,
+      "text_preview": "Initial low-pass modulator test chips of up to sixth order were fabricated in TRW’s advanced GaAs HBT process. This process Fig. 15. GaAs HBT sixth-order delta-sigma modulator prototype die photograph. Fig. 16. InP HBT tenth-order delta-sigma modulator prototype die photograph. is optimized for mixed-signal applications and provides an HBT of 45 GHz as well Schottky diodes, metal–insulator–metal ( ..."
+    },
+    {
+      "number": "IV",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 7,
+      "text_preview": "GaAs and InP delta-sigma modulator test circuits of up to tenth order demonstrating increased bandwidth and SNR were designed, fabricated, and tested. The test circuits show that continuous-time 1-bit delta-sigma modulators based on ultra-high-speed III-V technology can provide high dynamic range at the frequencies required for wide-band receiver applications. Achieving high dynamic range requires ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. 1-bit delta-sigma modulator simplified block diagram.",
+      "caption_bbox": [
+        302.6,
+        302.3,
+        504.7,
+        312.9
+      ],
+      "section_title": "",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1. 1-bit delta-sigma modulator simplified block diagram. the larger conversion bandwidth exposes the ADC to unwanted blocking signals."
+        },
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The modulator architecture (Fig. 1) consists of a loop filter, comparator, 1-bit feedback digital-to-analog converter (DAC), and output demultiplexer."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "-simplified": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS, GAAS, HBT, BJT",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "1-bit delta-sigma modulator simplified block diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.1,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Discrete-time prototype modulator and continuous-time implementation.",
+      "caption_bbox": [
+        38.1,
+        206.5,
+        300.1,
+        217.1
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "This paper describes the development of high-order InP heterojunction bipolar transistor (HBT) continuous-time delta-sigma bandpass modulators, which demonstrate dynamic range commensurate with the requirements for high-performance communications applications at bandwidths of up to INERFIELD et al.: HIGH DYNAMIC RANGE InP HBT DELTA-SIGMA ADCs Fig. 2."
+        },
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "For the modulator desired noise transfer function (NTF) shown in Fig. 2, conversion between the NTF prototype and is achieved by the relation the prototype of the loop filter simply derived from Fig. 2 (1) Note in Fig. 2 the nonlinear comparator function has been ."
+        },
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "It should be noted that ZOH transformation will only match the NTFs between the loops shown in Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.7,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS, GAAS, HBT, BJT",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Discrete-time prototype modulator and continuous-time implementation",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Magnitude plot for a tenth-order NTF with CF = 60 MHz, BW = 15 MHz, and f = 1:5 GHz.",
+      "caption_bbox": [
+        39.6,
+        259.3,
+        290.8,
+        278.8
+      ],
+      "section_title": "II. DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Effectively, this optimization results in a fairly even distribution of quantization noise over the full loop-filter bandwidth, as is evident from the magnitude Fig. 3."
+        },
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 4. z-domain pole/zero plot for a tenth-order NTF with CF = 60 MHz, BW = 15 MHz, and f = 1:5 GHz. plot of the tenth-order loop filter NTF shown in Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, GAAS, HBT, BJT",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Magnitude plot for a tenth-order NTF with CF = 60 MHz, BW = 15 MHz, and f = 1:5 GHz",
+        "key_specs": [
+          "60 MHz",
+          "15 MHz",
+          "5 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. z-domain pole/zero plot for a tenth-order NTF with CF = 60 MHz, BW = 15 MHz, and f = 1:5 GHz.",
+      "caption_bbox": [
+        39.6,
+        553.6,
+        290.7,
+        573.3
+      ],
+      "section_title": "II. DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 4. z-domain pole/zero plot for a tenth-order NTF with CF = 60 MHz, BW = 15 MHz, and f = 1:5 GHz. plot of the tenth-order loop filter NTF shown in Fig. 3."
+        },
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 4 -domain pole/zero plot for the same NTF. shows a is designed, Once the discrete-time prototype loop filter it must be transformed to its continuous-time zero-order hold , a process readily achieved through the use equivalent, of a mathematical software tool such as Matlab [14]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, GAAS, HBT, BJT",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "z-domain pole/zero plot for a tenth-order NTF with CF = 60 MHz, BW = 15 MHz, and f = 1:5 GHz",
+        "key_specs": [
+          "60 MHz",
+          "15 MHz",
+          "5 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Sixth-order cascade-of-resonators loop filter simplified block diagram.",
+      "caption_bbox": [
+        302.6,
+        124.5,
+        553.7,
+        135.1
+      ],
+      "section_title": "II. DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "A simplified block diagram of the sixth-order filter is shown in Fig. 5."
+        },
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Gains at the input to each resonator (odd A’s) are set to achieve the desired integrator IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 9, SEPTEMBER 2003 Fig. 5."
+        },
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "In order to determine distortion requirements, a Simulink [15] model of the input closed-loop opamp-based integrator was developed, and is shown in Fig. 8 (see Fig. 5 for voltage definitions)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.7,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "-simplified": -1.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, GAAS, HBT, BJT",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "LC tank / resonator",
+          "op-amp"
+        ],
+        "design_purpose": "In order to determine distortion requirements, a Simulink [15] model of the input closed-loop opamp-based integrator was developed, and is shown in Fig. 8 (see Fig. 5 for voltage definitions).",
+        "function_summary": "Sixth-order cascade-of-resonators loop filter simplified block diagram. In order to determine distortion requirements, a Simulink [15] model of the input closed-loop opamp-based integrator was developed, and is shown in Fig. 8 (see Fig. 5 for voltage definitions).",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.43,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. Fully differential opamp-based resonator with phase compensation.",
+      "caption_bbox": [
+        302.6,
+        331.4,
+        546.0,
+        342.0
+      ],
+      "section_title": "II. DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 6."
+        },
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 6 shows a diagram of these opamp integrators connected as a resonator."
+        },
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The tenth-order bandpass resonator designs with center frequencies , from 30 to 100 MHz require lead or lag compensation to tune and ) which is achieved by the feedforward capacitors ( in Fig. 6."
+        },
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "R and C parameters in Fig. 8 correspond to pairs of component values for the differential circuit shown in Fig. 6."
+        },
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "For a basic differential integrator stage driven by a low-impedance source (either the input or the integrator stage preceding it), the input-referred noise power spectral density is given approximately by (5) is the where circuit parameters are as labeled in Fig. 9 (note in Fig. 6), is tranintegration resistor corresponding to is electron charge, is Boltzmann’s consistor current gain, is temperature in Kelvin."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.5,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "High Dynamic Range InP HBT Delta-Sigma Analog-to-Digital Converters",
+        "technology": "CMOS, GAAS, HBT, BJT",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "capacitor",
+          "resistor",
+          "LC tank / resonator",
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Fully differential opamp-based resonator with phase compensation",
+        "key_specs": [
+          "100 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.38,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 2,
+      "caption": "Fig. 7. SPICE simulation with layout parasitics of tenth-order loop filter.",
+      "caption_bbox": [
+        302.6,
+        528.2,
+        540.0,
+        538.9
+      ],
+      "section_title": "II. DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 7."
+        },
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "SPICE ac analysis of the tuned tenth-order 60-MHz CF transistor filter circuit including layout parasitics is shown in Fig. 7. 1) Distortion: Achieving low distortion over a wide bandwidth is critical for meeting the aggressive SNR requirements required for multicarrier receivers."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "-layout": -2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, GAAS, HBT, BJT",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "SPICE simulation with layout parasitics of tenth-order loop filter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. Simulink model of the loop filter’s first integrator.",
+      "caption_bbox": [
+        38.1,
+        226.4,
+        229.0,
+        237.0
+      ],
+      "section_title": "II. DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Input-referred noise requirements, which are inherently difficult to meet because of the high SNR requirement, are even more challenging in a single-bit DAC architecture because of the classical tradeoff between noise and distortion. , which needs to Another critical factor in filter design is be in the range of 50 to achieve adequate quantization noise INERFIELD et al.: HIGH DYNAMIC RANGE InP HBT DELTA-SIGMA ADCs Fig. 8."
+        },
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "In order to determine distortion requirements, a Simulink [15] model of the input closed-loop opamp-based integrator was developed, and is shown in Fig. 8 (see Fig. 5 for voltage definitions)."
+        },
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "R and C parameters in Fig. 8 correspond to pairs of component values for the differential circuit shown in Fig. 6."
+        },
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Opamp parameters in Fig. 8 correspond to the simplified bipolar junction transistor (BJT)-based opamp shown in Fig. 9, with a dominant pole at Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.6,
+      "relevance_breakdown": {
+        "-model": -1.5,
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, GAAS, HBT, BJT",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "op-amp"
+        ],
+        "design_purpose": "Input-referred noise requirements, which are inherently difficult to meet because of the high SNR requirement, are even more challenging in a single-bit DAC architecture because of the classical tradeoff between noise and distortion. , which needs to Another critical factor in filter design is be in the range of 50 to ...",
+        "function_summary": "Simulink model of the loop filter’s first integrator. Input-referred noise requirements, which are inherently difficult to meet because of the high SNR requirement, are even more challenging in a single-bit DAC architecture because of the classical tradeoff between noise and distortion. , which needs to Another ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 3,
+      "caption": "Fig. 9. Simplified opamp schematic.",
+      "caption_bbox": [
+        301.1,
+        409.8,
+        423.5,
+        420.4
+      ],
+      "section_title": "II. DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Opamp parameters in Fig. 8 correspond to the simplified bipolar junction transistor (BJT)-based opamp shown in Fig. 9, with a dominant pole at Fig. 9."
+        },
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "For a basic differential integrator stage driven by a low-impedance source (either the input or the integrator stage preceding it), the input-referred noise power spectral density is given approximately by (5) is the where circuit parameters are as labeled in Fig. 9 (note in Fig. 6), is tranintegration resistor corresponding to is electron charge, is Boltzmann’s consistor current gain, is temperature in Kelvin."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "-simplified": -1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "High Dynamic Range InP HBT Delta-Sigma Analog-to-Digital Converters",
+        "technology": "CMOS, GAAS, HBT, BJT",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "resistor",
+          "transistor/MOSFET",
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simplified opamp schematic",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.45,
+      "warnings": [
+        "Recommended figure was classified as 'analysis_model', not a schematic; manual confirmation strongly recommended."
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10. = 1:5 GHz, CF = 60 MHz, BW = 15 MHz. integrator for tenth-order, f",
+      "caption_bbox": [
+        39.6,
+        254.0,
+        277.6,
+        282.5
+      ],
+      "section_title": "II. DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "In Fig. 10, a plot of SNR versus two-tone intermodulation distortion for the first integrator is shown for a design GHz, CF MHz, and with sampling frequency MHz."
+        },
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "SNR over a 15-MHz bandwidth (1-dBm input tone) versus two-tone intermodulation performance (6 dBm per tone at 59.8 and 60.8 MHz) of first Fig. 10. = 1:5 GHz, CF = 60 MHz, BW = 15 MHz. integrator for tenth-order, f For high-order filters, it is important to make the tradeoff between power consumption and noise judiciously, as simply repeating the first low-noise stage throughout the design can potentially waste an order of magnitude more power than necessary."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, GAAS, HBT, BJT",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "= 1:5 GHz, CF = 60 MHz, BW = 15 MHz. integrator for tenth-order, f",
+        "key_specs": [
+          "6 dBm",
+          "60.8 MHz",
+          "5 GHz",
+          "60 MHz",
+          "15 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 4,
+      "caption": "Fig. 11. = 1:5 GHz, CF = 60 MHz, BW = 15 MHz rms jitter for tenth-order, f delta-sigma modulator.",
+      "caption_bbox": [
+        302.6,
+        264.8,
+        553.7,
+        293.3
+      ],
+      "section_title": "II. DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 9, SEPTEMBER 2003 Simulated SNR in 15-MHz bandwidth (1-dBm input tone) versus Fig. 11. = 1:5 GHz, CF = 60 MHz, BW = 15 MHz rms jitter for tenth-order, f delta-sigma modulator."
+        },
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The results are shown in Fig. 11 and indicate that an rms jitter on the order of a few femtoseconds is necessary to avoid any degradation in SNR."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS, GAAS, HBT, BJT",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "= 1:5 GHz, CF = 60 MHz, BW = 15 MHz rms jitter for tenth-order, f delta-sigma modulator",
+        "key_specs": [
+          "5 GHz",
+          "60 MHz",
+          "15 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 4,
+      "caption": "Fig. 12. Simplified comparator schematic.",
+      "caption_bbox": [
+        302.6,
+        447.6,
+        443.5,
+        458.2
+      ],
+      "section_title": "II. DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 12."
+        },
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "A simplified schematic of the comparator is shown in Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "-simplified": -1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "comparator",
+        "technology": "CMOS, GAAS, HBT, BJT",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simplified comparator schematic",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.57,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 5,
+      "caption": "Fig. 13. Comparator delay versus input overdrive for a 1.5-m GaAs HBT implementation.",
+      "caption_bbox": [
+        38.1,
+        234.2,
+        289.2,
+        253.8
+      ],
+      "section_title": "II. DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Comparator delay increases INERFIELD et al.: HIGH DYNAMIC RANGE InP HBT DELTA-SIGMA ADCs Fig. 13."
+        },
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "SPICE predicted SNR in 180 kHz for tenth-order InP modulators with 60-, 80-, and 100-MHz center frequencies. for very small input voltages, as evident from Fig. 13, which m shows SPICE-predicted delay versus overdrive for a 1.5GaAs HBT implementation."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "comparator",
+        "technology": "CMOS, GAAS, HBT, BJT",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Comparator delay versus input overdrive for a 1.5-m GaAs HBT implementation",
+        "key_specs": [
+          "180 kHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 5,
+      "caption": "Fig. 14. SPICE predicted SNR in 180 kHz for tenth-order InP modulators with 60-, 80-, and 100-MHz center frequencies.",
+      "caption_bbox": [
+        38.1,
+        418.9,
+        289.1,
+        438.5
+      ],
+      "section_title": "II. DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 14."
+        },
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 14 shows predicted performance for three of the tenth-order modulators."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS, GAAS, HBT, BJT",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "SPICE predicted SNR in 180 kHz for tenth-order InP modulators with 60-, 80-, and 100-MHz center frequencies",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 5,
+      "caption": "Fig. 15. GaAs HBT sixth-order delta-sigma modulator prototype die photograph.",
+      "caption_bbox": [
+        301.1,
+        202.1,
+        552.2,
+        221.7
+      ],
+      "section_title": "II. DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CHIP FABRICATION AND TEST RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "This process Fig. 15."
+        },
+        {
+          "section_title": "CHIP FABRICATION AND TEST RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "A die photograph of the sixth-order 1-GHz clock rate chip is shown in Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-photograph": -3.0,
+        "-die photo": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS, GAAS, HBT, BJT",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "GaAs HBT sixth-order delta-sigma modulator prototype die photograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 6,
+      "caption": "Fig. 17. Sixth-order, f = 1 GHz, BW = 12:5 MHz low-pass modulator measured output spectrum showing well-behaved noise shaping.",
+      "caption_bbox": [
+        39.6,
+        221.1,
+        290.6,
+        240.7
+      ],
+      "section_title": "III. CHIP FABRICATION AND TEST RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "CHIP FABRICATION AND TEST RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 17 shows the shaped quantization noise spectrum for the 1-GHz sample rate GaAs sixth-order low-pass test chip."
+        },
+        {
+          "section_title": "CHIP FABRICATION AND TEST RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "A Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS, GAAS, HBT, BJT",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Sixth-order, f = 1 GHz, BW = 12:5 MHz low-pass modulator measured output spectrum showing well-behaved noise shaping",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 6,
+      "caption": "Fig. 18. Closeup of sixth-order, f = 1 GHz, BW = 12:5 MHz low-pass modulator measured output spectrum showing low in-band noise and distortion.",
+      "caption_bbox": [
+        39.6,
+        410.7,
+        290.7,
+        430.3
+      ],
+      "section_title": "III. CHIP FABRICATION AND TEST RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "CHIP FABRICATION AND TEST RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 18 shows a closeup of the frequency band of interest, demonstrating low noise and nonlinearity."
+        },
+        {
+          "section_title": "CHIP FABRICATION AND TEST RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 18."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS, GAAS, HBT, BJT",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Closeup of sixth-order, f = 1 GHz, BW = 12:5 MHz low-pass modulator measured output spectrum showing low in-band noise and distortion",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 6,
+      "caption": "Fig. 19. Tenth-order, f = 1:2 GHz, CF = 55 MHz, BW = 15 MHz bandpass modulator output spectrum showing well-behaved noise shaping. f f",
+      "caption_bbox": [
+        39.6,
+        606.8,
+        306.6,
+        640.0
+      ],
+      "section_title": "III. CHIP FABRICATION AND TEST RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "CHIP FABRICATION AND TEST RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The ampli99 dBc. tude of the second harmonic is The measured spectrum for an InP tenth-order, 1.2-GHz clock rate, 55-MHz CF, 15-MHz bandwidth modulator is shown in Fig. 19, and demonstrates well-behaved noise shaping."
+        },
+        {
+          "section_title": "CHIP FABRICATION AND TEST RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 19."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS, GAAS, HBT, BJT",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Tenth-order, f = 1:2 GHz, CF = 55 MHz, BW = 15 MHz bandpass modulator output spectrum showing well-behaved noise shaping. f f",
+        "key_specs": [
+          "99 dBc"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 20,
+      "label": "Fig. 20",
+      "page": 6,
+      "caption": "Fig. 20. Closeup of tenth-order, f 1:2 GHz, CF = 55 MHz, = BW = 15 MHz bandpass modulator passband, SPICE simulation, and measured data.",
+      "caption_bbox": [
+        302.6,
+        233.9,
+        553.7,
+        262.5
+      ],
+      "section_title": "III. CHIP FABRICATION AND TEST RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "CHIP FABRICATION AND TEST RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Tenth-order, f = 1:2 GHz, CF = 55 MHz, BW = 15 MHz bandpass modulator output spectrum showing well-behaved noise shaping. f f close-up of both measured and simulated versions of this specf trum in the band of interest is shown in Fig. 20."
+        },
+        {
+          "section_title": "CHIP FABRICATION AND TEST RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The sine-wave amplitude is at optimum IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 9, SEPTEMBER 2003 Fig. 20."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS, GAAS, HBT, BJT",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Closeup of tenth-order, f 1:2 GHz, CF = 55 MHz, = BW = 15 MHz bandpass modulator passband, SPICE simulation, and measured data",
+        "key_specs": [
+          "2 GHz",
+          "55 MHz",
+          "15 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 21,
+      "label": "Fig. 21",
+      "page": 6,
+      "caption": "Fig. 21. Tenth-order, f = 2 GHz, CF = 70 MHz, BW = 22 MHz bandpass modulator output spectrum showing well-behaved noise shaping.",
+      "caption_bbox": [
+        302.6,
+        432.8,
+        553.7,
+        452.4
+      ],
+      "section_title": "III. CHIP FABRICATION AND TEST RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "CHIP FABRICATION AND TEST RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 21 shows the measured spectrum for the InP 2-GHz clock rate, 70-MHz CF, 22-MHz bandwidth chip."
+        },
+        {
+          "section_title": "CHIP FABRICATION AND TEST RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 21."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS, GAAS, HBT, BJT",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Tenth-order, f = 2 GHz, CF = 70 MHz, BW = 22 MHz bandpass modulator output spectrum showing well-behaved noise shaping",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 22,
+      "label": "Fig. 22",
+      "page": 6,
+      "caption": "Fig. 22. Measured SNR in 180 kHz versus frequency for: (a) sixth-order low-pass f 1 GHz, BW = 12:5 MHz, (b) tenth-order bandpass, = = 1:5 GHz, CF= 55 MHz, BW = 15 MHz, (c) tenth-order bandpass, = 2:0 GHz, CF = 70 MHz, BW = 22 MHz, (d) tenth-order bandpass, = 2:5 GHz, CF = 90 MHz, BW = 25 MHz.",
+      "caption_bbox": [
+        302.6,
+        603.0,
+        553.7,
+        649.5
+      ],
+      "section_title": "III. CHIP FABRICATION AND TEST RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "CHIP FABRICATION AND TEST RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Measured SNR for several sixthand tenth-order designs is shown in Fig. 22."
+        },
+        {
+          "section_title": "CHIP FABRICATION AND TEST RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 22."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "High Dynamic Range InP HBT Delta-Sigma Analog-to-Digital Converters",
+        "technology": "CMOS, GAAS, HBT, BJT",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured SNR in 180 kHz versus frequency for: (a) sixth-order low-pass f 1 GHz, BW = 12:5 MHz, (b) tenth-order bandpass, = = 1:5 GHz, CF= 55 MHz, BW = 15 MHz, (c) tenth-order bandpass, = 2:0 GHz, CF = 70 MHz, BW = 22 MHz, (d) tenth-order bandpass, = 2:5 GHz, CF = 90 MHz, BW = 25 MHz",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 23,
+      "label": "Fig. 23",
+      "page": 7,
+      "caption": "Fig. 23. Measured SNR in 180 kHz versus loading for a 55-MHz center frequency, f = 1:5 GHz, tenth-order modulator.",
+      "caption_bbox": [
+        38.1,
+        192.2,
+        289.2,
+        211.8
+      ],
+      "section_title": "III. CHIP FABRICATION AND TEST RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "CHIP FABRICATION AND TEST RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Measured SNR (in 180-kHz bandwidth) versus input loading is INERFIELD et al.: HIGH DYNAMIC RANGE InP HBT DELTA-SIGMA ADCs Fig. 23."
+        },
+        {
+          "section_title": "CHIP FABRICATION AND TEST RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Measured SNR in 180 kHz versus loading for a 55-MHz center frequency, f = 1:5 GHz, tenth-order modulator. shown in Fig. 23."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS, GAAS, HBT, BJT",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured SNR in 180 kHz versus loading for a 55-MHz center frequency, f = 1:5 GHz, tenth-order modulator",
+        "key_specs": [
+          "180 kHz",
+          "5 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 9,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

@@ -1,0 +1,1420 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\RNDatasetPapers\\access.2023.3244127.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output_rerun_128\\access.2023.3244127",
+  "generated_at": "2026-07-29T22:45:51",
+  "paper_metadata": {
+    "title": "Stacked Common-Base vs Common-Emitter",
+    "authors": [
+      "() AND KAUSHIK SENGUPTA ABSTRACT In this paper",
+      "we perform a comparative analysis between stacked common-emitter (SCE)",
+      "stacked common-base topologies (SCB) for high efficiency",
+      "broadband millimeter-Wave (mmWave) power amplifiers (PAs) in 250 nm InP-based heterojunction bipolar transistor (HBT) technology. We propose an analytical approach to design stacked PA cells accounting for complex load impedance",
+      "intramatching between stacked transistors to allow optimal loadpull operation of both the devices in the stack. We demonstrate how SCB cell can allow higher gain",
+      "mitigated power",
+      "efficiency trade-off",
+      "linearity",
+      "when compared to more well-established SCE cells at higher mmWave frequencies. The designed SCB",
+      "SCE cells achieve a measured gain of 11.8 dB/6dB gain",
+      "33%/34% peak PAE",
+      "16.8%/14.5% PAE at 6-dB back-off",
+      "Psat of 18.7 dBm/19.6 dBm at 90 GHz. The SCB PA demonstrates superior linearity",
+      "achieves an EVM of 2.38% at 11.8-dBm average power supporting 3 Gbps 64-QAM. The SCB PA achieves 17.9-18.9-dBm Psat across 80-110 GHz",
+      "is one of the highest efficiency",
+      "broadband",
+      "linear PAs in W-band using InP technology. Utilizing the PA cells",
+      "we demonstrate an asymmetrical broadband power combining circuit for high efficiency combining across a large relatively bandwidth. The PA operates across a 68-105 GHz Psat",
+      "3dB bandwidth with 21.5 dBm peak saturation power",
+      "24% peak PAE. Asymmetrical combiner",
+      "broadband",
+      "common-base",
+      "InP HBT",
+      "millimeter-Wave INDEX TERMS (mmWave)",
+      "power amplifiers (PAs)",
+      "stacked PA. Among various mmWave InP PA topologies",
+      "common emitter (CE) device with Wilkinson type or corporate power InP heterojunction bipolar transistors (HBTs) with fmax approaching 700 GHz enable high-power",
+      "high-efficiency combiner is the most popular [3]",
+      "[6]. However",
+      "the amplification at mmWave frequencies for communication low output impedance of a single CE PA cell suffers a larger",
+      "sensing. Courtesy of both the vertical",
+      "horizontal output matching impedance transformation ratio as more scalings",
+      "InP HBT balances the speed-breakdown trade-off PA cells are parallel combined",
+      "which limits the bandwidth",
+      "is a strong candidate for mmWave power amplifier operOn the other hand",
+      "the conventional Wilkinson or muti-stage corporate power combiner typically trades matching effiating at high mmWave frequencies above 40 GHz [1]",
+      "[2]. ciency for bandwidth. Therefore",
+      "the bandwidth of mmWave As more mmWave bands have been allocated",
+      "the future specPA should be strategically addressed in both PA cell level",
+      "trum sharing",
+      "intelligent spectrum management require power combining architecture level. the PA to be operable across a larger relative bandwidth. For mmWave PA cells",
+      "transistor stacking allows a simultaneous higher power",
+      "higher gain",
+      "more importantly",
+      "a larger bandwidth due to higher output impedance [7]"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "doi": "10.1109/ACCESS.2023.3244127",
+    "venue": "",
+    "year": null
+  },
+  "paper_circuit_context": {
+    "circuit_type": "",
+    "technology": "HBT, 250nm process",
+    "application_domain": "mmwave, if",
+    "sub_blocks": [
+      "inductor",
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "transmission line",
+      "transformer",
+      "bias circuit",
+      "switch",
+      "balun"
+    ],
+    "design_purpose": "",
+    "function_summary": "circuit: To achieve this, the desired optimum load impedance (ZL) of the stacked PA should have a shunt resistance of 2Ropt in parallel with a shunt reactance of XL (Fig.1). • Broadband inter node impedance matching: If we directly connect the emitter of top transistor to the collector of bottom transistor like a cascode, the ...",
+    "key_specs": [
+      "13 J",
+      "-105 GHz",
+      "250nm",
+      "250 nm",
+      "11.8 dB",
+      "6dB",
+      "33%",
+      "34%",
+      "16.8%",
+      "14.5%"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "InP heterojunction bipolar transistors (HBTs) with fmax approaching 700 GHz enable high-power, high-efficiency amplification at mmWave frequencies for communication and sensing. Courtesy of both the vertical and horizontal scalings, InP HBT balances the speed-breakdown trade-off and is a strong candidate for mmWave power amplifier operating at high mmWave frequencies above 40 GHz [1], [2]. As more ..."
+    },
+    {
+      "number": "II",
+      "title": "ANALYSIS AND DESIGN OF STACKED HBT PA CELL",
+      "kind": "proposed",
+      "page": 1,
+      "text_preview": "A. PRINCIPLE AND DESIGN METHODOLOGY Transistor stacking is a series power combining technique based on the series interconnection of a bottom transistor 14488 Z. Liu et al.: Stacked Common-Base vs Common-Emitter mmWave PA Cells FIGURE 1. Proposed stacked common base (SCB) PA cell and its layout. cascaded with a common-base-like upper transistor. Compared to single transistor, this enables higher o ..."
+    },
+    {
+      "number": "III",
+      "title": "COMPARISON OF CE,CB,SCE AND SCB TOPOLOGIES",
+      "kind": "other",
+      "page": 4,
+      "text_preview": "In this Section, we focus on the trade-offs CB device for mmWave power amplification and comparison of different PA cells selection, especially between SCE and SCB. A. CB PA CELLS FOR HIGH GAIN, HIGH LINEARITY, AND HIGH EFFICIENCY WITH InP HBTs CB topology, generally due to the reduced input-output feedback capacitance Cce compared to the Cbc in the regular common-emitter (CE) topology, provides h ..."
+    },
+    {
+      "number": "IV",
+      "title": "BROADBAND ASYMMETRICAL POWER COMBINING",
+      "kind": "other",
+      "page": 7,
+      "text_preview": "BASED ON STACKED PA CELL In this Section, we utilize the stacked PA cells and design broadband mmWave PAs with an asymmetrical power combining architecture. A. PRINCIPLE OF BROADBAND ASYMMETRICAL POWER COMBINING In [35] and [36], multi-port asymmetrical networks were proposed to overcome the strict bandwidth and efficiency tradeoffs. The fundamental principle is captured in Fig. 15. In a symmetric ..."
+    },
+    {
+      "number": "V",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 10,
+      "text_preview": "This paper presents a comparative approach toward high efficiency mmWave PAs using stacked common emitter and stacked common base PAs. We present an analytical approach to guaranteeing optimal stack operation at high mmWave frequencies with SCB cells taking into consideration intra-stack matching and optimal loadpull operation of the bottom transistor and the top transistor. The analytical approac ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "FIGURE 1. Proposed stacked common base (SCB) PA cell and its layout.",
+      "caption_bbox": [
+        297.1,
+        326.9,
+        531.0,
+        333.9
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "ANALYSIS AND DESIGN OF STACKED HBT PA CELL",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Liu et al.: Stacked Common-Base vs Common-Emitter mmWave PA Cells FIGURE 1."
+        },
+        {
+          "section_title": "ANALYSIS AND DESIGN OF STACKED HBT PA CELL",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "As will be seen in Section III, the commonbase (CB) InP HBT leads to superior performance than CE in terms of gain, gain compression and back-off efficiency at mmWave frequency range (>70 GHz), which motivates the investigation of utilizing the advantages of CB device by replacing the bottom CE device with a CB counterpart in a stacked PA cell, namely, forming a stacked common-base (SCB) topology (Fig. 1)."
+        },
+        {
+          "section_title": "ANALYSIS AND DESIGN OF STACKED HBT PA CELL",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Here, the base of the bottom device is ac grounded and the input signal is fed into its emitter, the top transistor has a shunt capacitor Cb at its base while an inductor L1 is inserted between the two transistors (Fig. 1)."
+        },
+        {
+          "section_title": "ANALYSIS AND DESIGN OF STACKED HBT PA CELL",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "To achieve this, the desired optimum load impedance (ZL) of the stacked PA should have a shunt resistance of 2Ropt in parallel with a shunt reactance of XL (Fig.1). • Broadband inter node impedance matching: If we directly connect the emitter of top transistor to the collector of bottom transistor like a cascode, the interface is typically strongly mismatched because the input impedance of the top transistor is typically different from the optimum load impedance of bottom transistor."
+        },
+        {
+          "section_title": "ANALYSIS AND DESIGN OF STACKED HBT PA CELL",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 1 shows the equivalent model for the SCB PA cell analysis."
+        },
+        {
+          "section_title": "ANALYSIS AND DESIGN OF STACKED HBT PA CELL",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "All the analysis in this section is based on the extracted circuit parameters (Cπ, Cµ, Rπ, gm and Ropt) for a 4 × 12 µ m transistor with 17 mA quiescent bias current, which is shown in Fig. 1."
+        },
+        {
+          "section_title": "ANALYSIS AND DESIGN OF STACKED HBT PA CELL",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "This inductor can be implemented by a high impedance transmission line (Layout in Fig. 1)."
+        },
+        {
+          "section_title": "ANALYSIS AND DESIGN OF STACKED HBT PA CELL",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "At 90 GHz, the SCB PA cell with extracted device parameters shown in Fig.1 results in Cb=120 fF, XL=50 and L1=30 pH."
+        },
+        {
+          "section_title": "COMPARISON OF CE,CB,SCE AND SCB TOPOLOGIES",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "(b) Stability circles for CB and SCB at 65GHz. on-chip bypass network is added very close to the base node (Fig. 1)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.5,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "-layout": -2.0,
+        "section:intro": -0.5,
+        "references": 2.0
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "on-chip inductor",
+        "technology": "HBT, 250nm process",
+        "application_domain": "mmwave, if",
+        "sub_blocks": [
+          "inductor",
+          "capacitor",
+          "transistor/MOSFET",
+          "transmission line"
+        ],
+        "design_purpose": "To achieve this, the desired optimum load impedance (ZL) of the stacked PA should have a shunt resistance of 2Ropt in parallel with a shunt reactance of XL (Fig.1). • Broadband inter node impedance matching: If we directly connect the emitter of top transistor to the collector of bottom transistor like a cascode, the ...",
+        "function_summary": "Proposed stacked common base (SCB) PA cell and its layout. To achieve this, the desired optimum load impedance (ZL) of the stacked PA should have a shunt resistance of 2Ropt in parallel with a shunt reactance of XL (Fig.1). • Broadband inter node impedance matching: If we directly connect the emitter of top transistor ...",
+        "key_specs": [
+          "70 GHz",
+          "90 GHz",
+          "120 fF",
+          "30 pH",
+          "65GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.18,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 2,
+      "caption": "FIGURE 2. Variation of input impedance ZE. (a) Variation against frequency for a fixed Cb (120 fF); (b) Variation against Cb for a fixed frequency (90 GHz).",
+      "caption_bbox": [
+        36.2,
+        132.2,
+        257.5,
+        156.0
+      ],
+      "section_title": "II. ANALYSIS AND DESIGN OF STACKED HBT PA CELL",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ANALYSIS AND DESIGN OF STACKED HBT PA CELL",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Liu et al.: Stacked Common-Base vs Common-Emitter mmWave PA Cells FIGURE 2."
+        },
+        {
+          "section_title": "ANALYSIS AND DESIGN OF STACKED HBT PA CELL",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 2 shows the good correlation between the simulation and analysis represented in (1) for both real part and imaginary part of ZE, as 1."
+        },
+        {
+          "section_title": "ANALYSIS AND DESIGN OF STACKED HBT PA CELL",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 2(b) shows that the externally added Cb can significantly modulate the real part of the top device input impedance while a weaker effect on imaginary part is observed once Cb is large enough."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "",
+        "technology": "HBT, 250nm process",
+        "application_domain": "mmwave, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Variation of input impedance ZE. (a) Variation against frequency for a fixed Cb (120 fF); (b) Variation against Cb for a fixed frequency (90 GHz)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.31,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "FIGURE 3. Second design constraint determined by stack output capacitance to ensure optimal resonant matching.",
+      "caption_bbox": [
+        297.1,
+        252.3,
+        507.7,
+        267.7
+      ],
+      "section_title": "II. ANALYSIS AND DESIGN OF STACKED HBT PA CELL",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ANALYSIS AND DESIGN OF STACKED HBT PA CELL",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "To address the inter-node matching, we firstly calculate the input impedance of the top transistor (ZE) as a function of Cb and XL: 1 1 Ztune + ( 1 ZL + 1 1 Zπ + Zπ + Ztune + gm)(SZLCµ) ZE = (1) (gm + 1 1 Zπ )(SCµ + Ztune (1 + SZLCµ)) VOLUME 11, 2023 FIGURE 3."
+        },
+        {
+          "section_title": "ANALYSIS AND DESIGN OF STACKED HBT PA CELL",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "As shown in Fig. 3, the output admittance Yout can be analyzed, also as a function of Cb and and XL in (6)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "-capacitance": -2.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "",
+        "technology": "HBT, 250nm process",
+        "application_domain": "mmwave, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Second design constraint determined by stack output capacitance to ensure optimal resonant matching",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 3,
+      "caption": "FIGURE 4. Variation of ℜ(Z E) and 1/ℑ(Y out) as functions of Cb and XL. The intersection of the two lines gives the unique values of Cb and XL for optimal stack operation.",
+      "caption_bbox": [
+        36.2,
+        420.8,
+        275.6,
+        445.1
+      ],
+      "section_title": "II. ANALYSIS AND DESIGN OF STACKED HBT PA CELL",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ANALYSIS AND DESIGN OF STACKED HBT PA CELL",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "For broad 14489 FIGURE 4."
+        },
+        {
+          "section_title": "ANALYSIS AND DESIGN OF STACKED HBT PA CELL",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Since ZE is a function of Cb and XL according to (1), Fig. 4 (a) shows the plane of ℜ(ZE) and the curved intersection line illustrating the range of values of Cb and XL that ensure (4)."
+        },
+        {
+          "section_title": "ANALYSIS AND DESIGN OF STACKED HBT PA CELL",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Yout = SCµ(1+gmZπ +SCb(Zdown + Zπ + gmZdownZπ)) 1 + S(CbCu)(Zdown + Zπ + gmZdownZπ) (6) where 1 Zdown = SL1 + , (7) SCµ Therefore, to optimally resonate out the output capacitance captured in the imaginary part of Y out, the second design equation is 1 1 ℑ(Yout) = = XL (8) ω0Cout At f0 = 90 GHz, equation (8) leads to another constraint curve governing Cb and XL, as shown in Fig. 4(b)."
+        },
+        {
+          "section_title": "ANALYSIS AND DESIGN OF STACKED HBT PA CELL",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The intersections of the two lines in Cb and XL plane gives the unique solutions to these parameters (Fig. 4(c))."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.6,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "",
+        "technology": "HBT, 250nm process",
+        "application_domain": "mmwave, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Variation of ℜ(Z E) and 1/ℑ(Y out) as functions of Cb and XL. The intersection of the two lines gives the unique values of Cb and XL for optimal stack operation",
+        "key_specs": [
+          "90 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.4,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "FIGURE 5. Calculated optimum load impedance against simulated results.",
+      "caption_bbox": [
+        297.1,
+        188.9,
+        538.3,
+        195.9
+      ],
+      "section_title": "II. ANALYSIS AND DESIGN OF STACKED HBT PA CELL",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ANALYSIS AND DESIGN OF STACKED HBT PA CELL",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Liu et al.: Stacked Common-Base vs Common-Emitter mmWave PA Cells FIGURE 5."
+        },
+        {
+          "section_title": "ANALYSIS AND DESIGN OF STACKED HBT PA CELL",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The calculated impedance (2Ropt||jXL ≈ 24.8+j21.8 ) is compared with the circuit load-pull simulation in Fig. 5."
+        },
+        {
+          "section_title": "ANALYSIS AND DESIGN OF STACKED HBT PA CELL",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Verify the calculated optimum load impedance ZL is close to the load-pull simulation result of the stacked PA (Fig. 5). 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.8,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "-calculated": -2.0,
+        "section:proposed": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "",
+        "technology": "HBT, 250nm process",
+        "application_domain": "mmwave, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Calculated optimum load impedance against simulated results",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "FIGURE 6. Simulation result showing higher available gain for CB cell.",
+      "caption_bbox": [
+        297.1,
+        288.1,
+        526.2,
+        295.1
+      ],
+      "section_title": "III. COMPARISON OF CE,CB,SCE AND SCB TOPOLOGIES",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "COMPARISON OF CE,CB,SCE AND SCB TOPOLOGIES",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Based on BJT transistor T model shown in Fig. 6, the maximum stable gain (MSG) and K factor of CB and CE device can be compared [30]: ≈rex + re MSGCB (9) MSGCE rb KCE ≈((rb + 2rex)Cµ + reCπ(1 + 2rb ))ω rex KCB ≈((rb + 2rex)Cµ + reCπ)ω ω(k=1,CB) > ω(k=1,CE) (10) From (9), for a HBT device with high base doping such that rb is relatively smaller than the numerator, MSGCB can be larger than MSGCE."
+        },
+        {
+          "section_title": "COMPARISON OF CE,CB,SCE AND SCB TOPOLOGIES",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "The simulation of a 4 × 12 µm InP device for CB and CE topology also shows the similar behavior where the Gmax of CB is higher than CE by up to 6 dB across 70-300 GHz (Fig. 6)."
+        },
+        {
+          "section_title": "COMPARISON OF CE,CB,SCE AND SCB TOPOLOGIES",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "From the DC-IV simulation of the InP transistor, we can see CB cell VOLUME 11, 2023 FIGURE 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "",
+        "technology": "HBT, 250nm process",
+        "application_domain": "mmwave, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simulation result showing higher available gain for CB cell",
+        "key_specs": [
+          "12 µm",
+          "6 dB",
+          "-300 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "FIGURE 7. (a) DC-IV Simulation results showing superior gain compression and larger achievable swing for CB allowing higher linearity. (b) The ‘close to ideal’ DC-IV response leads to an overlapping of power and efficiency optimum loadpull impedance for CB.",
+      "caption_bbox": [
+        297.1,
+        533.2,
+        537.1,
+        565.3
+      ],
+      "section_title": "III. COMPARISON OF CE,CB,SCE AND SCB TOPOLOGIES",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "COMPARISON OF CE,CB,SCE AND SCB TOPOLOGIES",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "FIGURE 7."
+        },
+        {
+          "section_title": "COMPARISON OF CE,CB,SCE AND SCB TOPOLOGIES",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "This results in a superior gain compression and larger achievable swing for CB (Fig. 7)."
+        },
+        {
+          "section_title": "COMPARISON OF CE,CB,SCE AND SCB TOPOLOGIES",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "For a regular class B CE or Common-source (CS) transistor, its optimum load impedances for power (Zopt,pwr) and efficiency (Zopt,eff) are notoriously distinct which typically needs a compromised choice of load impedance between these two conflicting requirements (Fig. 7(b))."
+        },
+        {
+          "section_title": "COMPARISON OF CE,CB,SCE AND SCB TOPOLOGIES",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "On the contrary, due to the sharper turn on and relatively low knee voltage of CB transistor, the close to ideal DC-IV curve leads to almost overlapping of power and efficiency loadpull impedances (Fig. 7(b))."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.6,
+      "relevance_breakdown": {
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "",
+        "technology": "HBT, 250nm process",
+        "application_domain": "mmwave, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) DC-IV Simulation results showing superior gain compression and larger achievable swing for CB allowing higher linearity. (b) The ‘close to ideal’ DC-IV response leads to an overlapping of power and efficiency optimum loadpull impedance for CB",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 5,
+      "caption": "FIGURE 8. Current clamping effect for better back-off efficiency for CB.",
+      "caption_bbox": [
+        36.2,
+        266.6,
+        268.2,
+        273.7
+      ],
+      "section_title": "III. COMPARISON OF CE,CB,SCE AND SCB TOPOLOGIES",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "COMPARISON OF CE,CB,SCE AND SCB TOPOLOGIES",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "The difference between Zopt,pwr and Zopt,eff can be explained by soft-turn on and 14491 FIGURE 8."
+        },
+        {
+          "section_title": "COMPARISON OF CE,CB,SCE AND SCB TOPOLOGIES",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "As shown in Fig. 8 (a), an inductor is used to bias the emitter to ground potential and a sinusoidal current with magnitude of I0 stimulates the amplifier."
+        },
+        {
+          "section_title": "COMPARISON OF CE,CB,SCE AND SCB TOPOLOGIES",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "The charging cycles can be illustrated in the continuous load-line trajectory in Fig. 8 (c)."
+        },
+        {
+          "section_title": "COMPARISON OF CE,CB,SCE AND SCB TOPOLOGIES",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 8 (b) and (c) show the shorted circuit time domain current and load-line under three different input power levels, which demonstrate the supply current modulation effect."
+        },
+        {
+          "section_title": "COMPARISON OF CE,CB,SCE AND SCB TOPOLOGIES",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "It can be noted that the current modulation in Fig. 8 (b) does not correspond to a truncated current waveform like in class B operation."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "on-chip inductor",
+        "technology": "HBT, 250nm process",
+        "application_domain": "mmwave, if",
+        "sub_blocks": [
+          "inductor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Current clamping effect for better back-off efficiency for CB",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.12,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 6,
+      "caption": "FIGURE 9. Large signal performance comparison between CE, CB, SCE and SCB at 90GHz.(a) Gain vs. power, (b) PAE, (c) Linearity (ACLR).",
+      "caption_bbox": [
+        40.3,
+        195.5,
+        485.3,
+        202.5
+      ],
+      "section_title": "III. COMPARISON OF CE,CB,SCE AND SCB TOPOLOGIES",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "COMPARISON OF CE,CB,SCE AND SCB TOPOLOGIES",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "The large signal performance in terms of gain, efficiency and linearity at 90 GHz are shown in Fig. 9 and summarized in Fig. 12."
+        },
+        {
+          "section_title": "COMPARISON OF CE,CB,SCE AND SCB TOPOLOGIES",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Liu et al.: Stacked Common-Base vs Common-Emitter mmWave PA Cells FIGURE 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "",
+        "technology": "HBT, 250nm process",
+        "application_domain": "mmwave, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Large signal performance comparison between CE, CB, SCE and SCB at 90GHz.(a) Gain vs. power, (b) PAE, (c) Linearity (ACLR)",
+        "key_specs": [
+          "90 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 6,
+      "caption": "FIGURE 10. Simulated spectrum and 256 QAM constellation for SCE cell.",
+      "caption_bbox": [
+        36.2,
+        349.6,
+        273.0,
+        356.6
+      ],
+      "section_title": "III. COMPARISON OF CE,CB,SCE AND SCB TOPOLOGIES",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "COMPARISON OF CE,CB,SCE AND SCB TOPOLOGIES",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "As an example, the spectrum and constellation of the SCE PA cell at 7 dB back off is shown in Fig. 10."
+        },
+        {
+          "section_title": "COMPARISON OF CE,CB,SCE AND SCB TOPOLOGIES",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "FIGURE 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.7,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "-spectrum": -2.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "",
+        "technology": "HBT, 250nm process",
+        "application_domain": "mmwave, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated spectrum and 256 QAM constellation for SCE cell",
+        "key_specs": [
+          "7 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 6,
+      "caption": "FIGURE 11. (a) Stability knee frequencies as a function of bias current. (b) Stability circles for CB and SCB at 65GHz.",
+      "caption_bbox": [
+        36.2,
+        654.1,
+        268.0,
+        669.5
+      ],
+      "section_title": "III. COMPARISON OF CE,CB,SCE AND SCB TOPOLOGIES",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "COMPARISON OF CE,CB,SCE AND SCB TOPOLOGIES",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "To compare the stability for the four topologies, we show the knee frequency (where K factor equals 1) of the four PA cells (4 × 12 µ m transistor) as a function of bias current in Fig. 11(a)."
+        },
+        {
+          "section_title": "COMPARISON OF CE,CB,SCE AND SCB TOPOLOGIES",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "The source and load stability circles are plotted for CB and SCB PA cells (Fig. 11 (b)) as the design guideline."
+        },
+        {
+          "section_title": "COMPARISON OF CE,CB,SCE AND SCB TOPOLOGIES",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "FIGURE 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "",
+        "technology": "HBT, 250nm process",
+        "application_domain": "mmwave, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) Stability knee frequencies as a function of bias current. (b) Stability circles for CB and SCB at 65GHz",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 6,
+      "caption": "FIGURE 12. Large signal performance at 90 GHz and stability summary between four topologies.",
+      "caption_bbox": [
+        297.1,
+        415.1,
+        528.9,
+        430.5
+      ],
+      "section_title": "III. COMPARISON OF CE,CB,SCE AND SCB TOPOLOGIES",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "COMPARISON OF CE,CB,SCE AND SCB TOPOLOGIES",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "The large signal performance in terms of gain, efficiency and linearity at 90 GHz are shown in Fig. 9 and summarized in Fig. 12."
+        },
+        {
+          "section_title": "COMPARISON OF CE,CB,SCE AND SCB TOPOLOGIES",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "The matching network loss and the voltage waveform are plotted in Fig. 13 indicating VCE of top device VOLUME 11, 2023 FIGURE 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "",
+        "technology": "HBT, 250nm process",
+        "application_domain": "mmwave, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Large signal performance at 90 GHz and stability summary between four topologies",
+        "key_specs": [
+          "90 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 7,
+      "caption": "FIGURE 13. Test cell implementation (a) SCE cell. (b) SCB cell.",
+      "caption_bbox": [
+        36.2,
+        440.1,
+        237.6,
+        447.1
+      ],
+      "section_title": "IV. BROADBAND ASYMMETRICAL POWER COMBINING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "COMPARISON OF CE,CB,SCE AND SCB TOPOLOGIES",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "MEASUREMENT RESULTS WITH SCE AND SCB PA CELLS Single stage SCE and SCB PA cells are fabricated and compared experimentally (Fig. 13)."
+        },
+        {
+          "section_title": "COMPARISON OF CE,CB,SCE AND SCB TOPOLOGIES",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "The matching network loss and the voltage waveform are plotted in Fig. 13 indicating VCE of top device VOLUME 11, 2023 FIGURE 12."
+        },
+        {
+          "section_title": "COMPARISON OF CE,CB,SCE AND SCB TOPOLOGIES",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "At 90 GHz LO frequency, SCB design exhibits an EVM of 2.38% at average power of 11.8 dBm with average PAE of 15.9% supporting 3 Gbps 64-QAM signal while SCE design supports 2 Gbps 16-QAM signal with EVM of 3.88% at average power of 12.9 dBm and average PAE of 14%. 14493 FIGURE 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "",
+        "technology": "HBT, 250nm process",
+        "application_domain": "mmwave, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Test cell implementation (a) SCE cell. (b) SCB cell",
+        "key_specs": [
+          "90 GHz",
+          "2.38%",
+          "11.8 dBm",
+          "15.9%",
+          "3.88%",
+          "12.9 dBm",
+          "14%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 7,
+      "caption": "FIGURE 14. SCE and SCB test cell measurement comparison. (a) S-parameters. (b) CW performance and Psat across frequency. (c) Modulation performance.",
+      "caption_bbox": [
+        297.1,
+        374.7,
+        509.1,
+        398.4
+      ],
+      "section_title": "III. COMPARISON OF CE,CB,SCE AND SCB TOPOLOGIES",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "COMPARISON OF CE,CB,SCE AND SCB TOPOLOGIES",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig.14 shows the measurement results of the test cells."
+        },
+        {
+          "section_title": "COMPARISON OF CE,CB,SCE AND SCB TOPOLOGIES",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Highspeed modulation test is performed as shown in Fig. 14 (c)."
+        },
+        {
+          "section_title": "BROADBAND ASYMMETRICAL POWER COMBINING",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "Liu et al.: Stacked Common-Base vs Common-Emitter mmWave PA Cells FIGURE 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "",
+        "technology": "HBT, 250nm process",
+        "application_domain": "mmwave, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "SCE and SCB test cell measurement comparison. (a) S-parameters. (b) CW performance and Psat across frequency. (c) Modulation performance",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 7,
+      "caption": "FIGURE 15. Symmetrical and asymmetrical networks for high efficiency and broadband combining. (a) Conventional in-phase power combining technique suffering from bandwidth and matching loss trade-off. (b) Asymmetrical power combining with excitations in each path for high efficiency matching across a wide bandwidth creating a quasi higher order network due to active loadpulling.",
+      "caption_bbox": [
+        297.1,
+        617.4,
+        535.8,
+        666.2
+      ],
+      "section_title": "IV. BROADBAND ASYMMETRICAL POWER COMBINING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "BROADBAND ASYMMETRICAL POWER COMBINING",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "The fundamental principle is captured in Fig. 15."
+        },
+        {
+          "section_title": "BROADBAND ASYMMETRICAL POWER COMBINING",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "FIGURE 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-conventional": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "",
+        "technology": "HBT, 250nm process",
+        "application_domain": "mmwave, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Symmetrical and asymmetrical networks for high efficiency and broadband combining. (a) Conventional in-phase power combining technique suffering from bandwidth and matching loss trade-off. (b) Asymmetrical power combining with excitations in each path for high efficiency matching across a wide bandwidth creating a ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 8,
+      "caption": "FIGURE 16. Comparison of symmetrical and asymmetrically combined broadband mmWave PAs in InP. (a) SCE stage modeling using RC network for network analysis. (b) S-combiner and A-combiner design. (c) Load impedance seen by the two PAs for S-combiner and A-combiner, exhibiting the broader bandwidth for A-combiner. (d) Simulation of 01(ω) and 02(ω). (e) Power combining efficiency η for lossless component. (f) Power combining",
+      "caption_bbox": [
+        42.4,
+        291.3,
+        529.4,
+        315.1
+      ],
+      "section_title": "IV. BROADBAND ASYMMETRICAL POWER COMBINING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "BROADBAND ASYMMETRICAL POWER COMBINING",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "Liu et al.: Stacked Common-Base vs Common-Emitter mmWave PA Cells FIGURE 16."
+        },
+        {
+          "section_title": "BROADBAND ASYMMETRICAL POWER COMBINING",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "As an example, a two-way symmetrical combiner (S-combiner) and an asymmetrical combiner (A-combiner) for a two-way combined PA is designed at 85 GHz with the SCE PA cells, as shown in Fig. 16 (b)."
+        },
+        {
+          "section_title": "BROADBAND ASYMMETRICAL POWER COMBINING",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "The port 1 and 2 of the VOLUME 11, 2023 3 port combiner are driven by the proper designed stacked PA cell from Section III, where each stacked PA can be modeled as a RC network (R=50 , C=40 fF) whose impedance Zs is the conjugate of its load-pull impedance at center frequency (Fig. 16 (a))."
+        },
+        {
+          "section_title": "BROADBAND ASYMMETRICAL POWER COMBINING",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "S-parameters performance. where 01 and 02 are the reflection coefficient looking back to P1 and P2 path from the combining load (Fig. 16 (b)), and ω0 is the center frequency."
+        },
+        {
+          "section_title": "BROADBAND ASYMMETRICAL POWER COMBINING",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "The simulation results of this asymmetrical combiner under optimum excitation are shown in Fig.16 (c)-(f)."
+        },
+        {
+          "section_title": "BROADBAND ASYMMETRICAL POWER COMBINING",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "For lossless matching component, the load impedance Z1 and Z2 seen by the two stacked PAs are very close to each other (exactly equal at center frequency and slightly separate apart at band edge) and also align with the desired load-pull contours across 60-100 GHz, indicating a wideband matching, compared to a narrow band and inaccurately matched contour from S-combiner (Fig. 16 (c))."
+        },
+        {
+          "section_title": "BROADBAND ASYMMETRICAL POWER COMBINING",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "Plot of 01 and 02 in smith chart (Fig. 16 (d)) shows a conjugate location at center frequency and holds roughly true across 60-100 GHz, as expected from equation (11)."
+        },
+        {
+          "section_title": "BROADBAND ASYMMETRICAL POWER COMBINING",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "As can be seen in Fig.16(e)-(f), the A-combiner achieves much wider bandwidth at higher efficiency for both lossless and lossy passive components due to their ability to synthesize quasihigher order networks (as a result of the lack of symmetry) that allows it to synthesize optimal impedances across frequency through mutual loadpulling through the combiner network."
+        },
+        {
+          "section_title": "BROADBAND ASYMMETRICAL POWER COMBINING",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "Fig.16(g) shows the desired phase (θ(ω)) and amplitude (A(ω)) response for the A-combiner."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.5,
+      "relevance_breakdown": {
+        "-model": -1.5,
+        "references": 2.0
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "",
+        "technology": "HBT, 250nm process",
+        "application_domain": "mmwave, if",
+        "sub_blocks": [],
+        "design_purpose": "As can be seen in Fig.16(e)-(f), the A-combiner achieves much wider bandwidth at higher efficiency for both lossless and lossy passive components due to their ability to synthesize quasihigher order networks (as a result of the lack of symmetry) that allows it to synthesize optimal impedances across frequency through ...",
+        "function_summary": "Comparison of symmetrical and asymmetrically combined broadband mmWave PAs in InP. (a) SCE stage modeling using RC network for network analysis. (b) S-combiner and A-combiner design. (c) Load impedance seen by the two PAs for S-combiner and A-combiner, exhibiting the broader bandwidth for A-combiner. (d) Simulation of ...",
+        "key_specs": [
+          "85 GHz",
+          "40 fF",
+          "-100 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.03,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 8,
+      "caption": "FIGURE 17. PA with an asymmetrical 2port combiner and SCE cells. (a) 2-stage SCE PA cell based asymmetrical power combining PA schematic. (b) Input amplitude ratio and phase difference response versus frequency. (c) Output combiner insertion loss across 60-110 GHz. (d) Inter-stage",
+      "caption_bbox": [
+        44.3,
+        506.1,
+        514.1,
+        521.5
+      ],
+      "section_title": "IV. BROADBAND ASYMMETRICAL POWER COMBINING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "BROADBAND ASYMMETRICAL POWER COMBINING",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "FIGURE 17."
+        },
+        {
+          "section_title": "BROADBAND ASYMMETRICAL POWER COMBINING",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "The complete schematic is shown in Fig. 17 (a)."
+        },
+        {
+          "section_title": "BROADBAND ASYMMETRICAL POWER COMBINING",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "The input power dividing network needs to ensure broadband input matching while synthesizing the desired driving phases difference across frequency as shown in Fig. 17 (b)."
+        },
+        {
+          "section_title": "BROADBAND ASYMMETRICAL POWER COMBINING",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "The output A-combiner achieves an insertion loss of 0.6-1.1 dB across 60-110 GHz (Fig. 17 (c))."
+        },
+        {
+          "section_title": "BROADBAND ASYMMETRICAL POWER COMBINING",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "MEASUREMENT RESULTS The PA micrograph is shown in Fig.17 (e) which occupies 1.1mm × 1.1mm chip area."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.0,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "references": 2.0
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "",
+        "technology": "HBT, 250nm process",
+        "application_domain": "mmwave, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "PA with an asymmetrical 2port combiner and SCE cells. (a) 2-stage SCE PA cell based asymmetrical power combining PA schematic. (b) Input amplitude ratio and phase difference response versus frequency. (c) Output combiner insertion loss across 60-110 GHz. (d) Inter-stage",
+        "key_specs": [
+          "-1.1 dB",
+          "-110 GHz"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.61,
+      "warnings": [
+        "Recommended figure was classified as 'result_plot', not a schematic; manual confirmation strongly recommended."
+      ]
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 9,
+      "caption": "FIGURE 18. S-parameters performance.",
+      "caption_bbox": [
+        36.2,
+        202.7,
+        165.6,
+        209.7
+      ],
+      "section_title": "IV. BROADBAND ASYMMETRICAL POWER COMBINING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "BROADBAND ASYMMETRICAL POWER COMBINING",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "While there are many possible solutions to the asymmetrical combiner, in this example, we follow the conjugate nature of the combiner as presented in [36], where 01(ω0) = 02∗(ω0) |01(ω0)| = |(1 −01(ω0))/2| (11) 14495 FIGURE 18."
+        },
+        {
+          "section_title": "BROADBAND ASYMMETRICAL POWER COMBINING",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "The simulated S-parameters are shown in Fig. 18, where both input and output matching matching is broadband with reflection coefficient below −10 dB across the 60-110 GHz."
+        },
+        {
+          "section_title": "BROADBAND ASYMMETRICAL POWER COMBINING",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "The measured small signal gain across frequency is plotted in Fig. 18 showing broadband output matching."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "",
+        "technology": "HBT, 250nm process",
+        "application_domain": "mmwave, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "S-parameters performance",
+        "key_specs": [
+          "−10 dB",
+          "-110 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 9,
+      "caption": "FIGURE 19. Setup for the CW large signal measurement (a) Below 70 GHz. (b) Above 70 GHz.",
+      "caption_bbox": [
+        297.1,
+        342.8,
+        479.5,
+        358.2
+      ],
+      "section_title": "IV. BROADBAND ASYMMETRICAL POWER COMBINING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "BROADBAND ASYMMETRICAL POWER COMBINING",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "Liu et al.: Stacked Common-Base vs Common-Emitter mmWave PA Cells FIGURE 19."
+        },
+        {
+          "section_title": "BROADBAND ASYMMETRICAL POWER COMBINING",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "The PA is characterized for large signal measurement across 60–110 GHz using the measurement setup shown in Fig. 19."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "-setup": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "",
+        "technology": "HBT, 250nm process",
+        "application_domain": "mmwave, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Setup for the CW large signal measurement (a) Below 70 GHz. (b) Above 70 GHz",
+        "key_specs": [
+          "110 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 20,
+      "label": "Fig. 20",
+      "page": 10,
+      "caption": "FIGURE 20. CW large-signal measurement across 64-110 GHz.",
+      "caption_bbox": [
+        100.0,
+        260.5,
+        302.7,
+        267.5
+      ],
+      "section_title": "IV. BROADBAND ASYMMETRICAL POWER COMBINING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "BROADBAND ASYMMETRICAL POWER COMBINING",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "Liu et al.: Stacked Common-Base vs Common-Emitter mmWave PA Cells FIGURE 20."
+        },
+        {
+          "section_title": "BROADBAND ASYMMETRICAL POWER COMBINING",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "The measured gain and total collector efficiency (Accounting both PA stage and driver stage) are plotted against output power across 64-110 GHz, as shown in Fig. 20."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "line / output driver",
+        "technology": "HBT, 250nm process",
+        "application_domain": "mmwave, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "CW large-signal measurement across 64-110 GHz",
+        "key_specs": [
+          "-110 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 21,
+      "label": "Fig. 21",
+      "page": 10,
+      "caption": "FIGURE 21. Measurement and simulated large signal performance across frequency. (a) Saturation power. (b) Total collector efficiency and PAE.",
+      "caption_bbox": [
+        36.2,
+        526.0,
+        276.6,
+        541.4
+      ],
+      "section_title": "V. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "BROADBAND ASYMMETRICAL POWER COMBINING",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "FIGURE 21."
+        },
+        {
+          "section_title": "BROADBAND ASYMMETRICAL POWER COMBINING",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "Fig. 21 summarizes the measurement CW performance across frequency, overlap with simulation results."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "",
+        "technology": "HBT, 250nm process",
+        "application_domain": "mmwave, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measurement and simulated large signal performance across frequency. (a) Saturation power. (b) Total collector efficiency and PAE",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 22,
+      "label": "Fig. 22",
+      "page": 10,
+      "caption": "FIGURE 22. Comparison with state of the art broadband mmWave PA in InP.",
+      "caption_bbox": [
+        297.1,
+        489.6,
+        523.9,
+        505.0
+      ],
+      "section_title": "IV. BROADBAND ASYMMETRICAL POWER COMBINING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "BROADBAND ASYMMETRICAL POWER COMBINING",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "Fig. 22 presents the comparison with VOLUME 11, 2023 FIGURE 22."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.4,
+      "relevance_breakdown": {
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "",
+        "technology": "HBT, 250nm process",
+        "application_domain": "mmwave, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Comparison with state of the art broadband mmWave PA in InP",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.03,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 17,
+  "warnings": []
+}

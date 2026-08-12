@@ -1,0 +1,189 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\RNDatasetPapers\\6757376.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output_rerun_128\\6757376",
+  "generated_at": "2026-07-29T22:45:45",
+  "paper_metadata": {
+    "title": "A Full-Duplex Line Driver for Gigabit Ethernet with Rail-to-Rail Class-AB Output Stage in 28nm CMOS Hui Pan, Yuan Yao, Mostafa Hammad, Junhua Tan, Karim Abdelhalim, Evelyn Wang, Rick Hsu, Jenny Yu, Joseph Aziz, Derek Tam, Ichiro Fujimori",
+    "authors": [],
+    "abstract": "",
+    "keywords": [],
+    "doi": "",
+    "venue": "",
+    "year": 2014
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Full-Duplex Line Driver",
+    "technology": "CMOS, 28nm process",
+    "application_domain": "if",
+    "sub_blocks": [
+      "transistor/MOSFET",
+      "current mirror",
+      "transmission line",
+      "output buffer",
+      "bias circuit",
+      "differential pair",
+      "op-amp"
+    ],
+    "design_purpose": "",
+    "function_summary": "Full-Duplex Line Driver",
+    "key_specs": [
+      "28nm",
+      "100Ω",
+      "2V",
+      "2.5V",
+      "24%",
+      "3.3V",
+      "1V",
+      "-1V",
+      "0 w",
+      "100%"
+    ]
+  },
+  "sections": [],
+  "figures": [
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 0,
+      "caption": "Fig. 8.6.1. However, simultaneous maxima do not happen between the line current iline and the line voltage vline. This is generally true for transmission lines that have iline = itx – irx = (vtx – vrx)/Z0 (1) across any intersecting plane and vline = vtx + vrx = (itx + irx)Z0 at the intersecting point, where Z0 is the line characteristic impedance, vtx (itx) and vrx (irx) are the voltages (currents) including reflections propagating from the driver and the remote link partner, respectively, to the intersecting plane. When Z0 = source RS = load RL without line attenuation, vtx and vrx have the same amplitude in fullduplex transmission. According to eq. (1), iline = (vtx – vrx)/RL = 0 at peak vline when vtx = vrx = the peak voltage, which is +1V or -1V for 1000BASE-T. Imagine a driver with output current and voltage equal to iline and vline, respectively: output rail-to-rail operation becomes possible with zero line current sourced at maximum line voltage swing, and self-termination is inherent due to equivalence to drivers with passive source or shunt termination. Generation of iline seems impossible because the irx term in iline = itx – irx is presumably unknown from the remote partner. However, due to finite signal bandwidth (BW), irx can be approximated from the received voltage vrx available from the full-duplex transceiver hybrid: irx ~ vrx/RL. The hybrid extracts vrx from vline with output vh = vrx + vleak, where the hybrid leakage vleak = 0 when vtx is completely rejected. To take advantage of duplex current cancellation between itx and irx, iline is generated as a whole from vrx – vtx using a closed-loop Gm circuit (Fig. 8.6.2). According to eq. (1), Gm = -1/RL with Zo = RL. The Gm input voltage vc = vrx – vtx is synthesized by superposition of vline and (–2vtx). The former is sensed by the 2R (>>RL) feedback resistance; the latter is developed by the current DAC (IDAC) output i'tx (<<itx) flowing through 2R. The resulting driver is full duplex as it extracts vrx at the feedback midpoint (hybrid output) while transmitting vtx. At the midpoint vtx is rejected by resistive interpolation between Gm output vtx and Gm input vtx/A ~ (-vtx). When the transmit voltage gain A is normalized: A ~ GmRL = -1, the hybrid leakage of vtx is nulled: vleak = 0, and the impedances are matched: RS = -1/Gm = RL, all simultaneously. Those inherently merged full-duplex functionalities enable rail-to-rail operation and distinguish this driver from other types [1]. For maximum current efficiency, the Gm circuit does not use the popular differential current-steering topology, which wastes common-mode (CM) current in the same amount as the differential-mode (DM) and usually needs",
+      "caption_bbox": [
+        28.0,
+        333.5,
+        281.8,
+        725.6
+      ],
+      "section_title": "",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "In full-duplex transmissions such as 1000BASE-T Ethernet, the driver output current is (or is1) and voltage vs (or vs1) could peak simultaneously as is shown in Fig. 8.6.1."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "To take advantage of duplex current cancellation between itx and irx, iline is generated as a whole from vrx – vtx using a closed-loop Gm circuit (Fig. 8.6.2)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 8.6.3 shows a conversion to the desired current mode."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "To meet the IEEE 802.3ab 10mV transmit distortion spec, an auxiliary op-amp loop is added to equalize the master-side drain voltage of each current mirror to the slave side as is shown in Figure 8.6.4."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Voltage headroom is not an issue for the master cascodes M'c1–M'c4 with v'c swing attenuated by finite R0 (Figure 8.6.3)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The driver consists of many loops such as the outer Gm loops, the inner vc buffer loops, and the output CM loop formed with gcm in Fig. 8.6.3."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 8.6.5 shows the inner loop CM is compensated with the Miller caps (Ccm) terminated to an output CM node of the 2-stage op-amps."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 8.6.6 shows the transmit pulses pass the template test with <10mV distortion."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 8.6.7 shows a die micrograph of the drivers integrated in a GPHY quad-port AFE that achieves 150m reach over standard CAT-5/5e cables across corners with less than 10.8mA supply current per transmitter (TX)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Stiurca, “A fully differential line driver with on-chip calibrated source termination for gigabit and fast Ethernet in a standard 0.13μm CMOS process,” ISCAS 2005, pp. 2176 – 2179. • 2014 IEEE International Solid-State Circuits Conference 978-1-4799-0920-9/14/$31.00 ©2014 IEEE Figure 8.6.1: Zero line current at maximum line voltage in full-duplex transmission."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 8.6.3: Schematic of the differential class-AB push-pull current-mode driver."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 8.6.5: CM compensation of the pseudo-differential vc buffer."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "ISSCC 2014 / February 11, 2014 / 10:45 AM 8 Figure 8.6.2: Full-duplex line driver with inherent hybrid and self-termination."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 8.6.4: Schematic of the differential rail-to-rail output stage."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 8.6.6: GPHY driver template test and distortion measurement."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "DIGEST OF TECHNICAL PAPERS • ISSCC 2014 PAPER CONTINUATIONS Figure 8.6.7: Die micrograph of the quad-port GPHY analog front-end (AFE). • 2014 IEEE International Solid-State Circuits Conference 978-1-4799-0920-9/14/$31.00 ©2014 IEEE"
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.5,
+      "relevance_breakdown": {
+        "+topology": 2.5,
+        "+circuit": 1.0,
+        "references": 2.0
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS, 28nm process",
+        "application_domain": "if",
+        "sub_blocks": [
+          "current mirror",
+          "transmission line",
+          "output buffer",
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "6.1. However, simultaneous maxima do not happen between the line current iline and the line voltage vline. This is generally true for transmission lines that have iline = itx – irx = (vtx – vrx)/Z0 (1) across any intersecting plane and vline = vtx + vrx = (itx + irx)Z0 at the intersecting point, where Z0 is the line ...",
+        "key_specs": [
+          "10mV",
+          "4 w",
+          "0.13μm"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 1.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 8,
+  "warnings": []
+}

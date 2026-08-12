@@ -1,0 +1,824 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1388625.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1388625",
+  "generated_at": "2026-07-29T21:32:14",
+  "paper_metadata": {
+    "title": "The Impact of Device Type and Sizing on Phase Noise Mechanisms",
+    "authors": [
+      "Albert Jerng",
+      "Charles G. Sodini"
+    ],
+    "abstract": "Phase noise mechanisms in integrated LC voltagecontrolled oscillators (VCOs) using MOS transistors are investiversion of low-frequency bias noise cannot be neglected due to gated. The degradation in phase noise due to low-frequency bias AM-PM conversion through the varactor [5]–[7]. Solutions to noise is shown to be a function of AM-PM conversion in the MOS reduce bias noise have included filtering [4], [5], and removing switching transistors. By exploiting this dependence, bias noise the bias current generator [6]. Filtering requires extra inductors contributions to phase noise are minimized through MOS device and capacitors. Removing the current source is also problemsizing rather than through filtering. NMOS and PMOS VCO designs are compared in terms of thermal noise. Short-channel atic, due to increased sensitivity to power supply noise, and variMOS considerations explain why 0.18m PMOS devices can ation of the bias current over process and temperature. 2 m NMOS devices in the 1 attain better phase noise than 0.18In Section III, we show that bias noise should not be treated as 3 region is primarily dependent region. Phase noise in the 1 a fixed source of phase noise. Its phase noise contribution varies upon the upconversion of flicker noise from the MOS switching as a function of the switching transistor device parameters. We transistors rather than from the bias circuit, and can be improved by decreasing MOS switching device size. Measured results on identify AM-PM conversion in the MOS switching transistors an experimental set of VCOs confirm the dependencies predicted as a fundamental mechanism for the upconversion of low-freby analysis. A 5.3-GHz all-PMOS VCO topology demonstrates quency bias noise into phase noise and discuss how to minimize measured phase noise of 124 dBc/Hz at 1-MHz offset and the upconversion factor without the use of filtering. 100 dBc/Hz at 100-kHz offset while dissipating 13.5 mW from a It has been shown that thermal noise due to the switching tran1.8-V supply using a 0.18m SiGe BiCMOS process. sistors in CMOS implementations is independent of MOS de-",
+    "keywords": [
+      "Flicker noise",
+      "phase noise",
+      "voltage-controlled os-"
+    ],
+    "doi": "10.1109/JSSC.2004.841035",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2005
+  },
+  "paper_circuit_context": {
+    "circuit_type": "voltage-controlled oscillator (VCO)",
+    "technology": "CMOS, BICMOS, SIGE",
+    "application_domain": "wireless, if",
+    "sub_blocks": [
+      "varactor",
+      "transistor/MOSFET",
+      "cross-coupled pair",
+      "current source",
+      "LC tank / resonator",
+      "bias circuit",
+      "inductor",
+      "capacitor",
+      "resistor",
+      "current mirror",
+      "mixer",
+      "switch",
+      "differential pair"
+    ],
+    "design_purpose": "A 5.3-GHz all-PMOS VCO topology demonstrates quency bias noise into phase noise and discuss how to minimize measured phase noise of 124 dBc/Hz at 1-MHz offset and the upconversion factor without the use of filtering. 100 dBc/Hz at 100-kHz offset while dissipating 13.5 mW from a It has been shown that thermal noise due ...",
+    "function_summary": "voltage-controlled oscillator (VCO): A 5.3-GHz all-PMOS VCO topology demonstrates quency bias noise into phase noise and discuss how to minimize measured phase noise of 124 dBc/Hz at 1-MHz offset and the upconversion factor without the use of filtering. 100 dBc/Hz at 100-kHz offset while dissipating 13.5 mW from a It has been shown that thermal noise due ...",
+    "key_specs": [
+      "124 dBc/Hz",
+      "100 dBc/Hz",
+      "13.5 mW",
+      "150 MHz",
+      "5 GHz",
+      "10 GHz",
+      "400 MHz",
+      "200 MHz",
+      "5690 MHz",
+      "20 dB"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "H IGH data-rate wireless LAN applications are driving the continued development of highly integrated system-onchip (SOC) solutions. Integrated voltage-controlled oscillators (VCOs) are essential components of such wireless systems. In this work, the VCOs are designed in the context of the MIT Wireless Gigabit Local Area Network (WiGLAN) project. The aim of the WiGLAN is to achieve a maximum 1-Gb/s ..."
+    },
+    {
+      "number": "II",
+      "title": "VCO EXPERIMENT",
+      "kind": "results",
+      "page": 1,
+      "text_preview": "The VCO topology used in the experiment, shown in Fig. 1, consists of a cross-coupled pair of NMOS or PMOS devices, a tail current source with associated current mirror circuitry, and junction diodes a differential LC tank that uses standard as varactors. This topology allows low-voltage operation and provides a convenient reference for the varactor to either power or ground, maximizing the voltag ..."
+    },
+    {
+      "number": "III",
+      "title": "BIAS NOISE",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "A general model shown in Fig. 2 illustrates the conversion of bias noise into phase noise as a two-step process. First, bias curat frequencies are translated in frequency by rent noise the switching action of the MOS cross-coupled pair. Low-fremixes up to create two correquency bias noise and , resulting in only lated sidebands at amplitude modulation (AM) noise. High-frequency bias noise downconv ..."
+    },
+    {
+      "number": "IV",
+      "title": "MOS CHANNEL THERMAL NOISE",
+      "kind": "other",
+      "page": 4,
+      "text_preview": "After reducing bias noise contributions, MOS channel thermal noise in the NMOS or PMOS switching transistors region. An is the main source of phase noise in the expression for the MOS drain current noise spectral density, containing both thermal and ﬂicker noise components, is (6) , the effective mobility where the net inversion layer charge , and the channel length , are calculated to include sho ..."
+    },
+    {
+      "number": "V",
+      "title": "MOS FLICKER NOISE",
+      "kind": "other",
+      "page": 5,
+      "text_preview": "region phase noise is caused by the upconversion of ﬂicker noise from both the bias circuit and from the switching transistors. Applying the analysis from Section III, we can noise by increasing reduce upconversion of bias circuit and gate overdrive voltage of the switching transistors. the noise can be modeled with an equivSwitching transistor alent noise current source with noise spectral densit ..."
+    },
+    {
+      "number": "VI",
+      "title": "OPTIMIZED ALL-PMOS VCO TOPOLOGY",
+      "kind": "proposed",
+      "page": 6,
+      "text_preview": "Analysis of phase noise mechanisms has shown why PMOS switching devices provides better phase noise performance than and regions in a 0.18m NMOS devices in both the technology. Fig. 11 shows the measured phase noise for m m PMOS design. Phase noise the optimally sized 124 dBc/Hz is achieved at a 1-MHz offset and a center freof quency of 5.32 GHz. The design operates from a 1.8-V supply and consume ..."
+    },
+    {
+      "number": "VII",
+      "title": "COMPARISON OF RESULTS",
+      "kind": "results",
+      "page": 7,
+      "text_preview": "In comparing our phase noise results to other published results, we normalize all phase noise data to a center frequency of 5.4 GHz and a frequency offset of 1 MHz. Fig. 14 graphs the normalized phase noise ﬁgure of merit (FOM) of this work [3]–[6], and other published data against center frequency [8]–[11], [17]–[27]. The graph shows a general upward trend, with the normalized FOM degrading as th ..."
+    },
+    {
+      "number": "VIII",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 8,
+      "text_preview": "Several new concepts are proposed for the optimization of phase noise. Switching transistor device width should be minimized to lower the upconversion factor for low frequency bias noise and switching transistor ﬂicker noise. An important beneﬁt of this is that bias noise contributions to phase noise are minimized without needing to add ﬁlters or remove the current phase noise is improved through  ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. NMOS and PMOS VCO topologies.",
+      "caption_bbox": [
+        38.1,
+        255.6,
+        184.7,
+        263.6
+      ],
+      "section_title": "II. VCO EXPERIMENT",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "JERNG AND SODINI: THE IMPACT OF DEVICE TYPE AND SIZING ON PHASE NOISE MECHANISMS Fig. 1."
+        },
+        {
+          "section_title": "VCO EXPERIMENT",
+          "section_kind": "results",
+          "page": 1,
+          "sentence": "The VCO topology used in the experiment, shown in Fig. 1, consists of a cross-coupled pair of NMOS or PMOS devices, a tail current source with associated current mirror circuitry, and junction diodes a differential LC tank that uses standard as varactors."
+        },
+        {
+          "section_title": "MOS CHANNEL THERMAL NOISE",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "As shown in Fig. 1, the parasitic diode on the varactor cathode directly loads the NMOS tank."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "type_match:vco": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "varactor",
+          "transistor/MOSFET",
+          "cross-coupled pair",
+          "current source",
+          "current mirror",
+          "LC tank / resonator"
+        ],
+        "design_purpose": "",
+        "function_summary": "NMOS and PMOS VCO topologies",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 2,
+      "caption": "Fig. 2. Bias noise conversion into phase noise.",
+      "caption_bbox": [
+        39.6,
+        270.3,
+        195.1,
+        278.3
+      ],
+      "section_title": "III. BIAS NOISE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "BIAS NOISE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "A general model shown in Fig. 2 illustrates the conversion of bias noise into phase noise as a two-step process."
+        },
+        {
+          "section_title": "BIAS NOISE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "By adding in parallel to the varactor a bank of digitally switchable capacitors, overall tuning range can be regained without any increase in varactor Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.7,
+      "relevance_breakdown": {
+        "-phase noise": -2.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "varactor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Bias noise conversion into phase noise",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 3,
+      "caption": "Fig. 3. NMOS VCO phase noise components versus V : Vary W .",
+      "caption_bbox": [
+        38.1,
+        272.4,
+        276.1,
+        280.5
+      ],
+      "section_title": "III. BIAS NOISE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "BIAS NOISE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "These quantities of the switching transistors are can simultaneously be increased by decreasing the device width of the switching devices since, for a ﬁxed bias current, (4) and (5) JERNG AND SODINI: THE IMPACT OF DEVICE TYPE AND SIZING ON PHASE NOISE MECHANISMS \u0000 V Fig. 3."
+        },
+        {
+          "section_title": "BIAS NOISE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Figs. 3 and 4 plot simulated NMOS VCO phase noise contributions from bias thermal noise and switching transistor thermal noise at a 1-MHz offset, as well as the total phase noise, as a function ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "-phase noise": -2.5,
+        "type_match:vco": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "NMOS VCO phase noise components versus V : Vary W",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 3,
+      "caption": "Fig. 4. NMOS VCO phase noise components versus V : Vary L.",
+      "caption_bbox": [
+        38.1,
+        508.4,
+        272.9,
+        516.5
+      ],
+      "section_title": "III. BIAS NOISE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "BIAS NOISE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "NMOS VCO phase noise components versus V : Vary W . \u0000 V Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.1,
+      "relevance_breakdown": {
+        "-phase noise": -2.5,
+        "type_match:vco": 2.0,
+        "references": 0.4
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "NMOS VCO phase noise components versus V : Vary L",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. NMOS VCO phase noise versus V .",
+      "caption_bbox": [
+        301.1,
+        393.1,
+        456.6,
+        401.2
+      ],
+      "section_title": "III. BIAS NOISE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "BIAS NOISE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The results indicate that both the gate overdrive of the differential pair are important for linearity. and the TABLE II EXPERIMENTAL RESULTS: MEASURED PHASE NOISE IN 1=f REGION Fig. 5."
+        },
+        {
+          "section_title": "BIAS NOISE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Finally, Fig. 5 plots measured m-width NMOS VCO at varactor phase noise for the 20tuning voltages ranging from 0 to 1.4 V."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "-phase noise": -2.5,
+        "type_match:vco": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "varactor",
+          "transistor/MOSFET",
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "NMOS VCO phase noise versus V",
+        "key_specs": [
+          "1.4 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "Fig. 6. Phase noise:NMOS(20\u0016m=0:18\u0016m) versusPMOS(60\u0016m=0:18\u0016m).",
+      "caption_bbox": [
+        302.6,
+        273.1,
+        554.3,
+        281.3
+      ],
+      "section_title": "IV. MOS CHANNEL THERMAL NOISE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MOS CHANNEL THERMAL NOISE",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Using ﬁrst-order long-channel MOS theory, we can express the drain current thermal noise as (7) According to (7), the NMOS and PMOS VCOs should exhibit region. the same phase noise performance in the Fig. 6 plots measured phase noise for NMOS and PMOS m m and VCOs with device dimensions of m m, respectively."
+        },
+        {
+          "section_title": "MOS CHANNEL THERMAL NOISE",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "When approaches the product , the equations for drain current and transconductance based on IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 2, FEBRUARY 2005 Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.7,
+      "relevance_breakdown": {
+        "-phase noise": -2.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Phase noise:NMOS(20\u0016m=0:18\u0016m) versusPMOS(60\u0016m=0:18\u0016m)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 5,
+      "caption": "Fig. 7.",
+      "caption_bbox": [
+        38.1,
+        281.9,
+        58.7,
+        289.9
+      ],
+      "section_title": "V. MOS FLICKER NOISE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MOS CHANNEL THERMAL NOISE",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 7 plots measured and curves for the NMOS and PMOS device sizes used in the versus / ratio is clearly greater in the NMOS detest VCOs."
+        },
+        {
+          "section_title": "MOS CHANNEL THERMAL NOISE",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 5,
+      "caption": "Fig. 8.",
+      "caption_bbox": [
+        38.1,
+        523.4,
+        58.8,
+        531.3
+      ],
+      "section_title": "V. MOS FLICKER NOISE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MOS CHANNEL THERMAL NOISE",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 8 plots of 0.18m for a ﬁxed bias curNMOS and PMOS transistors versus is varied by changing the device width."
+        },
+        {
+          "section_title": "MOS CHANNEL THERMAL NOISE",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 6,
+      "caption": "Fig. 9.",
+      "caption_bbox": [
+        39.6,
+        233.4,
+        60.5,
+        241.4
+      ],
+      "section_title": "V. MOS FLICKER NOISE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MOS FLICKER NOISE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Referring to Fig. 9, we note that at low frequencies, switch ﬂicker noise sees a low impedance at its drain terminal."
+        },
+        {
+          "section_title": "MOS FLICKER NOISE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 9. \u0000 V Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 6,
+      "caption": "Fig. 10. PMOS VCO phase noise components versus (V ): Vary W.",
+      "caption_bbox": [
+        39.6,
+        462.5,
+        284.3,
+        470.7
+      ],
+      "section_title": "V. MOS FLICKER NOISE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MOS FLICKER NOISE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 10 plots simulated phase noise contributions at a 10-kHz while varying the device width offset as a function of bias noise contribution drops of a PMOS VCO."
+        },
+        {
+          "section_title": "MOS FLICKER NOISE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 9. \u0000 V Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "-phase noise": -2.5,
+        "type_match:vco": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "PMOS VCO phase noise components versus (V ): Vary W",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 6,
+      "caption": "Fig. 11.",
+      "caption_bbox": [
+        302.6,
+        470.4,
+        327.3,
+        478.3
+      ],
+      "section_title": "V. MOS FLICKER NOISE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MOS FLICKER NOISE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 11. indicate that the PMOS devices have less ﬂicker noise than m m PMOS and the NMOS devices."
+        },
+        {
+          "section_title": "OPTIMIZED ALL-PMOS VCO TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 6,
+          "sentence": "Fig. 11 shows the measured phase noise for m m PMOS design."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 7,
+      "caption": "Fig. 12. Effect of VDD noise on VCO topologies.",
+      "caption_bbox": [
+        38.1,
+        214.5,
+        205.0,
+        222.4
+      ],
+      "section_title": "VI. OPTIMIZED ALL-PMOS VCO TOPOLOGY",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "OPTIMIZED ALL-PMOS VCO TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 6,
+          "sentence": "Fig. 12 illustrates the effect of power supply noise on the all-PMOS topology in contrast JERNG AND SODINI: THE IMPACT OF DEVICE TYPE AND SIZING ON PHASE NOISE MECHANISMS Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.4,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "type_match:vco": 2.0,
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Effect of VDD noise on VCO topologies",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.64,
+      "warnings": [
+        "Recommended figure caption does not explicitly mention a schematic/topology/circuit; please confirm manually.",
+        "Recommended figure was classified as 'other', not a schematic; manual confirmation strongly recommended."
+      ]
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 7,
+      "caption": "Fig. 13. noise on varactor dc bias.",
+      "caption_bbox": [
+        38.1,
+        393.8,
+        201.8,
+        401.8
+      ],
+      "section_title": "VI. OPTIMIZED ALL-PMOS VCO TOPOLOGY",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "OPTIMIZED ALL-PMOS VCO TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 6,
+          "sentence": "Effect of I Fig. 13. noise on varactor dc bias. to an NMOS topology."
+        },
+        {
+          "section_title": "OPTIMIZED ALL-PMOS VCO TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 6,
+          "sentence": "Fig. 13 compares the effect of bias current noise on the dc level of the varactors in the two topologies."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "varactor",
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "noise on varactor dc bias",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 7,
+      "caption": "Fig. 14. .",
+      "caption_bbox": [
+        301.1,
+        630.2,
+        502.3,
+        638.1
+      ],
+      "section_title": "VII. COMPARISON OF RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "OPTIMIZED ALL-PMOS VCO TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 6,
+          "sentence": "Comparison of normalized ﬁgure of merit versus f Fig. 14. ."
+        },
+        {
+          "section_title": "COMPARISON OF RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 14 graphs the normalized phase noise ﬁgure of merit (FOM) of this work [3]–[6], and other published data against center frequency [8]–[11], [17]–[27]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 12,
+  "warnings": []
+}

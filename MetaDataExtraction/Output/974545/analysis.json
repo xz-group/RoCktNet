@@ -1,0 +1,728 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\974545.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\974545",
+  "generated_at": "2026-07-29T22:03:41",
+  "paper_metadata": {
+    "title": "A Power-Efficient Wide-Range Phase-Locked Loop",
+    "authors": [
+      "Oscal T.-C. Chen",
+      "Robin Ruey-Bin Sheen"
+    ],
+    "abstract": "This work presents a phase-locked loop for clock generation that consists of a phase/frequency detector, charge [3]. The modified phase detector and charge pump have been expump, loop filter, range-programmable voltage-controlled ring ostensively used to enhance the performance of the PLL [4]–[7]. cillator, and programmable divider. The phase/frequency detector To reduce phase noises, Young proposed a tri-state phase/freand charge pump are designed to reduce the dead zone and charge quency detector that can detect lead or lag of the phases and sharing for enhancing the locking performance, respectively. frequencies of two signals, thus lessening the locking time [4]. In the design of the range-programmable voltage-controlled oscillator, the original inverter ring of a delay line is divided into Kaenel et al. developed a circuit to reduce the dead zone of a several smaller ones, and then they are recombined in parallel phase/frequency detector [5]. The charge sharing during transisto each other. Programming the number of paralleled inverter tors’ switching of the charge pump can lead to a large jitter of rings allows us to generate the wide-range clock frequencies. This the PLL. Some studies have modified the charge-pump circuits design shuts off some inverters that are not in use to reduce power to minimize the jitter [6], [7]. The voltage-controlled oscillator consumption. To allow the phase-locked loop to shut off inverters, the feasibility of using controllable inverters by the output-switch (VCO) is an integral part of the PLL for producing clock signals. and power-switch schemes is explored. Theoretical analyses indiIn the on-chip PLL design, the inverter ring with a controllable cate that power consumption of the voltage-controlled oscillator delay is popularly used [8]–[10]. Due to a low supply voltage, depends on transistors’ sizes rather than operating frequencies. the frequency range controlled by the output from the loop filter By applying the TSMC 0.35m CMOS technology, the proposed is also decreased, thereby limiting the output range of the VCO. phase-locked loop that uses the power-switch scheme can yield clock signals ranging from 103 MHz to 1.02 GHz at a supply Hence, some researchers enlarged or programmed the driving voltage of 1.8 V. Moreover, power dissipation that is proportional capabilities, loading capacitors, or number of inverter stages for to the number of paralleled inverter rings is measured with 1.32 to changing the delays to generate output signals of the VCO with 4.59 mW. The phase-locked loop proposed herein can be used in wide-range frequencies [11]–[14]. various digital systems, providing power-efficient and wide-range An efficient design in the generation and synthesis of clock clock signals for task-oriented computations. signals is essential to generate different clock frequencies. The",
+    "keywords": [
+      "Clock generator",
+      "low power",
+      "phase-locked loop"
+    ],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2002
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Power-Efficient Wide-Range Phase-Locked Loop",
+    "technology": "CMOS",
+    "application_domain": "microwave, rf, if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "current source",
+      "current mirror",
+      "switch",
+      "clock / timing",
+      "inductor"
+    ],
+    "design_purpose": "The phase/frequency detector To reduce phase noises, Young proposed a tri-state phase/freand charge pump are designed to reduce the dead zone and charge quency detector that can detect lead or lag of the phases and sharing for enhancing the locking performance, respectively. frequencies of two signals, thus lessening ...",
+    "function_summary": "Power-Efficient Wide-Range Phase-Locked Loop: The phase/frequency detector To reduce phase noises, Young proposed a tri-state phase/freand charge pump are designed to reduce the dead zone and charge quency detector that can detect lead or lag of the phases and sharing for enhancing the locking performance, respectively. frequencies of two signals, thus ...",
+    "key_specs": [
+      "103 MHz",
+      "1.02 GHz",
+      "1.8 V",
+      "4.59 mW",
+      "0.066 V",
+      "0.62 V",
+      "10 w",
+      "816 MHz",
+      "1.07 GHz",
+      "3.92 mW"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "A DVANCES in microelectronic technologies have led to the integration of millions or billions of transistors in a single chip capable of operating at a high clock frequency to provide large computation capabilities [1]. When utilized to enhance multimedia computing and communications, this microelectronic chip or processor must manipulate various media such as image, video, speech, audio, graphics ..."
+    },
+    {
+      "number": "II",
+      "title": "ANALYSES OF POWER CONSUMPTION AND FREQUENCY",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "RANGES OF VCOS In the CMOS technology, a ring oscillator structure is frequently used as the basis for the VCO design because it does not IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 1, JANUARY 2002 Fig. 2. Proposed wide-range clock generator. require any inductor. This ring oscillator can be implemented by an odd number of inverters with voltage-controlled delay elements each of which inclu ..."
+    },
+    {
+      "number": "III",
+      "title": "PROPOSED PHASE-LOCKED LOOP",
+      "kind": "proposed",
+      "page": 5,
+      "text_preview": "The proposed phase-locked loop consists of a phase/frequency detector, charge pump, second-order passive loop filter, range-programmable voltage-controlled oscillator, and programmable divider, as shown in Fig. 2. The phase/frequency detector identifies the phase and frequency differences between the external reference signal and the internal signal from the programmable divider. When the charge p ..."
+    },
+    {
+      "number": "IV",
+      "title": "MEASUREMENT RESULTS",
+      "kind": "results",
+      "page": 7,
+      "text_preview": "The characteristics of the VCO are analyzed herein by designing a conventional VCO and two proposed VCOs using four output-switch and power-switch inverter rings, individand , the total ually. Excluding control transistors of active transistors’ sizes of four output-switch or power-switch inverters are the same as that of each inverter used in the conventional VCO. In addition, the proposed and co ..."
+    },
+    {
+      "number": "V",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 9,
+      "text_preview": "This work has developed a wide-range phase-locked loop using the range-programmable voltage-controlled oscillator. The modified phase/frequency detector and charge pump are designed to minimize the dead zone and charging sharing, respectively. The controllable inverter rings of the range-programmable VCO using the output-switch and power-switch schemes are also explored. Experimental results indic ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Conventional clock generators. (a) PLL with programmable divider. (b) PLL with frequency synthesizer.",
+      "caption_bbox": [
+        39.6,
+        434.7,
+        290.7,
+        454.3
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The PLL with a programmable divider, shown in Fig. 1(a), is most widely adopted to generate clock signals [2], [5]."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Another approach uses a phase-locked loop and a frequency-synthesizing unit, as shown in Fig. 1(b) [15]."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The output frequency range is deter52 Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.3,
+      "relevance_breakdown": {
+        "-conventional": -3.0,
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "microwave, rf, if",
+        "sub_blocks": [
+          "clock / timing"
+        ],
+        "design_purpose": "",
+        "function_summary": "Conventional clock generators. (a) PLL with programmable divider. (b) PLL with frequency synthesizer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Proposed wide-range clock generator.",
+      "caption_bbox": [
+        302.6,
+        216.5,
+        452.4,
+        227.1
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "This work develops an approach that incorporates the range-programmable voltage-controlled oscillator in a phase-locked loop to generate wide-range clock frequencies in a low-power dissipation manner, as shown in Fig. 2."
+        },
+        {
+          "section_title": "ANALYSES OF POWER CONSUMPTION AND FREQUENCY",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "RANGES OF VCOS In the CMOS technology, a ring oscillator structure is frequently used as the basis for the VCO design because it does not IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 1, JANUARY 2002 Fig. 2."
+        },
+        {
+          "section_title": "PROPOSED PHASE-LOCKED LOOP",
+          "section_kind": "proposed",
+          "page": 5,
+          "sentence": "The proposed phase-locked loop consists of a phase/frequency detector, charge pump, second-order passive loop filter, range-programmable voltage-controlled oscillator, and programmable divider, as shown in Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.7,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "microwave, rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Proposed wide-range clock generator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.43,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Voltage-controlled oscillator.",
+      "caption_bbox": [
+        38.1,
+        246.1,
+        159.6,
+        256.7
+      ],
+      "section_title": "II. ANALYSES OF POWER CONSUMPTION AND FREQUENCY",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ANALYSES OF POWER CONSUMPTION AND FREQUENCY",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "This ring oscillator can be implemented by an odd number of inverters with voltage-controlled delay elements each of which includes a voltage-controlled nMOS transistor and a capacitor as shown in Fig. 3."
+        },
+        {
+          "section_title": "ANALYSES OF POWER CONSUMPTION AND FREQUENCY",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The relationship between the output voltage and time can be illustrated as (3) CHEN AND SHEEN: POWER-EFFICIENT WIDE-RANGE PHASE-LOCKED LOOP Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "microwave, rf, if",
+        "sub_blocks": [
+          "capacitor",
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Voltage-controlled oscillator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Three inverters in a ring structure and their operations. (a) Three-inverter ring. (b) Simulated operations.",
+      "caption_bbox": [
+        301.1,
+        338.6,
+        552.2,
+        358.3
+      ],
+      "section_title": "II. ANALYSES OF POWER CONSUMPTION AND FREQUENCY",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ANALYSES OF POWER CONSUMPTION AND FREQUENCY",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "If the period of signals is power consumption of an inverter can be represented by (7) 53 Fig. 4."
+        },
+        {
+          "section_title": "ANALYSES OF POWER CONSUMPTION AND FREQUENCY",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "It can be interpreted by [16] (9) Fig. 4 shows three inverters in a ring structure and their simulated operations."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Power-Efficient Wide-Range Phase-Locked Loop",
+        "technology": "CMOS",
+        "application_domain": "microwave, rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Three inverters in a ring structure and their operations. (a) Three-inverter ring. (b) Simulated operations",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Relationship between N and K.",
+      "caption_bbox": [
+        39.6,
+        204.1,
+        173.1,
+        214.7
+      ],
+      "section_title": "II. ANALYSES OF POWER CONSUMPTION AND FREQUENCY",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ANALYSES OF POWER CONSUMPTION AND FREQUENCY",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "In the same manner, the output of such that , and the first the third inverter becomes smaller than 0.5 54 Fig. 5."
+        },
+        {
+          "section_title": "ANALYSES OF POWER CONSUMPTION AND FREQUENCY",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 5 shows the relationship bewhere and ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Power-Efficient Wide-Range Phase-Locked Loop",
+        "technology": "CMOS",
+        "application_domain": "microwave, rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Relationship between N and K",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 5,
+      "caption": "Fig. 6. Proposed phase/frequency detector.",
+      "caption_bbox": [
+        39.6,
+        205.0,
+        181.8,
+        215.6
+      ],
+      "section_title": "III. PROPOSED PHASE-LOCKED LOOP",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ANALYSES OF POWER CONSUMPTION AND FREQUENCY",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Therefore, the proposed range-programmable VCO can be applied in a low supply voltage with a power-efficient operation. 56 Fig. 6."
+        },
+        {
+          "section_title": "PROPOSED PHASE-LOCKED LOOP",
+          "section_kind": "proposed",
+          "page": 5,
+          "sentence": "Owing to the size of the dead zone determining the phase noise of the PLL, this study also proposes a modified tri-state phase/frequency detector with the asynchronous race-free characteristic as shown in Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.8,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "microwave, rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Proposed phase/frequency detector",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.45,
+      "warnings": [
+        "Recommended figure caption does not explicitly mention a schematic/topology/circuit; please confirm manually.",
+        "Recommended figure was classified as 'other', not a schematic; manual confirmation strongly recommended."
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 5,
+      "caption": "Fig. 7. Operations of the proposed and conventional phase/frequency detector. (a) Two input signals. (b) Simulated output signals of conventional phase/frequency detector. (c) Simulated output signals of the proposed phase/frequency detector. (d) Simulated output voltages of the charge pump using the proposal and conventional phase/frequency detector.",
+      "caption_bbox": [
+        302.6,
+        622.9,
+        553.7,
+        669.4
+      ],
+      "section_title": "III. PROPOSED PHASE-LOCKED LOOP",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "PROPOSED PHASE-LOCKED LOOP",
+          "section_kind": "proposed",
+          "page": 5,
+          "sentence": "Fig. 7 shows the operations of the proposed and conventional phase/frequency detectors [5]."
+        },
+        {
+          "section_title": "PROPOSED PHASE-LOCKED LOOP",
+          "section_kind": "proposed",
+          "page": 5,
+          "sentence": "Two and are shown in Fig. 7(a) input signals of is leading ."
+        },
+        {
+          "section_title": "PROPOSED PHASE-LOCKED LOOP",
+          "section_kind": "proposed",
+          "page": 5,
+          "sentence": "In the operations of the where conventional phase/frequency detector as shown in Fig. 7(b), and may yield the periodical step and pulse the signals of functions, respectively."
+        },
+        {
+          "section_title": "PROPOSED PHASE-LOCKED LOOP",
+          "section_kind": "proposed",
+          "page": 5,
+          "sentence": "In the operations of the proposed phase/frequency detector as shown in Fig. 7(c), there , thus preventing a short circuit is no the pulse in the signal IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 1, JANUARY 2002 Fig. 7."
+        },
+        {
+          "section_title": "PROPOSED PHASE-LOCKED LOOP",
+          "section_kind": "proposed",
+          "page": 5,
+          "sentence": "Fig. 7(d) shows the simulated output voltages of the charge pump using the proposed and conventional phase/frequency detectors."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.0,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "-conventional": -3.0,
+        "-simulated": -3.0,
+        "section:proposed": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "charge pump",
+        "technology": "CMOS",
+        "application_domain": "microwave, rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Operations of the proposed and conventional phase/frequency detector. (a) Two input signals. (b) Simulated output signals of conventional phase/frequency detector. (c) Simulated output signals of the proposed phase/frequency detector. (d) Simulated output voltages of the charge pump using the proposal and conventional ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.05,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 6,
+      "caption": "Fig. 8. Proposed charge pump.",
+      "caption_bbox": [
+        38.1,
+        246.8,
+        142.4,
+        257.4
+      ],
+      "section_title": "III. PROPOSED PHASE-LOCKED LOOP",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "PROPOSED PHASE-LOCKED LOOP",
+          "section_kind": "proposed",
+          "page": 5,
+          "sentence": "By using the proposed phase/frequency detector to eliminate the short-circuit effect, CHEN AND SHEEN: POWER-EFFICIENT WIDE-RANGE PHASE-LOCKED LOOP Fig. 8."
+        },
+        {
+          "section_title": "PROPOSED PHASE-LOCKED LOOP",
+          "section_kind": "proposed",
+          "page": 5,
+          "sentence": "Charge Pump In the proposed charge pump shown in Fig. 8, the transistors of M1 and M2 are used to discharge and charge the nodes of and when transistors M3 and M4 are inactive, respectively."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.8,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "charge pump",
+        "technology": "CMOS",
+        "application_domain": "microwave, rf, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Proposed charge pump",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.86,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 6,
+      "caption": "Fig. 9. Proposed VCO using paralleled inverter rings.",
+      "caption_bbox": [
+        301.1,
+        323.7,
+        478.0,
+        334.3
+      ],
+      "section_title": "III. PROPOSED PHASE-LOCKED LOOP",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "PROPOSED PHASE-LOCKED LOOP",
+          "section_kind": "proposed",
+          "page": 5,
+          "sentence": "Obviously, this unit is of 57 Fig. 9."
+        },
+        {
+          "section_title": "PROPOSED PHASE-LOCKED LOOP",
+          "section_kind": "proposed",
+          "page": 5,
+          "sentence": "From Fig. 9, this framework breaks down the original inverter that can yield the highest oscillation frequency into several smaller ones and recombines them in parallel to each other."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.8,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "microwave, rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Proposed VCO using paralleled inverter rings",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.86,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 8,
+      "caption": "Fig. 11.",
+      "caption_bbox": [
+        38.1,
+        565.0,
+        62.5,
+        575.6
+      ],
+      "section_title": "IV. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 11."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 11 shows the output frequencies and power dissipation of three VCOs under different control voltages, or number of paralleled inverter rings."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 11 reveals that the VCO, under different numbers of paralleled inverter rings, can have overlapping output frequency ranges."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "microwave, rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "voltage-controlled oscillator (VCO)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 9,
+      "caption": "Fig. 12. Die photo of the proposed PLL using the power-switch scheme.",
+      "caption_bbox": [
+        39.6,
+        249.7,
+        275.9,
+        260.3
+      ],
+      "section_title": "IV. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Hence, the maximum frequency of the VCO using the 60 Fig. 12."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The die photo 0.4 mm is shown of the proposed PLL with a size of 0.4 mm in Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "-die photo": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "microwave, rf, if",
+        "sub_blocks": [
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Die photo of the proposed PLL using the power-switch scheme",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 9,
+      "caption": "Fig. 13. Jitter performance at an input reference frequency of 33 MHz.",
+      "caption_bbox": [
+        39.6,
+        450.4,
+        270.7,
+        461.0
+      ],
+      "section_title": "IV. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 13."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 13 shows a jitter performance at an input reference frequency of 33 MHz."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-reference": -1.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Power-Efficient Wide-Range Phase-Locked Loop",
+        "technology": "CMOS",
+        "application_domain": "microwave, rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Jitter performance at an input reference frequency of 33 MHz",
+        "key_specs": [
+          "33 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 6,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

@@ -1,0 +1,904 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1425724.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1425724",
+  "generated_at": "2026-07-29T22:02:40",
+  "paper_metadata": {
+    "title": "Design Analysis and Circuit Enhancements for High-Speed Bipolar Flip-Flops",
+    "authors": [
+      "Thomas E. Collins",
+      "Vikas Manan",
+      "Stephen I. Long"
+    ],
+    "abstract": "The design of high-speed current mode logic latches is discussed, using analytical expressions for delay. An open circuit time constant method is utilized throughout this paper, though similar results were obtained from a charge control analysis. Emphasis is placed on the variables that are under the control of the circuit designer, as opposed to the device designer. Circuit delay is calculated with respect to device area, current density, amplitude, and a keep-alive current. In particular, the keep-alive current gives the circuit designer control over the average transconductance of Fig. 1. Master–slave flip-flop configured as a static frequency divider. switching transistors, independent of their bias currents. The cost of the keep-alive current is the loss of output amplitude. The effects of transmission lines and peaking inductors are discussed in a qualpaper is not limited by technology or a particular process. To itative manner. Latch designs were tested with static divide-by-two include interconnections from the layout in an analysis, see [6]. frequency dividers. Results of several dividers (both SiGe and InP) are shown and compared with the theory. A. Open Circuit Time Constants",
+    "keywords": [
+      "Current mode logic",
+      "high-speed",
+      "keep-alive",
+      "open circuit time constant (OCTC)",
+      "static frequency divider"
+    ],
+    "doi": "10.1109/JSSC.2005.845973",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2005
+  },
+  "paper_circuit_context": {
+    "circuit_type": "frequency divider",
+    "technology": "SIGE, HBT",
+    "application_domain": "if",
+    "sub_blocks": [
+      "inductor",
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "transmission line",
+      "switch",
+      "differential pair",
+      "latch",
+      "clock / timing"
+    ],
+    "design_purpose": "",
+    "function_summary": "frequency divider: The design of high-speed current mode logic latches is discussed, using analytical expressions for delay.",
+    "key_specs": [
+      "50%",
+      "26 mV",
+      "96 GHz",
+      "87 GHz",
+      "75 GHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "F LIP-FLOPS form an integral part of all digital circuits. For any synchronous digital circuit, the retiming ﬂip-ﬂop is a key building block, and, in many cases, limits the speed of the circuit. Faster ﬂip-ﬂops are being designed every day [1]–[3] in order to fabricate faster digital circuits. This paper discusses ﬂip-ﬂop circuit design with the aim of minimizing the gate delay and maximizing the  ..."
+    },
+    {
+      "number": "II",
+      "title": "OCTC APPLICATION TO THE DIVIDER CIRCUIT",
+      "kind": "design",
+      "page": 1,
+      "text_preview": "In order to apply the method of OCTC to a circuit like the divider, which employs both positive and negative feedback, we must ﬁrst go through the operation of the circuit step-by-step and identify the critical transitions and their associated capacitors. A. Circuit Transitions Resulting in Delay The divider is composed of two identical latches conﬁgured , inas a master–slave ﬂip-ﬂop (MSFF), with  ..."
+    },
+    {
+      "number": "III",
+      "title": "DESIGNING THE CIRCUIT",
+      "kind": "design",
+      "page": 3,
+      "text_preview": "The delay is an expression of many variables, and the global minimum (within the limits imposed by the process) is desired. The following parameters are available to the circuit designer for optimizing the performance of the static frequency di- ; device area of transistors vider: single-ended logic swing, – ), both – and ; and ( – and . The current densities, current is determined by the area and ..."
+    },
+    {
+      "number": "IV",
+      "title": "CIRCUIT ENHANCEMENTS TO IMPROVE SPEED",
+      "kind": "design",
+      "page": 5,
+      "text_preview": "Two circuit enhancements were used in the designs, shunt peaking inductors and a keep-alive current. Shunt peaking has been discussed exhaustively in the literature [12], [13]. The second technique, keep-alive current, also improves delay, is and is analyzed in this section. The keep-alive current, , differential pair shown connected to the emitters of the in Fig. 2 [5]. Recall from Section II-A t ..."
+    },
+    {
+      "number": "V",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 7,
+      "text_preview": "The ﬂip-ﬂops conﬁgured as static frequency dividers were wafer probe tested for the maximum frequency of clock operation. Micrographs of a SiGe and InP circuit are shown in Figs. 14 and 15. The measured results are given in Table V, alongside the maximum predicted frequency using both OCTC and ADS simulation. The analysis presented here is an attempt to simplify the simulations and glean informati ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 8,
+      "text_preview": "A ﬁrst order delay analysis of a master-slave ﬂip-ﬂop circuit has been presented. Although the full delay expression itself is rather unwieldy, with the help of a symbolic mathematical software tool, the dominant factors that are under the control of the circuit designer can be identiﬁed, and the delay can be factored into simpler expressions to show trends. The delay analysis produced the same tr ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Master–slave ﬂip-ﬂop conﬁgured as a static frequency divider.",
+      "caption_bbox": [
+        302.6,
+        262.6,
+        530.2,
+        270.6
+      ],
+      "section_title": "",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "For a standard test circuit, the ﬂip-ﬂop is conﬁgured as a static frequency divider as shown in Fig. 1."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Digital Object Identiﬁer 10.1109/JSSC.2005.845973 Fig. 1."
+        },
+        {
+          "section_title": "OCTC APPLICATION TO THE DIVIDER CIRCUIT",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Circuit Transitions Resulting in Delay The divider is composed of two identical latches conﬁgured , inas a master–slave ﬂip-ﬂop (MSFF), with the output, verted and fed back to the input, as in Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "type_match:divider": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "latch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Master–slave ﬂip-ﬂop conﬁgured as a static frequency divider",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.31,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Circuit schematic of master D-latch with slave D-latch loading.",
+      "caption_bbox": [
+        38.1,
+        316.6,
+        270.9,
+        324.6
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 2 shows the basic current-mode logic (CML) topology that is used for the ﬂip-ﬂop."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "If the propagation delay is measured between the 50% point of input and output swings, the propagation delay is given as (3) COLLINS et al.: DESIGN ANALYSIS AND CIRCUIT ENHANCEMENTS FOR HIGH-SPEED BIPOLAR FLIP-FLOPS Fig. 2."
+        },
+        {
+          "section_title": "OCTC APPLICATION TO THE DIVIDER CIRCUIT",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Those that can be ignored are and are treated as a perfect current shaded gray in Fig. 2. source with inﬁnite output resistance looking into the collector."
+        },
+        {
+          "section_title": "CIRCUIT ENHANCEMENTS TO IMPROVE SPEED",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "The keep-alive current, , differential pair shown connected to the emitters of the in Fig. 2 [5]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 8.6,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+circuit schematic": 3.5,
+        "+circuit": 1.0,
+        "section:intro": -0.5,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "latch",
+        "technology": "SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "differential pair",
+          "latch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Circuit schematic of master D-latch with slave D-latch loading",
+        "key_specs": [
+          "50%"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 1.0,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Linear circuit with capacitors and without inductors.",
+      "caption_bbox": [
+        38.1,
+        446.0,
+        234.6,
+        454.0
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "OCTC is used to calculate the effective propagation delay by (see Fig. 3) calculating the total effective time constant (2) where , , , and are the effective resistances seen , , , and . across The effective resistance across each of the capacitors is calculated by treating the other capacitors as open circuits and calculating the effective resistance seen by the capacitor under conseen across is sideration (e.g., the effective resistance across the nodes of calculated by putting a test voltage and calculating the current when all other capacitors are open circuited (see Fig. 4)."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "on-chip inductor",
+        "technology": "SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "inductor",
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Linear circuit with capacitors and without inductors",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 1,
+      "caption": "Fig. 4. .",
+      "caption_bbox": [
+        38.1,
+        542.4,
+        159.4,
+        550.4
+      ],
+      "section_title": "II. OCTC APPLICATION TO THE DIVIDER CIRCUIT",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "OCTC is used to calculate the effective propagation delay by (see Fig. 3) calculating the total effective time constant (2) where , , , and are the effective resistances seen , , , and . across The effective resistance across each of the capacitors is calculated by treating the other capacitors as open circuits and calculating the effective resistance seen by the capacitor under conseen across is sideration (e.g., the effective resistance across the nodes of calculated by putting a test voltage and calculating the current when all other capacitors are open circuited (see Fig. 4)."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Circuit for determining R Fig. 4. ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Timing diagram of D-latch with keep-alive current (single-ended and differential outputs).",
+      "caption_bbox": [
+        39.6,
+        281.2,
+        290.7,
+        298.1
+      ],
+      "section_title": "II. OCTC APPLICATION TO THE DIVIDER CIRCUIT",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "OCTC APPLICATION TO THE DIVIDER CIRCUIT",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 5 shows the states of the master latch in a timing diagram."
+        },
+        {
+          "section_title": "OCTC APPLICATION TO THE DIVIDER CIRCUIT",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 5."
+        },
+        {
+          "section_title": "CIRCUIT ENHANCEMENTS TO IMPROVE SPEED",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "From the timing diagram (see steer current in the Fig. 5), and the table of node voltages (see Table II), we see that these data inputs are constant during this transition."
+        },
+        {
+          "section_title": "CIRCUIT ENHANCEMENTS TO IMPROVE SPEED",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "This is shown in Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.1,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "latch",
+        "technology": "SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "latch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Timing diagram of D-latch with keep-alive current (single-ended and differential outputs)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.29,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. to transistor).",
+      "caption_bbox": [
+        302.6,
+        291.9,
+        345.5,
+        308.8
+      ],
+      "section_title": "II. OCTC APPLICATION TO THE DIVIDER CIRCUIT",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "OCTC APPLICATION TO THE DIVIDER CIRCUIT",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "This is the base of starts when the input signal is applied to , so , and (in all of the calcuthe emitter follower split into lations the hybrid pi model of Fig. 6 is used with and ) are included."
+        },
+        {
+          "section_title": "OCTC APPLICATION TO THE DIVIDER CIRCUIT",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 5, MAY 2005 Hybrid-pi transistor model used (R , R and R are external Fig. 6. to transistor)."
+        },
+        {
+          "section_title": "OCTC APPLICATION TO THE DIVIDER CIRCUIT",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The hybrid-pi transistor model shown in Fig. 6, was used to represent the HBT. is the resistance external to the base of the device, Here, and its value depends on the transistor’s location in the circuit. and are the external resistances seen at Similarly, the emitter and collector respectively."
+        },
+        {
+          "section_title": "OCTC APPLICATION TO THE DIVIDER CIRCUIT",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "To manage this, the resistances across the three capacitors in the basic device model (Fig. 6) , , and were found using the generic , , and ."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 8,
+          "sentence": "The capacitances are the base-collector and base-emitter capacitance with reference to Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.5,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor",
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "to transistor)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.38,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. Delay versus area for SiGe HBT process.",
+      "caption_bbox": [
+        302.6,
+        182.8,
+        464.0,
+        190.8
+      ],
+      "section_title": "III. DESIGNING THE CIRCUIT",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGNING THE CIRCUIT",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "So three-dimensional plots of delay versus area (Figs. 7 and 8) were drawn."
+        },
+        {
+          "section_title": "DESIGNING THE CIRCUIT",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "(12) Delay IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 5, MAY 2005 Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Delay versus area for SiGe HBT process",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Delay versus area for InP HBT process.",
+      "caption_bbox": [
+        302.6,
+        321.9,
+        459.2,
+        329.9
+      ],
+      "section_title": "III. DESIGNING THE CIRCUIT",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGNING THE CIRCUIT",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.9,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.4
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Delay versus area for InP HBT process",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.11,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. Delay versus emitter follower area.",
+      "caption_bbox": [
+        302.6,
+        545.7,
+        444.1,
+        553.6
+      ],
+      "section_title": "III. DESIGNING THE CIRCUIT",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGNING THE CIRCUIT",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 9."
+        },
+        {
+          "section_title": "DESIGNING THE CIRCUIT",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Factoring (20) by yields Delay (13) Equation (13) is plotted in Fig. 9, with the values of – derived by setting to one."
+        },
+        {
+          "section_title": "DESIGNING THE CIRCUIT",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The ADS simulation results are also plotted in Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Delay versus emitter follower area",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. .",
+      "caption_bbox": [
+        38.1,
+        267.4,
+        235.1,
+        275.4
+      ],
+      "section_title": "III. DESIGNING THE CIRCUIT",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGNING THE CIRCUIT",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "COLLINS et al.: DESIGN ANALYSIS AND CIRCUIT ENHANCEMENTS FOR HIGH-SPEED BIPOLAR FLIP-FLOPS Delay versus emitter follower current density, J Fig. 10. ."
+        },
+        {
+          "section_title": "DESIGNING THE CIRCUIT",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Plots of the variation of the delay of 1 for with respect to current densities for both SiGe and InP circuits are shown in Figs. 10 and 11."
+        },
+        {
+          "section_title": "DESIGNING THE CIRCUIT",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The ADS simulation results are also plotted in Figs. 10 and 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "flip-flop",
+        "technology": "SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "flip-flop",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 5,
+      "caption": "Fig. 11. .",
+      "caption_bbox": [
+        38.1,
+        490.4,
+        264.4,
+        498.3
+      ],
+      "section_title": "IV. CIRCUIT ENHANCEMENTS TO IMPROVE SPEED",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGNING THE CIRCUIT",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Delay versus switching transistor current density, J Fig. 11. ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.9,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.11,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 6,
+      "caption": "Fig. 12. Delay versus ( = I =Io).",
+      "caption_bbox": [
+        39.6,
+        263.8,
+        176.0,
+        272.0
+      ],
+      "section_title": "IV. CIRCUIT ENHANCEMENTS TO IMPROVE SPEED",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT ENHANCEMENTS TO IMPROVE SPEED",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "(16) (17) (18) Fig. 12."
+        },
+        {
+          "section_title": "CIRCUIT ENHANCEMENTS TO IMPROVE SPEED",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "A plot of the delay the low-frequency amplitude, is shown in Fig. 12."
+        },
+        {
+          "section_title": "CIRCUIT ENHANCEMENTS TO IMPROVE SPEED",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "The ADS simulation results are versus also plotted in Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Delay versus ( = I =Io)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 6,
+      "caption": "Fig. 13. Delay versus logic voltage swing, V (logic swing can reduced by varying R or ).",
+      "caption_bbox": [
+        39.6,
+        500.6,
+        290.7,
+        517.6
+      ],
+      "section_title": "IV. CIRCUIT ENHANCEMENTS TO IMPROVE SPEED",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT ENHANCEMENTS TO IMPROVE SPEED",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Fig. 13."
+        },
+        {
+          "section_title": "CIRCUIT ENHANCEMENTS TO IMPROVE SPEED",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Fig. 13 has three plots of divider delay versus amplitude for the SiGe process."
+        },
+        {
+          "section_title": "CIRCUIT ENHANCEMENTS TO IMPROVE SPEED",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "As can be seen from Fig. 13, keep-alive current leads to a signiﬁcant reduction in the delay when com- ."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 13 shows the circuit that allowed ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.1,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Delay versus logic voltage swing, V (logic swing can reduced by varying R or )",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.29,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 6,
+      "caption": "Fig. 14. Micrograph of static frequency divider in SiGe process.",
+      "caption_bbox": [
+        302.6,
+        260.3,
+        513.0,
+        268.3
+      ],
+      "section_title": "IV. CIRCUIT ENHANCEMENTS TO IMPROVE SPEED",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT ENHANCEMENTS TO IMPROVE SPEED",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "The output distortion has no serious effect at very high frequencies IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 5, MAY 2005 Fig. 14."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Micrographs of a SiGe and InP circuit are shown in Figs. 14 and 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.3,
+      "relevance_breakdown": {
+        "-micrograph": -3.0,
+        "section:design": 1.5,
+        "type_match:divider": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Micrograph of static frequency divider in SiGe process",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 6,
+      "caption": "Fig. 15. Micrograph of static frequency divider in InP process.",
+      "caption_bbox": [
+        302.6,
+        479.9,
+        508.2,
+        487.8
+      ],
+      "section_title": "IV. CIRCUIT ENHANCEMENTS TO IMPROVE SPEED",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT ENHANCEMENTS TO IMPROVE SPEED",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.9,
+      "relevance_breakdown": {
+        "-micrograph": -3.0,
+        "section:design": 1.5,
+        "type_match:divider": 2.0,
+        "references": 0.4
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Micrograph of static frequency divider in InP process",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 2,
+  "warnings": []
+}

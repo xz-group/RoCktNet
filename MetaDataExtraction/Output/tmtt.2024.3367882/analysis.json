@@ -1,0 +1,1693 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\RNDatasetPapers\\tmtt.2024.3367882.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output_rerun_128\\tmtt.2024.3367882",
+  "generated_at": "2026-07-29T22:45:59",
+  "paper_metadata": {
+    "title": "A Frequency Doubler With Second Harmonic Feedback for Wideband, Efficient Frequency Multiplication at Millimeter-Wave",
+    "authors": [
+      "Amin Aghighi",
+      "Mostafa Essawy",
+      "Arun S. Natarajan"
+    ],
+    "abstract": "Frequency multipliers are widely used in scalable millimeter-wave (mm-wave) arrays in communication and radar. This article presents an mm-wave frequency doubler (FDB) topology that exploits odd-mode/even-mode operation to create different feedback networks at the fundamental frequency and second harmonic. Theoretical analysis of the FDB network is detailed. The FDB topology is well-suited for CMOS integration, and a stand-alone FDB in 65-nm CMOS achieves a saturated output power (Psat) of >10.1 dBm with a maximum drain efficiency (DE) of 32.7% at 60 GHz. The wideband FDB is also cascaded with a power amplifier (PA) to achieve a total Psat of 15 dBm with a maximum dc-to-RF efficiency (ηtotal) of 24.5%. Measurements demonstrate wideband FDB chirp bandwidths and suitability for frequency-modulated continuous wave (FMCW) radar applications.",
+    "keywords": [
+      "Frequency doubler (FDB)",
+      "frequency multiplier",
+      "frequency-modulated continuous wave (FMCW) radar",
+      "millimeter-wave (mm-wave) radar",
+      "power amplifier (PA)",
+      "wideband circuits"
+    ],
+    "doi": "10.1109/TMTT.2024.3367882",
+    "venue": "IEEE TRANSACTIONS ON MICROWAVE THEORY AND TECHNIQUES",
+    "year": 2024
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Frequency Doubler",
+    "technology": "CMOS, 65-nm process",
+    "application_domain": "millimeter-wave, mm-wave, microwave, rf, 60 ghz, radar, if",
+    "sub_blocks": [
+      "varactor",
+      "inductor",
+      "capacitor",
+      "transistor/MOSFET",
+      "cross-coupled pair",
+      "transmission line",
+      "transformer",
+      "mixer",
+      "differential pair",
+      "balun",
+      "output buffer"
+    ],
+    "design_purpose": "The wideband FDB is also cascaded with a power amplifier (PA) to achieve a total Psat of 15 dBm with a maximum dc-to-RF efficiency (ηtotal) of 24.5%.",
+    "function_summary": "Frequency Doubler: The wideband FDB is also cascaded with a power amplifier (PA) to achieve a total Psat of 15 dBm with a maximum dc-to-RF efficiency (ηtotal) of 24.5%.",
+    "key_specs": [
+      "10.1 dBm",
+      "32.7%",
+      "60 GHz",
+      "15 dBm",
+      "24.5%",
+      "40 GHz",
+      "26 J",
+      "66 GHz",
+      "15 GHz",
+      "20%"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "U BIQUITOUS communication and radar sensing applications that leverage widely available bandwidths (BWs) have motivated integrated millimeter-wave (mm-wave) transceiver arrays with >100 elements [1]. While RF-in and RF-out arrays have been considered at lower frequencies [2], [3], typical arrays at frequencies >40 GHz include frequency translation [4], [5], [6], [7], [8]. Such arrays include on-ch ..."
+    },
+    {
+      "number": "II",
+      "title": "INTEGRATED FREQUENCY MULTIPLIER",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "ARCHITECTURES Considering the prevalent use of frequency multipliers in mm-wave transmitters/receivers, there has been extensive exploration of architectures suitable for integration, as summarized in Fig. 2. In broad terms, topologies can be classified into those relying on: 1) mixing/multiplication; 2) harmonic generation; and 3) subharmonic injection-locking of oscillators. Fig. 2(a) shows a mi ..."
+    },
+    {
+      "number": "III",
+      "title": "PROPOSED FDB APPROACH",
+      "kind": "proposed",
+      "page": 1,
+      "text_preview": "To achieve efficient and wideband frequency doubling, it is essential to have a wideband input match, along with efficient harmonic generation. As discussed earlier, the push–push FDB performance relies on the limited second-harmonic transconductance (gm,2nd) of the input pair, limiting output power/efficiency at mm-wave. Moreover, feedback from the output to the input through parasitic capacitanc ..."
+    },
+    {
+      "number": "IV",
+      "title": "IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+      "kind": "proposed",
+      "page": 4,
+      "text_preview": "CMOS The proposed architecture was implemented in a 65-nm CMOS process, which included a metal backend with 3.474-µm-thick metal layers. The design of the critical building blocks and simulated performance is detailed in the following. A. FDB Implementation The detailed circuit implementation of the proposed FDB in 65-nm CMOS is shown in Fig. 10. Input devices are partitioned into a number of fing ..."
+    },
+    {
+      "number": "V",
+      "title": "MEASUREMENT RESULTS",
+      "kind": "results",
+      "page": 7,
+      "text_preview": "Fig. 20(a)–(c) displays the die photograph of the fabricated IC, FDB, and PA in 65-nm CMOS technology. The fabricated IC incorporates two test structures: a stand-alone proposed FDB and the same FDB followed by the PA, demonstrating the wideband performance required for mm-wave radars. The proposed FDB and PA occupy a die area of 0.18 and 0.09 mm2, respectively. The probe-based setup used to chara ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 10,
+      "text_preview": "An integrated FDB topology is presented in this work, utilizing odd/even modes or differential/CM operations to enhance efficiency, bandwidth, and output power. The proposed topology is experimentally validated across a frequency range spanning from 44 GHz to beyond 68 GHz in a 65-nm CMOS process. It achieves the state-of-the-art Psat > 10.1 dBm with a DEmax of 32.7% at high-power mode and a Psat  ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Frequency multipliers are widely used in: (a) mm-wave communication and (b) radar arrays to lower the LO signal distribution frequency and increase chirp bandwidths.",
+      "caption_bbox": [
+        312.0,
+        423.3,
+        563.0,
+        449.2
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "VCO or, more commonly, reducing the frequency of the LO signal distributed on the printed circuit board (PCB) across an array with synchronized elements [Fig. 1(a)] [9]."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "As shown in Fig. 1(b), the range resolution of an FMCW radar is inversely proportional to the modulation bandwidth of the chirp."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The doubler drives a two-stage wideband power amplifier (PA) to deliver a 15-dBm Psat, demonstrating the feasibility of this architecture for a wideband mm-wave FMCW radar TX shown in Fig. 1(b)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.1,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "frequency multiplier",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, 60 ghz, radar, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Frequency multipliers are widely used in: (a) mm-wave communication and (b) radar arrays to lower the LO signal distribution frequency and increase chirp bandwidths",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.05,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. FDB architectures: (a) self-mixing FDB; (b) and (c) FDB based on device nonlinearities with single-device and push–push pair; and (d) injection-locked oscillator-based FDB.",
+      "caption_bbox": [
+        312.0,
+        211.5,
+        563.0,
+        237.4
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTEGRATED FREQUENCY MULTIPLIER",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "ARCHITECTURES Considering the prevalent use of frequency multipliers in mm-wave transmitters/receivers, there has been extensive exploration of architectures suitable for integration, as summarized in Fig. 2."
+        },
+        {
+          "section_title": "INTEGRATED FREQUENCY MULTIPLIER",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 2(a) shows a mixer-based FDB where the RF and LO ports of a mixer are driven by the same signal, resulting in an output at twice the input frequency, along with a large dc offset (that must be considered to avoid saturation)."
+        },
+        {
+          "section_title": "INTEGRATED FREQUENCY MULTIPLIER",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The FDB shown in Fig. 2(b) utilizes a single device driven into saturation to generate harmonic components of the input signal frequency, f0."
+        },
+        {
+          "section_title": "INTEGRATED FREQUENCY MULTIPLIER",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "A balanced push–push pair with the two devices driven differentially can be employed to reject odd harmonics in a frequency multiplier, as shown in Fig. 2(c) [18], [19], [20], [21]."
+        },
+        {
+          "section_title": "INTEGRATED FREQUENCY MULTIPLIER",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "In the architecture shown in Fig. 2(d), a push–push pair, f0, generates driven differentially by an input source at a second-harmonic injection signal."
+        },
+        {
+          "section_title": "INTEGRATED FREQUENCY MULTIPLIER",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Since a weak injection Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.5,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "section:intro": -0.5,
+        "references": 2.0
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, 60 ghz, radar, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "ARCHITECTURES Considering the prevalent use of frequency multipliers in mm-wave transmitters/receivers, there has been extensive exploration of architectures suitable for integration, as summarized in Fig. 2.",
+        "function_summary": "FDB architectures: (a) self-mixing FDB; (b) and (c) FDB based on device nonlinearities with single-device and push–push pair; and (d) injection-locked oscillator-based FDB. ARCHITECTURES Considering the prevalent use of frequency multipliers in mm-wave transmitters/receivers, there has been extensive exploration of ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.38,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. (b) Conceptual model of the proposed doubler exploiting second-harmonic feedback.",
+      "caption_bbox": [
+        49.0,
+        298.2,
+        300.0,
+        324.1
+      ],
+      "section_title": "III. PROPOSED FDB APPROACH",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "PROPOSED FDB APPROACH",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "As shown in Fig. 3(a), a dedicated trap network is typically employed at the input to nullify the 2 f0 feedback signal."
+        },
+        {
+          "section_title": "PROPOSED FDB APPROACH",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The conceptual model of the proposed FDB is illustrated in Fig. 3(b)."
+        },
+        {
+          "section_title": "PROPOSED FDB APPROACH",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 3."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "Simulated performance comparison between the proposed FDB and an equivalent FDB with an input trap at 2 f0 [Fig. 3(a)] demonstrates higher output power/efficiency for the proposed doubler topology. resonance circuit at 2 f0, avoiding a gain reduction at 2 f0 due to source degeneration through Ls."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.1,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "-model": -1.5,
+        "section:proposed": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "Frequency Doubler",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, 60 ghz, radar, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(b) Conceptual model of the proposed doubler exploiting second-harmonic feedback",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.75,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Circuit implementation of the proposed FDB feedback network.",
+      "caption_bbox": [
+        49.0,
+        453.3,
+        288.3,
+        461.2
+      ],
+      "section_title": "III. PROPOSED FDB APPROACH",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "PROPOSED FDB APPROACH",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 4."
+        },
+        {
+          "section_title": "PROPOSED FDB APPROACH",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 4 shows the implementation of the proposed feedback in the doubler through inductances and capacitances."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.8,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "+circuit": 1.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "Frequency Doubler",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, 60 ghz, radar, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Circuit implementation of the proposed FDB feedback network",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.85,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. model at f0.",
+      "caption_bbox": [
+        312.0,
+        273.9,
+        353.0,
+        291.5
+      ],
+      "section_title": "III. PROPOSED FDB APPROACH",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "PROPOSED FDB APPROACH",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "At f0, as shown in Fig. 5(a), the input pair operates as a push–push FDB, causing the odd harmonics at the output to cancel each other."
+        },
+        {
+          "section_title": "PROPOSED FDB APPROACH",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Consequently, the drain node acts as an ac ground at f0, as shown in Fig. 5(b)."
+        },
+        {
+          "section_title": "PROPOSED FDB APPROACH",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "(b) Small-signal Fig. 5. model at f0."
+        },
+        {
+          "section_title": "PROPOSED FDB APPROACH",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "From small-signal model in Fig. 5(b) 1 + LgCgsω2 Vg, f0 = −Vs, f0 × (1) 1 −Lg Cgs + Cgd ω2 2 −LgCgdω2 F(ω) = Vgs, f0 = − (2) 1 −Lg Cgs + Cgd Vs, f0 ω2 where Vg, f0 and Vs, f0 are the fundamental tone voltage swings at the gate and source, respectively."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "The differential input admittance/impedance of the proposed FDB at f0 using Fig. 5 is calculated as 1 Yin,diff = YLs + YLg + YCgs + gm + gds = 0.5 × Zin,diff # YLg −YCgs gm + YCgs −YLg + (7) YLg + YCgs + YCgd where gm and gds represent the transconductance and output conductance of the input devices, respectively, and YX represents the admittance of the corresponding component X."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.5,
+      "relevance_breakdown": {
+        "-model": -1.5,
+        "section:proposed": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "Frequency Doubler",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, 60 ghz, radar, if",
+        "sub_blocks": [
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "model at f0",
+        "key_specs": [
+          "2 V",
+          "0 ω",
+          "2 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.18,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6.",
+      "caption_bbox": [
+        312.0,
+        484.4,
+        333.4,
+        492.4
+      ],
+      "section_title": "III. PROPOSED FDB APPROACH",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "PROPOSED FDB APPROACH",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 6. differential input signal at f0."
+        },
+        {
+          "section_title": "PROPOSED FDB APPROACH",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The proposed FDB (without extraction) is simulated at 60 GHz while driven with 11 dBm to demonstrate the sensitivity of 1φV gs, f0 and output power to Lg, as shown in Fig. 6, and ignoring layout parasitics, varying Lg by 60 pH, changes 1φV gs, f0 and POUT by less than 2◦and 0.9 dB, respectively."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Frequency Doubler",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, 60 ghz, radar, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": [
+          "60 GHz",
+          "11 dBm",
+          "60 pH",
+          "0.9 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. and Ls.",
+      "caption_bbox": [
+        49.0,
+        210.4,
+        73.9,
+        228.0
+      ],
+      "section_title": "III. PROPOSED FDB APPROACH",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "PROPOSED FDB APPROACH",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Since Ls is in parallel with the external source at f0, it affects the available f0 signal at the source AGHIGHI et al.: FDB WITH SECOND HARMONIC FEEDBACK FOR WIDEBAND, EFFICIENT FREQUENCY MULTIPLICATION Sensitivity of the FDB performance to the potential coupling of Lg Fig. 7. and Ls."
+        },
+        {
+          "section_title": "PROPOSED FDB APPROACH",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "As shown in Fig. 7, the output power reduces by only 0.2 dB, if |k| < 0.1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Frequency Doubler",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, 60 ghz, radar, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "and Ls",
+        "key_specs": [
+          "0.2 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. model at 2 f0.",
+      "caption_bbox": [
+        49.0,
+        479.3,
+        94.0,
+        496.9
+      ],
+      "section_title": "III. PROPOSED FDB APPROACH",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "PROPOSED FDB APPROACH",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "(b) Simplified Fig. 8. model at 2 f0. terminal (Vs, f0) through input matching."
+        },
+        {
+          "section_title": "PROPOSED FDB APPROACH",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "At 2 f0, as depicted in Fig. 8(a), the output signal couples back to the input through Cgd of the push–push pair devices, generating a 2 f0 CM signal at each gate terminal."
+        },
+        {
+          "section_title": "PROPOSED FDB APPROACH",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Therefore, as illustrated in Fig. 8(b), the equivalent circuit at 2 f0 simplifies to a commonsource amplifier."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "The output impedance of the doubler core at 2 f0 [seen from drain in Fig. 8(b)] is calculated as \" # YLg + YCgs + YCgd Z D = 0.5 × rds|| (8) YCgd × gm + YLg + YCgs where rds and gm are the output resistance and transconductance of the input transistors, respectively, and YX represents the admittance of the corresponding component X."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "This equation is calculated for the scenario depicted in Fig. 8(b), where the combination of Ls and Ctrap forms a perfect series Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.5,
+      "relevance_breakdown": {
+        "-model": -1.5,
+        "section:proposed": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, 60 ghz, radar, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "model at 2 f0",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.18,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 3,
+      "caption": "Fig. 9. components of Vd,2 f0,tot.",
+      "caption_bbox": [
+        312.0,
+        120.0,
+        393.0,
+        138.6
+      ],
+      "section_title": "III. PROPOSED FDB APPROACH",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "PROPOSED FDB APPROACH",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "To minimize the potential coupling, these two inductors are separated by at least 100 µm, and Proposed FDB model at 2 f0 showing the linear and nonlinear Fig. 9. components of Vd,2 f0,tot."
+        },
+        {
+          "section_title": "PROPOSED FDB APPROACH",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "From the model at 2 f0 (shown in Fig. 9), the total output signal at 2 f0, Vd,2 f0,tot, depends on the following: 1) the nonlinearity of the input pair and the differential input signal at f0 that leads to a signal at 2 f0: Vd, f0→2 f0; 2) the feedback network operating at 2 f0: 2gm ZL,opt × Vgs,2 f0."
+        },
+        {
+          "section_title": "PROPOSED FDB APPROACH",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Since the impact of the ZL,opt in the model of Fig. 9 is already considered in Vd, f0→2 f0 and 2gm ZL,opt × Vgs,2 f0, it is not shown as a separate load at the drain node."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "on-chip inductor",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, 60 ghz, radar, if",
+        "sub_blocks": [
+          "inductor",
+          "differential pair"
+        ],
+        "design_purpose": "To minimize the potential coupling, these two inductors are separated by at least 100 µm, and Proposed FDB model at 2 f0 showing the linear and nonlinear Fig. 9. components of Vd,2 f0,tot.",
+        "function_summary": "components of Vd,2 f0,tot. To minimize the potential coupling, these two inductors are separated by at least 100 µm, and Proposed FDB model at 2 f0 showing the linear and nonlinear Fig. 9. components of Vd,2 f0,tot.",
+        "key_specs": [
+          "100 µm"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.31,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 4,
+      "caption": "Fig. 11. at fIN = 25–35 GHz and (c)–(f) output power/efficiency across fOUT = 50–70 GHz.",
+      "caption_bbox": [
+        49.0,
+        334.9,
+        316.9,
+        353.0
+      ],
+      "section_title": "III. PROPOSED FDB APPROACH",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "PROPOSED FDB APPROACH",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Therefore, LgCgdω2 Vg,2 f0 H(ω) = = − (4) 1 −Lg Cgs + Cgd Vd,2 f0,tot ω2 IEEE TRANSACTIONS ON MICROWAVE THEORY AND TECHNIQUES, VOL. 72, NO. 5, MAY 2024 Source–pull simulation results of the FDB (without extraction) when driven by 11 dBm for different values of Ls and Lg: (a) and (b) input matching Fig. 11. at fIN = 25–35 GHz and (c)–(f) output power/efficiency across fOUT = 50–70 GHz."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "The optimal values of Lg and Ls are determined through a source–pull simulation to achieve the best compromise between wideband input matching within 25–35 GHz, maximum output power/efficiency, and symmetric output ZL,opt. power/efficiency across 50–70 GHz for a fixed Fig. 11(a) and (b) represents S11 at the input frequency when the FDB is driven by PIN = 11 dBm within 25–35 GHz for different values of Ls and Lg, respectively."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "While Ls > 120 pH results in a better input matching, efficiency degrades for higher Ls values, as represented in Fig. 11(d)."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "As shown in Fig. 11(b), S11 < −10.5 dB for a large range of Lg Ls = 120 pH."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "The optimum Lg when value is selected based on Fig. 11(e) and (f) to achieve the maximum output power/efficiency and symmetric performance around 60 GHz."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "The same argument is valid for the efficiency of the FDB across 50–70 GHz, as shown in Fig. 11(f)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "-output power": -2.0,
+        "section:proposed": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Frequency Doubler",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, 60 ghz, radar, if",
+        "sub_blocks": [],
+        "design_purpose": "The optimal values of Lg and Ls are determined through a source–pull simulation to achieve the best compromise between wideband input matching within 25–35 GHz, maximum output power/efficiency, and symmetric output ZL,opt. power/efficiency across 50–70 GHz for a fixed Fig. 11(a) and (b) represents S11 at the input ...",
+        "function_summary": "at fIN = 25–35 GHz and (c)–(f) output power/efficiency across fOUT = 50–70 GHz. The optimal values of Lg and Ls are determined through a source–pull simulation to achieve the best compromise between wideband input matching within 25–35 GHz, maximum output power/efficiency, and symmetric output ZL,opt. power/efficiency ...",
+        "key_specs": [
+          "2 V",
+          "11 dBm",
+          "35 GHz",
+          "70 GHz",
+          "120 pH",
+          "−10.5 dB",
+          "60 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.12,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 5,
+      "caption": "Fig. 12. Output power and impedance seen from the drain of the doubler core (Z D) across Ctrap.",
+      "caption_bbox": [
+        49.0,
+        219.8,
+        300.0,
+        237.4
+      ],
+      "section_title": "IV. IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "As expected, Ls AGHIGHI et al.: FDB WITH SECOND HARMONIC FEEDBACK FOR WIDEBAND, EFFICIENT FREQUENCY MULTIPLICATION Fig. 12."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "In Fig. 12, the variation of simulated output power and |Z D| at 60 GHz across Ctrap when driven with 11-dBm input power is demonstrated."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.3,
+      "relevance_breakdown": {
+        "+core": 0.5,
+        "-output power": -2.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Frequency Doubler",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, 60 ghz, radar, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Output power and impedance seen from the drain of the doubler core (Z D) across Ctrap",
+        "key_specs": [
+          "60 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 5,
+      "caption": "Fig. 13.",
+      "caption_bbox": [
+        49.0,
+        415.4,
+        74.3,
+        423.4
+      ],
+      "section_title": "IV. IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "Fig. 13. is the primary contributor to input matching, achieving an S11 better than −10 dB for Ls > 110 pH."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "As depicted in Fig. 13, FDB with L1 = L2 = 60 pH achieves the desired symmetric performance around 60 GHz."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Frequency Doubler",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, 60 ghz, radar, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": [
+          "−10 dB",
+          "110 pH",
+          "60 pH",
+          "60 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 5,
+      "caption": "Fig. 14. Comparison of simulated and estimated [from (2) and (4)] |F( f0 = 30 GHz)| and |H( f0 = 60 GHz)| across Lg.",
+      "caption_bbox": [
+        312.0,
+        231.6,
+        563.0,
+        249.8
+      ],
+      "section_title": "IV. IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "This equation is calculated for the scenario depicted in Fig. 8(b), where the combination of Ls and Ctrap forms a perfect series Fig. 14."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "Fig. 14 shows the comparison of the simulated |F( f0 = 30 GHz)| and |H(2 f0 = 60 GHz)| across different values of Lg to estimated values using (2) and (4), respectively, demonstrating good agreement between equations and simulated performance."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Frequency Doubler",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, 60 ghz, radar, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Comparison of simulated and estimated [from (2) and (4)] |F( f0 = 30 GHz)| and |H( f0 = 60 GHz)| across Lg",
+        "key_specs": [
+          "30 GHz",
+          "60 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 5,
+      "caption": "Fig. 15. Simulated performance comparison between the proposed FDB and an equivalent FDB with an input trap at 2 f0 [Fig. 3(a)] demonstrates higher output power/efficiency for the proposed doubler topology.",
+      "caption_bbox": [
+        312.0,
+        457.7,
+        563.0,
+        483.6
+      ],
+      "section_title": "IV. IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "Fig. 15."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "As illustrated in Fig. 15, the simulations indicate that the proposed FDB can yield higher CG, resulting in a 10% improvement in maximum dc-to-RF efficiency, ηtotal = Pout,2 f0/(Pdc + PIN), where Pout,2 f0 is the output power at 2 f0, PIN is the input power at f0, and Pdc is the dc power consumption."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.3,
+      "relevance_breakdown": {
+        "+topology": 2.5,
+        "+proposed": 3.0,
+        "-equivalent": -2.0,
+        "-simulated": -3.0,
+        "-output power": -2.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Frequency Doubler",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, 60 ghz, radar, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated performance comparison between the proposed FDB and an equivalent FDB with an input trap at 2 f0 [Fig. 3(a)] demonstrates higher output power/efficiency for the proposed doubler topology",
+        "key_specs": [
+          "10%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 6,
+      "caption": "Fig. 16. Wideband 60-GHz transformer-coupled two-stage PA following the FDB.",
+      "caption_bbox": [
+        49.0,
+        210.9,
+        300.0,
+        227.8
+      ],
+      "section_title": "IV. IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "Given that L1 is in parallel with the doubler core, it resonates with the parasitic capacitance of the drain node at 60 GHz to optimize wideband performance Fig. 16."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "Power Amplifier Fig. 16 shows the proposed PA preceded by the FDB."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "on-chip transformer",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, 60 ghz, radar, if",
+        "sub_blocks": [
+          "transformer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Wideband 60-GHz transformer-coupled two-stage PA following the FDB",
+        "key_specs": [
+          "60 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 6,
+      "caption": "Fig. 17. across its neutralizing capacitor, Cneut.",
+      "caption_bbox": [
+        49.0,
+        405.2,
+        174.8,
+        422.9
+      ],
+      "section_title": "IV. IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "MSG/MAG and stability factor (K f ) of the first stage of the PA Fig. 17. across its neutralizing capacitor, Cneut. centered around this frequency."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "Fig. 17 shows the simulated maximum stable gain/maximum available gain (MSG/MAG) and stability factor for the first stage of the PA across the value of the neutralizing capacitor, Cneut."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Frequency Doubler",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, 60 ghz, radar, if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "across its neutralizing capacitor, Cneut",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 6,
+      "caption": "Fig. 18. Distributed EM modeling approach utilized for improving performance/modeling accuracy at mm-wave: (a) PA Stg1 layout and (b) its distributed model.",
+      "caption_bbox": [
+        312.0,
+        227.3,
+        563.0,
+        253.2
+      ],
+      "section_title": "IV. IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "The unbalanced input and output IEEE TRANSACTIONS ON MICROWAVE THEORY AND TECHNIQUES, VOL. 72, NO. 5, MAY 2024 Fig. 18."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "To improve the modeling accuracy at mm-wave, we adopt distributed electromagnetic (EM) modeling, as depicted in Fig. 18."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-model": -1.5,
+        "-layout": -2.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "Frequency Doubler",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, 60 ghz, radar, if",
+        "sub_blocks": [],
+        "design_purpose": "To improve the modeling accuracy at mm-wave, we adopt distributed electromagnetic (EM) modeling, as depicted in Fig. 18.",
+        "function_summary": "Distributed EM modeling approach utilized for improving performance/modeling accuracy at mm-wave: (a) PA Stg1 layout and (b) its distributed model. To improve the modeling accuracy at mm-wave, we adopt distributed electromagnetic (EM) modeling, as depicted in Fig. 18.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 6,
+      "caption": "Fig. 19. Simulated performance of the wideband 60-GHz PA in 65-nm CMOS.",
+      "caption_bbox": [
+        312.0,
+        421.5,
+        563.0,
+        438.5
+      ],
+      "section_title": "IV. IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "Fig. 19."
+        },
+        {
+          "section_title": "IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "Simulated stand-alone PA performance is shown in Fig. 19, with Psat ≈15 dBm across BW1dB = 22.5 GHz and ηtotal > 20% at Psat for 20-GHz BW from 46 to 66 GHz."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Frequency Doubler",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, 60 ghz, radar, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated performance of the wideband 60-GHz PA in 65-nm CMOS",
+        "key_specs": [
+          "15 dBm",
+          "1dB",
+          "22.5 GHz",
+          "20%",
+          "66 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 20,
+      "label": "Fig. 20",
+      "page": 7,
+      "caption": "Fig. 20. (a) Die photograph of the IC in 65-nm CMOS with stand-alone FDB and FDB/PA structures. (b) Stand-alone FDB. (c) PA.",
+      "caption_bbox": [
+        49.0,
+        246.2,
+        300.0,
+        263.2
+      ],
+      "section_title": "IV. IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "AGHIGHI et al.: FDB WITH SECOND HARMONIC FEEDBACK FOR WIDEBAND, EFFICIENT FREQUENCY MULTIPLICATION Fig. 20."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 20(a)–(c) displays the die photograph of the fabricated IC, FDB, and PA in 65-nm CMOS technology."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-photograph": -3.0,
+        "-die photo": -3.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "Frequency Doubler",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, 60 ghz, radar, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Die photograph of the IC in 65-nm CMOS with stand-alone FDB and FDB/PA structures. (b) Stand-alone FDB. (c) PA",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 21,
+      "label": "Fig. 21",
+      "page": 7,
+      "caption": "Fig. 21. Probe-based measurement setup of the stand-alone FDB and FDB/PA.",
+      "caption_bbox": [
+        49.0,
+        422.8,
+        300.0,
+        439.7
+      ],
+      "section_title": "IV. IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "Fig. 21."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The probe-based setup used to characterize the stand-alone FDB and the FDB/PA structures is illustrated in Fig. 21."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "In Fig. 21, a hybrid coupler is succeeded by two phase shifters to convert the single-ended input Fig. 23."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "-setup": -2.0,
+        "section:proposed": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "phase shifter",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, 60 ghz, radar, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Probe-based measurement setup of the stand-alone FDB and FDB/PA",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 22,
+      "label": "Fig. 22",
+      "page": 7,
+      "caption": "Fig. 22. Measured stand-alone FDB: (a) output power and (b) efficiency for different supply voltages when driven by a fixed PIN = 12 dBm.",
+      "caption_bbox": [
+        312.0,
+        385.5,
+        563.0,
+        403.6
+      ],
+      "section_title": "IV. IMPLEMENTATION OF THE PROPOSED FDB AND PA IN",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The measured output power and efficiency of the bufferless FDB at a fixed PIN of 12 dBm and across the output frequency are depicted in Fig. 22(a) and (b), respectively."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 22."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-output power": -2.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Frequency Doubler",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, 60 ghz, radar, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured stand-alone FDB: (a) output power and (b) efficiency for different supply voltages when driven by a fixed PIN = 12 dBm",
+        "key_specs": [
+          "12 dBm"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 23,
+      "label": "Fig. 23",
+      "page": 8,
+      "caption": "Fig. 23. Measured stand-alone FDB output power and efficiency across input power at 60-GHz output frequency.",
+      "caption_bbox": [
+        49.0,
+        208.1,
+        300.0,
+        225.0
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 23 illustrates POUT, ηtotal, and DE of the proposed FDB across input power for 60-GHz output at 1.2-V supply."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "In Fig. 21, a hybrid coupler is succeeded by two phase shifters to convert the single-ended input Fig. 23."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-output power": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "phase shifter",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, 60 ghz, radar, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured stand-alone FDB output power and efficiency across input power at 60-GHz output frequency",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 24,
+      "label": "Fig. 24",
+      "page": 8,
+      "caption": "Fig. 24. Measured (optimized for 60 GHz) and postlayout simulation of stand-alone FDB FRR.",
+      "caption_bbox": [
+        49.0,
+        394.4,
+        300.0,
+        411.3
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The FRR of the stand-alone FDB across output frequency is plotted in Fig. 24."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 24."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-layout": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Frequency Doubler",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, 60 ghz, radar, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured (optimized for 60 GHz) and postlayout simulation of stand-alone FDB FRR",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 25,
+      "label": "Fig. 25",
+      "page": 8,
+      "caption": "Fig. 25. Measured phase noise of the input source at 26 GHz and output at 52 GHz after the frequency doubling.",
+      "caption_bbox": [
+        49.0,
+        551.1,
+        300.0,
+        568.0
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 25."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The measured phase noise before (26 GHz) and after (52 GHz) frequency doubling is shown in Fig. 25."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "As tabulated in Fig. 25, phase noise is degraded by ≈6 dB due to frequency doubling [= 20 × log(2)], verifying no additional phase noise degradation due to the proposed FDB."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.3,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-phase noise": -2.5,
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Frequency Doubler",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, 60 ghz, radar, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured phase noise of the input source at 26 GHz and output at 52 GHz after the frequency doubling",
+        "key_specs": [
+          "26 GHz",
+          "52 GHz",
+          "6 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 26,
+      "label": "Fig. 26",
+      "page": 8,
+      "caption": "Fig. 26. when driven by a fixed PIN = 7 dBm.",
+      "caption_bbox": [
+        312.0,
+        207.4,
+        438.5,
+        225.0
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Besides the input phase mismatch, postlayout simulation results do not include the metal fill impact that might cause additional phase IEEE TRANSACTIONS ON MICROWAVE THEORY AND TECHNIQUES, VOL. 72, NO. 5, MAY 2024 Measured POUT and efficiency of the FDB/PA across frequency Fig. 26. when driven by a fixed PIN = 7 dBm."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 26 shows the measured and simulated performance of the FDB/PA test structure across output frequency, VDD = 1.2 V PIN with and at a fixed of 7 dBm."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Frequency Doubler",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, 60 ghz, radar, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "when driven by a fixed PIN = 7 dBm",
+        "key_specs": [
+          "7 dBm",
+          "1.2 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 27,
+      "label": "Fig. 27",
+      "page": 8,
+      "caption": "Fig. 27. at 60-GHz output frequency.",
+      "caption_bbox": [
+        312.0,
+        392.4,
+        405.4,
+        409.3
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Measured POUT and efficiency of the FDB/PA across input power Fig. 27. at 60-GHz output frequency. mismatch inside the chip."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "As shown in Fig. 27, the FDB/PA achieves a Psat = 15 dBm ηtotal ≈20% at 60 GHz and a peak when driven by PIN = 8 dBm at 30 GHz."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Frequency Doubler",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, 60 ghz, radar, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "at 60-GHz output frequency",
+        "key_specs": [
+          "15 dBm",
+          "20%",
+          "60 GHz",
+          "8 dBm",
+          "30 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 28,
+      "label": "Fig. 28",
+      "page": 9,
+      "caption": "Fig. 28.",
+      "caption_bbox": [
+        49.0,
+        308.3,
+        73.9,
+        316.3
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "AGHIGHI et al.: FDB WITH SECOND HARMONIC FEEDBACK FOR WIDEBAND, EFFICIENT FREQUENCY MULTIPLICATION Measured FDB/PA rms output spectrum (1.28-GHz BW) when driven by a 7-dBm chirp signal with 640-MHz modulation BW: at a center frequency Fig. 28. of: (a) 48 GHz; (b) 60 GHz; (c) 68 GHz; and (d) total rms band power across 1.28 GHz at different center frequencies."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 28 represents the performance of the FDB/PA when driven by a 7-dBm chirp signal with a BW of 640 MHz."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 28(a)–(c) depicts the FDB/PA output spectrum (rms value), achieving a total band power of 14.5, 14.36, and 13.7 dBm over 1.28 GHz when driven at 48-, 60-, and 68-GHz center frequencies, respectively."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 28(d) illustrates the total rms band power when the FDB/PA is driven at different center frequencies within 48–68 GHz."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.4,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Frequency Doubler",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, 60 ghz, radar, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": [
+          "48 GHz",
+          "60 GHz",
+          "68 GHz",
+          "1.28 GHz",
+          "640 MHz",
+          "13.7 dBm"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 29,
+      "label": "Fig. 29",
+      "page": 9,
+      "caption": "Fig. 29.",
+      "caption_bbox": [
+        49.0,
+        680.2,
+        74.3,
+        688.2
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 29."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "In Fig. 29, the performance of both FDB and FDB/PA is compared concerning a fixed and variable Ctrap to assess sensitivity to Ctrap."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Frequency Doubler",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, 60 ghz, radar, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 4,
+  "warnings": []
+}

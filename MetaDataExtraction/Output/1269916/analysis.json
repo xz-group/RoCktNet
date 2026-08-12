@@ -1,0 +1,1028 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1269916.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1269916",
+  "generated_at": "2026-07-29T21:31:18",
+  "paper_metadata": {
+    "title": "A Double-Sampling Extended-Counting ADC",
+    "authors": [
+      "Jeroen De Maeyer",
+      "Pieter Rombouts",
+      "Ludo Weyten"
+    ],
+    "abstract": "Extended-counting analog-to-digital conversion combines the accuracy of \u0006\u0001 modulation with the speed of algorithmic conversion. In this paper, a double-sampling technique is introduced for this type of converter. It is based on a variant of the fully floating bilinear integrator. This way, the clock frequency of the converter is almost halved. An experimental converter m CMOS technology for a bandwidth of was designed in a 0.6500 kHz at a 3.3-V supply. In the switched-capacitor implementaFig. 1. Block diagram of an extended-counting converter. tion, the hardware is extensively reused. This way, the converter can be realized with only one operational amplifier. On the other hand, compared to alternative implementations, the amount of devoted to an accuracy analysis in the time domain of this new switches is increased. These are designed carefully in order not conversion technique. Section V describes some implemento degrade the performance. The converter converts a sample in tation issues of the prototype chip, and Section VI discusses 24 clock cycles and achieves a dynamic range of 87 dB. The peak experimental results of the prototype. signal-to-noise ratio (SNR) and signal-to-noise-plus-distortion ratio (SNDR) were measured to be 82 and 81 dB, respectively. The power consumption was 28-mW analog and 20-mW digital. The",
+    "keywords": [
+      "Analog-to-digital conversion",
+      "double sampling"
+    ],
+    "doi": "10.1109/JSSC.2003.822903",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2004
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Double-Sampling Extended-Counting ADC",
+    "technology": "CMOS",
+    "application_domain": "baseband, if",
+    "sub_blocks": [
+      "capacitor",
+      "transistor/MOSFET",
+      "op-amp",
+      "pre-amplifier",
+      "latch",
+      "switch",
+      "clock / timing"
+    ],
+    "design_purpose": "",
+    "function_summary": "Double-Sampling Extended-Counting ADC: Extended-counting analog-to-digital conversion combines the accuracy of \u0006. modulation with the speed of algorithmic conversion.",
+    "key_specs": [
+      "0.6500 kHz",
+      "87 dB",
+      "81 dB",
+      "500 kHz",
+      "40 MHz",
+      "24 MHz",
+      "0.1%",
+      "90 dB",
+      "15 ns",
+      "104 dB"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": ""
+    },
+    {
+      "number": "I",
+      "title": "N THE PAST, the extended-counting technique [1]–[4] has",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "been shown to be a valuable architecture for analog-to-digital (A/D) conversion. It is a compromise between the accuracy modulation and the speed of an algorithmic A/D of the conversion. A full conversion is done by sequentially passing through two modes of operation. In the first mode the circuit modulator. This basically works as a resettable first-order mode achieves a high resolution at the co ..."
+    },
+    {
+      "number": "II",
+      "title": "EXTENDED COUNTING",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "In the extended-counting method [1]–[4], the converter cycles through two modes one after the other in time. Each mode consists of several steps, each taking one clock cycle. So, several clock cycles are needed to process one sample. The first mode is referred to as the “counting conversion” [1], [3]. In this mode the modulator. The system operates as a resettable first-order output bitstream is c ..."
+    },
+    {
+      "number": "III",
+      "title": "DOUBLE SAMPLING",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "Examination of the circuit operation in Fig. 2 reveals that , the opamp in the integrator remains idle. Full during phase utilization of this opamp can be achieved by using double samand , pling [5]–[10]. Here, two sampling capacitors, are used (Fig. 3). During clock phase , is sampled onto , while is transferring charge to the sampling capacitor . During phase , the situation is reversed. In the  ..."
+    },
+    {
+      "number": "IV",
+      "title": "EXTENDED COUNTING WITH DOUBLE SAMPLING",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "A. Theoretical Approach When double sampling is used in the first mode, we obtain . We can Fig. 4. Here, the switches are drawn in the position of evaluate the performance of the system by doing a time analysis of the circuit in Fig. 4. The differential output voltage of the is found to be amplifier (5) Two additional steps are then performed. In the first addiand are connected to . In tional step ..."
+    },
+    {
+      "number": "V",
+      "title": "CMOS IMPLEMENTATION",
+      "kind": "design",
+      "page": 4,
+      "text_preview": "The specifications for the converter are a bandwidth of 500 kHz and a 15-bit accuracy. We have realized a prototype m technology with three metal and two poly layers. in a 0.6In accordance to the clock frequency (24 MHz), the settling time of the opamp should be less than 15 ns. The basic opamp is shown in Fig. 12 [18], [19]. To increase the dc gain to the desired level, gain boosting was applied  ..."
+    },
+    {
+      "number": "VI",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 5,
+      "text_preview": "A. Layout The resulting chip is shown in Fig. 13. Implemented in 0.6m CMOS, the ADC core occupies about 0.7 mm . About ) is occupied by the a third of this silicon area (0.265 mm analog blocks (capacitors, opamp, and comparators). The rest of the silicon area is reserved for the switches and the digital part. This part includes the controller, which was implemented with standard cells. For testing ..."
+    },
+    {
+      "number": "VII",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 6,
+      "text_preview": "We have presented a double-sampling technique for extended-counting ADCs. It is based on a fully floating bilinear integrator. A time-based analysis of this new system revealed that the clock frequency could be reduced substantially compared to conventional extended counting, e.g., in this design by a factor of 1.7. The experimental modulator was designed for a bandwidth m CMOS process, tarof 500  ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Block diagram of an extended-counting converter.",
+      "caption_bbox": [
+        301.1,
+        218.7,
+        490.2,
+        226.6
+      ],
+      "section_title": "",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "N THE PAST, the extended-counting technique [1]–[4] has",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 1."
+        },
+        {
+          "section_title": "EXTENDED COUNTING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "A block diagram of the circuit is shown in Fig. 1."
+        },
+        {
+          "section_title": "EXTENDED COUNTING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The integrator’s output signal at the end of the counting in Fig. 1."
+        },
+        {
+          "section_title": "EXTENDED COUNTING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "For the extended conversion mode, the same blocks (DAC, integrator, and quantizer) of Fig. 1 are used in a slightly different configuration [1], [3]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.6,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS",
+        "application_domain": "baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of an extended-counting converter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.4,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. conversion.",
+      "caption_bbox": [
+        39.6,
+        138.7,
+        76.1,
+        155.6
+      ],
+      "section_title": "I. N THE PAST, the extended-counting technique [1]–[4] has",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "EXTENDED COUNTING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "An implementation of the integrator with switched capacitors and a quantizer is depicted in Fig. 2."
+        },
+        {
+          "section_title": "EXTENDED COUNTING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Then, a positive leads to , while 1 is the value for this code in the voltages. case of negative Configuration of the circuit during the ith step of the counting Fig. 2. conversion."
+        },
+        {
+          "section_title": "EXTENDED COUNTING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The output voltage after these a first-order steps is next amplified with the same circuitry of Fig. 2 but the and is altered."
+        },
+        {
+          "section_title": "DOUBLE SAMPLING",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Examination of the circuit operation in Fig. 2 reveals that , the opamp in the integrator remains idle."
+        },
+        {
+          "section_title": "DOUBLE SAMPLING",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "In Fig. 2, the integrator output is updated at the during ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.0,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Double-Sampling Extended-Counting ADC",
+        "technology": "CMOS",
+        "application_domain": "baseband, if",
+        "sub_blocks": [
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "conversion",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.5,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Principle of a double-sampling integrator.",
+      "caption_bbox": [
+        302.6,
+        179.1,
+        465.0,
+        187.1
+      ],
+      "section_title": "III. DOUBLE SAMPLING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "EXTENDED COUNTING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 3, MARCH 2004 Fig. 3."
+        },
+        {
+          "section_title": "DOUBLE SAMPLING",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Here, two sampling capacitors, are used (Fig. 3)."
+        },
+        {
+          "section_title": "DOUBLE SAMPLING",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "However, in the case of Fig. 3, the clock frequency clock rate can be halved to achieve the same update rate."
+        },
+        {
+          "section_title": "DOUBLE SAMPLING",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The circuit of Fig. 3 can be used for the integrator of the counting conversion."
+        },
+        {
+          "section_title": "DOUBLE SAMPLING",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "These branches form a bilinear integrator, a differential equivalent of the plain double-sampling circuit of Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Double-Sampling Extended-Counting ADC",
+        "technology": "CMOS",
+        "application_domain": "baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "However, in the case of Fig. 3, the clock frequency clock rate can be halved to achieve the same update rate.",
+        "function_summary": "Principle of a double-sampling integrator. However, in the case of Fig. 3, the clock frequency clock rate can be halved to achieve the same update rate.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.12,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Double-sampling integrator. The circuit in the dashed rectangle is the fully floating integrator used for the feedback signal.",
+      "caption_bbox": [
+        38.1,
+        242.1,
+        289.2,
+        259.0
+      ],
+      "section_title": "IV. EXTENDED COUNTING WITH DOUBLE SAMPLING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DOUBLE SAMPLING",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The circuit surrounded with a dashed line in Fig. 4 depicts such an integrator."
+        },
+        {
+          "section_title": "DOUBLE SAMPLING",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Two branches are added to the fully floating integrator to provide the input signal [5] (see Fig. 4)."
+        },
+        {
+          "section_title": "DOUBLE SAMPLING",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "As mentioned previously, mismatch in these input-related branches does not introduce – in Fig. 4 are nominally nonlinearity."
+        },
+        {
+          "section_title": "DOUBLE SAMPLING",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "DE MAEYER et al.: DOUBLE-SAMPLING EXTENDED-COUNTING ADC Fig. 4."
+        },
+        {
+          "section_title": "EXTENDED COUNTING WITH DOUBLE SAMPLING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "We can Fig. 4."
+        },
+        {
+          "section_title": "EXTENDED COUNTING WITH DOUBLE SAMPLING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Here, the switches are drawn in the position of evaluate the performance of the system by doing a time analysis of the circuit in Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.0,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "references": 2.0
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Double-sampling integrator. The circuit in the dashed rectangle is the fully floating integrator used for the feedback signal",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.27,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. .",
+      "caption_bbox": [
+        301.1,
+        185.7,
+        496.2,
+        193.7
+      ],
+      "section_title": "III. DOUBLE SAMPLING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "EXTENDED COUNTING WITH DOUBLE SAMPLING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "One can show that the output voltage of the opamp becomes (6) of Section II, , Next, the equivalent of the voltage is produced with the circuit of Fig. 5: (7) This ends the counting conversion mode."
+        },
+        {
+          "section_title": "EXTENDED COUNTING WITH DOUBLE SAMPLING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "So (2), an error (8) Circuit configuration to produce the voltage V Fig. 5. ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Double-Sampling Extended-Counting ADC",
+        "technology": "CMOS",
+        "application_domain": "baseband, if",
+        "sub_blocks": [
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Schematic of the overall ADC.",
+      "caption_bbox": [
+        39.6,
+        377.5,
+        167.7,
+        385.5
+      ],
+      "section_title": "IV. EXTENDED COUNTING WITH DOUBLE SAMPLING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "EXTENDED COUNTING WITH DOUBLE SAMPLING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "A schematic of the overall ADC is shown in Fig. 6."
+        },
+        {
+          "section_title": "EXTENDED COUNTING WITH DOUBLE SAMPLING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Thus, every sample is digitally approximated by Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematic of the overall ADC",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.65,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Timing diagram for a complete double-sampled extended-counting converter for the case where N equals 32 and M equals 12. Part A is the counting conversion; in part B the voltage V is produced; part C is the extended conversion. T is the clock period and T is the (effective) sample period.",
+      "caption_bbox": [
+        302.6,
+        436.5,
+        553.7,
+        480.3
+      ],
+      "section_title": "IV. EXTENDED COUNTING WITH DOUBLE SAMPLING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "EXTENDED COUNTING WITH DOUBLE SAMPLING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "A timing diagram of all the switch drive signals is shown in Fig. 7."
+        },
+        {
+          "section_title": "EXTENDED COUNTING WITH DOUBLE SAMPLING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The digital output of parts A and B in Fig. 7 can be represented by 6 bits."
+        },
+        {
+          "section_title": "EXTENDED COUNTING WITH DOUBLE SAMPLING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "However, the algorithmic conversion used IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 3, MARCH 2004 Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Double-Sampling Extended-Counting ADC",
+        "technology": "CMOS",
+        "application_domain": "baseband, if",
+        "sub_blocks": [
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Timing diagram for a complete double-sampled extended-counting converter for the case where N equals 32 and M equals 12. Part A is the counting conversion; in part B the voltage V is produced; part C is the extended conversion. T is the clock period and T is the (effective) sample period",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. Performance as a function of the dc gain of the opamp.",
+      "caption_bbox": [
+        302.6,
+        663.7,
+        507.2,
+        671.7
+      ],
+      "section_title": "IV. EXTENDED COUNTING WITH DOUBLE SAMPLING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "EXTENDED COUNTING WITH DOUBLE SAMPLING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "A typical result is depicted in Fig. 8."
+        },
+        {
+          "section_title": "EXTENDED COUNTING WITH DOUBLE SAMPLING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Double-Sampling Extended-Counting ADC",
+        "technology": "CMOS",
+        "application_domain": "baseband, if",
+        "sub_blocks": [
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Performance as a function of the dc gain of the opamp",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. Filtering due to the nonuniform sampling.",
+      "caption_bbox": [
+        38.1,
+        268.2,
+        201.4,
+        276.2
+      ],
+      "section_title": "IV. EXTENDED COUNTING WITH DOUBLE SAMPLING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "EXTENDED COUNTING WITH DOUBLE SAMPLING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The frequency response of this filter is shown in Fig. 9."
+        },
+        {
+          "section_title": "EXTENDED COUNTING WITH DOUBLE SAMPLING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The thresholds of the two comparators DE MAEYER et al.: DOUBLE-SAMPLING EXTENDED-COUNTING ADC Fig. 9."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The third intermodulation product by the reconstruction filter (shown in Fig. 9) prior to aliasing to the baseband."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Filtering due to the nonuniform sampling",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10. Model for the feedback structure with limited conductance of the switches.",
+      "caption_bbox": [
+        38.1,
+        393.0,
+        289.1,
+        409.9
+      ],
+      "section_title": "IV. EXTENDED COUNTING WITH DOUBLE SAMPLING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "EXTENDED COUNTING WITH DOUBLE SAMPLING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 10."
+        },
+        {
+          "section_title": "EXTENDED COUNTING WITH DOUBLE SAMPLING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "To analyze this situation, the model of Fig. 10 is used."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-model": -1.5,
+        "-conductance": -1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Double-Sampling Extended-Counting ADC",
+        "technology": "CMOS",
+        "application_domain": "baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Model for the feedback structure with limited conductance of the switches",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 4,
+      "caption": "Fig. 11. Model for the feedback structure with parasitic capacitors of the switches.",
+      "caption_bbox": [
+        301.1,
+        151.5,
+        552.2,
+        168.4
+      ],
+      "section_title": "IV. EXTENDED COUNTING WITH DOUBLE SAMPLING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "EXTENDED COUNTING WITH DOUBLE SAMPLING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "As boosters transconductance were used to enhance the dc gain, the influence of this output Fig. 11."
+        },
+        {
+          "section_title": "EXTENDED COUNTING WITH DOUBLE SAMPLING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "This results in the model of Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-model": -1.5,
+        "references": 0.8
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "Double-Sampling Extended-Counting ADC",
+        "technology": "CMOS",
+        "application_domain": "baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "As boosters transconductance were used to enhance the dc gain, the influence of this output Fig. 11.",
+        "function_summary": "Model for the feedback structure with parasitic capacitors of the switches. As boosters transconductance were used to enhance the dc gain, the influence of this output Fig. 11.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 5,
+      "caption": "Fig. 12. Basic opamp used in the ADC. To enhance the dc gain, boosting (not shown) was applied to the nMOS as well as pMOS cascode.",
+      "caption_bbox": [
+        39.6,
+        214.2,
+        290.7,
+        231.1
+      ],
+      "section_title": "V. CMOS IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CMOS IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The basic opamp is shown in Fig. 12 [18], [19]."
+        },
+        {
+          "section_title": "CMOS IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The opamp with gain boosting had a simulated dc gain of 104 dB, which is well over the Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "baseband, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Basic opamp used in the ADC. To enhance the dc gain, boosting (not shown) was applied to the nMOS as well as pMOS cascode",
+        "key_specs": [
+          "104 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 5,
+      "caption": "Fig. 13. Microscopic photograph of chip.",
+      "caption_bbox": [
+        39.6,
+        377.9,
+        177.5,
+        385.9
+      ],
+      "section_title": "V. CMOS IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CMOS IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 13."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Layout The resulting chip is shown in Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-photograph": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "Double-Sampling Extended-Counting ADC",
+        "technology": "CMOS",
+        "application_domain": "baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Microscopic photograph of chip",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 5,
+      "caption": "Fig. 14. (a) INL and (b) DNL of the converter’s output truncated to 15-bit reconstructed from a code-density test.",
+      "caption_bbox": [
+        302.6,
+        458.1,
+        553.7,
+        475.0
+      ],
+      "section_title": "V. CMOS IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 3, MARCH 2004 (a) (b) Fig. 14."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 14 shows the integral nonlinearity (INL) and the differential nonlinearity (DNL)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Double-Sampling Extended-Counting ADC",
+        "technology": "CMOS",
+        "application_domain": "baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) INL and (b) DNL of the converter’s output truncated to 15-bit reconstructed from a code-density test",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 6,
+      "caption": "Fig. 15. Baseband spectrum after reconstruction.",
+      "caption_bbox": [
+        38.1,
+        243.8,
+        199.7,
+        251.8
+      ],
+      "section_title": "VI. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "For higher input frequencies, the harmonics would be attenuated DE MAEYER et al.: DOUBLE-SAMPLING EXTENDED-COUNTING ADC Fig. 15."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "A typical baseband spectrum after reconstruction for the input sinewave of 100 kHz is shown in Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Baseband spectrum after reconstruction",
+        "key_specs": [
+          "100 kHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 6,
+      "caption": "Fig. 16. Measurement of a two-tone test. The third intermodulation product",
+      "caption_bbox": [
+        38.1,
+        436.7,
+        289.2,
+        444.6
+      ],
+      "section_title": "VI. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 16."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The close-in spectrum after reconstruction is shown in Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Double-Sampling Extended-Counting ADC",
+        "technology": "CMOS",
+        "application_domain": "baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measurement of a two-tone test. The third intermodulation product",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 6,
+      "caption": "Fig. 17. SNR and SNDR versus input amplitude.",
+      "caption_bbox": [
+        301.1,
+        234.1,
+        463.5,
+        242.1
+      ],
+      "section_title": "VI. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 17 shows the SNR and SNDR versus the input signal level for the single-tone test with the input frequency of 100 kHz."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The digital power Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Double-Sampling Extended-Counting ADC",
+        "technology": "CMOS",
+        "application_domain": "baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "SNR and SNDR versus input amplitude",
+        "key_specs": [
+          "100 kHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 6,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

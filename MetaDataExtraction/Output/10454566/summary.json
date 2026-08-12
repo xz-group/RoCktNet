@@ -1,0 +1,45 @@
+{
+  "title": "9.9 A 2.72fJ/conv 13b 2MS/s SAR ADC Using Dynamic Capacitive Comparator with Wide Input Common Mode Sewon Lee, Hyein Kang, Minjae Lee",
+  "bibliography": {
+    "authors": [],
+    "venue": "",
+    "year": 2024,
+    "doi": "10.1109/ISSCC49657.2024.10454566",
+    "keywords": []
+  },
+  "figure_number": "Figure 9.9.2 shows the overall CSPC structure, consisting of the 1st and 2nd pre-ampliﬁers, gain-boosting, and a CMOS latch. Variation in VICM and PVT changes the output commonmode voltage of the 1st pre-ampliﬁer. Directly delivering these outputs (Vup,1+, Vup,1-, Vdn,1+, and Vdn,1-) to the latch could lead to decision failure or speed degradation due to the uncontrolled output common-mode voltage. To address this issue, a 2nd pre-ampliﬁer and a gain-boosting circuit were introduced. The 2nd pre-ampliﬁer uses a structure similar to the 1st pre-ampliﬁer, reducing the impact of the output common-mode voltage. Additionally, through positive-feedback-based gain-boosting, the outputs (Vdn,2+, Vdn,2-, Vup,2+, and Vup,2-) are shifted to the 0 or VDD domain, preventing the decision speed degradation at the latch. The CMOS Latch takes inputs from all outputs of the 2nd preampliﬁer without a clock for the self-timed operation. These gain stages help reduce the input-referred noise of the comparator.",
+  "type": "A 2.72fJ/conv 13b 2MS/s SAR ADC",
+  "technology": "CMOS",
+  "application": "",
+  "sub_blocks": [
+    "capacitor",
+    "transistor/MOSFET",
+    "bias circuit",
+    "differential pair",
+    "pre-amplifier",
+    "latch"
+  ],
+  "function_summary": "A 2.72fJ/conv 13b 2MS/s SAR ADC",
+  "design_purpose": "The 1st pre-ampliﬁer of the CSPC is proposed to alleviate the aforementioned issues, as shown in Fig. 9.9.1 (bottom-left).",
+  "metrics": [
+    "Energy per operation",
+    "Gain",
+    "Efficiency / ratio",
+    "Supply voltage",
+    "Capacitance"
+  ],
+  "numerical_performance": [
+    "2.72fJ",
+    "70.6dB",
+    "87.4%",
+    "85μV",
+    "0.75V",
+    "0.375V",
+    "222fF",
+    "285fF",
+    "95fF",
+    "20fF"
+  ],
+  "confidence": 1.0,
+  "warnings": []
+}

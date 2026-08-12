@@ -1,0 +1,1129 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1522552.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1522552",
+  "generated_at": "2026-07-29T22:03:09",
+  "paper_metadata": {
+    "title": "A 10 Gb/s BiCMOS Adaptive Cable Equalizer",
+    "authors": [
+      "Guangyu Evelina Zhang",
+      "Michael M. Green"
+    ],
+    "abstract": "A 10 Gb/s adaptive equalizer IC using SiGe BiCMOS technology is described. The circuit consists of the combination of function well. an analog equalizer and an adaptive feedback loop for minimizing At relatively low bit rates, most adaptive equalizers have been the inter-symbol interference (ISI) for a variety of cable characimplemented using a digital approach [1], [2]. Design of a digteristics. The adaptive loop functions using a novel slope-detection ital equalizer at the receiver side involves a delay element and a circuit which has a characteristic that correlates closely with the decision circuit that requires a recovered clock. The extraction 0.81 mm amount of ISI. The chip occupies an area of 0.87 mm and consumes a power of 350 mW with 3.3 V power supply. This of the clock depends on the input data of the clock and data readaptive equalizer is able to compensate for a cable loss up to 22 dB covery (CDR) circuit, which increases the system complexity at 5 GHz while maintaining a low bit-error rate. and could lead to problems with CDR locking. On the other",
+    "keywords": [
+      "Adaptive equalizers",
+      "broadband communication"
+    ],
+    "doi": "10.1109/JSSC.2005.857354",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2005
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Gb/s BiCMOS Adaptive Cable Equalizer",
+    "technology": "CMOS, BICMOS, SIGE",
+    "application_domain": "if",
+    "sub_blocks": [
+      "transistor/MOSFET",
+      "LC tank / resonator",
+      "output buffer",
+      "mixer",
+      "differential pair"
+    ],
+    "design_purpose": "This of the clock depends on the input data of the clock and data readaptive equalizer is able to compensate for a cable loss up to 22 dB covery (CDR) circuit, which increases the system complexity at 5 GHz while maintaining a low bit-error rate. and could lead to problems with CDR locking.",
+    "function_summary": "Gb/s BiCMOS Adaptive Cable Equalizer: This of the clock depends on the input data of the clock and data readaptive equalizer is able to compensate for a cable loss up to 22 dB covery (CDR) circuit, which increases the system complexity at 5 GHz while maintaining a low bit-error rate. and could lead to problems with CDR locking.",
+    "key_specs": [
+      "350 mW",
+      "3.3 V",
+      "22 dB",
+      "5 GHz",
+      "5 dB",
+      "13 dB",
+      "0.5 Hz",
+      "50%",
+      "15%",
+      "60%"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "A S BIT RATES increase in broadband data communication systems, the nonideal effects of the channel have an increasingly important impact on the quality of the signal. In particular, the loss (caused by skin effect and dielectric loss) in copper causes signiﬁcant attenuation of the transmitted data at high frequencies. At bit rates of 10 Gb/s and higher, even a relatively short section of copper c ..."
+    },
+    {
+      "number": "II",
+      "title": "PRINCIPLE OF OPERATION",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "To understand the equalizer’s operation, we ﬁrst consider the operation of a simpliﬁed linear circuit, shown in Fig. 3 operating at a bit rate normalized to 1 b/s. A rudimentary cable model shown in Fig. 3(a), consisting of four RC sections, is used for this illustration. As mentioned in the previous section, this medium exhibits a monotonically decreasing transfer function. Thus, we would expect  ..."
+    },
+    {
+      "number": "III",
+      "title": "CIRCUIT DESIGN",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "The block diagram of the adaptive equalizer is shown in Fig. 7. The feedforward path consists of three parts: 1) equalizer ﬁlter, which functions as a high-pass ﬁlter whose characteristics can be adjusted and whose operation was described in the previous section; 2) slicer, which restores the full logic levels after the equalizer ﬁlter; and 3) output driver, which is load. The feedback path consis ..."
+    },
+    {
+      "number": "IV",
+      "title": "MEASUREMENT RESULTS",
+      "kind": "results",
+      "page": 6,
+      "text_preview": "A prototype system was fabricated to demonstrate a data rate of 10 Gb/s over two different lengths of RU-256 copper cables, ZHANG AND GREEN: A 10 Gb/s BiCMOS ADAPTIVE CABLE EQUALIZER (a) Input and output eye diagrams for 4-foot long cable. (b) Input and output eye diagrams for 15-foot long cable. Fig. 18. TABLE II PERFORMANCE SUMMARY whose transmission characteristics were given in Fig. 2. The die ..."
+    },
+    {
+      "number": "V",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 7,
+      "text_preview": "This paper presented a 10 Gb/s analog equalizer that has an analog feedback control loop. A gain compensation up to 22 dB at 5 GHz is achieved by adjusting the low frequency gain of the feedforward equalizer ﬁlter. A transition time detector that was used in the adaptive feedback loop was presented. REFERENCES [1] M. Q. Le, P. J. Hurst, and J. P. Keane, “An adaptive analog noise-predictive decisio ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Block diagram of broadband receiver including equalizer.",
+      "caption_bbox": [
+        38.1,
+        198.4,
+        252.4,
+        206.4
+      ],
+      "section_title": "II. PRINCIPLE OF OPERATION",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "A block diagram of a typical receiver is shown in Fig. 1."
+        },
+        {
+          "section_title": "PRINCIPLE OF OPERATION",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "ZHANG AND GREEN: A 10 Gb/s BiCMOS ADAPTIVE CABLE EQUALIZER Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of broadband receiver including equalizer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.69,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. for two copper cables.",
+      "caption_bbox": [
+        38.1,
+        542.7,
+        153.3,
+        550.7
+      ],
+      "section_title": "II. PRINCIPLE OF OPERATION",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "As an example of a copper cable characteristic, Fig. 2 shows the measured transmission characteristic for two RU-256 copper cables, one with length 4 feet; the other with length 15 feet."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The nonmonotonicities in Fig. 2 are due to reﬂections that come from discontinuities in the connectors and mismatches between the cables and the measurement equipment."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Digital Object Identiﬁer 10.1109/JSSC.2005.857354 shown in Fig. 2 the equalizer described here has been shown to function well."
+        },
+        {
+          "section_title": "PRINCIPLE OF OPERATION",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "TABLE I OPTIMUM TRANSIENT CHARACTERISTICS OF EQUALIZER FOR THREE DIFFERENT CABLE MODELS S Fig. 2. for two copper cables."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Thus, the pulse widths of the Fig. 10 waveforms are consistent with those of Fig. 5. 1The cable model used in this simulation is based on a behavioral model that approximates the characteristic in Fig. 2 corresponding to a length of 15 feet. and can be characterized by The relation between with units of ps/mV."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "TABLE II PERFORMANCE SUMMARY whose transmission characteristics were given in Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.0,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "for two copper cables",
+        "key_specs": [
+          "10 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.5,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Linear circuit normalized to 1 b/s for illustration.",
+      "caption_bbox": [
+        39.6,
+        245.1,
+        227.0,
+        253.0
+      ],
+      "section_title": "II. PRINCIPLE OF OPERATION",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "PRINCIPLE OF OPERATION",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "To understand the equalizer’s operation, we ﬁrst consider the operation of a simpliﬁed linear circuit, shown in Fig. 3 operating at a bit rate normalized to 1 b/s."
+        },
+        {
+          "section_title": "PRINCIPLE OF OPERATION",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "A rudimentary cable model shown in Fig. 3(a), consisting of four RC sections, is used for this illustration."
+        },
+        {
+          "section_title": "PRINCIPLE OF OPERATION",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "In other words, the worst ISI would come from an isolated logic “1” of duration 1 UI surrounded by strings of logic “0.” This is illustrated in Fig. 4, set where the response of the Fig. 3(a) cable model, with to 0.188, is shown for three different input pulse widths: 1 s, 2 s, and 3 s."
+        },
+        {
+          "section_title": "PRINCIPLE OF OPERATION",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "As shown in Fig. 3(b), the signal from the cable is applied to an LC bandpass ﬁlter centered at 0.5 Hz with a of 2."
+        },
+        {
+          "section_title": "PRINCIPLE OF OPERATION",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "As illussignal from the cable determines trated in Fig. 3(b), weighting parameter the proportion of each signal that is summed at the output."
+        },
+        {
+          "section_title": "PRINCIPLE OF OPERATION",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "A sketch of the response at each output swing will be node to a 1-s input pulse is shown in Fig. 3(c)."
+        },
+        {
+          "section_title": "PRINCIPLE OF OPERATION",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "We now consider a group of three different cable characterisin the Fig. 3(a) tics [parameterized by different values of cable model] and for each characteristic determine the value such that the ISI is zero."
+        },
+        {
+          "section_title": "PRINCIPLE OF OPERATION",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "(This optimum transition time value of the LC tank circuit; for this example a of depends on the 2 was chosen because that is approximately the same value as Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.0,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:proposed": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "if",
+        "sub_blocks": [
+          "LC tank / resonator"
+        ],
+        "design_purpose": "",
+        "function_summary": "Linear circuit normalized to 1 b/s for illustration",
+        "key_specs": [
+          "0.5 Hz",
+          "2 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.73,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Pulse responses of cable.",
+      "caption_bbox": [
+        39.6,
+        447.0,
+        149.0,
+        454.9
+      ],
+      "section_title": "II. PRINCIPLE OF OPERATION",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "PRINCIPLE OF OPERATION",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "In other words, the worst ISI would come from an isolated logic “1” of duration 1 UI surrounded by strings of logic “0.” This is illustrated in Fig. 4, set where the response of the Fig. 3(a) cable model, with to 0.188, is shown for three different input pulse widths: 1 s, 2 s, and 3 s."
+        },
+        {
+          "section_title": "PRINCIPLE OF OPERATION",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Gb/s BiCMOS Adaptive Cable Equalizer",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Pulse responses of cable",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. output for three different values of .",
+      "caption_bbox": [
+        302.6,
+        533.0,
+        423.4,
+        550.0
+      ],
+      "section_title": "II. PRINCIPLE OF OPERATION",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "PRINCIPLE OF OPERATION",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "This is shown in the curve labeled “cable output” in Fig. 5."
+        },
+        {
+          "section_title": "PRINCIPLE OF OPERATION",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "This is illustrated in Fig. 5, where the equalizer pulse response is shown for three ."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 11, NOVEMBER 2005 Pulse response of RC ladder (for C = 0:125) and linear equalizer Fig. 5. output for three different values of ."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "We observe that the pulses in Fig. 10 (which come from the transistor-level realization of the equalizer) look quite different from the pulses in Fig. 5 (which come from the simple linear model of the equalizer)."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Thus, the pulse widths of the Fig. 10 waveforms are consistent with those of Fig. 5. 1The cable model used in this simulation is based on a behavioral model that approximates the characteristic in Fig. 2 corresponding to a length of 15 feet. and can be characterized by The relation between with units of ps/mV."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.0,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "output for three different values of",
+        "key_specs": [
+          "10 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.5,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6.",
+      "caption_bbox": [
+        38.1,
+        272.6,
+        58.7,
+        280.6
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "PRINCIPLE OF OPERATION",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The cable pulse responses are shown in Fig. 6(a)."
+        },
+        {
+          "section_title": "PRINCIPLE OF OPERATION",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The resulting equalizer output wavevalues, forms are shown in Fig. 6(b), where for each of the weighting paramter was set to its optimum value such that the pulsewidth for each waveform is exactly 1 s."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "equalizer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Adaptive equalizer block",
+      "caption_bbox": [
+        38.1,
+        552.9,
+        147.7,
+        560.9
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The block diagram of the adaptive equalizer is shown in Fig. 7."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 7."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "System Analysis To gain better insight into the operation of the adaptive equalizer, the Fig. 7 block diagram can be redrawn as the feedback loop block diagram shown in Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Adaptive equalizer block",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Equalizer ﬁlter schematic.",
+      "caption_bbox": [
+        39.6,
+        363.4,
+        152.8,
+        371.4
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Feedforward Path The equalizer ﬁlter schematic is shown in Fig. 8."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Thus, each Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Equalizer ﬁlter schematic",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.79,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. Magnitude plot of equalizer output for three different control voltages.",
+      "caption_bbox": [
+        39.6,
+        508.8,
+        290.6,
+        516.7
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 9 shows the magnitude transfer function for by , exhibiting a maximum equalthree different values of ization of 22 dB (deﬁned as the ratio of the gain at 5 GHz to the DC gain)."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Magnitude plot of equalizer output for three different control voltages",
+        "key_specs": [
+          "22 dB",
+          "5 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10. Relation between output pulsewidth and transition time.",
+      "caption_bbox": [
+        39.6,
+        656.5,
+        251.2,
+        664.5
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The output the output transition time pulsewidth varies directly with the value of the control voltage ps corresponds to zero as shown in Fig. 10."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "We observe that the pulses in Fig. 10 (which come from the transistor-level realization of the equalizer) look quite different from the pulses in Fig. 5 (which come from the simple linear model of the equalizer)."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Thus, the pulse widths of the Fig. 10 waveforms are consistent with those of Fig. 5. 1The cable model used in this simulation is based on a behavioral model that approximates the characteristic in Fig. 2 corresponding to a length of 15 feet. and can be characterized by The relation between with units of ps/mV."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 10."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fortunately, the nonlinearity of the equalizer itself maintains a logic level that is independent of the equalizer settings, which can be observed in Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.5,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Relation between output pulsewidth and transition time",
+        "key_specs": [
+          "10 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.38,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 4,
+      "caption": "Fig. 11. Slicer schematic.",
+      "caption_bbox": [
+        302.6,
+        546.6,
+        390.3,
+        554.5
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The slicer, shown in Fig. 11, is implemented by two cascaded CML buffers."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "However, the design of a IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 11, NOVEMBER 2005 Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "buffer",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Slicer schematic",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.79,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 5,
+      "caption": "Fig. 12. (a) Transition detector circuit. (b) Input waveforms. (c) Output waveforms.",
+      "caption_bbox": [
+        38.1,
+        272.0,
+        311.5,
+        279.9
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "As illustrated in Fig. 12(a), the inputs are applied to the gates of a CMOS differential pair."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 12(b) shows 100 ps input pulses with two different transition times; Fig. 12(c) shows the corresponding detector output waveforms."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "In the feedback path, two detectors—one connected to the equalizer ﬁlter output, the other connected to the slicer ZHANG AND GREEN: A 10 Gb/s BiCMOS ADAPTIVE CABLE EQUALIZER Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.7,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-waveform": -2.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "if",
+        "sub_blocks": [
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) Transition detector circuit. (b) Input waveforms. (c) Output waveforms",
+        "key_specs": [
+          "100 ps"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.09,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 5,
+      "caption": "Fig. 13. Schematic of integrator with common-mode feedback circuit.",
+      "caption_bbox": [
+        38.1,
+        478.2,
+        268.8,
+        486.2
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 13."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The pulses from both detector outputs are then applied to the differential inputs of an integrator (shown in Fig. 13, including the common-mode feedback circuit); the , which is fed back to the equalizer, integrator output responds to the difference in transition time between the detector inputs."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Thus, care needs to be taken only in ensuring that the logic levels of the input and output of the transition detectors are well-matched. of the Fig. 13 integrator is given The transfer function by Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.7,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematic of integrator with common-mode feedback circuit",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.81,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 5,
+      "caption": "Fig. 14. Operation of slicer and integrator.",
+      "caption_bbox": [
+        301.1,
+        639.0,
+        442.5,
+        646.9
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Thus, care needs to be taken only in ensuring that the logic levels of the input and output of the transition detectors are well-matched. of the Fig. 13 integrator is given The transfer function by Fig. 14."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "To illustrate the operation of the time constant slicer and integrator, simulation was performed by varying the and observing the control voltage. equalizer transition time The simulation results are shown in Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Operation of slicer and integrator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 6,
+      "caption": "Fig. 15.",
+      "caption_bbox": [
+        39.6,
+        309.8,
+        64.6,
+        317.7
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "(c) Slow corner Fig. 15. open-loop eye diagram, exhibiting 10.5 ps ISI."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Equalizer block diagram. assuming the input transition density is same as that for a redata pattern. peating Proper functioning of the adaptation loop was veriﬁed by simulation as shown in Fig. 15."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The resulting eye diagram, shown in Fig. 15(a), exhibits 9.8 ps ISI."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The closed-loop eye diagram, shown in Fig. 15(b), exhibits 11 ps, demonstrating that the adaptive loop functions properly."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The simulation was repeated using component models corresponding to the slow process corner, where the open-loop eye diagram, shown in Fig. 15(c), exhibits 10.5 ps ISI; the closed-loop eye diagram, shown in Fig. 15(d), exhibits 14 ps ISI."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.5,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "equalizer",
+        "key_specs": [
+          "10.5 ps",
+          "9.8 ps",
+          "11 ps",
+          "14 ps"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.38,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 6,
+      "caption": "Fig. 16. Equalizer block diagram.",
+      "caption_bbox": [
+        39.6,
+        412.0,
+        153.3,
+        420.0
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 16."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "System Analysis To gain better insight into the operation of the adaptive equalizer, the Fig. 7 block diagram can be redrawn as the feedback loop block diagram shown in Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Equalizer block diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.57,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 6,
+      "caption": "Fig. 17. Die photograph of the equalizer chip.",
+      "caption_bbox": [
+        302.6,
+        563.4,
+        455.4,
+        571.3
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The overall loop transfer function is given by Fig. 17."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The die photograph of the chip is shown in Fig. 17, where each block m m."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-photograph": -3.0,
+        "-die photo": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Die photograph of the equalizer chip",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 7,
+      "caption": "Fig. 18.",
+      "caption_bbox": [
+        38.1,
+        380.4,
+        62.8,
+        388.3
+      ],
+      "section_title": "V. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 18."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 18 shows the input and output eye diagrams for each cable measured using an Agilent 86–100 B digital communications analyzer."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Gb/s BiCMOS Adaptive Cable Equalizer",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 13,
+  "warnings": []
+}

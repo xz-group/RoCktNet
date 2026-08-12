@@ -1,0 +1,1030 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\953471.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\953471",
+  "generated_at": "2026-07-29T22:03:33",
+  "paper_metadata": {
+    "title": "Low-Voltage 1.9-GHz Front-End Receiver in 0.5-m CMOS Technology",
+    "authors": [
+      "Eyad Abou-Allam",
+      "John J. Nisbet",
+      "Michael C. Maliepaard"
+    ],
+    "abstract": "This paper describes the design of a 1.9-GHz frontend receiver. The target application of the receiver is the personal communications standard PCS1900. Powered by a 1-V supply, the receiver consists of a low noise amplifier (LNA) and a downconversion mixer. The receiver was fabricated within a 0.5m CMOS technology. The LNA features 15 dB of gain and a 1.8-dB noise figure. The mixer exhibits 1.5-dB conversion loss, 12-dB noise figure, and 0 dBm 1dB-compression point.",
+    "keywords": [
+      "CMOS",
+      "downconversion mixers",
+      "low noise amplifiers",
+      "low-voltage circuits",
+      "noise modeling",
+      "RF integrated circuits"
+    ],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2001
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Low-Voltage 1.9-GHz Front-End Receiver in 0.5-m CMOS Technology",
+    "technology": "CMOS",
+    "application_domain": "rf, radio frequency, wireless, if",
+    "sub_blocks": [
+      "inductor",
+      "capacitor",
+      "transistor/MOSFET",
+      "current source",
+      "LC tank / resonator",
+      "transformer",
+      "balun",
+      "output buffer",
+      "mixer",
+      "resistor",
+      "switch",
+      "latch"
+    ],
+    "design_purpose": "",
+    "function_summary": "Low-Voltage 1.9-GHz Front-End Receiver in 0.5-m CMOS Technology: This paper describes the design of a 1.9-GHz frontend receiver.",
+    "key_specs": [
+      "15 dB",
+      "0 dBm",
+      "1dB",
+      "1 V",
+      "2V",
+      "1.9 GHz",
+      "1990 MHz",
+      "1960 MHz",
+      "1910 MHz",
+      "1880 MHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "W IRELESS telecommunication systems are expanding in many directions. On the hardware frontier, there is a persistent demand for light, inexpensive, low-power, hand-held terminals. This incited rapid evolution of highly integrated radio frequency (RF) receivers within CMOS technologies [1]–[5]. Contemporaneous with this evolution is the reduction in supply voltage standards for integrated circuits ..."
+    },
+    {
+      "number": "II",
+      "title": "RECEIVER REQUIREMENTS",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "The receiver proposed here is designed for the personal communications standard (PCS 1900) which operates at 1.9 GHz. In this standard, the receive band extends from 1930 to 1990 MHz (centered at 1960 MHz), and the transmit band extends from 1850 to 1910 MHz (centered at 1880 MHz). The heterodyne architecture, shown in Fig. 1, was adopted for the receiver. The first component in the receive chain  ..."
+    },
+    {
+      "number": "III",
+      "title": "LC-FOLDED CASCODE TOPOLOGY",
+      "kind": "proposed",
+      "page": 1,
+      "text_preview": "It is well known that the noise figure of a linear two-port network can be written as [10]–[12] (1) is the minimum noise figure, is the noise conwhere is the optimum source impedance, ductance, and is the source impedance. For a commonsource transistor, the noise parameters can be expressed as1 (2) (3) (4) (5) where , the cutoff frequency of the transistor; transconductance; gate resistance [13],  ..."
+    },
+    {
+      "number": "IV",
+      "title": "LOW NOISE AMPLIFIER",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "The design of the LNA input stage is illustrated in Fig. 4. The first step involves matching the input resistance and the simultaneously [23]. To do optimum source resistance to 50 is added to match the input so, a series feedback inductor [24] resistance to 50 (8) is sufficient to determine Choosing a bias point for particular . For example, if the transistor is biased for GHz nH. From the theory ..."
+    },
+    {
+      "number": "V",
+      "title": "DOWNCONVERSION MIXER",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "A. Narrowband Source-Coupled Pair The first stage in a balanced Gilbert mixer is the source-coupled pair (SCP) transconductance stage, shown in Fig. 7(a). and represent a small RF signal. When a single-ended Here , and ), the input voltage is fed (e.g., high impedance of the current source forces the output currents to be balanced. If the input voltage is perfectly balanced (i.e., ), the output cu ..."
+    },
+    {
+      "number": "VI",
+      "title": "CIRCUIT MEASUREMENTS",
+      "kind": "design",
+      "page": 5,
+      "text_preview": "The LNA and mixer circuits were implemented using 0.5m CMOS technology. Both circuits were placed on a single chip, a photograph of which is depicted in Fig. 10. Included in the chip pF placed between each dc bias terare large capacitors minal and ground. These bias capacitors attenuate the high-frequency fluctuations that may exist in the power supplies and the bias lines. All on-chip inductors w ..."
+    },
+    {
+      "number": "VII",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 8,
+      "text_preview": "On the system level, it is shown that the main threat posed by reducing the supply voltage is the blocking performance 10 to 0 dBm blocking of the receiver. Given the fact that a signal can be expected at the IF stage, the use of an IF bandpass filter is almost necessary to attenuate the blocker. Note that quadrature image-reject techniques attenuates the blocking signal only at a certain frequenc ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Receiver architecture.",
+      "caption_bbox": [
+        302.6,
+        268.4,
+        401.4,
+        279.0
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Publisher Item Identifier S 0018-9200(01)08415-3. 0018–9200/01$10.00 © 2001 IEEE Fig. 1."
+        },
+        {
+          "section_title": "RECEIVER REQUIREMENTS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The heterodyne architecture, shown in Fig. 1, was adopted for the receiver."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Receiver architecture",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Signal levels. (a) As prescribed for PCS1900. (b) As they propagate in the receiver.",
+      "caption_bbox": [
+        38.1,
+        399.9,
+        289.1,
+        419.5
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "RECEIVER REQUIREMENTS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The blocking profile for PCS1900 is illustrated in Fig. 2(a)."
+        },
+        {
+          "section_title": "RECEIVER REQUIREMENTS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The blocker and the desired signal levels, as they propagate along the receiver chain, are shown in Fig. 2(b)."
+        },
+        {
+          "section_title": "RECEIVER REQUIREMENTS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "As a result, a mixer with 0-dB ABOU-ALLAM et al.: LOW-VOLTAGE 1.9-GHz FRONT-END RECEIVER (a) (b) Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.7,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Signal levels. (a) As prescribed for PCS1900. (b) As they propagate in the receiver",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Amplifier topologies. (a) Common-source. (b) Cascode. (c) Folded cascode. (d) Proposed LC-folded cascode.",
+      "caption_bbox": [
+        39.6,
+        316.9,
+        290.6,
+        336.6
+      ],
+      "section_title": "III. LC-FOLDED CASCODE TOPOLOGY",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "LC-FOLDED CASCODE TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Consider now the impact of loading the transistor as shown in Fig. 3(a)."
+        },
+        {
+          "section_title": "LC-FOLDED CASCODE TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The cascode topology, shown in Fig. 3(b), is typically used to extenuate the Miller effect."
+        },
+        {
+          "section_title": "LC-FOLDED CASCODE TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 3."
+        },
+        {
+          "section_title": "LC-FOLDED CASCODE TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "One method of reducing the supply voltage requirement is to use the folded cascode amplifier shown in Fig. 3(c)."
+        },
+        {
+          "section_title": "LC-FOLDED CASCODE TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "In the topologies of Fig. 3(b) and (c), the current buffer ac- . tion is wideband, extending from dc to high frequencies In wireless receivers, the signals of interest span a narrow bandwidth (e.g., 60 MHz for our application) centered around a much higher carrier frequency (e.g., 1.96 GHz)."
+        },
+        {
+          "section_title": "LC-FOLDED CASCODE TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "This allows for replacing the current source in the folded cascode amplifier by an LC tank circuit [20]–[22] as shown in Fig. 3(d)."
+        },
+        {
+          "section_title": "LC-FOLDED CASCODE TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "In order to miniwhere mize this loss, the buffer stage is designed such that (7) Within practical limits, the condition in (7) is best achieved by using a large inductor and a small capacitor in Fig. 3(d)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 7.0,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "section:proposed": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, if",
+        "sub_blocks": [
+          "inductor",
+          "capacitor",
+          "transistor/MOSFET",
+          "current source",
+          "LC tank / resonator",
+          "output buffer"
+        ],
+        "design_purpose": "In order to miniwhere mize this loss, the buffer stage is designed such that (7) Within practical limits, the condition in (7) is best achieved by using a large inductor and a small capacitor in Fig. 3(d).",
+        "function_summary": "Amplifier topologies. (a) Common-source. (b) Cascode. (c) Folded cascode. (d) Proposed LC-folded cascode. In order to miniwhere mize this loss, the buffer stage is designed such that (7) Within practical limits, the condition in (7) is best achieved by using a large inductor and a small capacitor in Fig. 3(d).",
+        "key_specs": [
+          "60 MHz",
+          "1.96 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.95,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Two-step matching of a common-source transistor.",
+      "caption_bbox": [
+        302.6,
+        146.2,
+        493.6,
+        156.9
+      ],
+      "section_title": "III. LC-FOLDED CASCODE TOPOLOGY",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "LC-FOLDED CASCODE TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "This common-gate tranIEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 10, OCTOBER 2001 Fig. 4."
+        },
+        {
+          "section_title": "LOW NOISE AMPLIFIER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The design of the LNA input stage is illustrated in Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Two-step matching of a common-source transistor",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Noise figure and minimum noise figure of the standalone MOSFET and = 5 and X = 0 . the matched transistor (LNA), assuming R + R",
+      "caption_bbox": [
+        38.1,
+        231.2,
+        289.2,
+        250.8
+      ],
+      "section_title": "IV. LOW NOISE AMPLIFIER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "LOW NOISE AMPLIFIER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "To do so, an inductor gate, resulting in (9) ABOU-ALLAM et al.: LOW-VOLTAGE 1.9-GHz FRONT-END RECEIVER Fig. 5."
+        },
+        {
+          "section_title": "LOW NOISE AMPLIFIER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "This effect is plotted in Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, if",
+        "sub_blocks": [
+          "inductor",
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Noise figure and minimum noise figure of the standalone MOSFET and = 5 and X = 0 . the matched transistor (LNA), assuming R + R",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. LC-folded cascode LNA.",
+      "caption_bbox": [
+        301.1,
+        205.4,
+        410.6,
+        216.0
+      ],
+      "section_title": "IV. LOW NOISE AMPLIFIER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "LOW NOISE AMPLIFIER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The LNA circuit, shown in Fig. 6, is designed based on a matched common-source amplifier combined with the , ) LC-folded cascode isolation scheme."
+        },
+        {
+          "section_title": "LOW NOISE AMPLIFIER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "This hurdle will not Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "LC-folded cascode LNA",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. Source-coupled pair. (a) Conventional approach. (b) Narrowband approach.",
+      "caption_bbox": [
+        39.6,
+        296.0,
+        290.7,
+        315.6
+      ],
+      "section_title": "V. DOWNCONVERSION MIXER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DOWNCONVERSION MIXER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Narrowband Source-Coupled Pair The first stage in a balanced Gilbert mixer is the source-coupled pair (SCP) transconductance stage, shown in Fig. 7(a). and represent a small RF signal."
+        },
+        {
+          "section_title": "DOWNCONVERSION MIXER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The drawback of (a) (b) Fig. 7."
+        },
+        {
+          "section_title": "DOWNCONVERSION MIXER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "In lieu of a current source, a tank circuit can be used, as shown in Fig. 7(b)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.8,
+      "relevance_breakdown": {
+        "-conventional": -3.0,
+        "references": 1.2
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, if",
+        "sub_blocks": [
+          "current source",
+          "LC tank / resonator",
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Source-coupled pair. (a) Conventional approach. (b) Narrowband approach",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 5,
+      "caption": "Fig. 8. LC-folded cascode mixer.",
+      "caption_bbox": [
+        38.1,
+        218.2,
+        149.5,
+        228.9
+      ],
+      "section_title": "V. DOWNCONVERSION MIXER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DOWNCONVERSION MIXER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "In both of these reports, the tank circuit was tuned ABOU-ALLAM et al.: LOW-VOLTAGE 1.9-GHz FRONT-END RECEIVER Fig. 8."
+        },
+        {
+          "section_title": "DOWNCONVERSION MIXER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Mixer Circuit The mixer circuit schematic diagram is illustrated in Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, if",
+        "sub_blocks": [
+          "LC tank / resonator",
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "LC-folded cascode mixer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 5,
+      "caption": "Fig. 9. Half circuits of (a) Gilbert mixer, and (b) LC-folded cascode mixer.",
+      "caption_bbox": [
+        301.1,
+        173.0,
+        544.4,
+        183.6
+      ],
+      "section_title": "V. DOWNCONVERSION MIXER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DOWNCONVERSION MIXER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Virtually the only Fig. 9."
+        },
+        {
+          "section_title": "DOWNCONVERSION MIXER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "To illustrate this advantage, first consider the circuit shown in Fig. 9(a), representing one branch of a Gilbert mixer."
+        },
+        {
+          "section_title": "DOWNCONVERSION MIXER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Now consider the case of the LC-folded half-mixer shown in Fig. 9(b)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.2,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-half circuit": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Half circuits of (a) Gilbert mixer, and (b) LC-folded cascode mixer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 6,
+      "caption": "Fig. 10. Chip microphotograph.",
+      "caption_bbox": [
+        39.6,
+        275.3,
+        147.1,
+        286.0
+      ],
+      "section_title": "VI. CIRCUIT MEASUREMENTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT MEASUREMENTS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Both circuits were placed on a single chip, a photograph of which is depicted in Fig. 10."
+        },
+        {
+          "section_title": "CIRCUIT MEASUREMENTS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Measurements loss was below Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "Low-Voltage 1.9-GHz Front-End Receiver in 0.5-m CMOS Technology",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chip microphotograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 6,
+      "caption": "Fig. 11. LNA Gain and return loss with external matching components.",
+      "caption_bbox": [
+        302.6,
+        255.7,
+        535.9,
+        266.3
+      ],
+      "section_title": "VI. CIRCUIT MEASUREMENTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT MEASUREMENTS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Table I contains a summary of the receiver performance merits. -parameters of the LNA after matching are shown in The Fig. 11."
+        },
+        {
+          "section_title": "CIRCUIT MEASUREMENTS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "The LO port was also matched using surface mount IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 10, OCTOBER 2001 Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "LNA Gain and return loss with external matching components",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 6,
+      "caption": "Fig. 12. Noise figure of the LNA.",
+      "caption_bbox": [
+        302.6,
+        472.9,
+        416.4,
+        483.6
+      ],
+      "section_title": "VI. CIRCUIT MEASUREMENTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT MEASUREMENTS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "TABLE I RECEIVER PERFORMANCE SUMMARY of the noise figure of the LNA are shown in Fig. 12."
+        },
+        {
+          "section_title": "CIRCUIT MEASUREMENTS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Noise figure of the LNA",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 6,
+      "caption": "Fig. 13. Printed circuit board used in testing the mixer.",
+      "caption_bbox": [
+        302.6,
+        661.0,
+        483.6,
+        671.7
+      ],
+      "section_title": "VI. CIRCUIT MEASUREMENTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT MEASUREMENTS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "The IC was fixed and bonded directly to the board, as shown in Fig. 13."
+        },
+        {
+          "section_title": "CIRCUIT MEASUREMENTS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Printed circuit board used in testing the mixer",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.5,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 7,
+      "caption": "Fig. 14. Return loss at (a) RF port, and (b) LO port.",
+      "caption_bbox": [
+        38.1,
+        503.6,
+        209.7,
+        514.3
+      ],
+      "section_title": "VI. CIRCUIT MEASUREMENTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT MEASUREMENTS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Fig. 14(a) shows that 12 dB across the rethe return loss (S11) at RF port was below ceive band."
+        },
+        {
+          "section_title": "CIRCUIT MEASUREMENTS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Fig. 14(b) shows that the return loss at the LO port 15 dB. was below The mixer output spectrum is captured in Fig. 15."
+        },
+        {
+          "section_title": "CIRCUIT MEASUREMENTS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "The IF ABOU-ALLAM et al.: LOW-VOLTAGE 1.9-GHz FRONT-END RECEIVER (a) (b) Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Return loss at (a) RF port, and (b) LO port",
+        "key_specs": [
+          "12 dB",
+          "15 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 7,
+      "caption": "Fig. 15. IF spectral response to a two-tone RF input signal.",
+      "caption_bbox": [
+        301.1,
+        268.1,
+        495.6,
+        278.8
+      ],
+      "section_title": "VI. CIRCUIT MEASUREMENTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT MEASUREMENTS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Fig. 14(b) shows that the return loss at the LO port 15 dB. was below The mixer output spectrum is captured in Fig. 15."
+        },
+        {
+          "section_title": "CIRCUIT MEASUREMENTS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "IF spectral response to a two-tone RF input signal",
+        "key_specs": [
+          "15 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 7,
+      "caption": "Fig. 16. Extrapolation of mixer IP3.",
+      "caption_bbox": [
+        301.1,
+        483.2,
+        422.3,
+        493.8
+      ],
+      "section_title": "VI. CIRCUIT MEASUREMENTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT MEASUREMENTS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "The output levels of the fundamental harmonic (260 MHz) and the harmonic resulting from third-order intermodulation (259 MHz) are shown in Fig. 16."
+        },
+        {
+          "section_title": "CIRCUIT MEASUREMENTS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Extrapolation of mixer IP3",
+        "key_specs": [
+          "260 MHz",
+          "259 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 7,
+      "caption": "Fig. 17. LO compression.",
+      "caption_bbox": [
+        301.1,
+        698.1,
+        389.2,
+        708.7
+      ],
+      "section_title": "VI. CIRCUIT MEASUREMENTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT MEASUREMENTS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Higher gain and lower noise figure can be achieved by increasing the LO power as illustrated in Fig. 17."
+        },
+        {
+          "section_title": "CIRCUIT MEASUREMENTS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Low-Voltage 1.9-GHz Front-End Receiver in 0.5-m CMOS Technology",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "LO compression",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 13,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

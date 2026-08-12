@@ -1,0 +1,55 @@
+# A Resonant Regulating Rectifier (3R) Operating at 6.78 MHz for a 6W Wireless Charger with 86% Efficiency Jun-Han Choi1, Sung-Ku Yeo2, Chang-Byong Park1, Seho Park2, Jeong-Seok Lee2, Gyu-Hyeong Cho1
+
+VENUE
+"2013"
+
+FIGURE NUMBER
+"Figure 4.1.1 shows the basic 3R topology, where the receiver part is highlighted. Structurally, 3R consists of a full-bridge rectifier and three MOSFET switches, so it could be seen as another modification of the conventional RWPT receiver with two parts. However, 3R is analytically a one-step AC-DC converter that carries out regulation and rectification at once with the help of both side resonant tanks. The receiver input node, VIN, may be a good starting point to explain the detailed operation. Figure 4.1.2 (top left) shows the simplified circuit of 3R input part where a coil LRS and a capacitor CRS form a resonant tank at the receiver side. At the receiver input, CLM is introduced for lowering voltage stress for the chip and assuring stable operation while the power is regulated by the switch SW. Without CLM, VXH goes up more than 100V when the switch SW is open because of resonance. To judge the optimal value of CLM, I-V curves are introduced on the phase plane where the x-axis is VRS and the y-axes are IRT and IRS in Fig. 4.1.2 (right). For a well-matched resonant condition of maximum power transfer, the shape of a half oval should be kept securely by reducing CLM. On other hand, for lowering the stress of VXH, it is desirable to extend the area of buffered energy (EBUF) by increasing CLM. As can be seen here, the I-V curves depend on the value of CLM, where a compromise is necessary in choosing CLM. The key of the 3R’s switching sequence is to control VXH up and down in every eight resonant cycles with integral cycle mode, where on or off switching is determined within half of a resonant cycle [3]. Figure 4.1.3 shows the operations on continuous conduction mode (CCM) and discontinuous conduction mode (DCM), respectively, where the waveform of VXH is different for each of the two case. While on duty in CCM, both M1 and M3 are closed with M2 open, where CFL and COUT are connected in parallel, as shown in Fig. 4.1.3 (left). While off duty in CCM, both capacitors are stacked in series at opposite switch status, as shown in Fig. 4.1.3 (left). Therefore, the resonant current IRT charges parallel 2012. capacitors (COUT + CFL) or series capacitors (COUT || CFL) alternately while alternating VXH between VOUT and 2VOUT for each duty. While on duty in DCM, the switch statuses are the same as that in CCM, as shown in Fig. 4.1.3 (right). During off duty in DCM, however, IRT becomes zero by opening all three switches and VXH dramatically increases depending on CLM and the amount of IRS induced."
+
+TYPE
+"Resonant Regulating Rectifier (3R) Operating at 6.78 MHz"
+
+APPLICATION
+"wireless"
+
+SUB-BLOCKS
+[
+  "inductor",
+  "capacitor",
+  "transistor/MOSFET",
+  "LC tank / resonator",
+  "switch"
+]
+
+FUNCTION SUMMARY
+"Resonant Regulating Rectifier (3R) Operating at 6.78 MHz"
+
+METRICS
+[
+  "Frequency",
+  "Power consumption",
+  "Efficiency / ratio",
+  "Supply voltage"
+]
+
+NUMERICAL PERFORMANCE
+[
+  "6.78 MHz",
+  "6W",
+  "86%",
+  "5W",
+  "6.78MHz",
+  "13.56MHz",
+  "100V",
+  "2V",
+  "9V",
+  "1 w"
+]
+
+CONFIDENCE
+0.38
+
+WARNINGS
+[
+  "Recommended figure was classified as 'conventional', not a schematic; manual confirmation strongly recommended."
+]

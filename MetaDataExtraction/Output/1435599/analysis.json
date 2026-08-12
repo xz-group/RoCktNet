@@ -1,0 +1,790 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1435599.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1435599",
+  "generated_at": "2026-07-29T22:02:42",
+  "paper_metadata": {
+    "title": "Device Mismatch and Tradeoffs in the Design of Analog Circuits",
+    "authors": [
+      "Peter R. Kinget"
+    ],
+    "abstract": "Random device mismatch plays an important role in the design of accurate analog circuits. Models for the matching of accuracy specifications are derived which together with the reMOS and bipolar devices from open literature show that matching quired bandwidth and low power consumption are important improves with increasing device area. As a result, accuracy rerequirements during the design. In Section IV we demonstrate quirements impose a minimal device area and this paper explores that, since the accuracy specifications impose a minimal device the impact of this constraint on the performance of general analog area, they fix the tradeoff between power and bandwidth for circuits. It results in a fixed bandwidth-accuracy-power tradeoff which is set by technology constants. This tradeoff is independent basic analog building blocks such as, current mirrors, inverting of bias point for bipolar circuits whereas for MOS circuits some voltage amplifiers and operational transconductance amplifiers. bias point optimizations are possible. The performance limitaFor MOS circuits the tradeoff can be slightly improved with the tions imposed by matching are compared to the limits imposed optimization of the bias point and the optimization of voltage by thermal noise. For MOS circuits the power constraints due and current signal processing circuits is analyzed in detail. Howto matching are several orders of magnitude higher than for thermal noise. For the bipolar case the constraints due to noise ever, the bandwidth-accuracy-power tradeoff is largely fixed and and matching are of comparable order of magnitude. The impact determined by technological parameters. of technology scaling on the conclusions of this work are briefly The tradeoff relationships derived for the circuit level are then explored. extended to evaluate the limitations of analog signal processing",
+    "keywords": [
+      "BiCMOS analog integrated circuits",
+      "bipolar"
+    ],
+    "doi": "10.1109/JSSC.2005.848021",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2005
+  },
+  "paper_circuit_context": {
+    "circuit_type": "transconductor / OTA",
+    "technology": "CMOS, BICMOS",
+    "application_domain": "rf, if",
+    "sub_blocks": [
+      "transistor/MOSFET",
+      "current mirror",
+      "bias circuit",
+      "differential pair",
+      "capacitor",
+      "current source",
+      "output buffer",
+      "switch",
+      "op-amp"
+    ],
+    "design_purpose": "",
+    "function_summary": "transconductor / OTA: Random device mismatch plays an important role in the design of accurate analog circuits.",
+    "key_specs": [
+      "50 nm",
+      "1W",
+      "2%",
+      "5%",
+      "1%",
+      "4%",
+      "6 mV",
+      "85%",
+      "6W",
+      "99.7%"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "D EVICE mismatch is too often treated as part of the black art of analog design. However, extensive studies into the matching behavior of devices have yielded a good understanding of the underlying physical phenomena and offer designers quantitative models for the prediction of device variations. Section II of this paper reviews the mismatch data and models published in open literature, which show ..."
+    },
+    {
+      "number": "II",
+      "title": "EXPERIMENTAL DATA FOR DEVICE MISMATCH",
+      "kind": "results",
+      "page": 0,
+      "text_preview": "Manufacturing variations result in process and device parameter variations from lot to lot, wafer to wafer, die to die, and device to device and can be categorized as systematic or random. Lot-to-lot and wafer-to-wafer variations are common to all devices in the circuit. E.g., due to over-etching all transistors have a shorter than nominal length. They introduce a systematic shift in the device ch ..."
+    },
+    {
+      "number": "III",
+      "title": "ANALYSIS OF THE EFFECT OF DEVICE MISMATCHES",
+      "kind": "proposed",
+      "page": 2,
+      "text_preview": "ON DC CIRCUIT OPERATION A. Errors in Matched MOS Transistor Pairs For the calculation of the effect of mismatches on circuit performance it is more convenient to model a pair of matched devices with a random difference and as and in their two devices with each a random variation parameters so that , and and . The computation of the dc offset due to transistor mismatches can then be reduced to a sm ..."
+    },
+    {
+      "number": "IV",
+      "title": "IMPLICATION OF MISMATCH ON THE",
+      "kind": "other",
+      "page": 4,
+      "text_preview": "PERFORMANCE TRADEOFFS AND DESIGN OPTIMIZATION OF ANALOG CIRCUITS In the upcoming paragraphs, the derivations and examples are for MOS analog circuits. For bipolar circuits very similar derivations can be performed. In the interest of clarity, the discussion of the tradeoffs in bipolar circuits is postponed to a separate paragraph. 3In the examples studied here the base is voltage biased and the co ..."
+    },
+    {
+      "number": "V",
+      "title": "IMPLICATIONS FOR ANALOG SYSTEM PERFORMANCE",
+      "kind": "results",
+      "page": 9,
+      "text_preview": "AND TECHNOLOGY SCALING A. Power Limitations for Analog Signal Processing: Noise Versus Offset In an analog circuit, the smallest signal that is correctly processed can be limited by device mismatches and offset or by noise. We now compare these limitations. First, the contribution of the input stages to the overall system offset dominates over the contribution of later stages provided sufﬁcient ga ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSIONS",
+      "kind": "conclusion",
+      "page": 11,
+      "text_preview": "The matching of devices is proportional to their area an thus their capacitance and, consequently, the accuracy requirements for analog circuits impose a minimal circuit area and capacitance; the power required to achieve a given bandwidth increases with the circuit capacitance. This paper shows that, as a result, the bandwidth-accuracy-power tradeoff is ﬁxed by technology constants, related to th ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. nodes for (a) nMOS and (b) pMOS devices (see also Table I).",
+      "caption_bbox": [
+        301.1,
+        465.1,
+        498.5,
+        482.1
+      ],
+      "section_title": "II. EXPERIMENTAL DATA FOR DEVICE MISMATCH",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL DATA FOR DEVICE MISMATCH",
+          "section_kind": "results",
+          "page": 0,
+          "sentence": "Table I and Fig. 1 summarizes the proportionality constants for several industrial CMOS processes published in open literature."
+        },
+        {
+          "section_title": "EXPERIMENTAL DATA FOR DEVICE MISMATCH",
+          "section_kind": "results",
+          "page": 0,
+          "sentence": "Matching parameters A ( ) and A (}) from different technology Fig. 1. nodes for (a) nMOS and (b) pMOS devices (see also Table I)."
+        },
+        {
+          "section_title": "IMPLICATIONS FOR ANALOG SYSTEM PERFORMANCE",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "MOS Technology Scaling A downwards evolution of with shrinking MOS device size can be observed in Fig. 1."
+        },
+        {
+          "section_title": "IMPLICATIONS FOR ANALOG SYSTEM PERFORMANCE",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "No can be identiﬁed in Fig. 1. clear trend in the evolution of has been linked to mobility The current factor mismatch ﬂuctuations [18] but a good physical understanding and a link to technology parameters is still missing."
+        },
+        {
+          "section_title": "IMPLICATIONS FOR ANALOG SYSTEM PERFORMANCE",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "Independently of 12A typical value of 3 fF/m was assumed for C (see, e.g., [45, Fig. 1.25]) Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.0,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "nodes for (a) nMOS and (b) pMOS devices (see also Table I)",
+        "key_specs": [
+          "3 fF"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 3,
+      "caption": "Fig. 2.",
+      "caption_bbox": [
+        38.1,
+        285.1,
+        58.7,
+        293.1
+      ],
+      "section_title": "III. ANALYSIS OF THE EFFECT OF DEVICE MISMATCHES",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ANALYSIS OF THE EFFECT OF DEVICE MISMATCHES",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "The effect of the device parameter variations and is represented by an equivalent voltage and current error source as shown in Fig. 2(a)."
+        },
+        {
+          "section_title": "ANALYSIS OF THE EFFECT OF DEVICE MISMATCHES",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "Fig. 2. is important."
+        },
+        {
+          "section_title": "ANALYSIS OF THE EFFECT OF DEVICE MISMATCHES",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "Errors in Matched Bipolar Transistor Pairs As illustrated in Fig. 2(b), the effect of the variations in and can be represented in a dc small signal model by two internal current error sources and with and ."
+        },
+        {
+          "section_title": "ANALYSIS OF THE EFFECT OF DEVICE MISMATCHES",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "The transistor action is represented by the standard dc small , and [44], [45]. signal parameters Drain-source current () (a) and gate-source voltage () (b) misFig. 4. match for a 0.25 m/0.25 m nMOS transistor in a 0.25 m CMOS technology with A = 6 mVm and A = 1:85% m [12]; the contributions from V ) and mismatch () are also shown separately. mismatch ( The two basic biasing conﬁgurations of Fig. 3 can now be revisited for bipolar devices using the equivalent model from Fig. 2(b) and the following expressions are obtained: (6) (7) where is the thermal voltage ( mV at room temperaassumes a large current ture); the approximation for and a large output resistance gain for the transistor."
+        },
+        {
+          "section_title": "ANALYSIS OF THE EFFECT OF DEVICE MISMATCHES",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "DC Offset Calculation for a Fully Differential OTA By representing device mismatch as error sources in the dc small signal equivalent model as in Fig. 2, the calculation of the sensitivity of a circuit to device mismatches and parameter variations can be reduced to a small signal analysis [42], [43]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.0,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "bias circuit"
+        ],
+        "design_purpose": "",
+        "function_summary": "transconductor / OTA",
+        "key_specs": [
+          "6 mV",
+          "85%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.5,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 3,
+      "caption": "Fig. 3. Two basic biasing arrangements for an MOS device: voltage biasing (a), where transistor variations result in variations in the drain-source currents ; or current biasing (b), where transistor variations result in variations in the I gate-source voltages V .",
+      "caption_bbox": [
+        301.1,
+        616.7,
+        552.2,
+        651.7
+      ],
+      "section_title": "III. ANALYSIS OF THE EFFECT OF DEVICE MISMATCHES",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ANALYSIS OF THE EFFECT OF DEVICE MISMATCHES",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "The transistor action is modeled by the standard dc small and output signal model including the transconductance [44]–[46]. conductance In practical circuits two types of errors are commonly of interest; for the voltage biased pair in Fig. 3(a), the drain-source current error is important; for the current biased pair in Fig. 3(b), the gate-source voltage error KINGET: DEVICE MISMATCH AND TRADEOFFS IN THE DESIGN OF ANALOG CIRCUITS (a) MOS transistor and (b) bipolar transistor with parameter variations and their equivalent model for the calculation of current and voltage variations."
+        },
+        {
+          "section_title": "ANALYSIS OF THE EFFECT OF DEVICE MISMATCHES",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "Fig. 3."
+        },
+        {
+          "section_title": "ANALYSIS OF THE EFFECT OF DEVICE MISMATCHES",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "The transistor action is represented by the standard dc small , and [44], [45]. signal parameters Drain-source current () (a) and gate-source voltage () (b) misFig. 4. match for a 0.25 m/0.25 m nMOS transistor in a 0.25 m CMOS technology with A = 6 mVm and A = 1:85% m [12]; the contributions from V ) and mismatch () are also shown separately. mismatch ( The two basic biasing conﬁgurations of Fig. 3 can now be revisited for bipolar devices using the equivalent model from Fig. 2(b) and the following expressions are obtained: (6) (7) where is the thermal voltage ( mV at room temperaassumes a large current ture); the approximation for and a large output resistance gain for the transistor."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "bias circuit"
+        ],
+        "design_purpose": "",
+        "function_summary": "Two basic biasing arrangements for an MOS device: voltage biasing (a), where transistor variations result in variations in the drain-source currents ; or current biasing (b), where transistor variations result in variations in the I gate-source voltages V",
+        "key_specs": [
+          "6 mV",
+          "85%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.31,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 4,
+      "caption": "Fig. 4. match for a 0.25 m/0.25 m nMOS transistor in a 0.25 m CMOS technology with A = 6 mVm and A = 1:85% m [12]; the contributions from V ) and mismatch () are also shown separately. mismatch (",
+      "caption_bbox": [
+        39.6,
+        457.0,
+        290.7,
+        492.1
+      ],
+      "section_title": "III. ANALYSIS OF THE EFFECT OF DEVICE MISMATCHES",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ANALYSIS OF THE EFFECT OF DEVICE MISMATCHES",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "Using a drain-source current model valid in all regions of operation (see, e.g., [47]), the following expressions which are valid from weak to strong inversion are easily obtained for saturated devices: (4) (5) These expressions are plotted in Fig. 4 for bias points2 ranging from weak inversion to strong inversion."
+        },
+        {
+          "section_title": "CONCLUSIONS",
+          "section_kind": "conclusion",
+          "page": 11,
+          "sentence": "For the generation of Fig. 4(a) and (b) and 12 the correspondence between the and the from [52] were used; the plot is valid for room temperature and a subthreshold slope factor of 1.4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "match for a 0.25 m/0.25 m nMOS transistor in a 0.25 m CMOS technology with A = 6 mVm and A = 1:85% m [12]; the contributions from V ) and mismatch () are also shown separately. mismatch (",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 5,
+      "caption": "Fig. 5.",
+      "caption_bbox": [
+        38.1,
+        508.2,
+        59.1,
+        516.2
+      ],
+      "section_title": "IV. IMPLICATION OF MISMATCH ON THE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ANALYSIS OF THE EFFECT OF DEVICE MISMATCHES",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "As an example we now calculate the input offset voltage for the fully differential operational transconductance ampliﬁer (OTA) in Fig. 5."
+        },
+        {
+          "section_title": "IMPLICATION OF MISMATCH ON THE",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "KINGET: DEVICE MISMATCH AND TRADEOFFS IN THE DESIGN OF ANALOG CIRCUITS (a) Schematic of a fully differential operational transconductance ampliﬁer where (M Fig. 5. ; M ); (M ; M ); (M ; M ); (M ; M ) are matched pairs; the common-mode feedback circuit is omitted for clarity."
+        },
+        {
+          "section_title": "IMPLICATION OF MISMATCH ON THE",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Combining these relationships with the expression for the dc accuracy and input capacitance (14) the following tradeoff relationship is obtained: (17) Interestingly, the best combined performance for this voltage mode circuit when gain, speed, accuracy and power consumption are considered, is obtained if the stage is designed with a large or small . b) Load Compensated Operational Transconductance Ampliﬁer: Operational transconductance ampliﬁers are widely used in closed loop voltage circuits and Fig. 5 shows a representative schematic."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "transconductor / OTA",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 6,
+      "caption": "Fig. 6. and M are matched devices.",
+      "caption_bbox": [
+        302.6,
+        194.3,
+        553.7,
+        211.2
+      ],
+      "section_title": "IV. IMPLICATION OF MISMATCH ON THE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "IMPLICATION OF MISMATCH ON THE",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 6 shows the schematic for a 1-1 current mirror."
+        },
+        {
+          "section_title": "IMPLICATION OF MISMATCH ON THE",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 6, JUNE 2005 Current mirror as a basic current signal processing block; M Fig. 6. and M are matched devices. [44]–[46], a power consumption and thus a power-bandwidth ratio of (11) For a given bias point , using a smaller device area yields a lower power consumption and higher bandwidth at the expense of a reduced accuracy."
+        },
+        {
+          "section_title": "IMPLICATION OF MISMATCH ON THE",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "The tradeoffs in a bipolar current mirror using a similar topology as in Fig. 6 are derived and with a large here."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "current mirror"
+        ],
+        "design_purpose": "",
+        "function_summary": "and M are matched devices",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 7,
+      "caption": "Fig. 7. . . . C N identical parallel voltage processing circuits C .",
+      "caption_bbox": [
+        301.1,
+        290.8,
+        490.9,
+        307.7
+      ],
+      "section_title": "IV. IMPLICATION OF MISMATCH ON THE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "IMPLICATION OF MISMATCH ON THE",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "A simpliﬁed block diagram is illustrated in Fig. 7; the input which often consists of signal is buffered by the input block a “Sample-and-Hold” followed by a buffer; this buffer drives which can be pre-ampliﬁers or the input of blocks comparators."
+        },
+        {
+          "section_title": "IMPLICATION OF MISMATCH ON THE",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "For an input pair operating in strong inversion the input is capacitance for stage [22] and the dc accuracy and input capacitance are related by (14) Interestingly, the numerator in (14) is proportional to the energy [5]. stored and removed from the input capacitors The power-bandwidth tradeoff in the circuit of Fig. 7 is set output and the efﬁciency of the by the total load at the buffer buffer."
+        },
+        {
+          "section_title": "IMPLICATION OF MISMATCH ON THE",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "After recasting this power bound into (15) we conclude there is again a bandwidth-accuracy-power tradeoff for this type of circuit. 2) Feedback Topologies: Active electronic devices have strongly nonlinear characteristics and linear voltage signal Open loop voltage signal processing circuit including a buffer B and Fig. 7. . . ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.2,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "comparator",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "capacitor",
+          "output buffer",
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "C N identical parallel voltage processing circuits C",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.14,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 7,
+      "caption": "Fig. 8. Linear voltage ampliﬁer using an opamp in a feedback topology.",
+      "caption_bbox": [
+        301.1,
+        455.6,
+        535.6,
+        463.6
+      ],
+      "section_title": "IV. IMPLICATION OF MISMATCH ON THE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "IMPLICATION OF MISMATCH ON THE",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 8."
+        },
+        {
+          "section_title": "IMPLICATION OF MISMATCH ON THE",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "The feedback ampliﬁer in Fig. 8 is a representative example of a feedback voltage ampliﬁer and has a voltage gain ."
+        },
+        {
+          "section_title": "IMPLICATION OF MISMATCH ON THE",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "We now study two circuit level realizations for Fig. 8 to ﬁnd circuit design guidelines that improve the tradeoff. a) Two Transistor Differential Ampliﬁer: Fig. 9 shows a circuit implementation of Fig. 8 using a differential pair as a simple operational ampliﬁer."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.7,
+      "relevance_breakdown": {
+        "+topology": 2.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "differential pair",
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Linear voltage ampliﬁer using an opamp in a feedback topology",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.65,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 8,
+      "caption": "Fig. 9. Linear voltage ampliﬁer with feedback topology implemented with a differential pair as a simple operational ampliﬁer.",
+      "caption_bbox": [
+        39.6,
+        215.4,
+        290.7,
+        232.3
+      ],
+      "section_title": "IV. IMPLICATION OF MISMATCH ON THE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "IMPLICATION OF MISMATCH ON THE",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "This requires reducing and and results in a larger loading of the the impedances ampliﬁer’s output buffer and increases its power consumption. , accuracy It can be shown that closed loop bandwidth and power consumption are again closely tied (16) Remarkably, both in (15) and (16) the tradeoff between the different speciﬁcations is only determined by technology constants and the circuit designer has little inﬂuence on this overall Fig. 9."
+        },
+        {
+          "section_title": "IMPLICATION OF MISMATCH ON THE",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "We now study two circuit level realizations for Fig. 8 to ﬁnd circuit design guidelines that improve the tradeoff. a) Two Transistor Differential Ampliﬁer: Fig. 9 shows a circuit implementation of Fig. 8 using a differential pair as a simple operational ampliﬁer."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+topology": 2.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "buffer",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "output buffer",
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "Linear voltage ampliﬁer with feedback topology implemented with a differential pair as a simple operational ampliﬁer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 10,
+      "caption": "Fig. 10. (a) Comparison of the minimal power limit imposed by mismatch (22) for a 1.2 m (}), 0.7 m ( ), and bipolar () technology and ), 0.18 m ( the limit imposed by thermal noise (x) versus Acc and SNR . (b) Ratio of the “matching energy” to the “noise energy” over several MOS technology nodes.",
+      "caption_bbox": [
+        39.6,
+        458.9,
+        290.7,
+        502.7
+      ],
+      "section_title": "V. IMPLICATIONS FOR ANALOG SYSTEM PERFORMANCE",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "IMPLICATIONS FOR ANALOG SYSTEM PERFORMANCE",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "The limits on the minimal energy per cycle P/f imposed by noise (24), and by mismatch (22) and (23) are plotted in Fig. 10(a)."
+        },
+        {
+          "section_title": "IMPLICATIONS FOR ANALOG SYSTEM PERFORMANCE",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "The ratio of the “matching energy” [8], [11], , to the thermal noise energy, , is plotted for several MOS technology nodes in Fig. 10(b)."
+        },
+        {
+          "section_title": "IMPLICATIONS FOR ANALOG SYSTEM PERFORMANCE",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "Independently of 12A typical value of 3 fF/m was assumed for C (see, e.g., [45, Fig. 1.25]) Fig. 10."
+        },
+        {
+          "section_title": "IMPLICATIONS FOR ANALOG SYSTEM PERFORMANCE",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "However, due to supply voltage constraints and output swing requirements, current mirlevels. rors can typically not be biased at the high with smaller results in a reduction The reduction of with the technology feature of the matching energy size as shown in Fig. 10(b)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.4,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.6
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Comparison of the minimal power limit imposed by mismatch (22) for a 1.2 m (}), 0.7 m ( ), and bipolar () technology and ), 0.18 m ( the limit imposed by thermal noise (x) versus Acc and SNR . (b) Ratio of the “matching energy” to the “noise energy” over several MOS technology nodes",
+        "key_specs": [
+          "3 fF"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 10,
+      "caption": "Fig. 11. (V different technology nodes.",
+      "caption_bbox": [
+        302.6,
+        257.9,
+        390.5,
+        274.8
+      ],
+      "section_title": "V. IMPLICATIONS FOR ANALOG SYSTEM PERFORMANCE",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "IMPLICATIONS FOR ANALOG SYSTEM PERFORMANCE",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "Current processing circuits perform better when biased with (or low ) and this can lead in some a large mismatch errors. cases to a signiﬁcant contribution from the An optimization of the current mirror performance using the full expression for the drain-source current error from (4) concludes (or ) is the optimal bias point [7]. that leads to an increase in Using a bias point with a large IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 6, JUNE 2005 )( ) and (=)(}) for a minimal nMOS device in Fig. 11."
+        },
+        {
+          "section_title": "IMPLICATIONS FOR ANALOG SYSTEM PERFORMANCE",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "Consequently the matching of the minimal size device degrades with scaling as can be seen from Fig. 11 for nMOS transistors."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "current mirror"
+        ],
+        "design_purpose": "",
+        "function_summary": "(V different technology nodes",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 11,
+      "caption": "Fig. 12. Correspondence between the gate-overdrive, (V ), and the =I) from weak to strong inversion for an nMOS transistor. (g",
+      "caption_bbox": [
+        301.1,
+        240.9,
+        552.2,
+        258.1
+      ],
+      "section_title": "V. IMPLICATIONS FOR ANALOG SYSTEM PERFORMANCE",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "CONCLUSIONS",
+          "section_kind": "conclusion",
+          "page": 11,
+          "sentence": "Fig. 12 shows the correspondence between the and the for a MOS transistor operating in weak, moderate or strong inversion deﬁning the boundaries between the regions as in [22]."
+        },
+        {
+          "section_title": "CONCLUSIONS",
+          "section_kind": "conclusion",
+          "page": 11,
+          "sentence": "V Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Correspondence between the gate-overdrive, (V ), and the =I) from weak to strong inversion for an nMOS transistor. (g",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 8,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

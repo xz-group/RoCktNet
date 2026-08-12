@@ -1,0 +1,775 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\918915.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\918915",
+  "generated_at": "2026-07-29T22:03:24",
+  "paper_metadata": {
+    "title": "A 1.8-GHz Self-Calibrated Phase-Locked Loop with Precise I/Q Matching",
+    "authors": [
+      "Chan-Hong Park",
+      "Ook Kim",
+      "Beomsup Kim"
+    ],
+    "abstract": "This paper describes a 1.8-GHz self-calibrated phase-locked loop (PLL) implemented in 0.35m CMOS technology. The PLL operates as an edge-combining type fractionalfrequency synthesizer using multiphase clock signals from a ring-type voltage-controlled oscillator (VCO). A self-calibration circuit in the PLL continuously adjusts delay mismatches among delay cells in the ring oscillator, eliminating the fractional spur commonly found in an edge-combing fractional divider due to the delay mismatches. With the calibration loop, the fractional spurs caused by the delay mismatches are reduced to 55 dBc, and the corresponding maximum phase offsets between the multiphase signals is less than 0.2 . The frequency synthesizer PLL operates from 1.7 to 1.9 GHz and the closed-loop phase noise is 105 dBc/Hz at 100-kHz offset from the carrier. The overall circuit consumes 20 mA from a 3.0-V power supply. Fig. 1. I/Q signal generation from a ring oscillator.",
+    "keywords": [
+      "Delay mismatch",
+      "fractionalfrequency synthesizer",
+      "I/Q signal generation",
+      "PLL",
+      "ring oscillator",
+      "self-calibration"
+    ],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2001
+  },
+  "paper_circuit_context": {
+    "circuit_type": "1.8-GHz Self-Calibrated Phase-Locked Loop",
+    "technology": "CMOS",
+    "application_domain": "wireless, if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "switch",
+      "clock / timing"
+    ],
+    "design_purpose": "",
+    "function_summary": "1.8-GHz Self-Calibrated Phase-Locked Loop: This paper describes a 1.8-GHz self-calibrated phase-locked loop (PLL) implemented in 0.35m CMOS technology.",
+    "key_specs": [
+      "55 dBc",
+      "1.9 GHz",
+      "105 dBc/Hz",
+      "25 dB",
+      "2001 w",
+      "1 MHz",
+      "55 dB",
+      "2001 V",
+      "-1800 w"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "I N A MODERN wireless digital data transmission system, both in-phase (I) and quadrature-phase (Q) channels are used for channel efficiency. Therefore, precise I and Q clock signals for the modulation/demodulation of both I and Q channels are needed for high-performance digital transceivers. Since any gain or phase imbalance between I and Q signals reduces the dynamic range and degrades the bit-er ..."
+    },
+    {
+      "number": "II",
+      "title": "EDGE-COMBINING FRACTIONAL-",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "FREQUENCY SYNTHESIZER The frequency resolution of a conventional integerfrequency synthesizer is the same as the reference frequency of Fig. 2. Block diagram of the proposed fractional-N frequency synthesizer PLL with a self-calibration loop. the synthesizer PLL. Therefore, narrow channel spacing is accompanied by a small loop bandwidth, which leads to slow dyfrequency synthesizer, namics [10]. In ..."
+    },
+    {
+      "number": "III",
+      "title": "DELAY MISMATCH PROBLEM AND FRACTIONAL SPURS",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "Although multiphase clocks from a ring oscillator can be used frequency synthesizer, an importo implement a fractionaltant problem still exists: how to deal with the delay mismatches between the delay cells in the VCO. Ideally, the phase differences among the multiphase signals from a ring oscillator are precisely equal, as shown in Fig. 4(a). However, in practice, the edges of the multiphase cloc ..."
+    },
+    {
+      "number": "IV",
+      "title": "MISMATCH CALIBRATION ALGORITHM",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "Fig. 7 shows the input waveforms of the PFD when the PLL is is locked and the fractional dividing ratio is set to 1/8. th output signal of the relative phase error corresponding to the Fig. 7. Periodic phase error at the PFD input when PLL is locked without calibration. the VCO. By adjusting the rising phases of the corresponding outputs, the phase errors due to the delay mismatches can be elimina ..."
+    },
+    {
+      "number": "V",
+      "title": "CIRCUIT IMPLEMENTATION",
+      "kind": "design",
+      "page": 3,
+      "text_preview": "A. Overall Structure As shown in Fig. 2, a loop for the calibration is combined synthesizer. The calibration loop pewith the main fractionalriodically measures the phase error due to delay mismatch at the PFD, and compensates for the mismatches by updating the offset control voltage of delay cells one after another. This update operation must be performed only when the PLL is locked, ... ... PARK  ..."
+    },
+    {
+      "number": "VI",
+      "title": "MEASUREMENTS",
+      "kind": "results",
+      "page": 4,
+      "text_preview": "A self-calibrated fractionalfrequency synthesizer PLL has m CMOS technology. The microphobeen fabricated in 0.35tograph of the fabricated chip is shown in Fig. 11, and its active mm . Both frequency synthesizers with area is about and without a calibration loop have been integrated in the same chip to demonstrate the proper operation of the mismatch calibration scheme. In both cases, an external 2 ..."
+    },
+    {
+      "number": "VII",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 5,
+      "text_preview": "A self-calibrated 1.8-GHz PLL for fractionalfrequency m CMOS process. A synthesizing is fabricated in a 0.35ring-type oscillator is used to generate the multiphase signals, and a self-calibration loop reduces the output fractional spurs caused by delay mismatches between the delay cells. The phase offset of the I/Q signals from the ring oscillator is also relieved. With this calibration scheme, th ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. I/Q signal generation from a ring oscillator.",
+      "caption_bbox": [
+        301.1,
+        302.8,
+        469.2,
+        313.4
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Publisher Item Identifier S 0018-9200(01)03031-1. 0018–9200/01$10.00 © 2001 IEEE Fig. 1."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The multiphase clock signals from a multistage ring oscillator are easily converted into the I/Q clock signals, as shown in Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "clock / timing"
+        ],
+        "design_purpose": "",
+        "function_summary": "I/Q signal generation from a ring oscillator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Block diagram of the proposed fractional-N frequency synthesizer PLL with a self-calibration loop.",
+      "caption_bbox": [
+        39.6,
+        254.2,
+        290.7,
+        273.8
+      ],
+      "section_title": "II. EDGE-COMBINING FRACTIONAL-",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 2 shows the block diagram."
+        },
+        {
+          "section_title": "EDGE-COMBINING FRACTIONAL-",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "FREQUENCY SYNTHESIZER The frequency resolution of a conventional integerfrequency synthesizer is the same as the reference frequency of Fig. 2."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Overall Structure As shown in Fig. 2, a loop for the calibration is combined synthesizer."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.2,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "+proposed": 3.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the proposed fractional-N frequency synthesizer PLL with a self-calibration loop",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.95,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. (a) Block diagram of the fractional divider. (b) Operation of the fractional divider when k = 1.",
+      "caption_bbox": [
+        302.6,
+        364.7,
+        553.7,
+        384.3
+      ],
+      "section_title": "II. EDGE-COMBINING FRACTIONAL-",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "EDGE-COMBINING FRACTIONAL-",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 3 shows the operation of the fractionaldivider using the proposed edge-combining technique."
+        },
+        {
+          "section_title": "EDGE-COMBINING FRACTIONAL-",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The output of an integer frequency divider is sequentially latched by the eight-phase voltage-controlled oscillator (VCO) output signals, as shown in Fig. 3(a)."
+        },
+        {
+          "section_title": "EDGE-COMBINING FRACTIONAL-",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "For example, if the desired fractional value is 1/8, the pulse-switching block multiplexes the delayed waveforms with following periodic sequence: and the output period of the fractional divider becomes , as shown in Fig. 3(b)."
+        },
+        {
+          "section_title": "EDGE-COMBINING FRACTIONAL-",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "For example, if the fractional ratio of 1/8 is required as shown in Fig. 3(b), the division ratio should periodically switch IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 5, MAY 2001 Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.6,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) Block diagram of the fractional divider. (b) Operation of the fractional divider when k = 1",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.4,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 1,
+      "caption": "Fig. 4. Edges of the multiphase signals. (a) With delay mismatches. (b) Without delay mismatches.",
+      "caption_bbox": [
+        302.6,
+        488.7,
+        553.6,
+        508.3
+      ],
+      "section_title": "II. EDGE-COMBINING FRACTIONAL-",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "EDGE-COMBINING FRACTIONAL-",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 4."
+        },
+        {
+          "section_title": "DELAY MISMATCH PROBLEM AND FRACTIONAL SPURS",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Ideally, the phase differences among the multiphase signals from a ring oscillator are precisely equal, as shown in Fig. 4(a)."
+        },
+        {
+          "section_title": "DELAY MISMATCH PROBLEM AND FRACTIONAL SPURS",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "However, in practice, the edges of the multiphase clocks are not uniformly spaced, as shown in Fig. 4(b)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Edges of the multiphase signals. (a) With delay mismatches. (b) Without delay mismatches",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. s-domain model of a PLL.",
+      "caption_bbox": [
+        38.1,
+        181.9,
+        153.4,
+        192.5
+      ],
+      "section_title": "III. DELAY MISMATCH PROBLEM AND FRACTIONAL SPURS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DELAY MISMATCH PROBLEM AND FRACTIONAL SPURS",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The delay mismatches arise from several mismatch, device size mismatch, and so on. causes such as PARK et al.: SELF-CALIBRATED PHASE-LOCKED LOOP WITH PRECISE I/Q MATCHING Fig. 5. s-domain model of a PLL."
+        },
+        {
+          "section_title": "DELAY MISMATCH PROBLEM AND FRACTIONAL SPURS",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "If only the effect of Fig. 5 shows the the divider noise is considered, the output phase noise becomes (1) where PFD gain; loop filter transfer function; VCO gain; dividing ratio; output phase noise; phase noise generated from the fractional divider. is For the edge-combining frequency synthesizer, mainly caused by the delay mismatches between the delay dividing is percells, and is periodic because the fractionalformed by periodic combining of the phase-shifted waveforms. is a sinusoidal, the output voltage of the Assuming that PLL is presented as (2) Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-model": -1.5,
+        "references": 0.8
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "If only the effect of Fig. 5 shows the the divider noise is considered, the output phase noise becomes (1) where PFD gain; loop filter transfer function; VCO gain; dividing ratio; output phase noise; phase noise generated from the fractional divider. is For the edge-combining frequency synthesizer, mainly caused by ...",
+        "function_summary": "s-domain model of a PLL. If only the effect of Fig. 5 shows the the divider noise is considered, the output phase noise becomes (1) where PFD gain; loop filter transfer function; VCO gain; dividing ratio; output phase noise; phase noise generated from the fractional divider. is For the edge-combining frequency ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. Simulated output spectrum of the PLL with the maximum phase offset of 2.5 .",
+      "caption_bbox": [
+        301.1,
+        425.0,
+        552.2,
+        444.6
+      ],
+      "section_title": "III. DELAY MISMATCH PROBLEM AND FRACTIONAL SPURS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DELAY MISMATCH PROBLEM AND FRACTIONAL SPURS",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "If only the effect of Fig. 5 shows the the divider noise is considered, the output phase noise becomes (1) where PFD gain; loop filter transfer function; VCO gain; dividing ratio; output phase noise; phase noise generated from the fractional divider. is For the edge-combining frequency synthesizer, mainly caused by the delay mismatches between the delay dividing is percells, and is periodic because the fractionalformed by periodic combining of the phase-shifted waveforms. is a sinusoidal, the output voltage of the Assuming that PLL is presented as (2) Fig. 6."
+        },
+        {
+          "section_title": "DELAY MISMATCH PROBLEM AND FRACTIONAL SPURS",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The is given by relative power of the spurious tones dBc (3) Fig. 6 shows the simulated output spectrums of the frequency , synthesizer."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.7,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "-spectrum": -2.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "If only the effect of Fig. 5 shows the the divider noise is considered, the output phase noise becomes (1) where PFD gain; loop filter transfer function; VCO gain; dividing ratio; output phase noise; phase noise generated from the fractional divider. is For the edge-combining frequency synthesizer, mainly caused by ...",
+        "function_summary": "Simulated output spectrum of the PLL with the maximum phase offset of 2.5. If only the effect of Fig. 5 shows the the divider noise is considered, the output phase noise becomes (1) where PFD gain; loop filter transfer function; VCO gain; dividing ratio; output phase noise; phase noise generated from the fractional ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Periodic phase error at the PFD input when PLL is locked without calibration.",
+      "caption_bbox": [
+        39.6,
+        154.4,
+        320.1,
+        165.0
+      ],
+      "section_title": "IV. MISMATCH CALIBRATION ALGORITHM",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MISMATCH CALIBRATION ALGORITHM",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 7 shows the input waveforms of the PFD when the PLL is is locked and the fractional dividing ratio is set to 1/8. th output signal of the relative phase error corresponding to the Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.4,
+      "relevance_breakdown": {
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Periodic phase error at the PFD input when PLL is locked without calibration",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.03,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Simulated behavior of phase error during the compensation.",
+      "caption_bbox": [
+        38.1,
+        257.3,
+        258.2,
+        268.0
+      ],
+      "section_title": "V. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "MISMATCH CALIBRATION ALGORITHM",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 8 shows the trend of phase error during the calibration, simulated by MATLAB."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "PARK et al.: SELF-CALIBRATED PHASE-LOCKED LOOP WITH PRECISE I/Q MATCHING Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated behavior of phase error during the compensation",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. Schematic of the delay cell having offset control capability.",
+      "caption_bbox": [
+        38.1,
+        463.7,
+        256.5,
+        474.3
+      ],
+      "section_title": "VI. MEASUREMENTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 9."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "However, to control the rising phase of each output, four transistors are added, is low, the rising of as shown in Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "delay line / delay element",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Schematic of the delay cell having offset control capability",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.1,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10. Detail structure of the self-calibration loop.",
+      "caption_bbox": [
+        301.1,
+        255.8,
+        472.8,
+        266.4
+      ],
+      "section_title": "V. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Calibration Loop Fig. 10 shows the circuit for the mismatch calibration."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "When is high, the PFD output signal is driven to the charge pump, and Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "-structure of": -1.5,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "charge pump",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Detail structure of the self-calibration loop",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 5,
+      "caption": "Fig. 11. Microphotograph of the self-calibrated PLL.",
+      "caption_bbox": [
+        39.6,
+        204.4,
+        215.6,
+        215.0
+      ],
+      "section_title": "VI. MEASUREMENTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The microphobeen fabricated in 0.35tograph of the fabricated chip is shown in Fig. 11, and its active mm ."
+        },
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -7.7,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Microphotograph of the self-calibrated PLL",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 5,
+      "caption": "Fig. 12. Output spectrum of the synthesizer PLL. (a) Without calibration. (b) With calibration.",
+      "caption_bbox": [
+        39.6,
+        414.4,
+        347.9,
+        425.0
+      ],
+      "section_title": "VII. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 12 shows the measured output spectrum of the fracRF synthesizer."
+        },
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 12(a) is the output spectrum of the tionalfrequency synthesizer without a calibration loop."
+        },
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "On the other hand, in the output spectrum of the self-calibrated frequency synthesizer, the power of the spurious 55 dB, as shown in Fig. 12(b), and tones is attenuated to ."
+        },
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.9,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:conclusion": -1.0,
+        "references": 1.6
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Output spectrum of the synthesizer PLL. (a) Without calibration. (b) With calibration",
+        "key_specs": [
+          "55 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 5,
+      "caption": "Fig. 13. Measured phase noise of the PLL.",
+      "caption_bbox": [
+        39.6,
+        610.3,
+        182.4,
+        621.0
+      ],
+      "section_title": "VII. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 13 shows the measured phase noise of the frequency synthesizer."
+        },
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -5.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-phase noise": -2.5,
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured phase noise of the PLL",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 2,
+  "warnings": []
+}

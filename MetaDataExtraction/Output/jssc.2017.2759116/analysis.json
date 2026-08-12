@@ -1,0 +1,1358 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\RNDatasetPapers\\jssc.2017.2759116.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output_rerun_128\\jssc.2017.2759116",
+  "generated_at": "2026-07-29T22:45:56",
+  "paper_metadata": {
+    "title": "A 219-to-231 GHz Frequency-Multiplier-Based VCO With ∼3% Peak DC-to-RF Efficiency in 65-nm CMOS",
+    "authors": [
+      "Amir Hossein Masnadi Shirazi",
+      "Amir Nikpaik Abdolreza Nabavi",
+      "Shahriar Mirabbasi",
+      "Sudip Shekhar"
+    ],
+    "abstract": "Signal sources at mm-wave and (sub-)terahertz frequencies in CMOS can be classified into two broad categories: harmonic oscillators and oscillators that are based on the frequency multiplication of fundamental sources. This paper shows that frequency-multiplier-based sources potentially have a higher dc-to-RF efficiency than do the popular harmonic oscillators in 65-nm CMOS. To improve the power efficiency of CMOS signal sources that operate near or above the cutoff frequency of the device, design factors including the harmonic current efficiency, the effective output conductance, and the passive losses should be carefully tailored. An architecture is proposed in which: 1) the core voltage-controlled oscillator is optimized to efficiently generate a strong fundamental harmonic; 2) separate class-C frequency doublers are utilized to decouple fundamental signal generation and harmonic extraction and to reduce conductance loss; and 3) doubler circuits are separately Fig. 1. DC-to-RF efficiency of the recently published VCO with output optimized to simplify the output matching and power combining frequency beyond 200 GHz implemented in CMOS technologies. network, and hence avoid long and lossy transmission lines. A circuit prototype shows a measured peak output power and dc-to-RF efficiency of 3 dBm and 2.95%, respectively. the quality factor of passive components; and 3) CMOS scaling, though increasing the fmax of MOS transistors, reduces",
+    "keywords": [
+      "Coupled oscillators",
+      "frequency multiplier",
+      "har-"
+    ],
+    "doi": "10.1109/JSSC.2017.2759116",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2018
+  },
+  "paper_circuit_context": {
+    "circuit_type": "219-to-231 GHz Frequency-Multiplier-Based VCO",
+    "technology": "CMOS, 65-nm process",
+    "application_domain": "mm-wave, rf, wireless, terahertz, thz, if",
+    "sub_blocks": [
+      "transistor/MOSFET",
+      "cross-coupled pair",
+      "transmission line",
+      "output buffer",
+      "varactor",
+      "inductor",
+      "capacitor",
+      "resistor",
+      "LC tank / resonator",
+      "transformer",
+      "mixer",
+      "differential pair"
+    ],
+    "design_purpose": "An architecture is proposed in which: 1) the core voltage-controlled oscillator is optimized to efficiently generate a strong fundamental harmonic; 2) separate class-C frequency doublers are utilized to decouple fundamental signal generation and harmonic extraction and to reduce conductance loss; and 3) doubler ...",
+    "function_summary": "219-to-231 GHz Frequency-Multiplier-Based VCO: An architecture is proposed in which: 1) the core voltage-controlled oscillator is optimized to efficiently generate a strong fundamental harmonic; 2) separate class-C frequency doublers are utilized to decouple fundamental signal generation and harmonic extraction and to reduce conductance loss; and 3) doubler ...",
+    "key_specs": [
+      "-231 GHz",
+      "3%",
+      "200 GHz",
+      "3 dBm",
+      "2.95%",
+      "21 w",
+      "2 w",
+      "2ω",
+      "2 db",
+      "1 μm"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "C MOS promises a low cost, portable platform for a variety of mm-wave and (sub-)THz applications such as medical imaging, noninvasive industrial testing, spectroscopy, and high-data-rate wireless communications [1]. However, efﬁcient power generation at these high frequencies in bulk CMOS processes faces daunting challenges on several fronts: 1) such frequencies are near or above the unity power g ..."
+    },
+    {
+      "number": "III",
+      "title": "CHALLENGES IN CMOS HARMONIC OSCILLATORS",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "Unfortunately, in harmonic oscillators, ηI,n and Gs,n cannot be optimized simultaneously. In this Section, we ﬁrst consider a push–push oscillator, and then extend our discussion to a generic harmonic oscillator. A. Conventional Push–Push Oscillator Referring to the Section II-A, in conventional push–push oscillator, it can be shown that the optimum phase condition does not hold, because drain to  ..."
+    },
+    {
+      "number": "IV",
+      "title": "FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+      "kind": "other",
+      "page": 5,
+      "text_preview": "The above-mentioned issues of harmonic oscillators can be addressed in multiplier-based signal sources. Consider the generic multiplier-based source shown in Fig. 2(b), where M2 is used for frequency multiplication. As the drain node of M2 does not necessarily experience high swing at f0, M2 can operate without being pushed into the triode region for large voltage swings at the gate node, and henc ..."
+    },
+    {
+      "number": "VI",
+      "title": "MEASUREMENT RESULTS",
+      "kind": "results",
+      "page": 11,
+      "text_preview": "Fig. 15 shows the micrograph of the chip, implemented in a 65-nm CMOS process with an area of 725 × 725 μm2. The output of the VCO is taken near the center of the layout for the purpose of testing this proof-of-concept chip. In real applications, depending on many factors including whether the source should drive an antenna or other circuits, the ﬂoorplan of the whole system, the number of coupled ..."
+    },
+    {
+      "number": "VII",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 13,
+      "text_preview": "Impediments to enhance the output power and dc-to-RF power efﬁciency of VCOs operating near or above fmax of MOS transistors are investigated. The inﬂuence of the drain current waveform, transistor’s large-signal output conductance, and the loss of the output power combining/matching network are studied. To improve the dc-to-RF power efﬁciency for a speciﬁc power consumption, the dc-to-RF current  ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. DC-to-RF efﬁciency of the recently published VCO with output frequency beyond 200 GHz implemented in CMOS technologies.",
+      "caption_bbox": [
+        312.0,
+        367.5,
+        562.9,
+        384.5
+      ],
+      "section_title": "",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Digital Object Identiﬁer 10.1109/JSSC.2017.2759116 , Student Member, IEEE, Fig. 1."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Different circuit techniques for more efﬁcient power extraction from a transistor at these frequencies have been developed recently [2]–[13], and ηp for bulk CMOS voltage-controlled oscillators (VCOs) operating near or above fmax is slowly improving (Fig. 1)."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "See http://www.ieee.org/publications_standards/publications/rights/index.html for more information. are the subject of active research [4]–[12], [14], [16], as shown in Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "mm-wave, rf, wireless, terahertz, thz, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "DC-to-RF efﬁciency of the recently published VCO with output frequency beyond 200 GHz implemented in CMOS technologies",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 2,
+      "caption": "Fig. 2. Generic representation of (a) harmonic oscillator and (b) frequency-multiplier-based source.",
+      "caption_bbox": [
+        49.0,
+        216.0,
+        379.5,
+        223.9
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Harmonic oscillators, shown in Fig. 2(a), contain active device(s) (M1) that are simultaneously responsible for providing the power to sustain the oscillation at the fundamental f0 as well as the desired harmonic, nf0."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "A frequency-multiplier-based source [Fig. 2(b)], on the other hand, uses an active device (M1) for sustaining oscillation only at f0, and uses another active device (M2) as a nonlinear harmonic extractor to give the desired output at nf0."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "In harmonic oscillators [Fig. 2(a)], there is no external load (e.g., buffer) to the fundamental signal at f0 and hence, in the steady state, the fundamental power generated by the active device (P1) is exactly equal to the fundamental power dissipated in the passive peripheral (Ppassive)."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "But beyond NIKPAIK et al.: 219-TO-231 GHz FREQUENCY-MULTIPLIER-BASED VCO Fig. 2."
+        },
+        {
+          "section_title": "CHALLENGES IN CMOS HARMONIC OSCILLATORS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Optimum Harmonic Oscillator to Extract 2f0 Consider a simulation setup similar to Fig. 6(a) for the generic harmonic oscillator of Fig. 2(a)."
+        },
+        {
+          "section_title": "FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Consider the generic multiplier-based source shown in Fig. 2(b), where M2 is used for frequency multiplication."
+        },
+        {
+          "section_title": "FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Consider M2 used as a frequency doubler in Fig. 2(b) to have a size of (W/L) = (8 μm/60 nm) and a 110-GHz sinusoidal source applied to its gate only."
+        },
+        {
+          "section_title": "FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "To increase ηp,1 for the fundamental oscillator, we can decrease the VG,dc of the core transistor [M1 in Fig. 2(b)], without any consideration of ηp,2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.5,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "frequency multiplier",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "mm-wave, rf, wireless, terahertz, thz, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "output buffer"
+        ],
+        "design_purpose": "To increase ηp,1 for the fundamental oscillator, we can decrease the VG,dc of the core transistor [M1 in Fig. 2(b)], without any consideration of ηp,2.",
+        "function_summary": "Generic representation of (a) harmonic oscillator and (b) frequency-multiplier-based source. To increase ηp,1 for the fundamental oscillator, we can decrease the VG,dc of the core transistor [M1 in Fig. 2(b)], without any consideration of ηp,2.",
+        "key_specs": [
+          "-231 GHz",
+          "8 μm",
+          "60 nm"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3.",
+      "caption_bbox": [
+        49.0,
+        387.6,
+        70.3,
+        395.5
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "By using the high-frequency transistor model shown in Fig. 3 [22], [23], Y-parameters of the transistor can be calculated as below Y11 ∼= RG(Cgs + Cgd)2ω2 + j(Cgs + Cgd)ω (3) Y12 ∼= −RGCgd(Cgs + Cgd)ω2 −jCgdω (4) Y21 ∼= Gm −RGCgd(Cgs + Cgd)ω2 −j(Gm RG(Cgs+Cgd) + Cgd + Cm)ω (5) GCgd(Cgs + Cgd)ω2 + RGC2 Y22 ∼= GDS + Gm R2 gdω2 dbω2 + j(Cds + Cgd + Cdb)ω (6) + (Rdb + Rbb)C2 where, Cm is the device transcapacitance which captures the different effects of the drain and the gate on each other in terms of charging currents [23]."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 3. a certain threshold, as Ag increases, the transistor operates in the triode region for greater portion of the oscillation period, the effective Gm degrades, the effective GDS increases and hence Pout,max drops."
+        },
+        {
+          "section_title": "FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "By exploiting a highfrequency transistor model [22] shown in Fig. 3, (6) provides an approximation for the output conductance of the class-C harmonic extractor which can be written as Rd(Cds + Cdb)2 + RGC2 GS0 + 4π2 f 2 GS,2 f0 ∼= 2 0 gd + (Rdb + Rbb)C2 (12) db where, GS0 is the effective low-frequency output conductance of a transistor operating in class-C regime, and is approximately equal to ϕC × gds/2π."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.7,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "219-to-231 GHz Frequency-Multiplier-Based VCO",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "mm-wave, rf, wireless, terahertz, thz, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": [
+          "2ω",
+          "2 db",
+          "2 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. NMOS device with gm = 20 mA/V, RG = 14.8 , Cm = 2.6 fF, Cgs = 11.8 fF, and Cgd = 7.4 fF. The simulated fmax for the transistor biased at (VDS,dc, VGS,dc) = (1.2, 1.2 V) is 233 GHz.",
+      "caption_bbox": [
+        312.0,
+        611.5,
+        563.0,
+        647.6
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 4 shows that the simulated ϕopt matches well with the approximations obtained using (7) and (8)."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Simulated (red solid line) and calculated ϕopt for a 15×1 μm/60 nm Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.7,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "219-to-231 GHz Frequency-Multiplier-Based VCO",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "mm-wave, rf, wireless, terahertz, thz, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "NMOS device with gm = 20 mA/V, RG = 14.8 , Cm = 2.6 fF, Cgs = 11.8 fF, and Cgd = 7.4 fF. The simulated fmax for the transistor biased at (VDS,dc, VGS,dc) = (1.2, 1.2 V) is 233 GHz",
+        "key_specs": [
+          "1 μm",
+          "60 nm"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5.",
+      "caption_bbox": [
+        49.0,
+        179.0,
+        70.2,
+        187.0
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Conditions for Efﬁcient Harmonic Power Generation Consider a cross-coupled pair as shown in Fig. 5."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 5. is the transistor dc current."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "219-to-231 GHz Frequency-Multiplier-Based VCO",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "mm-wave, rf, wireless, terahertz, thz, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "cross-coupled pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "Fig. 6.",
+      "caption_bbox": [
+        49.0,
+        327.9,
+        70.5,
+        335.9
+      ],
+      "section_title": "III. CHALLENGES IN CMOS HARMONIC OSCILLATORS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CHALLENGES IN CMOS HARMONIC OSCILLATORS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Consider a simulation setup for the cross-coupled pair shown in Fig. 6(a), where the drains of the transistors M1 and M2 are set to VDD = 1.2 V and superimposed with two sinusoidal voltage sources with opposite phases at f0 = 110 GHz and voltage swing of A."
+        },
+        {
+          "section_title": "CHALLENGES IN CMOS HARMONIC OSCILLATORS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "In such a push–push oscillator [10], as oscillation amplitude rises, Is,2 and ηI,2 increase [Fig. 6(b)], however, large voltage swings at the gate and drain nodes push the transistor into the deep-triode region, increasing the output conductance at 2 f0, namely, Gs,2."
+        },
+        {
+          "section_title": "CHALLENGES IN CMOS HARMONIC OSCILLATORS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "As a result, according to (10) and (11), both Pav,2 and ηp,2 degrades [Fig. 6(c)]."
+        },
+        {
+          "section_title": "CHALLENGES IN CMOS HARMONIC OSCILLATORS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "In Fig. 6(c), as A approaches VDD the net power generated at fundamental reduces and eventually, at A = 1.05 V, it crosses 0 mW."
+        },
+        {
+          "section_title": "CHALLENGES IN CMOS HARMONIC OSCILLATORS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Optimum Harmonic Oscillator to Extract 2f0 Consider a simulation setup similar to Fig. 6(a) for the generic harmonic oscillator of Fig. 2(a)."
+        },
+        {
+          "section_title": "CHALLENGES IN CMOS HARMONIC OSCILLATORS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "(c) Total dc to 2 f0 power efﬁciency, ηP,2 (circles), drain dc to 2 f0 Fig. 6. power efﬁciency (dashed curve), and fundamental harmonic power (P1) generated by the transistor (solid curve)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "mm-wave, rf, wireless, terahertz, thz, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "cross-coupled pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "oscillator",
+        "key_specs": [
+          "1.2 V",
+          "110 GHz",
+          "1.05 V",
+          "0 mW"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.12,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. Second-harmonic power loss in the resonator transmission line of push–push oscillator.",
+      "caption_bbox": [
+        49.0,
+        589.9,
+        300.0,
+        606.9
+      ],
+      "section_title": "III. CHALLENGES IN CMOS HARMONIC OSCILLATORS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CHALLENGES IN CMOS HARMONIC OSCILLATORS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "In this architecture, the second (or nth)-harmonic generated at the drain of the transistor should inevitably travel along the tank’s transmission line (T-line) or inductor to reach node C (Fig. 7), wherein the fundamental power vanishes and the desired harmonic power is combined."
+        },
+        {
+          "section_title": "CHALLENGES IN CMOS HARMONIC OSCILLATORS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Due to the impedance mismatch at node C in Fig. 7, multiple reﬂections occur which signiﬁcantly adds loss to the harmonic signal [8], [24]."
+        },
+        {
+          "section_title": "CHALLENGES IN CMOS HARMONIC OSCILLATORS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 7."
+        },
+        {
+          "section_title": "FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Furthermore, unlike harmonic oscillators, where both the fundamental power (at f0) and the harmonic power (at 2 f0) generated at the drain of the transistor suffers from the loss of the T-line in the core oscillator tank (see Fig. 7), only the fundamental power (at f0) suffers from such loss here."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.6,
+      "relevance_breakdown": {
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "mm-wave, rf, wireless, terahertz, thz, if",
+        "sub_blocks": [
+          "inductor",
+          "transistor/MOSFET",
+          "LC tank / resonator",
+          "transmission line"
+        ],
+        "design_purpose": "",
+        "function_summary": "Second-harmonic power loss in the resonator transmission line of push–push oscillator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 5,
+      "caption": "Fig. 8. for generic harmonic oscillator. Shaded area shows device activity region.",
+      "caption_bbox": [
+        49.0,
+        474.9,
+        290.9,
+        491.9
+      ],
+      "section_title": "III. CHALLENGES IN CMOS HARMONIC OSCILLATORS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CHALLENGES IN CMOS HARMONIC OSCILLATORS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Both the fundamental voltage swings at the gate and drain are swept, ηI,2, Gs,2, and contours for P1 and ηp,2 are plotted in Fig. 8(a)–(c), respectively."
+        },
+        {
+          "section_title": "CHALLENGES IN CMOS HARMONIC OSCILLATORS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 8(c) also shows the fundamental tradeoff between the fundamental power generation and the harmonic power generation for the generic harmonic oscillator."
+        },
+        {
+          "section_title": "CHALLENGES IN CMOS HARMONIC OSCILLATORS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "As shown in Fig. 8(c), the harmonic power efﬁciency keeps increasing as Ag and Ad increase."
+        },
+        {
+          "section_title": "CHALLENGES IN CMOS HARMONIC OSCILLATORS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "As evident in Fig. 8(c), passive loss at f0 results in a lower oscillation amplitude and hence a lower ηp,2 [point B in Fig. 8(c)]."
+        },
+        {
+          "section_title": "CHALLENGES IN CMOS HARMONIC OSCILLATORS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "To summarize, efﬁcient harmonic power generation using harmonic oscillators suffers from the following issues: 1) harmonic power generated at the drain of the transistor is partially dissipated at the gate; 2) increasing the oscillation amplitude to increase ηI,2 can signiﬁcantly degrade the effective output conductance of the transistor at 2 f0 (or nf0) [Fig. 8 (a), (b)]; and 3) the harmonic power generated at the drain of a MOS transistor is signiﬁcantly attenuated because of insertion loss and multiple reﬂection loss in the passive network at 2 f0."
+        },
+        {
+          "section_title": "CHALLENGES IN CMOS HARMONIC OSCILLATORS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The biggest limitation for harmonic oscillators is the fact that IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 53, NO. 2, FEBRUARY 2018 Contours for (a) ηI,2, (b) Gs,2, and (c) dc to second-harmonic power efﬁciency (ηp,2) (step = 1%) and fundamental power (P1) (step = 0.3 mW) Fig. 8. for generic harmonic oscillator."
+        },
+        {
+          "section_title": "FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The presence of the second harmonic voltage at the drain of the transistor can move P1 = 0 contour upward in Fig. 8(c), thereby improving ηp,2 for harmonic oscillators."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "mm-wave, rf, wireless, terahertz, thz, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "To summarize, efﬁcient harmonic power generation using harmonic oscillators suffers from the following issues: 1) harmonic power generated at the drain of the transistor is partially dissipated at the gate; 2) increasing the oscillation amplitude to increase ηI,2 can signiﬁcantly degrade the effective output ...",
+        "function_summary": "for generic harmonic oscillator. Shaded area shows device activity region. To summarize, efﬁcient harmonic power generation using harmonic oscillators suffers from the following issues: 1) harmonic power generated at the drain of the transistor is partially dissipated at the gate; 2) increasing the oscillation ...",
+        "key_specs": [
+          "1%",
+          "0.3 mW"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.12,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 6,
+      "caption": "Fig. 9.",
+      "caption_bbox": [
+        49.0,
+        417.0,
+        70.3,
+        424.9
+      ],
+      "section_title": "IV. FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Both the gate dc voltage (VG,dc) and voltage swing (A) are swept, and then ηI,2, Gs,2, ηp,2, and Pav,2 are plotted in Fig. 9(a)–(d), respectively."
+        },
+        {
+          "section_title": "FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 9."
+        },
+        {
+          "section_title": "FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "As shown in Fig. 9(c) and (d), both Pout and ηp,2 are maximized as VG,dc approaches 0 V."
+        },
+        {
+          "section_title": "FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Thus, by choosing VG,dc = 0, the conduction angle of the current waveform is reduced and higher second-harmonic current is generated [Fig. 9(a)]."
+        },
+        {
+          "section_title": "FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "As shown in Fig. 9(c), ηp,2 can be as high as 12% at (VG,dc, A) = (0, 1.5 V), which is signiﬁcantly higher than the corresponding upper limit of ηp,2 = 4.5% for the harmonic oscillator."
+        },
+        {
+          "section_title": "FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Recall from Fig. 9(c) that ηp,2 is highly dependent to the fundamental voltage swing."
+        },
+        {
+          "section_title": "FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "One drawback of such intrinsic tuning scheme is that the power efﬁciency of the source degrades with increasing VG [refer to Figs. 9 and 10(a)]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "mm-wave, rf, wireless, terahertz, thz, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "oscillator",
+        "key_specs": [
+          "0 V",
+          "12%",
+          "1.5 V",
+          "4.5%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.12,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 6,
+      "caption": "Fig. 10. = 30% and step = 5%) for core oscillator and P1 = 0.8 mW.",
+      "caption_bbox": [
+        49.0,
+        614.9,
+        253.4,
+        633.0
+      ],
+      "section_title": "IV. FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "(b) Fundamental power efﬁciency contours (max Fig. 10. = 30% and step = 5%) for core oscillator and P1 = 0.8 mW. any fundamental swing."
+        },
+        {
+          "section_title": "FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 10(a) shows simulated ηp,1 with respect to VG,dc and voltage swing A = Ad = Ag when ϕ = ϕopt."
+        },
+        {
+          "section_title": "FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "From Fig. 10, it is evident that around VG,dc = 0.5 V, ηp,1 is maximized."
+        },
+        {
+          "section_title": "FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "To achieve the highest fundamental power and efﬁciency, ϕ is set again to ϕopt and VG,dc is reduced to 0.5 V, and ηp,1 contours with respect to Ag and Ad (Ag ̸= Ad) are plotted in Fig. 10(b)."
+        },
+        {
+          "section_title": "FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Interestingly, at (VG,opt, ϕopt) = (0.55 V,158°) in Fig. 10(a), the transistor delivers a power efﬁciency of 28% which is more than double of what it delivers in a standard cross-coupled conﬁguration at (VG, ϕ) = (1.2 V, 180°)."
+        },
+        {
+          "section_title": "FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "By inspecting Fig. 10, one can conclude that in order to optimize the output power and the power efﬁciency of the fundamental oscillator, Ag, Ad, ϕ, and VG,dc should be carefully tailored."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.5,
+      "relevance_breakdown": {
+        "+core": 0.5,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "mm-wave, rf, wireless, terahertz, thz, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "cross-coupled pair"
+        ],
+        "design_purpose": "To achieve the highest fundamental power and efﬁciency, ϕ is set again to ϕopt and VG,dc is reduced to 0.5 V, and ηp,1 contours with respect to Ag and Ad (Ag ̸= Ad) are plotted in Fig. 10(b).",
+        "function_summary": "= 30% and step = 5%) for core oscillator and P1 = 0.8 mW. To achieve the highest fundamental power and efﬁciency, ϕ is set again to ϕopt and VG,dc is reduced to 0.5 V, and ηp,1 contours with respect to Ag and Ad (Ag ̸= Ad) are plotted in Fig. 10(b).",
+        "key_specs": [
+          "30%",
+          "5%",
+          "0.8 mW",
+          "1 w",
+          "0.5 V",
+          "0.55 V",
+          "28%",
+          "1.2 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.18,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 7,
+      "caption": "Fig. 11. Proposed VCO architecture.",
+      "caption_bbox": [
+        312.0,
+        219.0,
+        436.9,
+        226.9
+      ],
+      "section_title": "IV. FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "PROPOSED 219-TO-231 GHz CMOS VCO A multiplier-based source, being more efﬁcient in generating second-harmonic power at 219-to-231 GHz in the 65-nm CMOS process, is used in the proposed VCO architecture, shown in Fig. 11."
+        },
+        {
+          "section_title": "FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 53, NO. 2, FEBRUARY 2018 Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.8,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "+proposed": 3.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "mm-wave, rf, wireless, terahertz, thz, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Proposed VCO architecture",
+        "key_specs": [
+          "-231 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.86,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 8,
+      "caption": "Fig. 12. Detailed schematic of the proposed VCO.",
+      "caption_bbox": [
+        49.0,
+        447.0,
+        219.9,
+        454.9
+      ],
+      "section_title": "IV. FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The detailed schematic of the proposed VCO is shown in Fig. 12."
+        },
+        {
+          "section_title": "FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Slowwave GCPW are used to reduce loss for a given electrical length [29] and their ground planes are implemented using the two lowermost metal layers, represented by the shaded gray areas in Fig. 12."
+        },
+        {
+          "section_title": "FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The dc bias of the core transistors, VG,dc, NIKPAIK et al.: 219-TO-231 GHz FREQUENCY-MULTIPLIER-BASED VCO Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 7.2,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+proposed": 3.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "mm-wave, rf, wireless, terahertz, thz, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "Slowwave GCPW are used to reduce loss for a given electrical length [29] and their ground planes are implemented using the two lowermost metal layers, represented by the shaded gray areas in Fig. 12.",
+        "function_summary": "Detailed schematic of the proposed VCO. Slowwave GCPW are used to reduce loss for a given electrical length [29] and their ground planes are implemented using the two lowermost metal layers, represented by the shaded gray areas in Fig. 12.",
+        "key_specs": [
+          "-231 GHz"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.81,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 8,
+      "caption": "Fig. 13.",
+      "caption_bbox": [
+        49.0,
+        633.6,
+        73.9,
+        641.5
+      ],
+      "section_title": "IV. FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "(c) Output power (dotted curve) Fig. 13. and power efﬁciency (solid curve) contours for gate signal swing A = 1.3 V at 110 GHz for four frequency doublers combined together. is provided through the center tap of the TLC lines."
+        },
+        {
+          "section_title": "FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Class-C Frequency Doubler Fig. 13(a) shows the frequency doubler used in the proposed VCO."
+        },
+        {
+          "section_title": "FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Simulated drain current and gate voltages are shown in Fig. 13(b)."
+        },
+        {
+          "section_title": "FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Output power and efﬁciency contours for the frequency doubler, obtained from load–pull simulations, are shown in Fig. 13(c)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.6,
+      "relevance_breakdown": {
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "mm-wave, rf, wireless, terahertz, thz, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "voltage-controlled oscillator (VCO)",
+        "key_specs": [
+          "1.3 V",
+          "110 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 9,
+      "caption": "Fig. 14.",
+      "caption_bbox": [
+        49.0,
+        423.0,
+        74.1,
+        430.9
+      ],
+      "section_title": "IV. FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 14."
+        },
+        {
+          "section_title": "FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 14 illustrates the change in parasitic capacitances to voltage (C–V) for the three distinct operating regions (cutoff/saturation/triode), which the transistor spans during one oscillation period."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "219-to-231 GHz Frequency-Multiplier-Based VCO",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "mm-wave, rf, wireless, terahertz, thz, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 9,
+      "caption": "Fig. 15. Chip micrograph.",
+      "caption_bbox": [
+        49.0,
+        687.2,
+        139.5,
+        695.2
+      ],
+      "section_title": "IV. FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 15."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 11,
+          "sentence": "Fig. 15 shows the micrograph of the chip, implemented in a 65-nm CMOS process with an area of 725 × 725 μm2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-micrograph": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "219-to-231 GHz Frequency-Multiplier-Based VCO",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "mm-wave, rf, wireless, terahertz, thz, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chip micrograph",
+        "key_specs": [
+          "725 μm"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 10,
+      "caption": "Fig. 16. (a) Frequency, phase noise, and (b) power measurement setups.",
+      "caption_bbox": [
+        49.0,
+        411.9,
+        290.6,
+        419.9
+      ],
+      "section_title": "IV. FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "To simplify output matching and power NIKPAIK et al.: 219-TO-231 GHz FREQUENCY-MULTIPLIER-BASED VCO Fig. 16."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 11,
+          "sentence": "Fig. 16(a) shows the experimental setup used for frequency measurement."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 11,
+          "sentence": "Although the output power may be estimated using the measurement setup of Fig. 16(a), the large non-linearity of the SHM with respect to LO and RF ports renders the estimation of output power inaccurate [19]."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 11,
+          "sentence": "In order to correctly measure the output power [4], [5], [7], [9], [14], [19], [26], [28], [30], a power measurement setup incorporating an Erickson PM4 power meter is used, as shown in Fig. 16(b)."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 11,
+          "sentence": "For power measurement at 219 GHz, a setup similar to Fig. 16(b) is used, but with a Cascade i220GSG probe and a WR5-WR10 taper."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.5,
+      "relevance_breakdown": {
+        "-phase noise": -2.5,
+        "-setup": -2.0,
+        "references": 2.0
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "mm-wave, rf, wireless, terahertz, thz, if",
+        "sub_blocks": [],
+        "design_purpose": "In order to correctly measure the output power [4], [5], [7], [9], [14], [19], [26], [28], [30], a power measurement setup incorporating an Erickson PM4 power meter is used, as shown in Fig. 16(b).",
+        "function_summary": "(a) Frequency, phase noise, and (b) power measurement setups. In order to correctly measure the output power [4], [5], [7], [9], [14], [19], [26], [28], [30], a power measurement setup incorporating an Erickson PM4 power meter is used, as shown in Fig. 16(b).",
+        "key_specs": [
+          "-231 GHz",
+          "219 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 10,
+      "caption": "Fig. 17. curve.",
+      "caption_bbox": [
+        49.0,
+        602.6,
+        74.3,
+        619.5
+      ],
+      "section_title": "IV. FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "(b) Measured tuning Fig. 17. curve. combining networks, transistors are sized such that all doubler blocks provide 50 matching when combined together, and their capacitances are tuned out using output inductors, Lout."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 11,
+          "sentence": "Fig. 17(a) shows the spectrum of the IF signal, obtained through down-conversion by the 16th harmonic of the LO."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 11,
+          "sentence": "The tuning range, measured with respect to the VG is shown in Fig. 17(b)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "on-chip inductor",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "mm-wave, rf, wireless, terahertz, thz, if",
+        "sub_blocks": [
+          "inductor",
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "curve",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 11,
+      "caption": "Fig. 18. Measured (a) output power and (b) dc-to-RF efﬁciency.",
+      "caption_bbox": [
+        49.0,
+        547.3,
+        264.4,
+        555.3
+      ],
+      "section_title": "IV. FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FREQUENCY-MULTIPLIER-BASED SOURCES IN CMOS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "This can be remedied in a future design by decoupling the dc bias of TABLE I IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 53, NO. 2, FEBRUARY 2018 MEASURED PERFORMANCE SUMMARY AND COMPARISON WITH STATE-OF-THE-ART DESIGNS OPERATING BETWEEN 200 AND 300 GHz Fig. 18."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 11,
+          "sentence": "Fig. 18 shows the measured output power and ηp, with respect to the output frequency."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-output power": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "219-to-231 GHz Frequency-Multiplier-Based VCO",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "mm-wave, rf, wireless, terahertz, thz, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured (a) output power and (b) dc-to-RF efﬁciency",
+        "key_specs": [
+          "300 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 12,
+      "caption": "Fig. 19.",
+      "caption_bbox": [
+        49.0,
+        252.9,
+        74.3,
+        260.9
+      ],
+      "section_title": "VI. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 11,
+          "sentence": "For frequency measurement NIKPAIK et al.: 219-TO-231 GHz FREQUENCY-MULTIPLIER-BASED VCO Measured (a) phase noise at 1-MHz offset, as the oscillation frequency is varied across the tuning range and (b) down converted phase noise plot Fig. 19. at the output frequency of 227 GHz downconverted to 1.39 GHz using the 16th harmonic of 14.1-GHz LO input."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 11,
+          "sentence": "Phase noise at 1 MHz offset varies from −94 dBc/Hz to −90 dBc/Hz within the tuning range as shown in Fig. 19(a)."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 11,
+          "sentence": "Fig. 19(b) shows the phase noise plot, at an output frequency of 227 GHz."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "mm-wave, rf, wireless, terahertz, thz, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "voltage-controlled oscillator (VCO)",
+        "key_specs": [
+          "-231 GHz",
+          "227 GHz",
+          "1.39 GHz",
+          "1 MHz",
+          "−94 dBc/Hz",
+          "−90 dBc/Hz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 20,
+      "label": "Fig. 20",
+      "page": 12,
+      "caption": "Fig. 20.",
+      "caption_bbox": [
+        49.0,
+        448.5,
+        74.2,
+        456.5
+      ],
+      "section_title": "VI. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 11,
+          "sentence": "Fig. 20. purposes, a VDI WR3.4 subharmonic mixer (SHM) is used to down-convert the signal."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 13,
+          "sentence": "APPENDIX The half-circuit of the proposed oscillator at f0 is shown in Fig. 20."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS, 65-nm process",
+        "application_domain": "mm-wave, rf, wireless, terahertz, thz, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "mixer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 12,
+  "warnings": []
+}

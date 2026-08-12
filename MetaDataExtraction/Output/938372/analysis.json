@@ -1,0 +1,1139 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\938372.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\938372",
+  "generated_at": "2026-07-29T22:03:31",
+  "paper_metadata": {
+    "title": "A GMSK Modulator Using a Frequency Discriminator-Based Synthesizer",
+    "authors": [
+      "Walter T. Bax",
+      "Miles A. Copeland"
+    ],
+    "abstract": "This paper describes a new transmitter architecture suitable for wide-band GMSK modulation. The technique uses dimethod. Any I/Q imbalance (amplitude or phase) and carrier rect modulation of a frequency discriminator (FD)-based feed-through from RF mixer offsets results in poor sideband synthesizer to produce the modulated RF signal without any suppression of the modulated RF carrier. up-conversion. Digital equalization is used to extend the modIf the transmission time is kept relatively short, a VCO [emulation data rate far beyond the synthesizer closed-loop BW. A bodied in a phase-locked loop (PLL)] can be directly modulated prototype 1.9-GHz GSM transmitter was constructed consisting of a FD-based synthesizer and a digital transmit filter. The by the filtered modulation data [2]. This is accomplished by synthesizer consists of an 0.8m BiCMOS FD chip, a digital opening the loop during transmission while the loop remains signal processor FPGA, and an off-chip D/A converter, filter, closed at all other times. The pitfall of direct modulation is the and VCO. Measured results, using 271-kbit/s GSM modulation, lack of carrier frequency control (offset or drift) during modulademonstrate data rates well in excess of the 30-kHz synthesizer tion which limits this technique to systems where the acceptable closed-loop BW are possible with digital equalization. Without modulation, the synthesizer exhibits a 76-dBc spurious noise channel frequency error is larger (e.g., digital European cordless level and a close-in phase noise of 74 dBc/Hz. telephone). Indirect control of a high-resolution synthesizer, as described",
+    "keywords": [
+      "Continuous-phase modulation",
+      "delta–sigma",
+      "digital radio",
+      "frequency discriminator",
+      "frequency modulation",
+      "GMSK"
+    ],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2001
+  },
+  "paper_circuit_context": {
+    "circuit_type": "GMSK Modulator",
+    "technology": "CMOS, BICMOS, SIGE",
+    "application_domain": "rf, radio frequency, wireless, baseband, if",
+    "sub_blocks": [
+      "capacitor",
+      "transistor/MOSFET",
+      "current source",
+      "LC tank / resonator",
+      "output buffer",
+      "mixer",
+      "op-amp",
+      "clock / timing",
+      "bias circuit"
+    ],
+    "design_purpose": "This paper describes a new transmitter architecture suitable for wide-band GMSK modulation.",
+    "function_summary": "GMSK Modulator: This paper describes a new transmitter architecture suitable for wide-band GMSK modulation.",
+    "key_specs": [
+      "74 dBc/Hz",
+      "8J",
+      "13 MHz",
+      "2 GHz",
+      "7 w",
+      "36 dB",
+      "10 w",
+      "75 mW",
+      "2 dBm",
+      "2.5 GHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "M ODERN wireless digital communication systems employ a variety of modulation schemes to achieve efficient use of available spectrum with robust performance in nonideal environments. Constant envelope modulation schemes permit the use of nonlinear power amplifiers that have a higher power efficiency than their linear counterparts. This is important in managing the total system power consumption, s ..."
+    },
+    {
+      "number": "II",
+      "title": "GMSK MODULATOR ARCHITECTURE",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "Since the synthesizer loop filter is embedded within the DSP block in Fig. 1, the loop parameters are predictable and repeatable. This eliminates any potential equalizer mismatch (aside from open-loop gain error) due to process or temperature variations. Specific applications only require modification of the transmit filter and synthesizer digital loop parameters to accommodate other modulation sc ..."
+    },
+    {
+      "number": "IV",
+      "title": "GMSK MODULATOR IMPLEMENTATION",
+      "kind": "design",
+      "page": 5,
+      "text_preview": "The GMSK modulator depicted in Fig. 11 makes use of the FD chip discussed earlier in addition to some digital and analog components, all of which form the main synthesizer loop. All of the DSP within the loop is contained in one custom field-programmable gate array (FPGA), while the analog components are discrete. The modulation path was implemented in software to facilitate easy modifications to  ..."
+    },
+    {
+      "number": "V",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 7,
+      "text_preview": "Evaluating the performance of a transmitter consists of two main criteria—qualifying how faithfully the modulation is reproduced at the receiver, and the noise performance in the abFREQUENCY DISCRIMINATOR BASED SYNTHESIZER sence of a modulating signal. The residual noise, in the absence of a modulating signal, is used to determine the SNR of the modulator. As long as the SNR is adequate during mod ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 9,
+      "text_preview": "A new wide-band transmitter architecture was presented that is suitable for continuous-phase constant-envelope modulation schemes. The technique uses direct modulation of FD-based synthesizer to generate the a high-resolution RF signal without up-conversion. This architecture reduces the complexity and eliminates many of the analog problems found in conventional GMSK modulators. Digital equalizati ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Equalized direct modulation of a FD-based synthesizer.",
+      "caption_bbox": [
+        38.1,
+        193.4,
+        257.3,
+        204.0
+      ],
+      "section_title": "II. GMSK MODULATOR ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The wide-band GMSK modulator described here (see Fig. 1) is an extension of the architecture reported in [7], which inFD-based synthesizer. directly modulates a high-resolution Modulation data rates that far exceed the synthesizer BW (i.e., the limiting factor in [3]) are possible by compensating for the closed-loop attenuation at higher frequencies using a technique similar to that used in [4]."
+        },
+        {
+          "section_title": "GMSK MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Since the synthesizer loop filter is embedded within the DSP block in Fig. 1, the loop parameters are predictable and repeatable."
+        },
+        {
+          "section_title": "GMSK MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "This limit is directly related to the number of quantization levels in the BAX AND COPELAND: A GMSK MODULATOR USING A Fig. 1."
+        },
+        {
+          "section_title": "GMSK MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "As a design example, GSM modulation is chosen, although the architecture illustrated in Fig. 1 is suitable for much higher modulation data rates (see Table I)."
+        },
+        {
+          "section_title": "GMSK MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Since modulator in the modulation path of Fig. 1 is the digital subject to the same transfer function as that inside the closed FD."
+        },
+        {
+          "section_title": "GMSK MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The amount of allowable equalization is FD, since the determined by the input dynamic range of the modulation is injected into the discriminator (refer to Fig. 1). [8]."
+        },
+        {
+          "section_title": "GMSK MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Both digital filters are realized in the DSP block in Fig. 1."
+        },
+        {
+          "section_title": "GMSK MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The digital Fig. 1 serves as an interface between the transmit filter output FD modulation input."
+        },
+        {
+          "section_title": "GMSK MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Architecture FD shown in Fig. 3 is a central component and it also The forms a control loop within the main modulator loop of Fig. 1."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "However, from the modulator block diagram in Fig. 1, the DSP output is integrated by the IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 8, AUGUST 2001 Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.0,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "frequency synthesizer",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "As a design example, GSM modulation is chosen, although the architecture illustrated in Fig. 1 is suitable for much higher modulation data rates (see Table I).",
+        "function_summary": "Equalized direct modulation of a FD-based synthesizer. As a design example, GSM modulation is chosen, although the architecture illustrated in Fig. 1 is suitable for much higher modulation data rates (see Table I).",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.5,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 2,
+      "caption": "Fig. 2. Effect of equalizer on modulation bandwidth.",
+      "caption_bbox": [
+        39.6,
+        136.1,
+        214.1,
+        146.8
+      ],
+      "section_title": "II. GMSK MODULATOR ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "GMSK MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The second requirement, shown in Fig. 2, is to compensate for the closed-loop attenuation of the PLL outside the loop BW."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.4,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Effect of equalizer on modulation bandwidth",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.17,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. frequency discriminator with external modulation control.",
+      "caption_bbox": [
+        302.6,
+        263.7,
+        531.6,
+        274.3
+      ],
+      "section_title": "II. GMSK MODULATOR ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "GMSK MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Architecture FD shown in Fig. 3 is a central component and it also The forms a control loop within the main modulator loop of Fig. 1."
+        },
+        {
+          "section_title": "GMSK MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Due to the IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 8, AUGUST 2001 TABLE III EFFECT OF OPEN-LOOP GAIN ERROR ON LOOP PARAMETERS Fig. 3. frequency discriminator with external modulation control. additional modulation input to the divider in Fig. 3, the output bitstream only contains the error between the RF input (i.e., VCO output) and the desired channel frequency."
+        },
+        {
+          "section_title": "GMSK MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "FD architecture depicted in Fig. 3, the In the single-loop divider must not introduce additional delay into the feedback noise shaping will not be loop, or the desired second-order BAX AND COPELAND: A GMSK MODULATOR USING A Fig. 4."
+        },
+        {
+          "section_title": "GMSK MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Charge Pump A simplified schematic of the differential charge pump in Fig. 3 is shown in Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.6,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "frequency discriminator with external modulation control",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.4,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 3,
+      "caption": "Fig. 4. Block diagram of low-delay multi-modulus divider.",
+      "caption_bbox": [
+        38.1,
+        190.7,
+        231.7,
+        201.4
+      ],
+      "section_title": "II. GMSK MODULATOR ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "GMSK MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The high-speed multi-modulus divider architecture in Fig. 4 consists of a dual-modulus divider (DMD), a synchronous counter, and a decoder."
+        },
+        {
+          "section_title": "GMSK MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "FD architecture depicted in Fig. 3, the In the single-loop divider must not introduce additional delay into the feedback noise shaping will not be loop, or the desired second-order BAX AND COPELAND: A GMSK MODULATOR USING A Fig. 4."
+        },
+        {
+          "section_title": "GMSK MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "In this implementation the modulus is defined as (1) where coarse channel select modulation control feedback control A critical block in Fig. 4 is the DMD, which operates at the RF frequency."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.2,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:proposed": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of low-delay multi-modulus divider",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.55,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. State diagram of a low-delay multi-modulus divider.",
+      "caption_bbox": [
+        38.1,
+        288.7,
+        234.2,
+        299.3
+      ],
+      "section_title": "II. GMSK MODULATOR ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "GMSK MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 5."
+        },
+        {
+          "section_title": "GMSK MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "This is accomplished by detecting the state of the divider at the end of its divide cycle, as indicated in Fig. 5, and controlling the DMD to achieve the desired final modulus."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "This is accomplished by detecting the state of the divider at the end of its divide cycle, as indicated in Fig. 5, and controlling the DMD to achieve the desired final modulus.",
+        "function_summary": "State diagram of a low-delay multi-modulus divider. This is accomplished by detecting the state of the divider at the end of its divide cycle, as indicated in Fig. 5, and controlling the DMD to achieve the desired final modulus.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Differential 4/5 DMD.",
+      "caption_bbox": [
+        301.1,
+        234.2,
+        402.3,
+        244.8
+      ],
+      "section_title": "II. GMSK MODULATOR ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "GMSK MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The internal structure of the DMD, shown in Fig. 6, takes full advantage of optimized ECL/CML logic structures through the use of fully differential “D” flip-flops with embedded logic."
+        },
+        {
+          "section_title": "GMSK MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "FREQUENCY DISCRIMINATOR BASED SYNTHESIZER Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "frequency synthesizer",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Differential 4/5 DMD",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Phase-frequency detector with asynchronous reset.",
+      "caption_bbox": [
+        301.1,
+        420.1,
+        491.9,
+        430.7
+      ],
+      "section_title": "II. GMSK MODULATOR ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "GMSK MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Phase-Frequency Detector The fully differential digital phase-frequency detector (PFD) architecture in Fig. 7 was chosen to provide frequency steering and also produce bipolar phase error signals to readily interface to the analog charge pump."
+        },
+        {
+          "section_title": "GMSK MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "phase detector",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Phase-frequency detector with asynchronous reset",
+        "key_specs": [
+          "7 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Simplified schematic of differential charge pump with active feedback.",
+      "caption_bbox": [
+        39.6,
+        244.9,
+        290.7,
+        255.5
+      ],
+      "section_title": "II. GMSK MODULATOR ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "GMSK MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Charge Pump A simplified schematic of the differential charge pump in Fig. 3 is shown in Fig. 8."
+        },
+        {
+          "section_title": "GMSK MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Current is either directed into or diverted from the holding Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "-simplified": -1.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "charge pump",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simplified schematic of differential charge pump with active feedback",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.69,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. Differential 1-bit quantizer with BiCMOS input buffer/comparator.",
+      "caption_bbox": [
+        302.6,
+        308.5,
+        544.8,
+        319.1
+      ],
+      "section_title": "II. GMSK MODULATOR ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "GMSK MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The quantizer configuration consists of a high-gain BiCMOS buffer, followed by a latched comparator as illustrated in Fig. 9."
+        },
+        {
+          "section_title": "GMSK MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 8, AUGUST 2001 Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "comparator",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Differential 1-bit quantizer with BiCMOS input buffer/comparator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10. Photomicrograph of BiCMOS frequency discriminator.",
+      "caption_bbox": [
+        302.6,
+        576.1,
+        526.7,
+        586.7
+      ],
+      "section_title": "II. GMSK MODULATOR ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "GMSK MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 10."
+        },
+        {
+          "section_title": "GMSK MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Implementation The frequency discriminator chip shown in Fig. 10 was fabrim BiCMOS process and covers an area cated in a standard 0.8- [12]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "-micrograph": -3.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "GMSK Modulator",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Photomicrograph of BiCMOS frequency discriminator",
+        "key_specs": [
+          "10 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 5,
+      "caption": "Fig. 11. GMSK modulator prototype.",
+      "caption_bbox": [
+        38.1,
+        442.4,
+        163.7,
+        453.1
+      ],
+      "section_title": "IV. GMSK MODULATOR IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "GMSK MODULATOR ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "BAX AND COPELAND: A GMSK MODULATOR USING A TABLE IV BiCMOS FD POWER DISSIPATION Fig. 11."
+        },
+        {
+          "section_title": "GMSK MODULATOR IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "The GMSK modulator depicted in Fig. 11 makes use of the FD chip discussed earlier in addition to some digital and analog components, all of which form the main synthesizer loop."
+        },
+        {
+          "section_title": "GMSK MODULATOR IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Analog Section The analog section in the forward path of the synthesizer in Fig. 11 consists of a D/A converter, an analog integrator, and a VCO, all of which were realized using discrete components for this prototype."
+        },
+        {
+          "section_title": "GMSK MODULATOR IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Modulation Data Path The modulation path of the transmitter in Fig. 11 is composed of the blocks shown in Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.1,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "GMSK modulator prototype",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.29,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 6,
+      "caption": "Fig. 12. ROM-based FIR filter section.",
+      "caption_bbox": [
+        39.6,
+        202.1,
+        170.1,
+        212.8
+      ],
+      "section_title": "IV. GMSK MODULATOR IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "GMSK MODULATOR IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "A partial block diagram of the FIR filter structure is shown in Fig. 12, where the input data addresses the contents of a bank of ROMs."
+        },
+        {
+          "section_title": "GMSK MODULATOR IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "The outputs of the ROMs contain the partial sums for a Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "ROM-based FIR filter section",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 6,
+      "caption": "Fig. 13. Synthesizer digital loop filter utilizing saturation arithmetic.",
+      "caption_bbox": [
+        302.6,
+        171.7,
+        526.9,
+        182.3
+      ],
+      "section_title": "IV. GMSK MODULATOR IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "GMSK MODULATOR IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "The loop filter shown in Fig. 13, comprised of an integrator with phase lead compensation, is realized as a digital accumulator with a feedforward path."
+        },
+        {
+          "section_title": "GMSK MODULATOR IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "However, IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 8, AUGUST 2001 Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "frequency synthesizer",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Synthesizer digital loop filter utilizing saturation arithmetic",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 7,
+      "caption": "Fig. 14. Digital modulation data path.",
+      "caption_bbox": [
+        38.1,
+        145.4,
+        165.0,
+        156.0
+      ],
+      "section_title": "IV. GMSK MODULATOR IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "GMSK MODULATOR IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "BAX AND COPELAND: A GMSK MODULATOR USING A Fig. 14."
+        },
+        {
+          "section_title": "GMSK MODULATOR IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Modulation Data Path The modulation path of the transmitter in Fig. 11 is composed of the blocks shown in Fig. 14."
+        },
+        {
+          "section_title": "GMSK MODULATOR IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "The output of the transmit filter is remodulated using a digital modulator to reduce the resolution to three second-order FD [19]. bits, compatible with the modulus input of the Since both the Gaussian filter and the equalizer in Fig. 14 are cascaded in the modulation path, it is advantageous to combine their responses into a single transmit filter."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "The output of the transmit filter is remodulated using a digital modulator to reduce the resolution to three second-order FD [19]. bits, compatible with the modulus input of the Since both the Gaussian filter and the equalizer in Fig. 14 are cascaded in the modulation path, it is advantageous to combine their ...",
+        "function_summary": "Digital modulation data path. The output of the transmit filter is remodulated using a digital modulator to reduce the resolution to three second-order FD [19]. bits, compatible with the modulus input of the Since both the Gaussian filter and the equalizer in Fig. 14 are cascaded in the modulation path, it is ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 8,
+      "caption": "Fig. 15.",
+      "caption_bbox": [
+        39.6,
+        236.9,
+        64.4,
+        247.6
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The received I and Q eye diagrams in Fig. 15 were measured using an HP8981A vector modulation analyzer for three test cases—optimally matched with 0% open-loop gain error, and with % open-loop gain error."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 15(b) illustrates the optimally matched case where the hardware open-loop gain has been adjusted to compensate ."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 15(a) depicts the case for a gain error."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "In Fig. 15(c), the gain error has now been increased to 20%."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.0,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "GMSK Modulator",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": [
+          "15 w",
+          "0%",
+          "20%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 8,
+      "caption": "Fig. 16. Measured output power spectrum of GMSK modulator with a 1.8655-GHz carrier frequency.",
+      "caption_bbox": [
+        39.6,
+        475.3,
+        290.7,
+        494.9
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 16 shows the measured output power spectrum for a GSM modulated carrier at 1.8655 GHz, obtained with an HP8593E spectrum analyzer."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -8.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-spectrum": -2.5,
+        "-output power": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured output power spectrum of GMSK modulator with a 1.8655-GHz carrier frequency",
+        "key_specs": [
+          "1.8655 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 8,
+      "caption": "Fig. 17. Measured synthesizer spurious noise.",
+      "caption_bbox": [
+        302.6,
+        473.9,
+        455.0,
+        484.5
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "From Fig. 17, the measured reference feed-through 76 dBc. was found to be less than 74 dBc/Hz within The measured phase noise in Fig. 18 is 132 dBc/Hz at a 3-MHz offset, the 30-kHz loop BW and which is well within the limits imposed by the GSM standard."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "However, from the modulator block diagram in Fig. 1, the DSP output is integrated by the IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 8, AUGUST 2001 Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "frequency synthesizer",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured synthesizer spurious noise",
+        "key_specs": [
+          "76 dBc",
+          "74 dBc/Hz",
+          "132 dBc/Hz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 8,
+      "caption": "Fig. 18. Phase noise of FD-based synthesizer.",
+      "caption_bbox": [
+        302.6,
+        671.3,
+        469.9,
+        681.9
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "From Fig. 17, the measured reference feed-through 76 dBc. was found to be less than 74 dBc/Hz within The measured phase noise in Fig. 18 is 132 dBc/Hz at a 3-MHz offset, the 30-kHz loop BW and which is well within the limits imposed by the GSM standard."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 18."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-phase noise": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "frequency synthesizer",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Phase noise of FD-based synthesizer",
+        "key_specs": [
+          "76 dBc",
+          "74 dBc/Hz",
+          "132 dBc/Hz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 9,
+      "caption": "Fig. 19. Measured synthesizer switching speed for a 6-MHz frequency step.",
+      "caption_bbox": [
+        38.1,
+        262.0,
+        285.5,
+        272.7
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The synthesizer transient response shown in Fig. 19 was measured using an initial carrier frequency of 1.86 GHz with an input frequency step of 6 MHz."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "BAX AND COPELAND: A GMSK MODULATOR USING A Fig. 19."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "frequency synthesizer",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, radio frequency, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured synthesizer switching speed for a 6-MHz frequency step",
+        "key_specs": [
+          "19 w",
+          "1.86 GHz",
+          "6 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 4,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

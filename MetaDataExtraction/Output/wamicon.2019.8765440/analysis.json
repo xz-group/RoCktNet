@@ -1,0 +1,660 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\RNDatasetPapers\\wamicon.2019.8765440.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output_rerun_128\\wamicon.2019.8765440",
+  "generated_at": "2026-07-29T22:46:01",
+  "paper_metadata": {
+    "title": "Design Technique for Ultra-Wideband Balanced Frequency Doublers",
+    "authors": [
+      "M. Sakalas1",
+      "N. Joram1",
+      "F. Ellinger1"
+    ],
+    "abstract": "This work presents an ultra-wideband, balanced frequency multiplier and amplifier combination, implemented in fundamental and unwanted harmonic wave rejection is of major a 130 nm SiGe BiCMOS process. A design technique for balanced, importance. This becomes complicated at the lower RF extreme bandwidth frequency multiplier is introduced. The frequencies, since the fundamental and the harmonic wave topology is then combined with an inductively peaked, differential frequencies are closely located in the spectrum and cannot be wideband amplifier to address the required bandwidth, the output easily filtered. The situation further complicates, when the power and to suppress the common mode signal. The designed fundamental and the harmonic frequencies appear in the output circuit operates in a continuous 3 GHz to 40 GHz output frequency frequency band. Considering an ultra-wideband of 4 – 40 GHz range, has an average conversion loss of 3 dB, the rejection ratios frequency doubler, if the output frequency was to be set at of fundamental and 3rd harmonic frequencies are better than 2 × f0 = 8 GHz, then the fundamental and harmonic frequencies 34 dBc and 48 dBc respectively and it consumes 21 mA from a 3 V power source. To the best knowledge of the author, this work would fall into the 4 – 40 GHz output frequency range, namely strongly outperforms the state of the art in terms of the fractional at n × f0 = 4, 12, 16 and 20 GHz respectively. bandwidth. To overcome the wideband matching problem and to",
+    "keywords": [
+      "BiCMOS integrated circuits",
+      "frequency conversion"
+    ],
+    "doi": "",
+    "venue": "",
+    "year": 2019
+  },
+  "paper_circuit_context": {
+    "circuit_type": "frequency multiplier",
+    "technology": "BICMOS, SIGE, HBT, MMIC, 130nm process",
+    "application_domain": "mm-wave, mmwave, rf, radar, ultra-wideband, if",
+    "sub_blocks": [
+      "varactor",
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "LC tank / resonator",
+      "transmission line",
+      "transformer",
+      "balun",
+      "mixer"
+    ],
+    "design_purpose": "",
+    "function_summary": "frequency multiplier: This work presents an ultra-wideband, balanced frequency multiplier and amplifier combination, implemented in fundamental and unwanted harmonic wave rejection is of major a 130 nm SiGe BiCMOS process.",
+    "key_specs": [
+      "130 nm",
+      "3 GHz",
+      "40 GHz",
+      "3 dB",
+      "8 GHz",
+      "34 dBc",
+      "48 dBc",
+      "3 V",
+      "20 GHz",
+      "6 dB"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "Due to the limited tuning ranges of the integrated varactor and low quality factors of the integrated LC tanks at high frequencies, modern transmitter and receiver architectures often employ multiplication of the voltage controlled oscillator (VCO) signals. On one hand this allows to expand the bandwidth [1], [2], whereas on the other hand, it provides a solution for reducing the generated signal  ..."
+    },
+    {
+      "number": "II",
+      "title": "DESIGN TECHNIQUE",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "To yield good wideband impedance matching and a compact design at the RF frequencies, a structure inherently showing low input and output impedances is required. Furthermore, for the multiplier circuits, high degree of fundamental and unwanted harmonic wave rejection is of major importance. This becomes complicated at the lower RF frequencies, since the fundamental and the harmonic wave frequencie ..."
+    },
+    {
+      "number": "III",
+      "title": "CIRCUIT DESIGN AND FABRICATION",
+      "kind": "design",
+      "page": 1,
+      "text_preview": "The technique, described in Section II is used to implement a frequency doubler and an amplifier combination circuit, operating at 3 – 40 GHz output frequency range and delivering a compressed output power of approx. -3 dBm. The intended application of this circuit is to drive a balanced mixer of a FMCW MIMO radar. In order to suppress the even harmonic frequencies and any common mode signal cause ..."
+    },
+    {
+      "number": "IV",
+      "title": "MEASUREMENTS AND EVALUATION",
+      "kind": "results",
+      "page": 2,
+      "text_preview": "The fabricated IC occupies a total area of 0.37 mm2, whereas the active area is 0.1 mm2 (Fig. 7). The measurement setup consists of ultra-wideband baluns, signal generator and spectrometer. Because the output of this frequency doubler and amplifier circuit is matched to the LO input of the mixer that it is designed for, attenuators were used to avoid reflections at the output side. Active Area Fig ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. The proposed ultra-wideband, balanced frequency multiplier topology.",
+      "caption_bbox": [
+        306.8,
+        511.2,
+        553.2,
+        519.1
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "DESIGN TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "To overcome the wideband matching problem and to inherently implement a good fundamental and harmonic frequency rejection ratio, a balanced, ultra-wideband and very simple frequency doubler technique is here presented (Fig. 1)."
+        },
+        {
+          "section_title": "DESIGN TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Vb Vee Rb Rb Q1 In+ Out+ Q2 Rb Rb Vb Vee Vb Vee Rb Rb Q3 InOutQ4 Rb Rb Vb Vee Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.8,
+      "relevance_breakdown": {
+        "+topology": 2.5,
+        "+proposed": 3.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "frequency multiplier",
+        "technology": "BICMOS, SIGE, HBT, MMIC, 130nm process",
+        "application_domain": "mm-wave, mmwave, rf, radar, ultra-wideband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "The proposed ultra-wideband, balanced frequency multiplier topology",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.82,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 0,
+      "caption": "Fig. 2. Equivalent small-signal circuit of a common-base bipolar transistor device with a shorted output.",
+      "caption_bbox": [
+        306.6,
+        684.7,
+        553.5,
+        701.6
+      ],
+      "section_title": "II. DESIGN TECHNIQUE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "DESIGN TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The input and output impedances of the diode connected device at the quiescent point can be approximated from the small-signal model of the device (Fig. 2)."
+        },
+        {
+          "section_title": "DESIGN TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Although this does not describe the large signal behavior, it can be used to estimate the order of magnitude of the expected impedance. r0 E VBE gmVBE CBE rBE CBC VIN RB B, C Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.8,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-equivalent": -2.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "frequency multiplier",
+        "technology": "BICMOS, SIGE, HBT, MMIC, 130nm process",
+        "application_domain": "mm-wave, mmwave, rf, radar, ultra-wideband, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Equivalent small-signal circuit of a common-base bipolar transistor device with a shorted output",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.1,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Simulated results. Triangles: conversion gain at 2 × f0, dashed: the 4 × f0 harmonic component, solid blue: small signal S11, circles red: large signal S11.",
+      "caption_bbox": [
+        44.2,
+        645.7,
+        291.0,
+        662.7
+      ],
+      "section_title": "III. CIRCUIT DESIGN AND FABRICATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Multiplying (1) by the complex conjugate of its denominator and inserting these values into (2) yielded: (2) , = + ω = 2π×0 GHz: ZIN, OUT = (44.25 + j0.00) Ω; ω = 2π×100 GHz: ZIN, OUT = (24.02 – j4.71) Ω; ω = 2π×200 GHz: ZIN, OUT = (17.67 – j5.66) Ω; Fig. 3 shows the schematic level simulation results for the 0 dBm input power."
+        },
+        {
+          "section_title": "DESIGN TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "CG, 4xf0, S11 (dB) Fig. 3."
+        },
+        {
+          "section_title": "MEASUREMENTS AND EVALUATION",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "The 4th harmonic wave rejection (HRR4) ratio was better than 17.5 dB, which is relatively close to the schematic level simulation results (Fig. 3)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.3,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "frequency multiplier",
+        "technology": "BICMOS, SIGE, HBT, MMIC, 130nm process",
+        "application_domain": "mm-wave, mmwave, rf, radar, ultra-wideband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated results. Triangles: conversion gain at 2 × f0, dashed: the 4 × f0 harmonic component, solid blue: small signal S11, circles red: large signal S11",
+        "key_specs": [
+          "0 GHz",
+          "100 GHz",
+          "200 GHz",
+          "0 dBm",
+          "17.5 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 1,
+      "caption": "Fig. 4. The architecture of the employed amplifier.",
+      "caption_bbox": [
+        350.0,
+        423.9,
+        509.9,
+        431.7
+      ],
+      "section_title": "III. CIRCUIT DESIGN AND FABRICATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN AND FABRICATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "In order to suppress the even harmonic frequencies and any common mode signal caused by the symmetry imperfections in the frequency doubler layout, a fully differential amplifier topology is employed (Fig. 4)."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN AND FABRICATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Vcc Lpeak Lpeak COUT Out+ OutCOUT Vcasc Qcasc Qcasc Vb Vb Rb Rb Rtail CIN Qin+ QinIn+ InCIN Qsrc Qtail Vee Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "BICMOS, SIGE, HBT, MMIC, 130nm process",
+        "application_domain": "mm-wave, mmwave, rf, radar, ultra-wideband, if",
+        "sub_blocks": [],
+        "design_purpose": "In order to suppress the even harmonic frequencies and any common mode signal caused by the symmetry imperfections in the frequency doubler layout, a fully differential amplifier topology is employed (Fig. 4).",
+        "function_summary": "The architecture of the employed amplifier. In order to suppress the even harmonic frequencies and any common mode signal caused by the symmetry imperfections in the frequency doubler layout, a fully differential amplifier topology is employed (Fig. 4).",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.57,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 1,
+      "caption": "Fig. 5. Spectrum example for a 10 GHz, 0 dBm carrier signal. Left: at the output of freq. doubler, right: at the output of amplifier. Simulated data.",
+      "caption_bbox": [
+        306.6,
+        685.0,
+        553.5,
+        701.8
+      ],
+      "section_title": "III. CIRCUIT DESIGN AND FABRICATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN AND FABRICATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "An example for a 10 GHz, 0 dBm carrier signal is shown (Fig. 5): POUT, 1+2 (dBm) POUT, 1 (dBm) 0 0 -10 -10 -20 -20 -30 -30 -40 -40 f0 -50 -50 50 0 10 40 20 30 10 40 50 0 20 30 Output Output freq."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN AND FABRICATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "(GHz) Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "-spectrum": -2.5,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "BICMOS, SIGE, HBT, MMIC, 130nm process",
+        "application_domain": "mm-wave, mmwave, rf, radar, ultra-wideband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Spectrum example for a 10 GHz, 0 dBm carrier signal. Left: at the output of freq. doubler, right: at the output of amplifier. Simulated data",
+        "key_specs": [
+          "10 GHz",
+          "0 dBm"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. 3D layout view of the frequency multiplier without amplifier stage.",
+      "caption_bbox": [
+        50.8,
+        226.1,
+        286.5,
+        233.9
+      ],
+      "section_title": "III. CIRCUIT DESIGN AND FABRICATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN AND FABRICATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "To effectively combine the half sinusoidal waves at the outputs of the transistor pairs Q1 + Q3 and Q2 + Q4, the transmission lines (TLs) between these pairs were designed symmetrical and electrically equal in length (Fig. 6)."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN AND FABRICATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Q2+Q4 Q1+Q3 Q1 Q2 Q4 Q3 Fig. 6. 3D layout view of the frequency multiplier without amplifier stage."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN AND FABRICATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "After combining, the signals are passed to the fully differential amplifier (not shown in Fig. 6) to reject the common-mode signal."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.7,
+      "relevance_breakdown": {
+        "-layout": -2.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "frequency multiplier",
+        "technology": "BICMOS, SIGE, HBT, MMIC, 130nm process",
+        "application_domain": "mm-wave, mmwave, rf, radar, ultra-wideband, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "transmission line"
+        ],
+        "design_purpose": "",
+        "function_summary": "3D layout view of the frequency multiplier without amplifier stage",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 2,
+      "caption": "Fig. 7. Combined freq. multiplier and amplifier IC photograph.",
+      "caption_bbox": [
+        68.4,
+        492.3,
+        266.8,
+        500.1
+      ],
+      "section_title": "IV. MEASUREMENTS AND EVALUATION",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENTS AND EVALUATION",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "The fabricated IC occupies a total area of 0.37 mm2, whereas the active area is 0.1 mm2 (Fig. 7)."
+        },
+        {
+          "section_title": "MEASUREMENTS AND EVALUATION",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Active Area Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-photograph": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "frequency multiplier",
+        "technology": "BICMOS, SIGE, HBT, MMIC, 130nm process",
+        "application_domain": "mm-wave, mmwave, rf, radar, ultra-wideband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Combined freq. multiplier and amplifier IC photograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 2,
+      "caption": "Fig. 8. IC contact setup, containing baluns and probes.",
+      "caption_bbox": [
+        81.8,
+        599.3,
+        255.4,
+        607.1
+      ],
+      "section_title": "IV. MEASUREMENTS AND EVALUATION",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENTS AND EVALUATION",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.6,
+      "relevance_breakdown": {
+        "-setup": -2.0,
+        "section:results": -2.0,
+        "references": 0.4
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "balun",
+        "technology": "BICMOS, SIGE, HBT, MMIC, 130nm process",
+        "application_domain": "mm-wave, mmwave, rf, radar, ultra-wideband, if",
+        "sub_blocks": [
+          "balun"
+        ],
+        "design_purpose": "",
+        "function_summary": "IC contact setup, containing baluns and probes",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 2,
+      "caption": "Fig 9. Measurements vs. simulation. Triangles: CG at 2 × f0 and PIN= 0 dBm. Circles: input matching at 2 × f0 and PIN ≈ 0 dBm. The corresponding simulations results are given in dashed, blue.",
+      "caption_bbox": [
+        306.7,
+        338.5,
+        553.6,
+        364.4
+      ],
+      "section_title": "IV. MEASUREMENTS AND EVALUATION",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENTS AND EVALUATION",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "The circuit operates at 3 – 40 GHz output frequency, where the 3 dB CG bandwidth is 4 – 34 GHz (Fig. 9)."
+        },
+        {
+          "section_title": "MEASUREMENTS AND EVALUATION",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "CG @ 2 × f0 CG, S11 @ 2 x f0 (dB) S11 @ 2 × f0 Fig 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "frequency multiplier",
+        "technology": "BICMOS, SIGE, HBT, MMIC, 130nm process",
+        "application_domain": "mm-wave, mmwave, rf, radar, ultra-wideband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measurements vs. simulation. Triangles: CG at 2 × f0 and PIN= 0 dBm. Circles: input matching at 2 × f0 and PIN ≈ 0 dBm. The corresponding simulations results are given in dashed, blue",
+        "key_specs": [
+          "40 GHz",
+          "3 dB",
+          "34 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 2,
+      "caption": "Fig. 10. Measured CG (2 × f0, circles), fundamental (1 × f0, crosses), 3 × f0, (triangles) and the 4 × f0, (dashes) components vs. output frequency. PIN= 0 dBm.",
+      "caption_bbox": [
+        306.7,
+        504.3,
+        555.6,
+        521.1
+      ],
+      "section_title": "IV. MEASUREMENTS AND EVALUATION",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENTS AND EVALUATION",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "The FRR and 3rd harmonic rejection ratio (HRR3) were measured better than 34 dB and 48 dB respectively (Fig. 10)."
+        },
+        {
+          "section_title": "MEASUREMENTS AND EVALUATION",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "The corresponding simulations results are given in dashed, blue. 2 × f0 CG @ n x f0 (dB) 4 × f0 1 × f0 3 × f0 Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "frequency multiplier",
+        "technology": "BICMOS, SIGE, HBT, MMIC, 130nm process",
+        "application_domain": "mm-wave, mmwave, rf, radar, ultra-wideband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured CG (2 × f0, circles), fundamental (1 × f0, crosses), 3 × f0, (triangles) and the 4 × f0, (dashes) components vs. output frequency. PIN= 0 dBm",
+        "key_specs": [
+          "34 dB",
+          "48 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 2,
+      "caption": "Fig. 11. The measured output power POUT vs. input power PIN for 10 GHz (dashed), 20 GHz (circles) and 30 GHz (crosses) output frequencies.",
+      "caption_bbox": [
+        306.7,
+        715.7,
+        553.6,
+        732.4
+      ],
+      "section_title": "IV. MEASUREMENTS AND EVALUATION",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENTS AND EVALUATION",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "The measured output power at 1 dB compression point (P1dB) was about 0 dBm (Fig. 11)."
+        },
+        {
+          "section_title": "MEASUREMENTS AND EVALUATION",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Pout @ 2 x f0 (dBm) Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-output power": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "frequency multiplier",
+        "technology": "BICMOS, SIGE, HBT, MMIC, 130nm process",
+        "application_domain": "mm-wave, mmwave, rf, radar, ultra-wideband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "The measured output power POUT vs. input power PIN for 10 GHz (dashed), 20 GHz (circles) and 30 GHz (crosses) output frequencies",
+        "key_specs": [
+          "1 dB",
+          "1dB",
+          "0 dBm"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 1,
+  "warnings": []
+}

@@ -1,0 +1,538 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\938376.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\938376",
+  "generated_at": "2026-07-29T22:03:32",
+  "paper_metadata": {
+    "title": "Conditional-Capture Flip-Flop for Statistical Power Reduction",
+    "authors": [
+      "Bai-Sun Kong",
+      "Sam-Soo Kim",
+      "Young-Hyun Jun"
+    ],
+    "abstract": "This paper describes a family of novel low-power flip-flops, collectively called conditional-capture flip-flops latency and setup and hold times are important because the (CCFFs). They achieve statistical power reduction by eliminating timing budget is getting tighter as the clock frequency increases. redundant transitions of internal nodes. These flip-flops also Power requirement is also becoming equally important, because have negative setup time and thus provide small data-to-output the power consumption increases linearly with clock frequency latency and attribute of soft-clock edge for overcoming clock while the power budget of high-performance portable digital skew-related cycle time loss. The simulation comparison indicates that the proposed differential flip-flop achieves power savings systems is severely limited. Some papers provide comparative of up to 61% with no impact on latency while the single-ended analysis of latches and flip-flops commonly used in high-perstructure provides the maximum power savings of around 67%, formance systems and deal with the possibilities of trading off as compared to conventional flip-flops. With a typical switching one for the other between speed and power [2], [3]. In addition activity of 0.33, the power consumption is reduced by as much as to these utmost important parameters, there are a variety of 23–30% with comparable minimum data-to-output latency. It is also indicated that the proposed single-ended structure provides other parameters related to latching elements, which can have power comparable to the fully static master–slave design with a certain impact on the performance of synchronous systems. significantly reduced data-to-output latency. An eight-bit counter The ability to absorb the clock skew is attaining wide attention was fabricated using a 0.35m CMOS technology, and the exto minimize the impact of the clock skew that occupies a perimental results indicate that the counter using the differential nonnegligible fraction of a cycle time as the clock frequency CCFF saves the overall power consumption by about 30% as compared to that using the conventional flip-flop. increases. The clock load imposed by flip-flops and latches is important because in high-performance digital systems the",
+    "keywords": [
+      "CMOS digital integrated circuits",
+      "flip-flops",
+      "low-"
+    ],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2001
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Conditional-Capture Flip-Flop",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "latch",
+      "clock / timing",
+      "sense amplifier",
+      "transistor/MOSFET",
+      "cross-coupled pair"
+    ],
+    "design_purpose": "An eight-bit counter The ability to absorb the clock skew is attaining wide attention was fabricated using a 0.35m CMOS technology, and the exto minimize the impact of the clock skew that occupies a perimental results indicate that the counter using the differential nonnegligible fraction of a cycle time as the clock ...",
+    "function_summary": "Conditional-Capture Flip-Flop: An eight-bit counter The ability to absorb the clock skew is attaining wide attention was fabricated using a 0.35m CMOS technology, and the exto minimize the impact of the clock skew that occupies a perimental results indicate that the counter using the differential nonnegligible fraction of a cycle time as the clock ...",
+    "key_specs": [
+      "61%",
+      "67%",
+      "30%",
+      "45%",
+      "20%",
+      "2.5 V",
+      "400 fF",
+      "200 MHz",
+      "27%",
+      "2.2 W"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "S YNCHRONOUS digital systems incorporate the clock signal(s) for controlling the execution of their sequential parts. A number of different clocking strategies can be used for implementing such systems, along with several different types of storage elements such as flip-flops and latches. The clocking schemes for these systems must be as robust and easy to implement as possible. The single-phase a ..."
+    },
+    {
+      "number": "II",
+      "title": "POWER CONSUMPTION OF FLIP-FLOPS",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "Fig. 1 shows the schematic diagram of representative highperformance flip-flops. They are transmission-gate flip-flops (TGFFs) [10], hybrid latch-flip-flops (HLFFs), semi-dynamic flip-flop (SDFF)s, and sense amplifier-based flip-flops (SAFFs). TGFFs have a fully static master–slave structure by cascading two identical pass-gate latches and provides a short clock-to-output latency. However, it has  ..."
+    },
+    {
+      "number": "III",
+      "title": "CONDITIONAL-CAPTURE FLIP-FLOPS",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "The schematic diagram of the proposed flip-flop, the conditional-capture flip-flop (CCFF), is shown in Fig. 2. The flip-flop consists of two stages, the differential circuit with a pair of NOR gates and clock inverters I1 and I2 in the first stage, and the high-speed SR latch with the cross-coupled circuit in the second stage. The NOR gates are driven by the outputs to make the disand , depend on  ..."
+    },
+    {
+      "number": "IV",
+      "title": "COMPARISON AND DISCUSSION",
+      "kind": "results",
+      "page": 4,
+      "text_preview": "As mentioned earlier, the conventional hybrid and differential flip-flops suffer from power consumption due to redundant internal transitions. As for the SAFF, these transitions occur when input is at a high or a low logic value for more than one cycle. The same condition occurs in HLFF and SDFF with input staying at a high logic value. During these periods, conventional flip-flops steadily consum ..."
+    },
+    {
+      "number": "V",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 7,
+      "text_preview": "In this paper, novel low-power flip-flops have been introduced. They achieve statistical power reduction by eliminating internal redundant transitions. They have negative setup time and thus provide small data-to-output latency. The overall KONG et al.: CONDITIONAL-CAPTURE FLIP-FLOP FOR STATISTICAL POWER REDUCTION TABLE III POWER CONSUMPTION OF COUNTERS Fig. 9. Comparison of power consumption of c ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Conventional high-performance flip-flops: (a) TGFF, (b) HLFF, (c) SDFF, and (d) SAFF.",
+      "caption_bbox": [
+        39.6,
+        460.3,
+        354.1,
+        470.9
+      ],
+      "section_title": "II. POWER CONSUMPTION OF FLIP-FLOPS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1."
+        },
+        {
+          "section_title": "POWER CONSUMPTION OF FLIP-FLOPS",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 1 shows the schematic diagram of representative highperformance flip-flops."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-conventional": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "flip-flop",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Conventional high-performance flip-flops: (a) TGFF, (b) HLFF, (c) SDFF, and (d) SAFF",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 2,
+      "caption": "Fig. 2. Conditional capture flip-flop (differential).",
+      "caption_bbox": [
+        301.1,
+        314.7,
+        466.5,
+        325.3
+      ],
+      "section_title": "II. POWER CONSUMPTION OF FLIP-FLOPS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "POWER CONSUMPTION OF FLIP-FLOPS",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "We focus on this aspect and introduce Fig. 2."
+        },
+        {
+          "section_title": "CONDITIONAL-CAPTURE FLIP-FLOPS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The schematic diagram of the proposed flip-flop, the conditional-capture flip-flop (CCFF), is shown in Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "flip-flop",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Conditional capture flip-flop (differential)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 3,
+      "caption": "Fig. 3.",
+      "caption_bbox": [
+        39.6,
+        540.5,
+        60.2,
+        551.1
+      ],
+      "section_title": "III. CONDITIONAL-CAPTURE FLIP-FLOPS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CONDITIONAL-CAPTURE FLIP-FLOPS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 3."
+        },
+        {
+          "section_title": "CONDITIONAL-CAPTURE FLIP-FLOPS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The circuit operation for this case is represented in Fig. 3(a)."
+        },
+        {
+          "section_title": "CONDITIONAL-CAPTURE FLIP-FLOPS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Conditional capture flip-flop (single-ended). transition of cannot be produced at the rising clock edge be- , has a low logic value, cause the output of the NOR gate, turning the transistor M4 off, as shown by Fig. 3(b)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "flip-flop",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "flip-flop",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 4,
+      "caption": "Fig. 4. Conditional capture flip-flop (single-ended).",
+      "caption_bbox": [
+        38.1,
+        215.2,
+        209.0,
+        225.9
+      ],
+      "section_title": "IV. COMPARISON AND DISCUSSION",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "CONDITIONAL-CAPTURE FLIP-FLOPS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "In this case, thepull-down equal to that of the flip-flop output KONG et al.: CONDITIONAL-CAPTURE FLIP-FLOP FOR STATISTICAL POWER REDUCTION Fig. 4."
+        },
+        {
+          "section_title": "CONDITIONAL-CAPTURE FLIP-FLOPS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 4 shows the single-ended version of the proposed flipflop."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "flip-flop",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Conditional capture flip-flop (single-ended)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 5,
+      "caption": "Fig. 5. Simulated waveforms (with the supply voltage: 2.5 V; temperature: 25",
+      "caption_bbox": [
+        39.6,
+        454.6,
+        292.5,
+        465.3
+      ],
+      "section_title": "IV. COMPARISON AND DISCUSSION",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "CONDITIONAL-CAPTURE FLIP-FLOPS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The simulated waveforms of the proposed flip-flops are m CMOS shown in Fig. 5, which are obtained in a 2.5-V 0.35technology at room temperature with typical devices using 400-fF output loads."
+        },
+        {
+          "section_title": "COMPARISON AND DISCUSSION",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Single-ended CCFF achieves the maximum power savings of around 67% Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.2,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "-waveform": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "flip-flop",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated waveforms (with the supply voltage: 2.5 V; temperature: 25",
+        "key_specs": [
+          "67%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 5,
+      "caption": "Fig. 6. structure.",
+      "caption_bbox": [
+        39.6,
+        654.6,
+        69.5,
+        674.2
+      ],
+      "section_title": "IV. COMPARISON AND DISCUSSION",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "COMPARISON AND DISCUSSION",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "To get a more realistic picture, the overall power consumption of several flip-flops for different input patterns is simulated and plotted in Fig. 6."
+        },
+        {
+          "section_title": "COMPARISON AND DISCUSSION",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Power consumption in terms of switching activity (simulated with the supply voltage: 2.5 V, temperature: (a) differential structure, (b) single-ended Fig. 6. structure. with all high inputs as compared to SDFF having the maximum power consumption among those compared."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "flip-flop",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "structure",
+        "key_specs": [
+          "2.5 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 7,
+      "caption": "Fig. 7. Block diagram of the counter.",
+      "caption_bbox": [
+        39.6,
+        251.5,
+        165.0,
+        262.1
+      ],
+      "section_title": "IV. COMPARISON AND DISCUSSION",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "COMPARISON AND DISCUSSION",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "To achieve Fig. 7."
+        },
+        {
+          "section_title": "COMPARISON AND DISCUSSION",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "An eight-bit counter, which was designed using the differential CCFF to demonstrate the practical application of the proposed technique, is illustrated in Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "Conditional-Capture Flip-Flop",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "To achieve Fig. 7.",
+        "function_summary": "Block diagram of the counter. To achieve Fig. 7.",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.4,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 7,
+      "caption": "Fig. 8. Microphotograph of the counter.",
+      "caption_bbox": [
+        39.6,
+        469.1,
+        172.7,
+        479.7
+      ],
+      "section_title": "IV. COMPARISON AND DISCUSSION",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "COMPARISON AND DISCUSSION",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 8."
+        },
+        {
+          "section_title": "COMPARISON AND DISCUSSION",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The counter was designed using a 0.35CMOS technology, and the microphotograph is shown in Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -7.7,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "Conditional-Capture Flip-Flop",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Microphotograph of the counter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 8,
+      "caption": "Fig. 9. Comparison of power consumption of counters.",
+      "caption_bbox": [
+        38.1,
+        308.2,
+        219.6,
+        318.8
+      ],
+      "section_title": "V. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "COMPARISON AND DISCUSSION",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The simulated power consumption of each part of the counter is compared in Fig. 9."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 7,
+          "sentence": "The overall KONG et al.: CONDITIONAL-CAPTURE FLIP-FLOP FOR STATISTICAL POWER REDUCTION TABLE III POWER CONSUMPTION OF COUNTERS Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "flip-flop",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Comparison of power consumption of counters",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 7,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

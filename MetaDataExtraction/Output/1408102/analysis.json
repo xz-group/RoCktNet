@@ -1,0 +1,788 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1408102.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1408102",
+  "generated_at": "2026-07-29T22:02:31",
+  "paper_metadata": {
+    "title": "High-Speed Current-Mode Logic Amplifier Using Positive Feedback and Feed-Forward Source-Follower Techniques for High-Speed CMOS I/O Buffer",
+    "authors": [
+      "Jong K. Kim",
+      "T. S. Kalkur"
+    ],
+    "abstract": "A new approach to implement low-power high-performance integrated output pad drivers in monolithic integrated quency operation where a voltage gain can be achieved easily, circuits is presented. The design utilizes a source-follower topology it suffers from the degradation of voltage gain because of the along with a simple positive feedback and a simple feed-forward voltage division between the transconductance and the approach to control both rise and fall times for a given loading caload conductance for a very high-frequency operpacitance. This novel technique is used to implement a differential ation case where the voltage gain is very precious. This is a output pad driver for the high-speed serial data/clock design in a standard 0.13 m CMOS technology. The driver occupies less than major drawback of the source-follower circuit for high-speed 0.12 mm2 of die area including the area of two ball pads and can large signal drivers since it requires higher input signal voltage drive 50load through 50transmission line for higher than at the gate of the next stage to produce sufficient swing. Hence, 12-Gb/s data rates. the previous differential pair requires either higher tail current",
+    "keywords": [
+      "Current-mode logic",
+      "feed-forward amplifier",
+      "pos-"
+    ],
+    "doi": "10.1109/JSSC.2005.843629",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2005
+  },
+  "paper_circuit_context": {
+    "circuit_type": "High-Speed Current-Mode Logic Amplifier",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "resistor",
+      "transistor/MOSFET",
+      "current source",
+      "output buffer",
+      "differential pair",
+      "capacitor",
+      "transmission line"
+    ],
+    "design_purpose": "A new approach to implement low-power high-performance integrated output pad drivers in monolithic integrated quency operation where a voltage gain can be achieved easily, circuits is presented.",
+    "function_summary": "High-Speed Current-Mode Logic Amplifier: A new approach to implement low-power high-performance integrated output pad drivers in monolithic integrated quency operation where a voltage gain can be achieved easily, circuits is presented.",
+    "key_specs": [
+      "375 fF",
+      "500 fF",
+      "130%",
+      "60%",
+      "24.4 ps",
+      "1.4 ps",
+      "14 ps"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE ever-increasing demand for more performance from monolithic analog and mixed-mode signal processing poses challenging requirements on the basic building blocks: the clock and/or data output drivers [1], [2]. The common conventional architecture of the high-speed driver is shown in Fig. 1, which has as many cascaded stages as are required to meet the speed and the driving capability [3]. In th ..."
+    },
+    {
+      "number": "IV",
+      "title": "PROPOSED NEW HIGH-SPEED AMPLIFIER",
+      "kind": "proposed",
+      "page": 5,
+      "text_preview": "The proposed new low-power high-speed CML ampliﬁer architecture is shown in Fig. 12. Even though both source followers perform at about the same level, FFSF is used at the second and third stages for the high load capacitance and FBSF at the ﬁrst stage. The inductive peaking topology is also used in two FFSF and two CML stages to further bandwidth improvements and placed in series with each load r ..."
+    },
+    {
+      "number": "V",
+      "title": "SIMULATION AND MEASUREMENT RESULTS",
+      "kind": "results",
+      "page": 5,
+      "text_preview": "Fig. 14 shows the overlay view of the simulation and measurement of the proposed ampliﬁer with package and the test PCB traces. The thin trace is the simulation plot. The driver ocof die area including the area of two cupies less than 0.12 mm load through 50transmission ball pads and can drive 50Fig. 13. Proposed new low-power high-speed ampliﬁer microphotograph. Fig. 14. Proposed high-speed ampli ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 6,
+      "text_preview": "Feed-forward and positive-feedback techniques were used to enhance the dc-gain and bandwidth of source-follower ampliﬁers using an extra differential pair, and the design goal was well achieved. The performance of the prior driver was measured with an electrically superior package than the one used with proposed driver which was the bottleneck in edge rate. The simulated rise time without package  ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Common conventional architecture of the high-speed driver.",
+      "caption_bbox": [
+        39.6,
+        176.2,
+        261.8,
+        184.2
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The common conventional architecture of the high-speed driver is shown in Fig. 1, which has as many cascaded stages as are required to meet the speed and the driving capability [3]."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The input , has large depenimpedance looking into the gate of M3, , as shown in the (2). dency of the output load impedance, (2) where Therefore, the ac small-signal source-follower gain can be written as (3) and the extra differential pair gain is (4) where IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 3, MARCH 2005 Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "-conventional": -3.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "line / output driver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "Common conventional architecture of the high-speed driver",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Schematic of each stage of high-speed driver.",
+      "caption_bbox": [
+        39.6,
+        423.0,
+        213.9,
+        430.9
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "In the conventional architecture, each stage uses the differential pair current-mode logic (CML) as shown in Fig. 2."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "line / output driver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "Schematic of each stage of high-speed driver",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Output waveform of high-speed driver showing two slopes.",
+      "caption_bbox": [
+        39.6,
+        608.0,
+        257.6,
+        616.0
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Otherwise, one will see something like Fig. 3, which is commonly called a dual-slope output waveform."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.7,
+      "relevance_breakdown": {
+        "-waveform": -2.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "line / output driver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Output waveform of high-speed driver showing two slopes",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Basic source follower with a differential ampliﬁer.",
+      "caption_bbox": [
+        38.1,
+        270.9,
+        229.4,
+        278.9
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "FEED-FORWARD SOURCE-FOLLOWER (FFSF) SCHEMES A basic source follower with a differential pair ampliﬁer is shown in Fig. 4 and consists of a couple of source-follower MOSs and current sources."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "To study the characteristics of FFSF, (5) can be rewritten as (9) Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "High-Speed Current-Mode Logic Amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "current source",
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "Basic source follower with a differential ampliﬁer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Feed-forward source follower (FFSF) with a differential ampliﬁer.",
+      "caption_bbox": [
+        38.1,
+        571.1,
+        280.0,
+        579.1
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "However, if we add an extra differential pair at the source of the source follower as shown in Fig. 5, it produces extra gain with the output resistance of the source follower as a load that is additive to the source-follower gain."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "High-Speed Current-Mode Logic Amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "Feed-forward source follower (FFSF) with a differential ampliﬁer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. AC small-signal half-circuit model of feed-forward source follower.",
+      "caption_bbox": [
+        38.1,
+        749.4,
+        285.1,
+        757.3
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "So the source-follower dc in Fig. 6 can be shown as gain at (1) Note that gain factor is to exclude the gain of the differential ampliﬁer when only the gain of the source follower is considered and is less than unity. in (1), the gain of source follower If we set is unity."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Now, we can develop an ac transfer function of the FFSF by using ac small-signal model as shown in Fig. 6."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.2,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-model": -1.5,
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "High-Speed Current-Mode Logic Amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "AC small-signal half-circuit model of feed-forward source follower",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. and m.",
+      "caption_bbox": [
+        302.6,
+        294.9,
+        326.2,
+        311.8
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "However, it could be shown that there is an optimum value of for the optimized bandwidth by plotting the (12) over frequency and reading off 3-dB points from the plot, and then creating the plot of the 3-dB points, shown in Fig. 7."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "In Fig. 7, we plotted with , the bandwidth of (12) over variable GHz, fF, , , and ."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "However, this paper presents that a positive feedback not only enhances a source-follower ampliﬁer gain but its bandsince less large signal gain is width by indirectly reducing Feed-forward source-follower bandwidth versus N for different C Fig. 7. and m. required at the input of the source follower."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.7,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "High-Speed Current-Mode Logic Amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "and m",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Feed-backward source follower.",
+      "caption_bbox": [
+        38.1,
+        334.7,
+        170.0,
+        342.7
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 8 shows the circuit conﬁguration of the feed-backward source follower (FBSF) and its small-signal model is shown in Fig. 9."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "A small-signal analysis shows that the input impedance of FBSF can be written as follows: (14) , and where (15) Therefore, the dc gain of FBSF is as (15) and can be unity if . , the 3-dB bandwidth is Also, if Hz (11) (12) Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "High-Speed Current-Mode Logic Amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Feed-backward source follower",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. Feed-backward source-follower small-signal model.",
+      "caption_bbox": [
+        38.1,
+        517.4,
+        233.3,
+        525.3
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 8 shows the circuit conﬁguration of the feed-backward source follower (FBSF) and its small-signal model is shown in Fig. 9."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "-model": -1.5,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "High-Speed Current-Mode Logic Amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Feed-backward source-follower small-signal model",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10. Feed-backward source-follower ac response.",
+      "caption_bbox": [
+        38.1,
+        713.5,
+        213.5,
+        721.5
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 10."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "From (14) (16) If and ; (17) In Fig. 10, ac responses of (17) are plotted over variable with , GHz, fF."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "High-Speed Current-Mode Logic Amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Feed-backward source-follower ac response",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 4,
+      "caption": "Fig. 11. .",
+      "caption_bbox": [
+        301.1,
+        552.8,
+        552.2,
+        560.8
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 3, MARCH 2005 Feed-backward source-follower bandwidth versus Nfor different C Fig. 11. ."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Also, in Fig. 11, the bandwidth of (17) is plotted over variable with fF, , ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "High-Speed Current-Mode Logic Amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 5,
+      "caption": "Fig. 12. Proposed new low-power high-speed ampliﬁer architecture.",
+      "caption_bbox": [
+        39.6,
+        326.1,
+        264.1,
+        334.0
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "When an optimum value of fF, could be between 5 and 7; 6–8 for 375 fF; IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 3, MARCH 2005 TABLE I PRIOR AND PROPOSED DRIVERS PERFORMANCE COMPARISON Fig. 12."
+        },
+        {
+          "section_title": "PROPOSED NEW HIGH-SPEED AMPLIFIER",
+          "section_kind": "proposed",
+          "page": 5,
+          "sentence": "The proposed new low-power high-speed CML ampliﬁer architecture is shown in Fig. 12."
+        },
+        {
+          "section_title": "PROPOSED NEW HIGH-SPEED AMPLIFIER",
+          "section_kind": "proposed",
+          "page": 5,
+          "sentence": "The schematic shown in Fig. 12 is for the optical output driver format, and the fourth and ﬁfth stages are CML."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.7,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "+proposed": 3.0,
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "line / output driver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Proposed new low-power high-speed ampliﬁer architecture",
+        "key_specs": [
+          "375 fF"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.93,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 5,
+      "caption": "Fig. 13. Proposed new low-power high-speed ampliﬁer microphotograph.",
+      "caption_bbox": [
+        302.6,
+        523.4,
+        542.8,
+        531.4
+      ],
+      "section_title": "IV. PROPOSED NEW HIGH-SPEED AMPLIFIER",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "PROPOSED NEW HIGH-SPEED AMPLIFIER",
+          "section_kind": "proposed",
+          "page": 5,
+          "sentence": "The was fabricated using standard 0.13fabricated CMOS chip microphotograph is shown in Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.1,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "section:proposed": 2.0,
+        "references": 0.4
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "High-Speed Current-Mode Logic Amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Proposed new low-power high-speed ampliﬁer microphotograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 5,
+      "caption": "Fig. 14. Proposed high-speed ampliﬁer simulation/measurement comparison.",
+      "caption_bbox": [
+        302.6,
+        754.5,
+        553.7,
+        762.4
+      ],
+      "section_title": "V. SIMULATION AND MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "SIMULATION AND MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 14 shows the overlay view of the simulation and measurement of the proposed ampliﬁer with package and the test PCB traces."
+        },
+        {
+          "section_title": "SIMULATION AND MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.8,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "High-Speed Current-Mode Logic Amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Proposed high-speed ampliﬁer simulation/measurement comparison",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.1,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 12,
+  "warnings": []
+}

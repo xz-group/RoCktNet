@@ -1,0 +1,404 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\RNDatasetPapers\\10454417.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output_rerun_128\\10454417",
+  "generated_at": "2026-07-29T22:45:28",
+  "paper_metadata": {
+    "title": "1.2 Racing Down the Slopes of Moore’s Law Bram Nauta",
+    "authors": [],
+    "abstract": "",
+    "keywords": [],
+    "doi": "10.1109/ISSCC49657.2024.10454417",
+    "venue": "",
+    "year": 2024
+  },
+  "paper_circuit_context": {
+    "circuit_type": "",
+    "technology": "CMOS, FINFET, 65nm process",
+    "application_domain": "rf, radio frequency, wireless, 5g, biomedical, thz, baseband, if",
+    "sub_blocks": [
+      "inductor",
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "current source",
+      "transformer",
+      "output buffer",
+      "mixer",
+      "switch",
+      "differential pair",
+      "op-amp",
+      "latch",
+      "clock / timing"
+    ],
+    "design_purpose": "",
+    "function_summary": "circuit",
+    "key_specs": [
+      "30dB",
+      "65nm",
+      "22nm",
+      "50nm",
+      "3nm",
+      "16nm",
+      "5nm",
+      "4nm",
+      "100nm",
+      "0.8%"
+    ]
+  },
+  "sections": [],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Figure 1.2.8. In this continuous-time sigma-delta converter, the input is mostly a resistor connected to virtual ground at typically half the supply voltage. The internal DAC feedback current (IDAC) sinks or sources the input current through this resistor for in-band frequencies. Assuming an input voltage swing VS, the resistor determines the required input current. This resistor also generates noise, and it is assumed that this noise is lowpass ﬁltered up to the ADC signal bandwidth BW before sampling occurs. The fundamental lower limit of power dissipation for a driver with resistive load differs only by a scale factor of order 1 from (1). The DAC in the sigma-delta modulator fundamentally needs power from the ADC supply to source the input current, so the fundamental lower limit of power dissipation for the input driver is of the same magnitude as the rest of the ADC (DAC part).",
+      "caption_bbox": [
+        297.2,
+        616.5,
+        568.3,
+        741.4
+      ],
+      "section_title": "",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Originally, Moore’s Law was good for everything: transistor density (cost-per-function), power dissipation, transistor speed, and processor speed increased exponentially over time (see Figure 1.2.1)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "FinFETs as illustrated in Figure 1.2.2 offer better gate control over the channel from both sides."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Including isolation between the ﬁns, and assuming that each transistor only needs one single ﬁn, still the chip area is only ﬁlled 5% with active ﬁns, as illustrated in Figure 1.2.2."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The next level would be monolithic (so not necessarily stacked chiplets) stacking transistors in a 3D Manhattan style, also illustrated in Figure 1.2.2."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Being more pragmatic, we can observe more serious roadmaps, such as the IRDS [3], as illustrated in Figure 1.2.3."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "By combining data [3, 9, 10], we can observe in Figure 1.2.1 that transistor density may keep increasing up to the 0.5nm node."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "At the same time, the PowerPoint scaling in Figure 1.2.2 predicted 16 transistors, about the same order-of-magnitude."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "As illustrated in Figure 1.2.4, for analog circuits, the fundamental minimum powerper-pole-per-hertz was calculated to be 8.𝑘.T.SNR, with 𝑘 being the Boltzmann constant, T the absolute temperature and SNR the signal-to-noise power ratio."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The rationale behind this is illustrated in Figure 1.2.4, where a sine wave signal is put on a particular capacitor with a particular signal peak-peak voltage VS at frequency f."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 1.2.5 illustrates the power/pole/hertz versus SNR."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "In Figure 1.2.5 the power-per-pole-per-Hertz of practical circuits is also illustrated."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 1.2.5 also shows the power-per-poleperHertz for an N×N bit multiplier."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 1.2.6 shows a basic ampliﬁer consisting of a common-source NMOS with a given W/L and a parallel RC load."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The most popular today are the successive approximation register (SAR) ADC and the sigma-delta modulator, as illustrated in Figure 1.2.7."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "In a SAR ADC, the input voltage is sampled at the output of an internal capacitive n-bit DAC, with n as the number of ISSCC 2024 / February 19, 2024 / 9:20 AM bits (Figure 1.2.7 shows a 3-bit example)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "First-order sigma-delta modulators are illustrated in Figure 1.2.7 as an example; the classical approach has an integrator in the forward path, but passive ﬁlters are also possible [15-20]."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "First, a capacitive input impedance is considered, as is the case for an SAR ADC and illustrated in Figure 1.2.8."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The fundamental lower limit on power dissipation for a driver with supply voltage Vdd, needed to drive an ADC with capacitive input with a swing of VS, is exactly that as calculated by Vittoz in Figure 1.2.4 and (1)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Also, let us now consider a resistive input impedance for the ADC, as illustrated in Figure 1.2.8."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Conventional wireless receivers are built with a low noise ampliﬁer (LNA), downconverter, and a combination of baseband ampliﬁers, ﬁlters, and a driver for the ADC as illustrated in Figure 1.2.9."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "As illustrated in Figure 1.2.10, starting from an RC lowpass ﬁlter, the capacitor is replaced by a bank of N capacitors and rotated in time to connect only one capacitor at a time."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The N-path ﬁlter, therefore, operates as a down-conversion mixer with built-in RF ﬁltering, as illustrated in Figure 1.2.11 [30-32]."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "In [33] a passive voltage gain of 13dB was achieved by combining an RF transformer with 2× voltage stacking gain in the N-path mixer, of which the concept is illustrated in Figure 1.2.11."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The receivers, built with mixer-ﬁrst structures, use baseband ampliﬁers and further ﬁltering before the signal enters the ADC as in Figure 1.2.9."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "If we zoom in to the ﬁrst ampliﬁer at the beginning of the chain, for example, directly after a passive mixer, as illustrated in Figure 1.2.11, we have a small, desired input signal normally fed into an ampliﬁer."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 1.2.12 illustrates the calculation of the current needed to bias this ampliﬁer for a certain equivalent input-referred noise voltage vn 2."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "This comparator is illustrated in Figure 1.2.13 and consists of a dynamically biased input ampliﬁer followed by a latch stage."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "As shown in Figure 1.2.13, ΔVc 2 with vn divided by the noise vn,Di 2 over a single capacitor Cp, appears to be simply the number of electrons (Nelectr,Cp) injected in Cp during discharge."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "In that case, (3) would become equal to (2) as illustrated in Figure 1.2.14."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Referring to Figure 1.2.15 (with OSR=2 as an example), this means that the current consumption (illustrated as packages of charge Q drawn from the supply per original clock cycle), as given by (3), increases with this factor OSR."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "So, we can impedance scale (as in Figure 1.2.6) the comparator with a scaling factor αW =1/OSR to return to the original vn 2 at Nyquist rate, save a factor OSR in current consumption and return to the original current consumption as in (3)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 1.2.16 illustrates a conventional front-end, where the input-referred noise and BW set the large current IDD in the ampliﬁer with gain A."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "As illustrated in Figure 1.2.17, a low-input swing SAR ADC can be built around a comparator at the ADC input by using a DAC with an A times smaller swing."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 1.2.18 ﬁnally illustrates several “no gain” alternatives."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "This relates to Figure 1.2.4 and (1) where VDD is now lowered to VS."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Mc Graw-Hill. [46] Bindra, H.S., et al., “A 1.2-V Dynamic Bias Latch-Type Comparator in 65-nm CMOS With 0.4-mV Input Noise”,IEEE Journal of Solid-State Circuits, 2018. 53(7): p. 19021912. 20 • 2024 IEEE International Solid-State Circuits Conference 979-8-3503-0620-0/24/$31.00 ©2024 IEEE &%' %( #$%$ ! \" Figure 1.2.1: Asymptotic development following Moore’s Law over the years. + , - + , . . / * Figure 1.2.3: Data from the EEE."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "International Roadmap for Devices and Systems (IRDS™) 2022 Edition [3]. ! \" & 0 1 # & 20 3 4 2 5 6 7 89 8 4 ! 8 : 9 ; 2 : 4 Figure 1.2.5: Power-per-pole-per-Hertz, analog fundamental limit, analog practice, and digital multipliers, derived from [11]."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "ISSCC 2024 / February 19, 2024 / 9:20 AM 1 Figure 1.2.2: FinFET and the density of transistor channels of a FinFET in an IC."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Today, only 5% of the effective area is used for logic, while ﬁlling the gaps and 3D tiers of transistors may further increase transistor count. ) Figure 1.2.4: Calculation of the fundamental minimal power to achieve a signal on a capacitor for a given signal-to-noise ratio and frequency [11]."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 1.2.6: Impedance scaling of analog circuits."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Trading SNR against power dissipation. 21 DIGEST OF TECHNICAL PAPERS • ISSCC 2024 / SESSION 1 / PLENARY / 1.2 Figure 1.2.7: Successive Approximation Register ADC (left) and active and passive sigma-delta modulators (right)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 1.2.9: RF front-end, consisting of Low Noise Ampliﬁer (LNA), mixer, ampliﬁers, and ﬁlters driving an ADC (top) passive mixer RF front-end (bottom)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 1.2.11: By observing the capacitor voltages in an N-path ﬁlter (N=4), differential I/Q baseband signals are available for further processing (top)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 1.2.8: Calculation of the fundamental minimum power needed to drive an ADC with capacitive (top) and resistive (bottom) input impedance."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 1.2.10: N-Path ﬁlter example with N=4."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Signals with frequencies close to the clock establish voltages on the capacitors over time, while frequencies away from that destructively add up intime [27]. % % Figure 1.2.12: Calculation of the tail current of an analog continuous-time ampliﬁer 2 over a input stage operating in weak inversion for a given input noise voltage vn bandwidth BW. 22 • 2024 IEEE International Solid-State Circuits Conference 979-8-3503-0620-0/24/$31.00 ©2024 IEEE $ % $ % $ $ ' % ' $ % $ & & # # $ ( $ ' % ' $ $$ % Figure 1.2.13: Comparator [46] and calculation of the charge QDD taken from the supply per clock cycle for a given input noise voltage vn 2 over a bandwidth BW. + ) ) * \" \" ! ! ) ) / / 0 , -. , -."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 1.2.15: Oversampling the comparator (OSR=2) increases the supply current of the comparator [46] with a factor OSR."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 1.2.17: Concept diagrams of ampliﬁer-less low-input swing ADCs: reducing the DAC voltage swing with a factor A reduces the input voltage swing of an SAR ADC (top) and a passive sigma-delta modulator (bottom)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "ISSCC 2024 / February 19, 2024 / 9:20 AM 1 \" ! \" ! # ) Figure 1.2.14: The tail current of an analog continuous-time ampliﬁer input stage and time-averaged supply current of the input stage of the comparator in [46] are the same. < < Figure 1.2.16: Conventional ADC chain with ampliﬁer A with a supply current."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Ampliﬁer-less low-input swing ADC where the ADC now has the noise-determined supply current (bottom). \" = \"\" # & ! % ;\" ; \" \" ; # \" % \" >\" $ \" ; >\" Figure 1.2.18: Low input-swing passive sigma-delta modulator concept (top left)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS, FINFET, 65nm process",
+        "application_domain": "rf, radio frequency, wireless, 5g, biomedical, thz, baseband, if",
+        "sub_blocks": [
+          "capacitor",
+          "resistor",
+          "transistor/MOSFET",
+          "current source",
+          "transformer",
+          "mixer",
+          "latch"
+        ],
+        "design_purpose": "Today, only 5% of the effective area is used for logic, while ﬁlling the gaps and 3D tiers of transistors may further increase transistor count. ) Figure 1.2.4: Calculation of the fundamental minimal power to achieve a signal on a capacitor for a given signal-to-noise ratio and frequency [11].",
+        "function_summary": "2.8. In this continuous-time sigma-delta converter, the input is mostly a resistor connected to virtual ground at typically half the supply voltage. The internal DAC feedback current (IDAC) sinks or sources the input current through this resistor for in-band frequencies. Assuming an input voltage swing VS, the ...",
+        "key_specs": [
+          "5%",
+          "0.5nm",
+          "13dB",
+          "2 w"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.43,
+      "warnings": [
+        "Recommended figure caption does not explicitly mention a schematic/topology/circuit; please confirm manually.",
+        "Recommended figure was classified as 'other', not a schematic; manual confirmation strongly recommended."
+      ]
+    }
+  ],
+  "recommended_figure_id": 1,
+  "warnings": []
+}

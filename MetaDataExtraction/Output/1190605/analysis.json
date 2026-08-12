@@ -1,0 +1,561 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1190605.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1190605",
+  "generated_at": "2026-07-29T21:30:25",
+  "paper_metadata": {
+    "title": "A Spread-Spectrum Clock Generator With Triangular Modulation",
+    "authors": [
+      "Hsiang-Hui Chang",
+      "I-Hui Hua",
+      "Shen-Iuan Liu"
+    ],
+    "abstract": "In this paper, a spread-spectrum clock generator (SSCG) with triangular modulation is presented. Only a divider and a programmable charge pump are added into a conventional clock generator to accomplish the spread-spectrum function. The proposed circuit has been fabricated in a 0.35m CMOS single-poly quadruple-metal process. The proposed SSCG can generate clocks of 66, 133, and 266 MHz with center spread ratios of 0.5%, 1%, 1.5%, 2%, and 2.5%. Experimental results confirm the theoretical analyses.",
+    "keywords": [
+      "Phase-locked loops (PLLs)",
+      "spread spectrum"
+    ],
+    "doi": "10.1109/JSSC.2003.809521",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "frequency divider",
+    "technology": "CMOS",
+    "application_domain": "",
+    "sub_blocks": [
+      "current source",
+      "output buffer"
+    ],
+    "design_purpose": "In this paper, a spread-spectrum clock generator (SSCG) with triangular modulation is presented.",
+    "function_summary": "frequency divider: In this paper, a spread-spectrum clock generator (SSCG) with triangular modulation is presented.",
+    "key_specs": [
+      "266 MHz",
+      "0.5%",
+      "1%",
+      "1.5%",
+      "2%",
+      "2.5%",
+      "40 kHz",
+      "162 ps"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "F ASTER operating speeds of electrical devices today result in much electromagnetic interference (EMI) at higher frequencies. Many methods have been used to diminish EMI, such as shielding, pulse shaping, slew-rate control, low-voltage differential clocking, staggering the outputs, special layout techniques, and spread-spectrum clocking. Among these, the spread-spectrum clock generator (SSCG) [1], ..."
+    },
+    {
+      "number": "II",
+      "title": "CIRCUIT DESCRIPTIONS",
+      "kind": "design",
+      "page": 0,
+      "text_preview": "The proposed SSCG is based on a conventional PLL using the proposed method to modulate the VCO directly. Fig. 1 shows the block diagram of the proposed SSCG. The feature of the proposed SSCG is how to generate the modulation signal. In Fig. 1, the reference clock of the PLL uses the divide-by-358 divider to produce a square wave of 40 kHz as the control signal of the programmable charge pump. The  ..."
+    },
+    {
+      "number": "III",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 2,
+      "text_preview": "The proposed SSCG has been fabricated in a 0.35m CMOS single-poly quadruple-metal CMOS process. Its TABLE I PERFORMANCE SUMMARY microphotograph is shown in Fig. 5. The active area occu0.82 mm and the total area including pads is pies 0.48 1.48 mm . Table I gives the performance summary 1.36 of the proposed SSCG. The low-pass filter is left off-chip to facilitate measurements. All the components ar ..."
+    },
+    {
+      "number": "IV",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 3,
+      "text_preview": "In this brief, the SSCG with triangular modulation on the m CMOS process is presented. The VCO fabricated in a 0.35triangular modulation signal is integrated into the low-pass filter of the PLL; thus, both the hardware complexity and the chip area can be reduced. The measured spectrums show that peak amplitudes of each harmonic are attenuated and the proposed architecture does achieve the spread-s ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Block diagram of the proposed SSCG.",
+      "caption_bbox": [
+        301.1,
+        228.7,
+        453.5,
+        239.4
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Fig. 1 shows the block diagram of the proposed SSCG."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "In Fig. 1, the reference clock of the PLL uses the divide-by-358 divider to produce a square wave of 40 kHz as the control signal of the programmable charge pump."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "It is composed of a square-wave generator of 40 kHz from Fig. 1 and two programmable current sources."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Fig. 1."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "In the nonspread-spectrum mode, the programmable charge pump is turned off and this SSCG is a conventional clock generator with the first charge pump as shown in Fig. 1."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Moreover, to diminish spikes induced by the reference clock, the additional filter, which consists of and , is added as shown in Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.5,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "+proposed": 3.0,
+        "section:intro": -0.5,
+        "references": 2.0
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the proposed SSCG",
+        "key_specs": [
+          "40 kHz"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.91,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 0,
+      "caption": "Fig. 2. (a) Programmable charge pump. (b) Programmable current source.",
+      "caption_bbox": [
+        301.1,
+        589.8,
+        542.4,
+        600.4
+      ],
+      "section_title": "II. CIRCUIT DESCRIPTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "The schematic of the programmable charge pump is shown in Fig. 2(a)."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Fig. 2(b) shows one of the programmable current sources."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "(a) (b) Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "charge pump",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [
+          "current source"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) Programmable charge pump. (b) Programmable current source",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 0,
+      "caption": "Fig. 3. Second-order filter and both charge pumps in the SSCG.",
+      "caption_bbox": [
+        301.1,
+        729.1,
+        510.6,
+        739.8
+      ],
+      "section_title": "II. CIRCUIT DESCRIPTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Fig. 3."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "To explain the operation, only a second-order low-pass filter and both charge pumps are shown in Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Second-order filter and both charge pumps in the SSCG",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 1,
+      "caption": "Fig. 4. (a) Block diagram of the VCO. (b) Transconductor. (c) Seven-stage ICO. (d) Wave-shaping buffer.",
+      "caption_bbox": [
+        39.6,
+        341.0,
+        384.0,
+        351.7
+      ],
+      "section_title": "II. CIRCUIT DESCRIPTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "(a) (c) Fig. 4."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Its diagram and schematic are shown in Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) Block diagram of the VCO. (b) Transconductor. (c) Seven-stage ICO. (d) Wave-shaping buffer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.57,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 1,
+      "caption": "Fig. 5. Microphotograph of the SSCG.",
+      "caption_bbox": [
+        39.6,
+        599.4,
+        169.2,
+        610.0
+      ],
+      "section_title": "II. CIRCUIT DESCRIPTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Fig. 5."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Its TABLE I PERFORMANCE SUMMARY microphotograph is shown in Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Microphotograph of the SSCG",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 1,
+      "caption": "Fig. 6. Measured jitter of the 266-MHz output signal.",
+      "caption_bbox": [
+        302.6,
+        609.0,
+        479.4,
+        619.6
+      ],
+      "section_title": "II. CIRCUIT DESCRIPTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "The is in the steady state and neglect the first charge pump transfer function between the control voltage of the VCO and the programmable charge pump can be expressed as (1) IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 4, APRIL 2003 (b) (d) Fig. 6."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 6 shows the peak-to-peak jitter of 162 ps for the 266-MHz output in nonspread-spectrum mode."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured jitter of the 266-MHz output signal",
+        "key_specs": [
+          "162 ps"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 2,
+      "caption": "Fig. 7. Measured spectrums of the 266-MHz output signals. (a) Without spread. (b) With 2.5% center spread.",
+      "caption_bbox": [
+        38.1,
+        250.0,
+        393.7,
+        260.6
+      ],
+      "section_title": "II. CIRCUIT DESCRIPTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Assume there is a SSCG with the nomchoosing the current and the conversion gain of the inal output frequency IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 4, APRIL 2003 (a) Fig. 7."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 7 shows the measured spectrums of the 266-MHz output signals without and with the spread ratio of 2.5%."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-spectrum": -2.5,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured spectrums of the 266-MHz output signals. (a) Without spread. (b) With 2.5% center spread",
+        "key_specs": [
+          "2.5%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 2,
+      "caption": "Fig. 8.",
+      "caption_bbox": [
+        38.1,
+        480.5,
+        58.8,
+        491.1
+      ],
+      "section_title": "II. CIRCUIT DESCRIPTIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Fig. 8."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 8 shows the expanded views of the 266-MHz output signals without and with the spread ratio of 2.5%."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": [
+          "2.5%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 2,
+      "caption": "Fig. 9. Modulation profiles of the 266-MHz output signals with 2.5% center spread. The horizontal scale is 30 \u0016s/div.",
+      "caption_bbox": [
+        301.1,
+        680.2,
+        552.2,
+        700.1
+      ],
+      "section_title": "III. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTIONS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Fig. 9."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 9 shows the modulation profile (triangular waveform of 40 kHz) of the 266-MHz output signals with the center spread of 2.5%."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Modulation profiles of the 266-MHz output signals with 2.5% center spread. The horizontal scale is 30 \u0016s/div",
+        "key_specs": [
+          "40 kHz",
+          "2.5%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 1,
+  "warnings": []
+}

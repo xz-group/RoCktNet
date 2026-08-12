@@ -1,0 +1,654 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1336990.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1336990",
+  "generated_at": "2026-07-29T21:31:40",
+  "paper_metadata": {
+    "title": "RF Front-End of Direct Conversion Receiver RFIC for CDMA-2000",
+    "authors": [
+      "Madjid Haﬁzi",
+      "Shen Feng",
+      "Taoling Fu",
+      "Kim Schulze",
+      "Robert Ruth",
+      "Richard Schwab",
+      "Per Karlsen",
+      "David Simmonds",
+      "Qizheng Gu"
+    ],
+    "abstract": "We report on the front-end of a highly integrated dual-band direct-conversion receiver IC for CDMA-2000 mobile measurement results are presented. handset applications. The RF front-end included a CELL-band low-noise amplifier (LNA), dual-band direct-conversion quadra-",
+    "keywords": [],
+    "doi": "10.1109/JSSC.2004.833551",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2004
+  },
+  "paper_circuit_context": {
+    "circuit_type": "RF Front-End of Direct Conversion Receiver RFIC",
+    "technology": "CMOS, BICMOS",
+    "application_domain": "rf, wlan, baseband, if",
+    "sub_blocks": [
+      "inductor",
+      "resistor",
+      "transistor/MOSFET",
+      "current source",
+      "LC tank / resonator",
+      "output buffer",
+      "mixer",
+      "bias circuit",
+      "switch",
+      "differential pair",
+      "balun"
+    ],
+    "design_purpose": "",
+    "function_summary": "RF Front-End of Direct Conversion Receiver RFIC: We report on the front-end of a highly integrated dual-band direct-conversion receiver IC for CDMA-2000 mobile measurement results are presented. handset applications.",
+    "key_specs": [
+      "2.7 V",
+      "1.2 dB",
+      "9 dBm",
+      "5 dB",
+      "5 dBm",
+      "55 dBm",
+      "1990 MHz",
+      "1870 MHz",
+      "2170 MHz",
+      "615 kHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE MOBILE handset market has been growing very rapidly in recent years [1]. CDMA-2000 is one of the fastest growing mobile communication standards for voice and data applications. Direct-conversion radio architecture has become very attractive for present and future mobile handsets in this growing and dynamic market and has been used extensively in other mobile communication standards such as GS ..."
+    },
+    {
+      "number": "II",
+      "title": "RECEIVER ARCHITECTURE",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "The block diagram of the receiver is shown in Fig. 1. Also shown in this ﬁgure is the digital baseband chip, which includes analog-to-digital converters (ADCs) and the digital baseband processor. The receiver block diagram consists of the RF portion, which includes the low-noise ampliﬁer (LNA) and the direct-conversion quadrature down-conversion mixers. ) and These also demodulate the received sig ..."
+    },
+    {
+      "number": "III",
+      "title": "RECEIVER REQUIREMENTS",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "Some of the key requirements of a CDMA receiver are summarized in Table I and are derived from the CDMA standard [7]. These requirements are speciﬁed at a designated frame error rate (FER) and a desired input signal level. Each set of the CDMA requirements affects the performance of certain individual blocks. The sensitivity requirement sets the limitforthereceivernoiseﬁgure,whichisdeterminedbythe ..."
+    },
+    {
+      "number": "IV",
+      "title": "RECEIVER FRONT-END DESIGN",
+      "kind": "design",
+      "page": 1,
+      "text_preview": "A. Low-Noise Ampliﬁer The low-noise ampliﬁer (LNA) was designed and characterized separate from other blocks because of access to both the TABLE I MINIMUM CDMA HANDSET REQUIREMENTS FOR CELL AND PCS BANDS input and output terminals. The LNA design was optimized using the ball-grid array (BGA) package model and parasitics associated with the printed circuit board and external surface mount component ..."
+    },
+    {
+      "number": "V",
+      "title": "DMD MEASUREMENTS",
+      "kind": "results",
+      "page": 7,
+      "text_preview": "TheDMDblockwascharacterizedaspartofthechainfromthe mixerinputtothebasebandoutput,asshowninFig.10(a).Thedifferential RF inputs were converted to single-ended signals using baluns with a 2:1 turn ratio, which also translated the mixer input . The differential baseband outputs impedance from 200 to 50 were convertedto single-endedsignalsusing an op-ampconﬁguration.Forthismeasurement,thenoiseﬁgurewasc ..."
+    },
+    {
+      "number": "VI",
+      "title": "PERFORMANCE COMPARISON",
+      "kind": "results",
+      "page": 7,
+      "text_preview": "A comparison of key performance parameters of the present design with those reported in the literature [3], [5] for a direct-conversion receiver is presented in Table V. Due to a lack of reported results for a CDMA-2000 direct-conversion receiver, we made the comparison with reported WCDMA receivers. Because of vastly different receiver requirements in each standard, it is difﬁcult to compare rece ..."
+    },
+    {
+      "number": "VII",
+      "title": "PROCESS TECHNOLOGY",
+      "kind": "other",
+      "page": 8,
+      "text_preview": "An advanced SiGe BiCMOS technology provided by STMicroelectronics was used for this chip. This technology provides HAFIZI et al.: RF FRONT-END OF DIRECT CONVERSION RECEIVER RFIC FOR CDMA-2000 SiGe HBT’s with and of 45 and 60 GHz, respec5.5 V. tively. The dc current gain is over 90 and the m. VerCMOS transistors have a minimum gate length of 0.35 tical PNP transistors and isolated NMOS devices are  ..."
+    },
+    {
+      "number": "VIII",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 9,
+      "text_preview": "A highly integrated direct-conversion receiver RFIC has been developed that meets or exceeds CDMA-2000 requirements. Furthermore, the IC can be used for handset applications in the frequency bands of 800/900 MHz, 1700 MHz, 1900 MHz, and 2100 MHz, requiring only external component modiﬁcations. The IC was fabricated in a SiGe BiCMOS process and housed in an 84-pin ball grid array package. The recei ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1.",
+      "caption_bbox": [
+        38.1,
+        394.2,
+        58.8,
+        402.1
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The block diagram of the receiver is shown in Fig. 1."
+        },
+        {
+          "section_title": "RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 1. programmable dividers and reference divider, CMOS phase/frequency detector, and a CMOS charge pump."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "frequency divider",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 3,
+      "caption": "Fig. 2.",
+      "caption_bbox": [
+        38.1,
+        310.1,
+        58.8,
+        318.1
+      ],
+      "section_title": "IV. RECEIVER FRONT-END DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "RECEIVER FRONT-END DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "A simpliﬁed schematic diagram of the CELL-band LNA is shown in Fig. 2."
+        },
+        {
+          "section_title": "RECEIVER FRONT-END DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "low-noise amplifier (LNA)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 4,
+      "caption": "Fig. 3.",
+      "caption_bbox": [
+        39.6,
+        295.8,
+        60.3,
+        303.8
+      ],
+      "section_title": "IV. RECEIVER FRONT-END DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "RECEIVER FRONT-END DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Alternative LNA An alternative LNA design, shown in Fig. 3, was also considered and was evaluated on silicon for performance comparison."
+        },
+        {
+          "section_title": "RECEIVER FRONT-END DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "low-noise amplifier (LNA)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 4,
+      "caption": "Fig. 4.",
+      "caption_bbox": [
+        39.6,
+        501.1,
+        60.3,
+        509.1
+      ],
+      "section_title": "IV. RECEIVER FRONT-END DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "RECEIVER FRONT-END DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "A simpliﬁed block diagram of this section is shown in Fig. 4, where, for simplicity, only the PCS signal path is depicted."
+        },
+        {
+          "section_title": "RECEIVER FRONT-END DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 4."
+        },
+        {
+          "section_title": "RECEIVER FRONT-END DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "F. 4-GHz VCO Buffer A VCO buffer circuit is also shown in the DMD block diagram of Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wlan, baseband, if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "voltage-controlled oscillator (VCO)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 5,
+      "caption": "Fig. 5. Simpliﬁed schematic diagram of the quadrature down-conversion mixers that also demodulate the baseband signal to I and Q components.",
+      "caption_bbox": [
+        38.1,
+        450.6,
+        289.2,
+        467.5
+      ],
+      "section_title": "IV. RECEIVER FRONT-END DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "RECEIVER FRONT-END DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "A simpliﬁed schematic of the quadrature mixers is shown in Fig. 5."
+        },
+        {
+          "section_title": "RECEIVER FRONT-END DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "A highly optimized Gilbert-cell mixer with common-emitter bipolar RF stage and inductor degeneration was selected for this design (Fig. 5)."
+        },
+        {
+          "section_title": "RECEIVER FRONT-END DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Furthermore, several different topoloand mixers shown in Fig. 5 were gies for combining the two tried."
+        },
+        {
+          "section_title": "RECEIVER FRONT-END DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The common-mode voltage level at the input to the HAFIZI et al.: RF FRONT-END OF DIRECT CONVERSION RECEIVER RFIC FOR CDMA-2000 Fig. 5."
+        },
+        {
+          "section_title": "RECEIVER FRONT-END DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The impact of this deliberate dc offset on the LO signal is to alter the mixing ratio of I1 and I2 (Fig. 5) in such a way as to equalize V1 and V2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.5,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 2.0
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wlan, baseband, if",
+        "sub_blocks": [
+          "inductor",
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simpliﬁed schematic diagram of the quadrature down-conversion mixers that also demodulate the baseband signal to I and Q components",
+        "key_specs": [
+          "5 w"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.59,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 6,
+      "caption": "Fig. 6.",
+      "caption_bbox": [
+        39.6,
+        295.8,
+        60.2,
+        303.8
+      ],
+      "section_title": "IV. RECEIVER FRONT-END DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "RECEIVER FRONT-END DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Simpliﬁed schematic of the divide-by-two circuit is shown in Fig. 6."
+        },
+        {
+          "section_title": "RECEIVER FRONT-END DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "RF Front-End of Direct Conversion Receiver RFIC",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 6,
+      "caption": "Fig. 7. Simpliﬁed schematic of an LO buffer with an LC-tuned load.",
+      "caption_bbox": [
+        39.6,
+        489.5,
+        263.6,
+        497.5
+      ],
+      "section_title": "IV. RECEIVER FRONT-END DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "RECEIVER FRONT-END DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "An LO buffer was used before the mixers to amplify the LO signal using an LC-tuned tank circuit, as shown in Fig. 7."
+        },
+        {
+          "section_title": "RECEIVER FRONT-END DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 7."
+        },
+        {
+          "section_title": "RECEIVER FRONT-END DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The design is similar to that of the LO buffer shown in Fig. 7 except with two input stages to support the two different input signals."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.7,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "RF Front-End of Direct Conversion Receiver RFIC",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wlan, baseband, if",
+        "sub_blocks": [
+          "LC tank / resonator",
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simpliﬁed schematic of an LO buffer with an LC-tuned load",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.85,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 6,
+      "caption": "Fig. 8. Schematic of a mixer showing the two-tone mixing at the RF input and the resulting IMD2 component at the baseband output. Also shown is the schematic LO signal with the impact of dc offset.",
+      "caption_bbox": [
+        302.6,
+        532.0,
+        553.7,
+        557.9
+      ],
+      "section_title": "IV. RECEIVER FRONT-END DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "RECEIVER FRONT-END DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 8 is used to explain the generation of secondorder intermodulation product (IMD2) in the mixer core as a result of applying a two continuous-wave (CW) tones at the RF input."
+        },
+        {
+          "section_title": "RECEIVER FRONT-END DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "A dc offset in the quad transistors (Q3–Q6) can alter the LO duty cycle as shown schematically in Fig. 8 drawing of the LO signal."
+        },
+        {
+          "section_title": "RECEIVER FRONT-END DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "By mismatching Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.7,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wlan, baseband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Schematic of a mixer showing the two-tone mixing at the RF input and the resulting IMD2 component at the baseband output. Also shown is the schematic LO signal with the impact of dc offset",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.85,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 7,
+      "caption": "Fig. 9. Measured tuning curve of the IIP2 as a function of tuning code corresponding to a tuning dc offset increment of 2 mV.",
+      "caption_bbox": [
+        38.1,
+        211.7,
+        289.2,
+        228.6
+      ],
+      "section_title": "IV. RECEIVER FRONT-END DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "RECEIVER FRONT-END DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "A typical tuning curve is shown in Fig. 9, where each tuning step corresponds to approximately 2 mV dc offset applied to the LO signal at the base of Q3–Q6."
+        },
+        {
+          "section_title": "RECEIVER FRONT-END DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "HAFIZI et al.: RF FRONT-END OF DIRECT CONVERSION RECEIVER RFIC FOR CDMA-2000 Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured tuning curve of the IIP2 as a function of tuning code corresponding to a tuning dc offset increment of 2 mV",
+        "key_specs": [
+          "2 mV"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 8,
+      "caption": "Fig. 10.",
+      "caption_bbox": [
+        39.6,
+        470.1,
+        64.2,
+        478.0
+      ],
+      "section_title": "VI. PERFORMANCE COMPARISON",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "DMD MEASUREMENTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "To measure the noise ﬁgure of the DMD by itself, a test path was used as shown in Fig. 10(b)."
+        },
+        {
+          "section_title": "PERFORMANCE COMPARISON",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "RF Front-End of Direct Conversion Receiver RFIC",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 5,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

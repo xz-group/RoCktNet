@@ -1,0 +1,1321 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1435604.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1435604",
+  "generated_at": "2026-07-29T21:32:48",
+  "paper_metadata": {
+    "title": "A 2.4-GHz RF Sampling Receiver Front-End in 0.18-\u0016m CMOS",
+    "authors": [
+      "Darius Jakonis",
+      "Kalle Folkesson",
+      "Jerzy D˛abrowski",
+      "Patrik Eriksson",
+      "Christer Svensson"
+    ],
+    "abstract": "This paper presents an integrable RF sampling receiver front-end architecture, based on a switched-capacitor (SC) RF sampling downconversion (RFSD) filter, for WLAN applications in a 2.4-GHz band. The RFSD filter test chip is fabricated in a 0.18m CMOS technology and the measurement results show a successful realization of RF sampling, quadrature downconversion, tunable anti-alias filtering, downconversion to baseband, and decimation of the sampling rate. By changing the input sampling rate, the RFSD filter can be tuned to different RF channels. A maximum input sampling rate of 1072 MS/s has been achieved. A single-phase clock is used for the quadrature downconversion and the bandpass operation is realized by a 23-tap FIR filter. The RFSD filter has an IIP3 of +5.5 dBm, a gain of 1 dB, and more than 17 dB rejection of alias bands. The measured image rejection Fig. 1. RF sampling receiver front-end architecture with the corresponding is 59 dB and the sampling clock jitter is 0.64 ps. The test chip confrequency partitioning. sumes 47 mW in the analog part and 40 mW in the digital part. It occupies an area of 1 mm2. to perform discrete-time operations in the analog domain [5].",
+    "keywords": [
+      "Bandpass filters",
+      "CMOS analog integrated cir-"
+    ],
+    "doi": "10.1109/JSSC.2005.848027",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2005
+  },
+  "paper_circuit_context": {
+    "circuit_type": "2.4-GHz RF Sampling Receiver Front-End in 0.18-\u0016m CMOS",
+    "technology": "CMOS",
+    "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+    "sub_blocks": [
+      "capacitor",
+      "transistor/MOSFET",
+      "current source",
+      "output buffer",
+      "mixer",
+      "switch",
+      "differential pair",
+      "latch",
+      "clock / timing",
+      "resistor"
+    ],
+    "design_purpose": "",
+    "function_summary": "2.4-GHz RF Sampling Receiver Front-End in 0.18-\u0016m CMOS: This paper presents an integrable RF sampling receiver front-end architecture, based on a switched-capacitor (SC) RF sampling downconversion (RFSD) filter, for WLAN applications in a 2.4-GHz band.",
+    "key_specs": [
+      "5.5 dBm",
+      "1 dB",
+      "17 dB",
+      "59 dB",
+      "0.64 ps",
+      "47 mW",
+      "40 mW",
+      "2.484 GHz",
+      "22 MHz",
+      "25 MHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE rapid growth of wireless communications and the emergence of new standards increases the demand for low cost multimode radio receivers. For portable battery-powered receivers, a high level of integration, high ﬂexibility, and low power dissipation are essential issues [1]. One approach to achieve multimode operation in a receiver is to design hardware, which can be reconﬁgured by software. Th ..."
+    },
+    {
+      "number": "II",
+      "title": "RF SAMPLING FRONT-END ARCHITECTURE",
+      "kind": "proposed",
+      "page": 1,
+      "text_preview": "A. Block Description The proposed RF sampling receiver front-end architecture is shown in Fig. 1. It comprises an RF ﬁlter, a tuned LNA, an S/H mixer, downconversion ﬁlters, A/D converters, and a clock path. is selected and At the RF ﬁlter the whole frequency band are suppressed (Fig. 2). The signal the image frequencies is then ampliﬁed and ﬁltered by the tuned LNA to further improve RF selectivi ..."
+    },
+    {
+      "number": "III",
+      "title": "RF SAMPLING DOWNCONVERSION FILTER DESIGN",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "The RF sampling downconversion (RFSD) ﬁlter (Fig. 1) was m CMOS process. It consists of an S/H designed in a 0.18mixer, downconversion ﬁlters, output buffers, and a clock path block. In this section a detailed description of the RFSD ﬁlter blocks is provided. A. S/H Mixer In the S/H mixer, shown in Fig. 3, the RF signal at the input IN is quadrature downconverted to IF at the output OUT. This pass ..."
+    },
+    {
+      "number": "IV",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 6,
+      "text_preview": "A. Chip Layout The RFSD ﬁlter test chip, shown in Fig. 13, was implemented m CMOS technology. The active core and fabricated in 0.18and the total chip area is 1 mm . There are area is 0.36 mm Fig. 9. Clock path ampliﬁer. A sinewave signal at the differential input is converted into a squarewave at the single-ended output. Fig. 10. Clock path control logic. Fig. 11. Clock path double transmission g ..."
+    },
+    {
+      "number": "V",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 10,
+      "text_preview": "A ﬂexible and integrable RF receiver front-end architecture is proposed in this paper. The front-end comprises a discrete time multifunctional block performing RF sampling, quadrature downconversion, anti-alias IF ﬁltering, downconversion to baseband and sampling rate decimation. A test-chip aimed for demonstrating the feasibility of the new architecture was designed in 0.18m CMOS technology. IEEE ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. RF sampling receiver front-end architecture with the corresponding frequency partitioning.",
+      "caption_bbox": [
+        301.1,
+        312.3,
+        552.2,
+        329.2
+      ],
+      "section_title": "",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Digital Object Identiﬁer 10.1109/JSSC.2005.848027 Fig. 1."
+        },
+        {
+          "section_title": "RF SAMPLING FRONT-END ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Block Description The proposed RF sampling receiver front-end architecture is shown in Fig. 1."
+        },
+        {
+          "section_title": "RF SAMPLING FRONT-END ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "For anti-alias ﬁltering and signal downconversion to baseand band, the downconversion ﬁlter block is used in the output branches of the S/H mixer (Fig. 1)."
+        },
+        {
+          "section_title": "RF SAMPLING FRONT-END ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Clock phases for the S/H mixer, the downconversion ﬁlters, and the A/D converter are generated in a clock path block from a single local oscillator (LO) signal (Fig. 1)."
+        },
+        {
+          "section_title": "RF SAMPLING FRONT-END ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "To prove the feasibility of the proposed architecture, we focus on the design of an RF sampling downconversion ﬁlter (Fig. 1)."
+        },
+        {
+          "section_title": "RF SAMPLING DOWNCONVERSION FILTER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The RF sampling downconversion (RFSD) ﬁlter (Fig. 1) was m CMOS process."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.0,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "RF sampling receiver front-end architecture with the corresponding frequency partitioning",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.5,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. RF sampling receiver front-end frequency downconversion, anti-alias ﬁltering, and decimation.",
+      "caption_bbox": [
+        39.6,
+        267.8,
+        373.0,
+        275.7
+      ],
+      "section_title": "II. RF SAMPLING FRONT-END ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 2."
+        },
+        {
+          "section_title": "RF SAMPLING FRONT-END ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "It comprises an RF ﬁlter, a tuned LNA, an S/H mixer, downconversion ﬁlters, A/D converters, and a clock path. is selected and At the RF ﬁlter the whole frequency band are suppressed (Fig. 2)."
+        },
+        {
+          "section_title": "RF SAMPLING FRONT-END ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Alias band center frequencies around IF are expressed as (5) Therefore, these frequencies must be sufﬁciently suppressed by ﬁltering prior to downconversion, as demonstrated in Fig. 2."
+        },
+        {
+          "section_title": "RF SAMPLING FRONT-END ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "In this context, the JAKONIS et al.: A 2.4-GHz RF SAMPLING RECEIVER FRONT-END IN 0.18m CMOS and paths are required to separate the wanted signal band and its mirror image band in the downconversion to baseband (Fig. 2)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.6,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "RF sampling receiver front-end frequency downconversion, anti-alias ﬁltering, and decimation",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.4,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. S/H mixer schematic. The RF input signal is downconverted to the IF output by sampling at a rate f .",
+      "caption_bbox": [
+        301.1,
+        319.2,
+        552.2,
+        336.1
+      ],
+      "section_title": "II. RF SAMPLING FRONT-END ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "RF SAMPLING FRONT-END ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "By choosing a sampling TABLE I FREQUENCY PLAN FOR IEEE 802.11b/g RECEIVER FRONT-END Fig. 3."
+        },
+        {
+          "section_title": "RF SAMPLING DOWNCONVERSION FILTER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "S/H Mixer In the S/H mixer, shown in Fig. 3, the RF signal at the input IN is quadrature downconverted to IF at the output OUT."
+        },
+        {
+          "section_title": "RF SAMPLING DOWNCONVERSION FILTER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The transistor width/length ratios in Fig. 3 are given in micrometers."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.2,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:proposed": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "S/H mixer schematic. The RF input signal is downconverted to the IF output by sampling at a rate f",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.9,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 3,
+      "caption": "Fig. 4. Downconversion ﬁlter. (a) Schematic. (b) 23-tap FIR ﬁlter nonzero coefﬁcient values and corresponding switched capacitors.",
+      "caption_bbox": [
+        302.6,
+        340.0,
+        553.7,
+        356.9
+      ],
+      "section_title": "III. RF SAMPLING DOWNCONVERSION FILTER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "RF SAMPLING DOWNCONVERSION FILTER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Downconversion Filter The downconversion ﬁlter is illustrated in Fig. 4(a)."
+        },
+        {
+          "section_title": "RF SAMPLING DOWNCONVERSION FILTER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "It has an anti-alias bandwidth, IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 6, JUNE 2005 Fig. 4."
+        },
+        {
+          "section_title": "RF SAMPLING DOWNCONVERSION FILTER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "This satisﬁed the ﬁlter bandwidth requirement and resulted in every other equal to zero, i.e., . coefﬁcient The resulting 11 nonzero FIR ﬁlter coefﬁcients are shown in Fig. 4(b)."
+        },
+        {
+          "section_title": "RF SAMPLING DOWNCONVERSION FILTER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Dashed lines indicate the signal bandwidth BW . [6] and [23], to accomplish negative coefﬁcient values in the transfer function (9), the switched capacitors were grouped into – and another array one array of negative coefﬁcients – [Fig. 4(a)]."
+        },
+        {
+          "section_title": "RF SAMPLING DOWNCONVERSION FILTER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Since every second coefﬁcient in the FIR ﬁlter is zero, two available sampling clock periods are used for coefﬁcient multiplication [Fig. 4(b)]."
+        },
+        {
+          "section_title": "RF SAMPLING DOWNCONVERSION FILTER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The charge injection and clock feedthrough errors in the downconversion ﬁlter are reduced by choosing small size nMOS switches as shown in Fig. 4(a)."
+        },
+        {
+          "section_title": "RF SAMPLING DOWNCONVERSION FILTER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "To decimate and downconvert the IF signal to baseband, the switched capacitor voltages are resampled at a lower clock rate [Fig. 4(a)]."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 10,
+          "sentence": "An equivalent noise model, presented in Fig. 22(a), includes the S/H mixer and the downconversion ﬁlter with one array of positive/negative coefﬁcient capacitors [Fig. 4(a)]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.5,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 2.0
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [
+          "capacitor",
+          "transistor/MOSFET",
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Downconversion ﬁlter. (a) Schematic. (b) 23-tap FIR ﬁlter nonzero coefﬁcient values and corresponding switched capacitors",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.54,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 4,
+      "caption": "Fig. 5. 1072 MS/s. Dashed lines indicate the signal bandwidth BW .",
+      "caption_bbox": [
+        38.1,
+        256.0,
+        242.1,
+        272.9
+      ],
+      "section_title": "III. RF SAMPLING DOWNCONVERSION FILTER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "RF SAMPLING DOWNCONVERSION FILTER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The FIR ﬁlter frequency response for the samMS/s is shown in Fig. 5."
+        },
+        {
+          "section_title": "RF SAMPLING DOWNCONVERSION FILTER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Unlike JAKONIS et al.: A 2.4-GHz RF SAMPLING RECEIVER FRONT-END IN 0.18m CMOS = FIR bandpass ﬁlter frequency response for the sampling rate f Fig. 5. 1072 MS/s."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "1072 MS/s. Dashed lines indicate the signal bandwidth BW",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "Fig. 6. RFSD ﬁlter output noise power spectral density versus unit capacitor size. The smallest unit capacitor size represents actual test chip design.",
+      "caption_bbox": [
+        301.1,
+        241.1,
+        552.2,
+        258.0
+      ],
+      "section_title": "III. RF SAMPLING DOWNCONVERSION FILTER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "RF SAMPLING DOWNCONVERSION FILTER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "As ﬁcient capacitance and a result, the noise voltage in (10) is equivalent to sampling on Fig. 6."
+        },
+        {
+          "section_title": "RF SAMPLING DOWNCONVERSION FILTER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Based on the noise analysis provided in the Appendix, the RFSD ﬁlter output noise power spectral density versus unit capacitor size is shown in Fig. 6."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "By increasing the unit capacitor, the output noise could be reduced considerably (see Fig. 6)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "2.4-GHz RF Sampling Receiver Front-End in 0.18-\u0016m CMOS",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "RFSD ﬁlter output noise power spectral density versus unit capacitor size. The smallest unit capacitor size represents actual test chip design",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 5,
+      "caption": "Fig. 7. time-interleaved outputs are ready after 12 clock samples.",
+      "caption_bbox": [
+        39.6,
+        381.9,
+        226.1,
+        398.8
+      ],
+      "section_title": "III. RF SAMPLING DOWNCONVERSION FILTER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "RF SAMPLING DOWNCONVERSION FILTER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Since the downconversion ﬁlter uses 24 clock samples for coefﬁcient operations, time-inmultiplication and charge summation , , , are required to get outterleaved parallel ﬁlters puts ready in 12 clock samples (Fig. 7)."
+        },
+        {
+          "section_title": "RF SAMPLING DOWNCONVERSION FILTER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "In Fig. 7 planned A/D converter sampling rate the time-interleaved parallel ﬁlters are sequentially connected to the output buffers by the downconversion ﬁlter switches."
+        },
+        {
+          "section_title": "RF SAMPLING DOWNCONVERSION FILTER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The Fig. 7. time-interleaved outputs are ready after 12 clock samples."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "2.4-GHz RF Sampling Receiver Front-End in 0.18-\u0016m CMOS",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "time-interleaved outputs are ready after 12 clock samples",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 5,
+      "caption": "Fig. 8. Clock path. (a) Block diagram. (b) Clock phases to S/H mixer and downconversion ﬁlter.",
+      "caption_bbox": [
+        39.6,
+        752.6,
+        354.4,
+        760.5
+      ],
+      "section_title": "III. RF SAMPLING DOWNCONVERSION FILTER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "RF SAMPLING DOWNCONVERSION FILTER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Clock Path A block diagram of the clock path is shown in Fig. 8(a)."
+        },
+        {
+          "section_title": "RF SAMPLING DOWNCONVERSION FILTER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The , for clock path has differential analog inputs the LO signal and single-ended digital outputs for the clock , and , illustrated phases in Fig. 8(b)."
+        },
+        {
+          "section_title": "RF SAMPLING DOWNCONVERSION FILTER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "In Fig. 8(a) the inverter pMOS and nMOS transistor sizes are denoted above and below the block symbol, IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 6, JUNE 2005 RF sampling downconversion ﬁlter main blocks."
+        },
+        {
+          "section_title": "RF SAMPLING DOWNCONVERSION FILTER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.1,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Clock path. (a) Block diagram. (b) Clock phases to S/H mixer and downconversion ﬁlter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.75,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 6,
+      "caption": "Fig. 9. Clock path ampliﬁer. A sinewave signal at the differential input is converted into a squarewave at the single-ended output.",
+      "caption_bbox": [
+        301.1,
+        172.1,
+        552.2,
+        189.0
+      ],
+      "section_title": "III. RF SAMPLING DOWNCONVERSION FILTER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "RF SAMPLING DOWNCONVERSION FILTER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "As illustrated in Fig. 9, the clock path ampliﬁer comprises a differential stage and an inverter."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "There are area is 0.36 mm Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "2.4-GHz RF Sampling Receiver Front-End in 0.18-\u0016m CMOS",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Clock path ampliﬁer. A sinewave signal at the differential input is converted into a squarewave at the single-ended output",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 6,
+      "caption": "Fig. 10. Clock path control logic.",
+      "caption_bbox": [
+        301.1,
+        392.6,
+        414.0,
+        400.6
+      ],
+      "section_title": "III. RF SAMPLING DOWNCONVERSION FILTER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "RF SAMPLING DOWNCONVERSION FILTER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The single-ended ampliﬁer output generates the clock phase control logic block, shown in Fig. 10, consists of inverters, AND gates, and ﬂip-ﬂops, which act as registers."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "2.4-GHz RF Sampling Receiver Front-End in 0.18-\u0016m CMOS",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [
+          "clock / timing"
+        ],
+        "design_purpose": "",
+        "function_summary": "Clock path control logic",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 6,
+      "caption": "Fig. 11. Clock path double transmission gate (DTG).",
+      "caption_bbox": [
+        301.1,
+        570.6,
+        476.2,
+        578.5
+      ],
+      "section_title": "III. RF SAMPLING DOWNCONVERSION FILTER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "RF SAMPLING DOWNCONVERSION FILTER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "These phases keep ture the edges of the the double transmission gates (Fig. 11) open to pass the selected rising or falling edge to the downconversion ﬁlter."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "2.4-GHz RF Sampling Receiver Front-End in 0.18-\u0016m CMOS",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Clock path double transmission gate (DTG)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 7,
+      "caption": "Fig. 12. Output unity-gain buffer schematic.",
+      "caption_bbox": [
+        39.6,
+        231.5,
+        186.8,
+        239.5
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "RF SAMPLING DOWNCONVERSION FILTER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Output Buffer The output buffer is illustrated in Fig. 12."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Dummy capacitors were added into the Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "2.4-GHz RF Sampling Receiver Front-End in 0.18-\u0016m CMOS",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Output unity-gain buffer schematic",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.1,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 7,
+      "caption": "Fig. 13. Chip microphotograph. The total chip area including the pads is 1 mm .",
+      "caption_bbox": [
+        39.6,
+        459.8,
+        290.7,
+        476.7
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Chip Layout The RFSD ﬁlter test chip, shown in Fig. 13, was implemented m CMOS technology."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -7.7,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "2.4-GHz RF Sampling Receiver Front-End in 0.18-\u0016m CMOS",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chip microphotograph. The total chip area including the pads is 1 mm",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 7,
+      "caption": "Fig. 14. FIR ﬁlter array of unit capacitors. An integer number on the unit capacitor indicates a set for coefﬁcient capacitor implementation. The dummy capacitors are realized to reduce mismatch.",
+      "caption_bbox": [
+        302.6,
+        292.0,
+        553.7,
+        317.9
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "For mismatch minimization the downconversion ﬁlter blocks were symmetrically placed with respect to the test chip vertical axis and the FIR ﬁlter coefﬁcients were realized in the array of unit capacitors, illustrated in Fig. 14."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The measured IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 6, JUNE 2005 Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "2.4-GHz RF Sampling Receiver Front-End in 0.18-\u0016m CMOS",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "FIR ﬁlter array of unit capacitors. An integer number on the unit capacitor indicates a set for coefﬁcient capacitor implementation. The dummy capacitors are realized to reduce mismatch",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 7,
+      "caption": "Fig. 15. Unit capacitor layout. (a) Top view. (b) Cross section.",
+      "caption_bbox": [
+        302.6,
+        478.5,
+        507.1,
+        486.4
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "All unit capacitors were designed as interdigitated metal–metal capacitors, demonstrated in Fig. 15."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-layout": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "2.4-GHz RF Sampling Receiver Front-End in 0.18-\u0016m CMOS",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Unit capacitor layout. (a) Top view. (b) Cross section",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 7,
+      "caption": "Fig. 16. is bonded directly on the board.",
+      "caption_bbox": [
+        302.6,
+        681.3,
+        405.0,
+        698.2
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Measurement The test chip was directly glued and bonded onto a printed circuit board (PCB), demonstrated in Fig. 16."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The test chip Fig. 16. is bonded directly on the board."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "2.4-GHz RF Sampling Receiver Front-End in 0.18-\u0016m CMOS",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "is bonded directly on the board",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 8,
+      "caption": "Fig. 17. = 2:413 GHz, and the input power 1072 MS/s, the analog input frequency f",
+      "caption_bbox": [
+        38.1,
+        255.0,
+        289.2,
+        271.9
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "RFSD ﬁlter test chip shows the correct frequency downconversion operation for the quadrature components, illustrated in Fig. 17."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "If the input signal with a frequency of 2.413 GHz MS/s, the resulting output is sampled at a rate JAKONIS et al.: A 2.4-GHz RF SAMPLING RECEIVER FRONT-END IN 0.18m CMOS level of \u00004 dBm. = Measured output quadrature waveforms for the sampling rate f Fig. 17. = 2:413 GHz, and the input power 1072 MS/s, the analog input frequency f frequency is 1 MHz."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "= 2:413 GHz, and the input power 1072 MS/s, the analog input frequency f",
+        "key_specs": [
+          "2.413 GHz",
+          "4 dBm",
+          "413 GHz",
+          "1 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 8,
+      "caption": "Fig. 18. (a) Measured RFSD ﬁlter baseband signal output power and (b) output = 1072MS/s frequency versus the input signal frequency. The sampling rate f",
+      "caption_bbox": [
+        301.1,
+        513.4,
+        552.2,
+        530.4
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "As shown in Fig. 18(a), both single-ended path ﬁlter outputs were examined."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The downconversion and decimation, are indicated as input signal frequency conversion into the output frequency is illustrated in Fig. 18(b)."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "From the frequency response [Fig. 18(a)] the alias bands are rejected by more than 17 dB, while the alias band center frequencies are suppressed better than 18 dB."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 18."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -5.4,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-output power": -2.0,
+        "section:results": -2.0,
+        "references": 1.6
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "2.4-GHz RF Sampling Receiver Front-End in 0.18-\u0016m CMOS",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Measured RFSD ﬁlter baseband signal output power and (b) output = 1072MS/s frequency versus the input signal frequency. The sampling rate f",
+        "key_specs": [
+          "17 dB",
+          "18 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 9,
+      "caption": "Fig. 19. RFSD ﬁlter linearity measurement. Two-tones with frequencies = 2:413 GHz and f = 2:4134 GHz were applied at the input. The f = 1072 MS/s. input sampling rate f",
+      "caption_bbox": [
+        39.6,
+        271.5,
+        290.7,
+        297.4
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The linearity of the RFSD ﬁlter was investigated by a twoGHz tone test (Fig. 19)."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 19."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "2.4-GHz RF Sampling Receiver Front-End in 0.18-\u0016m CMOS",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "RFSD ﬁlter linearity measurement. Two-tones with frequencies = 2:413 GHz and f = 2:4134 GHz were applied at the input. The f = 1072 MS/s. input sampling rate f",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 20,
+      "label": "Fig. 20",
+      "page": 9,
+      "caption": "Fig. 20. Measured RFSD ﬁlter frequency response for different sampling with K = 9 was used.",
+      "caption_bbox": [
+        302.6,
+        260.2,
+        553.7,
+        286.1
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "As shown in Fig. 20, the input sampling rate of 567.5 MS/s is related to the WLAN channel center frequency of 2.412 GHz."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Here, a frequency plan Fig. 20."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "2.4-GHz RF Sampling Receiver Front-End in 0.18-\u0016m CMOS",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured RFSD ﬁlter frequency response for different sampling with K = 9 was used",
+        "key_specs": [
+          "2.412 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 21,
+      "label": "Fig. 21",
+      "page": 10,
+      "caption": "Fig. 21. Measured RFSD ﬁlter constellation diagram of a 64 QAM modulated WLAN signal.",
+      "caption_bbox": [
+        38.1,
+        253.2,
+        343.6,
+        261.2
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The constellation diagram of the modulated 2.4-GHz frequency band WLAN signal is shown in Fig. 21."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "JAKONIS et al.: A 2.4-GHz RF SAMPLING RECEIVER FRONT-END IN 0.18m CMOS Fig. 21."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured RFSD ﬁlter constellation diagram of a 64 QAM modulated WLAN signal",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 22,
+      "label": "Fig. 22",
+      "page": 11,
+      "caption": "Fig. 22.",
+      "caption_bbox": [
+        39.6,
+        337.7,
+        64.3,
+        345.6
+      ],
+      "section_title": "V. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 10,
+          "sentence": "An equivalent noise model, presented in Fig. 22(a), includes the S/H mixer and the downconversion ﬁlter with one array of positive/negative coefﬁcient capacitors [Fig. 4(a)]."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 10,
+          "sentence": "Fig. 22. this noise is given by (10)."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 10,
+          "sentence": "An equivalent circuit to describe the avernoise contribution is shown in Fig. 22(b). aging switch By using the ﬁrst moment approximation, the transfer function to the node is included in the output noise from the node voltage expression for the switch (15) where denotes the sum of capacitors."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.2,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [
+          "mixer",
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "mixer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 4,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

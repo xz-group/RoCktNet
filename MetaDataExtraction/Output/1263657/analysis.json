@@ -1,0 +1,1166 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1263657.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1263657",
+  "generated_at": "2026-07-29T22:01:32",
+  "paper_metadata": {
+    "title": "A Micropower Logarithmic A/D With Offset and Temperature Compensation",
+    "authors": [
+      "Ji-Jon Sit",
+      "Rahul Sarpeshkar"
+    ],
+    "abstract": "Logarithmic circuits are useful in many applications that require nonlinear signal compression, such as in useful in BE processors. speech recognition front-ends (SRFEs) and cochlear implants or Logarithmic compression is also inherent to cepstral speech bionic ears (BEs). A logarithmic current-input analog-to-digital recognition, since a logarithmic function allows the excitation converter (A/D) with temperature compensation and automatic signal in speech to be subtracted from the effect of filtering offset calibration is presented in this paper. It employs a diode by the vocal tract [10]. Many speech-recognition front-ends to compute the logarithm, a wide linear range transconductor to perform voltage-to-current conversion, and a dual-slope auto- (SRFEs) are therefore designed to produce output bits which zeroing topology with 60 dB of dynamic range for sampling the represent log-spectral magnitudes of a microphone input signal envelope of speech signals. The temperature dependence of the [11]. Consequently, a low-power logarithmic analog-to-digital logarithm inherent in a diode implementation is automatically converter (A/D) is also very useful in portable SRFEs. cancelled in our circuit topology. Experimental results from a The BEs and SRFEs of today mostly employ an A/D, fol1.5m 3-V BiCMOS process show that the converter achieves a temperature stability lower than 150 ppm/ C from 12 C to 42 C, lowed by a DSP to perform all the necessary signal processing. and consumes only 3 W of power when sampling at 300 Hz. However, a DSP is costly in power when compared with analog At this level of power consumption, we show that the design is processing schemes, such as those proposed in [12]–[14]. We thermal-noise limited to 8 bits of precision. This level of precision have shown that large power savings can be realized for a fully is more than adequate for deaf patients and for speech recognition implanted BE or portable SRFE [6], [15]. The logarithmic A/D front-ends. The power consumption is almost two orders of magnitude lower than state-of-the-art DSP implementations, and the is the final building block circuit in an analog BEs signal prouse of a local feedback topology achieves a 2.5-bit improvement cessing chain. It converts the current input from an envelope deover conventional dual-slope designs. tector such as that described in [5] and [16] into a digital output",
+    "keywords": [
+      "Analog-to-digital converter",
+      "bionic ear",
+      "cochlear"
+    ],
+    "doi": "10.1109/JSSC.2003.821777",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2004
+  },
+  "paper_circuit_context": {
+    "circuit_type": "microprocessor",
+    "technology": "CMOS, BICMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "current source",
+      "bias circuit",
+      "switch",
+      "op-amp",
+      "pre-amplifier"
+    ],
+    "design_purpose": "A logarithmic current-input analog-to-digital recognition, since a logarithmic function allows the excitation converter (A/D) with temperature compensation and automatic signal in speech to be subtracted from the effect of filtering offset calibration is presented in this paper.",
+    "function_summary": "microprocessor: A logarithmic current-input analog-to-digital recognition, since a logarithmic function allows the excitation converter (A/D) with temperature compensation and automatic signal in speech to be subtracted from the effect of filtering offset calibration is presented in this paper.",
+    "key_specs": [
+      "60 dB",
+      "3 W",
+      "300 Hz",
+      "20 dB",
+      "40 dB",
+      "100 Hz",
+      "2 kHz",
+      "5 kHz",
+      "1 W",
+      "180 mV"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "B IONIC EARS (BEs) or cochlear implants have been implanted in more than 60 000 people worldwide, according to an estimate by the FDA [1]. BEs use a surgically implanted array of electrodes to stimulate the auditory nerve, which restores a measure of hearing to the deaf. The BE must therefore function as a surrogate middle and inner ear, performing the same chain of signal transduction from sound  ..."
+    },
+    {
+      "number": "II",
+      "title": "SYSTEM REQUIREMENTS AND SPECIFICATIONS",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "A. Dynamic Range The logmap should have an input dynamic range of at least 60 dB in order to handle the range within which most of normal speech will lie. This also allows the logmap to accommodate the internal dynamic range (IDR) of typical BEs, which is around 60 dB, as denoted in Fig. 1. B. Appropriateness of an A/D for an Analog BE Processor The IDR of a BE must be fit onto the limited electri ..."
+    },
+    {
+      "number": "III",
+      "title": "CHOICE OF A/D ARCHITECTURE",
+      "kind": "proposed",
+      "page": 1,
+      "text_preview": "A dual-slope integrator was chosen to perform the logarithmic A/D conversion, for two main reasons: First, both BEs and SRFEs break down the input spectrum into 8–32 channels. A complete BE processor or SRFE will, therefore, require 8–32 logmaps to be operating in parallel. The use of an integrating A/D topology allows a single clocking waveform and counter to be shared between the logmaps to impl ..."
+    },
+    {
+      "number": "IV",
+      "title": "DUAL-SLOPE INTEGRATING A/D",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "A simplified circuit implementation of a dual-slope converter is shown in Fig. 2. It consists of a wide-linear-range operational transconductance amplifier (WLR OTA) [25] and integrating capacitor to serve as the integrator, another amplifier to serve as the comparator (a standard five-transistor OTA . The latter three suffices), and an offset storage capacitor components are tied in a global feed ..."
+    },
+    {
+      "number": "V",
+      "title": "MAKING THE A/D INPUT STAGE LOGARITHMIC AND",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "TEMPERATURE INDEPENDENT (or For the dual-slope converter to be a logarithmic A/D, in Fig. 2) must be a equivalently, the differential voltage . The logarithm is logarithmic function of the current input easily implemented by letting drop a voltage across a device – characteristic. The device is typically with an exponential a diode, a bipolar transistor, or an MOS transistor in the subthreshold re ..."
+    },
+    {
+      "number": "VIII",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 6,
+      "text_preview": "A. Scope Waveforms Fig. 10 is an oscilloscope screenshot of a typical dual-slope conversion cycle. The scale is 200 mV/div on the y axis and s/div on the x axis. The voltage shows the dual-slope waveform, with an upward integration for a fixed time of 800 s , the de-integration for a measured time of 280 s , and finally, the auto-zeroing phase once de-integration is comshows the comparator output  ..."
+    },
+    {
+      "number": "IX",
+      "title": "POWER, SPEED, AND PRECISION TRADEOFFS",
+      "kind": "other",
+      "page": 9,
+      "text_preview": "The power consumption of this converter scales linearly with sampling rate, because a higher sampling rate requires an increase in both the clock frequency (digital power) and also in and (analog power). For constant samthe bias currents pling rate, digital power scales linearly with increased precision because counting an extra bit at the same sampling rate means that the clock speed must double. ..."
+    },
+    {
+      "number": "X",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 10,
+      "text_preview": "The factor of in power savings over a DSP, robust temperature and matching performance, and an architecture suited to parallel implementation makes an analog logarithmic A/D solution very attractive for the next generation of fully implanted bionic ears or portable speech-recognition front-ends. The use of local feedback calibration as opposed to global feedback calibration yields a 2.5-bit improv ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Typical signal processing chain in a bionic ear.",
+      "caption_bbox": [
+        38.1,
+        186.2,
+        218.3,
+        194.2
+      ],
+      "section_title": "II. SYSTEM REQUIREMENTS AND SPECIFICATIONS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1 shows the signal-processing chain of a typical BE, with further details described in [2]–[6]."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Section IX discusses tradeoffs between speed, precision, and power that can be made SIT AND SARPESHKAR: MICROPOWER LOGARITHMIC A/D WITH OFFSET AND TEMPERATURE COMPENSATION Fig. 1."
+        },
+        {
+          "section_title": "SYSTEM REQUIREMENTS AND SPECIFICATIONS",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "This also allows the logmap to accommodate the internal dynamic range (IDR) of typical BEs, which is around 60 dB, as denoted in Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "microprocessor",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "This also allows the logmap to accommodate the internal dynamic range (IDR) of typical BEs, which is around 60 dB, as denoted in Fig. 1.",
+        "function_summary": "Typical signal processing chain in a bionic ear. This also allows the logmap to accommodate the internal dynamic range (IDR) of typical BEs, which is around 60 dB, as denoted in Fig. 1.",
+        "key_specs": [
+          "60 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 2,
+      "caption": "Fig. 2. Circuit implementation of a basic dual-slope converter.",
+      "caption_bbox": [
+        39.6,
+        200.6,
+        243.9,
+        208.6
+      ],
+      "section_title": "III. CHOICE OF A/D ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "CHOICE OF A/D ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "As the clocking waveform is the highest frequency signal on chip, the ability to amortize its cost in terms of power and area Fig. 2."
+        },
+        {
+          "section_title": "DUAL-SLOPE INTEGRATING A/D",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "A simplified circuit implementation of a dual-slope converter is shown in Fig. 2."
+        },
+        {
+          "section_title": "DUAL-SLOPE INTEGRATING A/D",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Any nonlinearity in and also renders the A/D insensitive to component drift. and are both generated by the Furthermore, since (as in Fig. 2), any dependence of same WLR with bias current is divided out when we take the ratio of the these currents on currents in (2)."
+        },
+        {
+          "section_title": "MAKING THE A/D INPUT STAGE LOGARITHMIC AND",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "TEMPERATURE INDEPENDENT (or For the dual-slope converter to be a logarithmic A/D, in Fig. 2) must be a equivalently, the differential voltage ."
+        },
+        {
+          "section_title": "MAKING THE A/D INPUT STAGE LOGARITHMIC AND",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "By global feedback, we mean that one global feedback loop automatically ensures that the offset of the WLR and the offset of the comparator in Fig. 2 are zeroed out."
+        },
+        {
+          "section_title": "MAKING THE A/D INPUT STAGE LOGARITHMIC AND",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The global feedback of Fig. 2 has poor phase margin without compensation because the WLR and comparator blocks have high dc gain and slow dominant poles."
+        },
+        {
+          "section_title": "MAKING THE A/D INPUT STAGE LOGARITHMIC AND",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 5 shows the measured PSD and total noise at the when the switch AZ is closed in Fig. 2. node The measurements were obtained with a SR785 Spectrum Analyzer."
+        },
+        {
+          "section_title": "MAKING THE A/D INPUT STAGE LOGARITHMIC AND",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The analog power consumption of the various subcircuits of Fig. 2 is listed in Table I."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.0,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:proposed": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "regulator / converter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Circuit implementation of a basic dual-slope converter",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.8,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Dual-slope operation.",
+      "caption_bbox": [
+        302.6,
+        270.9,
+        400.9,
+        278.8
+      ],
+      "section_title": "III. CHOICE OF A/D ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "DUAL-SLOPE INTEGRATING A/D",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "These three with a clock, and is thereby a digital measure of phases are diagrammed in Fig. 3."
+        },
+        {
+          "section_title": "DUAL-SLOPE INTEGRATING A/D",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 2, FEBRUARY 2004 Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "microprocessor",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Dual-slope operation",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 3,
+      "caption": "Fig. 4.",
+      "caption_bbox": [
+        38.1,
+        238.5,
+        58.9,
+        246.5
+      ],
+      "section_title": "V. MAKING THE A/D INPUT STAGE LOGARITHMIC AND",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DUAL-SLOPE INTEGRATING A/D",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 4."
+        },
+        {
+          "section_title": "MAKING THE A/D INPUT STAGE LOGARITHMIC AND",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "A logarithmic input stage to our A/D can thus be implemented as shown in Fig. 4."
+        },
+        {
+          "section_title": "MAKING THE A/D INPUT STAGE LOGARITHMIC AND",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "However, the to in Fig. 4 is given by transfer function from (4) where is defined as the linear range of the transconis its bias current."
+        },
+        {
+          "section_title": "MAKING THE A/D INPUT STAGE LOGARITHMIC AND",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "However, the dual-slope topology canature dependence of as well: (2) shows that if cels the temperature dependence of the integration and de-integration currents are both proportional as they are in the scheme of Fig. 4, then the final digitized value that is proportional to is independent of ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.6,
+      "relevance_breakdown": {
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "microprocessor",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 4,
+      "caption": "Fig. 5. in the global feedback converter.",
+      "caption_bbox": [
+        39.6,
+        356.3,
+        355.2,
+        364.2
+      ],
+      "section_title": "V. MAKING THE A/D INPUT STAGE LOGARITHMIC AND",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MAKING THE A/D INPUT STAGE LOGARITHMIC AND",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 5 shows the measured PSD and total noise at the when the switch AZ is closed in Fig. 2. node The measurements were obtained with a SR785 Spectrum Analyzer."
+        },
+        {
+          "section_title": "MAKING THE A/D INPUT STAGE LOGARITHMIC AND",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The cumulative noise power is integrated over frequency on the lower plot in Fig. 5, with the total calculated noise being Vrms and the total measured noise being 375 Vrms."
+        },
+        {
+          "section_title": "MAKING THE A/D INPUT STAGE LOGARITHMIC AND",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The peak-to-peak noise amplitude is almost 3 mV, because the peak-to-rms ratio of a Power spectral density and total integrated noise on V Fig. 5. in the global feedback converter."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "regulator / converter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "in the global feedback converter",
+        "key_specs": [
+          "375 V",
+          "3 mV"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "Fig. 6. in the global feedback converter.",
+      "caption_bbox": [
+        39.6,
+        593.1,
+        290.7,
+        601.0
+      ],
+      "section_title": "V. MAKING THE A/D INPUT STAGE LOGARITHMIC AND",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MAKING THE A/D INPUT STAGE LOGARITHMIC AND",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Time-domain profile of noise on V Fig. 6. in the global feedback converter."
+        },
+        {
+          "section_title": "MAKING THE A/D INPUT STAGE LOGARITHMIC AND",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Gaussian noise signal is 3–3.5, implying that the peak-to-peak noise is 6–7 times the rms value. is shown in The time-domain waveform of the noise of the upper plot of Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "regulator / converter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "in the global feedback converter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. SNR test of the global feedback converter.",
+      "caption_bbox": [
+        302.6,
+        598.1,
+        467.2,
+        606.0
+      ],
+      "section_title": "V. MAKING THE A/D INPUT STAGE LOGARITHMIC AND",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MAKING THE A/D INPUT STAGE LOGARITHMIC AND",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "As this converter uses subthreshold MOS diodes, it has an input full scale IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 2, FEBRUARY 2004 Fig. 7."
+        },
+        {
+          "section_title": "MAKING THE A/D INPUT STAGE LOGARITHMIC AND",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 7 shows that a 100.1-Hz sine input stroboscopically sampled at 300 Hz has an SNR of 34 dB, yielding a precision of 5.3 bits."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "regulator / converter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "SNR test of the global feedback converter",
+        "key_specs": [
+          "300 Hz",
+          "34 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 5,
+      "caption": "Fig. 8. Logarithmic A/D local feedback topology.",
+      "caption_bbox": [
+        38.1,
+        350.3,
+        202.6,
+        358.3
+      ],
+      "section_title": "V. MAKING THE A/D INPUT STAGE LOGARITHMIC AND",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MAKING THE A/D INPUT STAGE LOGARITHMIC AND",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "SIT AND SARPESHKAR: MICROPOWER LOGARITHMIC A/D WITH OFFSET AND TEMPERATURE COMPENSATION TABLE I ANALOG POWER CONSUMPTION OF THE GLOBAL FEEDBACK CONVERTER to Fig. 8."
+        },
+        {
+          "section_title": "MAKING THE A/D INPUT STAGE LOGARITHMIC AND",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "A schematic of this local feedback design is given in Fig. 8."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "To verify and in Fig. 8 at various this prediction, the total PSD at levels of were measured and are plotted in Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.7,
+      "relevance_breakdown": {
+        "+topology": 2.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "regulator / converter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Logarithmic A/D local feedback topology",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.43,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 6,
+      "caption": "Fig. 9. Well-input WLR used in global feedback on the left, and gate-input WLR used in local feedback on the right.",
+      "caption_bbox": [
+        39.6,
+        200.0,
+        290.7,
+        216.9
+      ],
+      "section_title": "V. MAKING THE A/D INPUT STAGE LOGARITHMIC AND",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MAKING THE A/D INPUT STAGE LOGARITHMIC AND",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "These calculations are given as follows: (5) Fig. 9."
+        },
+        {
+          "section_title": "MAKING THE A/D INPUT STAGE LOGARITHMIC AND",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The WLR topologies used in both designs are shown in Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "microprocessor",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Well-input WLR used in global feedback on the left, and gate-input WLR used in local feedback on the right",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 7,
+      "caption": "Fig. 10. ) waveforms.",
+      "caption_bbox": [
+        38.1,
+        274.1,
+        262.5,
+        282.3
+      ],
+      "section_title": "VIII. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Scope Waveforms Fig. 10 is an oscilloscope screenshot of a typical dual-slope conversion cycle."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Once de-integration is complete, goes high SIT AND SARPESHKAR: MICROPOWER LOGARITHMIC A/D WITH OFFSET AND TEMPERATURE COMPENSATION Typical dual-slope (V ) and comparator (V Fig. 10. ) waveforms. again, and like , auto-zeroes to its initial level immediately thereafter."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-waveform": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "comparator",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": ") waveforms",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 7,
+      "caption": "Fig. 11. Power spectral density and total integrated noise on V feedback converter.",
+      "caption_bbox": [
+        301.1,
+        263.4,
+        506.8,
+        280.3
+      ],
+      "section_title": "VIII. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Noise and Precision Measurements Measured experimental values for the PSD and total inare plotted in Fig. 11, together tegrated noise on node with SPICE simulation results."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "This noise is slightly higher than the predicted Hz thermal noise of the WLR because of the influ660 nV/ noise, somewhat significant at the high bias current ence of nA in the WLR.2 Not surprisingly, the total level of 2In subthreshold, 1=f noise gets more significant at relatively higher bias levels [25] but is still usually not as dominant as thermal noise for device sizes that are at least 10 10, with 2 being the effective gate length. in the local Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "regulator / converter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Power spectral density and total integrated noise on V feedback converter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 7,
+      "caption": "Fig. 12. Reduction in PSD with increasing values of I . The curves for = 320 pA and 600 pA show the diode noise (noise at V +) dominating , while the curves for I = 100 nA show the WLR noise the total PSD on V dominating the total PSD on V .",
+      "caption_bbox": [
+        301.1,
+        513.2,
+        552.2,
+        548.1
+      ],
+      "section_title": "VIII. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "To verify and in Fig. 8 at various this prediction, the total PSD at levels of were measured and are plotted in Fig. 12."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Thus, Fig. 12 shows that far below the PSD measured on nA, the measured PSD of 750 nV/ Hz on when is dominated by the noise of the WLR, not by the noise of the diode."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "microprocessor",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Reduction in PSD with increasing values of I . The curves for = 320 pA and 600 pA show the diode noise (noise at V +) dominating , while the curves for I = 100 nA show the WLR noise the total PSD on V dominating the total PSD on V",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 8,
+      "caption": "Fig. 13. in the local feedback converter.",
+      "caption_bbox": [
+        39.6,
+        274.5,
+        290.7,
+        282.5
+      ],
+      "section_title": "VIII. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The time-domain measurements of Fig. 13 confirm the expected 70 Vrms of noise on and the approximate 420 V spread of this noise in a Gaussian distribution. peak-to-peak The analog precision is therefore limited to discriminable levels, or 8.7 bits."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Time-domain profile of noise on V Fig. 13. in the local feedback converter."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "regulator / converter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "in the local feedback converter",
+        "key_specs": [
+          "70 V",
+          "420 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 8,
+      "caption": "Fig. 14. SNR test of the local feedback converter.",
+      "caption_bbox": [
+        39.6,
+        503.2,
+        203.8,
+        511.2
+      ],
+      "section_title": "VIII. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The converter once again suf1 bit in the quantization process, and yields a fers the loss of final precision of 7.8 bits as shown by the SNR measurement in Fig. 14."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "regulator / converter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "SNR test of the local feedback converter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 8,
+      "caption": "Fig. 15. Transfer curve showing the logarithmic A/D conversion.",
+      "caption_bbox": [
+        302.6,
+        257.6,
+        515.5,
+        265.6
+      ],
+      "section_title": "VIII. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Linearity The current input was swept over 60 dB from 350 pA to 350 nA, and the transfer curve is plotted in Fig. 15."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The lower plot of IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 2, FEBRUARY 2004 Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "microprocessor",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Transfer curve showing the logarithmic A/D conversion",
+        "key_specs": [
+          "60 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 8,
+      "caption": "Fig. 16. Integral and differential nonlinearity curves.",
+      "caption_bbox": [
+        302.6,
+        502.3,
+        476.5,
+        510.3
+      ],
+      "section_title": "VIII. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The integral nonlinearity (INL) and differential nonlinearity (DNL) were computed in MATLAB as defined in [28] and plotted in Fig. 16, which shows an INL of approximately 1 LSB and a DNL of 1/2 LSB across the input range, which is unlikely to adversely affect performance."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "microprocessor",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Integral and differential nonlinearity curves",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 8,
+      "caption": "Fig. 17. Power supply rejection of the logmap A/D.",
+      "caption_bbox": [
+        302.6,
+        749.6,
+        473.6,
+        757.6
+      ],
+      "section_title": "VIII. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "This data is plotted in Fig. 17. the output pulse At an 8-bit 312.5-Hz sampling rate, the pulsewidth of 1 LSB or s."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 17."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 17 shows that over a wide range of interfering power supply frequencies, the converter maintains 9 bits of analog precision before quantization, as predicted in Section VIII-B."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "regulator / converter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Power supply rejection of the logmap A/D",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 9,
+      "caption": "Fig. 18. Temperature dependence of the logmap A/D.",
+      "caption_bbox": [
+        38.1,
+        210.7,
+        215.3,
+        218.7
+      ],
+      "section_title": "VIII. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "SIT AND SARPESHKAR: MICROPOWER LOGARITHMIC A/D WITH OFFSET AND TEMPERATURE COMPENSATION Fig. 18."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 18 shows data from experiments designed to test these hypotheses over a range of temperatures C to 42 C."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "microprocessor",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Temperature dependence of the logmap A/D",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 9,
+      "caption": "Fig. 19. Digital power consumption in the logmap A/D.",
+      "caption_bbox": [
+        301.1,
+        206.1,
+        485.1,
+        214.1
+      ],
+      "section_title": "VIII. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Digital Power Consumption The digital power consumption was measured and plotted in Fig. 19 as the digital power supply is increased from 2.2 to 3 V, with a static midrange input applied."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The data was fit to a quadratic model, and the near-perfect fit is as expected from Fig. 19."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "microprocessor",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Digital power consumption in the logmap A/D",
+        "key_specs": [
+          "3 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 20,
+      "label": "Fig. 20",
+      "page": 10,
+      "caption": "Fig. 20. Die micrograph of the logmap A/D.",
+      "caption_bbox": [
+        39.6,
+        304.9,
+        187.6,
+        312.9
+      ],
+      "section_title": "X. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "POWER, SPEED, AND PRECISION TRADEOFFS",
+          "section_kind": "other",
+          "page": 9,
+          "sentence": "Fig. 20."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 10,
+          "sentence": "The die micrograph is shown in Fig. 20."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-micrograph": -3.0,
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "microprocessor",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Die micrograph of the logmap A/D",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 2,
+  "warnings": []
+}

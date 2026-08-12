@@ -1,0 +1,58 @@
+# A 0.48V 0.57nJ/Pixel Video-Recording SoC in 65nm CMOS Tay-Jyi Lin1, Cheng-An Chien1, Pei-Yao Chang1, Ching-Wen Chen2, Po-Hao Wang3, Ting-Yu Shyu1, Chien-Yung Chou2, Shien-Chun Luo2, Jiun-In Guo3, Tien-Fu Chen3, Gene C.H. Chuang2, Yuan-Hua Chu2, Liang-Chia Cheng2, Hong-Men Su4, Chewnpu Jou5, Meikei Ieong5, Cheng-Wen Wu2, Jinn-Shyan Wang1
+
+VENUE
+"2013"
+
+FIGURE NUMBER
+"Figure 9.3.2 shows a block diagram of the proposed H.264 encoder, wherein energy efficiency has been improved through algorithm, architecture, and circuit techniques. At the algorithm level, a complexity and bandwidth-effective group of macroblock (GOMB)-based motion estimation (ME) with adaptive search range (ASR) is proposed. The bandwidth is reduced by ~71% at a negligible cost of 0.1dB quality loss as compared with the full-search ME in the H.264 reference software. At the architecture level, a low-latency in-loop filter output buffer (ILFOB) and a block-based current/reference FB organization are designed to reduce by 69% the number of cycles for external DRAM access. Combining these algorithmic and architectural techniques can reduce bandwidth by ~81% in total. Furthermore, ULV circuit-level techniques (described below) provide a ~70% energy reduction compared with a state-of-the-art H.264 encoder design [1]. A ULP MPU with a shallow pipeline that averages random variations is incorporated in the video-recording SoC for its system control, the H.264 rate control, the ANT+ wireless protocol stack for video preview, and the AEM firmware. A 16Kb ULV NOR ROM has been designed for executed-in-place MPU firmware to greatly reduce power dissipation. The ROM performance has been improved by exploiting an “interleaved shielding on hierarchical bitline (ISHB)” scheme and leakage-tracking NMOS (LTN) keepers. Cell libraries are pruned for robust and reliable ULV operation of the H.264 encoder and the MPU core. Specifically, cells exhibiting DC failures, extreme speed degradation, or high sensitivity to variations are removed [2]. Moreover, pulsed D flip-flops (PFF, upper part of Fig. 9.3.3) are used to shorten the D-to-Q delay. The critical path of the pulsed latch 2009. is mirrored for the pulse generation, in contrast with the inverter chain used in a conventional PFF. This minimizes variations for wide-range voltage scaling. The hold-time constraints and robustness can both be met, as shown in the lower left side of Fig. 9.3.3. Post-layout simulation shows that our proposed PFF exhibits 2.04-to-2.12× improvement in D-to-Q delay over conventional masterslave DFFs for 0.3-to-0.6V supply voltages. A 512Kb FB is included in the video-recording SoC for the H.264 encoder to store prediction data and macro-blocks from the reference frame. Compared with the state-of-the-art ULV SRAM design of 256Kb [3], our 512Kb FB halves the bitline (BL) loading (from 512b/BL to 256b/BL) to improve both the performance and the power dissipation. In addition, footless 8T cells are adopted instead"
+
+TYPE
+"flip-flop"
+
+TECHNOLOGY
+"CMOS, 65nm process"
+
+APPLICATION
+"wireless"
+
+SUB-BLOCKS
+[
+  "transistor/MOSFET",
+  "output buffer",
+  "latch",
+  "sense amplifier"
+]
+
+FUNCTION SUMMARY
+"circuit"
+
+METRICS
+[
+  "Supply voltage",
+  "Energy per operation",
+  "Process node",
+  "Efficiency / ratio",
+  "Gain"
+]
+
+NUMERICAL PERFORMANCE
+[
+  "0.48V",
+  "0.57nJ",
+  "65nm",
+  "1.0V",
+  "71%",
+  "0.1dB",
+  "69%",
+  "81%",
+  "70%",
+  "-0.6V"
+]
+
+CONFIDENCE
+0.8
+
+WARNINGS
+[
+  "Recommended figure was classified as 'conventional', not a schematic; manual confirmation strongly recommended."
+]

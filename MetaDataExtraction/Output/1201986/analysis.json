@@ -1,0 +1,1084 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1201986.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1201986",
+  "generated_at": "2026-07-29T21:30:29",
+  "paper_metadata": {
+    "title": "A 1.8-GHz CMOS Fractional-N Frequency Synthesizer With Randomized Multiphase VCO",
+    "authors": [
+      "Chun-Huat Heng",
+      "Bang-Sup Song"
+    ],
+    "abstract": "A 1.8-GHZ fractionalfrequency synthesizer implemented in 0.6m CMOS with an on-chip multiphase voltage-controlled oscillator (VCO) exhibits no spurs resulting from phase interpolation. The proposed architecture randomly selects output phases of a multiphase VCO for fractional frequency division to eliminate spurious tones. Measured phase noise at 1.715 GHz is lower than 80 dBc/Hz within a 20-kHz loop bandwidth and 118 dBc/Hz at 1-MHz offset with no fractional spurs above 70 dBc/Hz. The synthesizer has a frequency resolution step smaller than 10 Hz. The chip consumes 52 mW at 3.3 V and occupies 3.7 mm 2.9 mm.",
+    "keywords": [
+      "Frequency synthesizers",
+      "phase-locked loops",
+      "phase noise",
+      "\u0001\u0006 modulation"
+    ],
+    "doi": "10.1109/JSSC.2003.811872",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "voltage-controlled oscillator (VCO)",
+    "technology": "CMOS",
+    "application_domain": "rf, wireless, if",
+    "sub_blocks": [
+      "inductor",
+      "transistor/MOSFET",
+      "cross-coupled pair",
+      "latch",
+      "clock / timing"
+    ],
+    "design_purpose": "",
+    "function_summary": "voltage-controlled oscillator (VCO): A 1.8-GHZ fractionalfrequency synthesizer implemented in 0.6m CMOS with an on-chip multiphase voltage-controlled oscillator (VCO) exhibits no spurs resulting from phase interpolation.",
+    "key_specs": [
+      "1.715 GHz",
+      "80 dBc/Hz",
+      "118 dBc/Hz",
+      "70 dBc/Hz",
+      "10 Hz",
+      "52 mW",
+      "3.3 V",
+      "12 dB",
+      "1.795 GHz",
+      "20 MHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE recent growth in the wireless communication industry has resulted in high demand for low-cost high-performance RF frequency synthesizers. Frequency synthesizer is a phase-locked loop (PLL) circuit that phase locks the divided feedback clock from the voltage-controlled oscillator (VCO) to the reference clock. The frequency division ratio is made variable to set the output frequency and can be  ..."
+    },
+    {
+      "number": "II",
+      "title": "SYNTHESIZER ARCHITECTURE",
+      "kind": "proposed",
+      "page": 1,
+      "text_preview": "A generalized multiphase fractionalfrequency synthesizer [7], [8], shown in Fig. 1(d), is a standard PLL-based frequency synthesizer except for the multiphase VCO and the multiphase frequency divider. Multiphase outputs can be obtained in many different ways, such as from ring oscillators [9], [10], cross-coupled LC VCOs [11], or frequency dividers. The multiphase VCO outputs are fed into the mult ..."
+    },
+    {
+      "number": "III",
+      "title": "CMOS IMPLEMENTATION",
+      "kind": "design",
+      "page": 3,
+      "text_preview": "A. Multiphase VCO In the prototype, a four-phase VCO is chosen for simplicity although there are many ways to implement the multiphase VCO. In general, it is easy to make ring oscillators to generate finer interpolated phases [7]–[10], but phase noise performance tuned amplifiers are used as delay is poor unless highelements. Cross-coupled LC oscillators [11] can also make a four-phase VCO, but fo ..."
+    },
+    {
+      "number": "IV",
+      "title": "EXPERIMENTAL RESULT",
+      "kind": "results",
+      "page": 5,
+      "text_preview": "The prototype was fabricated in 0.6m CMOS. The measured output spectrum at 1.715 GHz is shown in Fig. 16. The measured phase noise at 1.715 GHz is shown in Fig. 17. The 80 and 90 dBc/Hz. At in-band phase noise is between 118 dBc/Hz. 1-MHz offset, the measured phase noise is Any fixed pattern noise at 5 MHz possible with the four-phase interpolation is not visible, but as mentioned, the fractional  ..."
+    },
+    {
+      "number": "V",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 6,
+      "text_preview": "A 1.8-GHz fractionalfrequency synthesizer proves the feasibility that the phase mismatch error in phase-interpolated frequency synthesizers with multiphase VCO can be randomized, and finer frequency resolution is achievable. The prototype exhibits no spur associated with the interpolated phase mismatch error and suppresses fractional spurs below 70 dBc/Hz while covering a 120-MHz range continuousl ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Frequency synthesizer architectures. (a) Integer-N. (b) Fractional-N. (c) Multimodulus fractional-N. (d) Multiphase fractional-N.",
+      "caption_bbox": [
+        302.6,
+        343.8,
+        553.7,
+        363.4
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The most common frequency synthesizer is type as shown in Fig. 1(a), where the VCO frean integerquency is divided using a fixed programmable frequency divider."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "This type, shown in Fig. 1(c), is referred to as a frequency synthesizer [2]–[6]."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "(d) Multiphase fractional-N. last type, shown in Fig. 1(d), uses a multiphase VCO and divider [7], [8]."
+        },
+        {
+          "section_title": "SYNTHESIZER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "A generalized multiphase fractionalfrequency synthesizer [7], [8], shown in Fig. 1(d), is a standard PLL-based frequency synthesizer except for the multiphase VCO and the multiphase frequency divider."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.5,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "section:intro": -0.5,
+        "references": 2.0
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Frequency synthesizer architectures. (a) Integer-N. (b) Fractional-N. (c) Multimodulus fractional-N. (d) Multiphase fractional-N",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.65,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Divided feedback clock periods for comparison.",
+      "caption_bbox": [
+        38.1,
+        151.7,
+        220.9,
+        162.4
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Another way to achieve finer resolution than possible with integerfrequency synthesizers is to interpolate phases in analog way HENG AND SONG: 1.8-GHz CMOS FRACTIONALFREQUENCY SYNTHESIZER Fig. 2."
+        },
+        {
+          "section_title": "SYNTHESIZER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Its difference from frequency synthesizers is illustrated in Fig. 2, where integeraxis is time and the vertical lines mark the divided clock the frequency synedges input to the phase detector."
+        },
+        {
+          "section_title": "SYNTHESIZER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "In integerthesizers, the minimum incremental step in the divided feedback , clock period is an integer multiple of the VCO clock period as explained at the top of Fig. 2."
+        },
+        {
+          "section_title": "SYNTHESIZER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "In multiphase fractionalfrequency syntheof the VCO clock period sizers, an incremental fraction can be added or subtracted to make a constant divided clock period as shown in Fig. 2, thereby overcoming the limit set on the phase detector frequency. synthesizers [7], [8] suffer Existing multiphase fractionalfrom two problems."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.1,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "Another way to achieve finer resolution than possible with integerfrequency synthesizers is to interpolate phases in analog way HENG AND SONG: 1.8-GHz CMOS FRACTIONALFREQUENCY SYNTHESIZER Fig. 2.",
+        "function_summary": "Divided feedback clock periods for comparison. Another way to achieve finer resolution than possible with integerfrequency synthesizers is to interpolate phases in analog way HENG AND SONG: 1.8-GHz CMOS FRACTIONALFREQUENCY SYNTHESIZER Fig. 2.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.05,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Phase mismatch error for multiphase fractional-N synthesizer.",
+      "caption_bbox": [
+        301.1,
+        162.4,
+        529.6,
+        173.1
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "SYNTHESIZER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "As is known, this coarse step demands that the phase detector frequency be the minimum frequency step to resolve, which is commonly the channel spacing Fig. 3."
+        },
+        {
+          "section_title": "SYNTHESIZER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The latter problem is explained in Fig. 3, for an ."
+        },
+        {
+          "section_title": "SYNTHESIZER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "If four sequence like divided clock edges are not ideal, this sequential selection of the clock edges will result in a fixed pattern generated at the phase detector output as sketched on the right in Fig. 3, and will appear as a fractional spur at the synthesizer output."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.7,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Phase mismatch error for multiphase fractional-N synthesizer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 1,
+      "caption": "Fig. 4. Proposed synthesizer with randomized phase interpolation.",
+      "caption_bbox": [
+        301.1,
+        346.2,
+        518.3,
+        356.8
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "SYNTHESIZER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 4."
+        },
+        {
+          "section_title": "SYNTHESIZER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "This leads to the proposed system shown modulator is used as a modulus randomin Fig. 4, where a izer to generate phase and modulus controls for the multiphase frequency divider."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Proposed synthesizer with randomized phase interpolation",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Feedback clock edges of multimodulus and multiphase systems.",
+      "caption_bbox": [
+        39.6,
+        184.3,
+        273.0,
+        194.9
+      ],
+      "section_title": "II. SYNTHESIZER ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "SYNTHESIZER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Smaller Phase Jump by Phase Interpolation frequency synthesizer The proposed multiphase fractionalfrequency is similar in concept to multimodulus fractionalsynthesizers [2]–[6], but it has a minimum phase step equivarather than the full VCO period , as explained in lent to Fig. 5."
+        },
+        {
+          "section_title": "SYNTHESIZER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "When modulus control swallows 1 count, the phase jump Fig. 5."
+        },
+        {
+          "section_title": "SYNTHESIZER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "As explained in Fig. 5, the multiphase frequency synthesizers are in concept identical fractionalDAC, while multimodulus fractionalto the multibit frequency synthesizers [2]–[6] to the single-bit DAC."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "When modulus control swallows 1 count, the phase jump Fig. 5.",
+        "function_summary": "Feedback clock edges of multimodulus and multiphase systems. When modulus control swallows 1 count, the phase jump Fig. 5.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.31,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. Divider phase noise spectrum of multimodulus and multiphase systems.",
+      "caption_bbox": [
+        39.6,
+        412.6,
+        290.6,
+        432.3
+      ],
+      "section_title": "II. SYNTHESIZER ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "SYNTHESIZER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 6."
+        },
+        {
+          "section_title": "SYNTHESIZER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The theoretical phase noise spectrum at the divider output for both cases is shown in Fig. 6 to show the difference."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "-phase noise": -2.5,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Divider phase noise spectrum of multimodulus and multiphase systems",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 2,
+      "caption": "Fig. 7. Dynamic element matched DAC transfer function.",
+      "caption_bbox": [
+        302.6,
+        215.5,
+        492.4,
+        226.1
+      ],
+      "section_title": "II. SYNTHESIZER ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "SYNTHESIZER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Randomization of Phase Mismatch The mismatch effect of interpolated phases can be understood by closely examining the similarity between the IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 6, JUNE 2003 Fig. 7."
+        },
+        {
+          "section_title": "SYNTHESIZER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "For example, without randomization, the multibit DAC exhibits a nonlinear transfer function represented by as one solid line in Fig. 7."
+        },
+        {
+          "section_title": "SYNTHESIZER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The same is true for modulator randomly selects the previous and curSince the rent phases, it will form a band of transfer functions conceptually similar to those in Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Dynamic element matched DAC transfer function",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.31,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. Dynamic division ratio matching in the proposed system.",
+      "caption_bbox": [
+        38.1,
+        323.9,
+        249.5,
+        334.6
+      ],
+      "section_title": "II. SYNTHESIZER ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "SYNTHESIZER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Similarly in the synthesizer, interpolated phases can be randomly selected as shown in the fourphase example of Fig. 8."
+        },
+        {
+          "section_title": "SYNTHESIZER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Without randomization, the phase mismatch error results in fractional spurs appear in the HENG AND SONG: 1.8-GHz CMOS FRACTIONALFREQUENCY SYNTHESIZER Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.8,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Dynamic division ratio matching in the proposed system",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.86,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 3,
+      "caption": "Fig. 9. Divider phase noise without and with randomization.",
+      "caption_bbox": [
+        38.1,
+        545.3,
+        236.5,
+        556.0
+      ],
+      "section_title": "II. SYNTHESIZER ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "SYNTHESIZER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "To validate the concept, the mismatch is purposely introduced in behavioral simulations of the whole synthesizer as shown in Fig. 9."
+        },
+        {
+          "section_title": "SYNTHESIZER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "-phase noise": -2.5,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Divider phase noise without and with randomization",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 3,
+      "caption": "Fig. 10. Generation of four phases using an LC oscillator.",
+      "caption_bbox": [
+        301.1,
+        206.2,
+        491.0,
+        216.9
+      ],
+      "section_title": "II. SYNTHESIZER ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "CMOS IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "In this paper, a multiphase VCO is implemented by dividing a differential VCO output by 2 to generate four output phases as Fig. 10."
+        },
+        {
+          "section_title": "CMOS IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 11. 5/6 prescaler. illustrated in Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "type_match:oscillator": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Generation of four phases using an LC oscillator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.69,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 3,
+      "caption": "Fig. 11. 5/6 prescaler.",
+      "caption_bbox": [
+        301.1,
+        405.8,
+        376.9,
+        416.4
+      ],
+      "section_title": "II. SYNTHESIZER ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "CMOS IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 11. 5/6 prescaler. illustrated in Fig. 10."
+        },
+        {
+          "section_title": "CMOS IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The prescaler 5/6 is shown in Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "5/6 prescaler",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 4,
+      "caption": "Fig. 12. MASH modulator.",
+      "caption_bbox": [
+        39.6,
+        330.7,
+        132.1,
+        341.3
+      ],
+      "section_title": "III. CMOS IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CMOS IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "In our implementation, input Fig. 12."
+        },
+        {
+          "section_title": "CMOS IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "MASH 2-1 Modulator The MASH modulator shown in Fig. 12 is chosen for its simplicity."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "MASH modulator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 4,
+      "caption": "Fig. 13. Multiphase frequency divider.",
+      "caption_bbox": [
+        302.6,
+        225.2,
+        431.5,
+        235.8
+      ],
+      "section_title": "III. CMOS IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CMOS IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 6, JUNE 2003 Fig. 13."
+        },
+        {
+          "section_title": "CMOS IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Multiphase Frequency Divider To cover a full range of the randomizer output levels, multiphase inputs are divided by a multimodulus divider as explained in Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Multiphase frequency divider",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 4,
+      "caption": "Fig. 14. Frequency mapping.",
+      "caption_bbox": [
+        302.6,
+        409.6,
+        401.2,
+        420.3
+      ],
+      "section_title": "III. CMOS IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CMOS IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 14."
+        },
+        {
+          "section_title": "CMOS IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Frequency Mapping The frequency mapping plan is illustrated in Fig. 14."
+        },
+        {
+          "section_title": "CMOS IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "They are marked by the shaded and dark regions in Fig. 14."
+        },
+        {
+          "section_title": "CMOS IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The frequency chosen such that range corresponding to the different division ratio is shown in Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.1,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Frequency mapping",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.29,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 5,
+      "caption": "Fig. 15. Control circuitry.",
+      "caption_bbox": [
+        38.1,
+        190.4,
+        126.1,
+        201.0
+      ],
+      "section_title": "III. CMOS IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CMOS IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "To avoid overloading the to (the modulator, only the division ratios from HENG AND SONG: 1.8-GHz CMOS FRACTIONALFREQUENCY SYNTHESIZER Fig. 15."
+        },
+        {
+          "section_title": "CMOS IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Others The control circuitry for the various digital signals is explained in Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Control circuitry",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 5,
+      "caption": "Fig. 16. Measured spectrum at 1.715 GHz.",
+      "caption_bbox": [
+        38.1,
+        380.8,
+        181.1,
+        391.4
+      ],
+      "section_title": "III. CMOS IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CMOS IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 16."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULT",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The measured output spectrum at 1.715 GHz is shown in Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-spectrum": -2.5,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured spectrum at 1.715 GHz",
+        "key_specs": [
+          "1.715 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 5,
+      "caption": "Fig. 17. Phase noise at 1.715 GHz.",
+      "caption_bbox": [
+        301.1,
+        225.3,
+        419.1,
+        235.9
+      ],
+      "section_title": "III. CMOS IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CMOS IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 17."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULT",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The measured phase noise at 1.715 GHz is shown in Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "-phase noise": -2.5,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Phase noise at 1.715 GHz",
+        "key_specs": [
+          "1.715 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 5,
+      "caption": "Fig. 18. Settling with frequency step of 10 MHz.",
+      "caption_bbox": [
+        301.1,
+        427.0,
+        463.4,
+        437.7
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULT",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "CMOS IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 18."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULT",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "With this loop bandwidth, the measured settling time for a frequency step of s, as shown in Fig. 18."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Settling with frequency step of 10 MHz",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 6,
+      "caption": "Fig. 19. Die photo.",
+      "caption_bbox": [
+        39.6,
+        291.7,
+        106.5,
+        302.4
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULT",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULT",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The die photo 52 mW at 3.3 V and occupies 3.7 mm is shown in Fig. 19."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULT",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "With similar loop bandwidth, the measured in-band 80 90 dBc/Hz) is lower than the reported phase noise ( 60 dBc/Hz, but the phase noise at 1-MHz offset is poorer Fig. 19."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-die photo": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Die photo",
+        "key_specs": [
+          "52 mW",
+          "3.3 V",
+          "90 dBc/Hz",
+          "60 dBc/Hz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 1,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

@@ -1,0 +1,698 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1362849.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1362849",
+  "generated_at": "2026-07-29T22:02:14",
+  "paper_metadata": {
+    "title": "A 132-Gb/s 4:1 Multiplexer in 0.13-m SiGe-Bipolar Technology",
+    "authors": [
+      "Mounir Meghelli"
+    ],
+    "abstract": "A 3.3-V half-rate clock 4:1 multiplexer implemented in a 210–GHz T 0.13m SiGe-bipolar technology and operating up to 132 Gb/s is reported. Among many design challenges, the control of on-chop clock distribution was critical to achieve such a high data rate. At 100 Gb/s, the chip operates reliably down to 3.0-V supply voltage and up to 100 C chip temperature. The circuit consumes 1.45 W from a 3.3-V supply voltage and exhibits less than 340-fs rms jitter on the output data.",
+    "keywords": [
+      "4:1 multiplexer",
+      "multiplexer",
+      "SiGe bipolar technology"
+    ],
+    "doi": "10.1109/JSSC.2004.835641",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2004
+  },
+  "paper_circuit_context": {
+    "circuit_type": "132-Gb/s 4:1 Multiplexer in 0.13-m SiGe-Bipolar Technology",
+    "technology": "SIGE",
+    "application_domain": "microwave, 60 ghz",
+    "sub_blocks": [
+      "resistor",
+      "transistor/MOSFET",
+      "current source",
+      "transmission line",
+      "output buffer",
+      "bias circuit",
+      "differential pair",
+      "latch"
+    ],
+    "design_purpose": "Among many design challenges, the control of on-chop clock distribution was critical to achieve such a high data rate.",
+    "function_summary": "132-Gb/s 4:1 Multiplexer in 0.13-m SiGe-Bipolar Technology: Among many design challenges, the control of on-chop clock distribution was critical to achieve such a high data rate.",
+    "key_specs": [
+      "1.45 W",
+      "50 GHz",
+      "19 dB",
+      "67 GHz",
+      "55%",
+      "21%",
+      "15 dB",
+      "60 GHz",
+      "250 fs",
+      "12.5 GHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "P RODUCTION-LEVEL 0.18m SiGe technology has shown a great potential for implementing highly integrated transmitters and receivers for 40–43-Gb/s transmission systems, featuring very good system-level performance in m terms of jitter, BER, and signal integrity [1]–[3]. The 0.13SiGe technology generation is today under development [4] and benchmark circuits demonstrating its speed improvement over p ..."
+    },
+    {
+      "number": "II",
+      "title": "ARCHITECTURE",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "As shown in Fig. 1, the 4:1 multiplexer is built using a conventional tree architecture which consists of a recursive series of 2:1 multiplexing stages. The IC takes four parallel single-ended data at its input and uses a half-rate clock, e.g., 50 GHz for 100-Gb/s operation. This clock is internally divided by two with a static divider built with a toggle ﬂip-ﬂop, with the resulting Manuscript rec ..."
+    },
+    {
+      "number": "III",
+      "title": "MEASUREMENT RESULTS",
+      "kind": "results",
+      "page": 2,
+      "text_preview": "Testing has been conducted on wafer using 65-GHz bandwidth probes for the high-speed signals. The measured clock 15 dB at 60 GHz input and data output return losses are below impedance matching. Fig. 6 shows the indicating good 50test setup used to perform the chip evaluation at data rates up to 100 Gb/s. Four parallel single-ended data inputs are derived 1 PRBS generator and its comfrom a single  ..."
+    },
+    {
+      "number": "IV",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 4,
+      "text_preview": "A 4:1 multiplexer implemented in a 0.13m SiGe bipolar technology and operating consistently up to 100 Gb/s has been reported. The circuit was demonstrated at a maximum output data rate of 132 Gb/s. The on-chip clock distribution technique and a compact layout design were critical factors enabling the achievement of this high-output data rate. The demonstrated level of performance, while maintainin ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Block diagram of the 4:1 multiplexer.",
+      "caption_bbox": [
+        301.1,
+        370.7,
+        450.7,
+        378.7
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "As shown in Fig. 1, the 4:1 multiplexer is built using a conventional tree architecture which consists of a recursive series of 2:1 multiplexing stages."
+        },
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Digital Object Identiﬁer 10.1109/JSSC.2004.835641 Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "multiplexer (MUX)",
+        "technology": "SIGE",
+        "application_domain": "microwave, 60 ghz",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the 4:1 multiplexer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 0,
+      "caption": "Fig. 2. Schematic of the high-speed latch (top) and corresponding layout plot (bottom).",
+      "caption_bbox": [
+        301.1,
+        694.7,
+        552.2,
+        711.7
+      ],
+      "section_title": "II. ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 2."
+        },
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 2 shows the schematic of the high-speed data latch used throughout the IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 12, DECEMBER 2004 Fig. 5."
+        },
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 2 shows a layout plot of the latch, m 75 m. the dimensions of which are 45 IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 12, DECEMBER 2004 Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.2,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "-layout": -2.0,
+        "section:proposed": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "latch",
+        "technology": "SIGE",
+        "application_domain": "microwave, 60 ghz",
+        "sub_blocks": [
+          "latch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Schematic of the high-speed latch (top) and corresponding layout plot (bottom)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.55,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Block diagram describing the on-chip clock distribution.",
+      "caption_bbox": [
+        39.6,
+        332.0,
+        250.5,
+        339.9
+      ],
+      "section_title": "II. ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The parallel data are received Fig. 3."
+        },
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 3 depicts the clock distribution technique used in this design, which consists of using a transadmittance ampliﬁer driving several transimpedance ampliﬁers through high-impedance transmission lines."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "132-Gb/s 4:1 Multiplexer in 0.13-m SiGe-Bipolar Technology",
+        "technology": "SIGE",
+        "application_domain": "microwave, 60 ghz",
+        "sub_blocks": [
+          "transmission line"
+        ],
+        "design_purpose": "",
+        "function_summary": "Block diagram describing the on-chip clock distribution",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.72,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 1,
+      "caption": "Fig. 4. Simulated ac transfer function of the input ampliﬁer down to the last 2:1 multiplexer stage clock input.",
+      "caption_bbox": [
+        39.6,
+        548.0,
+        290.7,
+        565.0
+      ],
+      "section_title": "II. ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 4."
+        },
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "As shown in Fig. 4, followers with 50the simulated overall gain of the input clock ampliﬁer driving the last 2:1 multiplexer stage is about 19 dB with a 3-dB cut-off frequency of 67 GHz representing more than 55% in bandwidth extension when compared to the case where none of the peaking techniques are used."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "multiplexer (MUX)",
+        "technology": "SIGE",
+        "application_domain": "microwave, 60 ghz",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated ac transfer function of the input ampliﬁer down to the last 2:1 multiplexer stage clock input",
+        "key_specs": [
+          "19 dB",
+          "67 GHz",
+          "55%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 1,
+      "caption": "Fig. 5. Layout plot of the chip highlighting the clock distribution.",
+      "caption_bbox": [
+        302.6,
+        603.1,
+        517.4,
+        611.1
+      ],
+      "section_title": "II. ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 2 shows the schematic of the high-speed data latch used throughout the IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 12, DECEMBER 2004 Fig. 5."
+        },
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 5 is a layout plot of the 4:1 multiplexer IC highlighting the input clock path."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "-layout": -2.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "multiplexer (MUX)",
+        "technology": "SIGE",
+        "application_domain": "microwave, 60 ghz",
+        "sub_blocks": [
+          "latch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Layout plot of the chip highlighting the clock distribution",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. Block diagram of the test setup for up to 100 Gb/s output data rates.",
+      "caption_bbox": [
+        38.1,
+        244.4,
+        286.8,
+        252.4
+      ],
+      "section_title": "II. ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 2 shows a layout plot of the latch, m 75 m. the dimensions of which are 45 IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 12, DECEMBER 2004 Fig. 6."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 6 shows the indicating good 50test setup used to perform the chip evaluation at data rates up to 100 Gb/s."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "-setup": -2.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "latch",
+        "technology": "SIGE",
+        "application_domain": "microwave, 60 ghz",
+        "sub_blocks": [
+          "latch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the test setup for up to 100 Gb/s output data rates",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 2,
+      "caption": "Fig. 7. 80 Gb/s (top) and 100 Gb/s (bottom) output eye diagrams under nominal conditions.",
+      "caption_bbox": [
+        301.1,
+        473.4,
+        552.2,
+        490.3
+      ],
+      "section_title": "II. ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 7. 80 Gb/s (top) and 100 Gb/s (bottom) output eye diagrams under nominal conditions. 100-Gb/s output eye diagrams at 3.0-V supply voltage and 100 Fig. 8."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 7 shows the single-ended output eye diagrams at 80 and 100 Gb/s."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "132-Gb/s 4:1 Multiplexer in 0.13-m SiGe-Bipolar Technology",
+        "technology": "SIGE",
+        "application_domain": "microwave, 60 ghz",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "80 Gb/s (top) and 100 Gb/s (bottom) output eye diagrams under nominal conditions",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 2,
+      "caption": "Fig. 8. C chip temperature.",
+      "caption_bbox": [
+        301.1,
+        605.0,
+        552.2,
+        621.9
+      ],
+      "section_title": "III. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 7. 80 Gb/s (top) and 100 Gb/s (bottom) output eye diagrams under nominal conditions. 100-Gb/s output eye diagrams at 3.0-V supply voltage and 100 Fig. 8."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 8 shows the corresponding eye diagrams at 100 Gb/s."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "132-Gb/s 4:1 Multiplexer in 0.13-m SiGe-Bipolar Technology",
+        "technology": "SIGE",
+        "application_domain": "microwave, 60 ghz",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "C chip temperature",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 3,
+      "caption": "Fig. 9. Block diagram of the test setup for beyond-100-Gb/s output data rates.",
+      "caption_bbox": [
+        39.6,
+        250.7,
+        295.9,
+        258.7
+      ],
+      "section_title": "III. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Four parallel single-ended data inputs are derived 1 PRBS generator and its comfrom a single 2–40-Gb/s 2 plementary output using power splitters and delay lines with values appropriately set in order to obtain weakly correlated Fig. 9."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "As shown in Fig. 9, a passive microwave multiplier operating in the 50–75-GHz 3 band was used to provide the clock to the 4:1 multiplexer through a high-power ampliﬁer."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "-setup": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "frequency multiplier",
+        "technology": "SIGE",
+        "application_domain": "microwave, 60 ghz",
+        "sub_blocks": [],
+        "design_purpose": "Four parallel single-ended data inputs are derived 1 PRBS generator and its comfrom a single 2–40-Gb/s 2 plementary output using power splitters and delay lines with values appropriately set in order to obtain weakly correlated Fig. 9.",
+        "function_summary": "Block diagram of the test setup for beyond-100-Gb/s output data rates. Four parallel single-ended data inputs are derived 1 PRBS generator and its comfrom a single 2–40-Gb/s 2 plementary output using power splitters and delay lines with values appropriately set in order to obtain weakly correlated Fig. 9.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 3,
+      "caption": "Fig. 10. 120-Gb/s (top) and 132-Gb/s (bottom) output eye diagrams.",
+      "caption_bbox": [
+        39.6,
+        494.9,
+        263.3,
+        502.9
+      ],
+      "section_title": "III. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 10. 120-Gb/s (top) and 132-Gb/s (bottom) output eye diagrams. bit sequences."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "The 4:1 multiplexer is able to operate at 120 Gb/s with reduced margins and slightly degraded jitter and rise and fall time (Fig. 10)."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Under nominal conditions, the IC can operate up to 132 Gb/s but with tighter margins and considerably degraded performance (Fig. 10)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "multiplexer (MUX)",
+        "technology": "SIGE",
+        "application_domain": "microwave, 60 ghz",
+        "sub_blocks": [],
+        "design_purpose": "Under nominal conditions, the IC can operate up to 132 Gb/s but with tighter margins and considerably degraded performance (Fig. 10).",
+        "function_summary": "120-Gb/s (top) and 132-Gb/s (bottom) output eye diagrams. Under nominal conditions, the IC can operate up to 132 Gb/s but with tighter margins and considerably degraded performance (Fig. 10).",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 3,
+      "caption": "Fig. 11.",
+      "caption_bbox": [
+        302.6,
+        477.9,
+        327.4,
+        485.8
+      ],
+      "section_title": "III. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 11."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Table I summarizes the main measurement results and the chip microphotograph is shown in Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "132-Gb/s 4:1 Multiplexer in 0.13-m SiGe-Bipolar Technology",
+        "technology": "SIGE",
+        "application_domain": "microwave, 60 ghz",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 4,
+      "caption": "Fig. 12. On-chip frequency divider input sensitivity.",
+      "caption_bbox": [
+        38.1,
+        241.2,
+        210.1,
+        249.2
+      ],
+      "section_title": "III. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Since only a divided-by-2 clock is available, a modiﬁed test setup was used to perform measurements beyond 100 Gb/s IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 12, DECEMBER 2004 Fig. 12."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "As shown in Fig. 12, the on-chip divide-by-2 circuit requires signiﬁcantly more input power to operate beyond 59 GHz and its maximum operation frequency is close to 67 GHz."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "SIGE",
+        "application_domain": "microwave, 60 ghz",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "On-chip frequency divider input sensitivity",
+        "key_specs": [
+          "59 GHz",
+          "67 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 3,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

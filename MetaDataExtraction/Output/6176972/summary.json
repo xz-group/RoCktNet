@@ -1,0 +1,40 @@
+{
+  "title": "A ΔΣ Interface for MEMS Accelerometers Using Electrostatic Spring-Constant Modulation for Cancellation of Bondwire Capacitance Drift Pedram Lajevardi1, Vladimir Petkov2, Boris Murmann1",
+  "bibliography": {
+    "authors": [],
+    "venue": "",
+    "year": 2012,
+    "doi": "",
+    "keywords": []
+  },
+  "figure_number": "Figure 11.1.3 shows details of the C/V circuit and loop-filter realization and system timing. The loop filter contains an integrator to ensure that the in-band noise is not limited by quantization noise [5]. The compensator ensures loop stability. All of the OTAs use a folded-cascode architecture. The system’s 4μs (250kHz) clock cycle is partitioned into six phases. During reset1, the sensor voltage is reset and the noise and offset of the OTAs are sampled on the CH capacitors. During the readout phase, the proof-mass displacement is measured, and the signal propagates through the electronic loop-filter. At the end of this phase, the signals have settled and the quantizer makes a decision. During the force-feedback phase, a differential voltage is applied to the sensor capacitors to push the proof-mass back towards the center of the gap. During reset2, the sensor element is reset again to ensure that no residual signal-dependent force carries into the next phase. During the k-mod phase, VMOD is applied as described above. A custom interface IC was designed to evaluate the efficacy of the proposed technique in a system-in-package setting that closely resembles the practical application. This interface is fabricated in a 0.18μm 3V CMOS technology, and is packaged and tested with a MEMS sensor element. The CMOS chip contains all of the above-described precision circuitry, while the shaded blocks of Fig. 11.1.1 are emulated off-chip. Figure 11.1.4 shows the measured output spectrum of a typical device at rest. The tones from the spring-constant modulation are visible in the out-of-band frequency range from 240Hz to 10kHz. The observed amplitudes correspond to 700mg of offset, while the full-scale (FS) range is 9.14g. As shown, the tones are suppressed by 41dB once the offset-cancellation loop is enabled and the ODAC code has converged. This corresponds to a residual offset of 6.24mg. The sensitivity to DC input acceleration is 0.1094 FS/g both when the loop is on and off, indicating that the loop does not affect the input signal.",
+  "type": "transconductor / OTA",
+  "technology": "CMOS, 1μm process",
+  "application": "automotive",
+  "sub_blocks": [
+    "capacitor"
+  ],
+  "function_summary": "circuit",
+  "design_purpose": "",
+  "metrics": [
+    "Gain",
+    "Frequency",
+    "Supply voltage"
+  ],
+  "numerical_performance": [
+    "41dB",
+    "1μm",
+    "244Hz",
+    "250kHz",
+    "0.18μm",
+    "3V",
+    "240Hz",
+    "10kHz",
+    "0.1094 FS",
+    "100Hz"
+  ],
+  "confidence": 0.49,
+  "warnings": [
+    "Recommended figure was classified as 'result_plot', not a schematic; manual confirmation strongly recommended."
+  ]
+}

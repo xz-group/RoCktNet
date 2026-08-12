@@ -1,0 +1,452 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\972153.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\972153",
+  "generated_at": "2026-07-29T21:33:51",
+  "paper_metadata": {
+    "title": "Brief Papers_______________________________________________________________________________",
+    "authors": [
+      "Jarkko Jussila",
+      "Jussi Ryynänen",
+      "Kalle Kivekäs",
+      "Lauri Sumanen",
+      "Aarno Pärssinen",
+      "Kari A. I. Halonen"
+    ],
+    "abstract": "A 2-GHz single-chip direct conversion receiver achieves a 3.0-dB double-sideband noise figure, 14-dBm IIP3 and +17-dBm IIP2 with 60-mW power consumption from a 2.7-V supply. The receiver is targeted for the third generation UTRA/FDD WCDMA system. The low power consumption has been achieved with a proper partitioning and by avoiding buffering between blocks. In the differential RF front end, current boosted quadrature mixers follow the variable-gain low-noise amplifier. At the baseband, on-chip ac-coupled highpass filters are utilized to implement amplification with variable gain having small transients related to gain steps. The outputs of the analog channel selection filters are sampled directly by the two single-amplifier 6-bit pipeline A/D converters. The spurious tones due to the feedthrough of clock harmonics to the RF input increase the noise Fig. 1. Receiver block diagram. figure less than 0.1 dB. The receiver has been fabricated with a 0.35m 45-GHz SiGe BiCMOS process. The amount of variable gain depends on the receiver input Terms—Active filters, analog-to-digital conversion, Index signal range, and the accuracy and sampling rate in the A/D BiCMOS analog integrated circuits, direct conversion, gain conversion. Most of the variable gain must be implemented in control, low-noise amplifiers, mixers, radio receivers. the analog baseband if an ADC with medium or low resolution is used. This requires that sufficient analog channel selection",
+    "keywords": [],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2001
+  },
+  "paper_circuit_context": {
+    "circuit_type": "low-noise amplifier (LNA)",
+    "technology": "BICMOS, SIGE",
+    "application_domain": "rf, baseband, if",
+    "sub_blocks": [
+      "resistor",
+      "transistor/MOSFET",
+      "mixer",
+      "bias circuit",
+      "switch",
+      "differential pair",
+      "op-amp",
+      "capacitor",
+      "LC tank / resonator",
+      "clock / timing"
+    ],
+    "design_purpose": "",
+    "function_summary": "low-noise amplifier (LNA): A 2-GHz single-chip direct conversion receiver achieves a 3.0-dB double-sideband noise figure, 14-dBm IIP3 and +17-dBm IIP2 with 60-mW power consumption from a 2.7-V supply.",
+    "key_specs": [
+      "2 w",
+      "0.1 dB",
+      "100 dB",
+      "17 dB",
+      "0 dBm",
+      "1.92 MHz",
+      "36 dB",
+      "1.2 MHz",
+      "3 dB",
+      "66 dB"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "A SINGLE-CHIP direct conversion receiver, which achieves a low noise figure (NF) and low power consumption together with a reasonable linearity, is presented for the thirdgeneration (3G) WCDMA. The receiver has been designed according to the UTRA/FDD specification proposal [1]. The low NF and power consumption in this receiver are achieved with a careful partitioning between blocks and with unbuff ..."
+    },
+    {
+      "number": "II",
+      "title": "RF FRONT END",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "A differential LNAwasusedtodecrease thecrosstalkbetween RF and digital circuits. The bipolar LNA has two modes with a 21-dB difference in the gain. A single branch of the LNA switched into the high gain mode is shown in Fig. 2. In this mode, and operate as a cascoded common-emitter transistors is turned off and is operating LNA. In the low gain mode, in a common-base configuration [3]. With a resi ..."
+    },
+    {
+      "number": "III",
+      "title": "ANALOG BASEBAND CIRCUIT",
+      "kind": "design",
+      "page": 1,
+      "text_preview": "The analog baseband circuit consists of two similar signal channels, a frequency tuning circuit and voltage and current references. One signal channel, in Fig. 4, includes an analog channel selection filter, amplification with variable gain, and three on-chip highpass filters (HPFs), which filter out dc offsets. The channel selection filter is a fifth-order Chebyshev low3-dB frequency pass filter  ..."
+    },
+    {
+      "number": "IV",
+      "title": "A/D CONVERTERS",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "The two 6-bit 15.36-MS/s pipeline ADCs sample directly the output of the continuous-time channel selection filter. The ADCs are implemented using two 2.5-bit stages followed by a 2-bit flash stage, as indicated in the block diagram of Fig. 5. Each 2.5-bit stage consists of a multiplying D/A converter (MDAC) and a six-level sub-ADC with a small decoding logic [6]. The properly delayed output bits o ..."
+    },
+    {
+      "number": "V",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 2,
+      "text_preview": "The receiver is fabricated with a 0.35m 45-GHz SiGe BiCMOS process. The measured performance parameters of the TABLE I SUMMARIZED PERFORMANCE OF THE RECEIVER Fig. 6. Chip microphotograph. receiver are given in Table I. The chip area is 10.3 mm including the bonding pads, which are all electrostatic discharge (ESD) protected. The receiver is mounted and bonded directly on a printed circuit board (P ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 3,
+      "text_preview": "A low-noise low-power single-chip direct-conversion receiver for the UTRA/FDD WCDMA cellular system has been described. A low current consumption of 22 mA has been achieved in a wide-band system, although the receiver includes on-chip ADCs. The transients related to variable baseband gain with discrete gain steps have been decreased using appropriate circuit topologies. The problems related to the ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Receiver block diagram.",
+      "caption_bbox": [
+        301.1,
+        319.8,
+        408.4,
+        330.4
+      ],
+      "section_title": "",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The receiver, in Fig. 1, includes a variable-gain low-noise amplifier (LNA), quadrature mixers, analog channel selection filters, variable-gain amplifiers (VGAs) and 6-bit A/D converters (ADCs)."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Publisher Item Identifier S 0018-9200(01)09330-1. 0018–9200/01$10.00 © 2001 IEEE Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "BICMOS, SIGE",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Receiver block diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Single branch of the LNA in high gain mode.",
+      "caption_bbox": [
+        39.6,
+        239.3,
+        213.8,
+        250.0
+      ],
+      "section_title": "II. RF FRONT END",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "RF FRONT END",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "A single branch of the LNA switched into the high gain mode is shown in Fig. 2."
+        },
+        {
+          "section_title": "RF FRONT END",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "type_match:lna": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "BICMOS, SIGE",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Single branch of the LNA in high gain mode",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Downconversion mixer.",
+      "caption_bbox": [
+        39.6,
+        407.1,
+        144.6,
+        417.7
+      ],
+      "section_title": "II. RF FRONT END",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "RF FRONT END",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 3."
+        },
+        {
+          "section_title": "RF FRONT END",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The downconversion mixer, in Fig. 3, uses a modified and Gilbert-cell topology with current boosting transistors [4]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "BICMOS, SIGE",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Downconversion mixer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. One signal channel of the analog baseband circuit.",
+      "caption_bbox": [
+        38.1,
+        277.6,
+        229.9,
+        288.3
+      ],
+      "section_title": "III. ANALOG BASEBAND CIRCUIT",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ANALOG BASEBAND CIRCUIT",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "One signal channel, in Fig. 4, includes an analog channel selection filter, amplification with variable gain, and three on-chip highpass filters (HPFs), which filter out dc offsets."
+        },
+        {
+          "section_title": "ANALOG BASEBAND CIRCUIT",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "In this design, the adjustable gain is implemented with interstage transconductors A1 and A2, shown in Fig. 4."
+        },
+        {
+          "section_title": "ANALOG BASEBAND CIRCUIT",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "JUSSILA et al.: DIRECT CONVERSION RECEIVER FOR 3G WCDMA Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.7,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "BICMOS, SIGE",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "One signal channel of the analog baseband circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.43,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. A/D converter block diagram.",
+      "caption_bbox": [
+        38.1,
+        486.2,
+        162.9,
+        496.8
+      ],
+      "section_title": "III. ANALOG BASEBAND CIRCUIT",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ANALOG BASEBAND CIRCUIT",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 5."
+        },
+        {
+          "section_title": "A/D CONVERTERS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The ADCs are implemented using two 2.5-bit stages followed by a 2-bit flash stage, as indicated in the block diagram of Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "BICMOS, SIGE",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "A/D converter block diagram",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.72,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Chip microphotograph.",
+      "caption_bbox": [
+        39.6,
+        413.5,
+        143.2,
+        424.2
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "The measured performance parameters of the TABLE I SUMMARIZED PERFORMANCE OF THE RECEIVER Fig. 6."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "The microphotograph of the receiver is shown in Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -7.7,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "BICMOS, SIGE",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chip microphotograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Receiver NF as a function of the LNA quiescent current.",
+      "caption_bbox": [
+        302.6,
+        251.4,
+        512.0,
+        262.0
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "The receiver NF as a function of the LNA quiescent current is shown in Fig. 7."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "The input power IIP2 value with the high RF gain is IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 12, DECEMBER 2001 Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "type_match:lna": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "BICMOS, SIGE",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Receiver NF as a function of the LNA quiescent current",
+        "key_specs": [
+          "2 v"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 5,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

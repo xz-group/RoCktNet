@@ -1,0 +1,836 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1208464.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1208464",
+  "generated_at": "2026-07-29T22:01:05",
+  "paper_metadata": {
+    "title": "A 15-mW Fully Integrated I=Q Synthesizer for Bluetooth in 0.18-m CMOS",
+    "authors": [
+      "Domine M. W. Leenaerts",
+      "Cicero S. Vaucher",
+      "Henk Jan Bergveld",
+      "Michael Thompson",
+      "Kevin Moore"
+    ],
+    "abstract": "A low-power fully integrated synthesizer for Bluetooth applications is presented. The circuit with quadrature the feasibility of the used concepts. The synthesizer has been output signals at 2.45 GHz and 15-mW power dissipation has been optimized for low power dissipation. designed in a digital 0.18m CMOS process with 1.8-V supply The primary design requirements for a synthesizer for Bluevoltage. The only external component is a 64-MHz crystal. Meatooth can be derived from the Bluetooth system specifications. surements have been performed on packaged samples mounted These requirements are as follows. on an FR-4 board and show that the Bluetooth requirements are met. The measured phase noise is below 120 dBc Hz at 3-MHz 1) The frequency band is the 2.4-GHz ISM band, i.e., from offset, and the resulting residual frequency modulation is 7.4-kHz 2.402 to 2.48 GHz containing 78 channels with a channel rms. The tuning range consists of an analog and digital tuning spacing of 1 MHz. mechanism, resulting in more than 15% overall tuning range. 2) The minimum modulation depth leads to",
+    "keywords": [
+      "Bluetooth",
+      "CMOS",
+      "phase-locked loops (PLLs)"
+    ],
+    "doi": "10.1109/JSSC.2003.813242",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "15-mW Fully Integrated I=Q Synthesizer",
+    "technology": "CMOS",
+    "application_domain": "rf, wireless, baseband, if",
+    "sub_blocks": [
+      "inductor",
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "current mirror",
+      "LC tank / resonator",
+      "mixer",
+      "bias circuit",
+      "switch",
+      "latch"
+    ],
+    "design_purpose": "A low-power fully integrated synthesizer for Bluetooth applications is presented.",
+    "function_summary": "15-mW Fully Integrated I=Q Synthesizer: A low-power fully integrated synthesizer for Bluetooth applications is presented.",
+    "key_specs": [
+      "2.45 GHz",
+      "120 dBc",
+      "2.48 GHz",
+      "1 MHz",
+      "15%",
+      "1.8 V",
+      "0.1%",
+      "80 dBc",
+      "110 dBc",
+      "20 dBc"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE wireless communication standard Bluetooth is one of the first RF applications allowing system-on-chip (SOC) functionality. The standard operates in the 2.4-GHz ISM band and is meant for short-range communication at medium data rates. Several publications have demonstrated that large parts of the RF functionality and even the combination with the digital baseband circuitry can be integrated in ..."
+    },
+    {
+      "number": "II",
+      "title": "SYSTEM-LEVEL DESIGN",
+      "kind": "design",
+      "page": 0,
+      "text_preview": "A. Architecture There are several synthesizer architectures possible, such architecture, a fractionalarchitecture, or a as an integerFig. 1. Block diagram of the synthesizer. dual-loop architecture. The integerarchitecture is the simplest one of these three options, allowing the output frequency to change by only integer multiples of the reference frequency. architectures in particular suffer from ..."
+    },
+    {
+      "number": "III",
+      "title": "CIRCUIT DESIGN",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "A. VCO Having set the main design parameters of the synthesizer, let us first concentrate on the design of the quadrature 2.45-GHz VCO. The tank circuit of the VCO has been built up around in- ) of 10 ductors of 2.2 nH each with a measured quality factor ( Fig. 3. Simulated rms residual frequency deviation power spectral density of the LO signal. Fig. 4. Measured inductance and quality factor of t ..."
+    },
+    {
+      "number": "IV",
+      "title": "MEASUREMENT RESULTS",
+      "kind": "results",
+      "page": 4,
+      "text_preview": "The synthesizer has been realized in a six-metal-layers m CMOS technology on a 10cm substrate. 0.18m value were Metal–metal capacitor structures with a 0.5-fF used, because the process did not offer dedicated high-density capacitors [13]. A die microphotograph of the synthesizer is shown in Fig. 9. The die area is 1 mm by 1.1 mm, excluding the bond pads. The die was mounted in a standard plastic l ..."
+    },
+    {
+      "number": "V",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 6,
+      "text_preview": "A 15-mW-only fully integrated synthesizer has been presented for Bluetooth applications. The VCO generates quadrature output signals at 2.45 GHz. Placing an extra zero in the coupling path between the two VCO kernels enhanced matching. The design has been realized in a standard the m CMOS technology with six metal layers. digital 0.18Compared to existing approaches, this prototype provides a signi ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Block diagram of the synthesizer.",
+      "caption_bbox": [
+        39.6,
+        202.0,
+        176.3,
+        212.7
+      ],
+      "section_title": "II. SYSTEM-LEVEL DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "SYSTEM-LEVEL DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "The synthesizer consists of a phase/frequency detector (PFD), charge pump (CP), loop filter (LPF), a VCO, and a multimode prescaler (see Fig. 1)."
+        },
+        {
+          "section_title": "SYSTEM-LEVEL DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "The chosen filter is a second-order passive network rather than an active filter in order to reduce noise and power dissipation (see Fig. 1)."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "(Fig. 1)."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The PFD controls the charge pump (see Fig. 1); when the UP signal is low, the charge pump sources a constant current into the loop filter, and when the DOWN signal is high, it sinks a constant current from the loop filter."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.1,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "frequency synthesizer",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "The chosen filter is a second-order passive network rather than an active filter in order to reduce noise and power dissipation (see Fig. 1).",
+        "function_summary": "Block diagram of the synthesizer. The chosen filter is a second-order passive network rather than an active filter in order to reduce noise and power dissipation (see Fig. 1).",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.75,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 2,
+      "caption": "Fig. 2. Relationship of the loop filter component values to the value of the charge pump for a 20-kHz open-loop bandwidth.",
+      "caption_bbox": [
+        38.1,
+        251.2,
+        289.1,
+        270.8
+      ],
+      "section_title": "II. SYSTEM-LEVEL DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "SYSTEM-LEVEL DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Filter Component Values and Charge-Pump Current Knowing the loop filter bandwidth, the values for the filter components and for the nominal charge-pump current LEENAERTS et al.: FULLY INTEGRATED SYNTHESIZER FOR BLUETOOTH Fig. 2."
+        },
+        {
+          "section_title": "SYSTEM-LEVEL DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Fig. 2 shows that reducing results in smaller values to and , enabling on-chip implementation."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "charge pump",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Relationship of the loop filter component values to the value of the charge pump for a 20-kHz open-loop bandwidth",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Simulated rms residual frequency deviation power spectral density of the LO signal.",
+      "caption_bbox": [
+        301.1,
+        261.7,
+        552.2,
+        281.2
+      ],
+      "section_title": "II. SYSTEM-LEVEL DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "SYSTEM-LEVEL DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "An A, acceptable tradeoff is found at a charge-pump current of 8 and two capacitors of leading to a loop filter resistor of 634 k ) and 5.3 pF ( ). 34.5 pF ( The resulting residual frequency deviation power spectral density of the local oscillator (LO) signal is presented in Fig. 3."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The tank circuit of the VCO has been built up around in- ) of 10 ductors of 2.2 nH each with a measured quality factor ( Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "capacitor",
+          "resistor",
+          "LC tank / resonator"
+        ],
+        "design_purpose": "An A, acceptable tradeoff is found at a charge-pump current of 8 and two capacitors of leading to a loop filter resistor of 634 k ) and 5.3 pF ( ). 34.5 pF ( The resulting residual frequency deviation power spectral density of the local oscillator (LO) signal is presented in Fig. 3.",
+        "function_summary": "Simulated rms residual frequency deviation power spectral density of the LO signal. An A, acceptable tradeoff is found at a charge-pump current of 8 and two capacitors of leading to a loop filter resistor of 634 k ) and 5.3 pF ( ). 34.5 pF ( The resulting residual frequency deviation power spectral density of the ...",
+        "key_specs": [
+          "5.3 pF",
+          "34.5 pF",
+          "2.2 nH"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Measured inductance and quality factor of the inductor as function of the frequency.",
+      "caption_bbox": [
+        301.1,
+        485.5,
+        552.2,
+        505.1
+      ],
+      "section_title": "II. SYSTEM-LEVEL DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 4."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Measured inductance and quality factor of the inductor as function of the frequency. at 2.45 GHz and a resonance frequency of 9 GHz (see Fig. 4)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "on-chip inductor",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "inductor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Measured inductance and quality factor of the inductor as function of the frequency",
+        "key_specs": [
+          "2.45 GHz",
+          "9 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Block diagram of a quadrature VCO and schematic of the oscillator core.",
+      "caption_bbox": [
+        39.6,
+        228.9,
+        290.6,
+        248.5
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 5."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "A quadrature VCO can be obtained by crosscoupling two identical oscillator cores, resulting in a configuration as shown in Fig. 5 [10]."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Each oscillator core is exactly 90 has been designed as a fully differential basic negativeLC oscillator (see Fig. 5)."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The implementa- , resulting in a tion of Fig. 5 results in a phase shift close to 80 15-dB degradation of the carrier-to-noise ratio."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 8.6,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+block diagram": 2.0,
+        "+core": 0.5,
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of a quadrature VCO and schematic of the oscillator core",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 1.0,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Coupling of I and Q path by means of an additional phase shift. A similar technique is needed for VCO2.",
+      "caption_bbox": [
+        302.6,
+        178.7,
+        553.7,
+        198.3
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Inserting a zero in the transfer function of the coupling circuit brings the resonator phase shift to the optimal condition of zero phase shift. results in a A common source amplifier with a capacitor between the gate voltage and the drain current phase shift of 90 (Fig. 6)."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 7, JULY 2003 Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "capacitor",
+          "LC tank / resonator"
+        ],
+        "design_purpose": "",
+        "function_summary": "Coupling of I and Q path by means of an additional phase shift. A similar technique is needed for VCO2",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. 32 MOS capacitors realize the digital tuning concept.",
+      "caption_bbox": [
+        302.6,
+        369.8,
+        502.0,
+        380.5
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 7. 32 MOS capacitors realize the digital tuning concept."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "A schematic drawing is provided in Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "15-mW Fully Integrated I=Q Synthesizer",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "32 MOS capacitors realize the digital tuning concept",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. (a) Divide-by-2/3 block implementation. (b) Combined AND–LATCH unit.",
+      "caption_bbox": [
+        38.1,
+        261.5,
+        301.3,
+        272.1
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Multimodulus Prescaler The multimodulus prescaler block scales the 2.4-GHz VCO output signal down to the comparison frequency of 500 kHz LEENAERTS et al.: FULLY INTEGRATED SYNTHESIZER FOR BLUETOOTH (a) Fig. 8."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The logic implementation of a divider cell as well as the schematic implementation of a combined AND and LATCH unit are shown in Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "latch",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "latch"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) Divide-by-2/3 block implementation. (b) Combined AND–LATCH unit",
+        "key_specs": [
+          "500 kHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. Die microphotograph of the synthesizer. The loop filter is shown on the left-hand side, and the prescaler and PFD are located at the bottom.",
+      "caption_bbox": [
+        38.1,
+        462.4,
+        289.2,
+        481.9
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 9."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "A die microphotograph of the synthesizer is shown in Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Die microphotograph of the synthesizer. The loop filter is shown on the left-hand side, and the prescaler and PFD are located at the bottom",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10. Measured analog tuning range as a function of the digital code word. The shaded area is the Bluetooth frequency band.",
+      "caption_bbox": [
+        301.1,
+        450.2,
+        552.2,
+        469.8
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "As mentioned, the charge-pump current (b) Fig. 10."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The results can be found in Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-tuning range": -2.5,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "15-mW Fully Integrated I=Q Synthesizer",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured analog tuning range as a function of the digital code word. The shaded area is the Bluetooth frequency band",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 5,
+      "caption": "Fig. 11. Measured phase noise of the in-phase output of the VCO.",
+      "caption_bbox": [
+        39.6,
+        354.5,
+        256.1,
+        365.1
+      ],
+      "section_title": "IV. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The maximum frequency to which the synthesizer can be locked is 2.6635 GHz (division number 5327), with the digital TABLE I SUMMARY OF SYNTHESIZER PERFORMANCE Fig. 11."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 11 shows the phase noise for the in-phase output of the locked VCO, meeting the Bluetooth requirements."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-phase noise": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured phase noise of the in-phase output of the VCO",
+        "key_specs": [
+          "2.6635 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 5,
+      "caption": "Fig. 12. Measured phase noise at 3-MHz offset as a function of the Bluetooth channel and VCO digital tuning.",
+      "caption_bbox": [
+        39.6,
+        578.5,
+        290.6,
+        598.1
+      ],
+      "section_title": "IV. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 12."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 12 shows that the phase noise requirement is met for all 78 Bluetooth channels and any digital settings of the VCO."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-phase noise": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured phase noise at 3-MHz offset as a function of the Bluetooth channel and VCO digital tuning",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 5,
+      "caption": "Fig. 13. Measured rms residual frequency deviation power spectral density.",
+      "caption_bbox": [
+        302.6,
+        356.5,
+        548.0,
+        367.2
+      ],
+      "section_title": "IV. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 7, JULY 2003 Fig. 13."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "In order to calculate the residual frequency deviation, the measured residual frequency deviation density function (see LEENAERTS et al.: FULLY INTEGRATED SYNTHESIZER FOR BLUETOOTH Fig. 13) has to be squared and integrated, and the root has to be extracted from the outcome."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "frequency synthesizer",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "In order to calculate the residual frequency deviation, the measured residual frequency deviation density function (see LEENAERTS et al.: FULLY INTEGRATED SYNTHESIZER FOR BLUETOOTH Fig. 13) has to be squared and integrated, and the root has to be extracted from the outcome.",
+        "function_summary": "Measured rms residual frequency deviation power spectral density. In order to calculate the residual frequency deviation, the measured residual frequency deviation density function (see LEENAERTS et al.: FULLY INTEGRATED SYNTHESIZER FOR BLUETOOTH Fig. 13) has to be squared and integrated, and the root has to be ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 5,
+      "caption": "Fig. 14. Measured reference breakthrough.",
+      "caption_bbox": [
+        302.6,
+        573.5,
+        445.3,
+        584.2
+      ],
+      "section_title": "IV. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 14."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The measured reference 30 dBc (Fig. 14) and spurious breakthrough at 500 kHz is is better than specified."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -5.2,
+      "relevance_breakdown": {
+        "-reference": -1.0,
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "15-mW Fully Integrated I=Q Synthesizer",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured reference breakthrough",
+        "key_specs": [
+          "30 dBc",
+          "500 kHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 5,
+  "warnings": []
+}

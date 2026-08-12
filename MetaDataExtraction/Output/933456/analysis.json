@@ -1,0 +1,905 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\933456.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\933456",
+  "generated_at": "2026-07-29T22:03:27",
+  "paper_metadata": {
+    "title": "Low-Power Low-Phase-Noise Differentially Tuned Quadrature VCO Design in Standard CMOS",
+    "authors": [
+      "Marc Tiebout"
+    ],
+    "abstract": "This paper describes the design and optimization of voltage controlled oscillators with quadrature outputs. Systematic design of fully integrated LC-VCOs with a high inductance tank leads to a cross-coupled double core LC-VCO as the optimal solution in terms of power consumption. Futhermore, a novel fully differential frequency tuning concept is introduced to ease high integration. The concepts are verified with a 0.25m standard Fig. 1. Basic LC-VCO. CMOS fully integrated quadrature voltage-controlled oscillator (VCO) for zeroor low-IF DCS1800, DECT, or GSM receivers. At 2.5-V power supply voltage and a total power dissipation of the novel differential tuning. Section VI presents the prototype 20 mW, the quadrature VCO features a worst-case phase noise of design and measurements, followed by the conclusion in Sec143 dBc/Hz at 3-MHz frequency offset over the tuning range. tion VII. The oscillator is tuned from 1.71 to 1.99 GHz through a differential nMOS/pMOS varactor input.",
+    "keywords": [],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2001
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Low-Power Low-Phase-Noise Differentially Tuned Quadrature VCO Design in Standard CMOS",
+    "technology": "CMOS, BICMOS, GAAS",
+    "application_domain": "rf, wireless, if",
+    "sub_blocks": [
+      "varactor",
+      "inductor",
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "cross-coupled pair",
+      "current source",
+      "LC tank / resonator",
+      "mixer",
+      "output buffer",
+      "bias circuit"
+    ],
+    "design_purpose": "",
+    "function_summary": "Low-Power Low-Phase-Noise Differentially Tuned Quadrature VCO Design in Standard CMOS: This paper describes the design and optimization of voltage controlled oscillators with quadrature outputs.",
+    "key_specs": [
+      "20 mW",
+      "143 dBc/Hz",
+      "1.99 GHz",
+      "10 dB",
+      "2 GHz",
+      "2 V",
+      "2.5 V",
+      "3 w",
+      "1 ph",
+      "1.8 GHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "M OBILES in telecommunications systems such as DCS1800 or GSM900 offer from generation to generation higher performances and longer standby times at a lower cost. Multimode multiband capability, supporting, e.g., DCS1800, GSM900 and DECT, and in the near future UMTS, becomes very important. Receiver architectures like zero-IF or low-IF offer flexibility and low cost through high integration. The t ..."
+    },
+    {
+      "number": "II",
+      "title": "LC-VCO DESIGN",
+      "kind": "design",
+      "page": 0,
+      "text_preview": "A. LC-VCO Basics A general LC-VCO can be symbolized as in Fig. 1. The osand a capacitor , building cillator consists of an inductor , compena parallel resonance tank, and an active element in Fig. 1) and the losses sating the losses of the inductor ( in Fig. 1). As the capacitance is proporof the capacitor ( tional to a tuning input voltage, the circuit results in a VCO with angular center frequen ..."
+    },
+    {
+      "number": "III",
+      "title": "FULLY INTEGRATED DESIGN",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "A. Optimized LC-Tank From the previous section, it is clear that an LC-tank with and ratio is needed. The best available inmaximal ductors are external inductors. These external components feas, but their use is limited by the bondwires, ture very high the package and pad parasitics, and the electrostatic discharge (ESD) protection networks. Especially when aiming at highly integrated zero-IF rece ..."
+    },
+    {
+      "number": "IV",
+      "title": "QUADRATURE GENERATION",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "Three design options are available to generate quadrature signals. 1) Combination of VCO, polyphase-filter (or R-C C-R filter), and output buffers (or limiters) as used in, e.g., [16], [17]. 2) VCO at double frequency followed by master–slave flipflops. 3) Two cross-coupled VCOs as proposed in [18]. The first option needs four output buffers or limiters consuming a lot of power. If buffers are ins ..."
+    },
+    {
+      "number": "V",
+      "title": "MOS VARACTOR TUNING",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "The nMOS varactors have a very steep capacitance over voltage characteristic, as shown in Fig. 7. Through gate folding, at 2 GHz over gate and source/drain a very high measured is much higher voltage was obtained (Fig. 8). As varactor , the MOS varactors can be considered as ideal than inductor Fig. 7. Measured nMOS varactor CV characteristic. Fig. 8. Measured nMOS varactor CV & Q@2 GHz for V = 1: ..."
+    },
+    {
+      "number": "VI",
+      "title": "PROTOTYPE DESIGN AND MEASUREMENTS",
+      "kind": "design",
+      "page": 4,
+      "text_preview": "As for the 0.25m CMOS process available for this design, the cross-coupled quadrature VCO definitely outperforms the other quadrature solutions in terms of power consumption. It was combined with the differential tuning concept leading to the final schematic of the prototype IC, presented in Fig. 11. The cm low-ohmic substrate nonepi standard CMOS process 1.5offers four thin aluminum metal layers. ..."
+    },
+    {
+      "number": "VII",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 6,
+      "text_preview": "The design problem to minimize the overall power consumption of a VCO with quadrature outputs is solved using two crosscoupled fully integrated high-inductance VCO cores. A protom type quadrature LC-VCO for 1.8 GHz was designed in 0.25standard digital CMOS. A differential tuning range of 280 MHz was obtained through the use of nMOS and pMOS varactors. 143 dBc/Hz at 3 MHz. Measured worst-case phase ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Basic LC-VCO.",
+      "caption_bbox": [
+        302.6,
+        237.5,
+        382.8,
+        248.2
+      ],
+      "section_title": "",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Publisher Item Identifier S 0018-9200(01)04523-1. 0018–9200/01$10.00 © 2001 IEEE Fig. 1."
+        },
+        {
+          "section_title": "LC-VCO DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "LC-VCO Basics A general LC-VCO can be symbolized as in Fig. 1."
+        },
+        {
+          "section_title": "LC-VCO DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "The osand a capacitor , building cillator consists of an inductor , compena parallel resonance tank, and an active element in Fig. 1) and the losses sating the losses of the inductor ( in Fig. 1)."
+        },
+        {
+          "section_title": "LC-VCO DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "As the capacitance is proporof the capacitor ( tional to a tuning input voltage, the circuit results in a VCO with angular center frequency (1) in Fig. 1 not only consists of a variable capacThe capacitor itor to tune the oscillator, but it also includes the parasitic or fixed capacitances of the inductor, the active elements, and the load (output driver, mixer, prescaler, etc.)."
+        },
+        {
+          "section_title": "LC-VCO DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Measurements (also simulations) on several fully integrated LC-VCOs, using the topology of Fig. 1, show a decreasing power consumption when tuned at higher frequencies, as predicted by (3)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, BICMOS, GAAS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [
+          "inductor",
+          "capacitor",
+          "LC tank / resonator",
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Basic LC-VCO",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.12,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Basic LC resonator tank.",
+      "caption_bbox": [
+        38.1,
+        108.4,
+        146.6,
+        119.1
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "LC-VCO DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Design for Low Power Recalculating capacitor and inductor losses to one single resistor, the LC-tank resonator simplifies to Fig. 2."
+        },
+        {
+          "section_title": "LC-VCO DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Using the energy conservation theorem, the maximal energy stored in the inductor must equal the maximal energy stored in the capacitor (2) TIEBOUT: QUADRATURE VCO DESIGN IN STANDARD CMOS Fig. 2."
+        },
+        {
+          "section_title": "LC-VCO DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Keeping in mind that at for the LC-tank of Fig. 2 can easily be simplified to (7) or with (1) (8) To provide a less mathematic insight, Fig. 3 shows the amplitude and phase plot for an LC-tank, keeping constant resonance ratios."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.7,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, BICMOS, GAAS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [
+          "inductor",
+          "capacitor",
+          "resistor",
+          "LC tank / resonator"
+        ],
+        "design_purpose": "",
+        "function_summary": "Basic LC resonator tank",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. LC-tank bode plot.",
+      "caption_bbox": [
+        301.1,
+        430.7,
+        390.7,
+        441.3
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "LC-VCO DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "The phase stability quality and comparison of factor is defined as (6) Fig. 3."
+        },
+        {
+          "section_title": "LC-VCO DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Keeping in mind that at for the LC-tank of Fig. 2 can easily be simplified to (7) or with (1) (8) To provide a less mathematic insight, Fig. 3 shows the amplitude and phase plot for an LC-tank, keeping constant resonance ratios."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Low-Power Low-Phase-Noise Differentially Tuned Quadrature VCO Design in Standard CMOS",
+        "technology": "CMOS, BICMOS, GAAS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [
+          "LC tank / resonator"
+        ],
+        "design_purpose": "",
+        "function_summary": "LC-tank bode plot",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Coil layout.",
+      "caption_bbox": [
+        302.6,
+        265.2,
+        369.5,
+        275.8
+      ],
+      "section_title": "III. FULLY INTEGRATED DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "FULLY INTEGRATED DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "As increase the inductance, leading to a higher the differential coil is used in a balanced configuration, IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 7, JULY 2001 Fig. 4."
+        },
+        {
+          "section_title": "FULLY INTEGRATED DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The differential coil is further optimized through a special coil layout as shown in Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "-layout": -2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "Low-Power Low-Phase-Noise Differentially Tuned Quadrature VCO Design in Standard CMOS",
+        "technology": "CMOS, BICMOS, GAAS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Coil layout",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Lumped circuit model for the coil.",
+      "caption_bbox": [
+        302.6,
+        514.4,
+        442.3,
+        525.1
+      ],
+      "section_title": "III. FULLY INTEGRATED DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "FULLY INTEGRATED DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 5."
+        },
+        {
+          "section_title": "FULLY INTEGRATED DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Lumped circuit model for the coil. the middle capacitance of the lumped model (Fig. 5) is cancelled out."
+        },
+        {
+          "section_title": "FULLY INTEGRATED DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The lumped model characterized using extracted from the measurements is presented in Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.2,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-model": -1.5,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "Low-Power Low-Phase-Noise Differentially Tuned Quadrature VCO Design in Standard CMOS",
+        "technology": "CMOS, BICMOS, GAAS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "The lumped model characterized using extracted from the measurements is presented in Fig. 5.",
+        "function_summary": "Lumped circuit model for the coil. The lumped model characterized using extracted from the measurements is presented in Fig. 5.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.14,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Current reusing VCO topology.",
+      "caption_bbox": [
+        38.1,
+        312.2,
+        168.0,
+        322.8
+      ],
+      "section_title": "IV. QUADRATURE GENERATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FULLY INTEGRATED DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "To avoid two silicon runs, the coil from TIEBOUT: QUADRATURE VCO DESIGN IN STANDARD CMOS Fig. 6."
+        },
+        {
+          "section_title": "FULLY INTEGRATED DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Furthermore, the current source was omitted to maximize the signal swing (Fig. 6)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+topology": 2.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, BICMOS, GAAS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [
+          "current source"
+        ],
+        "design_purpose": "Furthermore, the current source was omitted to maximize the signal swing (Fig. 6).",
+        "function_summary": "Current reusing VCO topology. Furthermore, the current source was omitted to maximize the signal swing (Fig. 6).",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. Measured nMOS varactor CV characteristic.",
+      "caption_bbox": [
+        39.6,
+        244.3,
+        211.1,
+        254.9
+      ],
+      "section_title": "V. MOS VARACTOR TUNING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MOS VARACTOR TUNING",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The nMOS varactors have a very steep capacitance over voltage characteristic, as shown in Fig. 7."
+        },
+        {
+          "section_title": "MOS VARACTOR TUNING",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "As varactor , the MOS varactors can be considered as ideal than inductor Fig. 7."
+        },
+        {
+          "section_title": "MOS VARACTOR TUNING",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The frequency is indirectly set through the of the MOS transistors (Fig. 7 or 11). backgate voltage As shown in Fig. 7, the steep curve can be shifted through the on the backgates (labels as in Fig. 11)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.8,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "on-chip inductor",
+        "technology": "CMOS, BICMOS, GAAS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [
+          "varactor",
+          "inductor",
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Measured nMOS varactor CV characteristic",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Measured nMOS varactor CV & Q@2 GHz for V = 1:2 V.",
+      "caption_bbox": [
+        39.6,
+        467.9,
+        272.5,
+        478.6
+      ],
+      "section_title": "V. MOS VARACTOR TUNING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MOS VARACTOR TUNING",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Through gate folding, at 2 GHz over gate and source/drain a very high measured is much higher voltage was obtained (Fig. 8)."
+        },
+        {
+          "section_title": "MOS VARACTOR TUNING",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Low-Power Low-Phase-Noise Differentially Tuned Quadrature VCO Design in Standard CMOS",
+        "technology": "CMOS, BICMOS, GAAS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [
+          "varactor",
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Measured nMOS varactor CV & Q@2 GHz for V = 1:2 V",
+        "key_specs": [
+          "2 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. Frequency tuning for different oscillator amplitudes.",
+      "caption_bbox": [
+        302.6,
+        260.9,
+        498.8,
+        271.6
+      ],
+      "section_title": "V. MOS VARACTOR TUNING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MOS VARACTOR TUNING",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The resulting capacitance varies in a range defined by the oscillation amplilinearly with tude, a picture of a typical resulting frequency characteristic is given in Fig. 9."
+        },
+        {
+          "section_title": "MOS VARACTOR TUNING",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "VCO gain ( VCO gain linear region depend on the signal swing of the of the varactor (Fig. 9). oscillator and the ratio is obtained in strong inversion mode and depends on of the MOS gates; it is identical for the oxide thickness ."
+        },
+        {
+          "section_title": "MOS VARACTOR TUNING",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Varactor nMOS and pMOS, - - IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 7, JULY 2001 Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, BICMOS, GAAS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [
+          "varactor",
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Frequency tuning for different oscillator amplitudes",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10. Measured pMOS varactor characteristic.",
+      "caption_bbox": [
+        302.6,
+        485.8,
+        465.0,
+        496.4
+      ],
+      "section_title": "V. MOS VARACTOR TUNING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MOS VARACTOR TUNING",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Also, pMOS transistors can be used as varactors , [MHz/V]) and (measured data in Fig. 10)."
+        },
+        {
+          "section_title": "MOS VARACTOR TUNING",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Low-Power Low-Phase-Noise Differentially Tuned Quadrature VCO Design in Standard CMOS",
+        "technology": "CMOS, BICMOS, GAAS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [
+          "varactor",
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Measured pMOS varactor characteristic",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 5,
+      "caption": "Fig. 11. Quadrature VCO schematic.",
+      "caption_bbox": [
+        38.1,
+        235.0,
+        162.0,
+        245.7
+      ],
+      "section_title": "VI. PROTOTYPE DESIGN AND MEASUREMENTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "MOS VARACTOR TUNING",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The frequency is indirectly set through the of the MOS transistors (Fig. 7 or 11). backgate voltage As shown in Fig. 7, the steep curve can be shifted through the on the backgates (labels as in Fig. 11)."
+        },
+        {
+          "section_title": "PROTOTYPE DESIGN AND MEASUREMENTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "It was combined with the differential tuning concept leading to the final schematic of the prototype IC, presented in Fig. 11."
+        },
+        {
+          "section_title": "PROTOTYPE DESIGN AND MEASUREMENTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "In the integrated inductor, the three top TIEBOUT: QUADRATURE VCO DESIGN IN STANDARD CMOS Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.7,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, BICMOS, GAAS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [
+          "inductor",
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Quadrature VCO schematic",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.93,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 5,
+      "caption": "Fig. 12. Chip photo of VCO.",
+      "caption_bbox": [
+        38.1,
+        453.5,
+        137.0,
+        464.1
+      ],
+      "section_title": "VI. PROTOTYPE DESIGN AND MEASUREMENTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "PROTOTYPE DESIGN AND MEASUREMENTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 12."
+        },
+        {
+          "section_title": "PROTOTYPE DESIGN AND MEASUREMENTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The chip photo in Fig. 12 shows the perfectly symmetrical layout. m by 700 m."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-chip photo": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, BICMOS, GAAS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chip photo of VCO",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 5,
+      "caption": "Fig. 13. VCO tuning range.",
+      "caption_bbox": [
+        301.1,
+        235.4,
+        395.5,
+        246.0
+      ],
+      "section_title": "VI. PROTOTYPE DESIGN AND MEASUREMENTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "PROTOTYPE DESIGN AND MEASUREMENTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Testchip die size is 1500 The 3-D tuning characteristic of the VCO is presented in Figs. 13 and 14."
+        },
+        {
+          "section_title": "PROTOTYPE DESIGN AND MEASUREMENTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "This number is mainly due to limited accuracy Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "-tuning range": -2.5,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, BICMOS, GAAS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "Testchip die size is 1500 The 3-D tuning characteristic of the VCO is presented in Figs. 13 and 14.",
+        "function_summary": "VCO tuning range. Testchip die size is 1500 The 3-D tuning characteristic of the VCO is presented in Figs. 13 and 14.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 5,
+      "caption": "Fig. 14. Zoomed VCO tuning range.",
+      "caption_bbox": [
+        301.1,
+        453.3,
+        424.1,
+        463.9
+      ],
+      "section_title": "VI. PROTOTYPE DESIGN AND MEASUREMENTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "PROTOTYPE DESIGN AND MEASUREMENTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.6,
+      "relevance_breakdown": {
+        "-tuning range": -2.5,
+        "section:design": 1.5,
+        "references": 0.4
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, BICMOS, GAAS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Zoomed VCO tuning range",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 5,
+      "caption": "Fig. 15. Measured phase noise over frequency tuning at 2.5-V power supply, 7.8-mA core current. Dots indicate GSM requirements.",
+      "caption_bbox": [
+        301.1,
+        684.5,
+        552.1,
+        704.1
+      ],
+      "section_title": "VI. PROTOTYPE DESIGN AND MEASUREMENTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "PROTOTYPE DESIGN AND MEASUREMENTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Phase noise was measured using Europtest PN9000 equipment (delay line method); the result is presented in Fig. 15."
+        },
+        {
+          "section_title": "PROTOTYPE DESIGN AND MEASUREMENTS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.7,
+      "relevance_breakdown": {
+        "+core": 0.5,
+        "-measured": -3.0,
+        "-phase noise": -2.5,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "delay line / delay element",
+        "technology": "CMOS, BICMOS, GAAS",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "Phase noise was measured using Europtest PN9000 equipment (delay line method); the result is presented in Fig. 15.",
+        "function_summary": "Measured phase noise over frequency tuning at 2.5-V power supply, 7.8-mA core current. Dots indicate GSM requirements. Phase noise was measured using Europtest PN9000 equipment (delay line method); the result is presented in Fig. 15.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 11,
+  "warnings": []
+}

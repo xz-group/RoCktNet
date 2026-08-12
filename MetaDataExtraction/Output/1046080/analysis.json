@@ -1,0 +1,949 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1046080.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1046080",
+  "generated_at": "2026-07-29T22:00:27",
+  "paper_metadata": {
+    "title": "Methodology and Experimental Verification for Substrate Noise Reduction in CMOS Mixed-Signal ICs With Synchronous Digital Circuits",
+    "authors": [
+      "Mustafa Badaroglu",
+      "Marc van Heijningen",
+      "Vincent Gravot",
+      "John Compiet",
+      "Stéphane Donnay",
+      "Georges G. E. Gielen",
+      "Hugo J. De Man"
+    ],
+    "abstract": "This paper describes substrate noise reduction techniques for synchronous CMOS circuits. Low-noise digital design such as low-voltage devices [1], current-mode logic [2], selftechniques have been implemented and measured on a mixedtimed logic [3], and CMOS gates with guard wiring, decousignal chip, fabricated in a 0.35m CMOS process on an EPI-type pling, and current limiter [4]. Speed degradation and lower noise substrate with 10cm EPI resistivity and 4m EPI layer thickmargins are the drawbacks for low-voltage devices. Increase of ness. The test chip contains one reference design and two digital static power consumption is a major drawback of current-mode low-noise designs with the same basic architecture. Measurements show more than a factor of 2 on average in rms noise reduction with logic, not tolerable in large digital systems. The performance penalties of 3% in area and 4% in power for the low-noise design of self-timed logic is highly dependent on the delay and, thereemploying a supply-current waveform-shaping technique based on fore, the design of complex systems is difficult with self-timed a clock tree with latencies. The second low-noise design employing logic. The CMOS gate cell with decoupling and guard wiring separate substrate bias for both nand p-wells, dual-supply, and suffers from an important area increase. Previous publications on-chip decoupling achieves more than a factor of 2 reduction in rms noise, with, however, a 70% increase in area, but with a 5% usually present measurement results at a single clock frequency decrease in power consumption. [4]. In reality, there will be multiple resonant locations on the",
+    "keywords": [
+      "Crosstalk",
+      "integrated circuit modeling",
+      "low-noise"
+    ],
+    "doi": "10.1109/JSSC.2002.803938",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2002
+  },
+  "paper_circuit_context": {
+    "circuit_type": "integrated circuit / system",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "current source",
+      "output buffer",
+      "bias circuit",
+      "switch",
+      "transistor/MOSFET",
+      "LC tank / resonator"
+    ],
+    "design_purpose": "",
+    "function_summary": "integrated circuit / system: This paper describes substrate noise reduction techniques for synchronous CMOS circuits.",
+    "key_specs": [
+      "3%",
+      "4%",
+      "70%",
+      "5%",
+      "4 w",
+      "30 V",
+      "5 ns",
+      "200 ps",
+      "1 ns",
+      "1 GHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "S UBSTRATE noise degrades the performance of analog circuits integrated on the same substrate with switching digital circuits. In these mixed-signal ICs, the low cost and lower static power consumption of CMOS logic are overshadowed by the high substrate noise generation due to the large rail-to-rail voltages and the sharp current spikes during switching. The substrate noise reduction research has ..."
+    },
+    {
+      "number": "II",
+      "title": "CHIP-LEVEL SUBSTRATE MODEL FOR SUBSTRATE",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "NOISE GENERATION In large digital circuits, high peaks and fast slew rates noise) in the on the supply current create ringing ( supply network due to the damped LC tank, formed by the on-chip capacitance between the positive and negative digital power supplies (VDD and VSS) and the package inductance (a) Fig. 1. An inverter in a 0.35-m CMOS on an EPI-type substrate. (a) SPICE model. (b) Substrate  ..."
+    },
+    {
+      "number": "III",
+      "title": "SUBSTRATE NOISE REDUCTION TECHNIQUES",
+      "kind": "proposed",
+      "page": 1,
+      "text_preview": "For the sake of discussing the low-noise design techniques in this section, we will derive an equivalent network (Fig. 3) of the macro model in Fig. 1. It consists of a current source , modeling the supply current and a parallel RLC cir- ), modeling the transfer function of the cuit ( supply current to the VSS node, which is equivalent to the substrate node for large digital circuits. In large dig ..."
+    },
+    {
+      "number": "IV",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 5,
+      "text_preview": "A. Experimental Digital ASIC With Embedded Noise Sensors The microphotograph of the test chip is shown in Fig. 7. The test chip contains one reference design (REF) and two digital low-noise designs (LN1 and LN2) with the same basic architecture and functionality, shown in Fig. 8. LN1 employs an optimized clock tree to make the supply current flatter and LN2 employs a separate substrate bias, dual  ..."
+    },
+    {
+      "number": "V",
+      "title": "CONCLUSIONS",
+      "kind": "conclusion",
+      "page": 10,
+      "text_preview": "Digital substrate noise reduction techniques focusing on the supply current and its transfer function to the substrate are very effective, as coupling from the ringing of the supply into the substrate is dominant. A supply current shaping technique using clock latencies has been shown to be highly effective in small to medium scale circuits (up to 1 M gates) if timing constraints allow shaping of  ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. An inverter in a 0.35-m CMOS on an EPI-type substrate. (a) SPICE model. (b) Substrate macro model.",
+      "caption_bbox": [
+        39.6,
+        274.1,
+        404.3,
+        285.1
+      ],
+      "section_title": "II. CHIP-LEVEL SUBSTRATE MODEL FOR SUBSTRATE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CHIP-LEVEL SUBSTRATE MODEL FOR SUBSTRATE",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "NOISE GENERATION In large digital circuits, high peaks and fast slew rates noise) in the on the supply current create ringing ( supply network due to the damped LC tank, formed by the on-chip capacitance between the positive and negative digital power supplies (VDD and VSS) and the package inductance (a) Fig. 1."
+        },
+        {
+          "section_title": "CHIP-LEVEL SUBSTRATE MODEL FOR SUBSTRATE",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 1(a) shows the SPICE model and Fig. 1(b) the corresponding substrate macro model used in our high-level m CMOS simulation of an inverter implemented in a 0.35cm, 4m EPI) substrate."
+        },
+        {
+          "section_title": "SUBSTRATE NOISE REDUCTION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "For the sake of discussing the low-noise design techniques in this section, we will derive an equivalent network (Fig. 3) of the macro model in Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.3,
+      "relevance_breakdown": {
+        "-model": -1.5,
+        "references": 1.2
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "integrated circuit / system",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "LC tank / resonator"
+        ],
+        "design_purpose": "",
+        "function_summary": "An inverter in a 0.35-m CMOS on an EPI-type substrate. (a) SPICE model. (b) Substrate macro model",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Chip-level substrate model network.",
+      "caption_bbox": [
+        302.6,
+        481.5,
+        447.6,
+        492.1
+      ],
+      "section_title": "II. CHIP-LEVEL SUBSTRATE MODEL FOR SUBSTRATE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CHIP-LEVEL SUBSTRATE MODEL FOR SUBSTRATE",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The supply line inductance and its and respectively. series resistance are represented by Additional on-chip decoupling capacitance and its series and , respectively. damping resistance are represented by To simulate all these effects for a large system, we construct a chip-level substrate network using substrate macro models for every logic cell as shown in Fig. 2."
+        },
+        {
+          "section_title": "CHIP-LEVEL SUBSTRATE MODEL FOR SUBSTRATE",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "In low-ohmic EPI substrates the IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 11, NOVEMBER 2002 (b) Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-model": -1.5,
+        "references": 0.8
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "integrated circuit / system",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chip-level substrate model network",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Parallel RLC equivalent network.",
+      "caption_bbox": [
+        38.1,
+        127.3,
+        173.3,
+        137.9
+      ],
+      "section_title": "III. SUBSTRATE NOISE REDUCTION TECHNIQUES",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "SUBSTRATE NOISE REDUCTION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "For the sake of discussing the low-noise design techniques in this section, we will derive an equivalent network (Fig. 3) of the macro model in Fig. 1."
+        },
+        {
+          "section_title": "SUBSTRATE NOISE REDUCTION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "For example, a minimum-size twoBADAROGLU et al.: SUBSTRATE NOISE REDUCTION IN CMOS MIXED-SIGNAL ICs Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "-equivalent": -2.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "integrated circuit / system",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Parallel RLC equivalent network",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Options to reduce the generated substrate noise.",
+      "caption_bbox": [
+        301.1,
+        298.4,
+        483.2,
+        309.0
+      ],
+      "section_title": "III. SUBSTRATE NOISE REDUCTION TECHNIQUES",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "SUBSTRATE NOISE REDUCTION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "We will derive the substrate noise as less than 10 m and as illustrated in Fig. 4."
+        },
+        {
+          "section_title": "SUBSTRATE NOISE REDUCTION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The element values of this parallel RLC network are given as (1) ) and the damping factor ( ) of The resonance frequency ( are given as follows: (2) Based on this model, one has the following options to reduce the generated substrate noise (see Fig. 4): ) (e.g., by flattening the • reducing the supply noise ( supply current or reducing the supply voltage): this will be discussed in Section III-A; • changing the transfer function of the supply current source ) (e.g., by increasing the decouto the substrate node ( pling to reduce the effect of switching capacitance, by increasing the damping of the oscillations, or by employing a dedicated substrate bias to block the noisy supply currents from going into the substrate): this will be discussed in Section III-B."
+        },
+        {
+          "section_title": "SUBSTRATE NOISE REDUCTION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Supply current waveform shaping is a noise reduction technique based on avoiding large current peaks on the supply lines, e.g., by spreading (otherwise simultaneous) switching events in time or reducing the supply Fig. 4."
+        },
+        {
+          "section_title": "SUBSTRATE NOISE REDUCTION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Reducing the total spectral power of the supply current will also reduce the generated substrate noise as the rms value of the substrate noise is proportional to the integral of the power spectrum, resulting from the multiplication of the supply current spectrum and the supply current transfer function to the substrate (see Fig. 4)."
+        },
+        {
+          "section_title": "SUBSTRATE NOISE REDUCTION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "For synchronous CMOS circuits, the total supply current in the time domain can be approximated by a triangular waveform , and are the peak current, as shown in Fig. 4 where rise time, and fall time, respectively."
+        },
+        {
+          "section_title": "SUBSTRATE NOISE REDUCTION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The Fourier analysis of the supply current in Fig. 4 gives (3) The spectrum consists of an envelope term, given by , multiplied by a term oscillating between 0 and 1. reduces the substrate noise linearly."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.0,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "integrated circuit / system",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "current source"
+        ],
+        "design_purpose": "The element values of this parallel RLC network are given as (1) ) and the damping factor ( ) of The resonance frequency ( are given as follows: (2) Based on this model, one has the following options to reduce the generated substrate noise (see Fig. 4): ) (e.g., by flattening the • reducing the supply noise ( supply ...",
+        "function_summary": "Options to reduce the generated substrate noise. The element values of this parallel RLC network are given as (1) ) and the damping factor ( ) of The resonance frequency ( are given as follows: (2) Based on this model, one has the following options to reduce the generated substrate noise (see Fig. 4): ) (e.g., by ...",
+        "key_specs": [
+          "4 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.5,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 4,
+      "caption": "Fig. 5. transients and (d) the corresponding frequency spectra.",
+      "caption_bbox": [
+        38.1,
+        382.4,
+        215.0,
+        402.0
+      ],
+      "section_title": "III. SUBSTRATE NOISE REDUCTION TECHNIQUES",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "SUBSTRATE NOISE REDUCTION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "As a result the frequency spectrum of the supply current is modified as shown in Fig. 5(b): 1) the total spectral power is reduced and 2) the corner frequency is moved to lower frequencies."
+        },
+        {
+          "section_title": "SUBSTRATE NOISE REDUCTION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 5(a) shows the transients for supply currents with different amplitudes and slopes."
+        },
+        {
+          "section_title": "SUBSTRATE NOISE REDUCTION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "We gradually decrease the supply current peak from 50 to 10 mA and increase the rise/fall time from 200 ps to 1 ns, keeping the energy in the time domain [Fig. 5(a)], or equivalently, the dc component in the frequency spectrum [Fig. 5(b)], constant."
+        },
+        {
+          "section_title": "SUBSTRATE NOISE REDUCTION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Next, we apply the supply currents in Fig. 5(a) to a circuit having an equivalent area of 1000 minimum-size two-input NAND gates, m CMOS process on an which are implemented in a 0.35supply line paraEPI-type substrate and with 1-nH and 0.2sitics."
+        },
+        {
+          "section_title": "SUBSTRATE NOISE REDUCTION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The timedomain transients and the corresponding frequency spectra of the substrate noise are shown in Fig. 5(c) and (d), respectively."
+        },
+        {
+          "section_title": "SUBSTRATE NOISE REDUCTION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "(c) Resulting substrate noise Fig. 5. transients and (d) the corresponding frequency spectra."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.0,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "integrated circuit / system",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "transients and (d) the corresponding frequency spectra",
+        "key_specs": [
+          "200 ps",
+          "1 ns"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.5,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "Fig. 6.",
+      "caption_bbox": [
+        38.1,
+        587.4,
+        58.8,
+        598.0
+      ],
+      "section_title": "III. SUBSTRATE NOISE REDUCTION TECHNIQUES",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "SUBSTRATE NOISE REDUCTION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "One possibility to modify the total supply current is to split the design into several clock regions, to introduce latencies for each clock region and to finally implement a clock delay line, which generates a separate clock for every clock region (see Fig. 6)."
+        },
+        {
+          "section_title": "SUBSTRATE NOISE REDUCTION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "delay line / delay element",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "delay line / delay element",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 5,
+      "caption": "Fig. 7. Microphotograph of the test chip and its specifications. The chip consists of a reference design and two low-noise designs with the same functionality. It also contains two substrate noise sensors. The analog circuits in the lower right corner are not used in the experiments described in this paper.",
+      "caption_bbox": [
+        39.6,
+        241.5,
+        290.7,
+        279.0
+      ],
+      "section_title": "III. SUBSTRATE NOISE REDUCTION TECHNIQUES",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "SUBSTRATE NOISE REDUCTION TECHNIQUES",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "In traditional CMOS cells digital Fig. 7."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Experimental Digital ASIC With Embedded Noise Sensors The microphotograph of the test chip is shown in Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-reference": -1.0,
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "sensor",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Microphotograph of the test chip and its specifications. The chip consists of a reference design and two low-noise designs with the same functionality. It also contains two substrate noise sensors. The analog circuits in the lower right corner are not used in the experiments described in this paper",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 5,
+      "caption": "Fig. 8. Architecture of the digital test circuit (IQ demodulator).",
+      "caption_bbox": [
+        302.6,
+        288.3,
+        509.9,
+        298.9
+      ],
+      "section_title": "III. SUBSTRATE NOISE REDUCTION TECHNIQUES",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The test chip contains one reference design (REF) and two digital low-noise designs (LN1 and LN2) with the same basic architecture and functionality, shown in Fig. 8."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "This digital circuit is an IQ demodulator circuit based on a fifth-order lattice bilinear digital filter (BDLF) architecture, as shown in Fig. 8."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "To determine the maximum operating IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 11, NOVEMBER 2002 Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.2,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "+circuit": 1.0,
+        "section:proposed": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "demodulator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Architecture of the digital test circuit (IQ demodulator)",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.91,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 5,
+      "caption": "Fig. 9. Simulated substrate noise reduction versus the number of clock regions as a function of the inductance and the extracted element values for the substrate macro model of LN1. Extracted element values for LN1: Rs = 2:0 , Cc = 49 pF; Cw = 47 pF; Rw = 2:3 .",
+      "caption_bbox": [
+        302.6,
+        498.5,
+        553.7,
+        536.0
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 9."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 9 shows the simulated amount of substrate noise reduction in decibels versus the number of clock regions for different values of the package inductance."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 9 also shows the extracted element values of the core cells for the substrate macro model of LN1."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Because of the strict timing constraints in this design, we obtained a substrate noise reduction of only 6 dB (see Fig. 10) instead of the maximum reduction of 23.7 dB (see Fig. 9), which would be possible in theory without timing constraints."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -7.4,
+      "relevance_breakdown": {
+        "-model": -1.5,
+        "-simulated": -3.0,
+        "-extracted": -2.5,
+        "section:results": -2.0,
+        "references": 1.6
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "integrated circuit / system",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated substrate noise reduction versus the number of clock regions as a function of the inductance and the extracted element values for the substrate macro model of LN1. Extracted element values for LN1: Rs = 2:0 , Cc = 49 pF; Cw = 47 pF; Rw = 2:3",
+        "key_specs": [
+          "6 dB",
+          "23.7 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 6,
+      "caption": "Fig. 10.",
+      "caption_bbox": [
+        38.1,
+        256.5,
+        62.7,
+        267.1
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 10."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The simulated supply current waveform after the introduction of the latencies is shown at the bottom of Fig. 10."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Because of the strict timing constraints in this design, we obtained a substrate noise reduction of only 6 dB (see Fig. 10) instead of the maximum reduction of 23.7 dB (see Fig. 9), which would be possible in theory without timing constraints."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "integrated circuit / system",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": [
+          "6 dB",
+          "23.7 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 6,
+      "caption": "Fig. 11. Chip-level substrate model for the core cells in the second low-noise design (LN2).",
+      "caption_bbox": [
+        38.1,
+        672.5,
+        338.2,
+        683.1
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 11."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The values of the decoupling cells are found after performing a spectrum analysis on the chip-level substrate model shown in Fig. 11 including extracted models for the I/O and supply pads."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "It is important to note that the chip-level decoupling is determined not only by the on-chip decoupling but also the nonswitching circuit capacitance of the core cells (see Fig. 11), the supply (0.96 pF) and I/O pads (18.25 pF)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.8,
+      "relevance_breakdown": {
+        "+core": 0.5,
+        "-model": -1.5,
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "integrated circuit / system",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chip-level substrate model for the core cells in the second low-noise design (LN2)",
+        "key_specs": [
+          "0.96 pF",
+          "18.25 pF"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 7,
+      "caption": "Fig. 12. Simulated substrate noise reduction versus the number of decoupling capacitors as a function of the inductance in the second low-noise design (LN2).",
+      "caption_bbox": [
+        302.6,
+        187.6,
+        553.7,
+        207.3
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 12 shows noise reduction due to different amounts of decoupling cells connected to the fast cell region when a fixed amount of 100 decoupling cells were connected to the slow cells. 100 decoupling cells were chosen in order to keep the ratio between the simultaneously switching capacitance and the nonswitching capacitance larger than 10 [9]."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "We simulate an attenuation in rms value of around 3.5 dB when 1000 decoupling cells are used for the fast cells and close to 6 dB when IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 11, NOVEMBER 2002 Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "integrated circuit / system",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "Fig. 12 shows noise reduction due to different amounts of decoupling cells connected to the fast cell region when a fixed amount of 100 decoupling cells were connected to the slow cells. 100 decoupling cells were chosen in order to keep the ratio between the simultaneously switching capacitance and the nonswitching ...",
+        "function_summary": "Simulated substrate noise reduction versus the number of decoupling capacitors as a function of the inductance in the second low-noise design (LN2). Fig. 12 shows noise reduction due to different amounts of decoupling cells connected to the fast cell region when a fixed amount of 100 decoupling cells were connected to ...",
+        "key_specs": [
+          "3.5 dB",
+          "6 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 8,
+      "caption": "Fig. 13.",
+      "caption_bbox": [
+        38.1,
+        487.3,
+        62.6,
+        498.0
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 13 shows the comparison of the three designs (REF, LN1, and LN2) with the disabled input/output I/O pads: the measured time waveforms (top) of the substrate noise voltage from the noise sensor and their corresponding spectra (bottom)."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 13. in correspondence with the simulations."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "sensor",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "sensor",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 9,
+      "caption": "Fig. 14. LN1, and LN2).",
+      "caption_bbox": [
+        39.6,
+        443.2,
+        91.9,
+        462.9
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The clock dependency of the substrate noise is shown in Fig. 14."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 14 also shows the resonant behavior at some clock frequencies."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 15 shows subsequently in time the measured noise contribution from the core logic only (9.1 mVrms, 85 mVpp), the IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 11, NOVEMBER 2002 Comparison of measured rms (top) and peak-to-peak (bottom) values of the substrate noise voltages versus clock frequency for the three designs (REF, Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "integrated circuit / system",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "LN1, and LN2)",
+        "key_specs": [
+          "9.1 mV",
+          "85 mV"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 10,
+      "caption": "Fig. 15. Substrate noise generation from the core logic and/or input/output I/O switching.",
+      "caption_bbox": [
+        38.1,
+        323.8,
+        330.9,
+        334.5
+      ],
+      "section_title": "V. CONCLUSIONS",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 15 shows subsequently in time the measured noise contribution from the core logic only (9.1 mVrms, 85 mVpp), the IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 11, NOVEMBER 2002 Comparison of measured rms (top) and peak-to-peak (bottom) values of the substrate noise voltages versus clock frequency for the three designs (REF, Fig. 14."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "BADAROGLU et al.: SUBSTRATE NOISE REDUCTION IN CMOS MIXED-SIGNAL ICs Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "+core": 0.5,
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "integrated circuit / system",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Substrate noise generation from the core logic and/or input/output I/O switching",
+        "key_specs": [
+          "9.1 mV",
+          "85 mV"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 8,
+  "warnings": []
+}

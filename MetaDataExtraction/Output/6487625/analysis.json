@@ -1,0 +1,192 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\RNDatasetPapers\\6487625.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output_rerun_128\\6487625",
+  "generated_at": "2026-07-29T22:45:37",
+  "paper_metadata": {
+    "title": "A 195mW / 55mW Dual-Path Receiver AFE for Multistandard 8.5-to-11.5 Gb/s Serial Links in 40nm CMOS Bo Zhang, Ali Nazemi, Adesh Garg, Namik Kocaman, Mahmoud Reza Ahmadi, Mehdi Khanpour, Heng Zhang, Jun Cao, Afshin Momtaz",
+    "authors": [],
+    "abstract": "",
+    "keywords": [],
+    "doi": "",
+    "venue": "",
+    "year": 2013
+  },
+  "paper_circuit_context": {
+    "circuit_type": "/ 55mW Dual-Path Receiver AFE",
+    "technology": "CMOS, 40nm process",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "output buffer",
+      "switch",
+      "pre-amplifier"
+    ],
+    "design_purpose": "",
+    "function_summary": "/ 55mW Dual-Path Receiver AFE",
+    "key_specs": [
+      "195mW",
+      "55mW",
+      "40nm",
+      "40dB",
+      "10dB",
+      "29.2dB",
+      "5GHz",
+      "0.59pJ",
+      "6dB",
+      "10Hz"
+    ]
+  },
+  "sections": [],
+  "figures": [
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 0,
+      "caption": "Fig. 2.4.3, three comparators are added below the sub-ADC zero threshold, which detect and correct up to 2.5LSB of rectification error. At the output of the sub-ADC, any top bits from -3 to -1 indicate an error in rectification. Simple logic can fold the error back to the right code and correct the MSB bit. In each 5b flash ADC, the power is further reduced by using dynamic comparators with calibration, as shown in Fig. 2.4.4. The comparator is connected to a preamplifier with a 7b load-balanced current DAC for offset calibration. The DAC employs a cascode pair Mc and Mcb at its outputs with small leaking currents to keep both transistors in saturation, reducing the capacitive loading of the DAC to the data path. A similar dynamic comparator is used in the MSB path. The slicer path is used to save power when the data channel has less impairment than in KR or MMF applications. It consists of a CTLE, followed by a wideband buffer and half-rate slicers. The CTLE uses a source-degenerated peaking filter with programmable resistors to adjust the relative DC to high-frequency gain. Because of the PGAc’s high linearity (>40dB), the CTLE can provide effective equalization even though it is connected after the PGAc. For the same reason, additional equalization is provided by adjusting the frequency response of the PGAc’s shunt-peaking stages. Programmable capacitor arrays are connected at each stage’s output. The load resistor can also be varied to change the peaking. The slicer double-samples the input and sends the deserialized data into the CDR. Combined with the PGAc, the slicer path can equalize the incoming data with a maximum peaking of 10dB at Nyquist. The chip is fabricated in 40nm CMOS technology and represents a dual-path receiver AFE for both MMF and copper channels with various Nyquist loss values. The 6b 10GS/s interleaved ADC with an improved rectifying topology achieves higher speed and lower power consumption compared to the previous flash topologies [2,4]. The ADC path SNDR is measured 29.2dB at 5GHz input, achieving an FOM of 0.59pJ/conversion-step (Fig. 2.4.5). For MMF channels at 10.3Gb/s, the receiver using the ADC path achieves BER <10-12 on all three stressors (pre-tap, post-tap and symmetrical) with at least 6dB margin [1]. For tests with a 10Hz dynamic channel, there is no degradation in optical sensitivity, while the standard [1] only requires error-free operation. The ADC path consumes 195mW, which is the lowest among published results of receiver AFEs that compensate for MMF channels [2,5]. For copper channels at 10.3Gb/s, the RX operates error-free while compensating attenuation up to 34dB at Nyquist, exceeding KR requirements [4,6]. The full range of operation, 8.5Gb/s to 11.5Gb/s, is limited by the VCO tuning range. At 55mW, the slicer path achieves sinusoidal jitter tolerance of 0.35UIpp at 80MHz with 0.7UIpp jitter on the input signal. The slice path can also compensate for losses in SFP+ DAC cables with a length of up to 5m. The performance overview of published 10Gb/s AFE for ADC-based receiver is summarized in Fig. 2.4.6. The RX area is 0.82mm2 and a micrograph of the receiver AFE is shown in Fig. 2.4.7. References: [1] IEEE Standard 802.3ap-2007 and 802.3aq-2006, “Ethernet Operation over Electrical Backplanes” and “Physical Layer and Management Parameters for 10Gb/s Operation type 10GBASE-LRM”. [2] J. Cao, et al., “A 500mW digitally calibrated AFE in 65nm CMOS for 10Gb/s Serial links over backplane and multimode fiber”, ISSCC Dig. Tech. Papers, pp. 370-371, Feb. 2009. [3] B. Verbruggen, et al., “A 2.2mW 5b 1.75GS/s Folding Flash ADC in 90nm Digital CMOS”, ISSCC Dig. Tech. Papers, pp. 252-253, Feb. 2008. [4] M. Harwood, et al., “A 12.5Gb/s SerDes In 65nm CMOS Using a Baud-Rate ADC With Digital Receiver Equalization and Clock Recovery”, ISSCC Dig. Tech. Papers, pp. 436-437, Feb. 2007. [5] O. Agazzi, et al., “A 90nm CMOS DSP MLSD Transceiver with Integrated AFE for Electronic Dispersion Compensation of Multi-mode Optical Fibers at 10Gb/s”, ISSCC Dig. Tech. Papers, pp. 232-609, Feb. 2008. [6] E. Chen, et al., “Power Optimized ADC-Based Serial Link Receiver”, IEEE Journal of Solid-State Circuits, Vol. 47, No.4, Apr. 2012.",
+      "caption_bbox": [
+        291.8,
+        65.3,
+        543.5,
+        693.3
+      ],
+      "section_title": "",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The block diagram of the dual-path receiver is shown in Fig. 2.4.1."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 2.4.1 also shows various calibration circuits to optimize the ADC path performance [2]."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 2.4.2 shows the schematic of one of the four identical subADCs."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "First, DC offset is calibrated at chip start-up for the MSB comparator and the SHA/PGAf, as shown in Fig. 2.4.2."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "As shown in Fig. 2.4.3, three comparators are added below the sub-ADC zero threshold, which detect and correct up to 2.5LSB of rectification error."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "In each 5b flash ADC, the power is further reduced by using dynamic comparators with calibration, as shown in Fig. 2.4.4."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The ADC path SNDR is measured 29.2dB at 5GHz input, achieving an FOM of 0.59pJ/conversion-step (Fig. 2.4.5)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The performance overview of published 10Gb/s AFE for ADC-based receiver is summarized in Fig. 2.4.6."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The RX area is 0.82mm2 and a micrograph of the receiver AFE is shown in Fig. 2.4.7."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Chen, et al., “Power Optimized ADC-Based Serial Link Receiver”, IEEE Journal of Solid-State Circuits, Vol. 47, No.4, Apr. 2012. 978-1-4673-4516-3/13/$31.00 ©2013 IEEE Figure 2.4.1: Block diagram of the dual path receiver."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 2.4.3: Dead zone correction scheme."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 2.4.5: The ADC path SNR, SFDR and SNDR vs. input frequency with clock of 10.3125GHz."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "ISSCC 2013 / February 18, 2013 / 3:15 PM 2 Figure 2.4.2: Block diagram of the rectified ADC."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 2.4.4: Comparator schematic with offset calibration DAC."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 2.4.6: Performance overview of ADC-based receivers with data rate of above 10Gb/s. 35 DIGEST OF TECHNICAL PAPERS • ISSCC 2013 PAPER CONTINUATIONS Figure 2.4.7: Micrograph of the receiver AFE. • 2013 IEEE International Solid-State Circuits Conference 978-1-4673-4516-3/13/$31.00 ©2013 IEEE"
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.0,
+      "relevance_breakdown": {
+        "+topology": 2.5,
+        "+circuit": 1.0,
+        "-reference": -1.0,
+        "-measured": -3.0,
+        "-micrograph": -3.0,
+        "-tuning range": -2.5,
+        "references": 2.0
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, 40nm process",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor",
+          "resistor",
+          "transistor/MOSFET",
+          "output buffer",
+          "pre-amplifier"
+        ],
+        "design_purpose": "",
+        "function_summary": "4.3, three comparators are added below the sub-ADC zero threshold, which detect and correct up to 2.5LSB of rectification error. At the output of the sub-ADC, any top bits from -3 to -1 indicate an error in rectification. Simple logic can fold the error back to the right code and correct the MSB bit. In each 5b flash ...",
+        "key_specs": [
+          "29.2dB",
+          "5GHz",
+          "0.59pJ",
+          "10.3125GHz"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.2,
+      "warnings": [
+        "Recommended figure was classified as 'layout_photo', not a schematic; manual confirmation strongly recommended."
+      ]
+    }
+  ],
+  "recommended_figure_id": 2,
+  "warnings": [
+    "No figure scored positively as a proposed-circuit schematic; recommendation is low-confidence."
+  ]
+}

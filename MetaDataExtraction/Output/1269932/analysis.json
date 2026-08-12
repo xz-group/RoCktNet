@@ -1,0 +1,450 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1269932.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1269932",
+  "generated_at": "2026-07-29T22:01:35",
+  "paper_metadata": {
+    "title": "An Analytical Equation for the Oscillation Frequency of High-Frequency Ring Oscillators",
+    "authors": [
+      "Stephen Docking",
+      "Manoj Sachdev"
+    ],
+    "abstract": "An analytical equation for the oscillation frequency of a ring oscillator is derived. The derivation is done using a novel with technology scaling. method which does not need to find an expression for the delay The work proposed in this paper is an extension of the of each stage. The resulting equation includes the effect of timemethod described in [8]. In [8], we derived an analytical exvarying parasitics. It also includes the effect of the gate resistance, pression for the oscillation frequency of ring-oscillator-based which has a large effect on the oscillation frequency at high freVCOs. However, the expression had relatively large error at quencies. Measurement results of ring oscillators fabricated in a 0.18m CMOS process show that the resulting equation has an high frequencies owing to second-order parasitic effects. The average error of 8% over a large range of parameter variations. proposed work accounts for the contribution of time-varying parasitics. Furthermore, it includes the effect of the gate resis-",
+    "keywords": [
+      "Equations",
+      "high-speed integrated circuits",
+      "ring oscillators",
+      "voltage-controlled oscillators"
+    ],
+    "doi": "10.1109/JSSC.2003.822778",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2004
+  },
+  "paper_circuit_context": {
+    "circuit_type": "oscillator",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "current source"
+    ],
+    "design_purpose": "",
+    "function_summary": "oscillator: An analytical equation for the oscillation frequency of a ring oscillator is derived.",
+    "key_specs": [
+      "8%",
+      "500 mV",
+      "8.2%",
+      "7.7%"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE voltage-controlled oscillator (VCO) is a commonly investigated circuit due to its use in communications circuits such as phase-locked loops (PLLs) and clock and data recovery circuits (CDRs) [1]–[7]. A common VCO architecture is based on the ring oscillator. Despite its widespread usage, the ring oscillator still poses difficulties when it comes to design, analysis, and modeling. The design o ..."
+    },
+    {
+      "number": "II",
+      "title": "OVERVIEW OF METHOD USED TO DERIVE OSCILLATION",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "FREQUENCY EQUATION The most common way to derive an equation for the oscilla- -stage ring oscillator is to assume each tion frequency of an . The signal must go through each stage provides a delay of delay stages twice to provide one period of oscillation. of the Therefore, the period is , resulting in the frequency equation in (1). (1) The difficulty in obtaining an expression for the frequency a ..."
+    },
+    {
+      "number": "III",
+      "title": "EQUATION INCLUDING PARASITIC CAPACITANCES",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "A new frequency equation will now be derived based on a ring oscillator using a delay stage such as that in Fig. 1. The parasitic capacitances of a MOSFET have a large effect on the oscillation frequency. A model of the MOSFET including parasitic capacitances is shown in Fig. 2 [12]. The expressions for many of these capacitances include hspice parameters. The definitions of the relevant parameter ..."
+    },
+    {
+      "number": "IV",
+      "title": "GATE RESISTANCE",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "Equation (4) can be shown to be accurate at low frequencies, but starts to deviate from simulated and measured values at higher frequencies. This increase in error is because the parasitics included in the derivation of (4) are based on a low-frequency compact model. It is generally agreed that at least a gate resistance and a substrate coupling network should be added to the model if it is to be  ..."
+    },
+    {
+      "number": "V",
+      "title": "TEST SETUP AND RESULTS",
+      "kind": "results",
+      "page": 3,
+      "text_preview": "m To verify (15), a test chip was designed in a 1.8-V 0.18CMOS process. The main design parameters of a ring oscillator, , , and , were made variable to see how the frequency , the test changes with respect to these parameters. To vary chip contains five separate ring oscillators with different numbers of delay stages (3, 4, 5, 6, and 8). An external resistor was . This external resistor controls  ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 4,
+      "text_preview": "A new equation for the oscillation frequency of a ring oscillator has been presented. The derivation of the equation used a method that does not find the delay of each stage, but instead finds expressions for currents in the delay stage and reduces the system to an equation in which the only unknown is the frequency. The equation accounts for time-varying parasitics and for the gate resistance of  ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Delay stage.",
+      "caption_bbox": [
+        39.6,
+        186.7,
+        108.3,
+        194.7
+      ],
+      "section_title": "II. OVERVIEW OF METHOD USED TO DERIVE OSCILLATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "OVERVIEW OF METHOD USED TO DERIVE OSCILLATION",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "This paper will focus on differential delay stages, such as the one shown in Fig. 1."
+        },
+        {
+          "section_title": "OVERVIEW OF METHOD USED TO DERIVE OSCILLATION",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Therefore, an expression Fig. 1."
+        },
+        {
+          "section_title": "EQUATION INCLUDING PARASITIC CAPACITANCES",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "A new frequency equation will now be derived based on a ring oscillator using a delay stage such as that in Fig. 1."
+        },
+        {
+          "section_title": "EQUATION INCLUDING PARASITIC CAPACITANCES",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "(2) For a delay stage such as that in Fig. 1, the drain voltage on all four transistors is time-varying, and therefore the value of the IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 3, MARCH 2004 TABLE I HSPICE PARAMETERS drain–bulk capacitance is time-varying."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.6,
+      "relevance_breakdown": {
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Delay stage",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.29,
+      "warnings": [
+        "Recommended figure caption does not explicitly mention a schematic/topology/circuit; please confirm manually.",
+        "Recommended figure was classified as 'other', not a schematic; manual confirmation strongly recommended."
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. MOSFET with parasitic capacitances.",
+      "caption_bbox": [
+        39.6,
+        296.4,
+        189.8,
+        304.4
+      ],
+      "section_title": "II. OVERVIEW OF METHOD USED TO DERIVE OSCILLATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "OVERVIEW OF METHOD USED TO DERIVE OSCILLATION",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 2."
+        },
+        {
+          "section_title": "EQUATION INCLUDING PARASITIC CAPACITANCES",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "A model of the MOSFET including parasitic capacitances is shown in Fig. 2 [12]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "-capacitance": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "MOSFET with parasitic capacitances",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Delay stage with gate resistance.",
+      "caption_bbox": [
+        301.1,
+        246.3,
+        435.1,
+        254.3
+      ],
+      "section_title": "IV. GATE RESISTANCE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "GATE RESISTANCE",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 3 depicts the schematic of a delay stage with gate resistances for the source-coupled pair and As shown in Fig. 3, the gate resistance will affect the differential input voltage to the source-coupled pair."
+        },
+        {
+          "section_title": "GATE RESISTANCE",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "(12) (13) Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Delay stage with gate resistance",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 3,
+      "caption": "Fig. 4. Microphotograph of test chip.",
+      "caption_bbox": [
+        39.6,
+        212.9,
+        164.3,
+        220.8
+      ],
+      "section_title": "IV. GATE RESISTANCE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "GATE RESISTANCE",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "For example, having Fig. 4."
+        },
+        {
+          "section_title": "TEST SETUP AND RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "A microphoto5 mA and graph of the chip is shown in Fig. 4 and a picture of the test board in Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -5.7,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Microphotograph of test chip",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Test board.",
+      "caption_bbox": [
+        39.6,
+        366.9,
+        104.2,
+        374.9
+      ],
+      "section_title": "IV. GATE RESISTANCE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "GATE RESISTANCE",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 5."
+        },
+        {
+          "section_title": "TEST SETUP AND RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "A microphoto5 mA and graph of the chip is shown in Fig. 4 and a picture of the test board in Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Test board",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Comparison of experimental and analytical results based on (15). (a) Frequency versus I . (b) Frequency versus V . (c) Frequency versus N.",
+      "caption_bbox": [
+        302.6,
+        629.1,
+        553.7,
+        646.0
+      ],
+      "section_title": "V. TEST SETUP AND RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "TEST SETUP AND RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "The experimental results are shown in Fig. 6."
+        },
+        {
+          "section_title": "TEST SETUP AND RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Fig. 6(a) shows , Fig. 6(b) shows the frequency versus the frequency versus , and Fig. 6(c) shows the frequency versus ."
+        },
+        {
+          "section_title": "TEST SETUP AND RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "The average error between the predicted frequency value using IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 3, MARCH 2004 Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Comparison of experimental and analytical results based on (15). (a) Frequency versus I . (b) Frequency versus V . (c) Frequency versus N",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. Normalized frequency versus I .",
+      "caption_bbox": [
+        38.1,
+        210.9,
+        178.5,
+        219.0
+      ],
+      "section_title": "V. TEST SETUP AND RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "TEST SETUP AND RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "However, it is also important to show the tradeoffs between the frequency and various design IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 3, MARCH 2004 Fig. 7."
+        },
+        {
+          "section_title": "TEST SETUP AND RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Equaincrease in frequency with respect to the increase in tion (15), which accounts for the effect of the gate resistance, is able to accurately predict this trend, as is shown in Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Normalized frequency versus I",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 1,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

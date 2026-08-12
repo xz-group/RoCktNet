@@ -1,0 +1,164 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\RNDatasetPapers\\6757344.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output_rerun_128\\6757344",
+  "generated_at": "2026-07-29T22:45:41",
+  "paper_metadata": {
+    "title": "An RF-to-BB Current-Reuse Wideband Receiver with Parallel N-Path Active/Passive Mixers and a Single-MOS Pole-Zero LPF Fujian Lin1, Pui-In Mak1,2, Rui Martins1,2,3",
+    "authors": [],
+    "abstract": "",
+    "keywords": [],
+    "doi": "",
+    "venue": "",
+    "year": 2014
+  },
+  "paper_circuit_context": {
+    "circuit_type": "RF-to-BB Current-Reuse Wideband Receiver",
+    "technology": "CMOS",
+    "application_domain": "rf",
+    "sub_blocks": [
+      "mixer",
+      "capacitor",
+      "transistor/MOSFET",
+      "balun",
+      "bias circuit",
+      "inductor"
+    ],
+    "design_purpose": "",
+    "function_summary": "RF-to-BB Current-Reuse Wideband Receiver",
+    "key_specs": [
+      "2UM",
+      "12mW",
+      "2.5dB",
+      "10dBm",
+      "0.85GHz",
+      "0.9dB",
+      "17.4dBm",
+      "16.2mW",
+      "12.5%",
+      "220Ω"
+    ]
+  },
+  "sections": [],
+  "figures": [
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 0,
+      "caption": "Figure 3.9.1 depicts the RF front-end that unifies most functions. A single-ended RF input (Vin) avoids the balun and its insertion loss. The –gm,CS stage (MCS) serves as the LNA, which is stacked by an 8-path active mixer (MA1-8) for downconversion, and an 8-path current-mode LPF for channel selection before BB I-to-V conversion at RL (VBB0, VBB45…VBB315). MA1-8 driven by an 8-phase 12.5%- duty-cycle LO (VLO0, VLO45…VLO315) allow HR at BB to enhance the critical HRR2-6. A feedforward 8-path passive mixer (MP1-8) driven by the same set of LOs, but anti-phased with MA1-8, is added for three intents: Input Matching and Out-of-Band Filtering: Owing to the bidirectional transparency of passive mixers [1-4], MP1-8 can frequency-translate the low-pass impedance (Zin,LPF) of Vx to a band-pass one (Zin,RF) at Vin, allowing LO-defined input matching and RF filtering. Moreover, the BB signal at Vx is upconverted to Vin and downconverted back to Vx by the –gm,CS stage and MA1-8. The resultant positive loop gain is Gloop=gm,CSRin,LPF/8, where the factor 8 comes from the number of mixer paths. To ensure stability (i.e., Zin,RF>0), Gloop can be set as 0.55 (i.e., gm,CS=20mS, Rin,LPF=220Ω), resulting in a 2.2x increment of Zin,RF. This act permits a smaller RSW (6Ω) to enhance the ultimate stopband rejection at Vin, which is theoretically 13.3dB [2Rsw/(Rsw+RS)]. To vacate more voltage headroom and enhance the linearity, MA1-8 were biased in the triode region. This approach brings down the swing at Vy (drain node of MCS) and frequency-translates the low-pass Zin,LPF from Vx, to a band-pass one at Vy, aiding the out-of-band rejection. Input Biasing: unlike the TV-band RXs in [5-6] that entail a bulky external inductor for bias and wideband impedance matching, here the gate of MCS is biased via the passive mixers copying the dc voltage from Vx to Vin, avoiding any external parts while giving adequate overdrive voltage (VDS=420mV) on MCS for better linearity. Moreover, owing to no AC-coupling capacitors at Vin, the RF bandwidth easily covers the low-frequency range. Noise Cancelling: the anti-LO-phased active and passive mixers allow concurrent noise cancellation of Rsw and LPF under gm,CSRs=1 (Fig. 3.9.2). For the former, RSW induces a noise current to RS, and is sensed by the –gm,CS stage to produce an anti-phased output nullifying the noise inherently. For the latter, when the RX is operated differentially, the LPF’s noise current on RS will be copied to another path with the same phase, being a cancellable common-mode noise. Hence, the RX NF is dominated by the thermal noise of MCS (i.e., Noise Factor=1+γ, where γ is the channel noise factor), which can be upsized (W/L:120/0.18) to reduce the 1/f noise. MA1-8 contribute insignificant noise and are small in size (W/L:12/0.06) to save the LO power.",
+      "caption_bbox": [
+        28.0,
+        332.5,
+        281.7,
+        725.0
+      ],
+      "section_title": "",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 3.9.1 depicts the RF front-end that unifies most functions."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Noise Cancelling: the anti-LO-phased active and passive mixers allow concurrent noise cancellation of Rsw and LPF under gm,CSRs=1 (Fig. 3.9.2)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The current-mode Biquads in [5,6] only can synthesize two complex poles, while the proposed single-MOS LPF (Fig. 3.9.3) offers stronger pole-zero filtering, being more cost-effective than its real-pole-only counterparts [1-4]."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The proposed BB-only two-stage HR amplifier (Fig. 3.9.4) boosts the HRR3,5 without the gain scaling at RF [4], resulting in simpler layout and lower parasitics."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The chip summary is given in Fig. 3.9.6."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 3.9.7 shows the RX die micrograph."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Papers, pp. 162-163, Feb. 2012. 74 • 2014 IEEE International Solid-State Circuits Conference 978-1-4799-0920-9/14/$31.00 ©2014 IEEE Figure 3.9.1: A current-reuse RF front-end with a single-ended RF input."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 3.9.3: a) Single-MOS pole-zero LPF. b) Simulated VBB0 and Vx showing the rejection added by the stopband zeros. c) Sizing RL for In-band gain."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 3.9.5: Measured S11; RF-to-IF gain, NF and power; IIP2/IIP3; RF-to-IF gain response."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "ISSCC 2014 / February 10, 2014 / 4:45 PM 3 Figure 3.9.2: Simplified two-phase noise equivalent circuits of the RF frontend showing the noise cancellation of Rsw (left) and LPF (right)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 3.9.4: BB-only 2-stage harmonic-recombination (HR) amplifier."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 3.9.6: Chip summary and benchmark with recent passive-mixer-based RXs [1-4]. 75 DIGEST OF TECHNICAL PAPERS • ISSCC 2014 PAPER CONTINUATIONS Figure 3.9.7: RX die micrograph. • 2014 IEEE International Solid-State Circuits Conference 978-1-4799-0920-9/14/$31.00 ©2014 IEEE"
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS",
+        "application_domain": "rf",
+        "sub_blocks": [
+          "inductor",
+          "capacitor",
+          "balun",
+          "mixer",
+          "bias circuit"
+        ],
+        "design_purpose": "",
+        "function_summary": "9.1 depicts the RF front-end that unifies most functions. A single-ended RF input (Vin) avoids the balun and its insertion loss. The –gm,CS stage (MCS) serves as the LNA, which is stacked by an 8-path active mixer (MA1-8) for downconversion, and an 8-path current-mode LPF for channel selection before BB I-to-V ...",
+        "key_specs": [
+          "5 w"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.43,
+      "warnings": [
+        "Recommended figure caption does not explicitly mention a schematic/topology/circuit; please confirm manually.",
+        "Recommended figure was classified as 'other', not a schematic; manual confirmation strongly recommended."
+      ]
+    }
+  ],
+  "recommended_figure_id": 3,
+  "warnings": []
+}

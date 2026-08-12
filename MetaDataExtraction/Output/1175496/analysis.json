@@ -1,0 +1,1197 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1175496.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1175496",
+  "generated_at": "2026-07-29T22:00:40",
+  "paper_metadata": {
+    "title": "A Low-Power 2.4-GHz Transmitter/Receiver CMOS IC",
+    "authors": [
+      "Alireza Zolfaghari",
+      "Behzad Razavi"
+    ],
+    "abstract": "A 2.4-GHz CMOS receiver/transmitter incorporates circuit stacking and noninvasive baseband filtering to achieve a high sensitivity with low power dissipation. Using a single 1.6-GHz local oscillator, the transceiver employs two upconversion and downconversion stages while providing on-chip image rejection filtering. Realized in a 0.25m digital CMOS technology, the receiver exhibits a noise figure of 6 dB and consumes 17.5 mW from a 2.5-V supply, and the transmitter delivers an output power of 0 dBm with a power consumption of 16 mW.",
+    "keywords": [
+      "Bluetooth",
+      "channel-select filters",
+      "IEEE 802"
+    ],
+    "doi": "10.1109/JSSC.2002.807580",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Low-Power 2.4-GHz Transmitter/Receiver CMOS IC",
+    "technology": "CMOS",
+    "application_domain": "rf, wireless, baseband, if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "mixer",
+      "inductor",
+      "transistor/MOSFET",
+      "current source",
+      "current mirror",
+      "LC tank / resonator",
+      "output buffer",
+      "switch",
+      "latch"
+    ],
+    "design_purpose": "A 2.4-GHz CMOS receiver/transmitter incorporates circuit stacking and noninvasive baseband filtering to achieve a high sensitivity with low power dissipation.",
+    "function_summary": "Low-Power 2.4-GHz Transmitter/Receiver CMOS IC: A 2.4-GHz CMOS receiver/transmitter incorporates circuit stacking and noninvasive baseband filtering to achieve a high sensitivity with low power dissipation.",
+    "key_specs": [
+      "6 dB",
+      "17.5 mW",
+      "0 dBm",
+      "16 mW",
+      "1.6 GHz",
+      "800 MHz",
+      "2.4 GHz",
+      "1.575 GHz",
+      "41 dB",
+      "50 dB"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE DEMAND for low-power wireless transceivers operating in the 2.4-GHz band has led to extensive research on RF architecture and circuit design. The use of standards such as Bluetooth and IEEE 802.11b becomes more attractive as low-cost low-power solutions emerge, pointing to CMOS technology as an important contender. A number of low-power 2.4-GHz transceivers have been reported [1]–[4], but it  ..."
+    },
+    {
+      "number": "II",
+      "title": "ARCHITECTURE",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "The receiver employs two downconversion stages using a first LO frequency of 1.6 GHz and a second LO frequency of 800 MHz, translating the input spectrum from 2.4 GHz to an intermediate frequency (IF) of 800 MHz and subsequently to zero. The baseband signals are then applied to channel-select low-pass filters (LPFs). The transmitter upconverts baseband quadrature waveforms (for either linear or no ..."
+    },
+    {
+      "number": "III",
+      "title": "RECEIVER FRONT-END",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "A. First Downconversion As two of the power-hungry building blocks, the front-end low-noise amplifier (LNA) and mixer play a critical role in the sensitivity, linearity, and image rejection of the receiver. In order to save power, the supply voltage can be lowered but the minimum is dictated by the headroom issues in the baseband section and the prescaler in the synthesizer as well as the tuning r ..."
+    },
+    {
+      "number": "IV",
+      "title": "TRANSMITTER",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "As shown in Fig. 1, the and baseband signals are first upconverted to 800 MHz and then added together. Since the distortion of the first stage is critical, passive mixers similar to and those in the receiver are used to upconvert the baseband signals. Fig. 7 shows the second upconversion circuit. Here, and signals are first converted to current by – the IF and are added together. The result is the ..."
+    },
+    {
+      "number": "V",
+      "title": "CHANNEL-SELECT FILTER",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "This section presents the concept of noninvasive filtering and applies the technique to a baseband filter for Bluetooth applications. Fig. 10. Second-order noninvasive filter topology. A. Noninvasive Filtering The conventional approach to filtering requires that both the signal and the interferers travel through a circuit that provides the desired transfer function [Fig. 9(a)]. However, such a fil ..."
+    },
+    {
+      "number": "VI",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 6,
+      "text_preview": "An experimental prototype of the RX/TX has been fabricated m CMOS technology. Fig. 18 shows the die, which in a 0.252 mm . Unwanted coupling between the inmeasures 1.83 ductors is maintained below a few percent by proper spacing. Table I summarizes the measured performance. The receiver noise figure is obtained by the hot–cold method [10], yielding a value of 6 dB at 200 kHz. To test the linearity ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Transceiver architecture.",
+      "caption_bbox": [
+        302.6,
+        289.7,
+        410.4,
+        300.3
+      ],
+      "section_title": "II. ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1."
+        },
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The architecture of Fig. 1 offers several advantages over typical homodyne or heterodyne counterparts. 1) The LO emission produced by the receiver is well out of the band and heavily suppressed by the selectivity of the antenna. 2) The pulling of the LO by the power amplifier (PA) is negligible. 3) The system requires a single frequency synthesizer operating at 1.6 GHz, relaxing the requirements of the voltagecontrolled oscillator (VCO) and the prescaler. 4) The LO frequency of 1.6 GHz allows addition of a low-IF global positioning system (GPS) path to the receiver (the -band signal is at 1.575 GHz)."
+        },
+        {
+          "section_title": "RECEIVER FRONT-END",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "In order to drive the mixer switches by large swings, the divide-by-two circuit of Fig. 1 incorporates the rail-to-rail latch shown in Fig. 6(b)."
+        },
+        {
+          "section_title": "TRANSMITTER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "As shown in Fig. 1, the and baseband signals are first upconverted to 800 MHz and then added together."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.6,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "section:proposed": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "transceiver",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "mixer",
+          "switch",
+          "latch"
+        ],
+        "design_purpose": "The architecture of Fig. 1 offers several advantages over typical homodyne or heterodyne counterparts. 1) The LO emission produced by the receiver is well out of the band and heavily suppressed by the selectivity of the antenna. 2) The pulling of the LO by the power amplifier (PA) is negligible. 3) The system requires ...",
+        "function_summary": "Transceiver architecture. The architecture of Fig. 1 offers several advantages over typical homodyne or heterodyne counterparts. 1) The LO emission produced by the receiver is well out of the band and heavily suppressed by the selectivity of the antenna. 2) The pulling of the LO by the power amplifier (PA) is ...",
+        "key_specs": [
+          "1.6 GHz",
+          "1.575 GHz",
+          "800 MHz"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.78,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Measured characteristic of two antennas operating back to back.",
+      "caption_bbox": [
+        38.1,
+        264.0,
+        271.6,
+        274.6
+      ],
+      "section_title": "II. ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "For example, two small monopole 2.4-GHz antennas operating as a transmitter and ZOLFAGHARI AND RAZAVI: LOW-POWER 2.4-GHZ TRANSMITTER/RECEIVER CMOS IC Fig. 2."
+        },
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Measured characteristic of two antennas operating back to back. a receiver exhibit the measured gain characteristic shown in Fig. 2, providing a total rejection of about 50 dB (25 dB each) at 800 MHz."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured characteristic of two antennas operating back to back",
+        "key_specs": [
+          "50 dB",
+          "25 dB",
+          "800 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. (a) Stacking the LNA on top of the mixer. (b) Transistor implementation.",
+      "caption_bbox": [
+        301.1,
+        432.5,
+        552.1,
+        452.1
+      ],
+      "section_title": "III. RECEIVER FRONT-END",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "RECEIVER FRONT-END",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "As conceptually illustrated in Fig. 3(a), the first mixer is stacked on top of the LNA, with the transistor implementation depicted in Fig. 3(b)."
+        },
+        {
+          "section_title": "RECEIVER FRONT-END",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "In order to increase the image rejection of the circuit, the circuit is modified to that in Fig. 4(a), where the tank conand resonates at 800 MHz, degenerating sisting of (a) (b) Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "LC tank / resonator",
+          "mixer"
+        ],
+        "design_purpose": "In order to increase the image rejection of the circuit, the circuit is modified to that in Fig. 4(a), where the tank conand resonates at 800 MHz, degenerating sisting of (a) (b) Fig. 3.",
+        "function_summary": "(a) Stacking the LNA on top of the mixer. (b) Transistor implementation. In order to increase the image rejection of the circuit, the circuit is modified to that in Fig. 4(a), where the tank conand resonates at 800 MHz, degenerating sisting of (a) (b) Fig. 3.",
+        "key_specs": [
+          "800 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. (a) Improving the image rejection. (b) First downconversion circuit.",
+      "caption_bbox": [
+        39.6,
+        620.8,
+        284.0,
+        631.5
+      ],
+      "section_title": "IV. TRANSMITTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "RECEIVER FRONT-END",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "In order to increase the image rejection of the circuit, the circuit is modified to that in Fig. 4(a), where the tank conand resonates at 800 MHz, degenerating sisting of (a) (b) Fig. 3."
+        },
+        {
+          "section_title": "RECEIVER FRONT-END",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Finally, to resolve the LO feedthrough problem, the mixer is converted to a double-balanced topology (with one RF input at ac ground) as shown in Fig. 4(b)."
+        },
+        {
+          "section_title": "RECEIVER FRONT-END",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The circuit of Fig. 4(b) incorporates a number of passive components such as inductors and capacitors."
+        },
+        {
+          "section_title": "RECEIVER FRONT-END",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "To implement large capacitance values with a reasonable chip area, MOS transistors with the source and drain connected to (a) (b) Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.6,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "inductor",
+          "capacitor",
+          "transistor/MOSFET",
+          "LC tank / resonator",
+          "mixer"
+        ],
+        "design_purpose": "In order to increase the image rejection of the circuit, the circuit is modified to that in Fig. 4(a), where the tank conand resonates at 800 MHz, degenerating sisting of (a) (b) Fig. 3.",
+        "function_summary": "(a) Improving the image rejection. (b) First downconversion circuit. In order to increase the image rejection of the circuit, the circuit is modified to that in Fig. 4(a), where the tank conand resonates at 800 MHz, degenerating sisting of (a) (b) Fig. 3.",
+        "key_specs": [
+          "800 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.2,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Inductors used in downconversion.",
+      "caption_bbox": [
+        302.6,
+        184.4,
+        443.0,
+        195.0
+      ],
+      "section_title": "III. RECEIVER FRONT-END",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "RECEIVER FRONT-END",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 5 shows the inductors used in the first downconversion circuit."
+        },
+        {
+          "section_title": "RECEIVER FRONT-END",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "For example, the gate voltage of IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 2, FEBRUARY 2003 Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "on-chip inductor",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "inductor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Inductors used in downconversion",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. (a) Second downconversion circuit. (b) D-latch circuit.",
+      "caption_bbox": [
+        38.1,
+        357.7,
+        241.5,
+        368.3
+      ],
+      "section_title": "IV. TRANSMITTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "RECEIVER FRONT-END",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 6(a) depicts the second downconversion circuit, which consists of a double-balanced passive mixer and common-source (CS) and pMOS baseband amplifiers."
+        },
+        {
+          "section_title": "RECEIVER FRONT-END",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "In order to drive the mixer switches by large swings, the divide-by-two circuit of Fig. 1 incorporates the rail-to-rail latch shown in Fig. 6(b)."
+        },
+        {
+          "section_title": "TRANSMITTER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 8(a) ZOLFAGHARI AND RAZAVI: LOW-POWER 2.4-GHZ TRANSMITTER/RECEIVER CMOS IC (a) (b) Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.2,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "latch",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "mixer",
+          "switch",
+          "latch"
+        ],
+        "design_purpose": "In order to drive the mixer switches by large swings, the divide-by-two circuit of Fig. 1 incorporates the rail-to-rail latch shown in Fig. 6(b).",
+        "function_summary": "(a) Second downconversion circuit. (b) D-latch circuit. In order to drive the mixer switches by large swings, the divide-by-two circuit of Fig. 1 incorporates the rail-to-rail latch shown in Fig. 6(b).",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.14,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Second upconversion in the transmitter.",
+      "caption_bbox": [
+        38.1,
+        561.9,
+        193.6,
+        572.5
+      ],
+      "section_title": "IV. TRANSMITTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TRANSMITTER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 7 shows the second upconversion circuit."
+        },
+        {
+          "section_title": "TRANSMITTER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The mixer of Fig. 7 employs a tail current source by to allow direct coupling to the preceding stage, but it utilizes a to suppress the third-order nonlinearity. bypass capacitor The limited voltage headroom and high center frequency make it difficult to use a current mirror to convert the differential output current of the mixer to a single-ended signal suited to the PA."
+        },
+        {
+          "section_title": "TRANSMITTER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transmitter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "capacitor",
+          "current source",
+          "current mirror",
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Second upconversion in the transmitter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. (a) Two-stage power amplifier. (b) Power amplifier circuit.",
+      "caption_bbox": [
+        301.1,
+        347.6,
+        517.1,
+        358.2
+      ],
+      "section_title": "IV. TRANSMITTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TRANSMITTER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 8(a) ZOLFAGHARI AND RAZAVI: LOW-POWER 2.4-GHZ TRANSMITTER/RECEIVER CMOS IC (a) (b) Fig. 6."
+        },
+        {
+          "section_title": "TRANSMITTER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "To resolve these issues, the design is modified as shown in Fig. 8(b)."
+        },
+        {
+          "section_title": "TRANSMITTER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Capacitor couples the driver to the output source of (a) (b) Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.2,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "power amplifier (PA)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) Two-stage power amplifier. (b) Power amplifier circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.14,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 3,
+      "caption": "Fig. 9. (a) Conventional filtering. (b) Noninvasive filtering.",
+      "caption_bbox": [
+        301.1,
+        538.4,
+        495.4,
+        549.0
+      ],
+      "section_title": "IV. TRANSMITTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TRANSMITTER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "(a) (b) Fig. 9."
+        },
+        {
+          "section_title": "CHANNEL-SELECT FILTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Noninvasive Filtering The conventional approach to filtering requires that both the signal and the interferers travel through a circuit that provides the desired transfer function [Fig. 9(a)]."
+        },
+        {
+          "section_title": "CHANNEL-SELECT FILTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "For example, as illustrated in Fig. 9(b), a complex impedance can be placed in parallel with the signal path such that it operates as an open in the signal band while shunting the provides selectivity interferers to ground."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.8,
+      "relevance_breakdown": {
+        "-conventional": -3.0,
+        "references": 1.2
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "Low-Power 2.4-GHz Transmitter/Receiver CMOS IC",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Conventional filtering. (b) Noninvasive filtering",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10. Second-order noninvasive filter topology.",
+      "caption_bbox": [
+        39.6,
+        177.7,
+        204.5,
+        188.3
+      ],
+      "section_title": "V. CHANNEL-SELECT FILTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CHANNEL-SELECT FILTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 10."
+        },
+        {
+          "section_title": "CHANNEL-SELECT FILTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Nevertheless, some linearity is still necesis to operate as an effective shunt at interferer sary if frequencies. implementation of Fig. 10 shows a second-order ."
+        },
+        {
+          "section_title": "CHANNEL-SELECT FILTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The key observation is that the area under this plot is typically much and . less than the noise contributed by The topology of Fig. 10 may prove inadequate in some applications."
+        },
+        {
+          "section_title": "CHANNEL-SELECT FILTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "With their gates tied to , on-resistance of and “soften” the variation as the control voltage falls. – in Fig. 10."
+        },
+        {
+          "section_title": "CHANNEL-SELECT FILTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The implementation of the filter in a digital technology manin Fig. 10."
+        },
+        {
+          "section_title": "CHANNEL-SELECT FILTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The lack of high-density linear capacitors in this technology and in Fig. 10 difficult. makes the implementation of In particular, with a cutoff frequency of 400 kHz and two Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.5,
+      "relevance_breakdown": {
+        "+topology": 2.5,
+        "references": 2.0
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Second-order noninvasive filter topology",
+        "key_specs": [
+          "400 kHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.62,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 4,
+      "caption": "Fig. 11. Output noise of the filter produced by transconductor stages.",
+      "caption_bbox": [
+        302.6,
+        172.7,
+        528.7,
+        183.3
+      ],
+      "section_title": "V. CHANNEL-SELECT FILTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CHANNEL-SELECT FILTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The noise performance of the circuit is revealed by (2) IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 2, FEBRUARY 2003 Fig. 11."
+        },
+        {
+          "section_title": "CHANNEL-SELECT FILTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The other zero is typically higher than the poles, resulting in the noise-shaping function shown in Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Output noise of the filter produced by transconductor stages",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 4,
+      "caption": "Fig. 12. Higher order noninvasive filtering.",
+      "caption_bbox": [
+        302.6,
+        280.6,
+        446.1,
+        291.3
+      ],
+      "section_title": "V. CHANNEL-SELECT FILTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CHANNEL-SELECT FILTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 12."
+        },
+        {
+          "section_title": "CHANNEL-SELECT FILTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "This issue can be resolved by increasing the or using cascaded biquad sections as shown in order of Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Low-Power 2.4-GHz Transmitter/Receiver CMOS IC",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Higher order noninvasive filtering",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 4,
+      "caption": "Fig. 13. Interferers (black arrows) and the desired signal(white arrow) levels in Bluetooth. (a) Adjacent channel interferer as strong as the signal. (b) Alternate channel interferer 30 dB higher than the signal. (c) Second alternate interferer 40 dB higher than the signal.",
+      "caption_bbox": [
+        302.6,
+        523.1,
+        553.7,
+        560.6
+      ],
+      "section_title": "V. CHANNEL-SELECT FILTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CHANNEL-SELECT FILTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "(a) (b) (c) Fig. 13."
+        },
+        {
+          "section_title": "CHANNEL-SELECT FILTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Illustrated in Fig. 13, scenarios where the filter selectivity becomes critical include 1) an adjacent channel interferer as strong as the signal; 2) an alternate channel interferer 30 dB higher than the signal; and 3) a second alternate interferer 40 dB higher than the signal [9]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Interferers (black arrows) and the desired signal(white arrow) levels in Bluetooth. (a) Adjacent channel interferer as strong as the signal. (b) Alternate channel interferer 30 dB higher than the signal. (c) Second alternate interferer 40 dB higher than the signal",
+        "key_specs": [
+          "30 dB",
+          "40 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 5,
+      "caption": "Fig. 14. (a) Transconductor circuit. (b) Input transconductor and parallel resistor.",
+      "caption_bbox": [
+        38.1,
+        540.2,
+        289.2,
+        559.8
+      ],
+      "section_title": "V. CHANNEL-SELECT FILTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CHANNEL-SELECT FILTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "ZOLFAGHARI AND RAZAVI: LOW-POWER 2.4-GHZ TRANSMITTER/RECEIVER CMOS IC (a) (b) Fig. 14."
+        },
+        {
+          "section_title": "CHANNEL-SELECT FILTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 14(a) depicts a low-power tunable implementation of the transconductor, where the amount of degeneration is partially controlled by varying the and ."
+        },
+        {
+          "section_title": "CHANNEL-SELECT FILTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "To achieve process dates a MOS realization for and are designed as shown and temperature tracking, – and in Fig. 14(b)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.2,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "resistor"
+        ],
+        "design_purpose": "To achieve process dates a MOS realization for and are designed as shown and temperature tracking, – and in Fig. 14(b).",
+        "function_summary": "(a) Transconductor circuit. (b) Input transconductor and parallel resistor. To achieve process dates a MOS realization for and are designed as shown and temperature tracking, – and in Fig. 14(b).",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.14,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 5,
+      "caption": "Fig. 15. Floating capacitors realized by back-to-back pMOS devices.",
+      "caption_bbox": [
+        301.1,
+        132.7,
+        526.6,
+        143.3
+      ],
+      "section_title": "V. CHANNEL-SELECT FILTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CHANNEL-SELECT FILTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "This study indicates that a cascade of two second-order sections yields sufficient selectivity if they introduce deep notches in the adjacent Fig. 15."
+        },
+        {
+          "section_title": "CHANNEL-SELECT FILTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "This is overcome through the use of back-to-back pMOS devices as shown in Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Low-Power 2.4-GHz Transmitter/Receiver CMOS IC",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "capacitor",
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Floating capacitors realized by back-to-back pMOS devices",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 5,
+      "caption": "Fig. 16. Simulated filter characteristic for R = 10; 50; 100; 500; and 1000k .",
+      "caption_bbox": [
+        301.1,
+        354.9,
+        552.2,
+        374.5
+      ],
+      "section_title": "V. CHANNEL-SELECT FILTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CHANNEL-SELECT FILTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 16."
+        },
+        {
+          "section_title": "CHANNEL-SELECT FILTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 16 plots the overall filter transfer function , indicating that k is for different values of adequate."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated filter characteristic for R = 10; 50; 100; 500; and 1000k",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 6,
+      "caption": "Fig. 17. Simulated output noise of the noninvasive filters.",
+      "caption_bbox": [
+        39.6,
+        276.8,
+        229.0,
+        287.4
+      ],
+      "section_title": "V. CHANNEL-SELECT FILTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CHANNEL-SELECT FILTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The lack of high-density linear capacitors in this technology and in Fig. 10 difficult. makes the implementation of In particular, with a cutoff frequency of 400 kHz and two Fig. 17."
+        },
+        {
+          "section_title": "CHANNEL-SELECT FILTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 17 shows the simulated output noise of the filter, indiV (across cating a total integrated noise of approximately 1 5-MHz bandwidth)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simulated output noise of the noninvasive filters",
+        "key_specs": [
+          "400 kHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 6,
+      "caption": "Fig. 18. Die micrograph.",
+      "caption_bbox": [
+        39.6,
+        514.1,
+        125.1,
+        524.8
+      ],
+      "section_title": "V. CHANNEL-SELECT FILTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CHANNEL-SELECT FILTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 18."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 18 shows the die, which in a 0.252 mm ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-micrograph": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "Low-Power 2.4-GHz Transmitter/Receiver CMOS IC",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Die micrograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 6,
+      "caption": "Fig. 19. Measured receiver characteristic.",
+      "caption_bbox": [
+        302.6,
+        565.6,
+        441.1,
+        576.2
+      ],
+      "section_title": "VI. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "CHANNEL-SELECT FILTER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 2, FEBRUARY 2003 TABLE I MEASURED PERFORMANCE OF RX/TX Fig. 19."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 19 plots the transfer function from the RF input to the output of the channel-select filters, exhibiting deep notches at 1 and 3 MHz."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured receiver characteristic",
+        "key_specs": [
+          "3 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 20,
+      "label": "Fig. 20",
+      "page": 7,
+      "caption": "Fig. 20. Measured transmitter spectrum.",
+      "caption_bbox": [
+        38.1,
+        284.8,
+        172.5,
+        295.5
+      ],
+      "section_title": "VI. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "With an input level of 64 dBm, the signal-to-interand a desirable signal level of modulation ratio measured at the output of the baseband filters ZOLFAGHARI AND RAZAVI: LOW-POWER 2.4-GHZ TRANSMITTER/RECEIVER CMOS IC Fig. 20."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 20 shows the output spectrum of the transmit path."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "transmitter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured transmitter spectrum",
+        "key_specs": [
+          "64 dBm"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 1,
+  "warnings": []
+}

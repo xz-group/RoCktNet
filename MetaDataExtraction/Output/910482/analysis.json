@@ -1,0 +1,1025 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\910482.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\910482",
+  "generated_at": "2026-07-29T22:03:18",
+  "paper_metadata": {
+    "title": "A CMOS Clock Recovery Circuit for 2.5-Gb/s NRZ Data",
+    "authors": [
+      "Seema Butala Anand",
+      "Behzad Razavi"
+    ],
+    "abstract": "This paper describes a phase-locked clock recovery circuit that operates at 2.5 Gb/s in a 0.4m digital CMOS Two properties of NRZ data make clock recovery difficult. technology. To achieve a high speed with low power dissipation, First, arbitrarily long consecutive sequences of 1s or 0s limit a two-stage ring oscillator is introduced that employs an excess the capture range of the phase-locked loop and allow the oscilphase technique to operate reliably across a wide range. A sample-and-hold phase detector is also described that combines lation frequency to drift. Second, NRZ data contains no spectral the advantages of linear and nonlinear phase detectors. The content at the bit rate, requiring edge detection. These properties recovered clock exhibits an rms jitter of 10.8 ps for a PRBS impact the choice of the clock recovery architecture: 1) in the sequence of length 27 1 and a phase noise of 80 dBc/Hz at a absence of data transitions in the input bit sequence, the phase 5-MHz offset. The core circuit dissipates a total power of 33.5 mW detector must not generate any false phase comparisons and 2) from a 3.3-V supply and occupies an area of 0.8 0.4 mm2. the circuit requires a nonlinear operation to create a spectral line",
+    "keywords": [
+      "Clock and data recovery",
+      "optical communication"
+    ],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2001
+  },
+  "paper_circuit_context": {
+    "circuit_type": "CMOS Clock Recovery Circuit",
+    "technology": "CMOS",
+    "application_domain": "rf, wireless",
+    "sub_blocks": [
+      "resistor",
+      "transistor/MOSFET",
+      "current source",
+      "current mirror",
+      "output buffer",
+      "differential pair"
+    ],
+    "design_purpose": "To achieve a high speed with low power dissipation, First, arbitrarily long consecutive sequences of 1s or 0s limit a two-stage ring oscillator is introduced that employs an excess the capture range of the phase-locked loop and allow the oscilphase technique to operate reliably across a wide range.",
+    "function_summary": "CMOS Clock Recovery Circuit: To achieve a high speed with low power dissipation, First, arbitrarily long consecutive sequences of 1s or 0s limit a two-stage ring oscillator is introduced that employs an excess the capture range of the phase-locked loop and allow the oscilphase technique to operate reliably across a wide range.",
+    "key_specs": [
+      "10.8 ps",
+      "80 dBc/Hz",
+      "33.5 mW",
+      "2.5 GHz",
+      "1.8 GHz",
+      "2.4 GHz",
+      "143.2 dBc/Hz",
+      "1.75 GHz",
+      "650 ns",
+      "15 ps"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE rapid increase of real-time audio and video transport over the Internet has led to a global demand for high-speed serial-data communication networks. To accommodate the required bandwidth, an increasing number of wide-area networks (WANs) and local-area networks (LANs) are converting the transmission medium from a copper wire to fiber. This trend motivates research on low-cost, low-power inte ..."
+    },
+    {
+      "number": "II",
+      "title": "ARCHITECTURE",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "Two properties of NRZ data make clock recovery difficult. First, arbitrarily long consecutive sequences of 1s or 0s limit the capture range of the phase-locked loop and allow the oscillation frequency to drift. Second, NRZ data contains no spectral content at the bit rate, requiring edge detection. These properties impact the choice of the clock recovery architecture: 1) in the absence of data tra ..."
+    },
+    {
+      "number": "III",
+      "title": "BUILDING BLOCKS",
+      "kind": "design",
+      "page": 1,
+      "text_preview": "In this section, the transistor-level implementation of each building block is described, emphasizing the design constraints imposed by the technology limitations. A. VCO Since the clock recovery circuit is designed with the provision of adding a frequency detector, the oscillator must generate quadrature outputs [1], [2]. For a differential ring oscillator, this observation dictates the need for  ..."
+    },
+    {
+      "number": "IV",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 5,
+      "text_preview": "The clock recovery circuit has been fabricated in a digital m CMOS technology. Shown in Fig. 13 is a photograph 0.40.4 mm. The of the die, whose active area measures 0.8 mm circuit has been tested in a chip-on-board assembly while running from a 3.3-V power supply. The free-running frequency characteristics of the VCO are shown in Fig. 14 for both coarse and fine tuning. Note the linear behavior a ..."
+    },
+    {
+      "number": "V",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 6,
+      "text_preview": "In this paper, we presented a low-power, integrated 2.5-Gb/s m CMOS technology. clock recovery designed in a digital 0.4A method to resolve the conflict between a wide tuning range and low sensitivity is presented. Also, a two-stage ring-based VCO is introduced that utilizes an inductive load to provide excess phase shift, guaranteeing oscillation. Since the VCO consists of only two stages, it can ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. PLL architecture.",
+      "caption_bbox": [
+        38.1,
+        156.7,
+        123.1,
+        167.4
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The architecture of the clock recovery circuit addressing the above issues is shown in Fig. 1."
+        },
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The VCO provides the main output through a set of termination resistors. open-drain buffers to 50ANAND AND RAZAVI: A CMOS CLOCK RECOVERY CIRCUIT FOR 2.5-Gb/s NRZ DATA Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless",
+        "sub_blocks": [
+          "resistor",
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "PLL architecture",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. (a) Two-stage ring oscillator. (b) Simplified model of (a).",
+      "caption_bbox": [
+        38.1,
+        409.7,
+        249.3,
+        420.3
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 2."
+        },
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "However, two simple differential pairs in a loop [Fig. 2(a)] fail to oscillate because each stage contributes only one pole, yielding insufficient phase at unity gain."
+        },
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The simplified model shown in as Fig. 2(b) illustrates this effect."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.8,
+      "relevance_breakdown": {
+        "-model": -1.5,
+        "-simplified": -1.0,
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless",
+        "sub_blocks": [
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) Two-stage ring oscillator. (b) Simplified model of (a)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. (a) Two-stage ring oscillator with a composite load. (b) Simplified model of (a).",
+      "caption_bbox": [
+        301.1,
+        524.5,
+        552.2,
+        544.0
+      ],
+      "section_title": "III. BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 3."
+        },
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "In Fig. 3(a), the load resistors are replaced with a composite , , and a pMOS device."
+        },
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The model shown in Fig. 3(b) can be used to study the behavior of the oscillator."
+        },
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Note that is actually a pMOS device operating in the deep triode region, with its to minimize the effect of common-mode gate bypassed to noise. in The phase noise due to the thermal noise of resistors Fig. 3(b) is of concern."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.6,
+      "relevance_breakdown": {
+        "-model": -1.5,
+        "-simplified": -1.0,
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless",
+        "sub_blocks": [
+          "resistor",
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "Note that is actually a pMOS device operating in the deep triode region, with its to minimize the effect of common-mode gate bypassed to noise. in The phase noise due to the thermal noise of resistors Fig. 3(b) is of concern.",
+        "function_summary": "(a) Two-stage ring oscillator with a composite load. (b) Simplified model of (a). Note that is actually a pMOS device operating in the deep triode region, with its to minimize the effect of common-mode gate bypassed to noise. in The phase noise due to the thermal noise of resistors Fig. 3(b) is of concern.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.03,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Gain and phase response of each delay stage.",
+      "caption_bbox": [
+        39.6,
+        250.8,
+        213.2,
+        261.4
+      ],
+      "section_title": "III. BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "We obtain the transfer function for the half circuit equivalent of each differential pair Fig. 4."
+        },
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 4 plots the simulated gain and phase of each stage as a function of frequency with and without the excess phase network."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "CMOS Clock Recovery Circuit",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless",
+        "sub_blocks": [
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "Gain and phase response of each delay stage",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. (a) One stage of a VCO with noise due to R . (b) Output spectrum of a VCO with noise tone.",
+      "caption_bbox": [
+        302.6,
+        409.6,
+        553.7,
+        429.2
+      ],
+      "section_title": "III. BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "To quantify the phase noise, a small sinusoid is placed in series with one of the resistors [Fig. 5(a)], the oscillator is simulated in the time domain, and the output spectrum is examined."
+        },
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 5(b) shows the output spectrum for a 5-mV sinusoidal source."
+        },
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "This result indicates that, after normalization IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 3, MARCH 2001 Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.2,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless",
+        "sub_blocks": [
+          "resistor"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) One stage of a VCO with noise due to R . (b) Output spectrum of a VCO with noise tone",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. (a) One stage of the delay interpolation (b) Implementation of one stage with modified load.",
+      "caption_bbox": [
+        38.1,
+        423.1,
+        289.2,
+        442.6
+      ],
+      "section_title": "III. BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "In order to vary the oscillation frequency, the VCO incorporates delay interpolation [5], providing a tuning range wide enough to encompass process and temperature variations [Fig. 6(a)]."
+        },
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "In the transistor implementation of each delay stage, shown in Fig. 6(b), the fast path consists of one differential - , whereas the slow path consists of two differential pair, - and - ."
+        },
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "This property arises because two effects cancel each other: the nonlinearity associated with the voltage-to-current - and conversion in the pMOS differential pairs ( ANAND AND RAZAVI: A CMOS CLOCK RECOVERY CIRCUIT FOR 2.5-Gb/s NRZ DATA Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "differential pair"
+        ],
+        "design_purpose": "In order to vary the oscillation frequency, the VCO incorporates delay interpolation [5], providing a tuning range wide enough to encompass process and temperature variations [Fig. 6(a)].",
+        "function_summary": "(a) One stage of the delay interpolation (b) Implementation of one stage with modified load. In order to vary the oscillation frequency, the VCO incorporates delay interpolation [5], providing a tuning range wide enough to encompass process and temperature variations [Fig. 6(a)].",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Implementation of the coarse and fine control through the tail currents, and M . M",
+      "caption_bbox": [
+        38.1,
+        573.5,
+        289.2,
+        593.1
+      ],
+      "section_title": "III. BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Since the limited voltage headroom - and - makes it difficult to control the currents of by another differential pair, transistors and are driven by a current folding circuit (Fig. 7)."
+        },
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 7."
+        },
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "M - in Fig. 7) and the nonlinearity in the current-to-frequency conversion in the interpolation operation."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "CMOS Clock Recovery Circuit",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "current source",
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "Implementation of the coarse and fine control through the tail currents, and M . M",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. (a) D-flip-flop implementation of phase detector and output characteristic. (b) Sample-and-hold implementation of phase detector and output characteristic.",
+      "caption_bbox": [
+        301.1,
+        470.9,
+        552.2,
+        499.5
+      ],
+      "section_title": "III. BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "In “linear” phase detectors such as that in [6], the output pulsewidth is linearly proportional to the input phase difference, resulting in a constant loop gain during lock Fig. 8."
+        },
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "By contrast, bang-bang PDs [5] employ simple flipflops for maximum speed but provide only two output states [Fig. 8(a)], creating significant ripple on the control line in the locked condition and hence producing great jitter at the VCO output."
+        },
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Shown in Fig. 8(b), the PD is realized as a master–slave sample-and-hold circuit (an “analog D-flipflop”), whereby each rising data transition samples the instantaneous value of the VCO output."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "track-and-hold / sample-and-hold",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) D-flip-flop implementation of phase detector and output characteristic. (b) Sample-and-hold implementation of phase detector and output characteristic",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. Circuit implementation of a master–slave sample-and-hold phase detector.",
+      "caption_bbox": [
+        39.6,
+        236.5,
+        306.6,
+        247.1
+      ],
+      "section_title": "III. BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The transistor implementation of the PD is depicted in Fig. 9."
+        },
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Each of the master and slave stages consists of a differential pair whose tail current and load devices turn off simultaneously, Fig. 9."
+        },
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "In addition to a relatively linear behavior with respect to the input phase difference, the PD of Fig. 9 exhibits two other properties."
+        },
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Ideally, the phase offset should converge to zero for perfect phase locking, but, due to the inherent skew and in Fig. 9, a static offset of 15 ps arises. between"
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.1,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "track-and-hold / sample-and-hold",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "current source",
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "Circuit implementation of a master–slave sample-and-hold phase detector",
+        "key_specs": [
+          "15 ps"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.77,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10. Output characteristic of the phase detector.",
+      "caption_bbox": [
+        39.6,
+        419.2,
+        209.5,
+        429.9
+      ],
+      "section_title": "III. BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 10."
+        },
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Consequently, the bandwidth of this path can be as low as 0.7 2.5 GHz 1.75 GHz, allowing a low-power implementation in m CMOS technology. 0.4The simulated input–output characteristic of the phase detector is presented in Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "phase detector",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless",
+        "sub_blocks": [],
+        "design_purpose": "Consequently, the bandwidth of this path can be as low as 0.7 2.5 GHz 1.75 GHz, allowing a low-power implementation in m CMOS technology. 0.4The simulated input–output characteristic of the phase detector is presented in Fig. 10.",
+        "function_summary": "Output characteristic of the phase detector. Consequently, the bandwidth of this path can be as low as 0.7 2.5 GHz 1.75 GHz, allowing a low-power implementation in m CMOS technology. 0.4The simulated input–output characteristic of the phase detector is presented in Fig. 10.",
+        "key_specs": [
+          "2.5 GHz",
+          "1.75 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 4,
+      "caption": "Fig. 11. V–I converter and loop filter.",
+      "caption_bbox": [
+        302.6,
+        369.4,
+        428.1,
+        380.0
+      ],
+      "section_title": "III. BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "V–I Converter and Loop Filter Fig. 11 illustrates the differential V–I converter and loop filter. and is folded up so as to proThe current generated by duce an output common-mode level compatible with the VCO control path."
+        },
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "A simple common-mode feedback (CMFB) netIEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 3, MARCH 2001 Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "V–I converter and loop filter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 4,
+      "caption": "Fig. 12. (a) Differential control voltage for lock simulation. (b) Corresponding phase offset.",
+      "caption_bbox": [
+        302.6,
+        593.4,
+        553.6,
+        613.0
+      ],
+      "section_title": "III. BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 12."
+        },
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 12 presents the simulated lock behavior of the overall clock recovery circuit (with random input data) at the transistor ANAND AND RAZAVI: A CMOS CLOCK RECOVERY CIRCUIT FOR 2.5-Gb/s NRZ DATA Fig. 13."
+        },
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The differential control voltage of the oscillator is plotted in Fig. 12(a), suggesting a lock time of 650 ns."
+        },
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 12(b) shows the phase offset between the VCO output and the data transition edges."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.1,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) Differential control voltage for lock simulation. (b) Corresponding phase offset",
+        "key_specs": [
+          "650 ns"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.29,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 5,
+      "caption": "Fig. 13. Die photo of clock recovery circuit.",
+      "caption_bbox": [
+        38.1,
+        264.9,
+        186.3,
+        275.5
+      ],
+      "section_title": "III. BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 12 presents the simulated lock behavior of the overall clock recovery circuit (with random input data) at the transistor ANAND AND RAZAVI: A CMOS CLOCK RECOVERY CIRCUIT FOR 2.5-Gb/s NRZ DATA Fig. 13."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Shown in Fig. 13 is a photograph 0.40.4 mm."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-die photo": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "clock and data recovery (CDR)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Die photo of clock recovery circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 5,
+      "caption": "Fig. 14. Free-running characteristics of VCO.",
+      "caption_bbox": [
+        38.1,
+        462.5,
+        190.1,
+        473.2
+      ],
+      "section_title": "III. BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 14."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The free-running frequency characteristics of the VCO are shown in Fig. 14 for both coarse and fine tuning."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Free-running characteristics of VCO",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 6,
+      "caption": "Fig. 15. (a) Time-domain waveform at 2.5 GHz. (b) Jitter histogram for a PRBS of 2",
+      "caption_bbox": [
+        39.6,
+        255.4,
+        318.1,
+        266.1
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The phase 90 dBc/Hz at a 5-MHz offset. noise of the free-running VCO is Fig. 15 shows the measured output and the jitter histogram , in response to a 2.5-Gb/s PRBS sequence of length which is relevant for applications using 8 b/10 b coding."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-waveform": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "PRBS generator",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Time-domain waveform at 2.5 GHz. (b) Jitter histogram for a PRBS of 2",
+        "key_specs": [
+          "90 dBc/Hz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 6,
+      "caption": "Fig. 16. (a) Time-domain waveform at 2.5 GHz. (b) Jitter histogram for a PRBS of 2",
+      "caption_bbox": [
+        39.6,
+        487.7,
+        318.0,
+        498.4
+      ],
+      "section_title": "V. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 16 illustrates the output for a sequence length of , exhibiting 17.4 ps and 167 ps of rms and peak-to-peak jitter, respectively."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "(b) Jitter histogram for a PRBS of 2 Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-waveform": -2.0,
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "PRBS generator",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Time-domain waveform at 2.5 GHz. (b) Jitter histogram for a PRBS of 2",
+        "key_specs": [
+          "17.4 ps",
+          "167 ps"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 6,
+      "caption": "Fig. 17. Phase noise measurement for a PRBS of length 2 frequency: 2.48 GHz; horizontal scale: 5 MHz/div.; vertical scale: 10 dB/div.; resolution bandwidth: 1 kHz).",
+      "caption_bbox": [
+        39.6,
+        657.6,
+        290.7,
+        686.2
+      ],
+      "section_title": "V. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 17 depicts the phase noise for a random data sequence of with a resolution bandwidth of 1 kHz."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "(b) Jitter histogram for a PRBS of 2 1 (center Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.7,
+      "relevance_breakdown": {
+        "-phase noise": -2.5,
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "PRBS generator",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Phase noise measurement for a PRBS of length 2 frequency: 2.48 GHz; horizontal scale: 5 MHz/div.; vertical scale: 10 dB/div.; resolution bandwidth: 1 kHz)",
+        "key_specs": [
+          "1 kHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 9,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

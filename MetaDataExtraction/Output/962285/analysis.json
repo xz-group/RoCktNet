@@ -1,0 +1,1172 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\962285.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\962285",
+  "generated_at": "2026-07-29T22:03:35",
+  "paper_metadata": {
+    "title": "Rotary Traveling-Wave Oscillator Arrays: A New Clock Technology",
+    "authors": [
+      "John Wood",
+      "Terence C. Edwards",
+      "Steve Lipa"
+    ],
+    "abstract": "Rotary traveling-wave oscillators (RTWOs) represent a new transmission-line approach to gigahertz-rate clock mechanisms for better phase stability and lower power congeneration. Using the inherently stable LC characteristics of sumption. Previous transmission-line systems such as salphasic on-chip VLSI interconnect, the clock distribution network bedistribution [6], distributed amplifiers [7], and adiabatic LC rescomes a low-impedance distributed oscillator. The RTWO operates onant clocks [8] provide only a sinusoidal or semisinusoidal by creating a rotating traveling wave within a closed-loop differenclock, making fast edge rates difficult to achieve. tial transmission line. Distributed CMOS inverters serve as both transmission-line amplifiers and latches to power the oscillation This paper introduces the rotary traveling-wave oscillator and ensure rotational lock. Load capacitance is absorbed into the (RTWO); a differential LC transmission-line oscillator which transmission-line constants whereby energy is recirculated giving produces gigahertz-rate multiphase (360 ) square waves with an adiabatic quality. Unusually for an LC oscillator, multiphase low jitter. Extension of the RTWO to rotary oscillator arrays (360 ) square waves are produced directly. RTWO structures (ROAs) offers a scalable architecture with the potential for are compact and can be wired together to form rotary oscillator arrays (ROAs) to distribute a phase-locked clock over a large chip. low-power low-skew clock generation over an arbitrary chip The principle is scalable to very high clock frequencies. Issues area without resorting to clock domains. Simulations predict related to interconnect and field coupling dominate the design rise and fall times of 20 ps on a 0.25m process and a process for RTWOs. Taking precautions to avoid unwanted signal maximum frequency limited only by the of the integrated couplings, the rise and fall times of 20 ps, suggested by simulation, circuit technology used. may be realized at low power consumption. Experimental results of the 0.25m CMOS test chip with 950-MHz and 3.4-GHz rings Experiments show that although the RTWO operates differare presented, indicating 5.5-ps jitter and 34-dB power supply entially, careful attention is required to guard against magnetic rejection ratio (PSRR). Design errors in the test chip precluded field couplings between the clock conductors and other strucmeaningful rise and fall time measurements. tures if the potential performance of these oscillators is to be",
+    "keywords": [
+      "Clocks",
+      "MOSFET oscillators",
+      "phase-locked oscil-"
+    ],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2001
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Rotary Traveling-Wave Oscillator Arrays: A New Clock Technology",
+    "technology": "CMOS",
+    "application_domain": "rf, if",
+    "sub_blocks": [
+      "transistor/MOSFET",
+      "transmission line",
+      "bias circuit",
+      "switch",
+      "latch",
+      "clock / timing",
+      "varactor",
+      "inductor",
+      "capacitor",
+      "resistor",
+      "LC tank / resonator",
+      "output buffer"
+    ],
+    "design_purpose": "The RTWO operates onant clocks [8] provide only a sinusoidal or semisinusoidal by creating a rotating traveling wave within a closed-loop differenclock, making fast edge rates difficult to achieve. tial transmission line.",
+    "function_summary": "Rotary Traveling-Wave Oscillator Arrays: A New Clock Technology: The RTWO operates onant clocks [8] provide only a sinusoidal or semisinusoidal by creating a rotating traveling wave within a closed-loop differenclock, making fast edge rates difficult to achieve. tial transmission line.",
+    "key_specs": [
+      "20 ps",
+      "30%",
+      "1.75 nH",
+      "75%",
+      "34 pF",
+      "50%",
+      "22.5%",
+      "4 w",
+      "45%",
+      "2 pF"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "C LOCKING at gigahertz rates requires generators with low skew and low jitter to avoid synchronous timing failures. The notion of a “clocking surface” becomes untenable at gigahertz rates [1], frequently mandating that large VLSI chips are subdivided into multiple clock domains and/or utilize skew-tolerant multiphase circuit design techniques [2]. Techniques such as distributed phase-locked loops  ..."
+    },
+    {
+      "number": "II",
+      "title": "CONCEPT OF THE ROTARY CLOCK OSCILLATOR",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "A. Fundamentals and Structures The basic ROA architecture is shown in Fig. 1. A representative multigigahertz rotary clock layout has 25 interconnected 7 array grid. Each ring consists RTWO rings placed onto a 7 of a differential line driven by shunt-connected antiparallel inverters distributed around the ring. This arrangement produces a single clock edge in each ring which sweeps around the ring ..."
+    },
+    {
+      "number": "III",
+      "title": "MORE DETAILED CONSIDERATIONS",
+      "kind": "other",
+      "page": 4,
+      "text_preview": "A. Skew Control Interconnected RTWO loops offer the potential to control skew in spite of relatively large open-loop time-of-flight mismatches. Functionally, phase averaging occurs by pulse combination at the junction of multiple transmission lines. For a four-port junction, the normal operating mode will see two pulses arriving at the junction simultaneously. These two sources will feed two outpu ..."
+    },
+    {
+      "number": "IV",
+      "title": "SIMULATED PERFORMANCE",
+      "kind": "results",
+      "page": 7,
+      "text_preview": "A. Approach To enable rapid “what-if” evaluation of potential RTWO structures, a simulation/visualization program known as Rotary Explorer [32] has been developed. Rotary Explorer is GUI driven and parametrically creates a SPICE deck of macromodels linking to FASTHENRY subcircuits [33] for multipole magnetic analysis of skin, proximity, and LR coupling effects in the time domain. MOSFETs are model ..."
+    },
+    {
+      "number": "V",
+      "title": "SOME EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 9,
+      "text_preview": "Fig. 16 shows a die photograph of a prototype built using a m 2.5-V CMOS process with 1m Al/Cu top metal M5. 0.25The conductors are relatively wide in order to minimize resistive losses of the rather thin M5. The available top-metal area consumed by the transmission lines was 15%. A general feature of the RTWO and ROA is that power can be reduced by increasing the metal area devoted to clock gener ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION AND FURTHER WORK PLANNED",
+      "kind": "conclusion",
+      "page": 10,
+      "text_preview": "This paper has described the rotary traveling-wave oscillator (RTWO) and its potential application to gigahertz-rate VLSI clocking. The oscillator is unique for a resonant-style LC-based oscillator in that it produces square waves directly and can be hardwired to form rotary oscillator arrays (ROAs). Being LC-based, the oscillator is stable and jitter is low. The formulas presented here give pract ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. phase.",
+      "caption_bbox": [
+        38.1,
+        373.8,
+        58.9,
+        393.4
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "CONCEPT OF THE ROTARY CLOCK OSCILLATOR",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fundamentals and Structures The basic ROA architecture is shown in Fig. 1."
+        },
+        {
+          "section_title": "CONCEPT OF THE ROTARY CLOCK OSCILLATOR",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The = signs denote points with same Fig. 1. phase."
+        },
+        {
+          "section_title": "CONCEPT OF THE ROTARY CLOCK OSCILLATOR",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Phase Locking Interconnected rings, as in Fig. 1(a), will run in lockstep, ensuring that the relative phase at all points of an ROA are known."
+        },
+        {
+          "section_title": "CONCEPT OF THE ROTARY CLOCK OSCILLATOR",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "For example, referring to Fig. 1(a), all the points marked with have the same relative phase as that arthe equals sign ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.1,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Rotary Traveling-Wave Oscillator Arrays: A New Clock Technology",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "phase",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.05,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Idealized theory underlying the RTWO. (a) Open loop of differential conductors to a battery via a switch. (b) Similar loop but with the voltage source replaced by the inner and outer conductors cross-connected.",
+      "caption_bbox": [
+        38.1,
+        591.8,
+        289.2,
+        620.4
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "CONCEPT OF THE ROTARY CLOCK OSCILLATOR",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 2 illustrates the theory behind the individual RTWO."
+        },
+        {
+          "section_title": "CONCEPT OF THE ROTARY CLOCK OSCILLATOR",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 2(a) depicts an open loop of differential transmission line (exhibiting LC characteristics) connected to a battery through an ideal switch."
+        },
+        {
+          "section_title": "CONCEPT OF THE ROTARY CLOCK OSCILLATOR",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 2(b) shows a similar loop, with the voltage source replaced by a cross-connection of the inner and outer conductors to cause a signal inversion."
+        },
+        {
+          "section_title": "CONCEPT OF THE ROTARY CLOCK OSCILLATOR",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.1,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "switch",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transmission line",
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Idealized theory underlying the RTWO. (a) Open loop of differential conductors to a battery via a switch. (b) Similar loop but with the voltage source replaced by the inner and outer conductors cross-connected",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.05,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Waveforms of line voltage and line current for the 3.4-GHz clock simulation example.",
+      "caption_bbox": [
+        301.1,
+        269.5,
+        552.1,
+        289.2
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "CONCEPT OF THE ROTARY CLOCK OSCILLATOR",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 3."
+        },
+        {
+          "section_title": "CONCEPT OF THE ROTARY CLOCK OSCILLATOR",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Waveforms Fig. 3 shows simulated waveforms of a 3.4-GHz RTWO taken at an arbitrary position on the ring."
+        },
+        {
+          "section_title": "CONCEPT OF THE ROTARY CLOCK OSCILLATOR",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The upper traces of Fig. 3 show the simulated voltage waveforms on the differential line at points labeled A0, B0."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.3,
+      "relevance_breakdown": {
+        "-waveform": -2.0,
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Rotary Traveling-Wave Oscillator Arrays: A New Clock Technology",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Waveforms of line voltage and line current for the 3.4-GHz clock simulation example",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Voltage, current, and phase relationships versus rotation direction (Poynting’s vector).",
+      "caption_bbox": [
+        39.6,
+        193.1,
+        290.6,
+        212.8
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "CONCEPT OF THE ROTARY CLOCK OSCILLATOR",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "At any point along the loop, the two bitrarily marked as 0 out of phase (two-phase signal conductors have waveforms 180 Fig. 4."
+        },
+        {
+          "section_title": "CONCEPT OF THE ROTARY CLOCK OSCILLATOR",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Phase advances or retards depend on the direction of rotation, and Fig. 4 shows the current–voltage relationships for clockwise and counterclockwise rotation."
+        },
+        {
+          "section_title": "SIMULATED PERFORMANCE",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "As a numerical example, it follows that a 2.5-V signal with a rise time of 20 ps on a transmission line has the 2.5-V gradient over 430 m of with a velocity of m length length (Fig. 4 illustrates the concept)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.7,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Rotary Traveling-Wave Oscillator Arrays: A New Clock Technology",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transmission line"
+        ],
+        "design_purpose": "",
+        "function_summary": "Voltage, current, and phase relationships versus rotation direction (Poynting’s vector)",
+        "key_specs": [
+          "20 ps"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Three-dimensional view of the structure. The two differential lines are shown, with current flow arrows (main and charge/boost) and encircling H-fields. CMOS transistors are also shown complete with supply voltages (V and V ) and both pand n-channels.",
+      "caption_bbox": [
+        302.6,
+        200.3,
+        553.7,
+        237.9
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "CONCEPT OF THE ROTARY CLOCK OSCILLATOR",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fields and Currents Fig. 5 illustrates a three-dimensional section of the ring structure connected to a pair of CMOS inverters expanded to show the four individual transistors."
+        },
+        {
+          "section_title": "CONCEPT OF THE ROTARY CLOCK OSCILLATOR",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 11, NOVEMBER 2001 Fig. 5."
+        },
+        {
+          "section_title": "CONCEPT OF THE ROTARY CLOCK OSCILLATOR",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 8(a) is the basic RF macromodel of a short length (SegLen) of RTWO line with all significant RF components and parasitics annotated (as per Fig. 5)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.7,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Rotary Traveling-Wave Oscillator Arrays: A New Clock Technology",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Three-dimensional view of the structure. The two differential lines are shown, with current flow arrows (main and charge/boost) and encircling H-fields. CMOS transistors are also shown complete with supply voltages (V and V ) and both pand n-channels",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. Expanded view of short sections of the transmission line, including three sets of back-to-back inverters as a wavefront passes.",
+      "caption_bbox": [
+        302.6,
+        360.4,
+        553.6,
+        379.9
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "CONCEPT OF THE ROTARY CLOCK OSCILLATOR",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 6."
+        },
+        {
+          "section_title": "CONCEPT OF THE ROTARY CLOCK OSCILLATOR",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Coherent Amplification, Rotation Locking Fig. 6 is an expanded view of a short section of transmission line with three sets of back-to-back inverters shown."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Rotary Traveling-Wave Oscillator Arrays: A New Clock Technology",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transmission line"
+        ],
+        "design_purpose": "",
+        "function_summary": "Expanded view of short sections of the transmission line, including three sets of back-to-back inverters as a wavefront passes",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. DC transfer characteristic of two back-to-back inverters to an imposed differential signal.",
+      "caption_bbox": [
+        38.1,
+        205.3,
+        289.1,
+        224.8
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "CONCEPT OF THE ROTARY CLOCK OSCILLATOR",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "To clarify the above statements, Fig. 7 demonstrates how a large CMOS latch responds to an imposed differential signal."
+        },
+        {
+          "section_title": "CONCEPT OF THE ROTARY CLOCK OSCILLATOR",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The curve trace shows a central differential-amplification region bounded by two absorptive ohmic regions (shaded) correWOOD et al.: ROTARY TRAVELING-WAVE OSCILLATOR ARRAYS Fig. 7."
+        },
+        {
+          "section_title": "SOME EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "In this condition, the latching action (Fig. 7) does not fully develop and the rings support linear amplification of noise signals—hence the problematic multimode action."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.7,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "latch"
+        ],
+        "design_purpose": "",
+        "function_summary": "DC transfer characteristic of two back-to-back inverters to an imposed differential signal",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. Development of the rotary clock model. (a) Complete RF circuit. (b) Capacitance circuit.",
+      "caption_bbox": [
+        301.1,
+        346.3,
+        552.2,
+        365.8
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "CONCEPT OF THE ROTARY CLOCK OSCILLATOR",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 8(a) is the basic RF macromodel of a short length (SegLen) of RTWO line with all significant RF components and parasitics annotated (as per Fig. 5)."
+        },
+        {
+          "section_title": "CONCEPT OF THE ROTARY CLOCK OSCILLATOR",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 8(b) is a capacitive equivalent circuit for the transistor and load capacitances."
+        },
+        {
+          "section_title": "CONCEPT OF THE ROTARY CLOCK OSCILLATOR",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "(2) (a) (b) Fig. 8."
+        },
+        {
+          "section_title": "CONCEPT OF THE ROTARY CLOCK OSCILLATOR",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Bandwidth and Power Consumption Seen from an RF perspective, Fig. 8(a) shows the RTWO to be two push–pull distributed amplifiers folded on top of each other."
+        },
+        {
+          "section_title": "MORE DETAILED CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Each of these rings has been (each as Fig. 8)."
+        },
+        {
+          "section_title": "SIMULATED PERFORMANCE",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "MOSFETs are modeled using BSIM3v3 nonquasi-static model with an external resistor added to model (Fig. 8)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.0,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-model": -1.5,
+        "-capacitance": -2.0,
+        "section:intro": -0.5,
+        "references": 2.0
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "resistor",
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Development of the rotary clock model. (a) Complete RF circuit. (b) Capacitance circuit",
+        "key_specs": [
+          "3v"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9.",
+      "caption_bbox": [
+        39.6,
+        371.0,
+        60.3,
+        381.6
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "CONCEPT OF THE ROTARY CLOCK OSCILLATOR",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 9. of the transmission-line impedance [15]."
+        },
+        {
+          "section_title": "MORE DETAILED CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 9(a) depicts the operation of a four-port junction between of two interwired but velocity-mismatched RTWO loops."
+        },
+        {
+          "section_title": "MORE DETAILED CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Waveforms corresponding with Fig. 9."
+        },
+        {
+          "section_title": "MORE DETAILED CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "If all ports have equal impedance, the junction can only reach a quarter of the full signal value and a reflection occurs driving an inverted signal back down the incident port [Fig. 9(b)]."
+        },
+        {
+          "section_title": "MORE DETAILED CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Initially, detrimental effects on signal fidelity arising from this reflection are overcome when the other pulse arrives, whereupon the pulses combine and branch into the output ports, as shown in Fig. 9(c)."
+        },
+        {
+          "section_title": "MORE DETAILED CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Looking at these results with reference to Fig. 9 reveals and passes point that the first pulse arrives from ring at time ps and begins its rise time."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.5,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Rotary Traveling-Wave Oscillator Arrays: A New Clock Technology",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.25,
+      "warnings": [
+        "Recommended figure caption does not explicitly mention a schematic/topology/circuit; please confirm manually.",
+        "Recommended figure was classified as 'other', not a schematic; manual confirmation strongly recommended."
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. Waveforms corresponding with Fig. 9.",
+      "caption_bbox": [
+        38.1,
+        312.2,
+        194.2,
+        322.8
+      ],
+      "section_title": "III. MORE DETAILED CONSIDERATIONS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MORE DETAILED CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "WOOD et al.: ROTARY TRAVELING-WAVE OSCILLATOR ARRAYS Fig. 10."
+        },
+        {
+          "section_title": "MORE DETAILED CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Quantitative Results From Simulation: Fig. 10 presents the results of a SPICE simulation of the above situation with an 50% variation of extreme condition of velocity mismatch."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "-waveform": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Waveforms corresponding with Fig. 9",
+        "key_specs": [
+          "50%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 5,
+      "caption": "Fig. 11. Segment of chip layout showing 90 routing beneath clock lines and a tap to clock (CLK: CLK) loads.",
+      "caption_bbox": [
+        301.1,
+        247.1,
+        552.2,
+        266.7
+      ],
+      "section_title": "III. MORE DETAILED CONSIDERATIONS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MORE DETAILED CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "It then combines with the first pulse at the junction to branch into the two output ports without further reflections. ps, the signals have reached points A and By and are essentially coincident—forward progress of the B and are now synchronized. waves in rings Fig. 11."
+        },
+        {
+          "section_title": "MORE DETAILED CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "The magnetic coupling coefficient, however, depends on the angle between source and victim and falls to zero when . the angle becomes 90 Fig. 11 illustrates a 90 layout technique to minimize inductive coupling problems."
+        },
+        {
+          "section_title": "MORE DETAILED CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Differential transmission lines tend to mitigate such effects [19], and in Fig. 11, the total capacitive coupling area between each of the transmission-line conductors and any M4 conductor is balanced."
+        },
+        {
+          "section_title": "MORE DETAILED CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Tapoff Issues and Stub Loadings It is possible to “tap into” the ROA structure (Fig. 11) anywhere along its length and extract a locally two-phase signal with known phase relationship to the rest of the network."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.4,
+      "relevance_breakdown": {
+        "-layout": -2.0,
+        "references": 1.6
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "Rotary Traveling-Wave Oscillator Arrays: A New Clock Technology",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transmission line"
+        ],
+        "design_purpose": "The magnetic coupling coefficient, however, depends on the angle between source and victim and falls to zero when . the angle becomes 90 Fig. 11 illustrates a 90 layout technique to minimize inductive coupling problems.",
+        "function_summary": "Segment of chip layout showing 90 routing beneath clock lines and a tap to clock (CLK: CLK) loads. The magnetic coupling coefficient, however, depends on the angle between source and victim and falls to zero when . the angle becomes 90 Fig. 11 illustrates a 90 layout technique to minimize inductive coupling problems.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 6,
+      "caption": "Fig. 12. Signal at either end of a 2-pF total tap loading line.",
+      "caption_bbox": [
+        302.6,
+        218.2,
+        499.1,
+        228.9
+      ],
+      "section_title": "III. MORE DETAILED CONSIDERATIONS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MORE DETAILED CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 12 shows simulated waveforms with 2 pF of total to-ground capacitance at the end of one such stub."
+        },
+        {
+          "section_title": "MORE DETAILED CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 11, NOVEMBER 2001 Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Rotary Traveling-Wave Oscillator Arrays: A New Clock Technology",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Signal at either end of a 2-pF total tap loading line",
+        "key_specs": [
+          "2 pF"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 7,
+      "caption": "Fig. 13. Differential line with varing trace separations and capacitive inverter loadings indicating the effects of altering several parameters.",
+      "caption_bbox": [
+        38.1,
+        131.5,
+        289.2,
+        151.2
+      ],
+      "section_title": "IV. SIMULATED PERFORMANCE",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MORE DETAILED CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "By and simultaneously, it is possible to manipulation of both and independently, as shown diagrammatically in control can be reduced by increasing Fig. 13."
+        },
+        {
+          "section_title": "MORE DETAILED CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "WOOD et al.: ROTARY TRAVELING-WAVE OSCILLATOR ARRAYS Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Differential line with varing trace separations and capacitive inverter loadings indicating the effects of altering several parameters",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 8,
+      "caption": "Fig. 14. Crossover traces, a visualization output from the Rotary Explorer tool.",
+      "caption_bbox": [
+        39.6,
+        532.1,
+        290.7,
+        542.7
+      ],
+      "section_title": "IV. SIMULATED PERFORMANCE",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "SIMULATED PERFORMANCE",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Simulated results are shown in Table IV for a 3.4-GHz RTWO configured to have 20 ps rise and fall times, and with geometry as shown in Fig. 14. m victim length."
+        },
+        {
+          "section_title": "SIMULATED PERFORMANCE",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 15 illustrates a notably strong coupled signal waveform m, with no loading on the victim at victim distance TABLE II VARIATIONS WITH TEMPERATURE TABLE III VARIATIONS WITH DC SUPPLY VOLTAGE V TABLE IV INDUCED NOISE AS A FUNCTION OF VICTIM DISTANCE AND LENGTH Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Rotary Traveling-Wave Oscillator Arrays: A New Clock Technology",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Crossover traces, a visualization output from the Rotary Explorer tool",
+        "key_specs": [
+          "20 ps"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 8,
+      "caption": "Fig. 15. Example of notably strong coupled signal waveform.",
+      "caption_bbox": [
+        302.6,
+        562.0,
+        504.8,
+        572.6
+      ],
+      "section_title": "IV. SIMULATED PERFORMANCE",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "SIMULATED PERFORMANCE",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 15 illustrates a notably strong coupled signal waveform m, with no loading on the victim at victim distance TABLE II VARIATIONS WITH TEMPERATURE TABLE III VARIATIONS WITH DC SUPPLY VOLTAGE V TABLE IV INDUCED NOISE AS A FUNCTION OF VICTIM DISTANCE AND LENGTH Fig. 14."
+        },
+        {
+          "section_title": "SIMULATED PERFORMANCE",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Inductance is lowered IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 11, NOVEMBER 2001 Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-waveform": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Rotary Traveling-Wave Oscillator Arrays: A New Clock Technology",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Example of notably strong coupled signal waveform",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 9,
+      "caption": "Fig. 16. Die photograph of a prototype chip.",
+      "caption_bbox": [
+        38.1,
+        288.5,
+        186.1,
+        299.1
+      ],
+      "section_title": "IV. SIMULATED PERFORMANCE",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MORE DETAILED CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Four divided into segments numbered rings are wired together (similar to Fig. 16, shown later)."
+        },
+        {
+          "section_title": "SIMULATED PERFORMANCE",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "WOOD et al.: ROTARY TRAVELING-WAVE OSCILLATOR ARRAYS Fig. 16."
+        },
+        {
+          "section_title": "SOME EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "Fig. 16 shows a die photograph of a prototype built using a m 2.5-V CMOS process with 1m Al/Cu top metal M5. 0.25The conductors are relatively wide in order to minimize resistive losses of the rather thin M5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.8,
+      "relevance_breakdown": {
+        "-photograph": -3.0,
+        "-die photo": -3.0,
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "Fig. 16 shows a die photograph of a prototype built using a m 2.5-V CMOS process with 1m Al/Cu top metal M5. 0.25The conductors are relatively wide in order to minimize resistive losses of the rather thin M5.",
+        "function_summary": "Die photograph of a prototype chip. Fig. 16 shows a die photograph of a prototype built using a m 2.5-V CMOS process with 1m Al/Cu top metal M5. 0.25The conductors are relatively wide in order to minimize resistive losses of the rather thin M5.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 9,
+      "caption": "Fig. 17. Measurement versus simulation waveforms for the large 965-MHz ring.",
+      "caption_bbox": [
+        38.1,
+        443.6,
+        289.2,
+        463.2
+      ],
+      "section_title": "V. SOME EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "SIMULATED PERFORMANCE",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 17."
+        },
+        {
+          "section_title": "SOME EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "Measurements of the actual perforV are shown in Fig. 17. mance versus simulated with The oscillation frequency was 965 MHz."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-waveform": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Rotary Traveling-Wave Oscillator Arrays: A New Clock Technology",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measurement versus simulation waveforms for the large 965-MHz ring",
+        "key_specs": [
+          "965 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 9,
+      "caption": "Fig. 18. Clock frequency versus V for the large ring and I versus V for the entire chip with all five rings.",
+      "caption_bbox": [
+        301.1,
+        211.0,
+        541.8,
+        230.6
+      ],
+      "section_title": "IV. SIMULATED PERFORMANCE",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "SOME EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "At design time, the importance of this parameter was Fig. 18."
+        },
+        {
+          "section_title": "SOME EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "Transistors are now laid out according to RF design rules with the gate driven from both sides of the device. versus Fig. 18 shows that the oscillation frequency is quite flat over a large ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Rotary Traveling-Wave Oscillator Arrays: A New Clock Technology",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Clock frequency versus V for the large ring and I versus V for the entire chip with all five rings",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 9,
+      "caption": "Fig. 19. Measured output on one of the 3.42-GHz rings.",
+      "caption_bbox": [
+        301.1,
+        360.1,
+        485.9,
+        370.7
+      ],
+      "section_title": "IV. SIMULATED PERFORMANCE",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "SOME EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "Fig. 19."
+        },
+        {
+          "section_title": "SOME EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "Fig. 19 shows the measured waveform from one of the 3.4-GHz rings."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Rotary Traveling-Wave Oscillator Arrays: A New Clock Technology",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured output on one of the 3.42-GHz rings",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 9,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

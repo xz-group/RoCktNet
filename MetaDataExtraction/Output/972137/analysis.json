@@ -1,0 +1,1213 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\972137.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\972137",
+  "generated_at": "2026-07-29T22:03:37",
+  "paper_metadata": {
+    "title": "A 13.5-mW 185-Msample/s Modulator for UMTS/GSM Dual-Standard IF Reception",
+    "authors": [
+      "Thomas Burger",
+      "Qiuting Huang"
+    ],
+    "abstract": "A system-oriented approach for the design of a TABLE I WCDMA/GSM STANDARD OVERVIEW UMTS/GSM dual-standard modulator is presented to demonstrate the feasibility of achieving intermediate frequency (IF) around 100 MHz, high dynamic range, and low power consumption at the same time. The circuit prototype implements 78 MHz IF for GSM and 138.24 MHz for wideband code division multiple access (WCDMA), which are set to be 3/4 of the analog-to-digital converter sampling rate. A two-path IF sampling and mixing topology with a low-pass modulator, run at half the sampling rate, is used. Implemented in 0.25m CMOS, the circuit achieves dynamic range and peak signal-to-noise and distortion ratio for GSM of 86 and 72 dB, respectively. The corresponding values for WCDMA are 54 and 52 dB, respectively. Optimization is performed at all stages of design to minimize power consumption. The complete circuit consumes less than 11.5 mW for GSM and 13.5 mW for WCDMA at 2.5-V supply, of the wireless industry. Table I gives an overview of both stanwhich 8 mW is due to the analog part. dards. We wish to investigate efficient receiver implementation",
+    "keywords": [
+      "Analog–digital conversion",
+      "IF systems",
+      "mixed"
+    ],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2001
+  },
+  "paper_circuit_context": {
+    "circuit_type": "13.5-mW 185-Msample/s Modulator",
+    "technology": "CMOS",
+    "application_domain": "rf, wireless, baseband, if",
+    "sub_blocks": [
+      "capacitor",
+      "transistor/MOSFET",
+      "mixer",
+      "switch",
+      "clock / timing",
+      "cross-coupled pair",
+      "output buffer",
+      "differential pair"
+    ],
+    "design_purpose": "A system-oriented approach for the design of a TABLE I WCDMA/GSM STANDARD OVERVIEW UMTS/GSM dual-standard modulator is presented to demonstrate the feasibility of achieving intermediate frequency (IF) around 100 MHz, high dynamic range, and low power consumption at the same time.",
+    "function_summary": "13.5-mW 185-Msample/s Modulator: A system-oriented approach for the design of a TABLE I WCDMA/GSM STANDARD OVERVIEW UMTS/GSM dual-standard modulator is presented to demonstrate the feasibility of achieving intermediate frequency (IF) around 100 MHz, high dynamic range, and low power consumption at the same time.",
+    "key_specs": [
+      "100 MHz",
+      "78 MHz",
+      "138.24 MHz",
+      "72 dB",
+      "52 dB",
+      "11.5 mW",
+      "13.5 mW",
+      "8 mW",
+      "10 mW",
+      "100 dB"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "S INCE cellular telephony made the transition from first-generation analog systems to the second-generation (2G) digital systems less than a decade ago, mobile telecommunications has experienced tremendous growth. Today, several different 2G standards are used worldwide, of which the Global System for Mobile communications (GSM) has highest penetration [1]. Driven by market forces, the number of s ..."
+    },
+    {
+      "number": "II",
+      "title": "WCDMA/GSM RECEIVER ARCHITECTURE",
+      "kind": "proposed",
+      "page": 1,
+      "text_preview": "CONSIDERATIONS A. Receiver Planning Cellular standards usually define receiver requirements by specifying signal levels applied to the antenna connector during type-approval test. To determine the requirements for each desired building block (e.g., the ADC), one follows such signals down the receiver chain to assign gain, dynamic range, linearity, and noise figure to every block, in an iterative p ..."
+    },
+    {
+      "number": "IV",
+      "title": "POWER OPTIMIZATION",
+      "kind": "other",
+      "page": 6,
+      "text_preview": "Power optimization is important for battery-operated devices and especially so for mobile phones. Low power dissipation by the receiver extends the standby time, a key figure of merit for such devices. Power optimization is a task for every level of design: system, architecture, building block, and transistor circuit. For the present design, the important decisions for low power at architecture le ..."
+    },
+    {
+      "number": "V",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 7,
+      "text_preview": "The IF ADC circuit has been characterized not only by the common sinusoidal input signal test for its dynamic range and linearity, but also for specific type-approval tests dictated by the GSM and WCDMA standards. One such test is the intermodulation test, introduced in Section II-A. The corresponding measurement setup is shown in Fig. 16. Three different high-quality RF generators deliver these s ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 10,
+      "text_preview": "The development of modern submicron CMOS technologies with steadily increasing device speed at low power consumption prompts us to reconsider the tradeoffs in receiver design freconverters that can explore speed quently. Circuits such as to increase dynamic range are especially well suited to take advantage of CMOS scaling. With increasing ADC dynamic range at decreasing power consumption, the des ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Single superheterodyne receiver architecture.",
+      "caption_bbox": [
+        38.1,
+        169.6,
+        212.0,
+        180.3
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "We wish to investigate efficient receiver implementation for such a dual-standard phone based on the single-IF superheterodyne (SSH) architecture of Fig. 1, a common structure for GSM receivers [3]."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Therefore, to make an IF-reception BURGER AND HUANG: MODULATOR FOR UMTS/GSM DUAL-STANDARD IF RECEPTION Fig. 1."
+        },
+        {
+          "section_title": "WCDMA/GSM RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "In receiver planning, the designer can explore this fact to reduce the radio signal dynamic range present at the antenna by successive steps of filtering and programmable gain, typically performed respectively by the preselection and image-reject filter (IR filter), the low noise amplifier (LNA), the IF filter, and IF automatic gain control (AGC), as shown in Fig. 1."
+        },
+        {
+          "section_title": "WCDMA/GSM RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "At the RF stage of the SSH receiver in Fig. 1, the preselection and IR filter suppress out of band blockers usually by 20–30 dB to a level equal to or lower than in-band blockers."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.1,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "section:intro": -0.5,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "In receiver planning, the designer can explore this fact to reduce the radio signal dynamic range present at the antenna by successive steps of filtering and programmable gain, typically performed respectively by the preselection and image-reject filter (IR filter), the low noise amplifier (LNA), the IF filter, and IF ...",
+        "function_summary": "Single superheterodyne receiver architecture. In receiver planning, the designer can explore this fact to reduce the radio signal dynamic range present at the antenna by successive steps of filtering and programmable gain, typically performed respectively by the preselection and image-reject filter (IR filter), the ...",
+        "key_specs": [
+          "30 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.29,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Template of interference and blocking signal levels for GSM.",
+      "caption_bbox": [
+        38.1,
+        384.0,
+        264.6,
+        394.6
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 2."
+        },
+        {
+          "section_title": "WCDMA/GSM RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 2 shows the template of interfering and blocking signal levels for small mobile stations in the GSM Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "13.5-mW 185-Msample/s Modulator",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Template of interference and blocking signal levels for GSM",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Minimum attenuation mask of typical IF filter with GSM signal spectrum.",
+      "caption_bbox": [
+        39.6,
+        251.8,
+        290.6,
+        271.3
+      ],
+      "section_title": "II. WCDMA/GSM RECEIVER ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "WCDMA/GSM RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 2 shows the template of interfering and blocking signal levels for small mobile stations in the GSM Fig. 3."
+        },
+        {
+          "section_title": "WCDMA/GSM RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 3 shows a typical IF surface acoustic wave (SAW) filter [11] minimum attenuation mask with a GSM signal spectrum drawn inside."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Minimum attenuation mask of typical IF filter with GSM signal spectrum",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 3,
+      "caption": "Fig. 4. Template of interference and blocking signal levels for WCDMA.",
+      "caption_bbox": [
+        38.1,
+        218.8,
+        278.7,
+        229.4
+      ],
+      "section_title": "II. WCDMA/GSM RECEIVER ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "WCDMA/GSM RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "For WCDMA, the template of interference and blocking signal levels, as shown in Fig. 4, has one major difference to GSM."
+        },
+        {
+          "section_title": "WCDMA/GSM RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "BURGER AND HUANG: MODULATOR FOR UMTS/GSM DUAL-STANDARD IF RECEPTION Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Template of interference and blocking signal levels for WCDMA",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Specification of ADC dynamic range.",
+      "caption_bbox": [
+        38.1,
+        474.5,
+        188.2,
+        485.2
+      ],
+      "section_title": "II. WCDMA/GSM RECEIVER ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "WCDMA/GSM RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 5 gives a detailed mapping."
+        },
+        {
+          "section_title": "WCDMA/GSM RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "We assume a constant plus a variable gain (AGC) between the antenna and the ADC as indicated in Fig. 5."
+        },
+        {
+          "section_title": "WCDMA/GSM RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 5."
+        },
+        {
+          "section_title": "WCDMA/GSM RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "We calculate the minimum acceptable channel signal level at the ADC input for GSM according to Fig. 5 with 4 dB , high dynamic range full scale input level set to Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.6,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Specification of ADC dynamic range",
+        "key_specs": [
+          "5 w",
+          "4 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.4,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. GSM intermodulation test.",
+      "caption_bbox": [
+        38.1,
+        621.7,
+        152.7,
+        632.4
+      ],
+      "section_title": "II. WCDMA/GSM RECEIVER ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "WCDMA/GSM RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "We base our derivation of IP3 for the ADC on the intermodulation test, which is shown in Fig. 6 for the GSM case."
+        },
+        {
+          "section_title": "WCDMA/GSM RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Any third-order nonlinearity 20 MHz offset, both at present in the receiver leads to an undesired intermodulation product falling into the channel, as indicated in Fig. 6."
+        },
+        {
+          "section_title": "WCDMA/GSM RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Specification of ADC dynamic range. to Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "GSM intermodulation test",
+        "key_specs": [
+          "20 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.31,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Derivation of IP3 for ADC.",
+      "caption_bbox": [
+        301.1,
+        464.3,
+        418.5,
+        475.0
+      ],
+      "section_title": "II. WCDMA/GSM RECEIVER ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "WCDMA/GSM RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 7 shows a graphical representation of denotes the channel gain from the calculation for GSM. is the attenuation of the the antenna to the ADC input, and interferers by the IF filter relative to the channel signal (assumed constant for simplicity)."
+        },
+        {
+          "section_title": "WCDMA/GSM RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The ratio of channel signal to intermodulation product is again the required SNR of 10 dB for a GSM receiver to obtain Fig. 7."
+        },
+        {
+          "section_title": "WCDMA/GSM RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 7 leads to the following inequality for the ADC IP3."
+        },
+        {
+          "section_title": "WCDMA/GSM RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "For comparison with common ADC specifications, the IP3 as defined in Fig. 7 is related to HD3 for full scale (FS) converter input: HD3 [dB] dB ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.6,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "The ratio of channel signal to intermodulation product is again the required SNR of 10 dB for a GSM receiver to obtain Fig. 7.",
+        "function_summary": "Derivation of IP3 for ADC. The ratio of channel signal to intermodulation product is again the required SNR of 10 dB for a GSM receiver to obtain Fig. 7.",
+        "key_specs": [
+          "10 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.4,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. IF and sampling rate allocation.",
+      "caption_bbox": [
+        39.6,
+        166.4,
+        171.2,
+        177.0
+      ],
+      "section_title": "II. WCDMA/GSM RECEIVER ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "WCDMA/GSM RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "We calculate the minimum acceptable channel signal level at the ADC input for GSM according to Fig. 5 with 4 dB , high dynamic range full scale input level set to Fig. 8."
+        },
+        {
+          "section_title": "WCDMA/GSM RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Combined considerations for image rejection and sampling/symbol rate led us to opt for 138.24 and 78 MHz as IF frequencies for WCDMA and GSM, respectively, as shown in Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "IF and sampling rate allocation",
+        "key_specs": [
+          "5 w",
+          "4 dB",
+          "78 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. IF-to-BB section topologies.",
+      "caption_bbox": [
+        39.6,
+        278.5,
+        160.3,
+        289.1
+      ],
+      "section_title": "II. WCDMA/GSM RECEIVER ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "WCDMA/GSM RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 9."
+        },
+        {
+          "section_title": "WCDMA/GSM RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "We have adopted the two-path IF sampling and mixing topology, as shown in Fig. 9, which has also been used in [8] and [16]. and branches is performed by Here, the decomposition into sampling the input signal alternately for each branch at half the nominal sampling rate."
+        },
+        {
+          "section_title": "WCDMA/GSM RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Modulator noise and signal transfer functions. equivalent to the more common structure of Fig. 9(b), where a modulator is followed by a digital mixer, if the bandpass is used for low-to-bandpass conversion, transform is valid between IF and and the relationship sample rate."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "For perfect image rejection, and sampling instants has to be the time offset between (Fig. 9). equal to half a clock cycle of the input clock at To achieve equal time offset between the two channels, the switch-driving circuitry has been laid out symmetrically and the capacitive load to the latter has been balanced by design: the offset of half a clock cycle corresponding to one clock and leads to reverse phase assignments phase between IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 12, DECEMBER 2001 for either channel."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.6,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "mixer",
+          "switch"
+        ],
+        "design_purpose": "For perfect image rejection, and sampling instants has to be the time offset between (Fig. 9). equal to half a clock cycle of the input clock at To achieve equal time offset between the two channels, the switch-driving circuitry has been laid out symmetrically and the capacitive load to the latter has been balanced by ...",
+        "function_summary": "IF-to-BB section topologies. For perfect image rejection, and sampling instants has to be the time offset between (Fig. 9). equal to half a clock cycle of the input clock at To achieve equal time offset between the two channels, the switch-driving circuitry has been laid out symmetrically and the capacitive load to ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.4,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. Modulator noise and signal transfer functions.",
+      "caption_bbox": [
+        38.1,
+        311.5,
+        219.6,
+        322.1
+      ],
+      "section_title": "II. WCDMA/GSM RECEIVER ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "WCDMA/GSM RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "This topology is mathematically by a low-pass BURGER AND HUANG: MODULATOR FOR UMTS/GSM DUAL-STANDARD IF RECEPTION Fig. 10."
+        },
+        {
+          "section_title": "WCDMA/GSM RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The designed noise and signal transfer functions (NTF/STF) are shown in Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Modulator noise and signal transfer functions",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 6,
+      "caption": "Fig. 11. Circuit block diagram.",
+      "caption_bbox": [
+        39.6,
+        265.1,
+        145.3,
+        275.8
+      ],
+      "section_title": "II. WCDMA/GSM RECEIVER ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "WCDMA/GSM RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 11 shows the circuit implementation with feedforward structure and fully differential switched-capacitor (SC) technique."
+        },
+        {
+          "section_title": "WCDMA/GSM RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Switches for resetting the integrator feedback capacitors have also been implemented (dashed connections in Fig. 11)."
+        },
+        {
+          "section_title": "WCDMA/GSM RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.2,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "+circuit": 1.0,
+        "section:proposed": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "switch",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "capacitor",
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Circuit block diagram",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.88,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 6,
+      "caption": "Fig. 12. Main amplifier schematic.",
+      "caption_bbox": [
+        39.6,
+        483.8,
+        156.7,
+        494.4
+      ],
+      "section_title": "IV. POWER OPTIMIZATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "WCDMA/GSM RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 12."
+        },
+        {
+          "section_title": "POWER OPTIMIZATION",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "Fig. 12 shows the main amplifier schematic with dimensions given for OTA1."
+        },
+        {
+          "section_title": "POWER OPTIMIZATION",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "For the telescopic topology of Fig. 12, the widths of transistors M1 and M2 are optimized for unity gain bandwidth (UGBW) at a given bias current, following the analytical approach of [21] and taking parasitic capacitances and the poles associated with the source node of M2 into account."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.2,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Main amplifier schematic",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.55,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 7,
+      "caption": "Fig. 13. Auxiliary amplifier schematics.",
+      "caption_bbox": [
+        38.1,
+        234.1,
+        172.3,
+        244.7
+      ],
+      "section_title": "IV. POWER OPTIMIZATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "POWER OPTIMIZATION",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "The regulating amplifiers are shown in Fig. 13."
+        },
+        {
+          "section_title": "POWER OPTIMIZATION",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "At higher UGBW, the slope increases due to the constraints on phase margin and output BURGER AND HUANG: MODULATOR FOR UMTS/GSM DUAL-STANDARD IF RECEPTION Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Auxiliary amplifier schematics",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.45,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 7,
+      "caption": "Fig. 14. Optimization of first-stage amplifier.",
+      "caption_bbox": [
+        38.1,
+        459.5,
+        188.5,
+        470.1
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "POWER OPTIMIZATION",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "Fig. 14 shows the result of this optimization: branch current versus UGBW for OTA1."
+        },
+        {
+          "section_title": "POWER OPTIMIZATION",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Optimization of first-stage amplifier",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 8,
+      "caption": "Fig. 15. Comparator schematics and clock diagram.",
+      "caption_bbox": [
+        39.6,
+        227.8,
+        211.7,
+        238.5
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "POWER OPTIMIZATION",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "Fig. 15 presents the main comparator schematic based on the design of [22], which is followed by an RS flip-flop as shown on the lower right corner."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "A gain of 42 dB has been set for this test between antenna and the IF ADC, resulting in in-channel and 57 and 7 dBm, respectively. interfering signal power of Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "comparator",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Comparator schematics and clock diagram",
+        "key_specs": [
+          "42 dB",
+          "7 dBm"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.1,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 8,
+      "caption": "Fig. 16. Measurement setup for GSM intermodulation test.",
+      "caption_bbox": [
+        39.6,
+        351.3,
+        234.7,
+        361.9
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The corresponding measurement setup is shown in Fig. 16."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-setup": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "13.5-mW 185-Msample/s Modulator",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measurement setup for GSM intermodulation test",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 8,
+      "caption": "Fig. 17. Output spectrum for GSM intermodulation test.",
+      "caption_bbox": [
+        39.6,
+        575.6,
+        224.8,
+        586.2
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The output spectrum for the GSM intermodulation test is shown in Fig. 17."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 17."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The interference is noticeable in Fig. 17 as a modulated spectrum which slightly increases the noise floor."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.3,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "13.5-mW 185-Msample/s Modulator",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Output spectrum for GSM intermodulation test",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 9,
+      "caption": "Fig. 18. Output spectrum at peak SNDR for GSM.",
+      "caption_bbox": [
+        38.1,
+        253.9,
+        205.7,
+        264.5
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 18 shows the output spectrum at peak signal-to-noise and distortion ratio (SNDR) of 72 dB for GSM mode, with an IF input signal at 15-kHz offset from the 78-MHz center frequency."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "SNR performance is within 3 dB of that predicted BURGER AND HUANG: MODULATOR FOR UMTS/GSM DUAL-STANDARD IF RECEPTION Fig. 18."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Output spectrum at peak SNDR for GSM",
+        "key_specs": [
+          "72 dB",
+          "3 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 9,
+      "caption": "Fig. 19. Output spectrum at peak SNDR for WCDMA.",
+      "caption_bbox": [
+        38.1,
+        468.7,
+        219.7,
+        479.3
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 19 shows the output spectrum at peak SNDR for WCDMA mode."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 19."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "13.5-mW 185-Msample/s Modulator",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Output spectrum at peak SNDR for WCDMA",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 20,
+      "label": "Fig. 20",
+      "page": 9,
+      "caption": "Fig. 20. modulator performance curves.",
+      "caption_bbox": [
+        301.1,
+        265.7,
+        449.5,
+        276.4
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "By measuring over the entire input signal dynamic range for GSM and WCDMA, the performance curves of Fig. 20 are obtained."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The capacitor arrays consume most of the area, because the available CMOS process does not provide dedicated analog Fig. 20. modulator performance curves."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "modulator performance curves",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 21,
+      "label": "Fig. 21",
+      "page": 9,
+      "caption": "Fig. 21. Chip photomicrograph.",
+      "caption_bbox": [
+        301.1,
+        555.9,
+        408.6,
+        566.5
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "GSM and 18 dB and channels Fig. 21 shows the chip photomicrograph. are laid out symmetrically."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 21."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -7.2,
+      "relevance_breakdown": {
+        "-micrograph": -3.0,
+        "-chip photo": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "13.5-mW 185-Msample/s Modulator",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chip photomicrograph",
+        "key_specs": [
+          "18 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 11,
+  "warnings": []
+}

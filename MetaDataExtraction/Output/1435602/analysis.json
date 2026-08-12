@@ -1,0 +1,814 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1435602.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1435602",
+  "generated_at": "2026-07-29T22:02:44",
+  "paper_metadata": {
+    "title": "A 110-MHz 84-dB CMOS Programmable Gain Amplifier With Integrated RSSI Function",
+    "authors": [
+      "Chun-Pang Wu",
+      "Hen-Wai Tsao"
+    ],
+    "abstract": "This paper describes a CMOS programmable gain amplifier (PGA) that maintains a 3-dB bandwidth greater than gain of the system. In addition, the RSSI curve will not change 110 MHz and can provide an 84-dB gain control range with 1-dB when we adjust the gain of the PGA. The PGA circuit we prostep resolution. The PGA can also be operated in a low-power pose can be used either in the receiving path or the transmitting mode with 3-dB bandwidth greater than 71 MHz. Integrated with path, as shown in Fig. 1. In Section II, we describe the circuit this PGA is a CMOS successive logarithmic detecting amplifier architecture of the proposed PGA with RSSI. The circuit dewith a 0.7-dB logarithmic accuracy over an 80-dB dynamic range. It achieves 83-dBm sensitivity and consumes 13 mA from signs of the fixed gain stages and the fine gain step stage are exa single 3-V supply in the normal power mode. The chip area, plained in Sections III and IV, respectively. Section V describes 1.5 mm2. including pads, occupies 1.5 the RSSI circuit and other related considerations. The experi-",
+    "keywords": [
+      "CMOS analog integrated circuits",
+      "CMOS RF"
+    ],
+    "doi": "10.1109/JSSC.2005.848023",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2005
+  },
+  "paper_circuit_context": {
+    "circuit_type": "110-MHz 84-dB CMOS Programmable Gain Amplifier",
+    "technology": "CMOS",
+    "application_domain": "rf, wireless, baseband, if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "current source",
+      "output buffer",
+      "bias circuit",
+      "switch",
+      "inductor"
+    ],
+    "design_purpose": "",
+    "function_summary": "110-MHz 84-dB CMOS Programmable Gain Amplifier: This paper describes a CMOS programmable gain amplifier (PGA) that maintains a 3-dB bandwidth greater than gain of the system.",
+    "key_specs": [
+      "110 MHz",
+      "71 MHz",
+      "84 dB",
+      "78 dB",
+      "50 w",
+      "1 dB",
+      "15 dB",
+      "30%",
+      "50 mV",
+      "2.6 mV"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "A LTHOUGH zero-IF and low-IF architectures have been used recently in mobile communication handsets to reduce the external component count, superheterodyne architecture, as shown in Fig. 1, continues to be widely used in many other communication systems due to its more reliable performance. Signal processing, such as amplifying or ﬁltering, is usually realized at the IF frequency in a superheterod ..."
+    },
+    {
+      "number": "II",
+      "title": "CIRCUIT ARCHITECTURE",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "In the design of a PGA with nonuniform gain distribution over all gain stages, as shown in Fig. 2(a) [1], accurate gain control can be easily achieved. Integrated RSSI function can also be achieved if a correction factor linked to the gain setting value is adopted. However, the RSSI calibration for different gain settings becomes very complicated when high resolution of gain control resolution is  ..."
+    },
+    {
+      "number": "III",
+      "title": "FIXED GAIN AMPLIFIER DESIGN",
+      "kind": "design",
+      "page": 1,
+      "text_preview": "The gain variation of the ﬁxed gain stages will degrade the performance of the circuit in two aspects. First, the gain setting of the PGA will change as shown in Fig. 4(a) and (b), and the resolution will be lowered. Second, the range and accuracy of the received signal level that can be detected using the RSSI will also be signiﬁcantly affected, as shown in Fig. 4(c). These curves differ from tho ..."
+    },
+    {
+      "number": "IV",
+      "title": "FINE GAIN STEP AMPLIFIER",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "In order to achieve ﬁne gain step adjustment, another PGA with ﬁne gain steps of 1 dB over a 12-dB range is arranged at the end of the signal chain. The circuit of this PGA is shown in Fig. 6. The gain step is determined by the ratio of the gain control transistors M3 to M4 and M5 to M6. The gain of the PGA from 0 dB to 6 dB can be expressed as (4) The ratio of to , chosen for the voltage gain set ..."
+    },
+    {
+      "number": "V",
+      "title": "RSSI CIRCUIT, OFFSET CANCELLATION CIRCUIT, AND",
+      "kind": "design",
+      "page": 4,
+      "text_preview": "OTHER CONSIDERATIONS The operation of the RSSI circuit is shown in Fig. 7(a) [5]. When the signal saturates, for example, the third stage of the ampliﬁer chain, the detectors after this stage source no current, the , and the detector detectors before this stage source current of the third stage sources a variable current according the V–I curve of the detector. The total sourcing current and the r ..."
+    },
+    {
+      "number": "VI",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 6,
+      "text_preview": "The IF ampliﬁer we proposed [7] has been fabricated in a m one-poly four–metal (1P4M) CMOS process. The ca0.35pacitors used for frequency compensation in the operational ampliﬁer for the bias circuit of the ﬁxed gain stages are realized using MOS capacitors. The gain programming logic circuit and RSSI circuit are also integrated with the IF ampliﬁer. The test chip is directly bonded to a PCB surro ..."
+    },
+    {
+      "number": "VII",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 7,
+      "text_preview": "In this paper, we developed a 110-MHz 84-dB programmable gain ampliﬁer using standard CMOS technology. Despite the process variations, excellent performance can be maintained by using the gain controlled bias circuit. The programmable gain 83 dBm. ampliﬁer can operate at a minimal input signal of WU AND TSAO: A 110-MHz 84-dB CMOS PROGRAMMABLE GAIN AMPLIFIER WITH INTEGRATED RSSI FUNCTION Fig. 12. C ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Block diagram of a typical superheterodyne system.",
+      "caption_bbox": [
+        39.6,
+        242.3,
+        236.1,
+        250.3
+      ],
+      "section_title": "III. FIXED GAIN AMPLIFIER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "A LTHOUGH zero-IF and low-IF architectures have been used recently in mobile communication handsets to reduce the external component count, superheterodyne architecture, as shown in Fig. 1, continues to be widely used in many other communication systems due to its more reliable performance."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The PGA circuit we propose can be used either in the receiving path or the transmitting path, as shown in Fig. 1."
+        },
+        {
+          "section_title": "CIRCUIT ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.7,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "110-MHz 84-dB CMOS Programmable Gain Amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "A LTHOUGH zero-IF and low-IF architectures have been used recently in mobile communication handsets to reduce the external component count, superheterodyne architecture, as shown in Fig. 1, continues to be widely used in many other communication systems due to its more reliable performance.",
+        "function_summary": "Block diagram of a typical superheterodyne system. A LTHOUGH zero-IF and low-IF architectures have been used recently in mobile communication handsets to reduce the external component count, superheterodyne architecture, as shown in Fig. 1, continues to be widely used in many other communication systems due to its ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.67,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. (a) Block diagram of a PGA with nonuniform gain distribution. (b) Block diagram of a PGA with uniform gain distribution. (c) Typical family of RSSI curves of a PGA with uniform gain distribution.",
+      "caption_bbox": [
+        302.6,
+        734.6,
+        553.7,
+        760.5
+      ],
+      "section_title": "III. FIXED GAIN AMPLIFIER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "In the design of a PGA with nonuniform gain distribution over all gain stages, as shown in Fig. 2(a) [1], accurate gain control can be easily achieved."
+        },
+        {
+          "section_title": "CIRCUIT ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "On the other hand, in a PGA with uniform gain distribution over all gain stages, as shown in Fig. 2(b) [2], the RSSI circuit can be easily attached to the PGA circuit."
+        },
+        {
+          "section_title": "CIRCUIT ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Unfortunately, though, the RSSI curve will not remain the same when the gain of the PGA is adjusted, and a typical family of RSSI curves is shown in Fig. 2(c) [3], [4]."
+        },
+        {
+          "section_title": "FIXED GAIN AMPLIFIER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "These curves differ from those shown in Fig. 2(c) because the detector circuits are different."
+        },
+        {
+          "section_title": "FIXED GAIN AMPLIFIER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "By rearranging (1), we can obtain the gain of the ﬁxed gain stage as (2) There is a gain offset, i.e., , between the actual gain and the ideal gain , i.e., , but as long as of the operational ampliﬁer is large enough, the gain IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 6, JUNE 2005 (a) (b) (c) Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.5,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:design": 1.5,
+        "references": 2.0
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "110-MHz 84-dB CMOS Programmable Gain Amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Block diagram of a PGA with nonuniform gain distribution. (b) Block diagram of a PGA with uniform gain distribution. (c) Typical family of RSSI curves of a PGA with uniform gain distribution",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.82,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Block diagram of the proposed PGA.",
+      "caption_bbox": [
+        38.1,
+        364.1,
+        187.4,
+        372.1
+      ],
+      "section_title": "III. FIXED GAIN AMPLIFIER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "In the proposed design, shown in Fig. 3, we combine the advantages of the PGAs with nonuniform and uniform gain distribution so that excellent gain control and accurate RSSI measurement can be achieved."
+        },
+        {
+          "section_title": "CIRCUIT ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "With these six ﬁxed gain stages, we can adjust our gain in 12-dB gain steps over a 72-dB range by selecting the input of the gain chain or one of the outputs of the six ﬁxed gain stages, as shown in Fig. 3."
+        },
+        {
+          "section_title": "FIXED GAIN AMPLIFIER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "WU AND TSAO: A 110-MHz 84-dB CMOS PROGRAMMABLE GAIN AMPLIFIER WITH INTEGRATED RSSI FUNCTION Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 7.7,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "+proposed": 3.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the proposed PGA",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.88,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 3,
+      "caption": "Fig. 4. (a) Gain versus Gain control code when the gain of ﬁxed gain ampliﬁers is larger than Av(= 12 dB). (b) Gain versus Gain control code when the gain of ﬁxed gain ampliﬁers is smaller than Av(= 12 dB). (c) RSSI curves when the gain of ﬁxed gain ampliﬁers is equal to, larger than, and smaller than Av(= 12 dB).",
+      "caption_bbox": [
+        39.6,
+        586.4,
+        290.8,
+        630.5
+      ],
+      "section_title": "IV. FINE GAIN STEP AMPLIFIER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FIXED GAIN AMPLIFIER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "First, the gain setting of the PGA will change as shown in Fig. 4(a) and (b), and the resolution will be lowered."
+        },
+        {
+          "section_title": "FIXED GAIN AMPLIFIER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Second, the range and accuracy of the received signal level that can be detected using the RSSI will also be signiﬁcantly affected, as shown in Fig. 4(c)."
+        },
+        {
+          "section_title": "FIXED GAIN AMPLIFIER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "When dominates the resistance of the load, i.e., is much smaller than , the gain of the ﬁxed gain ampliﬁer can be enlarged by decreasing the tail current of the ampliﬁer according to (3c), shown as (3a) (3b) (3c) (a) (b) (c) Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "110-MHz 84-dB CMOS Programmable Gain Amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "current source"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) Gain versus Gain control code when the gain of ﬁxed gain ampliﬁers is larger than Av(= 12 dB). (b) Gain versus Gain control code when the gain of ﬁxed gain ampliﬁers is smaller than Av(= 12 dB). (c) RSSI curves when the gain of ﬁxed gain ampliﬁers is equal to, larger than, and smaller than Av(= 12 dB)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 4,
+      "caption": "Fig. 5. (a) Fixed gain stage and gain control bias circuit. (b) Gain versus gain control voltage.",
+      "caption_bbox": [
+        38.1,
+        516.6,
+        344.1,
+        524.5
+      ],
+      "section_title": "IV. FINE GAIN STEP AMPLIFIER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FIXED GAIN AMPLIFIER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "In order to reduce the gain variation caused by such process variations, we designed a gain control bias circuit to generate the bias current for our ﬁxed gain ampliﬁers, as shown in Fig. 5(a)."
+        },
+        {
+          "section_title": "FIXED GAIN AMPLIFIER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The circuit will compare the actual gain of the ﬁxed gain ampliand ﬁer to an ideal gain value, which is equal to shown as line D in Fig. 5(b), and then generate the correct bias current to bias the ﬁxed gain ampliﬁers."
+        },
+        {
+          "section_title": "FIXED GAIN AMPLIFIER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The difference between and the ideal output bias voltage the actual output voltage of the operational ampliﬁer can be shown as (1) where is the gain of the ﬁxed gain ampliﬁer, and is the voltage gain of the operational ampliﬁer OP in Fig. 5(a)."
+        },
+        {
+          "section_title": "FIXED GAIN AMPLIFIER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "As shown in Fig. 5(a), the loads of the ﬁxed gain ampliﬁers are composed of a ﬁxed resistor in parallel with a voltage-controlled resistor (VCR), which is in the form of symmetric loads."
+        },
+        {
+          "section_title": "FIXED GAIN AMPLIFIER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "This means that the maximum gain occurs when , denoted as point B in Fig. 5(b). the tail current is This gain must be larger than the gain of the ﬁxed gain stages is much lower than the we choose."
+        },
+        {
+          "section_title": "FIXED GAIN AMPLIFIER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "When the resistance of the VCR, the load resistance is dominated resistance , so the gain of the ﬁxed gain ampliﬁers can be enby hanced by increasing the tail current in (3a), shown as zone A in Fig. 5(b)."
+        },
+        {
+          "section_title": "FIXED GAIN AMPLIFIER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "(c) RSSI curves when the gain of ﬁxed gain ampliﬁers is equal to, larger than, and smaller than Av(= 12 dB). zone C in Fig. 5(b)."
+        },
+        {
+          "section_title": "FIXED GAIN AMPLIFIER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Therefore, if the IF frequency does not exceed the bandwidth of the PGA in low-power mode, then power can be saved by operating the circuit in this mode, i.e., point E in Fig. 5(b)."
+        },
+        {
+          "section_title": "FIXED GAIN AMPLIFIER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "When the IF freIEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 6, JUNE 2005 TABLE I SUMMARY OF GAIN SETTING OF THE FINE GAIN STEP PGA quency is higher, the circuit should be operated in high power mode, which is point F in Fig. 5(b)."
+        },
+        {
+          "section_title": "FINE GAIN STEP AMPLIFIER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The gain of the PGA from 7 to 12 dB can be expressed as (4a) WU AND TSAO: A 110-MHz 84-dB CMOS PROGRAMMABLE GAIN AMPLIFIER WITH INTEGRATED RSSI FUNCTION (a) (b) Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.0,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "references": 2.0
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "bias circuit",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "resistor",
+          "current source",
+          "bias circuit"
+        ],
+        "design_purpose": "In order to reduce the gain variation caused by such process variations, we designed a gain control bias circuit to generate the bias current for our ﬁxed gain ampliﬁers, as shown in Fig. 5(a).",
+        "function_summary": "(a) Fixed gain stage and gain control bias circuit. (b) Gain versus gain control voltage. In order to reduce the gain variation caused by such process variations, we designed a gain control bias circuit to generate the bias current for our ﬁxed gain ampliﬁers, as shown in Fig. 5(a).",
+        "key_specs": [
+          "12 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.27,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 5,
+      "caption": "Fig. 6. Fine gain step PGA ampliﬁer.",
+      "caption_bbox": [
+        39.6,
+        407.0,
+        165.0,
+        414.9
+      ],
+      "section_title": "V. RSSI CIRCUIT, OFFSET CANCELLATION CIRCUIT, AND",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "FINE GAIN STEP AMPLIFIER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The circuit of this PGA is shown in Fig. 6."
+        },
+        {
+          "section_title": "FINE GAIN STEP AMPLIFIER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "To extend the voltage gain range to cover 7 to 12 dB, we can simply apply another 6-dB PGA with the same gain setting in parallel with the former 6-dB PGA, which is also shown in Fig. 6."
+        },
+        {
+          "section_title": "RSSI CIRCUIT, OFFSET CANCELLATION CIRCUIT, AND",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "110-MHz 84-dB CMOS Programmable Gain Amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Fine gain step PGA ampliﬁer",
+        "key_specs": [
+          "12 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 6,
+      "caption": "Fig. 7. (a) Architecture of the RSSI circuit. (b) One of the detector circuits of the RSSI.",
+      "caption_bbox": [
+        38.1,
+        505.2,
+        325.4,
+        513.1
+      ],
+      "section_title": "V. RSSI CIRCUIT, OFFSET CANCELLATION CIRCUIT, AND",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "RSSI CIRCUIT, OFFSET CANCELLATION CIRCUIT, AND",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "OTHER CONSIDERATIONS The operation of the RSSI circuit is shown in Fig. 7(a) [5]."
+        },
+        {
+          "section_title": "RSSI CIRCUIT, OFFSET CANCELLATION CIRCUIT, AND",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The detector circuit is can be exshown in Fig. 7(b) [6], and the output current pressed as shown in the equation at the bottom of the next page, is the width ratio of the two input transistor pairs, as where shown in Fig. 7(b)."
+        },
+        {
+          "section_title": "RSSI CIRCUIT, OFFSET CANCELLATION CIRCUIT, AND",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "(5a) (5b) (5c) WU AND TSAO: A 110-MHz 84-dB CMOS PROGRAMMABLE GAIN AMPLIFIER WITH INTEGRATED RSSI FUNCTION (a) (b) Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.7,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) Architecture of the RSSI circuit. (b) One of the detector circuits of the RSSI",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.85,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 7,
+      "caption": "Fig. 8. Schematics of offset cancellation circuit.",
+      "caption_bbox": [
+        39.6,
+        285.2,
+        199.6,
+        293.1
+      ],
+      "section_title": "VI. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "RSSI CIRCUIT, OFFSET CANCELLATION CIRCUIT, AND",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The offset cancellation circuit, shown in Fig. 8, measures the output offset level and compensates for the offset voltage by IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 6, JUNE 2005 feeding back this signal to an auxiliary ampliﬁer accompanying the ﬁrst ﬁxed gain stage."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The gain step error is kept 0.4 dB when the test chip is operated in either normal within Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+circuit": 1.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "110-MHz 84-dB CMOS Programmable Gain Amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematics of offset cancellation circuit",
+        "key_specs": [
+          "0.4 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 7,
+      "caption": "Fig. 9. IF ampliﬁer power gain and gain error.",
+      "caption_bbox": [
+        39.6,
+        507.0,
+        193.0,
+        515.0
+      ],
+      "section_title": "VI. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The programmable power gain range of 7.78 to 79.79 dB in normal operation the whole PGA is from 7.79 to 80.03 dB in low-power opermode (at 110 MHz) and ation mode (at 71 MHz), as shown in Fig. 9."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "110-MHz 84-dB CMOS Programmable Gain Amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "IF ampliﬁer power gain and gain error",
+        "key_specs": [
+          "79.79 dB",
+          "80.03 dB",
+          "110 MHz",
+          "71 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 7,
+      "caption": "Fig. 10. RSSI output and RSSI error.",
+      "caption_bbox": [
+        39.6,
+        714.3,
+        164.0,
+        722.3
+      ],
+      "section_title": "VII. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 10."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "In Fig. 10, it is shown that the meais a 2000.7 dB, with the input signal varying sured RSSI accuracy is from 83 to 3 dBm."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "110-MHz 84-dB CMOS Programmable Gain Amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "RSSI output and RSSI error",
+        "key_specs": [
+          "2000.7 dB",
+          "3 dBm"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 7,
+      "caption": "Fig. 11. IF ampliﬁer OCP and IP3.",
+      "caption_bbox": [
+        302.6,
+        503.0,
+        420.4,
+        510.9
+      ],
+      "section_title": "VI. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The input impedance is a 50external resistor across the input transistor gates, and the output impedance IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 6, JUNE 2005 Fig. 11."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The measured output 1-dB compres4 dBV, and the third order output intercept point sion point is is 10.6 dBV, as shown in Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "110-MHz 84-dB CMOS Programmable Gain Amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "resistor",
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "IF ampliﬁer OCP and IP3",
+        "key_specs": [
+          "4 dB",
+          "10.6 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 8,
+      "caption": "Fig. 12. Chip micrograph.",
+      "caption_bbox": [
+        38.1,
+        323.8,
+        127.7,
+        331.8
+      ],
+      "section_title": "VII. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 12."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 7,
+          "sentence": "The programmable gain 83 dBm. ampliﬁer can operate at a minimal input signal of WU AND TSAO: A 110-MHz 84-dB CMOS PROGRAMMABLE GAIN AMPLIFIER WITH INTEGRATED RSSI FUNCTION Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-micrograph": -3.0,
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "The programmable gain 83 dBm. ampliﬁer can operate at a minimal input signal of WU AND TSAO: A 110-MHz 84-dB CMOS PROGRAMMABLE GAIN AMPLIFIER WITH INTEGRATED RSSI FUNCTION Fig. 12.",
+        "function_summary": "Chip micrograph. The programmable gain 83 dBm. ampliﬁer can operate at a minimal input signal of WU AND TSAO: A 110-MHz 84-dB CMOS PROGRAMMABLE GAIN AMPLIFIER WITH INTEGRATED RSSI FUNCTION Fig. 12.",
+        "key_specs": [
+          "83 dBm"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 3,
+  "warnings": []
+}

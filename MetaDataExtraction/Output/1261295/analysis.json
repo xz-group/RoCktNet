@@ -1,0 +1,721 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1261295.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1261295",
+  "generated_at": "2026-07-29T22:01:29",
+  "paper_metadata": {
+    "title": "Novel Frame Buffer Pixel Circuits for Liquid-Crystal-on-Silicon Microdisplays",
+    "authors": [
+      "Sangrok Lee",
+      "James C. Morizio",
+      "Kristina M. Johnson"
+    ],
+    "abstract": "A 32 16 liquid-crystal-on-silicon (LCOS) backplane with novel frame buffer pixels is designed and fabricated using the AMI Semiconductor’s 0.5m double-poly triple-metal CMOS process. The three novel pixel circuits described herein increase the brightness of an XGA LCOS microdisplay by at least 36% without sacrificing image contrast ratio. The increase of brightness is attributed to maximizing overall image view time, allowing an image to be displayed at full contrast while the next image is buffered onto the backplane. The new circuits achieve this by removing charge sharing and charge inducement problems shown in previously proposed frame buffer pixel circuits. Voltages on the pixel electrodes measured through rail-to-rail operational amplifiers with negative feedback vary from 0 to 4.25 V (6-V power source). All data voltage levels remain constant over a frame time with less than 1% drop, thus ensuring maximum contrast ratio. Modeling and experimental measurement on the fabricated chip show that these pixel circuits outperform all others to date based on storage time, data storage level, and potential for highest contrast ratio with maximum brightness.",
+    "keywords": [
+      "Frame buffer pixel",
+      "liquid-crystal-on-silicon (LCOS)",
+      "microdisplay"
+    ],
+    "doi": "10.1109/JSSC.2003.820875",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2004
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Novel Frame Buffer Pixel Circuits",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "transistor/MOSFET",
+      "output buffer",
+      "op-amp"
+    ],
+    "design_purpose": "",
+    "function_summary": "Novel Frame Buffer Pixel Circuits: A 32 16 liquid-crystal-on-silicon (LCOS) backplane with novel frame buffer pixels is designed and fabricated using the AMI Semiconductor’s 0.5m double-poly triple-metal CMOS process.",
+    "key_specs": [
+      "36%",
+      "4.25 V",
+      "1%",
+      "100 MHz",
+      "180 Hz",
+      "18%",
+      "360 Hz",
+      "420 Hz",
+      "400 fF",
+      "200 fF"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "L IQUID-crystal-on-silicon (LCOS) microdisplays utilize high birefringence and low operating voltage liquid crystal (LC) materials aligned on top of a single crystal silicon circuit to control and maintain the director distribution of the LC for high-resolution small-sized displays [3]. Single crystal silicon VLSI technology is well recognized as a competitive alternative to active matrix liquid c ..."
+    },
+    {
+      "number": "II",
+      "title": "BACKGROUND",
+      "kind": "intro",
+      "page": 1,
+      "text_preview": "The concept of a frame buffer pixel was first proposed by Shields [12] and more advanced alternatives for microdisplays were reported recently [13], [14]. The schematic of original pixel is given in Fig. 3(a). Initially, a voltage proportional to the during data level is stored at the memory capacitor when the write signal is ON. The stored voltage is transferred to the pixel capacitor when the re ..."
+    },
+    {
+      "number": "III",
+      "title": "NEW FRAME BUFFER PIXEL DESIGNS",
+      "kind": "design",
+      "page": 3,
+      "text_preview": "A. Using Transistor Gate as a Storage Element A new frame buffer pixel circuit described in this paper and shown in Fig. 5(a) improves image quality by removing charge sharing and charge inducement [1]. The pass transistor M4 [see Fig. 5(a)] isolates the parasitic gate capacitance of transistor M3 from the pixel capacitor, preventing charge inducement when the write signal is turned ON. During thi ..."
+    },
+    {
+      "number": "IV",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 4,
+      "text_preview": "A 63 32 LCOS SLM with three novel frame buffer pixel circuits discussed in Sections III-A and III-B was laid out using Mentor IC station tools and fabricated with the AMI m double-poly triple-metal CMOS Semiconductor’s 0.5process through the MOSIS foundry. The left upper corner of a column driver, a row driver and the pixel array of the fabricated backplane are shown in Fig. 7. The pixel electrode ..."
+    },
+    {
+      "number": "V",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 6,
+      "text_preview": "Three new frame buffer pixel circuits were designed, fabricated, and thoroughly tested using the AMI Semiconm double-poly triple-level metals CMOS process. ductor’s 0.5Output voltages at the pixel electrodes were measured through rail-to-rail operational amplifiers with negative feedback. Converted output voltage ranges from 0 to 3.65 V for a 5-V power source. The new frame buffer pixels (New_1 an ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Field sequential color projection display with a single microdisplay.",
+      "caption_bbox": [
+        302.6,
+        368.9,
+        547.5,
+        376.9
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "These disadvantages go away with single panel architecture known as field sequential color (FSC) systems, as shown in Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Novel Frame Buffer Pixel Circuits",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Field sequential color projection display with a single microdisplay",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Illustrations of (a) line-at-a-time driving scheme and (b) frame-at-a-time driving scheme.",
+      "caption_bbox": [
+        38.1,
+        297.8,
+        351.9,
+        305.8
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "However, the disadvantage of single-panel architecture is that it is inherently one-third as bright as its three-panel LEE et al.: NOVEL FRAME BUFFER PIXEL CIRCUITS FOR LCOS MICRODISPLAYS Fig. 2."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "In FSC system, however, the line-at-a-time driving method shown in Fig. 2(a) causes a critical tradeoff between brightness and contrast ratio due to three light sources (red, green, and blue) alternating in time."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The within as illustrated in Fig. 2(b)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.7,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "buffer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Illustrations of (a) line-at-a-time driving scheme and (b) frame-at-a-time driving scheme",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Frame buffer pixel circuits. a) Proposed by Shields.b) Proposed by McKnight.",
+      "caption_bbox": [
+        39.6,
+        217.4,
+        319.7,
+        225.4
+      ],
+      "section_title": "II. BACKGROUND",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "BACKGROUND",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "The schematic of original pixel is given in Fig. 3(a)."
+        },
+        {
+          "section_title": "BACKGROUND",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "The stored voltage is transferred to the pixel capacitor when the read signal is applied Fig. 3."
+        },
+        {
+          "section_title": "BACKGROUND",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "To overcome charge sharing and other drawbacks of Shield’s frame buffer pixel, McKnight proposed the pixel circuit shown in Fig. 3(b) [13]."
+        },
+        {
+          "section_title": "NEW FRAME BUFFER PIXEL DESIGNS",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Similarly, the frame buffer pixel proposed by McKnight can be improved by employing a separate capacitor and minimum geometry transistor (for transistor M3), as shown in Fig. 3(b)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.1,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "+circuit": 1.0,
+        "section:intro": -0.5,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "buffer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor",
+          "transistor/MOSFET",
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Frame buffer pixel circuits. a) Proposed by Shields.b) Proposed by McKnight",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.95,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. between C and C creates inconsistent voltage levels. (e) McKnight pixel; charge is induced at the C",
+      "caption_bbox": [
+        39.6,
+        645.0,
+        389.5,
+        661.9
+      ],
+      "section_title": "II. BACKGROUND",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "BACKGROUND",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "Voltages at C Fig. 4. between C and C creates inconsistent voltage levels."
+        },
+        {
+          "section_title": "BACKGROUND",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "Some disadvantages of this pixel are revealed from HSPICE simulation as shown in Fig. 4(d)."
+        },
+        {
+          "section_title": "BACKGROUND",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "HSPICE simulation results are shown in Fig. 4(e)."
+        },
+        {
+          "section_title": "BACKGROUND",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "However, as shown in Fig. 4(e), undesired charge is induced at the pixel capacitor when the write signal is applied."
+        },
+        {
+          "section_title": "BACKGROUND",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "With the parameters used in the simulation, a significant voltage is induced at the pixel capacitor during data writing time as shown in Fig. 4(e)."
+        },
+        {
+          "section_title": "NEW FRAME BUFFER PIXEL DESIGNS",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "HSPICE simulation shows there is no charge sharing and charge inducement during the data write time, as shown in Fig. 4(f)."
+        },
+        {
+          "section_title": "NEW FRAME BUFFER PIXEL DESIGNS",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The minimized further lowers the offset voltage generated during data read time to 0.1 V, as shown in Fig. 4(g)."
+        },
+        {
+          "section_title": "NEW FRAME BUFFER PIXEL DESIGNS",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The charge amount induced when the write signal turns ON results in only 0.18 V, as exhibited in Fig. 4(h)."
+        },
+        {
+          "section_title": "NEW FRAME BUFFER PIXEL DESIGNS",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "This value is 10 times less when compared with the value of about 1.88 V for the McKnight pixel, in Fig. 4(e)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.5,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Novel Frame Buffer Pixel Circuits",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "between C and C creates inconsistent voltage levels. (e) McKnight pixel; charge is induced at the C",
+        "key_specs": [
+          "0.1 V",
+          "0.18 V",
+          "1.88 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. New frame buffer pixel circuits: (a) with intrinsic gate capacitor and (b) with separate capacitor.",
+      "caption_bbox": [
+        38.1,
+        227.1,
+        374.6,
+        235.0
+      ],
+      "section_title": "II. BACKGROUND",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "BACKGROUND",
+          "section_kind": "intro",
+          "page": 1,
+          "sentence": "The voltage written to the memory capacitor is determined from (2) LEE et al.: NOVEL FRAME BUFFER PIXEL CIRCUITS FOR LCOS MICRODISPLAYS (a) Fig. 5."
+        },
+        {
+          "section_title": "NEW FRAME BUFFER PIXEL DESIGNS",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Using Transistor Gate as a Storage Element A new frame buffer pixel circuit described in this paper and shown in Fig. 5(a) improves image quality by removing charge sharing and charge inducement [1]."
+        },
+        {
+          "section_title": "NEW FRAME BUFFER PIXEL DESIGNS",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The pass transistor M4 [see Fig. 5(a)] isolates the parasitic gate capacitance of transistor M3 from the pixel capacitor, preventing charge inducement when the write signal is turned ON."
+        },
+        {
+          "section_title": "NEW FRAME BUFFER PIXEL DESIGNS",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Pixels With a Separate Capacitor Storage Element The voltage-dependent gate capacitance in the new frame buffer pixel can be easily replaced by a separate capacitor made from a double-poly CMOS technology, as shown in Fig. 5(b)."
+        },
+        {
+          "section_title": "NEW FRAME BUFFER PIXEL DESIGNS",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The separate capacitor also minimizes parasitic of transistor M3 in Fig. 5(b) capacitances."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "New_1 has an offset voltage of 0.02 V for the odd frames due to of transistor M3 in Fig. 5(a)."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "There is charge induced at the pixel electrode in all pixel circuits when the read signal is turned ON, as shown in Fig. 10, which displays 15 levels of output voltage at a pixel electrode. of transistor This induced charge occurs due to the parasitic M4 in Fig. 5(b) controlled by the read signal."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.5,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:intro": -0.5,
+        "references": 2.0
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "buffer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor",
+          "transistor/MOSFET",
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "New frame buffer pixel circuits: (a) with intrinsic gate capacitor and (b) with separate capacitor",
+        "key_specs": [
+          "0.02 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.18,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "Fig. 6. Voltage-dependent gate capacitance of PMOS and NMOS. Width and length are 7.5 and 9.5 m, respectively.",
+      "caption_bbox": [
+        302.6,
+        244.8,
+        553.7,
+        262.4
+      ],
+      "section_title": "III. NEW FRAME BUFFER PIXEL DESIGNS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "NEW FRAME BUFFER PIXEL DESIGNS",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "If the voltage applied tors are to the gate of a transistor is close to the threshold voltage of the device, the gate capacitance decreases and becomes very small under threshold voltage, as shown in Fig. 6."
+        },
+        {
+          "section_title": "NEW FRAME BUFFER PIXEL DESIGNS",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Due to this voltage-dependent capacitance, frame buffer pixels with a gate capacitor as a storage element require stored voltage larger than the threshold voltage of the M3, hence the voltage range of operation is narrowed. 1[Online.] Available: http://www.mosis.org/ IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 1, JANUARY 2004 Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "-capacitance": -2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "buffer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor",
+          "transistor/MOSFET",
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Voltage-dependent gate capacitance of PMOS and NMOS. Width and length are 7.5 and 9.5 m, respectively",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 5,
+      "caption": "Fig. 7.",
+      "caption_bbox": [
+        38.1,
+        287.8,
+        58.9,
+        295.8
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The left upper corner of a column driver, a row driver and the pixel array of the fabricated backplane are shown in Fig. 7."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "line / output driver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "line / output driver",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 5,
+      "caption": "Fig. 8. Voltage on the pixel electrodes with respect to the data voltage.",
+      "caption_bbox": [
+        38.1,
+        497.9,
+        270.9,
+        505.9
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 8."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The voltage range on the pixel 3.64 V, when is 5 V, as shown in Fig. 8. electrodes is 0 The output voltage saturates after the data voltage reaches 2[Online.] Available: http://www.altera.com/education/univ/unv-kits.html 4.5 V."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 8 includes 0.1-V error bars centered on the average value from all measured data with different samples are consistently reproducible."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Novel Frame Buffer Pixel Circuits",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Voltage on the pixel electrodes with respect to the data voltage",
+        "key_specs": [
+          "3.64 V",
+          "5 V",
+          "4.5 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 6,
+      "caption": "Fig. 9. Measured voltage levels of input signals and four frame buffer pixel capacitors.",
+      "caption_bbox": [
+        39.6,
+        272.6,
+        290.7,
+        289.6
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 9 shows measured voltage levels of input signals such as write, read, and data, and four frame buffer pixels."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Four frame buffer pixels include new pixel with a gate capacitor (new_1), modified new pixel with a separate capacitor (new_2), Fig. 9."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Confirming the simulation results, the McKnight pixel exwhen the data signal is written, hibits charge induced at as shown in Fig. 9(d)."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The induced voltage is minimized to 0.085 V by replacing the gate capacitor with a separate capacitor as displayed in Fig. 9(e)."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 9(f) and (g) verifies that the new frame buffer pixel does not have charge sharing between the memory and the pixel capacitors and charge inducement during data write time."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.0,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 2.0
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "buffer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor",
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Measured voltage levels of input signals and four frame buffer pixel capacitors",
+        "key_specs": [
+          "0.085 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 6,
+      "caption": "Fig. 10. Fifteen levels of voltage at the pixel electrode formed according to data voltage.",
+      "caption_bbox": [
+        302.6,
+        234.1,
+        553.7,
+        251.0
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "There is charge induced at the pixel electrode in all pixel circuits when the read signal is turned ON, as shown in Fig. 10, which displays 15 levels of output voltage at a pixel electrode. of transistor This induced charge occurs due to the parasitic M4 in Fig. 5(b) controlled by the read signal."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Since the ratio of to the capacitance of the pixel capacitor is so small, the IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 1, JANUARY 2004 Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Novel Frame Buffer Pixel Circuits",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor",
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Fifteen levels of voltage at the pixel electrode formed according to data voltage",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 3,
+  "warnings": []
+}

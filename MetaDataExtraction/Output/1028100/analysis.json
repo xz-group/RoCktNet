@@ -1,0 +1,497 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1028100.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1028100",
+  "generated_at": "2026-07-29T21:29:54",
+  "paper_metadata": {
+    "title": "Brief Papers_______________________________________________________________________________",
+    "authors": [
+      "Robert M. Fox",
+      "R. Chawla",
+      "W. R. Eisenstadt",
+      "D. Hemmenway",
+      "J. Johnston"
+    ],
+    "abstract": "A test circuit is described for on-wafer monitoring of high-frequency performance of bipolar junction transistors using only dc measurements. The test circuit includes an oscillation-amplitude detector and a high-frequency ( 3 GHz) oscillator whose minimum bias current for oscillation osc correlates strongly with the transistors’ maximum oscillation frequency max. Variations in the circuit’s osc can be routinely monitored to track changes in max caused by process variations. Monte Carlo simulations showed a correlation coefficient of 0.79 between osc and max. Variations in measured max intentionally introduced through Fig. 1. Colpitts oscillator. layout variations were verified to be strongly correlated with osc.",
+    "keywords": [
+      "Bipolar transistors",
+      "oscillator",
+      "semiconductor de-"
+    ],
+    "doi": "10.1109/JSSC.2002.801203",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2002
+  },
+  "paper_circuit_context": {
+    "circuit_type": "oscillator",
+    "technology": "BICMOS, BJT",
+    "application_domain": "rf, if",
+    "sub_blocks": [
+      "inductor",
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "current source"
+    ],
+    "design_purpose": "",
+    "function_summary": "oscillator: A test circuit is described for on-wafer monitoring of high-frequency performance of bipolar junction transistors using only dc measurements.",
+    "key_specs": [
+      "3 GHz",
+      "0.5 V",
+      "3 V"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE high-frequency performance of bipolar junction transistors (BJTs) must be monitored during IC process development and in manufacturing to verify process reliability, detect process drifts, and ensure proper operation of radio-frequency (RF) designs. Simple structures such as ring oscillators require timing measurements, and the results do not correlate well to performance in analog and RF des ..."
+    },
+    {
+      "number": "II",
+      "title": "BJT RF FIGURES OF MERIT",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "The transition frequency [1], [2] is the frequency at which drops to the short-circuit common-emitter current gain is unity. An approximate expression for (1) is the transconductance, is the base–collector where is the base–emitter junction cajunction capacitance and plus the diffusion capacitance. Unfortunately, pacitance neglects the effects of the transistor’s series base resistance , which are ..."
+    },
+    {
+      "number": "III",
+      "title": "TEST STRUCTURE DESIGN",
+      "kind": "design",
+      "page": 0,
+      "text_preview": "The new test circuit is based on a Colpitts oscillator. Most oscillators can be represented with an amplifier with gain in a feedback loop with a frequency-selective network . The Barkhausen criterion states that at the onset of oscillations, must equal exactly 1.0. the loop gain Large-signal oscillators are designed so that the loop-gain magnitude in the absence of any signal is larger than one t ..."
+    },
+    {
+      "number": "IV",
+      "title": "CIRCUIT IMPLEMENTATION AND OPTIMIZATION",
+      "kind": "design",
+      "page": 1,
+      "text_preview": "The circuit was designed for fabrication in Intersil’s UHF2 m 40-GHz BiCMOS technology [5]. Inductor process, a 0.6was implemented as an on-chip spiral inductor with a patterned , , and ground shield to reduce losses [6]. Capacitors were implemented as MOS capacitors, while all other extrinsic capacitors were metal–oxide–metal (MOM). Element values were chosen to enhance the sensitivity of to and  ..."
+    },
+    {
+      "number": "V",
+      "title": "CIRCUIT VERIFICATION",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "All of the fabricated circuits were functional. Verification centered on correlating the minimum current for oscillations to , to other important high-frequency transistor paramoccur, is measured as follows: is increased by increasing eters. while decreasing to keep fixed, typically at about approximately fixed as well. When 1.8 mA, keeping increases significantly over its baseline value, output v ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 3,
+      "text_preview": "The circuit described in this paper allows monitoring of BJT high-frequency performance using dc measurements. The minstrongly correlates with domimum current for oscillation , notably and . does not inant components of directly, since is insensitive to , and depends track . However, the weakly on some factors that do not affect circuit tracks performance of a real RF circuit (a 3-GHz oscillator), ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Colpitts oscillator.",
+      "caption_bbox": [
+        301.1,
+        274.9,
+        388.8,
+        285.5
+      ],
+      "section_title": "II. BJT RF FIGURES OF MERIT",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1."
+        },
+        {
+          "section_title": "TEST STRUCTURE DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Fig. 1 shows a textbook Colpitts oscillator circuit [3]."
+        },
+        {
+          "section_title": "TEST STRUCTURE DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Small-signal equivalent for Colpitts oscillator modified to eliminate external components R and C of Fig. 1 and include inductor loss. effects of its input resistance ."
+        },
+        {
+          "section_title": "TEST STRUCTURE DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "The intrinsic transistor parameters, and hence, to small-signal equivalent circuit of a modified Colpitts oscillator with enhanced sensitivity to the intrinsic transistor behavior of Fig. 1 has been is shown in Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.6,
+      "relevance_breakdown": {
+        "type_match:oscillator": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "BICMOS, BJT",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "inductor",
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Colpitts oscillator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.4,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Small-signal equivalent for Colpitts oscillator modified to eliminate external components R and C of Fig. 1 and include inductor loss.",
+      "caption_bbox": [
+        39.6,
+        140.7,
+        290.6,
+        160.3
+      ],
+      "section_title": "III. TEST STRUCTURE DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "TEST STRUCTURE DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Remodels the effective load resistance of the oscillator, sistor , and the reflected including the transistor’s output resistance Fig. 2."
+        },
+        {
+          "section_title": "TEST STRUCTURE DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "The intrinsic transistor parameters, and hence, to small-signal equivalent circuit of a modified Colpitts oscillator with enhanced sensitivity to the intrinsic transistor behavior of Fig. 1 has been is shown in Fig. 2."
+        },
+        {
+          "section_title": "TEST STRUCTURE DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "The oscillation frequency effective resistance of the circuit in Fig. 2 is still approximately as given by (3), but the condition for sustained oscillation becomes (5) is proportional to the bias current ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "-equivalent": -2.0,
+        "section:design": 1.5,
+        "type_match:oscillator": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "BICMOS, BJT",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "inductor",
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Small-signal equivalent for Colpitts oscillator modified to eliminate external components R and C of Fig. 1 and include inductor loss",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Oscillator with “dummy” transistor Q added to increase the effective value of C .",
+      "caption_bbox": [
+        302.6,
+        178.9,
+        553.7,
+        198.4
+      ],
+      "section_title": "III. TEST STRUCTURE DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "TEST STRUCTURE DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "To address these issues, a passive “dummy” transistor , , was placed in parallel with the base of the acidentical to , as shown in Fig. 3."
+        },
+        {
+          "section_title": "TEST STRUCTURE DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Note that while and are not constant as actually in parallel, the circuit can be approximated as if they were, with the two base resistances in parallel to form a new ef- , Unfortunately, this fective loss resistance IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 9, SEPTEMBER 2002 Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "type_match:oscillator": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "BICMOS, BJT",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Oscillator with “dummy” transistor Q added to increase the effective value of C",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.57,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Test circuit schematic, including amplitude detector Q –Q .",
+      "caption_bbox": [
+        38.1,
+        259.3,
+        262.9,
+        269.9
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION AND OPTIMIZATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "TEST STRUCTURE DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "A schematic of the complete circuit, including the circuit used to detect the oscillations [4], is shown in Fig. 4."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION AND OPTIMIZATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "For example, for the best and should be minimized and the currents sensitivity, IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 9, SEPTEMBER 2002 Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 9.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+circuit schematic": 3.5,
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "BICMOS, BJT",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Test circuit schematic, including amplitude detector Q –Q",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 1.0,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Correlation of measured f with oscillation threshold current.",
+      "caption_bbox": [
+        301.1,
+        669.6,
+        536.1,
+        680.2
+      ],
+      "section_title": "V. CIRCUIT VERIFICATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT VERIFICATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Ultimately, the main function of the circuit is to detect systematic shifts in RF performance in spite of random variations from other causes. measurements were taken from in TABLE II SIMULATED SENSITIVITIES Fig. 5."
+        },
+        {
+          "section_title": "CIRCUIT VERIFICATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Figs. 5 and 6 show the strong correlations between the resulting measured and values and . and were extracted from -parameters of transistors laid out next to the oscillator test extraction, bias conditions were structures [7]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "BICMOS, BJT",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Correlation of measured f with oscillation threshold current",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Correlation of measured BJT base resistance with oscillation threshold current.",
+      "caption_bbox": [
+        39.6,
+        238.5,
+        290.6,
+        258.1
+      ],
+      "section_title": "V. CIRCUIT VERIFICATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT VERIFICATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.1,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 0.4
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "BICMOS, BJT",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Correlation of measured BJT base resistance with oscillation threshold current",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Correlation of f with oscillation threshold current from Monte Carlo simulations.",
+      "caption_bbox": [
+        39.6,
+        449.9,
+        290.7,
+        469.6
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "CIRCUIT VERIFICATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 7."
+        },
+        {
+          "section_title": "CIRCUIT VERIFICATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "As shown in Figs. 7 and 8, simulations predict correlations beand of 0.79 and between and of 0.73. tween was too small to provide reliable The simulated variability in statistics."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "BICMOS, BJT",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Correlation of f with oscillation threshold current from Monte Carlo simulations",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. Correlation of BJT base resistance with oscillation threshold current from Monte Carlo simulations.",
+      "caption_bbox": [
+        302.6,
+        239.3,
+        553.7,
+        258.9
+      ],
+      "section_title": "V. CIRCUIT VERIFICATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT VERIFICATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Monte Carlo allows many more samples to be used, providing more accurate statistics and allowing corIEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 9, SEPTEMBER 2002 Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.9,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "BICMOS, BJT",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "Monte Carlo allows many more samples to be used, providing more accurate statistics and allowing corIEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 9, SEPTEMBER 2002 Fig. 8.",
+        "function_summary": "Correlation of BJT base resistance with oscillation threshold current from Monte Carlo simulations. Monte Carlo allows many more samples to be used, providing more accurate statistics and allowing corIEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 9, SEPTEMBER 2002 Fig. 8.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.11,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 4,
+  "warnings": []
+}

@@ -1,0 +1,409 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1208485.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1208485",
+  "generated_at": "2026-07-29T22:01:09",
+  "paper_metadata": {
+    "title": "Monolithic Active-Quenching and Active-Reset Circuit for Single-Photon Avalanche Detectors",
+    "authors": [
+      "F. Zappa",
+      "A. Lotito",
+      "A. C. Giudice",
+      "S. Cova",
+      "M. Ghioni"
+    ],
+    "abstract": "A monolithic circuit has been designed for active-quenching and active-reset of single-photon avalanche diodes tion (dark counts) and represents the internal detector noise. (SPADs), which operate above the breakdown voltage BD for Silicon SPADs can be classified in two groups. Thin silicon detecting single photons. To the best of our knowledge, this is SPADs [8] are planar devices with depletion layer of a few mithe first fully integrated circuit of this kind ever reported. It crometers, low breakdown voltage (15–40 V), good detection can operate with any available SPAD device, since it generates efficiency (about 45% at 500-nm wavelength, 10% at 830 nm, pulses high enough to quench detectors biased up to 20 V above BD. The deadtime after each photon detection is adjustable; the and a few 0.1% at 1064 nm) and excellent time resolution (a few minimum value is 50 ns, corresponding to 20 Mcounts/s maximum tens of picoseconds). Thick SPADs [9], [15] have reachthrough saturated photon-counting rate. The power dissipation is low structure, depletion layer some tens of micrometers thick, high (20-mW standby), suitable also for portable instruments. The breakdown voltage (250–450 V), very good detection efficiency small size and high reliability of the circuit make it possible to (higher than 50% in the 540–850-nm range and still some perdevelop miniaturized detector modules and SPAD-array detector instruments. The circuit opens the path to new developments in cent at 1064 nm) and moderate time resolution (typically, 350-ps many applications of photon counting, from DNA sequencing to full-width-at-half-maximum). ultrahigh-sensitivity imaging. By increasing the excess bias voltage, SPAD detection",
+    "keywords": [
+      "Avalanche photodiodes",
+      "Geiger mode",
+      "photon"
+    ],
+    "doi": "10.1109/JSSC.2003.813291",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "integrated circuit / system",
+    "technology": "CMOS, 500-nm process",
+    "application_domain": "if",
+    "sub_blocks": [
+      "resistor",
+      "transistor/MOSFET",
+      "switch"
+    ],
+    "design_purpose": "It crometers, low breakdown voltage (15–40 V), good detection can operate with any available SPAD device, since it generates efficiency (about 45% at 500-nm wavelength, 10% at 830 nm, pulses high enough to quench detectors biased up to 20 V above BD.",
+    "function_summary": "integrated circuit / system: It crometers, low breakdown voltage (15–40 V), good detection can operate with any available SPAD device, since it generates efficiency (about 45% at 500-nm wavelength, 10% at 830 nm, pulses high enough to quench detectors biased up to 20 V above BD.",
+    "key_specs": [
+      "40 V",
+      "45%",
+      "10%",
+      "830 nm",
+      "20 V",
+      "0.1%",
+      "1064 nm",
+      "50 ns",
+      "450 V",
+      "50%"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "SINGLE-PHOTON DETECTORS AND CIRCUITS",
+      "kind": "design",
+      "page": 0,
+      "text_preview": "S INGLE-PHOTON detection is the technique of choice when very faint optical signals must be measured: slowly varying light levels are measured by photon counting (number of detected photons during a known measurement time); fast optical waveforms are acquired by photon timing (time-correlated photon counting, or TCPC). Applications are found in many fields, including noninvasive testing of VLSI ci ..."
+    },
+    {
+      "number": "II",
+      "title": "CIRCUIT FEATURES",
+      "kind": "design",
+      "page": 0,
+      "text_preview": "A basic goal is to minimize the avalanche charge flowing at every SPAD ignition, in order to reduce three detrimental effects. The first one is afterpulsing: a small percentage of avalanching carriers, trapped into deep levels and then released, can retrigger the SPAD, thus enhancing the detector noise is increased, the excess [10]. The second is self-heating: bias voltage is decreased, and the de ..."
+    },
+    {
+      "number": "III",
+      "title": "CIRCUIT DESIGN",
+      "kind": "design",
+      "page": 1,
+      "text_preview": "Fig. 3 shows the schematics of the input stage, which is the core of the iAQC. In quiescent conditions, the control signal off and on. When from the monostable keeps the avalanche is triggered, the voltage developed across the baldrives a pMOS transistor that in turn drives last resistor transistor in a positive feedback loop, which the nMOS promptly provides a swift active-quenching action. At th ..."
+    },
+    {
+      "number": "IV",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 1,
+      "text_preview": "We carried out extensive characterization of the iAQC working with high-voltage SPADs, namely the SLIK [15] diodes employed in the PerkinElmer SPCM modules [9]. Fig. 4. View of the complete iAQC chip (2 mm 1 mm). Fig. 5. Voltage waveform measured at the cathode (IN pin of the iAQC) of = 20 V and with the a SLIK avalanche photodiode, in operation with V shortest available hold-off time. (5-V/div ve ..."
+    },
+    {
+      "number": "V",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 2,
+      "text_preview": "We have reported the design and characterization of a fully integrated circuit that can quench and reset any SPAD device presently available. It can operate with detector biased up to 20 V above the breakdown voltage and work with maximum saturated photon counting rate of 20 Mcount/s. The low stray capacitance, the mixed passive–active quenching approach, and the fast positive feedback in the inpu ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Schematic block diagram of the integrated active quenching circuit.",
+      "caption_bbox": [
+        39.6,
+        229.7,
+        283.6,
+        240.4
+      ],
+      "section_title": "II. CIRCUIT FEATURES",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT FEATURES",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Third, during IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 7, JULY 2003 Fig. 1."
+        },
+        {
+          "section_title": "CIRCUIT FEATURES",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "As shown in Fig. 1, the SPAD is and a negative , that is, biased between a positive ."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Schematic circuit diagram of the input sensing stage. of the hold-off period, and are switched off by means of the monostable (see Fig. 1), thus breaking the posiswitch is then turned on for a time tive feedback loop.The sufficient to ensure full recovery of the quiescent condition."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 1,
+          "sentence": "When the GATE input pin is enabled (see Fig. 1) the SPAD is free to detect photons."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 9.1,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+block diagram": 2.0,
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "integrated circuit / system",
+        "technology": "CMOS, 500-nm process",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematic block diagram of the integrated active quenching circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.99,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Typical voltage waveform at the detector cathode (IN pin of the iAQC) in operation with 40-ns hold-off time. (5-V/div vertical voltage scale and 20-ns/div horizontal time scale.)",
+      "caption_bbox": [
+        302.6,
+        238.6,
+        553.7,
+        267.1
+      ],
+      "section_title": "II. CIRCUIT FEATURES",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT FEATURES",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Fig. 2 shows a voltage waveform at the IN pin (i.e., the is turned detector cathode voltage)."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "At the end Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "-waveform": -2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "integrated circuit / system",
+        "technology": "CMOS, 500-nm process",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Typical voltage waveform at the detector cathode (IN pin of the iAQC) in operation with 40-ns hold-off time. (5-V/div vertical voltage scale and 20-ns/div horizontal time scale.)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Schematic circuit diagram of the input sensing stage.",
+      "caption_bbox": [
+        302.6,
+        445.5,
+        500.7,
+        456.1
+      ],
+      "section_title": "II. CIRCUIT FEATURES",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 3 shows the schematics of the input stage, which is the core of the iAQC."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "(5-V/div vertical voltage scale and 20-ns/div horizontal time scale.) Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 9.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+circuit diagram": 3.0,
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "integrated circuit / system",
+        "technology": "CMOS, 500-nm process",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematic circuit diagram of the input sensing stage",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.67,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. View of the complete iAQC chip (2 mm 1 mm).",
+      "caption_bbox": [
+        38.1,
+        176.9,
+        227.8,
+        187.6
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The iAQC chip, shown in Fig. 4, is designed in a high-voltage m CMOS technology with two metals and a high-resis0.81 mm, mostly occupied tive poly."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 1,
+          "sentence": "Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "integrated circuit / system",
+        "technology": "CMOS, 500-nm process",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "View of the complete iAQC chip (2 mm 1 mm)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Voltage waveform measured at the cathode (IN pin of the iAQC) of = 20 V and with the a SLIK avalanche photodiode, in operation with V shortest available hold-off time. (5-V/div vertical voltage scale and 20-ns/div horizontal time scale.)",
+      "caption_bbox": [
+        38.1,
+        403.1,
+        289.2,
+        440.6
+      ],
+      "section_title": "V. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Even working with high excess bias (see Fig. 5), the avalanche current is quenched in less than 25 ns and the reset transition takes about 20 ns."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 1,
+          "sentence": "Fig. 5."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 1,
+          "sentence": "(5-V/div vertical voltage scale and 20-ns/div horizontal time scale.) Fig. 5 shows the cathode voltage waveform (IN pin of the V, biased with iAQC) measured on a device having V and V (i.e., with about 16-V excess bias)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.8,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-waveform": -2.0,
+        "section:conclusion": -1.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "integrated circuit / system",
+        "technology": "CMOS, 500-nm process",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Voltage waveform measured at the cathode (IN pin of the iAQC) of = 20 V and with the a SLIK avalanche photodiode, in operation with V shortest available hold-off time. (5-V/div vertical voltage scale and 20-ns/div horizontal time scale.)",
+        "key_specs": [
+          "25 ns",
+          "20 ns"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. Gated-detector operation. When GATE is high, photons are detected; when GATE is low, the detector is kept quenched and no avalanche can be triggered. (5-V/div vertical voltage scale and 4-s/div horizontal time scale.)",
+      "caption_bbox": [
+        301.1,
+        257.5,
+        552.2,
+        286.0
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 1,
+          "sentence": "Fig. 6 illustrates the gated-detector operation, useful in applications where photons of interest occur only in known time intervals, as in laser ranging or in stimulated luminescence measurements."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 1,
+          "sentence": "The GATE control can be individual for each with its own IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 7, JULY 2003 Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "integrated circuit / system",
+        "technology": "CMOS, 500-nm process",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Gated-detector operation. When GATE is high, photons are detected; when GATE is low, the detector is kept quenched and no avalanche can be triggered. (5-V/div vertical voltage scale and 4-s/div horizontal time scale.)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 3,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

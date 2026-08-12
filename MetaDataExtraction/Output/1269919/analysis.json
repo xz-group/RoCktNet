@@ -1,0 +1,725 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1269919.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1269919",
+  "generated_at": "2026-07-29T22:01:34",
+  "paper_metadata": {
+    "title": "Very Low-Voltage Analog Signal Processing Based on Quasi-Floating Gate Transistors",
+    "authors": [
+      "Jaime Ramírez-Angulo",
+      "Antonio J. López-Martín",
+      "Ramón González Carvajal",
+      "Fernando Muñoz Chavero"
+    ],
+    "abstract": "A novel design principle for very low-voltage analog signal processing in CMOS technologies is presented. It is based technologies. on the use of quasi-floating gate (QFG) MOS transistors. SimAn interesting proposal addressing this need is analog design ilar to multiple input floating gate (MIFG) MOS transistors, a using multiple-input floating gate (MIFG) transistors [1]–[3]. weighted averaging of the inputs accurately controlled by caThese devices implement capacitive voltage dividers with relapacitance ratios can be obtained, which is the basic operating tively large attenuation factors at the transistor gates to reduce principle. Nevertheless, issues often encountered in MIFG structures, such as the initial charge trapped in the floating gates or supply requirements. The dividers use a large biasing capacithe gain-bandwidth product degradation, are not present in QFG tance to set the floating gate dc voltage close to one of the supply configurations. Several CMOS circuit realizations using openand rails. Unfortunately, this large capacitance leads to an increase closed-loop topologies, have been designed. They include analog in silicon area and a reduction of the effective transconductance switches, mixers, programmable-gain amplifiers, track and hold and gain-bandwidth (GB) product. Moreover, floating gates can circuits, and digital-to-analog converters. All these circuits have been experimentally verified, confirming the usefulness of the trap a significant amount of charge during fabrication that can proposed technique for very low-voltage applications. produce large dc offsets [4] if it is not removed using additional processing steps (e.g., UV removal). Index Terms—Amplifiers, analog CMOS circuits, analog integrated circuits, analog processing circuits, CMOS analog inAn alternative approach proposed recently by some of the autegrated circuits, digital-to-analog conversion, low-voltage CMOS thors [5] is the use of circuits based on quasi-floating gate (QFG) circuits, quasi-floating gate transistors, sample and hold circuits. transistors (originally introduced as pseudo-floating-gate transistors by the same authors). Similarly to MIFG transistors, in-",
+    "keywords": [],
+    "doi": "10.1109/JSSC.2003.822782",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2004
+  },
+  "paper_circuit_context": {
+    "circuit_type": "mixer",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "output buffer",
+      "mixer",
+      "bias circuit",
+      "switch",
+      "differential pair",
+      "op-amp",
+      "clock / timing"
+    ],
+    "design_purpose": "SimAn interesting proposal addressing this need is analog design ilar to multiple input floating gate (MIFG) MOS transistors, a using multiple-input floating gate (MIFG) transistors [1]–[3]. weighted averaging of the inputs accurately controlled by caThese devices implement capacitive voltage dividers with ...",
+    "function_summary": "mixer: SimAn interesting proposal addressing this need is analog design ilar to multiple input floating gate (MIFG) MOS transistors, a using multiple-input floating gate (MIFG) transistors [1]–[3]. weighted averaging of the inputs accurately controlled by caThese devices implement capacitive voltage dividers with ...",
+    "key_specs": [
+      "2004 V",
+      "0.05 Hz",
+      "1 V",
+      "50%",
+      "0.65 V",
+      "0.90 V",
+      "0.8 V",
+      "200 fF",
+      "0.2 V",
+      "0.5 V"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "R EDUCED gate-oxide thickness and increased integration density are distinctive features of modern submicron CMOS processes. As a consequence, supply voltages are decreasing and getting close to the MOS transistor threshold voltage due to reliability and power consumption issues. Increased demand of battery-operated portable terminals is also reinforcing this trend. Digital CMOS circuits have been ..."
+    },
+    {
+      "number": "II",
+      "title": "QFG TRANSISTORS",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "Fig. 1(a) shows the layout of a three-input floating-gate pMOS transistor in n-well technology, and its equivalent circuit -input FGMOS transistor for the general case of an is shown in Fig. 1(b) (including parasitic capacitances). Input terminals are capacitively coupled to the floating gate, so that, assuming zero charge at the floating gate terminal, its voltage is given by (1) is the coupling  ..."
+    },
+    {
+      "number": "III",
+      "title": "OPEN-LOOP QFG CIRCUITS",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "The QFG transistors just described can advantageously replace true floating-gate transistors in many very low-voltage continuous-time and sampled-data applications, constituting an interesting design alternative. They lead to a very simple method for setting the dc quiescent point of the circuit. In order to illustrate the application of the proposed QFG technique to very low-voltage feedforward t ..."
+    },
+    {
+      "number": "IV",
+      "title": "CLOSED-LOOP QFG CIRCUITS",
+      "kind": "design",
+      "page": 4,
+      "text_preview": "QFG transistors can also be employed at the input stage of amplifiers, leading to very low-voltage and compact closed-loop implementations. The resulting capacitive feedback leads to an input resistance considerably higher than in conventional inverting amplifiers with resistive feedback and precludes gain errors due to the nonzero signal source impedance. In this application of QFG techniques, si ..."
+    },
+    {
+      "number": "V",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 8,
+      "text_preview": "Very low-voltage CMOS analog continuous-time and sampled-data processing circuits can be efficiently implemented using amplifiers based on QFG transistors. These novel devices can advantageously replace MIFG transistors in both feedforward and feedback topologies. The resulting circuits feature excellent linearity, high accuracy (determined by well-controlled capacitance ratios), almost rail-to-ra ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1.",
+      "caption_bbox": [
+        38.1,
+        327.6,
+        58.8,
+        335.5
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1. transistors."
+        },
+        {
+          "section_title": "QFG TRANSISTORS",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 1(a) shows the layout of a three-input floating-gate pMOS transistor in n-well technology, and its equivalent circuit -input FGMOS transistor for the general case of an is shown in Fig. 1(b) (including parasitic capacitances)."
+        },
+        {
+          "section_title": "QFG TRANSISTORS",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Therefore, or the dc floating-gate voltage is shifted close to either (depending on ), and (1) results in (3) As a result of the large coupling capacitor, silicon area requirements increase notably, as can be observed from the layout of the MIFG transistor of Fig. 1(a)."
+        },
+        {
+          "section_title": "QFG TRANSISTORS",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The equivalent circuit of pull-up or pull-down resistor -input QFG transistor is shown in Fig. 1(d) the resulting for the pMOS case, and the resulting layout for a two-input QFG device is shown in Fig. 1(c)."
+        },
+        {
+          "section_title": "QFG TRANSISTORS",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 2. junctions of nMOS transistors operating in cutoff region, as shown in Fig. 1(c)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.5,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor",
+          "resistor",
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 2,
+      "caption": "Fig. 2.",
+      "caption_bbox": [
+        39.6,
+        315.8,
+        60.3,
+        323.8
+      ],
+      "section_title": "II. QFG TRANSISTORS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "QFG TRANSISTORS",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 2. junctions of nMOS transistors operating in cutoff region, as shown in Fig. 1(c)."
+        },
+        {
+          "section_title": "OPEN-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "As an alternative, QFG transistors can be efficiently employed to achieve rail-to-rail analog switching with more power efficiency than in conventional voltage multiplication, and without affecting the speed of the circuit. can Fig. 2(a) shows how a one-input QFG transistor be employed as an analog switch in a T/H circuit."
+        },
+        {
+          "section_title": "OPEN-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "However, the circuit in Fig. 2(a) is not a rail-to-rail analog switch, as it is not for input signals near the possible to turn off transistor negative rail."
+        },
+        {
+          "section_title": "OPEN-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "This issue is solved in Fig. 2(b), where two comand are connected plementary QFG transistors, is weakly tied to (ground) in series."
+        },
+        {
+          "section_title": "OPEN-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Therefore, rail-to-rail operation is achieved. m The circuit in Fig. 2(b) was fabricated in an industrial 1.5of approximately 0.65 V and CMOS technology with 0.90 V for nMOS and pMOS transistors, respectively."
+        },
+        {
+          "section_title": "OPEN-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "(a) Measured input and output waveforms of the circuit of Fig. 2(b) (vertical scale 0.2 V/div)."
+        },
+        {
+          "section_title": "OPEN-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "(b) Measurement results for the circuit of Fig. 2(c) (vertical scale 0.5 V/div). switch."
+        },
+        {
+          "section_title": "OPEN-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The QFG supply voltage boosting used in the former circuit can be employed to allow a well-known bootstrapped analog switch [9] to operate with a supply voltage close to a transistor’s threshold voltage [Fig. 2(c)]."
+        },
+        {
+          "section_title": "OPEN-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "A prototype of the circuit of Fig. 2(c) was fabricated in the m CMOS technology."
+        },
+        {
+          "section_title": "CLOSED-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Using the analog switches of Fig. 2, the supply ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "switch",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "switch"
+        ],
+        "design_purpose": "As an alternative, QFG transistors can be efficiently employed to achieve rail-to-rail analog switching with more power efficiency than in conventional voltage multiplication, and without affecting the speed of the circuit. can Fig. 2(a) shows how a one-input QFG transistor be employed as an analog switch in a T/H ...",
+        "function_summary": "switch. As an alternative, QFG transistors can be efficiently employed to achieve rail-to-rail analog switching with more power efficiency than in conventional voltage multiplication, and without affecting the speed of the circuit. can Fig. 2(a) shows how a one-input QFG transistor be employed as an analog switch in a ...",
+        "key_specs": [
+          "0.65 V",
+          "0.90 V",
+          "0.2 V",
+          "0.5 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.12,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 3,
+      "caption": "Fig. 3. (a) Measured input and output waveforms of the circuit of Fig. 2(b) (vertical scale 0.2 V/div). (b) Measurement results for the circuit of Fig. 2(c) (vertical scale 0.5 V/div).",
+      "caption_bbox": [
+        301.1,
+        462.9,
+        552.2,
+        488.8
+      ],
+      "section_title": "III. OPEN-LOOP QFG CIRCUITS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "OPEN-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 3(a) shows the measured input and output signals."
+        },
+        {
+          "section_title": "OPEN-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Linearity may be of the transistor used as a improved by bootstrapping the (a) (b) Fig. 3."
+        },
+        {
+          "section_title": "OPEN-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 3(b) shows the voltage measured input and output waveforms, as well as the gate ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-measured": -3.0,
+        "-waveform": -2.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) Measured input and output waveforms of the circuit of Fig. 2(b) (vertical scale 0.2 V/div). (b) Measurement results for the circuit of Fig. 2(c) (vertical scale 0.5 V/div)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 4,
+      "caption": "Fig. 4. DAC.",
+      "caption_bbox": [
+        302.6,
+        688.6,
+        324.2,
+        705.6
+      ],
+      "section_title": "IV. CLOSED-LOOP QFG CIRCUITS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CLOSED-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "(c) N-bit Fig. 4."
+        },
+        {
+          "section_title": "CLOSED-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Programmable-Gain Differential Amplifier Fig. 4(a) shows a programmable-gain differential amplivoltage gain values fier (PGA) using QFG techniques. , are available."
+        },
+        {
+          "section_title": "CLOSED-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Track and Hold Circuit A novel fully differential CMOS T/H circuit, which allows operation at very low supply voltage, is shown in Fig. 4(b)."
+        },
+        {
+          "section_title": "CLOSED-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Similar to the circuit of Fig. 4(a), it is based on an amplifier whose input pMOS differential pair is formed by two QFG transistors, now with two inputs each."
+        },
+        {
+          "section_title": "CLOSED-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 4(c) shows how a feedback amplifier, whose input differential pair is formed by two -input QFG transistors, can be configured to implement an -bit fully differential DAC."
+        },
+        {
+          "section_title": "CLOSED-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Amplifier Design The amplifier block employed in the circuits of Fig. 4 is shown in Fig. 5."
+        },
+        {
+          "section_title": "CLOSED-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Measurement Results A prototype containing the circuits of Fig. 4 was fabricated m n-well CMOS technology as that used using the same 0.5for the mixers in Section III."
+        },
+        {
+          "section_title": "CLOSED-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The differential PGA of Fig. 4(a) was implemented with voltage gains equal to 1, 2, 4, and 8."
+        },
+        {
+          "section_title": "CLOSED-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The differential T/H circuit of Fig. 4(b) was implemented 0.75 V, using 5-pF integrated capacitors."
+        },
+        {
+          "section_title": "CLOSED-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "TABLE II MAIN PARAMETERS OF THE CIRCUITS OF FIG. 4 input sinusoid."
+        },
+        {
+          "section_title": "CLOSED-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "A 6-bit DAC following the scheme of Fig. 4(c) was fabri0.75 V."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.5,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor",
+          "transistor/MOSFET",
+          "mixer",
+          "differential pair"
+        ],
+        "design_purpose": "Track and Hold Circuit A novel fully differential CMOS T/H circuit, which allows operation at very low supply voltage, is shown in Fig. 4(b).",
+        "function_summary": "DAC. Track and Hold Circuit A novel fully differential CMOS T/H circuit, which allows operation at very low supply voltage, is shown in Fig. 4(b).",
+        "key_specs": [
+          "4 w",
+          "0.75 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.38,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 5,
+      "caption": "Fig. 5. (a) Amplifier schematic. (b) CMFB circuit.",
+      "caption_bbox": [
+        301.1,
+        328.9,
+        468.4,
+        336.9
+      ],
+      "section_title": "IV. CLOSED-LOOP QFG CIRCUITS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CLOSED-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "It is also asword is used for bit and a voltage sumed that a voltage (a) (b) Fig. 5."
+        },
+        {
+          "section_title": "CLOSED-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Amplifier Design The amplifier block employed in the circuits of Fig. 4 is shown in Fig. 5."
+        },
+        {
+          "section_title": "CLOSED-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "A modified version of a differential two-stage Miller topology is employed, as shown in Fig. 5(a)."
+        },
+        {
+          "section_title": "CLOSED-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "During an initial TABLE I COMPONENT VALUES OF THE AMPLIFIER IN FIG. 5 phase the input is shorted, so that the differential input voltage and are corresponds to the amplifier offset."
+        },
+        {
+          "section_title": "CLOSED-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "They are also used to shift the output voltages close to the negative rail and to minimize supply requirements of the CMFB circuit as is connected to shown in Fig. 5(b)."
+        },
+        {
+          "section_title": "CLOSED-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Table I shows the values of these of the components employed in the circuits of Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 7.5,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 2.0
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "They are also used to shift the output voltages close to the negative rail and to minimize supply requirements of the CMFB circuit as is connected to shown in Fig. 5(b).",
+        "function_summary": "(a) Amplifier schematic. (b) CMFB circuit. They are also used to shift the output voltages close to the negative rail and to minimize supply requirements of the CMFB circuit as is connected to shown in Fig. 5(b).",
+        "key_specs": [
+          "5 ph"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 1.0,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 6,
+      "caption": "Fig. 6. Microphotograph of the prototype.",
+      "caption_bbox": [
+        302.6,
+        295.1,
+        442.8,
+        303.0
+      ],
+      "section_title": "IV. CLOSED-LOOP QFG CIRCUITS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CLOSED-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 6 shows a microphotograph of the die, where the placement and relative silicon area of the different circuits can be observed."
+        },
+        {
+          "section_title": "CLOSED-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 3, MARCH 2004 Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Microphotograph of the prototype",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 7,
+      "caption": "Fig. 7. (a) Amplifier output voltage and autozeroing clock phase. (b) Amplifier output waveforms for a 10-kHz 0.35-V input and different gain values.",
+      "caption_bbox": [
+        38.1,
+        487.8,
+        289.1,
+        504.7
+      ],
+      "section_title": "IV. CLOSED-LOOP QFG CIRCUITS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CLOSED-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 7(a) shows the measured differential output voltage for a 1-Hz 0.25-V peak-to-peak input sinusoid."
+        },
+        {
+          "section_title": "CLOSED-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 7(b) shows the measured differential output voltages obtained for a 10-kHz, 350-mV peak-to-peak differential input sinusoid when the amplifier gain value is set to 1, 2, 4, and 8."
+        },
+        {
+          "section_title": "CLOSED-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The measured total harmonic distortion (THD) for the larger output waveform in Fig. 7(b) (corresponding to the output voltage for a gain value of 8) was 0.65%."
+        },
+        {
+          "section_title": "CLOSED-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 8 shows the samdifferential pled output waveform obtained for a 1-kHz 0.9RAMIREZ-ANGULO et al.: VERY LOW-VOLTAGE ANALOG SIGNAL PROCESSING BASED ON QUASI-FLOATING GATE TRANSISTORS (a) (b) Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.1,
+      "relevance_breakdown": {
+        "-waveform": -2.0,
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "clock / timing"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) Amplifier output voltage and autozeroing clock phase. (b) Amplifier output waveforms for a 10-kHz 0.35-V input and different gain values",
+        "key_specs": [
+          "0.65%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.05,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 7,
+      "caption": "Fig. 8. Measured T/H output for a 1-kHz input sinusoid.",
+      "caption_bbox": [
+        301.1,
+        266.3,
+        487.0,
+        274.2
+      ],
+      "section_title": "IV. CLOSED-LOOP QFG CIRCUITS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CLOSED-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 8 shows the samdifferential pled output waveform obtained for a 1-kHz 0.9RAMIREZ-ANGULO et al.: VERY LOW-VOLTAGE ANALOG SIGNAL PROCESSING BASED ON QUASI-FLOATING GATE TRANSISTORS (a) (b) Fig. 7."
+        },
+        {
+          "section_title": "CLOSED-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The silicon area employed for the T/H circuit (input pads not , and the static power consumption was included) was 0.16 mm Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Measured T/H output for a 1-kHz input sinusoid",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 7,
+      "caption": "Fig. 9. Measured output voltage of the 6-bit DAC.",
+      "caption_bbox": [
+        301.1,
+        493.9,
+        467.6,
+        501.9
+      ],
+      "section_title": "IV. CLOSED-LOOP QFG CIRCUITS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CLOSED-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 9."
+        },
+        {
+          "section_title": "CLOSED-LOOP QFG CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 9 shows the measured output voltage for binary in1 1 1 1 1 1 to 63 (1,1,1,1,1,1). puts ranging from 0 Circles represent measured values, whereas the ideal response corresponds to the black dots in the solid line."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured output voltage of the 6-bit DAC",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 5,
+  "warnings": []
+}

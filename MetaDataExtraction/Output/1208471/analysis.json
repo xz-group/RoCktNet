@@ -1,0 +1,902 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1208471.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1208471",
+  "generated_at": "2026-07-29T22:01:07",
+  "paper_metadata": {
+    "title": "A 4-Gb/s CMOS Clock and Data Recovery Circuit Using 1=8-Rate Clock Technique",
+    "authors": [
+      "Seong-Jun Song",
+      "Sung Min Park",
+      "Hoi-Jun Yoo"
+    ],
+    "abstract": "A 4-Gb/s clock and data recovery (CDR) circuit is realized in a 0.25m standard CMOS technology. The CDR circuit exploits 1 8-rate clock technique to facilitate the design of a voltage-controlled oscillator (VCO) and to eliminate the need of 1:4 demultiplexer, thereby achieving low power consumption. The VCO incorporates the ring oscillator configuration with active inductor loads, generating four half-quadrature clocks. The VCO control line comprises both a programmable 6-bit digital coarse control and a folded differential fine control through a charge-pump and a low pass filter. Duty-cycle correction of Fig. 1. Conventional architecture of a full-rate CDR. clock signals is obtained by exploiting a high common-mode rejection ratio differential amplifier at the ring oscillator output. or SiGe HBT technologies that provide high-speed and inherA 1 8-rate linear phase detector accomplishes the phase error detection with no systematic phase offset and inherently performs ently low-noise characteristics. However, these materials are the 1:4 demultiplexing. Test chips demonstrate the jitter of the still costly and dissipate high power [11]–[14]. Thus, CMOS recovered clock to be 5.2 ps rms and 47 ps pk-pk for 231 1 technologies become very attractive due to low-cost, low-power, pseudorandom bit sequence (PRBS) input data. The phase noise is and high-integration-level characteristics [15]–[17]. These charmeasured to be 112 dBc/Hz at 1-MHz offset. The measured bit 6 for 231 acteristics are very desirable for short-haul applications such as error rate is less than 10 1 PRBS. The chip excluding output buffers dissipates 70 mW from a single 2.5-V supply. backplane interconnections or chip-to-chip interconnects [18]. This paper presents a 4-Gb/s CDR circuit implemented in a",
+    "keywords": [
+      "Clock and data recovery",
+      "CMOS",
+      "linear phase"
+    ],
+    "doi": "10.1109/JSSC.2003.813292",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "4-Gb/s CMOS Clock and Data Recovery Circuit",
+    "technology": "CMOS, SIGE, HBT",
+    "application_domain": "if",
+    "sub_blocks": [
+      "inductor",
+      "output buffer",
+      "differential pair",
+      "clock / timing",
+      "transistor/MOSFET",
+      "current source",
+      "LC tank / resonator",
+      "pre-amplifier",
+      "latch"
+    ],
+    "design_purpose": "",
+    "function_summary": "4-Gb/s CMOS Clock and Data Recovery Circuit: A 4-Gb/s clock and data recovery (CDR) circuit is realized in a 0.25m standard CMOS technology.",
+    "key_specs": [
+      "5.2 ps",
+      "47 ps",
+      "112 dBc/Hz",
+      "70 mW",
+      "1 ps",
+      "2 GHz",
+      "1.8 V",
+      "600 mV",
+      "500 MHz",
+      "45 ph"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE COMPUTING performance of a single chip has increased exponentially due to the advance of semiconductor technology. Accordingly, the improvement of I/O bandwidth is indispensable. High-speed serial data links provide multigigabit bandwidth with reduced system complexity and cost [1]–[3]. Particularly, the optical fiber links provide efficient solution for gigabit data rate, while traditional c ..."
+    },
+    {
+      "number": "III",
+      "title": "VCO",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "For CDR applications, two configurations of VCOs are widely exploited: ring oscillators and LC-tank oscillators [22]. The ring oscillator provides wide tuning range and can generate a number of clocks with different phases. However, it produces relatively high phase noise and operates only at low frequencies factor. Meanwhile, the LC-tank due to its low-quality oscillator achieves stable operation ..."
+    },
+    {
+      "number": "V",
+      "title": "MEASUREMENT RESULTS",
+      "kind": "results",
+      "page": 4,
+      "text_preview": "Test chips were fabricated in a 0.25m standard CMOS technology with four metal layers and a single poly. Fig. 12 shows the chip microphotograph, where the core consumes the area of 1.0 mm . For facilitating the measurements, a test chip 0.9 was mounted on a FR-4 PC board by using bondwires. Fig. 13 shows the measured eye diagrams of the four 1:4 depseudomultiplexed 1-Gb/s data outputs for 4-Gb/s r ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 5,
+      "text_preview": "A novel CDR circuit with -rate clock technique is realized m standard CMOS technology. Exploiting the -rate in 0.25linear PD and the VCO with active inductor loads and dutycycle correction buffers, it achieves the 4-Gb/s operation with jitter for PRBS and dissipates 70 mW from 5.2 ps a single 2.5-V supply. Hence, the CDR circuit is suitable for high-speed and low-power optical communication applic ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Conventional architecture of a full-rate CDR.",
+      "caption_bbox": [
+        301.1,
+        256.1,
+        474.9,
+        266.7
+      ],
+      "section_title": "",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1 shows the conventional full-rate CDR circuit, consisting of four blocks: a clock recovery circuit, a decision circuit, a frequency divider, and a 1:4 DEMUX."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "-conventional": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "clock and data recovery (CDR)",
+        "technology": "CMOS, SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Conventional architecture of a full-rate CDR",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Simulation result of a differential ring oscillator with resistive loads and isolation buffers in a 0.25-m CMOS technology.",
+      "caption_bbox": [
+        39.6,
+        202.7,
+        290.6,
+        222.6
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 2 illustrates the simulated maximum oscillation Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.1,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simulation result of a differential ring oscillator with resistive loads and isolation buffers in a 0.25-m CMOS technology",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Proposed 1=8-rate CDR.",
+      "caption_bbox": [
+        302.6,
+        176.8,
+        411.4,
+        187.5
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 3 the -rate CDR circuit, shows the architecture of the proposed -rate linear PD, a CP, a second-order LPF, consisting of a and a VCO."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Output buffers (not shown in Fig. 3) employing the open-drain differential pair configuration drive terminations and help the measurements of the off-chip 50 the recovered half-quadrature clocks and demultiplexed data."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 7, JULY 2003 Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.7,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "clock and data recovery (CDR)",
+        "technology": "CMOS, SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "output buffer",
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "Proposed 1=8-rate CDR",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.43,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. VCO incorporating feedback isolation buffers with DCC.",
+      "caption_bbox": [
+        38.1,
+        189.6,
+        249.9,
+        200.2
+      ],
+      "section_title": "III. VCO",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "VCO",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Hence, we SONG et al.: CMOS CDR CIRCUIT USING -RATE CLOCK TECHNIQUE Fig. 4."
+        },
+        {
+          "section_title": "VCO",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 4 shows the block diagram of the half-quadrature differential ring oscillator, consisting of four delay stages and four isolation buffers with duty-cycle correction (DCC)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "VCO incorporating feedback isolation buffers with DCC",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. (a) Block diagram of feedback isolation buffer with DCC. (b) Transistor-level implementation of Fig. 5(a).",
+      "caption_bbox": [
+        38.1,
+        491.9,
+        289.2,
+        511.5
+      ],
+      "section_title": "III. VCO",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "VCO",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "(a) ( (b) Fig. 5."
+        },
+        {
+          "section_title": "VCO",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "(b) Transistor-level implementation of Fig. 5(a). employ the active inductor loads to acquire wide tuning range, factor, and small area. moderately high The proposed ring oscillator employs half-quadrature technique to generate four phase clocks."
+        },
+        {
+          "section_title": "VCO",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 5 shows the block diagram and the implementation of the feedback isolation buffer with the function of DCC."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "buffer",
+        "technology": "CMOS, SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "inductor",
+          "transistor/MOSFET",
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) Block diagram of feedback isolation buffer with DCC. (b) Transistor-level implementation of Fig. 5(a)",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.5,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. Single delay stage of the VCO.",
+      "caption_bbox": [
+        301.1,
+        197.2,
+        430.3,
+        207.9
+      ],
+      "section_title": "III. VCO",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "VCO",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The latter is -rate) clock. feasible with the proposed VCO due to the low ( Fig. 6."
+        },
+        {
+          "section_title": "VCO",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 6 shows the schematic diagram of a single delay stage of the VCO, consisting of a coarse tuning stage with a programmable 6-bit digital control word and a fine-tuning stage with a folded differential pair with source degeneration."
+        },
+        {
+          "section_title": "VCO",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The coarse tuning is digitally controlled by varying the tail currents, as illustrated in Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "current source",
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "Single delay stage of the VCO",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 2,
+      "caption": "Fig. 7. Block diagram of the 1=8-rate linear PD.",
+      "caption_bbox": [
+        301.1,
+        405.3,
+        462.2,
+        415.9
+      ],
+      "section_title": "III. VCO",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "VCO",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 7."
+        },
+        {
+          "section_title": "VCO",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "IV. -RATE LINEAR PD -rate Fig. 7 shows the block diagram of the proposed linear PD."
+        },
+        {
+          "section_title": "VCO",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Consequently, the of DCT signals appear at every data transition and each DCT IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 7, JULY 2003 (b) signal is produced by XORing two consecutive bits of the input data as described in the following where represents the output of a data sampling latch in Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "latch",
+        "technology": "CMOS, SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "latch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the 1=8-rate linear PD",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.31,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. Folded current-mode logic (CML) family: (a) folded D-latch; (b) folded MUX; and (c) folded XOR.",
+      "caption_bbox": [
+        39.6,
+        341.3,
+        386.9,
+        352.0
+      ],
+      "section_title": "III. VCO",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "VCO",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "(a) (c) Fig. 8."
+        },
+        {
+          "section_title": "VCO",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The schematic diagrams of the folded CML family, including a folded D-latch, a folded MUX, and a folded XOR, are shown in Fig. 8. -rate linear PD."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "multiplexer (MUX)",
+        "technology": "CMOS, SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "latch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Folded current-mode logic (CML) family: (a) folded D-latch; (b) folded MUX; and (c) folded XOR",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. Operation of the 1=8-rate linear PD.",
+      "caption_bbox": [
+        38.1,
+        396.4,
+        183.9,
+        407.0
+      ],
+      "section_title": "III. VCO",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "VCO",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 9 illustrates the operation of the Whenever the transition of the input NRZ data occurs, all DCT , signals go high."
+        },
+        {
+          "section_title": "VCO",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "SONG et al.: CMOS CDR CIRCUIT USING -RATE CLOCK TECHNIQUE Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "clock and data recovery (CDR)",
+        "technology": "CMOS, SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Operation of the 1=8-rate linear PD",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10. Fully differential CP.",
+      "caption_bbox": [
+        38.1,
+        573.9,
+        138.4,
+        584.5
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "VCO",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 10 shows the transistor-level implementation of the fully differential CP."
+        },
+        {
+          "section_title": "VCO",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "4-Gb/s CMOS Clock and Data Recovery Circuit",
+        "technology": "CMOS, SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Fully differential CP",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 4,
+      "caption": "Fig. 11. Simulated characteristic of the 1=8-rate linear PD.",
+      "caption_bbox": [
+        301.1,
+        237.8,
+        495.4,
+        248.5
+      ],
+      "section_title": "III. VCO",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "VCO",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Also, large-size transistors are used to minimize the effect of mismatch between the output currents. -rate linear PD Fig. 11 shows the simulation results of the characteristic, indicating the difference of the average values of the DT and CT signals as a function of the delay between a half-quadrature clock and the input data."
+        },
+        {
+          "section_title": "VCO",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "4-Gb/s CMOS Clock and Data Recovery Circuit",
+        "technology": "CMOS, SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "Also, large-size transistors are used to minimize the effect of mismatch between the output currents. -rate linear PD Fig. 11 shows the simulation results of the characteristic, indicating the difference of the average values of the DT and CT signals as a function of the delay between a half-quadrature clock and the ...",
+        "function_summary": "Simulated characteristic of the 1=8-rate linear PD. Also, large-size transistors are used to minimize the effect of mismatch between the output currents. -rate linear PD Fig. 11 shows the simulation results of the characteristic, indicating the difference of the average values of the DT and CT signals as a function of ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 4,
+      "caption": "Fig. 12. Chip microphotograph of the 1=8-rate CDR.",
+      "caption_bbox": [
+        301.1,
+        456.4,
+        477.1,
+        467.0
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "VCO",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 12."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 12 shows the chip microphotograph, where the core consumes the area of 1.0 mm ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -7.7,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "clock and data recovery (CDR)",
+        "technology": "CMOS, SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chip microphotograph of the 1=8-rate CDR",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 5,
+      "caption": "Fig. 13. Eye diagrams of 4-Gb/s input and four 1:4 demultiplexed output.",
+      "caption_bbox": [
+        39.6,
+        274.1,
+        279.3,
+        284.7
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 13 shows the measured eye diagrams of the four 1:4 depseudomultiplexed 1-Gb/s data outputs for 4-Gb/s random bit sequence (PRBS) input data."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "PRBS generator",
+        "technology": "CMOS, SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Eye diagrams of 4-Gb/s input and four 1:4 demultiplexed output",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 5,
+      "caption": "Fig. 14. Waveforms of the four recovered half-quadrature clocks.",
+      "caption_bbox": [
+        39.6,
+        429.5,
+        253.2,
+        440.2
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 14 shows the recovered half-quadrature clocks, where a slight phase offset occurs between the adjacent waveforms."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-waveform": -2.0,
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "4-Gb/s CMOS Clock and Data Recovery Circuit",
+        "technology": "CMOS, SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Waveforms of the four recovered half-quadrature clocks",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 5,
+      "caption": "Fig. 15. Spectrum of a recovered half-quadrature clock.",
+      "caption_bbox": [
+        39.6,
+        621.7,
+        223.2,
+        632.4
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 15 shows the spectrum of the recovered clock, where the phase noise is measured to be 112 dBc/Hz at 1-MHz offset."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.7,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "4-Gb/s CMOS Clock and Data Recovery Circuit",
+        "technology": "CMOS, SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Spectrum of a recovered half-quadrature clock",
+        "key_specs": [
+          "112 dBc/Hz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 5,
+      "caption": "Fig. 16. Jitter histogram of a recovered half-quadrature clock.",
+      "caption_bbox": [
+        302.6,
+        207.1,
+        505.4,
+        217.7
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Also, the jitter histogram of the recovered clock is shown in Fig. 16, indicating the clock jitter to and 47 ps for PRBS input data."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 7, JULY 2003 Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "PRBS generator",
+        "technology": "CMOS, SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Jitter histogram of a recovered half-quadrature clock",
+        "key_specs": [
+          "47 ps"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 5,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

@@ -1,0 +1,796 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1487614.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1487614",
+  "generated_at": "2026-07-29T21:33:05",
+  "paper_metadata": {
+    "title": "A 3-bit Soft-Decision IC for Powerful Forward Error Correction in 10-Gb/s Optical Communication Systems",
+    "authors": [
+      "Hitoyuki Tagami",
+      "Tatsuya Kobayashi",
+      "Yoshikuni Miyata",
+      "Kazuhide Ouchi",
+      "Kazushige Sawada",
+      "Kazuo Kubo",
+      "Katsuhiko Kuno",
+      "Hideo Yoshida",
+      "Katsuhiro Shimizu",
+      "Takashi Mizuochi",
+      "Kuniaki Motoshima"
+    ],
+    "abstract": "We describe the design concept and performance of a 3-bit soft-decision IC, which opens a vista for new terabit-caof more powerful FEC based on concatenated RS codes [3] pacity optical communication systems by dramatically improving together with iterative decoding [4]–[9] have been reported to the capability of forward error correction (FEC). The proposed achieve a net coding gain (NCG) of around 8 dB [10]–[13] soft-decision IC is composed of five functional blocks, i.e., a soft-de- (NCG: gross coding gain in decibels minus bit rate increase cider, an error filter, a 3-bit encoder, a 3:48 de-multiplexer, and a in deciels due to the redundant overhead). An advanced FEC clock recovery circuit. The biggest challenge was the soft-decision block regenerating the common data using seven deciders with sepusing an RS code concatenated with a Viterbi convolutional arate thresholds. We employed a novel SiGe BiCMOS process and code has demonstrated an NCG of 10.3 dB at 2.5 Gb/s [14], but a custom BGA package made from low-temperature co-fired cethis FEC required a redundant overhead of 113%. In practical ramics to achieve a high sensitivity of 20 mVpp with a wide phase applications for over 10-Gb/s optical transmission, a redundant margin of 270 for 12.4-Gb/s nonreturn-to-zero (NRZ) data sigoverhead of less than 25% is desirable. nals. The error filter and the 3-bit encoder, which are incorporated in the IC, prevent the degradation of the FEC performance due Various researchers have studied alternative approaches; to signal noise or fluctuations. The 3:48 de-multiplexer provides e.g., block turbo codes (BTCs) [15], [16] and low-density an accessible interface with the FEC encoder/decoder LSI. The parity-check codes [17]–[20], both of which are known to clock recovery circuit, based on a phase-locked-loop technology, show improved performance in combination with soft-decision fulfilled the jitter tolerance requirements corresponding to ITU-T techniques. Several numerical simulations for BTC using G.825, even for 55% duty cycle optical return-to-zero (RZ) signals. The 3-bit soft-decision IC, in cooperation with a block turbo ensoft-input/soft-output iterative decoding have been reported coder/decoder, achieved a record net coding gain of 10.1 dB with to have a theoretical potential of around 10-dB NCG with an 24.6% redundancy, which is only 0.9 dB away from the Shannon overhead of less than 25% [21]–[23]. Although the marked limit for a code rate of 0.8 for a binary symmetric channel. effectiveness of soft decision is already well known in wire-",
+    "keywords": [
+      "BiCMOS integrated circuits",
+      "clocks",
+      "demulti-"
+    ],
+    "doi": "10.1109/JSSC.2005.852418",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2005
+  },
+  "paper_circuit_context": {
+    "circuit_type": "filter",
+    "technology": "CMOS, BICMOS, SIGE",
+    "application_domain": "wireless, if",
+    "sub_blocks": [
+      "resistor",
+      "transistor/MOSFET",
+      "output buffer",
+      "differential pair",
+      "latch",
+      "clock / timing",
+      "current source",
+      "switch"
+    ],
+    "design_purpose": "In practical ramics to achieve a high sensitivity of 20 mVpp with a wide phase applications for over 10-Gb/s optical transmission, a redundant margin of 270 for 12.4-Gb/s nonreturn-to-zero (NRZ) data sigoverhead of less than 25% is desirable. nals.",
+    "function_summary": "filter: In practical ramics to achieve a high sensitivity of 20 mVpp with a wide phase applications for over 10-Gb/s optical transmission, a redundant margin of 270 for 12.4-Gb/s nonreturn-to-zero (NRZ) data sigoverhead of less than 25% is desirable. nals.",
+    "key_specs": [
+      "8 dB",
+      "10.3 dB",
+      "113%",
+      "20 mV",
+      "25%",
+      "55%",
+      "10.1 dB",
+      "24.6%",
+      "0.9 dB",
+      "1.2 dB"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE rapid growth in communication bandwidth demands new technology to increase transmission capacity and distance, in addition to reducing communication costs. Recent optical backbone networks, e.g., submarine cable systems and wavelength division multiplexing systems, commonly use forward error correction (FEC), which is effective not only in improving the accuracy of data transmission while min ..."
+    },
+    {
+      "number": "III",
+      "title": "COUNTERMEASURES FOR IMPOSSIBLE OUTPUTS",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "FROM THE DECIDERS Truth tables for the 3-bit encoder with an embedded error ﬁlter function are shown in Table I. Four sets of regenerated data should be expected as reasonable output patterns in regard to each hard-decision result for 0 and 1. However, impossible outputs from the deciders are in fact caused by the effects of signal noise and variation in the decision sensitivities. These impossibl ..."
+    },
+    {
+      "number": "IV",
+      "title": "CLOCK RECOVERY PLL",
+      "kind": "other",
+      "page": 4,
+      "text_preview": "Clock recovery, which is essential for optical receivers, is another important function for the soft-decision IC. Because even the small change of the time delay between data and clock signal in coaxial cables makes it impossible to stable signal detection over the changes in operating temperature or in supplied voltage, a clock recovery function should be integrated with deciders in high-bit-rate ..."
+    },
+    {
+      "number": "V",
+      "title": "CHIP DESIGN AND PACKAGING",
+      "kind": "design",
+      "page": 6,
+      "text_preview": "Fig. 11(a) shows the chip photograph of the soft-decision IC, which was manufactured in 0.2m SiGe BiCMOS process Fig. 11. 3-bit soft-decision IC and packaging. (a) Chip photograph. (b) S-parameter simulation for the BGA package. with GHz. Approximately 20 000 bipolar and 1500 CMOS transistors were placed on the 9 mm 9 mm chip. Total power consumption was 6.7 W. Since the IC needed about 200 I/O pa ..."
+    },
+    {
+      "number": "VI",
+      "title": "BIT-ERROR-CORRECTION EXPERIMENTS",
+      "kind": "results",
+      "page": 6,
+      "text_preview": "Fig. 12 shows the experimental setup for measuring the error-correction capability to emulate a real optical transmission system with a 10-Gb/s FEC-framed signal. A PN23 pseudorandom binary sequence at 156 Mb/s was launched into the framer and following turbo encoder to produce an Fig. 12. Experimental setup for measuring error-correction capability. FEC-framed signal based on a two-component Bose ..."
+    },
+    {
+      "number": "VII",
+      "title": "SUMMARY",
+      "kind": "conclusion",
+      "page": 7,
+      "text_preview": "A novel 3-bit soft-decision IC fabricated using a 0.2m SiGe BiCMOS process was for the ﬁrst time incorporated into a BTC decoder-based FEC for 10-Gb/s optical transmission. Careful design of the high-speed soft-decision circuit mounted on a custom BGA package yielded an adequate decision sensitivity of 20 mV . The decision circuit experimentally achieved for a 12.4-Gb/s NRZ signal, and the a phase ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Threshold arrangement for 3-bit soft decision.",
+      "caption_bbox": [
+        39.6,
+        310.0,
+        216.0,
+        318.0
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "An additional decider acting as a referee and error ﬁlter logic embedded in the 3-bit encoder are effective in revising impossible Fig. 1."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "In the data signal, where case of for 3-bit soft decision, seven thresholds to are established from the error probabilities of the two possible received signals 0 and 1, as shown in Fig. 1."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The upper ; and the lower deciders deciders are set up by establishing the conﬁdence level of the hard-deciand sion outputs for “0” and “1.” The thresholds are placed in the upper tail of the distribution of the 0’s and the lower tail of the 1’s, respectively, as shown in Fig. 1, with an appropriate spacing as detailed in Section VI."
+        },
+        {
+          "section_title": "COUNTERMEASURES FOR IMPOSSIBLE OUTPUTS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The counted numbers as a function of threshold correspond to the error probability for the given SNR of input signal, as shown in Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.1,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Threshold arrangement for 3-bit soft decision",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.05,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Conﬁguration of 3-bit soft-decision IC in a BTC receiver.",
+      "caption_bbox": [
+        302.6,
+        278.1,
+        515.1,
+        286.1
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Meticulous numerical simulation predicted that a BTC with three deciders was superior by about 0.4 dB to a BTC with one decider (i.e., hard decision) and that a BTC with seven deciders IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 8, AUGUST 2005 Fig. 2."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 2 shows the conﬁguration of the 3-bit soft-decision IC, followed by a turbo decoder."
+        },
+        {
+          "section_title": "COUNTERMEASURES FOR IMPOSSIBLE OUTPUTS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "In order to suppress degradation caused by impossible outputs, two countermeasure functions are provided in the soft-dein Fig. 2 cision IC."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.7,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "In order to suppress degradation caused by impossible outputs, two countermeasure functions are provided in the soft-dein Fig. 2 cision IC.",
+        "function_summary": "Conﬁguration of 3-bit soft-decision IC in a BTC receiver. In order to suppress degradation caused by impossible outputs, two countermeasure functions are provided in the soft-dein Fig. 2 cision IC.",
+        "key_specs": [
+          "0.4 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Circuit conﬁguration from data input to deciders.",
+      "caption_bbox": [
+        38.1,
+        349.8,
+        225.4,
+        357.8
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The circuit conﬁguration from the data input to the deciders is shown in Fig. 3."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The incoming data signal is shared equally TAGAMI et al.: 3-bit SOFT-DECISION IC FOR POWERFUL FEC IN 10-Gb/s OPTICAL COMMUNICATION SYSTEMS Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Circuit conﬁguration from data input to deciders",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Sensitivity and phase margin of decider for single input.",
+      "caption_bbox": [
+        301.1,
+        537.2,
+        509.2,
+        545.2
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The clock signal generated from the recovery circuit is shared among the deciders through the same number of dummy ampliﬁers as the data signal, which enables suppression of relative phase deviation between the data and clock signals, even if Fig. 4."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 4 shows experimental results for the input sensitivity and phase margin of a decider."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The inset in Fig. 4 is the eye contour for 1E-9 BER, which also demonstrates the wide phase margin and the lack of waveform distortion in the data sharing circuits."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.7,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "clock / timing"
+        ],
+        "design_purpose": "The clock signal generated from the recovery circuit is shared among the deciders through the same number of dummy ampliﬁers as the data signal, which enables suppression of relative phase deviation between the data and clock signals, even if Fig. 4.",
+        "function_summary": "Sensitivity and phase margin of decider for single input. The clock signal generated from the recovery circuit is shared among the deciders through the same number of dummy ampliﬁers as the data signal, which enables suppression of relative phase deviation between the data and clock signals, even if Fig. 4.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Conﬁguration of a de-multiplexer.",
+      "caption_bbox": [
+        39.6,
+        303.9,
+        178.3,
+        311.8
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The linear decrease in the phase margin indicates that the sum of the setup and hold Fig. 5."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The 3:48 de-multiplexer is composed of 1:2 de-multiplexers using half-rate clock, as shown in Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Conﬁguration of a de-multiplexer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "Fig. 6. Conﬁguration of clock recovery PLL.",
+      "caption_bbox": [
+        301.1,
+        231.2,
+        450.7,
+        239.1
+      ],
+      "section_title": "III. COUNTERMEASURES FOR IMPOSSIBLE OUTPUTS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "COUNTERMEASURES FOR IMPOSSIBLE OUTPUTS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Now, are impossible different outputs, because with a higher with a lower threshold threshold generates a 1, while Fig. 6."
+        },
+        {
+          "section_title": "CLOCK RECOVERY PLL",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "For the reasons above, we employed the clock recovery circuit based on a PLL in our soft-decision IC, as shown in Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Conﬁguration of clock recovery PLL",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 5,
+      "caption": "Fig. 7. VCO conﬁguration. (a) Ring-type VCO. (b) Delay cell circuit.",
+      "caption_bbox": [
+        39.6,
+        461.1,
+        267.6,
+        469.0
+      ],
+      "section_title": "IV. CLOCK RECOVERY PLL",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CLOCK RECOVERY PLL",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "A ring-type voltage-controlled oscillator (VCO) is constructed with two delay cells based on the interpolating circuit [28], which requires no passive elements such as high-Q inductors and varactors, as shown in Fig. 7."
+        },
+        {
+          "section_title": "CLOCK RECOVERY PLL",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Although oscillation at the target frequency can be achieved by expanding the oscillation range, this leads to Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.8,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "VCO conﬁguration. (a) Ring-type VCO. (b) Delay cell circuit",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.46,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 5,
+      "caption": "Fig. 8. VCO frequency versus control voltage.",
+      "caption_bbox": [
+        302.6,
+        226.1,
+        456.8,
+        234.1
+      ],
+      "section_title": "IV. CLOCK RECOVERY PLL",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CLOCK RECOVERY PLL",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 8 shows experimental results for VCO oscillation frequency versus control voltage."
+        },
+        {
+          "section_title": "CLOCK RECOVERY PLL",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "The small-signal transfer function for this IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 8, AUGUST 2005 Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "VCO frequency versus control voltage",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 5,
+      "caption": "Fig. 9. Loop ﬁlter with variable gain and phase adjustment.",
+      "caption_bbox": [
+        302.6,
+        401.4,
+        497.8,
+        409.3
+      ],
+      "section_title": "IV. CLOCK RECOVERY PLL",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CLOCK RECOVERY PLL",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "The LF contains a switching circuit for the input signals, as shown in Fig. 9."
+        },
+        {
+          "section_title": "CLOCK RECOVERY PLL",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 9."
+        },
+        {
+          "section_title": "CLOCK RECOVERY PLL",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Loop ﬁlter with variable gain and phase adjustment. ﬁlter, ignoring higher order poles due to parasitic components, is given approximately by [30] (1) where is transconductance of the differential pair and time and are given by constants (2) (3) The following gain stage of the LF in Fig. 9 varies the openloop gain of the PLL, which determines the jitter characteristics and the jitter tolerance of the PLL."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "Loop ﬁlter with variable gain and phase adjustment",
+        "key_specs": [
+          "9 v"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 6,
+      "caption": "Fig. 10. Jitter tolerance of clock and data recovery.",
+      "caption_bbox": [
+        38.1,
+        232.1,
+        206.7,
+        240.1
+      ],
+      "section_title": "IV. CLOCK RECOVERY PLL",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CLOCK RECOVERY PLL",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "The steady-state where between the data and the recovered clock is phase error TAGAMI et al.: 3-bit SOFT-DECISION IC FOR POWERFUL FEC IN 10-Gb/s OPTICAL COMMUNICATION SYSTEMS Fig. 10."
+        },
+        {
+          "section_title": "CLOCK RECOVERY PLL",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 10 shows an experimental evaluation of jitter tolerance of decider regeneration using the recovered clock."
+        },
+        {
+          "section_title": "CLOCK RECOVERY PLL",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "The value plotted at a jitter frequency of 100 MHz in Fig. 10 is the static phase margin of the decider for an incoming RZ signal."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Jitter tolerance of clock and data recovery",
+        "key_specs": [
+          "100 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 6,
+      "caption": "Fig. 11. 3-bit soft-decision IC and packaging. (a) Chip photograph. (b) S-parameter simulation for the BGA package.",
+      "caption_bbox": [
+        301.1,
+        427.4,
+        552.2,
+        444.3
+      ],
+      "section_title": "IV. CLOCK RECOVERY PLL",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CHIP DESIGN AND PACKAGING",
+          "section_kind": "design",
+          "page": 6,
+          "sentence": "Fig. 11(a) shows the chip photograph of the soft-decision IC, which was manufactured in 0.2m SiGe BiCMOS process Fig. 11. 3-bit soft-decision IC and packaging."
+        },
+        {
+          "section_title": "CHIP DESIGN AND PACKAGING",
+          "section_kind": "design",
+          "page": 6,
+          "sentence": "An that the package exhibited dB and dB for frequencies up to 15 GHz, as shown in Fig. 11(b)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -5.2,
+      "relevance_breakdown": {
+        "-photograph": -3.0,
+        "-chip photo": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "3-bit soft-decision IC and packaging. (a) Chip photograph. (b) S-parameter simulation for the BGA package",
+        "key_specs": [
+          "15 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 7,
+      "caption": "Fig. 12. Experimental setup for measuring error-correction capability.",
+      "caption_bbox": [
+        39.6,
+        321.9,
+        267.8,
+        329.8
+      ],
+      "section_title": "V. CHIP DESIGN AND PACKAGING",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "BIT-ERROR-CORRECTION EXPERIMENTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 12 shows the experimental setup for measuring the error-correction capability to emulate a real optical transmission system with a 10-Gb/s FEC-framed signal."
+        },
+        {
+          "section_title": "BIT-ERROR-CORRECTION EXPERIMENTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "A PN23 pseudorandom binary sequence at 156 Mb/s was launched into the framer and following turbo encoder to produce an Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "-setup": -2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Experimental setup for measuring error-correction capability",
+        "key_specs": [
+          "23 ps"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 7,
+      "caption": "Fig. 13. Measured error-correction capability and received waveform (a) back to back and (b) at BER = 1:98 \u0002 10 .",
+      "caption_bbox": [
+        302.6,
+        235.2,
+        553.7,
+        252.1
+      ],
+      "section_title": "V. CHIP DESIGN AND PACKAGING",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "BIT-ERROR-CORRECTION EXPERIMENTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 13 shows the measured output BER versus input BER for random errors [35]."
+        },
+        {
+          "section_title": "BIT-ERROR-CORRECTION EXPERIMENTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The insertions in Fig. 13 are examples of degraded received waveforms of a 12.4-Gb/s signal."
+        },
+        {
+          "section_title": "BIT-ERROR-CORRECTION EXPERIMENTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The NCG IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 8, AUGUST 2005 Fig. 13."
+        },
+        {
+          "section_title": "BIT-ERROR-CORRECTION EXPERIMENTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "These obtained no errors after calculating for results agree well with the experimental results shown in Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.9,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-waveform": -2.0,
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured error-correction capability and received waveform (a) back to back and (b) at BER = 1:98 \u0002 10",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 7,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

@@ -1,0 +1,908 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1347313.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1347313",
+  "generated_at": "2026-07-29T22:01:59",
+  "paper_metadata": {
+    "title": "A 2-GHz Analog-to-Digital Delta-Sigma Modulator for CDMA Receivers With 79-dB Signal-to-Noise Ratio in 1.23-MHz Bandwidth",
+    "authors": [
+      "Elias H. Dagher",
+      "Peter A. Stubberud",
+      "Wesley K. Masenten",
+      "Matteo Conta",
+      "Thang Victor Dinh"
+    ],
+    "abstract": "This paper presents the design of a second-order single-bit analog-to-digital continuous-time delta-sigma modheterodyne receivers. Additionally, unlike superheterodyne reulator (CT M) that can be used in wireless CDMA ceivers which use the receiver’s analog channel select filters as receivers. The CT M samples at 2 GHz, consumes 18 the ADCs’ anti-aliasing filter, digital radios typically provide mW at 1.8 V and has a 79-dB signal-to-noise ratio (SNR) over little or no channel filtering in front of the receiver’s ADCs. a 1.23-MHz bandwidth. The CT M was fabricated in a As a result, the ADCs in digital radio receivers need to provide 0.18m 1-poly 6-metal, CMOS technology and has an active area of approximately 0.892 mm2. The M’s critical performance both their own anti-aliasing filters and sample at higher rates specifications are derived from the CDMA receiver specifications. than ADCs in superheterodyne receivers. Because continuous",
+    "keywords": [
+      "Analog–digital conversion",
+      "CMOS",
+      "code division"
+    ],
+    "doi": "10.1109/JSSC.2004.835831",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2004
+  },
+  "paper_circuit_context": {
+    "circuit_type": "2-GHz Analog-to-Digital Delta-Sigma Modulator",
+    "technology": "CMOS, SIGE, HBT",
+    "application_domain": "rf, wireless, if",
+    "sub_blocks": [
+      "inductor",
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "current source",
+      "LC tank / resonator",
+      "mixer",
+      "switch",
+      "differential pair",
+      "latch",
+      "clock / timing",
+      "transformer",
+      "output buffer"
+    ],
+    "design_purpose": "",
+    "function_summary": "2-GHz Analog-to-Digital Delta-Sigma Modulator: This paper presents the design of a second-order single-bit analog-to-digital continuous-time delta-sigma modheterodyne receivers.",
+    "key_specs": [
+      "2 GHz",
+      "1.8 V",
+      "18 GHz",
+      "1.5 W",
+      "3.2 W",
+      "4 GHz",
+      "2.2 mW",
+      "68 dB",
+      "1 MHz",
+      "4.1 mW"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "R ECENTLY, a family of receiver architectures, often called digital radio receivers, has gained interest in the wireless communications industry. Such architectures include the zero intermediate-frequency (IF) (ZIF) receiver and the complex low-IF (CLIF) or Weaver architecture receiver [1]. Unlike superheterodyne architectures that perform channel ﬁltering and automatic gain control (AGC) after th ..."
+    },
+    {
+      "number": "II",
+      "title": "DELTA-SIGMA PERFORMANCE REQUIREMENTS",
+      "kind": "results",
+      "page": 1,
+      "text_preview": "Fig. 1 shows the basic architecture of a CLIF and ZIF digital radio receiver. Similar to a superheterodyne receiver, the radio frequency (RF) signal that is received from the antenna is ampliﬁed by a low noise ampliﬁer (LNA) via a duplexer. Because CDMA carrier signals range from 1930 MHz to 1990 MHz, LNAs for CDMA receivers are typically tuned to those frequencies and provide some small amount of ..."
+    },
+    {
+      "number": "III",
+      "title": "DELTA-SIGMA ARCHITECTURE",
+      "kind": "proposed",
+      "page": 2,
+      "text_preview": "Because of the ’s high sampling rate, the requires an architecture that is simple to stabilize and can tolerate also requires an architecture signiﬁcant loop delay. The that exhibits graceful degradation of SNR and remains stable in the presence of high-power interference signals. Because low s can meet these requirements, the architecorder ture shown in Fig. 2 was chosen. A fully differential sig ..."
+    },
+    {
+      "number": "IV",
+      "title": "CIRCUIT IMPLEMENTATIONS",
+      "kind": "design",
+      "page": 5,
+      "text_preview": "is comprised of four basic circuit blocks, a The transconductance ampliﬁer (TA), two DACs, and a comparator. In this section, the designs of the TA and the two DACs are ’s primarily described within the context of meeting the noise and linearity requirements described in the previous section. The comparator design is primarily described in the context of meeting its metastability requirement and t ..."
+    },
+    {
+      "number": "V",
+      "title": "MEASURED RESULTS",
+      "kind": "results",
+      "page": 6,
+      "text_preview": "Two versions of the were fabricated. The ﬁrst version has a 5-latch comparator and the second version used a m, 3-latch comparator. Each version was fabricated in a 0.18 n-well, single-poly, six-metal CMOS technology as a standalone module designed for wafer probing and as part of a CLIF receiver. Fig. 9 shows a diagram of the test setup for the probe-able ’s input signal generator version. As sho ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 8,
+      "text_preview": "This paper has presented a fabricated in a standard CMOS technology. The successful performance of in both probeable and integrated receiver the form has demonstrated that a high-speed CMOS modulator can be constructed with low power consumption, high dynamic range, and high linearity using basic circuit blocks and a second-order design. ACKNOWLEDGMENT The authors greatly appreciate the assistance ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Block diagram of a ZIF or CLIF architecture.",
+      "caption_bbox": [
+        39.6,
+        169.5,
+        214.1,
+        177.4
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "As a result, it can be used in low-cost single-chip CMOS implementations of Fig. 1."
+        },
+        {
+          "section_title": "DELTA-SIGMA PERFORMANCE REQUIREMENTS",
+          "section_kind": "results",
+          "page": 1,
+          "sentence": "Fig. 1 shows the basic architecture of a CLIF and ZIF digital radio receiver."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "+architecture": 2.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS, SIGE, HBT",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of a ZIF or CLIF architecture",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.57,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 2,
+      "caption": "Fig. 2.",
+      "caption_bbox": [
+        38.1,
+        217.8,
+        59.0,
+        225.8
+      ],
+      "section_title": "II. DELTA-SIGMA PERFORMANCE REQUIREMENTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "DELTA-SIGMA PERFORMANCE REQUIREMENTS",
+          "section_kind": "results",
+          "page": 1,
+          "sentence": "Fig. 2. point (IIP3) is then 8.5 dBm with respect to the input of the receiver."
+        },
+        {
+          "section_title": "DELTA-SIGMA ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "Because low s can meet these requirements, the architecorder ture shown in Fig. 2 was chosen."
+        },
+        {
+          "section_title": "DELTA-SIGMA ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "A fully differential signal path was used to reduce the effects of common mode noise and to reduce even order harmonics. receives an input current from As shown in Fig. 2, the . one of the mixers."
+        },
+        {
+          "section_title": "DELTA-SIGMA ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "As shown in Fig. 2, this architecture uses a small amount of relies active circuitry."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.4,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS, SIGE, HBT",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "A fully differential signal path was used to reduce the effects of common mode noise and to reduce even order harmonics. receives an input current from As shown in Fig. 2, the . one of the mixers.",
+        "function_summary": "mixer. A fully differential signal path was used to reduce the effects of common mode noise and to reduce even order harmonics. receives an input current from As shown in Fig. 2, the . one of the mixers.",
+        "key_specs": [
+          "8.5 dBm",
+          "2 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 3,
+      "caption": "Fig. 3.",
+      "caption_bbox": [
+        39.6,
+        186.8,
+        60.3,
+        194.7
+      ],
+      "section_title": "III. DELTA-SIGMA ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "DELTA-SIGMA ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "Fig. 3. sampling frequency of 697 MHz."
+        },
+        {
+          "section_title": "DELTA-SIGMA ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "To determine the pliﬁed linear time invariant model shown in Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "2-GHz Analog-to-Digital Delta-Sigma Modulator",
+        "technology": "CMOS, SIGE, HBT",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": [
+          "697 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 3,
+      "caption": "Fig. 4. M.",
+      "caption_bbox": [
+        302.6,
+        283.5,
+        325.6,
+        300.4
+      ],
+      "section_title": "III. DELTA-SIGMA ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "DELTA-SIGMA ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "The value of must be re-evaluated after every design change for the model to be valid. ’s STF can be written as Using these models, the (7) and the ’s NTF can be written as (8) IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 11, NOVEMBER 2004 Plot of STF and NTF from linearized model of the second-order CT Fig. 4."
+        },
+        {
+          "section_title": "DELTA-SIGMA ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "Fig. 4 where , ns, shows plots of the STF and NTF where ns, k , , pF, k , pF, , , , and ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "2-GHz Analog-to-Digital Delta-Sigma Modulator",
+        "technology": "CMOS, SIGE, HBT",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "M",
+        "key_specs": [
+          "4 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 5,
+      "caption": "Fig. 5. Schematic of TA.",
+      "caption_bbox": [
+        39.6,
+        243.6,
+        124.9,
+        251.6
+      ],
+      "section_title": "III. DELTA-SIGMA ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "DELTA-SIGMA ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "(13) shows that the large OSR used in this design signiﬁcantly relaxes the Fig. 5."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATIONS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Transconductance Ampliﬁer Fig. 5 shows the TA’s schematic [10]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "2-GHz Analog-to-Digital Delta-Sigma Modulator",
+        "technology": "CMOS, SIGE, HBT",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematic of TA",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.71,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 5,
+      "caption": "Fig. 6.",
+      "caption_bbox": [
+        302.6,
+        272.3,
+        323.5,
+        280.2
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATIONS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Feedback DACs The schematic of is shown in Fig. 6."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATIONS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Fig. 6. ’s common mode of the DAC’s output, as well as the has the same architecture as input common mode. except that ’s current is less than that of , and ’s common mode feedback (CMFB) is shared with the TA’s CMFB."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS, SIGE, HBT",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "digital-to-analog converter (DAC)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 6,
+      "caption": "Fig. 7. Block diagram of comparator.",
+      "caption_bbox": [
+        38.1,
+        127.1,
+        163.3,
+        135.1
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATIONS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Comparator Fig. 7 shows a block diagram of the comparator, which consists of a wideband ampliﬁer and ﬁve (or three) clocked latches."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATIONS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "DAGHER et al.: A 2-GHz A/D DELTA-SIGMA MODULATOR FOR CDMA RECEIVERS Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "comparator",
+        "technology": "CMOS, SIGE, HBT",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [
+          "latch",
+          "clock / timing"
+        ],
+        "design_purpose": "",
+        "function_summary": "Block diagram of comparator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.57,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 6,
+      "caption": "Fig. 8. Schematic of comparator latch.",
+      "caption_bbox": [
+        301.1,
+        244.1,
+        430.3,
+        252.0
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATIONS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATIONS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "To meet the metastability speciﬁcation in (12) at a 2-GHz clock rate, the comparator uses conventional CML latches as shown in Fig. 8."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "In general, because the ’s HSDO’s sampling frequency is asynchronous with the Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "comparator",
+        "technology": "CMOS, SIGE, HBT",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [
+          "latch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Schematic of comparator latch",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.79,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 7,
+      "caption": "Fig. 9.",
+      "caption_bbox": [
+        39.6,
+        207.2,
+        60.3,
+        215.1
+      ],
+      "section_title": "V. MEASURED RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 9 shows a diagram of the test setup for the probe-able ’s input signal generator version."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "As shown in Fig. 9, the is followed by a low pass ﬁlter, which suppresses the signal generator’s harmonics."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "C Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "2-GHz Analog-to-Digital Delta-Sigma Modulator",
+        "technology": "CMOS, SIGE, HBT",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 7,
+      "caption": "Fig. 10. SNR over a 1.23-MHz bandwidth versus input amplitude.",
+      "caption_bbox": [
+        39.6,
+        444.9,
+        256.8,
+        452.8
+      ],
+      "section_title": "V. MEASURED RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The resulting single bit signal was then ﬁltered and decimated. ’s measured SNR over Fig. 10 shows the plot of the a 1.23-MHz bandwidth versus input power for the that has a has a 5-latch comparator."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "comparator",
+        "technology": "CMOS, SIGE, HBT",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [
+          "latch"
+        ],
+        "design_purpose": "",
+        "function_summary": "SNR over a 1.23-MHz bandwidth versus input amplitude",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 7,
+      "caption": "Fig. 11. 76.4 dB/1.23 MHz DR. The plot is generated by averaging three 1 K FFTs from the decimation ﬁlter output. The resulting bandwidth resolution is 20 kHz.",
+      "caption_bbox": [
+        39.6,
+        672.3,
+        290.6,
+        698.2
+      ],
+      "section_title": "V. MEASURED RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 11 shows the spectral density of a full-scale input signal after decimation."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The SNR shown in Fig. 11 is limited by the signal generator’s close-in phase noise."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Measured power spectral density of probed CT M showing Fig. 11. 76.4 dB/1.23 MHz DR."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "2-GHz Analog-to-Digital Delta-Sigma Modulator",
+        "technology": "CMOS, SIGE, HBT",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "76.4 dB/1.23 MHz DR. The plot is generated by averaging three 1 K FFTs from the decimation ﬁlter output. The resulting bandwidth resolution is 20 kHz",
+        "key_specs": [
+          "76.4 dB",
+          "1.23 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 7,
+      "caption": "Fig. 12.",
+      "caption_bbox": [
+        302.6,
+        431.2,
+        327.2,
+        439.2
+      ],
+      "section_title": "V. MEASURED RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 12 shows the corresponding eye diagram of the single bit output."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "2-GHz Analog-to-Digital Delta-Sigma Modulator",
+        "technology": "CMOS, SIGE, HBT",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 7,
+      "caption": "Fig. 13. Measured power spectral density of a two-tone test showing the by averaging three 1 K FFTs from the decimation ﬁlter output. The resulting bandwidth resolution is 20 kHz.",
+      "caption_bbox": [
+        302.6,
+        664.0,
+        553.7,
+        698.8
+      ],
+      "section_title": "V. MEASURED RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 13 shows a power spectral density of a two-tone test to measure IMP3 suppression or SFDR."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The plot is generated Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "2-GHz Analog-to-Digital Delta-Sigma Modulator",
+        "technology": "CMOS, SIGE, HBT",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured power spectral density of a two-tone test showing the by averaging three 1 K FFTs from the decimation ﬁlter output. The resulting bandwidth resolution is 20 kHz",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 8,
+      "caption": "Fig. 14. SNR over a 1.23-MHz bandwidth versus sampling frequency for the",
+      "caption_bbox": [
+        38.1,
+        285.0,
+        289.2,
+        293.0
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 14 plots the SNR of the two s as a s’ inputs are function of sampling rate."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "As shown in Fig. 14, the 3-latch exhibits better performance at sampling frequencies less than 1 GHz than the 5-latch This result is due to the 3-latch ’s smaller comparator latency."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "As shown in Fig. 14, the 5-latch exhibited better performance at sampling frequencies above 2 GHz than the 3-latch because the 5-latch exhibits less metastability ."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The input signal power is at 10 dBFS to avoid possible SNR compression that could Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.6,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "references": 1.6
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "comparator",
+        "technology": "CMOS, SIGE, HBT",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [
+          "latch"
+        ],
+        "design_purpose": "",
+        "function_summary": "SNR over a 1.23-MHz bandwidth versus sampling frequency for the",
+        "key_specs": [
+          "1 GHz",
+          "2 GHz",
+          "10 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.03,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 8,
+      "caption": "Fig. 15. is the portion of C integrated on-chip.",
+      "caption_bbox": [
+        38.1,
+        510.1,
+        289.2,
+        527.0
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "C Fig. 15. is the portion of C integrated on-chip. allows the to maintain consistency in its feedback waveform at sampling frequencies above 2 GHz."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 15 shows a micrograph of the 5-latch or 0.892 mm integrated in a CLIF receiver. 9% of the ’s layout area consists of the TA, the two DACs, and the com- , identiﬁed as parator."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The integrated portion of capacitor in Fig. 15, and consume another 11% of the area."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.2,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS, SIGE, HBT",
+        "application_domain": "rf, wireless, if",
+        "sub_blocks": [
+          "capacitor",
+          "latch"
+        ],
+        "design_purpose": "C Fig. 15. is the portion of C integrated on-chip. allows the to maintain consistency in its feedback waveform at sampling frequencies above 2 GHz.",
+        "function_summary": "is the portion of C integrated on-chip. C Fig. 15. is the portion of C integrated on-chip. allows the to maintain consistency in its feedback waveform at sampling frequencies above 2 GHz.",
+        "key_specs": [
+          "2 GHz",
+          "9%",
+          "11%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 5,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

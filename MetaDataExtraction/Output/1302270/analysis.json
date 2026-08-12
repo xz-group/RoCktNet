@@ -1,0 +1,894 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1302270.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1302270",
+  "generated_at": "2026-07-29T22:01:40",
+  "paper_metadata": {
+    "title": "0.4-V Logic-Library-Friendly SRAM Array Using Rectangular-Diffusion Cell and Delta-Boosted-Array Voltage Scheme",
+    "authors": [
+      "Masanao Yamaoka",
+      "Kenichi Osada",
+      "Koichiro Ishibashi"
+    ],
+    "abstract": "We designed a logic-library-friendly SRAM array. The array uses rectangular-diffusion cell (RD cell) and delta-boosted-array-voltage scheme (DBA scheme). In the RD cell, the cell ratio is 1.0, and it reduces the imbalance of the cell ratio. A low supply voltage deteriorates the static noise margin, however, the DBA scheme compensates it. Using the combination of RD cell and DBA scheme, a 32-kB test chip achieves 0.4-V operation at 4.5-MHz frequency, 140W power dissipation, and 0.9A standby current. Index Terms—0.4-V operation, delta-boosted-array (DBA) scheme, rectangular-diffusion (RD) cell, SRAM.",
+    "keywords": [],
+    "doi": "10.1109/JSSC.2004.827796",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2004
+  },
+  "paper_circuit_context": {
+    "circuit_type": "0.4-V Logic-Library-Friendly SRAM Array",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "transistor/MOSFET",
+      "clock / timing"
+    ],
+    "design_purpose": "",
+    "function_summary": "0.4-V Logic-Library-Friendly SRAM Array: We designed a logic-library-friendly SRAM array.",
+    "key_specs": [
+      "140W",
+      "1.0 v",
+      "0 V",
+      "5 V",
+      "3 V",
+      "4 V",
+      "0.1 V",
+      "0.8 V",
+      "0.6 V",
+      "70 mV"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "I N THE near-future system LSIs, there are many issues to embedding the SRAM circuit, including the difficulties of low-voltage operation, low power consumption at standby state, high-speed operation, shrinkage of the memory cell, and affinity to the logic circuits. The first three issues are the performances for embedded SRAM. The difficulties of achieving these three performances are mainly caus ..."
+    },
+    {
+      "number": "II",
+      "title": "RD CELL",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "One of the important issues for low-supply-voltage SRAM arrays is how to reduce the imbalance of the cell ratio for the left-side and right-side current paths in the memory cell, since this imbalance reduces the operating margin of the memory cells. Therefore, the imbalance has to be decreased. To solve this problem, we designed an RD cell in which the cell ratio (beta ratio) is one (1.0). The cel ..."
+    },
+    {
+      "number": "III",
+      "title": "DBA SCHEME",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "In low-voltage system LSIs, the MOSFET threshold voltage ( ) must be reduced to maintain high operation speed in the logic circuit, and the SRAM memory cell must be able to use the same MOS as the logic circuit to achieve the same performance as the logic circuits. In consequence, the SNM Fig. 3. Butterfly curves under various conditions. (a) Butterfly curves when = 1:0 V and 0:5 V. (b) Butterfly  ..."
+    },
+    {
+      "number": "IV",
+      "title": "IMPROVEMENT OF WRITING CHARACTERISTIC",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "The DBA scheme enhances the stability of SRAM memory cells, but disturbs the writing operation of the SRAM. Fig. 9 shows the writing operation. “H” data is originally retained in the left storage node, and “L” data is retained in the right node. When the different data from the original data is being written to the memory cell, the electrical charge in the “H” potential node is drawn off through t ..."
+    },
+    {
+      "number": "V",
+      "title": "BOOSTED VOLTAGE GENERATOR",
+      "kind": "other",
+      "page": 4,
+      "text_preview": "The DBA scheme needs a boosted voltage generator (BVG) to generate the power supply for SRAM array power electrodes ). Recent LSIs have two (or more) power supplies, one for ( ) and the other for the core circuit ( ). the I/O circuit ( is, for example, 1.8 or 2.5 V, and is, for example, 1.2 V. is higher than , the BVG uses and and Since can downconvert to that is 0.1 V higher than . A low-standby- ..."
+    },
+    {
+      "number": "VI",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 5,
+      "text_preview": "A micrograph of the test chip is shown in Fig. 14. The memory array is composed of 32-kB SRAM memory cells. Table I shows the process features of the test chip. In the MOS is prepared for the logic circuits. For process, a dualMOS is used for nMOS and the the DBA scheme, the lowMOS is used for pMOS in the SRAM memory cells. highTherefore, the DBA scheme does not require any additional process. Fig ..."
+    },
+    {
+      "number": "VII",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 5,
+      "text_preview": "A combination of an RD cell and a DBA scheme enables an SRAM array to operate at a low supply voltage, with low power consumption and low standby current. The RD cell reduces the fluctuation of the cell ratio, and the DBA scheme improves the SNM. The improvement in the SNM makes it possible to use the MOS in the SRAM array, thus enabling the SRAM to lowoperate at high speed and low supply voltage. ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. SEM microphotograph of RD cell.",
+      "caption_bbox": [
+        302.6,
+        355.4,
+        442.7,
+        363.3
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1."
+        },
+        {
+          "section_title": "RD CELL",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 1 shows an SEM microphotograph of the RD cell."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.2,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "0.4-V Logic-Library-Friendly SRAM Array",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "SEM microphotograph of RD cell",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Layout of RD cell and NAND cell.",
+      "caption_bbox": [
+        38.1,
+        258.1,
+        175.2,
+        266.1
+      ],
+      "section_title": "II. RD CELL",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "RD CELL",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Thus, the cell ratio of the RD cell is not affected by photolithographic misalignment, and the YAMAOKA et al.: 0.4-V LOGIC-LIBRARY-FRIENDLY SRAM ARRAY USING RC CELL AND DBA SCHEME Fig. 2."
+        },
+        {
+          "section_title": "RD CELL",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 2 shows the layouts of an RD cell and a logic NAND cell."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "-layout": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "SRAM",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Layout of RD cell and NAND cell",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Butterfly curves under various conditions. (a) Butterfly curves when = 1:0 V and 0:5 V. (b) Butterfly curves when using MOSFETs V = 0:3 V and 0:4 V. (c) Butterfly curves when using conventional cell and RD cell.",
+      "caption_bbox": [
+        301.1,
+        438.6,
+        552.2,
+        464.5
+      ],
+      "section_title": "II. RD CELL",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DBA SCHEME",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "In consequence, the SNM Fig. 3."
+        },
+        {
+          "section_title": "DBA SCHEME",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The butterfly curves using two types voltage and the low of supply voltage are shown in Fig. 3(a)."
+        },
+        {
+          "section_title": "DBA SCHEME",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 3(b) shows the butterfly curves using the lowand highMOSFET memory cell."
+        },
+        {
+          "section_title": "DBA SCHEME",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 3(c) shows the butterfly curves using the conventional memory cell and the RD cell."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.4,
+      "relevance_breakdown": {
+        "-conventional": -3.0,
+        "references": 1.6
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "memory",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Butterfly curves under various conditions. (a) Butterfly curves when = 1:0 V and 0:5 V. (b) Butterfly curves when using MOSFETs V = 0:3 V and 0:4 V. (c) Butterfly curves when using conventional cell and RD cell",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Circuit diagram of DBA scheme.",
+      "caption_bbox": [
+        39.6,
+        266.1,
+        174.6,
+        274.1
+      ],
+      "section_title": "III. DBA SCHEME",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DBA SCHEME",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 4 shows the circuit diagram of the DBA scheme, where is the voltage of the power electrode of the memory array and is the power-supply voltage of the peripheral circuits."
+        },
+        {
+          "section_title": "DBA SCHEME",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "In the Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.8,
+      "relevance_breakdown": {
+        "+circuit diagram": 3.0,
+        "+circuit": 1.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "memory",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Circuit diagram of DBA scheme",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 1.0,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. , and electrical cell ratio in RD cell using DBA scheme.",
+      "caption_bbox": [
+        39.6,
+        450.8,
+        290.7,
+        467.7
+      ],
+      "section_title": "III. DBA SCHEME",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DBA SCHEME",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Array electrode voltage V versus V Fig. 5. , and electrical cell ratio in RD cell using DBA scheme."
+        },
+        {
+          "section_title": "DBA SCHEME",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 5 shows the relationship and . between The change of the butterfly curves when implementing the DBA scheme is shown in Fig. 6."
+        },
+        {
+          "section_title": "DBA SCHEME",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 5 shows the electrical cell ratio and the dashed horizontal line shows the cell ratio of a conventional memory cell."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "memory",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": ", and electrical cell ratio in RD cell using DBA scheme",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. Change in butterfly curve using DBA scheme.",
+      "caption_bbox": [
+        302.6,
+        277.5,
+        479.3,
+        285.5
+      ],
+      "section_title": "III. DBA SCHEME",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DBA SCHEME",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 5 shows the relationship and . between The change of the butterfly curves when implementing the DBA scheme is shown in Fig. 6."
+        },
+        {
+          "section_title": "DBA SCHEME",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The lines the same around the square, so that the difference of the side IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 6, JUNE 2004 Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "0.4-V Logic-Library-Friendly SRAM Array",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Change in butterfly curve using DBA scheme",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 2,
+      "caption": "Fig. 7. Change of SNM with and without DBA scheme.",
+      "caption_bbox": [
+        302.6,
+        467.6,
+        486.9,
+        475.6
+      ],
+      "section_title": "III. DBA SCHEME",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DBA SCHEME",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 7."
+        },
+        {
+          "section_title": "DBA SCHEME",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 7 shows the change in YAMAOKA et al.: 0.4-V LOGIC-LIBRARY-FRIENDLY SRAM ARRAY USING RC CELL AND DBA SCHEME Fig. 8."
+        },
+        {
+          "section_title": "DBA SCHEME",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The light hatched stripe labeled (2) in Fig. 7 shows the SNM when using the DBA scheme."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "SRAM",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Change of SNM with and without DBA scheme",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. Speed of two types of SRAMs and logic circuits.",
+      "caption_bbox": [
+        38.1,
+        227.4,
+        223.8,
+        235.4
+      ],
+      "section_title": "III. DBA SCHEME",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DBA SCHEME",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 7 shows the change in YAMAOKA et al.: 0.4-V LOGIC-LIBRARY-FRIENDLY SRAM ARRAY USING RC CELL AND DBA SCHEME Fig. 8."
+        },
+        {
+          "section_title": "DBA SCHEME",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 8 shows the speed of the SRAM and logic circuit."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.8,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "SRAM",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Speed of two types of SRAMs and logic circuits",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.1,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 3,
+      "caption": "Fig. 9. Writing operation in SRAM memory cell.",
+      "caption_bbox": [
+        301.1,
+        204.6,
+        464.5,
+        212.5
+      ],
+      "section_title": "III. DBA SCHEME",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DBA SCHEME",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "If the is much higher than , the MOS has to endure higher voltage, and the MOS may be different from the MOS of the Fig. 9."
+        },
+        {
+          "section_title": "IMPROVEMENT OF WRITING CHARACTERISTIC",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 9 shows the writing operation. “H” data is originally retained in the left storage node, and “L” data is retained in the right node."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "SRAM",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Writing operation in SRAM memory cell",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10. .",
+      "caption_bbox": [
+        39.6,
+        221.3,
+        161.7,
+        229.2
+      ],
+      "section_title": "IV. IMPROVEMENT OF WRITING CHARACTERISTIC",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "IMPROVEMENT OF WRITING CHARACTERISTIC",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "To solve this is used for the load MOS in the RD cell. problem, a higher Fig. 10 shows the writing time at 0.5-V supply voltage."
+        },
+        {
+          "section_title": "IMPROVEMENT OF WRITING CHARACTERISTIC",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "When using the DBA scheme, the writing time becomes of the load MOS becomes higher than that long, and if the Writing time versus V Fig. 10. . of the transfer MOS, the writing time improves as the writing decreases the additime without DBA scheme."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "0.4-V Logic-Library-Friendly SRAM Array",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 4,
+      "caption": "Fig. 11. Reference voltage generator.",
+      "caption_bbox": [
+        302.6,
+        291.0,
+        427.2,
+        298.9
+      ],
+      "section_title": "IV. IMPROVEMENT OF WRITING CHARACTERISTIC",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "BOOSTED VOLTAGE GENERATOR",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "In Fig. 11, which shows the reference voltage generator, there are two types of MOSFETs."
+        },
+        {
+          "section_title": "BOOSTED VOLTAGE GENERATOR",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 6, JUNE 2004 Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "-reference": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "0.4-V Logic-Library-Friendly SRAM Array",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Reference voltage generator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 4,
+      "caption": "Fig. 12. Boosted voltage generator.",
+      "caption_bbox": [
+        302.6,
+        464.4,
+        421.1,
+        472.3
+      ],
+      "section_title": "V. BOOSTED VOLTAGE GENERATOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "BOOSTED VOLTAGE GENERATOR",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 12 shows the BVG."
+        },
+        {
+          "section_title": "BOOSTED VOLTAGE GENERATOR",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "0.4-V Logic-Library-Friendly SRAM Array",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Boosted voltage generator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 4,
+      "caption": "Fig. 13. .",
+      "caption_bbox": [
+        302.6,
+        684.8,
+        459.7,
+        692.7
+      ],
+      "section_title": "V. BOOSTED VOLTAGE GENERATOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "BOOSTED VOLTAGE GENERATOR",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 13 shows the change in when the array electrode ( changes; this reflects the result of an HSPICE simulation."
+        },
+        {
+          "section_title": "BOOSTED VOLTAGE GENERATOR",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Simulated boosted voltage versus V Fig. 13. ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "0.4-V Logic-Library-Friendly SRAM Array",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 5,
+      "caption": "Fig. 14. Micrograph of test chip.",
+      "caption_bbox": [
+        38.1,
+        177.5,
+        148.8,
+        185.5
+      ],
+      "section_title": "V. BOOSTED VOLTAGE GENERATOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "BOOSTED VOLTAGE GENERATOR",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "YAMAOKA et al.: 0.4-V LOGIC-LIBRARY-FRIENDLY SRAM ARRAY USING RC CELL AND DBA SCHEME Fig. 14."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "A micrograph of the test chip is shown in Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-micrograph": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "SRAM",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Micrograph of test chip",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 5,
+      "caption": "Fig. 15. Shmoo plot.",
+      "caption_bbox": [
+        38.1,
+        476.3,
+        110.3,
+        484.3
+      ],
+      "section_title": "VII. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "BOOSTED VOLTAGE GENERATOR",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "TABLE I PROCESS FEATURES Fig. 15."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 15 shows the shmoo plot of the SRAM array."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "SRAM",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Shmoo plot",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 5,
+      "caption": "Fig. 16. Operating waveform.",
+      "caption_bbox": [
+        301.1,
+        173.7,
+        402.1,
+        181.7
+      ],
+      "section_title": "V. BOOSTED VOLTAGE GENERATOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 16 shows the voltage of clock signal, wordline, and data output at the reading cycle when the supply voltage of the peripheral circuit is 0.40 V, the supply voltage of the memory array is 0.50 V, and the operating frequency is 4.5 MHz."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The standby current shows the leakage current of the Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "-waveform": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "memory",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "clock / timing"
+        ],
+        "design_purpose": "",
+        "function_summary": "Operating waveform",
+        "key_specs": [
+          "0.40 V",
+          "0.50 V",
+          "4.5 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 4,
+  "warnings": []
+}

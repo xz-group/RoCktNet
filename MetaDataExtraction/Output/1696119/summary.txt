@@ -1,0 +1,57 @@
+# A 10b 50MS/s Pipelined ADC with Opamp Current Reuse Seung-Tak Ryu1, Bang-Sup Song1, Kanti Bacrania2
+
+VENUE
+"2006"
+
+FIGURE NUMBER
+"Figure 12.2.3 explains the operation of the current-reusing concept. During one phase, the input signal is sampled on the Ninput while the P-input amplifies residue. During this phase, the gate of the N-input stage is reset to the common-mode voltage VINC, and it works as an active load for the P-input amplifier. During the other phase, the roles are switched. The N-input stage amplifies residue while the P-input stage is reset to the commonmode voltage VIPC, and becomes an active load. Unlike the opamp-sharing method, the summing node can be reset. Furthermore since all the transistors operate always in saturation, there is no power turn-on delay as in the switched-opamp method. The opamp input node is separated from the capacitors during the sampling phase. This is to prevent the residue output settling from being delayed by the input common-mode resetting since the same output node is shared. This separation is manda-"
+
+TYPE
+"50MS/s Pipelined ADC"
+
+TECHNOLOGY
+"CMOS, 18µm process"
+
+SUB-BLOCKS
+[
+  "op-amp",
+  "capacitor",
+  "transistor/MOSFET",
+  "switch",
+  "differential pair",
+  "clock / timing"
+]
+
+FUNCTION SUMMARY
+"50MS/s Pipelined ADC"
+
+METRICS
+[
+  "Supply voltage",
+  "Process node",
+  "Power consumption",
+  "Frequency"
+]
+
+NUMERICAL PERFORMANCE
+[
+  "2 w",
+  "1V",
+  "0.18µm",
+  "1.8V",
+  "1.25V",
+  "0.75V",
+  "18mW",
+  "11mW",
+  "7mW",
+  "1MHz"
+]
+
+CONFIDENCE
+0.43
+
+WARNINGS
+[
+  "Recommended figure caption does not explicitly mention a schematic/topology/circuit; please confirm manually.",
+  "Recommended figure was classified as 'other', not a schematic; manual confirmation strongly recommended."
+]

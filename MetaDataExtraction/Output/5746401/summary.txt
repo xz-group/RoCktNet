@@ -1,0 +1,65 @@
+# A 4GHz CT ΔΣ ADC with 70dB DR and –74dBFS THD in 125MHz BW Muhammed Bolatkale1, Lucien J. Breems1, Robert Rutten1, Kofi A.A. Makinwa2
+
+VENUE
+"2011"
+
+FIGURE NUMBER
+"Figure 27.1.1a illustrates the block diagram of the 3rd-order single-loop ΔΣ modulator. It consists of three integrators with feed-forward coefficients a1 and a2 for high-frequency stabilization, a feedback coefficient b1 to minimize the in-band quantization noise, and a feed-forward signal path (a0) to relax the loop filter’s linearity requirements [5]. To compensate for the quantizer’s latency, a second feedback path comprising a multi-bit D/A converter (DAC2) is employed (Fig. 27.1.1a) [6]. The loop filter is preferably implemented with RC integrators, since they can operate at low supply voltages. The last integrator’s virtual ground node can then be used as the loop filter’s output summation node (Fig. 27.1.1b). . However, the quantizer’s input capacitance (CQ) loads the last integrator (Fig. 27.1.1b), introducing an extra pole that limits the maximum sampling rate. To overcome this, the last integrator is implemented as a Gm-C integrator which absorbs CQ, as well as the DAC2’s output capacitance (CD2), into its integration capacitance (Fig. 27.1.1c). However, the last integrator’s input is then no longer available for use as a summing node. Alternatively, the output of the Gm-C stage can be used as a wideband passive summation node for differentiated input signals. The feed-forward coefficients can then be implemented as capacitor ratios, i.e., a0=Ca0/Ctotal, a1=Ca1/Ctotal and a2=Ca2/Ctotal where Ctotal=Ca0+Ca1+Ca2+CQ+CD2. The passive summation does not attenuate the quantizer’s input signal if (a0+a1+a2)<1-(CQ+CD2)/Ctotal, which can be guaranteed by design."
+
+TYPE
+"CT ΔΣ ADC"
+
+TECHNOLOGY
+"CMOS, BICMOS, SIGE, 45nm process"
+
+APPLICATION
+"if"
+
+SUB-BLOCKS
+[
+  "capacitor",
+  "resistor",
+  "transistor/MOSFET",
+  "current source",
+  "output buffer",
+  "switch",
+  "differential pair",
+  "pre-amplifier",
+  "latch",
+  "clock / timing",
+  "sense amplifier"
+]
+
+FUNCTION SUMMARY
+"CT ΔΣ ADC"
+
+METRICS
+[
+  "Operating / oscillation frequency",
+  "Gain",
+  "Frequency",
+  "Process node",
+  "Power consumption"
+]
+
+NUMERICAL PERFORMANCE
+[
+  "4GHz",
+  "70dB",
+  "74dB",
+  "125MHz",
+  "45nm",
+  "256mW",
+  "100MHz",
+  "35GHz",
+  "55dB",
+  "35dB"
+]
+
+CONFIDENCE
+0.43
+
+WARNINGS
+[
+  "Recommended figure was classified as 'result_plot', not a schematic; manual confirmation strongly recommended."
+]

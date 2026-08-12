@@ -1,0 +1,751 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1347327.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1347327",
+  "generated_at": "2026-07-29T22:02:03",
+  "paper_metadata": {
+    "title": "A 230-nW 10-s Time Constant CMOS Integrator for an Adaptive Nerve Signal Amplifier",
+    "authors": [
+      "Robert Rieger",
+      "Andreas Demosthenous",
+      "John Taylor"
+    ],
+    "abstract": "This paper describes a micropower CMOS integrator with an extremely large time constant for use in a variety of low-frecan lead to clock feedthrough problems and reduce dynamic quency signal processing applications. The specific use of the interange. Furthermore, SC implementations for very large time grator in an implantable biomedical integrated circuit is described. constants tend to require large capacitor ratios [1]. The integrator is based on the OTA-C approach and a very small A further possibility is to use a digital approach consisting transconductance of 100 pA/V was achieved by cascading a short of an analog-to-digital (A/D) converter followed by a digital inchain of transconductance–transimpedance stages. The time constant of the integrator is tunable between about 0.2 and 10 s, and tegrator and finally a digital-to-analog (D/A) converter to proany offset voltages at the output terminal can be trimmed out. vide an analog output. In principle it should be possible to conm CMOS process, dissipates The circuit was fabricated in a 0.8struct such a system and, given the low sampling rates required, 230 nW from 1.5 V power supplies (excluding the bias circuitry power consumption would be low, at least comparable to the and output buffers) and has a core area of 0.1 mm2. The integrator chosen design. However, the circuit complexity, and hence die offers superior performance in terms of power consumption, die area and time constant when compared to previously published area, would almost certainly be much greater than the continwork. uous-time OTA-C design described in this paper. Nevertheless, the realization of OTAs with very small",
+    "keywords": [
+      "Filter",
+      "implantable biomedical ICs",
+      "integrator",
+      "very large time constants",
+      "weak inversion CMOS circuits"
+    ],
+    "doi": "10.1109/JSSC.2004.835818",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2004
+  },
+  "paper_circuit_context": {
+    "circuit_type": "transconductor / OTA",
+    "technology": "CMOS",
+    "application_domain": "biomedical, if",
+    "sub_blocks": [
+      "capacitor",
+      "transistor/MOSFET",
+      "current source",
+      "output buffer",
+      "resistor",
+      "cross-coupled pair",
+      "current mirror",
+      "bias circuit",
+      "differential pair"
+    ],
+    "design_purpose": "",
+    "function_summary": "transconductor / OTA: This paper describes a micropower CMOS integrator with an extremely large time constant for use in a variety of low-frecan lead to clock feedthrough problems and reduce dynamic quency signal processing applications.",
+    "key_specs": [
+      "230 nW",
+      "1.5 V",
+      "7J",
+      "1.2 mV",
+      "0.12 mV",
+      "100 mV",
+      "70 pF",
+      "3 w",
+      "50 mV",
+      "160 mV"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE realization of fully integrated large time constants (of the order of a few seconds) is very important in many applications including those relating to biomedical and speech recognition and for the design of ﬁlters with very low cut-off frequencies [1], [2]. Such ﬁlters, for example, are often made up of very large time constant integrators, which are generally required to be tunable. In addi ..."
+    },
+    {
+      "number": "II",
+      "title": "SYSTEM DESCRIPTION",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "The use of naturally occurring electroneurogram (ENG) signals to provide sensory feedback to artiﬁcial devices is a major current challenge in neuroprosthetics [11]. The most chronically stable and safe method to record neural signals is by means of implanted cuffs ﬁtted with electrodes and placed RIEGER et al.: A 230-nW 10-s TIME CONSTANT CMOS INTEGRATOR FOR AN ADAPTIVE NERVE SIGNAL AMPLIFIER Fig ..."
+    },
+    {
+      "number": "III",
+      "title": "REALIZING A VERY LARGE TIME CONSTANT",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "For the design of a very large time constant integrator, as already mentioned in Section I, several possible approaches were considered. The most obvious approach employs an on-chip physical resistor and capacitor. However, this would require unrealistic chip area and would not be tunable. In an OTA-C integrator, the passive resistor is replaced with an OTA having very ). In practical realizations ..."
+    },
+    {
+      "number": "IV",
+      "title": "APPROACHES FOR REALIZING LARGE",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "RATIOS Various circuit techniques have been proposed to achieve the effective large capacitances and/or very small transconductances required for very large time constant integrators. The capacitance scaling technique proposed in [1] and [2] can present at a be used to multiply the physical capacitance high-impedance circuit node by feeding back a scaled-up copy ) of the current ﬂowing through C a ..."
+    },
+    {
+      "number": "V",
+      "title": "CIRCUIT DESCRIPTION",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "The complete integrator design is in two sections. First, a ) intercascade of four stages: two transconductance stages ( ) stages. This secleaved with two grounded resistance ( tion can be regarded as a voltage attenuator and is shown in Fig. 3. The output of the attenuator section forms the input to the second section, an OTA driving a capacitor C as shown in Fig. 4. The OTA-C section will be des ..."
+    },
+    {
+      "number": "VI",
+      "title": "MEASURED RESULTS",
+      "kind": "results",
+      "page": 4,
+      "text_preview": "The integrator was fabricated using the austriamicrosysm double-metal double-poly n-well CMOS techtems 0.8nology. The simulations and layout were carried out using the CADENCE design kit provided by the foundry [16]. The microphotograph of the chip (core) is shown in Fig. 5. For testing purposes two on-board buffers were included. In total, ﬁve chips were tested and all showed correct operation. T ..."
+    },
+    {
+      "number": "VII",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 6,
+      "text_preview": "A continuous-time CMOS integrator with an extremely large time constant has been presented. The circuit operates in weak inversion and allows both tuning of the time constant over a wide range and trimming of output offset voltages. Furthermore, it features lower power dissipation and smaller die area than previously reported designs. Its operation was veriﬁed by exm perimental measurements on fab ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Adaptive system for EMG artefact reduction.",
+      "caption_bbox": [
+        38.1,
+        240.8,
+        212.6,
+        248.7
+      ],
+      "section_title": "II. SYSTEM DESCRIPTION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SYSTEM DESCRIPTION",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The most chronically stable and safe method to record neural signals is by means of implanted cuffs ﬁtted with electrodes and placed RIEGER et al.: A 230-nW 10-s TIME CONSTANT CMOS INTEGRATOR FOR AN ADAPTIVE NERVE SIGNAL AMPLIFIER Fig. 1."
+        },
+        {
+          "section_title": "SYSTEM DESCRIPTION",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The block diagram of the system is shown in Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Adaptive system for EMG artefact reduction",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2.",
+      "caption_bbox": [
+        301.1,
+        403.9,
+        321.9,
+        411.9
+      ],
+      "section_title": "II. SYSTEM DESCRIPTION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "REALIZING A VERY LARGE TIME CONSTANT",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 2."
+        },
+        {
+          "section_title": "REALIZING A VERY LARGE TIME CONSTANT",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "OTA-C integrator (Fig. 2) is signiﬁcant, resulting in the transfer function (1) where is the Laplace operator and the time constant equals to ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "transconductor / OTA",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 3,
+      "caption": "Fig. 3. First four stages of the g chain (attenuator section).",
+      "caption_bbox": [
+        38.1,
+        220.4,
+        260.6,
+        228.4
+      ],
+      "section_title": "IV. APPROACHES FOR REALIZING LARGE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "This secleaved with two grounded resistance ( tion can be regarded as a voltage attenuator and is shown in Fig. 3."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The dc voltage gain of the OTA-C section is (5) RIEGER et al.: A 230-nW 10-s TIME CONSTANT CMOS INTEGRATOR FOR AN ADAPTIVE NERVE SIGNAL AMPLIFIER -1=g Fig. 3."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "A total of two is given by (6) and assuming Recall that in weak inversion for pMOS and nMOS the same weak inversion slope factor - devices, the resulting overall transconductance of the chain is (8) is the transconductance of M1 and M2 in Fig. 3, where is the total current in each stage."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Furthermore, in order and to achieve better-balanced dc conditions, the extra diode-connected nMOS transistor M11 is connected at the inverting input of the second OTA as shown in Fig. 3."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Modes of Operation If the input transistors of the ﬁrst OTA (M1-M4 in Fig. 3) are to be kept in weak inversion, the input voltage must be restricted to [18] (9) in which case the output current of the OTA is fairly linear (i.e., linear operation of the ﬁrst OTA)."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "This is achieved by externally adjusting the current source in Fig. 3, which in turn alters the gate bias of M1 in Fig. 4 to equalize the dc voltages at nodes and ."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The transient measurements were recorded with a data acquisition module and plotted in Matlab. ) of the input OTA-diode combiFirst, the output voltage ( nation in Fig. 3 was measured against the amplitude of the input IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 11, NOVEMBER 2004 TABLE II TRANSISTOR DIMENSIONS IN FIGS. 3 AND 4 Fig. 6."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "DC transfer characteristic of the input OTA-diode combination in Fig. 3 (the dc offset from the y-axis has been removed for clarity). voltage ( ) to establish the regions of linear and saturated operation."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "current source"
+        ],
+        "design_purpose": "Furthermore, in order and to achieve better-balanced dc conditions, the extra diode-connected nMOS transistor M11 is connected at the inverting input of the second OTA as shown in Fig. 3.",
+        "function_summary": "First four stages of the g chain (attenuator section). Furthermore, in order and to achieve better-balanced dc conditions, the extra diode-connected nMOS transistor M11 is connected at the inverting input of the second OTA as shown in Fig. 3.",
+        "key_specs": [
+          "3 w"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.2,
+      "warnings": [
+        "Recommended figure caption does not explicitly mention a schematic/topology/circuit; please confirm manually.",
+        "Recommended figure was classified as 'other', not a schematic; manual confirmation strongly recommended."
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 3,
+      "caption": "Fig. 4. Last stage of the g chain (OTA-C section).",
+      "caption_bbox": [
+        38.1,
+        422.7,
+        231.1,
+        430.8
+      ],
+      "section_title": "IV. APPROACHES FOR REALIZING LARGE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The output of the attenuator section forms the input to the second section, an OTA driving a capacitor C as shown in Fig. 4."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "OTA-C Section The OTA-C section in Fig. 4 consists of a balanced pMOS ."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "An examination of Fig. 4 shows that because of the regulated cascode nMOS output branch (M8-M10), the overall output resistance of this section is mainly determined by the drain-to-source resistance of M12, that is, (4) where is the drain current and has a value of about 0.03 in weak inversion for the chosen CMOS process [17]."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "First four stages of the g chain (attenuator section). -1=g Fig. 4."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Last stage of the g chain (OTA-C section). is the transconductance of M1 and M2 in Fig. 4."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Offset Cancellation The time constant of the integrator is ultimately limited by charge leakage at node in Fig. 4."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "This is achieved by externally adjusting the current source in Fig. 3, which in turn alters the gate bias of M1 in Fig. 4 to equalize the dc voltages at nodes and ."
+        },
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Using (4) and noting that half of the bias product of ﬂows into each of the output nodes and in current Fig. 4, the time constant of the integrator can be expressed as (10) Since all bias currents to are derived from a single external , from (10) it is noted that the time dc bias current source , that is, constant is inversely proportional to (11) and the above expression holds for both linear and saturated integrator modes of operation. of 70 pF was chosen, and for In this work, a capacitance a time constant of 5 s, the required values of the various bias nA, nA, currents are A."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "This is because the output resistance of M12 in Fig. 4 is lower RIEGER et al.: A 230-nW 10-s TIME CONSTANT CMOS INTEGRATOR FOR AN ADAPTIVE NERVE SIGNAL AMPLIFIER Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [
+          "capacitor",
+          "transistor/MOSFET",
+          "current source"
+        ],
+        "design_purpose": "",
+        "function_summary": "Last stage of the g chain (OTA-C section)",
+        "key_specs": [
+          "70 pF"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.12,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 4,
+      "caption": "Fig. 5. Chip microphotograph (core).",
+      "caption_bbox": [
+        39.6,
+        181.8,
+        164.7,
+        189.7
+      ],
+      "section_title": "IV. APPROACHES FOR REALIZING LARGE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESCRIPTION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 5."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The microphotograph of the chip (core) is shown in Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -5.2,
+      "relevance_breakdown": {
+        "+core": 0.5,
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chip microphotograph (core)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "Fig. 6. DC transfer characteristic of the input OTA-diode combination in Fig. 3 (the dc offset from the y-axis has been removed for clarity).",
+      "caption_bbox": [
+        302.6,
+        512.7,
+        553.7,
+        530.2
+      ],
+      "section_title": "VI. MEASURED RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The transient measurements were recorded with a data acquisition module and plotted in Matlab. ) of the input OTA-diode combiFirst, the output voltage ( nation in Fig. 3 was measured against the amplitude of the input IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 11, NOVEMBER 2004 TABLE II TRANSISTOR DIMENSIONS IN FIGS. 3 AND 4 Fig. 6."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "As shown in Fig. 6, an input voltage of amplitude smaller than about 50 mV ensures linear operation and amplitudes above about 160 mV ensure saturated operation."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "DC transfer characteristic of the input OTA-diode combination in Fig. 3 (the dc offset from the y-axis has been removed for clarity)",
+        "key_specs": [
+          "3 w",
+          "50 mV",
+          "160 mV"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 5,
+      "caption": "Fig. 7. Integration of small sine waveform input.",
+      "caption_bbox": [
+        38.1,
+        261.8,
+        199.6,
+        269.7
+      ],
+      "section_title": "VI. MEASURED RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Linear Operation The integrator was biased with a time constant of about 1 s, and a sine wave of frequency 1 Hz and amplitude 100 mV (p-p) was applied to test the circuit at the limit of the linear region. ) response is plotted in Fig. 7."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "This is because the output resistance of M12 in Fig. 4 is lower RIEGER et al.: A 230-nW 10-s TIME CONSTANT CMOS INTEGRATOR FOR AN ADAPTIVE NERVE SIGNAL AMPLIFIER Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-waveform": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Integration of small sine waveform input",
+        "key_specs": [
+          "1 Hz",
+          "100 mV"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 5,
+      "caption": "Fig. 8. Integration of small square waveform input.",
+      "caption_bbox": [
+        38.1,
+        481.8,
+        207.5,
+        489.8
+      ],
+      "section_title": "VI. MEASURED RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "A square waveform of amthe linearity of the plitude 100 mV (p-p) results in the triangular output waveform plotted in Fig. 8."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 8."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 11 shows that the integrator works as predicted (the time constant was set to about 1 s).The slope of the output signal is slightly higher than for the smaller square waveform in Fig. 8, but remains constant for any saturating input signal amplitude."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.8,
+      "relevance_breakdown": {
+        "-waveform": -2.0,
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Integration of small square waveform input",
+        "key_specs": [
+          "100 mV"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 5,
+      "caption": "Fig. 9. .",
+      "caption_bbox": [
+        301.1,
+        284.2,
+        535.5,
+        292.2
+      ],
+      "section_title": "VI. MEASURED RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "As Fig. 9 shows, the time constant follows (11), and is tunable from 0.2 to 10 s."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Variation of the time constant with external current source I Fig. 9. ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [
+          "current source"
+        ],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. Open-loop and closed-loop frequency plots.",
+      "caption_bbox": [
+        301.1,
+        515.6,
+        474.4,
+        523.6
+      ],
+      "section_title": "VI. MEASURED RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The results are shown in Fig. 10 and agree closely 3-dB with the simulated results also plotted in the ﬁgure."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Open-loop and closed-loop frequency plots",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 6,
+      "caption": "Fig. 11. Integration of large square waveform input.",
+      "caption_bbox": [
+        39.6,
+        376.0,
+        211.5,
+        384.0
+      ],
+      "section_title": "VI. MEASURED RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 11 shows that the integrator works as predicted (the time constant was set to about 1 s).The slope of the output signal is slightly higher than for the smaller square waveform in Fig. 8, but remains constant for any saturating input signal amplitude."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The power dissipation TABLE IV COMPARISON WITH OTHER INTEGRATOR DESIGNS Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-waveform": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "CMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Integration of large square waveform input",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 3,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

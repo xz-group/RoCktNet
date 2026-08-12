@@ -1,0 +1,20 @@
+R1 VDD I_N
+R3 VDD I_P
+R2 VDD Q_N
+R4 VDD Q_P
+M6 I_N Q_N N1 VSS nmos
+M14 I_N I_P N2 VSS nmos
+M4 I_P I_N N2 VSS nmos
+M3 I_P Q_P N1 VSS nmos
+M9 Q_N I_P N3 VSS nmos
+M2 Q_N Q_P N4 VSS nmos
+M11 Q_P Q_N N4 VSS nmos
+M1 Q_P I_N N3 VSS nmos
+M8 N1 CLK_P N5 VSS nmos
+M7 N2 CLK_N N5 VSS nmos
+M12 N3 CLK_N N6 VSS nmos
+M5 N4 CLK_P N6 VSS nmos
+M15 N5 low_Vt N7 VSS nmos
+M13 N7 BIAS VSS VSS nmos
+M16 N6 low_Vt N8 VSS nmos
+M10 N8 BIAS VSS VSS nmos

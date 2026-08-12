@@ -1,0 +1,921 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\924861.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\924861",
+  "generated_at": "2026-07-29T22:03:27",
+  "paper_metadata": {
+    "title": "0.18-m CMOS 10-Gb/s Multiplexer/Demultiplexer ICs Using Current Mode Logic with Tolerance to Threshold Voltage Fluctuation",
+    "authors": [
+      "Akira Tanabe",
+      "Masato Umetani",
+      "Ikuo Fujiwara",
+      "Takayuki Ogura",
+      "Kotaro Kataoka",
+      "Masao Okihara",
+      "Hiroshi Sakuraba",
+      "Tetsuo Endoh",
+      "Fujio Masuoka"
+    ],
+    "abstract": "A feedback MOS current mode logic (MCML) is proposed for the high-speed operation of CMOS transistors. tion ICs [transceiver, receiver, multiplexer, demultiplexer, and This logic is more tolerant to the threshold voltage fluctuation phase-locked loop (PLL)] with data rates greater than 1 Gb/s than the conventional MCML and is suitable for gigahertz have been reported [7]–[16]. For example, an 8-Gb/s transceiver operation of deep-submicron CMOS transistors. Using this logic, IC using multilevel signaling (four levels) has been reported 8:1 multiplexer (MUX) and 1:8 demultiplexer (DEMUX) ICs [16]. That chip, however, is for serial links using copper cables for optical-fiber-link systems have been fabricated with 0.18m CMOS transistors. The ICs are faster than conventional CMOS and is not applicable to optical-fiber-link systems because of MUX and DEMUX ICs and their power consumption is less than m CMOS using its multilevel signaling. A 4-Gb/s chip in 0.61/4 of that of the conventional 10-Gb/s MUX and DEMUX ICs oversampling technique has been reported [12], but the error made using Si bipolar or GaAs transistors. rate of this chip is not small because of the oversampling algo-",
+    "keywords": [
+      "CMOSFETs",
+      "current-mode logic",
+      "optical commu-"
+    ],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2001
+  },
+  "paper_circuit_context": {
+    "circuit_type": "0.18-m CMOS 10-Gb/s Multiplexer/Demultiplexer ICs",
+    "technology": "CMOS, BICMOS, SIGE, GAAS, HBT",
+    "application_domain": "if",
+    "sub_blocks": [
+      "transistor/MOSFET",
+      "current source",
+      "differential pair",
+      "output buffer",
+      "pre-amplifier"
+    ],
+    "design_purpose": "A feedback MOS current mode logic (MCML) is proposed for the high-speed operation of CMOS transistors. tion ICs [transceiver, receiver, multiplexer, demultiplexer, and This logic is more tolerant to the threshold voltage fluctuation phase-locked loop (PLL)] with data rates greater than 1 Gb/s than the conventional ...",
+    "function_summary": "0.18-m CMOS 10-Gb/s Multiplexer/Demultiplexer ICs: A feedback MOS current mode logic (MCML) is proposed for the high-speed operation of CMOS transistors. tion ICs [transceiver, receiver, multiplexer, demultiplexer, and This logic is more tolerant to the threshold voltage fluctuation phase-locked loop (PLL)] with data rates greater than 1 Gb/s than the ...",
+    "key_specs": [
+      "0.4 W",
+      "3.1 GHz",
+      "3.0 GHz",
+      "3.5 GHz",
+      "5 GHz",
+      "2.5 GHz",
+      "3.8 nm",
+      "2.0 V",
+      "2 ps",
+      "1.25 GHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "G IGAHERTZ optical-fiber-link systems have become more important because of the increasing demand for high-speed communications. The key components of these systems are a multiplexer (MUX, parallel-to-serial converter) and a demultiplexer (DEMUX, serial-to-parallel converter). These ICs must handle high-frequency signals whose frequencies are half of the data rate. Fast switching speed is therefor ..."
+    },
+    {
+      "number": "II",
+      "title": "MCML CIRCUITS",
+      "kind": "design",
+      "page": 0,
+      "text_preview": "Fig. 1 shows inverters of the CMOS logic and the conventional MCML [17]. The CMOS logic has the advantage of low power consumption, but its operation is relatively slow. For example, the maximum toggle frequency of a conventional m CMOS inverter is only about 3.5 GHz. 0.18Simulated inverter delay time as a function of fanout and power consumption as a function of a operation frequency for the CMOS ..."
+    },
+    {
+      "number": "III",
+      "title": "EFFECT OF THE",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "The fluctuation of MOSFETs is caused by the fluctuation of the gate-oxide thickness, gate length, etc. The random flucplacement of the channel dopant [18] also causes the 1 m), the effect of tuation. If the gate width is large enough ( the random placement is not severe. Because of the severe short lowering, the fluctuation of channel effect with the deep-submicron MOSFETs becomes great because of ..."
+    },
+    {
+      "number": "IV",
+      "title": "FEEDBACK MCML CIRCUIT",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "The problem due to the fluctuation can be reduced by using a feedback MCML. Fig. 4 shows the inverters of the conventional MCML and the feedback MCML. In the feedback MCML, transistors MF1 and MF2 are added as feedback resistances. The effect of those feedback resistances for the fluctuation is described below. Because the MCML circuit is a simple source-coupled pair at a frequency circuit, differ ..."
+    },
+    {
+      "number": "V",
+      "title": "MCML FLIP-FLOP",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "Fig. 7 shows D-type flip-flops (D-F/Fs) using the CMOS (sampling logic and the feedback MCML. When , and when mode), these flip-flops store the input data (holding mode), they hold that internal data regardless of any (11) Fig. 8. Simulated relation between the V fluctuation and the maximum data rate of 1:2 DEMUXs using conventional and feedback MCMLs. Fig. 9. Block diagram of the 1:2 DEMUX. input ..."
+    },
+    {
+      "number": "VI",
+      "title": "MULTIPLEXER AND DEMULTIPLEXER CIRCUITS",
+      "kind": "design",
+      "page": 4,
+      "text_preview": "Using feedback MCMLs, MUX and DEMUX ICs for optical-fiber-link systems have been fabricated. Fig. 10(a) and (b) shows block diagrams of the 1:8 DEMUX and 8:1 MUX circuits. Each is a tree-type circuit made up of 1:2 DEMUX or 2:1 MUX circuits. Since each utilizes both the rising and falling edges of the input clock, the operation frequency of these circuits at 10-Gb/s data rate is 5 GHz. Feedback MC ..."
+    },
+    {
+      "number": "VII",
+      "title": "FABRICATION",
+      "kind": "other",
+      "page": 5,
+      "text_preview": "A 0.18m CMOS process was used in the fabrication of these ICs. Table I lists the major specifications of the transistors. The gate-oxide thickness was 3.8 nm and a Co salicide process was used to reduce the gate and source–drain sheet resistances . The number of metal layers was two. The to about 10 impedance of the on-chip signal lines was not adjusted. Fig. 11 shows photographs of the fabricated ..."
+    },
+    {
+      "number": "VIII",
+      "title": "MEASUREMENTS",
+      "kind": "results",
+      "page": 5,
+      "text_preview": "The measurement of these chips were performed on-wafer using air coplanar probes. Fig. 12(a) shows the measured waveforms of the 1:8 DEMUX. The supply voltage was 2.0 V, input clock was 5 GHz, and the input pattern was a 10-Gb/s 2 pseudorandom bit sequence (PRBS). The upper waveform is the Fig. 13. Data rate and power consumption of the fabricated (a) 1:8 DEMUX and (b) 8:1 MUX. The power consumpti ..."
+    },
+    {
+      "number": "IX",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 7,
+      "text_preview": "The feedback MCML has been proposed for high-speed operation of CMOS transistors. This logic is more tolerant to threshold voltage fluctuation than the conventional MCML and is suitable for gigahertz operation of deep-submicron CMOS transistors. Using this logic, the 1:8 DEMUX and 8:1 MUX ICs for m optical-fiber-link systems have been fabricated with 0.18CMOS process. These ICs are faster than con ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Inverter circuits of the (a) CMOS logic and (b) MCML.",
+      "caption_bbox": [
+        38.1,
+        193.0,
+        244.6,
+        203.6
+      ],
+      "section_title": "II. MCML CIRCUITS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "MCML CIRCUITS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Fig. 1 shows inverters of the CMOS logic and the conventional MCML [17]."
+        },
+        {
+          "section_title": "MCML CIRCUITS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "The data plotted there was obtained by SPICE simulations using the pam CMOS transistors with a 1.8-V supply rameters of 0.18TANABE et al.: 0.18m CMOS 10-Gb/s MULTIPLEXER/DEMULTIPLEXER ICS (a) (b) Fig. 1."
+        },
+        {
+          "section_title": "MCML CIRCUITS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "On the other hand, the power consumption of the MCML is the sum of the penetraand MN2 in Fig. 1(b), which tion currents of MN1 (a) (b) Fig. 3."
+        },
+        {
+          "section_title": "MCML CIRCUITS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "In Fig. 1, there are two MOSFETs in the CMOS logic and five in the MCML."
+        },
+        {
+          "section_title": "EFFECT OF THE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "As shown tion and Fig. 3(b) shows that with the values of the differential pair transistors in Fig. 3(b), if the [MN1 and MN2 in Fig. 1(b)] differ, the output waveform will be unbalanced."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.5,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 2.0
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "multiplexer (MUX)",
+        "technology": "CMOS, BICMOS, SIGE, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "Inverter circuits of the (a) CMOS logic and (b) MCML",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.62,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Comparison of the MCML and CMOS logic. (a) Delay time as a function of fanout. (b) Power consumption as a function of operation frequency. SPICE simulation were performed using the parameters of 0.18-m CMOS transistors.",
+      "caption_bbox": [
+        38.1,
+        594.2,
+        289.2,
+        631.8
+      ],
+      "section_title": "III. EFFECT OF THE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MCML CIRCUITS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "For example, the maximum toggle frequency of a conventional m CMOS inverter is only about 3.5 GHz. 0.18Simulated inverter delay time as a function of fanout and power consumption as a function of a operation frequency for the CMOS logic and the MCML are shown in Fig. 2."
+        },
+        {
+          "section_title": "MCML CIRCUITS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "V (a) (b) Fig. 2."
+        },
+        {
+          "section_title": "MCML CIRCUITS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "However, in the gigahertz frequency range, the power consumption of the CMOS logic become larger than that of the MCML, as shown in Fig. 2(b)."
+        },
+        {
+          "section_title": "MULTIPLEXER AND DEMULTIPLEXER CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "This is because the power consumption [shown in Fig. 2(b)] of the CMOS logic and the MCML at 2.5 GHz is not very different, thus CMOS F/Fs can operate at up to 2.5 GHz and the TANABE et al.: 0.18m CMOS 10-Gb/s MULTIPLEXER/DEMULTIPLEXER ICS TABLE I SPECIFICATIONS OF MOSFETS (a) (b) Fig. 11."
+        },
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "As shown in Fig. 2(b), the power consumption of TANABE et al.: 0.18m CMOS 10-Gb/s MULTIPLEXER/DEMULTIPLEXER ICS the MCML is much smaller than that of the CMOS logic in the gigahertz frequency range."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "multiplexer (MUX)",
+        "technology": "CMOS, BICMOS, SIGE, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "This is because the power consumption [shown in Fig. 2(b)] of the CMOS logic and the MCML at 2.5 GHz is not very different, thus CMOS F/Fs can operate at up to 2.5 GHz and the TANABE et al.: 0.18m CMOS 10-Gb/s MULTIPLEXER/DEMULTIPLEXER ICS TABLE I SPECIFICATIONS OF MOSFETS (a) (b) Fig. 11.",
+        "function_summary": "Comparison of the MCML and CMOS logic. (a) Delay time as a function of fanout. (b) Power consumption as a function of operation frequency. SPICE simulation were performed using the parameters of 0.18-m CMOS transistors. This is because the power consumption [shown in Fig. 2(b)] of the CMOS logic and the MCML at 2.5 ...",
+        "key_specs": [
+          "3.5 GHz",
+          "2.5 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.12,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Diagram of the MCML output waveforms. (a) is without and (b) is with fluctuation.",
+      "caption_bbox": [
+        301.1,
+        298.7,
+        552.2,
+        318.3
+      ],
+      "section_title": "II. MCML CIRCUITS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "MCML CIRCUITS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "On the other hand, the power consumption of the MCML is the sum of the penetraand MN2 in Fig. 1(b), which tion currents of MN1 (a) (b) Fig. 3."
+        },
+        {
+          "section_title": "EFFECT OF THE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 3 shows diagrams of the output waveforms of the MCML fluctuainverter."
+        },
+        {
+          "section_title": "EFFECT OF THE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 3(a) shows the waveform without the fluctuation."
+        },
+        {
+          "section_title": "EFFECT OF THE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "As shown tion and Fig. 3(b) shows that with the values of the differential pair transistors in Fig. 3(b), if the [MN1 and MN2 in Fig. 1(b)] differ, the output waveform will be unbalanced."
+        },
+        {
+          "section_title": "EFFECT OF THE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "If the fluctuation of the gate voltage is assumed to be much smaller than the threshold voltage , the bias offset voltage [see Fig. 3(b)] is gate voltage given by (5) increases, the minimum differential output voltage If this [see Fig. 3(b)] decreases and the operation of the circuit is proportional to the dc gain becomes faulty."
+        },
+        {
+          "section_title": "FEEDBACK MCML CIRCUIT",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "If we design , inverter is a maximum operation frequency, the dc gain where of the feedback MCML inverter will be less than that of the . conventional MCML inverter, that is, fluctuation, If we assume the maximum tolerable , is the at which becomes [see is given by Fig. 3(b)], and (9) is the amplitude of the input signal."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.5,
+      "relevance_breakdown": {
+        "-waveform": -2.0,
+        "section:design": 1.5,
+        "references": 2.0
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "0.18-m CMOS 10-Gb/s Multiplexer/Demultiplexer ICs",
+        "technology": "CMOS, BICMOS, SIGE, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "Diagram of the MCML output waveforms. (a) is without and (b) is with fluctuation",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Inverter circuits of the (a) conventional MCML and (b) feedback MCML.",
+      "caption_bbox": [
+        302.6,
+        462.5,
+        553.7,
+        482.1
+      ],
+      "section_title": "III. EFFECT OF THE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FEEDBACK MCML CIRCUIT",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 4 shows the inverters of the conventional MCML and the feedback MCML."
+        },
+        {
+          "section_title": "FEEDBACK MCML CIRCUIT",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Because the MCML circuit is a simple source-coupled pair at a frequency circuit, differential-mode voltage gain of the conventional MCML circuit is generally given by [19] (6) IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 6, JUNE 2001 (a) (b) Fig. 4."
+        },
+        {
+          "section_title": "FEEDBACK MCML CIRCUIT",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The pole is a function of the load resistance and load capacitance of the transistors (MN1 or MN2 in Fig. 4) [19]."
+        },
+        {
+          "section_title": "FEEDBACK MCML CIRCUIT",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "(11), for the circuits shown in Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.4,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-conventional": -3.0,
+        "references": 1.6
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "0.18-m CMOS 10-Gb/s Multiplexer/Demultiplexer ICs",
+        "technology": "CMOS, BICMOS, SIGE, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Inverter circuits of the (a) conventional MCML and (b) feedback MCML",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Simulated frequency responses of the conventional and feedback MCML inverters. The vertical axis is the voltage gain of differential mode and common mode.",
+      "caption_bbox": [
+        38.1,
+        188.3,
+        289.2,
+        216.9
+      ],
+      "section_title": "IV. FEEDBACK MCML CIRCUIT",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "FEEDBACK MCML CIRCUIT",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "MCML circuit, TANABE et al.: 0.18m CMOS 10-Gb/s MULTIPLEXER/DEMULTIPLEXER ICS Fig. 5."
+        },
+        {
+          "section_title": "FEEDBACK MCML CIRCUIT",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 5 shows the simulated differential-mode and common-mode voltage gains of the conventional and feedback m MCML inverters as a function of the frequency using 0.18CMOS parameters."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-conventional": -3.0,
+        "-simulated": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "multiplexer (MUX)",
+        "technology": "CMOS, BICMOS, SIGE, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated frequency responses of the conventional and feedback MCML inverters. The vertical axis is the voltage gain of differential mode and common mode",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Calculated maximum tolerable V fluctuation V of the conventional and feedback MCML inverters as a function of the frequency. The values shown are normalized by the amplitude of the input signal.",
+      "caption_bbox": [
+        38.1,
+        356.3,
+        289.2,
+        384.9
+      ],
+      "section_title": "IV. FEEDBACK MCML CIRCUIT",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "FEEDBACK MCML CIRCUIT",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 6."
+        },
+        {
+          "section_title": "FEEDBACK MCML CIRCUIT",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 6 shows the curves, calculated using with Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.7,
+      "relevance_breakdown": {
+        "-conventional": -3.0,
+        "-calculated": -2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "0.18-m CMOS 10-Gb/s Multiplexer/Demultiplexer ICs",
+        "technology": "CMOS, BICMOS, SIGE, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Calculated maximum tolerable V fluctuation V of the conventional and feedback MCML inverters as a function of the frequency. The values shown are normalized by the amplitude of the input signal",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Circuits of the D-type flip-flop using (a) the CMOS logic and (b) the feedback MCML.",
+      "caption_bbox": [
+        301.1,
+        404.9,
+        552.2,
+        424.5
+      ],
+      "section_title": "IV. FEEDBACK MCML CIRCUIT",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "FEEDBACK MCML CIRCUIT",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 6 shows the curves, calculated using with Fig. 7."
+        },
+        {
+          "section_title": "MCML FLIP-FLOP",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 7 shows D-type flip-flops (D-F/Fs) using the CMOS (sampling logic and the feedback MCML."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "flip-flop",
+        "technology": "CMOS, BICMOS, SIGE, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Circuits of the D-type flip-flop using (a) the CMOS logic and (b) the feedback MCML",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Simulated relation between the V fluctuation and the maximum data rate of 1:2 DEMUXs using conventional and feedback MCMLs.",
+      "caption_bbox": [
+        39.6,
+        237.4,
+        290.6,
+        257.0
+      ],
+      "section_title": "V. MCML FLIP-FLOP",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MCML FLIP-FLOP",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "When , and when mode), these flip-flops store the input data (holding mode), they hold that internal data regardless of any (11) Fig. 8."
+        },
+        {
+          "section_title": "MCML FLIP-FLOP",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 8 shows fluctuation twice as that the feedback MCML can tolerate large as that tolerated by the conventional MCML."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -5.2,
+      "relevance_breakdown": {
+        "-conventional": -3.0,
+        "-simulated": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "demultiplexer (DEMUX)",
+        "technology": "CMOS, BICMOS, SIGE, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated relation between the V fluctuation and the maximum data rate of 1:2 DEMUXs using conventional and feedback MCMLs",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. Block diagram of the 1:2 DEMUX.",
+      "caption_bbox": [
+        39.6,
+        435.8,
+        182.3,
+        446.5
+      ],
+      "section_title": "V. MCML FLIP-FLOP",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MCML FLIP-FLOP",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 9."
+        },
+        {
+          "section_title": "MCML FLIP-FLOP",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "There- , the effect of the fluctuation fore, since for the feedback MCML circuit at this mode is small. m CMOS paFig. 8 shows a simulated relation (using 0.18and the maximum data rate of the 1:2 rameters) between DEMUX circuits (shown in Fig. 9), composed of conventional MCMLs and feedback MCMLs."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "demultiplexer (DEMUX)",
+        "technology": "CMOS, BICMOS, SIGE, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the 1:2 DEMUX",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10. Block diagram of the circuits of the fabricated (a) 1:8 DEMUX and (b) 8:1 MUX.",
+      "caption_bbox": [
+        302.6,
+        642.9,
+        553.7,
+        662.5
+      ],
+      "section_title": "VI. MULTIPLEXER AND DEMULTIPLEXER CIRCUITS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "MULTIPLEXER AND DEMULTIPLEXER CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 10(a) and (b) shows block diagrams of the 1:8 DEMUX and 8:1 MUX circuits."
+        },
+        {
+          "section_title": "MULTIPLEXER AND DEMULTIPLEXER CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Feedback MCMLs were used for the first 1:2 DEMUX, the final 2:1 MUX, and the first IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 6, JUNE 2001 (a) (b) Fig. 10."
+        },
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "This is because the bandwidth of the output buffer [shown in Fig. 10(b)] is insufficient."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.7,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "multiplexer (MUX)",
+        "technology": "CMOS, BICMOS, SIGE, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the circuits of the fabricated (a) 1:8 DEMUX and (b) 8:1 MUX",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.79,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 5,
+      "caption": "Fig. 11. Chip photographs. (a) 1:8 DEMUX. (b) 8:1 MUX. Each chip is 1:5 1:5 mm .",
+      "caption_bbox": [
+        38.1,
+        672.5,
+        289.3,
+        692.1
+      ],
+      "section_title": "VIII. MEASUREMENTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MULTIPLEXER AND DEMULTIPLEXER CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "This is because the power consumption [shown in Fig. 2(b)] of the CMOS logic and the MCML at 2.5 GHz is not very different, thus CMOS F/Fs can operate at up to 2.5 GHz and the TANABE et al.: 0.18m CMOS 10-Gb/s MULTIPLEXER/DEMULTIPLEXER ICS TABLE I SPECIFICATIONS OF MOSFETS (a) (b) Fig. 11."
+        },
+        {
+          "section_title": "FABRICATION",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 11 shows photographs of the fabricated 1:8 DEMUX and 8:1 MUX mm ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -7.2,
+      "relevance_breakdown": {
+        "-photograph": -3.0,
+        "-chip photo": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "multiplexer (MUX)",
+        "technology": "CMOS, BICMOS, SIGE, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "This is because the power consumption [shown in Fig. 2(b)] of the CMOS logic and the MCML at 2.5 GHz is not very different, thus CMOS F/Fs can operate at up to 2.5 GHz and the TANABE et al.: 0.18m CMOS 10-Gb/s MULTIPLEXER/DEMULTIPLEXER ICS TABLE I SPECIFICATIONS OF MOSFETS (a) (b) Fig. 11.",
+        "function_summary": "Chip photographs. (a) 1:8 DEMUX. (b) 8:1 MUX. Each chip is 1:5 1:5 mm. This is because the power consumption [shown in Fig. 2(b)] of the CMOS logic and the MCML at 2.5 GHz is not very different, thus CMOS F/Fs can operate at up to 2.5 GHz and the TANABE et al.: 0.18m CMOS 10-Gb/s MULTIPLEXER/DEMULTIPLEXER ICS TABLE I ...",
+        "key_specs": [
+          "2.5 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 5,
+      "caption": "Fig. 12. Measured waveforms of (a) 1:8 DEMUX and (b) 8:1 MUX at 10-Gb/s data rate.",
+      "caption_bbox": [
+        301.1,
+        463.6,
+        552.2,
+        483.2
+      ],
+      "section_title": "VI. MULTIPLEXER AND DEMULTIPLEXER CIRCUITS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "MULTIPLEXER AND DEMULTIPLEXER CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "(a) (b) Fig. 12."
+        },
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 12(a) shows the measured waveforms of the 1:8 DEMUX."
+        },
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 12(b) shows the measured waveforms of the 8:1 MUX at a 2.2-V supply voltage."
+        },
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "In Fig. 12(b), the jitter of the MUX’s output waveform is not small."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.9,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-waveform": -2.0,
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "multiplexer (MUX)",
+        "technology": "CMOS, BICMOS, SIGE, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured waveforms of (a) 1:8 DEMUX and (b) 8:1 MUX at 10-Gb/s data rate",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 6,
+      "caption": "Fig. 13. Data rate and power consumption of the fabricated (a) 1:8 DEMUX and (b) 8:1 MUX. The power consumption does not include the output buffers.",
+      "caption_bbox": [
+        39.6,
+        422.4,
+        290.7,
+        442.0
+      ],
+      "section_title": "VIII. MEASUREMENTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The upper waveform is the Fig. 13."
+        },
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The maximum data rate and power consumption of the 1:8 DEMUX and the 8:1 MUX as functions of the supply voltage are shown in Fig. 13(a) and (b), respectively."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "multiplexer (MUX)",
+        "technology": "CMOS, BICMOS, SIGE, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Data rate and power consumption of the fabricated (a) 1:8 DEMUX and (b) 8:1 MUX. The power consumption does not include the output buffers",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 6,
+      "caption": "Fig. 14. Power-delay products of reported MUX and DEMUX circuits.",
+      "caption_bbox": [
+        39.6,
+        645.7,
+        271.9,
+        656.3
+      ],
+      "section_title": "VIII. MEASUREMENTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 14."
+        },
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 14 shows the power-delay products of the reported MUX and DEMUX circuits."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "multiplexer (MUX)",
+        "technology": "CMOS, BICMOS, SIGE, GAAS, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Power-delay products of reported MUX and DEMUX circuits",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 10,
+  "warnings": []
+}

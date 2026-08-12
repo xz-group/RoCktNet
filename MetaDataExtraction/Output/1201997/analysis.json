@@ -1,0 +1,723 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1201997.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1201997",
+  "generated_at": "2026-07-29T22:00:57",
+  "paper_metadata": {
+    "title": "CMOS Image Sensor With Mixed-Signal Processor Array",
+    "authors": [
+      "Achim Graupner",
+      "Jörg Schreiter",
+      "Stefan Getzlaff",
+      "René Schüffny"
+    ],
+    "abstract": "We present a single-chip integration of a CMOS image sensor with an embedded flexible processing array and image segmentation and related tasks. Image quality problems dedicated analog-to-digital converter. The processor array is can arise when high-performance digital circuits are integrated designed to perform convolution and transformation algorithms together with highly sensitive analog circuits, as the clock of with arbitrary kernels. It has been designed to carry out the the digital blocks can disturb the analog part. On the other hand, multiplication of analog image data with given digital kernel coefpure analog solutions often suffer from limited accuracy and/or ficients and to add up the results. The processor array is an analog implementation of a highly parallel architecture which is scalable limited flexibility. For instance, the analog discrete cosine transto any desired sensor resolution while preserving video-rate form unit from Kawahito et al. [5] achieves reasonable quality operation. A prototype implementation has been realized in a but the flexibility is limited to the accomplishment of a discrete 0.6m CMOS technology. Switched current technique has been cosine transform (DCT). The CCD sensor with convolution applied to obtain compact and robust circuits. The prototype’s capabilities in [6] is suited for slow moving or static scenes sensor resolution is 64 128 pixels. The processor array occupies a small chip area and consumes only a small percentage of the only because the image is read out multiple times. It achieves power (250 W) of the whole image sensor. an accuracy of 1%–2% of the largest convolution coefficient. The image sensor with analog processor array presented in [7]",
+    "keywords": [
+      "Highly parallel systems",
+      "image sensor",
+      "vision chip"
+    ],
+    "doi": "10.1109/JSSC.2003.811980",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "CMOS Image Sensor",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "transistor/MOSFET",
+      "current source",
+      "current mirror",
+      "bias circuit",
+      "switch",
+      "differential pair"
+    ],
+    "design_purpose": "The CCD sensor with convolution applied to obtain compact and robust circuits.",
+    "function_summary": "CMOS Image Sensor: The CCD sensor with convolution applied to obtain compact and robust circuits.",
+    "key_specs": [
+      "250 W",
+      "1%",
+      "2%",
+      "48%",
+      "64 V",
+      "0.5%",
+      "0.6%",
+      "135 fF",
+      "95%",
+      "0.4%"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "M ANY image processing functions are algorithmically simple but expensive in terms of computational power. These are so-called early vision algorithms like functions for image improvement, filtering, transformations, and others. Especially if real-time systems are concerned, a dedicated hardware unit is necessary for the acceleration of these tasks. Regarding manufacturing cost, the joint implemen ..."
+    },
+    {
+      "number": "II",
+      "title": "PROCESSING SCHEME",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "Multiplications and additions can efficiently be accomplished in current-mode analog domain [9]. As the signals of image sensors are analog as well, the use of analog circuitry for the implementation of image processing algorithms is advantageous. GRAUPNER et al.: CMOS IMAGE SENSOR Equation (1) shows the calculation of one data point of the of the analog image data with the convolutional product k ..."
+    },
+    {
+      "number": "III",
+      "title": "ARCHITECTURE",
+      "kind": "proposed",
+      "page": 2,
+      "text_preview": "The architecture of the image sensor with the aforementioned processor array is shown in Fig. 3. The processing unit is loIEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 6, JUNE 2003 cated beneath the image sensor and the readout circuitry. Thus, approved techniques suited for high resolutions for the sensor array can be applied. The processor unit operates on a portion of the image data only.  ..."
+    },
+    {
+      "number": "IV",
+      "title": "IMPLEMENTATION",
+      "kind": "design",
+      "page": 3,
+      "text_preview": "The earlier architecture is scalable in both directions, horizontally and vertically, to high resolutions. In order to minimize the implementation effort, only a subset of the sensor has been m two-poly two-metal CMOS technology. implemented in 0.6128 pixels. The image resolution of the prototype is just 64 However, it provides the full functionality. A die photograph and Fig. 5. Die photograph of ..."
+    },
+    {
+      "number": "V",
+      "title": "MEASUREMENT RESULTS",
+      "kind": "results",
+      "page": 7,
+      "text_preview": "The image sensor has been fabricated and successfully tested on a tester as well as within a demonstration environment. Due to a design lapse, the bias current of the current memory cells in the FIFO and the ADC is too high, so they show more noise than expected. Thus, the digital chip output is disturbed by temporal noise. However, direct measurements have given evidence that temporal noise at th ..."
+    },
+    {
+      "number": "VI",
+      "title": "SUMMARY",
+      "kind": "conclusion",
+      "page": 8,
+      "text_preview": "An architecture has been proposed for a single-chip image sensor with an embedded bit-serial mixed-signal processor unit and digital output. It is capable of carrying out linear blockwise transforms or spatial convolutions with arbitrary digital kernels. Such functions are required for early vision tasks like discrete cosine transform, image filtering, or color interpolation and correction. The ar ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 2,
+      "caption": "Fig. 2. Deviation of a comparator threshold from its nominal.",
+      "caption_bbox": [
+        39.6,
+        219.5,
+        241.4,
+        230.2
+      ],
+      "section_title": "II. PROCESSING SCHEME",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "PROCESSING SCHEME",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The stage transfer function is designed in Fig. 1) remains within such that the analog residue ( even in the presence of the convergence interval of comparator offset errors. also widen the interval of the As the additional inputs residue, the convergence interval is extended through additional Fig. 2."
+        },
+        {
+          "section_title": "PROCESSING SCHEME",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "As illustrated in Fig. 2, a deviation of the comparator threshold from its nominal value results of that stage and a modified in both a changed digital code ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "comparator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Deviation of a comparator threshold from its nominal",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 3,
+      "caption": "Fig. 3. Architecture of the image sensor with processing unit and ADC.",
+      "caption_bbox": [
+        38.1,
+        306.1,
+        274.4,
+        316.8
+      ],
+      "section_title": "III. ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "The architecture of the image sensor with the aforementioned processor array is shown in Fig. 3."
+        },
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "Each slice comprises 64 analog memories, 64 bit-serial multipliers, and a multi-input adder as illustrated in 8 has been chosen because this Fig. 3 (right)."
+        },
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "As outlined in the diagram of the processor slice (Fig. 3, right), the outputs of the multiplier columns are added up separately, and the eight partial results are summed up in another adder."
+        },
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "There is one exception for the dc values of GRAUPNER et al.: CMOS IMAGE SENSOR Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.6,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "section:proposed": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Architecture of the image sensor with processing unit and ADC",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.98,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 3,
+      "caption": "Fig. 4. Bayer color filter pattern.",
+      "caption_bbox": [
+        38.1,
+        426.7,
+        148.6,
+        437.3
+      ],
+      "section_title": "III. ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "Fig. 4."
+        },
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "The frequently used Bayer color filter pattern is shown in Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Bayer color filter pattern",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 4,
+      "caption": "Fig. 5. Die photograph of the prototype implementation and some technical data.",
+      "caption_bbox": [
+        39.6,
+        307.4,
+        305.7,
+        318.0
+      ],
+      "section_title": "IV. IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "A die photograph and Fig. 5."
+        },
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Die photograph of the prototype implementation and some technical data. some technical data can be found in Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-photograph": -3.0,
+        "-die photo": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "CMOS Image Sensor",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Die photograph of the prototype implementation and some technical data",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "Fig. 6. Influence of the current-mirror gain. (a) Before and (b) after offset compensation.",
+      "caption_bbox": [
+        302.6,
+        472.7,
+        553.7,
+        492.4
+      ],
+      "section_title": "IV. IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 6, JUNE 2003 (a) (b) Fig. 6."
+        },
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "In Fig. 6, the effect of a nonunity gain of the current mirror before and after offset compensation is illustrated."
+        },
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Thus, after offset compensation, the curves zero for are crossing the origin as shown on the right side of Fig. 6(b)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "CMOS Image Sensor",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "current mirror"
+        ],
+        "design_purpose": "",
+        "function_summary": "Influence of the current-mirror gain. (a) Before and (b) after offset compensation",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 5,
+      "caption": "Fig. 7. V-I converter with offset compensation and memory cell for the reference current.",
+      "caption_bbox": [
+        38.1,
+        248.0,
+        330.2,
+        258.6
+      ],
+      "section_title": "IV. IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The circuit diagram of the single-ended V–I converter can be found in Fig. 7."
+        },
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "As this error cannot GRAUPNER et al.: CMOS IMAGE SENSOR Fig. 7."
+        },
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The circuit diagram of the V–I converter with autozeroing is is closed during autozero, while with depicted in Fig. 7. and the two voltages from the pixel cells are read in."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.7,
+      "relevance_breakdown": {
+        "-reference": -1.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "memory",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "V-I converter with offset compensation and memory cell for the reference current",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.09,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 5,
+      "caption": "Fig. 8. Simulated and measured mean and standard deviation of the transfer function of the V-I converter.",
+      "caption_bbox": [
+        38.1,
+        420.9,
+        381.8,
+        431.5
+      ],
+      "section_title": "IV. IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 8."
+        },
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The transfer function and the standard deviation of the output current are depicted in Fig. 8."
+        },
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "For calculating the influence of the device parameter variation depicted in Fig. 8, averaging of 100 measurements of each operating point has been accomplished."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.3,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "regulator / converter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated and measured mean and standard deviation of the transfer function of the V-I converter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 6,
+      "caption": "Fig. 9. Processor element.",
+      "caption_bbox": [
+        39.6,
+        335.0,
+        129.0,
+        345.6
+      ],
+      "section_title": "IV. IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Processing Unit A processing element comprises a current memory cell to and (Fig. 9). store the image data and two switches Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.9,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "microprocessor",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Processor element",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.11,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 6,
+      "caption": "Fig. 10. Simulated and measured standard deviation of the current memory cell’s transfer function.",
+      "caption_bbox": [
+        302.6,
+        230.5,
+        553.6,
+        250.0
+      ],
+      "section_title": "IV. IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Such disturbances IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 6, JUNE 2003 Fig. 10."
+        },
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 10 shows the dependence of the fixed pattern noise on the input current."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "memory",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated and measured standard deviation of the current memory cell’s transfer function",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 7,
+      "caption": "Fig. 11.",
+      "caption_bbox": [
+        38.1,
+        253.7,
+        62.4,
+        264.4
+      ],
+      "section_title": "IV. IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 11(a) shows a block diagram of the implementation of a pipeline stage in the fully differential switched-current technique."
+        },
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 11. the SI cells storing the positive and negative parts of the differential signal are connected together and a multiplication by two is achieved."
+        },
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "A simplified schematic of the current memory (SI) cell is shown in Fig. 11(b)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "memory",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "memory",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 7,
+      "caption": "Fig. 12. Standard deviations of DNL and INL obtained from nested Monte Carlo simulations with 2500 realizations of the converter and 100 000 input value sets each.",
+      "caption_bbox": [
+        301.1,
+        470.9,
+        552.2,
+        499.5
+      ],
+      "section_title": "IV. IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Their standard deviations are depicted in Fig. 12."
+        },
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "However, DNL has a Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "regulator / converter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Standard deviations of DNL and INL obtained from nested Monte Carlo simulations with 2500 realizations of the converter and 100 000 input value sets each",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 8,
+      "caption": "Fig. 13. Measured images for different modes of operation, averaged for assessing fixed pattern noise. (More sample images can be found at http://www.iee.et.tu-dresden.de/iee/hpsn).",
+      "caption_bbox": [
+        39.6,
+        225.9,
+        290.7,
+        254.5
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "In (a) (b) (c) (d) Fig. 13."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 13(a), the chip is configured for raw data readout, i.e., the kernel masks are zero except for one pixel."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "In Figs. 13(b), (c), and (d), the processor array was configured to perform a con7 Laplacian of a Gaussian (LoG) kernel, a volution with a 7 3 Gauss kernel."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.8,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "microprocessor",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured images for different modes of operation, averaged for assessing fixed pattern noise. (More sample images can be found at http://www.iee.et.tu-dresden.de/iee/hpsn)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 3,
+  "warnings": []
+}

@@ -1,0 +1,740 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1233752.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1233752",
+  "generated_at": "2026-07-29T22:01:19",
+  "paper_metadata": {
+    "title": "A 250-kHz 94-dB Double-Sampling Modulation A/D Converter With a Modified Noise Transfer Function",
+    "authors": [
+      "Pieter Rombouts",
+      "Jeroen De Maeyer",
+      "Ludo Weyten"
+    ],
+    "abstract": "This paper presents a high-order double-sampling single-loop modulation analog-to-digital (A/D) converter. The important problem of noise folding in double-sampling circuits is solved here at the architectural level by placing one of the zeros in the modulator’s noise transfer function at half the sampling frequency instead of in the baseband. The resulting modulator is of Fig. 1. Typical structure of a modulation ADC. fifth order but has the baseband performance of a fourth-order modulator. Through the use of an efficient switched-capacitor imsensitive to path mismatch, which causes quantization noise to plementation, the overall circuit uses only four operational amplifiers and hence, its complexity is similar to that of a fourth-order fold from half the sampling frequency back in the signal band. modulator. In the past, three solutions for this problem have been proposed. An experimental 1-bit modulator was designed for an oversamThe first uses dynamic element matching techniques to shape pling ratio of 96 and a bandwidth of 250 kHz at a 3.3-V supply in a the folded noise out of the signal band [9], [10]. The second conservative 0.8m standard CMOS process. Due to the doubleapproach uses a bilinear input integrator [11]–[14]. Finally, an sampling, the sampling frequency is 48 MHz, although the circuits operate at a clock frequency of only 24 MHz. The circuit approach based on modifying the noise transfer function was achieves a dynamic range of 94 dB. The peak signal-to-noise ratio introduced in [15] and [16]. and signal-to-noise-plus-distortion ratio were measured to be 90 In this paper, we present a circuit that uses the concept of the and 86 dB, respectively. The power consumption of the complete modified noise transfer function in a single-loop fifth-order circuit including clock drivers and output pad drivers was 43 mW. ADC with 250-kHz bandwidth. Here, the noise transfer funcThe analog blocks (opamps, comparators, etc.) consume 30 mW of this total. tion has one zero at half the sampling frequency and four zeroes in the baseband. To the best of our knowledge, this is the first re-",
+    "keywords": [
+      "analog-to-digital conversion",
+      "double sampling"
+    ],
+    "doi": "10.1109/JSSC.2003.817600",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "250-kHz 94-dB Double-Sampling Modulation A/D Converter",
+    "technology": "CMOS",
+    "application_domain": "baseband",
+    "sub_blocks": [
+      "capacitor",
+      "transistor/MOSFET",
+      "current source",
+      "LC tank / resonator",
+      "bias circuit",
+      "differential pair",
+      "op-amp",
+      "pre-amplifier",
+      "latch",
+      "clock / timing"
+    ],
+    "design_purpose": "",
+    "function_summary": "250-kHz 94-dB Double-Sampling Modulation A/D Converter: This paper presents a high-order double-sampling single-loop modulation analog-to-digital (A/D) converter.",
+    "key_specs": [
+      "250 kHz",
+      "48 MHz",
+      "24 MHz",
+      "94 dB",
+      "86 dB",
+      "43 mW",
+      "30 mW",
+      "5 w",
+      "1 w",
+      "108 dB"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "S IGMA-DELTA modulation is a proven technique to realize highand very high-resolution analog-to-digital converters (ADCs). Where traditional implementations relied on a single-bit quantizer, today the matureness of dynamic element matching techniques allows the use of a multibit quantizer [1]–[4]. This way, several modulator architectures can achieve high performance. For this reason, the performa ..."
+    },
+    {
+      "number": "II",
+      "title": "DOUBLE SAMPLING AND NOISE FOLDING",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "Fig. 1 shows a diagram of a typical implementation of modulator with an input and a switched-capacitor . It consists of a cascade of integrators and a an output (low-resolution) quantizer. Such a structure implements an A/D is an approximation of conversion where the digital output . By employing a common white-noise approxithe input -domain mation for the quantizer, we can write in the NTF (1) co ..."
+    },
+    {
+      "number": "III",
+      "title": "SYSTEM-LEVEL DESIGN",
+      "kind": "design",
+      "page": 1,
+      "text_preview": "One of the first steps in the system level design of a modulator is the choice of the quantizer resolution. From (2) it can be shown that the problem of noise folding can be alleviated substantially by using a multibit quantizer [16]. This way, the overall quantization noise is reduced directly. Hence, the quantization noise that can be folded into the baseband is also reduced. ADC corresponds The ..."
+    },
+    {
+      "number": "IV",
+      "title": "IMPLEMENTATION AND MEASUREMENTS",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "A conservative 0.8m CMOS process with two metal and two poly layers was selected for the prototype circuit. The circuits for the modulator structure were designed for a supply voltage of 3.3 V and a signal bandwidth of 250 kHz. At the intended oversampling ratio of 96, this corresponds to a sampling frequency of 48 MHz. However, due to the double-sampling, the clock frequency is only 24 MHz. The i ..."
+    },
+    {
+      "number": "V",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 4,
+      "text_preview": "We have presented a fifth-order single-loop double-sampling -modulation ADC. The important problem of noise folding is solved at the architectural level through the use of a modified NTF. Here, one zero is placed at half the sampling frequency and the remaining four zeros are placed in the baseband. Hence, our modulator is of fifth order but has the baseband performance of a fourth-order modulator ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Typical structure of a modulation ADC.",
+      "caption_bbox": [
+        301.1,
+        245.8,
+        473.0,
+        256.5
+      ],
+      "section_title": "",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1."
+        },
+        {
+          "section_title": "DOUBLE SAMPLING AND NOISE FOLDING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 1 shows a diagram of a typical implementation of modulator with an input and a switched-capacitor ."
+        },
+        {
+          "section_title": "DOUBLE SAMPLING AND NOISE FOLDING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Hence, (in the signal band). input The main building block in the structure of Fig. 1 is an integrator."
+        },
+        {
+          "section_title": "DOUBLE SAMPLING AND NOISE FOLDING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "By replacing one of the integrators in tion Fig. 1 with this resonator circuit, we can obtain an NTF of the form of (3)."
+        },
+        {
+          "section_title": "DOUBLE SAMPLING AND NOISE FOLDING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Compared with the conventional structure of Fig. 1, in this architecture the last but one integrator is replaced by the resonator of Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.5,
+      "relevance_breakdown": {
+        "-structure of": -1.5,
+        "references": 2.0
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "baseband",
+        "sub_blocks": [
+          "capacitor",
+          "LC tank / resonator"
+        ],
+        "design_purpose": "",
+        "function_summary": "Typical structure of a modulation ADC",
+        "key_specs": [
+          "1 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.03,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Basic double-sampling integrator.",
+      "caption_bbox": [
+        39.6,
+        143.7,
+        176.5,
+        154.3
+      ],
+      "section_title": "II. DOUBLE SAMPLING AND NOISE FOLDING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DOUBLE SAMPLING AND NOISE FOLDING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 2 shows a double-sampling circuit implementation for such an integrator [9]–[16]."
+        },
+        {
+          "section_title": "DOUBLE SAMPLING AND NOISE FOLDING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "As nominally matched switched input capacitors is common, the circuit operates on two nonoverlapping clock Fig. 2."
+        },
+        {
+          "section_title": "IMPLEMENTATION AND MEASUREMENTS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The integrators and resonators were implemented as the fully differential equivalents of the circuits of Figs. 2 and 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "250-kHz 94-dB Double-Sampling Modulation A/D Converter",
+        "technology": "CMOS",
+        "application_domain": "baseband",
+        "sub_blocks": [
+          "capacitor",
+          "LC tank / resonator"
+        ],
+        "design_purpose": "",
+        "function_summary": "Basic double-sampling integrator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. (a) NTF and (b) folded NTF of a conventional modulator.",
+      "caption_bbox": [
+        39.6,
+        232.6,
+        267.3,
+        243.2
+      ],
+      "section_title": "II. DOUBLE SAMPLING AND NOISE FOLDING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DOUBLE SAMPLING AND NOISE FOLDING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 3."
+        },
+        {
+          "section_title": "DOUBLE SAMPLING AND NOISE FOLDING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The corresponds to a substitution is called occurrence of the additional noise contribution noise folding and is depicted in Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-conventional": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "baseband",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) NTF and (b) folded NTF of a conventional modulator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 1,
+      "caption": "Fig. 4. (a) NTF and (b) folded NTF of a modified modulator.",
+      "caption_bbox": [
+        302.6,
+        128.6,
+        518.4,
+        139.2
+      ],
+      "section_title": "II. DOUBLE SAMPLING AND NOISE FOLDING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DOUBLE SAMPLING AND NOISE FOLDING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "This is depicted in Fig. 4."
+        },
+        {
+          "section_title": "DOUBLE SAMPLING AND NOISE FOLDING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "By combining this zero baseband zeroes, we obtain an NTF of the with one of the following form: (3) NTF IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 10, OCTOBER 2003 Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "baseband",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) NTF and (b) folded NTF of a modified modulator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. ADC with a zero at half the sampling frequency, realized by the resonator in the last but one stage.",
+      "caption_bbox": [
+        38.1,
+        125.7,
+        398.9,
+        136.3
+      ],
+      "section_title": "III. SYSTEM-LEVEL DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DOUBLE SAMPLING AND NOISE FOLDING",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "This work is based on the architecture shown in Fig. 6."
+        },
+        {
+          "section_title": "SYSTEM-LEVEL DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "In our prototype, for instance, the ROMBOUTS et al.: DOUBLE-SAMPLING Fig. 6."
+        },
+        {
+          "section_title": "SYSTEM-LEVEL DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Such a strategy was not feasable here because the modulator structure of Fig. 6 has not enough degrees of freedom to realize an arbitrary NTF: the NTF has five parameters, i.e., the poles of the modulator, but there are only four design parameters, i.e., coefficients."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "baseband",
+        "sub_blocks": [
+          "LC tank / resonator"
+        ],
+        "design_purpose": "",
+        "function_summary": "ADC with a zero at half the sampling frequency, realized by the resonator in the last but one stage",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.25,
+      "warnings": [
+        "Recommended figure caption does not explicitly mention a schematic/topology/circuit; please confirm manually.",
+        "Recommended figure was classified as 'other', not a schematic; manual confirmation strongly recommended."
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 2,
+      "caption": "Fig. 7. Magnitude of the signal and noise transfer functions of the modulator structure.",
+      "caption_bbox": [
+        38.1,
+        325.6,
+        289.2,
+        345.1
+      ],
+      "section_title": "IV. IMPLEMENTATION AND MEASUREMENTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "SYSTEM-LEVEL DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 7."
+        },
+        {
+          "section_title": "SYSTEM-LEVEL DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The corresponding NTF and signal transfer function (STF) are shown in Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "baseband",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Magnitude of the signal and noise transfer functions of the modulator structure",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 2,
+      "caption": "Fig. 8. Folded-cascode OTA used in the double-sampling ADC.",
+      "caption_bbox": [
+        301.1,
+        294.0,
+        510.4,
+        304.6
+      ],
+      "section_title": "III. SYSTEM-LEVEL DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "SYSTEM-LEVEL DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "This is a common approach in modulation ADCs [19]. single-bit For comparison purposes, a conventional fourth-order double-sampling modulator was also designed based on the MODULATION A/D CONVERTER WITH A MODIFIED NOISE TRANSFER FUNCTION Fig. 8."
+        },
+        {
+          "section_title": "IMPLEMENTATION AND MEASUREMENTS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "For the opamps, a well-known folded-cascode operational transconductance amplifier (OTA) was used (Fig. 8)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "baseband",
+        "sub_blocks": [
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Folded-cascode OTA used in the double-sampling ADC",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 3,
+      "caption": "Fig. 9. Chip microphotograph.",
+      "caption_bbox": [
+        39.6,
+        233.8,
+        143.2,
+        244.5
+      ],
+      "section_title": "IV. IMPLEMENTATION AND MEASUREMENTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION AND MEASUREMENTS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The in Fig. 9."
+        },
+        {
+          "section_title": "IMPLEMENTATION AND MEASUREMENTS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Here, the ADC was clocked at 24 MHz and Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "baseband",
+        "sub_blocks": [
+          "clock / timing"
+        ],
+        "design_purpose": "",
+        "function_summary": "Chip microphotograph",
+        "key_specs": [
+          "24 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 3,
+      "caption": "Fig. 10. Baseband spectrum after decimation.",
+      "caption_bbox": [
+        39.6,
+        457.4,
+        191.1,
+        468.1
+      ],
+      "section_title": "IV. IMPLEMENTATION AND MEASUREMENTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION AND MEASUREMENTS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "A typical baseband spectrum after decimation is shown in Fig. 10."
+        },
+        {
+          "section_title": "IMPLEMENTATION AND MEASUREMENTS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 10."
+        },
+        {
+          "section_title": "IMPLEMENTATION AND MEASUREMENTS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The peak SNR was 90 dB. 7.5-dB The overall Nyquist-band spectrum for the same input signal as of Fig. 10 is shown in Fig. 12."
+        },
+        {
+          "section_title": "IMPLEMENTATION AND MEASUREMENTS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Here, the input signal with an amplitude of same setup as for the measurements of Figs. 10–12 was used except that the on-board anti-aliasing filter was removed."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.6,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "baseband",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Baseband spectrum after decimation",
+        "key_specs": [
+          "90 dB",
+          "12 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.03,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 3,
+      "caption": "Fig. 11. SNR and SNDR versus input amplitude.",
+      "caption_bbox": [
+        302.6,
+        248.5,
+        465.0,
+        259.1
+      ],
+      "section_title": "IV. IMPLEMENTATION AND MEASUREMENTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION AND MEASUREMENTS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 11 shows the SNR and SNDR versus the input signal level."
+        },
+        {
+          "section_title": "IMPLEMENTATION AND MEASUREMENTS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 10, OCTOBER 2003 Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "250-kHz 94-dB Double-Sampling Modulation A/D Converter",
+        "technology": "CMOS",
+        "application_domain": "baseband",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "SNR and SNDR versus input amplitude",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 3,
+      "caption": "Fig. 12. Output spectrum of the ADC obtained through 31 spectral averaging of 2 -point windowed FFTs.",
+      "caption_bbox": [
+        302.6,
+        473.5,
+        553.7,
+        493.2
+      ],
+      "section_title": "IV. IMPLEMENTATION AND MEASUREMENTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION AND MEASUREMENTS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The peak SNR was 90 dB. 7.5-dB The overall Nyquist-band spectrum for the same input signal as of Fig. 10 is shown in Fig. 12."
+        },
+        {
+          "section_title": "IMPLEMENTATION AND MEASUREMENTS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "baseband",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Output spectrum of the ADC obtained through 31 spectral averaging of 2 -point windowed FFTs",
+        "key_specs": [
+          "90 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 4,
+      "caption": "Fig. 13. Baseband spectrum after decimation for a 24.02-MHz input tone.",
+      "caption_bbox": [
+        38.1,
+        261.7,
+        278.9,
+        272.3
+      ],
+      "section_title": "IV. IMPLEMENTATION AND MEASUREMENTS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION AND MEASUREMENTS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The corresponding baseband spectrum is shown in Fig. 13."
+        },
+        {
+          "section_title": "IMPLEMENTATION AND MEASUREMENTS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Although this signal-folding phenomenon does not alter the baseband performance, it is important to note that it gives an additional conROMBOUTS et al.: DOUBLE-SAMPLING Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "250-kHz 94-dB Double-Sampling Modulation A/D Converter",
+        "technology": "CMOS",
+        "application_domain": "baseband",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Baseband spectrum after decimation for a 24.02-MHz input tone",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 6,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "title": "An Ultra-Low-Power Receiver Using TransmittedReference and Shifted Limiters for In-Band Interference Resilience Dawei Ye, Ronan van der Zee, Bram Nauta",
+  "bibliography": {
+    "authors": [],
+    "venue": "",
+    "year": 2016,
+    "doi": "",
+    "keywords": []
+  },
+  "figure_number": "Figure 26.2.1 shows the spread-spectrum transmitted-reference modulation. A spreading sequence is generated and transmitted together with a copy that is modulated with the data and shifted by a frequency Δω. Normally, to recover the data from a spread-spectrum-modulated signal, the spread sequence has to be locally generated as the reference to synchronize the received signal. It takes time to synchronize these two, which would prevent the extreme duty-cycling common in wireless sensor networks. In the TR system, the spread data and reference sequences are sent simultaneously, so synchronization can be instantaneous by using an x2 Envelope Detector (ED) that de-spreads the signal through crossmodulation. Further, because of the frequency offset Δω (=2π×1MHz), the signal of the RX is downconverted to Δω after the ED, avoiding sensitivity degradation caused by ﬂicker noise. Unlike [5], the interferer will be spread over a wide frequency range and then ﬁltered out by the IF ﬁlter, therefore the in-band SIR becomes largely independent of the frequency distance between the signal and interferer. Also, the increased bandwidth of the signal will make it more robust to fading dips in the channel. In front of the ED, considerable voltage gain is needed to obtain a decent NF [4,5], but this reduces the linearity. In the presence of a strong in-band interferer Vintcos(ωintt), the RF ampliﬁer will become a limiter, reducing the conversion gain of the signal (Gsig) more than the conversion gain of the interferer (Gint), which decreases the SIR, as shown in the left side of Fig. 26.2.2. However, when we shift the linear range of the ampliﬁer to higher amplitudes, as shown in the right part of Fig. 26.2.2, the peaks of the envelope are now in the linear range of this Shifted Limiter (SL), which can make the conversion gain of the signal (Gsig) larger than the conversion gain of the interferer (Gint), improving the SIR [6]. The SL hardly consumes extra power to improve the SIR since the linear range of the limiter is not increased but just shifted by Vint, which can be easily implemented by adjusting the DC biasing voltage, as will be shown next. Envelope tracking is needed, and needs to be fast enough to cope with varying interferer levels. The performance is ultimately limited by this tracking speed.",
+  "type": "Ultra-Low-Power Receiver",
+  "technology": "CMOS, 65nm process",
+  "application": "rf, wireless, if",
+  "sub_blocks": [
+    "inductor",
+    "output buffer",
+    "mixer",
+    "bias circuit",
+    "switch"
+  ],
+  "function_summary": "Ultra-Low-Power Receiver",
+  "design_purpose": "",
+  "metrics": [
+    "Frequency",
+    "Gain",
+    "Process node"
+  ],
+  "numerical_performance": [
+    "1MHz",
+    "12dB",
+    "10dB",
+    "30dB",
+    "65nm",
+    "-45dB",
+    "-11dB",
+    "915MHz",
+    "20MHz",
+    "-3 v"
+  ],
+  "confidence": 0.2,
+  "warnings": [
+    "No figure scored positively as a proposed-circuit schematic; recommendation is low-confidence.",
+    "Recommended figure caption does not explicitly mention a schematic/topology/circuit; please confirm manually.",
+    "Recommended figure was classified as 'result_plot', not a schematic; manual confirmation strongly recommended."
+  ]
+}

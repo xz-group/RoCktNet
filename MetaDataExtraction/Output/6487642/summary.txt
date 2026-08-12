@@ -1,0 +1,54 @@
+# A 3.4mW Photovoltaic Energy-Harvesting Charger with Integrated Maximum Power Point Tracking and Battery Management Tsung-Heng Tsai, Kai Chen
+
+VENUE
+"2013"
+
+FIGURE NUMBER
+"Figure 4.5.1 illustrates the block diagram of the charger, which consists of PV cells, start-up circuits, an MPPT controller, a PWM controller and a battery management unit. A ring oscillator generates a 500kHz clock for the whole system. A linear regulator (LDO) is off-chip providing a 3.3V for the control circuits and 1.2V for the reference voltages. The output of the MPPT controller represents the graph. maximum power point offset and an 8-bit accumulator is utilized to accumulate the offset. The PWM controller adjusts the duty cycles of the power MOS switches according to the output of the accumulator. When the maximum power point is tracked, a stable charging voltage of 4.2V is produced. The battery management unit monitors the charging status, and prevents the battery from being overcharged or over-discharged. In this work, the MPPT is based on a sectored hill-climbing method. For current measurement, a current mirror is inserted in the output path of the solar panel. The current-sensing circuit is adopted from [4]. As shown in Fig. 4.5.2, VC is the control voltage when the sensed current is mirrored on MR2 and MR3 so that N × Isense = IPV, where N = 680. The mirrored current flows through Rs and generates Vs, which is proportional to the illumination. Then, Vs is converted into 4-bit thermometer codes, k1–k4, and further encoded into 9 bits for fine partition. The 9bit digital codes approximately represent the sectors of illumination levels. Finally, Vsense is produced with resistance network Rnet. Typical maximum power points of generic PV cells in exponential relation can be observed as illustrated in Fig. 4.5.2 (lower). Given the exponential relationship between VPV and IPV nearby maximum power points (MPPs), we can detect the variation of power through the sum of VPV and IPV with proper weighting."
+
+TYPE
+"low-dropout regulator (LDO)"
+
+TECHNOLOGY
+"CMOS"
+
+APPLICATION
+"wireless, automotive, if"
+
+SUB-BLOCKS
+[
+  "capacitor",
+  "resistor",
+  "transistor/MOSFET",
+  "current mirror",
+  "switch"
+]
+
+FUNCTION SUMMARY
+"circuit"
+
+METRICS
+[
+  "Power consumption",
+  "Frequency",
+  "Supply voltage",
+  "Capacitance",
+  "Impedance"
+]
+
+NUMERICAL PERFORMANCE
+[
+  "3.4mW",
+  "500kHz",
+  "3.3V",
+  "1.2V",
+  "4.2V",
+  "0.8pF",
+  "2 w",
+  "1Ω",
+  "0.5V",
+  "2V"
+]
+
+CONFIDENCE
+0.85

@@ -1,0 +1,676 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\933465.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\933465",
+  "generated_at": "2026-07-29T22:03:29",
+  "paper_metadata": {
+    "title": "A 147-dB Dynamic Range Electronic Attenuator for Audiometric Applications With On-Chip 1-W Power Amplifier",
+    "authors": [
+      "Simona Brigati",
+      "Fabrizio Francesconi",
+      "Matteo Poletti",
+      "Daniela Fumagalli",
+      "Guido Grassi",
+      "Piero Malcovati"
+    ],
+    "abstract": "This paper presents an integrated circuit for audioTABLE I SPECIFICATIONS OF THE ELECTRONIC ATTENUATOR metric applications, which includes a linearly controlled exponential attenuator with 147 dB of dynamic range and a power amplifier capable of driving 8 Vpp on a 7resistive load. The required attenuation is achieved in the current domain by exploiting the exponential transfer characteristic of bipolar transistors. In order to achieve a temperature-independent attenuation, in spite of the temperature-dependent bipolar transistor C– BE relationship, we produce on-chip an attenuation control voltage proportional to the absolute temperature. The 24-mm2 chip, fabricated in a 2m high-voltage CMOS process, achieves the required dynamic range with 80 dB of spurious-free dynamic range (excluding harmonics) and 57 dB of total harmonic distortion, consuming 33 mA from a 5-V power supply.",
+    "keywords": [
+      "Attenuators",
+      "audio systems",
+      "BiCMOS analog integrated circuits",
+      "biomedical acoustics",
+      "power integrated circuits"
+    ],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2001
+  },
+  "paper_circuit_context": {
+    "circuit_type": "power amplifier (PA)",
+    "technology": "CMOS, BICMOS",
+    "application_domain": "biomedical",
+    "sub_blocks": [
+      "transistor/MOSFET",
+      "capacitor",
+      "resistor",
+      "current source",
+      "current mirror",
+      "output buffer",
+      "differential pair",
+      "op-amp"
+    ],
+    "design_purpose": "In order to achieve a temperature-independent attenuation, in spite of the temperature-dependent bipolar transistor C– BE relationship, we produce on-chip an attenuation control voltage proportional to the absolute temperature.",
+    "function_summary": "power amplifier (PA): In order to achieve a temperature-independent attenuation, in spite of the temperature-dependent bipolar transistor C– BE relationship, we produce on-chip an attenuation control voltage proportional to the absolute temperature.",
+    "key_specs": [
+      "147 dB",
+      "8 V",
+      "80 dB",
+      "57 dB",
+      "20 kHz",
+      "100 Hz",
+      "15 V",
+      "5 V",
+      "0 dB",
+      "0.35 V"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "M ODERN medical instruments used for audiometric tests (audiometers) require high-quality audio signals and sophisticated signal processing. During audiometric tests, indeed, the human ear is stimulated with several kind of signals like pure tones and masking sounds (noise) applied through different audio devices, such as headphones or bone conductors, in order to identify hearing defects or losse ..."
+    },
+    {
+      "number": "II",
+      "title": "SYSTEM DESCRIPTION",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "The block diagram and the most important specifications of the proposed chip are reported in Fig. 1 and Table I, respectively. The chip has to provide linearly controlled exponential at- ) to tenuation of the input signal ranging from 0 dB (8 V Fig. 1. Block diagram of the electronic attenuator. 147 dB (0.35 V ) with 1-dB steps. Although the minimum V ), the output signal is below the required noi ..."
+    },
+    {
+      "number": "III",
+      "title": "ATTENUATOR CORE",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "The basic operating principle of the attenuator core is illustrated in Fig. 2 [1]. This circuit exploits the exponential relation ) and the collector curbetween the base–emitter voltage (V of the bipolar transistors to achieve the required linearly rent controlled exponential attenuation of the input signal. , transformed into a current by resistor The input voltage , is attenuated exponentially b ..."
+    },
+    {
+      "number": "IV",
+      "title": "CONTROL SECTION",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "The control section, whose schematic is shown in Fig. 4, re- , ceives as input three attenuation control signals, namely , and ON/OFF and delivers to the attenuator core a suit- . The analog signals and allow us able voltage Fig. 3. Schematic diagram of the attenuator core. to select the desired attenuation and to perform ampli- [5], while the digital signal ON/OFF is tude modulations used to togg ..."
+    },
+    {
+      "number": "V",
+      "title": "POWER SECTION",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "The power section is based on a class-AB two-stage operational amplifier (power amplifier) [8], [9] with resistive feedback, whose schematic is shown in Fig. 5. The main feature of this circuit is represented by the output stage, which consists of Fig. 4. Schematic diagram of the control section. two stages in parallel: a class-AB complementary source follower (upper section) and a class-AB comple ..."
+    },
+    {
+      "number": "VI",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 4,
+      "text_preview": "The electronic attenuator and the power amplifier have m high-voltage been integrated on a single chip using a 2double-poly double-metal CMOS process. A micrograph of the chip is shown in Fig. 8. 24-mm 1-kHz sinusoidal output signal The spectrum of the 8-V of the system is shown in Fig. 9. The resulting total harmonic 57 dB, while the distortion in these conditions is as low as Fig. 9. Measured ou ..."
+    },
+    {
+      "number": "VII",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 5,
+      "text_preview": "In this paper, we presented an integrated circuit implementing the back-end section of an audiometer. The chip includes a linearly controlled exponential attenuator with 147 dB of dynamic on a range and a power amplifier capable of driving 8 V resistive load. The proposed integrated circuit processes the 7audio and control signals produced by the front-end section of the audiometer presented in [5 ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Block diagram of the electronic attenuator.",
+      "caption_bbox": [
+        39.6,
+        186.5,
+        206.5,
+        197.2
+      ],
+      "section_title": "II. SYSTEM DESCRIPTION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SYSTEM DESCRIPTION",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The block diagram and the most important specifications of the proposed chip are reported in Fig. 1 and Table I, respectively."
+        },
+        {
+          "section_title": "SYSTEM DESCRIPTION",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The chip has to provide linearly controlled exponential at- ) to tenuation of the input signal ranging from 0 dB (8 V Fig. 1."
+        },
+        {
+          "section_title": "POWER SECTION",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "A digitally controlled analog multiplexer at the input of the power section (Fig. 1) allows us to alternatively connect to the , an external signal power amplifier the attenuator core output , or the addition of the two ( )."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "power amplifier (PA)",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "biomedical",
+        "sub_blocks": [],
+        "design_purpose": "A digitally controlled analog multiplexer at the input of the power section (Fig. 1) allows us to alternatively connect to the , an external signal power amplifier the attenuator core output , or the addition of the two ( ).",
+        "function_summary": "Block diagram of the electronic attenuator. A digitally controlled analog multiplexer at the input of the power section (Fig. 1) allows us to alternatively connect to the , an external signal power amplifier the attenuator core output , or the addition of the two ( ).",
+        "key_specs": [
+          "0 dB",
+          "8 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.31,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Schematic diagram of the complementary electronic attenuator.",
+      "caption_bbox": [
+        302.6,
+        352.0,
+        533.6,
+        362.7
+      ],
+      "section_title": "II. SYSTEM DESCRIPTION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ATTENUATOR CORE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The basic operating principle of the attenuator core is illustrated in Fig. 2 [1]."
+        },
+        {
+          "section_title": "ATTENUATOR CORE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "By applying Kirchhoff’s law to voltage ( the circuit we can write IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 7, JULY 2001 Fig. 2."
+        },
+        {
+          "section_title": "ATTENUATOR CORE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Therefore, we modified the basic circuit of Fig. 2 to eliminate the pnp transistors."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.2,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "power amplifier (PA)",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "biomedical",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Schematic diagram of the complementary electronic attenuator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.55,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Schematic diagram of the attenuator core.",
+      "caption_bbox": [
+        301.1,
+        212.8,
+        464.0,
+        223.5
+      ],
+      "section_title": "III. ATTENUATOR CORE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ATTENUATOR CORE",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The resulting schematic diagram of the attenuator core is shown in Fig. 3. – and – ) ensure that The current mirrors ( and under any operating conditions, since the , , , and are maintained drain–source voltages of constant by virtual grounds, thus allowing the function of pnp transistors to be achieved with an npn differential pair."
+        },
+        {
+          "section_title": "CONTROL SECTION",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The analog signals and allow us able voltage Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+core": 0.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "power amplifier (PA)",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "biomedical",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "current mirror",
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "Schematic diagram of the attenuator core",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.57,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 3,
+      "caption": "Fig. 4. Schematic diagram of the control section.",
+      "caption_bbox": [
+        39.6,
+        339.1,
+        203.0,
+        349.7
+      ],
+      "section_title": "V. POWER SECTION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CONTROL SECTION",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The control section, whose schematic is shown in Fig. 4, re- , ceives as input three attenuation control signals, namely , and ON/OFF and delivers to the attenuator core a suit- ."
+        },
+        {
+          "section_title": "POWER SECTION",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The main feature of this circuit is represented by the output stage, which consists of Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "power amplifier (PA)",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "biomedical",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematic diagram of the control section",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.45,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Schematic of the operational amplifier used in the power section.",
+      "caption_bbox": [
+        302.6,
+        662.5,
+        538.7,
+        673.1
+      ],
+      "section_title": "V. POWER SECTION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "POWER SECTION",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The power section is based on a class-AB two-stage operational amplifier (power amplifier) [8], [9] with resistive feedback, whose schematic is shown in Fig. 5."
+        },
+        {
+          "section_title": "POWER SECTION",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 5 reports the sizes of the most significant transistors."
+        },
+        {
+          "section_title": "POWER SECTION",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "It can be observed that the dimensions of the two output and are by far the largest of the power transistors IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 7, JULY 2001 Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.2,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "type_match:amplifier": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "biomedical",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Schematic of the operational amplifier used in the power section",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.87,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "Fig. 6. Floorplan of the power MOS transistors in the power section.",
+      "caption_bbox": [
+        38.1,
+        311.0,
+        264.7,
+        321.7
+      ],
+      "section_title": "V. POWER SECTION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "POWER SECTION",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Therefore, these transistors were laid out in a matrix configuration as shown in Fig. 6."
+        },
+        {
+          "section_title": "POWER SECTION",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Since for ) octhe same aspect ratio the p-channel MOS transistor ( cupies an area much larger than the n-channel lateral DMOS ), we optimized the aspect ratio of to transistor ( achieve the required output impedance, while minimizing the BRIGATI et al. : DYNAMIC RANGE ELECTRONIC ATTENUATOR FOR AUDIOMETRIC APPLICATIONS Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "power amplifier (PA)",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "biomedical",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Floorplan of the power MOS transistors in the power section",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. Effect of parasitic resistors between the output pins in the power section.",
+      "caption_bbox": [
+        38.1,
+        541.0,
+        289.2,
+        560.7
+      ],
+      "section_title": "V. POWER SECTION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "POWER SECTION",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 7."
+        },
+        {
+          "section_title": "POWER SECTION",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "It can be shown that even a very small parasitic resistance (a fraction of an ohm) in the connection between the eight output pins left outside the feedback loop, as shown in Fig. 7, produces unacceptable harFig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "power amplifier (PA)",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "biomedical",
+        "sub_blocks": [
+          "resistor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Effect of parasitic resistors between the output pins in the power section",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Micrograph of the electronic attenuator core.",
+      "caption_bbox": [
+        301.1,
+        598.8,
+        473.6,
+        609.4
+      ],
+      "section_title": "VI. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "A micrograph of the chip is shown in Fig. 8. 24-mm 1-kHz sinusoidal output signal The spectrum of the 8-V of the system is shown in Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.1,
+      "relevance_breakdown": {
+        "+core": 0.5,
+        "-micrograph": -3.0,
+        "section:results": -2.0,
+        "references": 0.4
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "power amplifier (PA)",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "biomedical",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Micrograph of the electronic attenuator core",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 5,
+      "caption": "Fig. 9. Measured output spectrum of the proposed system with the minimum attenuation.",
+      "caption_bbox": [
+        39.6,
+        252.7,
+        290.7,
+        272.2
+      ],
+      "section_title": "VI. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "A micrograph of the chip is shown in Fig. 8. 24-mm 1-kHz sinusoidal output signal The spectrum of the 8-V of the system is shown in Fig. 9."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The resulting total harmonic 57 dB, while the distortion in these conditions is as low as Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "-measured": -3.0,
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "power amplifier (PA)",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "biomedical",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured output spectrum of the proposed system with the minimum attenuation",
+        "key_specs": [
+          "57 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. Measured attenuation as a function of the attenuation control voltage.",
+      "caption_bbox": [
+        39.6,
+        469.7,
+        290.6,
+        480.3
+      ],
+      "section_title": "VII. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 10."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 10 shows the attenuation as a function of the control voltage ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "power amplifier (PA)",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "biomedical",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured attenuation as a function of the attenuation control voltage",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 5,
+      "caption": "Fig. 11. Measured deviation of the attenuation from the ideal value as a function of the attenuation control voltage.",
+      "caption_bbox": [
+        39.6,
+        665.4,
+        290.7,
+        685.0
+      ],
+      "section_title": "VII. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 11."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Moreover, the attenuation curve is pretty linear, as IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 7, JULY 2001 TABLE II FEATURES OF THE PROPOSED ELECTRONIC ATTENUATOR AND POWER AMPLIFIER shown in Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "power amplifier (PA)",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "biomedical",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured deviation of the attenuation from the ideal value as a function of the attenuation control voltage",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 5,
+  "warnings": []
+}

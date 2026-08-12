@@ -1,0 +1,848 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1501998.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1501998",
+  "generated_at": "2026-07-29T22:03:05",
+  "paper_metadata": {
+    "title": "A 0.8-V Accurately Tuned Linear Continuous-Time Filter",
+    "authors": [
+      "Gowtham Vemulapalli",
+      "Pavan Kumar Hanumolu",
+      "Youn-Jae Kook",
+      "Un-Ku Moon"
+    ],
+    "abstract": "An accurately tuned low-voltage linear continuoustime filter is presented in this paper. Accurate tuning is achieved using time-constant matched master–slave tuning combined with power-up mismatch calibration. A low-pass biquad designed for a corner frequency of 115 kHz achieves better than 80-dB total harmonic distortion with a 250pp 10-kHz input signal. The prototype implemented in 0.18m CMOS process occupies an area of 0.4 mm2 and dissipates 4.6 mW (2.6 mW for the filter and 2 mW for tuning) of power. Index Terms—Continuous-time filter, linear, low-voltage, master–slave tuning, power-up mismatch calibration, R-MOSFET-C. Fig. 1. Direct frequency tuning method.",
+    "keywords": [],
+    "doi": "10.1109/JSSC.2005.848170",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2005
+  },
+  "paper_circuit_context": {
+    "circuit_type": "0.8-V Accurately Tuned Linear Continuous-Time Filter",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "current source",
+      "switch",
+      "op-amp",
+      "clock / timing"
+    ],
+    "design_purpose": "An accurately tuned low-voltage linear continuoustime filter is presented in this paper.",
+    "function_summary": "0.8-V Accurately Tuned Linear Continuous-Time Filter: An accurately tuned low-voltage linear continuoustime filter is presented in this paper.",
+    "key_specs": [
+      "115 kHz",
+      "4.6 mW",
+      "2.6 mW",
+      "2 mW",
+      "25%",
+      "0.1%",
+      "5%",
+      "60 dB",
+      "10%",
+      "80 dB"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "A DVANCES in CMOS technology have led to aggressive scaling of transistors, thus enabling integration of all of the system functions on the same chip. Most of the signal processing required to implement these functions is performed in the digital domain. However, since the real world is inherently analog in nature, interface circuits such as analog ﬁlters and data converters are of paramount impor ..."
+    },
+    {
+      "number": "II",
+      "title": "TUNING CT FILTERS",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "Many tuning techniques have been proposed to compensate for the corner frequency variation [3]–[10]. These techniques can be broadly classiﬁed into two categories—direct tuning and indirect tuning. As depicted in Fig. 1, direct tuning is performed by comparing the ﬁlter’s output to a known reference input and correcting for the corner frequency error typically by adjusting a tunable element in the ..."
+    },
+    {
+      "number": "III",
+      "title": "PROPOSED TUNING SCHEME",
+      "kind": "proposed",
+      "page": 1,
+      "text_preview": "The system-level block diagram of the proposed tuning scheme is shown in Fig. 4. This scheme combines the advantages of both the direct and indirect tuning methods described earlier. The master reference tunes the slave ﬁlter continuously to the required frequency, while the power-up direct tuning cancels the master–slave mismatch, thus resulting in a very accurately tuned ﬁlter. The overall tunin ..."
+    },
+    {
+      "number": "IV",
+      "title": "PROTOTYPE IMPLEMENTATION",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "Shown in Fig. 6 is the implemented R-MOSFET-C low-pass Butterworth biquad with a corner frequency of 115 kHz that is capable of operating with less than a 1-V power supply. Timeconstant matching master–slave tuning, with digitally trimmed capacitors for power-up mismatch calibration shown in Fig. 5, is employed for frequency tuning. Furthermore, the nonlinear MOSFET is placed inside a feedback loo ..."
+    },
+    {
+      "number": "V",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 3,
+      "text_preview": "A 115-kHz corner frequency second-order low-pass ﬁlter along with the proposed tuning scheme was implemented in m CMOS technology. A die photograph of the proto0.18type is shown in Fig. 11. Shown in Fig. 12 is the measured input signal for output spectrum with a 10-kHz 250-mV the ﬁlter operating with a 0.8-V power supply. The measured signal-to-noise ratio (SNR) is 56 dB and the total harmonic dis ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 4,
+      "text_preview": "A foreground tuning technique used at power-up in conjunction with a master–slave-based background tuning scheme is presented to track PVT variations and to minimize inherent mismatches between the master and slave ﬁlter. Challenges encountered in the design of truly low-voltage ﬁlters are discussed and techniques to improve linearity are presented. A 115-kHz lowm pass second-order Butterworth ﬁlt ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Direct frequency tuning method.",
+      "caption_bbox": [
+        301.1,
+        278.0,
+        434.6,
+        285.9
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Digital Object Identiﬁer 10.1109/JSSC.2005.848170 Fig. 1."
+        },
+        {
+          "section_title": "TUNING CT FILTERS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "As depicted in Fig. 1, direct tuning is performed by comparing the ﬁlter’s output to a known reference input and correcting for the corner frequency error typically by adjusting a tunable element in the ﬁlter."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "0.8-V Accurately Tuned Linear Continuous-Time Filter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Direct frequency tuning method",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Indirect frequency tuning method.",
+      "caption_bbox": [
+        39.6,
+        200.1,
+        177.9,
+        208.0
+      ],
+      "section_title": "II. TUNING CT FILTERS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TUNING CT FILTERS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Due to the IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 9, SEPTEMBER 2005 Fig. 2."
+        },
+        {
+          "section_title": "TUNING CT FILTERS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "As shown in Fig. 2, the corner frequency of the slave ﬁlter is set by the master ﬁlter (which models the slave) whose corner frequency in turn is typically set by a PVT invariant element."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "0.8-V Accurately Tuned Linear Continuous-Time Filter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Indirect frequency tuning method",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Master–slave tuning circuitry.",
+      "caption_bbox": [
+        39.6,
+        367.2,
+        163.9,
+        375.1
+      ],
+      "section_title": "III. PROPOSED TUNING SCHEME",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "TUNING CT FILTERS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 3."
+        },
+        {
+          "section_title": "TUNING CT FILTERS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 3 depicts a well-known master–slave tuning scheme [4] in is used as the which an SC resistor clocked at a frequency reference element."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.8,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "0.8-V Accurately Tuned Linear Continuous-Time Filter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "resistor",
+          "clock / timing"
+        ],
+        "design_purpose": "",
+        "function_summary": "Master–slave tuning circuitry",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.45,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 1,
+      "caption": "Fig. 4. Combined master–slave and power-up direct frequency tuning.",
+      "caption_bbox": [
+        302.6,
+        160.0,
+        531.9,
+        168.0
+      ],
+      "section_title": "II. TUNING CT FILTERS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TUNING CT FILTERS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "In practice, however, the mismatch between Fig. 4."
+        },
+        {
+          "section_title": "PROPOSED TUNING SCHEME",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The system-level block diagram of the proposed tuning scheme is shown in Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "0.8-V Accurately Tuned Linear Continuous-Time Filter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Combined master–slave and power-up direct frequency tuning",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Digitally programmable master–slave tuning circuitry.",
+      "caption_bbox": [
+        38.1,
+        309.6,
+        241.2,
+        317.6
+      ],
+      "section_title": "III. PROPOSED TUNING SCHEME",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "PROPOSED TUNING SCHEME",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "An SC tuning scheme in conjunction with linearity enhanced R-MOSFET-C ﬁlter adopted in this work is shown in Fig. 5."
+        },
+        {
+          "section_title": "PROPOSED TUNING SCHEME",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Even though matches the reference SC resistance Fig. 5."
+        },
+        {
+          "section_title": "PROPOSED TUNING SCHEME",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "In this work, capacitor ibrated during power-up to correct for this mismatch directly. is replaced In order to perform this calibration, capacitor by a digitally controlled bank of capacitors, as shown in Fig. 5, and the calibration is done as follows."
+        },
+        {
+          "section_title": "PROTOTYPE IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Timeconstant matching master–slave tuning, with digitally trimmed capacitors for power-up mismatch calibration shown in Fig. 5, is employed for frequency tuning."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.6,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:proposed": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "0.8-V Accurately Tuned Linear Continuous-Time Filter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor",
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "In this work, capacitor ibrated during power-up to correct for this mismatch directly. is replaced In order to perform this calibration, capacitor by a digitally controlled bank of capacitors, as shown in Fig. 5, and the calibration is done as follows.",
+        "function_summary": "Digitally programmable master–slave tuning circuitry. In this work, capacitor ibrated during power-up to correct for this mismatch directly. is replaced In order to perform this calibration, capacitor by a digitally controlled bank of capacitors, as shown in Fig. 5, and the calibration is done as follows.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.65,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. Low-pass Butterworth biquad.",
+      "caption_bbox": [
+        301.1,
+        459.9,
+        427.4,
+        467.9
+      ],
+      "section_title": "III. PROPOSED TUNING SCHEME",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "PROTOTYPE IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Shown in Fig. 6 is the implemented R-MOSFET-C low-pass Butterworth biquad with a corner frequency of 115 kHz that is capable of operating with less than a 1-V power supply."
+        },
+        {
+          "section_title": "PROTOTYPE IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Since the proof-of-concept prototype IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 9, SEPTEMBER 2005 Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "0.8-V Accurately Tuned Linear Continuous-Time Filter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Low-pass Butterworth biquad",
+        "key_specs": [
+          "115 kHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 2,
+      "caption": "Fig. 7. Digital synthesis of a sine wave. (a) Block diagram. (b) Current-mode DAC and I-to- mapping table.",
+      "caption_bbox": [
+        301.1,
+        658.9,
+        552.2,
+        675.8
+      ],
+      "section_title": "IV. PROTOTYPE IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "PROTOTYPE IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 7."
+        },
+        {
+          "section_title": "PROTOTYPE IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Sine-Wave Generation The sine wave required to perform master–slave mismatch minimization is generated using a simple digital synthesis scheme shown in Fig. 7(a)."
+        },
+        {
+          "section_title": "PROTOTYPE IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The 4-element DAC and the current-to-phase mapping table is shown in Fig. 7(b)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.7,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Digital synthesis of a sine wave. (a) Block diagram. (b) Current-mode DAC and I-tomapping table",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.66,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. Mismatch detection and correction scheme.",
+      "caption_bbox": [
+        39.6,
+        130.6,
+        208.6,
+        138.6
+      ],
+      "section_title": "IV. PROTOTYPE IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "PROTOTYPE IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The opamp employs a folded cascode ﬁrst stage for low input IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 9, SEPTEMBER 2005 Fig. 8."
+        },
+        {
+          "section_title": "PROTOTYPE IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Mismatch Detection and Correction The mismatch detection and correction scheme is shown in Fig. 8 and is performed as follows."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "0.8-V Accurately Tuned Linear Continuous-Time Filter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Mismatch detection and correction scheme",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 3,
+      "caption": "Fig. 9. Peak detector.",
+      "caption_bbox": [
+        302.6,
+        267.8,
+        376.6,
+        275.8
+      ],
+      "section_title": "IV. PROTOTYPE IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "PROTOTYPE IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The operation of the peak detector shown in Fig. 9 is as follows."
+        },
+        {
+          "section_title": "PROTOTYPE IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "For example, the mismatch minimization loop (digital control Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "0.8-V Accurately Tuned Linear Continuous-Time Filter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Peak detector",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 3,
+      "caption": "Fig. 10. Differential difference comparator.",
+      "caption_bbox": [
+        302.6,
+        408.8,
+        446.8,
+        416.8
+      ],
+      "section_title": "IV. PROTOTYPE IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "PROTOTYPE IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "A differential difference comparator shown in Fig. 10 compares the and the refpeak-to-peak values of the output , and provides the 1-b error signal. erence Since accurate tuning is achieved by running both the indirect and direct tuning loops simultaneously, it is of prime importance to guarantee that these two loops do not interact, resulting in a potentially unstable system."
+        },
+        {
+          "section_title": "PROTOTYPE IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "comparator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Differential difference comparator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 3,
+      "caption": "Fig. 11. Die photograph.",
+      "caption_bbox": [
+        302.6,
+        541.4,
+        387.6,
+        549.4
+      ],
+      "section_title": "IV. PROTOTYPE IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "PROTOTYPE IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 11."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "A die photograph of the proto0.18type is shown in Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-photograph": -3.0,
+        "-die photo": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "0.8-V Accurately Tuned Linear Continuous-Time Filter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Die photograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 4,
+      "caption": "Fig. 12. Measured output spectrum with a 10-kHz 250-mV input signal.",
+      "caption_bbox": [
+        38.1,
+        241.8,
+        281.4,
+        249.8
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Shown in Fig. 12 is the measured input signal for output spectrum with a 10-kHz 250-mV the ﬁlter operating with a 0.8-V power supply."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "The overall SNR is lower tortion (THD) is better than ) than expected mainly due to the unaccounted ﬂicker ( 10-dB/dec noise of the opamp, which is reinforced by the Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "0.8-V Accurately Tuned Linear Continuous-Time Filter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Measured output spectrum with a 10-kHz 250-mV input signal",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 4,
+      "caption": "Fig. 13. THD versus input frequency.",
+      "caption_bbox": [
+        38.1,
+        438.8,
+        163.8,
+        446.7
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Fig. 13."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Fig. 13 shows THD for different input frequencies."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "0.8-V Accurately Tuned Linear Continuous-Time Filter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "THD versus input frequency",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 4,
+      "caption": "Fig. 14. Frequency responses of three chips with power-up mismatch = 106 kHz, f = 129 KHz, f = calibration OFF. f 130 kHz.",
+      "caption_bbox": [
+        38.1,
+        610.9,
+        289.3,
+        636.8
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Fig. 14."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Figs. 14 and 15 show the measured frequency response of three chips with the power-up mismatch minimization scheme IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 9, SEPTEMBER 2005 Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "0.8-V Accurately Tuned Linear Continuous-Time Filter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Frequency responses of three chips with power-up mismatch = 106 kHz, f = 129 KHz, f = calibration OFF. f 130 kHz",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 4,
+      "caption": "Fig. 15. Frequency responses of three chips with power-up mismatch = 117 kHz, f = 119 kHz, f = calibration ON. f 120 kHz.",
+      "caption_bbox": [
+        301.1,
+        214.1,
+        552.2,
+        240.0
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Figs. 14 and 15 show the measured frequency response of three chips with the power-up mismatch minimization scheme IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 9, SEPTEMBER 2005 Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.6,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "0.8-V Accurately Tuned Linear Continuous-Time Filter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Frequency responses of three chips with power-up mismatch = 117 kHz, f = 119 kHz, f = calibration ON. f 120 kHz",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 7,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

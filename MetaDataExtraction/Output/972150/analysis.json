@@ -1,0 +1,1231 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\972150.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\972150",
+  "generated_at": "2026-07-29T22:03:39",
+  "paper_metadata": {
+    "title": "A 900-MHz Dual-Conversion Low-IF GSM Receiver in 0.35-m CMOS",
+    "authors": [
+      "Shahrzad Tadjpour",
+      "Ellie Cijvat",
+      "Emad Hegazi",
+      "Asad A. Abidi"
+    ],
+    "abstract": "A low-power fully integrated GSM receiver is developed in 0.35m CMOS. This receiver uses dual conversion with a low IF of 140 kHz. This arrangement lessens the impact of the flicker noise. The first IF of 190 MHz best tolerates blocking signals. The receiver includes all of circuits for analog channel selection, image rejection, and more than 100-dB controllable gain. The receiver alone consumes 22 mA from a 2.5-V supply, to give a noise figure of 5 dB, and input IP3 of 16 dBm. A single frequency synthesizer generates both LO frequencies. The integrated VCO with on-chip resonator and buffers consume another 8 mA, and meet GSM phase-noise specifications.",
+    "keywords": [
+      "Amplifiers",
+      "analog polyphase filter",
+      "image rejection",
+      "mixers",
+      "oscillators",
+      "radio receivers",
+      "RF CMOS",
+      "spurious mixing"
+    ],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2001
+  },
+  "paper_circuit_context": {
+    "circuit_type": "900-MHz Dual-Conversion Low-IF GSM Receiver in 0.35-m CMOS",
+    "technology": "CMOS",
+    "application_domain": "rf, wireless, baseband, if",
+    "sub_blocks": [
+      "varactor",
+      "inductor",
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "current source",
+      "LC tank / resonator",
+      "transformer",
+      "balun",
+      "output buffer",
+      "mixer",
+      "switch",
+      "differential pair",
+      "op-amp"
+    ],
+    "design_purpose": "",
+    "function_summary": "900-MHz Dual-Conversion Low-IF GSM Receiver in 0.35-m CMOS: A low-power fully integrated GSM receiver is developed in 0.35m CMOS.",
+    "key_specs": [
+      "140 kHz",
+      "190 MHz",
+      "5 dB",
+      "16 dBm",
+      "102 dBm",
+      "9 dB",
+      "10 dB",
+      "7 dB",
+      "3 dB",
+      "100 dB"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "M OBILE wireless transceivers face relentless pressure for low cost, low power, and small size. A highly integrated CMOS realization is therefore of interest. It is generally accepted that RF-CMOS circuits are good for short-range communicators such as DECT or Bluetooth, but whether CMOS can ever deliver a fully integrated receiver with competitive performance for a challenging cellular standard s ..."
+    },
+    {
+      "number": "II",
+      "title": "SYSTEM DESCRIPTION",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "The 900-MHz GSM standard [5] requires receive sensitivity 102 dBm for a GMSK modulated signal that occupies of a 200-kHz-wide bandwidth. To obtain a signal-to-noise ratio Manuscript received April 27, 2001; revised July 16, 2001. The authors are with the Department of Electrical Engineering, University of California, Los Angeles, CA 90095-1594 USA (e-mail: abidi@icsl.ucla.edu). Publisher Item Iden ..."
+    },
+    {
+      "number": "III",
+      "title": "RECEIVER ARCHITECTURE",
+      "kind": "proposed",
+      "page": 1,
+      "text_preview": "Fig. 4 shows the proposed receiver, a dual conversion to low-IF architecture. The signal after low-noise amplification Fig. 4. Architecture of this GSM receiver prototype. downconverts to a first IF (IF1). There, a programmable gain amplifier (PGA) boosts the wanted signal and close-in blockers, which downconvert to a second, low IF (IF2) for most of the amplification and filtering in the receiver ..."
+    },
+    {
+      "number": "IV",
+      "title": "CIRCUIT DESIGN",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "All circuits described here operate from a 2.5-V power supply. A. Low-Noise Amplifier The low noise amplifier is a single-ended inductively degenerated common-source stage (Fig. 5). A large voltage gain in the reactive input matching network overcomes FET noise, enabling low NF at low currents. The input impedance is sensitive to the package and parasitic capacitors to ground. Stray capaciat the g ..."
+    },
+    {
+      "number": "V",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 7,
+      "text_preview": "Fig. 15 shows SPECTRE-RF simulations of the entire receiver. The receiver gain from single-ended input to differential output is as high as 100 dB, and the cascade noise figure is below 5 dB. Flicker noise was simulated throughout the design evolution using the following expression for gate-referred noise voltage: In this technology, for nMOS is 8.2E–24 V F, and for pMOS F, and is assumed constant ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 9,
+      "text_preview": "A fully integrated dual-conversion to low-IF RX is implem CMOS process. Dual conversion to low-IF mented in 0.35lowers the impact of baseband noise. The right choice of IF for first downconversion substantially lowers the impact of the blockers. This IF also allows use of a single VCO to synthesize both LOs. A multifunction active polyphase filter selects the desired GSM channel and rejects the im ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. GSM blocker template.",
+      "caption_bbox": [
+        302.6,
+        381.0,
+        406.6,
+        391.6
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "SYSTEM DESCRIPTION",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Publisher Item Identifier S 0018-9200(01)09328-3. 0018–9200/01$10.00 © 2001 IEEE Fig. 1."
+        },
+        {
+          "section_title": "SYSTEM DESCRIPTION",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 1 shows the blocking profile for the GSM standard."
+        },
+        {
+          "section_title": "RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Then, according to Fig. 1, the first image 380 MHz away from the desired signal must be attenuated by 110 dB."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.7,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "900-MHz Dual-Conversion Low-IF GSM Receiver in 0.35-m CMOS",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "GSM blocker template",
+        "key_specs": [
+          "380 MHz",
+          "110 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Downconverted GSM channel, images of adjacent and alternate channels, and flicker noise. (!",
+      "caption_bbox": [
+        38.1,
+        192.7,
+        309.1,
+        231.2
+      ],
+      "section_title": "II. SYSTEM DESCRIPTION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SYSTEM DESCRIPTION",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "However, the narrow 200-kHz GMSK-modulated GSM channel at zero IF contains significant energy at very low frequency, and therefore cannot TADJPOUR et al.: DUAL-CONVERSION LOW-IF GSM RECEIVER Fig. 2."
+        },
+        {
+          "section_title": "SYSTEM DESCRIPTION",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "However, unlike direct conversion, the image of the downconverted adjacent or alternate channels can now dominate the channel of interest (Fig. 2)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Downconverted GSM channel, images of adjacent and alternate channels, and flicker noise. (!",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Harmonic mixing and front-end nonlinearity translate the blocker ) to the same frequency as desired signal.",
+      "caption_bbox": [
+        301.1,
+        211.6,
+        552.2,
+        231.2
+      ],
+      "section_title": "II. SYSTEM DESCRIPTION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SYSTEM DESCRIPTION",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "For the GSM receiver, where the in-band blocker Fig. 3."
+        },
+        {
+          "section_title": "SYSTEM DESCRIPTION",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Front-end linearity, antenna filter selectivity, and the tuned load of the low-noise amplifier (LNA) all determine how and the important this effect will be (Fig. 3)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Harmonic mixing and front-end nonlinearity translate the blocker ) to the same frequency as desired signal",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Architecture of this GSM receiver prototype.",
+      "caption_bbox": [
+        39.6,
+        248.3,
+        213.2,
+        258.9
+      ],
+      "section_title": "III. RECEIVER ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 4 shows the proposed receiver, a dual conversion to low-IF architecture."
+        },
+        {
+          "section_title": "RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The signal after low-noise amplification Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.8,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Architecture of this GSM receiver prototype",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.78,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Common-source LNA circuit.",
+      "caption_bbox": [
+        38.1,
+        305.0,
+        163.0,
+        315.6
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Low-Noise Amplifier The low noise amplifier is a single-ended inductively degenerated common-source stage (Fig. 5)."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "With a wire-bond inductance of 2 nH, the real TADJPOUR et al.: DUAL-CONVERSION LOW-IF GSM RECEIVER Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Common-source LNA circuit",
+        "key_specs": [
+          "2 nH"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Double-balanced mixer circuit.",
+      "caption_bbox": [
+        301.1,
+        208.9,
+        429.7,
+        219.5
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The feedthrough tone is larger than the downcon- – , where is the verted RF signal in the ratio – is the RF input to the mixer (tens of microvolts) and Fig. 6."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Instead, we chose to ac couple the single ended output of the LNA to one input each of two double-balanced mixers, whose other inputs are at ac ground (Fig. 6)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Double-balanced mixer circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Three-stage passive RC polyphase filter.",
+      "caption_bbox": [
+        301.1,
+        358.9,
+        458.7,
+        369.5
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 7."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Three stagger-tuned stages (Fig. 7) are required to guarantee this image rejection across the GSM band, with a Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Three-stage passive RC polyphase filter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Programmable gain amplifier circuit.",
+      "caption_bbox": [
+        39.6,
+        251.3,
+        187.0,
+        262.0
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Three stagger-tuned stages (Fig. 7) are required to guarantee this image rejection across the GSM band, with a Fig. 8."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 8 shows the PGA circuit."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Programmable gain amplifier circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. Second mixer circuit.",
+      "caption_bbox": [
+        302.6,
+        237.4,
+        400.4,
+        248.1
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Bias current is steered away from the loads IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 12, DECEMBER 2001 Fig. 9."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Second Mixers Quadrature double-balanced second mixers downconvert the wanted GSM channel to the IF2 of 140 kHz (Fig. 9)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Second mixer circuit",
+        "key_specs": [
+          "140 kHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. GSM reference channel downconverted to IF of 140 kHz, and images of the left adjacent and left alternate channels that overlap it.",
+      "caption_bbox": [
+        38.1,
+        255.8,
+        289.1,
+        275.4
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Based on the modulated spectrum, the image must be rejected by 26 dB (Fig. 10)."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Therefore, image rejection from 20 to 260 kHz which TADJPOUR et al.: DUAL-CONVERSION LOW-IF GSM RECEIVER Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.3,
+      "relevance_breakdown": {
+        "-reference": -1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "GSM reference channel downconverted to IF of 140 kHz, and images of the left adjacent and left alternate channels that overlap it",
+        "key_specs": [
+          "26 dB",
+          "260 kHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 5,
+      "caption": "Fig. 11. Method to synthesize active bandpass polyphase filter from conventional low-pass prototype.",
+      "caption_bbox": [
+        301.1,
+        275.9,
+        552.2,
+        295.5
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "This ture shown in Fig. 11 to realize an admittance requires quadrature signal paths."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The filter is realized by cascading five stages of the type shown in Fig. 11."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.3,
+      "relevance_breakdown": {
+        "-conventional": -3.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Method to synthesize active bandpass polyphase filter from conventional low-pass prototype",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 6,
+      "caption": "Fig. 12. Two-stage opamp used in filter, and accompanying common-mode feedback circuit.",
+      "caption_bbox": [
+        39.6,
+        263.8,
+        341.8,
+        274.5
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Two-stage opamps drive the resistor loads (Fig. 12)."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The common-mode feedback (CMFB) circuit is also shown in Fig. 12."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The oscillator circuit is optimized for best phase noise at least power consumption Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.7,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "resistor",
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Two-stage opamp used in filter, and accompanying common-mode feedback circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.43,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 6,
+      "caption": "Fig. 13. 1.1-GHz VCO.",
+      "caption_bbox": [
+        39.6,
+        471.5,
+        121.3,
+        482.1
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The VCO is a tail-biased differential LC oscillator (Fig. 13)."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 13. 1.1-GHz VCO. using an understanding of the physical mechanisms of phase noise [16]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "1.1-GHz VCO",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 6,
+      "caption": "Fig. 14. VCO buffer with capacitive impedance transformer.",
+      "caption_bbox": [
+        302.6,
+        440.3,
+        501.1,
+        450.9
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "A narrowband T-section capacitive transformer boosts the filter’s input impedance (Fig. 14)."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 12, DECEMBER 2001 Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "transformer",
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "VCO buffer with capacitive impedance transformer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 6,
+      "caption": "Fig. 15. Simulated frequency response and noise figure of receiver.",
+      "caption_bbox": [
+        302.6,
+        625.0,
+        522.3,
+        635.6
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 15."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 15 shows SPECTRE-RF simulations of the entire receiver."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated frequency response and noise figure of receiver",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 7,
+      "caption": "Fig. 16. Chip photograph.",
+      "caption_bbox": [
+        38.1,
+        274.4,
+        127.3,
+        285.0
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "TADJPOUR et al.: DUAL-CONVERSION LOW-IF GSM RECEIVER Fig. 16."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The chip (Fig. 16) 4 mm, the channel-select polyphase consumes an area of 2.2 filter consuming almost half of this."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-photograph": -3.0,
+        "-chip photo": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chip photograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 7,
+      "caption": "Fig. 17. Measured input reflection coefficient versus frequency.",
+      "caption_bbox": [
+        38.1,
+        479.8,
+        246.7,
+        490.4
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 17."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The measured input return loss is 12 dB in the GSM band (Fig. 17)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "900-MHz Dual-Conversion Low-IF GSM Receiver in 0.35-m CMOS",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured input reflection coefficient versus frequency",
+        "key_specs": [
+          "12 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 7,
+      "caption": "Fig. 18. Measured on-chip image rejection at first IF.",
+      "caption_bbox": [
+        301.1,
+        445.1,
+        476.6,
+        455.7
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Electrostatic discharge (ESD) protection comprises Fig. 18."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Front-end insertion gain is 20 dB in the GSM band, and it rejects the image on-chip by more than 55 dB (Fig. 18)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "ESD protection circuit",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured on-chip image rejection at first IF",
+        "key_specs": [
+          "20 dB",
+          "55 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 7,
+      "caption": "Fig. 19. Measured receiver cascade noise figure.",
+      "caption_bbox": [
+        301.1,
+        625.7,
+        461.8,
+        636.3
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 19."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The extrapolated 3-dB flicker corner frequency is below 20 kHz, where the spectral density of the wanted channel is down by more than 10 dB and the higher noise no longer matters (Fig. 19)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured receiver cascade noise figure",
+        "key_specs": [
+          "20 kHz",
+          "10 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 20,
+      "label": "Fig. 20",
+      "page": 8,
+      "caption": "Fig. 20. Measured frequency response and gain range of channel select filter.",
+      "caption_bbox": [
+        39.6,
+        573.9,
+        290.5,
+        584.5
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "TABLE I MEASURED REJECTION OF LIKELY BLOCKING SIGNALS Fig. 20."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Its gain may be swept from about as shown in Fig. 20."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured frequency response and gain range of channel select filter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 21,
+      "label": "Fig. 21",
+      "page": 8,
+      "caption": "Fig. 21. Measured cascade frequency response of receiver to desired signal and second image.",
+      "caption_bbox": [
+        302.6,
+        582.9,
+        553.7,
+        602.5
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Due to onset of flicker noise, receiver IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 12, DECEMBER 2001 Fig. 21."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The measured frequency response of the entire receiver at IF2, shown in Fig. 21, plots gain to the image at the second IF."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured cascade frequency response of receiver to desired signal and second image",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 22,
+      "label": "Fig. 22",
+      "page": 9,
+      "caption": "Fig. 22. Measured VCO phase noise.",
+      "caption_bbox": [
+        38.1,
+        250.3,
+        162.9,
+        260.9
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "TADJPOUR et al.: DUAL-CONVERSION LOW-IF GSM RECEIVER Fig. 22."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The measured VCO phase noise at 1140 MHz is shown in Fig. 22."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-phase noise": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured VCO phase noise",
+        "key_specs": [
+          "1140 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 4,
+  "warnings": []
+}

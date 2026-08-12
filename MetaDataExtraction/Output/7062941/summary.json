@@ -1,0 +1,42 @@
+{
+  "title": "A 2-Channel -83.2dB Crosstalk 0.061mm2 CCIA with an Orthogonal Frequency Chopping Technique Yi-Lin Tsai, Feng-Wen Lee, Tzu-Ying Chen, Tsung-Hsien Lin",
+  "bibliography": {
+    "authors": [],
+    "venue": "",
+    "year": 2015,
+    "doi": "",
+    "keywords": []
+  },
+  "figure_number": "Figure 5.3.1 shows the block diagram of the reported 2-channel CCIA and illustrates the frequency domain operation. While this operation concept can be in principle extended to an n-channel design, a 2-channel prototype is demonstrated in this work. In this circuit (Fig. 5.3.1), two chopping frequencies, f1 and f2, are applied to modulate and demodulate the 2 input signals, V1 and V2, respectively, while sharing a single CCIA. It can be observed that if f1 and f2 are orthogonal, the 2 output signals, VO1 and VO2, contain only the corresponding amplified signals with respect to inputs V1 and V2. The crosstalk signals from the adjacent channel are shifted out of baseband and can be eliminated by subsequent analog signal processing circuits, such as a lowpass filter. To ensure orthogonality in this work, f1=fchop and f2=2fchop. If f1 and f2 are both 50% duty-cycled square-wave signals, the first chopper modulates V1 to odd harmonics of fchop, appearing at fchop, 3fchop, 5fchop, etc. Meanwhile, V2 is modulated to odd harmonics of 2fchop, appearing at 2fchop, 6fchop, 10fchop, etc. Both modulated signals traveling through the CCIA are demodulated back to baseband and appear only at the respective output terminals. In an n-channel CCIA adopting the OFC technique, the chopping frequencies can be selected as fi=(2i-1)fchop, i=1 to n (i.e., f1=fchop, f2=2fchop, f3=4fchop, f4=8fchop, for n=4). As the number of shared channels, n, increases, the area reduction due to the reduced number of opamps (n-1) also increases. On the other hand, the design requirement of the shared opamp is more stringent as the opamp must accommodate a higher frequency. The optimum choice of n depends on which factor (chip area or power) is the primary design consideration in a given system.",
+  "type": "filter",
+  "technology": "CMOS, 35μm process",
+  "application": "wireless, baseband, if",
+  "sub_blocks": [
+    "capacitor",
+    "resistor",
+    "transistor/MOSFET",
+    "op-amp"
+  ],
+  "function_summary": "circuit",
+  "design_purpose": "",
+  "metrics": [
+    "Gain",
+    "Supply voltage",
+    "Efficiency / ratio",
+    "Frequency"
+  ],
+  "numerical_performance": [
+    "-83.2dB",
+    "5.3 w",
+    "0.35μm",
+    "3V",
+    "0.55%",
+    "10dB",
+    "50%",
+    "10kHz",
+    "20kHz",
+    "40dB"
+  ],
+  "confidence": 1.0,
+  "warnings": []
+}

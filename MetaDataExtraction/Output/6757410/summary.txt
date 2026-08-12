@@ -1,0 +1,63 @@
+# A BJT-Based CMOS Temperature Sensor with a 3.6pJ·K2-Resolution FoM Ali Heidary1,2,3, Guijie Wang1,2, Kofi Makinwa2, Gerard Meijer1,2,4
+
+VENUE
+"2014"
+
+FIGURE NUMBER
+"Figure 12.8.2 shows a simplified block diagram of the actual sensor. Substrate PNPs Q1 and Q2 are biased at a 1:9 current density ratio, and an opamp (OP1) forces the resulting voltage ΔVBE =VTln(9) across a resistor RPTAT to generate a PTAT current IPTAT=ΔVBE/RPTAT (0.8μA at room temperature). Similarly, OP2 and another resistor RBE convert the base-emitter voltage VBE3 of Q3 into a CTAT current ICTAT=VBE3/RBE. These currents are then linearly combined such that the capacitor C is charged by a current 3IPTAT-0.5ICTAT and is discharged by a current ICTAT-IPTAT. To ensure accuracy over a wide supply range, all the associated current mirrors/sources are cascoded. As in [3], the sum of the charging and discharging currents, i.e., 2IPTAT+0.5ICTAT, is designed to have a slightly positive temperature coefficient, which effectively compensates for the curvature in VBE3. As shown in Fig. 12.8.1, this scheme ensures that D now varies from about 10% to 90% over the desired temperature range [1]. An important source of error is the PTAT spread of VBE3 [1]. This can be corrected by trimming the bias current and emitter area of Q3. The total trimming range is about 10°C, with a worst-case step of about 50mK. Another source of error is device mismatch, which causes the ratios between the various charging and discharging currents to spread. The ratio RBE/RPTAT is set by using large devices (RBE ~200kΩ) and careful layout, while the effect of opamp offset (and 1/f noise) is mitigated by chopping. Errors in the various current-mirror and resistor ratios, as well as in the emitter area ratio of the substrate PNPs are mitigated by DEM. Since the DEM switches around Q1 and Q2 carry their bias currents, and so drop some voltage, Kelvin connections are used to accurately sense ΔVBE [4]. The DEM and chopping state machines are self-clocked (by the Schmitt trigger), and so no external clock is required. A full DEM and chopping cycle corresponds to 8 oscillator periods. The finite gain of OP1 and OP2 also causes errors in IPTAT and ICTAT, respectively. In order to keep the resulting temperature-sensing errors below 50mK, the gains of OP1 and OP2, must be greater than 90dB and 70dB, respectively. Moreover, they must be able to handle input voltages (VBE) down to about 0.3V at 130°C. Both requirements are met by implementing OP1 and OP2 as folded-cascode amplifiers with PMOS input pairs, which draw 20μA and 7μA, respectively. As shown in Fig. 12.8.3, the ST is based on two inverters in series with a positive feedback path that controls the threshold voltages of the first one. When the ST’s output is HIGH, M1 is bypassed by M6, and so its lower threshold (V1 in Fig. 12.8.1) is set by the threshold voltage of M2, i.e., VTH2. When its output is LOW, M4 is bypassed by M5, and so its upper threshold voltage (V2 in Fig. 12.8.1) is close to VDD-|VTH3|. The amount of positive feedback is determined by the relative W/L ratios of M2,3 and M1,4. The large swing (~ VDD – 2V) at the ST’s input"
+
+TYPE
+"BJT-Based CMOS Temperature Sensor"
+
+TECHNOLOGY
+"CMOS, BJT, 7μm process"
+
+APPLICATION
+"if"
+
+SUB-BLOCKS
+[
+  "capacitor",
+  "resistor",
+  "transistor/MOSFET",
+  "current mirror",
+  "switch",
+  "differential pair",
+  "op-amp",
+  "clock / timing"
+]
+
+FUNCTION SUMMARY
+"BJT-Based CMOS Temperature Sensor"
+
+METRICS
+[
+  "Energy per operation",
+  "Efficiency / ratio",
+  "Gain",
+  "Supply voltage",
+  "Capacitance",
+  "Frequency"
+]
+
+NUMERICAL PERFORMANCE
+[
+  "3.6pJ",
+  "30%",
+  "10%",
+  "90%",
+  "90dB",
+  "70dB",
+  "0.3V",
+  "2V",
+  "150pF",
+  "4kHz"
+]
+
+CONFIDENCE
+0.32
+
+WARNINGS
+[
+  "Recommended figure was classified as 'layout_photo', not a schematic; manual confirmation strongly recommended."
+]

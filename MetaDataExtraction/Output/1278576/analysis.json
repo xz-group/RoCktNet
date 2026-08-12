@@ -1,0 +1,1122 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1278576.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1278576",
+  "generated_at": "2026-07-29T22:01:37",
+  "paper_metadata": {
+    "title": "A CMOS Oversampling Bandpass Cascaded D/A Converter With Digital FIR and Current-Mode Semi-Digital Filtering",
+    "authors": [
+      "David B. Barkin",
+      "Andrew C. Y. Lin",
+      "David K. Su",
+      "Bruce A. Wooley"
+    ],
+    "abstract": "An oversampling bandpass digital-to-analog converter has been designed so as to eliminate the carrier leak and in-band SNR degradation that accompany and channel mismatch in wireless transmitters. The converter combines a cascaded noise-shaping sigma-delta () modulator with digital finite impulse response (FIR) and mixed-signal semi-digital filters that attenuate out-of-band quantization noise. The performance of the converter in the presence of current source mismatch has been improved through the use of bandpass data weighted averaging. An experimental prototype of the converter, integrated m CMOS technology, provides 83 dB of dynamic range in a 0.25for a 6.25-MHz signal band centered at 50 MHz, and suppresses out-of-band quantization noise by 38 dB.",
+    "keywords": [
+      "Bandpass digital-to-analog conversion",
+      "CMOS integrated circuits",
+      "data-weighted averaging",
+      "digital-analog con-"
+    ],
+    "doi": "10.1109/JSSC.2004.825245",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2004
+  },
+  "paper_circuit_context": {
+    "circuit_type": "CMOS Oversampling Bandpass Cascaded D/A Converter",
+    "technology": "CMOS",
+    "application_domain": "wireless, baseband, if",
+    "sub_blocks": [
+      "transistor/MOSFET",
+      "current source",
+      "transmission line",
+      "mixer",
+      "switch",
+      "latch",
+      "balun",
+      "clock / timing"
+    ],
+    "design_purpose": "",
+    "function_summary": "CMOS Oversampling Bandpass Cascaded D/A Converter: An oversampling bandpass digital-to-analog converter has been designed so as to eliminate the carrier leak and in-band SNR degradation that accompany and channel mismatch in wireless transmitters.",
+    "key_specs": [
+      "83 dB",
+      "50 MHz",
+      "38 dB",
+      "6.25 MHz",
+      "200 MHz",
+      "215 mW",
+      "100 MHz",
+      "80 dB",
+      "49 dB",
+      "112 dB"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T RANSMITTERS for wireless communications often employ architectures in which digital quadrature baseband signals are first converted to analog quadrature baseband signals and then filtered and mixed to an intermediate frequency (IF), as depicted in Fig. 1. This transmitter architecture suffers from the problem that mismatches among the digital-to-analog (D/A) converters, low-pass filters, and qua ..."
+    },
+    {
+      "number": "II",
+      "title": "BANDPASS NOISE-SHAPED D/A CONVERSION",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "Shown in Fig. 2 is a functional diagram of the proposed bandand signals are pass D/A converter. The digital baseband Fig. 2. Proposed DAC architecture. first upsampled and then fed into oversampled low-pass noiseshaping modulators. The outputs from the digital noise shapers are mixed to IF in the digital domain and then converted into analog signals using a bandpass D/A converter with integrated a ..."
+    },
+    {
+      "number": "III",
+      "title": "SEMI-DIGITAL AND DIGITAL FIR FILTERING",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "Fig. 5 shows the structure of the semi-digital filter, in which the outputs of a serial register acting as a digital delay line control a series of weighted current sources. The current source weights serve as the filter tap values. Mismatch among the weighted current sources in a semi-digital filter alters the filter transfer function but does not introduce nonlinearity in the signal path. Thus,  ..."
+    },
+    {
+      "number": "IV",
+      "title": "MATCHING REQUIREMENTS",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "In-band noise resulting from mismatch among the current sources in the error-cancellation D/A converter is suppressed with a dynamic element matching scheme. Since the second stage of the noise-shaping modulator serves to estimate the quantization error in the first stage, the output of the second stage is a noisy wide-band signal containing a relatively small component of the converter’s input si ..."
+    },
+    {
+      "number": "V",
+      "title": "CIRCUIT DESIGN AND IMPLEMENTATION",
+      "kind": "design",
+      "page": 4,
+      "text_preview": "A. Digital Circuitry A prototype of the proposed bandpass D/A converter has been integrated in a single-poly, five-metal, 0.25m CMOS technology fabricated on an epitaxial substrate with a heavily doped bulk. The digital circuitry, including input interpolation, noise shaping, digital filtering, and element selection logic, was implemented using a standard cell library and place and route tools. To ..."
+    },
+    {
+      "number": "VI",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 6,
+      "text_preview": "A die micrograph of the experimental bandpass D/A converter m is shown in Fig. 17. The circuit was integrated in a 0.25- . The input CMOS technology in an active area of 2.1 mm and channel interpolators, noise shapers, FIR demultiplexer, filters, and DWA element selection logic are included on the left side of the die as it appears in the photograph. This circuitry operates off of the 1.5-V power  ..."
+    },
+    {
+      "number": "VII",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 7,
+      "text_preview": "This paper introduces a bandpass cascaded noise-shaping D/A converter that utilizes digital mixers to convert baseband and signals to IF. Quantization noise from the 1-bit first stage of the digital modulator is cancelled after conversion to the analog domain. Both semi-digital and digital FIR filtering are employed to suppress out-of-band quantization noise, easing the requirements on any analog  ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Traditional wireless transmitter architecture.",
+      "caption_bbox": [
+        301.1,
+        353.4,
+        471.7,
+        361.3
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "T RANSMITTERS for wireless communications often employ architectures in which digital quadrature baseband signals are first converted to analog quadrature baseband signals and then filtered and mixed to an intermediate frequency (IF), as depicted in Fig. 1."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "transmitter",
+        "technology": "CMOS",
+        "application_domain": "wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Traditional wireless transmitter architecture",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Proposed DAC architecture.",
+      "caption_bbox": [
+        39.6,
+        232.1,
+        158.4,
+        240.0
+      ],
+      "section_title": "II. BANDPASS NOISE-SHAPED D/A CONVERSION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "BANDPASS NOISE-SHAPED D/A CONVERSION",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Shown in Fig. 2 is a functional diagram of the proposed bandand signals are pass D/A converter."
+        },
+        {
+          "section_title": "BANDPASS NOISE-SHAPED D/A CONVERSION",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The digital baseband Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.8,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "+proposed": 3.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS",
+        "application_domain": "wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Proposed DAC architecture",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.86,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Digital cascaded noise shaper with DAC interface.",
+      "caption_bbox": [
+        302.6,
+        240.5,
+        492.7,
+        248.4
+      ],
+      "section_title": "II. BANDPASS NOISE-SHAPED D/A CONVERSION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "BANDPASS NOISE-SHAPED D/A CONVERSION",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "As complished with a cascaded, oversampled shown in Fig. 3, the first stage is a low-pass second-order 1-bit modulator that encodes the input signal."
+        },
+        {
+          "section_title": "BANDPASS NOISE-SHAPED D/A CONVERSION",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The use of 4-bit quantization in the error-cancellation stage enables the design of a third-order modulator IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 4, APRIL 2004 Fig. 3."
+        },
+        {
+          "section_title": "BANDPASS NOISE-SHAPED D/A CONVERSION",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 3 also illustrates the functional blocks required at the output of a digital cascaded noise shaper."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS",
+        "application_domain": "wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "The use of 4-bit quantization in the error-cancellation stage enables the design of a third-order modulator IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 4, APRIL 2004 Fig. 3.",
+        "function_summary": "Digital cascaded noise shaper with DAC interface. The use of 4-bit quantization in the error-cancellation stage enables the design of a third-order modulator IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 4, APRIL 2004 Fig. 3.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Proposed D/A converter architecture with integrated filtering.",
+      "caption_bbox": [
+        38.1,
+        230.6,
+        263.0,
+        238.6
+      ],
+      "section_title": "II. BANDPASS NOISE-SHAPED D/A CONVERSION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "BANDPASS NOISE-SHAPED D/A CONVERSION",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Shown in Fig. 4 is the architecture of the proposed D/A converter; only one of the two parallel quadrature paths is and signals included in the figure."
+        },
+        {
+          "section_title": "BANDPASS NOISE-SHAPED D/A CONVERSION",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Reconstruction filtering is integrated into the D/A BARKIN et al.: CMOS OVERSAMPLING BANDPASS CASCADED DAC WITH DIGITAL FIR AND CURRENT-MODE SEMI-DIGITAL FILTERING Fig. 4."
+        },
+        {
+          "section_title": "BANDPASS NOISE-SHAPED D/A CONVERSION",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The use of semi-digital filtering is impractical in the errorcancellation path of Fig. 4 because the multi-bit signal would require the use of a prohibitively large number of well-matched current sources."
+        },
+        {
+          "section_title": "MATCHING REQUIREMENTS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "While the architecture in Fig. 4 is insensitive to statistical current source mismatches, it is sensitive to systematic gain mismatch between the semi-digital filter and the digital FIR filter and error-cancellation D/A interface."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.6,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "+proposed": 3.0,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS",
+        "application_domain": "wireless, baseband, if",
+        "sub_blocks": [
+          "current source"
+        ],
+        "design_purpose": "",
+        "function_summary": "Proposed D/A converter architecture with integrated filtering",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.74,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Semi-digital filter.",
+      "caption_bbox": [
+        38.1,
+        336.5,
+        125.6,
+        344.4
+      ],
+      "section_title": "II. BANDPASS NOISE-SHAPED D/A CONVERSION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "BANDPASS NOISE-SHAPED D/A CONVERSION",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 5."
+        },
+        {
+          "section_title": "SEMI-DIGITAL AND DIGITAL FIR FILTERING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 5 shows the structure of the semi-digital filter, in which the outputs of a serial register acting as a digital delay line control a series of weighted current sources."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "wireless, baseband, if",
+        "sub_blocks": [
+          "current source"
+        ],
+        "design_purpose": "",
+        "function_summary": "Semi-digital filter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. Error-cancellation path, including digital FIR filter and second-order differentiator.",
+      "caption_bbox": [
+        301.1,
+        165.7,
+        552.2,
+        182.6
+      ],
+      "section_title": "II. BANDPASS NOISE-SHAPED D/A CONVERSION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SEMI-DIGITAL AND DIGITAL FIR FILTERING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Thus, the use of a semi-digital filter in the 1-bit signal path maintains the inherent linearity of the 1-bit D/A Fig. 6."
+        },
+        {
+          "section_title": "SEMI-DIGITAL AND DIGITAL FIR FILTERING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 6 illustrates the digital filtering in the error-cancellation path."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Error-cancellation path, including digital FIR filter and second-order differentiator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Bandpass DWA element selection algorithm.",
+      "caption_bbox": [
+        39.6,
+        181.5,
+        211.8,
+        189.4
+      ],
+      "section_title": "III. SEMI-DIGITAL AND DIGITAL FIR FILTERING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SEMI-DIGITAL AND DIGITAL FIR FILTERING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Thus, the noise-cancellation signal has, at most, one-fourth the amplitude of a full-scale Fig. 7."
+        },
+        {
+          "section_title": "MATCHING REQUIREMENTS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "As depicted in Fig. 7, the bandpass DWA algorithm functions in a similar fashion to standard low-pass rotational rather than dc, the DWA."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "CMOS Oversampling Bandpass Cascaded D/A Converter",
+        "technology": "CMOS",
+        "application_domain": "wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Bandpass DWA element selection algorithm",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. Histogram of DAC dynamic range with unit current source mismatches of 1% with and without bandpass DWA.",
+      "caption_bbox": [
+        302.6,
+        367.7,
+        553.7,
+        384.6
+      ],
+      "section_title": "IV. MATCHING REQUIREMENTS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MATCHING REQUIREMENTS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 8."
+        },
+        {
+          "section_title": "MATCHING REQUIREMENTS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The histogram in Fig. 8 illustrates that the use of DWA in the error-cancellation path in this design not only improves the expected peak SNDR, but also the variance in peak SNDR."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS",
+        "application_domain": "wireless, baseband, if",
+        "sub_blocks": [
+          "current source"
+        ],
+        "design_purpose": "",
+        "function_summary": "Histogram of DAC dynamic range with unit current source mismatches of 1% with and without bandpass DWA",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. Dynamic range versus gain error between signal and error-cancellation paths.",
+      "caption_bbox": [
+        38.1,
+        217.8,
+        289.1,
+        234.7
+      ],
+      "section_title": "IV. MATCHING REQUIREMENTS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MATCHING REQUIREMENTS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "In order to assess the sensitivity of the converter to a systematic gain error between the signal and error-cancellation paths, the dynamic range was determined under the assumption that all of the unit current BARKIN et al.: CMOS OVERSAMPLING BANDPASS CASCADED DAC WITH DIGITAL FIR AND CURRENT-MODE SEMI-DIGITAL FILTERING Fig. 9."
+        },
+        {
+          "section_title": "MATCHING REQUIREMENTS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Shown in Fig. 9 is the simulated dynamic range as a function of gain error between the semi-digital filter and the error-cancellation D/A interface."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS",
+        "application_domain": "wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "In order to assess the sensitivity of the converter to a systematic gain error between the signal and error-cancellation paths, the dynamic range was determined under the assumption that all of the unit current BARKIN et al.: CMOS OVERSAMPLING BANDPASS CASCADED DAC WITH DIGITAL FIR AND CURRENT-MODE SEMI-DIGITAL ...",
+        "function_summary": "Dynamic range versus gain error between signal and error-cancellation paths. In order to assess the sensitivity of the converter to a systematic gain error between the signal and error-cancellation paths, the dynamic range was determined under the assumption that all of the unit current BARKIN et al.: CMOS ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10.",
+      "caption_bbox": [
+        301.1,
+        203.4,
+        325.9,
+        211.3
+      ],
+      "section_title": "IV. MATCHING REQUIREMENTS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 10."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "In order to operate at 100 MHz from a 1.5-V supply, the third-order was realized with a delay element in the forward path to improve the critical path timing, as shown in Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "delay line / delay element",
+        "technology": "CMOS",
+        "application_domain": "wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "In order to operate at 100 MHz from a 1.5-V supply, the third-order was realized with a delay element in the forward path to improve the critical path timing, as shown in Fig. 10.",
+        "function_summary": "delay line / delay element. In order to operate at 100 MHz from a 1.5-V supply, the third-order was realized with a delay element in the forward path to improve the critical path timing, as shown in Fig. 10.",
+        "key_specs": [
+          "100 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 4,
+      "caption": "Fig. 11. DWA thermometer decoder hardware architecture.",
+      "caption_bbox": [
+        301.1,
+        386.0,
+        495.2,
+        394.0
+      ],
+      "section_title": "V. CIRCUIT DESIGN AND IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 11."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "As depicted in Fig. 11, the element selection decoding is implemented by calculating the addresses of the lower and uppermost current sources that should be switched to the output."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The digital and analog test signals shown in Fig. 11 allow verification of the digital half of the chip, as well as direct control of the current sources for analog testing."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The pads contain basic electrostatic discharge (ESD) protection, and the extra row of pads on the bottom edge of the chip allow access to digital test points, including those noted in Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.1,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "temperature reference / sensor",
+        "technology": "CMOS",
+        "application_domain": "wireless, baseband, if",
+        "sub_blocks": [
+          "current source"
+        ],
+        "design_purpose": "",
+        "function_summary": "DWA thermometer decoder hardware architecture",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.75,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 5,
+      "caption": "Fig. 12. Current source array layout.",
+      "caption_bbox": [
+        39.6,
+        197.2,
+        162.6,
+        205.2
+      ],
+      "section_title": "V. CIRCUIT DESIGN AND IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The wrap signal indicates when the Fig. 12."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Current Source Layout and Selection Order In order to reduce the effect of processing gradients, the current sources are laid out as two subarrays mirrored in both the X and Y directions, as shown in Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "-layout": -2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "CMOS Oversampling Bandpass Cascaded D/A Converter",
+        "technology": "CMOS",
+        "application_domain": "wireless, baseband, if",
+        "sub_blocks": [
+          "current source"
+        ],
+        "design_purpose": "Current Source Layout and Selection Order In order to reduce the effect of processing gradients, the current sources are laid out as two subarrays mirrored in both the X and Y directions, as shown in Fig. 12.",
+        "function_summary": "Current source array layout. Current Source Layout and Selection Order In order to reduce the effect of processing gradients, the current sources are laid out as two subarrays mirrored in both the X and Y directions, as shown in Fig. 12.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 5,
+      "caption": "Fig. 13. Error-cancellation D/A converter element selection order.",
+      "caption_bbox": [
+        302.6,
+        170.7,
+        518.8,
+        178.7
+      ],
+      "section_title": "V. CIRCUIT DESIGN AND IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Since cellation D/A converter is implemented as a 5 IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 4, APRIL 2004 Fig. 13."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The D/A converter selection order is depicted in Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS",
+        "application_domain": "wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Error-cancellation D/A converter element selection order",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 5,
+      "caption": "Fig. 14. Unit current source circuitry.",
+      "caption_bbox": [
+        302.6,
+        315.8,
+        428.2,
+        323.8
+      ],
+      "section_title": "V. CIRCUIT DESIGN AND IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 14."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Analog Circuits Fig. 14 illustrates the circuits used to implement the switched current source, retiming latch, and low-swing driver in each cell in the array."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "line / output driver",
+        "technology": "CMOS",
+        "application_domain": "wireless, baseband, if",
+        "sub_blocks": [
+          "current source",
+          "latch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Unit current source circuitry",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 6,
+      "caption": "Fig. 15. Peak attainable SNDR versus unit current cell output resistance.",
+      "caption_bbox": [
+        38.1,
+        220.4,
+        275.1,
+        228.4
+      ],
+      "section_title": "V. CIRCUIT DESIGN AND IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The current source with a parallel output resistance, BARKIN et al.: CMOS OVERSAMPLING BANDPASS CASCADED DAC WITH DIGITAL FIR AND CURRENT-MODE SEMI-DIGITAL FILTERING Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.9,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.4
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS",
+        "application_domain": "wireless, baseband, if",
+        "sub_blocks": [
+          "current source"
+        ],
+        "design_purpose": "",
+        "function_summary": "Peak attainable SNDR versus unit current cell output resistance",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.11,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 6,
+      "caption": "Fig. 16. RMS jitter versus simulated peak attainable SNDR with and without integrated filtering.",
+      "caption_bbox": [
+        38.1,
+        387.8,
+        289.2,
+        404.7
+      ],
+      "section_title": "VI. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 16."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "As shown in Fig. 16, simulations reveal that an RMS clock jitter of just over 1 ps is required to attain a peak SNDR of 80 dB when integrated filtering is included in the design."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "CMOS Oversampling Bandpass Cascaded D/A Converter",
+        "technology": "CMOS",
+        "application_domain": "wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "RMS jitter versus simulated peak attainable SNDR with and without integrated filtering",
+        "key_specs": [
+          "1 ps",
+          "80 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 6,
+      "caption": "Fig. 17. Die microphotograph.",
+      "caption_bbox": [
+        301.1,
+        217.1,
+        404.6,
+        225.1
+      ],
+      "section_title": "V. CIRCUIT DESIGN AND IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 17."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "A die micrograph of the experimental bandpass D/A converter m is shown in Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS",
+        "application_domain": "wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Die microphotograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 6,
+      "caption": "Fig. 18. Test setup.",
+      "caption_bbox": [
+        301.1,
+        419.3,
+        368.4,
+        427.3
+      ],
+      "section_title": "VI. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 18."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 18 shows the test setup used to characterize the performance of the experimental chip."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-setup": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "CMOS Oversampling Bandpass Cascaded D/A Converter",
+        "technology": "CMOS",
+        "application_domain": "wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Test setup",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 7,
+      "caption": "Fig. 19. Measured output spectra (resolution bandwidth, 30 kHz).",
+      "caption_bbox": [
+        39.6,
+        230.5,
+        255.0,
+        238.5
+      ],
+      "section_title": "VI. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 19."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The effectiveness of the semi-digital and digital FIR filters is demonstrated by the measured spectra plotted in Fig. 19."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured output spectra (resolution bandwidth, 30 kHz)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 20,
+      "label": "Fig. 20",
+      "page": 7,
+      "caption": "Fig. 20. Measured dynamic performance.",
+      "caption_bbox": [
+        39.6,
+        415.5,
+        178.0,
+        423.5
+      ],
+      "section_title": "VII. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 20."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Shown in Fig. 20 are the measured SNDR and spurious-free dynamic range (SFDR) for the prototype, demonstrating that a dynamic range of 83 dB was achieved for a signal bandwidth of 6.25 MHz."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "CMOS Oversampling Bandpass Cascaded D/A Converter",
+        "technology": "CMOS",
+        "application_domain": "wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured dynamic performance",
+        "key_specs": [
+          "83 dB",
+          "6.25 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 4,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

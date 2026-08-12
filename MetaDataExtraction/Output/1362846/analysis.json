@@ -1,0 +1,1144 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1362846.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1362846",
+  "generated_at": "2026-07-29T22:02:12",
+  "paper_metadata": {
+    "title": "A Burst-Mode Receiver for 1.25-Gb/s Ethernet PON With AGC and Internally Created Reset Signal",
+    "authors": [
+      "Quan Le",
+      "Sang-Gug Lee",
+      "Yong-Hun Oh",
+      "Ho-Yong Kang",
+      "Tae-Hwan Yoo"
+    ],
+    "abstract": "This paper presents a burst-mode receiver for 1.25-Gb/s Ethernet PON system using mixed-mode CMOS Therefore, the OLT receives a bursty signal with a large power 0.18m technology. With the modified cell-based AGC function difference between bursts. Defining the loud/soft ratio as the and differential feed-forward topology, the receiver achieves sensiratio between power levels of the strongest and weakest bursts 26 4 dBm, overload of 5 4 dBm, and a loud/soft ratio tivity of in the system, the EPON standard requires a high loud/soft ratio of 21 dB while keeping the low-voltage positive emitter-coupled logic (LVPECL) differential output level fully compliant with to allow for flexible network configuration. The worst case is the Ethernet Passive Optical Network (EPON) standard. Unlike when the strongest and weakest bursts go alternatively after each other burst-mode receivers, the design obtains fast response even other. To obtain high transmission efficiency, the guard time and without a reset signal from the network layer by creating a reset preamble time should be minimized. It means that the receiver signal internally based on the incoming signal. This setting allows at the OLT must have a fast response to amplitude variation and for simple system design. The overall architecture and several blocks are optimized in accordance with internal reset creation. a short settling time, e.g., less than 400 ns in the EPON stanMinimum guard time and preamble time are 250 and 50 ns, dard. Therefore, the conventional receiver for continuous-mode respectively; all timing parameters are better than the current transmission with slow response and long settling time is not EPON standard. The prototype contains all components on-chip 1.9 mm2 and consumes 160 mA current from suitable for the OLT. Due to the fundamental difference bethat occupies 0.9 a 3.3-V supply. tween burst-mode and continuous-mode operation, burst-mode receiver design at a Gb/s data rate remains in the initial stage,",
+    "keywords": [
+      "Burst-mode",
+      "cell-based AGC",
+      "EPON",
+      "feed-forward",
+      "optical communication",
+      "reset"
+    ],
+    "doi": "10.1109/JSSC.2004.835644",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2004
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Burst-Mode Receiver",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "current source",
+      "output buffer",
+      "switch",
+      "differential pair",
+      "mixer"
+    ],
+    "design_purpose": "To obtain high transmission efficiency, the guard time and without a reset signal from the network layer by creating a reset preamble time should be minimized.",
+    "function_summary": "Burst-Mode Receiver: To obtain high transmission efficiency, the guard time and without a reset signal from the network layer by creating a reset preamble time should be minimized.",
+    "key_specs": [
+      "4 dBm",
+      "21 dB",
+      "400 ns",
+      "50 ns",
+      "6 dB",
+      "1 GHz",
+      "4.4 dB",
+      "250 fF",
+      "800 MHz",
+      "0.8 V"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "D UE TO RAPID growth in IP trafﬁc, there is an increasing demand for a broadband access network. The Ethernet Passive Optical Network (EPON) is a prospective solution to bring a very high data rate to the end-user in the ﬁber-to-thehome (FTTH) conﬁguration. Fig. 1 shows the general architecture of an EPON. Multiple optical network units (ONUs) are connected to an optical line terminal (OLT) throug ..."
+    },
+    {
+      "number": "II",
+      "title": "GENERAL REQUIREMENT FOR A BURST-MODE RECEIVER IC",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "For the incoming burst signal of the OLT, guard time ranges from tens of nanosecond to less than 1 ms. The feedback Fig. 1. EPON architecture. topology in [9]–[11] requires signiﬁcant guard time to recover packet data and therefore is not suitable for the EPON system. To reduce the required guard time, the feedback topology needs high-speed devices to form a feedback network which is much faster t ..."
+    },
+    {
+      "number": "III",
+      "title": "CIRCUIT DESIGN",
+      "kind": "design",
+      "page": 1,
+      "text_preview": "The block diagram of the proposed receiver is depicted in Fig. 2. The receiver consists of a TIA that converts input current from the photodiode to output voltage, a single-to-differential ampliﬁer (S2D) to amplify and convert the single-ended output of the TIA into a differential signal, several limiting ampliﬁers (LAs), and a buffer to further amplify the signal to a limited amat the low-voltage ..."
+    },
+    {
+      "number": "IV",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 6,
+      "text_preview": "m The proposed receiver is fabricated in mixed-mode 0.18CMOS technology with all components on chip and tested in chip-on-board assembly. A pig-tailed photodiode with intrinsic parasitic capacitance of 1 pF is used in the module. If a die photodiode without additional package parasitic capacitance is used instead, the receiver can have larger bandwidth and lower noise [14], [15]. The test ﬁxture i ..."
+    },
+    {
+      "number": "V",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 8,
+      "text_preview": "This study demonstrates a burst-mode receiver IC working at 1.25 Gb/s. The IC employs several design techniques to achieve high data rate in burst-mode operation. The newly proposed techniques includes • modiﬁed cell-based AGC in TIA-AGC block; • an internal reset creation concept and circuits, which allow for simple system design; • the use of special LA with switch block for internal reset creat ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. EPON architecture.",
+      "caption_bbox": [
+        39.6,
+        246.3,
+        131.4,
+        254.2
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1 shows the general architecture of an EPON."
+        },
+        {
+          "section_title": "GENERAL REQUIREMENT FOR A BURST-MODE RECEIVER IC",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The feedback Fig. 1."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Recall from Fig. 1 that the OLT uses a single ﬁber to transmit and receive the upstream and downstream signals."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.7,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "Burst-Mode Receiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "EPON architecture",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.67,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 2,
+      "caption": "Fig. 2. Receiver block diagram.",
+      "caption_bbox": [
+        38.1,
+        269.0,
+        145.6,
+        276.9
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The block diagram of the proposed receiver is depicted in Fig. 2."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The dc level is detected at the beginning of a burst by top-hold (TH) and bottom-hold (BH) circuits and a 1:1 resistive divider as shown in Fig. 2."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "LE et al.: BURST-MODE RECEIVER FOR 1.25-Gb/s ETHERNET PON WITH AGC AND INTERNALLY CREATED RESET SIGNAL Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.7,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Receiver block diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.67,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. TIA-AGC circuit.",
+      "caption_bbox": [
+        38.1,
+        479.3,
+        124.1,
+        487.3
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "TIA-AGC Circuit The TIA-AGC circuit is described in Fig. 3."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "For the TIA schematic shown in Fig. 3, the variable feedback network consists of and ."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 3."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Replacing the simple feedback resistor by the variable feedback network in Fig. 3 , and , the feedback resistance as of a function of frequency is (4) where is neglected, assuming that AGC is disabled, for simplicity."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "To satisfy the requirement, the TH and BH in Fig. 5 are designed to set the Aux Output and the Main Output of TIA-AGC in Fig. 3 close to each other when reset is on within guard time."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The extension is in good agreement with 4.4 dB of the AGC range in TIA-AGC design (Fig. 3)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.5,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 2.0
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "transimpedance amplifier (TIA)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "resistor"
+        ],
+        "design_purpose": "",
+        "function_summary": "TIA-AGC circuit",
+        "key_specs": [
+          "4.4 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.62,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. TIA basic circuit.",
+      "caption_bbox": [
+        301.1,
+        374.2,
+        386.7,
+        382.2
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The transfer function of a typical TIA with a simple feedback resistor, as given in Fig. 4, can be described by (1) (2) is the voltage gain of the main ampliﬁer, is the where is the total capacitance at input node. feedback resistor, and The transfer function shows a pole at (3) The 3-dB bandwidth should be around 1 GHz to work with the 1.25-Gb/s data rate."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "In the real case where the main ampliﬁer has limited bandwidth, represented by a pole in its transfer function, (2) becomes Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "transimpedance amplifier (TIA)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "resistor"
+        ],
+        "design_purpose": "",
+        "function_summary": "TIA basic circuit",
+        "key_specs": [
+          "1 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. (a) TH and (b) BH circuits.",
+      "caption_bbox": [
+        39.6,
+        451.6,
+        156.6,
+        459.6
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 5."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The TH and BH circuits are depicted in Fig. 5(a) and (b), respectively."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Additionally, one more identical follower is inserted at the output stage in Fig. 5, just without the feedback, to improve driving capacity and avoid the loading effect that can change the hold levels."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The circuit is similar to the BH circuit in Fig. 5(b), exis placed across the hold cacept that a high value resistor , providing a path for pacitor instead of the reset transistor self-discharge without a reset signal."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "To satisfy the requirement, the TH and BH in Fig. 5 are designed to set the Aux Output and the Main Output of TIA-AGC in Fig. 3 close to each other when reset is on within guard time."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.5,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 2.0
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "transimpedance amplifier (TIA)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "resistor",
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "Additionally, one more identical follower is inserted at the output stage in Fig. 5, just without the feedback, to improve driving capacity and avoid the loading effect that can change the hold levels.",
+        "function_summary": "(a) TH and (b) BH circuits. Additionally, one more identical follower is inserted at the output stage in Fig. 5, just without the feedback, to improve driving capacity and avoid the loading effect that can change the hold levels.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.62,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "Fig. 6. LA-AOC circuit.",
+      "caption_bbox": [
+        38.1,
+        260.8,
+        121.5,
+        268.8
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The LA1, LA2, and S2D have the same topology which is depicted in Fig. 6."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "LE et al.: BURST-MODE RECEIVER FOR 1.25-Gb/s ETHERNET PON WITH AGC AND INTERNALLY CREATED RESET SIGNAL Fig. 6."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "LA With Switch Recalling the LA-AOC circuit in Fig. 6, when reset is on, the LA-AOC block has rather low gain."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "In Fig. 6, when reset is on, normal LA-AOC blocks cancel the inherent offset between the Main Output and the Aux Output of TIA-AGC, keeping the voltages at the two receiver outputs close to each other."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.1,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "transimpedance amplifier (TIA)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "LA-AOC circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.52,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. (a) Reset timing and (b) reset creation concept from the BLE signal.",
+      "caption_bbox": [
+        301.1,
+        516.0,
+        546.7,
+        524.0
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "In this section, we ﬁrst discuss the proper reset timing, study the concept of using a bottom-level envelope signal to create reset on chip, and ﬁnally analyze the detail reset creation circuit. 1) Reset Timing: To create a reset on-chip based only on the incoming burst signal, the appropriate timing for reset creation is shown in Fig. 7(a) and can be described as follows. • After the end of a burst, during guard time, an envelope detector detects the absence of the signal and via a logic circuit turns reset on. • Reset is kept on during the guard time. • At the beginning of a new burst, the envelope detector detects the presence of the signal and via a logic circuit turns reset off. • Reset is kept off until the end of the burst, and then reset is turned on again during the next guard time."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "As shown in Fig. 7(a), the ﬁrst portion of burst data—the dummy pattern—lies in the reset-on period and, therefore, is distorted."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "After a burst, the reset creation circuit needs some time to detect the signal’s absence so the reset is turned on with some delay compared to the actual burst period. 2) Bottom-Level Envelope and Reset Creation: Fig. 7(b) depicts output waveforms and its bottom-level envelope (BLE)."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Ideally, during guard time when no signal comes into the receiver, the voltages at the two receiver outputs become equal to the dc level, as shown in Fig. 7(b)."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "By comparing this envelope signal to a reference voltage located between the dc level and the negative peak of output swing [Fig. 7(b)], with some additional logic circuits, reset is turned on during guard time and turned off during the burst period. 3) Circuit Implementation: The reset creation circuit block diagram is shown in Fig. 8."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Recall in Fig. 7(b) the reset creation concept: in a real case, output voltages vary arbitrarily after a burst, depending on the burst input power level."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 7."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "In Fig. 7(b), after a burst, a BLE signal of an output rises up , thereby turning reset on."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.5,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Reset timing and (b) reset creation concept from the BLE signal",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.38,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 5,
+      "caption": "Fig. 8. Reset creation circuit block diagram.",
+      "caption_bbox": [
+        39.6,
+        232.7,
+        187.5,
+        240.7
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "By comparing this envelope signal to a reference voltage located between the dc level and the negative peak of output swing [Fig. 7(b)], with some additional logic circuits, reset is turned on during guard time and turned off during the burst period. 3) Circuit Implementation: The reset creation circuit block diagram is shown in Fig. 8."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Therefore, the digital method of triggering Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "Burst-Mode Receiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Reset creation circuit block diagram",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.72,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 5,
+      "caption": "Fig. 9. Simulated reset creation process (a) from high to low power bursts and (b) from low to high power bursts.",
+      "caption_bbox": [
+        39.6,
+        681.6,
+        290.7,
+        698.6
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "An illustration of the reset turn-on process is shown in Fig. 9."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 9."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "In Fig. 9, when a new burst comes in, it creates transition at receiver outputs."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Note the similarity between the simulation result in Fig. 9(a) and (b) and the measurement result in Fig. 14(b) and (c)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.1,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated reset creation process (a) from high to low power bursts and (b) from low to high power bursts",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. BLE detector circuit.",
+      "caption_bbox": [
+        302.6,
+        441.6,
+        403.1,
+        449.5
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The circuit schematic of the BLE detector is presented in Fig. 10."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 12, DECEMBER 2004 Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "Burst-Mode Receiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "The circuit schematic of the BLE detector is presented in Fig. 10.",
+        "function_summary": "BLE detector circuit. The circuit schematic of the BLE detector is presented in Fig. 10.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 6,
+      "caption": "Fig. 11. LA with a switch circuit.",
+      "caption_bbox": [
+        38.1,
+        320.5,
+        152.1,
+        328.5
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "LE et al.: BURST-MODE RECEIVER FOR 1.25-Gb/s ETHERNET PON WITH AGC AND INTERNALLY CREATED RESET SIGNAL Fig. 11."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "A new LA-AOC with switches, described in Fig. 11, is proposed to overcome this problem."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "switch",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "switch"
+        ],
+        "design_purpose": "A new LA-AOC with switches, described in Fig. 11, is proposed to overcome this problem.",
+        "function_summary": "LA with a switch circuit. A new LA-AOC with switches, described in Fig. 11, is proposed to overcome this problem.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 6,
+      "caption": "Fig. 12. Output buffer circuit.",
+      "caption_bbox": [
+        301.1,
+        519.2,
+        402.2,
+        527.2
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Output Buffer The output buffer, shown in Fig. 12, is a simple differential pair and a pair of open-source transistors to make LVPECL output-matching. are 480m-wide transistors with high parasitic As and high tail current capacitance, small load resistor Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.9,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.4
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "buffer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "resistor",
+          "transistor/MOSFET",
+          "current source",
+          "output buffer",
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "Output buffer circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.25,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 7,
+      "caption": "Fig. 13. Burst-mode test ﬁxture.",
+      "caption_bbox": [
+        39.6,
+        167.1,
+        148.5,
+        175.1
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The test ﬁxture is depicted in Fig. 13."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "In Fig. 13, two ONUs are set at maximum loud/soft ratio, i.e., the worst case in EPON transmission."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Burst-Mode Receiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Burst-mode test ﬁxture",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 7,
+      "caption": "Fig. 14. Measured waveform concerning reset creation operation.",
+      "caption_bbox": [
+        39.6,
+        527.1,
+        254.1,
+        535.1
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 14."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 14 shows the measured waveforms at two receiver outputs."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "In Fig. 14(a), the receiver can create the reset signal dBm and, more internally with an input signal as low as importantly, with a loud/soft ratio of 20.5 dB."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 14(b) and (c) zooms into high and low power bursts, respectively."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The measured waveform clearly shows the reset turn-on, turn-off operation in both Fig. 14(b) and (c)."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Note the similarity between the simulation result in Fig. 9(a) and (b) and the measurement result in Fig. 14(b) and (c)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -5.0,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-waveform": -2.0,
+        "section:results": -2.0,
+        "references": 2.0
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured waveform concerning reset creation operation",
+        "key_specs": [
+          "20.5 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 7,
+      "caption": "Fig. 15. Measured waveforms at two outputs and anticipated reset signal.",
+      "caption_bbox": [
+        302.6,
+        239.1,
+        541.5,
+        247.0
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The measured waveforms at two outputs and the anticipated reset signal are shown in Fig. 15."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The abrupt change of output signal in guard time indicates reset turn-on, and a fast increase of output IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 12, DECEMBER 2004 Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-waveform": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Burst-Mode Receiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured waveforms at two outputs and anticipated reset signal",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 7,
+      "caption": "Fig. 16. BER measurement result.",
+      "caption_bbox": [
+        302.6,
+        459.2,
+        417.7,
+        467.2
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 16."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The BER measurement result is shown in Fig. 16, indicating the contribution of the AGC function with a 4.2 dB extension of LE et al.: BURST-MODE RECEIVER FOR 1.25-Gb/s ETHERNET PON WITH AGC AND INTERNALLY CREATED RESET SIGNAL 1 random data."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "BER measurement result",
+        "key_specs": [
+          "4.2 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 8,
+      "caption": "Fig. 17.",
+      "caption_bbox": [
+        38.1,
+        220.0,
+        62.9,
+        228.0
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Eye diagram of 2 Fig. 17."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "A single-ended output eye diagram of a typical burst is shown in Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Burst-Mode Receiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 8,
+      "caption": "Fig. 18. .",
+      "caption_bbox": [
+        38.1,
+        360.6,
+        232.8,
+        368.5
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Die photograph of the receiver IC, 0.9 1.9 mm Fig. 18. . overload level from 9.6 to 5.4 dBm, and a negligible effect on sensitivity level."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The die photograph is shown in Fig. 18, with die size of 1.9 mm, including all components on the chip. 0.9 mm"
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "receiver",
+        "key_specs": [
+          "5.4 dBm"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 8,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

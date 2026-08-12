@@ -1,0 +1,874 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\987080.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\987080",
+  "generated_at": "2026-07-29T22:03:45",
+  "paper_metadata": {
+    "title": "A 40-A/Channel Compensated 18-Channel Strain Gauge Measurement System for Stress Monitoring in Dental Implants",
+    "authors": [
+      "Wim Claes",
+      "Willy Sansen",
+      "Robert Puers"
+    ],
+    "abstract": "This paper presents an autonomous monitoring system ASIC, which is capable of measuring and compensating 18 conscious nocturnal activities like bruxing and clenching, which strain gauges simultaneously. This sensor interface is implemented are seen as a missing link for the validation of existing bone rein a 0.7m CMOS technology and includes a proportional to modeling models. These drawbacks clearly indicate the need for absolute temperature (PTAT)-current reference, an 8-bit diga miniaturized measurement system which is part of the prosital-to-analog converter together with a digital interface for thesis and is capable of measuring continuously over a longer multigauge nulling, a switched-capacitor (SC) instrumentation amplifier, an SC sample-and-hold (S/H), and a 9-bit successive apperiod, independent of the hospital environment. proximation analog-to-digital converter. The total chip consumes a mere 40 A/channel (at 3.1 V) and allows for sampling of each individual strain gauge channel at a sampling rate of 111 Hz with a 20strain accuracy. The measurement system presented is a",
+    "keywords": [
+      "Dental prosthesis",
+      "low-power sensor interface"
+    ],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2002
+  },
+  "paper_circuit_context": {
+    "circuit_type": "analog-to-digital converter (ADC)",
+    "technology": "CMOS",
+    "application_domain": "rf, biomedical",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "current source",
+      "current mirror",
+      "switch",
+      "op-amp",
+      "pre-amplifier"
+    ],
+    "design_purpose": "The total chip consumes a mere 40 A/channel (at 3.1 V) and allows for sampling of each individual strain gauge channel at a sampling rate of 111 Hz with a 20strain accuracy.",
+    "function_summary": "analog-to-digital converter (ADC): The total chip consumes a mere 40 A/channel (at 3.1 V) and allows for sampling of each individual strain gauge channel at a sampling rate of 111 Hz with a 20strain accuracy.",
+    "key_specs": [
+      "3.1 V",
+      "111 Hz",
+      "41W",
+      "50 Hz",
+      "2 kHz",
+      "3.3 V",
+      "1.5%",
+      "40 w",
+      "20 Hz",
+      "27.7 dB"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "A DENTAL prosthesis (Fig. 1) is fixated by a bridge, which is supported by Titanium implants and cylindrical abutmm, mm). The number of implants ments ( and abutments can vary between two and six for a given patient. To reduce the number of implant losses and to gain more insight into the bone regrowth process (due to the introduction of Titanium implants into the bone), every abutment is equipped ..."
+    },
+    {
+      "number": "II",
+      "title": "EXISTING EXTERNAL SYSTEM",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "At present, an external nonportable measuring unit is employed to quantify the forces on the abutments. This unit is connected to the different strain gauges by wires, which come out of the patient’s mouth. The major drawback of this system is the restriction of the measurements to the hospital environment, since the external unit is necessary to perform the measurements. Another drawback is the p ..."
+    },
+    {
+      "number": "III",
+      "title": "NEW MINIATURIZED SYSTEM SPECIFICATIONS",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "The new system must be able to monitor 18 different strain gauge channels (six abutments) during a two-day period. Because the monitoring has to go on continuously, independent of the hospital environment, the system is equipped with two h) batteries (Panasonic SR41W), requiring a (1.55-V 45-mA low-power design. The bandwidth of the dental force signals is 50 Hz and the desired measuring accuracy  ..."
+    },
+    {
+      "number": "IV",
+      "title": "MULTIGAUGE MEASUREMENTS WITH NULLING",
+      "kind": "results",
+      "page": 1,
+      "text_preview": "To measure the different strain gauges, a current-driven Wheatstone configuration is applied (Fig. 2). This config- , a strain gauge uration consists of a reference resistor and two current sources under measurement and . This current-driven configuration yields a doubled sensitivity-per-total-current ratio compared to the voltage-driven one1 (Fig. 3) of (1) 1BLH, Catalog 305, Canton, MA, USA. IEE ..."
+    },
+    {
+      "number": "V",
+      "title": "NEW SENSOR INTERFACE CHIP",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "A. System Overview An overview of the total sensor interface chip, which was optimized with MAPLE for low-power consumption, is given in Fig. 4. It consists of the earlier described multigauge nulling block with an 8-bit DAC, followed by a switched-capacitor amplifier and sample-and-hold, proceeded by a 9-bit successive approximation analog-to-digital converter (ADC). It also has a 5-bit programma ..."
+    },
+    {
+      "number": "VI",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 5,
+      "text_preview": "A. Power Consumption Table I shows the current consumption of the different analog building blocks. To reduce the total mean current consumption, the currents of the multigauge nulling block are turned 14/32) of the amplifier’s reset phase . In off during most ( this way, the resulting mean current consumption of the analog A ( W at building blocks is reduced to a mere 38.3 3.1 V) per strain gauge ..."
+    },
+    {
+      "number": "VII",
+      "title": "COMPLETE DATA LOGGER",
+      "kind": "other",
+      "page": 7,
+      "text_preview": "The presented sensor interface will be part of an autonomous data logger, shown in Fig. 16. This device consists of the described multichannel sensor interface, a bidirectional RF link, a 2-MB RAM, and a digital data processing unit and controller unit. The system’s purpose is to continuously monitor the loads on dental implants over a 48 h-period and to store the processed data in the onboard RAM ..."
+    },
+    {
+      "number": "VIII",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 7,
+      "text_preview": "We have realized and verified a sensor interface chip in a m CMOS technology, which is capable of measuring 18 0.7strain different strain gauge channels simultaneously with a 20accuracy. The total mean current consumption per channel is A (@3.1 V) at a 111-Hz sampling frequency. The a mere 40 system is able to compensate the different strain gauge channels for offsets introduced by the strain gaug ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Schematic of a dental prosthesis bridge, supported by abutments and implants.",
+      "caption_bbox": [
+        39.6,
+        174.4,
+        320.6,
+        185.1
+      ],
+      "section_title": "II. EXISTING EXTERNAL SYSTEM",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "A DENTAL prosthesis (Fig. 1) is fixated by a bridge, which is supported by Titanium implants and cylindrical abutmm, mm)."
+        },
+        {
+          "section_title": "NEW MINIATURIZED SYSTEM SPECIFICATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Teflon is utilized because of its high chemical inertness, such that no reaction with the synthetic prosthesis Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "rf, biomedical",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematic of a dental prosthesis bridge, supported by abutments and implants",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.91,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Current-driven Wheatstone configuration with compensation.",
+      "caption_bbox": [
+        39.6,
+        429.1,
+        264.3,
+        439.8
+      ],
+      "section_title": "II. EXISTING EXTERNAL SYSTEM",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "NEW MINIATURIZED SYSTEM SPECIFICATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 2."
+        },
+        {
+          "section_title": "MULTIGAUGE MEASUREMENTS WITH NULLING",
+          "section_kind": "results",
+          "page": 1,
+          "sentence": "To measure the different strain gauges, a current-driven Wheatstone configuration is applied (Fig. 2)."
+        },
+        {
+          "section_title": "MULTIGAUGE MEASUREMENTS WITH NULLING",
+          "section_kind": "results",
+          "page": 1,
+          "sentence": "A system capable of compensating the earlier described occurring high prestrains and the strain gauges resistance is a mother reference tolerance is also shown in Fig. 2. and a current source from which the currents are derived."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "rf, biomedical",
+        "sub_blocks": [
+          "current source"
+        ],
+        "design_purpose": "",
+        "function_summary": "Current-driven Wheatstone configuration with compensation",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Overview of the complete sensor interface chip.",
+      "caption_bbox": [
+        38.1,
+        393.3,
+        220.2,
+        403.9
+      ],
+      "section_title": "V. NEW SENSOR INTERFACE CHIP",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MULTIGAUGE MEASUREMENTS WITH NULLING",
+          "section_kind": "results",
+          "page": 1,
+          "sentence": "The upper part of Fig. 4 illustrates the system expanded for 18 strain gauges."
+        },
+        {
+          "section_title": "MULTIGAUGE MEASUREMENTS WITH NULLING",
+          "section_kind": "results",
+          "page": 1,
+          "sentence": "CLAES et al.: STRAIN GAUGE MEASUREMENT SYSTEM FOR STRESS MONITORING IN DENTAL IMPLANTS Fig. 4."
+        },
+        {
+          "section_title": "NEW SENSOR INTERFACE CHIP",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "System Overview An overview of the total sensor interface chip, which was optimized with MAPLE for low-power consumption, is given in Fig. 4."
+        },
+        {
+          "section_title": "NEW SENSOR INTERFACE CHIP",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The required range of this DAC is imposed by the strain gauges resistance tolerance, the gauge factor tolerance, and the inaccuracy of the employed current mirrors that derive the different (Fig. 4)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.6,
+      "relevance_breakdown": {
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "sensor",
+        "technology": "CMOS",
+        "application_domain": "rf, biomedical",
+        "sub_blocks": [
+          "current mirror"
+        ],
+        "design_purpose": "",
+        "function_summary": "Overview of the complete sensor interface chip",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Thermal voltage referenced current reference source with a wide-swing cascode current mirror and startup circuit.",
+      "caption_bbox": [
+        301.1,
+        284.3,
+        552.1,
+        303.9
+      ],
+      "section_title": "IV. MULTIGAUGE MEASUREMENTS WITH NULLING",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "NEW SENSOR INTERFACE CHIP",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 5."
+        },
+        {
+          "section_title": "NEW SENSOR INTERFACE CHIP",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Current Reference is implemented as a self-biThe mother reference current ased thermal voltage referenced current source, shown in Fig. 5 is an externally screen-printed resistor [3]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-reference": -1.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "current reference",
+        "technology": "CMOS",
+        "application_domain": "rf, biomedical",
+        "sub_blocks": [
+          "resistor",
+          "current source",
+          "current mirror"
+        ],
+        "design_purpose": "",
+        "function_summary": "Thermal voltage referenced current reference source with a wide-swing cascode current mirror and startup circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Accuracy derivation of a current mirror with a m=n current ratio and a unit current source mismatch (I . )=I",
+      "caption_bbox": [
+        39.6,
+        159.1,
+        290.7,
+        178.6
+      ],
+      "section_title": "V. NEW SENSOR INTERFACE CHIP",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "NEW SENSOR INTERFACE CHIP",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "To calculate the inaccuracy of these currents from Fig. 6."
+        },
+        {
+          "section_title": "NEW SENSOR INTERFACE CHIP",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "( current mirrors due to mismatch, the following equation, which has been verified by Monte Carlo simulation, has been derived (Fig. 6): (4) Because of the discrete nulling by the DAC, a small “prestrain” remains after compensation."
+        },
+        {
+          "section_title": "NEW SENSOR INTERFACE CHIP",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The 3-LSB current sources of the DAC are realized with seriesconnected (Fig. 7) unit current sources (to achieve current divisions), while the 4-MSB current sources are realized with parallel-connected unit current sources (Fig. 6)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS",
+        "application_domain": "rf, biomedical",
+        "sub_blocks": [
+          "current source",
+          "current mirror"
+        ],
+        "design_purpose": "The 3-LSB current sources of the DAC are realized with seriesconnected (Fig. 7) unit current sources (to achieve current divisions), while the 4-MSB current sources are realized with parallel-connected unit current sources (Fig. 6).",
+        "function_summary": "Accuracy derivation of a current mirror with a m=n current ratio and a unit current source mismatch (I . )=I. The 3-LSB current sources of the DAC are realized with seriesconnected (Fig. 7) unit current sources (to achieve current divisions), while the 4-MSB current sources are realized with parallel-connected unit ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Implementation of current divisions with series-connected transistors.",
+      "caption_bbox": [
+        39.6,
+        337.1,
+        290.5,
+        347.7
+      ],
+      "section_title": "V. NEW SENSOR INTERFACE CHIP",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "NEW SENSOR INTERFACE CHIP",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Accuracy derivation of a current mirror with a m=n current ratio and a unit current source mismatch (I . )=I Fig. 7."
+        },
+        {
+          "section_title": "NEW SENSOR INTERFACE CHIP",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The 3-LSB current sources of the DAC are realized with seriesconnected (Fig. 7) unit current sources (to achieve current divisions), while the 4-MSB current sources are realized with parallel-connected unit current sources (Fig. 6)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS",
+        "application_domain": "rf, biomedical",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "current source",
+          "current mirror"
+        ],
+        "design_purpose": "The 3-LSB current sources of the DAC are realized with seriesconnected (Fig. 7) unit current sources (to achieve current divisions), while the 4-MSB current sources are realized with parallel-connected unit current sources (Fig. 6).",
+        "function_summary": "Implementation of current divisions with series-connected transistors. The 3-LSB current sources of the DAC are realized with seriesconnected (Fig. 7) unit current sources (to achieve current divisions), while the 4-MSB current sources are realized with parallel-connected unit current sources (Fig. 6).",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. Simulated systematic DNL error due to the nonperfect current divisions.",
+      "caption_bbox": [
+        302.6,
+        249.9,
+        553.7,
+        269.5
+      ],
+      "section_title": "V. NEW SENSOR INTERFACE CHIP",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "NEW SENSOR INTERFACE CHIP",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "On the other IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 3, MARCH 2002 Fig. 8."
+        },
+        {
+          "section_title": "NEW SENSOR INTERFACE CHIP",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 8 shows the simulated systematic DNL error due to the nonperfect current divisions."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "rf, biomedical",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated systematic DNL error due to the nonperfect current divisions",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. SC resettable gain amplifier and S/H with offset-cancellation.",
+      "caption_bbox": [
+        38.1,
+        301.5,
+        265.1,
+        312.1
+      ],
+      "section_title": "V. NEW SENSOR INTERFACE CHIP",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "NEW SENSOR INTERFACE CHIP",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The amplifier is an SC resettable gain amplifier (Fig. 9), where the offset is , such that compensation for sampled during the reset phase this offset is achieved during the (next) amplification phase [6]."
+        },
+        {
+          "section_title": "NEW SENSOR INTERFACE CHIP",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "To deal with the SC problem of charge injection, the clocks of the switches at the inputs of the amplifier (i.e., nMOS transistors) are advanced in time compared to the clocks of the CLAES et al.: STRAIN GAUGE MEASUREMENT SYSTEM FOR STRESS MONITORING IN DENTAL IMPLANTS Fig. 9."
+        },
+        {
+          "section_title": "NEW SENSOR INTERFACE CHIP",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "S/H and Successive Approximation ADC The amplifier is followed by an offset-cancelled SC S/H (Fig. 9) and a 9-bit successive approximation ADC based on a charge-redistribution DAC [9]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, biomedical",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "SC resettable gain amplifier and S/H with offset-cancellation",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10.",
+      "caption_bbox": [
+        38.1,
+        564.5,
+        62.8,
+        575.2
+      ],
+      "section_title": "V. NEW SENSOR INTERFACE CHIP",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "NEW SENSOR INTERFACE CHIP",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "To derive the total integrated input noise of the amplifier and the presented multigauge nulling block, the two different phases of the SC amplifier must be considered separately (Fig. 10) [7]."
+        },
+        {
+          "section_title": "NEW SENSOR INTERFACE CHIP",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 10. other switches (i.e., transmission gates) [6], such that the charge injection is constant for every cycle and independent of the ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, biomedical",
+        "sub_blocks": [
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "amplifier",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 5,
+      "caption": "Fig. 11. Photograph of the total chip.",
+      "caption_bbox": [
+        39.6,
+        357.8,
+        164.4,
+        368.5
+      ],
+      "section_title": "V. NEW SENSOR INTERFACE CHIP",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "NEW SENSOR INTERFACE CHIP",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "To minimize the interference of the digital part on the analog part, both are Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.6,
+      "relevance_breakdown": {
+        "-photograph": -3.0,
+        "references": 0.4
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "rf, biomedical",
+        "sub_blocks": [],
+        "design_purpose": "To minimize the interference of the digital part on the analog part, both are Fig. 11.",
+        "function_summary": "Photograph of the total chip. To minimize the interference of the digital part on the analog part, both are Fig. 11.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 5,
+      "caption": "Fig. 12. Measured DNL error.",
+      "caption_bbox": [
+        302.6,
+        260.5,
+        404.9,
+        271.1
+      ],
+      "section_title": "V. NEW SENSOR INTERFACE CHIP",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "DAC Fig. 12 depicts the measured DNL error of the implemented DAC."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "This, however, does not impose a problem to attain accurate nulling, since the DNL error IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 3, MARCH 2002 Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS",
+        "application_domain": "rf, biomedical",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured DNL error",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 5,
+      "caption": "Fig. 13. Static load measurement with pneumatically controlled test setup.",
+      "caption_bbox": [
+        302.6,
+        476.2,
+        545.2,
+        486.9
+      ],
+      "section_title": "VI. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 13."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The digital output of the chip for an increasing bending moment (i.e., a force applied at 1 cm from the center of the abutment) is shown in Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-setup": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "rf, biomedical",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Static load measurement with pneumatically controlled test setup",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 6,
+      "caption": "Fig. 14. Dynamic measurement setup with voltage-controlled piezo stack.",
+      "caption_bbox": [
+        38.1,
+        582.6,
+        279.4,
+        593.2
+      ],
+      "section_title": "VI. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The of the error (due to the measured data is 0.78 N the system’s inaccuracy and the restricted test setup accuracy) is cm, which proves that the system satisfies the requested 1.43 N cm (i.e., 20 strain). accuracy specification of 1.6 N CLAES et al.: STRAIN GAUGE MEASUREMENT SYSTEM FOR STRESS MONITORING IN DENTAL IMPLANTS TABLE I CURRENT CONSUMPTION OF THE DIFFERENT ANALOG BUILDING BLOCKS Fig. 14."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 14 shows the piezo stack which can apply a displacement to a steel disc which is fixated to the abutment under test with a screw."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-setup": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "rf, biomedical",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Dynamic measurement setup with voltage-controlled piezo stack",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 6,
+      "caption": "Fig. 15. Dynamic bending moment measurement with piezo stack (2 Hz, 32",
+      "caption_bbox": [
+        301.1,
+        582.2,
+        552.2,
+        592.9
+      ],
+      "section_title": "VI. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 15."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Overview of the complete autonomous data logger. was measured (Fig. 15) and the SNDR was derived to determine of the error over the dynamic performance."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "rf, biomedical",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Dynamic bending moment measurement with piezo stack (2 Hz, 32",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 7,
+      "caption": "Fig. 16. Overview of the complete autonomous data logger.",
+      "caption_bbox": [
+        39.6,
+        257.8,
+        235.8,
+        268.5
+      ],
+      "section_title": "VI. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "For all the different intervals, the power spectral density of the digital output of the sensor interface chip for a cm peak-to-peak) bending moment 2-Hz sinusoidal input (32 N Fig. 16."
+        },
+        {
+          "section_title": "COMPLETE DATA LOGGER",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "The presented sensor interface will be part of an autonomous data logger, shown in Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "sensor",
+        "technology": "CMOS",
+        "application_domain": "rf, biomedical",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Overview of the complete autonomous data logger",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 1,
+  "warnings": []
+}

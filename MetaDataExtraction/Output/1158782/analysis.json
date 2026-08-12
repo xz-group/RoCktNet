@@ -1,0 +1,1104 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1158782.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1158782",
+  "generated_at": "2026-07-29T22:00:38",
+  "paper_metadata": {
+    "title": "A Practical Micropower Programmable Bandpass Filter for Use in Bionic Ears",
+    "authors": [
+      "Christopher D. Salthouse",
+      "Rahul Sarpeshkar"
+    ],
+    "abstract": "Subthreshold filters offer the low power and wide tunable range required for use in fully implantable bionic application offers a number of constraints on the design of BPFs. ears. The major design challenge that must be met is increasing the It is battery powered and required to run off a low voltage; this linear range. A capacitive-attenuation technique is presented and design is optimized for 2.8 V. The filter must be tunable over refined to allow the construction of wide-linear-range bandpass most of the audio range, from 100 to 10 kHz, it should have a filters with greater than 1 pp swings. For a 100–200 Hz fully dynamic range of at least 60 dB, and it must minimize power differential filter with second-order roll off slopes and greater than 60 dB dynamic range, experimental results from a 1.5m, while achieving these specifications. 2.8-V BiCMOS chip yield only 0.23 m power consumption; for filters were proposed for this appliSubthreshold a 5–10 kHz filter with the same specifications the power only cation in [3] and [4] because of the wide tuning range and low increased to 6.36 W. Fully differential filters with first-order power. The drawback of this choice is the small linear range of slopes had a dynamic range of 66 dB and power consumptions the transconductors, approximately 75 mV for a simple OTA. of 0.12 and 3.36 W in the 100–200 Hz and 5–10 kHz cases, respectively. We show that our experimental results of noise and This forces the surrounding circuitry to interface to the filters linear range are in good accord with theoretical estimates of these with small signals that are prone to noise and other effects. quantities. A combination of degeneration, attenuation, and nonlinear",
+    "keywords": [
+      "Bandpass filter",
+      "bionic ear",
+      "cochlear implant"
+    ],
+    "doi": "10.1109/JSSC.2002.806286",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Practical Micropower Programmable Bandpass Filter",
+    "technology": "BICMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "output buffer",
+      "differential pair"
+    ],
+    "design_purpose": "A capacitive-attenuation technique is presented and design is optimized for 2.8 V.",
+    "function_summary": "Practical Micropower Programmable Bandpass Filter: A capacitive-attenuation technique is presented and design is optimized for 2.8 V.",
+    "key_specs": [
+      "2.8 V",
+      "10 kHz",
+      "200 Hz",
+      "60 dB",
+      "6.36 W",
+      "66 dB",
+      "75 mV",
+      "3.36 W",
+      "1 V",
+      "66 w"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "B IONIC ears (BEs) or cochlear implants have been implanted in more than 20 000 people [1]. They mimic the function of the ear in stimulating neurons in the cochlea in response to sound. Fig. 1 shows an overview of a common signal-processing chain: sound is first sensed by a microphone. Preemphasis and gain control are then performed on the input. Bandpass filters (BPFs) then divide the sound into ..."
+    },
+    {
+      "number": "II",
+      "title": "BE FILTER REQUIREMENTS",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "While the signal processing in current BEs is performed in DSPs, analog computation has been proposed as a mechanism Manuscript received January 3, 2002; revised July 17, 2002. The authors are with the Research Laboratory of Electronics, Massachusetts Institute of Technology, Cambridge, MA 02139 USA (e-mail: rahuls@avnsl.mit.edu). for decreasing the power used in these steps [3]–[5]. The BE applic ..."
+    },
+    {
+      "number": "III",
+      "title": "BASIC CAPACITIVE-ATTENUATION FILTER TOPOLOGY",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "The basic bandpass topology examined here is a cascade of first-order highpass and first-order lowpass filters based on RC primitives (Fig. 3). The low pole is proportional to the bias cur- , while the high pole is proportional to the bias current of . The major limitation of this design is its small linear rent of range. Signal amplitude is limited to the linear range of the transconductors. 64 F ..."
+    },
+    {
+      "number": "IV",
+      "title": "DIFFERENTIAL TOPOLOGY",
+      "kind": "proposed",
+      "page": 4,
+      "text_preview": "By processing a signal and its inverse through identical channels, differential topologies double the linear range of the composite signal and help cancel out common effects such as power supply noise and even harmonics. The primary motivation with our differential filter is to attenuate the second harmonics. Often, when single-ended designs are converted to differential topologies, the two channe ..."
+    },
+    {
+      "number": "V",
+      "title": "CASCADING FILTERS",
+      "kind": "other",
+      "page": 5,
+      "text_preview": "Having demonstrated that a filter with first-order rolloff above and below the pass band can be built, the next step is IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 1, JANUARY 2003 Fig. 15. Two capacitive-attenuation filters with an intermediate source follower buffer. to demonstrate that such filters may be cascaded to achieve higher order rolloffs. The low-pass section does not load the hi ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 7,
+      "text_preview": "Moving BEs from systems that are partially worn outside the body to true implants that are fully embedded inside the body requires overcoming a number of technical obstacles. One important obstacle involves ways to substantially lower the power of the signal processing. A first step in that direction is exploring and customizing filter technologies for these unique requirements. These filters must ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Bionic ear overview.",
+      "caption_bbox": [
+        39.6,
+        217.9,
+        135.0,
+        228.5
+      ],
+      "section_title": "III. BASIC CAPACITIVE-ATTENUATION FILTER TOPOLOGY",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1 shows an overview of a common signal-processing chain: sound is first sensed by a microphone."
+        },
+        {
+          "section_title": "BASIC CAPACITIVE-ATTENUATION FILTER TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Signal amplitude is limited to the linear range of the transconductors. 64 Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Bionic ear overview",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Harmonics from a BPF built using wide-linear-range transconductors [3].",
+      "caption_bbox": [
+        39.6,
+        443.1,
+        290.6,
+        462.7
+      ],
+      "section_title": "III. BASIC CAPACITIVE-ATTENUATION FILTER TOPOLOGY",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "BE FILTER REQUIREMENTS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "As shown in Fig. 2, in topologies that use wide-linear-range transconductors the second harmonic becomes significant at amplitudes well below where the third harmonic limits performance."
+        },
+        {
+          "section_title": "BASIC CAPACITIVE-ATTENUATION FILTER TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 2."
+        },
+        {
+          "section_title": "BASIC CAPACITIVE-ATTENUATION FILTER TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "This figure demonstrates an improvement in the levels of second harmonic compared to the wide-linear-range transconductor data shown in Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Harmonics from a BPF built using wide-linear-range transconductors [3]",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.31,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Basic bandpass topology.",
+      "caption_bbox": [
+        39.6,
+        547.4,
+        149.7,
+        558.0
+      ],
+      "section_title": "III. BASIC CAPACITIVE-ATTENUATION FILTER TOPOLOGY",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "BASIC CAPACITIVE-ATTENUATION FILTER TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The basic bandpass topology examined here is a cascade of first-order highpass and first-order lowpass filters based on RC primitives (Fig. 3)."
+        },
+        {
+          "section_title": "BASIC CAPACITIVE-ATTENUATION FILTER TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+topology": 2.5,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Basic bandpass topology",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.79,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 1,
+      "caption": "Fig. 4. Capacitive attenuation BPF.",
+      "caption_bbox": [
+        302.6,
+        349.4,
+        420.7,
+        360.0
+      ],
+      "section_title": "III. BASIC CAPACITIVE-ATTENUATION FILTER TOPOLOGY",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "BASIC CAPACITIVE-ATTENUATION FILTER TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "As shown in Fig. 4, the linear range can be improved by attenuating the input and feedback-attenuating the output because the linear range of the transconductors is limited by their input swing, rather than their output swing."
+        },
+        {
+          "section_title": "BASIC CAPACITIVE-ATTENUATION FILTER TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The transfer function sion from the inverting node of of the circuit in Fig. 4 is (1) IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 1, JANUARY 2003 Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Capacitive attenuation BPF",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 1,
+      "caption": "Fig. 5. Capacitive-attenuation filter with offset adaptation.",
+      "caption_bbox": [
+        302.6,
+        470.8,
+        494.2,
+        481.4
+      ],
+      "section_title": "III. BASIC CAPACITIVE-ATTENUATION FILTER TOPOLOGY",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "BASIC CAPACITIVE-ATTENUATION FILTER TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 5."
+        },
+        {
+          "section_title": "BASIC CAPACITIVE-ATTENUATION FILTER TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Adding a transconductor low-frequency path between the two nodes constrains both dc operates on values, as shown in Fig. 5."
+        },
+        {
+          "section_title": "BASIC CAPACITIVE-ATTENUATION FILTER TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The block diagram in Fig. 6 for the circuit filter in Fig. 5 shows another area for concern with this design: a capacitive to its noninverting input provides path from the output of were configured as a resistor, this path positive feedback."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.2,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "type_match:filter": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "resistor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Capacitive-attenuation filter with offset adaptation",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.77,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. Block diagram of capacitive-attenuation filter with offset adaptation.",
+      "caption_bbox": [
+        301.1,
+        163.3,
+        548.2,
+        173.9
+      ],
+      "section_title": "III. BASIC CAPACITIVE-ATTENUATION FILTER TOPOLOGY",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "BASIC CAPACITIVE-ATTENUATION FILTER TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The block diagram in Fig. 6 for the circuit filter in Fig. 5 shows another area for concern with this design: a capacitive to its noninverting input provides path from the output of were configured as a resistor, this path positive feedback."
+        },
+        {
+          "section_title": "BASIC CAPACITIVE-ATTENUATION FILTER TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Lowpass where Lowpass 65 Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:proposed": 2.0,
+        "type_match:filter": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "resistor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Block diagram of capacitive-attenuation filter with offset adaptation",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.65,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 2,
+      "caption": "Fig. 7. Block diagram of a single capacitive-attenuation filter with noise sources.",
+      "caption_bbox": [
+        301.1,
+        314.0,
+        552.2,
+        333.6
+      ],
+      "section_title": "III. BASIC CAPACITIVE-ATTENUATION FILTER TOPOLOGY",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "BASIC CAPACITIVE-ATTENUATION FILTER TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 7."
+        },
+        {
+          "section_title": "BASIC CAPACITIVE-ATTENUATION FILTER TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "This can be visualized in the block diagram in Fig. 7 or by using (5)–(9), shown at the bottom of the page. ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:proposed": 2.0,
+        "type_match:filter": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of a single capacitive-attenuation filter with noise sources",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.94,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. Experimental transfer function of a single capacitive-attenuator filter.",
+      "caption_bbox": [
+        302.6,
+        264.8,
+        551.6,
+        275.4
+      ],
+      "section_title": "III. BASIC CAPACITIVE-ATTENUATION FILTER TOPOLOGY",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "BASIC CAPACITIVE-ATTENUATION FILTER TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 8 shows that on AMI’s 1.5the filter can realize the ideal transfer function."
+        },
+        {
+          "section_title": "BASIC CAPACITIVE-ATTENUATION FILTER TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The initial low-frequency portion of the spectrum is due IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 1, JANUARY 2003 Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "type_match:filter": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Experimental transfer function of a single capacitive-attenuator filter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.69,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 3,
+      "caption": "Fig. 9. Experimental demonstration of offset adaptation effect on transfer function.",
+      "caption_bbox": [
+        302.6,
+        494.4,
+        553.6,
+        514.0
+      ],
+      "section_title": "III. BASIC CAPACITIVE-ATTENUATION FILTER TOPOLOGY",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "BASIC CAPACITIVE-ATTENUATION FILTER TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "If the current in and zero associated with is turned up and the filter is set to lower frequencies by turning and , the influence of can down the bias currents for be observed as in Fig. 9."
+        },
+        {
+          "section_title": "BASIC CAPACITIVE-ATTENUATION FILTER TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Experimental demonstration of offset adaptation effect on transfer function",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10. Measured and simulated noise for a single capacitive-attenuation filter.",
+      "caption_bbox": [
+        38.1,
+        244.9,
+        289.2,
+        264.4
+      ],
+      "section_title": "III. BASIC CAPACITIVE-ATTENUATION FILTER TOPOLOGY",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "BASIC CAPACITIVE-ATTENUATION FILTER TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The noise spectrum of the output node is plotted on top of simulation results from SPICE in Fig. 10."
+        },
+        {
+          "section_title": "BASIC CAPACITIVE-ATTENUATION FILTER TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "SALTHOUSE AND SARPESHKAR: A PRACTICAL MICROPOWER PROGRAMMABLE BPF FOR USE IN BIONIC EARS Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "-measured": -3.0,
+        "section:proposed": 2.0,
+        "type_match:filter": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured and simulated noise for a single capacitive-attenuation filter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 4,
+      "caption": "Fig. 11. Second and third harmonics for a single capacitive-attenuation filter.",
+      "caption_bbox": [
+        38.1,
+        477.5,
+        288.7,
+        488.1
+      ],
+      "section_title": "III. BASIC CAPACITIVE-ATTENUATION FILTER TOPOLOGY",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "BASIC CAPACITIVE-ATTENUATION FILTER TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 11."
+        },
+        {
+          "section_title": "BASIC CAPACITIVE-ATTENUATION FILTER TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 11 shows the percentage growth of second and third harmonics with input signal amplitude in rms."
+        },
+        {
+          "section_title": "DIFFERENTIAL TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "The second harmonic is below the third harmonic over a good range of amplitudes in contrast with the single-ended results of Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.2,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "type_match:filter": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Second and third harmonics for a single capacitive-attenuation filter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.77,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 4,
+      "caption": "Fig. 12. Two interleaved capacitive attenuation filters (one channel is shaded).",
+      "caption_bbox": [
+        301.1,
+        170.9,
+        552.2,
+        181.6
+      ],
+      "section_title": "III. BASIC CAPACITIVE-ATTENUATION FILTER TOPOLOGY",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "DIFFERENTIAL TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "Often, when single-ended designs are converted to differential topologies, the two channels are combined into a common differential path using differential components, 67 Fig. 12."
+        },
+        {
+          "section_title": "DIFFERENTIAL TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "Fig. 12 shows the layout of such a stage with one of the channels shaded."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Two interleaved capacitive attenuation filters (one channel is shaded)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 4,
+      "caption": "Fig. 13. Two intertwined transconductors.",
+      "caption_bbox": [
+        301.1,
+        424.0,
+        441.0,
+        434.7
+      ],
+      "section_title": "III. BASIC CAPACITIVE-ATTENUATION FILTER TOPOLOGY",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "DIFFERENTIAL TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "Fig. 13."
+        },
+        {
+          "section_title": "DIFFERENTIAL TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "Fig. 13 shows two such intertwined transconductors."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Two intertwined transconductors",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 5,
+      "caption": "Fig. 14. Second and third harmonics as a function of fundamental amplitude for a first-order differential capacitive-attenuation filter.",
+      "caption_bbox": [
+        39.6,
+        410.2,
+        290.6,
+        429.8
+      ],
+      "section_title": "IV. DIFFERENTIAL TOPOLOGY",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "DIFFERENTIAL TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "When the noninverted channel is at its maximum, the 68 TABLE II EXPERIMENTAL RESULTS SECOND-ORDER DIFFERENTIAL FILTER Fig. 14."
+        },
+        {
+          "section_title": "DIFFERENTIAL TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "Fig. 14 shows the expanded linear range and the fact that the second harmonic is quite low through most of the operating amplitudes."
+        },
+        {
+          "section_title": "CASCADING FILTERS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The linear range decline due to harmonic addition in this design is minor because of the shape of the harmonics shown in Fig. 14: if the second stage does no harmonic filtering, harmonic addition in the two stages could possibly constrain the maximum signal to a point where the harmonics of a single stage are half of the acceptable level."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.2,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "type_match:filter": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Second and third harmonics as a function of fundamental amplitude for a first-order differential capacitive-attenuation filter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.77,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 5,
+      "caption": "Fig. 15. Two capacitive-attenuation filters with an intermediate source follower buffer.",
+      "caption_bbox": [
+        302.6,
+        252.8,
+        553.6,
+        272.4
+      ],
+      "section_title": "IV. DIFFERENTIAL TOPOLOGY",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "CASCADING FILTERS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Having demonstrated that a filter with first-order rolloff above and below the pass band can be built, the next step is IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 1, JANUARY 2003 Fig. 15."
+        },
+        {
+          "section_title": "CASCADING FILTERS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "This buffer is implemented with a simple source follower as depicted in Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Two capacitive-attenuation filters with an intermediate source follower buffer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 6,
+      "caption": "Fig. 16. Cascaded bandpass die photo.",
+      "caption_bbox": [
+        38.1,
+        501.1,
+        167.3,
+        511.8
+      ],
+      "section_title": "V. CASCADING FILTERS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CASCADING FILTERS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "HowSALTHOUSE AND SARPESHKAR: A PRACTICAL MICROPOWER PROGRAMMABLE BPF FOR USE IN BIONIC EARS TABLE III EXPERIMENTAL RESULTS FOURTH-ORDER DIFFERENTIAL FILTER Fig. 16."
+        },
+        {
+          "section_title": "CASCADING FILTERS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Experimental Results m process The cascaded filter was fabricated on AMI’s 1.5- (Fig. 16.) Fig. 17 shows experimental measurements of the second-order filter after its first stage and after its second stage."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-die photo": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Cascaded bandpass die photo",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 6,
+      "caption": "Fig. 17. Fit of firstand second-stage outputs to ideal filter transfer functions.",
+      "caption_bbox": [
+        301.1,
+        243.5,
+        552.2,
+        254.2
+      ],
+      "section_title": "V. CASCADING FILTERS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CASCADING FILTERS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Experimental Results m process The cascaded filter was fabricated on AMI’s 1.5- (Fig. 16.) Fig. 17 shows experimental measurements of the second-order filter after its first stage and after its second stage."
+        },
+        {
+          "section_title": "CASCADING FILTERS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Theoretical fits to first-order and second-order filter transfer 69 Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "type_match:filter": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Fit of firstand second-stage outputs to ideal filter transfer functions",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 6,
+      "caption": "Fig. 18. Noise in a cascaded differential capacitive-attenuation filter, after the first stage and at the output.",
+      "caption_bbox": [
+        301.1,
+        472.6,
+        552.2,
+        492.1
+      ],
+      "section_title": "V. CASCADING FILTERS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CASCADING FILTERS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 18."
+        },
+        {
+          "section_title": "CASCADING FILTERS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The noise increase with the addition of a second stage is shown in Fig. 18."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "type_match:filter": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Noise in a cascaded differential capacitive-attenuation filter, after the first stage and at the output",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 7,
+      "caption": "Fig. 19. Harmonic distortion measurements for the cascaded differential capacitive-attenuation filter.",
+      "caption_bbox": [
+        39.6,
+        263.7,
+        290.7,
+        283.3
+      ],
+      "section_title": "V. CASCADING FILTERS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CASCADING FILTERS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 19 shows the harmonic distortion for the second-order filter."
+        },
+        {
+          "section_title": "CASCADING FILTERS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 20 shows the frequency response of the second-order filter for each of the 32 values with the poles placed an octave apart. 70 Fig. 19."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "type_match:filter": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Harmonic distortion measurements for the cascaded differential capacitive-attenuation filter",
+        "key_specs": [
+          "32 v"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 20,
+      "label": "Fig. 20",
+      "page": 7,
+      "caption": "Fig. 20. Demonstration of programmability of the cascaded differential capacitive-attenuation filter.",
+      "caption_bbox": [
+        39.6,
+        508.3,
+        290.7,
+        527.8
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "CASCADING FILTERS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 20 shows the frequency response of the second-order filter for each of the 32 values with the poles placed an octave apart. 70 Fig. 19."
+        },
+        {
+          "section_title": "CASCADING FILTERS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 20."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.8,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "type_match:filter": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Demonstration of programmability of the cascaded differential capacitive-attenuation filter",
+        "key_specs": [
+          "32 v"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.1,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 6,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "title": "A 0.5V <4μW CMOS Photoplethysmographic Heart-Rate Sensor IC Based on a Non-Uniform Quantizer Mohammad Alhawari1,2, Nadya Albelooshi1, Michael H. Perrott1",
+  "bibliography": {
+    "authors": [],
+    "venue": "",
+    "year": 2013,
+    "doi": "",
+    "keywords": []
+  },
+  "figure_number": "Figure 22.3.2 provides details of the DRC, which consists of series-connected polysilicon resistors and PMOS switches that are controlled in thermometercoded fashion by a digital, 1st-order, 5b output ΔΣ modulator. Note that since the resistance steps are nonlinear due to the desired logarithmic action of the DRC, a higher-order, multi-bit ΔΣ modulator would encounter issues with noise folding. Fortunately, the low bandwidth of <5Hz required for sensing HR-induced fluctuations allows for a large oversampling ratio with the 32kHz clock frequency, so that a 1st-order ΔΣ structure is adequate for the needs of this application. To explain the key principles of the proposed LIQAF circuit, Fig. 22.3.3 shows a simple, 2-output LIQAF design along with its DC characteristic. As depicted in the figure, we can consider the circuit as a combination of two CMOS inverters that have different ratios of NMOS versus PMOS gate lengths. When Vin is low and both outputs are high, transistor M1 is inactive such that Vout0 transitions with increasing Vin according to a CMOS inverter characteristic with one NMOS device and two series PMOS devices. In contrast, when Vin is high and both outputs are low, M2 is inactive such that Vout1 transitions with decreasing Vin according to a CMOS inverter characteristic with two series NMOS devices and one PMOS device. Note that Vout0 cannot transition high unless Vout1 is also high, and Vout1 cannot transition low unless Vout0 is also low. As such, the LIQAF circuit provides guaranteed monotonicity in the quantizer characteristic, and low power is achieved since current is shared for all of the devices. A 15-output LIQAF structure is used in the HR monitor IC as shown in Fig. 22.3.4, which yields a 15-level quantizer that is guaranteed to be monotonic and re-uses the same current for all of the quantizer levels. With the increase in number of quantizer outputs, large output resistance is encountered for most outputs",
+  "type": "<4μW CMOS Photoplethysmographic Heart-Rate Sensor IC",
+  "technology": "CMOS",
+  "application": "biomedical",
+  "sub_blocks": [
+    "resistor",
+    "transistor/MOSFET",
+    "switch"
+  ],
+  "function_summary": "<4μW CMOS Photoplethysmographic Heart-Rate Sensor IC",
+  "design_purpose": "",
+  "metrics": [
+    "Supply voltage",
+    "Power consumption",
+    "Frequency",
+    "Process node",
+    "Efficiency / ratio"
+  ],
+  "numerical_performance": [
+    "0.5V",
+    "4μW",
+    "5Hz",
+    "32kHz",
+    "7Hz",
+    "180nm",
+    "0.5%",
+    "1.2Hz",
+    "0.25%",
+    "-5Hz"
+  ],
+  "confidence": 0.8,
+  "warnings": [
+    "Recommended figure was classified as 'result_plot', not a schematic; manual confirmation strongly recommended."
+  ]
+}

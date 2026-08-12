@@ -1,0 +1,1029 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1347332.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1347332",
+  "generated_at": "2026-07-29T21:31:55",
+  "paper_metadata": {
+    "title": "Virtual-Ground Sensing Techniques for a 49-ns/200-MHz Access Time 1.8-V 256-Mb 2-Bit-per-Cell Flash Memory",
+    "authors": [
+      "Binh Quang Le",
+      "Michael Achter",
+      "Chin Ghee Chng",
+      "Xin Guo",
+      "Lee Cleveland",
+      "Pau-Ling Chen",
+      "Michael Van Buskirk",
+      "Robert W. Dutton"
+    ],
+    "abstract": "Fast and accurate read operation in 1.8-V 2-bitper-cell virtual-ground flash memories requires techniques to cell ). The error comes from the possible leakage current substantially reduce the read margin loss due to the side-leakage through cell , which cannot be compensated by external current and the complementary-bit disturbance. The read margin circuitry because this leakage current depends on the user data loss caused by the combination effect of these two disturbance stored in cell and other neighboring cells. This type of mechanisms is serious enough to eliminate the read margin forward leakage (leakage from the drain bitline to the neighwindow, which is already small when the power supply voltage is about 1.8 V and when a memory cell stores 2 bits. This paper boring bitlines) causes the read margin loss for programmed introduces for the first time the sense current recovery technique bits (denoted as “0” bits) because in the presence of the forward to counteract the side-leakage current effect and the differential leakage, the current is larger than the small current feedback cascoded bitline control technique to minimize the for a programmed bit. A prior art design [3] tried to reduce this complementary-bit disturbance. A 1.8-V 256-Mb 2-bit-per-cell leakage by driving the bitline with a voltage similar to virtual-ground flash memory employing the two techniques has m CMOS technology. These two been integrated using 0.13that of the drain bitline , using an amplifier similar to sensing techniques are essential for the memory to achieve 49-ns the one connected to the drain bitline. This approach, however, initial read access and 200-MHz internal burst read access. The can cause leakage in the reverse direction, from to die size is 52 mm2 and the cell size is 0.121 m2. , especially when bit A is an erased bit (low threshold",
+    "keywords": [
+      "Sensing techniques",
+      "virtual-ground memory"
+    ],
+    "doi": "10.1109/JSSC.2004.835814",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2004
+  },
+  "paper_circuit_context": {
+    "circuit_type": "amplifier",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "resistor",
+      "transistor/MOSFET",
+      "current source",
+      "clock / timing"
+    ],
+    "design_purpose": "This paper boring bitlines) causes the read margin loss for programmed introduces for the first time the sense current recovery technique bits (denoted as “0” bits) because in the presence of the forward to counteract the side-leakage current effect and the differential leakage, the current is larger than the small ...",
+    "function_summary": "amplifier: This paper boring bitlines) causes the read margin loss for programmed introduces for the first time the sense current recovery technique bits (denoted as “0” bits) because in the presence of the forward to counteract the side-leakage current effect and the differential leakage, the current is larger than the small ...",
+    "key_specs": [
+      "1.8 V",
+      "2004 V",
+      "1.5 V",
+      "1.2 V",
+      "7 ns",
+      "5 mV",
+      "2.4%",
+      "3 pF",
+      "50 ns",
+      "0.5 pF"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "N ONVOLATILE ﬂash memories using a nitride layer to store 2 bits into one memory cell are ideal for code and data storage applications due to their low cost, high density, and fast speed [1]. Fig. 1 shows part of a nitride-storage memory array in which each memory cell stores 2 bits, one on the left and the other on the right. Due to the symmetrical arrangement of the bits in the cell, virtual-gro ..."
+    },
+    {
+      "number": "II",
+      "title": "SENSE CURRENT RECOVERY TECHNIQUE",
+      "kind": "proposed",
+      "page": 1,
+      "text_preview": "The side-leakage current in virtual-ground architecture memories nowadays become one of the main causes of read margin in Fig. 1 can be 15 , much larger degrading. The leakage , leading to incorrect than the read margin for a “0” bit data sensing. A previous design [3] trying to reduce this leakage current is shown in Fig. 3, in which a protecting ampliﬁer, similar to the cascode ampliﬁer, is used ..."
+    },
+    {
+      "number": "III",
+      "title": "COLUMN DECODING",
+      "kind": "other",
+      "page": 4,
+      "text_preview": "From the discussions in Section II, it is clear that to recover the margin losses for “1” and “0”, more drain and protecting bitlines should be used. One possible decoding is S-D-D-P-P, meaning that one source bitline, two drain bitlines, and two protecting bitlines are used to read a bit of a memory cell. At low supply voltages, however, the read margin loss must be suppressed further to have a p ..."
+    },
+    {
+      "number": "IV",
+      "title": "DIFFERENTIAL CASCODED FEEDBACK CONTROL OF",
+      "kind": "other",
+      "page": 5,
+      "text_preview": "BITLINE VOLTAGE In the nitride-storage ﬂash memories, two bits in a cell are physically separated and the status of one bit can affect the other bit in the same memory cell. Thus, there are four threshold voltage distributions 11, 10, 01, 11 as depicted in Fig. 7. Suppose that bit A is an erased bit, which has more current than the reference bit. If bit B is programmed then the current produced wh ..."
+    },
+    {
+      "number": "V",
+      "title": "MEASUREMENT RESULTS",
+      "kind": "results",
+      "page": 7,
+      "text_preview": "A 1.8-V 256-Mb 2-bit-per-cell nitride-storage ﬂash memory has been successfully developed. A microphotograph of the . memory is shown in Fig. 10. The area of the chip is 52 mm Fig. 11 shows the measured waveforms of the new cascode ampliﬁer and the protecting ampliﬁer in the read mode at room temperature and 1.8-V power supply voltage; the measured voltages at nodes C1 and C2 (in Fig. 4) are shown ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 7,
+      "text_preview": "This paper describes the sense current recovering technique, in which multiple drain bitlines, multiple protecting bitlines, and a unity gain feedback ampliﬁer are used to recover most of the read margin loss due to the side-leakage current in virtual-ground ﬂash memories. A column decode scheme designed to support the sense current recovering technique has been introduced, in which multiple local ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Nitride-storage memory array.",
+      "caption_bbox": [
+        38.1,
+        228.3,
+        164.4,
+        236.3
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1 shows part of a nitride-storage memory array in which each memory cell stores 2 bits, one on the left and the other on the right."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "As shown in Fig. 1, the current sent to the sensing ampliﬁer Manuscript received February 5, 2004; revised July 14, 2004."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The formula in Fig. 2 shows that the bitline LE et al.: VIRTUAL-GROUND SENSING TECHNIQUES FOR A 49-ns/200-MHz ACCESS TIME 1.8-V 256-Mb 2-BIT-PER-CELL FLASH MEMORY Fig. 1."
+        },
+        {
+          "section_title": "SENSE CURRENT RECOVERY TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The side-leakage current in virtual-ground architecture memories nowadays become one of the main causes of read margin in Fig. 1 can be 15 , much larger degrading."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.1,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Nitride-storage memory array",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.05,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Traditional cascode ampliﬁer.",
+      "caption_bbox": [
+        38.1,
+        388.2,
+        162.5,
+        396.2
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The traditional cascode ampliﬁer [6], [7] shown in Fig. 2 is usually used to provide the bitline voltage and to convert the sensing current to a voltage (SAIN) for sensing."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The formula in Fig. 2 shows that the bitline LE et al.: VIRTUAL-GROUND SENSING TECHNIQUES FOR A 49-ns/200-MHz ACCESS TIME 1.8-V 256-Mb 2-BIT-PER-CELL FLASH MEMORY Fig. 1."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 2."
+        },
+        {
+          "section_title": "DIFFERENTIAL CASCODED FEEDBACK CONTROL OF",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "As mentioned in Section I, the traditional cascode ampliﬁer shown in Fig. 2 does not meet the strict requirements for reducing the CBD effect due to the difﬁculty in raising the bitand also due to the large variation of line voltage with process."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.1,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Traditional cascode ampliﬁer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.05,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. A prior art design for reducing the side-leakage current.",
+      "caption_bbox": [
+        39.6,
+        226.4,
+        248.5,
+        234.4
+      ],
+      "section_title": "II. SENSE CURRENT RECOVERY TECHNIQUE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "SENSE CURRENT RECOVERY TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "A previous design [3] trying to reduce this leakage current is shown in Fig. 3, in which a protecting ampliﬁer, similar to the cascode ampliﬁer, is used to drive the bitline next to the drain bitline (denoted as “D”) to a similar voltage as the drain voltage; this third decoded bitline is called the protecting bitline (denoted as “P”)."
+        },
+        {
+          "section_title": "SENSE CURRENT RECOVERY TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "In Fig. 3, when bit A of cell 0 is erased, due to the large current , node D will be pulled down more than node P, creating a voltage difference between nodes D and is created, ﬂowing from the proP, thus a leakage current equals tecting bitline P to the drain bitline D."
+        },
+        {
+          "section_title": "SENSE CURRENT RECOVERY TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The current Fig. 3."
+        },
+        {
+          "section_title": "SENSE CURRENT RECOVERY TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "In Fig. 3, if the mismatch between C1 and C2 causes a 10-mV mismatch can between node D and P, a leakage current of about 1 occur, assuming that the cell between them is an over-erased cell; note that a cell is called an over-erased cell if its two bits IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 11, NOVEMBER 2004 are over-erased bits and an over-erased bit is the bit with lowest , shown in Fig. 7 as the left-most bit threshold voltage of the “11” distribution."
+        },
+        {
+          "section_title": "SENSE CURRENT RECOVERY TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The essential points of the sense current recovery technique are that for “1” bits, most (Fig. 3, ﬂowing from node P to of the leakage current node D) is added back to , and for “0” bits, (ﬂowing from node D to node P) is suppressed greatly, thus the sensing current received by the cascode ampliﬁer represents accurately the current of the bit being read."
+        },
+        {
+          "section_title": "SENSE CURRENT RECOVERY TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 6. read margin loss achieved by the previous approach shown in Fig. 3."
+        },
+        {
+          "section_title": "SENSE CURRENT RECOVERY TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "If there were only one drain bit0.15 and 0.1 line and one protecting bitline, as presented in Fig. 3, the margin , respeclosses for “1” and “0” could have been 5.2 and 3.4 tively; the sense current recovery technique, therefore, helps to reduce the read margin loss by a factor of about 30."
+        },
+        {
+          "section_title": "SENSE CURRENT RECOVERY TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Note that the simulation setup in Fig. 5 can be used to predict the read margin losses in Fig. 3 (leakages between the drain bitline D and the protecting bitline P)."
+        },
+        {
+          "section_title": "SENSE CURRENT RECOVERY TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Also note that the margin losses for “1” and “0” for the approach presented in Fig. 3 are actually larger than 5.2 and 3.4 because without the use of the protecting unity feedback ampliﬁer, the voltages at nodes C1 and C2 are not equal."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "-prior": -2.0,
+        "section:proposed": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "A previous design [3] trying to reduce this leakage current is shown in Fig. 3, in which a protecting ampliﬁer, similar to the cascode ampliﬁer, is used to drive the bitline next to the drain bitline (denoted as “D”) to a similar voltage as the drain voltage; this third decoded bitline is called the protecting bitline ...",
+        "function_summary": "A prior art design for reducing the side-leakage current. A previous design [3] trying to reduce this leakage current is shown in Fig. 3, in which a protecting ampliﬁer, similar to the cascode ampliﬁer, is used to drive the bitline next to the drain bitline (denoted as “D”) to a similar voltage as the drain voltage; ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.12,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Sense current recovery technique.",
+      "caption_bbox": [
+        39.6,
+        474.0,
+        177.4,
+        482.0
+      ],
+      "section_title": "II. SENSE CURRENT RECOVERY TECHNIQUE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "SENSE CURRENT RECOVERY TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 4."
+        },
+        {
+          "section_title": "SENSE CURRENT RECOVERY TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The resistance of an over-erased cell is . about 16 k The sense current recovering technique, shown in Fig. 4, is now introduced."
+        },
+        {
+          "section_title": "SENSE CURRENT RECOVERY TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "In Fig. 4, adding back the leakage currents is performed by using multiple drain bitlines which are coupled together at node is C1 through the column decoder."
+        },
+        {
+          "section_title": "SENSE CURRENT RECOVERY TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The sense current recovering technique shown in Fig. 4 also helps to recover most of the read margin loss for “0” bits."
+        },
+        {
+          "section_title": "SENSE CURRENT RECOVERY TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "In Fig. 4, the remaining margin loss for “0” bits is current at the interface of the drain bitline group and the prois very small even though is large tecting bitline group. by bitlines P2 because the bitline P1 is well protected from and P3."
+        },
+        {
+          "section_title": "SENSE CURRENT RECOVERY TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "To solve this problem, a protecting unity feedback ampliﬁer (shown in Fig. 4) is used to eliminate the voltage mismatch between C1 and C2."
+        },
+        {
+          "section_title": "SENSE CURRENT RECOVERY TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 5 is just a simulation model of Fig. 4; the protecting bitlines are set at 1.2 V, the same voltage as the drain bitlines because of the use of the protecting unity feedback ampliﬁer in Fig. 4."
+        },
+        {
+          "section_title": "SENSE CURRENT RECOVERY TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The column decoding path resistance in Fig. 4 is repreresistor."
+        },
+        {
+          "section_title": "SENSE CURRENT RECOVERY TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "In Fig. 5(a), the bit being read (bit A of eled by 16-k cell0 in Fig. 4) is assumed to be the worst case erased bit (the right-most bit of the “10” distribution in Fig. 7) and is modeled resistor."
+        },
+        {
+          "section_title": "SENSE CURRENT RECOVERY TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The distribution in Fig. 7) and is modeled by a 50-k and in Fig. 4, are margin losses for “1” and “0”, which are , respectively."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The area of the chip is 52 mm Fig. 11 shows the measured waveforms of the new cascode ampliﬁer and the protecting ampliﬁer in the read mode at room temperature and 1.8-V power supply voltage; the measured voltages at nodes C1 and C2 (in Fig. 4) are shown."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.0,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "resistor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Sense current recovery technique",
+        "key_specs": [
+          "1.2 V"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.45,
+      "warnings": [
+        "Recommended figure caption does not explicitly mention a schematic/topology/circuit; please confirm manually.",
+        "Recommended figure was classified as 'other', not a schematic; manual confirmation strongly recommended."
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5.",
+      "caption_bbox": [
+        38.1,
+        398.0,
+        58.7,
+        405.9
+      ],
+      "section_title": "II. SENSE CURRENT RECOVERY TECHNIQUE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "SENSE CURRENT RECOVERY TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 5."
+        },
+        {
+          "section_title": "SENSE CURRENT RECOVERY TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The HSPICE simulation results shown in Fig. 5 show that the sense current recovering technique is very effective."
+        },
+        {
+          "section_title": "SENSE CURRENT RECOVERY TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 5 is just a simulation model of Fig. 4; the protecting bitlines are set at 1.2 V, the same voltage as the drain bitlines because of the use of the protecting unity feedback ampliﬁer in Fig. 4."
+        },
+        {
+          "section_title": "SENSE CURRENT RECOVERY TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "In Fig. 5(a), the bit being read (bit A of eled by 16-k cell0 in Fig. 4) is assumed to be the worst case erased bit (the right-most bit of the “10” distribution in Fig. 7) and is modeled resistor."
+        },
+        {
+          "section_title": "SENSE CURRENT RECOVERY TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "In Fig. 5(b), the bit being read is assumed to by a 36-k be the worst case programmed bit (the left-most bit of the “01” resistor."
+        },
+        {
+          "section_title": "SENSE CURRENT RECOVERY TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Note that the simulation setup in Fig. 5 can be used to predict the read margin losses in Fig. 3 (leakages between the drain bitline D and the protecting bitline P)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.0,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "resistor"
+        ],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": [
+          "1.2 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.5,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "Fig. 6.",
+      "caption_bbox": [
+        39.6,
+        447.6,
+        60.3,
+        455.6
+      ],
+      "section_title": "II. SENSE CURRENT RECOVERY TECHNIQUE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "SENSE CURRENT RECOVERY TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 6. read margin loss achieved by the previous approach shown in Fig. 3."
+        },
+        {
+          "section_title": "COLUMN DECODING",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "This leads to the column decoding style S-S-D-D-D-P-P-P, shown in Fig. 6(a)."
+        },
+        {
+          "section_title": "COLUMN DECODING",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 6(a) shows a repetitive unit of the memory array in the column direction."
+        },
+        {
+          "section_title": "COLUMN DECODING",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 6(b) shows the truth table for the decoding when the left bit of cell 1 is read."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.6,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.4,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 5,
+      "caption": "Fig. 7. Threshold voltage distributions.",
+      "caption_bbox": [
+        38.1,
+        239.3,
+        169.0,
+        247.3
+      ],
+      "section_title": "III. COLUMN DECODING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SENSE CURRENT RECOVERY TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "In Fig. 3, if the mismatch between C1 and C2 causes a 10-mV mismatch can between node D and P, a leakage current of about 1 occur, assuming that the cell between them is an over-erased cell; note that a cell is called an over-erased cell if its two bits IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 11, NOVEMBER 2004 are over-erased bits and an over-erased bit is the bit with lowest , shown in Fig. 7 as the left-most bit threshold voltage of the “11” distribution."
+        },
+        {
+          "section_title": "SENSE CURRENT RECOVERY TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "In Fig. 5(a), the bit being read (bit A of eled by 16-k cell0 in Fig. 4) is assumed to be the worst case erased bit (the right-most bit of the “10” distribution in Fig. 7) and is modeled resistor."
+        },
+        {
+          "section_title": "SENSE CURRENT RECOVERY TECHNIQUE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The distribution in Fig. 7) and is modeled by a 50-k and in Fig. 4, are margin losses for “1” and “0”, which are , respectively."
+        },
+        {
+          "section_title": "COLUMN DECODING",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "To decode 8 continuous bitlines for S-S-D-D-D-P-P-P, these 2 local bitlines must be 8 memory cells LE et al.: VIRTUAL-GROUND SENSING TECHNIQUES FOR A 49-ns/200-MHz ACCESS TIME 1.8-V 256-Mb 2-BIT-PER-CELL FLASH MEMORY Fig. 7."
+        },
+        {
+          "section_title": "DIFFERENTIAL CASCODED FEEDBACK CONTROL OF",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Thus, there are four threshold voltage distributions 11, 10, 01, 11 as depicted in Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "resistor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Threshold voltage distributions",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.12,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 6,
+      "caption": "Fig. 8. Accurate cascode ampliﬁer.",
+      "caption_bbox": [
+        39.6,
+        209.4,
+        157.3,
+        217.4
+      ],
+      "section_title": "IV. DIFFERENTIAL CASCODED FEEDBACK CONTROL OF",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DIFFERENTIAL CASCODED FEEDBACK CONTROL OF",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "To overcome the problems of the traditional cascode ampliﬁer, a new differential cascode ampliﬁer has been designed and is shown in Fig. 8."
+        },
+        {
+          "section_title": "DIFFERENTIAL CASCODED FEEDBACK CONTROL OF",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "In addition, the resistive divider is simple, accurate (with respect to temperature, process variation and cell current), fast, and its output can be Fig. 8."
+        },
+        {
+          "section_title": "DIFFERENTIAL CASCODED FEEDBACK CONTROL OF",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Note that the differential ampliﬁer shown in Fig. 8 can be of any kind, such as one-stage, two-stage, current-mirror load, fully differential, etc. However, because the cascode ampliﬁer is a closed-loop feedback system, the number of stages is limited to one or two to have a good transient response."
+        },
+        {
+          "section_title": "DIFFERENTIAL CASCODED FEEDBACK CONTROL OF",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "An exactly the same cascode ampliﬁer shown in Fig. 8 is used for the reference cell."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.6,
+      "relevance_breakdown": {
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Accurate cascode ampliﬁer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 6,
+      "caption": "Fig. 9. Timing for the new cascode ampliﬁer.",
+      "caption_bbox": [
+        39.6,
+        365.1,
+        190.2,
+        373.1
+      ],
+      "section_title": "IV. DIFFERENTIAL CASCODED FEEDBACK CONTROL OF",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DIFFERENTIAL CASCODED FEEDBACK CONTROL OF",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 9."
+        },
+        {
+          "section_title": "DIFFERENTIAL CASCODED FEEDBACK CONTROL OF",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The clamp is would go down very slowly because turned on for a short time using the signal INI_CHG, then turned . off afterward to avoid interference with the sensing current Fig. 9 shows the timing for the new cascode ampliﬁer in relative to the read cycle."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Timing for the new cascode ampliﬁer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 6,
+      "caption": "Fig. 10. Chip microphotograph.",
+      "caption_bbox": [
+        302.6,
+        241.7,
+        410.1,
+        249.6
+      ],
+      "section_title": "IV. DIFFERENTIAL CASCODED FEEDBACK CONTROL OF",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "COLUMN DECODING",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "For the memory presented in Fig. 10, which has 16 memory banks (to support simultaneous read and write), the area of the column decoding logic is about 2.4% of the chip area."
+        },
+        {
+          "section_title": "DIFFERENTIAL CASCODED FEEDBACK CONTROL OF",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "This reference cell is programmed once to have a current level between the current distribution of the erased bits and the current IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 11, NOVEMBER 2004 Fig. 10."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "A microphotograph of the . memory is shown in Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -5.3,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "references": 1.2
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chip microphotograph",
+        "key_specs": [
+          "2.4%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 6,
+      "caption": "Fig. 11. Measured waveforms for the new cascode ampliﬁer and the protecting ampliﬁer in read mode.",
+      "caption_bbox": [
+        302.6,
+        470.1,
+        553.7,
+        487.1
+      ],
+      "section_title": "IV. DIFFERENTIAL CASCODED FEEDBACK CONTROL OF",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DIFFERENTIAL CASCODED FEEDBACK CONTROL OF",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 11."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The area of the chip is 52 mm Fig. 11 shows the measured waveforms of the new cascode ampliﬁer and the protecting ampliﬁer in the read mode at room temperature and 1.8-V power supply voltage; the measured voltages at nodes C1 and C2 (in Fig. 4) are shown."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Note that the probing results shown in Fig. 11 and 13 have been obtained at room temperature and with the power supply voltage of 1.8 V."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.8,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-waveform": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured waveforms for the new cascode ampliﬁer and the protecting ampliﬁer in read mode",
+        "key_specs": [
+          "1.8 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 6,
+      "caption": "Fig. 12. Schmoo plots for initial read access time.",
+      "caption_bbox": [
+        302.6,
+        676.4,
+        468.1,
+        684.4
+      ],
+      "section_title": "IV. DIFFERENTIAL CASCODED FEEDBACK CONTROL OF",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DIFFERENTIAL CASCODED FEEDBACK CONTROL OF",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 12."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 12 shows the shmoo plot for the random read access time (or initial burst read access time) for a typical sector."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schmoo plots for initial read access time",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 7,
+      "caption": "Fig. 13. Read speed path diagram.",
+      "caption_bbox": [
+        38.1,
+        239.4,
+        154.5,
+        247.4
+      ],
+      "section_title": "IV. DIFFERENTIAL CASCODED FEEDBACK CONTROL OF",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DIFFERENTIAL CASCODED FEEDBACK CONTROL OF",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The voltage at the sensing node SAIN of the LE et al.: VIRTUAL-GROUND SENSING TECHNIQUES FOR A 49-ns/200-MHz ACCESS TIME 1.8-V 256-Mb 2-BIT-PER-CELL FLASH MEMORY Fig. 13."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "(or random read access time) at the power supply The read speed path shown in Fig. 13 marks important probing points START and DSI."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Read speed path diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 7,
+      "caption": "Fig. 14. Burst read access—delay from clock to node DSI.",
+      "caption_bbox": [
+        301.1,
+        445.4,
+        494.4,
+        453.3
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 14 shows a delay Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.6,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Burst read access—delay from clock to node DSI",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 7,
+      "caption": "Fig. 15. Measured performance.",
+      "caption_bbox": [
+        301.1,
+        556.2,
+        409.9,
+        564.2
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 15."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "A summary of the measured performance of the memory is shown in Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured performance",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 4,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

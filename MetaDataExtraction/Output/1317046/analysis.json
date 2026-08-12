@@ -1,0 +1,1038 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1317046.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1317046",
+  "generated_at": "2026-07-29T21:31:33",
+  "paper_metadata": {
+    "title": "Techniques for Phase Noise Suppression in Recirculating DLLs",
+    "authors": [
+      "Sheng Ye",
+      "Ian Galton"
+    ],
+    "abstract": "This paper presents two techniques for reducing phase noise in recirculating delay-locked loops (DLLs) and in various ways. In a DLL-based clock multiplier, the delay extends recently developed theoretical results to optimize the of a voltage-controlled delay line (VCDL) is locked to the performance of a recirculating DLL prototype CMOS IC incorreference period [1]. Multiple delayed versions of the reference porating the techniques. One of the techniques reduces 1 noise clock from the VCDL are then combined to produce the final in both the voltage-controlled oscillator (VCO) and bias circuitry clock signal, as shown in Fig. 1(a). The delayed reference is through hard periodic switching of key transistors. The other technique maximizes the phase noise suppression achieved by discarded at the end of the VCDL, so the phase realignment is periodically switching in a clean reference pulse to reset the VCO performed naturally by design. Another type of DLL, referred phase noise memory. Theoretical results are used to optimize the to as a recirculating DLL in the remainder of the paper, is loop filter and establish several general design guidelines for recirimplemented using a ring VCO with the phase realignment culating DLLs. Measured performance data from the fabricated performed by periodically opening the ring to discard the IC with and without the techniques enabled closely support the theoretical predictions. noisy VCO edge and replacing it with a clean reference edge, as shown in Fig. 1(b) [2]. Alternatively, in a realigned PLL",
+    "keywords": [
+      "Delay-locked loop (DLL)",
+      "frequency synthesizers",
+      "phase noise",
+      "phase-locked loop (PLL)"
+    ],
+    "doi": "10.1109/JSSC.2004.831802",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2004
+  },
+  "paper_circuit_context": {
+    "circuit_type": "voltage-controlled oscillator (VCO)",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "output buffer",
+      "bias circuit",
+      "latch",
+      "clock / timing"
+    ],
+    "design_purpose": "",
+    "function_summary": "voltage-controlled oscillator (VCO): This paper presents two techniques for reducing phase noise in recirculating delay-locked loops (DLLs) and in various ways.",
+    "key_specs": [
+      "5%",
+      "160 MHz",
+      "4352 V",
+      "5 dB",
+      "100 MHz",
+      "21.5 dB",
+      "4 MHz",
+      "190 MHz",
+      "680 pF",
+      "2 nF"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "F REQUENCY synthesizers are critical building blocks in communication systems. Ring-oscillator-based voltagecontrolled oscillators (VCOs) are widely used in low-performance frequency synthesizer applications such as clock multiplication for digital systems because of their simplicity, widetuningrange,andeaseofintegration. However,theyareless commonlyusedinapplicationswhicharesensitivetophasenoise  ..."
+    },
+    {
+      "number": "II",
+      "title": "APPLICATION OF THE RPLL THEORY",
+      "kind": "proposed",
+      "page": 1,
+      "text_preview": "TO RECIRCULATING DLLS A. Brief Review of the RPLL Theory The RPLL theory presented in [3] characterizes the phase noise performance of both DLLs and RPLLs. It is applied to the analysis of recirculating DLLs in this section. For completeness, the highlights of this model are ﬁrst brieﬂy reviewed. The theory is based on the physical observations that the phase of the VCO is shifted almost instantan ..."
+    },
+    {
+      "number": "III",
+      "title": "SWITCHED BIASING FOR FLICKER NOISE REDUCTION",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "In modern submicron CMOS processes, noise is a signiﬁcant noise source and is a critical issue in VCO design. It has been reported that periodically switching a MOS transistor between “on” and “off” states results in a signiﬁcant reduction noise. This phenomenon, although on a microscopic of the scale, is analogous to VCO phase noise attenuation through phase realignment. The concentration of nois ..."
+    },
+    {
+      "number": "IV",
+      "title": "IMPLEMENTATION DETAILS",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "A. DLL and VCO Topology Fig. 5 shows the simpliﬁed block diagram of the proposed recirculating DLL. The VCO contains two NAND gates and several voltage-controlled delay cells to form the ring [15]. When the signals “rlgn” and “pulse_sw” are set high, the NAND gates act as inverters and the VCO behaves as a conventional ring VCO. Phase realignment is performed in two steps. First, by setting “rlgn” ..."
+    },
+    {
+      "number": "V",
+      "title": "MEASUREMENT DETAILS",
+      "kind": "results",
+      "page": 5,
+      "text_preview": "A. VCO Phase Noise Measurement The prototype IC was fabricated in a single-poly, six-metal, m TSMC CMOS process and was packaged in a 32-pin 0.18QFN package. The 4-MHz reference clock for the DLL is derived from a 32-MHz crystal. Figs. 13–16 present measured results with superimposed theoretical results. The theoretical PSD curves were obtained by applying the calculated transfer functions from th ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 8,
+      "text_preview": "This paper presents a recirculating delay-locked loop (DLL) with various innovations to improve in-band phase noise suppression. The VCO and bias circuitry incorporate circuit-level noise through switched biasing. The techniques that reduce phase realignment theory is applied to optimize the VCO so as to maximize the phase noise suppression, which is achieved by periodically switching in a clean r ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Frequency synthesizers with phase realignment capability. (a) VCDLbased DLL. (b) Recirculating DLL. (c) Phase realigned PLL.",
+      "caption_bbox": [
+        38.1,
+        363.0,
+        289.2,
+        379.9
+      ],
+      "section_title": "II. APPLICATION OF THE RPLL THEORY",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Multiple delayed versions of the reference clock from the VCDL are then combined to produce the ﬁnal clock signal, as shown in Fig. 1(a)."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Another type of DLL, referred to as a recirculating DLL in the remainder of the paper, is implemented using a ring VCO with the phase realignment performed by periodically opening the ring to discard the noisy VCO edge and replacing it with a clean reference edge, as shown in Fig. 1(b) [2]."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Alternatively, in a realigned PLL (RPLL), shown in Fig. 1(c), the phase realignment is performed by directly coupling a strongly buffered version of a clean reference source into one of the inverters in the VCO [3]."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "YE AND GALTON: TECHNIQUES FOR PHASE NOISE SUPPRESSION IN RECIRCULATING DLLs Fig. 1."
+        },
+        {
+          "section_title": "MEASUREMENT DETAILS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The phase noise performance of a VCDL-based DLL as shown in Fig. 1(a) is reported in [18] where no signiﬁcant noise is detected in the output."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.0,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "clock / timing"
+        ],
+        "design_purpose": "",
+        "function_summary": "Frequency synthesizers with phase realignment capability. (a) VCDLbased DLL. (b) Recirculating DLL. (c) Phase realigned PLL",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.5,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Linearized model for the RPLL and DLL.",
+      "caption_bbox": [
+        301.1,
+        149.1,
+        464.4,
+        157.0
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "APPLICATION OF THE RPLL THEORY",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 2 shows the resulting linearized model derived in [3] and are the for noise analysis of the RPLL, where is the divider ratio, charge pump and VCO gains, respectively, is the transfer function of the loop ﬁlter."
+        },
+        {
+          "section_title": "APPLICATION OF THE RPLL THEORY",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The effect of the phase realignment is represented by the two transfer functions and , shown as gray blocks in the ﬁgure, where Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "-model": -1.5,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Linearized model for the RPLL and DLL",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Calculated noise transfer functions of the recirculating DLL with a ﬁrst-order loop ﬁlter using the linearized model. The bandwidth is controlled by the loop ﬁlter capacitor.",
+      "caption_bbox": [
+        39.6,
+        433.0,
+        290.7,
+        458.8
+      ],
+      "section_title": "II. APPLICATION OF THE RPLL THEORY",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "APPLICATION OF THE RPLL THEORY",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Moreover, while the choice of loop bandwidth signiﬁcantly affects the attenuation of the VCO phase noise and input noise, i.e., the charge pump and divider noise, it has little effect on the attenuation of the reference Fig. 3."
+        },
+        {
+          "section_title": "APPLICATION OF THE RPLL THEORY",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "For illustration purposes, Fig. 3 shows the calculated noise transfer functions in a recirculating DLL with a ﬁrst-order loop ﬁlter where the bandwidth is controlled by the loop ﬁlter capacitor."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.3,
+      "relevance_breakdown": {
+        "-model": -1.5,
+        "-calculated": -2.0,
+        "section:proposed": 2.0,
+        "type_match:controlled": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Calculated noise transfer functions of the recirculating DLL with a ﬁrst-order loop ﬁlter using the linearized model. The bandwidth is controlled by the loop ﬁlter capacitor",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Periodically switching a MOSFET between “on” and “off” resets the memory of the noise such that the long-term correlation in the noise is suppressed.",
+      "caption_bbox": [
+        302.6,
+        139.4,
+        553.7,
+        165.2
+      ],
+      "section_title": "II. APPLICATION OF THE RPLL THEORY",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "SWITCHED BIASING FOR FLICKER NOISE REDUCTION",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "A widely IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 8, AUGUST 2004 Fig. 4."
+        },
+        {
+          "section_title": "SWITCHED BIASING FOR FLICKER NOISE REDUCTION",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "As illustrated and “off” states results in a reduction in in Fig. 4, when the transistor is turned off, the trapped carriers tend to be released, resulting in the reset of the noise source."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Periodically switching a MOSFET between “on” and “off” resets the memory of the noise such that the long-term correlation in the noise is suppressed",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Proposed recirculating DLL block diagram.",
+      "caption_bbox": [
+        38.1,
+        264.9,
+        207.4,
+        272.9
+      ],
+      "section_title": "III. SWITCHED BIASING FOR FLICKER NOISE REDUCTION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION DETAILS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "DLL and VCO Topology Fig. 5 shows the simpliﬁed block diagram of the proposed recirculating DLL."
+        },
+        {
+          "section_title": "IMPLEMENTATION DETAILS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "However, in a typical NAND gate YE AND GALTON: TECHNIQUES FOR PHASE NOISE SUPPRESSION IN RECIRCULATING DLLs Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "+proposed": 3.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Proposed recirculating DLL block diagram",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.86,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Simpliﬁed timing diagram of the phase realignment control in the prototype.",
+      "caption_bbox": [
+        38.1,
+        425.9,
+        313.0,
+        433.9
+      ],
+      "section_title": "III. SWITCHED BIASING FOR FLICKER NOISE REDUCTION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION DETAILS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "A simpliﬁed timing diagram is shown in Fig. 6."
+        },
+        {
+          "section_title": "IMPLEMENTATION DETAILS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simpliﬁed timing diagram of the phase realignment control in the prototype",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. (a) Conventional NAND gate. (b) Proposed NAND gate for better waveform matching.",
+      "caption_bbox": [
+        38.1,
+        563.7,
+        289.2,
+        580.6
+      ],
+      "section_title": "III. SWITCHED BIASING FOR FLICKER NOISE REDUCTION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION DETAILS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 7."
+        },
+        {
+          "section_title": "IMPLEMENTATION DETAILS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "(b) Proposed NAND gate for better waveform matching. as shown in Fig. 7(a), when one input switches from “0” to “1” while the other stays at “0,” the falling edge of the output waveform is mismatched because of the body effect in the nMOS transistor even if the rising edges of the two inputs are identical."
+        },
+        {
+          "section_title": "IMPLEMENTATION DETAILS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "To alleviate this problem, the NAND gate in Fig. 7(b) is used."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "-conventional": -3.0,
+        "-waveform": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "To alleviate this problem, the NAND gate in Fig. 7(b) is used.",
+        "function_summary": "(a) Conventional NAND gate. (b) Proposed NAND gate for better waveform matching. To alleviate this problem, the NAND gate in Fig. 7(b) is used.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8.",
+      "caption_bbox": [
+        39.6,
+        287.6,
+        60.1,
+        295.5
+      ],
+      "section_title": "III. SWITCHED BIASING FOR FLICKER NOISE REDUCTION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION DETAILS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 8(a) shows which is critical for a simple implementation of the bias circuitry."
+        },
+        {
+          "section_title": "IMPLEMENTATION DETAILS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "A offers an area efﬁcient solution for straightforward approach is shown in Fig. 8(b)."
+        },
+        {
+          "section_title": "IMPLEMENTATION DETAILS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "As shown in Fig. 8(c), the branch not in use is switched off by setting the gate-source voltage to zero."
+        },
+        {
+          "section_title": "IMPLEMENTATION DETAILS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "As a result, this approach has almost the same power consumption as that shown in Fig. 8(a) except for the slight overhead in the switching circuitry."
+        },
+        {
+          "section_title": "IMPLEMENTATION DETAILS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "(c) Illustration of the Fig. 8. detailed operation of the bias: an equivalent parasitic resistor is introduced between the loop ﬁlter and the power supply."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "resistor"
+        ],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.12,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. operation.",
+      "caption_bbox": [
+        39.6,
+        608.6,
+        71.7,
+        625.5
+      ],
+      "section_title": "III. SWITCHED BIASING FOR FLICKER NOISE REDUCTION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION DETAILS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "(b) Detailed illustration of the bias circuit’s Fig. 9. operation. suppressing noise, the switching introduces the equivalent of a parasitic resistor between the loop ﬁlter node and the power supply, which can adversely affect the loop dynamics."
+        },
+        {
+          "section_title": "IMPLEMENTATION DETAILS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "To alleviate this problem, the bias circuit shown in Fig. 9(a) is used in the recirculating DLL prototype."
+        },
+        {
+          "section_title": "IMPLEMENTATION DETAILS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "This circuit switches the source and drain to turn off each transistor as illustrated in Fig. 9(b)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "resistor",
+          "transistor/MOSFET",
+          "bias circuit"
+        ],
+        "design_purpose": "To alleviate this problem, the bias circuit shown in Fig. 9(a) is used in the recirculating DLL prototype.",
+        "function_summary": "operation. To alleviate this problem, the bias circuit shown in Fig. 9(a) is used in the recirculating DLL prototype.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. Simulated node voltages of the nMOS transistor in the bias circuitry when switched biasing is enabled.",
+      "caption_bbox": [
+        38.1,
+        307.2,
+        289.2,
+        324.1
+      ],
+      "section_title": "III. SWITCHED BIASING FOR FLICKER NOISE REDUCTION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION DETAILS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "For illustration purposes, Fig. 10 shows the simulated gate, drain, and source voltages of the nMOS transistors when the switched biasing is enabled."
+        },
+        {
+          "section_title": "IMPLEMENTATION DETAILS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "As described in [3], to maximize YE AND GALTON: TECHNIQUES FOR PHASE NOISE SUPPRESSION IN RECIRCULATING DLLs Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-simulated": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "bias circuit"
+        ],
+        "design_purpose": "As described in [3], to maximize YE AND GALTON: TECHNIQUES FOR PHASE NOISE SUPPRESSION IN RECIRCULATING DLLs Fig. 10.",
+        "function_summary": "Simulated node voltages of the nMOS transistor in the bias circuitry when switched biasing is enabled. As described in [3], to maximize YE AND GALTON: TECHNIQUES FOR PHASE NOISE SUPPRESSION IN RECIRCULATING DLLs Fig. 10.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 5,
+      "caption": "Fig. 11. Pseudodifferential voltage-controlled delay cell design. (a) Conventional latch using two back-to-back inverters. (b) Improved latch for better 1=f noise reduction.",
+      "caption_bbox": [
+        301.1,
+        393.0,
+        552.2,
+        418.9
+      ],
+      "section_title": "III. SWITCHED BIASING FOR FLICKER NOISE REDUCTION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION DETAILS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The proposed delay cell is an extension of that shown in Fig. 11(a), wherein the delay , , , is varied by controlling the transconductance of ."
+        },
+        {
+          "section_title": "IMPLEMENTATION DETAILS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Normally, the differential signal is created using a latch with two back-to-back inverters at the outputs as shown in Fig. 11(a)."
+        },
+        {
+          "section_title": "IMPLEMENTATION DETAILS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "In order to further exploit the switched biasing technique to suppress noise in these transistors, a special latch is implemented, as shown in Fig. 11(b)."
+        },
+        {
+          "section_title": "IMPLEMENTATION DETAILS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 12(a) shows the simulated outputs of Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.6,
+      "relevance_breakdown": {
+        "-conventional": -3.0,
+        "type_match:controlled": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "bias circuit",
+          "latch"
+        ],
+        "design_purpose": "In order to further exploit the switched biasing technique to suppress noise in these transistors, a special latch is implemented, as shown in Fig. 11(b).",
+        "function_summary": "Pseudodifferential voltage-controlled delay cell design. (a) Conventional latch using two back-to-back inverters. (b) Improved latch for better 1=f noise reduction. In order to further exploit the switched biasing technique to suppress noise in these transistors, a special latch is implemented, as shown in Fig. 11(b).",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.03,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 6,
+      "caption": "Fig. 12. Simulated waveforms in the delay cell. (a) Delay cell outputs. (b) Node voltages of M when the switched biasing is enabled.",
+      "caption_bbox": [
+        39.6,
+        544.2,
+        290.7,
+        561.1
+      ],
+      "section_title": "V. MEASUREMENT DETAILS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION DETAILS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 12(a) shows the simulated outputs of Fig. 11."
+        },
+        {
+          "section_title": "IMPLEMENTATION DETAILS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 12(b) shows the node voltages of the “off” state is identical to the “off” state of the transistor in the bias described above."
+        },
+        {
+          "section_title": "MEASUREMENT DETAILS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -5.8,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "-waveform": -2.0,
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "bias circuit"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simulated waveforms in the delay cell. (a) Delay cell outputs. (b) Node voltages of M when the switched biasing is enabled",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 6,
+      "caption": "Fig. 13. Comparison between conventional PLL and the recirculating DLL with a second-order loop ﬁlter, with and without switched biasing. Theoretical = calculations are superimposed on the measured data. System parameters: f 4 MHz, N = 25, K = 190 MHz/V, I = 0:5 mA, loop ﬁlter: R = 330 , C = 680 pF, C = 8:2 nF, PLL bandwidth = 200 kHz.",
+      "caption_bbox": [
+        302.6,
+        257.3,
+        553.7,
+        301.2
+      ],
+      "section_title": "V. MEASUREMENT DETAILS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT DETAILS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Figs. 13–16 present measured results with superimposed theoretical results."
+        },
+        {
+          "section_title": "MEASUREMENT DETAILS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 13 shows superimposed measured and theoretically calculated phase noise PSD curves for the synthesizer conﬁgured as conventional PLL and as a recirculating DLL with a second-order loop ﬁlter, both with and without switched biasing."
+        },
+        {
+          "section_title": "MEASUREMENT DETAILS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 8, AUGUST 2004 Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.8,
+      "relevance_breakdown": {
+        "-conventional": -3.0,
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "bias circuit"
+        ],
+        "design_purpose": "",
+        "function_summary": "Comparison between conventional PLL and the recirculating DLL with a second-order loop ﬁlter, with and without switched biasing. Theoretical = calculations are superimposed on the measured data. System parameters: f 4 MHz, N = 25, K = 190 MHz/V, I = 0:5 mA, loop ﬁlter: R = 330 , C = 680 pF, C = 8:2 nF, PLL bandwidth = ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 6,
+      "caption": "Fig. 14. Recirculating DLL phase noise PSDs: wide loop bandwidth results in more in-band noise attenuation. Theoretical calculations are superimposed on the measured data.",
+      "caption_bbox": [
+        302.6,
+        569.9,
+        553.7,
+        595.8
+      ],
+      "section_title": "V. MEASUREMENT DETAILS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT DETAILS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 14 shows the measured phase noise when the synthesizer is conﬁgured as a recirculating DLL with a ﬁrst-order loop ﬁlter."
+        },
+        {
+          "section_title": "MEASUREMENT DETAILS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 14."
+        },
+        {
+          "section_title": "MEASUREMENT DETAILS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Taking the top curve of Fig. 14 as an example, the theoretical calculation was using the standalone VCO phase noise measured separately with the switched biasing disabled."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.3,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-phase noise": -2.5,
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "bias circuit"
+        ],
+        "design_purpose": "",
+        "function_summary": "Recirculating DLL phase noise PSDs: wide loop bandwidth results in more in-band noise attenuation. Theoretical calculations are superimposed on the measured data",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 7,
+      "caption": "Fig. 15. Measured input noise transfer function for recirculating DLL with second-order loop ﬁlter and with ﬁrst-order loop ﬁlter, the conventional PLL input noise transfer function is used as the reference theoretical predictions are shown as continuous curves while the discrete measured data points are represented by triangles and circles.",
+      "caption_bbox": [
+        38.1,
+        315.6,
+        289.1,
+        359.4
+      ],
+      "section_title": "V. MEASUREMENT DETAILS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT DETAILS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "However, this phenomenon YE AND GALTON: TECHNIQUES FOR PHASE NOISE SUPPRESSION IN RECIRCULATING DLLs Fig. 15."
+        },
+        {
+          "section_title": "MEASUREMENT DETAILS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 15 shows the input phase noise transfer functions of the conventional PLL, and recirculating DLL with secondand ﬁrst-order loop ﬁlters."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -8.2,
+      "relevance_breakdown": {
+        "-conventional": -3.0,
+        "-reference": -1.0,
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured input noise transfer function for recirculating DLL with second-order loop ﬁlter and with ﬁrst-order loop ﬁlter, the conventional PLL input noise transfer function is used as the reference theoretical predictions are shown as continuous curves while the discrete measured data points are represented by ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 7,
+      "caption": "Fig. 16. ﬁlter and DLL with 2.2-nF loop ﬁlter: the loop bandwidth has little effect on the reference noise. The conventional PLL reference noise transfer function is used as the reference. Theoretical predictions are shown as continuous curves while the discrete measured data points are represented by triangles and circles.",
+      "caption_bbox": [
+        301.1,
+        320.6,
+        552.2,
+        364.4
+      ],
+      "section_title": "V. MEASUREMENT DETAILS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT DETAILS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Alternatively, since the input noise transfer function of a conventional PLL is well known, it Measured reference noise transfer function for DLL with 22 \u0016F loop Fig. 16. ﬁlter and DLL with 2.2-nF loop ﬁlter: the loop bandwidth has little effect on the reference noise."
+        },
+        {
+          "section_title": "MEASUREMENT DETAILS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 16 shows the reference noise transfer function of the conventional F loop ﬁlter and DLL with PLL, recirculating DLL with 222.2-nF loop ﬁlter."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -8.2,
+      "relevance_breakdown": {
+        "-conventional": -3.0,
+        "-reference": -1.0,
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "ﬁlter and DLL with 2.2-nF loop ﬁlter: the loop bandwidth has little effect on the reference noise. The conventional PLL reference noise transfer function is used as the reference. Theoretical predictions are shown as continuous curves while the discrete measured data points are represented by triangles and circles",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 8,
+      "caption": "Fig. 17. Die photo.",
+      "caption_bbox": [
+        39.6,
+        274.4,
+        106.5,
+        282.4
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "MEASUREMENT DETAILS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "A die photograph of the fabricated circuit indicating the major functional blocks is shown in Fig. 17."
+        },
+        {
+          "section_title": "MEASUREMENT DETAILS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-die photo": -3.0,
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Die photo",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 5,
+  "warnings": []
+}

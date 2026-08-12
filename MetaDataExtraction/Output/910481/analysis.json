@@ -1,0 +1,864 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\910481.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\910481",
+  "generated_at": "2026-07-29T21:33:25",
+  "paper_metadata": {
+    "title": "A 900-MHz 2.5-mA CMOS Frequency Synthesizer with an Automatic SC Tuning Loop",
+    "authors": [
+      "Tsung-Hsien Lin",
+      "William J. Kaiser"
+    ],
+    "abstract": "A 900-MHz phase-locked loop frequency synthesizer implemented in a 0.6m CMOS technology is developed for the Wireless Integrated Network Sensors applications. It incorporates an automatic switched-capacitor (SC) discrete-tuning loop to extend the overall frequency tuning range to 20%, while the VCO gain ( VCO) resulting from the CMOS varactor continuous-tuning is kept low at only 20 MHz/V in order to improve the reference spurs and noise performance. This frequency synthesizer achieves a phase noise of 102 dBc/Hz at 100 kHz offset frequency and reference spurs below 55 dBc. The synthesizer, including an on-chip VCO, dissipates only 2.5 mA from a 3-V supply.",
+    "keywords": [
+      "Frequency synthesizer",
+      "phase-locked loop",
+      "VCO"
+    ],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2001
+  },
+  "paper_circuit_context": {
+    "circuit_type": "voltage-controlled oscillator (VCO)",
+    "technology": "CMOS",
+    "application_domain": "wireless, biomedical",
+    "sub_blocks": [
+      "varactor",
+      "inductor",
+      "capacitor",
+      "transistor/MOSFET",
+      "LC tank / resonator",
+      "mixer",
+      "bias circuit",
+      "switch",
+      "clock / timing"
+    ],
+    "design_purpose": "It incorporates an automatic switched-capacitor (SC) discrete-tuning loop to extend the overall frequency tuning range to 20%, while the VCO gain ( VCO) resulting from the CMOS varactor continuous-tuning is kept low at only 20 MHz/V in order to improve the reference spurs and noise performance.",
+    "function_summary": "voltage-controlled oscillator (VCO): It incorporates an automatic switched-capacitor (SC) discrete-tuning loop to extend the overall frequency tuning range to 20%, while the VCO gain ( VCO) resulting from the CMOS varactor continuous-tuning is kept low at only 20 MHz/V in order to improve the reference spurs and noise performance.",
+    "key_specs": [
+      "20%",
+      "20 MHz",
+      "102 dBc/Hz",
+      "100 kHz",
+      "55 dBc",
+      "80 dB",
+      "250 kHz",
+      "25 dB",
+      "100 MHz",
+      "26 MHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "W IRELESS Integrated Network Sensors (WINS) is a lowpower, distributed, wireless micro-sensor network [1]. It combines sensing, signal processing, decision capability, and wireless networking capability in a compact system. Compact geometry and low cost allows WINS to be embedded and distributed at a small fraction of the cost of conventional wire-line sensor and actuator systems. WINS can be depl ..."
+    },
+    {
+      "number": "II",
+      "title": "FREQUENCY SYNTHESIZER DESIGN APPROACHES",
+      "kind": "design",
+      "page": 0,
+      "text_preview": "The primary design goal of the WINS communication system is to facilitate practical low-power radio implementation. A wide channel spacing of 250 kHz is chosen such that the FSK tone frequency can be placed away from dc (high modulation index). This arrangement effectively minimizes the impact of direct-conversion receiver noise (especially the overwhelming noise) and ultimately saves power. Furth ..."
+    },
+    {
+      "number": "III",
+      "title": "FREQUENCY SYNTHESIZER OPERATION",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "The complete PLL frequency synthesizer schematic is shown in Fig. 3. All the design parameters and the added divide-by-2 stage are shown. The SC coarse tuning loop is first enabled when the synthesizer is powered on. An up/down counter, which is controlled by some comparison logic, determines the switch positions of the SC network in the VCO. The search for the proper SC state (that represents the ..."
+    },
+    {
+      "number": "IV",
+      "title": "CIRCUIT IMPLEMENTATION",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "A. Comparison Stage The frequency comparison/locking during the searching of the right SC state is accomplished by comparing voltage quantities. Two comparators compare the loop filter (LF) outputs and . Fig. 4(a) illuswith two predefined voltages trates the relationships between frequencies and tuning voltages at the ‘ok’ state. At this state, the SC loop can lock the VCO and , with corresponding ..."
+    },
+    {
+      "number": "V",
+      "title": "MEASUREMENT RESULTS",
+      "kind": "results",
+      "page": 4,
+      "text_preview": "This PLL frequency synthesizer has been fabricated in a m CMOS technology. Fig. 10 shows the die photo. The 0.6active area is estimated to be around 1 mm by 0.7 mm. The circuit is tested from a 3-V supply voltage at room temperature. Including an on-chip VCO, this synthesizer dissipates 2.5 mA, and it drains only 2.2 mA when the SC loop is powered down after reaching the “ok’ state. The VCO core c ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 6,
+      "text_preview": "A 900-MHz, low-power PLL frequency synthesizer is developed for the WINS transceiver in a standard CMOS technology. This PLL exhibits high performance by efforts in every design level, from system specifications, PLL architecture and circuit designs to choices of passive components (on-chip or off-chip) and layout techniques. In the system design stage, careful frequency planning and reasonable sy ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Simplified WINS transceiver schematic.",
+      "caption_bbox": [
+        302.6,
+        305.2,
+        460.3,
+        315.9
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Publisher Item Identifier S 0018-9200(01)01475-5. 0018–9200/01$10.00 © 2001 IEEE Fig. 1."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The simplified transceiver schematic is shown in Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "-simplified": -1.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "transceiver",
+        "technology": "CMOS",
+        "application_domain": "wireless, biomedical",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simplified WINS transceiver schematic",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Method of achieving a wide frequency tuning range with small VCO gain.",
+      "caption_bbox": [
+        301.1,
+        279.9,
+        552.2,
+        299.5
+      ],
+      "section_title": "II. FREQUENCY SYNTHESIZER DESIGN APPROACHES",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "FREQUENCY SYNTHESIZER DESIGN APPROACHES",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "This is accomplished by employing both discrete and continuous tunings, as illustrated in Fig. 2."
+        },
+        {
+          "section_title": "FREQUENCY SYNTHESIZER DESIGN APPROACHES",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "This will guarantee that at least one curve can Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.8,
+      "relevance_breakdown": {
+        "-tuning range": -2.5,
+        "section:design": 1.5,
+        "type_match:vco": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "wireless, biomedical",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Method of achieving a wide frequency tuning range with small VCO gain",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.1,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Complete PLL frequency synthesizer schematic.",
+      "caption_bbox": [
+        39.6,
+        242.8,
+        223.5,
+        253.5
+      ],
+      "section_title": "II. FREQUENCY SYNTHESIZER DESIGN APPROACHES",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "FREQUENCY SYNTHESIZER DESIGN APPROACHES",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "To fully utilize this SC tuning approach, an automatic Fig. 3."
+        },
+        {
+          "section_title": "FREQUENCY SYNTHESIZER OPERATION",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The complete PLL frequency synthesizer schematic is shown in Fig. 3."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Note that, in Fig. 12, “LF output” represents the main loop filter output (node B) of Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.7,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "wireless, biomedical",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Complete PLL frequency synthesizer schematic",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.85,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. (a) Frequency versus voltage at the ‘ok’ state. (b) Comparison stage schematic.",
+      "caption_bbox": [
+        302.6,
+        296.8,
+        553.7,
+        316.4
+      ],
+      "section_title": "III. FREQUENCY SYNTHESIZER OPERATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FREQUENCY SYNTHESIZER OPERATION",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 3, MARCH 2001 Fig. 4."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 4(a) illuswith two predefined voltages trates the relationships between frequencies and tuning voltages at the ‘ok’ state."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The schematic of the comparison stage is shown in Fig. 4(b). and are generated by A pair of nonoverlapping clocks dividing 125 kHz (from the reference signal of the main loop) by s for a comparison opera128."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.2,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "type_match:voltage": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "wireless, biomedical",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Frequency versus voltage at the ‘ok’ state. (b) Comparison stage schematic",
+        "key_specs": [
+          "125 kHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.9,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Comparator circuits.",
+      "caption_bbox": [
+        38.1,
+        358.3,
+        132.8,
+        368.9
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "LIN AND KAISER: A 900-MHz, 2.5-mA CMOS FREQUENCY SYNTHESIZER WITH AN AUTOMATIC SC TUNING LOOP TABLE I COMPARISON RESULTS Fig. 5."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 5 A. shows both comparators."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "comparator",
+        "technology": "CMOS",
+        "application_domain": "wireless, biomedical",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Comparator circuits",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. VCO schematic.",
+      "caption_bbox": [
+        301.1,
+        219.7,
+        383.1,
+        230.3
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "VCO The VCO schematic is shown in Fig. 6."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The CMOS varactor in Fig. 6 is implemented as an accumula- -factor tion-depletion mode MOS capacitor, for it has a better ( ) chip-inductor is used in this [4]."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "This inductor will be embedded in the low-temperature co-fired ceramic (LTCC) [5] substrate in future Fig. 6."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "In Fig. 6, two nMOS transistors mirror the biasing currents into the VCO core."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 8.1,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "type_match:vco": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "wireless, biomedical",
+        "sub_blocks": [
+          "varactor",
+          "inductor",
+          "capacitor",
+          "transistor/MOSFET",
+          "bias circuit"
+        ],
+        "design_purpose": "",
+        "function_summary": "VCO schematic",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.87,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Measured device flicker noise.",
+      "caption_bbox": [
+        301.1,
+        423.8,
+        428.2,
+        434.4
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 7 shows the measured MOS gate-referred noise at 100 kHz (both pMOS and nMOS have same geometry)."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "wireless, biomedical",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Measured device flicker noise",
+        "key_specs": [
+          "100 kHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. The schematic of the dual-modulus divider.",
+      "caption_bbox": [
+        39.6,
+        278.9,
+        207.5,
+        289.6
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 8."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 8 shows the schematic of the and 190 dual-modulus divider."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "CMOS",
+        "application_domain": "wireless, biomedical",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "The schematic of the dual-modulus divider",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.79,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. (a) Charge pump circuit. (b) Second-order loop filter for the SC loop (on-chip). (c) Third-order loop filter for the main loop (off-chip).",
+      "caption_bbox": [
+        302.6,
+        300.0,
+        553.7,
+        319.6
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The charge pump, shown in Fig. 9(a), uses current mirrors with switches to control the charging and discharging currents."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 3, MARCH 2001 Fig. 9."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Since frequency accuracy and spur and noise performance are not a main concern during the SC loop operation, a stable second-order loop filter is adequate [Fig. 9(b)]."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The filter in the main synthesizer loop is a third-order off-chip passive RC filter [Fig. 9(c)]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.1,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "wireless, biomedical",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Charge pump circuit. (b) Second-order loop filter for the SC loop (on-chip). (c) Third-order loop filter for the main loop (off-chip)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.52,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. Chip photo.",
+      "caption_bbox": [
+        38.1,
+        247.8,
+        109.0,
+        258.4
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 10 shows the die photo."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The required minimum current to initiate the VCO oscillation is increasing as the SC state sweeping from LIN AND KAISER: A 900-MHz, 2.5-mA CMOS FREQUENCY SYNTHESIZER WITH AN AUTOMATIC SC TUNING LOOP Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-chip photo": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "wireless, biomedical",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chip photo",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 5,
+      "caption": "Fig. 11. Measured VCO tuning characteristics.",
+      "caption_bbox": [
+        38.1,
+        478.1,
+        193.6,
+        488.7
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 11."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Measured VCO tuning characteristics. 000 to 111, indicating that the switch on-resistance of the SC . networks degrade the The measured VCO tuning characteristics are shown in Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "type_match:vco": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "wireless, biomedical",
+        "sub_blocks": [
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Measured VCO tuning characteristics",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 5,
+      "caption": "Fig. 12. Frequency synthesizer operation with the SC state starting at (a) 000 and (b) 111.",
+      "caption_bbox": [
+        301.1,
+        266.1,
+        552.2,
+        285.7
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 12 demonstrates the synthesizer operation."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "(This corresponds to the SC state of 011 in this measurement.) Once reached, the “ok” (SC-OK) Fig. 12."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 12(a) and (b) shows the cases where the SC state (counter output) starts at 000/111."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Note that, in Fig. 12, “LF output” represents the main loop filter output (node B) of Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.4,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "wireless, biomedical",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Frequency synthesizer operation with the SC state starting at (a) 000 and (b) 111",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 5,
+      "caption": "Fig. 13. Measured frequency synthesizer output spectrum at 916 MHz: (a) 200-kHz span (RBW: 1 kHz); (b) 1-MHz span.",
+      "caption_bbox": [
+        301.1,
+        676.0,
+        552.2,
+        695.6
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 13."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The spectrum of the synthesized output at 916 MHz is shown in Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "wireless, biomedical",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured frequency synthesizer output spectrum at 916 MHz: (a) 200-kHz span (RBW: 1 kHz); (b) 1-MHz span",
+        "key_specs": [
+          "916 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 6,
+      "caption": "Fig. 14. Channel switching behaviors. (a) Channel switches from end to end. (b) Channel frequency hops across the entire ISM band.",
+      "caption_bbox": [
+        39.6,
+        370.1,
+        290.6,
+        389.7
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "In both cases, they successfully reach 011 and lock to the predefined channel Fig. 14."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The synthesizer switching behaviors are lower than are illustrated in Fig. 14."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 14(a) shows the transient of the VCO tuning voltage waveform with channel jumping between the lowest and highest frequencies."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 14(b) demonstrates the frequency hopping capability."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.6,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "wireless, biomedical",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Channel switching behaviors. (a) Channel switches from end to end. (b) Channel frequency hops across the entire ISM band",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.03,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 6,
+  "warnings": []
+}

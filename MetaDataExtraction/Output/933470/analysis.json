@@ -1,0 +1,733 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\933470.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\933470",
+  "generated_at": "2026-07-29T21:33:39",
+  "paper_metadata": {
+    "title": "A Dual-Phase-Controlled Dynamic Latched Amplifier for High-Speed and Low-Power DRAMs",
+    "authors": [
+      "Hiroki Fujisawa",
+      "Tsugio Takahashi",
+      "Masayuki Nakamura",
+      "Kazuhiko Kajigaya"
+    ],
+    "abstract": "A dual-phase-controlled dynamic latched (DDL) amplifier for a differential data transfer scheme designed to achieve both high speed and low power in DRAMs is described. This circuit reduces the excessive operating margin caused by device fluctuations by using a pair of dynamic latched amplifiers, controlled by a dual-phase clock, to automatically correct the output data. Two circuit technologies are used in the DDL amplifier to achieve 200-MHz operation in a 1-Gb SDRAM using 0.13m technology: a cycle-time-progressive control circuit that increases the operating frequency and a shared DDL amplifier technique that reduces the area penalty of the DDL amplifier. These techniques and circuits reduce the access time to 10 ns, which is 1.2 ns less than that of the conventional dynamic amplifier, while also reducing the operating current to less than 10% that of the static amplifier.",
+    "keywords": [
+      "Data amplifier",
+      "DRAM chips",
+      "high speed",
+      "low power"
+    ],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2001
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Dual-Phase-Controlled Dynamic Latched Amplifier",
+    "technology": "CMOS",
+    "application_domain": "",
+    "sub_blocks": [
+      "current mirror",
+      "output buffer",
+      "sense amplifier"
+    ],
+    "design_purpose": "Two circuit technologies are used in the DDL amplifier to achieve 200-MHz operation in a 1-Gb SDRAM using 0.13m technology: a cycle-time-progressive control circuit that increases the operating frequency and a shared DDL amplifier technique that reduces the area penalty of the DDL amplifier.",
+    "function_summary": "Dual-Phase-Controlled Dynamic Latched Amplifier: Two circuit technologies are used in the DDL amplifier to achieve 200-MHz operation in a 1-Gb SDRAM using 0.13m technology: a cycle-time-progressive control circuit that increases the operating frequency and a shared DDL amplifier technique that reduces the area penalty of the DDL amplifier.",
+    "key_specs": [
+      "10 ns",
+      "1.2 ns",
+      "10%",
+      "200 MHz",
+      "1.75 ns",
+      "2.5 ns",
+      "100 mV",
+      "1 w",
+      "0.5 ns",
+      "0.2 ns"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "W ITH THE recent technological advances in computers and portable systems, high-operating frequency, low-power consumption, and large-capacity DRAMs are becoming increasingly important to improve total system performances. In many recent successful developments of gigabit-scale DRAMs, the data rate has approached 400 Mb/s/pin and operating frequencies over 200 MHz have been achieved [1]–[4]. As th ..."
+    },
+    {
+      "number": "II",
+      "title": "DDL AMPLIFIER",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "In the differential data transfer scheme, the small signal voltage on datalines, which is about 100 mV, is amplified by Fig. 3. Schematic of a dual-phase-controlled dynamic latched (DDL) amplifier. a receiver amplifier controlled by clock signals. The device fluctuation dependencies of datalines and clock signals are different, because of the following reasons. Clock signals are controlled by dela ..."
+    },
+    {
+      "number": "III",
+      "title": "CTP CONTROL CIRCUITS",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "To achieve a higher bandwidth in high-density DRAMs, we must improve not only the delay time but also the operating frequency of the receiver amplifier. However, the operating frequency of the DDL amplifier is almost the same as that of the conventional dynamic amplifier. To achieve 200-MHz operation, we control the second-phase DDL amplifier by the CTP control circuits. Fig. 5 shows a block diagr ..."
+    },
+    {
+      "number": "IV",
+      "title": "APPLICATION TO 1-GB SDRAM",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "A. I/O Architecture We designed a 1-Gb SDRAM using the DDL amplifier with m technology. Fig. 7 shows the I/O architecture and the 0.13main components used for a data read/write operation in this SDRAM. Read data that has been amplified by a sense amplifier is transferred to local-I/O (LIO) and main-I/O (MIO) datalines -selection signal (YS). Read amplifier 1 detects the by the data, and its output ..."
+    },
+    {
+      "number": "V",
+      "title": "ACCESS TIME OF THE PROPOSED ARCHITECTURE",
+      "kind": "proposed",
+      "page": 4,
+      "text_preview": "Simulated waveforms of the read operation are shown in Figs. 12 and 13 compares the simulated access times with and FUJISAWA et al.: DUAL-PHASE-CONTROLLED DYNAMIC LATCHED AMPLIFIER Fig. 12. Simulated waveforms. Fig. 13. Simulated access times for DDL as a function of the gate length fluctuation. without the DDL amplifier. To achieve a 200-MHz operating frequency for the read operation with column  ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 5,
+      "text_preview": "The dual-phase-controlled dynamic latched (DDL) amplifier for the differential data transfer scheme simultaneously enables high-speed read operations and low-power consumption. This is achieved by self-correcting output data from a pair of dynamic latched amplifiers, which reduces the excessive timing margin caused by device fluctuations. Two circuit technologies are used in the DDL amplifier: i)  ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Schematic of small signal receiver amplifier. (a) Static current mirror amp. [4]–[6] (b) Dynamic latched amp. [7], [8].",
+      "caption_bbox": [
+        302.6,
+        525.8,
+        553.7,
+        545.4
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1 shows the conventional static [4]–[6] and dynamic [7], [8] receiver amplifier circuits."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Publisher Item Identifier S 0018-9200(01)05788-2. 0018–9200/01$10.00 © 2001 IEEE Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:intro": -0.5,
+        "type_match:amplifier": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [
+          "current mirror"
+        ],
+        "design_purpose": "",
+        "function_summary": "Schematic of small signal receiver amplifier. (a) Static current mirror amp. [4]–[6] (b) Dynamic latched amp. [7], [8]",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.79,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Dependence of the simulated delay time (t ) and operating current ) on the gate length fluctuation. (I",
+      "caption_bbox": [
+        38.1,
+        417.1,
+        289.1,
+        436.7
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 2 shows the performances of both circuits compared by simulation."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The devices’ worst case means the slowest chip condition caused by device fluctuations, while their best case means FUJISAWA et al.: DUAL-PHASE-CONTROLLED DYNAMIC LATCHED AMPLIFIER Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.7,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Dependence of the simulated delay time (t ) and operating current ) on the gate length fluctuation. (I",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Schematic of a dual-phase-controlled dynamic latched (DDL) amplifier.",
+      "caption_bbox": [
+        301.1,
+        242.3,
+        552.2,
+        261.9
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "DDL AMPLIFIER",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "In the differential data transfer scheme, the small signal voltage on datalines, which is about 100 mV, is amplified by Fig. 3."
+        },
+        {
+          "section_title": "DDL AMPLIFIER",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Our DDL amplifier, shown in Fig. 3, solves the access time and power dissipation problems."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:intro": -0.5,
+        "type_match:controlled": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematic of a dual-phase-controlled dynamic latched (DDL) amplifier",
+        "key_specs": [
+          "100 mV"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.79,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Concept of the DDL amplifier. (a) Devices’ worst case. (b) Devices’ best case.",
+      "caption_bbox": [
+        39.6,
+        477.3,
+        290.7,
+        496.9
+      ],
+      "section_title": "II. DDL AMPLIFIER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DDL AMPLIFIER",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 4 shows the concept of the DDL amplifier in the devices’ worst and best cases."
+        },
+        {
+          "section_title": "DDL AMPLIFIER",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The read operation in the worst case can be explained using the timing diagram shown in Fig. 4(a). 1) Beforehand, signals EQ1 and EQ2 precharge the two dy- , where V. namic amplifiers to the level of 2) Signal PG1 is activated and transfers the input data to the first-phase DDL amplifier. de3) Activating signal EN1 with the timing margin tects the small signal voltage and transfers the data to se- . lector circuit 4) Then, the second-phase DDL amplifier is activated by PG2 and EN2, but the output data is not changed."
+        },
+        {
+          "section_title": "DDL AMPLIFIER",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Because the activate signal EN1 is con- , that means the trolled by the most suitable timing margin signal voltage swing reached about 100 mV, the first-phase DDL Fig. 4."
+        },
+        {
+          "section_title": "DDL AMPLIFIER",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "It is given by (1) On the other hand, the read operation in the best case can be explained using the timing diagram shown in Fig. 4(b). 1) The first-phase DDL amplifier is activated by PG1 and is an insufficient margin and the firstEN1, though phase DDL amplifier may operate incorrectly. 2) First, the selector circuit outputs the error data from the first-phase DDL amplifier. 3) Next, the activate signal EN2 is controlled by the suitable , so the second-phase DDL amplifier timing margin operates correctly and transfers the data to the selector circuit. 4) Finally, the selector circuit outputs the data from the second-phase DDL amplifier again, and corrects the . error data automatically IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 7, JULY 2001 TABLE I COMPARISON OF SMALL SIGNAL RECEIVER AMPLIFIER In this operation, is shorter than in the worst case and is given by (2) The difference between EN1 and EN2 is 0.5 ns, which is designed by both the delay time in the worst case and the timing margin in the best case."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.6,
+      "relevance_breakdown": {
+        "type_match:amplifier": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Concept of the DDL amplifier. (a) Devices’ worst case. (b) Devices’ best case",
+        "key_specs": [
+          "1 w",
+          "100 mV",
+          "0.5 ns"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.4,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. (a) Block diagram of cycle-time-progressive (CTP) control circuits. (b) Schematic of CTP control circuits.",
+      "caption_bbox": [
+        38.1,
+        358.3,
+        289.2,
+        377.8
+      ],
+      "section_title": "IV. APPLICATION TO 1-GB SDRAM",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CTP CONTROL CIRCUITS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 5 shows a block diagram and schematic of the CTP control circuits, and Fig. 6 compares the simulated operating frequency among the conventional dynamic amplifier and DDL amplifier with CTP control circuits."
+        },
+        {
+          "section_title": "CTP CONTROL CIRCUITS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "This is wasted time in the devices’ worst case, and the operating frequency is decreased because the data from FUJISAWA et al.: DUAL-PHASE-CONTROLLED DYNAMIC LATCHED AMPLIFIER Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+block diagram": 2.0,
+        "+circuit": 1.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Block diagram of cycle-time-progressive (CTP) control circuits. (b) Schematic of CTP control circuits",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.75,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Improved performance in the DDL amplifier with CTP control circuit.",
+      "caption_bbox": [
+        38.1,
+        575.9,
+        289.2,
+        586.5
+      ],
+      "section_title": "IV. APPLICATION TO 1-GB SDRAM",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CTP CONTROL CIRCUITS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 5 shows a block diagram and schematic of the CTP control circuits, and Fig. 6 compares the simulated operating frequency among the conventional dynamic amplifier and DDL amplifier with CTP control circuits."
+        },
+        {
+          "section_title": "CTP CONTROL CIRCUITS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.8,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "type_match:amplifier": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Improved performance in the DDL amplifier with CTP control circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.45,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. I/O architecture of 1-Gb SDRAM with DDL amplifier.",
+      "caption_bbox": [
+        301.1,
+        243.6,
+        505.1,
+        254.2
+      ],
+      "section_title": "III. CTP CONTROL CIRCUITS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "APPLICATION TO 1-GB SDRAM",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 7 shows the I/O architecture and the 0.13main components used for a data read/write operation in this SDRAM."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.9,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "section:design": 1.5,
+        "type_match:amplifier": 2.0,
+        "references": 0.4
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "I/O architecture of 1-Gb SDRAM with DDL amplifier",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.87,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Shared DDL amplifier technique.",
+      "caption_bbox": [
+        39.6,
+        290.4,
+        175.6,
+        301.0
+      ],
+      "section_title": "IV. APPLICATION TO 1-GB SDRAM",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "APPLICATION TO 1-GB SDRAM",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Using the schematic of read amplifiers 1 and 2, Fig. 8 illustrates the shared DDL amplifier technique and how to reduce the number of read amplifiers in the 1-Gb SDRAM."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.4,
+      "relevance_breakdown": {
+        "type_match:amplifier": 2.0,
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "Using the schematic of read amplifiers 1 and 2, Fig. 8 illustrates the shared DDL amplifier technique and how to reduce the number of read amplifiers in the 1-Gb SDRAM.",
+        "function_summary": "Shared DDL amplifier technique. Using the schematic of read amplifiers 1 and 2, Fig. 8 illustrates the shared DDL amplifier technique and how to reduce the number of read amplifiers in the 1-Gb SDRAM.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.17,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. Timing diagram of multibit parallel testing operation with a shared DDL amplifier.",
+      "caption_bbox": [
+        39.6,
+        557.3,
+        290.7,
+        576.9
+      ],
+      "section_title": "IV. APPLICATION TO 1-GB SDRAM",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "APPLICATION TO 1-GB SDRAM",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 9."
+        },
+        {
+          "section_title": "APPLICATION TO 1-GB SDRAM",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Read/Write Operation with Shared DDL Amplifier Technique Fig. 9 shows the timing diagram of the multibit parallel testing operation for shared DDL amplifiers."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "type_match:amplifier": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Timing diagram of multibit parallel testing operation with a shared DDL amplifier",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10. Schematic of 16-bit compression circuit for multibit test.",
+      "caption_bbox": [
+        302.6,
+        206.3,
+        516.8,
+        217.0
+      ],
+      "section_title": "IV. APPLICATION TO 1-GB SDRAM",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "APPLICATION TO 1-GB SDRAM",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 7, JULY 2001 Fig. 10."
+        },
+        {
+          "section_title": "APPLICATION TO 1-GB SDRAM",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 10 shows the schematic of the 16-bit compression circuit."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+circuit": 1.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "Dual-Phase-Controlled Dynamic Latched Amplifier",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematic of 16-bit compression circuit for multibit test",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.69,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 4,
+      "caption": "Fig. 11. Schematic of write DDL amplifier.",
+      "caption_bbox": [
+        302.6,
+        419.2,
+        447.4,
+        429.8
+      ],
+      "section_title": "IV. APPLICATION TO 1-GB SDRAM",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "APPLICATION TO 1-GB SDRAM",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 11."
+        },
+        {
+          "section_title": "APPLICATION TO 1-GB SDRAM",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 11 shows the timing diagram of the write operation with the DDL amplifier."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "type_match:amplifier": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematic of write DDL amplifier",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.86,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 5,
+      "caption": "Fig. 12. Simulated waveforms.",
+      "caption_bbox": [
+        38.1,
+        355.2,
+        142.6,
+        365.8
+      ],
+      "section_title": "V. ACCESS TIME OF THE PROPOSED ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ACCESS TIME OF THE PROPOSED ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "Simulated waveforms of the read operation are shown in Figs. 12 and 13 compares the simulated access times with and FUJISAWA et al.: DUAL-PHASE-CONTROLLED DYNAMIC LATCHED AMPLIFIER Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.6,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "-waveform": -2.0,
+        "section:proposed": 2.0,
+        "references": 0.4
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated waveforms",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 5,
+      "caption": "Fig. 13. Simulated access times for DDL as a function of the gate length fluctuation.",
+      "caption_bbox": [
+        38.1,
+        537.4,
+        289.2,
+        556.9
+      ],
+      "section_title": "V. ACCESS TIME OF THE PROPOSED ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ACCESS TIME OF THE PROPOSED ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 4,
+          "sentence": "Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.6,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:proposed": 2.0,
+        "references": 0.4
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Dual-Phase-Controlled Dynamic Latched Amplifier",
+        "technology": "CMOS",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated access times for DDL as a function of the gate length fluctuation",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 5,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

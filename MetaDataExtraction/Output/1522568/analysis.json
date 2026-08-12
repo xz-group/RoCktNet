@@ -1,0 +1,1166 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1522568.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1522568",
+  "generated_at": "2026-07-29T22:03:16",
+  "paper_metadata": {
+    "title": "Write Pulse Generator for 16x DVD Recording With Symmetric CMOS Inverter Ring Oscillator",
+    "authors": [
+      "Udo Karthaus",
+      "Stefan Schabel"
+    ],
+    "abstract": "This paper reports the design and measurement results of a write pulse generator IC for rewritable CD and DVD data. disk drives implemented in a standard digital 0.35 m CMOS Section II explains system design issues including laser curtechnology. The chip is the interface between a processor and a rent wave forms for different write strategies, the interface belaser driver. It provides accurate timing signals to the laser driver tween the WPG (reported here) and the laser driver, as well as via a four-level differential current interface. Transitions between design issues of the digital part of the chip. Section III provides current levels are programmable with 149 ps resolution at a data rate of 420 Mb/s, corresponding to 16x DVD write speed. The chip a detailed description of the analog circuitry including a block includes a digital core managing the different write strategies, a diagram and transistor level schematics of critical sub-circuits. CMOS serial interface to the processor for programming, a low Emphasis is given to the ring oscillator, which combines advanpower, low phase noise, 64-phase ring voltage-controlled oscillator tages of both conventional CMOS inverter rings and conven- (VCO) based on CMOS inverters, a phase-locked loop (PLL) tional differential stage rings. Measurement results proving the locking the VCO to the system clock, and a current interface to the laser driver. The PLL phase noise is 144 dBc/Hz at 10 MHz chip’s ability to support different write strategies at speeds from offset from the 105 MHz carrier. At this frequency, the rms jitter 13 to 420 Mb/s are presented in Section IV. Conclusions are is 1.1 ps with 0.8 mA VCO core supply current. The chip is fully provided in Section V. ESD protected.",
+    "keywords": [
+      "Analog integrated circuits",
+      "BluRay",
+      "CMOS",
+      "DVD"
+    ],
+    "doi": "10.1109/JSSC.2005.857373",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2005
+  },
+  "paper_circuit_context": {
+    "circuit_type": "voltage-controlled oscillator (VCO)",
+    "technology": "CMOS, 780nm process",
+    "application_domain": "wireless, if",
+    "sub_blocks": [
+      "capacitor",
+      "transistor/MOSFET",
+      "current source",
+      "current mirror",
+      "output buffer",
+      "switch",
+      "differential pair",
+      "clock / timing",
+      "varactor",
+      "resistor",
+      "transformer"
+    ],
+    "design_purpose": "",
+    "function_summary": "voltage-controlled oscillator (VCO): This paper reports the design and measurement results of a write pulse generator IC for rewritable CD and DVD data. disk drives implemented in a standard digital 0.35 m CMOS Section II explains system design issues including laser curtechnology.",
+    "key_specs": [
+      "149 ps",
+      "144 dBc/Hz",
+      "10 MHz",
+      "105 MHz",
+      "1.1 ps",
+      "2005 W",
+      "780 nm",
+      "650 nm",
+      "405 nm",
+      "4.36 MHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "O NLY VERY FEW scientiﬁc publications have been made on DVD laser diode drivers and controllers so far. Nishimura et al. in [1] present a complete drive system including mechanics, optical pickup, heat radiating mechanism, and a single-chip laser diode driver and controller, targeting at 3x DVD-RAM and 4x DVD-R recording speed. The emphasis of [1] is on system aspects, not on the laser driver IC,  ..."
+    },
+    {
+      "number": "II",
+      "title": "SYSTEM DESIGN AND DIGITAL CIRCUITS",
+      "kind": "design",
+      "page": 0,
+      "text_preview": "A. System Overview The WPG of this paper is part of a two-chip solution for DVD and CD writing and rewriting, as can be seen from Fig. 1. It is located on the main printed circuit board (PCB) of the disk drive. The second chip is the laser driver located on the fast moving pickup head very close to the two laser diodes LDA and LDB. Two laser diode outputs are provided because writing to different  ..."
+    },
+    {
+      "number": "III",
+      "title": "ANALOG CIRCUIT DESIGN",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "A. Overview The analog part as shown in Fig. 4 contains the following blocks: 1) a PLL synchronizing the voltage-controlled oscillator (VCO) to the system clock provided by the processor; IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 11, NOVEMBER 2005 Fig. 4. Block diagram of the analog part of the WPG. 2) a ring-VCO based on CMOS inverters providing 64 equally spaced clock signals; 3) a circ ..."
+    },
+    {
+      "number": "IV",
+      "title": "MEASUREMENT RESULTS",
+      "kind": "results",
+      "page": 6,
+      "text_preview": "The WPG chip has been fabricated in a standard 0.35 m digital CMOS technology with 1 poly and 4 metal layers. The total mm mm mm . The analog part chip area is including VCO, PLL (including integrated loop ﬁlter), CSCL, and output current driver is ﬁtted into otherwise unused gaps within the pad frame, as can be seen from the chip photograph 5 mm QFN in Fig. 12. The chip was bonded into a 28 pin 5 ..."
+    },
+    {
+      "number": "V",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 8,
+      "text_preview": "A mixed-signal CMOS write pulse generation IC has been presented. It was demonstrated that using a gate array approach for the digital part and by processing four input bits per clock period, a write speed of 420 Mb/s, equivalent to 16x DVD write m digital CMOS speed, can be handled with a low cost 0.35 technology with a total supply current of 135 mA from a single 3.3 V supply. At this data rate, ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1.",
+      "caption_bbox": [
+        38.1,
+        309.4,
+        58.8,
+        317.4
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "SYSTEM DESIGN AND DIGITAL CIRCUITS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "System Overview The WPG of this paper is part of a two-chip solution for DVD and CD writing and rewriting, as can be seen from Fig. 1."
+        },
+        {
+          "section_title": "SYSTEM DESIGN AND DIGITAL CIRCUITS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "The two most important advantages of this two-chip solution compared to a single-chip laser driver located on the pickup head are lower heat generated on the pickup head, where heat is difﬁcult to dissipate, and fewer connections over the ﬂexible PCB (5 signal lines only, compared to 14 signal lines to and from the processor; see Fig. 1)."
+        },
+        {
+          "section_title": "SYSTEM DESIGN AND DIGITAL CIRCUITS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Fig. 1."
+        },
+        {
+          "section_title": "SYSTEM DESIGN AND DIGITAL CIRCUITS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "As is already seen in Fig. 1, the processor sends the data “DATAIN P/N” to be written to the CD or DVD along with a clock signal “CLK”."
+        },
+        {
+          "section_title": "ANALOG CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Output Current Stage The output of the write pulse generator chip is connected to the laser driver chip across several centimeters of a ﬂexible printed circuit board, as can be seen in Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.5,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "microprocessor",
+        "technology": "CMOS, 780nm process",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "clock / timing"
+        ],
+        "design_purpose": "",
+        "function_summary": "microprocessor",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2.",
+      "caption_bbox": [
+        38.1,
+        453.4,
+        58.9,
+        461.4
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "SYSTEM DESIGN AND DIGITAL CIRCUITS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "The six levels of the laser current are labeled “e” (erase), “fw” (ﬁrst write), Fig. 2. “b” (bottom), “mp” (multi-pulse), “lw” (last write), “c” (cool)."
+        },
+        {
+          "section_title": "SYSTEM DESIGN AND DIGITAL CIRCUITS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "As an example, the laser current waveform together with the corresponding WPG output current are depicted in Fig. 2 for a typical DVD-RAM write strategy."
+        },
+        {
+          "section_title": "SYSTEM DESIGN AND DIGITAL CIRCUITS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Typical HD-DVD strategies are very similar to the DVD-RAM strategy shown in Fig. 2, but the number of multi-pulses is higher by 1, e.g., a 7 T mark has 4 instead of 3 multi-pulses and the shortest allowed mark length is 2 T."
+        },
+        {
+          "section_title": "SYSTEM DESIGN AND DIGITAL CIRCUITS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "This latency is not shown in Fig. 2."
+        },
+        {
+          "section_title": "SYSTEM DESIGN AND DIGITAL CIRCUITS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Other standards than DVD-RAM use simpliﬁed variants of the patterns shown in Fig. 2."
+        },
+        {
+          "section_title": "ANALOG CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The idea of shunting a pair of inverters at the output has already been proposed (though not implemented) in 1993 [9], Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.5,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, 780nm process",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Simpliﬁed block diagram of the whole WPG IC. The dotted line separates the digital circuits synthesized using VHDL from the analog circuits.",
+      "caption_bbox": [
+        39.6,
+        235.1,
+        290.6,
+        252.0
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "SYSTEM DESIGN AND DIGITAL CIRCUITS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "The number of multi-pulses can be , , or for an -T mark ( consecutive Fig. 3."
+        },
+        {
+          "section_title": "SYSTEM DESIGN AND DIGITAL CIRCUITS",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Digital Circuitry Fig. 3 shows a block diagram of the digital part of the WPG chip along with the simpliﬁed analog part to show the interactions between analog and digital circuits."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "+circuit": 1.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, 780nm process",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simpliﬁed block diagram of the whole WPG IC. The dotted line separates the digital circuits synthesized using VHDL from the analog circuits",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Block diagram of the analog part of the WPG.",
+      "caption_bbox": [
+        302.6,
+        198.0,
+        479.7,
+        206.0
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "ANALOG CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Overview The analog part as shown in Fig. 4 contains the following blocks: 1) a PLL synchronizing the voltage-controlled oscillator (VCO) to the system clock provided by the processor; IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 11, NOVEMBER 2005 Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.9,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:intro": -0.5,
+        "references": 0.4
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, 780nm process",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the analog part of the WPG",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.11,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Block diagram of the PLL.",
+      "caption_bbox": [
+        38.1,
+        367.3,
+        153.7,
+        375.3
+      ],
+      "section_title": "III. ANALOG CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ANALOG CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Otherwise, the inherent delay of the phase detection, which KARTHAUS AND SCHABEL: WRITE PULSE GENERATOR FOR 16x DVD RECORDING WITH SYMMETRIC CMOS INVERTER RING OSCILLATOR TABLE I PLL DESIGN PARAMETERS Fig. 5."
+        },
+        {
+          "section_title": "ANALOG CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "PLL parameters are summarized in Table I and the block diagram shown in Fig. 5."
+        },
+        {
+          "section_title": "ANALOG CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Therefore, the buffer ampliﬁer in Fig. 5 is operated as a voltage follower rather than a voltage controlled current source, or in other words, the ring oscillator is operated as a VCO rather than a current-controlled oscillator (CCO)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.7,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS, 780nm process",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "current source",
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the PLL",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.67,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Schematic of the symmetric ring oscillator based on CMOS inverters. Labels “r(n)” indicate the phase relationship of the voltages of the 64 nodes within the ring.",
+      "caption_bbox": [
+        301.1,
+        187.8,
+        552.2,
+        213.7
+      ],
+      "section_title": "III. ANALOG CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ANALOG CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "This makes CMOS inverter ring oscillators the Fig. 6."
+        },
+        {
+          "section_title": "ANALOG CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 6 shows consecutive phase signals in the ring equals 2 how we have implemented a ring oscillator based on CMOS inverters that does not suffer from these two drawbacks: For better visibility, only 6 out of 32 delay cells (or 24 out of 128 inverters) are shown, and inverter symbols are used rather than nMOS and pMOS transistors."
+        },
+        {
+          "section_title": "ANALOG CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The schematic of Fig. 6 consists of four rows of inverters."
+        },
+        {
+          "section_title": "ANALOG CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "As can be seen in Fig. 6, different from common practice in digital circuit design, the outputs of two inverters are connected together at each node of the ring."
+        },
+        {
+          "section_title": "ANALOG CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Delay Cell Including Conversion to CMOS Levels As already seen in Fig. 6, each delay cell consists of two pairs of inverters, the outputs of the inverters of each pair being connected in parallel."
+        },
+        {
+          "section_title": "ANALOG CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "In the more detailed schematic of a delay cell in Fig. 7 including the conversion to CMOS (rail to rail) levels, these four inverters of rows A, B, C, and D are formed by M7 and M8, M5 and M6, M1 and M2, and M3 and M4, respectively. are signals of the VCO ring, signals laSignals labeled are outputs to the CSCL of the next paragraph. beled Thirty-two of these delay cells of Fig. 7 are connected together to form the ring oscillator of Fig. 6 with 64 different phase clock to ."
+        },
+        {
+          "section_title": "ANALOG CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Right: Conversion to CMOS levels. well as in an oscillator like in Fig. 6 if no precaution is taken. in Fig. 7 To avoid such conditions, transistor M26 ties to Vss before a negative edge of the “reset” signals allows the oscillator to start oscillating."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 6) at 105 MHz is frequency is only 0.8 mA from the 1.5 V VCO control voltage."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 8.5,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "type_match:oscillator": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, 780nm process",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "Right: Conversion to CMOS levels. well as in an oscillator like in Fig. 6 if no precaution is taken. in Fig. 7 To avoid such conditions, transistor M26 ties to Vss before a negative edge of the “reset” signals allows the oscillator to start oscillating.",
+        "function_summary": "Schematic of the symmetric ring oscillator based on CMOS inverters. Labels “r(n)” indicate the phase relationship of the voltages of the 64 nodes within the ring. Right: Conversion to CMOS levels. well as in an oscillator like in Fig. 6 if no precaution is taken. in Fig. 7 To avoid such conditions, transistor M26 ties ...",
+        "key_specs": [
+          "6 w",
+          "105 MHz",
+          "1.5 V"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.98,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. Delay cell schematic. Left: The delay cell itself. Right: Conversion to CMOS levels.",
+      "caption_bbox": [
+        302.6,
+        274.9,
+        553.7,
+        291.8
+      ],
+      "section_title": "III. ANALOG CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ANALOG CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "In the more detailed schematic of a delay cell in Fig. 7 including the conversion to CMOS (rail to rail) levels, these four inverters of rows A, B, C, and D are formed by M7 and M8, M5 and M6, M1 and M2, and M3 and M4, respectively. are signals of the VCO ring, signals laSignals labeled are outputs to the CSCL of the next paragraph. beled Thirty-two of these delay cells of Fig. 7 are connected together to form the ring oscillator of Fig. 6 with 64 different phase clock to ."
+        },
+        {
+          "section_title": "ANALOG CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "This may happen in conventional oscillators as IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 11, NOVEMBER 2005 Fig. 7."
+        },
+        {
+          "section_title": "ANALOG CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Right: Conversion to CMOS levels. well as in an oscillator like in Fig. 6 if no precaution is taken. in Fig. 7 To avoid such conditions, transistor M26 ties to Vss before a negative edge of the “reset” signals allows the oscillator to start oscillating."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.7,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "delay line / delay element",
+        "technology": "CMOS, 780nm process",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "Right: Conversion to CMOS levels. well as in an oscillator like in Fig. 6 if no precaution is taken. in Fig. 7 To avoid such conditions, transistor M26 ties to Vss before a negative edge of the “reset” signals allows the oscillator to start oscillating.",
+        "function_summary": "Delay cell schematic. Left: The delay cell itself. Right: Conversion to CMOS levels. Right: Conversion to CMOS levels. well as in an oscillator like in Fig. 6 if no precaution is taken. in Fig. 7 To avoid such conditions, transistor M26 ties to Vss before a negative edge of the “reset” signals allows the oscillator to ...",
+        "key_specs": [
+          "6 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.85,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 5,
+      "caption": "Fig. 8. Simulated tick delay versus supply current for three different ring oscillator concepts: The one of this paper (diamonds), the one proposed by Song-Jun in [10] (squares), and a conventional, uncoupled ring oscillator (triangles).",
+      "caption_bbox": [
+        38.1,
+        224.0,
+        289.2,
+        258.9
+      ],
+      "section_title": "III. ANALOG CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ANALOG CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The results are visualized in Fig. 8."
+        },
+        {
+          "section_title": "ANALOG CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "KARTHAUS AND SCHABEL: WRITE PULSE GENERATOR FOR 16x DVD RECORDING WITH SYMMETRIC CMOS INVERTER RING OSCILLATOR Fig. 8."
+        },
+        {
+          "section_title": "ANALOG CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 8 compares coupling techniques."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.7,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "-conventional": -3.0,
+        "-simulated": -3.0,
+        "section:design": 1.5,
+        "type_match:oscillator": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, 780nm process",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated tick delay versus supply current for three different ring oscillator concepts: The one of this paper (diamonds), the one proposed by Song-Jun in [10] (squares), and a conventional, uncoupled ring oscillator (triangles)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.09,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 5,
+      "caption": "Fig. 9. Clock signal combination logic operation principle",
+      "caption_bbox": [
+        301.1,
+        225.6,
+        492.7,
+        233.6
+      ],
+      "section_title": "III. ANALOG CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ANALOG CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 9 explains how the CSCL works: The digital core provides 64 select signals labeled sel0 to sel63."
+        },
+        {
+          "section_title": "ANALOG CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "It is crucial that the delay from each Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, 780nm process",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "clock / timing"
+        ],
+        "design_purpose": "",
+        "function_summary": "Clock signal combination logic operation principle",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. 64 input NAND gate realized as a tree of 63 two-input AND gates and one inverter.",
+      "caption_bbox": [
+        301.1,
+        574.8,
+        552.2,
+        591.7
+      ],
+      "section_title": "III. ANALOG CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ANALOG CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Clock signal combination logic operation principle Fig. 10. 64 input NAND gate realized as a tree of 63 two-input AND gates and one inverter. input of the NAND64 to the output is the same."
+        },
+        {
+          "section_title": "ANALOG CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Therefore, a tree of AND2 gates is used as shown in Fig. 10."
+        },
+        {
+          "section_title": "ANALOG CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Using this optimized AND2 gate, the delay from each of the 64 inputs of the NAND64 gate of Fig. 10 to the output is equal."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, 780nm process",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "clock / timing"
+        ],
+        "design_purpose": "",
+        "function_summary": "64 input NAND gate realized as a tree of 63 two-input AND gates and one inverter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 6,
+      "caption": "Fig. 11. Two-input AND gate symmetric with respect to inputs in1 and in2",
+      "caption_bbox": [
+        39.6,
+        166.1,
+        280.2,
+        174.1
+      ],
+      "section_title": "III. ANALOG CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ANALOG CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The two-input AND gate is shown in Fig. 11."
+        },
+        {
+          "section_title": "ANALOG CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Of course, great care has to be taken during layout of the CSCL itself and the Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, 780nm process",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Two-input AND gate symmetric with respect to inputs in1 and in2",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 6,
+      "caption": "Fig. 12. Chip photograph.",
+      "caption_bbox": [
+        302.6,
+        327.4,
+        391.6,
+        335.4
+      ],
+      "section_title": "III. ANALOG CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The analog part chip area is including VCO, PLL (including integrated loop ﬁlter), CSCL, and output current driver is ﬁtted into otherwise unused gaps within the pad frame, as can be seen from the chip photograph 5 mm QFN in Fig. 12."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Settling time is apare 2 s and 2 s for 9 A and 70 A charge pump proximately 10 IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 11, NOVEMBER 2005 Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-photograph": -3.0,
+        "-chip photo": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, 780nm process",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chip photograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 6,
+      "caption": "Fig. 13. VCO frequency (diamonds) and its derivative (squares) versus loop ﬁlter voltage.",
+      "caption_bbox": [
+        302.6,
+        512.4,
+        553.7,
+        529.3
+      ],
+      "section_title": "IV. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The loop ﬁlter voltage (VCO control voltage) has been measured for different reference frequencies, and the locked VCO frequency is plotted versus the loop ﬁlter voltage in Fig. 13 MHz to (solid line with diamonds)."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The derivative of this curve, referred to as VCO sensitivity (measured in MHz/V), is also provided in Fig. 13 by the dashed line with squares."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "type_match:voltage": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, 780nm process",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "VCO frequency (diamonds) and its derivative (squares) versus loop ﬁlter voltage",
+        "key_specs": [
+          "13 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 7,
+      "caption": "Fig. 14. PLL settling: Tuning voltage versus time after the VCO is enabled at 420 Mb/s (105 MHz VCO frequency). with charge pump current set to 9 A (gray) and 70 A (black). Time scale: 2 s/div., voltage scale: 250 mV/div.",
+      "caption_bbox": [
+        38.1,
+        270.0,
+        289.3,
+        296.0
+      ],
+      "section_title": "IV. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 14 shows the loop ﬁlter voltage after the VCO and the PLL have been enabled with the charge pump current set to A (gray trace) and 70 A (black trace)."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "In case of the 70 KARTHAUS AND SCHABEL: WRITE PULSE GENERATOR FOR 16x DVD RECORDING WITH SYMMETRIC CMOS INVERTER RING OSCILLATOR Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "type_match:voltage": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, 780nm process",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "PLL settling: Tuning voltage versus time after the VCO is enabled at 420 Mb/s (105 MHz VCO frequency). with charge pump current set to 9 A (gray) and 70 A (black). Time scale: 2 s/div., voltage scale: 250 mV/div",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 7,
+      "caption": "Fig. 15. Phase noise: Spectrum of output current measured with a R&S bandwidth 200 Hz, center frequency 420 MHz, carrier power 4.86 dBm. FSIQ7 spectrum analyzer for a pattern consisting of continuous 420 MHz to 0 dBm), scale xaxis 2.5 MHz/div., resolution bandwidth 10 kHz, video",
+      "caption_bbox": [
+        301.1,
+        298.6,
+        552.2,
+        342.4
+      ],
+      "section_title": "IV. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 15 shows the measured A (gray trace) and 70 spectrum for a charge pump current of 9 A (black trace)."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Scale y axis: 10 dB/div (100 dBm Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -9.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-spectrum": -2.5,
+        "-phase noise": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "charge pump",
+        "technology": "CMOS, 780nm process",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Phase noise: Spectrum of output current measured with a R&S bandwidth 200 Hz, center frequency 420 MHz, carrier power 4.86 dBm. FSIQ7 spectrum analyzer for a pattern consisting of continuous 420 MHz to 0 dBm), scale xaxis 2.5 MHz/div., resolution bandwidth 10 kHz, video",
+        "key_specs": [
+          "10 dB",
+          "100 dBm"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 7,
+      "caption": "Fig. 16. Differential timing accuracy measured at 420 Mb/s. Target value: 1 tick = T=16 = 149 ps.",
+      "caption_bbox": [
+        301.1,
+        536.0,
+        552.2,
+        553.0
+      ],
+      "section_title": "IV. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Random phase jitter can therefore be neglected compared to the systematic inaccuracy of the timing as shown in Fig. 16."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "FSIQ7 spectrum analyzer for a pattern consisting of continuous 420 MHz to 0 dBm), scale xaxis 2.5 MHz/div., resolution bandwidth 10 kHz, video Fig. 16."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The time difference between consecutive time values is depicted in Fig. 16 versus digital timing value or, equivalently, the VCO phase number."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.8,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, 780nm process",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Differential timing accuracy measured at 420 Mb/s. Target value: 1 tick = T=16 = 149 ps",
+        "key_specs": [
+          "420 MHz",
+          "0 dBm",
+          "2.5 MHz",
+          "10 kHz",
+          "16 v"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 8,
+      "caption": "Fig. 17. Analog supply current (triangles, right y-axis) and digital supply current (diamonds, left y-axis) versus clock frequency in read mode (dotted lines) and write mode (solid lines).",
+      "caption_bbox": [
+        39.6,
+        234.8,
+        290.7,
+        260.7
+      ],
+      "section_title": "IV. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "This the programming of the timing be monotonic, i.e., Fig. 17."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "As can be seen from Fig. 17, the supply current of the digital as well as the analog circuits increases (more or less) linearly with data rate, which is equal to four times the clock frequency."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "From Fig. 17 it is also seen that at room temperature the analog as well as the digital circuits can operate at write speeds far beyond 420 Mb/s (16x DVD)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, 780nm process",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "From Fig. 17 it is also seen that at room temperature the analog as well as the digital circuits can operate at write speeds far beyond 420 Mb/s (16x DVD).",
+        "function_summary": "Analog supply current (triangles, right y-axis) and digital supply current (diamonds, left y-axis) versus clock frequency in read mode (dotted lines) and write mode (solid lines). From Fig. 17 it is also seen that at room temperature the analog as well as the digital circuits can operate at write speeds far beyond 420 ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 8,
+      "caption": "Fig. 18. Differential output current versus time for 4 T and 7 T marks at 8x DVD-RAM write speed with 1 T multi-pulses, measured with a 1 GHz, 8 GS/s oscilloscope. Scale: Top: 20 ns/div., center and bottom: 5 ns/div.",
+      "caption_bbox": [
+        39.6,
+        476.9,
+        290.7,
+        502.8
+      ],
+      "section_title": "V. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 18."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The output current waveform of the output current driver is shown for 210 Mb/s (8x DVD) and 420 Mb/s (16x DVD) in Figs. 18 and 19, respectively."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "line / output driver",
+        "technology": "CMOS, 780nm process",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Differential output current versus time for 4 T and 7 T marks at 8x DVD-RAM write speed with 1 T multi-pulses, measured with a 1 GHz, 8 GS/s oscilloscope. Scale: Top: 20 ns/div., center and bottom: 5 ns/div",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 8,
+      "caption": "Fig. 19. Differential output current versus time for 4 T and 8 T marks at 16x DVD write speed with 1 T multi-pulses, measured with a 1 GHz, 8 GS/s oscilloscope. Scale: Top: 10 ns/div., center and bottom: 2 ns/div.",
+      "caption_bbox": [
+        302.6,
+        273.6,
+        553.7,
+        299.5
+      ],
+      "section_title": "IV. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "This margin is needed IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 11, NOVEMBER 2005 Fig. 19."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.6,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.4
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, 780nm process",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Differential output current versus time for 4 T and 8 T marks at 16x DVD write speed with 1 T multi-pulses, measured with a 1 GHz, 8 GS/s oscilloscope. Scale: Top: 10 ns/div., center and bottom: 2 ns/div",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 6,
+  "warnings": []
+}

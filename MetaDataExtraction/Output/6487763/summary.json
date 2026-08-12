@@ -1,0 +1,46 @@
+{
+  "title": "A 2.5-to-3.3GHz CMOS Class-D VCO Luca Fanori, Pietro Andreani",
+  "bibliography": {
+    "authors": [],
+    "venue": "",
+    "year": 2013,
+    "doi": "",
+    "keywords": []
+  },
+  "figure_number": "Figure 20.1.3 shows the simplified expressions of phase noise and figure-ofmerit FoMD when C is wholly floating; even assuming a 25% contribution of each MOS switch to phase noise, FoMD is close to or even higher (if RL >> RC) than the ideal Class-B FoMB [5], for the same LC tank and the same values of RL and RC. Furthermore, compared to Class-B/C, the Class-D oscillator offers the great advantage of an unsurpassed design simplicity, disposing of any current-bias circuitry and bias voltages, which deteriorate the dynamic range and contribute to phase noise as well (and in fact, the practically achievable FoMB is several dB lower than the ideal FoMB). To fully exploit the Class-D performance, a tunable low-output-voltage DC-DC converter should be available; this is not, however, a serious burden, since such a converter is already needed for powering sub-1V digital logic in state-of-the-art radio ICs. The VCO has been designed in a standard 65nm CMOS process without any thick metal layer. The LC tank, employing a single-turn four-finger 0.59nH inductor, has a Q of 10-11 at 3GHz, estimated from post-layout simulations (including PCB) fitting the measured power consumption. The low-Vt MOS switches have a width of 1.35mm and a minimum length of 65nm, for a negligible contribution to the overall losses. The VCO is tunable between 2.5GHz and 3.3 GHz (27% tuning range) with a 6b MOM capacitor bank and a small AMOS varactor for continuous tuning. Figure 20.1.5 shows the phase noise plots at maximum and minimum oscillation frequencies, with a Vdd of 0.4V. While the phase noise in the 1/f2 region fits well with the simulations, the 1/f3 noise corner is around 2MHz, which is a factor of 7 higher than expected. A partial explanation is the presence of bond-wire inductors at Vdd and ground, whose impact was underestimated. On the other hand, it is possible that the 1/f MOS noise is not particularly carefully modeled in the regions where the switches are working, i.e. in subthreshold (very shortly) and in the triode/linear region. At any rate, the 1/f3 phase noise performance is expected to improve in finer CMOS processes, where the MOS device operates closer to the ideal swit-",
+  "type": "2.5-to-3.3GHz CMOS Class-D VCO Luca Fanori, Pietro Andreani",
+  "technology": "CMOS, 65nm process",
+  "application": "wireless, if",
+  "sub_blocks": [
+    "varactor",
+    "inductor",
+    "capacitor",
+    "transistor/MOSFET",
+    "LC tank / resonator",
+    "switch"
+  ],
+  "function_summary": "2.5-to-3.3GHz CMOS Class-D VCO Luca Fanori, Pietro Andreani",
+  "design_purpose": "",
+  "metrics": [
+    "Operating / oscillation frequency",
+    "Efficiency / ratio",
+    "Supply voltage"
+  ],
+  "numerical_performance": [
+    "-3.3GHz",
+    "90%",
+    "3.2V",
+    "3V",
+    "2 ω",
+    "9%",
+    "0.77ω",
+    "10%",
+    "25%",
+    "-1V"
+  ],
+  "confidence": 0.2,
+  "warnings": [
+    "No figure scored positively as a proposed-circuit schematic; recommendation is low-confidence.",
+    "Recommended figure was classified as 'result_plot', not a schematic; manual confirmation strongly recommended."
+  ]
+}

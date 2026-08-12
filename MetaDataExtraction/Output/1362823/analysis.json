@@ -1,0 +1,1142 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1362823.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1362823",
+  "generated_at": "2026-07-29T21:31:57",
+  "paper_metadata": {
+    "title": "A 14-b 12-MS/s CMOS Pipeline ADC With Over 100-dB SFDR",
+    "authors": [
+      "Yun Chiu",
+      "Paul R. Gray",
+      "Borivoje Nikolic´"
+    ],
+    "abstract": "A 1.8-V 14-b 12-MS/s pseudo-differential pipeline analog-to-digital converter (ADC) using a passive capacitor errordue to distortion artifacts [1]–[3]. Recent works also underline averaging technique and a nested CMOS gain-boosting technique the trend toward the IF-digitizing architecture to enhance prois described. The converter is optimized for low-voltage low-power grammability and to achieve a more “digital” receiver [4]–[6]. applications by applying an optimum stage-scaling algorithm at However, advancing the digitizing interface toward the antenna the architectural level and an opamp and comparator sharing techexacerbates the existing dynamic range problem, as it also renique at the circuit level. Prototyped in a 0.18m 6M-1P CMOS process, this converter achieves a peak signal-to-noise plus distorquires a high oversampling ratio. To achieve high linearity, high tion ratio (SNDR) of 75.5 dB and a 103-dB spurious-free dynamic dynamic range, and high sampling speed simultaneously under range (SFDR) without trimming, calibration, or dithering. With low supply voltages in deep-submicron CMOS technology a 1-MHz analog input, the maximum differential nonlinearity is with low power consumption has so far been conceived of as 0.47 LSB and the maximum integral nonlinearity is 0.54 LSB. The extremely challenging. large analog bandwidth of the front-end sample-and-hold circuit is achieved using bootstrapped thin-oxide transistors as switches, Among various ADC architectures, the pipeline converter resulting in an SFDR of 97 dB when a 40-MHz full-scale input is widely used in Nyquist sampling applications that require a is digitized. The ADC occupies an active area of 10 mm2 and combination of high resolution and high throughput. This study dissipates 98 mW. describes the prototype design of a 14-b pipeline ADC fabri-",
+    "keywords": [
+      "Analog integrated circuits",
+      "capacitor mismatch"
+    ],
+    "doi": "10.1109/JSSC.2004.836232",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2004
+  },
+  "paper_circuit_context": {
+    "circuit_type": "14-b 12-MS/s CMOS Pipeline ADC",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "transistor/MOSFET",
+      "cross-coupled pair",
+      "output buffer",
+      "bias circuit",
+      "switch",
+      "differential pair",
+      "op-amp",
+      "current source",
+      "clock / timing"
+    ],
+    "design_purpose": "The converter is optimized for low-voltage low-power grammability and to achieve a more “digital” receiver [4]–[6]. applications by applying an optimum stage-scaling algorithm at However, advancing the digitizing interface toward the antenna the architectural level and an opamp and comparator sharing techexacerbates ...",
+    "function_summary": "14-b 12-MS/s CMOS Pipeline ADC: The converter is optimized for low-voltage low-power grammability and to achieve a more “digital” receiver [4]–[6]. applications by applying an optimum stage-scaling algorithm at However, advancing the digitizing interface toward the antenna the architectural level and an opamp and comparator sharing techexacerbates ...",
+    "key_specs": [
+      "75.5 dB",
+      "97 dB",
+      "98 mW",
+      "40 MHz",
+      "1.8 V",
+      "3 dB",
+      "130 dB",
+      "2 V",
+      "10 mV",
+      "1 MHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": ""
+    },
+    {
+      "number": "I",
+      "title": "N LOW-COST highly integrated system-on-a-chip (SoC)",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "digital communication receivers, the boundary between analog and digital functionalities is constantly redeﬁned as a result of fabrication technology advancement. The trend toward more digital signal processing (DSP) for multistandard agility in receiver designs has recently created a great demand for low-power low-voltage analog-to-digital converters (ADCs) that can be realized in a mainstream de ..."
+    },
+    {
+      "number": "II",
+      "title": "ARCHITECTURE POWER EFFICIENCY",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "A. Pipeline ADC Architecture A pipeline ADC is inherently a multistep amplitude quantizer in which digitization is performed by a cascade of many topologically similar or identical stages of low-resolution analog-to-digital encoders. Pipelining enables high conversion Fig. 1. Pipeline ADC block diagram. throughput by inserting analog registers, i.e., sample-and-hold ampliﬁers (SHAs), in between st ..."
+    },
+    {
+      "number": "III",
+      "title": "CAPACITOR ERROR-AVERAGING",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "In a fully optimized pipeline ADC, random capacitor mismatch is the most important error source of nonlinearity. In the absence of a post-fabrication component trimming or calibration, the conversion accuracy is usually limited to about 10–12 bits. A. Active Capacitor Error-Averaging One approach to treat mismatch error is capacitor erroraveraging (CEA). For a 1-b/s architecture, the error correct ..."
+    },
+    {
+      "number": "IV",
+      "title": "CIRCUIT IMPLEMENTATION",
+      "kind": "design",
+      "page": 3,
+      "text_preview": "In order to demonstrate the effectiveness of the stage-scaling algorithm and the PCEA technique, a prototype 14-b pipeline ADC was designed and fabricated. This section describes the implementation details of this prototype and the next section presents the measurement results. A. Sampling Clock Skew In a typical pipeline ADC implementation, a dedicated SHA at the front-end is often used to enhanc ..."
+    },
+    {
+      "number": "V",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 7,
+      "text_preview": "m sixThe prototype ADC was fabricated in a 1.8-V 0.18metal one-poly digital CMOS process. Capacitors were implemented using metal–insulator–metal (MIM) structures with no special attention paid in layout to match them. A die photo is 3.5 mm shown in Fig. 12. The size of the chip measures 4.3 with the ADC occupying approximately 10 mm . The differential nonlinearity (DNL) and the integral nonlinear ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 8,
+      "text_preview": "m CMOS technology using A 14-b pipeline ADC in 0.18exclusively thin oxide transistors and a low supply voltage of 1.8 V is demonstrated. The prototype design achieves a true 14-b linearity and a 12.25 ENOB in experiments without trimming, calibration, or dithering. This study demonstrates the feasibility of sustained scaling of high-resolution CMOS ADCs in the deep-submicron regime and the potenti ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Pipeline ADC block diagram.",
+      "caption_bbox": [
+        39.6,
+        224.0,
+        163.9,
+        231.9
+      ],
+      "section_title": "II. ARCHITECTURE POWER EFFICIENCY",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ARCHITECTURE POWER EFFICIENCY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Pipelining enables high conversion Fig. 1."
+        },
+        {
+          "section_title": "ARCHITECTURE POWER EFFICIENCY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "In a typical pipeline stage as shown in Fig. 1, the signal passed to the subsequent stage is the conversion residue of the current stage created by a digital-to-analog converter (DAC) and a subtraction circuit."
+        },
+        {
+          "section_title": "ARCHITECTURE POWER EFFICIENCY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The maximum swing of this residue signal is often brought back to the full-scale reference level with a precision ampliﬁer, also shown in Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.2,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:proposed": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "Pipelining enables high conversion Fig. 1.",
+        "function_summary": "Pipeline ADC block diagram. Pipelining enables high conversion Fig. 1.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.77,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Circuit diagram of the 1.5-b/s MDAC.",
+      "caption_bbox": [
+        302.6,
+        199.2,
+        454.2,
+        207.2
+      ],
+      "section_title": "II. ARCHITECTURE POWER EFFICIENCY",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ARCHITECTURE POWER EFFICIENCY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The circuit diagram of a single-ended 1.5-b/s MDAC is shown in Fig. 2."
+        },
+        {
+          "section_title": "ARCHITECTURE POWER EFFICIENCY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Oxide reliability dictates the use of a low supply voltage, which limits the signal IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 12, DECEMBER 2004 Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.8,
+      "relevance_breakdown": {
+        "+circuit diagram": 3.0,
+        "+circuit": 1.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "14-b 12-MS/s CMOS Pipeline ADC",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Circuit diagram of the 1.5-b/s MDAC",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.84,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 3,
+      "caption": "Fig. 3. phases. (b) Timing diagram for stage (i) with the early comparison marked at the end of 1.",
+      "caption_bbox": [
+        39.6,
+        404.2,
+        290.7,
+        430.4
+      ],
+      "section_title": "III. CAPACITOR ERROR-AVERAGING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CAPACITOR ERROR-AVERAGING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 3 shows the PCEA cir- , two residue voltages are cuit diagram."
+        },
+        {
+          "section_title": "CAPACITOR ERROR-AVERAGING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "(a) Stage (i) in 3 and 4 Fig. 3. phases."
+        },
+        {
+          "section_title": "CAPACITOR ERROR-AVERAGING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "However, the extra phases allow a long settling time for the comparators if an early comparison is performed against the ﬁrst residue as indicated in Fig. 3 IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 12, DECEMBER 2004 Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "14-b 12-MS/s CMOS Pipeline ADC",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "phases. (b) Timing diagram for stage (i) with the early comparison marked at the end of 1",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 3,
+      "caption": "Fig. 4. Clock skew in the front-end sampling network.",
+      "caption_bbox": [
+        302.6,
+        174.3,
+        482.1,
+        182.2
+      ],
+      "section_title": "III. CAPACITOR ERROR-AVERAGING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CAPACITOR ERROR-AVERAGING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "However, the extra phases allow a long settling time for the comparators if an early comparison is performed against the ﬁrst residue as indicated in Fig. 3 IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 12, DECEMBER 2004 Fig. 4."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "As indicated in Fig. 4, this aperture error effectively creates a dynamic offset between the two paths when the input signal exhibits a large slew rate."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "14-b 12-MS/s CMOS Pipeline ADC",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Clock skew in the front-end sampling network",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Block diagram of the prototype 14-b pipeline ADC.",
+      "caption_bbox": [
+        302.6,
+        382.0,
+        497.2,
+        390.0
+      ],
+      "section_title": "III. CAPACITOR ERROR-AVERAGING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CAPACITOR ERROR-AVERAGING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 5."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Opamp and Sub-ADC Sharing Fig. 5 shows the single-ended equivalent block diagram of the prototype ADC employing the PCEA technique."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The opamps and sub-ADCs are interleaved between the successive SC stages to save more power (e.g., SC 2-A and 2-B in Fig. 5)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the prototype 14-b pipeline ADC",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.31,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "Fig. 6. Summing-node crosstalk.",
+      "caption_bbox": [
+        38.1,
+        364.1,
+        148.9,
+        372.1
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Nonetheless, the dedicated SHA is accompanied by a substantial power penalty; as it usually acts as a unity-gain buffer, the SHA provides no attenuation to the ADC noise referred to CHIU et al.: A 14-b 12-MS/s CMOS PIPELINE ADC WITH OVER 100-dB SFDR Fig. 6."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "A potential crosstalk path between SC-A and SC-B of (Fig. 6) arises due to a drain-to-source stray capacitor Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor",
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Summing-node crosstalk",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. Crosstalk eliminated by (a) modiﬁed timing and (b) dummy switch.",
+      "caption_bbox": [
+        301.1,
+        692.5,
+        545.5,
+        700.5
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The challenge of Fig. 7."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "This is accomplished for by simply advancing (the early phase of ) to the rising edge of the rising edge of , as shown in Fig. 7(a)."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "To mitigate this problem, gate-grounded dummy switches are introduced at the summing nodes [Fig. 7(b)]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "14-b 12-MS/s CMOS Pipeline ADC",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Crosstalk eliminated by (a) modiﬁed timing and (b) dummy switch",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 5,
+      "caption": "Fig. 8. Nested CMOS gain-boosting technique.",
+      "caption_bbox": [
+        39.6,
+        266.1,
+        197.0,
+        274.0
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "A potential crosstalk path between SC-A and SC-B of (Fig. 6) arises due to a drain-to-source stray capacitor Fig. 8."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "As illustrated in Fig. 8, a m gate length two-level recursive boosting with devices of 0.2results in a minimum open-loop gain of 130 dB across process corners in simulation, exceeding the accuracy requirement of a 14-b converter."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "To maintain high current efﬁciency and large output swing simultaneously, the main ampliﬁer uses a pseudo-differential (PD) architecture, as shown in Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "14-b 12-MS/s CMOS Pipeline ADC",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Nested CMOS gain-boosting technique",
+        "key_specs": [
+          "130 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 6,
+      "caption": "Fig. 9. (b) Discrete-time integrator with the look-ahead capacitor C . (c) Averaging and differencing circuit. (d) Timing diagram.",
+      "caption_bbox": [
+        38.1,
+        545.4,
+        289.2,
+        571.3
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 9."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Shown in Fig. 9, an averaging circuit derives the output CM voltage and compares it to the desired reference ); the resultant error voltage is then accumulated with a dis- ( ) and fed back to be the bottom-plate crete-time integrator ( bias for the S/H circuit."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The SC circuits realizing the and blocks are also shown in Fig. 9."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "This is accomplished by introducing a look-ahead path in the integrator as shown in Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.1,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "14-b 12-MS/s CMOS Pipeline ADC",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "(b) Discrete-time integrator with the look-ahead capacitor C . (c) Averaging and differencing circuit. (d) Timing diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.52,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 6,
+      "caption": "Fig. 10. Pole-zero plot and frequency response of the CMFB loop.",
+      "caption_bbox": [
+        301.1,
+        158.3,
+        519.0,
+        166.3
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 10."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The pole-zero location and the frequency response of this function are plotted in Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "14-b 12-MS/s CMOS Pipeline ADC",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Pole-zero plot and frequency response of the CMFB loop",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 7,
+      "caption": "Fig. 11. (a) Dynamic comparator. (b) Comparator timing diagram.",
+      "caption_bbox": [
+        39.6,
+        342.9,
+        256.8,
+        350.8
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The schematic diagram of the Fig. 11."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Die photo. comparator is shown in Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "comparator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Dynamic comparator. (b) Comparator timing diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 7,
+      "caption": "Fig. 12. Die photo.",
+      "caption_bbox": [
+        39.6,
+        581.3,
+        106.5,
+        589.3
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 12."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "A die photo is 3.5 mm shown in Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-die photo": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "14-b 12-MS/s CMOS Pipeline ADC",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Die photo",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 7,
+      "caption": "Fig. 13. Measured DNL and INL (f",
+      "caption_bbox": [
+        302.6,
+        265.6,
+        422.7,
+        273.7
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 13."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The measured DNL and INL proﬁles are shown in Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "14-b 12-MS/s CMOS Pipeline ADC",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured DNL and INL (f",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 7,
+      "caption": "Fig. 14. Measured ADC performance versus input signal level.",
+      "caption_bbox": [
+        302.6,
+        494.4,
+        509.1,
+        502.3
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Measured DNL and INL (f Fig. 14."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Shown in Fig. 14, the measured peak SNDR reaches 75.5 dB with a 1-MHz input, equivalent to 12.25 effective number of bits (ENOB)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured ADC performance versus input signal level",
+        "key_specs": [
+          "75.5 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 8,
+      "caption": "Fig. 15.",
+      "caption_bbox": [
+        38.1,
+        497.6,
+        62.5,
+        505.5
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Measured FFT spectrum at (a) f Fig. 15. to the power sum of the ﬁrst 15 harmonics)."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 15(a) shows 0.4 dBFS 5-MHz input. the measured FFT spectrum with a The SFDR in this case reaches the value of 103 dB, and the SNDR is 74.7 dB."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 15(b) shows the digital spectrum of the ADC output."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "analog-to-digital converter (ADC)",
+        "key_specs": [
+          "0.4 dB",
+          "103 dB",
+          "74.7 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 8,
+      "caption": "Fig. 16. Measured ADC dynamic performance.",
+      "caption_bbox": [
+        301.1,
+        271.7,
+        458.4,
+        279.7
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 16 summarizes the measured dynamic performance of this 14-b ADC with an input frequency span from 1 to 40 MHz."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.6,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.4
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured ADC dynamic performance",
+        "key_specs": [
+          "40 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 9,
+      "caption": "Fig. 17. Measured ADC performance versus (a) supply voltage and (b) CM voltage.",
+      "caption_bbox": [
+        39.6,
+        478.1,
+        290.7,
+        495.0
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "TABLE II MEASURED ADC PERFORMANCE (1.8 V, 25 C) rized in Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.6,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:conclusion": -1.0,
+        "references": 0.4
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured ADC performance versus (a) supply voltage and (b) CM voltage",
+        "key_specs": [
+          "1.8 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 9,
+      "caption": "Fig. 18. Comparison of this prototype (square) and previously published ADCs (diamonds).",
+      "caption_bbox": [
+        302.6,
+        250.4,
+        553.6,
+        267.4
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 8,
+          "sentence": "As a reference, Fig. 18 shows the comparison of this design (marked by a square) and the previously reported high-resolution ADCs (marked by diamonds) with a 12-b and higher resFig. 17."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 8,
+          "sentence": "The unit sampling capacitor of the tion th stage is , where is the unit capacitor of the ﬁrst stage IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 12, DECEMBER 2004 Fig. 18."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "14-b 12-MS/s CMOS Pipeline ADC",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Comparison of this prototype (square) and previously published ADCs (diamonds)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 10,
+      "caption": "Fig. 19. Residue ampliﬁer model used in the stage-scaling analysis.",
+      "caption_bbox": [
+        38.1,
+        224.1,
+        261.1,
+        232.0
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "ARCHITECTURE POWER EFFICIENCY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "One prominent feature of this analysis is the inclusion of the parasitic-loading effect on the residue ampliﬁers, manifested by two parasitic caand , at the output node and the summing node pacitors, of the residue ampliﬁer, respectively (Fig. 19)."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 8,
+          "sentence": "APPENDIX STAGE-SCALING ANALYSIS OF PIPELINE ADC The circuit diagram of two consecutive MDAC stages of a typical pipeline ADC is shown in Fig. 19, with the th stage th stage."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 8,
+          "sentence": "The exact solution, taking into account the effect of CHIU et al.: A 14-b 12-MS/s CMOS PIPELINE ADC WITH OVER 100-dB SFDR Fig. 19."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.3,
+      "relevance_breakdown": {
+        "-model": -1.5,
+        "section:conclusion": -1.0,
+        "references": 1.2
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Residue ampliﬁer model used in the stage-scaling analysis",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 20,
+      "label": "Fig. 20",
+      "page": 10,
+      "caption": "Fig. 20. Evaluation of g(n; ; \u0011) versus the taper factor x.",
+      "caption_bbox": [
+        38.1,
+        438.5,
+        232.3,
+        447.1
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 8,
+          "sentence": "Fig. 20."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 8,
+          "sentence": "In Fig. 20, scaling factor by the equation is plotted against for 0, 1/2, 1 (corresponding to dif- ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "14-b 12-MS/s CMOS Pipeline ADC",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Evaluation of g(n; ; \u0011) versus the taper factor x",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 2,
+  "warnings": []
+}

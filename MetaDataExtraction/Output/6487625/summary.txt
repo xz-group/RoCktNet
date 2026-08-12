@@ -1,0 +1,61 @@
+# A 195mW / 55mW Dual-Path Receiver AFE for Multistandard 8.5-to-11.5 Gb/s Serial Links in 40nm CMOS Bo Zhang, Ali Nazemi, Adesh Garg, Namik Kocaman, Mahmoud Reza Ahmadi, Mehdi Khanpour, Heng Zhang, Jun Cao, Afshin Momtaz
+
+VENUE
+"2013"
+
+FIGURE NUMBER
+"Fig. 2.4.3, three comparators are added below the sub-ADC zero threshold, which detect and correct up to 2.5LSB of rectification error. At the output of the sub-ADC, any top bits from -3 to -1 indicate an error in rectification. Simple logic can fold the error back to the right code and correct the MSB bit. In each 5b flash ADC, the power is further reduced by using dynamic comparators with calibration, as shown in Fig. 2.4.4. The comparator is connected to a preamplifier with a 7b load-balanced current DAC for offset calibration. The DAC employs a cascode pair Mc and Mcb at its outputs with small leaking currents to keep both transistors in saturation, reducing the capacitive loading of the DAC to the data path. A similar dynamic comparator is used in the MSB path. The slicer path is used to save power when the data channel has less impairment than in KR or MMF applications. It consists of a CTLE, followed by a wideband buffer and half-rate slicers. The CTLE uses a source-degenerated peaking filter with programmable resistors to adjust the relative DC to high-frequency gain. Because of the PGAc’s high linearity (>40dB), the CTLE can provide effective equalization even though it is connected after the PGAc. For the same reason, additional equalization is provided by adjusting the frequency response of the PGAc’s shunt-peaking stages. Programmable capacitor arrays are connected at each stage’s output. The load resistor can also be varied to change the peaking. The slicer double-samples the input and sends the deserialized data into the CDR. Combined with the PGAc, the slicer path can equalize the incoming data with a maximum peaking of 10dB at Nyquist. The chip is fabricated in 40nm CMOS technology and represents a dual-path receiver AFE for both MMF and copper channels with various Nyquist loss values. The 6b 10GS/s interleaved ADC with an improved rectifying topology achieves higher speed and lower power consumption compared to the previous flash topologies [2,4]. The ADC path SNDR is measured 29.2dB at 5GHz input, achieving an FOM of 0.59pJ/conversion-step (Fig. 2.4.5). For MMF channels at 10.3Gb/s, the receiver using the ADC path achieves BER <10-12 on all three stressors (pre-tap, post-tap and symmetrical) with at least 6dB margin [1]. For tests with a 10Hz dynamic channel, there is no degradation in optical sensitivity, while the standard [1] only requires error-free operation. The ADC path consumes 195mW, which is the lowest among published results of receiver AFEs that compensate for MMF channels [2,5]. For copper channels at 10.3Gb/s, the RX operates error-free while compensating attenuation up to 34dB at Nyquist, exceeding KR requirements [4,6]. The full range of operation, 8.5Gb/s to 11.5Gb/s, is limited by the VCO tuning range. At 55mW, the slicer path achieves sinusoidal jitter tolerance of 0.35UIpp at 80MHz with 0.7UIpp jitter on the input signal. The slice path can also compensate for losses in SFP+ DAC cables with a length of up to 5m. The performance overview of published 10Gb/s AFE for ADC-based receiver is summarized in Fig. 2.4.6. The RX area is 0.82mm2 and a micrograph of the receiver AFE is shown in Fig. 2.4.7. References: [1] IEEE Standard 802.3ap-2007 and 802.3aq-2006, “Ethernet Operation over Electrical Backplanes” and “Physical Layer and Management Parameters for 10Gb/s Operation type 10GBASE-LRM”. [2] J. Cao, et al., “A 500mW digitally calibrated AFE in 65nm CMOS for 10Gb/s Serial links over backplane and multimode fiber”, ISSCC Dig. Tech. Papers, pp. 370-371, Feb. 2009. [3] B. Verbruggen, et al., “A 2.2mW 5b 1.75GS/s Folding Flash ADC in 90nm Digital CMOS”, ISSCC Dig. Tech. Papers, pp. 252-253, Feb. 2008. [4] M. Harwood, et al., “A 12.5Gb/s SerDes In 65nm CMOS Using a Baud-Rate ADC With Digital Receiver Equalization and Clock Recovery”, ISSCC Dig. Tech. Papers, pp. 436-437, Feb. 2007. [5] O. Agazzi, et al., “A 90nm CMOS DSP MLSD Transceiver with Integrated AFE for Electronic Dispersion Compensation of Multi-mode Optical Fibers at 10Gb/s”, ISSCC Dig. Tech. Papers, pp. 232-609, Feb. 2008. [6] E. Chen, et al., “Power Optimized ADC-Based Serial Link Receiver”, IEEE Journal of Solid-State Circuits, Vol. 47, No.4, Apr. 2012."
+
+TYPE
+"/ 55mW Dual-Path Receiver AFE"
+
+TECHNOLOGY
+"CMOS, 40nm process"
+
+APPLICATION
+"if"
+
+SUB-BLOCKS
+[
+  "capacitor",
+  "resistor",
+  "transistor/MOSFET",
+  "output buffer",
+  "switch",
+  "pre-amplifier"
+]
+
+FUNCTION SUMMARY
+"/ 55mW Dual-Path Receiver AFE"
+
+METRICS
+[
+  "Power consumption",
+  "Process node",
+  "Gain",
+  "Operating / oscillation frequency",
+  "Energy per operation"
+]
+
+NUMERICAL PERFORMANCE
+[
+  "195mW",
+  "55mW",
+  "40nm",
+  "40dB",
+  "10dB",
+  "29.2dB",
+  "5GHz",
+  "0.59pJ",
+  "6dB",
+  "10Hz"
+]
+
+CONFIDENCE
+0.2
+
+WARNINGS
+[
+  "No figure scored positively as a proposed-circuit schematic; recommendation is low-confidence.",
+  "Recommended figure was classified as 'layout_photo', not a schematic; manual confirmation strongly recommended."
+]

@@ -1,0 +1,58 @@
+# A Temperature-to-Digital Converter for a MEMSBased Programmable Oscillator with Better Than ±0.5ppm Frequency Stability Michael Perrott1, Jim Salvia2, Fred Lee3, Aaron Partridge2, Shouvik Mukherjee2, Carl Arft2, Jin-Tae Kim2, Niveditha Arumugam2, Pavan Gupta2, Sassan Tabatabaei2, Sudhakar Pamarti4, Haechang Lee2, Fari Assaderaghi2
+
+VENUE
+"2012"
+
+FIGURE NUMBER
+"Figure 11.6.1 illustrates our programmable oscillator. It consists of a MEMS resonator die which is wire bonded to a 0.18μm CMOS die that includes an oscillator sustaining circuit, TDC, fractional-N synthesizer, and digital logic [1]. Placement of a thermistor on the MEMS die allows excellent tracking of temperature-induced fluctuations of the MEMS resonator frequency, Fres. Compensation of nonlinear temperature dependence of the thermistor resistance and Fres is achieved with on-chip digital 5th-order polynomial correction. Since Fres varies by approximately -31ppm/K, it is challenging to obtain ±0.5ppm frequency stability from -40 to 85°C. The current state of the art is ±10ppm frequency stability for temperature compensated (non-ovenized) MEMS oscillators [4]. Further, noise lower than 0.16mK (rms) in a 5Hz bandwidth (i.e., 10S/s) is required to achieve Allan Deviation less than 0.005ppm at 0.1 second stride – a challenging requirement given the current state of the art of 2mK at 1S/s [2], 15mK at 10 S/s [3] and 40mK at 32 S/s [4]. The TDC’s front-end circuit, shown in Fig. 11.6.2, consists of a resistive bridge that is balanced by digitally tuning a reference resistor, Rref, to match the thermistor’s resistance, RMEMS. Comparison of Rref and RMEMS is achieved by using a CMOS switch to periodically short them together at frequency fchop (25kHz), and then amplifying the sum of the two voltages, VR(t) and VC(t), to yield an output voltage, Vamp(t). As shown in Fig. 11.6.2, VR(t) and VC(t) move in opposite directions, and, regardless of the small resistance of the shorting switch, will have equal changes in magnitude only when Rref and RMEMS are equal in value (assuming well matched Cac capacitors). As such, sampling the change in Vamp(t) between each phase of fchop, Vavg1[k] -Vavg2[k], provides an accurate error signal for tuning Rref to match RMEMS. An advantage of this CDS technique is that it rejects the 1/f noise and DC offset of the front-end amplifier. Further, the amplifier’s DC input biasing can be done in an essentially noise free manner via a feedback resistor, Rf, which is periodically switched into the circuit for brief intervals outside the measurement window of Vavg1[k] and Vavg2[k]."
+
+TYPE
+"Temperature-to-Digital Converter"
+
+TECHNOLOGY
+"CMOS, 18μm process"
+
+APPLICATION
+"rf"
+
+SUB-BLOCKS
+[
+  "capacitor",
+  "resistor",
+  "transistor/MOSFET",
+  "current mirror",
+  "LC tank / resonator",
+  "bias circuit",
+  "switch",
+  "clock / timing"
+]
+
+FUNCTION SUMMARY
+"Temperature-to-Digital Converter"
+
+DESIGN PURPOSE
+"Similar to the pulsed resistor biasing shown in Fig. 11.6.2, Fig. 11.6.3 reveals that a simple voltage regulator to reduce supply noise is achieved for the amplifier by pulse biasing the gate of a native NMOS device."
+
+METRICS
+[
+  "Frequency",
+  "Supply voltage",
+  "Power consumption"
+]
+
+NUMERICAL PERFORMANCE
+[
+  "0.18μm",
+  "5Hz",
+  "25kHz",
+  "480MHz",
+  "48MHz",
+  "150MHz",
+  "24MHz",
+  "3.3V",
+  "7.4μW",
+  "3.2μW"
+]
+
+CONFIDENCE
+0.48

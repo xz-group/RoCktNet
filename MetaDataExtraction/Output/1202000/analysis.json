@@ -1,0 +1,870 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1202000.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1202000",
+  "generated_at": "2026-07-29T22:00:57",
+  "paper_metadata": {
+    "title": "A 14-Bit High-Temperature Modulator in Standard CMOS",
+    "authors": [
+      "Cailin Davis",
+      "Ivars Finvers"
+    ],
+    "abstract": "Experimental verification is given for the use of modulation for high-temperature applications ( approximately 150 C) in a standard CMOS process. Switched-capacitor circuits are used to implement a second-order single-stage and a third-order 2-1 MASH modulator with single-bit quantization. The two modulators have an oversampling ratio of 256 with an input signal bandwidth of 500 Hz. The modulators were fabricated in a 1.5m standard CMOS technology. A fully differential signal path and near minimum sized switches are used to mitigate the effect of large junction-to-substrate leakage Fig. 1. First-order discrete-time Modulator with single-bit quantization. The high gain of the analog filter forces the single-bit digital output to track the current present at high temperatures. Experimental results show input signal. both modulators are capable of over 14 bits of resolution at 225 C and over 13 bits of resolution at 255 C. Results show that the single-stage modulator is more resistant to high-temperature open-loop gain and increased comparator offset. Furthermore, circuit impairment than is the MASH cascaded structure. the modulator achieves its high resolution by transferring Terms—Analog–digital conversion, high-temperature Index complexity into the digital domain where high-temperature techniques, sigma–delta modulation, switched capacitor filters. operation in standard CMOS has been shown to be successful without special design considerations [3], [4].",
+    "keywords": [],
+    "doi": "10.1109/JSSC.2003.811973",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "14-Bit High-Temperature Modulator in Standard CMOS",
+    "technology": "CMOS",
+    "application_domain": "automotive, if",
+    "sub_blocks": [
+      "capacitor",
+      "transistor/MOSFET",
+      "current source",
+      "current mirror",
+      "switch",
+      "differential pair",
+      "latch"
+    ],
+    "design_purpose": "",
+    "function_summary": "14-Bit High-Temperature Modulator in Standard CMOS: Experimental verification is given for the use of modulation for high-temperature applications ( approximately 150 C) in a standard CMOS process.",
+    "key_specs": [
+      "256 w",
+      "500 Hz",
+      "256 kHz",
+      "20%",
+      "40 dB",
+      "106 dB",
+      "102 dB",
+      "96 dB",
+      "132 V",
+      "1 V"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "M ANY applications currently exist that require analog-digital (A/D) conversion at high temperature. Oil and gas exploration, automotive control, and space-going microelectronics can all involve operating temperatures in C [1]. Automotive applications in particular excess of 200 represent a large market for high temperature microelectronics; improved fuel economy, safety, and control of exhaust em ..."
+    },
+    {
+      "number": "II",
+      "title": "BACKGROUND",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "Both successive-approximation and charge-balance oversampling techniques have been applied to high-temperature A/D conversion. A recent survey of high-temperature electronics, however, cites only two converter designs [5], [6], each using successive-approximation techniques in insulated CMOS technologies. These converters were both originally reported in 1982 and both achieved near 12 bits of reso ..."
+    },
+    {
+      "number": "III",
+      "title": "MODULATOR TOPOLOGY",
+      "kind": "proposed",
+      "page": 1,
+      "text_preview": "There are generally two methods to implement modulator loops. The modulator loop can be either single-stage or multistage noise shaping (MASH) cascaded [14]. The order of the modulator determines the curvature of the noise shaping, and ultimately the performance limit. Higher order modulation provides steeper noise shaping used to obtain a higher signal to noise ratio. However, single-bit single-s ..."
+    },
+    {
+      "number": "IV",
+      "title": "CMOS CIRCUIT DESIGN AT HIGH TEMPERATURE",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "High-temperature operation of a standard CMOS transistor introduces several impairments. These include decreased carrier mobility, decreased threshold voltage and exponentially increasing junction-to-substrate (reverse-biased diode) leakage current [4], [18], [19]. Leakage current, in particular, can be a significant source of impairment and is worthy of a more detailed review. The ideal p-n diode ..."
+    },
+    {
+      "number": "V",
+      "title": "MODULATOR CIRCUIT DESIGN AND IMPLEMENTATION",
+      "kind": "design",
+      "page": 3,
+      "text_preview": "The fully differential switched-capacitor circuit implementation of the second-order single-stage and third-order MASH cascaded modulator is shown in Fig. 4. Analog subcircuits required for the modulators include switched-capacitor integrators, amplifiers, single-bit A/D converters, single-bit D/A converters, analog switches and sampling capacitors. Analog subcircuits were verified with HSPICE sim ..."
+    },
+    {
+      "number": "VI",
+      "title": "EXPERIMENTAL METHODS AND RESULTS",
+      "kind": "results",
+      "page": 5,
+      "text_preview": "The modulators were fabricated in a 1.5m p-well CMOS . The amplifier and comprocess. Core die area was 3.2 mm parator were also fabricated separately for high-temperature testing independent of the modulation. IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 6, JUNE 2003 Experimental results of the SINAD ratio versus modulator input voltage at various temperatures. Results are shown for both thi ..."
+    },
+    {
+      "number": "VII",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 9,
+      "text_preview": "This paper provides experimental verification that modulation is a robust architecture for high-temperature design in standard CMOS. Also shown was that fully differential switched-capacitor circuits are capable of moderate resolution at high-temperature operation in a standard CMOS process with clock rates of only 256 kHz. modulators were implemented with switched-caTwo m 5-V standard CMOS proces ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. First-order discrete-time Modulator with single-bit quantization. The high gain of the analog filter forces the single-bit digital output to track the input signal.",
+      "caption_bbox": [
+        302.6,
+        254.3,
+        553.7,
+        282.9
+      ],
+      "section_title": "",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "A lator consists of an analog filter and a coarse (often single-bit) quantizer connected together in a feedback loop as shown in Fig. 1."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "automotive, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "First-order discrete-time Modulator with single-bit quantization. The high gain of the analog filter forces the single-bit digital output to track the input signal",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Structure of the discrete-time modulators. Both second-order , and third-order MASH cascaded output, Y , are provided by single-stage, Y hardware. Both hardware and software portions of the modulation are shown.",
+      "caption_bbox": [
+        301.1,
+        268.1,
+        552.2,
+        296.7
+      ],
+      "section_title": "II. BACKGROUND",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "MODULATOR TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "For this reason, the cascaded modulator was anticipated to have a larger sensitivity to high-temperature Fig. 2."
+        },
+        {
+          "section_title": "MODULATOR TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The entire modulator topology of a first-order , and refer to first, is shown in Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "-structure of": -1.5,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "automotive, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Structure of the discrete-time modulators. Both second-order , and third-order MASH cascaded output, Y , are provided by single-stage, Y hardware. Both hardware and software portions of the modulation are shown",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. simulation. For the third-order modulation, Y",
+      "caption_bbox": [
+        39.6,
+        402.1,
+        184.8,
+        421.6
+      ],
+      "section_title": "III. MODULATOR TOPOLOGY",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "MODULATOR TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The simulated power spectral density (PSD) is shown in Fig. 3 for third and second-order modulated output with an oversampling ratio (OSR) of 256."
+        },
+        {
+          "section_title": "MODULATOR TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "A noise floor of 132 V Fig. 3. simulation."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "14-Bit High-Temperature Modulator in Standard CMOS",
+        "technology": "CMOS",
+        "application_domain": "automotive, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "simulation. For the third-order modulation, Y",
+        "key_specs": [
+          "132 V"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.38,
+      "warnings": [
+        "Recommended figure caption does not explicitly mention a schematic/topology/circuit; please confirm manually.",
+        "Recommended figure was classified as 'other', not a schematic; manual confirmation strongly recommended."
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 3,
+      "caption": "Fig. 4. Fully differential switched-capacitor implementation of the modulator. An input capacitor of 4 pF is used to limit sampled thermal noise. A comparator is used for the single-bit A/D converter. Transmission gate switches and dual polarity external reference voltages are used to implement the single-bit D/A.",
+      "caption_bbox": [
+        38.1,
+        321.4,
+        289.2,
+        358.9
+      ],
+      "section_title": "V. MODULATOR CIRCUIT DESIGN AND IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CMOS CIRCUIT DESIGN AT HIGH TEMPERATURE",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The leakage current DAVIS AND FINVERS: 14-BIT HIGH-TEMPERATURE MODULATOR Fig. 4."
+        },
+        {
+          "section_title": "MODULATOR CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The fully differential switched-capacitor circuit implementation of the second-order single-stage and third-order MASH cascaded modulator is shown in Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.3,
+      "relevance_breakdown": {
+        "-reference": -1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "automotive, if",
+        "sub_blocks": [
+          "capacitor",
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Fully differential switched-capacitor implementation of the modulator. An input capacitor of 4 pF is used to limit sampled thermal noise. A comparator is used for the single-bit A/D converter. Transmission gate switches and dual polarity external reference voltages are used to implement the single-bit D/A",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 4,
+      "caption": "Fig. 5. Fully differential folded cascode amplifier shown with load capacitance and common-mode feedback control circuit. Common-mode feedback control voltage, V , is applied at the PMOS output transistors. All common-mode control circuit switches are made with minimum size transmission-gates to limit high-temperature leakage current.",
+      "caption_bbox": [
+        39.6,
+        331.3,
+        290.6,
+        377.7
+      ],
+      "section_title": "V. MODULATOR CIRCUIT DESIGN AND IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "MODULATOR CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "It has been shown for second-order modulation that the increase of in-band quantization noise power is less than 1 dB Fig. 5."
+        },
+        {
+          "section_title": "MODULATOR CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Amplifier Fig. 5 shows the fully differential folded-cascode amplifier used in the switched-capacitor integrator."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-capacitance": -2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "automotive, if",
+        "sub_blocks": [
+          "capacitor",
+          "transistor/MOSFET",
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Fully differential folded cascode amplifier shown with load capacitance and common-mode feedback control circuit. Common-mode feedback control voltage, V , is applied at the PMOS output transistors. All common-mode control circuit switches are made with minimum size transmission-gates to limit high-temperature leakage ...",
+        "key_specs": [
+          "1 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "Fig. 6. Single-bit D/A converter using dual polarity external reference voltages. The switches are controlled by output of the single-bit A/D converter.",
+      "caption_bbox": [
+        302.6,
+        154.5,
+        553.7,
+        174.1
+      ],
+      "section_title": "V. MODULATOR CIRCUIT DESIGN AND IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "MODULATOR CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "C, hand calculations predict the amFor operation near 200 plifier open-loop gain will decrease to approximately 56 dB and IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 6, JUNE 2003 Fig. 6."
+        },
+        {
+          "section_title": "MODULATOR CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Single-Bit D/A Converter The single-bit D/A converter is shown in Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.3,
+      "relevance_breakdown": {
+        "-reference": -1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "automotive, if",
+        "sub_blocks": [
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Single-bit D/A converter using dual polarity external reference voltages. The switches are controlled by output of the single-bit A/D converter",
+        "key_specs": [
+          "56 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 5,
+      "caption": "Fig. 7. Experimental setup showing high-temperature board with modulators and associated teflon wiring inserted through the oven door.",
+      "caption_bbox": [
+        38.1,
+        321.8,
+        289.2,
+        341.4
+      ],
+      "section_title": "V. MODULATOR CIRCUIT DESIGN AND IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "MODULATOR CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "DAVIS AND FINVERS: 14-BIT HIGH-TEMPERATURE MODULATOR Fig. 7."
+        },
+        {
+          "section_title": "EXPERIMENTAL METHODS AND RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "A photo of analog supplies have a 200 the experimental setup is shown in Fig. 7."
+        },
+        {
+          "section_title": "EXPERIMENTAL METHODS AND RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The 2 test setup has a significant amount of wiring from the bench test-signal generating board to the high-temperature oven test board, as shown in Fig. 7, making low-noise testing difficult."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.7,
+      "relevance_breakdown": {
+        "-setup": -2.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "automotive, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Experimental setup showing high-temperature board with modulators and associated teflon wiring inserted through the oven door",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 5,
+      "caption": "Fig. 8. Experimental results of third-order output power spectrum obtained C, 166 C, 223 C, and 255 C. The large amount of overlap shows at 100 consistent modulaor operation. The vertical scale corresponds to a 2 V at 0 dBV.",
+      "caption_bbox": [
+        301.1,
+        263.9,
+        552.2,
+        301.5
+      ],
+      "section_title": "V. MODULATOR CIRCUIT DESIGN AND IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "MODULATOR CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Total input switch on-resistance is Fig. 8."
+        },
+        {
+          "section_title": "EXPERIMENTAL METHODS AND RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Superimposed power spectra of thirdand second-order modC, 166 C, 223 C, ulation are shown for temperatures of 100 C in Figs. 8 and 9, respectively."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "-output power": -2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "switch",
+        "technology": "CMOS",
+        "application_domain": "automotive, if",
+        "sub_blocks": [
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Experimental results of third-order output power spectrum obtained C, 166 C, 223 C, and 255 C. The large amount of overlap shows at 100 consistent modulaor operation. The vertical scale corresponds to a 2 V at 0 dBV",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 5,
+      "caption": "Fig. 9. Experimental results of second-order output power spectrum obtained at 100 C, 166 C, 223 C, and 255 C. Results are similar to those for third-order modulation. The vertical scale corresponds to a 2 V at 0 dBV.",
+      "caption_bbox": [
+        301.1,
+        519.1,
+        552.2,
+        547.7
+      ],
+      "section_title": "V. MODULATOR CIRCUIT DESIGN AND IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "MODULATOR CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.6,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "-output power": -2.0,
+        "section:design": 1.5,
+        "references": 0.4
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "14-Bit High-Temperature Modulator in Standard CMOS",
+        "technology": "CMOS",
+        "application_domain": "automotive, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Experimental results of second-order output power spectrum obtained at 100 C, 166 C, 223 C, and 255 C. Results are similar to those for third-order modulation. The vertical scale corresponds to a 2 V at 0 dBV",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 6,
+      "caption": "Fig. 10. modulation. Input amplitude is scaled to the reference voltage. At 223 recovers with decreasing input signal.",
+      "caption_bbox": [
+        39.6,
+        270.1,
+        261.3,
+        298.6
+      ],
+      "section_title": "VI. EXPERIMENTAL METHODS AND RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL METHODS AND RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Results are shown for both thirdand second-order Fig. 10. modulation."
+        },
+        {
+          "section_title": "EXPERIMENTAL METHODS AND RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The SINAD ratio versus input signal magnitude for thirdand second-order modulated output C is shown in Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-reference": -1.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "14-Bit High-Temperature Modulator in Standard CMOS",
+        "technology": "CMOS",
+        "application_domain": "automotive, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "modulation. Input amplitude is scaled to the reference voltage. At 223 recovers with decreasing input signal",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 7,
+      "caption": "Fig. 11. Signal power and harmonic distortion versus temperature for third-order modulation. Third-order harmonic distortion HD3 is relatively constant below 200 C , but increase significantly at 255 C. Symbols u1 to u8 refer to different units tested.",
+      "caption_bbox": [
+        38.1,
+        365.6,
+        289.2,
+        403.1
+      ],
+      "section_title": "VI. EXPERIMENTAL METHODS AND RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL METHODS AND RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Third-order modulated output signal power and harmonic distortion versus temperature are shown in Fig. 11."
+        },
+        {
+          "section_title": "EXPERIMENTAL METHODS AND RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "DAVIS AND FINVERS: 14-BIT HIGH-TEMPERATURE MODULATOR Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "automotive, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Signal power and harmonic distortion versus temperature for third-order modulation. Third-order harmonic distortion HD3 is relatively constant below 200 C , but increase significantly at 255 C. Symbols u1 to u8 refer to different units tested",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 7,
+      "caption": "Fig. 12. SINAD ratio versus OSR shown for various temperatures. Experimental results are in good agreement with the simulated design curve (shown with solid line), but flatten sooner due to the high experimental noise floor. Results obtained at low oversampling ratios and high temperature show the reduced performance. Symbols u8 and u5 refer to different units tested.",
+      "caption_bbox": [
+        301.1,
+        450.8,
+        552.2,
+        497.2
+      ],
+      "section_title": "VI. EXPERIMENTAL METHODS AND RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL METHODS AND RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The SINAD ratio versus OSR is shown in Fig. 12."
+        },
+        {
+          "section_title": "EXPERIMENTAL METHODS AND RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "As seen in Fig. 12 for low OSR, the second-order single-stage output shows deviation from nominal performance C, whereas third-order cascaded only at a temperature of 255 C output shows residual impairment at a temperature of 223 until the OSR reaches at least 256."
+        },
+        {
+          "section_title": "EXPERIMENTAL METHODS AND RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The open-loop gain ranged from 64 dB at C. ambient temperature to approximately 53 dB at 255 Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.8,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "14-Bit High-Temperature Modulator in Standard CMOS",
+        "technology": "CMOS",
+        "application_domain": "automotive, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "SINAD ratio versus OSR shown for various temperatures. Experimental results are in good agreement with the simulated design curve (shown with solid line), but flatten sooner due to the high experimental noise floor. Results obtained at low oversampling ratios and high temperature show the reduced performance. Symbols ...",
+        "key_specs": [
+          "64 dB",
+          "53 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 8,
+      "caption": "Fig. 13. Amplifier open-loop gain versus temperature. Measurements at temperatures above 200 to only 256 kHz for lower temperatures. Symbols u1 and u5 refer to different units tested.",
+      "caption_bbox": [
+        39.6,
+        317.9,
+        349.1,
+        337.5
+      ],
+      "section_title": "VI. EXPERIMENTAL METHODS AND RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL METHODS AND RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Analog Subcircuit Results 1) Amplifier: Amplifier open-loop gain versus temperature is shown in Fig. 13."
+        },
+        {
+          "section_title": "EXPERIMENTAL METHODS AND RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The cause of the impairment Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "automotive, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Amplifier open-loop gain versus temperature. Measurements at temperatures above 200 to only 256 kHz for lower temperatures. Symbols u1 and u5 refer to different units tested",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 8,
+      "caption": "Fig. 14. Common-mode feedback control circuit illustrating impairment from high-temperature junction-to-substrate leakage current. Enlarged view of transmission-gate switch shows reverse-biased diode leakage current that occurs when switches are held OFF. Dominant PMOS leakage current accumulates at the control node parasitic capacitance. This causes the common-mode control voltage V to increase and adjusts the amplifier common-mode output voltage low.",
+      "caption_bbox": [
+        302.6,
+        602.6,
+        553.7,
+        667.0
+      ],
+      "section_title": "VI. EXPERIMENTAL METHODS AND RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL METHODS AND RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "To facilitate full output swing, switches in the common-mode control circuit were constructed with CMOS transmission-gates as shown in Fig. 14."
+        },
+        {
+          "section_title": "EXPERIMENTAL METHODS AND RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "A change in input stage bias current adjusts the IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 6, JUNE 2003 C are taken with an increased clock rate of 3.2 MHz, compared Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-capacitance": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "automotive, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Common-mode feedback control circuit illustrating impairment from high-temperature junction-to-substrate leakage current. Enlarged view of transmission-gate switch shows reverse-biased diode leakage current that occurs when switches are held OFF. Dominant PMOS leakage current accumulates at the control node parasitic ...",
+        "key_specs": [
+          "3.2 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 9,
+      "caption": "Fig. 15. Folded-cascode amplifier with alternative common-mode feedback control. Leakage current from MC2–MC3 will mirror leakage current to output transistors M9–M10 accommodating identical leakage from MC1–MC2.",
+      "caption_bbox": [
+        38.1,
+        255.1,
+        289.2,
+        283.7
+      ],
+      "section_title": "VI. EXPERIMENTAL METHODS AND RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL METHODS AND RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "One possible solution is shown in Fig. 15 [31]."
+        },
+        {
+          "section_title": "EXPERIMENTAL METHODS AND RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "At elevated temperatures, switch leakage from the added PMOS transistors MC1–MC2 DAVIS AND FINVERS: 14-BIT HIGH-TEMPERATURE MODULATOR Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "automotive, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Folded-cascode amplifier with alternative common-mode feedback control. Leakage current from MC2–MC3 will mirror leakage current to output transistors M9–M10 accommodating identical leakage from MC1–MC2",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 3,
+  "warnings": []
+}

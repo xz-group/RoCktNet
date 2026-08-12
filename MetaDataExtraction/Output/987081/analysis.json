@@ -1,0 +1,1058 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\987081.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\987081",
+  "generated_at": "2026-07-29T21:33:56",
+  "paper_metadata": {
+    "title": "A 12-bit Integrated Analog Front End for Broadband Wireline Networks",
+    "authors": [
+      "Iuri Mehr",
+      "Prabir C. Maulik",
+      "Donald Paterson"
+    ],
+    "abstract": "An integrated transceiver for broadband wireline networks is presented. The transceiver includes a receive data path, a transmit data path, and auxiliary functions including serial port interface, clock and reference generation blocks, and voltage regulator control circuitry. The receive data path provides constant input impedance and is composed of two variable gain amplifier (VGA) blocks, a tuned analog 4-pole filter, a 12-b analog-to-digital converter (ADC) sampling at 32 MHz, and a digital high-pass filter. Filter tuning using switched-capacitor arrays occurs in the background, with no effect on signal reception. The transmit data path contains digital interpolation filters and a 12-b Fig. 1. Typical wireline network node. digital-to-analog converter (DAC) sampling at 128 MHz. The chip was implemented in double-poly triple-metal 0.35m CMOS technology. Measured performance for both receive and transmit and auxiliary functions like serial port and voltage regulator data paths meets target specifications with no noticeable crosstalk. control. Fig. 1 shows a typical wireline network node. The AFE",
+    "keywords": [
+      "Analog front end",
+      "analog-to-digital converter"
+    ],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID STATE CIRCUITS",
+    "year": 2002
+  },
+  "paper_circuit_context": {
+    "circuit_type": "amplifier",
+    "technology": "CMOS, BICMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "current source",
+      "transformer",
+      "output buffer",
+      "switch",
+      "differential pair",
+      "op-amp",
+      "pre-amplifier"
+    ],
+    "design_purpose": "An integrated transceiver for broadband wireline networks is presented.",
+    "function_summary": "amplifier: An integrated transceiver for broadband wireline networks is presented.",
+    "key_specs": [
+      "32 MHz",
+      "128 MHz",
+      "26 MHz",
+      "10 MHz",
+      "6 dB",
+      "36 dB",
+      "24 dB",
+      "5 w",
+      "3 w",
+      "4 w"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "R ECENT developments in Internet deployment have created the demand for broadband bidirectional access and local networks for both residential and business users. Wireline broadband access can be implemented using cable, phone line, or even power line as media. Also, wireline local networks can be implemented using existing phone lines or power lines. Cable modems are able to provide the very high ..."
+    },
+    {
+      "number": "II",
+      "title": "ANALOG FRONT-END ARCHITECTURE",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "As mentioned in the previous section, the transceiver presented in this paper is intended for home networking (HPNA MEHR et al.: A 12-b INTEGRATED ANALOG FRONT END FOR BROADBAND WIRELINE NETWORKS Fig. 2. AFE block diagram. for phone line, HomePlug for powerline), as well as for single carrier VDSL systems. Therefore, the data bandwidth can be located inside the 3–26 MHz interval, organized in up t ..."
+    },
+    {
+      "number": "III",
+      "title": "CIRCUIT DESIGN",
+      "kind": "design",
+      "page": 1,
+      "text_preview": "Analog sections of the design are implemented using fully differential circuits. Since continuous-time gain stages are integrated on the same die with a significant amount of digital circuitry running at high clock rates, isolation and crosstalk become challenging issues. Particular care was taken in layout (differential balancing, guard rings) and in connecting the power supply to various blocks  ..."
+    },
+    {
+      "number": "IV",
+      "title": "LAYOUT AND MEASURED RESULTS",
+      "kind": "results",
+      "page": 5,
+      "text_preview": "A photograph of the chip is shown in Fig. 13. Four capacitor array banks can be seen on the left side, corresponding to the four filter singularities. The ADC occupies the bottom right and the DAC occupies the top right of the photograph. The measurements were obtained using a dedicated evaluation board. It was possible to measure independently various blocks using an on-chip multiplexer and auxil ..."
+    },
+    {
+      "number": "V",
+      "title": "CONCLUSIONS",
+      "kind": "conclusion",
+      "page": 6,
+      "text_preview": "Testing results show the chip is functional in every aspect and can provide a cost-effective solution as a generic mixed-mode front end for broadband wireline networks. Careful layout and power supply routing practically eliminated crosstalk. Active RC filter tuning can be performed in the background without compromising linearity or generating glitches in the received signal. ACKNOWLEDGMENT The a ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Typical wireline network node.",
+      "caption_bbox": [
+        302.6,
+        269.2,
+        431.5,
+        279.9
+      ],
+      "section_title": "",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Publisher Item Identifier S 0018-9200(02)01688-8. 0018–9200/02$17.00 © 2002 IEEE Fig. 1."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1 shows a typical wireline network node."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Typical wireline network node",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. AFE block diagram.",
+      "caption_bbox": [
+        38.1,
+        249.8,
+        132.4,
+        260.4
+      ],
+      "section_title": "II. ANALOG FRONT-END ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ANALOG FRONT-END ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "As mentioned in the previous section, the transceiver presented in this paper is intended for home networking (HPNA MEHR et al.: A 12-b INTEGRATED ANALOG FRONT END FOR BROADBAND WIRELINE NETWORKS Fig. 2."
+        },
+        {
+          "section_title": "ANALOG FRONT-END ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 2 shows a simplified block diagram of the chip."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "transceiver",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "AFE block diagram",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.65,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Single-ended version of the CVGA which provides for filtering and constant input impedance.",
+      "caption_bbox": [
+        301.1,
+        195.4,
+        552.2,
+        215.0
+      ],
+      "section_title": "II. ANALOG FRONT-END ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ANALOG FRONT-END ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 3."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Receiver Design Fig. 3 shows a single-ended version of the CVGA block which is implemented as a simple passive network in feedback around an opamp."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "When the feedback factor around the opamp decreases from Fig. 3, the opamp open-loop due to a decrease in , which is performed by bandwidth is increased by reducing ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Single-ended version of the CVGA which provides for filtering and constant input impedance",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.31,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Opamp used in the CVGA and across the active RC filter. The compensation network in the figure is a digitally controlled function of the CVGA gain setting.",
+      "caption_bbox": [
+        39.6,
+        244.3,
+        290.7,
+        272.9
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Therefore, there is a capacitor in feedback which together with form a one-pole rolloff filter function. the feedback resistor Fig. 4."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 4 presents the opamp schematic used in the CVGA."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The opamps are similar to the one in Fig. 4 with a fixed compensation network."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor",
+          "resistor",
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Opamp used in the CVGA and across the active RC filter. The compensation network in the figure is a digitally controlled function of the CVGA gain setting",
+        "key_specs": [
+          "4 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Active RC filter implementation including the biquad section.",
+      "caption_bbox": [
+        302.6,
+        264.5,
+        528.1,
+        275.1
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "It is necessary switching off triode devices implementing to preserve the closed-loop bandwidth of the CVGA as much IEEE JOURNAL OF SOLID STATE CIRCUITS, VOL. 37, NO. 3, MARCH 2002 Fig. 5."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 5 presents the active RC filter implementation."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Active RC filter implementation including the biquad section",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Filter tuning circuit.",
+      "caption_bbox": [
+        38.1,
+        221.8,
+        131.6,
+        232.5
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The tuning circuit is is compared shown in Fig. 6."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The capacitor array and the resistor are replicated MEHR et al.: A 12-b INTEGRATED ANALOG FRONT END FOR BROADBAND WIRELINE NETWORKS Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor",
+          "resistor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Filter tuning circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Switching of capacitor array during filter tuning.",
+      "caption_bbox": [
+        38.1,
+        410.8,
+        222.6,
+        421.4
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 7."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 7 shows the capacitor array used across the filter and the background switching action."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Switching of capacitor array during filter tuning",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. SVGA block including the preceding buffer.",
+      "caption_bbox": [
+        301.1,
+        227.6,
+        471.9,
+        238.3
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The SVGA block is shown in Fig. 8."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The output of the filter is buffered through a source-follower circuit and fed into the Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "SVGA block including the preceding buffer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 3,
+      "caption": "Fig. 9. Opamp used in the SVGA.",
+      "caption_bbox": [
+        301.1,
+        418.5,
+        416.6,
+        429.1
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 9."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 9 shows a simplified schematic of gain is the opamp used for the SVGA."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Opamp used in the SVGA",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10. The 12-b ADC pipeline topology.",
+      "caption_bbox": [
+        39.6,
+        222.4,
+        180.5,
+        233.1
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "As a result, compared to a folded-cascode amplifier, this design achieves a larger gain (about 12 dB more) at the expense of slightly increased (about 20% more) power Fig. 10."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "A 12-b pipeline ADC follows the SVGA and its topology is presented in Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.8,
+      "relevance_breakdown": {
+        "+topology": 2.5,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "A 12-b pipeline ADC follows the SVGA and its topology is presented in Fig. 10.",
+        "function_summary": "The 12-b ADC pipeline topology. A 12-b pipeline ADC follows the SVGA and its topology is presented in Fig. 10.",
+        "key_specs": [
+          "12 dB",
+          "20%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.69,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 4,
+      "caption": "Fig. 11. Transmit data path and the sampled spectrum of the output data.",
+      "caption_bbox": [
+        302.6,
+        301.0,
+        540.0,
+        311.7
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 11 shows the transmit digital filter, the DAC, and the processed spectrum at the output."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "With respect to the graphs in Fig. 11, the first one corresponds to both interpolators configured as low-pass filters."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "In that case, a much steeper IEEE JOURNAL OF SOLID STATE CIRCUITS, VOL. 37, NO. 3, MARCH 2002 Fig. 11."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "As shown in Fig. 11, the output can be termiresistors and an extra capacitor which together nated with 50form a simple smoothing filter."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.6,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Transmit data path and the sampled spectrum of the output data",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.03,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 4,
+      "caption": "Fig. 12. Voltage regulator control circuitry.",
+      "caption_bbox": [
+        302.6,
+        470.6,
+        445.9,
+        481.3
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 12."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Auxiliary Circuits Fig. 12 presents the control circuitry for the voltage regulator."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Voltage regulator control circuitry",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 5,
+      "caption": "Fig. 13. Photograph of the chip.",
+      "caption_bbox": [
+        38.1,
+        285.8,
+        146.6,
+        296.5
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "MEHR et al.: A 12-b INTEGRATED ANALOG FRONT END FOR BROADBAND WIRELINE NETWORKS Fig. 13."
+        },
+        {
+          "section_title": "LAYOUT AND MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "A photograph of the chip is shown in Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-photograph": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Photograph of the chip",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 5,
+      "caption": "Fig. 14. Filter magnitude transfer functions for high and low cutoff.",
+      "caption_bbox": [
+        38.1,
+        533.0,
+        259.6,
+        543.6
+      ],
+      "section_title": "IV. LAYOUT AND MEASURED RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Photograph of the chip. a Fig. 14."
+        },
+        {
+          "section_title": "LAYOUT AND MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 14 presents measurements of the filter magnitude transfer function for the high cutoff (top) and the low cutoff (bottom)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Filter magnitude transfer functions for high and low cutoff",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 5,
+      "caption": "Fig. 15. Filter group delay transfer functions for high and low cutoff.",
+      "caption_bbox": [
+        301.1,
+        275.3,
+        526.8,
+        286.0
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "LAYOUT AND MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 15."
+        },
+        {
+          "section_title": "LAYOUT AND MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 15 presents the filter group delay transfer constant function for high and low cutoff, respectively."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Filter group delay transfer functions for high and low cutoff",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 5,
+      "caption": "Fig. 16. ADC linearity shown as DNL and INL plots.",
+      "caption_bbox": [
+        301.1,
+        457.1,
+        478.1,
+        467.7
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "LAYOUT AND MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 16."
+        },
+        {
+          "section_title": "LAYOUT AND MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The SVGA ADC off, the variation increases to static nonlinearity is shown in Fig. 16 for a gain setting of 0.7 least 0 dB."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "ADC linearity shown as DNL and INL plots",
+        "key_specs": [
+          "0 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 6,
+      "caption": "Fig. 17. Spectral plot of a sinusoidal waveform at 5 MHz passing through the receiver data path.",
+      "caption_bbox": [
+        39.6,
+        222.2,
+        290.6,
+        241.8
+      ],
+      "section_title": "IV. LAYOUT AND MEASURED RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "LAYOUT AND MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 17 within Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.6,
+      "relevance_breakdown": {
+        "-waveform": -2.0,
+        "section:results": -2.0,
+        "references": 0.4
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Spectral plot of a sinusoidal waveform at 5 MHz passing through the receiver data path",
+        "key_specs": [
+          "17 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 6,
+      "caption": "Fig. 18. Receiver input referred noise (in dBmV) as a function of the gain settings.",
+      "caption_bbox": [
+        39.6,
+        421.5,
+        290.6,
+        441.1
+      ],
+      "section_title": "IV. LAYOUT AND MEASURED RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "LAYOUT AND MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 18."
+        },
+        {
+          "section_title": "LAYOUT AND MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "A graph of the receiver input referred noise (in dBmV) as a function of the gain setting is shown in Fig. 18."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Receiver input referred noise (in dBmV) as a function of the gain settings",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 6,
+      "caption": "Fig. 19. Spectral plot of a sinusoidal waveform at 7 MHz passing through the transmit data path.",
+      "caption_bbox": [
+        302.6,
+        222.4,
+        553.7,
+        242.0
+      ],
+      "section_title": "IV. LAYOUT AND MEASURED RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "LAYOUT AND MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "On the transmit side, Fig. 19 presents a spectral plot of a 7-MHz sinewave running through the entire transmitter in the interpolation-by-4 mode."
+        },
+        {
+          "section_title": "LAYOUT AND MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "IEEE JOURNAL OF SOLID STATE CIRCUITS, VOL. 37, NO. 3, MARCH 2002 Fig. 19."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-waveform": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "transmitter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Spectral plot of a sinusoidal waveform at 7 MHz passing through the transmit data path",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 2,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

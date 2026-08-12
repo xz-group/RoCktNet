@@ -1,0 +1,903 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1196212.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1196212",
+  "generated_at": "2026-07-29T22:00:52",
+  "paper_metadata": {
+    "title": "A 4-GHz 130-nm Address Generation Unit With 32-bit Sparse-Tree Adder Core",
+    "authors": [
+      "Sanu Mathew",
+      "Mark Anders",
+      "Ram K. Krishnamurthy",
+      "Shekhar Borkar"
+    ],
+    "abstract": "This paper describes a 32-bit address generation unit designed for 4-GHz operation in 1.2-V 130-nm technology. The AGU utilizes a 152-ps sparse-tree adder core to achieve 20% delay reduction, 80% lower interconnect complexity, and a low (1%) active energy leakage component. The dualT semidynamic implementation of the adder core provides the performance of a dynamic CMOS design with an average energy profile similar to static CMOS, enabling 71% savings in average energy with a good sub-130-nm scaling trend.",
+    "keywords": [
+      "Address generation unit (AGU)",
+      "high-performance adders",
+      "semidynamic design",
+      "sparse-tree adder"
+    ],
+    "doi": "10.1109/JSSC.2003.810056",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "arithmetic logic unit (ALU)",
+    "technology": "CMOS, SOI, 130-nm process",
+    "application_domain": "",
+    "sub_blocks": [
+      "transistor/MOSFET",
+      "output buffer",
+      "latch",
+      "clock / timing",
+      "switch"
+    ],
+    "design_purpose": "The AGU utilizes a 152-ps sparse-tree adder core to achieve 20% delay reduction, 80% lower interconnect complexity, and a low (1%) active energy leakage component.",
+    "function_summary": "arithmetic logic unit (ALU): The AGU utilizes a 152-ps sparse-tree adder core to achieve 20% delay reduction, 80% lower interconnect complexity, and a low (1%) active energy leakage component.",
+    "key_specs": [
+      "20%",
+      "80%",
+      "1%",
+      "71%",
+      "98 ps",
+      "4 GHz",
+      "152 ps",
+      "33%",
+      "50%",
+      "25%"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "H IGH-PERFORMANCE microprocessors use a variety of memory management techniques to map a logical address to a physical address space [1]. These techniques include features such as segmentation and paging, which allow memory to be managed efficiently and reliably. The address generation unit (AGU) is a key component of the memory management block and is used to compute the effective address of the  ..."
+    },
+    {
+      "number": "II",
+      "title": "AGU ARCHITECTURE",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "There are three main blocks in the AGU: a programmable 3-bit Index shifter, an array of 3 : 2 compressors and a high-performance 32-bit adder (Fig. 2). In addition, a precompute block is used to calculate the sum of Segment and Displacement addresses. Effective address computation occurs in two phases, with the negative-level latches at the input and the output of the AGU representing the cycle bo ..."
+    },
+    {
+      "number": "III",
+      "title": "HIGH-PERFORMANCE 32-BIT ADDERS",
+      "kind": "results",
+      "page": 1,
+      "text_preview": "A well-known high-performance adder architecture is the Kogge-Stone (KS) adder [5], [6]. This adder uses parallel prefix logic that employs a logarithmic binary carry–merge tree to generate carries for every adder bit. As shown in Fig. 4, even and odd bitslices of the KS adder core are identical and include the PG block followed by five stages of carry–merge (two dynamic gates [CM2 and CM4] inters ..."
+    },
+    {
+      "number": "IV",
+      "title": "SPARSE-TREE ADDER ARCHITECTURE",
+      "kind": "proposed",
+      "page": 1,
+      "text_preview": "A. Critical Sparse-Tree Circuit Contrary to the dense carry–merge tree approach of the KS adder (Fig. 5), we propose a sparse-tree adder that divides the carry–merge tree into critical and noncritical sections. The purpose is to speed up the critical path by moving a portion of the carry–merge logic to a noncritical sidepath. Instead of gener- ), as in the KS ating the carry for each bit ( approac ..."
+    },
+    {
+      "number": "V",
+      "title": "SEMIDYNAMIC DESIGN",
+      "kind": "design",
+      "page": 3,
+      "text_preview": "The performance criticality of the AGU demands a dynamic adder implementation. Partitioning the carry–merge tree into critical and noncritical sections enables an energy-efficient imtechplementation by leveraging dynamic, static, and dualniques. Fig. 11 shows the critical and noncritical paths in the adder core. The critical path, implemented in single-rail dyand namic logic begins with the PG blo ..."
+    },
+    {
+      "number": "VI",
+      "title": "ENERGY-DELAY COMPARISONS AND DISCUSSION",
+      "kind": "results",
+      "page": 4,
+      "text_preview": "The energy-delay space (Fig. 14) comparing this design with the KS adder shows the benefits of the sparse-tree adder architecture in a 1.2-V 130-nm technology. The 33%–50% reduction in generate/propagate fanouts and the 30% reduction in maximum interconnect span results in 20% speedup in adder performance. The 80% reduction in wiring complexity has an indirect effect on performance by facilitating ..."
+    },
+    {
+      "number": "VII",
+      "title": "SUMMARY AND CONCLUSIONS",
+      "kind": "conclusion",
+      "page": 5,
+      "text_preview": "The design of an energy-efficient AGU operating at 4 GHz in a 1.2-V 130-nm CMOS technology has been described. We have shown that moving to a sparse-tree adder core design offers 20% delay reduction and 56% energy reduction compared to a KS adder. This relaxes the thermal density issues within the execution core, increasing reliability and reducing cooling costs. The semidynamic design of the adde ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Thermal map of a typical superscalar processor showing hot-spots over the AGU.",
+      "caption_bbox": [
+        301.1,
+        318.2,
+        552.2,
+        337.8
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "However, the high activity of the AGU creates thermal hotspots and sharp temperature gradients [2] in the execution core (Fig. 1) that can severely affect circuit reliability and increase cooling costs."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1."
+        },
+        {
+          "section_title": "SEMIDYNAMIC DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "This helps to alleviate the hotspots shown in Fig. 1. , , and ) to the static sum Note that the inputs ( generator are dynamic signals that go high during precharge."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.7,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "microprocessor",
+        "technology": "CMOS, SOI, 130-nm process",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "This helps to alleviate the hotspots shown in Fig. 1. , , and ) to the static sum Note that the inputs ( generator are dynamic signals that go high during precharge.",
+        "function_summary": "Thermal map of a typical superscalar processor showing hot-spots over the AGU. This helps to alleviate the hotspots shown in Fig. 1. , , and ) to the static sum Note that the inputs ( generator are dynamic signals that go high during precharge.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. AGU architecture.",
+      "caption_bbox": [
+        39.6,
+        193.4,
+        127.4,
+        204.0
+      ],
+      "section_title": "II. AGU ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "AGU ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "There are three main blocks in the AGU: a programmable 3-bit Index shifter, an array of 3 : 2 compressors and a high-performance 32-bit adder (Fig. 2)."
+        },
+        {
+          "section_title": "AGU ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The scaling of the Index address is performed by a left-shift of 0, 1, 2, or 3 bits using a programmable transmission-gate Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.8,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "arithmetic logic unit (ALU)",
+        "technology": "CMOS, SOI, 130-nm process",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "AGU architecture",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.88,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. AGU timing diagram.",
+      "caption_bbox": [
+        39.6,
+        333.1,
+        138.9,
+        343.8
+      ],
+      "section_title": "II. AGU ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "AGU ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 3."
+        },
+        {
+          "section_title": "AGU ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Staggered clocks (clk2 and clk3) are used to avoid precharge contention and present seamless time-borrowable boundaries (Fig. 3) within the core."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "arithmetic logic unit (ALU)",
+        "technology": "CMOS, SOI, 130-nm process",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "AGU timing diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 1,
+      "caption": "Fig. 4. Critical paths of a 32-bit Kogge–Stone adder.",
+      "caption_bbox": [
+        302.6,
+        154.9,
+        476.5,
+        165.5
+      ],
+      "section_title": "II. AGU ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "HIGH-PERFORMANCE 32-BIT ADDERS",
+          "section_kind": "results",
+          "page": 1,
+          "sentence": "As shown in Fig. 4, even and odd bitslices of the KS adder core are identical and include the PG block followed by five stages of carry–merge (two dynamic gates [CM2 and CM4] interspersed between three static gates IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 5, MAY 2003 Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.4,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "arithmetic logic unit (ALU)",
+        "technology": "CMOS, SOI, 130-nm process",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Critical paths of a 32-bit Kogge–Stone adder",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.17,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. 32-bit KS adder. High gate density and wiring complexity.",
+      "caption_bbox": [
+        38.1,
+        225.8,
+        255.4,
+        236.4
+      ],
+      "section_title": "III. HIGH-PERFORMANCE 32-BIT ADDERS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "HIGH-PERFORMANCE 32-BIT ADDERS",
+          "section_kind": "results",
+          "page": 1,
+          "sentence": "The high fanout, combined with the high interconnect complexity (Fig. 5) makes the KS design an energy-inefficient implementation."
+        },
+        {
+          "section_title": "SPARSE-TREE ADDER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Critical Sparse-Tree Circuit Contrary to the dense carry–merge tree approach of the KS adder (Fig. 5), we propose a sparse-tree adder that divides the carry–merge tree into critical and noncritical sections."
+        },
+        {
+          "section_title": "SPARSE-TREE ADDER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Further, the 80% reduction in wiring complexity permits the use of wider/shielded wires on the few MATHEW et al.: ADDRESS GENERATION UNIT WITH SPARSE-TREE ADDER CORE Fig. 5. 32-bit KS adder."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "arithmetic logic unit (ALU)",
+        "technology": "CMOS, SOI, 130-nm process",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "Critical Sparse-Tree Circuit Contrary to the dense carry–merge tree approach of the KS adder (Fig. 5), we propose a sparse-tree adder that divides the carry–merge tree into critical and noncritical sections.",
+        "function_summary": "32-bit KS adder. High gate density and wiring complexity. Critical Sparse-Tree Circuit Contrary to the dense carry–merge tree approach of the KS adder (Fig. 5), we propose a sparse-tree adder that divides the carry–merge tree into critical and noncritical sections.",
+        "key_specs": [
+          "80%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. Critical sparse carry–merge tree.",
+      "caption_bbox": [
+        38.1,
+        464.6,
+        172.0,
+        475.2
+      ],
+      "section_title": "III. HIGH-PERFORMANCE 32-BIT ADDERS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "SPARSE-TREE ADDER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Instead of gener- ), as in the KS ating the carry for each bit ( approach, the sparse-tree adder (Fig. 6) generates every fourth and )."
+        },
+        {
+          "section_title": "SPARSE-TREE ADDER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "arithmetic logic unit (ALU)",
+        "technology": "CMOS, SOI, 130-nm process",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Critical sparse carry–merge tree",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 2,
+      "caption": "Fig. 7. Non-critical 4-bit conditional sum-generator.",
+      "caption_bbox": [
+        301.1,
+        611.8,
+        473.4,
+        622.4
+      ],
+      "section_title": "III. HIGH-PERFORMANCE 32-BIT ADDERS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "SPARSE-TREE ADDER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 7."
+        },
+        {
+          "section_title": "SPARSE-TREE ADDER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Noncritical Conditional Sum Generator The noncritical section of the adder consists of a 4-bit conditional sum generator that generates two sets of sums, assuming an input carry of 0 and 1, respectively (Fig. 7)."
+        },
+        {
+          "section_title": "SPARSE-TREE ADDER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Thus, as shown in Fig. 7, the carryin at the first level of each conditional carry rail is tied off to 0 and 1, respectively, generating two rails of conditional carries."
+        },
+        {
+          "section_title": "SPARSE-TREE ADDER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "This optimization eliminates the first stage of carry–merge logic in the conditional-sum generators and pushes the inverters required to generate CC_0#[0] and CC_1#[0] to the next level, reducing the number of logic stages in the conditional-sum generators from five stages (Fig. 7) to four stages (Fig. 10)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.4,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "arithmetic logic unit (ALU)",
+        "technology": "CMOS, SOI, 130-nm process",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Non-critical 4-bit conditional sum-generator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. Optimizing conditional-carry0 rail.",
+      "caption_bbox": [
+        39.6,
+        168.3,
+        180.6,
+        178.9
+      ],
+      "section_title": "III. HIGH-PERFORMANCE 32-BIT ADDERS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "SPARSE-TREE ADDER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 8."
+        },
+        {
+          "section_title": "SPARSE-TREE ADDER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Thus, the conditional carry gate ( for bit is logically equivalent to for that bit, reducing this gate to an inverter (Fig. 8)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "arithmetic logic unit (ALU)",
+        "technology": "CMOS, SOI, 130-nm process",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Optimizing conditional-carry0 rail",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 3,
+      "caption": "Fig. 9. Optimizing conditional-carry1 rail.",
+      "caption_bbox": [
+        39.6,
+        341.5,
+        180.6,
+        352.1
+      ],
+      "section_title": "V. SEMIDYNAMIC DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "SPARSE-TREE ADDER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 9."
+        },
+        {
+          "section_title": "SPARSE-TREE ADDER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Similarly, the first-level carry–merge gate for the conditional-carry rail corresponding to reduces to a NOR function of the propagate and gensignals for that bit (Fig. 9)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "arithmetic logic unit (ALU)",
+        "technology": "CMOS, SOI, 130-nm process",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "Similarly, the first-level carry–merge gate for the conditional-carry rail corresponding to reduces to a NOR function of the propagate and gensignals for that bit (Fig. 9).",
+        "function_summary": "Optimizing conditional-carry1 rail. Similarly, the first-level carry–merge gate for the conditional-carry rail corresponding to reduces to a NOR function of the propagate and gensignals for that bit (Fig. 9).",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 3,
+      "caption": "Fig. 10. Optimized 4-bit conditional-sum generator.",
+      "caption_bbox": [
+        302.6,
+        188.0,
+        474.0,
+        198.6
+      ],
+      "section_title": "III. HIGH-PERFORMANCE 32-BIT ADDERS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "SPARSE-TREE ADDER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "This optimization eliminates the first stage of carry–merge logic in the conditional-sum generators and pushes the inverters required to generate CC_0#[0] and CC_1#[0] to the next level, reducing the number of logic stages in the conditional-sum generators from five stages (Fig. 7) to four stages (Fig. 10)."
+        },
+        {
+          "section_title": "SPARSE-TREE ADDER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 5, MAY 2003 Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "arithmetic logic unit (ALU)",
+        "technology": "CMOS, SOI, 130-nm process",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Optimized 4-bit conditional-sum generator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 3,
+      "caption": "Fig. 11. Critical and noncritical paths in sparse-tree adder.",
+      "caption_bbox": [
+        302.6,
+        320.2,
+        494.3,
+        330.8
+      ],
+      "section_title": "V. SEMIDYNAMIC DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "SPARSE-TREE ADDER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 11."
+        },
+        {
+          "section_title": "SEMIDYNAMIC DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 11 shows the critical and noncritical paths in the adder core."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "arithmetic logic unit (ALU)",
+        "technology": "CMOS, SOI, 130-nm process",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Critical and noncritical paths in sparse-tree adder",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 4,
+      "caption": "Fig. 12. Stage 1 of sum generator: Set-domino latch.",
+      "caption_bbox": [
+        38.1,
+        175.3,
+        212.3,
+        185.9
+      ],
+      "section_title": "V. SEMIDYNAMIC DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "SEMIDYNAMIC DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "MATHEW et al.: ADDRESS GENERATION UNIT WITH SPARSE-TREE ADDER CORE Fig. 12."
+        },
+        {
+          "section_title": "SEMIDYNAMIC DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "To prevent this precharge activity from propagating through the sum generators when the clock goes low, the first gate in the sum generator is converted to a set-domino latch (Fig. 12) by the addition of the clocked footer nMOS device to the static carry–merge gate."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "latch",
+        "technology": "CMOS, SOI, 130-nm process",
+        "application_domain": "",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "latch",
+          "clock / timing"
+        ],
+        "design_purpose": "",
+        "function_summary": "Stage 1 of sum generator: Set-domino latch",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 4,
+      "caption": "Fig. 13. Interfacing static and domino signals.",
+      "caption_bbox": [
+        38.1,
+        366.8,
+        191.3,
+        377.4
+      ],
+      "section_title": "VI. ENERGY-DELAY COMPARISONS AND DISCUSSION",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "SEMIDYNAMIC DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 13."
+        },
+        {
+          "section_title": "SEMIDYNAMIC DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 13 shows the state of the final carry–merge gates (CM4 and CM5) and the static-domino interface during both phases of the clock."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "arithmetic logic unit (ALU)",
+        "technology": "CMOS, SOI, 130-nm process",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Interfacing static and domino signals",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 4,
+      "caption": "Fig. 14. Energy-delay curve: Kogge-Stone vs. sparse-tree adders.",
+      "caption_bbox": [
+        301.1,
+        183.1,
+        514.8,
+        193.7
+      ],
+      "section_title": "V. SEMIDYNAMIC DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "SEMIDYNAMIC DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Accordingly, the multiplexer will select the appropriate conditional Fig. 14."
+        },
+        {
+          "section_title": "ENERGY-DELAY COMPARISONS AND DISCUSSION",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The energy-delay space (Fig. 14) comparing this design with the KS adder shows the benefits of the sparse-tree adder architecture in a 1.2-V 130-nm technology."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "arithmetic logic unit (ALU)",
+        "technology": "CMOS, SOI, 130-nm process",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Energy-delay curve: Kogge-Stone vs. sparse-tree adders",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 5,
+      "caption": "Fig. 15. Adder core layout.",
+      "caption_bbox": [
+        39.6,
+        116.6,
+        132.9,
+        127.2
+      ],
+      "section_title": "VI. ENERGY-DELAY COMPARISONS AND DISCUSSION",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "ENERGY-DELAY COMPARISONS AND DISCUSSION",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The 80% reduction in wiring complexity has an indirect effect on performance by facilitating a dense layout (Fig. 15) and enabling the widening and shielding of the few performance-critical interconnects in the adder core."
+        },
+        {
+          "section_title": "ENERGY-DELAY COMPARISONS AND DISCUSSION",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Thus, for an adder input data activity of 10% (typical in datapath circuits), the single-rail dynamic sparse-tree section of the adder core will have a constant activity of 0.5, whereas the static sum generators will have an Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.7,
+      "relevance_breakdown": {
+        "+core": 0.5,
+        "-layout": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "arithmetic logic unit (ALU)",
+        "technology": "CMOS, SOI, 130-nm process",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Adder core layout",
+        "key_specs": [
+          "80%",
+          "10%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 5,
+      "caption": "Fig. 16. Scaling of average energy with activity factor.",
+      "caption_bbox": [
+        39.6,
+        258.7,
+        219.7,
+        269.4
+      ],
+      "section_title": "VII. SUMMARY AND CONCLUSIONS",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "ENERGY-DELAY COMPARISONS AND DISCUSSION",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The impact of the semidynamic design is seen when we consider the effect of switching activity on average energy (Fig. 16)."
+        },
+        {
+          "section_title": "ENERGY-DELAY COMPARISONS AND DISCUSSION",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "arithmetic logic unit (ALU)",
+        "technology": "CMOS, SOI, 130-nm process",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Scaling of average energy with activity factor",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 2,
+  "warnings": []
+}

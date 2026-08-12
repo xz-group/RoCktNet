@@ -1,0 +1,13 @@
+{
+  "name": "ieee-pdf-automation",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test-line-18": "node download_ieee_pdf.mjs --line 18",
+    "batch-test": "node download_ieee_batch.mjs --start-line 18 --end-line 20 --min-delay-ms 3000 --max-delay-ms 5000",
+    "batch": "node download_ieee_batch.mjs --start-line 18"
+  },
+  "dependencies": {
+    "playwright-core": "1.62.0"
+  }
+}

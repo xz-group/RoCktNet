@@ -1,0 +1,237 @@
+{
+  "image": "Book1166",
+  "nodes": [
+    "GND",
+    "n0",
+    "n1",
+    "n2",
+    "n3",
+    "n4",
+    "label_net_0",
+    "label_net_1"
+  ],
+  "node_origins": {
+    "GND": [
+      5,
+      9,
+      12,
+      13
+    ],
+    "n0": [
+      0
+    ],
+    "n1": [
+      1
+    ],
+    "n2": [
+      3
+    ],
+    "n3": [
+      4
+    ],
+    "n4": [
+      8
+    ],
+    "label_net_0": [
+      10
+    ],
+    "label_net_1": [
+      2
+    ]
+  },
+  "components": [
+    {
+      "name": "R1",
+      "class": "resistor",
+      "bbox_idx": 0,
+      "bbox": [
+        696.09,
+        158.33,
+        742.94,
+        221.57
+      ],
+      "orientation": null,
+      "pins": {
+        "1": "n4",
+        "2": "label_net_0"
+      },
+      "flags": [
+        "pin2_via_single_bbox_port"
+      ],
+      "red_flags": []
+    },
+    {
+      "name": "M1",
+      "class": "nmos",
+      "bbox_idx": 1,
+      "bbox": [
+        441.28,
+        509.49,
+        502.47,
+        592.23
+      ],
+      "orientation": "r",
+      "pins": {
+        "G": "GND",
+        "D": "n0",
+        "S": "GND",
+        "B": "GND"
+      },
+      "flags": [],
+      "red_flags": []
+    },
+    {
+      "name": "M2",
+      "class": "nmos",
+      "bbox_idx": 2,
+      "bbox": [
+        665.01,
+        512.3,
+        725.19,
+        592.61
+      ],
+      "orientation": "l",
+      "pins": {
+        "G": "n0",
+        "D": "GND",
+        "S": "GND",
+        "B": "GND"
+      },
+      "flags": [
+        "non_g_touches=3_distinct_nodes=2_treated_as_wire_wrap"
+      ],
+      "red_flags": []
+    },
+    {
+      "name": "R2",
+      "class": "resistor",
+      "bbox_idx": 3,
+      "bbox": [
+        424.09,
+        158.56,
+        471.47,
+        217.74
+      ],
+      "orientation": null,
+      "pins": {
+        "1": "n2",
+        "2": "label_net_1"
+      },
+      "flags": [
+        "pin2_via_single_bbox_port"
+      ],
+      "red_flags": []
+    },
+    {
+      "name": "L1",
+      "class": "inductor",
+      "bbox_idx": 4,
+      "bbox": [
+        694.38,
+        266.34,
+        754.5,
+        351.95
+      ],
+      "orientation": null,
+      "pins": {
+        "1": "GND",
+        "2": "n4"
+      },
+      "flags": [],
+      "red_flags": []
+    },
+    {
+      "name": "D1",
+      "class": "diode",
+      "bbox_idx": 5,
+      "bbox": [
+        356.71,
+        425.14,
+        407.08,
+        477.86
+      ],
+      "orientation": "d",
+      "pins": {
+        "K": "n3",
+        "A": "n0"
+      },
+      "flags": [],
+      "red_flags": []
+    },
+    {
+      "name": "D2",
+      "class": "diode",
+      "bbox_idx": 7,
+      "bbox": [
+        353.9,
+        545.74,
+        406.67,
+        598.69
+      ],
+      "orientation": "u",
+      "pins": {
+        "K": "n3"
+      },
+      "flags": [],
+      "red_flags": [
+        "diode_unexpected_edge=left"
+      ]
+    },
+    {
+      "name": "D3",
+      "class": "diode",
+      "bbox_idx": 8,
+      "bbox": [
+        758.92,
+        545.63,
+        813.4,
+        599.62
+      ],
+      "orientation": "u",
+      "pins": {
+        "K": "n1"
+      },
+      "flags": [],
+      "red_flags": [
+        "diode_only_one_touch_no_port"
+      ]
+    },
+    {
+      "name": "D4",
+      "class": "diode",
+      "bbox_idx": 10,
+      "bbox": [
+        756.71,
+        420.59,
+        813.95,
+        479.71
+      ],
+      "orientation": "d",
+      "pins": {
+        "K": "n1",
+        "A": "GND"
+      },
+      "flags": [],
+      "red_flags": []
+    },
+    {
+      "name": "L2",
+      "class": "inductor",
+      "bbox_idx": 12,
+      "bbox": [
+        413.48,
+        263.62,
+        466.22,
+        348.26
+      ],
+      "orientation": null,
+      "pins": {
+        "1": "n0",
+        "2": "n2"
+      },
+      "flags": [],
+      "red_flags": []
+    }
+  ],
+  "flags": []
+}

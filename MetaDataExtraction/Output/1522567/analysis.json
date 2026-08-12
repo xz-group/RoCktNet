@@ -1,0 +1,1151 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1522567.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1522567",
+  "generated_at": "2026-07-29T22:03:15",
+  "paper_metadata": {
+    "title": "A 1 GHz CMOS Analog Front-End for a Generalized PRML Read Channel",
+    "authors": [
+      "Daniel Sun",
+      "Andrea Xotta",
+      "Asad. A. Abidi"
+    ],
+    "abstract": "A 1 GHz CMOS analog front-end for general partial response maximum likelihood (GPRML) read channel in hard more ISI. The rms signal-to-noise-ratio (SNR) can be written as disk drive application has been implemented in 0.35 m CMOS. A continuous time analog filter fulfills the relaxed equalization for GPRML detection and can save up to 35% power consumption for the whole read channel. An analog DFE-based timing recovery (2) loop is implemented to avoid the extremely long latency in the digital signal processing path (Viterbi decoder). The measured performances is 1.1 dB off simulations at 800 MHz and 1.6 dB off at where is the bit energy, is the in-band noise power, and 1 GHz. The chip draws 240 mW from a 3.3 V supply at 800 MHz is the noise power spectral density assuming AWGN. With clock and 380 mW from a 3.6 V supply at 1 GHz clock. today’s head and media technology, the SNR of the read-back",
+    "keywords": [
+      "Analog front-end",
+      "CMOS",
+      "C-T equalizer",
+      "C-T"
+    ],
+    "doi": "10.1109/JSSC.2005.857372",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2005
+  },
+  "paper_circuit_context": {
+    "circuit_type": "filter",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "current source",
+      "output buffer",
+      "switch",
+      "differential pair",
+      "latch",
+      "clock / timing",
+      "LC tank / resonator"
+    ],
+    "design_purpose": "",
+    "function_summary": "filter: A 1 GHz CMOS analog front-end for general partial response maximum likelihood (GPRML) read channel in hard more ISI.",
+    "key_specs": [
+      "1 GHz",
+      "35%",
+      "1.1 dB",
+      "800 MHz",
+      "1.6 dB",
+      "240 mW",
+      "3.3 V",
+      "380 mW",
+      "3.6 V",
+      "30 dB"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE DEMAND for larger capacity and faster transfer rates in hard disk drives requires read channel ICs with greater sensitivity at higher recording density and clock frequencies. More sophisticated signal processing is needed to detect data in the presence of larger inter-symbol interference (ISI) and worse noise. In the meantime, their use in notebook computers and consumer electronics implies l ..."
+    },
+    {
+      "number": "II",
+      "title": "GPRML ANALOG FRONT-END",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "A. New Architecture As we will show, a general partial response (GPR) target can have profound implications on read channel architecture. The conventional read channel, shown in Fig. 3(a), begins with a variable gain ampliﬁer (VGA) and an anti-aliasing low-pass ﬁlter. A 6-bit analog-to-digital converter (ADC) digitizes the analog waveform. Then a digital ﬁnite impulse response (FIR) ﬁlter equalize ..."
+    },
+    {
+      "number": "III",
+      "title": "CIRCUIT IMPLEMENTATION",
+      "kind": "design",
+      "page": 5,
+      "text_preview": "A. Continuous-Time Equalizing Filter As shown in the schematic of Fig. 6, the digitally controlled continuous-time ﬁlter only needs 16 replicas of an identical transconductor. This high modularity is desirable because of the performance required of the transconductor circuit. Due to the variable recording rate across the radius of the disk, the samand thus the pole frequency must be adpling freque ..."
+    },
+    {
+      "number": "IV",
+      "title": "MEASUREMENT RESULTS",
+      "kind": "results",
+      "page": 7,
+      "text_preview": "A prototype analog-front-end circuit consisting of the functions enclosed by the dashed line in Fig. 3(b) has been fabricated m BiCMOS process, using only CMOS devices in the ST 0.35 (Fig. 15). [15]. The active area occupies 0.7 mm Fig. 16 shows the test set-up. An arbitrary waveform generator (AWG) synthesizes the read-back signal typical of a magnetoresistive (MR) head. The DFE decisions are rea ..."
+    },
+    {
+      "number": "V",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 9,
+      "text_preview": "Table I summarizes the performance of this 0.35 m CMOS analog front-end circuit. To put this read channel in context, Fig. 20 plots the maximum clock rate versus process feature size for other read channel ICs published in the past few years. IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 11, NOVEMBER 2005 Fig. 20. Performance of the state-of-the-art read channel ICs. The trends are clear. Clo ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Frequency response of EPR4 and GPR equalization.",
+      "caption_bbox": [
+        39.6,
+        221.1,
+        235.5,
+        229.0
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1 shows the . frequency response of an EPR4 equalizer at Fig. 1."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1 explains why: unlike equalization to EPR4, the equalizer for this new target is relatively ﬂat across the passband, and does not boost high-frequency noise."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Frequency response of EPR4 and GPR equalization",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. BER performance of GPRML versus EPR4.",
+      "caption_bbox": [
+        302.6,
+        248.8,
+        472.8,
+        256.8
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "As shown in the simulated results of Fig. 2, waveforms recorded by an MR head on a magnetic disk at this high packing density can be detected with 4.5 dB higher sensitivity than if they were equalized to classic EPR4."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 11, NOVEMBER 2005 Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "BER performance of GPRML versus EPR4",
+        "key_specs": [
+          "4.5 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3.",
+      "caption_bbox": [
+        38.1,
+        340.0,
+        58.8,
+        348.0
+      ],
+      "section_title": "II. GPRML ANALOG FRONT-END",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "GPRML ANALOG FRONT-END",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The conventional read channel, shown in Fig. 3(a), begins with a variable gain ampliﬁer (VGA) and an anti-aliasing low-pass ﬁlter."
+        },
+        {
+          "section_title": "GPRML ANALOG FRONT-END",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The analog C-T equalizer takes the place of the anti-aliasing low-pass ﬁlter in conventional read channels [Fig. 3(a)] but eliminates the digital FIR equalizer."
+        },
+        {
+          "section_title": "GPRML ANALOG FRONT-END",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 3."
+        },
+        {
+          "section_title": "GPRML ANALOG FRONT-END",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "In the conventional read channel [Fig. 3(a)], the sampling phase error is estimated from the Viterbi decoder decisions."
+        },
+        {
+          "section_title": "GPRML ANALOG FRONT-END",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Based on the above study, we propose a new read channel architecture for GPRML, shown in Fig. 3(b)."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "A prototype analog-front-end circuit consisting of the functions enclosed by the dashed line in Fig. 3(b) has been fabricated m BiCMOS process, using only CMOS devices in the ST 0.35 (Fig. 15). [15]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "Based on the above study, we propose a new read channel architecture for GPRML, shown in Fig. 3(b).",
+        "function_summary": "equalizer. Based on the above study, we propose a new read channel architecture for GPRML, shown in Fig. 3(b).",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.12,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. ADC quantization noise effects on performance.",
+      "caption_bbox": [
+        38.1,
+        554.0,
+        221.8,
+        561.9
+      ],
+      "section_title": "II. GPRML ANALOG FRONT-END",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "GPRML ANALOG FRONT-END",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 4."
+        },
+        {
+          "section_title": "GPRML ANALOG FRONT-END",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The simulated system performance in Fig. 4 compares a conventional read channel using a 6-bit ADC followed by a digital FIR equalizer with a read channel using a 5-bit ADC and a C-T equalizer."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "ADC quantization noise effects on performance",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Optimization loop for AFE in GPRML read channel.",
+      "caption_bbox": [
+        39.6,
+        234.8,
+        239.3,
+        242.7
+      ],
+      "section_title": "II. GPRML ANALOG FRONT-END",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "GPRML ANALOG FRONT-END",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 5."
+        },
+        {
+          "section_title": "GPRML ANALOG FRONT-END",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "If necessary, they can be updated for temperature and other drifts during system idle time using the optimization loop shown in Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Optimization loop for AFE in GPRML read channel",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "Fig. 6.",
+      "caption_bbox": [
+        38.1,
+        301.3,
+        59.0,
+        309.3
+      ],
+      "section_title": "II. GPRML ANALOG FRONT-END",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "GPRML ANALOG FRONT-END",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Simulation shows that with this simple continuous-time equalizer, the output SNR is only 0.5 dB lower than with an ideal 30-tap FIR equalizer. - biquad secThe ﬁlter can be realized by cascading two tions, shown in Fig. 6."
+        },
+        {
+          "section_title": "GPRML ANALOG FRONT-END",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 6."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Continuous-Time Equalizing Filter As shown in the schematic of Fig. 6, the digitally controlled continuous-time ﬁlter only needs 16 replicas of an identical transconductor."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "For the ﬁlter in total, the highest capacitive load is at the output node (Fig. 6), where three unit inputs and seven , where and unit outputs connect, i.e., are the input and output capacitance of the unit cell determined by FETs and wiring."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.6,
+      "relevance_breakdown": {
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "equalizer",
+        "key_specs": [
+          "0.5 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. Phase error estimation based on DFE.",
+      "caption_bbox": [
+        38.1,
+        489.0,
+        188.3,
+        497.0
+      ],
+      "section_title": "II. GPRML ANALOG FRONT-END",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "GPRML ANALOG FRONT-END",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "DFE Timing Recovery 1) Principle: In a decision-aided phase detector as shown in Fig. 7, the phase error at the sampling point can be estimated by the sampling error and the sign of the waveform slope, that is: (6) The sampling error is the actual sampled voltage minus ."
+        },
+        {
+          "section_title": "GPRML ANALOG FRONT-END",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "phase detector",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Phase error estimation based on DFE",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. (a) Phase detector characteristic for pseudorandom data. There is a small drop in detector gain when estimating waveform slope from decisions (a(k)) instead of actual analog samples (y(k)). (b) Phase detector characteristic for two different preamble sequences. The shorter preamble can lead to false lock at a stable operating point.",
+      "caption_bbox": [
+        301.1,
+        636.5,
+        552.2,
+        680.4
+      ],
+      "section_title": "II. GPRML ANALOG FRONT-END",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "GPRML ANALOG FRONT-END",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "As long as the input SNR is greater than 20 dB, the loop ﬁlter smoothes out error bursts so that they do not measurably disturb the voltagecontrolled oscillator (VCO). 2) Phase Detector Characteristics and Choice of Preamble: The phase detector characteristics have been simulated with pseudorandom input waveforms, and it is seen that there is a unique stable equilibrium point over the full range of phase , where is the clock period [Fig. 8(a)]."
+        },
+        {
+          "section_title": "GPRML ANALOG FRONT-END",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "There is a error small loss in phase detector gain in approximating samples of (a) (b) Fig. 8."
+        },
+        {
+          "section_title": "GPRML ANALOG FRONT-END",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 8(b) illustrates this."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "-waveform": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "phase detector",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Phase detector characteristic for pseudorandom data. There is a small drop in detector gain when estimating waveform slope from decisions (a(k)) instead of actual analog samples (y(k)). (b) Phase detector characteristic for two different preamble sequences. The shorter preamble can lead to false lock at a stable ...",
+        "key_specs": [
+          "20 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 5,
+      "caption": "Fig. 9. (a) A single transconductor consists of an array of weighted unit transconductors in parallel. The total transconductance is set by a 5-bit digital word. (b) Circuit of a unit transconductor.",
+      "caption_bbox": [
+        302.6,
+        656.8,
+        553.7,
+        682.7
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "As shown in Fig. 9(a), the digitally selectable transconductor cells in parallel which are alis constructed from six unit ways on, and some number of the 31 unit cells connected in a binary-weighted conﬁguration that is selected by a 5-bit word."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "It consists Fig. 9(b) shows the circuit of the unit of a simple nMOS differential pair without auxiliary circuits to raise its output impedance."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 11, NOVEMBER 2005 (a) (b) Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.2,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-conductance": -1.5,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) A single transconductor consists of an array of weighted unit transconductors in parallel. The total transconductance is set by a 5-bit digital word. (b) Circuit of a unit transconductor",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.14,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 6,
+      "caption": "Fig. 10. Layout of C-T equalizer.",
+      "caption_bbox": [
+        38.1,
+        203.2,
+        150.6,
+        211.2
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "That is, the maximum unity gain frequency of SUN et al.: A 1 GHz CMOS ANALOG FRONT-END FOR A GENERALIZED PRML READ CHANNEL Fig. 10."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Fig. 10 shows the modular layout of this ﬁlter with . wiring channels, occupying a total area of 0.33 mm B."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "-layout": -2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Layout of C-T equalizer",
+        "key_specs": [
+          "1 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 6,
+      "caption": "Fig. 11. Schematic of DFE phase detector.",
+      "caption_bbox": [
+        301.1,
+        233.8,
+        443.0,
+        241.8
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "DFE Phase Error Detector Fig. 11 shows the schematic of the DFE phase error detector."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "This T/H implemented in Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "phase detector",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematic of DFE phase detector",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.79,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 6,
+      "caption": "Fig. 12. Schematic of the track-and-hold.",
+      "caption_bbox": [
+        301.1,
+        457.4,
+        439.0,
+        465.3
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "The 400 mV ppd output of the C-T equalizer is AC coupled to the track-and-hold (T/H), shown in Fig. 12."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "track-and-hold / sample-and-hold",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematic of the track-and-hold",
+        "key_specs": [
+          "400 mV"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.79,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 7,
+      "caption": "Fig. 13. DFE critical path.",
+      "caption_bbox": [
+        39.6,
+        197.5,
+        130.0,
+        205.5
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "We have identiﬁed the DFE critical path shown in Fig. 13 as the speed bottleneck for the whole chip."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "DFE critical path",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 7,
+      "caption": "Fig. 14. (a) Schematic of the single-clocked comparator. (b) Schematic of the DFE tap.",
+      "caption_bbox": [
+        302.6,
+        408.9,
+        553.7,
+        425.8
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "The single-clock-cycle comparator shown in Fig. 14(a) senses the polarity of the summation node and makes the decision."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "The tap value in the DFE is set by a differential analog DC voltage, which can be commutated by the digital bit before it cell, shown in Fig. 14(b)."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Due to the wide loop bandwidth, the VCO accounts for only about 2 ps of jitter at 1 GHz, estimated IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 11, NOVEMBER 2005 (a) (b) Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.7,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "comparator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "clock / timing"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) Schematic of the single-clocked comparator. (b) Schematic of the DFE tap",
+        "key_specs": [
+          "2 ps",
+          "1 GHz"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.7,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 8,
+      "caption": "Fig. 15. Chip microphotograph of the AFE.",
+      "caption_bbox": [
+        38.1,
+        217.8,
+        183.5,
+        225.8
+      ],
+      "section_title": "IV. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "A prototype analog-front-end circuit consisting of the functions enclosed by the dashed line in Fig. 3(b) has been fabricated m BiCMOS process, using only CMOS devices in the ST 0.35 (Fig. 15). [15]."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "SUN et al.: A 1 GHz CMOS ANALOG FRONT-END FOR A GENERALIZED PRML READ CHANNEL Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -7.7,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chip microphotograph of the AFE",
+        "key_specs": [
+          "1 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 8,
+      "caption": "Fig. 16. Test set-up of the AFE.",
+      "caption_bbox": [
+        38.1,
+        422.4,
+        146.1,
+        430.3
+      ],
+      "section_title": "IV. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The active area occupies 0.7 mm Fig. 16 shows the test set-up."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Test set-up of the AFE",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 8,
+      "caption": "Fig. 17. Measured waveform of equalizer output.",
+      "caption_bbox": [
+        301.1,
+        263.9,
+        464.1,
+        271.9
+      ],
+      "section_title": "IV. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 17 shows the measured waveforms of the continuous-time equalizer conﬁgured for 1 GHz sampling rate."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "This is due to imperfections arising from the Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-waveform": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured waveform of equalizer output",
+        "key_specs": [
+          "1 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 8,
+      "caption": "Fig. 18. Measured waveform of DFE summation node.",
+      "caption_bbox": [
+        301.1,
+        495.5,
+        482.5,
+        503.4
+      ],
+      "section_title": "IV. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The DFE summation node waveform during the preamble is shown in Fig. 18, after the DFE coefﬁcients are properly set."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 18."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-waveform": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured waveform of DFE summation node",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 9,
+      "caption": "Fig. 19. (a) Measured BER of the AFE at 330 MHz clock. (b) Measured BER of the AFE at 1 GHz clock.",
+      "caption_bbox": [
+        39.6,
+        481.7,
+        290.7,
+        498.6
+      ],
+      "section_title": "IV. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 19(a) shows the performance at 330 MHz clock, with user density of 3.36."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "At the maximum 1 GHz clock, greater equalizer error and slower settling raise the implementation error to 1.6 dB, as shown in Fig. 19(b)."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "(a) (b) Fig. 19."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.8,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "equalizer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Measured BER of the AFE at 330 MHz clock. (b) Measured BER of the AFE at 1 GHz clock",
+        "key_specs": [
+          "330 MHz",
+          "1 GHz",
+          "1.6 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 20,
+      "label": "Fig. 20",
+      "page": 9,
+      "caption": "Fig. 20. Performance of the state-of-the-art read channel ICs.",
+      "caption_bbox": [
+        302.6,
+        270.3,
+        503.9,
+        278.3
+      ],
+      "section_title": "IV. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 9,
+          "sentence": "To put this read channel in context, Fig. 20 plots the maximum clock rate versus process feature size for other read channel ICs published in the past few years."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 9,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 11, NOVEMBER 2005 Fig. 20."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Performance of the state-of-the-art read channel ICs",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 14,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

@@ -1,0 +1,1351 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\RNDatasetPapers\\987090.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output_rerun_128\\987090",
+  "generated_at": "2026-07-29T22:45:51",
+  "paper_metadata": {
+    "title": "Fully Integrated CMOS Power Amplifier Design Using the Distributed Active-Transformer Architecture",
+    "authors": [
+      "Ichiro Aoki",
+      "Scott D. Kee",
+      "David B. Rutledge",
+      "Ali Hajimiri"
+    ],
+    "abstract": "A novel on-chip impedance matching and powercombining method, the distributed active transformer is presented. power amplifier are the low drain–gate, drain–source, and It combines several low-voltage push–pull amplifiers efficiently drain–substrate breakdown voltages of the transistor and the with their outputs in series to produce a larger output power while low resistivity of the substrate. The low breakdown voltage maintaining a 50match. It also uses virtual ac grounds and limits the output power and the low substrate resistivity reduces magnetic couplings extensively to eliminate the need for any offamplifier’s power efficiency. These problems are exacerbated chip component, such as tuned bonding wires or external inductors. Furthermore, it desensitizes the operation of the amplifier to as the CMOS transistor’s minimum feature size is scaled down the inductance of bonding wires making the design more reprofor faster operation resulting in lower substrate resistivity and ducible. To demonstrate the feasibility of this concept, a 2.4-GHz smaller breakdown voltages. 2-W 2-V truly fully integrated power amplifier with 50input To achieve a larger output power despite the low transistor and output matching has been fabricated using 0.35m CMOS breakdown voltage, some form of impedance transformation is transistors. It achieves a power added efficiency (PAE) of 41% at this power level. It can also produce 450 mW using a 1-V supply. necessary. This impedance transformation could be achieved Harmonic suppression is 64 dBc or better. This new topology using an ideal 1 : transformer. Unfortunately, an on-chip makes possible a truly fully integrated watt-level gigahertz range spiral 1 : transformer on a standard CMOS substrate is very low-voltage CMOS power amplifier for the first time. lossy and will degrade the performance of the amplifier greatly",
+    "keywords": [
+      "Circular geometry",
+      "CMOS analog integrated cir-"
+    ],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2002
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Fully Integrated CMOS Power Amplifier Design",
+    "technology": "CMOS, GAAS, MMIC",
+    "application_domain": "microwave",
+    "sub_blocks": [
+      "inductor",
+      "transistor/MOSFET",
+      "transformer",
+      "balun",
+      "capacitor",
+      "current source",
+      "LC tank / resonator",
+      "transmission line",
+      "bias circuit",
+      "switch",
+      "differential pair"
+    ],
+    "design_purpose": "A novel on-chip impedance matching and powercombining method, the distributed active transformer is presented. power amplifier are the low drain–gate, drain–source, and It combines several low-voltage push–pull amplifiers efficiently drain–substrate breakdown voltages of the transistor and the with their outputs in ...",
+    "function_summary": "Fully Integrated CMOS Power Amplifier Design: A novel on-chip impedance matching and powercombining method, the distributed active transformer is presented. power amplifier are the low drain–gate, drain–source, and It combines several low-voltage push–pull amplifiers efficiently drain–substrate breakdown voltages of the transistor and the with their outputs ...",
+    "key_specs": [
+      "41%",
+      "450 mW",
+      "64 dBc",
+      "1 W",
+      "20 V",
+      "100 mW",
+      "80 GHz",
+      "20 GHz",
+      "0.5 V",
+      "3 V"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE DESIGN of a fully integrated power amplifier with a reasonable output power, efficiency, and gain remains one of the major challenges in today’s pursuit of a single-chip integrated transceiver. Although several advances have been made in this direction, a truly fully integrated CMOS power amplifier at watt level output power has not been reported to this date. Multiple external components suc ..."
+    },
+    {
+      "number": "II",
+      "title": "CHALLENGES IN INTEGRATED POWER AMPLIFIERS",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "Several problems arise when using submicron CMOS technology without any off-chip components or wire-bond inductors for watt-level fully integrated power amplifiers. Design isFig. 1. Block diagram of a power amplifier with critical points for integration. sues of a power amplifier are described here to illustrate these problems. Fig. 1 shows a simplified diagram of a power amplifier with its key pa ..."
+    },
+    {
+      "number": "III",
+      "title": "DISTRIBUTED ACTIVE TRANSFORMER",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "As described in the previous section, there are many challenges in designing a watt-level power amplifier in CMOS. The distributed active transformer (DAT) addresses these problems reducing their effects significantly, thus allowing the design of a truly fully integrated power amplifier realizable using submicron CMOS technology. The DAT combines several low-voltage push–pull amplifiers efficientl ..."
+    },
+    {
+      "number": "IV",
+      "title": "MODES OF OPERATION IN DISTRIBUTED ACTIVE",
+      "kind": "other",
+      "page": 5,
+      "text_preview": "TRANSFORMER POWER AMPLIFIERS The harmonic impedances available at drains in the distributed active transformer described in Section III-A allow the DAT to operate in several different classes including A, AB, B, IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 3, MARCH 2002 Fig. 12. Input power distribution network with twisted layout to provide a magnetic positive feedback from the output. C, E ..."
+    },
+    {
+      "number": "V",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 10,
+      "text_preview": "As a demonstration of the concept, a 2-W 2.4-GHz singlestage fully integrated DAT switching power amplifier in class has been fabricated and measured using 0.35m CMOS E/F transistors in a BiCMOS process technology. This process ofm thick with a disfers three metal layers, the top one being 3m from the substrate, the substrate has a resistance of 4.3 cm. The chip area is 1.3 mm 2.0 mm including tiv ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 11,
+      "text_preview": "A new method for implementation of a power amplifier in a low-voltage CMOS process was presented. A novel fully integrated single-stage circular geometry active-transformer (DAT) power amplifier implemented in a low-voltage CMOS process achieves 1.9-W output power with 41% (31% single-ended) PAE at 2.4 GHz. It can also be used as a 450-mW 2.4-GHz amplifier with 27% PAE using a 1-V supply. The , re ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Block diagram of a power amplifier with critical points for integration.",
+      "caption_bbox": [
+        39.6,
+        245.5,
+        290.7,
+        256.1
+      ],
+      "section_title": "II. CHALLENGES IN INTEGRATED POWER AMPLIFIERS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CHALLENGES IN INTEGRATED POWER AMPLIFIERS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 1 shows a simplified diagram of a power amplifier with its key parts."
+        },
+        {
+          "section_title": "CHALLENGES IN INTEGRATED POWER AMPLIFIERS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "This harmonic control must incorporate an inductor, in order to achieve a high-frequency selectivity and to resonate the transistor drain capacitance, as may be seen in the block diagram of the hypothetical power amplifier shown in Fig. 1."
+        },
+        {
+          "section_title": "CHALLENGES IN INTEGRATED POWER AMPLIFIERS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "As shown in Fig. 1, very low-impedance and low-loss connections are required for both ground and positive supply nodes and a high impedance inductor may be necessary to block the ac signal from the power supply."
+        },
+        {
+          "section_title": "CHALLENGES IN INTEGRATED POWER AMPLIFIERS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "In the input network of Fig. 1, it is necessary to place an inductor in parallel to the gate to resonate the gate capacitance in input."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.6,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "type_match:amplifier": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "power amplifier (PA)",
+        "technology": "CMOS, GAAS, MMIC",
+        "application_domain": "microwave",
+        "sub_blocks": [
+          "inductor",
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "This harmonic control must incorporate an inductor, in order to achieve a high-frequency selectivity and to resonate the transistor drain capacitance, as may be seen in the block diagram of the hypothetical power amplifier shown in Fig. 1.",
+        "function_summary": "Block diagram of a power amplifier with critical points for integration. This harmonic control must incorporate an inductor, in order to achieve a high-frequency selectivity and to resonate the transistor drain capacitance, as may be seen in the block diagram of the hypothetical power amplifier shown in Fig. 1.",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.88,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 2,
+      "caption": "Fig. 2. (a) Resonant impedance transformation network. (b) Its impedance transformation shown graphically using a Smith chart.",
+      "caption_bbox": [
+        38.1,
+        180.3,
+        289.2,
+        199.9
+      ],
+      "section_title": "II. CHALLENGES IN INTEGRATED POWER AMPLIFIERS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CHALLENGES IN INTEGRATED POWER AMPLIFIERS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "A capacitor load and an inductor in series, as parallel to the 50shown by Fig. 2(a)."
+        },
+        {
+          "section_title": "CHALLENGES IN INTEGRATED POWER AMPLIFIERS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "This transformation can be seen graphically on the Smith Chart of Fig. 2(b)."
+        },
+        {
+          "section_title": "CHALLENGES IN INTEGRATED POWER AMPLIFIERS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Although easily implemented by an on-chip capacitor, AOKI et al.: CMOS POWER AMPLIFIER DESIGN USING DISTRIBUTED ACTIVE-TRANSFORMER ARCHITECTURE Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "power amplifier (PA)",
+        "technology": "CMOS, GAAS, MMIC",
+        "application_domain": "microwave",
+        "sub_blocks": [
+          "inductor",
+          "capacitor",
+          "transformer"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) Resonant impedance transformation network. (b) Its impedance transformation shown graphically using a Smith chart",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Push–pull amplifier with virtual ac grounds at the power supply and ground.",
+      "caption_bbox": [
+        301.1,
+        265.6,
+        552.1,
+        285.2
+      ],
+      "section_title": "III. DISTRIBUTED ACTIVE TRANSFORMER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DISTRIBUTED ACTIVE TRANSFORMER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Differential Push–Pull Topology The basic building block of the new topology is the push–pull amplifier shown in Fig. 3."
+        },
+        {
+          "section_title": "DISTRIBUTED ACTIVE TRANSFORMER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The Fig. 3."
+        },
+        {
+          "section_title": "DISTRIBUTED ACTIVE TRANSFORMER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "This allows a better optimization of the inductor and in many cases the total loss can be significantly reduced. , as shown in A slab inductor is used as drain inductor Fig. 3, in order to control the impedances at the fundamental frequency and harmonics and also to provide a path for the dc supply current."
+        },
+        {
+          "section_title": "DISTRIBUTED ACTIVE TRANSFORMER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "This architecture allows the creation of virtual ac grounds without having to connect together the sources of the pair of transistors of each push–pull amplifier, as shown in Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.6,
+      "relevance_breakdown": {
+        "type_match:amplifier": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, GAAS, MMIC",
+        "application_domain": "microwave",
+        "sub_blocks": [
+          "inductor",
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "This allows a better optimization of the inductor and in many cases the total loss can be significantly reduced. , as shown in A slab inductor is used as drain inductor Fig. 3, in order to control the impedances at the fundamental frequency and harmonics and also to provide a path for the dc supply current.",
+        "function_summary": "Push–pull amplifier with virtual ac grounds at the power supply and ground. This allows a better optimization of the inductor and in many cases the total loss can be significantly reduced. , as shown in A slab inductor is used as drain inductor Fig. 3, in order to control the impedances at the fundamental frequency ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.4,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 3,
+      "caption": "Fig. 4. Effective impedance at the transistor drain. (a) Even harmonic signals. (b) Odd harmonic signals.",
+      "caption_bbox": [
+        39.6,
+        287.8,
+        290.6,
+        307.4
+      ],
+      "section_title": "III. DISTRIBUTED ACTIVE TRANSFORMER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DISTRIBUTED ACTIVE TRANSFORMER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 4(a) and (b) shows a push–pull amplifier illustrating the impedances seen by even and odd harmonics, respectively."
+        },
+        {
+          "section_title": "DISTRIBUTED ACTIVE TRANSFORMER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "If switching modes of operation are desirable, the differential , symmetry of this topology provides high impedances, at each even harmonic to the transistor drains regardless of the , at these frequenimpedances of the output resonant network, cies, as shown by Fig. 4(a)."
+        },
+        {
+          "section_title": "DISTRIBUTED ACTIVE TRANSFORMER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The transistor drain impedances at , as can be seen in Fig. 4(b) and the odd harmonics will be following equations."
+        },
+        {
+          "section_title": "DISTRIBUTED ACTIVE TRANSFORMER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "(6a) (6b) Fig. 4."
+        },
+        {
+          "section_title": "DISTRIBUTED ACTIVE TRANSFORMER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "By driving these transistors in opposite phase, as shown in Fig. 4, their source currents, which belong to different push–pull amplifiers, have the same amplitude and the opposite phase and therefore cancel each other."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, GAAS, MMIC",
+        "application_domain": "microwave",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Effective impedance at the transistor drain. (a) Even harmonic signals. (b) Odd harmonic signals",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.12,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Comparison of the loss mechanisms for a one-turn spiral and a slab inductor.",
+      "caption_bbox": [
+        39.6,
+        440.1,
+        290.7,
+        459.7
+      ],
+      "section_title": "III. DISTRIBUTED ACTIVE TRANSFORMER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DISTRIBUTED ACTIVE TRANSFORMER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 5."
+        },
+        {
+          "section_title": "DISTRIBUTED ACTIVE TRANSFORMER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Therefore, the resultant inductor demonstrates a lower totalseriesmetalresistance,asshowninFig.5.Second,theshunt resistance through the substrate between the two terminals of and , will be higher because of the larger the inductor, distance between them, as illustrated in Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "on-chip inductor",
+        "technology": "CMOS, GAAS, MMIC",
+        "application_domain": "microwave",
+        "sub_blocks": [
+          "inductor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Comparison of the loss mechanisms for a one-turn spiral and a slab inductor",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Circular geometry power amplifier with four push–pull amplifiers and eight transistors.",
+      "caption_bbox": [
+        302.6,
+        219.0,
+        553.6,
+        238.6
+      ],
+      "section_title": "III. DISTRIBUTED ACTIVE TRANSFORMER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DISTRIBUTED ACTIVE TRANSFORMER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 3, MARCH 2002 Fig. 6."
+        },
+        {
+          "section_title": "DISTRIBUTED ACTIVE TRANSFORMER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "For instance, Fig. 6 shows the primary circuits with four push–pull power amplifiers and eight transistors."
+        },
+        {
+          "section_title": "DISTRIBUTED ACTIVE TRANSFORMER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "In order to solve this layout problem, these capacitors are connected between the drains of adjacent transistors of the circular geometry belonging to the adjacent push–pull amplifiers, as seen in Fig. 6."
+        },
+        {
+          "section_title": "DISTRIBUTED ACTIVE TRANSFORMER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The voltage between the drains of these adjacent transistors is identical to the voltages between the drains of a single push–pull amplifier, so long as the transistors are driven in proper phase, as shown in Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.6,
+      "relevance_breakdown": {
+        "type_match:amplifier": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "power amplifier (PA)",
+        "technology": "CMOS, GAAS, MMIC",
+        "application_domain": "microwave",
+        "sub_blocks": [
+          "capacitor",
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "In order to solve this layout problem, these capacitors are connected between the drains of adjacent transistors of the circular geometry belonging to the adjacent push–pull amplifiers, as seen in Fig. 6.",
+        "function_summary": "Circular geometry power amplifier with four push–pull amplifiers and eight transistors. In order to solve this layout problem, these capacitors are connected between the drains of adjacent transistors of the circular geometry belonging to the adjacent push–pull amplifiers, as seen in Fig. 6.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.4,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. Four conventional push–pull amplifiers using virtual ac grounds.",
+      "caption_bbox": [
+        38.1,
+        311.3,
+        273.0,
+        322.0
+      ],
+      "section_title": "III. DISTRIBUTED ACTIVE TRANSFORMER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DISTRIBUTED ACTIVE TRANSFORMER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Two electrical diagrams show how four push–pull amplifiers of Fig. 7 are rearranged to form the circular geometry of Fig. 8."
+        },
+        {
+          "section_title": "DISTRIBUTED ACTIVE TRANSFORMER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "AOKI et al.: CMOS POWER AMPLIFIER DESIGN USING DISTRIBUTED ACTIVE-TRANSFORMER ARCHITECTURE Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-conventional": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, GAAS, MMIC",
+        "application_domain": "microwave",
+        "sub_blocks": [
+          "transformer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Four conventional push–pull amplifiers using virtual ac grounds",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Four push–pull amplifiers connected in circular geometry creating ac grounds between the adjacent push–pull blocks.",
+      "caption_bbox": [
+        301.1,
+        268.9,
+        552.2,
+        288.4
+      ],
+      "section_title": "III. DISTRIBUTED ACTIVE TRANSFORMER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DISTRIBUTED ACTIVE TRANSFORMER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Two electrical diagrams show how four push–pull amplifiers of Fig. 7 are rearranged to form the circular geometry of Fig. 8."
+        },
+        {
+          "section_title": "DISTRIBUTED ACTIVE TRANSFORMER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The internal metal loop harnesses the induced magnetic field to generate a voltage between its terminals equivalent to the sum push–pull amplifiers. of the differential voltages of the Another way to interpret this is to view this topology as push–pull amplifiers each with a 1 : 1 transformer, whose Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, GAAS, MMIC",
+        "application_domain": "microwave",
+        "sub_blocks": [
+          "transformer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Four push–pull amplifiers connected in circular geometry creating ac grounds between the adjacent push–pull blocks",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. (a) Distributed active-transformer amplifier with four push–pull blocks and eight transistors. (b) Its corresponding electrical diagram.",
+      "caption_bbox": [
+        301.1,
+        518.7,
+        552.1,
+        538.3
+      ],
+      "section_title": "III. DISTRIBUTED ACTIVE TRANSFORMER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DISTRIBUTED ACTIVE TRANSFORMER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "This power combining is accomplished by introducing a one-turn metal strip inside the circular geometry to act as a magnetic pickup of the output power, as shown in Fig. 9(a). push–pull amplifiers (four in this example), conduct The identical synchronized ac currents at the fundamental, inducing corresponding ac magnetic fields in this secondary loop."
+        },
+        {
+          "section_title": "DISTRIBUTED ACTIVE TRANSFORMER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 9."
+        },
+        {
+          "section_title": "DISTRIBUTED ACTIVE TRANSFORMER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "As the primary circuits of these transformers are independent, the result is a impedance transformation as in Fig. 9(b)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "type_match:amplifier": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, GAAS, MMIC",
+        "application_domain": "microwave",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "transformer"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) Distributed active-transformer amplifier with four push–pull blocks and eight transistors. (b) Its corresponding electrical diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.31,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. Cross-connected gate matching inductor.",
+      "caption_bbox": [
+        39.6,
+        193.1,
+        203.6,
+        203.8
+      ],
+      "section_title": "III. DISTRIBUTED ACTIVE TRANSFORMER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DISTRIBUTED ACTIVE TRANSFORMER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "If the gate matching inductors of the adjacent transistors are connected to each other instead of circuit ground as shown in Fig. 10, an ac ground at the fundamental frequency is formed at this connection point and no connection to dc ground is formed, avoiding both problems."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.4,
+      "relevance_breakdown": {
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "on-chip inductor",
+        "technology": "CMOS, GAAS, MMIC",
+        "application_domain": "microwave",
+        "sub_blocks": [
+          "inductor",
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Cross-connected gate matching inductor",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.03,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 5,
+      "caption": "Fig. 11. Input power distribution network.",
+      "caption_bbox": [
+        39.6,
+        368.6,
+        180.2,
+        379.3
+      ],
+      "section_title": "III. DISTRIBUTED ACTIVE TRANSFORMER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DISTRIBUTED ACTIVE TRANSFORMER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 11."
+        },
+        {
+          "section_title": "DISTRIBUTED ACTIVE TRANSFORMER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Input Power Distribution The power distribution network shown in Fig. 11 brings the synchronized differential power to the gates of the transistors."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Fully Integrated CMOS Power Amplifier Design",
+        "technology": "CMOS, GAAS, MMIC",
+        "application_domain": "microwave",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Input power distribution network",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 5,
+      "caption": "Fig. 12. Input power distribution network with twisted layout to provide a magnetic positive feedback from the output.",
+      "caption_bbox": [
+        302.6,
+        369.9,
+        553.7,
+        389.5
+      ],
+      "section_title": "III. DISTRIBUTED ACTIVE TRANSFORMER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DISTRIBUTED ACTIVE TRANSFORMER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "These input power-distributing lines may have a twisted layout, as in Fig. 12, to introduce an adjustable amount of magnetic positive feedback to enhance the gain."
+        },
+        {
+          "section_title": "MODES OF OPERATION IN DISTRIBUTED ACTIVE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "TRANSFORMER POWER AMPLIFIERS The harmonic impedances available at drains in the distributed active transformer described in Section III-A allow the DAT to operate in several different classes including A, AB, B, IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 3, MARCH 2002 Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "-layout": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "power amplifier (PA)",
+        "technology": "CMOS, GAAS, MMIC",
+        "application_domain": "microwave",
+        "sub_blocks": [
+          "transformer"
+        ],
+        "design_purpose": "These input power-distributing lines may have a twisted layout, as in Fig. 12, to introduce an adjustable amount of magnetic positive feedback to enhance the gain.",
+        "function_summary": "Input power distribution network with twisted layout to provide a magnetic positive feedback from the output. These input power-distributing lines may have a twisted layout, as in Fig. 12, to introduce an adjustable amount of magnetic positive feedback to enhance the gain.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 6,
+      "caption": "Fig. 13. Three building blocks of a DAT: input network, active device, and output network.",
+      "caption_bbox": [
+        38.1,
+        224.1,
+        335.9,
+        234.7
+      ],
+      "section_title": "IV. MODES OF OPERATION IN DISTRIBUTED ACTIVE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MODES OF OPERATION IN DISTRIBUTED ACTIVE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The input network comprises every passive input to transistor gates, the active decomponent from 50vices block consists of transistors and gate matching inductors, and the output network is formed by the passive components load including the transformer and from the drain to the 50matching capacitors, as illustrated in Fig. 13."
+        },
+        {
+          "section_title": "MODES OF OPERATION IN DISTRIBUTED ACTIVE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "We assume perfect linearity source with a transconductance AOKI et al.: CMOS POWER AMPLIFIER DESIGN USING DISTRIBUTED ACTIVE-TRANSFORMER ARCHITECTURE Fig. 13."
+        },
+        {
+          "section_title": "MODES OF OPERATION IN DISTRIBUTED ACTIVE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The gain will be the product of the active device gain and the input and output passive network power transfer efficiencies and , i.e. (8) The active device gain may be calculated as a function of , the gate voltage , the gate transistor transconductance matching inductor and transistor equivalent parallel input resis- , and drain load differential resistance . tance (9) is the output power of the active block, as shown where is the input power of the same active block, in Fig. 13, is the number of combined transistors. and and power added efficiency can The drain efficiency , , , , and . be calculated as functions of The dc power dissipation is constant in class-A operation, as the output power changes."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "power amplifier (PA)",
+        "technology": "CMOS, GAAS, MMIC",
+        "application_domain": "microwave",
+        "sub_blocks": [
+          "inductor",
+          "capacitor",
+          "transistor/MOSFET",
+          "transformer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Three building blocks of a DAT: input network, active device, and output network",
+        "key_specs": [
+          "50v"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 6,
+      "caption": "Fig. 14. (a) DAT operating in class A or B mode. (b) DAT operating in class E/F",
+      "caption_bbox": [
+        38.1,
+        601.6,
+        302.7,
+        612.3
+      ],
+      "section_title": "IV. MODES OF OPERATION IN DISTRIBUTED ACTIVE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MODES OF OPERATION IN DISTRIBUTED ACTIVE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "(a) (b) Fig. 14."
+        },
+        {
+          "section_title": "MODES OF OPERATION IN DISTRIBUTED ACTIVE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "An equivalent electrical diagram of a push–pull block operating in class-A mode can be seen in Fig. 14(a). will be a function of the The maximum output power , [15], supply voltage, , number of transistor knee voltage , output passive network power combined push–pull blocks, , and load resistance seen by each drain, , i.e. efficiency, (7) is the real impedance seen by the drain of each tranwhere sistor in the output network, which includes the effect of the mode. output network losses and the load resistance."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Fully Integrated CMOS Power Amplifier Design",
+        "technology": "CMOS, GAAS, MMIC",
+        "application_domain": "microwave",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) DAT operating in class A or B mode. (b) DAT operating in class E/F",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 7,
+      "caption": "Fig. 15. Decomposition of the drain current waveforms into odd and even harmonics of a DAT amplifier operating in class-B mode.",
+      "caption_bbox": [
+        302.6,
+        247.7,
+        553.7,
+        267.3
+      ],
+      "section_title": "IV. MODES OF OPERATION IN DISTRIBUTED ACTIVE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MODES OF OPERATION IN DISTRIBUTED ACTIVE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "This is shown in the time-domain waveform of Fig. 15."
+        },
+        {
+          "section_title": "MODES OF OPERATION IN DISTRIBUTED ACTIVE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "These where waveforms can be seen in Fig. 15."
+        },
+        {
+          "section_title": "MODES OF OPERATION IN DISTRIBUTED ACTIVE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 3, MARCH 2002 Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "-waveform": -2.0,
+        "type_match:amplifier": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, GAAS, MMIC",
+        "application_domain": "microwave",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Decomposition of the drain current waveforms into odd and even harmonics of a DAT amplifier operating in class-B mode",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 8,
+      "caption": "Fig. 16. Composition of the drain voltage waveform from odd and even harmonics of a DAT amplifier operating in class-B mode.",
+      "caption_bbox": [
+        38.1,
+        258.8,
+        289.2,
+        278.4
+      ],
+      "section_title": "IV. MODES OF OPERATION IN DISTRIBUTED ACTIVE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MODES OF OPERATION IN DISTRIBUTED ACTIVE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "(15) The actual voltage waveform can be found by superimposing the odd and even harmonic components, as shown in Fig. 16 (16) It is noteworthy that the transistor output capacitance is essential to this mode of operation and cannot be ignored."
+        },
+        {
+          "section_title": "MODES OF OPERATION IN DISTRIBUTED ACTIVE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Furthermore, if the transistors and these capacitors are small, the even component of the drain voltage becomes large and might damage the transistors, as depicted in Fig. 16."
+        },
+        {
+          "section_title": "MODES OF OPERATION IN DISTRIBUTED ACTIVE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "In class-B operation, the maximum output power will be lower than that of class-A, as the even harmonics of the drain AOKI et al.: CMOS POWER AMPLIFIER DESIGN USING DISTRIBUTED ACTIVE-TRANSFORMER ARCHITECTURE Fig. 16."
+        },
+        {
+          "section_title": "MODES OF OPERATION IN DISTRIBUTED ACTIVE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The maximum allowable drain voltage component at the and . fundamental frequency is the difference between If the even voltage peaks are small enough to be neglected, is the same as for class-A under same the output power conditions, i.e. (17) , 0.3 An example of the drain waveform for and 0.2 can be seen in Fig. 16. for this mode of operation The gain of the active block can be calculated as follows: (18) The gain under conditions described by (18) will be 6 dB lower than the gain of the class-A operation."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.6,
+      "relevance_breakdown": {
+        "-waveform": -2.0,
+        "type_match:amplifier": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, GAAS, MMIC",
+        "application_domain": "microwave",
+        "sub_blocks": [
+          "capacitor",
+          "transistor/MOSFET",
+          "transformer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Composition of the drain voltage waveform from odd and even harmonics of a DAT amplifier operating in class-B mode",
+        "key_specs": [
+          "6 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 8,
+      "caption": "Fig. 17. Equivalent circuit of a push–pull class E/F power amplifier with transistors operating substantially as switches.",
+      "caption_bbox": [
+        301.1,
+        297.4,
+        552.2,
+        317.0
+      ],
+      "section_title": "IV. MODES OF OPERATION IN DISTRIBUTED ACTIVE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MODES OF OPERATION IN DISTRIBUTED ACTIVE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 17."
+        },
+        {
+          "section_title": "MODES OF OPERATION IN DISTRIBUTED ACTIVE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The equivalent circuit may be seen in Fig. 17."
+        },
+        {
+          "section_title": "MODES OF OPERATION IN DISTRIBUTED ACTIVE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The simple push–pull circuit of Fig. 17 can be used to provide virtual short circuits at the odd harmonics to each switch while leaving the impedance seen by the switches at the even Fig. 18."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.2,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-equivalent": -2.0,
+        "type_match:amplifier": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "power amplifier (PA)",
+        "technology": "CMOS, GAAS, MMIC",
+        "application_domain": "microwave",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Equivalent circuit of a push–pull class E/F power amplifier with transistors operating substantially as switches",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.14,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 9,
+      "caption": "Fig. 18. Voltage and current waveforms of the switches of a class E/F power amplifier. The change in the current waveform with increasing transistor output capacitance is depicted. The current on the plot does not include the current through this capacitance.",
+      "caption_bbox": [
+        39.6,
+        211.5,
+        290.7,
+        249.0
+      ],
+      "section_title": "IV. MODES OF OPERATION IN DISTRIBUTED ACTIVE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MODES OF OPERATION IN DISTRIBUTED ACTIVE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The simple push–pull circuit of Fig. 17 can be used to provide virtual short circuits at the odd harmonics to each switch while leaving the impedance seen by the switches at the even Fig. 18."
+        },
+        {
+          "section_title": "MODES OF OPERATION IN DISTRIBUTED ACTIVE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Therefore, the voltage across each switch must be half-sinusoidal, as in Fig. 18."
+        },
+        {
+          "section_title": "MODES OF OPERATION IN DISTRIBUTED ACTIVE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Therefore, we can calculate the curIEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 3, MARCH 2002 rents through the switches, and , as a function of amplifier as follows: total dc current (25) (26) amplifier with linear The waveforms for the class E/F output capacitance, calculated from (21)–(26), are plotted in Fig. 18."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "-capacitance": -2.0,
+        "-waveform": -2.0,
+        "type_match:amplifier": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "power amplifier (PA)",
+        "technology": "CMOS, GAAS, MMIC",
+        "application_domain": "microwave",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Voltage and current waveforms of the switches of a class E/F power amplifier. The change in the current waveform with increasing transistor output capacitance is depicted. The current on the plot does not include the current through this capacitance",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 10,
+      "caption": "Fig. 19. Electrical diagram of a complete DAT amplifier with four push–pull blocks.",
+      "caption_bbox": [
+        38.1,
+        346.7,
+        315.1,
+        357.4
+      ],
+      "section_title": "IV. MODES OF OPERATION IN DISTRIBUTED ACTIVE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MODES OF OPERATION IN DISTRIBUTED ACTIVE",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "(30) AOKI et al.: CMOS POWER AMPLIFIER DESIGN USING DISTRIBUTED ACTIVE-TRANSFORMER ARCHITECTURE Fig. 19."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 10,
+          "sentence": "The complete electrical diagram of the designed circuit and a microphotograph of the chip can be seen in Figs. 19 and 20."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "type_match:amplifier": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, GAAS, MMIC",
+        "application_domain": "microwave",
+        "sub_blocks": [
+          "transformer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Electrical diagram of a complete DAT amplifier with four push–pull blocks",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 20,
+      "label": "Fig. 20",
+      "page": 10,
+      "caption": "Fig. 20. Microphotograph of the first fabricated 2-W DAT power amplifier at 2.4 GHz using 0.35-m CMOS technology.",
+      "caption_bbox": [
+        301.1,
+        558.3,
+        552.1,
+        578.2
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 10,
+          "sentence": "All measurement system power losses Fig. 20."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.1,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "section:results": -2.0,
+        "type_match:amplifier": 2.0,
+        "references": 0.4
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "power amplifier (PA)",
+        "technology": "CMOS, GAAS, MMIC",
+        "application_domain": "microwave",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Microphotograph of the first fabricated 2-W DAT power amplifier at 2.4 GHz using 0.35-m CMOS technology",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 21,
+      "label": "Fig. 21",
+      "page": 11,
+      "caption": "Fig. 21. Measured PAE and gain versus output power of the DAT amplifier operating with 2 V at 2.4 GHz with 50balanced output.",
+      "caption_bbox": [
+        39.6,
+        217.5,
+        290.6,
+        237.1
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 10,
+          "sentence": "Figs. 21–23 show the gain and PAE versus output power for 2-V supply with differential output, 2-V and 1-V supplies with single-ended output, respectively."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 10,
+          "sentence": "The 3-dB bandwidth is 510 MHz centered at efficient is Fig. 21."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-output power": -2.0,
+        "section:results": -2.0,
+        "type_match:amplifier": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, GAAS, MMIC",
+        "application_domain": "microwave",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured PAE and gain versus output power of the DAT amplifier operating with 2 V at 2.4 GHz with 50balanced output",
+        "key_specs": [
+          "510 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 22,
+      "label": "Fig. 22",
+      "page": 11,
+      "caption": "Fig. 22. Measured PAE and gain versus output power of the DAT amplifier operating with 2 V at 2.4 GHz with 50unbalanced output.",
+      "caption_bbox": [
+        39.6,
+        402.2,
+        290.6,
+        421.8
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 10,
+          "sentence": "Fig. 22."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.6,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-output power": -2.0,
+        "section:conclusion": -1.0,
+        "type_match:amplifier": 2.0,
+        "references": 0.4
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, GAAS, MMIC",
+        "application_domain": "microwave",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured PAE and gain versus output power of the DAT amplifier operating with 2 V at 2.4 GHz with 50unbalanced output",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 23,
+      "label": "Fig. 23",
+      "page": 11,
+      "caption": "Fig. 23. Measured PAE and gain versus output power of the DAT amplifier operating with 1 V at 2.4 GHz with 50unbalanced output.",
+      "caption_bbox": [
+        39.6,
+        593.9,
+        290.6,
+        613.6
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 10,
+          "sentence": "Fig. 23."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.6,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-output power": -2.0,
+        "section:conclusion": -1.0,
+        "type_match:amplifier": 2.0,
+        "references": 0.4
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, GAAS, MMIC",
+        "application_domain": "microwave",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured PAE and gain versus output power of the DAT amplifier operating with 1 V at 2.4 GHz with 50unbalanced output",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 1,
+  "warnings": []
+}

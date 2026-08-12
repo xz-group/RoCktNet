@@ -1,0 +1,63 @@
+# A 14b 80MS/s SAR ADC with 73.6dB SNDR in 65nm CMOS Ron Kapusta1, Junhua Shen1, Steven Decker1, Hongxing Li2, Eitake Ibaragi2
+
+VENUE
+"2013"
+
+FIGURE NUMBER
+"Figure 26.6.1 shows a functional diagram of the ADC top-level in which there is no explicit sample-and-hold amplifier. This ADC also includes a flash sub-ADC to resolve the 5 MSBs. Once the sub-ADC has decided, the control logic loads the appropriate code into the DAC, and the SAR loop resolves the 9 LSBs in addition to 2 redundant bits. One redundant trial occurs immediately after the subADC decision, so that the flash requires only 5b accuracy. A second redundant bit is placed midway through the remaining trials, and hence only the final few trials are constrained to the full accuracy of the ADC. Another technique used to increase the sample rate is time-interleaving of the DAC operation. Interleaving by 2× allows one comparator to be used for all conversions, maximizing efficiency and reducing interleaving artifacts that would be introduced by multiple comparators. Three DACs are included so that their use can be randomly shuffled, turning any residual mismatch into noise. Finally, the ADC is completely selftimed, so that no high-speed clocks are required. In order to self-time, the DACs have a “dac_done” output and the comparator has a “ready” output, each of which signal the subsequent block to continue. Each DAC, for which one differential half is shown in Fig. 26.6.2, has separate capacitors for sampling the input and for performing the DAC function. The input capacitor is labeled 256C and totals 4pF. There are 31 sets of 4C capacitors, labeled MSB caps, which are controlled by the thermometer-coded flash output. Note that an MSB cap connected to +VR during the sampling phase is switched to –VR during the trials, so that it delivers twice the charge to the DAC output as a conventional configuration. This double sampling shrinks the MSB caps by 2× and reduces the attenuation from the ADC input to the DAC output, 2011. reducing comparator offset and noise when referred to the ADC input. Double sampling requires switches on the top side of the MSB caps, so that every capacitor is able to connect to either DAC output. Parasitics from these switches carry some penalty, but it is far less than the benefit gained due to double sampling. By separating the input sampling and DAC capacitors, the reference current load becomes nearly signal-independent, significantly easing the reference design. For example, a current drawn from a relatively high impedance reference source would result in a smaller reference voltage. Since the DAC load is signal-independent, this appears as if the DAC capacitors were driven by an ideal reference but were slightly too small themselves. This error is easily removed via foreground calibration, which is required in order to achieve 14b linearity."
+
+TYPE
+"80MS/s SAR ADC"
+
+TECHNOLOGY
+"CMOS, 65nm process"
+
+APPLICATION
+"if"
+
+SUB-BLOCKS
+[
+  "capacitor",
+  "output buffer",
+  "switch"
+]
+
+FUNCTION SUMMARY
+"80MS/s SAR ADC"
+
+DESIGN PURPOSE
+"This error is easily removed via foreground calibration, which is required in order to achieve 14b linearity. • 2013 IEEE International Solid-State Circuits Conference The reference scheme shown in Fig. 26.6.3 leverages this ability to use a nonideal reference in order to significantly improve DAC settling time."
+
+METRICS
+[
+  "Gain",
+  "Process node",
+  "Supply voltage",
+  "Timing / delay",
+  "Capacitance",
+  "Power consumption"
+]
+
+NUMERICAL PERFORMANCE
+[
+  "73.6dB",
+  "65nm",
+  "1.2V",
+  "70dB",
+  "1ns",
+  "4pF",
+  "3ns",
+  "200ps",
+  "31.1mW",
+  "23mW"
+]
+
+CONFIDENCE
+0.2
+
+WARNINGS
+[
+  "No figure scored positively as a proposed-circuit schematic; recommendation is low-confidence.",
+  "Recommended figure caption does not explicitly mention a schematic/topology/circuit; please confirm manually.",
+  "Recommended figure was classified as 'conventional', not a schematic; manual confirmation strongly recommended."
+]

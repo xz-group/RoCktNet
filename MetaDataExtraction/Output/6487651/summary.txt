@@ -1,0 +1,62 @@
+# A New TX Leakage-Suppression Technique for an RFID Receiver Using a Dead-Zone Amplifier Sang-Sung Lee1, Jaeheon Lee2, In-Young Lee1, Sang-Gug Lee1, Jinho Ko2
+
+VENUE
+"2013"
+
+FIGURE NUMBER
+"Figure 5.6.5 shows the RFID receiver front-end that adopts the proposed leakage suppression technique. The front-end consists of a preamplifier, a hysteresis comparator to turn on/off the preamplifier, a dead-zone amplifier in combination with a power detector, and a mixer. The dead-zone amplifier is designed to suppress the leakage power higher than -8dBm by control of the power detector output. The leakage suppression characteristic of the dead-zone amplifier can be controlled by changing the output slope or VGS,13 in the power detector. In this work, the dead-zone amplifier is designed to suppress the leakage in proportion to the leakage power at the input, such that the leakage power at the output stays constant. This secures constant system sensitivity and stable operation of the following stages. The preamplifier is located in front of the dead-zone amplifier to extend the leakage suppression range down to -20dBm by the additional amplification of the received signal. The hysteresis comparator determines turn on/off or the bypass condition of the preamplifier in accordance with the received leakage power. The mixer consists of a passive current switch and a transimpedance amplifier (TIA) with a DC offset cancellation feedback loop. The proposed receiver front-end is implemented in a standard 0.18μm CMOS process, drawing 19mA from a 3.3V supply, while the dead-zone amplifier with the power detector consumes only 2.5mA, which is less than 25% that of other leakage cancellation techniques [2,3]. The packaged chip is evaluated by applying the AM tag signal with TX leakage over the leakage power range of -20 to +10dBm. The measurement results are shown in Fig. 5.6.6. Figure 5.6.6(a) is the measured output spectrum of the dead-zone amplifier, showing SNR improvement of 15.77dB. The SNR improvement remains as high as 14.93dB at the output of the down-conversion mixer, as shown in Figure 5.6.6(b). Figure 5.6.6(c) shows the input leakage power vs. the mixer output noise power spectral density caused by the phase noise of the TX leakage, with and without the dead-zone amplifier. It can be seen that the dead-zone amplifier keeps the output noise power constant. The measured SNR improvement vs. TX leakage power at the RX input is shown in Fig. 5.6.6(d), showing SNR improvement proportional to the incoming TX leakage power. Figure 5.6.7 shows a performance summary table and a chip micrograph of the fabricated RFID front-end with size of 1600 ×"
+
+TYPE
+"amplifier"
+
+TECHNOLOGY
+"CMOS"
+
+APPLICATION
+"microwave, rf, radio frequency"
+
+SUB-BLOCKS
+[
+  "transistor/MOSFET",
+  "mixer",
+  "switch",
+  "pre-amplifier"
+]
+
+FUNCTION SUMMARY
+"amplifier"
+
+DESIGN PURPOSE
+"In Fig. 5.6.4, in order to minimize the effect of Vt variation on VDZ (VDZ = Vt – VGS,CTRL), the size of M13 is chosen to be the same as that of M1-M4."
+
+METRICS
+[
+  "Output power",
+  "Phase noise",
+  "Gain",
+  "Supply voltage"
+]
+
+NUMERICAL PERFORMANCE
+[
+  "2PH",
+  "0dBm",
+  "-85dBc/Hz",
+  "89dB",
+  "800μm",
+  "0.78 V",
+  "-8dBm",
+  "-20dBm",
+  "0.18μm",
+  "3.3V"
+]
+
+CONFIDENCE
+0.2
+
+WARNINGS
+[
+  "No figure scored positively as a proposed-circuit schematic; recommendation is low-confidence.",
+  "Recommended figure caption does not explicitly mention a schematic/topology/circuit; please confirm manually.",
+  "Recommended figure was classified as 'layout_photo', not a schematic; manual confirmation strongly recommended."
+]

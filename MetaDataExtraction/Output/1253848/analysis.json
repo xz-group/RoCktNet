@@ -1,0 +1,1010 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1253848.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1253848",
+  "generated_at": "2026-07-29T22:01:23",
+  "paper_metadata": {
+    "title": "A 40-GHz-Bandwidth, 4-Bit, Time-Interleaved A/D Converter Using Photoconductive Sampling",
+    "authors": [
+      "Lalitkumar Y. Nathawad",
+      "Ryohei Urata",
+      "Bruce A. Wooley",
+      "David A. B. Miller"
+    ],
+    "abstract": "GaAs photoconductive switches have been integrated with two parallel 4-bit CMOS analog-to-digital (A/D) converter channels to demonstrate the time-interleaved sampling of wideband signals. The picosecond sampling aperture provided by lowtemperature-grown-GaAs metal-semiconductor-metal switches, in combination with low-jitter short-pulse lasers, enables the optically-triggered sampling of electrical signals with tens of gigahertz bandwidth at low to medium resolution. A pair of parallel sampling paths, one for sampling and the second for feedthrough cancellation, generate a differential held signal that is quantized by a low-input capacitance, high-speed flash A/D converter. Dynamic offset averaging is employed to improve converter linearity. An experimental time-interleaved two-channel A/D converter provides about 3.5 effective bits of resolution for inputs up to 40 GHz when tested at an optically-triggered sampling rate of 160 MHz. The Fig. 1. ENOB of resolution versus input frequency, for varying aperture jitter. sampling rate was limited by the available optical source. Each A/D converter channel operates up to a 640-MHz conversion rate, dissipates 70 mW of power, and occupies an area of 150 m m 450 Fig. 1, the effective number of bits (ENOB) of resolution in a 2.5-V, 0.25m CMOS technology. that can be achieved for a given rms aperture jitter decreases Terms—Analog-to-digital (A/D) conversion, CMOS Index logarithmically with input frequency. Aperture jitter in the analog integrated circuits, flash converter, low-tempera0.5–2-ps range is typical for high-performance electronic A/D ture-grown GaAs, metal-semiconductor-metal (MSM) devices, converters [3], whereas an aperture jitter of less than 0.2 ps is offset averaging, optical data processing, resistor averaging needed to achieve 4 effective bits of resolution at a 40-GHz network, sample and hold, transconductance amplifiers. input frequency. A number of photonic sampling techniques have been pro-",
+    "keywords": [],
+    "doi": "10.1109/JSSC.2003.819172",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "40-GHz-Bandwidth, 4-Bit, Time-Interleaved A/D Converter",
+    "technology": "CMOS, GAAS",
+    "application_domain": "radar, if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "cross-coupled pair",
+      "current source",
+      "output buffer",
+      "switch",
+      "pre-amplifier",
+      "latch",
+      "clock / timing",
+      "differential pair"
+    ],
+    "design_purpose": "Aperture jitter in the analog integrated circuits, flash converter, low-tempera0.5–2-ps range is typical for high-performance electronic A/D ture-grown GaAs, metal-semiconductor-metal (MSM) devices, converters [3], whereas an aperture jitter of less than 0.2 ps is offset averaging, optical data processing, resistor ...",
+    "function_summary": "40-GHz-Bandwidth, 4-Bit, Time-Interleaved A/D Converter: Aperture jitter in the analog integrated circuits, flash converter, low-tempera0.5–2-ps range is typical for high-performance electronic A/D ture-grown GaAs, metal-semiconductor-metal (MSM) devices, converters [3], whereas an aperture jitter of less than 0.2 ps is offset averaging, optical data ...",
+    "key_specs": [
+      "40 GHz",
+      "160 MHz",
+      "70 mW",
+      "0.2 ps",
+      "640 MHz",
+      "30 fF",
+      "10 fF",
+      "2%",
+      "10 fs",
+      "1.6 V"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "H IGH-SPEED analog-to-digital (A/D) converters capable of digitizing signals with bandwidths of several tens of gigahertz have applications in optical communications, wideband radar, and high-speed instrumentation. In fiber-optic communications, dispersion effects that limit the length of the fiber link may be corrected with digital equalization techniques if A/D converters capable of conversion r ..."
+    },
+    {
+      "number": "II",
+      "title": "PHOTONIC SAMPLING",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "The proposed photonic sample-and-hold is comprised of a LT-grown GaAs metal-semiconductor-metal (MSM) switch that is optically triggered to sample an electrical input signal onto a small hold capacitance [6]. The switch is fabricated by molecular beam epitaxy of GaAs on a semi-insulating GaAs C, wafer at the relatively low substrate temperature of 250 IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, ..."
+    },
+    {
+      "number": "III",
+      "title": "TIME-INTERLEAVED PHOTONIC A/D CONVERTER",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "ARCHITECTURE The photonic sample-and-hold circuit described in the previous section is capable of operating at sampling rates of tens of gigahertz. However, it is difficult to design a single-path A/D converter capable of digitizing the held sample at these rates. Alternatively, a highly parallel photonic A/D converter architecture, shown in Fig. 2, is proposed wherein an electrical input is sampl ..."
+    },
+    {
+      "number": "IV",
+      "title": "CIRCUIT DESIGN AND IMPLEMENTATION",
+      "kind": "design",
+      "page": 3,
+      "text_preview": "Shown in Fig. 5 is a block diagram of the CMOS A/D converter. The outputs of the photonic sample-and-hold are fed to a differential buffer amplifier that subtracts the feedthrough from the held sample and provides a differential voltage gain of 4. The buffer amplifier drives a flash quantizer with a full-scale differential. An externally adjustable curinput range of 1.6 V rent source is used to ca ..."
+    },
+    {
+      "number": "V",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 6,
+      "text_preview": "Shown in Fig. 13 is a die micrograph of a prototype twom CMOS techchannel A/D converter fabricated in a 0.25nology. The LT-grown GaAs MSM switches have been integrated with the CMOS chip using flip-chip bonding. Each A/D m m area and conconverter channel occupies a sumes about 70 mW of power, not including output drivers, at a sampling rate of 640 MSample/s. The electrical input signal is driven d ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 8,
+      "text_preview": "An optically-triggered sample-and-hold circuit employing LT-grown GaAs MSM switches has been integrated with parallel CMOS A/D converters to demonstrate the feasibility of a wide-bandwidth, time-interleaved photonic A/D converter architecture. The MSM switches provide aperture times of a few picoseconds, with precise sampling times derived from a low-jitter, short-pulse laser. Each time-interleave ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. ENOB of resolution versus input frequency, for varying aperture jitter.",
+      "caption_bbox": [
+        301.1,
+        314.6,
+        552.2,
+        325.3
+      ],
+      "section_title": "",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1, the effective number of bits (ENOB) of resolution that can be achieved for a given rms aperture jitter decreases logarithmically with input frequency."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "40-GHz-Bandwidth, 4-Bit, Time-Interleaved A/D Converter",
+        "technology": "CMOS, GAAS",
+        "application_domain": "radar, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "ENOB of resolution versus input frequency, for varying aperture jitter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Proposed time-interleaved photonic A/D converter architecture with =N, where f is the aggregate sampling rate and per-channel sampling rate f N is the number of channels.",
+      "caption_bbox": [
+        39.6,
+        225.4,
+        290.7,
+        254.0
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "This paper introduces a parallel A/D conversion architecture, shown in Fig. 2, wherein a large number of time-interleaved photonic sampling channels each feed a 4-bit CMOS A/D converter."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Integration of the photonic sampling switches with the CMOS A/D converter circuitry allows for the small hold capacitance needed to achieve a sufficiently large sample-and-hold Fig. 2."
+        },
+        {
+          "section_title": "TIME-INTERLEAVED PHOTONIC A/D CONVERTER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Alternatively, a highly parallel photonic A/D converter architecture, shown in Fig. 2, is proposed wherein an electrical input is sampled by a large number of time-interleaved channels to achieve a high aggregate sampling rate, ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.7,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "+proposed": 3.0,
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS, GAAS",
+        "application_domain": "radar, if",
+        "sub_blocks": [
+          "switch"
+        ],
+        "design_purpose": "Alternatively, a highly parallel photonic A/D converter architecture, shown in Fig. 2, is proposed wherein an electrical input is sampled by a large number of time-interleaved channels to achieve a high aggregate sampling rate, .",
+        "function_summary": "Proposed time-interleaved photonic A/D converter architecture with =N, where f is the aggregate sampling rate and per-channel sampling rate f N is the number of channels. Alternatively, a highly parallel photonic A/D converter architecture, shown in Fig. 2, is proposed wherein an electrical input is sampled by a large ...",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.99,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Photoconductive sampling switch consisting of an 8-finger, 20 m 20 m area, interdigitated MSM structure.",
+      "caption_bbox": [
+        39.6,
+        381.5,
+        290.8,
+        401.1
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 3."
+        },
+        {
+          "section_title": "PHOTONIC SAMPLING",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "A titanium/gold contact metal is deposited on the LT-grown GaAs and patterned to form an interdigitated m finger-spacing MSM device, as illustrated in 8-finger, 2m m area of the MSM switch is roughly Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "switch",
+        "technology": "CMOS, GAAS",
+        "application_domain": "radar, if",
+        "sub_blocks": [
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Photoconductive sampling switch consisting of an 8-finger, 20 m 20 m area, interdigitated MSM structure",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 1,
+      "caption": "Fig. 4. Optically-triggered sample-and-hold with a replica dummy switch for feedthrough cancellation.",
+      "caption_bbox": [
+        302.6,
+        203.9,
+        553.7,
+        223.6
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "PHOTONIC SAMPLING",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The switch is fabricated by molecular beam epitaxy of GaAs on a semi-insulating GaAs C, wafer at the relatively low substrate temperature of 250 IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 12, DECEMBER 2003 Fig. 4."
+        },
+        {
+          "section_title": "PHOTONIC SAMPLING",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Shown in Fig. 4 is the schematic of an optically-triggered sample-and-hold circuit employing replica feedthrough cancellation."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "track-and-hold / sample-and-hold",
+        "technology": "CMOS, GAAS",
+        "application_domain": "radar, if",
+        "sub_blocks": [
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Optically-triggered sample-and-hold with a replica dummy switch for feedthrough cancellation",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Block diagram of the CMOS A/D converter.",
+      "caption_bbox": [
+        38.1,
+        290.9,
+        210.0,
+        301.6
+      ],
+      "section_title": "II. PHOTONIC SAMPLING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "PHOTONIC SAMPLING",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The second (dummy) switch provides a replica of the feedthrough signal that is subsequently subtracted from the sampled signal at NATHAWAD et al.: 40-GHz-BANDWIDTH, 4-BIT, TIME-INTERLEAVED A/D CONVERTER Fig. 5."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Shown in Fig. 5 is a block diagram of the CMOS A/D converter."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS, GAAS",
+        "application_domain": "radar, if",
+        "sub_blocks": [
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the CMOS A/D converter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6.",
+      "caption_bbox": [
+        39.6,
+        243.5,
+        60.3,
+        254.2
+      ],
+      "section_title": "III. TIME-INTERLEAVED PHOTONIC A/D CONVERTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TIME-INTERLEAVED PHOTONIC A/D CONVERTER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 6. as the vehicle for exploring the use of photonic sampling to achieve very high sampling rates and input bandwidths."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Shown in Fig. 6, is a schematic of the input buffer amplifier together with the parasitic bond-pad hold capacitance."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, GAAS",
+        "application_domain": "radar, if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "Fig. 6. as the vehicle for exploring the use of photonic sampling to achieve very high sampling rates and input bandwidths.",
+        "function_summary": "amplifier. Fig. 6. as the vehicle for exploring the use of photonic sampling to achieve very high sampling rates and input bandwidths.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. Regenerative preamplifier with reset switch M and capacitive feedback cancellation.",
+      "caption_bbox": [
+        301.1,
+        234.7,
+        552.2,
+        254.2
+      ],
+      "section_title": "IV. CIRCUIT DESIGN AND IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The regenerative preamplifier circuit shown in Fig. 7 , to prevent regeneration and uses an output reset switch, provide a high output bandwidth while the input is settling."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.9,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "pre-amplifier",
+        "technology": "CMOS, GAAS",
+        "application_domain": "radar, if",
+        "sub_blocks": [
+          "switch",
+          "pre-amplifier"
+        ],
+        "design_purpose": "",
+        "function_summary": "Regenerative preamplifier with reset switch M and capacitive feedback cancellation",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.11,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 5,
+      "caption": "Fig. 8. Implementation of resistive offset averaging of preamplifier array outputs.",
+      "caption_bbox": [
+        39.6,
+        204.1,
+        290.7,
+        223.7
+      ],
+      "section_title": "IV. CIRCUIT DESIGN AND IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Shown in Fig. 8 is a schematic of the preamplifier array with the output averaging resistor network."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Each preamplifier is active over an input range of 3 LSB, so that three overrange preamplifiers are needed at each end of the main array to ensure the first and last overrange preamplifiers are always operating near saturation for full-scale Fig. 8."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "If the preamplifier array shown schematically in Fig. 8 was laid out sequentially, a pair of long interconnects would be needed to connect the ends of the preamplifier array."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "pre-amplifier",
+        "technology": "CMOS, GAAS",
+        "application_domain": "radar, if",
+        "sub_blocks": [
+          "resistor",
+          "pre-amplifier"
+        ],
+        "design_purpose": "",
+        "function_summary": "Implementation of resistive offset averaging of preamplifier array outputs",
+        "key_specs": [
+          "8 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 5,
+      "caption": "Fig. 9. Layout of preamplifier array with averaging resistor network (for simplicity, only single-ended outputs are shown).",
+      "caption_bbox": [
+        39.6,
+        358.9,
+        290.6,
+        378.5
+      ],
+      "section_title": "IV. CIRCUIT DESIGN AND IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 9."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "To avoid the large parasitic capacitance and resistance that would be introduced by such an interconnect, the preamplifier array is laid out in a single interleaved row as shown in Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "-layout": -2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "pre-amplifier",
+        "technology": "CMOS, GAAS",
+        "application_domain": "radar, if",
+        "sub_blocks": [
+          "resistor",
+          "pre-amplifier"
+        ],
+        "design_purpose": "",
+        "function_summary": "Layout of preamplifier array with averaging resistor network (for simplicity, only single-ended outputs are shown)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. Simulated preamplifier offset and gain versus regeneration time with and without resistor averaging.",
+      "caption_bbox": [
+        302.6,
+        221.9,
+        553.7,
+        241.5
+      ],
+      "section_title": "IV. CIRCUIT DESIGN AND IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "A small offset in the subsequent comparator, improves averaging of preamplifier offsets at the expense of , resulting in a greater input-referred less preamplifier gain, IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 12, DECEMBER 2003 Fig. 10."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "If the preamplifier and comparator offsets are independent random variables, then (4) Fig. 10 shows the results of Monte Carlo simulations of the preamplifier offset and gain as functions of regeneration time, ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "pre-amplifier",
+        "technology": "CMOS, GAAS",
+        "application_domain": "radar, if",
+        "sub_blocks": [
+          "resistor",
+          "pre-amplifier"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simulated preamplifier offset and gain versus regeneration time with and without resistor averaging",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 6,
+      "caption": "Fig. 11. First-stage low-offset latch with NMOS clamp.",
+      "caption_bbox": [
+        38.1,
+        252.8,
+        221.6,
+        263.4
+      ],
+      "section_title": "IV. CIRCUIT DESIGN AND IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The first stage, shown in Fig. 11, is a low-offset, low-output-swing latch that is biased with a constant current."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "NATHAWAD et al.: 40-GHz-BANDWIDTH, 4-BIT, TIME-INTERLEAVED A/D CONVERTER Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "latch",
+        "technology": "CMOS, GAAS",
+        "application_domain": "radar, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "latch"
+        ],
+        "design_purpose": "",
+        "function_summary": "First-stage low-offset latch with NMOS clamp",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 6,
+      "caption": "Fig. 12. Second-stage differential edge-triggered latch with CMOS output voltage levels.",
+      "caption_bbox": [
+        38.1,
+        450.1,
+        289.2,
+        469.7
+      ],
+      "section_title": "IV. CIRCUIT DESIGN AND IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 12."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN AND IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The output of the first latch is fed to a second differential edge-triggered latch [14], shown in Fig. 12, that amplifies its input to CMOS voltage levels."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "latch",
+        "technology": "CMOS, GAAS",
+        "application_domain": "radar, if",
+        "sub_blocks": [
+          "latch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Second-stage differential edge-triggered latch with CMOS output voltage levels",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 6,
+      "caption": "Fig. 13. Chip micrograph of prototype two-channel photonic A/D converter.",
+      "caption_bbox": [
+        301.1,
+        254.8,
+        549.3,
+        265.4
+      ],
+      "section_title": "IV. CIRCUIT DESIGN AND IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Shown in Fig. 13 is a die micrograph of a prototype twom CMOS techchannel A/D converter fabricated in a 0.25nology."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-micrograph": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS, GAAS",
+        "application_domain": "radar, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chip micrograph of prototype two-channel photonic A/D converter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 6,
+      "caption": "Fig. 14. Measured DNL of each CMOS A/D converter at 640 MS/s.",
+      "caption_bbox": [
+        301.1,
+        399.1,
+        523.7,
+        409.7
+      ],
+      "section_title": "IV. CIRCUIT DESIGN AND IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 14."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "As shown in Fig. 14 and Fig. 15, the prototype has a peak DNL and INL of 0.2 LSB and 0.35 LSB, respectively."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS, GAAS",
+        "application_domain": "radar, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured DNL of each CMOS A/D converter at 640 MS/s",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 6,
+      "caption": "Fig. 15. Measured INL of each CMOS A/D converter at 640 MS/s.",
+      "caption_bbox": [
+        301.1,
+        543.8,
+        520.6,
+        554.4
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 15."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "As shown in Fig. 14 and Fig. 15, the prototype has a peak DNL and INL of 0.2 LSB and 0.35 LSB, respectively."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS, GAAS",
+        "application_domain": "radar, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured INL of each CMOS A/D converter at 640 MS/s",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 7,
+      "caption": "Fig. 16. Setup for testing the prototype time-interleaved two-channel A/D converter.",
+      "caption_bbox": [
+        39.6,
+        216.2,
+        290.7,
+        235.8
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 16 illustrates the test setup used to evaluate the performance of the A/D converter with optically-triggered sampling."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-setup": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS, GAAS",
+        "application_domain": "radar, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Setup for testing the prototype time-interleaved two-channel A/D converter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 7,
+      "caption": "Fig. 18. Measured SNDR and SFDR versus input frequency for single-channel operation.",
+      "caption_bbox": [
+        302.6,
+        435.7,
+        553.6,
+        455.4
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Output spectrum (8192-point FFT) of the time-interleaved 160 MS/s and f = 40 GHz. two-channel A/D converter with f Fig. 18."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 18 shows a plot of the SNDR and SFDR measured for operation of a single channel of the A/D converter over an input frequency range from 3 MHz to 40 GHz and at a digital output amplitude of 95% of full-scale."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS, GAAS",
+        "application_domain": "radar, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured SNDR and SFDR versus input frequency for single-channel operation",
+        "key_specs": [
+          "40 GHz",
+          "3 MHz",
+          "95%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 8,
+      "caption": "Fig. 19. Measured SNDR and SFDR versus input frequency for operation of two time-interleaved channels.",
+      "caption_bbox": [
+        38.1,
+        227.3,
+        289.2,
+        246.9
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The extent to which the measured baseband noise exceeds the quantization noise is assumed to be NATHAWAD et al.: 40-GHz-BANDWIDTH, 4-BIT, TIME-INTERLEAVED A/D CONVERTER Fig. 19."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The measured SFDR and SNDR of the time-interleaved twochannel A/D converter are shown in Fig. 19."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS, GAAS",
+        "application_domain": "radar, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured SNDR and SFDR versus input frequency for operation of two time-interleaved channels",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 2,
+  "warnings": []
+}

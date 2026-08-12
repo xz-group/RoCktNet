@@ -1,0 +1,1043 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\972154.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\972154",
+  "generated_at": "2026-07-29T22:03:40",
+  "paper_metadata": {
+    "title": "A CMOS Multiparameter Biochemical Microsensor With Temperature Control and Signal Interfacing",
+    "authors": [
+      "Erik Lauwers",
+      "Jan Suls",
+      "Walter Gumbrecht",
+      "David Maes",
+      "Georges Gielen",
+      "Willy Sansen"
+    ],
+    "abstract": "A fully integrated multiparameter microsensor chip is presented for continuous monitoring of concentrations of difa 1.2m single-metal single-poly CMOS technology and opferent blood gases (e.g., pH, pO2, pCO2), ions, and biomolecules, erates at 5 V. Extra postprocessing steps have been added to and for conductometric measurements. The chip can monitor up manufacture the sensor (interface) structures and a calibration to seven different chemical substances depending on the memsystem. The total chip area is 4.11 mm 6.25 mm. The process branes deposited on the sensor units (on-chip ion-sensitive fieldtechnology used was explained in detail in [1]. In this paper, effect transistors (ISFETs), amperometric and conductometric cell). The sensors, which are positioned in a flow channel, are the overall system and the electronic subblocks are explained surrounded by on-chip interfacing and processing electronics so in detail and measurements are presented. Minor additional dethat external readout goes via a simple data acquisition card. In tails can be found in the visuals supplement of [2]. The paper addition, temperature control of the measured fluids and a oneis organized as follows. Section II presents an application for time-use security check have been provided for proper operation. the microsensor chip and explains the global system setup. In Fabrication was done in a standard 1.2m CMOS process to which extra postprocessing steps have been added for the chemical Section III, the sensors are described, and in Section IV, the sensors and membranes. The chip operates at 5 V and the total sensor interfacing electronics. Section V covers the heat reguladie area is 25.7 mm2. Full integration is obtained including the tion system, and Section VI explains the control electronics and ISFETs and ISFET buffers, as well as a reference electrode the EPROM. In Section VII, chemical measurements are prestructure, all integrated on the same chip in the same technology. sented, and finally, in Section VIII, conclusions are drawn.",
+    "keywords": [
+      "Amperometric and conductometric cell",
+      "biochemical",
+      "CMOS microsensor",
+      "EPROM",
+      "ISFET",
+      "signal interfacing",
+      "tem-"
+    ],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2001
+  },
+  "paper_circuit_context": {
+    "circuit_type": "CMOS Multiparameter Biochemical Microsensor",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "transistor/MOSFET",
+      "output buffer",
+      "capacitor",
+      "resistor",
+      "bias circuit",
+      "switch",
+      "differential pair",
+      "op-amp",
+      "clock / timing"
+    ],
+    "design_purpose": "A fully integrated multiparameter microsensor chip is presented for continuous monitoring of concentrations of difa 1.2m single-metal single-poly CMOS technology and opferent blood gases (e.g., pH, pO2, pCO2), ions, and biomolecules, erates at 5 V.",
+    "function_summary": "CMOS Multiparameter Biochemical Microsensor: A fully integrated multiparameter microsensor chip is presented for continuous monitoring of concentrations of difa 1.2m single-metal single-poly CMOS technology and opferent blood gases (e.g., pH, pO2, pCO2), ions, and biomolecules, erates at 5 V.",
+    "key_specs": [
+      "5 V",
+      "2 V",
+      "4.33 w",
+      "1 V",
+      "5 kHz",
+      "2.2 mV",
+      "0.25 W",
+      "1 mV",
+      "3.4 mV",
+      "0.24 mV"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "M ASS production, high yields, and low manufacturing costs are concepts readily associated with electronics integrated on a single piece of silicon. Other considerations such as low power, high speed, etc., are also motivations for silicon integration. Apart from these factors, small dimensions and portability are of great value in the field of medical healthcare. Analysis of blood gases in intens ..."
+    },
+    {
+      "number": "II",
+      "title": "TOTAL MICROSENSOR SYSTEM",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "A typical use of the microsensor is measuring gas concentrations in blood. The chip is packaged such that the central part, where the sensors are aligned, is exposed to a flow channel where the blood and calibration solutions run through. This sensor alignment (centerline a–h along the long side) and the flow-channel perimeter around it (oval shape for O-ring to seal off the flow channel) can clea ..."
+    },
+    {
+      "number": "III",
+      "title": "SENSORS",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "The chip has eight integrated sensors, indicated by letters in Fig. 1. Seven sensors are located in the centerline and one is above the centerline (e). The number of eight is determined by the available space in the flow channel. They can all be operated in parallel if required by the user. However, the idea is to make one standard chip to reduce manufacturing costs and then to program the chip ac ..."
+    },
+    {
+      "number": "IV",
+      "title": "INTERFACE ELECTRONICS",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "A. ISFET Buffer Amplifier The response of an ISFET can be measured in two ways. The (Fig. 4) can be held constant and the change applied voltage in the drain current is measured as a function of the ion activity. can be changed in such Alternatively, the applied voltage a way that the drain current remains constant. Here, the current is kept constant and the gate voltage of the ISFET is measured t ..."
+    },
+    {
+      "number": "V",
+      "title": "HEAT REGULATION",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "For reproducible blood-gas measurements, the on-chip temC) throughout perature needs to be fixed (for example, at 37 different measurements. Also, different fluids can only be compared validly if the temperature during different measurements is the same. To keep the on-chip temperature constant, a heatregulating loop including a temperature-sensing device and a heating device have been integrated. ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONTROL ELECTRONICS",
+      "kind": "other",
+      "page": 4,
+      "text_preview": "The control electronics consist of an EPROM ( in Fig. 2), in Fig. 2). a controller, and a line driver ( A. EPROM The sensor chip was primarily developed for (but not limited to) medical use. For health care reasons, the chip may only be used on one patient and this for a limited time. After use, the chip must be discarded. To make sure that two patients never use the same chip, a single-bit EPROM  ..."
+    },
+    {
+      "number": "VII",
+      "title": "CHEMICAL MEASUREMENTS",
+      "kind": "results",
+      "page": 6,
+      "text_preview": "The chip microphotograph is shown in Fig. 13. First, an amperometric oxygen measurement performed on two different packaged sensors is presented. For the measurement, the flow channel is connected to an artificial patient, enabling a solution with regulated oxygen concentration to be pumped over the sensor array. The amperometric measurement is done using the potentiostatic setup (IV-OTA and Pot-O ..."
+    },
+    {
+      "number": "VIII",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 7,
+      "text_preview": "A fully integrated multiparameter sensor chip has been presented. Strong points of the system chip include low pin count, on-chip integrated ISFETs and ISFET buffers, temperature control, and built-in security EPROM. Also, a conductometric sensor and oxygen sensor are integrated on-chip with their interfacing electronics. In total, the same microsystem allows up to seven different measurements. Ex ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Layout of the total system.",
+      "caption_bbox": [
+        38.1,
+        288.5,
+        153.9,
+        299.1
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "TOTAL MICROSENSOR SYSTEM",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "This sensor alignment (centerline a–h along the long side) and the flow-channel perimeter around it (oval shape for O-ring to seal off the flow channel) can clearly be seen in Fig. 1."
+        },
+        {
+          "section_title": "TOTAL MICROSENSOR SYSTEM",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Because from an electronic point of view, these verLAUWERS et al.: CMOS MULTIPARAMETER BIOCHEMICAL MICROSENSOR Fig. 1."
+        },
+        {
+          "section_title": "SENSORS",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The chip has eight integrated sensors, indicated by letters in Fig. 1."
+        },
+        {
+          "section_title": "SENSORS",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "It was decided to integrate six ion-sensitive field-effect transistors (ISFETs) (b, c, d, e, f, and g in Fig. 1), one oxygen sensor (h), and one conductometric sensor (a)."
+        },
+        {
+          "section_title": "SENSORS",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "To tackle this problem, a reference electrode with an Ag–AgCl interface has been integrated in a bypass structure (Fig. 1, oval structure around a and e) next to the flow channel."
+        },
+        {
+          "section_title": "INTERFACE ELECTRONICS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The bondpad in the lower right corner of Fig. 1 is con10 M nected to the extra resistor branch and can easily be connected to the bondpad on its left during packaging, which is the bondpad."
+        },
+        {
+          "section_title": "INTERFACE ELECTRONICS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The driving electrode [Fig. 1(a)] is connected to an opamp and resistor structure (see left-hand side of Fig. 6) to convert the current into an output voltage."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.5,
+      "relevance_breakdown": {
+        "-layout": -2.0,
+        "section:intro": -0.5,
+        "references": 2.0
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "biochemical / gas sensor",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "resistor",
+          "transistor/MOSFET",
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Layout of the total system",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Block diagram of the sensor chip.",
+      "caption_bbox": [
+        38.1,
+        554.0,
+        176.4,
+        564.6
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "TOTAL MICROSENSOR SYSTEM",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Three extra wires have been added so that a standard eight-wire connection is obtained (Fig. 2)."
+        },
+        {
+          "section_title": "TOTAL MICROSENSOR SYSTEM",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 2."
+        },
+        {
+          "section_title": "TOTAL MICROSENSOR SYSTEM",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "In Fig. 2, a block diagram of the sensor chip is given."
+        },
+        {
+          "section_title": "HEAT REGULATION",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The temperature is set through , which is an input control voltage to the system (through the “Sensor in” pad in Fig. 2)."
+        },
+        {
+          "section_title": "CONTROL ELECTRONICS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "The control electronics consist of an EPROM ( in Fig. 2), in Fig. 2). a controller, and a line driver ( A."
+        },
+        {
+          "section_title": "CONTROL ELECTRONICS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "To this end, the controller (part 3 of Fig. 2) has to redirect 16 outputs to one output line and redirect one input line to four different inputs."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.5,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:intro": -0.5,
+        "references": 2.0
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "sensor",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the sensor chip",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.38,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. ISFET calibration setup.",
+      "caption_bbox": [
+        39.6,
+        239.7,
+        147.1,
+        250.3
+      ],
+      "section_title": "IV. INTERFACE ELECTRONICS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SENSORS",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "For example, if the oxygen sensor output is made available only at the chip’s output by use of an EPROM similar to the security Fig. 3."
+        },
+        {
+          "section_title": "SENSORS",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The ISFET calibration setup is schematically shown in Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "-setup": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "sensor",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "ISFET calibration setup",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Transistor schematic of the ISFET buffer: a modified symmetrical OTA with pMOS source follower.",
+      "caption_bbox": [
+        302.6,
+        198.4,
+        553.7,
+        218.0
+      ],
+      "section_title": "IV. INTERFACE ELECTRONICS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SENSORS",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 12, DECEMBER 2001 Fig. 4."
+        },
+        {
+          "section_title": "INTERFACE ELECTRONICS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The (Fig. 4) can be held constant and the change applied voltage in the drain current is measured as a function of the ion activity. can be changed in such Alternatively, the applied voltage a way that the drain current remains constant."
+        },
+        {
+          "section_title": "INTERFACE ELECTRONICS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Both operations are combined in an ISFET buffer with low offset, which is a modified symmetrical OTA with pMOS source follower (Fig. 4)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.2,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "references": 1.2
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Transistor schematic of the ISFET buffer: a modified symmetrical OTA with pMOS source follower",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.55,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Schematic view of the potentiostatic setup.",
+      "caption_bbox": [
+        38.1,
+        167.0,
+        204.3,
+        177.7
+      ],
+      "section_title": "V. HEAT REGULATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTERFACE ELECTRONICS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Potentiostatic Setup In Fig. 5, a schematic of the potentiostatic setup is given for an amperometric measurement."
+        },
+        {
+          "section_title": "INTERFACE ELECTRONICS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "To prevent polarization of the reference due LAUWERS et al.: CMOS MULTIPARAMETER BIOCHEMICAL MICROSENSOR Fig. 5."
+        },
+        {
+          "section_title": "INTERFACE ELECTRONICS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The complete setup of Fig. 5 is integrated on chip."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.2,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "-setup": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "biochemical / gas sensor",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematic view of the potentiostatic setup",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.14,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "Fig. 6. Modified feedback impedance for two possible ranges of operation.",
+      "caption_bbox": [
+        39.6,
+        194.0,
+        286.1,
+        204.6
+      ],
+      "section_title": "V. HEAT REGULATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTERFACE ELECTRONICS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "This was done by with a -resistor network, as shown in Fig. 6. replacing connection is left open and , then If the ."
+        },
+        {
+          "section_title": "INTERFACE ELECTRONICS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The driving electrode [Fig. 1(a)] is connected to an opamp and resistor structure (see left-hand side of Fig. 6) to convert the current into an output voltage."
+        },
+        {
+          "section_title": "HEAT REGULATION",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The feedback loop is designed with the first pole being the Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "CMOS Multiparameter Biochemical Microsensor",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "resistor",
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Modified feedback impedance for two possible ranges of operation",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. used in the heat-regulating loop.",
+      "caption_bbox": [
+        39.6,
+        435.7,
+        144.0,
+        455.3
+      ],
+      "section_title": "V. HEAT REGULATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "HEAT REGULATION",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "If the current through the bipolar device is kept constant, then the voltage drop over the bipolar transistor, which is connected as a diode (inset in Fig. 7), is proportional to the absolute temperature, as given by (3) is the leakage current at zero biasing, is the biasing the absolute temperature."
+        },
+        {
+          "section_title": "HEAT REGULATION",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "From current of the transistor, and Fig. 7, it can be seen that for every increase in temperature of , drops about 2.2 mV."
+        },
+        {
+          "section_title": "HEAT REGULATION",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "This voltage (also referred to ) can now be used to control the chip temperature, as indicated in the inset in Fig. 7."
+        },
+        {
+          "section_title": "HEAT REGULATION",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 12, DECEMBER 2001 Temperature regulation: measured base–emitter voltage dependence of a bipolar transistor on the environment temperature and schematic of how this is Fig. 7. used in the heat-regulating loop. fastest thermal pole."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.6,
+      "relevance_breakdown": {
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "CMOS Multiparameter Biochemical Microsensor",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "bias circuit"
+        ],
+        "design_purpose": "",
+        "function_summary": "used in the heat-regulating loop",
+        "key_specs": [
+          "2.2 mV"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. as a function of time when the heater gate voltage switches from T 0 to 5 V and back.",
+      "caption_bbox": [
+        302.6,
+        588.8,
+        553.7,
+        608.5
+      ],
+      "section_title": "VI. CONTROL ELECTRONICS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "HEAT REGULATION",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The thermal time constant of the regulating loop was measured by externally applying a 5-V pulse to the gate of the heater (Fig. 8)."
+        },
+        {
+          "section_title": "HEAT REGULATION",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The measurements in Fig. 8 yield time constants of 0.0095 s and 0.15 s supporting this statement."
+        },
+        {
+          "section_title": "HEAT REGULATION",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Also, the attenuation of the thermal path can be estimated by extrapolating the curves of Fig. 8 and is in ."
+        },
+        {
+          "section_title": "HEAT REGULATION",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 8. as a function of time when the heater gate voltage switches from T 0 to 5 V and back."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.6,
+      "relevance_breakdown": {
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "switch",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "as a function of time when the heater gate voltage switches from T 0 to 5 V and back",
+        "key_specs": [
+          "5 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 5,
+      "caption": "Fig. 9. Fully automated chip temperature measurement.",
+      "caption_bbox": [
+        38.1,
+        207.4,
+        221.6,
+        218.1
+      ],
+      "section_title": "VI. CONTROL ELECTRONICS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "HEAT REGULATION",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "In Fig. 9, a measurement result of the temperature-control loop is given. is the voltage drop over the bipolar transistor that is in is the voltage over a second integrated the feedback loop. is the current for the total system bipolar transistor. through the power supply."
+        },
+        {
+          "section_title": "CONTROL ELECTRONICS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "The first time the sensor is used, the EPROM LAUWERS et al.: CMOS MULTIPARAMETER BIOCHEMICAL MICROSENSOR Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "biochemical / gas sensor",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Fully automated chip temperature measurement",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. Schematic view of the complete EPROM.",
+      "caption_bbox": [
+        301.1,
+        169.3,
+        467.9,
+        179.9
+      ],
+      "section_title": "VI. CONTROL ELECTRONICS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CONTROL ELECTRONICS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "A schematic of the total EPROM is given in Fig. 10."
+        },
+        {
+          "section_title": "CONTROL ELECTRONICS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "This means that if M1 has a Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "CMOS Multiparameter Biochemical Microsensor",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematic view of the complete EPROM",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.45,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 6,
+      "caption": "Fig. 11. Rail-to-rail line driver (biasing circuit not drawn).",
+      "caption_bbox": [
+        39.6,
+        257.1,
+        231.7,
+        267.7
+      ],
+      "section_title": "VI. CONTROL ELECTRONICS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CONTROL ELECTRONICS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "The controller can intrinsically be clocked at 1 MHz according to simulations, but the chip’s speed is limited by the analog electronics which have Fig. 11."
+        },
+        {
+          "section_title": "CONTROL ELECTRONICS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "The transistor schematic of the line driver design is given in Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.8,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "references": 0.8
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "line / output driver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "bias circuit",
+          "clock / timing"
+        ],
+        "design_purpose": "",
+        "function_summary": "Rail-to-rail line driver (biasing circuit not drawn)",
+        "key_specs": [
+          "1 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.1,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 6,
+      "caption": "Fig. 12. Offset (or total nonlinearity) of the rail-to-rail line driver.",
+      "caption_bbox": [
+        302.6,
+        193.6,
+        517.5,
+        204.3
+      ],
+      "section_title": "VI. CONTROL ELECTRONICS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CONTROL ELECTRONICS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "The driver was also integrated separately as a test structure, and in Fig. 12 the result of an input voltage sweep is given."
+        },
+        {
+          "section_title": "CONTROL ELECTRONICS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "On a 5-V scale, this means that the absolute accuracy equals dB bits (6) IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 12, DECEMBER 2001 Fig. 12."
+        },
+        {
+          "section_title": "CONTROL ELECTRONICS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "In Fig. 12, it can be seen that the difference between input and output stays smaller than 1 mV for an input from 0.4 to 0.7 V."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "line / output driver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Offset (or total nonlinearity) of the rail-to-rail line driver",
+        "key_specs": [
+          "1 mV",
+          "0.7 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 6,
+      "caption": "Fig. 13. Sensor chip die microphotograph.",
+      "caption_bbox": [
+        302.6,
+        402.8,
+        444.1,
+        413.4
+      ],
+      "section_title": "VI. CONTROL ELECTRONICS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CONTROL ELECTRONICS",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 13."
+        },
+        {
+          "section_title": "CHEMICAL MEASUREMENTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The chip microphotograph is shown in Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -5.7,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "sensor",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Sensor chip die microphotograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 7,
+      "caption": "Fig. 14. Amperometric measurement of oxygen.",
+      "caption_bbox": [
+        38.1,
+        222.4,
+        198.4,
+        233.1
+      ],
+      "section_title": "VII. CHEMICAL MEASUREMENTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "CHEMICAL MEASUREMENTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Measurement results are plotted in Fig. 14."
+        },
+        {
+          "section_title": "CHEMICAL MEASUREMENTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Clearly, a linear relation of about LAUWERS et al.: CMOS MULTIPARAMETER BIOCHEMICAL MICROSENSOR Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "biochemical / gas sensor",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Amperometric measurement of oxygen",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 7,
+      "caption": "Fig. 15. Measured output voltage of a fully packaged K sensor.",
+      "caption_bbox": [
+        38.1,
+        453.8,
+        251.9,
+        464.4
+      ],
+      "section_title": "VIII. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "CHEMICAL MEASUREMENTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 15."
+        },
+        {
+          "section_title": "CHEMICAL MEASUREMENTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "In Fig. 15, the output of the ISFET buffer connected directly to a plotter (bypassing the multiplexer) is shown."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "sensor",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Measured output voltage of a fully packaged K sensor",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 7,
+      "caption": "Fig. 16. Measured resistance versus specific resistance of buffer solution.",
+      "caption_bbox": [
+        301.1,
+        223.3,
+        540.4,
+        233.9
+      ],
+      "section_title": "VII. CHEMICAL MEASUREMENTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "CHEMICAL MEASUREMENTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Finally, a conductometric measurement result is presented in Fig. 16."
+        },
+        {
+          "section_title": "CHEMICAL MEASUREMENTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The measured resistance versus specific resistance of Fig. 16."
+        },
+        {
+          "section_title": "CHEMICAL MEASUREMENTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The resistance is calculated using is 100 k (8) In Fig. 16, the output voltage amplitude thus varies between 143 and 400 mV, which is in the expected range."
+        },
+        {
+          "section_title": "CHEMICAL MEASUREMENTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "For example, for cm specific resistance, the theoretical a fluid with a 100value is resistance distance cm spec k area electrode cm (9) The difference with the measured value in Fig. 16 can be readily expected for a chemical sensor as a result of the condition of the electrodes (oxidation, nonideal etching) and the nonideally parallel layout."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.4,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 1.6
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "buffer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "Finally, a conductometric measurement result is presented in Fig. 16.",
+        "function_summary": "Measured resistance versus specific resistance of buffer solution. Finally, a conductometric measurement result is presented in Fig. 16.",
+        "key_specs": [
+          "400 mV",
+          "100v"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 4,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

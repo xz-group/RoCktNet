@@ -1,0 +1,55 @@
+# A Full-Duplex Line Driver for Gigabit Ethernet with Rail-to-Rail Class-AB Output Stage in 28nm CMOS Hui Pan, Yuan Yao, Mostafa Hammad, Junhua Tan, Karim Abdelhalim, Evelyn Wang, Rick Hsu, Jenny Yu, Joseph Aziz, Derek Tam, Ichiro Fujimori
+
+VENUE
+"2014"
+
+FIGURE NUMBER
+"Fig. 8.6.1. However, simultaneous maxima do not happen between the line current iline and the line voltage vline. This is generally true for transmission lines that have iline = itx – irx = (vtx – vrx)/Z0 (1) across any intersecting plane and vline = vtx + vrx = (itx + irx)Z0 at the intersecting point, where Z0 is the line characteristic impedance, vtx (itx) and vrx (irx) are the voltages (currents) including reflections propagating from the driver and the remote link partner, respectively, to the intersecting plane. When Z0 = source RS = load RL without line attenuation, vtx and vrx have the same amplitude in fullduplex transmission. According to eq. (1), iline = (vtx – vrx)/RL = 0 at peak vline when vtx = vrx = the peak voltage, which is +1V or -1V for 1000BASE-T. Imagine a driver with output current and voltage equal to iline and vline, respectively: output rail-to-rail operation becomes possible with zero line current sourced at maximum line voltage swing, and self-termination is inherent due to equivalence to drivers with passive source or shunt termination. Generation of iline seems impossible because the irx term in iline = itx – irx is presumably unknown from the remote partner. However, due to finite signal bandwidth (BW), irx can be approximated from the received voltage vrx available from the full-duplex transceiver hybrid: irx ~ vrx/RL. The hybrid extracts vrx from vline with output vh = vrx + vleak, where the hybrid leakage vleak = 0 when vtx is completely rejected. To take advantage of duplex current cancellation between itx and irx, iline is generated as a whole from vrx – vtx using a closed-loop Gm circuit (Fig. 8.6.2). According to eq. (1), Gm = -1/RL with Zo = RL. The Gm input voltage vc = vrx – vtx is synthesized by superposition of vline and (–2vtx). The former is sensed by the 2R (>>RL) feedback resistance; the latter is developed by the current DAC (IDAC) output i'tx (<<itx) flowing through 2R. The resulting driver is full duplex as it extracts vrx at the feedback midpoint (hybrid output) while transmitting vtx. At the midpoint vtx is rejected by resistive interpolation between Gm output vtx and Gm input vtx/A ~ (-vtx). When the transmit voltage gain A is normalized: A ~ GmRL = -1, the hybrid leakage of vtx is nulled: vleak = 0, and the impedances are matched: RS = -1/Gm = RL, all simultaneously. Those inherently merged full-duplex functionalities enable rail-to-rail operation and distinguish this driver from other types [1]. For maximum current efficiency, the Gm circuit does not use the popular differential current-steering topology, which wastes common-mode (CM) current in the same amount as the differential-mode (DM) and usually needs"
+
+TYPE
+"Full-Duplex Line Driver"
+
+TECHNOLOGY
+"CMOS, 28nm process"
+
+APPLICATION
+"if"
+
+SUB-BLOCKS
+[
+  "transistor/MOSFET",
+  "current mirror",
+  "transmission line",
+  "output buffer",
+  "bias circuit",
+  "differential pair",
+  "op-amp"
+]
+
+FUNCTION SUMMARY
+"Full-Duplex Line Driver"
+
+METRICS
+[
+  "Process node",
+  "Impedance",
+  "Supply voltage",
+  "Efficiency / ratio"
+]
+
+NUMERICAL PERFORMANCE
+[
+  "28nm",
+  "100Ω",
+  "2V",
+  "2.5V",
+  "24%",
+  "3.3V",
+  "1V",
+  "-1V",
+  "0 w",
+  "100%"
+]
+
+CONFIDENCE
+1.0

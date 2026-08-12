@@ -1,0 +1,279 @@
+{
+  "image": "021",
+  "nodes": [
+    "GND",
+    "VDD",
+    "n0",
+    "n1",
+    "n2",
+    "n3",
+    "n4",
+    "label_net_0",
+    "label_net_1"
+  ],
+  "node_origins": {
+    "GND": [
+      1,
+      9
+    ],
+    "VDD": [
+      7,
+      16,
+      17
+    ],
+    "n0": [
+      0
+    ],
+    "n1": [
+      3
+    ],
+    "n2": [
+      4
+    ],
+    "n3": [
+      5,
+      13
+    ],
+    "n4": [
+      11
+    ],
+    "label_net_0": [
+      6
+    ],
+    "label_net_1": [
+      8
+    ]
+  },
+  "components": [
+    {
+      "name": "M1",
+      "class": "nmos",
+      "bbox_idx": 0,
+      "bbox": [
+        192.95,
+        213.7,
+        240.41,
+        273.66
+      ],
+      "orientation": "l",
+      "pins": {
+        "G": "label_net_0",
+        "D": "n0",
+        "S": "n4",
+        "B": "GND"
+      },
+      "flags": [
+        "g_pin_via_single_bbox_port"
+      ],
+      "red_flags": []
+    },
+    {
+      "name": "M2",
+      "class": "nmos-bulk",
+      "bbox_idx": 1,
+      "bbox": [
+        271.37,
+        363.93,
+        320.27,
+        423.91
+      ],
+      "orientation": "l",
+      "pins": {
+        "G": "n3",
+        "D": "n4",
+        "B": "GND",
+        "S": "GND"
+      },
+      "flags": [
+        "reclassified_to_bulk",
+        "gate_bulk_short_merged"
+      ],
+      "red_flags": []
+    },
+    {
+      "name": "M3",
+      "class": "nmos",
+      "bbox_idx": 2,
+      "bbox": [
+        388.73,
+        214.18,
+        436.56,
+        274.95
+      ],
+      "orientation": "r",
+      "pins": {
+        "G": "label_net_1",
+        "D": "n2",
+        "S": "n4",
+        "B": "GND"
+      },
+      "flags": [
+        "g_pin_via_single_bbox_port"
+      ],
+      "red_flags": []
+    },
+    {
+      "name": "M4",
+      "class": "nmos",
+      "bbox_idx": 3,
+      "bbox": [
+        107.09,
+        361.97,
+        155.12,
+        423.62
+      ],
+      "orientation": "r",
+      "pins": {
+        "G": "n3",
+        "D": "n3",
+        "S": "GND",
+        "B": "GND"
+      },
+      "flags": [],
+      "red_flags": [
+        "g_touches=2_expected=1"
+      ]
+    },
+    {
+      "name": "M5",
+      "class": "pmos",
+      "bbox_idx": 4,
+      "bbox": [
+        231.8,
+        89.4,
+        280.48,
+        148.5
+      ],
+      "orientation": "r",
+      "pins": {
+        "G": "n0",
+        "S": "VDD",
+        "D": "n0",
+        "B": "VDD"
+      },
+      "flags": [],
+      "red_flags": []
+    },
+    {
+      "name": "M6",
+      "class": "pmos",
+      "bbox_idx": 5,
+      "bbox": [
+        106.84,
+        87.8,
+        155.22,
+        148.44
+      ],
+      "orientation": "r",
+      "pins": {
+        "G": "n3",
+        "S": "VDD",
+        "D": "n3",
+        "B": "VDD"
+      },
+      "flags": [
+        "non_g_touches=3_distinct_nodes=2_treated_as_wire_wrap"
+      ],
+      "red_flags": []
+    },
+    {
+      "name": "M7",
+      "class": "pmos",
+      "bbox_idx": 6,
+      "bbox": [
+        349.98,
+        89.19,
+        397.44,
+        149.18
+      ],
+      "orientation": "l",
+      "pins": {
+        "G": "n0",
+        "S": "VDD",
+        "D": "n2",
+        "B": "VDD"
+      },
+      "flags": [
+        "non_g_touches=3_distinct_nodes=2_treated_as_wire_wrap"
+      ],
+      "red_flags": []
+    },
+    {
+      "name": "M8",
+      "class": "pmos",
+      "bbox_idx": 7,
+      "bbox": [
+        521.25,
+        120.49,
+        568.8,
+        180.29
+      ],
+      "orientation": "l",
+      "pins": {
+        "G": "n2",
+        "S": "VDD",
+        "D": "n1",
+        "B": "VDD"
+      },
+      "flags": [],
+      "red_flags": []
+    },
+    {
+      "name": "M9",
+      "class": "nmos",
+      "bbox_idx": 8,
+      "bbox": [
+        521.63,
+        362.34,
+        569.27,
+        423.48
+      ],
+      "orientation": "l",
+      "pins": {
+        "G": "n3",
+        "D": "n1",
+        "S": "GND",
+        "B": "GND"
+      },
+      "flags": [],
+      "red_flags": []
+    },
+    {
+      "name": "C1",
+      "class": "capacitor",
+      "bbox_idx": 9,
+      "bbox": [
+        589.42,
+        257.89,
+        641.35,
+        284.99
+      ],
+      "orientation": null,
+      "pins": {
+        "1": "GND",
+        "2": "n1"
+      },
+      "flags": [],
+      "red_flags": []
+    },
+    {
+      "name": "C2",
+      "class": "capacitor",
+      "bbox_idx": 10,
+      "bbox": [
+        471.32,
+        171.75,
+        498.39,
+        223.11
+      ],
+      "orientation": null,
+      "pins": {
+        "1": "n1",
+        "2": "n2"
+      },
+      "flags": [],
+      "red_flags": []
+    }
+  ],
+  "flags": []
+}

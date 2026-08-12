@@ -1,0 +1,1150 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1088106.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1088106",
+  "generated_at": "2026-07-29T22:00:32",
+  "paper_metadata": {
+    "title": "OC-192 Transmitter and Receiver in Standard 0.18-m CMOS",
+    "authors": [
+      "Jun Cao",
+      "Michael Green",
+      "Afshin Momtaz",
+      "Kambiz Vakilian",
+      "David Chung",
+      "Keh-Chee Jen",
+      "Mario Caresosa",
+      "Associate",
+      "Xin Wang",
+      "Wee-Guan Tan",
+      "Yijun Cai",
+      "Ichiro Fujimori",
+      "Armond Hairapetian"
+    ],
+    "abstract": "This paper presents the first fully integrated SONET OC-192 transmitter and receiver fabricated in a standard 0.18m CMOS process. The transmitter consists of an input data register, 16-b-wide first-in-first-out (FIFO) circuit, clock multiplier unit (CMU), and 16 : 1 multiplexer to give a 10-Gb/s serial output. The receiver integrates an input amplifier for 10-Gb/s data, clock and data recovery circuit (CDR), 1 : 16 demultiplexer, and drivers for low-voltage differential signal (LVDS) outputs. An on-chip LC-type voltage-controlled oscillator (VCO) is employed by both the transmitter and receiver. The chipset operates at multiple data rates (9.95–10.71 Gb/s) with functionality compatible with the multisource agreement (MSA) for 10-Gb transponders. Both chips demonstrate SONET-compliant jitter characteristics. The transmitter 10.66-GHz output clock jitter is 0.065 UI (unit interval, peak-to-peak) over a 50-kHz–80-MHz bandwidth. The receiver jitter tolerance is more than 0.4 UI at high frequencies (4–80 MHz). A high level of integration and low-power consumption is achieved by using a standard CMOS process. The transmitter and receiver dissipate a total power of 1.32 W at 1.8 V and are packaged in a plastic ball grid array with a footprint of 11 11 mm2.",
+    "keywords": [
+      "Clock and data recovery (CDR)",
+      "clock multiplier unit (CMU)",
+      "CMOS",
+      "demultiplexer (DEMUX)",
+      "deserializer",
+      "integrated circuits",
+      "jitter generation",
+      "jitter tolerance",
+      "jitter transfer"
+    ],
+    "doi": "10.1109/JSSC.2002.804336",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2002
+  },
+  "paper_circuit_context": {
+    "circuit_type": "OC-192 Transmitter and Receiver in Standard 0.18-m CMOS",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "varactor",
+      "inductor",
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "cross-coupled pair",
+      "current source",
+      "LC tank / resonator",
+      "output buffer",
+      "switch",
+      "differential pair",
+      "latch",
+      "clock / timing",
+      "pre-amplifier"
+    ],
+    "design_purpose": "",
+    "function_summary": "OC-192 Transmitter and Receiver in Standard 0.18-m CMOS: This paper presents the first fully integrated SONET OC-192 transmitter and receiver fabricated in a standard 0.18m CMOS process.",
+    "key_specs": [
+      "80 MHz",
+      "1.32 W",
+      "1.8 V",
+      "50 kHz",
+      "10 Hz",
+      "667 MHz",
+      "11 GHz",
+      "1.5 GHz",
+      "1.2 GHz",
+      "166 MHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE CONVERGENCE of various data communication technologies into the 10-G domain has directed the efforts of IC designers to develop high-speed, low-power, low-cost and highly integrated circuits for broad-band signals. This work presents the first fully integrated OC-192 transmitter m CMOS, compliant with jitter and receiver chipset in 0.18 specifications for synchronous optical network (SONET) w ..."
+    },
+    {
+      "number": "II",
+      "title": "OC-192 RECEIVER DESIGN",
+      "kind": "design",
+      "page": 1,
+      "text_preview": "The receiver [4] accepts nonreturn-to-zero (NRZ) data at 10.66 Gb/s, extracts the clock from the serial data input, and converts the high-speed data into a 16-b parallel word at 667 MHz. The receiver chip integrates a high-speed data amplifier, the clock-and-data recovery (CDR), a 1-to-16 demultiplexer (DEMUX), and a low-voltage differential signal (LVDS) interface for low-speed clock and data. In ..."
+    },
+    {
+      "number": "III",
+      "title": "TRANSMITTER DESIGN",
+      "kind": "design",
+      "page": 4,
+      "text_preview": "In a transmitter [18], an input register and a first-in/first-out (FIFO) circuit receive 16 parallel channels of data in LVDS format, running at 667 Mb/s. A 16 : 1 multiplexer (MUX) then converts the 16 parallel channels into a serial output channel running at 10.66 Gb/s. A clock multiplier unit (CMU) generates a low-jitter 10.66-GHz on-chip clock signal from a reference clock. A high-speed data o ..."
+    },
+    {
+      "number": "IV",
+      "title": "TRANSMITTER AND RECEIVER MEASUREMENT",
+      "kind": "results",
+      "page": 7,
+      "text_preview": "The chipset was fabricated in a standard 1-poly 6-metal m CMOS process. The chip micrographs of the trans0.18mitter and receiver are shown in Fig. 11(a) and (b), respectively. 2.8 mm , while the receiver is The transmitter die size is 2.5 2.1 mm . The chips operate from a single 1.8-V power 2.5 supply. The nominal power consumption of the transmitter is 450 mW, which is 29% of that of a SiGe imple ..."
+    },
+    {
+      "number": "V",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 9,
+      "text_preview": "A transmitter/receiver chipset for SONET OC-192 applications has been described. The circuits are designed and TABLE II OC-192 TRANSMITTER PERFORMANCE SUMMARY fabricated in a standard 0.18m CMOS process. The receiver extracts the clock from the full-rate serial data, performs the 1 : 16 demultiplexing function, and outputs parallel signals through a LVDS interface. The transmitter synchronizes the ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. (a) OC-192 communication system block diagram. (b) Data eye diagram after transmitted through 95 km of SMF-28 fiber and one optical amplifier.",
+      "caption_bbox": [
+        302.6,
+        441.8,
+        553.7,
+        470.4
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "A typical application of the OC-192 transmitter/receiver chipset is illustrated in Fig. 1(a)."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1(b) shows an example of a CAO et al.: OC-192 TRANSMITTER AND RECEIVER IN STANDARD 0.18m CMOS Fig. 2."
+        },
+        {
+          "section_title": "TRANSMITTER DESIGN",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "As shown in Fig. 1, in typical applications, the transmitter is used as an interface device between the ASIC and the E/O converter to multiplex 16 low-speed channels into one channel running at OC-192 full rate."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 9,
+          "sentence": "As evident from Fig. 1, the interface between the transmitter/receiver and the network processor includes data buses on the circuit board, which quickly attenuate data and are noise-prone."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.5,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:intro": -0.5,
+        "references": 2.0
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) OC-192 communication system block diagram. (b) Data eye diagram after transmitted through 95 km of SMF-28 fiber and one optical amplifier",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.38,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Top-level block diagram of the receiver.",
+      "caption_bbox": [
+        38.1,
+        386.2,
+        195.9,
+        396.9
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1(b) shows an example of a CAO et al.: OC-192 TRANSMITTER AND RECEIVER IN STANDARD 0.18m CMOS Fig. 2."
+        },
+        {
+          "section_title": "OC-192 RECEIVER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The top-level block diagram of the receiver is shown in Fig. 2."
+        },
+        {
+          "section_title": "OC-192 RECEIVER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Receiver CDR architecture. an external control signal (LCKREFB in Fig. 2) is applied."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Top-level block diagram of the receiver",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. CML buffer stages employed in the data amplifier. (a) Conventional CMOS CML buffer. (b) CMOS CML buffer with inductive peaking.",
+      "caption_bbox": [
+        39.6,
+        381.4,
+        290.7,
+        401.0
+      ],
+      "section_title": "II. OC-192 RECEIVER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "OC-192 RECEIVER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The input data amplifier contains cascaded buffer stages based on current mode logic (CML) (Fig. 3)."
+        },
+        {
+          "section_title": "OC-192 RECEIVER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The gain–bandwidth product of the buffer can be optimized by and and tail current the choice of the load resistance (a) (b) Fig. 3."
+        },
+        {
+          "section_title": "OC-192 RECEIVER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "As shown in Fig. 3(b), on-chip spiral inductors and are connected in series with load resistors in the CML circuit."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.3,
+      "relevance_breakdown": {
+        "-conventional": -3.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "inductor",
+          "resistor",
+          "current source",
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "CML buffer stages employed in the data amplifier. (a) Conventional CMOS CML buffer. (b) CMOS CML buffer with inductive peaking",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Receiver CDR architecture.",
+      "caption_bbox": [
+        302.6,
+        285.3,
+        419.9,
+        295.9
+      ],
+      "section_title": "II. OC-192 RECEIVER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "OC-192 RECEIVER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The CDR employs a dual-loop architecture (Fig. 4) where the frequency-locked loop acts as an acquisition aid to the phaselocked loop and is disengaged during normal operation when the CDR is locked to the input serial data."
+        },
+        {
+          "section_title": "OC-192 RECEIVER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The CDR stays in frequency acquisition mode under any of the following conditions: 1) no valid data is detected; 2) internal clock frequency is more than 200 ppm off the reference clock; or 3) IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 12, DECEMBER 2002 Fig. 4."
+        },
+        {
+          "section_title": "TRANSMITTER DESIGN",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The architecture of the CMU is similar to the frequency acquisition loop of the CDR shown in Fig. 4."
+        },
+        {
+          "section_title": "TRANSMITTER DESIGN",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The bandwidth is given where is the charge pump current, by is the VCO gain, is the filter resistor (see Fig. 4), and is the divider ratio."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.1,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "clock and data recovery (CDR)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "resistor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Receiver CDR architecture",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.7,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. (a) A 1 : 16 DEMUX block diagram. (b) A 1 : 2 DEMUX cell.",
+      "caption_bbox": [
+        38.1,
+        291.8,
+        264.2,
+        302.4
+      ],
+      "section_title": "II. OC-192 RECEIVER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "OC-192 RECEIVER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "CAO et al.: OC-192 TRANSMITTER AND RECEIVER IN STANDARD 0.18m CMOS Fig. 5."
+        },
+        {
+          "section_title": "OC-192 RECEIVER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "After being regenerated in the CDR, the 10-Gb/s data is then fed to the 1 : 16 DEMUX, which employs a conventional binary-tree structure constructed by cascaded 1 : 2 DEMUX cells (Fig. 5)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "demultiplexer (DEMUX)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) A 1 : 16 DEMUX block diagram. (b) A 1 : 2 DEMUX cell",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.57,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. (a) CML master–slave DFF. (b) Digital master–slave DFF.",
+      "caption_bbox": [
+        301.1,
+        287.3,
+        516.3,
+        298.0
+      ],
+      "section_title": "II. OC-192 RECEIVER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "OC-192 RECEIVER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The master–slave D-type flip-flop (DFF) circuits used in the high-speed DEMUX stages and the low-speed stages are shown in Fig. 6(a) and (b), respectively."
+        },
+        {
+          "section_title": "OC-192 RECEIVER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Dividers are built by the same DFFs used in the corresponding DEMUX cells in order to match the delay in the clock (a) (b) Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "Dividers are built by the same DFFs used in the corresponding DEMUX cells in order to match the delay in the clock (a) (b) Fig. 6.",
+        "function_summary": "(a) CML master–slave DFF. (b) Digital master–slave DFF. Dividers are built by the same DFFs used in the corresponding DEMUX cells in order to match the delay in the clock (a) (b) Fig. 6.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. LC VCO used in both the transmitter and receiver.",
+      "caption_bbox": [
+        39.6,
+        298.2,
+        231.2,
+        308.8
+      ],
+      "section_title": "II. OC-192 RECEIVER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "OC-192 RECEIVER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 7 shows the VCO with its LC tank formed by MOS varactors and an on-chip spiral inductor."
+        },
+        {
+          "section_title": "OC-192 RECEIVER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "For general considerations of LC-VCO phase noise, a simple heuristic model based on assumptions of linearity and time invariance can be expressed as [13] (1) Fig. 7."
+        },
+        {
+          "section_title": "OC-192 RECEIVER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "A symmetrical layout scheme is adopted for of the model the inductor and it is simulated using a symmetrical in the circuit [Fig. 7]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "varactor",
+          "inductor",
+          "LC tank / resonator"
+        ],
+        "design_purpose": "",
+        "function_summary": "LC VCO used in both the transmitter and receiver",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 5,
+      "caption": "Fig. 8. Top-level block diagram of the transmitter.",
+      "caption_bbox": [
+        38.1,
+        334.8,
+        205.0,
+        345.4
+      ],
+      "section_title": "III. TRANSMITTER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "TRANSMITTER DESIGN",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "A high-speed data output driver is used to drive an CAO et al.: OC-192 TRANSMITTER AND RECEIVER IN STANDARD 0.18m CMOS Fig. 8."
+        },
+        {
+          "section_title": "TRANSMITTER DESIGN",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The top-level block diagram of the chip is shown in Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "transmitter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Top-level block diagram of the transmitter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.57,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 6,
+      "caption": "Fig. 9. (a) A 16 : 1 MUX block diagram. (b) A 2 : 1 MUX cell.",
+      "caption_bbox": [
+        39.6,
+        473.3,
+        247.2,
+        483.9
+      ],
+      "section_title": "III. TRANSMITTER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "TRANSMITTER DESIGN",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The depth of the FIFO is designed to accommodate up to 6 ns of delay variation (a) Fig. 9."
+        },
+        {
+          "section_title": "TRANSMITTER DESIGN",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The data output from the FIFO is then fed to the 16 : 1 MUX, which is based on a set of 2 : 1 multiplexer circuits and uses the binary tree structure shown in Fig. 9(a)."
+        },
+        {
+          "section_title": "TRANSMITTER DESIGN",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The 2 : 1 MUX cell in Fig. 9(b) consists of a selector with two incoming data streams retimed at opposite edges of the clock."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.7,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "multiplexer (MUX)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) A 16 : 1 MUX block diagram. (b) A 2 : 1 MUX cell",
+        "key_specs": [
+          "6 ns"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.67,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 7,
+      "caption": "Fig. 10. Output driver in the transmitter for serial data.",
+      "caption_bbox": [
+        38.1,
+        280.9,
+        220.3,
+        291.5
+      ],
+      "section_title": "III. TRANSMITTER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "TRANSMITTER DESIGN",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "This must be amplified in order to drive an external 50is done using the tandem connection of CML buffers shown in Fig. 10."
+        },
+        {
+          "section_title": "TRANSMITTER DESIGN",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Inductors are employed to CAO et al.: OC-192 TRANSMITTER AND RECEIVER IN STANDARD 0.18m CMOS Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transmitter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "inductor",
+          "output buffer"
+        ],
+        "design_purpose": "This must be amplified in order to drive an external 50is done using the tandem connection of CML buffers shown in Fig. 10.",
+        "function_summary": "Output driver in the transmitter for serial data. This must be amplified in order to drive an external 50is done using the tandem connection of CML buffers shown in Fig. 10.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 7,
+      "caption": "Fig. 11. (a) Transmitter chip micrograph. (b) Receiver chip micrograph.",
+      "caption_bbox": [
+        38.1,
+        670.1,
+        272.9,
+        680.8
+      ],
+      "section_title": "IV. TRANSMITTER AND RECEIVER MEASUREMENT",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "TRANSMITTER DESIGN",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "(a) (b) Fig. 11."
+        },
+        {
+          "section_title": "TRANSMITTER AND RECEIVER MEASUREMENT",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The chip micrographs of the trans0.18mitter and receiver are shown in Fig. 11(a) and (b), respectively. 2.8 mm , while the receiver is The transmitter die size is 2.5 2.1 mm ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-micrograph": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Transmitter chip micrograph. (b) Receiver chip micrograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 7,
+      "caption": "Fig. 12. Test fixture for transmitter and receiver chip set.",
+      "caption_bbox": [
+        301.1,
+        442.9,
+        488.1,
+        453.5
+      ],
+      "section_title": "IV. TRANSMITTER AND RECEIVER MEASUREMENT",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "TRANSMITTER DESIGN",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 12."
+        },
+        {
+          "section_title": "TRANSMITTER AND RECEIVER MEASUREMENT",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "For testing purpose, with small footprints of 11 packaged devices are soldered down on an evaluation board that employs FR-4 as dielectric material (Fig. 12)."
+        },
+        {
+          "section_title": "TRANSMITTER AND RECEIVER MEASUREMENT",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Transmitter Performance The transmitter is tested on the same test fixture as receiver (Figs. 12 and 13)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Test fixture for transmitter and receiver chip set",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 8,
+      "caption": "Fig. 13. Measurement setup for the transmitter and receiver.",
+      "caption_bbox": [
+        39.6,
+        247.7,
+        237.0,
+        258.4
+      ],
+      "section_title": "IV. TRANSMITTER AND RECEIVER MEASUREMENT",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "TRANSMITTER AND RECEIVER MEASUREMENT",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The measurement setup of the OC-192 from receiver and transmitter is shown in Fig. 13."
+        },
+        {
+          "section_title": "TRANSMITTER AND RECEIVER MEASUREMENT",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The deserialized data from the receiver are directly fed to the transmitter that multiplexes the data back Fig. 13."
+        },
+        {
+          "section_title": "TRANSMITTER AND RECEIVER MEASUREMENT",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The data transmission path in Fig. 13 can be varied to test the chipsets performance under different input conditions."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.8,
+      "relevance_breakdown": {
+        "-setup": -2.0,
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measurement setup for the transmitter and receiver",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 8,
+      "caption": "Fig. 14. Receiver recovered clock spectrum.",
+      "caption_bbox": [
+        302.6,
+        258.7,
+        449.6,
+        269.3
+      ],
+      "section_title": "IV. TRANSMITTER AND RECEIVER MEASUREMENT",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "TRANSMITTER AND RECEIVER MEASUREMENT",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 14 shows the spectrum of the 10.66-GHz recovered clock."
+        },
+        {
+          "section_title": "TRANSMITTER AND RECEIVER MEASUREMENT",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Jitter performance of the CDR in the IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 12, DECEMBER 2002 Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Receiver recovered clock spectrum",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 8,
+      "caption": "Fig. 15. Receiver jitter transfer characteristics.",
+      "caption_bbox": [
+        302.6,
+        446.9,
+        456.9,
+        457.5
+      ],
+      "section_title": "IV. TRANSMITTER AND RECEIVER MEASUREMENT",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "TRANSMITTER AND RECEIVER MEASUREMENT",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Jitter of 50 kHz–80 MHz, the jitter generation is 0.38 ps transfer measurement of the recovered clock (Fig. 15) exhibits 3-dB frequency."
+        },
+        {
+          "section_title": "TRANSMITTER AND RECEIVER MEASUREMENT",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Receiver jitter transfer characteristics",
+        "key_specs": [
+          "50 kHz",
+          "80 MHz",
+          "0.38 ps"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 8,
+      "caption": "Fig. 16. Receiver jitter tolerance characteristics.",
+      "caption_bbox": [
+        302.6,
+        634.0,
+        461.8,
+        644.7
+      ],
+      "section_title": "IV. TRANSMITTER AND RECEIVER MEASUREMENT",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "TRANSMITTER AND RECEIVER MEASUREMENT",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Jitter tolerance specifications for SONET OC-192 are exceeded with more than 100% margin as shown in Fig. 16."
+        },
+        {
+          "section_title": "TRANSMITTER AND RECEIVER MEASUREMENT",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Receiver jitter tolerance characteristics",
+        "key_specs": [
+          "100%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 9,
+      "caption": "Fig. 17.",
+      "caption_bbox": [
+        38.1,
+        214.6,
+        62.8,
+        225.3
+      ],
+      "section_title": "IV. TRANSMITTER AND RECEIVER MEASUREMENT",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "TRANSMITTER AND RECEIVER MEASUREMENT",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 17 shows the case where 12 in of FR4 trace was added into the data transmission path."
+        },
+        {
+          "section_title": "TRANSMITTER AND RECEIVER MEASUREMENT",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The resulting eye closure exceeds 0.4 at the input of the receiver and ISI generated by this UI data path is evident from the double edges in input data eye histogram [Fig. 17(a)]."
+        },
+        {
+          "section_title": "TRANSMITTER AND RECEIVER MEASUREMENT",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The 10.66-GHz recovered clock output [Fig. 17(b)] indicates that the ISI is completely rejected by the CAO et al.: OC-192 TRANSMITTER AND RECEIVER IN STANDARD 0.18m CMOS (a) (b) (c) Receiver waveform for (a) input data eye at the end of 12 in of FR-4 traces."
+        },
+        {
+          "section_title": "TRANSMITTER AND RECEIVER MEASUREMENT",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 17."
+        },
+        {
+          "section_title": "TRANSMITTER AND RECEIVER MEASUREMENT",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "TABLE I OC-192 RECEIVER PERFORMANCE SUMMARY CDR and LVDS data and clock output [Fig. 17(c)] is not affected."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.0,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "clock and data recovery (CDR)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "clock and data recovery (CDR)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 9,
+      "caption": "Fig. 18. Transmitter 10.66-GHz output clock spectrum.",
+      "caption_bbox": [
+        301.1,
+        415.8,
+        483.7,
+        426.4
+      ],
+      "section_title": "IV. TRANSMITTER AND RECEIVER MEASUREMENT",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "TRANSMITTER AND RECEIVER MEASUREMENT",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The spectrum of the 10.66-GHz 1 PRBS data aptransmitted clock, in the presence of 2 plied to the parallel LVDS input, is shown in Fig. 18."
+        },
+        {
+          "section_title": "TRANSMITTER AND RECEIVER MEASUREMENT",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The , wide-band data jitter measured on the scope is less than 11 ps ). which includes the scope trigger jitter (approximately 1 ps Fig. 18."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "transmitter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Transmitter 10.66-GHz output clock spectrum",
+        "key_specs": [
+          "11 ps",
+          "1 ps"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 9,
+      "caption": "Fig. 19. Transmitter output data eye diagram.",
+      "caption_bbox": [
+        301.1,
+        609.4,
+        452.2,
+        620.1
+      ],
+      "section_title": "IV. TRANSMITTER AND RECEIVER MEASUREMENT",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "TRANSMITTER AND RECEIVER MEASUREMENT",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The output eye dia667 MHz with 0.005 UI gram for the 10.66-Gb/s data is shown in Fig. 19."
+        },
+        {
+          "section_title": "TRANSMITTER AND RECEIVER MEASUREMENT",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 19."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transmitter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Transmitter output data eye diagram",
+        "key_specs": [
+          "667 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 4,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

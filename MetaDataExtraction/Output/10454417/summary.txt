@@ -1,0 +1,72 @@
+# 1.2 Racing Down the Slopes of Moore’s Law Bram Nauta
+
+VENUE
+"2024"
+
+DOI
+"10.1109/ISSCC49657.2024.10454417"
+
+FIGURE NUMBER
+"Figure 1.2.8. In this continuous-time sigma-delta converter, the input is mostly a resistor connected to virtual ground at typically half the supply voltage. The internal DAC feedback current (IDAC) sinks or sources the input current through this resistor for in-band frequencies. Assuming an input voltage swing VS, the resistor determines the required input current. This resistor also generates noise, and it is assumed that this noise is lowpass ﬁltered up to the ADC signal bandwidth BW before sampling occurs. The fundamental lower limit of power dissipation for a driver with resistive load differs only by a scale factor of order 1 from (1). The DAC in the sigma-delta modulator fundamentally needs power from the ADC supply to source the input current, so the fundamental lower limit of power dissipation for the input driver is of the same magnitude as the rest of the ADC (DAC part)."
+
+TYPE
+"analog-to-digital converter (ADC)"
+
+TECHNOLOGY
+"CMOS, FINFET, 65nm process"
+
+APPLICATION
+"rf, radio frequency, wireless, 5g, biomedical, thz, baseband, if"
+
+SUB-BLOCKS
+[
+  "inductor",
+  "capacitor",
+  "resistor",
+  "transistor/MOSFET",
+  "current source",
+  "transformer",
+  "output buffer",
+  "mixer",
+  "switch",
+  "differential pair",
+  "op-amp",
+  "latch",
+  "clock / timing"
+]
+
+FUNCTION SUMMARY
+"circuit"
+
+DESIGN PURPOSE
+"Today, only 5% of the effective area is used for logic, while ﬁlling the gaps and 3D tiers of transistors may further increase transistor count. ) Figure 1.2.4: Calculation of the fundamental minimal power to achieve a signal on a capacitor for a given signal-to-noise ratio and frequency [11]."
+
+METRICS
+[
+  "Gain",
+  "Process node",
+  "Efficiency / ratio"
+]
+
+NUMERICAL PERFORMANCE
+[
+  "30dB",
+  "65nm",
+  "22nm",
+  "50nm",
+  "3nm",
+  "16nm",
+  "5nm",
+  "4nm",
+  "100nm",
+  "0.8%"
+]
+
+CONFIDENCE
+0.43
+
+WARNINGS
+[
+  "Recommended figure caption does not explicitly mention a schematic/topology/circuit; please confirm manually.",
+  "Recommended figure was classified as 'other', not a schematic; manual confirmation strongly recommended."
+]

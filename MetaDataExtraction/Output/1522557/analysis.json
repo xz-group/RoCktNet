@@ -1,0 +1,1728 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1522557.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1522557",
+  "generated_at": "2026-07-29T22:03:10",
+  "paper_metadata": {
+    "title": "Highly Integrated 60 GHz Transmitter and Receiver MMICs in a GaAs pHEMT Technology",
+    "authors": [
+      "Sten E. Gunnarsson",
+      "Camilla Kärnfelt",
+      "Herbert Zirath",
+      "Rumen Kozhuharov",
+      "Dan Kuylenstierna",
+      "Arne Alping",
+      "Christian Fager"
+    ],
+    "abstract": "Highly integrated transmitter and receiver MMICs 183 GHz have been designed in a commercial 0.15 m, 88 GHz millimeter-wave (mm-wave) bands. MAX GaAs pHEMT MMIC process and characterized on both The mm-wave band has several advantages such as large chip and system level. These chips show the highest level of integraspectral capacity and compact and light equipment for the tion yet presented in the 60 GHz band and are true multipurpose 60 GHz band where the oxygen absorption has its maximum, front-end designs. The system operates with an LO signal in the 10–15 dB/km. Hence, the 60 GHz band also benefits of reduced range 7–8 GHz. This LO signal is multiplied in an integrated multiply-by-eight (X8) LO chain, resulting in an IF center frequency of co-channel interference providing dense, short reach ( 1 km) 2.5 GHz. Although the chips are inherently multipurpose designs, wireless communication due to shorter cell re-use distance they are especially suitable for high-speed wireless data transmis- [1], as well as access to worldwide allocated nonregulatory sion due to their very broadband IF characteristics. frequency bands [2]. The single-chip transmitter MMIC consists of a balanced resisToday, several companies provide 60 GHz data links for tive mixer with an integrated ultra-wideband IF balun, a threestage power amplifier, and the X8 LO chain. The X8 is a multifuncGigabit Ethernet (1.25 Gbit/s) bridges between LAN nettion design by itself consisting of a quadrupler, a feedback ampliworks.1 It is expected that the use of 60 GHz technologies will fier, a doubler, and a buffer amplifier. The transmitter chip delivers extend to other fixed wireless areas, such as access networks. 1.5 dBm over the RF frequency range of 54–61 GHz with a 3.7 To achieve telecom carrier class link availability (99.999%) it peak output power of 5.2 dBm at 57 GHz. might be necessary to reduce the impact of heavy rain using a The single-chip receiver MMIC contains a three-stage low-noise amplifier, an image reject mixer with an integrated ultra-wideband Hybrid Free-Space Optical (FSO) Radio (HFR) system [3]. IF hybrid and the same X8 as used in the transmitter chip. The Inter-vehicle and roadside communication in Intelligent receiver chip has 7.1 1.5 dB gain between 55 and 63 GHz, more Transport System (ITS) applications, as well as the quasi-celthan 20 dB of image rejection ratio between 59.5 and 64.5 GHz, lular Mobile Broadband Systems (MBS) [4], are other areas 10.5 dB of noise figure, and 11 dBm of input-referred third-order where 60 GHz technologies will be implemented in the future. intercept point (IIP3). The ultimate application area would certainly be for 60 GHz",
+    "keywords": [
+      "Balanced resistive mixer",
+      "GaAs",
+      "high data-rate"
+    ],
+    "doi": "10.1109/JSSC.2005.857366",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2005
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Highly Integrated 60 GHz Transmitter and Receiver MMICs in a GaAs pHEMT Technology",
+    "technology": "CMOS, SIGE, GAAS, PHEMT, MMIC",
+    "application_domain": "millimeter-wave, mm-wave, microwave, rf, wireless, 60 ghz, wlan, ultra-wideband, if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "balun",
+      "output buffer",
+      "mixer",
+      "transistor/MOSFET",
+      "LC tank / resonator",
+      "transformer",
+      "bias circuit"
+    ],
+    "design_purpose": "The transmitter chip delivers extend to other fixed wireless areas, such as access networks. 1.5 dBm over the RF frequency range of 54–61 GHz with a 3.7 To achieve telecom carrier class link availability (99.999%) it peak output power of 5.2 dBm at 57 GHz. might be necessary to reduce the impact of heavy rain using a ...",
+    "function_summary": "Highly Integrated 60 GHz Transmitter and Receiver MMICs in a GaAs pHEMT Technology: The transmitter chip delivers extend to other fixed wireless areas, such as access networks. 1.5 dBm over the RF frequency range of 54–61 GHz with a 3.7 To achieve telecom carrier class link availability (99.999%) it peak output power of 5.2 dBm at 57 GHz. might be necessary ...",
+    "key_specs": [
+      "60 GHz",
+      "183 GHz",
+      "88 GHz",
+      "15 dB",
+      "8 GHz",
+      "2.5 GHz",
+      "1.5 dBm",
+      "61 GHz",
+      "99.999%",
+      "5.2 dBm"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "A KEY TERM for future communication networks is \"triple play,\" i.e., providing a simultaneous service for voice, video, and data. This requires access networks with very high capacity. High data-rate requires broad frequency bands, Manuscript received February 24, 2005; revised June 15, 2005. This work was carried out in the competence center CHACH (Chalmers Center for High-Speed Technology) in a  ..."
+    },
+    {
+      "number": "II",
+      "title": "TX AND RX CHIP OVERVIEW",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "The TX chip consists of an X8 LO chain, a balanced resistive mixer, and a three-stage ampliﬁer, which will be described later in this paper. The block diagram is shown in Fig. 1. The balanced resistive mixer produces two sidebands and it is assumed that the unwanted sideband is removed by ﬁltering in an external ﬁlter located after the three-stage ampliﬁer in the TX chip. The RX chip is designed i ..."
+    },
+    {
+      "number": "III",
+      "title": "LOCAL SIGNAL GENERATION",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "In order to transmit and receive wireless signals with modulation such as QPSK or 8-PSK, low phase noise characteris90 dBc/Hz at 100 kHz offset is required tics with less than ) to obtain a transmission with low bit error rate (BER [15]. The signal generation in the mm-wave bands can be realized either directly by a fundamental frequency oscillator or by using lower frequency oscillators in conjun ..."
+    },
+    {
+      "number": "IV",
+      "title": "MIXERS",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "A. Balanced Resistive Mixer In the TX chip, a balanced resistive mixer (BRM) is used. A balanced mixer topology is chosen since it offers a high LO to RF isolation over a large bandwidth compared to other mixer topologies. The concept of the BRM has been described thoroughly in [19] and [20]. A schematic of the BRM is found in Fig. 8. To facilitate the integration of the full TX chip into one chip ..."
+    },
+    {
+      "number": "V",
+      "title": "THREE-STAGE AMPLIFIER",
+      "kind": "other",
+      "page": 6,
+      "text_preview": "A three-stage general purpose ampliﬁer is used as an LNA in the receiver and as a post-ampliﬁer in the transmitter. The ampliﬁer consists of three feedback stabilized ampliﬁer stages designed to give a ﬂat frequency response from 50 to 65 GHz with 10 dB. The schematic input and output matching better than is shown in Fig. 17 and a photograph of a breakout of the ampliﬁer is found in Fig. 18. The p ..."
+    },
+    {
+      "number": "VI",
+      "title": "TX CHIP",
+      "kind": "other",
+      "page": 7,
+      "text_preview": "The TX chip consists of the X8, the BRM, and the three-stage ampliﬁer, as described in Section V. A photograph of the circuit 3.5 mm . is shown in Fig. 21. The chip measures 5.0 The bias network from the X8 is reused while the biasing of the three-stage ampliﬁer and the mixer is incorporated. The biasing scheme is now as follows: the two drain biases of the quadrupler are connected together; the F ..."
+    },
+    {
+      "number": "VII",
+      "title": "RX CHIP",
+      "kind": "other",
+      "page": 8,
+      "text_preview": "The RX chip is designed in a similar way as the TX chip and consists of the X8 LO-chain, the IRM, and the three-stage ampliﬁer, as described previously. A photograph of the circuit 5 mm . is presented in Fig. 26. The chip measures 5.7 The bias network used in the RX chip is similar to the one used in the TX chip. A seven-ﬁnger DC probe is used to apply the DC to the octagonal DC pads placed in the ..."
+    },
+    {
+      "number": "VIII",
+      "title": "SYSTEM-LEVEL MEASUREMENTS",
+      "kind": "results",
+      "page": 9,
+      "text_preview": "Initial system tests were performed to evaluate the data transmission capabilities between the TX and RX chips. The TX and RX chips were mounted in two separate probe stations and interconnected via a coaxial cable and a variable attenuator, representing the path loss in a real application (Fig. 31). The modulated TX input signal at 2.5 GHz is provided by an Agilent E4438 ESG vector signal generat ..."
+    },
+    {
+      "number": "IX",
+      "title": "DISCUSSION",
+      "kind": "results",
+      "page": 9,
+      "text_preview": "The measured performance of the presented TX and RX chips are summarized in Tables V and VI, respectively. The default values for RF, LO, and IF frequencies were 60 GHz, 7.1875 GHz (giving 57.5 GHz output frequency from the X8), and 2.5 GHz, respectively. IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 11, NOVEMBER 2005 is given for 200 Mb/s 16-QAM modulated data. TX input power is 15 dBm with  ..."
+    },
+    {
+      "number": "X",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 10,
+      "text_preview": "In this work, 60 GHz MMIC transmitter and receiver chips, designed in a pHEMT technology, have been simulated, manufactured, and experimentally veriﬁed. The transmitter and receiver chips show the highest level of integration yet reported. The single-chip transmitter MMIC consists of a balanced resistive mixer with an integrated ultra-wideband IF balun, a threestage power ampliﬁer, and a multiply- ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. TX chip circuit block diagram.",
+      "caption_bbox": [
+        38.1,
+        197.6,
+        166.4,
+        205.5
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "GUNNARSSON et al.: HIGHLY INTEGRATED 60 GHz TRANSMITTER AND RECEIVER MMICs IN A GaAs pHEMT TECHNOLOGY Fig. 1."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The TX chip consists of a three-stage RF ampliﬁer, a balanced mixer with integrated IF-balun, and a multiply-by-eight (X8) LO chain (Fig. 1)."
+        },
+        {
+          "section_title": "TX AND RX CHIP OVERVIEW",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The block diagram is shown in Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.7,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "+circuit": 1.0,
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS, SIGE, GAAS, PHEMT, MMIC",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, wireless, 60 ghz, wlan, ultra-wideband, if",
+        "sub_blocks": [
+          "balun",
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "TX chip circuit block diagram",
+        "key_specs": [
+          "60 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.43,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. RX chip circuit block diagram.",
+      "caption_bbox": [
+        301.1,
+        203.8,
+        429.9,
+        211.8
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The RX chip includes a three-stage low-noise ampliﬁer (LNA), an image reject mixer (IRM) with integrated IF hybrid, and the same X8 LO chain as the TX chip (Fig. 2)."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "System-level measurements with the TX and RX 2WIN PP15-20 0.15 m power pHEMT process, http://www.winfoundry.com Fig. 2."
+        },
+        {
+          "section_title": "TX AND RX CHIP OVERVIEW",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The block diagram is shown in Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.7,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "+circuit": 1.0,
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS, SIGE, GAAS, PHEMT, MMIC",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, wireless, 60 ghz, wlan, ultra-wideband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "RX chip circuit block diagram",
+        "key_specs": [
+          "2W"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.43,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Schematic of the multiply-by-eight (X8) LO chain.",
+      "caption_bbox": [
+        39.6,
+        229.0,
+        233.0,
+        237.0
+      ],
+      "section_title": "III. LOCAL SIGNAL GENERATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "LOCAL SIGNAL GENERATION",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "A schematic and photograph of a breakout of the X8 is shown in Figs. 3 and 4, respectively."
+        },
+        {
+          "section_title": "LOCAL SIGNAL GENERATION",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "Highly Integrated 60 GHz Transmitter and Receiver MMICs in a GaAs pHEMT Technology",
+        "technology": "CMOS, SIGE, GAAS, PHEMT, MMIC",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, wireless, 60 ghz, wlan, ultra-wideband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematic of the multiply-by-eight (X8) LO chain",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.65,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4.",
+      "caption_bbox": [
+        39.6,
+        396.2,
+        60.4,
+        404.1
+      ],
+      "section_title": "III. LOCAL SIGNAL GENERATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "LOCAL SIGNAL GENERATION",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The chip measures 5.0 1.6 mm Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.4,
+      "relevance_breakdown": {
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Highly Integrated 60 GHz Transmitter and Receiver MMICs in a GaAs pHEMT Technology",
+        "technology": "CMOS, SIGE, GAAS, PHEMT, MMIC",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, wireless, 60 ghz, wlan, ultra-wideband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.03,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Conversion gain and efﬁciency versus output LO frequency of the X8.",
+      "caption_bbox": [
+        302.6,
+        596.4,
+        553.7,
+        604.3
+      ],
+      "section_title": "III. LOCAL SIGNAL GENERATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "LOCAL SIGNAL GENERATION",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 5."
+        },
+        {
+          "section_title": "LOCAL SIGNAL GENERATION",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The input LO power was 0 dBm. and are shown in Fig. 5."
+        },
+        {
+          "section_title": "LOCAL SIGNAL GENERATION",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The efﬁciency in the X8 is calculated and plotted in Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Highly Integrated 60 GHz Transmitter and Receiver MMICs in a GaAs pHEMT Technology",
+        "technology": "CMOS, SIGE, GAAS, PHEMT, MMIC",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, wireless, 60 ghz, wlan, ultra-wideband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Conversion gain and efﬁciency versus output LO frequency of the X8",
+        "key_specs": [
+          "0 dBm"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Phase noise measured at the output of the X8 at 100 kHz offset from the carrier. The input signal phase noise is 111.2 dBc/Hz.",
+      "caption_bbox": [
+        38.1,
+        224.2,
+        289.1,
+        241.1
+      ],
+      "section_title": "III. LOCAL SIGNAL GENERATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "LOCAL SIGNAL GENERATION",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The efﬁciency is calculated by % (1) GUNNARSSON et al.: HIGHLY INTEGRATED 60 GHz TRANSMITTER AND RECEIVER MMICs IN A GaAs pHEMT TECHNOLOGY Fig. 6."
+        },
+        {
+          "section_title": "LOCAL SIGNAL GENERATION",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The phase noise at the X8 output was then measured and is plotted in Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-phase noise": -2.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS, SIGE, GAAS, PHEMT, MMIC",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, wireless, 60 ghz, wlan, ultra-wideband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Phase noise measured at the output of the X8 at 100 kHz offset from the carrier. The input signal phase noise is 111.2 dBc/Hz",
+        "key_specs": [
+          "60 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. 8 = 58:8 GHz, f7th = 7:35 7 = 51:45 GHz.",
+      "caption_bbox": [
+        38.1,
+        418.8,
+        201.0,
+        435.7
+      ],
+      "section_title": "IV. MIXERS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "LOCAL SIGNAL GENERATION",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Output power of the 8th and 7th harmonics of the X8, f8th = 7:35 Fig. 7. 8 = 58:8 GHz, f7th = 7:35 7 = 51:45 GHz. where denotes the output power of the 8th hardenotes the power of the fundamental input monic signal, frequency, and is the dissipated power in the circuit."
+        },
+        {
+          "section_title": "LOCAL SIGNAL GENERATION",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "In Fig. 7, the measured output power of the 8th and 7th hardBm and the LO fremonic of the X8 is plotted when quency is 7.35 GHz."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Highly Integrated 60 GHz Transmitter and Receiver MMICs in a GaAs pHEMT Technology",
+        "technology": "CMOS, SIGE, GAAS, PHEMT, MMIC",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, wireless, 60 ghz, wlan, ultra-wideband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "8 = 58:8 GHz, f7th = 7:35 7 = 51:45 GHz",
+        "key_specs": [
+          "8 GHz",
+          "45 GHz",
+          "7.35 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. Schematic of the balanced resistive mixer (BRM).",
+      "caption_bbox": [
+        301.1,
+        334.2,
+        490.1,
+        342.1
+      ],
+      "section_title": "III. LOCAL SIGNAL GENERATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "LOCAL SIGNAL GENERATION",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The saturated output power is 8.4 dBm and TABLE II SUMMARY OF MEASURED RESULTS FOR THE X8 Fig. 8."
+        },
+        {
+          "section_title": "MIXERS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "A schematic of the BRM is found in Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "references": 0.8
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS, SIGE, GAAS, PHEMT, MMIC",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, wireless, 60 ghz, wlan, ultra-wideband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Schematic of the balanced resistive mixer (BRM)",
+        "key_specs": [
+          "8.4 dBm"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.45,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. Schematic of the second-order lattice balun (SOLB) used at the IF port.",
+      "caption_bbox": [
+        39.6,
+        166.8,
+        290.6,
+        174.8
+      ],
+      "section_title": "IV. MIXERS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MIXERS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The schematic of the SOLB is shown in Fig. 9, and its layout is seen 0.65 mm ."
+        },
+        {
+          "section_title": "MIXERS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The LO signal is applied to the gates after being split and Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "references": 0.8
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "balun",
+        "technology": "CMOS, SIGE, GAAS, PHEMT, MMIC",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, wireless, 60 ghz, wlan, ultra-wideband, if",
+        "sub_blocks": [
+          "balun"
+        ],
+        "design_purpose": "",
+        "function_summary": "Schematic of the second-order lattice balun (SOLB) used at the IF port",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.45,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10. Breakout of the balanced resistive mixer design with integrated IF balun. The chip measures 2.0 1.3 mm .",
+      "caption_bbox": [
+        39.6,
+        310.5,
+        290.6,
+        327.4
+      ],
+      "section_title": "IV. MIXERS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MIXERS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Regarding to the right in Fig. 10."
+        },
+        {
+          "section_title": "MIXERS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "A photograph of a breakout of the BRM is shown in Fig. 10."
+        },
+        {
+          "section_title": "MIXERS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS, SIGE, GAAS, PHEMT, MMIC",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, wireless, 60 ghz, wlan, ultra-wideband, if",
+        "sub_blocks": [
+          "balun",
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Breakout of the balanced resistive mixer design with integrated IF balun. The chip measures 2.0 1.3 mm",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 4,
+      "caption": "Fig. 11. Conversion loss dependence versus RF frequency and LO power for = 2:5 GHz. the balanced resistive mixer, f",
+      "caption_bbox": [
+        39.6,
+        511.6,
+        290.7,
+        528.5
+      ],
+      "section_title": "IV. MIXERS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MIXERS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 11."
+        },
+        {
+          "section_title": "MIXERS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The mixer is biased just below 1.1 V for lowest conversion loss. the pinch-off voltage, i.e., In Fig. 11, the mixer’s conversion loss is plotted from 58.5 to 64.5 GHz with 0, 5, and 10 dBm LO power and an IF power of 1.5 dB over the frequency 5 dBm."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS, SIGE, GAAS, PHEMT, MMIC",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, wireless, 60 ghz, wlan, ultra-wideband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Conversion loss dependence versus RF frequency and LO power for = 2:5 GHz. the balanced resistive mixer, f",
+        "key_specs": [
+          "1.1 V",
+          "64.5 GHz",
+          "10 dBm",
+          "1.5 dB",
+          "5 dBm"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 4,
+      "caption": "Fig. 12. LO to RF isolation versus IF power and LO power for the balanced = 60 GHz. resistive mixer, f",
+      "caption_bbox": [
+        302.6,
+        233.7,
+        553.7,
+        250.6
+      ],
+      "section_title": "IV. MIXERS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MIXERS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 11, NOVEMBER 2005 Fig. 12."
+        },
+        {
+          "section_title": "MIXERS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "In Fig. 12, the LO to RF isolation is measured versus IF power, again varying the LO power from 0 to 10 dBm."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS, SIGE, GAAS, PHEMT, MMIC",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, wireless, 60 ghz, wlan, ultra-wideband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "LO to RF isolation versus IF power and LO power for the balanced = 60 GHz. resistive mixer, f",
+        "key_specs": [
+          "10 dBm"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 5,
+      "caption": "Fig. 13. Schematic of the image reject mixer (IRM).",
+      "caption_bbox": [
+        38.1,
+        215.9,
+        211.3,
+        223.9
+      ],
+      "section_title": "IV. MIXERS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MIXERS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "This allows the system GUNNARSSON et al.: HIGHLY INTEGRATED 60 GHz TRANSMITTER AND RECEIVER MMICs IN A GaAs pHEMT TECHNOLOGY Fig. 13."
+        },
+        {
+          "section_title": "MIXERS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The IRM consists of two single resistive pHEMT mixers, two RF ﬁlters, two IF ﬁlters, a Wilkinson power splitter, a branch line coupler, and an IF quadrature power combiner used as IF hybrid (Fig. 13)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "references": 0.8
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS, SIGE, GAAS, PHEMT, MMIC",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, wireless, 60 ghz, wlan, ultra-wideband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "This allows the system GUNNARSSON et al.: HIGHLY INTEGRATED 60 GHz TRANSMITTER AND RECEIVER MMICs IN A GaAs pHEMT TECHNOLOGY Fig. 13.",
+        "function_summary": "Schematic of the image reject mixer (IRM). This allows the system GUNNARSSON et al.: HIGHLY INTEGRATED 60 GHz TRANSMITTER AND RECEIVER MMICs IN A GaAs pHEMT TECHNOLOGY Fig. 13.",
+        "key_specs": [
+          "60 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.45,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 5,
+      "caption": "Fig. 14. Schematic of the lumped quadrature power splitter (LQPS) used as quadrature combiner at the IF port.",
+      "caption_bbox": [
+        38.1,
+        358.0,
+        289.2,
+        375.0
+      ],
+      "section_title": "IV. MIXERS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MIXERS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 14."
+        },
+        {
+          "section_title": "MIXERS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The schematics of the LQPS is shown in Fig. 14, and its layout is seen in the middle of Fig. 15. 0.52 mm ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "Highly Integrated 60 GHz Transmitter and Receiver MMICs in a GaAs pHEMT Technology",
+        "technology": "CMOS, SIGE, GAAS, PHEMT, MMIC",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, wireless, 60 ghz, wlan, ultra-wideband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematic of the lumped quadrature power splitter (LQPS) used as quadrature combiner at the IF port",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.45,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 5,
+      "caption": "Fig. 15. . mm",
+      "caption_bbox": [
+        301.1,
+        291.8,
+        327.0,
+        308.7
+      ],
+      "section_title": "IV. MIXERS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MIXERS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The schematics of the LQPS is shown in Fig. 14, and its layout is seen in the middle of Fig. 15. 0.52 mm ."
+        },
+        {
+          "section_title": "MIXERS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "A photograph of a breakout of the IRM is shown in Fig. 15."
+        },
+        {
+          "section_title": "MIXERS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The chip measures 3.3 2.8 Fig. 15. . mm Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Highly Integrated 60 GHz Transmitter and Receiver MMICs in a GaAs pHEMT Technology",
+        "technology": "CMOS, SIGE, GAAS, PHEMT, MMIC",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, wireless, 60 ghz, wlan, ultra-wideband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "mm",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 5,
+      "caption": "Fig. 16. Conversion loss and image rejection ratio versus IF frequency for the = 57:5 GHz. image reject mixer, f",
+      "caption_bbox": [
+        301.1,
+        487.5,
+        552.2,
+        504.4
+      ],
+      "section_title": "IV. MIXERS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MIXERS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The chip measures 3.3 2.8 Fig. 15. . mm Fig. 16."
+        },
+        {
+          "section_title": "MIXERS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The measured are plotted in Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS, SIGE, GAAS, PHEMT, MMIC",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, wireless, 60 ghz, wlan, ultra-wideband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Conversion loss and image rejection ratio versus IF frequency for the = 57:5 GHz. image reject mixer, f",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 6,
+      "caption": "Fig. 17. Schematic of the three-stage ampliﬁer.",
+      "caption_bbox": [
+        39.6,
+        228.9,
+        196.7,
+        236.9
+      ],
+      "section_title": "IV. MIXERS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MIXERS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The IRM shows excellent wide-band IF performance with a 1 dB bandwidth as high as 2.0 GHz, between Fig. 17."
+        },
+        {
+          "section_title": "THREE-STAGE AMPLIFIER",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "The schematic input and output matching better than is shown in Fig. 17 and a photograph of a breakout of the ampliﬁer is found in Fig. 18."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "Highly Integrated 60 GHz Transmitter and Receiver MMICs in a GaAs pHEMT Technology",
+        "technology": "CMOS, SIGE, GAAS, PHEMT, MMIC",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, wireless, 60 ghz, wlan, ultra-wideband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematic of the three-stage ampliﬁer",
+        "key_specs": [
+          "1 dB",
+          "2.0 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.45,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 6,
+      "caption": "Fig. 18. 1.5 mm .",
+      "caption_bbox": [
+        39.6,
+        391.3,
+        70.4,
+        408.2
+      ],
+      "section_title": "IV. MIXERS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MIXERS",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The chip measures 3.0 Fig. 18. 1.5 mm . 1.2 and 3.2 GHz, and the IRR better than 20 dB over a 1.5 GHz IF bandwidth, extending from 1.75 to 3.25 GHz."
+        },
+        {
+          "section_title": "THREE-STAGE AMPLIFIER",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "The schematic input and output matching better than is shown in Fig. 17 and a photograph of a breakout of the ampliﬁer is found in Fig. 18."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Highly Integrated 60 GHz Transmitter and Receiver MMICs in a GaAs pHEMT Technology",
+        "technology": "CMOS, SIGE, GAAS, PHEMT, MMIC",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, wireless, 60 ghz, wlan, ultra-wideband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "1.5 mm",
+        "key_specs": [
+          "3.2 GHz",
+          "20 dB",
+          "1.5 GHz",
+          "3.25 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 6,
+      "caption": "Fig. 19. Simulated and measured gain of the ampliﬁer.",
+      "caption_bbox": [
+        302.6,
+        395.9,
+        482.9,
+        403.8
+      ],
+      "section_title": "IV. MIXERS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "THREE-STAGE AMPLIFIER",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "The output matching network, with IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 11, NOVEMBER 2005 Fig. 19."
+        },
+        {
+          "section_title": "THREE-STAGE AMPLIFIER",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "The S-parameters are plotted in Figs. 19 and 20."
+        },
+        {
+          "section_title": "TX CHIP",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "This is mainly an effect of the three-stage ampliﬁer’s gain curve dropping after 60 GHz, as seen in Fig. 19."
+        },
+        {
+          "section_title": "RX CHIP",
+          "section_kind": "other",
+          "page": 8,
+          "sentence": "The measured drop in gain above 64 GHz originates from the frequency response of the three-stage ampliﬁer as seen in Fig. 19. and measured IRR In Fig. 28, the measured and simulated are plotted versus IF frequency."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.4,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "-measured": -3.0,
+        "references": 1.6
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Highly Integrated 60 GHz Transmitter and Receiver MMICs in a GaAs pHEMT Technology",
+        "technology": "CMOS, SIGE, GAAS, PHEMT, MMIC",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, wireless, 60 ghz, wlan, ultra-wideband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated and measured gain of the ampliﬁer",
+        "key_specs": [
+          "60 GHz",
+          "64 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 20,
+      "label": "Fig. 20",
+      "page": 6,
+      "caption": "Fig. 20. Measured input (S11) and output (S22) reﬂection coefﬁcients.",
+      "caption_bbox": [
+        302.6,
+        567.2,
+        533.2,
+        575.2
+      ],
+      "section_title": "V. THREE-STAGE AMPLIFIER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "THREE-STAGE AMPLIFIER",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "Fig. 20."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.6,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "references": 0.4
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Highly Integrated 60 GHz Transmitter and Receiver MMICs in a GaAs pHEMT Technology",
+        "technology": "CMOS, SIGE, GAAS, PHEMT, MMIC",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, wireless, 60 ghz, wlan, ultra-wideband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured input (S11) and output (S22) reﬂection coefﬁcients",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 21,
+      "label": "Fig. 21",
+      "page": 7,
+      "caption": "Fig. 21. Transmitter chip. The DC bias network is placed in the middle of the chip with extra pads for ﬂip-chip assembly added in the periphery of the chip. The chip measures 5.0 3.5 mm .",
+      "caption_bbox": [
+        38.1,
+        246.9,
+        289.2,
+        272.8
+      ],
+      "section_title": "VI. TX CHIP",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "THREE-STAGE AMPLIFIER",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "GUNNARSSON et al.: HIGHLY INTEGRATED 60 GHz TRANSMITTER AND RECEIVER MMICs IN A GaAs pHEMT TECHNOLOGY Fig. 21."
+        },
+        {
+          "section_title": "TX CHIP",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "A photograph of the circuit 3.5 mm . is shown in Fig. 21."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transmitter",
+        "technology": "CMOS, SIGE, GAAS, PHEMT, MMIC",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, wireless, 60 ghz, wlan, ultra-wideband, if",
+        "sub_blocks": [
+          "bias circuit"
+        ],
+        "design_purpose": "",
+        "function_summary": "Transmitter chip. The DC bias network is placed in the middle of the chip with extra pads for ﬂip-chip assembly added in the periphery of the chip. The chip measures 5.0 3.5 mm",
+        "key_specs": [
+          "60 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 22,
+      "label": "Fig. 22",
+      "page": 7,
+      "caption": "Fig. 22. 2:5 GHz.",
+      "caption_bbox": [
+        301.1,
+        226.4,
+        331.5,
+        243.3
+      ],
+      "section_title": "V. THREE-STAGE AMPLIFIER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TX CHIP",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "In Fig. 22, measured and simulated maximum output power related to the RF frequency band is shown."
+        },
+        {
+          "section_title": "TX CHIP",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "The measured 3 dB bandwidth = Maximum output power versus RF frequency for the TX chip, f Fig. 22. 2:5 GHz. = Maximum output power versus IF frequency for the TX chip, f Fig. 23. 7:1875 GHz 8 = 57:5 GHz. ranges from 54 to 61 GHz with the maximum measured output power of 5.2 dBm at 57 GHz."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Highly Integrated 60 GHz Transmitter and Receiver MMICs in a GaAs pHEMT Technology",
+        "technology": "CMOS, SIGE, GAAS, PHEMT, MMIC",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, wireless, 60 ghz, wlan, ultra-wideband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "2:5 GHz",
+        "key_specs": [
+          "3 dB",
+          "5 GHz",
+          "1875 GHz",
+          "61 GHz",
+          "5.2 dBm",
+          "57 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 23,
+      "label": "Fig. 23",
+      "page": 7,
+      "caption": "Fig. 23. 7:1875 GHz 8 = 57:5 GHz.",
+      "caption_bbox": [
+        301.1,
+        406.9,
+        404.6,
+        423.9
+      ],
+      "section_title": "VI. TX CHIP",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TX CHIP",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "The measured 3 dB bandwidth = Maximum output power versus RF frequency for the TX chip, f Fig. 22. 2:5 GHz. = Maximum output power versus IF frequency for the TX chip, f Fig. 23. 7:1875 GHz 8 = 57:5 GHz. ranges from 54 to 61 GHz with the maximum measured output power of 5.2 dBm at 57 GHz."
+        },
+        {
+          "section_title": "TX CHIP",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "The measured and simulated maximum output power versus IF frequency is shown in Fig. 23."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Highly Integrated 60 GHz Transmitter and Receiver MMICs in a GaAs pHEMT Technology",
+        "technology": "CMOS, SIGE, GAAS, PHEMT, MMIC",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, wireless, 60 ghz, wlan, ultra-wideband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "7:1875 GHz 8 = 57:5 GHz",
+        "key_specs": [
+          "3 dB",
+          "5 GHz",
+          "1875 GHz",
+          "61 GHz",
+          "5.2 dBm",
+          "57 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 24,
+      "label": "Fig. 24",
+      "page": 8,
+      "caption": "Fig. 24.",
+      "caption_bbox": [
+        39.6,
+        227.9,
+        64.2,
+        235.9
+      ],
+      "section_title": "VI. TX CHIP",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TX CHIP",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "In Fig. 24, the measured and simulated output power response versus IF power is shown."
+        },
+        {
+          "section_title": "TX CHIP",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "Output power versus IF power for the TX chip, f Fig. 24. = 60 GHz."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Highly Integrated 60 GHz Transmitter and Receiver MMICs in a GaAs pHEMT Technology",
+        "technology": "CMOS, SIGE, GAAS, PHEMT, MMIC",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, wireless, 60 ghz, wlan, ultra-wideband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": [
+          "60 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 25,
+      "label": "Fig. 25",
+      "page": 8,
+      "caption": "Fig. 25.",
+      "caption_bbox": [
+        39.6,
+        420.3,
+        64.2,
+        428.3
+      ],
+      "section_title": "VII. RX CHIP",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TX CHIP",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "In Fig. 25, the measured and simulated dependence of the output power to the LO power is plotted."
+        },
+        {
+          "section_title": "TX CHIP",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "Output power versus LO power for the TX chip, f Fig. 25."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Highly Integrated 60 GHz Transmitter and Receiver MMICs in a GaAs pHEMT Technology",
+        "technology": "CMOS, SIGE, GAAS, PHEMT, MMIC",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, wireless, 60 ghz, wlan, ultra-wideband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 26,
+      "label": "Fig. 26",
+      "page": 8,
+      "caption": "Fig. 26. The receiver chip. The DC bias network is placed in the middle of the chip with extra pads for ﬂip chip assembly added in the periphery of the chip. The RX chip measures 5.7 5.0 mm .",
+      "caption_bbox": [
+        302.6,
+        292.4,
+        553.7,
+        318.3
+      ],
+      "section_title": "VI. TX CHIP",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "RX CHIP",
+          "section_kind": "other",
+          "page": 8,
+          "sentence": "A photograph of the circuit 5 mm . is presented in Fig. 26."
+        },
+        {
+          "section_title": "RX CHIP",
+          "section_kind": "other",
+          "page": 8,
+          "sentence": "The IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 11, NOVEMBER 2005 Fig. 26."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS, SIGE, GAAS, PHEMT, MMIC",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, wireless, 60 ghz, wlan, ultra-wideband, if",
+        "sub_blocks": [
+          "bias circuit"
+        ],
+        "design_purpose": "A photograph of the circuit 5 mm . is presented in Fig. 26.",
+        "function_summary": "The receiver chip. The DC bias network is placed in the middle of the chip with extra pads for ﬂip chip assembly added in the periphery of the chip. The RX chip measures 5.7 5.0 mm. A photograph of the circuit 5 mm . is presented in Fig. 26.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 27,
+      "label": "Fig. 27",
+      "page": 8,
+      "caption": "Fig. 27. Conversion gain and image rejection ratio versus RF frequency for = 2:5 GHz. the RX chip, f",
+      "caption_bbox": [
+        302.6,
+        491.4,
+        553.7,
+        508.3
+      ],
+      "section_title": "VII. RX CHIP",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "RX CHIP",
+          "section_kind": "other",
+          "page": 8,
+          "sentence": "Nominal RF and LO power were The measured and simulated and measured IRR for the RX chip versus RF frequency are plotted in Fig. 27."
+        },
+        {
+          "section_title": "RX CHIP",
+          "section_kind": "other",
+          "page": 8,
+          "sentence": "Fig. 27."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Highly Integrated 60 GHz Transmitter and Receiver MMICs in a GaAs pHEMT Technology",
+        "technology": "CMOS, SIGE, GAAS, PHEMT, MMIC",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, wireless, 60 ghz, wlan, ultra-wideband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Conversion gain and image rejection ratio versus RF frequency for = 2:5 GHz. the RX chip, f",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 28,
+      "label": "Fig. 28",
+      "page": 9,
+      "caption": "Fig. 28. Conversion gain and image rejection ratio versus IF frequency for the = 7:1875 8 = 57:5 GHz. RX chip, f",
+      "caption_bbox": [
+        38.1,
+        230.9,
+        289.2,
+        247.8
+      ],
+      "section_title": "VII. RX CHIP",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "RX CHIP",
+          "section_kind": "other",
+          "page": 8,
+          "sentence": "The measured drop in gain above 64 GHz originates from the frequency response of the three-stage ampliﬁer as seen in Fig. 19. and measured IRR In Fig. 28, the measured and simulated are plotted versus IF frequency."
+        },
+        {
+          "section_title": "RX CHIP",
+          "section_kind": "other",
+          "page": 8,
+          "sentence": "The GUNNARSSON et al.: HIGHLY INTEGRATED 60 GHz TRANSMITTER AND RECEIVER MMICs IN A GaAs pHEMT TECHNOLOGY Fig. 28."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS, SIGE, GAAS, PHEMT, MMIC",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, wireless, 60 ghz, wlan, ultra-wideband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Conversion gain and image rejection ratio versus IF frequency for the = 7:1875 8 = 57:5 GHz. RX chip, f",
+        "key_specs": [
+          "64 GHz",
+          "60 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 29,
+      "label": "Fig. 29",
+      "page": 9,
+      "caption": "Fig. 29.",
+      "caption_bbox": [
+        38.1,
+        424.2,
+        62.7,
+        432.2
+      ],
+      "section_title": "VIII. SYSTEM-LEVEL MEASUREMENTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "RX CHIP",
+          "section_kind": "other",
+          "page": 8,
+          "sentence": "The measured 3 dB IF bandwidth ranges from 0 to 3.2 GHz and the IRR is larger than 20 dB between 1.5 and 3.3 GHz. to LO power The measured and simulated dependence of 2 dBm is sufﬁis plotted in Fig. 29."
+        },
+        {
+          "section_title": "RX CHIP",
+          "section_kind": "other",
+          "page": 8,
+          "sentence": "Conversion gain versus LO power for the RX chip, f Fig. 29. = 59:95 GHz and f = IIP3 measurement of the RX chip, f Fig. 30. 60:05 GHz. fundamental IF output power is plotted in Fig. 30 with an extrapolated line with unity slope, while the third-order tone is extrapolated along a line with a slope of three."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Highly Integrated 60 GHz Transmitter and Receiver MMICs in a GaAs pHEMT Technology",
+        "technology": "CMOS, SIGE, GAAS, PHEMT, MMIC",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, wireless, 60 ghz, wlan, ultra-wideband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": [
+          "3 dB",
+          "3.2 GHz",
+          "20 dB",
+          "3.3 GHz",
+          "2 dBm",
+          "95 GHz",
+          "05 GHz",
+          "30 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 30,
+      "label": "Fig. 30",
+      "page": 9,
+      "caption": "Fig. 30. 60:05 GHz.",
+      "caption_bbox": [
+        38.1,
+        618.3,
+        77.0,
+        635.3
+      ],
+      "section_title": "VIII. SYSTEM-LEVEL MEASUREMENTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "RX CHIP",
+          "section_kind": "other",
+          "page": 8,
+          "sentence": "Conversion gain versus LO power for the RX chip, f Fig. 29. = 59:95 GHz and f = IIP3 measurement of the RX chip, f Fig. 30. 60:05 GHz. fundamental IF output power is plotted in Fig. 30 with an extrapolated line with unity slope, while the third-order tone is extrapolated along a line with a slope of three."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.6,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Highly Integrated 60 GHz Transmitter and Receiver MMICs in a GaAs pHEMT Technology",
+        "technology": "CMOS, SIGE, GAAS, PHEMT, MMIC",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, wireless, 60 ghz, wlan, ultra-wideband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "60:05 GHz",
+        "key_specs": [
+          "95 GHz",
+          "05 GHz",
+          "30 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 31,
+      "label": "Fig. 31",
+      "page": 10,
+      "caption": "Fig. 31.",
+      "caption_bbox": [
+        39.6,
+        316.3,
+        64.3,
+        324.3
+      ],
+      "section_title": "IX. DISCUSSION",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "SYSTEM-LEVEL MEASUREMENTS",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "The TX and RX chips were mounted in two separate probe stations and interconnected via a coaxial cable and a variable attenuator, representing the path loss in a real application (Fig. 31)."
+        },
+        {
+          "section_title": "DISCUSSION",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "Input and output spectrum as well as a constellation diagram Fig. 31."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Highly Integrated 60 GHz Transmitter and Receiver MMICs in a GaAs pHEMT Technology",
+        "technology": "CMOS, SIGE, GAAS, PHEMT, MMIC",
+        "application_domain": "millimeter-wave, mm-wave, microwave, rf, wireless, 60 ghz, wlan, ultra-wideband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 3,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

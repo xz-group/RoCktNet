@@ -1,0 +1,1236 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\918912.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\918912",
+  "generated_at": "2026-07-29T21:33:32",
+  "paper_metadata": {
+    "title": "1.6 Gb/s/pin 4-PAM Signaling and Circuits for a Multidrop Bus",
+    "authors": [
+      "Jared L. Zerbe",
+      "Pak S. Chau",
+      "Carl W. Werner",
+      "Timothy P. Thrush",
+      "H. J. Liaw",
+      "Bruno W. Garlepp",
+      "Kevin S. Donnelly"
+    ],
+    "abstract": "A 1.6 Gb/s/pin 4-pulse-amplitude-modulated (PAM) multidrop signaling system has been designed. The motivation for multi-PAM signaling is discussed. The system uses single-ended + reference current-mode signaling with three dc references for maximum bandwidth per pin. A testchip with six I/O pins was fabricated in 0.35m CMOS and tested in a 28evaluation system using on-chip 210 pseudorandom bit sequence (a) (PRBS) generator/checkers. Two different 4-PAM transmitter structures were designed and measured. A high-gain windowed integrating input receiver with wide common-mode range was designed in order to improve signal-to-noise ratio when operating with smaller 4-PAM input levels. Gray coding allowed a folded preamplifier architecture to be used in the LSB input receiver to minimize area and power. In-system margins are measured via system voltage and timing shmoos with a master communicating with two slave devices.",
+    "keywords": [
+      "Integrating receivers",
+      "multilevel systems",
+      "parallel"
+    ],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2001
+  },
+  "paper_circuit_context": {
+    "circuit_type": "receiver",
+    "technology": "CMOS",
+    "application_domain": "rf, if",
+    "sub_blocks": [
+      "pre-amplifier",
+      "capacitor",
+      "transistor/MOSFET",
+      "transmission line",
+      "switch",
+      "differential pair",
+      "latch",
+      "clock / timing",
+      "sense amplifier"
+    ],
+    "design_purpose": "A high-gain windowed integrating input receiver with wide common-mode range was designed in order to improve signal-to-noise ratio when operating with smaller 4-PAM input levels.",
+    "function_summary": "receiver: A high-gain windowed integrating input receiver with wide common-mode range was designed in order to improve signal-to-noise ratio when operating with smaller 4-PAM input levels.",
+    "key_specs": [
+      "210 ps",
+      "4 w",
+      "1 GHz",
+      "400 MHz",
+      "2 GHz",
+      "600 MHz",
+      "800 MHz",
+      "500 MHz",
+      "80%",
+      "625 ps"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HERE has been a great deal of interest in the use of multiple levels to increase signaling bandwidth without increasing clock frequency. Signaling with multiple voltage levels uses lower fundamental frequencies than binary signaling at the same data rate, offering the potential of higher performance in systems which have limited bandwidth. In order to achieve this performance, however, circuit i ..."
+    },
+    {
+      "number": "II",
+      "title": "SIGNALING AND TEST CHIP",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "The 4-PAM signaling scheme is shown in Fig. 6. The 4-PAM data is transmitted single-ended with three dc reference volt- , , and , one centered at each data ages: eye. Single-ended signaling was chosen to maximize the effective bandwidth per pin. The MSB and LSB binary data is encoded into a 4-PAM symbol using the Gray code shown in Fig. 6. The use of this Gray code has several advantages, one of w ..."
+    },
+    {
+      "number": "III",
+      "title": "TRANSMITTER",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "A. Initial Design The design of the initial 4-PAM transmitter is shown in Fig. 8. The transmitter is open drain and operates in current mode, with IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 5, MAY 2001 Fig. 8. Transmitter, first design. Fig. 9. Transmitter, first design eye at 1.6 Gb/s. the output current set by the bias voltage on the series current-source device. The design uses alternat ..."
+    },
+    {
+      "number": "IV",
+      "title": "RECEIVER",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "A block diagram of the 4-PAM integrating receiver is shown in Fig. 12. There are a total of four latched outputs, one for each combination of odd/even and MSB/LSB. Each receiver odd/even pair consists of a common preamplifier stage, followed by an integrator, and finally a sense amplifier/latch. The odd and even integrators share common preamplifier outputs. Although the preamplifier stage consume ..."
+    },
+    {
+      "number": "V",
+      "title": "TEST SYSTEM",
+      "kind": "other",
+      "page": 5,
+      "text_preview": "The signal integrity requirements of this 4-PAM signaling system were investigated with the test system shown in Figs. 18 (a) (b) Fig. 17. (a) LSB space. (b) LSB receiver folded preamp. Fig. 18. Test system block diagram. and 19. Separate master and slave packages were constructed from conventional eight-layer FR4 PC boards with the test die glued and bonded directly to the PC board in a chip-on-b ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 7,
+      "text_preview": "Increasing need for higher data rates in band-limited systems makes multilevel signaling an interesting potential solution. Single-ended4-PAMsignalingmaximizesbandwidthperpinbut lowers SNR relative to binary or differential 4-PAM approaches. TheuseofintegratingreceiversimprovesthisSNRandmakesthe systemlesssensitivetohigh-frequencyreferenceordatanoise. A 1.6-Gb/s/pin test chip and evaluation system ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. (a) Multidrop system diagram. (b) Low-LC. (c) Multidrop simulation models.",
+      "caption_bbox": [
+        302.6,
+        477.5,
+        553.6,
+        497.1
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Block diagrams of simple single and multidrop system configurations and accompanying channel models are shown in Fig. 1."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Publisher Item Identifier S 0018-9200(01)03026-8. 0018–9200/01$10.00 © 2001 IEEE (a) (b) (c) Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "-model": -1.5,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Multidrop system diagram. (b) Low-LC. (c) Multidrop simulation models",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Simulated channel transfer characteristics for different configurations.",
+      "caption_bbox": [
+        38.1,
+        256.7,
+        289.2,
+        267.4
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Simulated channel transfer characteristics of these different system configurations are shown in Fig. 2, a plot of normalized magnitude versus frequency."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "As each ZERBE et al.: 1.6 Gb/s/pin 4-PAM SIGNALING AND CIRCUITS FOR A MULTIDROP BUS Fig. 2."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The attenuation curves in Fig. 2 show increasing loss as device count goes up due to this multipole filter effect."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.3,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated channel transfer characteristics for different configurations",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Simulated (a) 2-PAM and (b) 4-PAM signaling at 1.6 Gb/s, 4-drop bus.",
+      "caption_bbox": [
+        38.1,
+        481.3,
+        289.2,
+        492.0
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "(a) (b) Fig. 3."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Data eyes for 2-PAM and 4-PAM signaling with a 4-drop channel are shown in Fig. 3, with two data bits."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.7,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated (a) 2-PAM and (b) 4-PAM signaling at 1.6 Gb/s, 4-drop bus",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 1,
+      "caption": "Fig. 4. Simulated (a) 2-PAM and (b) 4-PAM signaling at 2 Gb/s, 4-drop bus.",
+      "caption_bbox": [
+        301.1,
+        257.9,
+        550.1,
+        268.6
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The same eyes at a data rate of 2 Gb/s are shown in Fig. 4."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The 4-PAM data at 500 MHz, while experiencing some attenuation, is not affected (a) (b) Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.7,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated (a) 2-PAM and (b) 4-PAM signaling at 2 Gb/s, 4-drop bus",
+        "key_specs": [
+          "500 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 1,
+      "caption": "Fig. 5. Simulated (a) 2-PAM and (b) 4-PAM signaling at 1.6 Gb/s, 16-drop bus.",
+      "caption_bbox": [
+        301.1,
+        480.2,
+        552.2,
+        499.8
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "(a) (b) Fig. 5."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The other effect of higher device count is shown in Fig. 5, where the data rate is returned to 1.6 Gb/s and the number of drops is increased to 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.7,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated (a) 2-PAM and (b) 4-PAM signaling at 1.6 Gb/s, 16-drop bus",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. 4-PAM single-ended + reference signaling",
+      "caption_bbox": [
+        39.6,
+        177.1,
+        206.5,
+        187.8
+      ],
+      "section_title": "II. SIGNALING AND TEST CHIP",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SIGNALING AND TEST CHIP",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The 4-PAM signaling scheme is shown in Fig. 6."
+        },
+        {
+          "section_title": "SIGNALING AND TEST CHIP",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The MSB and LSB binary data is encoded into a 4-PAM symbol using the Gray code shown in Fig. 6."
+        },
+        {
+          "section_title": "SIGNALING AND TEST CHIP",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "If the LSB Fig. 6. 4-PAM single-ended + reference signaling Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.2,
+      "relevance_breakdown": {
+        "-reference": -1.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "4-PAM single-ended + reference signaling",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 2,
+      "caption": "Fig. 7. Test chip block diagram.",
+      "caption_bbox": [
+        39.6,
+        357.5,
+        148.0,
+        368.2
+      ],
+      "section_title": "II. SIGNALING AND TEST CHIP",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SIGNALING AND TEST CHIP",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "If the LSB Fig. 6. 4-PAM single-ended + reference signaling Fig. 7."
+        },
+        {
+          "section_title": "SIGNALING AND TEST CHIP",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "A block diagram of the test chip designed with six 4-PAM I/Os as well as receive and transmit delay-locked loops (DLLs) [5] is shown in Fig. 7."
+        },
+        {
+          "section_title": "SIGNALING AND TEST CHIP",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The I/Os are arranged as G-S-S-G-S, as shown in Fig. 7, in order to facilitate study of pin coupling and ground isolation."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "The I/Os are arranged as G-S-S-G-S, as shown in Fig. 7, in order to facilitate study of pin coupling and ground isolation.",
+        "function_summary": "Test chip block diagram. The I/Os are arranged as G-S-S-G-S, as shown in Fig. 7, in order to facilitate study of pin coupling and ground isolation.",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.7,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 2,
+      "caption": "Fig. 8. Transmitter, first design.",
+      "caption_bbox": [
+        302.6,
+        315.1,
+        410.1,
+        325.7
+      ],
+      "section_title": "II. SIGNALING AND TEST CHIP",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TRANSMITTER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Initial Design The design of the initial 4-PAM transmitter is shown in Fig. 8."
+        },
+        {
+          "section_title": "TRANSMITTER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The transmitter is open drain and operates in current mode, with IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 5, MAY 2001 Fig. 8."
+        },
+        {
+          "section_title": "TRANSMITTER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The encoding is a simple binary-to-thermometer , , or is generated from the code, where the output current binary MSB and LSB as shown in Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transmitter",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Transmitter, first design",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 2,
+      "caption": "Fig. 9. Transmitter, first design eye at 1.6 Gb/s.",
+      "caption_bbox": [
+        302.6,
+        492.2,
+        460.2,
+        502.8
+      ],
+      "section_title": "II. SIGNALING AND TEST CHIP",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TRANSMITTER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 9."
+        },
+        {
+          "section_title": "TRANSMITTER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "A measured transmit data eye with all six pins running a full PRBS pattern is shown in Fig. 9; here one of the problems with the latched architecture can be seen."
+        },
+        {
+          "section_title": "TRANSMITTER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "This glitch can be seen below the transition region of the data eye in Fig. 9."
+        },
+        {
+          "section_title": "TRANSMITTER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "However, while the handoff glitch is not in itself destructive to the data eye, the additional energy it presents to the package and interconnect causes overshoots that can also be seen in Fig. 9, and that are potentially harmful to the SNR of the 4-PAM system."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.6,
+      "relevance_breakdown": {
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transmitter",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Transmitter, first design eye at 1.6 Gb/s",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 3,
+      "caption": "Fig. 10. Transmitter, new design.",
+      "caption_bbox": [
+        38.1,
+        232.4,
+        149.9,
+        243.0
+      ],
+      "section_title": "III. TRANSMITTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TRANSMITTER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Without this scaling, the lower pensate for output device output levels would be driven with less current and the data eyes ZERBE et al.: 1.6 Gb/s/pin 4-PAM SIGNALING AND CIRCUITS FOR A MULTIDROP BUS Fig. 10."
+        },
+        {
+          "section_title": "TRANSMITTER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "New Design The new transmitter design is the more classic edge-triggered encoder and mux structure shown in Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transmitter",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Transmitter, new design",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 3,
+      "caption": "Fig. 11. Transmitter, new design eye at 1.6 Gb/s.",
+      "caption_bbox": [
+        38.1,
+        406.7,
+        200.0,
+        417.3
+      ],
+      "section_title": "IV. RECEIVER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TRANSMITTER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 11."
+        },
+        {
+          "section_title": "TRANSMITTER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The data eye generated by the new design is shown in Fig. 11 and has no handoff glitch or over/undershoot problems."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transmitter",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Transmitter, new design eye at 1.6 Gb/s",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 3,
+      "caption": "Fig. 12. Integrating receiver block diagram.",
+      "caption_bbox": [
+        301.1,
+        262.7,
+        446.5,
+        273.4
+      ],
+      "section_title": "III. TRANSMITTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TRANSMITTER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Although this puts on the system the additional burden of running nodes A, B, and C at full frequency, it was found that with proper device sizing this was not Fig. 12."
+        },
+        {
+          "section_title": "RECEIVER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "A block diagram of the 4-PAM integrating receiver is shown in Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Integrating receiver block diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 4,
+      "caption": "Fig. 13. Integrated receiver timing with (a) no windowing, (b) windowing via delayed precharge.",
+      "caption_bbox": [
+        39.6,
+        459.8,
+        290.6,
+        479.4
+      ],
+      "section_title": "IV. RECEIVER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "RECEIVER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Each of these clocks controls one critical edge of the integration window, as shown in Fig. 13(a)."
+        },
+        {
+          "section_title": "RECEIVER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The actual receiver integration time is set by windowing, as shown in Fig. 13."
+        },
+        {
+          "section_title": "RECEIVER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "If the integration window is kept at a full phase, as in Fig. 13(a), the integration of “antidata” can occur, resulting in a smaller in- ."
+        },
+        {
+          "section_title": "RECEIVER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The use of windowing reduces the intetegrator output gration time by delaying precharge relative to sense as shown in Fig. 13(b)."
+        },
+        {
+          "section_title": "RECEIVER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Identical windowing is (a) (b) Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Integrated receiver timing with (a) no windowing, (b) windowing via delayed precharge",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.12,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 4,
+      "caption": "Fig. 14. Integrator with back-to-back capacitors.",
+      "caption_bbox": [
+        302.6,
+        272.8,
+        463.2,
+        283.4
+      ],
+      "section_title": "IV. RECEIVER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "RECEIVER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Receiver Integrator The integrator design uses complementary differential pairs connected back-to-back by capacitors, as shown in Fig. 14."
+        },
+        {
+          "section_title": "RECEIVER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Adding a complementary integrator as in IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 5, MAY 2001 Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Integrator with back-to-back capacitors",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 4,
+      "caption": "Fig. 15. (a) nMOS-only integrator. (b) Integrator with complementary pairs.",
+      "caption_bbox": [
+        302.6,
+        705.4,
+        550.3,
+        716.1
+      ],
+      "section_title": "IV. RECEIVER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "RECEIVER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The simple nMOS integrator shown in Fig. 15(a) or the pMOS-only integrator of [7] suffer from small input common-mode range and are limited to input signals that are near one supply."
+        },
+        {
+          "section_title": "RECEIVER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "(a) (b) Fig. 15."
+        },
+        {
+          "section_title": "RECEIVER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 15(b) increases the common-mode range to the full supply by having overlapping common-mode ranges."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) nMOS-only integrator. (b) Integrator with complementary pairs",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 5,
+      "caption": "Fig. 16. Integrating receiver simulations: nMOS, complementary, and back-to-back designs.",
+      "caption_bbox": [
+        38.1,
+        442.4,
+        338.7,
+        453.0
+      ],
+      "section_title": "IV. RECEIVER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "RECEIVER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "ZERBE et al.: 1.6 Gb/s/pin 4-PAM SIGNALING AND CIRCUITS FOR A MULTIDROP BUS Fig. 16."
+        },
+        {
+          "section_title": "RECEIVER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "This is shown in the simulation in Fig. 16 where the results of the back-to-back integrator are compared with those of nMOS-only integrator and complementary integrator designs."
+        },
+        {
+          "section_title": "RECEIVER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The back-to-back capacitor arrangement couples the fast-rising node B to leaking-down node D and the fast-falling node C to leaking-up node A, thereby reducing the effect of incomplete steering and resulting in the , as shown in Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "capacitor",
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Integrating receiver simulations: nMOS, complementary, and back-to-back designs",
+        "key_specs": [
+          "16 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 6,
+      "caption": "Fig. 17. (a) LSB space. (b) LSB receiver folded preamp.",
+      "caption_bbox": [
+        39.6,
+        392.0,
+        225.8,
+        402.6
+      ],
+      "section_title": "V. TEST SYSTEM",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "RECEIVER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Because of the use of input voltage to both the Gray code, the LSB can be derived by the simple inclusion and , as shown in of the input voltage between Fig. 17(a)."
+        },
+        {
+          "section_title": "RECEIVER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The LSB preamplifier uses a folding scheme shown in Fig. 17(b) to achieve this inclusion in an emitter-coupled logic (ECL) manner, combining the logical function and differential conversion."
+        },
+        {
+          "section_title": "TEST SYSTEM",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The signal integrity requirements of this 4-PAM signaling system were investigated with the test system shown in Figs. 18 (a) (b) Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "pre-amplifier"
+        ],
+        "design_purpose": "The LSB preamplifier uses a folding scheme shown in Fig. 17(b) to achieve this inclusion in an emitter-coupled logic (ECL) manner, combining the logical function and differential conversion.",
+        "function_summary": "(a) LSB space. (b) LSB receiver folded preamp. The LSB preamplifier uses a folding scheme shown in Fig. 17(b) to achieve this inclusion in an emitter-coupled logic (ECL) manner, combining the logical function and differential conversion.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 6,
+      "caption": "Fig. 18. Test system block diagram.",
+      "caption_bbox": [
+        39.6,
+        577.2,
+        160.3,
+        587.8
+      ],
+      "section_title": "V. TEST SYSTEM",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TEST SYSTEM",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The signal integrity requirements of this 4-PAM signaling system were investigated with the test system shown in Figs. 18 (a) (b) Fig. 17."
+        },
+        {
+          "section_title": "TEST SYSTEM",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 18."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Test system block diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 6,
+      "caption": "Fig. 19. Test system photograph.",
+      "caption_bbox": [
+        302.6,
+        211.9,
+        413.6,
+        222.5
+      ],
+      "section_title": "V. TEST SYSTEM",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TEST SYSTEM",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The test die were IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 5, MAY 2001 Fig. 19."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.6,
+      "relevance_breakdown": {
+        "-photograph": -3.0,
+        "references": 0.4
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Test system photograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 20,
+      "label": "Fig. 20",
+      "page": 6,
+      "caption": "Fig. 20. Test chip photomicrograph.",
+      "caption_bbox": [
+        302.6,
+        306.0,
+        423.7,
+        316.6
+      ],
+      "section_title": "V. TEST SYSTEM",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TEST SYSTEM",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 20."
+        },
+        {
+          "section_title": "TEST SYSTEM",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The test chip in Fig. 20 was fabricated through MOSIS in m CMOS10 process."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -5.2,
+      "relevance_breakdown": {
+        "-micrograph": -3.0,
+        "-chip photo": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Test chip photomicrograph",
+        "key_specs": [
+          "20 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 21,
+      "label": "Fig. 21",
+      "page": 6,
+      "caption": "Fig. 21. Test results: system margin shmoo.",
+      "caption_bbox": [
+        302.6,
+        551.7,
+        448.2,
+        562.3
+      ],
+      "section_title": "V. TEST SYSTEM",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TEST SYSTEM",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "Fig. 21."
+        },
+        {
+          "section_title": "TEST SYSTEM",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "A system margin shmoo showing the total voltage and timing margin for each of the data eyes when transmitting from the master to the second slave across the full interface at 1.6 Gb/s/pin with the complete PRBS sequence is shown in Fig. 21."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Test results: system margin shmoo",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 22,
+      "label": "Fig. 22",
+      "page": 7,
+      "caption": "Fig. 22. Test system error map.",
+      "caption_bbox": [
+        38.1,
+        306.2,
+        144.7,
+        316.9
+      ],
+      "section_title": "V. TEST SYSTEM",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TEST SYSTEM",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "ZERBE et al.: 1.6 Gb/s/pin 4-PAM SIGNALING AND CIRCUITS FOR A MULTIDROP BUS Fig. 22."
+        },
+        {
+          "section_title": "TEST SYSTEM",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "A 3-D plot of this shmoo from two different angles is shown in Fig. 22."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Test system error map",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 7,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

@@ -1,0 +1,339 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1202010.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1202010",
+  "generated_at": "2026-07-29T21:30:39",
+  "paper_metadata": {
+    "title": "Digital Background Calibration of an Algorithmic Analog-to-Digital Converter Using a Simplified Queue",
+    "authors": [
+      "Eric B. Blecker",
+      "Thomas M. McDonald",
+      "Ozan E. Erdo˘gan",
+      "Paul J. Hurst",
+      "Stephen H. Lewis"
+    ],
+    "abstract": "An analog queue-based architecture and an adaptive digital-calibration algorithm calibrate an 8-bit two-stage pipelined algorithmic analog-to-digital converter. To minimize power dissipation and noise, the queue consists of only one sample-and-hold amplifier. At a sampling rate of 20 Msamples/s, the peak signal-tonoise-and-distortion ratio is 45 dB, and the spurious-free dynamic range is 62 dB. The total power dissipation is 25.4 mW from 3.0 V. The active analog area is 0.11 mm2.",
+    "keywords": [
+      "Adaptive systems",
+      "analog–digital conversion",
+      "cal-"
+    ],
+    "doi": "10.1109/JSSC.2003.811990",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Digital Background Calibration of an Algorithmic Analog-to-Digital Converter",
+    "technology": "CMOS, GAN",
+    "application_domain": "wireless, if",
+    "sub_blocks": [
+      "capacitor",
+      "current source",
+      "differential pair",
+      "op-amp",
+      "clock / timing"
+    ],
+    "design_purpose": "To minimize power dissipation and noise, the queue consists of only one sample-and-hold amplifier.",
+    "function_summary": "Digital Background Calibration of an Algorithmic Analog-to-Digital Converter: To minimize power dissipation and noise, the queue consists of only one sample-and-hold amplifier.",
+    "key_specs": [
+      "45 dB",
+      "62 dB",
+      "25.4 mW",
+      "3.0 V",
+      "120 MHz",
+      "170 fF",
+      "4.4%",
+      "1.0006 w",
+      "540 kHz",
+      "3.9 mV"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T RADITIONAL designs of high-performance analog-todigital converters (ADCs) have required high-performance operational amplifiers (opamps). In many cases, single-stage opamps have been chosen to provide both high gain and high speed. As CMOS process geometries continue to shrink, however, the open-loop gain of single-stage opamps is decreasing. To overcome this problem, digital background calibrat ..."
+    },
+    {
+      "number": "II",
+      "title": "QUEUE-BASED BACKGROUND CALIBRATION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "Fig. 1(a) shows a block diagram of an ADC with a calibration is sampled at a rate , which queue. The input to the queue Manuscript received July 11, 2001; revised February 26, 2003. This work was supported by the National Science Foundation under Grant CCR-9901925 and by UC MICRO Grant 00-056. E. B. Blecker was with the University of California, Davis, CA 95616 USA. He is now with Broadcom Corpora ..."
+    },
+    {
+      "number": "III",
+      "title": "PIPELINED ALGORITHMIC ARCHITECTURE",
+      "kind": "proposed",
+      "page": 1,
+      "text_preview": "WITH CALIBRATION In the prototype algorithmic ADC, the residue gain is less than 2 so that charge injection, comparator offset, and opamp offset do not cause stage outputs to exceed the full-scale input range of the next stage [3]. The digital calibration adaptively by measuring the major-carry jump and uses this determines information to appropriately weight the output bits, thus elimion ADC line ..."
+    },
+    {
+      "number": "IV",
+      "title": "PROTOTYPE IMPLEMENTATION",
+      "kind": "design",
+      "page": 1,
+      "text_preview": "The prototype uses three opamps (one for the queue and two for the ADC) and two comparators. Control logic for the ADC IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 6, JUNE 2003 (a) (b) Fig. 2. (a) Simplified residue-amplifier schematic. (b) Opamp schematic. and queue is implemented on the prototype as well as output latches and buffers. The digital calibration is performed off chip. Fig. 2(a ..."
+    },
+    {
+      "number": "V",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 2,
+      "text_preview": "Fig. 3 shows the integral nonlinearity (INL) without calibration as well as the INL and the differential nonlinearity (DNL) with calibration. The sample rate is 20 Msamples/s, the conversion rate is 24 Msamples/s, and the frequency of the analog input (a) (b) (c) Fig. 3. (a) INL versus code without calibration. (b) INL versus code with calibration. (c) DNL versus code with calibration. The sample  ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. (a) Block diagram of an ADC with a calibration queue. (b) Simplified queue timing diagram. (c) Worst-case queue timing diagram in the synchronous case.",
+      "caption_bbox": [
+        301.1,
+        507.2,
+        552.2,
+        535.8
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "QUEUE-BASED BACKGROUND CALIBRATION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1(a) shows a block diagram of an ADC with a calibration is sampled at a rate , which queue."
+        },
+        {
+          "section_title": "QUEUE-BASED BACKGROUND CALIBRATION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "(a) (b) (c) Fig. 1."
+        },
+        {
+          "section_title": "QUEUE-BASED BACKGROUND CALIBRATION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1(b) shows a simplified timing diagram."
+        },
+        {
+          "section_title": "QUEUE-BASED BACKGROUND CALIBRATION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1(c) shows a detailed worst-case timing diagram of “Sample” and “Convert” is periods and is in the synchronous case, where periods of one master clock."
+        },
+        {
+          "section_title": "QUEUE-BASED BACKGROUND CALIBRATION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Thereinterval in Fig. 1(c) must be at least . fore, the first is assumed Since (1) intervals, input signals stored by the During the next SHA are quantized by the ADC, and the delay between the end of the acquisition time and the beginning of the conversion time by design."
+        },
+        {
+          "section_title": "QUEUE-BASED BACKGROUND CALIBRATION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "In other words Fig. 1(c) must be at least as long as (2) IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 6, JUNE 2003 As a result, both conditions (1) and (2) must be satisfied in the synchronous case."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.5,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "-simplified": -1.0,
+        "section:intro": -0.5,
+        "references": 2.0
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS, GAN",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Block diagram of an ADC with a calibration queue. (b) Simplified queue timing diagram. (c) Worst-case queue timing diagram in the synchronous case",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.18,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 2,
+      "caption": "Fig. 2. (a) Simplified residue-amplifier schematic. (b) Opamp schematic.",
+      "caption_bbox": [
+        38.1,
+        447.7,
+        276.4,
+        458.4
+      ],
+      "section_title": "IV. PROTOTYPE IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "PROTOTYPE IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Control logic for the ADC IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 6, JUNE 2003 (a) (b) Fig. 2."
+        },
+        {
+          "section_title": "PROTOTYPE IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 2(a) shows a simplified schematic of a residue amplifier. and ) and two outA differential circuit with two inputs ( and ) is used in practice."
+        },
+        {
+          "section_title": "PROTOTYPE IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 2(b) shows a schematic of the opamp."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.7,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "-simplified": -1.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, GAN",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) Simplified residue-amplifier schematic. (b) Opamp schematic",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.71,
+      "warnings": [
+        "Recommended figure was classified as 'analysis_model', not a schematic; manual confirmation strongly recommended."
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 3,
+      "caption": "Fig. 3. (a) INL versus code without calibration. (b) INL versus code with calibration. (c) DNL versus code with calibration. The sample rate is 20 Msamples/s, and the input frequency is 540 kHz.",
+      "caption_bbox": [
+        39.6,
+        376.6,
+        290.7,
+        405.1
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 3 shows the integral nonlinearity (INL) without calibration as well as the INL and the differential nonlinearity (DNL) with calibration."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "The sample rate is 20 Msamples/s, the conversion rate is 24 Msamples/s, and the frequency of the analog input (a) (b) (c) Fig. 3."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "In Fig. 3(a), is set equal to 1.95, which is , the closed-loop gain with perfect matching and infinite opamp gain."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "In Fig. 3(b) and (c), the calibration loop is allowed to converge using a Gaussian dither signal with a standard deviation of approximately 3.9 mV or 1 LSB."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.4,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.6
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Digital Background Calibration of an Algorithmic Analog-to-Digital Converter",
+        "technology": "CMOS, GAN",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) INL versus code without calibration. (b) INL versus code with calibration. (c) DNL versus code with calibration. The sample rate is 20 Msamples/s, and the input frequency is 540 kHz",
+        "key_specs": [
+          "3.9 mV"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 3,
+      "caption": "Fig. 4. Die photograph.",
+      "caption_bbox": [
+        39.6,
+        633.0,
+        120.7,
+        643.6
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 4."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Finally, Fig. 4 shows the die photograph, and Table I summarizes the performance."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -7.2,
+      "relevance_breakdown": {
+        "-photograph": -3.0,
+        "-die photo": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "Digital Background Calibration of an Algorithmic Analog-to-Digital Converter",
+        "technology": "CMOS, GAN",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Die photograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 2,
+  "warnings": []
+}

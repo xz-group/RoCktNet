@@ -1,0 +1,126 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\RNDatasetPapers\\6176951.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output_rerun_128\\6176951",
+  "generated_at": "2026-07-29T22:45:37",
+  "paper_metadata": {
+    "title": "A 19Gb/s Serial Link Receiver with Both 4-Tap FFE and 5-Tap DFE Functions in 45nm SOI CMOS Ankur Agrawal, John Bulzacchelli, Timothy Dickson, Yong Liu, Jose Tierno, Daniel Friedman",
+    "authors": [],
+    "abstract": "",
+    "keywords": [],
+    "doi": "",
+    "venue": "",
+    "year": 2012
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Serial Link Receiver",
+    "technology": "CMOS, SOI, 45nm process",
+    "application_domain": "",
+    "sub_blocks": [
+      "capacitor",
+      "transistor/MOSFET",
+      "current source",
+      "output buffer",
+      "latch",
+      "clock / timing"
+    ],
+    "design_purpose": "",
+    "function_summary": "Serial Link Receiver",
+    "key_specs": [
+      "45nm",
+      "3 FF",
+      "50%",
+      "50fF",
+      "200mV",
+      "53mV",
+      "3ps",
+      "25dB",
+      "9.5GHz",
+      "36%"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "Ilin",
+      "kind": "other",
+      "page": 1,
+      "text_preview": ""
+    },
+    {
+      "number": "I",
+      "title": "Ilin",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "I max max C90 C90 Vout Vout 7 C0 C0 Inverter Inverter Inverter Threshold Threshold Threshold Phase Interpolator Phase Interpolator increasing Ilin increasing Ilin increasing Ilin Figure 7.3.2: Phase interpolator design and principle of operation. Figure 7.3.4: Common-mode restoration circuit schematic and simulated waveforms. Bit Error Rate Bit Error Rate (b) (b) (a) (a) Figure 7.3.6: (a) S-parame ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 0,
+      "caption": "Figure 7.3.1 shows a block diagram and timing diagram of the receiver with 2 post-cursor and 1 pre-cursor FFE taps in addition to 5 DFE taps. Four parallel T/Hs, clocked at quarter-rate, hold the incoming data for 3 UIs each. Source-follower buffers distribute each of the T/H outputs to all four quarter-rate slices, where current-integrating summers [3] sum up the signals along with five DFE feedback taps. The use of multi-phase T/Hs [4] avoids the need for analog delay lines. Because 3 out of the 4 data values are held stable at any instant, implementation of a 3-tap FFE is straightforward. A fourth FFE tap is introduced by having a 2UI integration interval and exploiting the inherent memory of currentintegrating summers. The FFE currents are integrated only when their input voltages are valid, and the integrator remembers their contribution to the summation so that the proper FFE-equalized voltage is sampled at the end of the integration period. The second post-cursor tap (C2) is active only during the first UI of integration, while the pre-cursor tap (C-1) is active only during the second UI. The first post-cursor (C1) value is valid for the entire duration of integration but is enabled only during the first UI in this design. The gating signals used to turn on and off the FFE taps also enable efficient implementation of FFE coefficient multiplication. Shifting the gating signal with respect to the integration interval realizes time-domain multiplication by varying the integration time of FFE signals as shown in Fig. 7.3.1. Digitally-controlled phase interpolators are used to adjust the phase shifts. Since modern CMOS technologies allow for easy and precise control of clock edges, this technique can be more linear than CMOS Gilbert-style multipliers and more area-efficient than multiplying current DACs (IDAC) [4].",
+      "caption_bbox": [
+        37.0,
+        268.1,
+        288.7,
+        516.1
+      ],
+      "section_title": "",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "Ilin",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "I max max C90 C90 Vout Vout 7 C0 C0 Inverter Inverter Inverter Threshold Threshold Threshold Phase Interpolator Phase Interpolator increasing Ilin increasing Ilin increasing Ilin Figure 7.3.2: Phase interpolator design and principle of operation."
+        },
+        {
+          "section_title": "Ilin",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Figure 7.3.4: Common-mode restoration circuit schematic and simulated waveforms."
+        },
+        {
+          "section_title": "Ilin",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Bit Error Rate Bit Error Rate (b) (b) (a) (a) Figure 7.3.6: (a) S-parameters for 20-inch PCB trace and measured bathtub curve at 19Gb/s, (b) S-parameters for 30-inch PCB trace and measured bathtub curve at 17Gb/s in 3 RX operating modes."
+        },
+        {
+          "section_title": "Ilin",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "DIGEST OF TECHNICAL PAPERS • ISSCC 2012 PAPER CONTINUATIONS Figure 7.3.7: Die micrograph with floorplan overlay. • 2012 IEEE International Solid-State Circuits Conference 978-1-4673-0377-4/12/$31.00 ©2012 IEEE"
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.6,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "frequency multiplier",
+        "technology": "CMOS, SOI, 45nm process",
+        "application_domain": "",
+        "sub_blocks": [
+          "output buffer",
+          "clock / timing"
+        ],
+        "design_purpose": "",
+        "function_summary": "3.1 shows a block diagram and timing diagram of the receiver with 2 post-cursor and 1 pre-cursor FFE taps in addition to 5 DFE taps. Four parallel T/Hs, clocked at quarter-rate, hold the incoming data for 3 UIs each. Source-follower buffers distribute each of the T/H outputs to all four quarter-rate slices, where ...",
+        "key_specs": [
+          "90 V"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.85,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 7,
+  "warnings": []
+}

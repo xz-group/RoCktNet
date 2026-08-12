@@ -1,0 +1,567 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1308594.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1308594",
+  "generated_at": "2026-07-29T22:01:45",
+  "paper_metadata": {
+    "title": "A Dual-Band 5.15–5.35-GHz, 2.4–2.5-GHz 0.18-m CMOS Transceiver for 802.11a/b/g Wireless LAN",
+    "authors": [
+      "K. Vavelidis",
+      "I. Vassiliou",
+      "T. Georgantas",
+      "A. Yamanaka",
+      "S. Kavadias",
+      "G. Kamoulakos",
+      "C. Kapnistis",
+      "Y. Kokolakis",
+      "A. Kyranas",
+      "P. Merakos",
+      "I. Bouras",
+      "S. Bouras",
+      "S. Plevridis",
+      "N. Haralabidis"
+    ],
+    "abstract": "A single-chip dual-band 5.15–5.35-GHz and 2.4–2.5-GHz zero-IF transceiver for IEEE 802.11a/b/g WLAN tipath, a receive error vector magnitude (EVM) of better than systems is fabricated on a 0.18m CMOS technology. It utilizes 30 dB has to be achieved in order to meet the bit-error rate an innovative architecture including feedback paths that enable (BER) requirements for the high bit-rate modes of the 802.11a/g digital calibration to help eliminate analog circuit imperfections standards. To achieve that, sideband rejection better than 40 dB, such as transmit and receive mismatch. The dual-band integrated phase noise error of less than , and baseband receive paths feature a 4.8-dB (3.5-dB) noise figure at 5.25 GHz filter matching of better than 1% are typically required. Such (2.45 GHz). The corresponding sensitivity at 54 Mb/s operation is 76 dBm for 802.11a and 77 dBm for 802.11g, both referred stringent performance constraints require robust solutions that at the input of the chip. The transmit chain achieves output 1-dB maximize yield and are insensitive to component matching and compression at 6 dBm (9 dBm) at 5 GHz (2.4 GHz) operation. Digprocess variations. ital calibration helps achieve an error vector magnitude (EVM) The overall WLAN system architecture is shown in Fig. 1. of 33 dB ( 31 dB) at 5 GHz (2.4 GHz) while transmitting 4 dBm at 54 Mb/s. The die size is 19.3 mm2 and the power It consists of the RF transceiver and a companion digital processor (BB processor), which implements both PHY and MAC consumption is 260 mW for the receiver and 320 mW (270 mW) for the transmitter at 5 GHz (2.4 GHz) operation. layers of the 802.11a/b/g standards. The transceiver is based on a zero-IF architecture [3], [4] modified to implement a dual-band",
+    "keywords": [],
+    "doi": "10.1109/JSSC.2004.829936",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2004
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Dual-Band 5.15–5.35-GHz, 2.4–2.5-GHz 0.18-m CMOS Transceiver",
+    "technology": "CMOS",
+    "application_domain": "rf, wireless, wlan, baseband, if",
+    "sub_blocks": [
+      "varactor",
+      "inductor",
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "current source",
+      "mixer",
+      "switch",
+      "op-amp"
+    ],
+    "design_purpose": "It utilizes 30 dB has to be achieved in order to meet the bit-error rate an innovative architecture including feedback paths that enable (BER) requirements for the high bit-rate modes of the 802.11a/g digital calibration to help eliminate analog circuit imperfections standards.",
+    "function_summary": "Dual-Band 5.15–5.35-GHz, 2.4–2.5-GHz 0.18-m CMOS Transceiver: It utilizes 30 dB has to be achieved in order to meet the bit-error rate an innovative architecture including feedback paths that enable (BER) requirements for the high bit-rate modes of the 802.11a/g digital calibration to help eliminate analog circuit imperfections standards.",
+    "key_specs": [
+      "30 dB",
+      "40 dB",
+      "5.25 GHz",
+      "1%",
+      "2.45 GHz",
+      "76 dBm",
+      "77 dBm",
+      "6 dBm",
+      "9 dBm",
+      "5 GHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE introduction of new WLAN standards such as the IEEE 802.11a and the recently ratified IEEE 802.11g based on orthogonal frequency division multiplexing (OFDM), poses significant implementation challenges in the RF front-end. Low in-band phase noise, high linearity, and accurate quadrature matching is required [1]. The demand for low-cost systems has led to solutions based on processes such as  ..."
+    },
+    {
+      "number": "II",
+      "title": "SYSTEM ARCHITECTURE",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "Although direct conversion has become an increasingly popular low-cost solution for wireless applications, problems such as dc offsets, flicker noise, and poor quadrature matching may render it unsuitable for the new generation of multicarrier-based Manuscript received November 10, 2003; revised January 20, 2004. The authors are with Athena Semi S.A., Alimos GR-17455, Greece (e-mail: iason@athenas ..."
+    },
+    {
+      "number": "III",
+      "title": "CIRCUIT IMPLEMENTATION",
+      "kind": "design",
+      "page": 1,
+      "text_preview": "The receive chain consists of separate LNAs and quadrature demodulators for the 2.4-GHz and 5-GHz bands, respectively. The fully balanced 5-GHz LNA shown in Fig. 3 uses nMOS common-source cascoded devices and on-chip spiral inductors for load and degeneration, which achieve a quality factor of 10 at 5 GHz. Input matching is realized by bondwire and package inductances. Two different gain settings  ..."
+    },
+    {
+      "number": "IV",
+      "title": "MEASURED RESULTS",
+      "kind": "results",
+      "page": 3,
+      "text_preview": "A die microphotograph is shown in Fig. 7 and typical measurement results are summarized in Table I. The total die and a QFN64 package is used. Calibration area is 19.3 mm TX EVM. (a) 54 Mb/s at 4-dBm output power. (b) 54 Mb/s at 16-dBm output power with external PA achieving 28-dB EVM. Fig. 8. Fig. 9. RX EVM versus input power. for I/Q mismatch, dc offset, and filter cutoff was performed in softwa ..."
+    },
+    {
+      "number": "V",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 4,
+      "text_preview": "A fully integrated 802.11a/b/g direct conversion transceiver m CMOS technology. The has been implemented on a 0.18transceiver features state-of-the-art noise figure and phase noise performance. By taking advantage of an innovative architecture, direct conversion and CMOS process-related imperfections can be corrected so that the transceiver exceeds standard specifications by a wide margin. Further ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1.",
+      "caption_bbox": [
+        39.6,
+        218.4,
+        60.2,
+        226.4
+      ],
+      "section_title": "II. SYSTEM ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "SYSTEM ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The overall WLAN system architecture is shown in Fig. 1."
+        },
+        {
+          "section_title": "SYSTEM ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Dual-Band 5.15–5.35-GHz, 2.4–2.5-GHz 0.18-m CMOS Transceiver",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Dual-band transceiver block diagram.",
+      "caption_bbox": [
+        39.6,
+        533.0,
+        189.7,
+        540.9
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "SYSTEM ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The transceiver is based on a zero-IF architecture [3], [4] modified to implement a dual-band design, as shown in Fig. 2."
+        },
+        {
+          "section_title": "SYSTEM ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "transceiver",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Dual-band transceiver block diagram",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.65,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. 5 GHz and 2.4 GHz LNAs.",
+      "caption_bbox": [
+        302.6,
+        749.6,
+        419.4,
+        757.5
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The fully balanced 5-GHz LNA shown in Fig. 3 uses nMOS common-source cascoded devices and on-chip spiral inductors for load and degeneration, which achieve a quality factor of 10 at 5 GHz."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Using a similar topology, the 2.4-GHz LNA (also shown in Fig. 3) achieves 20-dB gain and 2.5-dB NF. 4 dB gain is also available, achieving A bypass mode with an IIP3 of 10 dBm."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The output of the LNA is demodulated directly into a common baseband path by a Gilbert-cell-based Fig. 3. 5 GHz and 2.4 GHz LNAs."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, wlan, baseband, if",
+        "sub_blocks": [
+          "inductor",
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "5 GHz and 2.4 GHz LNAs",
+        "key_specs": [
+          "5 GHz",
+          "4 dB",
+          "10 dBm",
+          "2.4 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Simplified TX mixer schematic.",
+      "caption_bbox": [
+        38.1,
+        171.9,
+        170.1,
+        179.9
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 4."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The linear input stage drives a CMOS Gilbert cell via a folded cascode current source (Fig. 4)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "-simplified": -1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, wlan, baseband, if",
+        "sub_blocks": [
+          "current source",
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simplified TX mixer schematic",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.57,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. 2.6-GHz and 4.9-GHz VCOs.",
+      "caption_bbox": [
+        301.1,
+        314.6,
+        425.4,
+        322.6
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "To minimize pulling, the 2.45-GHz LO is generated by a 4.9-GHz voltage-controlled oscillator (VCO), shown in Fig. 5."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 7, JULY 2004 Fig. 5. 2.6-GHz and 4.9-GHz VCOs."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The 2.6-GHz VCO shown in Fig. 5 uses a single inductor and a complementary pair of negative resistor structures for reduced flicker noise upconversion and achieves 115 dBc Hz at 1-MHz offset at the doubler phase noise of output."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, wlan, baseband, if",
+        "sub_blocks": [
+          "inductor",
+          "resistor"
+        ],
+        "design_purpose": "To minimize pulling, the 2.45-GHz LO is generated by a 4.9-GHz voltage-controlled oscillator (VCO), shown in Fig. 5.",
+        "function_summary": "2.6-GHz and 4.9-GHz VCOs. To minimize pulling, the 2.45-GHz LO is generated by a 4.9-GHz voltage-controlled oscillator (VCO), shown in Fig. 5.",
+        "key_specs": [
+          "115 dBc"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. Phase noise plots. (a) 5 GHz. (b) 2.4 GHz.",
+      "caption_bbox": [
+        301.1,
+        708.3,
+        466.3,
+        716.3
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 6."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The synthesizer at 5 GHz and 1.2 achieves an integrated phase noise of 0.8 at 2.4 GHz (Fig. 6)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "-phase noise": -2.5,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "frequency synthesizer",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Phase noise plots. (a) 5 GHz. (b) 2.4 GHz",
+        "key_specs": [
+          "5 GHz",
+          "2.4 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Chip microphotograph.",
+      "caption_bbox": [
+        39.6,
+        255.1,
+        143.2,
+        263.1
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "(b) 2.4 GHz. 5.2-GHz LO is generated by a 2.6-GHz VCO followed by a Gilbert-cell-based doubler and polyphase filters for quadrature IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 7, JULY 2004 Fig. 7."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "A die microphotograph is shown in Fig. 7 and typical measurement results are summarized in Table I."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chip microphotograph",
+        "key_specs": [
+          "2.4 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8.",
+      "caption_bbox": [
+        302.6,
+        366.0,
+        322.6,
+        373.9
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.9,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Dual-Band 5.15–5.35-GHz, 2.4–2.5-GHz 0.18-m CMOS Transceiver",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.11,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 3,
+      "caption": "Fig. 9. RX EVM versus input power.",
+      "caption_bbox": [
+        302.6,
+        555.4,
+        427.1,
+        563.4
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Fig. 9."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "The receiver EVM for the 54-Mb/s mode as a function of the input power level is shown in Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, wireless, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "RX EVM versus input power",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 2,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

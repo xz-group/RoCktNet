@@ -1,0 +1,29 @@
+M22 Vo_minus N_M16_D VDD VDD pmos
+M16 N_M16_D Vb1 VDD VDD pmos
+M18 N_M18_D Vb2 N_M16_D VDD pmos
+M25 N_M19_D Vb4 N_M18_D VDD pmos
+M26 N_M18_D Vb3 N_M19_D GND nmos
+M19 N_M19_D Vb5 N_M19_S GND nmos
+M20 N_M19_S Vb6 GND GND nmos
+M21 Vo_minus N_M19_S GND GND nmos
+M4 N_M19_S Vb6 GND GND nmos
+M1 N_M19_S Vi_minus N_M5_D VDD pmos
+M5 N_M5_D Vb1 VDD VDD pmos
+M2 N_M9_S Vi_plus N_M5_D VDD pmos
+M3 N_M9_S Vb6 GND GND nmos
+M10 N_M9_S Vb6 GND GND nmos
+M11 Vo_plus N_M9_S GND GND nmos
+M9 N_M9_D Vb5 N_M9_S GND nmos
+M15 N_M9_D Vb3 N_M8_D VDD pmos
+M14 N_M8_D Vb4 N_M9_D GND nmos
+M8 N_M8_D Vb2 N_M6_D VDD pmos
+M6 N_M6_D Vb1 VDD VDD pmos
+M12 Vo_plus N_M6_D VDD VDD pmos
+C1 Vo_minus N_RC_UL
+R2 N_RC_UL N_M18_D
+C2 Vo_minus N_RC_LL
+R4 N_RC_LL N_M19_D
+C3 Vo_plus N_RC_UR
+R3 N_RC_UR N_M8_D
+C4 Vo_plus N_RC_LR
+R1 N_RC_LR N_M9_D

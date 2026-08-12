@@ -1,0 +1,61 @@
+# A 62mW Stereo Class-G Headphone Driver with 108dB Dynamic Range and 600μA/Channel Quiescent Current Jianlong Chen1, Sasi Kumar Arunachalam1, Todd L. Brooks1, Iuri Mehr1, Felix Cheung1, Hariprasath Venkatram2
+
+VENUE
+"2013"
+
+FIGURE NUMBER
+"Figure 10.6.3 shows the overall headphone driver architecture. Headphone drivers usually need a high-order loop filter to suppress non-linearity and power supply disturbance from the output stage [1][2]. Taking advantage of the high gain associated with the adaptive class-B control scheme, a simple first-order loop filter is sufficient to suppress non-linearity and battery power supply variation. Part of the variation is due to the class-G operation. When the output voltage rises above a threshold, the supply for the driver output stage is increased. If the output voltage is below the threshold, the supply is reduced in an efficient way, using a charge pump (class-G supply as shown in Fig. 10.6.3). A first-order Gm-C filter is used as loop filter. The transconductance cell is implemented as a low-noise, high voltage gain input stage followed by a 1/R second stage to reduce the overall Gm value. Hence, the overall Gm is defined by the input differential pair (transistors M1/M2) gm divided by R2/R1 ratio. This transconductance topology allows using a smaller value capacitor C while achieving low input-referred noise. With an R2/R1 ratio of 25, only a 4pF loading capacitor C"
+
+TYPE
+"Stereo Class-G Headphone Driver"
+
+TECHNOLOGY
+"CMOS"
+
+APPLICATION
+"rf, if"
+
+SUB-BLOCKS
+[
+  "capacitor",
+  "resistor",
+  "transistor/MOSFET",
+  "switch",
+  "differential pair"
+]
+
+FUNCTION SUMMARY
+"Stereo Class-G Headphone Driver"
+
+METRICS
+[
+  "Power consumption",
+  "Gain",
+  "Supply voltage",
+  "Capacitance",
+  "Frequency",
+  "Impedance",
+  "Efficiency / ratio"
+]
+
+NUMERICAL PERFORMANCE
+[
+  "62mW",
+  "108dB",
+  "4.5V",
+  "50μV",
+  "4pF",
+  "400kHz",
+  "5.4μV",
+  "1 kHz",
+  "32Ω",
+  "1%"
+]
+
+CONFIDENCE
+0.8
+
+WARNINGS
+[
+  "Recommended figure was classified as 'result_plot', not a schematic; manual confirmation strongly recommended."
+]

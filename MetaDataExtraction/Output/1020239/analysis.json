@@ -1,0 +1,1158 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1020239.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1020239",
+  "generated_at": "2026-07-29T22:00:23",
+  "paper_metadata": {
+    "title": "Frequency Dependence on Bias Current in 5-GHz CMOS VCOs: Impact on Tuning Range and Flicker Noise Upconversion",
+    "authors": [
+      "Salvatore Levantino",
+      "Carlo Samori",
+      "Andrea Bonfanti",
+      "Sander L. J. Gierkink",
+      "Andrea L. Lacaita",
+      "Vito Boccuzzi"
+    ],
+    "abstract": "The tuning curve of an LC-tuned voltage-controlled oscillator (VCO) substantially deviates from the ideal curve range, suggests the use of a varactor featuring a very steep ) when a varactor with an abrupt ) charactercharacteristic. For that reason, accumulation-mode 1 ( ( istic is adopted and the full oscillator swing is applied directly varactors with abrupt have been recently implemented in across the varactor. The tuning curve becomes strongly dependent fully integrated voltage-controlled oscillators (VCOs) [2]–[4]. on the oscillator bias current. As a result, the practical tuning Alternatively, a couple of VCOs with partially overlapping range is reduced and the upconverted flicker noise of the bias 3 close-in phase noise, even if the current dominates the 1 tuning ranges can be embedded in the PLL [5]. However, this waveform symmetry has been assured. A first-order estimation technique dramatically increases the die area of the synthesizer. of the tuning curve for MOS-varactor-tuned VCOs is provided. Another approach consists of using a small varactor in parallel Based on this result, a simplified phase-noise model for double with an array of switched tuning capacitors [6]. The capacicross-coupled VCOs is derived. This model can be easily adapted tance value can be varied digitally by way of MOS switches. to cover other LC-tuned oscillator topologies. The theoretical analyses are experimentally validated with a 0.25m CMOS fully This scheme still increases the complexity of the channel selecintegrated VCO for 5-GHz wireless LAN receivers. By eliminating tion and may add a time penalty in reaching the lock condition. the bias current generator in a second oscillator, the close-in phase Moreover, the switches when on degrade the tank quality factor noise improves by 10 dB and features 70 dBc/Hz at 10-kHz and thus the oscillation amplitude and the phase noise. 2 noise is offset. The 1 132 dBc/Hz at 3-MHz offset. The A “strong” varactor seems therefore desirable in low-voltage tuning range spans from 4.6 to 5.7 GHz (21%) and the current consumption is 2.9 mA. design. However, as we show in this paper, an abrupt characteristic has an important practical impact on the achiev-",
+    "keywords": [
+      "AM-to-PM conversion",
+      "analog integrated circuits"
+    ],
+    "doi": "10.1109/JSSC.2002.800969",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2002
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Frequency Dependence on Bias Current in 5-GHz CMOS VCOs: Impact on Tuning Range and Flicker Noise Upconversion",
+    "technology": "CMOS",
+    "application_domain": "wireless, if",
+    "sub_blocks": [
+      "varactor",
+      "inductor",
+      "capacitor",
+      "transistor/MOSFET",
+      "cross-coupled pair",
+      "current source",
+      "LC tank / resonator",
+      "bias circuit",
+      "switch",
+      "resistor",
+      "op-amp"
+    ],
+    "design_purpose": "",
+    "function_summary": "Frequency Dependence on Bias Current in 5-GHz CMOS VCOs: Impact on Tuning Range and Flicker Noise Upconversion: The tuning curve of an LC-tuned voltage-controlled oscillator (VCO) substantially deviates from the ideal curve range, suggests the use of a varactor featuring a very steep ) when a varactor with an abrupt ) charactercharacteristic.",
+    "key_specs": [
+      "10 dB",
+      "70 dBc/Hz",
+      "132 dBc/Hz",
+      "5.7 GHz",
+      "21%",
+      "1 w",
+      "6 GHz",
+      "2 V",
+      "2.5 V",
+      "1 GHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE DIFFUSION of high-speed wireless data communications systems is continuously increasing. High operating frequencies, 5–6 GHz, characterize new standards such as HiperLan or U-NII. A fully integrated implementation of these systems seems possible in CMOS employing scaled technologies, which entails the use of a low-voltage power supply. The swing available to the tuning voltage within a phase- ..."
+    },
+    {
+      "number": "III",
+      "title": "PREDICTING THE TUNING CHARACTERISTIC",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "Predicting the shape of the tuning characteristic when an is employed is not trivial. Given the dc bias abrupt across the varactor, a first estimate of the tuning curve can be achieved using the varactor small-signal capacitance: . is dependent on the tuning as well as the common-mode (CM) level voltage of the oscillator output: . Fig. 3 schematically sketches two tuning characteristics estimated  ..."
+    },
+    {
+      "number": "IV",
+      "title": "EXPERIMENTAL VERIFICATION",
+      "kind": "results",
+      "page": 3,
+      "text_preview": "The oscillator in Fig. 1 has been integrated in Agere m CMOS process. The tuning characteristic of Systems’ 0.25the oscillator was measured and reported in Fig. 7 (circles). It , with V. is plotted against The measured tuning agrees well with the solid line obtained by solving (3). Fig. 7 also shows the curve calculated from the varactor small-signal capacitance as (dash-dotted line). As expected, ..."
+    },
+    {
+      "number": "V",
+      "title": "UPCONVERSION OF LOW-FREQUENCY NOISE",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "Fig. 8(a) highlights another important effect: a variation of gives rise to a change of the output frequency the tail current is held constant. The oscillation frequency is even if . Accordingly, a slow random thus sensitive to the value of induces a frequency change and, therefore, fluctuation of phase noise. As discussed in Section III, two coexisting effects, namely, the modification of the var ..."
+    },
+    {
+      "number": "VI",
+      "title": "MEASURED PHASE NOISE",
+      "kind": "results",
+      "page": 5,
+      "text_preview": "In order to measure close-in phase noise, the VCO must be locked in a PLL with a narrow bandwidth (about 1 kHz). The spectrum of the oscillator in Fig. 1 has been measured at different tuning voltages and the resulting phase-noise values at region) are plotted as diamonds 100-kHz offset (in the in Fig. 12. The experimental values agree well with the results obtained from the theoretical phase-nois ..."
+    },
+    {
+      "number": "VII",
+      "title": "OSCILLATOR WITH REDUCED",
+      "kind": "other",
+      "page": 6,
+      "text_preview": "PHASE NOISE Fig. 11 shows that CCM-to-FM conversion can be more important than AM-to-FM conversion. For this reason, removing the pMOS cross couple and connecting the node between the inductors directly to the power supply is beneficial to a reducphase noise. In such a topology, the inductors tion of the and no modulation force the average value of the outputs to of the varactor bias point is indu ..."
+    },
+    {
+      "number": "VIII",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 7,
+      "text_preview": "In this paper, the issues related to the use of a steep varactor in multigigahertz CMOS oscillators have been extensively discussed. With such a steep varactor characteristic, the resulting frequency of oscillation strongly depends on both the varactor bias point and the oscillation amplitude. If not properly taken into account, this effect can limit the tuning range of phase noise. the oscillator ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Schematic of the 5-GHz CMOS oscillator with tail current generator.",
+      "caption_bbox": [
+        39.6,
+        242.6,
+        288.3,
+        253.2
+      ],
+      "section_title": "III. PREDICTING THE TUNING CHARACTERISTIC",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Section V demonstrates how the phenomena Fig. 1."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "II. 5-GHZ OSCILLATOR Fig. 1 shows the schematic of the 5-GHz oscillator."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Tuning characteristics estimated using ! = 1= LC versus V p of the oscillator in Fig. 1 for two different biasing conditions. about550fF,duetotheinductor,thegatesoftheMOStransistors, and the drain-to-substrate junctions."
+        },
+        {
+          "section_title": "PREDICTING THE TUNING CHARACTERISTIC",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The output bias level of the oscillator in Fig. 1 can , assuming be evaluated as flows symmetrically in the two sides of the that the current circuit and the transistors operate in velocity saturation."
+        },
+        {
+          "section_title": "PREDICTING THE TUNING CHARACTERISTIC",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "This effect is voltage but also on the oscillation amplitude not uniquely related to the particular implementation of Fig. 1, but it is valid for any VCO topology employing a tank capacicurve. tance with a steep The analysis of the last effect is not straightforward, given the nonlinear nature of the process."
+        },
+        {
+          "section_title": "PREDICTING THE TUNING CHARACTERISTIC",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "At the center of the tuning characteristic, where the linear approximation holds, it is given by (1) and from For instance, given the values of Fig. 2, the two limit frequencies of the oscillator in Fig. 1 are GHz and GHz."
+        },
+        {
+          "section_title": "PREDICTING THE TUNING CHARACTERISTIC",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Clearly, the most direct procedure to support our intuitive picture is to simulate the oscillator in Fig. 1 for different values ."
+        },
+        {
+          "section_title": "PREDICTING THE TUNING CHARACTERISTIC",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "As output waveform versus already mentioned, the same plot can be obtained with a transistor-level simulation of the circuit in Fig. 1."
+        },
+        {
+          "section_title": "EXPERIMENTAL VERIFICATION",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "The oscillator in Fig. 1 has been integrated in Agere m CMOS process."
+        },
+        {
+          "section_title": "UPCONVERSION OF LOW-FREQUENCY NOISE",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "This noise is usually higher than the contribution of just the single tail transistor, since the diodeconnected MOS of the mirror (see Fig. 1) and its bias network . also contribute to the fluctuations of injected from As shown in Fig. 9, a low-frequency tone at and . the oscillator tail gives rise to a modulation of both The two modulations occur simultaneously."
+        },
+        {
+          "section_title": "UPCONVERSION OF LOW-FREQUENCY NOISE",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "CMM-to-FM Conversion The CM level of the double cross-coupled oscillator in Fig. 1 ."
+        },
+        {
+          "section_title": "MEASURED PHASE NOISE",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The spectrum of the oscillator in Fig. 1 has been measured at different tuning voltages and the resulting phase-noise values at region) are plotted as diamonds 100-kHz offset (in the in Fig. 12."
+        },
+        {
+          "section_title": "OSCILLATOR WITH REDUCED",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "To compare the performance of the oscillators in Figs. 1 and 14, their tanks are chosen identical and both circuits have the same tuning characteristic."
+        },
+        {
+          "section_title": "OSCILLATOR WITH REDUCED",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "From the phase-noise point of view, the topology in Fig. 14 is expected to show better noise performance than the one in Fig. 1. noise of the oscillator without the current generator The can only originate from the flicker noise of the MOS transistor switches."
+        },
+        {
+          "section_title": "OSCILLATOR WITH REDUCED",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "(a) Microphotograph of the oscillator in Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.0,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "references": 2.0
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "cross-coupled pair",
+          "current source",
+          "LC tank / resonator",
+          "bias circuit",
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Schematic of the 5-GHz CMOS oscillator with tail current generator",
+        "key_specs": [
+          "550fF"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.88,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Tank capacitance C(V ) characteristic.",
+      "caption_bbox": [
+        39.6,
+        438.1,
+        192.4,
+        448.8
+      ],
+      "section_title": "III. PREDICTING THE TUNING CHARACTERISTIC",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 2."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 2 shows the of the single-ended tank capacitance plotted versus the varactor varying in the range 1.5– 1.5 V. well-to-gate voltage This capacitance consists of the varactor capacitance plus the parasitic."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The imum and minimum capacitance, characteristic in Fig. 2 is used in the following section to predict the resulting oscillator tuning curve."
+        },
+        {
+          "section_title": "PREDICTING THE TUNING CHARACTERISTIC",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "At the center of the tuning characteristic, where the linear approximation holds, it is given by (1) and from For instance, given the values of Fig. 2, the two limit frequencies of the oscillator in Fig. 1 are GHz and GHz."
+        },
+        {
+          "section_title": "PREDICTING THE TUNING CHARACTERISTIC",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Dash-dotted line: as calculated from LC(V ) using the C(V ) characteristic of Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.0,
+      "relevance_breakdown": {
+        "-capacitance": -2.0,
+        "references": 2.0
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "varactor",
+          "LC tank / resonator"
+        ],
+        "design_purpose": "",
+        "function_summary": "Tank capacitance C(V ) characteristic",
+        "key_specs": [
+          "1.5 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Tuning characteristics estimated using ! = 1= LC versus V p of the oscillator in Fig. 1 for two different biasing conditions.",
+      "caption_bbox": [
+        302.6,
+        148.0,
+        534.2,
+        167.6
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The parasiticcapacitance ispractically a constant term, IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 8, AUGUST 2002 Fig. 3."
+        },
+        {
+          "section_title": "PREDICTING THE TUNING CHARACTERISTIC",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 3 schematically sketches two tuning characteristics estimated and plotted versus for two different as ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "bias circuit"
+        ],
+        "design_purpose": "",
+        "function_summary": "Tuning characteristics estimated using ! = 1= LC versus V p of the oscillator in Fig. 1 for two different biasing conditions",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. (a) First-order model of the varactor capacitance and (b) of the expected tuning curve.",
+      "caption_bbox": [
+        38.1,
+        266.8,
+        289.1,
+        286.4
+      ],
+      "section_title": "III. PREDICTING THE TUNING CHARACTERISTIC",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "PREDICTING THE TUNING CHARACTERISTIC",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 4(a) shows the step-shaped LEVANTINO et al.: FREQUENCY DEPENDENCE ON BIAS CURRENT IN 5-GHz CMOS VCOs (a) (b) Fig. 4."
+        },
+        {
+          "section_title": "PREDICTING THE TUNING CHARACTERISTIC",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Consistently, when is frequency is , it is given by . higher than falls in the range , the frequency is linIf and , as early interpolated between the two limit values sketched in Fig. 4(b)."
+        },
+        {
+          "section_title": "PREDICTING THE TUNING CHARACTERISTIC",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "In that case, the linear approximation such that of (1) holds over the entire tuning range and the effective tuning : range is reduced by a factor Tuning Range (2) From Fig. 4(b), it also follows that the oscillation amplitude sets the width of the transition window of the tuning curve. increases, the tuning characteristic changes Therefore, if from the dashed curve in Fig. 5(a) to the solid one."
+        },
+        {
+          "section_title": "UPCONVERSION OF LOW-FREQUENCY NOISE",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "To get a first-order estimation of , the tuning characteristic in its central part can be linearly approximated with [see Fig. 4(b)], where Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.9,
+      "relevance_breakdown": {
+        "-model": -1.5,
+        "-capacitance": -2.0,
+        "references": 1.6
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "varactor"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) First-order model of the varactor capacitance and (b) of the expected tuning curve",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. (a) The tuning curve flattens when the amplitude of oscillation increases. (b) Intuitive picture of the capacitance dependency on the amplitude.",
+      "caption_bbox": [
+        301.1,
+        248.0,
+        552.2,
+        267.6
+      ],
+      "section_title": "III. PREDICTING THE TUNING CHARACTERISTIC",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "PREDICTING THE TUNING CHARACTERISTIC",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "In that case, the linear approximation such that of (1) holds over the entire tuning range and the effective tuning : range is reduced by a factor Tuning Range (2) From Fig. 4(b), it also follows that the oscillation amplitude sets the width of the transition window of the tuning curve. increases, the tuning characteristic changes Therefore, if from the dashed curve in Fig. 5(a) to the solid one."
+        },
+        {
+          "section_title": "PREDICTING THE TUNING CHARACTERISTIC",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "An intuitive justification of that behavior is given in Fig. 5(b)."
+        },
+        {
+          "section_title": "PREDICTING THE TUNING CHARACTERISTIC",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The opposite . happens if (a) (b) Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "-capacitance": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Frequency Dependence on Bias Current in 5-GHz CMOS VCOs: Impact on Tuning Range and Flicker Noise Upconversion",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) The tuning curve flattens when the amplitude of oscillation increases. (b) Intuitive picture of the capacitance dependency on the amplitude",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. (a) Lossless tank. (b) Solution of (3) for V (t) and V (t). (c) Output waveforms of the oscillator. The varactor C(V ) curve gives rise to a secondorder harmonic distortion of the single-ended output. The output common mode therefore varies at 2! .",
+      "caption_bbox": [
+        39.6,
+        395.1,
+        290.6,
+        432.7
+      ],
+      "section_title": "IV. EXPERIMENTAL VERIFICATION",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "PREDICTING THE TUNING CHARACTERISTIC",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The problem consists of evaluating the oscillation frequency in the lossless differential and for a given oscillation tank in Fig. 6(a) for a given amplitude."
+        },
+        {
+          "section_title": "PREDICTING THE TUNING CHARACTERISTIC",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "(3) and are the voltages shown in Fig. 6(a)."
+        },
+        {
+          "section_title": "PREDICTING THE TUNING CHARACTERISTIC",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "As an example, the solutions V, are plotted in Fig. 6(b)."
+        },
+        {
+          "section_title": "PREDICTING THE TUNING CHARACTERISTIC",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "When the voltage signal drives the capacitor toward the (a) (b) (c) Fig. 6."
+        },
+        {
+          "section_title": "PREDICTING THE TUNING CHARACTERISTIC",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The situation is schematically depicted in Fig. 6(c)."
+        },
+        {
+          "section_title": "MEASURED PHASE NOISE",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Note that despite the near-perfect symmetry of the single-ended waveform shown in Fig. 6(b), strong low-frequency noise upconversion takes place."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.0,
+      "relevance_breakdown": {
+        "-waveform": -2.0,
+        "section:results": -2.0,
+        "references": 2.0
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "varactor",
+          "capacitor",
+          "LC tank / resonator"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) Lossless tank. (b) Solution of (3) for V (t) and V (t). (c) Output waveforms of the oscillator. The varactor C(V ) curve gives rise to a secondorder harmonic distortion of the single-ended output. The output common mode therefore varies at 2!",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Oscillator tuning characteristic. Dash-dotted line: as calculated from LC(V ) using the C(V ) characteristic of Fig. 2. Solid line: as obtained 1= from solving (3). Circles: experimental results.",
+      "caption_bbox": [
+        302.6,
+        231.4,
+        553.7,
+        260.2
+      ],
+      "section_title": "IV. EXPERIMENTAL VERIFICATION",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "PREDICTING THE TUNING CHARACTERISTIC",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The frequency of the differential is shown in Fig. 7 (solid line)."
+        },
+        {
+          "section_title": "PREDICTING THE TUNING CHARACTERISTIC",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The maximum MHz/V. value for the VCO gain is IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 8, AUGUST 2002 Fig. 7."
+        },
+        {
+          "section_title": "EXPERIMENTAL VERIFICATION",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "The tuning characteristic of Systems’ 0.25the oscillator was measured and reported in Fig. 7 (circles)."
+        },
+        {
+          "section_title": "EXPERIMENTAL VERIFICATION",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Fig. 7 also shows the curve calculated from the varactor small-signal capacitance as (dash-dotted line)."
+        },
+        {
+          "section_title": "EXPERIMENTAL VERIFICATION",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Assuming 2 V of tuning voltage range, the practical tuning range is 20% less than the one expected from the dash-dotted line in Fig. 7."
+        },
+        {
+          "section_title": "UPCONVERSION OF LOW-FREQUENCY NOISE",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Therecan be safely taken fore, the sensitivity coefficient , that is, the derivative of the solid curve as the VCO gain in Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.0,
+      "relevance_breakdown": {
+        "-calculated": -2.0,
+        "section:results": -2.0,
+        "references": 2.0
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "varactor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Oscillator tuning characteristic. Dash-dotted line: as calculated from LC(V ) using the C(V ) characteristic of Fig. 2. Solid line: as obtained 1= from solving (3). Circles: experimental results",
+        "key_specs": [
+          "2 V",
+          "20%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Comparison of two tuning characteristics measured at different bias currents. The curves are plotted versus (a) V and (b) V .",
+      "caption_bbox": [
+        38.1,
+        418.6,
+        289.2,
+        438.2
+      ],
+      "section_title": "V. UPCONVERSION OF LOW-FREQUENCY NOISE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL VERIFICATION",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Fig. 8(a) shows the two measured tuning curves, plotted versus ."
+        },
+        {
+          "section_title": "EXPERIMENTAL VERIFICATION",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "In Fig. 8(b), the same curves are one due to the decrease of ; thus, the effect of the amplitude variation plotted versus is isolated from the CM level variation."
+        },
+        {
+          "section_title": "UPCONVERSION OF LOW-FREQUENCY NOISE",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 8(a) highlights another important effect: a variation of gives rise to a change of the output frequency the tail current is held constant."
+        },
+        {
+          "section_title": "UPCONVERSION OF LOW-FREQUENCY NOISE",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "As discussed in Section III, two coexisting effects, namely, the modification of the varactor bias point and the os- , cause the frequency change. cillator amplitude In this section, we show that these effects are the dominant phase noise and that mechanisms for the generation of LEVANTINO et al.: FREQUENCY DEPENDENCE ON BIAS CURRENT IN 5-GHz CMOS VCOs (a) as (b) Fig. 8."
+        },
+        {
+          "section_title": "UPCONVERSION OF LOW-FREQUENCY NOISE",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Since that induces a frequency variation [the experimental evidence being in Fig. 8(b)], we will refer to this effect as AM-to-FM conversion."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.0,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "references": 2.0
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "varactor",
+          "current source"
+        ],
+        "design_purpose": "",
+        "function_summary": "Comparison of two tuning characteristics measured at different bias currents. The curves are plotted versus (a) V and (b) V",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. Low-frequency modulation of the bias current causes both an amplitude modulation of the carrier and a modulation of the common-mode level.",
+      "caption_bbox": [
+        301.1,
+        202.3,
+        552.1,
+        221.8
+      ],
+      "section_title": "V. UPCONVERSION OF LOW-FREQUENCY NOISE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "UPCONVERSION OF LOW-FREQUENCY NOISE",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "This noise is usually higher than the contribution of just the single tail transistor, since the diodeconnected MOS of the mirror (see Fig. 1) and its bias network . also contribute to the fluctuations of injected from As shown in Fig. 9, a low-frequency tone at and . the oscillator tail gives rise to a modulation of both The two modulations occur simultaneously."
+        },
+        {
+          "section_title": "UPCONVERSION OF LOW-FREQUENCY NOISE",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "This is equivalent to a decomposition of the output signal as depicted in Fig. 9."
+        },
+        {
+          "section_title": "UPCONVERSION OF LOW-FREQUENCY NOISE",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "bias circuit"
+        ],
+        "design_purpose": "",
+        "function_summary": "Low-frequency modulation of the bias current causes both an amplitude modulation of the carrier and a modulation of the common-mode level",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. Frequency change due to a rise in output amplitude. The sign of the change depends on the varactor bias.",
+      "caption_bbox": [
+        39.6,
+        140.5,
+        290.6,
+        160.0
+      ],
+      "section_title": "V. UPCONVERSION OF LOW-FREQUENCY NOISE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "UPCONVERSION OF LOW-FREQUENCY NOISE",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Referring to Fig. 10, if tuning characteristic moves from the dashed to the solid line. , the Hence, if the bias voltage across the varactor is is positive."
+        },
+        {
+          "section_title": "UPCONVERSION OF LOW-FREQUENCY NOISE",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "To get a first-order estimation of , the tuning characteristic in its central part can be linearly approximated with [see Fig. 4(b)], where Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Frequency Dependence on Bias Current in 5-GHz CMOS VCOs: Impact on Tuning Range and Flicker Noise Upconversion",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "varactor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Frequency change due to a rise in output amplitude. The sign of the change depends on the varactor bias",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 5,
+      "caption": "Fig. 11. Sensitivity coefficients for the AM-to-FM and the CMM-to-FM conversion.",
+      "caption_bbox": [
+        39.6,
+        355.0,
+        290.7,
+        374.6
+      ],
+      "section_title": "V. UPCONVERSION OF LOW-FREQUENCY NOISE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "UPCONVERSION OF LOW-FREQUENCY NOISE",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 11."
+        },
+        {
+          "section_title": "UPCONVERSION OF LOW-FREQUENCY NOISE",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "These to in Fig. 11."
+        },
+        {
+          "section_title": "UPCONVERSION OF LOW-FREQUENCY NOISE",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "As sensitivity coefficients are plotted versus changes its sign, and close to , it is expected, well approximated by (7), represented by the dashed line in Fig. 11."
+        },
+        {
+          "section_title": "OSCILLATOR WITH REDUCED",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "PHASE NOISE Fig. 11 shows that CCM-to-FM conversion can be more important than AM-to-FM conversion."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.6,
+      "relevance_breakdown": {
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Frequency Dependence on Bias Current in 5-GHz CMOS VCOs: Impact on Tuning Range and Flicker Noise Upconversion",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Sensitivity coefficients for the AM-to-FM and the CMM-to-FM conversion",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 5,
+      "caption": "Fig. 12. Comparison between the expected (solid line) and measured (diamonds) phase noise at 100-kHz offset along the entire tuning range.",
+      "caption_bbox": [
+        302.6,
+        237.3,
+        553.7,
+        256.9
+      ],
+      "section_title": "V. UPCONVERSION OF LOW-FREQUENCY NOISE",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "UPCONVERSION OF LOW-FREQUENCY NOISE",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "In case of flicker noise, it is IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 8, AUGUST 2002 Fig. 12."
+        },
+        {
+          "section_title": "UPCONVERSION OF LOW-FREQUENCY NOISE",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Its value is 0.2 nA noise estimation is shown as a solid line in Fig. 12."
+        },
+        {
+          "section_title": "MEASURED PHASE NOISE",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The spectrum of the oscillator in Fig. 1 has been measured at different tuning voltages and the resulting phase-noise values at region) are plotted as diamonds 100-kHz offset (in the in Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.8,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-phase noise": -2.5,
+        "-tuning range": -2.5,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Comparison between the expected (solid line) and measured (diamonds) phase noise at 100-kHz offset along the entire tuning range",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 6,
+      "caption": "Fig. 13. Phase noise spectra at V = 0 V (dark gray) and V = 1 V (light gray).",
+      "caption_bbox": [
+        38.1,
+        221.4,
+        289.2,
+        241.0
+      ],
+      "section_title": "VI. MEASURED PHASE NOISE",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASURED PHASE NOISE",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 13 shows two phase-noise spectra, measured at different values of the tuning voltage."
+        },
+        {
+          "section_title": "MEASURED PHASE NOISE",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The first spectrum is obtained with V where the varactor is biased the VCO biased at LEVANTINO et al.: FREQUENCY DEPENDENCE ON BIAS CURRENT IN 5-GHz CMOS VCOs Fig. 13."
+        },
+        {
+          "section_title": "MEASURED PHASE NOISE",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The two measured spectra in Fig. 13 unambiguously demonstrate the main role of the varactors in the upconversion of flicker noise."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.3,
+      "relevance_breakdown": {
+        "-phase noise": -2.5,
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "varactor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Phase noise spectra at V = 0 V (dark gray) and V = 1 V (light gray)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 6,
+      "caption": "Fig. 14. Schematic of the oscillator without the tail current generator.",
+      "caption_bbox": [
+        301.1,
+        197.6,
+        527.8,
+        208.2
+      ],
+      "section_title": "VI. MEASURED PHASE NOISE",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "OSCILLATOR WITH REDUCED",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "Second, Fig. 14."
+        },
+        {
+          "section_title": "OSCILLATOR WITH REDUCED",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "As a result, the We instead investigated the solution in Fig. 14."
+        },
+        {
+          "section_title": "OSCILLATOR WITH REDUCED",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "The startup behavior of the oscillator in Fig. 14 is described as follows."
+        },
+        {
+          "section_title": "OSCILLATOR WITH REDUCED",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "From the phase-noise point of view, the topology in Fig. 14 is expected to show better noise performance than the one in Fig. 1. noise of the oscillator without the current generator The can only originate from the flicker noise of the MOS transistor switches."
+        },
+        {
+          "section_title": "OSCILLATOR WITH REDUCED",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "(b) Microphotograph of the oscillator in Fig. 14. noise is in principle sampled by an impulse train at , at the zero-crossing instants [12]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.0,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:results": -2.0,
+        "references": 2.0
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "current source",
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Schematic of the oscillator without the tail current generator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.27,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 7,
+      "caption": "Fig. 15. (a) Microphotograph of the oscillator in Fig. 1. (b) Microphotograph of the oscillator in Fig. 14.",
+      "caption_bbox": [
+        39.6,
+        446.5,
+        290.7,
+        466.0
+      ],
+      "section_title": "VIII. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "OSCILLATOR WITH REDUCED",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "The microphotographs of the two oscillators are reported in Fig. 15."
+        },
+        {
+          "section_title": "OSCILLATOR WITH REDUCED",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "This (a) (b) Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.7,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Microphotograph of the oscillator in Fig. 1. (b) Microphotograph of the oscillator in Fig. 14",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 7,
+      "caption": "Fig. 16. Comparison between the phase noise spectra of the two oscillators, at two different tuning voltages (0 and 1 V).",
+      "caption_bbox": [
+        302.6,
+        299.5,
+        553.7,
+        319.1
+      ],
+      "section_title": "VII. OSCILLATOR WITH REDUCED",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "OSCILLATOR WITH REDUCED",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "Fig. 16 shows a comparison among the spectra of the . two oscillators, measured at two different values of noise is abated by about For both tuning voltages, the 10 dB when the tail current generator is omitted."
+        },
+        {
+          "section_title": "OSCILLATOR WITH REDUCED",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "Even if the second oscillator features higher power consumption (2.9 mA against 2 mA), it improves the typical figure of merit of oscillators, defined as the product of IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 8, AUGUST 2002 Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.7,
+      "relevance_breakdown": {
+        "-phase noise": -2.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "current source"
+        ],
+        "design_purpose": "",
+        "function_summary": "Comparison between the phase noise spectra of the two oscillators, at two different tuning voltages (0 and 1 V)",
+        "key_specs": [
+          "10 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 1,
+  "warnings": []
+}

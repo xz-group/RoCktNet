@@ -1,0 +1,932 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1278573.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1278573",
+  "generated_at": "2026-07-29T21:31:23",
+  "paper_metadata": {
+    "title": "A Complete Single-Chip GPS Receiver With 1.6-V 24-mW Radio in 0.18-\u0016m CMOS",
+    "authors": [
+      "Takahide Kadoyama",
+      "Norihito Suzuki",
+      "Noboru Sasho",
+      "Hiroshi Iizuka",
+      "Ikuho Nagase",
+      "Hideaki Usukubo",
+      "Masayuki Katakura"
+    ],
+    "abstract": "We have developed a complete single-chip GPS receiver using 0.18m CMOS to meet several important requirements, such as small size, low power, low cost, and high sensitivity for mobile GPS applications. This is the first case in which a radio has been successfully combined with a baseband processor, such as SoC, in a GPS receiver. The GPS chip, with a total size of 6.3 mm 6.3 mm, contains a 2.3 mm 2.0 mm radio part, including RF front end, phase-locked loops, IF functions, and 500 K gates of baseband logic, including mask ROM, SRAM, and dual port SRAM [1]. It is fabricated using 0.18m CMOS technology with a MIM capacitor and operates from a 1.6–2.0-V power supply. Experimental results show a very low power consumption of, typically, 57 mW for a fully functional chip including baseband, and a high sensiFig. 1. Radio block diagram. tivity of 152 dBm. Through countermeasures against substrate coupling noise from the digital part, the high sensitivity was successfully achieved without any external low-noise amplifier. tegration of the baseband and the radio part is the optimum so-",
+    "keywords": [
+      "CMOS",
+      "GPS",
+      "radio",
+      "SoC",
+      "substrate coupling"
+    ],
+    "doi": "10.1109/JSSC.2004.825233",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2004
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Complete Single-Chip GPS Receiver",
+    "technology": "CMOS",
+    "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "LC tank / resonator",
+      "mixer",
+      "op-amp",
+      "clock / timing",
+      "pre-amplifier"
+    ],
+    "design_purpose": "",
+    "function_summary": "Complete Single-Chip GPS Receiver: We have developed a complete single-chip GPS receiver using 0.18m CMOS to meet several important requirements, such as small size, low power, low cost, and high sensitivity for mobile GPS applications.",
+    "key_specs": [
+      "57 mW",
+      "152 dBm",
+      "85 dBm",
+      "150 dBm",
+      "24 mW",
+      "2 MHz",
+      "1 MHz",
+      "4 dB",
+      "5 MHz",
+      "1.6 V"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE USE OF CMOS technology for radio frequency (RF) sprang from university research in the mid-1990s. The spur for commercialization of CMOS wireless products came around 2000. Bluetooth’s major products have already been implemented in CMOS. Some transceivers have already been presented for IEEE 802.11a/b WLAN in CMOS technology. The new generation of wireless LAN products will, almost certainly ..."
+    },
+    {
+      "number": "II",
+      "title": "RECEIVER ARCHITECTURE",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "Fig. 1 shows a block diagram of the radio part of the GPS receiver. There are two options in terms of receiver architecture. One is single conversion which is very simple architecture. The other is double conversion with real filter requiring a two-stage IF but enabling the receiver to attenuate the image signal. Each KADOYAMA et al.: COMPLETE SINGLE-CHIP GPS RECEIVER Fig. 2. LNA and mixer. archit ..."
+    },
+    {
+      "number": "III",
+      "title": "CIRCUIT IMPLEMENTATION",
+      "kind": "design",
+      "page": 1,
+      "text_preview": "A. LNA and Mixer A single-end common-source type LNA is applied. It was one of the main challenges in single-chip GPS, since this structure is relatively sensitive to noise from the digital baseband via the substrate. From such a noise rejection point of view, a differential topology is preferred. However, a cascode singleended topology was selected to balance the power consumption and the NF of t ..."
+    },
+    {
+      "number": "IV",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 4,
+      "text_preview": "Radio performance is summarized in Table I. This radio operates from 1.6 to 2 V and over a wide range of temperatures 40 C to 85 C. The NF of the radio part is 4 dB when from the baseband is turned off. The NF is degraded by an additional 2 dB when the baseband is activated due to substrate coupling. However, as the total sensitivity of the full single-chip operation dBm MHz , this 2-dB difference ..."
+    },
+    {
+      "number": "V",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 5,
+      "text_preview": "A complete single-chip GPS receiver including radio was imm CMOS technology consuming plemented in a pure 0.1857 mW from a 1.8-V supply. We were able to the overcome substrate noise issue with a multistage guard band strategy. In this dBm MHz way, a high sensitivity of has been realized. The radio part includes the LNA, the mixer, Fig. 16. Chip micrograph. Fig. 17. Enlarged view of radio sections. ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Radio block diagram.",
+      "caption_bbox": [
+        302.6,
+        301.7,
+        400.9,
+        309.7
+      ],
+      "section_title": "",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1."
+        },
+        {
+          "section_title": "RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 1 shows a block diagram of the radio part of the GPS receiver."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Radio block diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. LNA and mixer.",
+      "caption_bbox": [
+        38.1,
+        248.6,
+        119.3,
+        256.5
+      ],
+      "section_title": "II. RECEIVER ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Each KADOYAMA et al.: COMPLETE SINGLE-CHIP GPS RECEIVER Fig. 2."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Circled transistors are separated by deep n-well, as shown in Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "LNA and mixer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Filter topology.",
+      "caption_bbox": [
+        301.1,
+        214.3,
+        379.4,
+        222.3
+      ],
+      "section_title": "II. RECEIVER ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 3."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "IF Filter Fig. 3 shows the filter topology used in the IF stage."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+topology": 2.5,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Filter topology",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.94,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 1,
+      "caption": "Fig. 4. Operational amplifier in the IF filter.",
+      "caption_bbox": [
+        301.1,
+        393.0,
+        447.5,
+        400.9
+      ],
+      "section_title": "II. RECEIVER ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 4."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 4 shows the operational amplifier used in the IF filter."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Operational amplifier in the IF filter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 1,
+      "caption": "Fig. 5. Image rejection.",
+      "caption_bbox": [
+        301.1,
+        589.2,
+        382.1,
+        597.1
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 5."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 5 shows how the GPS signal is filtered."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Complete Single-Chip GPS Receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Image rejection",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. Automatic filter tuning.",
+      "caption_bbox": [
+        39.6,
+        245.5,
+        144.4,
+        253.5
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "By using high-side LO injection at the second mixer, Fig. 6."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 6 shows the block diagram of the automatic filter tuning."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Automatic filter tuning",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 2,
+      "caption": "Fig. 7. Second-order LPF with 4-bit resistor bank.",
+      "caption_bbox": [
+        39.6,
+        401.3,
+        206.0,
+        409.2
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 7."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 7 shows a second-order LPF with 4-bit resistor banks for the center frequency tuning."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Complete Single-Chip GPS Receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [
+          "resistor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Second-order LPF with 4-bit resistor bank",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 2,
+      "caption": "Fig. 8. Filter characteristics.",
+      "caption_bbox": [
+        302.6,
+        197.8,
+        398.6,
+        205.8
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 8 shows the total IF IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 4, APRIL 2004 Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.9,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Filter characteristics",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.11,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 2,
+      "caption": "Fig. 9. VCO/quadrature LO generator.",
+      "caption_bbox": [
+        302.6,
+        337.6,
+        431.3,
+        345.6
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 9."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 9 shows a quadrature LO generator, which consists of a phase shifter combined directly with the VCO LC tank."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [
+          "LC tank / resonator"
+        ],
+        "design_purpose": "",
+        "function_summary": "VCO/quadrature LO generator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 3,
+      "caption": "Fig. 10. Wide D-range comparator.",
+      "caption_bbox": [
+        38.1,
+        203.0,
+        156.4,
+        211.0
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "For example, KADOYAMA et al.: COMPLETE SINGLE-CHIP GPS RECEIVER Fig. 10."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Instead, as shown in Fig. 10, the comparator’s sampling and amplifying stages are employed to expand signal resolution."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "comparator",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Wide D-range comparator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 3,
+      "caption": "Fig. 11. (a) Noise suppression effect of single versus multiple stage guard bands. (b) Overview of noise suppression effect simulation.",
+      "caption_bbox": [
+        301.1,
+        455.9,
+        552.2,
+        472.9
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "(a) (b) Fig. 11."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 11(a) shows a simulation result which indicates noise potential in the substrate bulk."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 11(b) shows an overview of this simulation. -stage guard bands are In this simulation, a noise source and set in line."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Complete Single-Chip GPS Receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Noise suppression effect of single versus multiple stage guard bands. (b) Overview of noise suppression effect simulation",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 4,
+      "caption": "Fig. 12. Multistage guard for LNA.",
+      "caption_bbox": [
+        39.6,
+        227.9,
+        158.8,
+        235.9
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "To attenuate the substrate noise as much as possible, we took three kinds of measures, as shown in Fig. 12."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "First, we laid out the LNA on the corner of this chip—which is certainly the quietest location and tends to be affected by noise from two sides rather than three sides—and the RF front-end portion is isolated Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Multistage guard for LNA",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 4,
+      "caption": "Fig. 13. Frequency interleave.",
+      "caption_bbox": [
+        302.6,
+        217.1,
+        404.4,
+        225.1
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 13 shows the GPS band."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 4, APRIL 2004 Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Complete Single-Chip GPS Receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Frequency interleave",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 5,
+      "caption": "Fig. 14. Second IF spectrum (above: BB off, below: BB on).",
+      "caption_bbox": [
+        38.1,
+        364.4,
+        237.4,
+        372.4
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 14 shows the second IF spectrum of 1 MHz."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The difference of sensitivity KADOYAMA et al.: COMPLETE SINGLE-CHIP GPS RECEIVER Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Second IF spectrum (above: BB off, below: BB on)",
+        "key_specs": [
+          "1 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 5,
+      "caption": "Fig. 15.",
+      "caption_bbox": [
+        38.1,
+        570.4,
+        62.8,
+        578.4
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 15 shows the relative sensitivity in a fully single-chip operation as follows: A) the single-chip solution of this paper; B) A) with external LNA."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 15. with or without an external LNA is only 2 dB."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "low-noise amplifier (LNA)",
+        "key_specs": [
+          "2 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 5,
+      "caption": "Fig. 16. Chip micrograph.",
+      "caption_bbox": [
+        301.1,
+        265.2,
+        390.6,
+        273.2
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 16 shows the whole chip micrograph."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 5,
+          "sentence": "The radio part includes the LNA, the mixer, Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-micrograph": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Chip micrograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 5,
+      "caption": "Fig. 17. Enlarged view of radio sections.",
+      "caption_bbox": [
+        301.1,
+        478.5,
+        437.4,
+        486.5
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 17 shows an enlarged view of the radio part."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 5,
+          "sentence": "Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Complete Single-Chip GPS Receiver",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, wireless, wlan, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Enlarged view of radio sections",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 3,
+  "warnings": []
+}

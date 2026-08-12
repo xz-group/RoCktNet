@@ -1,0 +1,174 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\RNDatasetPapers\\1696119.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output_rerun_128\\1696119",
+  "generated_at": "2026-07-29T22:45:33",
+  "paper_metadata": {
+    "title": "A 10b 50MS/s Pipelined ADC with Opamp Current Reuse Seung-Tak Ryu1, Bang-Sup Song1, Kanti Bacrania2",
+    "authors": [],
+    "abstract": "",
+    "keywords": [],
+    "doi": "",
+    "venue": "",
+    "year": 2006
+  },
+  "paper_circuit_context": {
+    "circuit_type": "50MS/s Pipelined ADC",
+    "technology": "CMOS, 18µm process",
+    "application_domain": "",
+    "sub_blocks": [
+      "op-amp",
+      "capacitor",
+      "transistor/MOSFET",
+      "switch",
+      "differential pair",
+      "clock / timing"
+    ],
+    "design_purpose": "",
+    "function_summary": "50MS/s Pipelined ADC",
+    "key_specs": [
+      "2 w",
+      "1V",
+      "0.18µm",
+      "1.8V",
+      "1.25V",
+      "0.75V",
+      "18mW",
+      "11mW",
+      "7mW",
+      "1MHz"
+    ]
+  },
+  "sections": [],
+  "figures": [
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 0,
+      "caption": "Figure 12.2.3 explains the operation of the current-reusing concept. During one phase, the input signal is sampled on the Ninput while the P-input amplifies residue. During this phase, the gate of the N-input stage is reset to the common-mode voltage VINC, and it works as an active load for the P-input amplifier. During the other phase, the roles are switched. The N-input stage amplifies residue while the P-input stage is reset to the commonmode voltage VIPC, and becomes an active load. Unlike the opamp-sharing method, the summing node can be reset. Furthermore since all the transistors operate always in saturation, there is no power turn-on delay as in the switched-opamp method. The opamp input node is separated from the capacitors during the sampling phase. This is to prevent the residue output settling from being delayed by the input common-mode resetting since the same output node is shared. This separation is manda-",
+      "caption_bbox": [
+        46.0,
+        575.2,
+        286.5,
+        719.7
+      ],
+      "section_title": "",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The proposed ADC based on current-reusing opamp is similar to either the switched-opamp or opamp-sharing architecture, as shown in Fig. 12.2.1."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "It is a standard pipelined ADC based on a tri-level 3b capacitor MDAC whose residue plot is shown in Fig. 12.2.2."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 12.2.3 explains the operation of the current-reusing concept."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 12.2.4 shows a simplified current-reusing opamp."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 12.2.5 shows the measured DNL and INL."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The FFT plots of the 1MHz and 20MHz tones are shown in Fig. 12.2.6."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The die micrograph is shown in Fig. 12.2.7."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Solid-State Circuits, vol. 31, pp. 1854-1861, Dec. 1996. • 2006 IEEE International Solid-State Circuits Conference 1-4244-0079-1/06 ©2006 IEEE 2 3 3 3b 2b 3b Flash Flash Flash Digital Correction Logic 10 P-Input P-Input MDAC4 MDAC3 In N-Input N-Input S/H MDAC1 MDAC2 3 3b 3b Flash Flash 3 MDAC with opamp current reuse Figure 12.2.1: Block diagram of a 10b pipelined ADC with opamp current reuse."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Refresh Sample Odd Phase Even Phase Figure 12.2.3: MDAC operation in both phases with simplified opamp schematic. 1 DNL 0 (LSB) -1 0 1 INL 0 (LSB) -1 0 Figure 12.2.5: Measured DNL and INL."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "ISSCC 2006 / February 7, 2006 / 9:00 AM Coarse 6 comparator levels -VREF b2 b1 b0 -1 -1 -1 0 -1 -1 0 0 0 -1 0 0 0 0 0 1 0 1 1 1 1 1 VREF 1 0 -1 1 0 -1 1 0 -1 C C C C + Output Range + C C C C 1 0 -1 1 0 -1 1 0 -1 -VREF 0 VREF Input Range Figure 12.2.2: Tri-level 3b MDAC and its residue output."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "VNG VPC VIP+ VIPVPC VNG I1 I1 C1 I2 I2 P-Cascode Boost C2 Amplifier VOVO+ N-Cascode Boost C2 Amplifier I1 I1 VNG VNC VIN+ VINC1 I2 I2 VNC VNG CMFB Figure 12.2.4: Opamp with both N and P inputs for current reuse. 0 -20 -40 (dB) -60 -80 0 -20 -40 (dB) -60 -80 0 5 10 15 20 25 Input Frequency (MHz) Figure 12.2.6: Measured FFT of 1MHz/20MHz tones sampled at 50MHz. • 2006 IEEE International Solid-State Circuits Conference 1-4244-0079-1/06 ©2006 IEEE ISSCC 2006 / SESSION 12 / NYQUIST ADCs / 12.2 Sub-ADCs MDAC4 MDAC3 S/H MDAC1 MDAC2 Sub-ADCs CLK Figure 12.2.7: Chip micrograph. • 2006 IEEE International Solid-State Circuits Conference 1-4244-0079-1/06 ©2006 IEEE ISSCC 2006 / SESSION 12 / NYQUIST ADCs / 12.2 2b 3b Flash Flash P-Input MDAC4 In N-Input S/H MDAC1 3b Flash MDAC with opamp current reuse 2 3 3 3b Flash Digital Correction Logic 10 P-Input MDAC3 N-Input MDAC2 3 3b Flash 3 Figure 12.2.1: Block diagram of a 10b pipelined ADC with opamp current reuse. • 2006 IEEE International Solid-State Circuits Conference 1-4244-0079-1/06 ©2006 IEEE ISSCC 2006 / SESSION 12 / NYQUIST ADCs / 12.2 -VREF 0 VREF 1 0 -1 1 0 -1 1 0 -1 C C C C + + C C C C 1 0 -1 1 0 -1 1 0 -1 -VREF 0 VREF Figure 12.2.2: Tri-level 3b MDAC and its residue output."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Sample Even Phase Figure 12.2.3: MDAC operation in both phases with simplified opamp schematic. • 2006 IEEE International Solid-State Circuits Conference 1-4244-0079-1/06 ©2006 IEEE ISSCC 2006 / SESSION 12 / NYQUIST ADCs / 12.2 VNG VPC VIP+ I1 I1 C1 I2 I2 C2 VON-Cascode Boost Amplifier VNG VNC VIN+ Figure 12.2.4: Opamp with both N and P inputs for current reuse."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "VIPVPC VNG P-Cascode Boost Amplifier VO+ C2 I1 I1 VINC1 I2 I2 VNC VNG CMFB • 2006 IEEE International Solid-State Circuits Conference 1-4244-0079-1/06 ©2006 IEEE ISSCC 2006 / SESSION 12 / NYQUIST ADCs / 12.2 1 DNL 0 (LSB) -1 0 1 INL 0 (LSB) -1 0 Figure 12.2.5: Measured DNL and INL. • 2006 IEEE International Solid-State Circuits Conference 1-4244-0079-1/06 ©2006 IEEE ISSCC 2006 / SESSION 12 / NYQUIST ADCs / 12.2 0 -20 -40 (dB) -60 -80 0 -20 -40 (dB) -60 -80 0 5 10 Figure 12.2.6: Measured FFT of 1MHz/20MHz tones sampled at 50MHz. 15 20 25 Input Frequency (MHz) • 2006 IEEE International Solid-State Circuits Conference 1-4244-0079-1/06 ©2006 IEEE ISSCC 2006 / SESSION 12 / NYQUIST ADCs / 12.2 S/H CLK Figure 12.2.7: Chip micrograph."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, 18µm process",
+        "application_domain": "",
+        "sub_blocks": [
+          "capacitor",
+          "transistor/MOSFET",
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "2.3 explains the operation of the current-reusing concept. During one phase, the input signal is sampled on the Ninput while the P-input amplifies residue. During this phase, the gate of the N-input stage is reset to the common-mode voltage VINC, and it works as an active load for the P-input amplifier. During the ...",
+        "key_specs": [
+          "1MHz",
+          "20MHz",
+          "1 V",
+          "0 V",
+          "2 V",
+          "50MHz",
+          "12.2 V"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.43,
+      "warnings": [
+        "Recommended figure caption does not explicitly mention a schematic/topology/circuit; please confirm manually.",
+        "Recommended figure was classified as 'other', not a schematic; manual confirmation strongly recommended."
+      ]
+    }
+  ],
+  "recommended_figure_id": 12,
+  "warnings": []
+}

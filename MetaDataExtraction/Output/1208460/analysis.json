@@ -1,0 +1,753 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1208460.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1208460",
+  "generated_at": "2026-07-29T21:30:41",
+  "paper_metadata": {
+    "title": "An Ultralow-Energy ADC for Smart Dust",
+    "authors": [
+      "Michael D. Scott",
+      "Bernhard E. Boser",
+      "Kristofer S. J. Pister"
+    ],
+    "abstract": "A low-energy successive approximation analog-todigital converter (ADC) targeted for use in distributed sensor networks is presented. The individual nodes combine sensing, computation, communications, and power into a tiny volume. Energy is extremely limited, forcing the nodes to operate with very low duty cycles. This paper describes the design and implementation of an ADC to meet the unique requirements of sensor networks. The ADC reported here consumes 31 pJ/8-bit sample at 1-V supply and 100 kS/s, with a standby power consumption of 70 pW. This energy consumption is one of the lowest ever reported.",
+    "keywords": [
+      "Analog-to-digital converter (ADC)",
+      "charge redistribution",
+      "CMOS",
+      "energy",
+      "low power",
+      "sensor networks",
+      "Smart Dust",
+      "successive approximation"
+    ],
+    "doi": "10.1109/JSSC.2003.813296",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Ultralow-Energy ADC",
+    "technology": "CMOS",
+    "application_domain": "wireless, if",
+    "sub_blocks": [
+      "capacitor",
+      "transistor/MOSFET",
+      "current source",
+      "switch",
+      "differential pair",
+      "latch"
+    ],
+    "design_purpose": "A low-energy successive approximation analog-todigital converter (ADC) targeted for use in distributed sensor networks is presented.",
+    "function_summary": "Ultralow-Energy ADC: A low-energy successive approximation analog-todigital converter (ADC) targeted for use in distributed sensor networks is presented.",
+    "key_specs": [
+      "31 pJ",
+      "1 V",
+      "2.5 V",
+      "10 V",
+      "1 nJ",
+      "10 kHz",
+      "12 fF",
+      "3 pF",
+      "1.5V",
+      "0.5V"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "I N THE PAST decade, much of the research on analog-todigital converters (ADCs) has focused on increasing sampling rate and resolution. While there are many applications that demand such advances, other emerging applications do not require high performance but do place very stringent requirements on energy consumption. This paper focuses on a portion of the ADC design space that has received compa ..."
+    },
+    {
+      "number": "II",
+      "title": "SMART DUST SYSTEM OVERVIEW",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "The core of the sensor network is a self-contained node capable of operating for a long period on very little energy. Leveraging CMOS device scaling and MEMS technologies for decreased cost and increased levels of integration, each sensor node combines sensing, computation, communications, and . A typical network power into a volume on the order of 1 mm may contain thousands of these “Smart Dust”  ..."
+    },
+    {
+      "number": "III",
+      "title": "SUCCESSIVE APPROXIMATION ARCHITECTURE",
+      "kind": "proposed",
+      "page": 1,
+      "text_preview": "A survey of ADC architectures reveals that both algorithmic [8] and successive approximation [9] ADCs are well suited to . Fig. 3. Successive approximation ADC architecture (shown for an 8-bit converter). meet the required design specifications. These architectures can be realized using very low power due to the minimal amount of analog hardware required. However, the successive approximation arch ..."
+    },
+    {
+      "number": "IV",
+      "title": "ADC CIRCUIT DESIGN",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "As seen in Fig. 3, the successive approximation architecture requires a reference voltage to charge the capacitors during the conversion cycle. Often this reference voltage is derived from a bandgap circuit, and therefore requires power. To avoid on-chip reference generation, the reference voltage was chosen to be the supply voltage, which is already present on-chip. In addition to saving power, t ..."
+    },
+    {
+      "number": "V",
+      "title": "ADC MEASUREMENT RESULTS",
+      "kind": "results",
+      "page": 4,
+      "text_preview": "The ADC was fabricated in a 0.25m two-poly five-metal CMOS process. An annotated die micrograph of the standalone ADC chip (active area only) is shown in Fig. 8. The core cir- , which is dominated by cuitry as shown measures 0.053 mm the capacitor array. To illustrate the relative size of the ADC in relation to the other components in Smart Dust, Fig. 9 shows an annotated layout of the CMOS die fo ..."
+    },
+    {
+      "number": "VI",
+      "title": "SYSTEM ENERGY CONSIDERATIONS",
+      "kind": "other",
+      "page": 5,
+      "text_preview": "It is interesting to analyze the energy consumption of the ADC in the context of the target application of Smart Dust. The simulated energy consumption at 1 V and 100 kHz is 30.7 pJ, in very good agreement with the measured value of 31 pJ. Most of this energy is consumed in the comparator (17.5 pJ), while the SAR and switching network use 8.7 pJ, and the remaining 4.5 pJ is consumed in charging an ..."
+    },
+    {
+      "number": "VII",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 6,
+      "text_preview": "An 8-bit 100-kS/s 1-V ADC was presented for use in sensor network applications. After introducing the target application and resulting design constraints, the actual ADC design was detailed. An energy consumption of 31 pJ per sample was achieved using a charge redistribution successive approximation architecture. Analysis of the full sensor node energy constraints showed that this ADC sample energ ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Smart Dust concept. Tiny sensor nodes will combine sensing, computation, communications, and power.",
+      "caption_bbox": [
+        301.1,
+        318.9,
+        552.2,
+        338.5
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1."
+        },
+        {
+          "section_title": "SMART DUST SYSTEM OVERVIEW",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "A conceptual diagram of such a mote and its subcomponents is shown in Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Ultralow-Energy ADC",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Smart Dust concept. Tiny sensor nodes will combine sensing, computation, communications, and power",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. ADC, light sensor, and controller), and a MEMS solar array. Total circumscribed volume is 16 mm",
+      "caption_bbox": [
+        39.6,
+        243.4,
+        357.5,
+        262.9
+      ],
+      "section_title": "II. SMART DUST SYSTEM OVERVIEW",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SMART DUST SYSTEM OVERVIEW",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The ADC presented here (first reported in [4]) was designed for use in the Smart Dust mote [5] shown in Fig. 2."
+        },
+        {
+          "section_title": "SMART DUST SYSTEM OVERVIEW",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 7, JULY 2003 Latest generation Smart Dust mote, consisting of a corner-cube retroreflector, MEMS accelerometer (not functioning), a CMOS die (with optical receiver, Fig. 2."
+        },
+        {
+          "section_title": "SMART DUST SYSTEM OVERVIEW",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The mote shown in Fig. 2 uses separate supplies for the FSM (1 V, two cells), ADC, photosensor and accelerometer (1 V), optical receiver (2.5 V, five cells), and CCR (10 V, 20 cells)."
+        },
+        {
+          "section_title": "ADC CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "In Smart Dust, the microprocessor (or FSM in the prototype of Fig. 2) will control the ADC directly."
+        },
+        {
+          "section_title": "ADC MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "To illustrate the relative size of the ADC in relation to the other components in Smart Dust, Fig. 9 shows an annotated layout of the CMOS die for the mote in Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "ADC, light sensor, and controller), and a MEMS solar array. Total circumscribed volume is 16 mm",
+        "key_specs": [
+          "1 V",
+          "2.5 V",
+          "10 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.12,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Successive approximation ADC architecture (shown for an 8-bit converter).",
+      "caption_bbox": [
+        302.6,
+        420.8,
+        553.6,
+        440.4
+      ],
+      "section_title": "II. SMART DUST SYSTEM OVERVIEW",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SUCCESSIVE APPROXIMATION ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 3."
+        },
+        {
+          "section_title": "SUCCESSIVE APPROXIMATION ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Shown in Fig. 3, the successive approximation architecture uses only one comparator, along with simple digital logic and a switching network to implement the search algorithm."
+        },
+        {
+          "section_title": "ADC CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "As seen in Fig. 3, the successive approximation architecture requires a reference voltage to charge the capacitors during the conversion cycle."
+        },
+        {
+          "section_title": "ADC CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "This minimizes parasitic capacitance at the comparator input (see Fig. 3), which attenuates the signal voltage."
+        },
+        {
+          "section_title": "ADC CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Reference Switch presents a problem for the initialization Choosing node (labeled Reference Switch in Fig. 3). switch on the During the first stage of the conversion cycle, this switch initialto ( )."
+        },
+        {
+          "section_title": "ADC CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "In the comparison cycles that follow, izes node may swing above as depicted in Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.0,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Successive approximation ADC architecture (shown for an 8-bit converter)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.5,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Layout detail showing the parasitic shielding used in the capacitor array.",
+      "caption_bbox": [
+        301.1,
+        218.8,
+        552.1,
+        238.3
+      ],
+      "section_title": "IV. ADC CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ADC CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The binary weighted capacitors were built by connecting unit capacitors with routing above the shield as shown in Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.1,
+      "relevance_breakdown": {
+        "-layout": -2.0,
+        "section:design": 1.5,
+        "references": 0.4
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "Ultralow-Energy ADC",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Layout detail showing the parasitic shielding used in the capacitor array",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. SAR schematic. The top flip-flops form a shift register that controls the custom bottom register.",
+      "caption_bbox": [
+        39.6,
+        223.6,
+        375.6,
+        234.3
+      ],
+      "section_title": "IV. ADC CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ADC CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The schematic for the SAR is shown in Fig. 5."
+        },
+        {
+          "section_title": "ADC CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "A schematic of the improved Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "Ultralow-Energy ADC",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "SAR schematic. The top flip-flops form a shift register that controls the custom bottom register",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.79,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Charge pump switch circuit schematic and associated signal waveforms.",
+      "caption_bbox": [
+        39.6,
+        409.0,
+        300.7,
+        419.6
+      ],
+      "section_title": "IV. ADC CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ADC CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 6."
+        },
+        {
+          "section_title": "ADC CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Charge pump switch circuit schematic and associated signal waveforms. switch and associated signal waveforms are shown in Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 7.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+circuit schematic": 3.5,
+        "+circuit": 1.0,
+        "-waveform": -2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "charge pump",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Charge pump switch circuit schematic and associated signal waveforms",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.98,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Comparator circuit schematic.",
+      "caption_bbox": [
+        302.6,
+        561.1,
+        428.2,
+        571.7
+      ],
+      "section_title": "IV. ADC CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ADC CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Comparator The comparator circuit (shown in Fig. 7) is based on a circuit reported by Peluso et al. [12]."
+        },
+        {
+          "section_title": "ADC CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "When nodes IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 7, JULY 2003 Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 9.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+circuit schematic": 3.5,
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "comparator",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Comparator circuit schematic",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.88,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Annotated ADC micrograph. Note that only the active circuit area is shown.",
+      "caption_bbox": [
+        38.1,
+        254.1,
+        289.2,
+        273.7
+      ],
+      "section_title": "IV. ADC CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ADC CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "For this current, comparator noise SCOTT et al.: ULTRALOW-ENERGY ADC FOR SMART DUST Fig. 8."
+        },
+        {
+          "section_title": "ADC MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "An annotated die micrograph of the standalone ADC chip (active area only) is shown in Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-micrograph": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Annotated ADC micrograph. Note that only the active circuit area is shown",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. Layout of CMOS IC showing the relative size of the components.",
+      "caption_bbox": [
+        301.1,
+        155.9,
+        539.1,
+        166.5
+      ],
+      "section_title": "IV. ADC CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ADC MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "To illustrate the relative size of the ADC in relation to the other components in Smart Dust, Fig. 9 shows an annotated layout of the CMOS die for the mote in Fig. 2."
+        },
+        {
+          "section_title": "ADC MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "-layout": -2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Layout of CMOS IC showing the relative size of the components",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10. Typical low-frequency DNL and INL error plots for 1-V supply.",
+      "caption_bbox": [
+        301.1,
+        441.4,
+        538.3,
+        452.0
+      ],
+      "section_title": "IV. ADC CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ADC MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 10 shows typical plots for the low-frequency differential nonlinearity (DNL) and integral nonlinearity (INL) error of the ADC at 1-V supply."
+        },
+        {
+          "section_title": "ADC MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Typical low-frequency DNL and INL error plots for 1-V supply",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 5,
+      "caption": "Fig. 11. ENOB versus input frequency and supply voltage (f = 100 kHz).",
+      "caption_bbox": [
+        39.6,
+        266.2,
+        286.9,
+        276.9
+      ],
+      "section_title": "V. ADC MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "ADC MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 11 shows the effective number of bits (ENOB) of the ADC output with a full-scale input sinusoid, defined as SNDR (1) ENOB where SNDR is the total signal-to-noise-and-distortion ratio of the output in decibels."
+        },
+        {
+          "section_title": "ADC MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "(The threshold voltages for the process were both approximately 0.5 V.) This bandwidth limiting is seen in Fig. 11 by comparing the curves for the different supply voltages."
+        },
+        {
+          "section_title": "ADC MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "ENOB versus input frequency and supply voltage (f = 100 kHz)",
+        "key_specs": [
+          "0.5 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 5,
+      "caption": "Fig. 12. Typical FFT (10 000 samples) for an input frequency of 1.67 kHz and supply voltage of 1 V.",
+      "caption_bbox": [
+        302.6,
+        276.7,
+        553.7,
+        296.3
+      ],
+      "section_title": "V. ADC MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "ADC MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "A typical low-frequency fast Fourier transform (FFT) output spectrum at 1-V supply is shown in Fig. 12, for a full-scale input at 1.67 kHz, sampling rate of 100 kHz, and 10 000 data samples."
+        },
+        {
+          "section_title": "SYSTEM ENERGY CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "As IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 7, JULY 2003 Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Ultralow-Energy ADC",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Typical FFT (10 000 samples) for an input frequency of 1.67 kHz and supply voltage of 1 V",
+        "key_specs": [
+          "1.67 kHz",
+          "100 kHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 7,
+  "warnings": []
+}

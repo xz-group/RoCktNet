@@ -1,0 +1,912 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1240958.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1240958",
+  "generated_at": "2026-07-29T21:31:02",
+  "paper_metadata": {
+    "title": "Self-Biased High-Bandwidth Low-Jitter 1-to-4096 Multiplier Clock Generator PLL",
+    "authors": [
+      "John G. Maneatis",
+      "Jaeha Kim",
+      "Iain McClatchie",
+      "Jay Maxey",
+      "Manjusha Shankaradas"
+    ],
+    "abstract": "A self-biased phase-locked loop (PLL) uses a sampled feedforward filter network and a multistage inverse-linear proand the loop filter resistance. Thus, these parameters must vary grammable current mirror for constant loop dynamics that scale with output frequency and multiplication factor. with reference frequency and are independent of multiplication The diverse values of output frequency and multiplication factor, output frequency, process, voltage, and temperature. The factor can be addressed by designing a different PLL for each PLL achieves a multiplication range of 1–4096 with less than 1.7% ASIC. This strategy makes it easier to meet constrained target output jitter. Fabricated in 0.13m CMOS, the area is 0.182 mm2 and the supply is 1.5 V. specifications with less challenging circuits, but verifying all the designs in silicon for the ASICs that a company plans to",
+    "keywords": [
+      "Adaptive bandwidth",
+      "analog circuits",
+      "clock gener-"
+    ],
+    "doi": "10.1109/JSSC.2003.818298",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Self-Biased High-Bandwidth Low-Jitter 1-to-4096 Multiplier Clock Generator PLL",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "current source",
+      "current mirror",
+      "output buffer",
+      "bias circuit",
+      "switch",
+      "differential pair"
+    ],
+    "design_purpose": "",
+    "function_summary": "Self-Biased High-Bandwidth Low-Jitter 1-to-4096 Multiplier Clock Generator PLL: A self-biased phase-locked loop (PLL) uses a sampled feedforward filter network and a multistage inverse-linear proand the loop filter resistance.",
+    "key_specs": [
+      "4096 w",
+      "1.7%",
+      "1.5 V",
+      "63 w",
+      "1.2 V",
+      "10%",
+      "650 MHz",
+      "30 MHz",
+      "240 MHz",
+      "1%"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "O NE CHALLENGE in designing phase-locked loops (PLLs) for application-specific integrated circuits (ASICs) is providing ample flexibility for a wide variety of applications, including processors and video/chip interfaces. PLLs commonly are used to take low-frequency off-chip clocks, typically from crystals, and generate high-frequency on-chip clocks. The diversity of ASIC applications has also led ..."
+    },
+    {
+      "number": "II",
+      "title": "SELF-BIASED PLL FUNDAMENTALS",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "Before considering a self-biased PLL, it is helpful to first review a classic second-order PLL, shown in Fig. 1. This PLL is composed of a phase-frequency detector (PFD), charge pump, loop filter, voltage-controlled oscillator (VCO), and a feedback divider. When in lock, the PLL generates an output frequency times the reference frequency. It does this by adjusting that is the VCO frequency until i ..."
+    },
+    {
+      "number": "III",
+      "title": "PATTERN JITTER ISSUES",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "Pattern noise is caused by the phase corrections that occur on every rising edge of the reference clock. These phase correcand, in turn, tions can briefly disrupt the control voltage nearby output cycles, as illustrated in Fig. 3(a). The other output and the cycles will be unaffected. This noise pattern on resultant period jitter will repeat on every reference cycle or output cycles. Pattern jitte ..."
+    },
+    {
+      "number": "IV",
+      "title": "CLOCK GENERATOR PLL ARCHITECTURE",
+      "kind": "proposed",
+      "page": 2,
+      "text_preview": "To see how a sampled filter network can be constructed, consider the original loop filter network from the previously discussed self-biased PLL, shown in Fig. 4(a). A self-biased PLL uses two charge pumps to drive the capacitor and resistor separately. The path with the capacitor is the integral control path and does not need additional filtering. The path with the resistor is called the proportio ..."
+    },
+    {
+      "number": "V",
+      "title": "KEY PLL CIRCUITS",
+      "kind": "design",
+      "page": 4,
+      "text_preview": "The next sections discuss some of the actual circuits used inside the PLL, including the filter network, the programmable current mirror, and the VCO. This self-biased clock generator technique can be applied to most VCO circuit families. In fact, we have implemented it with four different families. In this implementation, the VCO circuits were similar to those previously published [5]. A. Self-Bi ..."
+    },
+    {
+      "number": "VI",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 7,
+      "text_preview": "This PLL was implemented in a generic 1.5-V 0.13m n-well CMOS process. A micrograph of the fabricated PLL is shown in Fig. 13 and the specified design targets are summarized in Table I. While the nominal operating voltage for the PLL was 1.5 V, it was designed to operate down to 1.2 V to provide a 10% dc and 10% ac noise margin. The specified VCO frequency range is 30–650 MHz under worst-case cond ..."
+    },
+    {
+      "number": "VII",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 8,
+      "text_preview": "The proposed PLL achieves a wide multiplication and output frequency range, satisfying the objective of using one clock generator PLL design without modification in a large set of ASICs. The PLL is self-biased with constant loop dynamics independent of multiplication factor, output frequency, process, voltage, and temperature. The sampled feedforward network suppresses pattern jitter with an effec ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Classic second-order PLL.",
+      "caption_bbox": [
+        39.6,
+        164.2,
+        153.7,
+        174.9
+      ],
+      "section_title": "II. SELF-BIASED PLL FUNDAMENTALS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1."
+        },
+        {
+          "section_title": "SELF-BIASED PLL FUNDAMENTALS",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Before considering a self-biased PLL, it is helpful to first review a classic second-order PLL, shown in Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Classic second-order PLL",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Simple self-biased PLL.",
+      "caption_bbox": [
+        302.6,
+        188.8,
+        409.3,
+        199.5
+      ],
+      "section_title": "II. SELF-BIASED PLL FUNDAMENTALS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SELF-BIASED PLL FUNDAMENTALS",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "A self-biased PLL, shown in Fig. 2, solves this problem with three important differences."
+        },
+        {
+          "section_title": "SELF-BIASED PLL FUNDAMENTALS",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "By making these changes, the bandwidth-to-reference-frequency ratio will , and the damping be proportional to the square root of IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 11, NOVEMBER 2003 Fig. 2."
+        },
+        {
+          "section_title": "CLOCK GENERATOR PLL ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "Detailed Analysis The exact relationships for the bandwidth-to-reference-frequency ratio and the damping factor can be derived from the equivalent relationships for a simple self-biased PLL, similar to that shown in Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simple self-biased PLL",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Patten jitter on output clocks with (a) simple second-order PLL, (b) added shunt capacitor, and (c) sampled feedforward network.",
+      "caption_bbox": [
+        38.1,
+        322.8,
+        289.2,
+        342.4
+      ],
+      "section_title": "III. PATTERN JITTER ISSUES",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "PATTERN JITTER ISSUES",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "These phase correcand, in turn, tions can briefly disrupt the control voltage nearby output cycles, as illustrated in Fig. 3(a)."
+        },
+        {
+          "section_title": "PATTERN JITTER ISSUES",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "This pattern jitter problem is typically solved by adding a shunt capacitor in the loop filter to create a third-order pole, with reduced amplitude which extends the disturbance on over many output cycles, as illustrated in Fig. 3(b)."
+        },
+        {
+          "section_title": "PATTERN JITTER ISSUES",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The basic idea is to scale down and spread it unithe amplitude of the error signal on output cycles with the same time integral, formly over exactly output cycle duration is conas illustrated in Fig. 3(c)."
+        },
+        {
+          "section_title": "PATTERN JITTER ISSUES",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The signal on MANEATIS et al.: SELF-BIASED HIGH-BANDWIDTH LOW-JITTER 1–4096 MULTIPLIER CLOCK GENERATOR PLL (a) (b) (c) Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.6,
+      "relevance_breakdown": {
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Patten jitter on output clocks with (a) simple second-order PLL, (b) added shunt capacitor, and (c) sampled feedforward network",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. PLL loop filter network (a) for simple self-biased PLL, (b) with sampled feedforward network, (c) with sampled feedforward network with C reset to C , and (d) with sampled feedforward network with C driven directly into amplifier.",
+      "caption_bbox": [
+        301.1,
+        502.9,
+        552.2,
+        540.4
+      ],
+      "section_title": "IV. CLOCK GENERATOR PLL ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "CLOCK GENERATOR PLL ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "To see how a sampled filter network can be constructed, consider the original loop filter network from the previously discussed self-biased PLL, shown in Fig. 4(a)."
+        },
+        {
+          "section_title": "CLOCK GENERATOR PLL ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "The filter network shown in held constant for Fig. 4(b) accomplishes this filtering."
+        },
+        {
+          "section_title": "CLOCK GENERATOR PLL ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "This feedforward current that is constant for feedforward current develops a correction voltage across the resistor inside the bias generator, where it is summed in . with the control voltage capacitor voltage to a The switch in Fig. 4(b) resets the at the end of the reference cycle bezero bias voltage level fore the next phase comparison."
+        },
+        {
+          "section_title": "CLOCK GENERATOR PLL ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "This voltage is the point where (a) (b) (c) (d) Fig. 4."
+        },
+        {
+          "section_title": "CLOCK GENERATOR PLL ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "Rather than attempting to buffer the can be reset control voltage and possibly introducing error, directly to the control voltage, as illustrated in Fig. 4(c)."
+        },
+        {
+          "section_title": "CLOCK GENERATOR PLL ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "This change eliminates the need for the integral charge pump, since to in the reset process will be the charge transferred from similar to the charge that the integral charge pump would have . transferred to A further optimization to the loop filter is shown in Fig. 4(d). across is reset to , and Since the voltage is summed with inside the bias generator resulting , can be simply driven to the input of the , eliminating the need for the bias generator instead of stage."
+        },
+        {
+          "section_title": "CLOCK GENERATOR PLL ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "Complete Self-Biased Clock Generator PLL The complete self-biased clock generator PLL design, based on the loop filter structure in Fig. 4(c), is shown in Fig. 5."
+        },
+        {
+          "section_title": "CLOCK GENERATOR PLL ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "Also, where each is active for the filter network from Fig. 4(d) can be implemented with two capacitors by subdividing the differential pair and or more tail current source of the amplifier in the bias generator."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.0,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor",
+          "resistor",
+          "current source",
+          "output buffer",
+          "switch",
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "PLL loop filter network (a) for simple self-biased PLL, (b) with sampled feedforward network, (c) with sampled feedforward network with C reset to C , and (d) with sampled feedforward network with C driven directly into amplifier",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.5,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Self-biased clock generator PLL architecture.",
+      "caption_bbox": [
+        39.6,
+        285.3,
+        214.8,
+        295.9
+      ],
+      "section_title": "IV. CLOCK GENERATOR PLL ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "CLOCK GENERATOR PLL ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "This solution is much simpler, but does not allow any voltage scaling to be performed inside the transconductance capacitor sizing. stage, which can provide more flexibility on Fig. 5."
+        },
+        {
+          "section_title": "CLOCK GENERATOR PLL ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "Complete Self-Biased Clock Generator PLL The complete self-biased clock generator PLL design, based on the loop filter structure in Fig. 4(c), is shown in Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.8,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Self-biased clock generator PLL architecture",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.74,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 5,
+      "caption": "Fig. 6. Sampled feedforward circuits.",
+      "caption_bbox": [
+        39.6,
+        228.2,
+        165.1,
+        238.8
+      ],
+      "section_title": "V. KEY PLL CIRCUITS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "KEY PLL CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Self-Biased Sampled Filter Network The circuits for the filter network are shown in Fig. 6."
+        },
+        {
+          "section_title": "KEY PLL CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Inverse-Linear Current Mirror In order to scale down the charge pump currents by a factor of , a programmable current mirror is needed that can implement Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "current mirror"
+        ],
+        "design_purpose": "Inverse-Linear Current Mirror In order to scale down the charge pump currents by a factor of , a programmable current mirror is needed that can implement Fig. 6.",
+        "function_summary": "Sampled feedforward circuits. Inverse-Linear Current Mirror In order to scale down the charge pump currents by a factor of , a programmable current mirror is needed that can implement Fig. 6.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 5,
+      "caption": "Fig. 7. Feedforward network bias switches.",
+      "caption_bbox": [
+        39.6,
+        393.1,
+        183.9,
+        403.7
+      ],
+      "section_title": "V. KEY PLL CIRCUITS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "KEY PLL CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "To solve this problem, a simple can range from ground to nMOS pass gate is used with a bootstrapped gate voltage that to approaching , as shown in ranges from Fig. 7."
+        },
+        {
+          "section_title": "KEY PLL CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Self-Biased High-Bandwidth Low-Jitter 1-to-4096 Multiplier Clock Generator PLL",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Feedforward network bias switches",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 5,
+      "caption": "Fig. 8. Programmable current mirrors. (a) Simple inverse-linear current mirror. (b) Multistage linear current mirror. (c) Multistage inverse-linear current mirror. (d) Complete multistage inverse-linear current mirror.",
+      "caption_bbox": [
+        302.6,
+        611.3,
+        553.7,
+        639.9
+      ],
+      "section_title": "V. KEY PLL CIRCUITS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "KEY PLL CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "A simple way of accomplishing this task is to use switches to adjust the effective device size on the input side of a current mirror, as shown in Fig. 8(a)."
+        },
+        {
+          "section_title": "KEY PLL CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 8(b) shows an example of a multistage linear current mirror with two device groups of three devices and two current mirrors to establish a 1/8 current ratio between the two groups."
+        },
+        {
+          "section_title": "KEY PLL CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Consider the devices inside the box in Fig. 8(b)."
+        },
+        {
+          "section_title": "KEY PLL CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "To create an inverse-linear programmable current mirror, this complex device can be diode connected and used as the input side of a current mirror, as shown in Fig. 8(c)."
+        },
+        {
+          "section_title": "KEY PLL CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "It is important to note that the gate biases IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 11, NOVEMBER 2003 (a) (b) (c) (d) Fig. 8."
+        },
+        {
+          "section_title": "KEY PLL CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 8(d) shows the complete programmable current mirror used in the PLL to scale the charge pump currents."
+        },
+        {
+          "section_title": "KEY PLL CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "It is similar to that in Fig. 8(c), but four groups instead of two are used."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.5,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "current mirror"
+        ],
+        "design_purpose": "",
+        "function_summary": "Programmable current mirrors. (a) Simple inverse-linear current mirror. (b) Multistage linear current mirror. (c) Multistage inverse-linear current mirror. (d) Complete multistage inverse-linear current mirror",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.38,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 6,
+      "caption": "Fig. 9. VCO circuits.",
+      "caption_bbox": [
+        38.1,
+        227.5,
+        111.7,
+        238.1
+      ],
+      "section_title": "V. KEY PLL CIRCUITS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "KEY PLL CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "MANEATIS et al.: SELF-BIASED HIGH-BANDWIDTH LOW-JITTER 1–4096 MULTIPLIER CLOCK GENERATOR PLL Fig. 9."
+        },
+        {
+          "section_title": "KEY PLL CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The VCO used in this design is a modified version of the differential ring oscillator with replica-feedback biasing from [5], shown in Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "bias circuit"
+        ],
+        "design_purpose": "",
+        "function_summary": "VCO circuits",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 6,
+      "caption": "Fig. 10. Differential pair (a) tail node voltages and (b) tail currents as a function of time.",
+      "caption_bbox": [
+        301.1,
+        197.3,
+        552.1,
+        216.9
+      ],
+      "section_title": "V. KEY PLL CIRCUITS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "KEY PLL CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 10(a) shows a plot of the node from the ring oscillator and the node from the bias generator as a function of time."
+        },
+        {
+          "section_title": "KEY PLL CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 10(b) is some range of deviation shows these voltage levels mapped onto the current-source deversus characteristics and the resultant drain curvices’ . rent."
+        },
+        {
+          "section_title": "KEY PLL CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Because of the finite output resistance of the current-source device, the buffer (a) (b) Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "output buffer",
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "Differential pair (a) tail node voltages and (b) tail currents as a function of time",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 6,
+      "caption": "Fig. 11. Modified VCO circuits with shorted differential pair tail nodes.",
+      "caption_bbox": [
+        301.1,
+        397.4,
+        535.7,
+        408.1
+      ],
+      "section_title": "V. KEY PLL CIRCUITS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "KEY PLL CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 11."
+        },
+        {
+          "section_title": "KEY PLL CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The root cause of the difference in average buffer current is the nonlinear output conductance of the current-source device, – characteristics. or, equivalently, the changing slope in its A simple solution to resolve this problem, shown in Fig. 11, is to short all of the tail nodes in the VCO so that their voltage is more or less constant and matching more closely to that in the bias generator."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "output buffer",
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "Modified VCO circuits with shorted differential pair tail nodes",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 7,
+      "caption": "Fig. 12. VCO frequency as a function of supply voltage for three control voltages before shorting (dashed line) and after shorting (solid line) differential pair tail nodes.",
+      "caption_bbox": [
+        39.6,
+        249.5,
+        290.7,
+        278.1
+      ],
+      "section_title": "V. KEY PLL CIRCUITS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "KEY PLL CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 12 shows the simulated frequency as a function of supply voltage for three different control voltages at worst-case process and temperature."
+        },
+        {
+          "section_title": "KEY PLL CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Given a target minimum supply voltage of 1.2 V, the VCO can be operated at Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "VCO frequency as a function of supply voltage for three control voltages before shorting (dashed line) and after shorting (solid line) differential pair tail nodes",
+        "key_specs": [
+          "1.2 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 7,
+      "caption": "Fig. 13. Die micrograph of the self-biased clock generator PLL.",
+      "caption_bbox": [
+        39.6,
+        412.2,
+        249.4,
+        422.8
+      ],
+      "section_title": "V. KEY PLL CIRCUITS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "KEY PLL CIRCUITS",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 13."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "A micrograph of the fabricated PLL is shown in Fig. 13 and the specified design targets are summarized in Table I."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-micrograph": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Die micrograph of the self-biased clock generator PLL",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 7,
+      "caption": "Fig. 14. Jitter versus multiplication factor at fixed 240-MHz output.",
+      "caption_bbox": [
+        302.6,
+        441.7,
+        524.2,
+        452.4
+      ],
+      "section_title": "VI. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 14 is a plot of the measured peak-to-peak tracking jitter for and period jitter as a function of the multiplication factor a fixed output frequency of 240 MHz."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Both the jitter and multiplication factor are plotted on a log-log scale to cover the large IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 11, NOVEMBER 2003 TABLE I PLL SPECIFIED DESIGN TARGETS Fig. 14."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 14 also shows that the tracking jitter scales linearly with , as expected, since the loop bandwidth scales inversely with to be a constant fraction of the reference frequency."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Jitter versus multiplication factor at fixed 240-MHz output",
+        "key_specs": [
+          "240 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 5,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

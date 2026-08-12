@@ -1,0 +1,65 @@
+# A 210GHz Fully Integrated Differential Transceiver with Fundamental-Frequency VCO in 32nm SOI CMOS Zheng Wang1, Pei-Yuan Chiang1, Peyman Nazari1, Chun-Cheng Wang2, Zhiming Chen3, Payam Heydari1
+
+VENUE
+"2013"
+
+FIGURE NUMBER
+"Fig. 8.1.3. Differential topology provides shorter physical interconnection from its transistors’ source terminals to ground compared to a single-ended topology, and is also insensitive to the modeling inaccuracy of decoupling capacitors at 210GHz. In addition, the CGD-neutralization capacitor is realized by the CGD of a similar MOSFET to mitigate the mismatch between the neutralization capacitor and the main transistor’s CGD. Considering that the loss of the matching network makes the amplifier more stable, the PA’s main transistors are intentionally pushed to the edge of the stability region, resulting in higher gain. This has been achieved by properly sizing of the neutralization MOSFET. At frequencies close to fmax (i.e., at least one-third), the maximum Psat does not always increase as transistor size is increased, because it also highly depends on the device parasitics, as discussed in [5]. At 210GHz, the transistor size of the power stage is chosen to be 19.2μm with finger width of 0.64μm to maximize Psat. Considering that the quarter-wavelength is only around 180μm at 210GHz, a ground-shielded CPW line is utilized for the impedance matching network. All PA stages are interstage-matched to 50Ω to make the design more robust to uncertainties of passive components at this frequency as well as the length of interconnects; which, in turn, leads to more flexibility in layout. The PA’s output matching net-"
+
+TYPE
+"Fully Integrated Differential Transceiver"
+
+TECHNOLOGY
+"CMOS, SOI, 32nm process"
+
+APPLICATION
+"millimeter-wave, rf, wireless, thz"
+
+SUB-BLOCKS
+[
+  "varactor",
+  "inductor",
+  "capacitor",
+  "transistor/MOSFET",
+  "cross-coupled pair",
+  "coplanar waveguide (CPW)",
+  "balun",
+  "output buffer"
+]
+
+FUNCTION SUMMARY
+"Fully Integrated Differential Transceiver"
+
+DESIGN PURPOSE
+"To distribute a modulated differential signal from the PA driver to the 2×2 array, while maintaining differential signal integrity and avoiding EM-coupling due to cross-overs in layout, two Wilkinson power splitters followed by four Marchand baluns are employed (Fig. 8.1.1)."
+
+METRICS
+[
+  "Operating / oscillation frequency",
+  "Process node",
+  "Output power",
+  "Gain",
+  "Inductance"
+]
+
+NUMERICAL PERFORMANCE
+[
+  "210GHz",
+  "32nm",
+  "350GHz",
+  "4.6dBm",
+  "12dB",
+  "18dB",
+  "30pH",
+  "13.5dBm",
+  "8GHz",
+  "212.7GHz"
+]
+
+CONFIDENCE
+0.32
+
+WARNINGS
+[
+  "Recommended figure was classified as 'layout_photo', not a schematic; manual confirmation strongly recommended."
+]

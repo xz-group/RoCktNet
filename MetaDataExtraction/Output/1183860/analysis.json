@@ -1,0 +1,659 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1183860.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1183860",
+  "generated_at": "2026-07-29T22:00:49",
+  "paper_metadata": {
+    "title": "Active-Feedback Frequency-Compensation Technique for Low-Power Multistage Amplifiers",
+    "authors": [
+      "Hoi Lee",
+      "Philip K. T. Mok"
+    ],
+    "abstract": "An active-feedback frequency-compensation (AFFC) technique for low-power operational amplifiers is presented in this stage amplifier. paper. With an active-feedback mechanism, a high-speed block Different frequency-compensation topologies for multiseparates the low-frequency high-gain path and high-frequency stage amplifiers have been reported [2]–[10]. Nested-Miller signal path such that high gain and wide bandwidth can be compensation (NMC) [2]–[5] is a well-known pole-splitting achieved simultaneously in the AFFC amplifier. The gain stage in technique for compensating multistage amplifiers. However, the active-feedback network also reduces the size of the compensation capacitors such that the overall chip area of the amplifier as mentioned by Eschauzier et al. [3], [4], NMC suffers from becomes smaller and the slew rate is improved. Furthermore, the bandwidth reduction when the number of gain stages increases. presence of a left-half-plane zero in the proposed AFFC topology In particular, the bandwidth of a three-stage NMC amplifier improves the stability and settling behavior of the amplifier. is reduced to one quarter of that of a single-stage amplifier. Three-stage amplifiers based on AFFC and nested-Miller comTherefore, based on NMC, multipath nested Miller compenpensation (NMC) techniques have been implemented by a commercial 0.8m CMOS process. When driving a 120-pF capacitive sation (MNMC) [3] has been developed. This technique uses load, the AFFC amplifier achieves over 100-dB dc gain, 4.5-MHz a feedforward stage to create a left-half-plane (LHP) zero gain-bandwidth product (GBW) , 65 phase margin, and 1.5-V/ s to cancel the second nondominant pole and results in the average slew rate, while only dissipating 400W power at a 2-V bandwidth extension by pole-zero cancellation in the passband supply. Compared to a three-stage NMC amplifier, the proposed of the amplifier. Another problem of the NMC structure is AFFC amplifier provides improvement in both the GBW and slew rate by 11 times and reduces the chip area by 2.3 times without sigthe presence of a right-half-plane (RHP) zero, which requires nificant increase in the power consumption. a large output transconductance to ensure stability and, thus, makes the amplifier unsuitable for low-power design [6], [7].",
+    "keywords": [
+      "Active feedback",
+      "active-capacitive-feedback network",
+      "amplifiers",
+      "frequency compensation",
+      "multistage amplifiers"
+    ],
+    "doi": "10.1109/JSSC.2002.808326",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "of the amplifier",
+    "technology": "CMOS",
+    "application_domain": "rf, if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "bias circuit",
+      "differential pair",
+      "op-amp",
+      "output buffer"
+    ],
+    "design_purpose": "Another problem of the NMC structure is AFFC amplifier provides improvement in both the GBW and slew rate by 11 times and reduces the chip area by 2.3 times without sigthe presence of a right-half-plane (RHP) zero, which requires nificant increase in the power consumption. a large output transconductance to ensure ...",
+    "function_summary": "of the amplifier: Another problem of the NMC structure is AFFC amplifier provides improvement in both the GBW and slew rate by 11 times and reduces the chip area by 2.3 times without sigthe presence of a right-half-plane (RHP) zero, which requires nificant increase in the power consumption. a large output transconductance to ensure ...",
+    "key_specs": [
+      "65 ph",
+      "400W",
+      "0.9 V",
+      "100 pF",
+      "100 dB",
+      "108 w",
+      "3 pF",
+      "11 pF",
+      "0.3 V",
+      "4.5 MHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "W ITH THE advanced technology scaling in CMOS processes, supply voltages of digital circuits are required to be reduced to 0.9 V by the year 2008, according to the Semiconductor Industry Association’s roadmap [1]. The continuous decrease in the supply voltage, however, poses challenges and difficulties to the design of analog circuits in mixed-signal systems as the threshold voltage of the transis ..."
+    },
+    {
+      "number": "II",
+      "title": "ACTIVE-FEEDBACK FREQUENCY COMPENSATION",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "In this section, the transfer function and stability issue of the AFFC amplifier are analyzed. Different design issues such as dimension conditions, gain-bandwidth product (GBW), transient responses, and low-power design considerations are also discussed. IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 3, MARCH 2003 Fig. 2. Basic structure of an AFFC amplifier. Fig. 3. Equivalent small-signal c ..."
+    },
+    {
+      "number": "III",
+      "title": "CIRCUIT IMPLEMENTATIONS OF AMPLIFIERS",
+      "kind": "design",
+      "page": 5,
+      "text_preview": "The circuit implementation of a three-stage AFFC amplifier is shown in Fig. 6. In the AFFC amplifier, the first gain stage LEE AND MOK: ACTIVE-FEEDBACK FREQUENCY-COMPENSATION TECHNIQUE Measured ac responses of (a) the AFFC and NMC amplifiers driving a 120-pF 25-k load, and (b) the AFFC amplifier driving different capacitive loads. Fig. 10. is realized by transistors M101–M108 with a pMOS input dif ..."
+    },
+    {
+      "number": "IV",
+      "title": "EXPERIMENTAL RESULTS AND DISCUSSIONS",
+      "kind": "results",
+      "page": 6,
+      "text_preview": "To verify the functionality of the proposed AFFC amplifier and compare its performance with that of the NMC amplifier, both 2-V three-stage AFFC and NMC amplifiers have been fabm CMOS process with V ricated in a commercial 0.8V and V V. The micrograph is shown in Fig. 9. Both amplifiers have been tested with a 120-pF capacitive load including the probe capacitance. The frequency responses of the a ..."
+    },
+    {
+      "number": "V",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 8,
+      "text_preview": "An active-feedback frequency-compensation (AFFC) technique for three-stage amplifiers is introduced. With the activecapacitive-feedback network, the low-frequency and high-frequency signal paths are separated by an HGB and an HSB, respectively. The HGB provides a high dc gain while the HSB significantly enhances the bandwidth of the amplifier as the slow-response intermediate high-gain stages are  ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Comparison of bandwidth on different frequency-compensation topologies (take NMC as the reference).",
+      "caption_bbox": [
+        39.6,
+        258.5,
+        290.6,
+        278.1
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The comparison on the bandwidth of three-stage amplifiers using different pole-splitting compensation topologies driving a capacitive load of around 100 pF, as shown in Fig. 1, indicates that a three-stage AFFC amplifier achieves the largest reported bandwidth."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.1,
+      "relevance_breakdown": {
+        "-reference": -1.0,
+        "section:intro": -0.5,
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Comparison of bandwidth on different frequency-compensation topologies (take NMC as the reference)",
+        "key_specs": [
+          "100 pF"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Basic structure of an AFFC amplifier.",
+      "caption_bbox": [
+        302.6,
+        248.0,
+        452.6,
+        258.7
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "ACTIVE-FEEDBACK FREQUENCY COMPENSATION",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 3, MARCH 2003 Fig. 2."
+        },
+        {
+          "section_title": "ACTIVE-FEEDBACK FREQUENCY COMPENSATION",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Principle of Operation The basic structure of an AFFC amplifier, shown in Fig. 2, consists of three main blocks: input block, high-gain block (HGB), and high-speed block (HSB)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "-structure of": -1.5,
+        "section:intro": -0.5,
+        "type_match:amplifier": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Basic structure of an AFFC amplifier",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Equivalent small-signal circuit of the HSB in the AFFC amplifier.",
+      "caption_bbox": [
+        302.6,
+        353.7,
+        541.2,
+        364.3
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "ACTIVE-FEEDBACK FREQUENCY COMPENSATION",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 3."
+        },
+        {
+          "section_title": "ACTIVE-FEEDBACK FREQUENCY COMPENSATION",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 3 shows the equivalent small-signal circuit of the HSB in the , AFFC amplifier, in which the input resistance of the FBS is and the equivalent resistance and capacitance at node V2 due to and , respectively."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-equivalent": -2.0,
+        "section:intro": -0.5,
+        "type_match:amplifier": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Equivalent small-signal circuit of the HSB in the AFFC amplifier",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Bode plot of NMC and AFFC amplifiers.",
+      "caption_bbox": [
+        38.1,
+        213.3,
+        199.5,
+        223.9
+      ],
+      "section_title": "II. ACTIVE-FEEDBACK FREQUENCY COMPENSATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ACTIVE-FEEDBACK FREQUENCY COMPENSATION",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The amplified feedback signal at the output of the input block will then be feedforwarded to the output again, through the FFS, in order to LEE AND MOK: ACTIVE-FEEDBACK FREQUENCY-COMPENSATION TECHNIQUE Fig. 4."
+        },
+        {
+          "section_title": "ACTIVE-FEEDBACK FREQUENCY COMPENSATION",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "However, this structure cannot be directly applied to a three-stage amplifier with an inverting output stage as the value of the nondominant complex poles cannot be controlled, and the three-stage amplifier will then become unstable as illustrated in Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "The amplified feedback signal at the output of the input block will then be feedforwarded to the output again, through the FFS, in order to LEE AND MOK: ACTIVE-FEEDBACK FREQUENCY-COMPENSATION TECHNIQUE Fig. 4.",
+        "function_summary": "Bode plot of NMC and AFFC amplifiers. The amplified feedback signal at the output of the input block will then be feedforwarded to the output again, through the FFS, in order to LEE AND MOK: ACTIVE-FEEDBACK FREQUENCY-COMPENSATION TECHNIQUE Fig. 4.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. (a) Structure and (b) equivalent small-signal circuit of the proposed three-stage AFFC amplifier.",
+      "caption_bbox": [
+        301.1,
+        472.5,
+        552.2,
+        492.1
+      ],
+      "section_title": "II. ACTIVE-FEEDBACK FREQUENCY COMPENSATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ACTIVE-FEEDBACK FREQUENCY COMPENSATION",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Transfer Function The detailed structure and its equivalent small-signal circuit of the three-stage AFFC amplifier are shown in Fig. 5, in which the high-gain block (HGB) is implemented by a two-stage , , and are defined Miller amplifier [16]."
+        },
+        {
+          "section_title": "ACTIVE-FEEDBACK FREQUENCY COMPENSATION",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "(a) (b) Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.8,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "+circuit": 1.0,
+        "-equivalent": -2.0,
+        "type_match:amplifier": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Structure and (b) equivalent small-signal circuit of the proposed three-stage AFFC amplifier",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.69,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "Fig. 6. Circuit diagram of a three-stage AFFC amplifier.",
+      "caption_bbox": [
+        38.1,
+        260.2,
+        224.8,
+        270.9
+      ],
+      "section_title": "II. ACTIVE-FEEDBACK FREQUENCY COMPENSATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ACTIVE-FEEDBACK FREQUENCY COMPENSATION",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "LEE AND MOK: ACTIVE-FEEDBACK FREQUENCY-COMPENSATION TECHNIQUE Fig. 6."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATIONS OF AMPLIFIERS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "The circuit implementation of a three-stage AFFC amplifier is shown in Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.8,
+      "relevance_breakdown": {
+        "+circuit diagram": 3.0,
+        "+circuit": 1.0,
+        "type_match:amplifier": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Circuit diagram of a three-stage AFFC amplifier",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.65,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. Replica bias circuit for the FBS.",
+      "caption_bbox": [
+        301.1,
+        499.9,
+        433.8,
+        510.6
+      ],
+      "section_title": "II. ACTIVE-FEEDBACK FREQUENCY COMPENSATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ACTIVE-FEEDBACK FREQUENCY COMPENSATION",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 7."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATIONS OF AMPLIFIERS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "In order to minimize the systematic offset of the AFFC amplifier, replica biasing scheme [13], as shown in Fig. 7, is adopted to bias transistors Mc1, Ma, and Mc2 by using transistors Mb1–Mb3, respectively."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.8,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "references": 0.8
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "bias circuit",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "bias circuit"
+        ],
+        "design_purpose": "In order to minimize the systematic offset of the AFFC amplifier, replica biasing scheme [13], as shown in Fig. 7, is adopted to bias transistors Mc1, Ma, and Mc2 by using transistors Mb1–Mb3, respectively.",
+        "function_summary": "Replica bias circuit for the FBS. In order to minimize the systematic offset of the AFFC amplifier, replica biasing scheme [13], as shown in Fig. 7, is adopted to bias transistors Mc1, Ma, and Mc2 by using transistors Mb1–Mb3, respectively.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.1,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 5,
+      "caption": "Fig. 8. Circuit diagram of a three-stage NMC amplifier.",
+      "caption_bbox": [
+        39.6,
+        278.8,
+        224.5,
+        289.4
+      ],
+      "section_title": "II. ACTIVE-FEEDBACK FREQUENCY COMPENSATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ACTIVE-FEEDBACK FREQUENCY COMPENSATION",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Furthermore, as increases with the value of the loading capacitor, the slew rate Fig. 8."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATIONS OF AMPLIFIERS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "For comparison with the proposed AFFC topology, a threestage NMC amplifier is also implemented, which is designed based on the Butterworth response stability criteria, as shown in Fig. 8 for reference purposes."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.8,
+      "relevance_breakdown": {
+        "+circuit diagram": 3.0,
+        "+circuit": 1.0,
+        "type_match:amplifier": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Circuit diagram of a three-stage NMC amplifier",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.94,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 5,
+      "caption": "Fig. 9. Chip micrograph of three-stage AFFC and NMC amplifiers.",
+      "caption_bbox": [
+        302.6,
+        647.8,
+        523.2,
+        658.4
+      ],
+      "section_title": "II. ACTIVE-FEEDBACK FREQUENCY COMPENSATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ACTIVE-FEEDBACK FREQUENCY COMPENSATION",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "As a result, the IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 3, MARCH 2003 TABLE I SUMMARY OF DEVICE SIZE Fig. 9."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS AND DISCUSSIONS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The micrograph is shown in Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-micrograph": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chip micrograph of three-stage AFFC and NMC amplifiers",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 6,
+      "caption": "Fig. 10.",
+      "caption_bbox": [
+        38.1,
+        328.4,
+        62.4,
+        339.0
+      ],
+      "section_title": "III. CIRCUIT IMPLEMENTATIONS OF AMPLIFIERS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATIONS OF AMPLIFIERS",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Fig. 10. is realized by transistors M101–M108 with a pMOS input differential pair."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS AND DISCUSSIONS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The measured frequency and the transient responses of both NMC and AFFC amplifiers are shown in Figs. 10(a) and 11(a), respectively."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS AND DISCUSSIONS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "From Fig. 10(a), the AFFC amplifier achieves a GBW of 4.5 MHz with 65 phase margin."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS AND DISCUSSIONS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Figs. 10(b), 11(b), and 11(c) show the frequency and transient responses of the AFFC amplifier when the loading 50% variation from its optimized value of capacitance has 120 pF."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.1,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "amplifier",
+        "key_specs": [
+          "108 w",
+          "4.5 MHz",
+          "65 ph",
+          "50%",
+          "120 pF"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.29,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 7,
+      "caption": "Fig. 11. load and (c) a 180-pF 25-k load.",
+      "caption_bbox": [
+        39.6,
+        471.7,
+        151.1,
+        491.2
+      ],
+      "section_title": "IV. EXPERIMENTAL RESULTS AND DISCUSSIONS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS AND DISCUSSIONS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "From Fig. 11(a), the average slew rate and average s and 1% settling time of the AFFC amplifier are 1.49 V/ s, respectively, with no transient overshoot."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS AND DISCUSSIONS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Two figures of merit FOM (a) (c) IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 3, MARCH 2003 (b) Measured transient responses of (a) the AFFC and NMC amplifiers driving a 120-pF 25-k load, and the AFFC amplifier driving (b) a 60-pF 25-k Fig. 11. load and (c) a 180-pF 25-k load."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "rf, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "load and (c) a 180-pF 25-k load",
+        "key_specs": [
+          "1%",
+          "1.49 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 6,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

@@ -1,0 +1,1070 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1240960.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1240960",
+  "generated_at": "2026-07-29T21:31:03",
+  "paper_metadata": {
+    "title": "A 10-GHz Global Clock Distribution Using Coupled Standing-Wave Oscillators",
+    "authors": [
+      "Frank O’Mahony",
+      "C. Patrick Yue",
+      "Mark A. Horowitz",
+      "S. Simon Wong"
+    ],
+    "abstract": "In this paper, a global clock network that incorporates standing waves and coupled oscillators to distribute a high-frequency clock signal with low skew and low jitter is described. The key design issues involved in generating standing waves on a chip are discussed, including minimizing wire loss within an available technology. A standing-wave oscillator, which is a distributed oscillator that sustains ideal standing waves on lossy wires, is introduced. A clock grid architecture comprised of coupled standing-wave oscillators and differential low-swing clock buffers is presented, along with a compact circuit model for networks of oscillators. The measured results for a prototyped standing-wave clock grid operating at 10 GHz and fabricated in a 0.18m 6M CMOS logic process are presented. A technique is proposed for on-chip skew measurements with subpicosecond precision. Fig. 1. 10-GHz standing-wave clock distribution network.",
+    "keywords": [
+      "Clock distribution",
+      "coupled oscillators",
+      "distributed oscillators",
+      "on-chip phase measurement",
+      "resonant"
+    ],
+    "doi": "10.1109/JSSC.2003.818299",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "oscillator",
+    "technology": "CMOS",
+    "application_domain": "microwave, rf, wireless, if",
+    "sub_blocks": [
+      "output buffer",
+      "clock / timing",
+      "resistor",
+      "transistor/MOSFET",
+      "cross-coupled pair",
+      "current source",
+      "LC tank / resonator",
+      "transmission line",
+      "differential pair",
+      "latch"
+    ],
+    "design_purpose": "A clock grid architecture comprised of coupled standing-wave oscillators and differential low-swing clock buffers is presented, along with a compact circuit model for networks of oscillators.",
+    "function_summary": "oscillator: A clock grid architecture comprised of coupled standing-wave oscillators and differential low-swing clock buffers is presented, along with a compact circuit model for networks of oscillators.",
+    "key_specs": [
+      "10 GHz",
+      "9.5 GHz",
+      "5%",
+      "1 ps",
+      "1.7 V",
+      "0.56 MHz",
+      "1.8 V",
+      "15%",
+      "20%",
+      "10%"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE DESIGN of global clock distributions for multigigahertz microprocessors has become an increasingly difficult and time-consuming task. As the frequency of the global clock continues to increase, the timing uncertainty introduced by the clock network—the skew and jitter—must reduce proportionally with the clock period. However, the clock skew and jitter for conventional buffered H-trees are pro ..."
+    },
+    {
+      "number": "II",
+      "title": "STANDING-WAVE OSCILLATOR",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "A. Standing Waves A standing wave is formed when two identical waves that are propagating in opposite directions interact. The general case of two waves traveling in opposite directions with arbitrary phase is described by and with amplitudes (1) Fig. 2. Generating standing waves using a short-circuit termination. The traveling-wave term in (1) reduces to zero when the amplitudes of the two waves  ..."
+    },
+    {
+      "number": "III",
+      "title": "STANDING-WAVE CLOCK GRID",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "A. Coupling and Injection-Locking SWOs On-chip transmission-line resonators have an inherently ) that allows coupling and injection modest quality factor ( locking of the SWOs over a range of frequencies. For the is 2.7. SWO in the previous design example, the loaded SWOs can be coupled together by simply connecting their transmission lines. The coupling strength is largest when the oscillators ar ..."
+    },
+    {
+      "number": "IV",
+      "title": "MODELING",
+      "kind": "other",
+      "page": 4,
+      "text_preview": "Networks of discrete coupled oscillators can be used to accurately model SWO grids. The circuit in Fig. 11 models two half-SWOs and is defined so that the coupling point between them is at the center of the circuit (not at the ends). The behavior of the transmission-line resonators is well approximated tanks that are inductively coupled. near resonance by The cross-coupled pairs are lumped and mod ..."
+    },
+    {
+      "number": "V",
+      "title": "EXPERIMENT",
+      "kind": "results",
+      "page": 4,
+      "text_preview": "A 10-GHz clock network comprised of eight coupled SWOs m 1.8-V CMOS process with six was prototyped in a 0.18AlCu metal layers (Fig. 13). Clock buffers were not integrated m devices at 10 GHz but due to the speed limitations of 0.18will be easily integratable when devices are scaled for 10-GHz lines are 3-mm long, 14m operations. The differential m apart in metal six. Although the dewide, and are  ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 6,
+      "text_preview": "The first on-chip standing-wave clock distribution has been demonstrated. This approach benefits from the invariant phase property of standing waves and the phase averaging effect of coupled oscillators. A method for overcoming on-chip interconnect losses to generate ideal standing waves has been presented. The standing-wave oscillators can be coupled together to form a clock grid that injection l ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. 10-GHz standing-wave clock distribution network.",
+      "caption_bbox": [
+        301.1,
+        319.4,
+        491.9,
+        330.1
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1. 10-GHz standing-wave clock distribution network. coupled-oscillator clock networks use standing waves and some require considerable circuitry to couple the oscillators [5]–[9]."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "This paper describes the operation and design of a global standing-wave clock distribution network comprised of coupled oscillators and intended for multigigahertz clock frequencies (Fig. 1)."
+        },
+        {
+          "section_title": "STANDING-WAVE OSCILLATOR",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The transmission-line cross section (Fig. 1) is optimized for minm and a distance of imum loss given a total track width of 32 m to the ground plane."
+        },
+        {
+          "section_title": "STANDING-WAVE CLOCK GRID",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Grid Architecture A resonant grid of coupled SWOs is shown in Fig. 1."
+        },
+        {
+          "section_title": "STANDING-WAVE CLOCK GRID",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "In order to test how well the coupled oscillators suppress jitter caused by localized supply noise, we simulated a single SWO, a grid of four SWOs, and the full grid in Fig. 1, all injection locked at 10 GHz."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.5,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "microwave, rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "In order to test how well the coupled oscillators suppress jitter caused by localized supply noise, we simulated a single SWO, a grid of four SWOs, and the full grid in Fig. 1, all injection locked at 10 GHz.",
+        "function_summary": "10-GHz standing-wave clock distribution network. In order to test how well the coupled oscillators suppress jitter caused by localized supply noise, we simulated a single SWO, a grid of four SWOs, and the full grid in Fig. 1, all injection locked at 10 GHz.",
+        "key_specs": [
+          "10 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Generating standing waves using a short-circuit termination.",
+      "caption_bbox": [
+        39.6,
+        228.1,
+        261.0,
+        238.7
+      ],
+      "section_title": "II. STANDING-WAVE OSCILLATOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "STANDING-WAVE OSCILLATOR",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The general case of two waves traveling in opposite directions with arbitrary phase is described by and with amplitudes (1) Fig. 2."
+        },
+        {
+          "section_title": "STANDING-WAVE OSCILLATOR",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "A simple way to generate a voltage standing wave is to send an incident wave down a transmission line and reflect it back with a lossless termination such as a short circuit (Fig. 2)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.8,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "microwave, rf, wireless, if",
+        "sub_blocks": [
+          "transmission line"
+        ],
+        "design_purpose": "",
+        "function_summary": "Generating standing waves using a short-circuit termination",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.1,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Transmission-line model with transconductance.",
+      "caption_bbox": [
+        302.6,
+        128.9,
+        486.4,
+        139.6
+      ],
+      "section_title": "II. STANDING-WAVE OSCILLATOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "STANDING-WAVE OSCILLATOR",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The equivalent lumped model for a sufficiently close transmission line with distributed transconductance is shown in , , and are the distributed transmission-line Fig. 3, where is the effective transconductance per unit parameters and length."
+        },
+        {
+          "section_title": "STANDING-WAVE OSCILLATOR",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The inherent amplitude saturation of the transconductors causes them to self-limit, so they exactly compensate for wire IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 11, NOVEMBER 2003 Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-model": -1.5,
+        "-conductance": -1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "microwave, rf, wireless, if",
+        "sub_blocks": [
+          "transmission line"
+        ],
+        "design_purpose": "",
+        "function_summary": "Transmission-line model with transconductance",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 1,
+      "caption": "Fig. 4. Standing-wave oscillator with three cross-coupled pairs.",
+      "caption_bbox": [
+        302.6,
+        317.8,
+        510.6,
+        328.5
+      ],
+      "section_title": "II. STANDING-WAVE OSCILLATOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "STANDING-WAVE OSCILLATOR",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 4."
+        },
+        {
+          "section_title": "STANDING-WAVE OSCILLATOR",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The circuit in Fig. 4 is a distributed standing-wave oscillator (SWO) that sustains ideal standing waves on lossy wires."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "type_match:oscillator": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "microwave, rf, wireless, if",
+        "sub_blocks": [
+          "cross-coupled pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "Standing-wave oscillator with three cross-coupled pairs",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Loss and length to oscillate at 10 GHz as a function of cross-coupled pair sizing (design point shown).",
+      "caption_bbox": [
+        38.1,
+        482.3,
+        289.2,
+        501.9
+      ],
+      "section_title": "II. STANDING-WAVE OSCILLATOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "STANDING-WAVE OSCILLATOR",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Table I lists the parameters that will be used to design an SWO with O’MAHONY et al.: GLOBAL CLOCK DISTRIBUTION USING COUPLED STANDING-WAVE OSCILLATORS TABLE I DESIGN PARAMETERS FOR SWO EXAMPLE Fig. 5."
+        },
+        {
+          "section_title": "STANDING-WAVE OSCILLATOR",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Then, the length, transmisdesired oscillation frequency , and are used in (3) to calculate the sion-line parameters, effective wire loss (Fig. 5)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "microwave, rf, wireless, if",
+        "sub_blocks": [
+          "cross-coupled pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "Loss and length to oscillate at 10 GHz as a function of cross-coupled pair sizing (design point shown)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. Simulated voltage waveforms for SWO at l=10 increments.",
+      "caption_bbox": [
+        301.1,
+        263.1,
+        519.9,
+        273.7
+      ],
+      "section_title": "II. STANDING-WAVE OSCILLATOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "STANDING-WAVE OSCILLATOR",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The simulated voltage waveforms spanning from are the end to the center of the SWO at increments of shown in Fig. 6."
+        },
+        {
+          "section_title": "STANDING-WAVE OSCILLATOR",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The SWO oscillates V and the amplitude saturates quickly when for Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "-waveform": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "microwave, rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated voltage waveforms for SWO at l=10 increments",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 2,
+      "caption": "Fig. 7. Simulated SWO amplitude and frequency sensitivity to supply voltage.",
+      "caption_bbox": [
+        301.1,
+        471.4,
+        552.2,
+        482.0
+      ],
+      "section_title": "II. STANDING-WAVE OSCILLATOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "STANDING-WAVE OSCILLATOR",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The amplitude and frequency sensitivity to the supply voltage is plotted in Fig. 7."
+        },
+        {
+          "section_title": "STANDING-WAVE OSCILLATOR",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "microwave, rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated SWO amplitude and frequency sensitivity to supply voltage",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. Simulated voltage standing waves for prototyped clock grid.",
+      "caption_bbox": [
+        39.6,
+        236.5,
+        260.7,
+        247.1
+      ],
+      "section_title": "III. STANDING-WAVE CLOCK GRID",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "STANDING-WAVE CLOCK GRID",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 8."
+        },
+        {
+          "section_title": "STANDING-WAVE CLOCK GRID",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The voltage standing-wave pattern for a portion of the grid is shown in Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "microwave, rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated voltage standing waves for prototyped clock grid",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 3,
+      "caption": "Fig. 9. Clock buffer.",
+      "caption_bbox": [
+        302.6,
+        213.3,
+        373.6,
+        223.9
+      ],
+      "section_title": "III. STANDING-WAVE CLOCK GRID",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "STANDING-WAVE CLOCK GRID",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "In each IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 11, NOVEMBER 2003 Fig. 9."
+        },
+        {
+          "section_title": "STANDING-WAVE CLOCK GRID",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "A two-stage clock buffer based on [13] is shown in Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "microwave, rf, wireless, if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Clock buffer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 3,
+      "caption": "Fig. 10. Simulated clock buffer performance.",
+      "caption_bbox": [
+        302.6,
+        430.1,
+        452.9,
+        440.8
+      ],
+      "section_title": "III. STANDING-WAVE CLOCK GRID",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "STANDING-WAVE CLOCK GRID",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 10."
+        },
+        {
+          "section_title": "STANDING-WAVE CLOCK GRID",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The clock buffer exhibits 5.9-ps skew (1.2% of the clock cycle) for the 30% voltage variation seen across the center 50% of a standing wave (Fig. 10)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "microwave, rf, wireless, if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simulated clock buffer performance",
+        "key_specs": [
+          "1.2%",
+          "30%",
+          "50%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 4,
+      "caption": "Fig. 11. SWO model.",
+      "caption_bbox": [
+        38.1,
+        137.0,
+        112.9,
+        147.6
+      ],
+      "section_title": "III. STANDING-WAVE CLOCK GRID",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "STANDING-WAVE CLOCK GRID",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Because the m devices chosen for demonstration are not adequate to 0.18test the clock buffer at 10 GHz, the buffer was simulated with a O’MAHONY et al.: GLOBAL CLOCK DISTRIBUTION USING COUPLED STANDING-WAVE OSCILLATORS Fig. 11."
+        },
+        {
+          "section_title": "MODELING",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "The circuit in Fig. 11 models two half-SWOs and is defined so that the coupling point between them is at the center of the circuit (not at the ends)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-model": -1.5,
+        "references": 0.8
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "microwave, rf, wireless, if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "SWO model",
+        "key_specs": [
+          "10 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 4,
+      "caption": "Fig. 12. detuning.",
+      "caption_bbox": [
+        301.1,
+        260.8,
+        331.0,
+        280.4
+      ],
+      "section_title": "IV. MODELING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MODELING",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "For a , that is or less—where is the length of the stub length, can be approximated by SWO— (5) Simulated (—) and modeled (\u0000\u0000) skew for four coupled SWOs with Fig. 12. detuning."
+        },
+        {
+          "section_title": "MODELING",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 12 illustrates the agreement between the simulated and modeled steady-state phase for a grid of four SWOs (using from the the SWO designed in Section II) that are coupled short circuits and detuned by varying the lengths of two of the 10%."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "microwave, rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "detuning",
+        "key_specs": [
+          "10%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 4,
+      "caption": "Fig. 13. Schematic of test chip grid with eight SWOs.",
+      "caption_bbox": [
+        301.1,
+        476.9,
+        479.1,
+        487.6
+      ],
+      "section_title": "IV. MODELING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MODELING",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 13."
+        },
+        {
+          "section_title": "EXPERIMENT",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "A 10-GHz clock network comprised of eight coupled SWOs m 1.8-V CMOS process with six was prototyped in a 0.18AlCu metal layers (Fig. 13)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "microwave, rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematic of test chip grid with eight SWOs",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.77,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 5,
+      "caption": "Fig. 14. Die micrograph.",
+      "caption_bbox": [
+        39.6,
+        214.4,
+        125.1,
+        225.0
+      ],
+      "section_title": "V. EXPERIMENT",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENT",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Although the dewide, and are spaced 4 sign parameters are identical to the ones used in the example in Section II, the additional loading of testing and tuning circuitry and layout parasitics reduces the length required to oscillate Fig. 14."
+        },
+        {
+          "section_title": "EXPERIMENT",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "A die micrograph of the prototyped clock grid is shown in Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-micrograph": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "microwave, rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Die micrograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 5,
+      "caption": "Fig. 15. Test chip layout and timing measurement.",
+      "caption_bbox": [
+        39.6,
+        405.6,
+        206.7,
+        416.2
+      ],
+      "section_title": "V. EXPERIMENT",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENT",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 15."
+        },
+        {
+          "section_title": "EXPERIMENT",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "On-chip skew is measured with a homodyne technique that converts phase into dc voltage (Fig. 15)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-layout": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "microwave, rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Test chip layout and timing measurement",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 5,
+      "caption": "Fig. 16. Measured skew with different injection amplitudes.",
+      "caption_bbox": [
+        302.6,
+        272.3,
+        499.6,
+        283.0
+      ],
+      "section_title": "V. EXPERIMENT",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENT",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The grid is folded to minimize the distance from tapping points to the IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 11, NOVEMBER 2003 Fig. 16."
+        },
+        {
+          "section_title": "EXPERIMENT",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 16 shows the skew across the grid as a function of the injected signal amplitude."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "microwave, rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "The grid is folded to minimize the distance from tapping points to the IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 11, NOVEMBER 2003 Fig. 16.",
+        "function_summary": "Measured skew with different injection amplitudes. The grid is folded to minimize the distance from tapping points to the IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 11, NOVEMBER 2003 Fig. 16.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 6,
+      "caption": "Fig. 17.",
+      "caption_bbox": [
+        38.1,
+        390.3,
+        62.8,
+        400.9
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "EXPERIMENT",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 17 shows that driving the grid off-resonance causes a skew gradient."
+        },
+        {
+          "section_title": "EXPERIMENT",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The skew calculated using the model from Section IV is also plotted in Fig. 17 and shows good 1.5-ps difference)."
+        },
+        {
+          "section_title": "EXPERIMENT",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.2,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "microwave, rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 6,
+      "caption": "Fig. 18. Measured skew for detuned grid.",
+      "caption_bbox": [
+        38.1,
+        657.8,
+        176.7,
+        668.5
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "EXPERIMENT",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The grid was injection locked with a 125-mV signal from 10.00 to 10.10 GHz and the measured skew is shown in Fig. 18."
+        },
+        {
+          "section_title": "EXPERIMENT",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 18."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "microwave, rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured skew for detuned grid",
+        "key_specs": [
+          "10.10 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 6,
+      "caption": "Fig. 19. Measured clock jitter for different locking amplitude and frequency.",
+      "caption_bbox": [
+        301.1,
+        256.2,
+        550.4,
+        266.8
+      ],
+      "section_title": "V. EXPERIMENT",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENT",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The results indicate that jitter is nearly constant except at the edges of the locking range, where it increases rapidly (Fig. 19)."
+        },
+        {
+          "section_title": "EXPERIMENT",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The measured jitter for the signal generator was 1.5-ps rms and is shown as the baseline in Fig. 19."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS",
+        "application_domain": "microwave, rf, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured clock jitter for different locking amplitude and frequency",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 13,
+  "warnings": []
+}

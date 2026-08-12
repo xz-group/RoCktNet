@@ -1,0 +1,209 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\RNDatasetPapers\\6487753.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output_rerun_128\\6487753",
+  "generated_at": "2026-07-29T22:45:38",
+  "paper_metadata": {
+    "title": "A 64Mb SRAM in 22nm SOI Technology Featuring Fine-Granularity Power Gating and Low-Energy Power-Supply-Partition Techniques for 37% Leakage Reduction Harold Pilo1, Chad A. Adams2, Igor Arsovski1, Robert M. Houle1, Steven M. Lamphier1, Michael M. Lee1, Frank M. Pavlik1, Sushma N. Sambatur3, Adnan Seferagic1, Richard Wu1, Mohammad I. Younus4",
+    "authors": [],
+    "abstract": "",
+    "keywords": [],
+    "doi": "",
+    "venue": "",
+    "year": 2013
+  },
+  "paper_circuit_context": {
+    "circuit_type": "SRAM in 22nm SOI Technology",
+    "technology": "SOI, 22nm process",
+    "application_domain": "",
+    "sub_blocks": [
+      "transistor/MOSFET",
+      "switch"
+    ],
+    "design_purpose": "",
+    "function_summary": "SRAM in 22nm SOI Technology",
+    "key_specs": [
+      "22nm",
+      "37%",
+      "40%",
+      "8%",
+      "0.128μm",
+      "-2 v",
+      "150mV",
+      "1.5%",
+      "1.1V",
+      "80%"
+    ]
+  },
+  "sections": [],
+  "figures": [
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 0,
+      "caption": "Figure 18.4.1 shows the 0.128μm2 BC configured to support FGPG. Power-supply lines V_VCS1 and V_VCS2 are routed in metal-3 in parallel with the wordline (WL). Larger BC devices are used to improve VCSMIN voltage and performance; the corresponding increase in BC width is leveraged to fit the two required VSS lines in the metal-2 vertical direction in addition to the bitlines (BL) and connections for pull-up (PU1/PU2) and WL contacts. The horizontal power-supply lines enable a small group of rows to be powered independently within the memory bank. To be user-transparent, PG techniques must rely on a local charge reservoir to instantly replenish the charge associated with waking up a bank [3]. Decreasing the memory domain powered up during activation from 128 rows to eight rows not only reduces leakage significantly, but it also lowers the wake-up current and AC power penalty associated with memory wake-up. The improved power efficiency of FGPG enables its use and leakage savings across all memory sizes, which is not feasible with the bank-based approach.",
+      "caption_bbox": [
+        28.0,
+        329.9,
+        279.8,
+        470.7
+      ],
+      "section_title": "",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 18.4.1 shows the 0.128μm2 BC configured to support FGPG."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 18.4.2 shows the schematic of the FGPG scheme."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "GRP0 selects a group of four WL drivers (I1-I4), which are decoded by DEC0-DEC3 (see WL3 in Fig. 18.4.2)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Each row of BCs shares a power supply line with its neighboring row, and every fourth row straddles two different PG domains (WL3 and WL7 in Fig. 18.4.2)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "This is highlighted by the turn-on of N11 and N12 in Fig. 18.4.2, which in turn select P10-P13 and P14-P17, respectively."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "This is illustrated by WL7 in Fig. 18.4.2; V_VCS1 is at VCS, but V_VCS2 is in retention, 150mV below VCS."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The WL pull-up devices (P1-P9 in Fig. 18.4.2) contribute the highest amount of leakage after the BC."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Finally, a larger overall PFET decreases the variability and data-dependency of the retention voltage, which is essential in maintaining robust margins for HP Figure 18.4.3 shows a detailed schematic of the FGPG driver for four rows."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 18.4.4 shows the test results for an 8Mb section of the test chip at 1.1V and 85°C."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The bottom-right section of Fig. 18.4.4 also shows simulation waveforms of FGPG during WL selection."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 18.4.5 compares the relative performance and leakage of normal-Vt devices (NVt) and high-Vt devices (HVt) at several voltages."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "To minimize total power consumption and improve performance, the voltage-domain partitioning of Fig. 18.4.6 is developed."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The WLredundancy compare logic is kept at VDD to avoid large numbers of level-shift Figure 18.4.7 shows the die micrograph of the 64Mb SRAM with one 512Kb instance magnified."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The 512Kb macro features are also summarized in Fig. 18.4.7."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "References: [1] Narasimha, S., et al., “22nm High-Performance SOI Technology Featuring Dual-Embedded Stressors, Epi-Plate High-K Deep-Trench Embedded DRAM and Self-Aligned Via 15LM BEOL”, IEDM, Dec. 2012. [2] Barth, J., et al., “A 45nm SOI Embedded DRAM macro for POWER7TM 32MB On-Chip L3 Cache”, ISSCC, pp. 342-343, Feb. 2010. [3] Pilo, H., et al., “A 450ps Access-Time SRAM Macro in 45nm SOI Featuring a Two-Stage Sensing-Scheme and Dynamic Power Management,” ISSCC, pp. 378-379, Feb. 2008. [4] Hamzaoglu, F., et al., “A 153Mb-SRAM Design with Dynamic Stability Enhancement and Leakage Reduction in 45nm High-K Metal-Gate CMOS Technology”, ISSCC, pp. 376-3779, Feb. 2008. [5] Pilo, H., et al., “A 64Mb SRAM in 32nm High-k Metal-Gate SOI Technology with 0.7V Operation Enabled by Stability, Write-Ability and Read-Ability Enhancements,” ISSCC, pp. 254-255, Feb. 2011. 978-1-4673-4516-3/13/$31.00 ©2013 IEEE Figure 18.4.1: 22nm Bitcell with horizontal power lines."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 18.4.3: Power-gate device driver."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 18.4.5: Low-energy power-supply partition: rationale for high-Vt (HVt) use."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "ISSCC 2013 / February 20, 2013 / 11:45 AM Figure 18.4.2: Fine-granularity power gating. 18 Figure 18.4.4: FGPG hardware results and waveforms."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 18.4.6: Low-energy power-supply partition."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "DIGEST OF TECHNICAL PAPERS • ISSCC 2013 PAPER CONTINUATIONS Figure 18.4.7: Micrograph of 64Mb test-chip and features. • 2013 IEEE International Solid-State Circuits Conference 978-1-4673-4516-3/13/$31.00 ©2013 IEEE"
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "memory",
+        "technology": "SOI, 22nm process",
+        "application_domain": "",
+        "sub_blocks": [],
+        "design_purpose": "To minimize total power consumption and improve performance, the voltage-domain partitioning of Fig. 18.4.6 is developed.",
+        "function_summary": "4.1 shows the 0.128μm2 BC configured to support FGPG. Power-supply lines V_VCS1 and V_VCS2 are routed in metal-3 in parallel with the wordline (WL). Larger BC devices are used to improve VCSMIN voltage and performance; the corresponding increase in BC width is leveraged to fit the two required VSS lines in the metal-2 ...",
+        "key_specs": [
+          "0.128μm",
+          "150mV",
+          "1.1V",
+          "22nm",
+          "45nm",
+          "450ps",
+          "32nm",
+          "0.7V"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.43,
+      "warnings": [
+        "Recommended figure caption does not explicitly mention a schematic/topology/circuit; please confirm manually.",
+        "Recommended figure was classified as 'other', not a schematic; manual confirmation strongly recommended."
+      ]
+    }
+  ],
+  "recommended_figure_id": 18,
+  "warnings": []
+}

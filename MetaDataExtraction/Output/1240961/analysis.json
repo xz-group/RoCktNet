@@ -1,0 +1,1084 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1240961.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1240961",
+  "generated_at": "2026-07-29T22:01:21",
+  "paper_metadata": {
+    "title": "A 2.5–10-Gb/s CMOS Transceiver With Alternating Edge-Sampling Phase Detection for Loop Characteristic Stabilization",
+    "authors": [
+      "Bong-Joon Lee",
+      "Moon-Sang Hwang",
+      "Sang-Hyun Lee",
+      "Deog-Kyoon Jeong"
+    ],
+    "abstract": "This paper describes a technique for stabilizing the binary phase detector (PD) gain under various jitter conditions. A dead zone in the phase detector estimates the magnitude of high-frequency data jitter, and the resulting jitter information is used to control the charge-pump current. An alternating edge-sampling (AES) PD reduces hardware overhead by removing possible redundancies in previous dead-zone implementations. A series sense amplifier driven by a single-phase clock helps high-speed data sampling with increased data evaluation time. A dual path voltage-controlled oscillator incorporating dual-loop Fig. 1. General block diagram of CDR with binary PD. architecture enables wide-range operation of clock/data recovery circuits with low jitter. Fabricated in a 0.18m CMOS process, a data sampling method, the binary PD intrinsically removes the test transceiver operates from 2.5 to 11.5 Gb/s with a bit-error rate 12 while consuming 540 mW from a 1.8–V supply. of less than 10 need for an additional retimer. However, due to nonlinear and jitter-dependent characteristics, the binary PD is often discarded",
+    "keywords": [
+      "Alternating edge-sampling phase detection",
+      "clock"
+    ],
+    "doi": "10.1109/JSSC.2003.818290",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "2.5–10-Gb/s CMOS Transceiver",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "resistor",
+      "output buffer",
+      "differential pair",
+      "sense amplifier",
+      "inductor",
+      "transistor/MOSFET",
+      "cross-coupled pair",
+      "latch"
+    ],
+    "design_purpose": "General block diagram of CDR with binary PD. architecture enables wide-range operation of clock/data recovery circuits with low jitter.",
+    "function_summary": "2.5–10-Gb/s CMOS Transceiver: General block diagram of CDR with binary PD. architecture enables wide-range operation of clock/data recovery circuits with low jitter.",
+    "key_specs": [
+      "12 w",
+      "540 mW",
+      "2 w",
+      "7 w",
+      "50%",
+      "400%",
+      "800 mV",
+      "2 ps",
+      "158 mW",
+      "340 mW"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "W ITH THE explosive increase in system integrity and complexity, high-bandwidth and low-cost I/O circuits are desirable. To address this demand, serial data communication systems have been widely used. Clock and data recovery (CDR) is one of the most important functions of high-speed I/O, and often limits the bandwidth. CDR in CMOS is very attractive due to its high integrity. However, the limited ..."
+    },
+    {
+      "number": "II",
+      "title": "CONSTANT GAIN BINARY PD",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "A. Effect of Jitter in Binary PD Fig. 1 is a general block diagram of CDR circuits using a conventional binary PD [7], [8]. The binary PD generates up/down signals corresponding to the phase error between the internal clock and input data. Since it detects only the direction of the phase error, the binary PD can be implemented with a simple hardware structure, but inherent nonlinearity of the bang ..."
+    },
+    {
+      "number": "IV",
+      "title": "TRANSCEIVER IMPLEMENTATION",
+      "kind": "design",
+      "page": 6,
+      "text_preview": "A. Transceiver Architecture Fig. 15 is a block diagram of an implemented transceiver. The transmitter serializes 16 bits of parallel data into a single positive emitter-coupled logic (PECL) level signal via a 16:4 multiplexer (MUX), a 4:1 serializer, and a high-speed output buffer. In the receiver, a serial bit stream is recovered as 16 bits of parallel data through the AES CDR and a 4:16 demultip ..."
+    },
+    {
+      "number": "V",
+      "title": "MEASUREMENT RESULTS",
+      "kind": "results",
+      "page": 6,
+      "text_preview": "A test transceiver chip was fabricated in a standard 0.18m one-poly four-metal CMOS process and packaged with a 144-pin chip-array BGA. Fig. 17 shows a microphotograph of TABLE I CHIP SUMMARY the chip. The transceiver core occupies an area of mm , mm . while the pad-limited die size is For peer-to-peer testing, the two chips were soldered on two separated test boards and connected to each other th ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 7,
+      "text_preview": "In this paper, we introduced a technique to stabilize the binary PD gain. The proposed PD estimates the magnitude of input data jitter and adjusts the charge-pump current to keep the PD gain constant in spite of the jitter variations. The dead zone is employed to measure the jitter amount, and the AES method allows for dead-zone implementation -oversampling ratio. The series SA driven by with only ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. General block diagram of CDR with binary PD.",
+      "caption_bbox": [
+        301.1,
+        280.6,
+        483.5,
+        291.2
+      ],
+      "section_title": "",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1."
+        },
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Effect of Jitter in Binary PD Fig. 1 is a general block diagram of CDR circuits using a conventional binary PD [7], [8]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "clock and data recovery (CDR)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "General block diagram of CDR with binary PD",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.4,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Conventional binary PD operation under various jitter conditions.",
+      "caption_bbox": [
+        39.6,
+        188.1,
+        277.2,
+        198.7
+      ],
+      "section_title": "II. CONSTANT GAIN BINARY PD",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "These current reductions are more specifically illustrated in Fig. 2 for two different jitter cases."
+        },
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Jitter histograms and up/down decision rates depicted is dependent on the phase error, and in Fig. 2 imply that the jitter distribution as well."
+        },
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "As a result, the binary PD shows a Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.8,
+      "relevance_breakdown": {
+        "-conventional": -3.0,
+        "references": 1.2
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "2.5–10-Gb/s CMOS Transceiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Conventional binary PD operation under various jitter conditions",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. curves of (a) conventional and (b) proposed PDs. I",
+      "caption_bbox": [
+        39.6,
+        463.5,
+        262.8,
+        474.1
+      ],
+      "section_title": "II. CONSTANT GAIN BINARY PD",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "(a) (b) Fig. 3. curves of (a) conventional and (b) proposed PDs."
+        },
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 3(a) is a bution determines the phase detector gain curve of the binary PD under the various jitter conditions."
+        },
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 3(b) if we can make adjustment."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "-conventional": -3.0,
+        "references": 1.2
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "phase detector",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "curves of (a) conventional and (b) proposed PDs. I",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 1,
+      "caption": "Fig. 4. Proposed PD operation under various jitter conditions.",
+      "caption_bbox": [
+        302.6,
+        245.1,
+        505.4,
+        255.7
+      ],
+      "section_title": "II. CONSTANT GAIN BINARY PD",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Instead, a concept IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 11, NOVEMBER 2003 Fig. 4."
+        },
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 4 illustrates the operation of the proposed dead-zone PD."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.8,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "2.5–10-Gb/s CMOS Transceiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Proposed PD operation under various jitter conditions",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.45,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 1,
+      "caption": "Fig. 5. Jitter histogram and sampling clock locations.",
+      "caption_bbox": [
+        302.6,
+        550.2,
+        478.6,
+        560.8
+      ],
+      "section_title": "II. CONSTANT GAIN BINARY PD",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "(a) (b) (c) Fig. 5."
+        },
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 5(a) shows the jitter histogram and edge-sampling clock (xCLK) of a conand cases. ventional binary PD for both the When the CDR is locked, xCLK samples data at the center of the data edge distribution."
+        },
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "For example, if can be expressed as the input jitter is purely Gaussian, (3) is a standard deviation of the jitter. where In a dead-zone PD, the up and down pulses are generated only when the data transitions are found outside the dead zone. is given as Therefore, (4) from Fig. 5(b), and is shown as (5) is the width of the dead zone."
+        },
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Instead, an approximated value of and is used in this work, as illustrated , is equal to 1/2 while in Fig. 5(c)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.6,
+      "relevance_breakdown": {
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "clock and data recovery (CDR)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Jitter histogram and sampling clock locations",
+        "key_specs": [
+          "2 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. CDR architecture.",
+      "caption_bbox": [
+        38.1,
+        238.3,
+        125.5,
+        248.9
+      ],
+      "section_title": "II. CONSTANT GAIN BINARY PD",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "LEE et al.: CMOS TRANSCEIVER WITH AES PHASE DETECTION FOR LOOP CHARACTERISTIC STABILIZATION Fig. 6."
+        },
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "A block diagram of the AES CDR is presented in Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "clock and data recovery (CDR)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "A block diagram of the AES CDR is presented in Fig. 6.",
+        "function_summary": "CDR architecture. A block diagram of the AES CDR is presented in Fig. 6.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Dead-zone implementations in (a) previous works and (b) this work.",
+      "caption_bbox": [
+        39.6,
+        296.2,
+        286.1,
+        306.9
+      ],
+      "section_title": "II. CONSTANT GAIN BINARY PD",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "After power-on, the frequency acquisition loop is initially activated to set the CDR operating 200 ppm apart from the input data rate. frequency within After the frequency lock is achieved, the data loop and the (a) (b) Fig. 7."
+        },
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 7 ware overhead by using only the 2 shows the basic idea of the AES PD."
+        },
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "In the previous dead-zone -oversampled data is used to generate up or down PDs, the 3 signals, but as illustrated in Fig. 7(a), one of the oversampled data is not used in each of the lag or lead cases."
+        },
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Instead, the PD has two internal phase detection states: the up-detecting and the down-detecting state, and for each state, the two different clock configurations are applied as shown in Fig. 7(b)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.6,
+      "relevance_breakdown": {
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "clock and data recovery (CDR)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Dead-zone implementations in (a) previous works and (b) this work",
+        "key_specs": [
+          "7 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. AES PD behavior.",
+      "caption_bbox": [
+        302.6,
+        236.1,
+        390.6,
+        246.7
+      ],
+      "section_title": "II. CONSTANT GAIN BINARY PD",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The behavior of the AES PD is more specifically illustrated in Fig. 8."
+        },
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "In the up-detecting IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 11, NOVEMBER 2003 Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "2.5–10-Gb/s CMOS Transceiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "AES PD behavior",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 3,
+      "caption": "Fig. 9. AES PD state transition diagram.",
+      "caption_bbox": [
+        302.6,
+        343.7,
+        438.4,
+        354.4
+      ],
+      "section_title": "II. CONSTANT GAIN BINARY PD",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 9."
+        },
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "A state transition diagram of the AES PD is shown in Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "2.5–10-Gb/s CMOS Transceiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "AES PD state transition diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 3,
+      "caption": "Fig. 10. (a) Dead-zone generator. (b) Slew rate controller. (c) Sampling clock timing in lock state.",
+      "caption_bbox": [
+        302.6,
+        594.3,
+        553.6,
+        613.9
+      ],
+      "section_title": "II. CONSTANT GAIN BINARY PD",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "(a) (b) (c) Fig. 10."
+        },
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "When the CDR is locked to the data, the AES PD alternates its state at every data transition while generor signal. ating no The sampling clocks of AES PD are generated using a variable delay line (VDL) as shown in Fig. 10(a)."
+        },
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "A capacitive slew rate controller, shown in Fig. 10(b), adjusts the VDL delay according to the dead-zone , and the length of VDL width control signals determines the dead-zone width."
+        },
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "A timing diagram of AES PD is shown in Fig. 10(c)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.6,
+      "relevance_breakdown": {
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "clock and data recovery (CDR)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Dead-zone generator. (b) Slew rate controller. (c) Sampling clock timing in lock state",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 4,
+      "caption": "Fig. 11. (a) Dead-zone width controller. (b) FSM state transition diagram.",
+      "caption_bbox": [
+        38.1,
+        396.5,
+        278.9,
+        407.2
+      ],
+      "section_title": "II. CONSTANT GAIN BINARY PD",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "If state until the LEE et al.: CMOS TRANSCEIVER WITH AES PHASE DETECTION FOR LOOP CHARACTERISTIC STABILIZATION (a) (b) Fig. 11."
+        },
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 11(a) shows a block diagram of the (a) (b) Fig. 12."
+        },
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "A finite state machine (FSM) generates the width conand according to the current state and five trol signals , as shown in Fig. 11(b). levels of the width correction signal or signals is As a result, the occurrence ratio of the 1/63."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transceiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Dead-zone width controller. (b) FSM state transition diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 4,
+      "caption": "Fig. 12. Simulated jitter transfer curves of CDR using (a) the conventional binary PD and (b) the proposed AES PD.",
+      "caption_bbox": [
+        301.1,
+        446.0,
+        552.2,
+        465.6
+      ],
+      "section_title": "II. CONSTANT GAIN BINARY PD",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 11(a) shows a block diagram of the (a) (b) Fig. 12."
+        },
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The jitter transfer curves for some representative jitter cases are plotted in Fig. 12."
+        },
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "In Fig. 12(a), about 400% bandwidth deviations are observed for 0.01–0.04 UI RJ (rms) and 0.1–0.4 UI DJ (peak-to-peak) variations, respectively."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.8,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "-conventional": -3.0,
+        "-simulated": -3.0,
+        "references": 1.2
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "clock and data recovery (CDR)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated jitter transfer curves of CDR using (a) the conventional binary PD and (b) the proposed AES PD",
+        "key_specs": [
+          "400%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 5,
+      "caption": "Fig. 13. Data sampler with series sense amplifier.",
+      "caption_bbox": [
+        39.6,
+        214.0,
+        203.6,
+        224.7
+      ],
+      "section_title": "II. CONSTANT GAIN BINARY PD",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Since the PD gain is inversely proportional to the Fig. 13."
+        },
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "For further extension of the data evaluation time, a series SA, shown in Fig. 13, is used."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "sense amplifier"
+        ],
+        "design_purpose": "",
+        "function_summary": "Data sampler with series sense amplifier",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 5,
+      "caption": "Fig. 14. (a) VCO with dual control path. (b) Single-stage delay cell.",
+      "caption_bbox": [
+        302.6,
+        452.2,
+        525.0,
+        462.9
+      ],
+      "section_title": "II. CONSTANT GAIN BINARY PD",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "VCO A VCO with dual control paths has been used widely [14], [15], because it supports a large operation range with small VCO gain, but the coarse-tuning scheme determining the IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 11, NOVEMBER 2003 (a) (b) Fig. 14."
+        },
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 14(a) shows a block diagram of the dual-loop architecture PLL."
+        },
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "A circuitdiagram of the unit delay cell is shown in Fig. 14(b)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) VCO with dual control path. (b) Single-stage delay cell",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 6,
+      "caption": "Fig. 15. Transceiver block diagram.",
+      "caption_bbox": [
+        38.1,
+        208.6,
+        158.2,
+        219.3
+      ],
+      "section_title": "II. CONSTANT GAIN BINARY PD",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The dual control path is realized through LEE et al.: CMOS TRANSCEIVER WITH AES PHASE DETECTION FOR LOOP CHARACTERISTIC STABILIZATION Fig. 15."
+        },
+        {
+          "section_title": "TRANSCEIVER IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 6,
+          "sentence": "Transceiver Architecture Fig. 15 is a block diagram of an implemented transceiver."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "transceiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Transceiver block diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 6,
+      "caption": "Fig. 16. Output buffer.",
+      "caption_bbox": [
+        38.1,
+        394.9,
+        116.1,
+        405.6
+      ],
+      "section_title": "II. CONSTANT GAIN BINARY PD",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CONSTANT GAIN BINARY PD",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 16."
+        },
+        {
+          "section_title": "TRANSCEIVER IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 6,
+          "sentence": "For fast rise/fall transitions, a differential pair with inductive shunt peaking [18] is used as shown in Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "buffer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "output buffer",
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "Output buffer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 6,
+      "caption": "Fig. 17. Chip microphotograph.",
+      "caption_bbox": [
+        301.1,
+        271.4,
+        408.6,
+        282.1
+      ],
+      "section_title": "II. CONSTANT GAIN BINARY PD",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TRANSCEIVER IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 6,
+          "sentence": "Fig. 17."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 17 shows a microphotograph of TABLE I CHIP SUMMARY the chip."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -5.7,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "2.5–10-Gb/s CMOS Transceiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chip microphotograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 6,
+      "caption": "Fig. 18. 10-Gb/s eye diagram (a) at transmitter side and (b) at receiver side.",
+      "caption_bbox": [
+        301.1,
+        475.1,
+        547.1,
+        485.8
+      ],
+      "section_title": "IV. TRANSCEIVER IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "TRANSCEIVER IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 6,
+          "sentence": "(a) (b) Fig. 18. 10-Gb/s eye diagram (a) at transmitter side and (b) at receiver side."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 18 shows the measured eye diagrams at 10-Gb/s operation."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "10-Gb/s eye diagram (a) at transmitter side and (b) at receiver side",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 6,
+      "caption": "Fig. 19. Recovered clock jitter histogram (a) when dead zone is enabled and (b) when dead zone is disabled.",
+      "caption_bbox": [
+        301.1,
+        671.6,
+        552.2,
+        691.2
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "TRANSCEIVER IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 6,
+          "sentence": "(a) (b) Fig. 19."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The recovered clock jitter histograms are shown in Fig. 19."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "When the dead zone is enabled [i.e., AES PD mode, Fig. 19(a)], the recovered clock has a 2.47-ps rms and 21.2-ps peak-to-peak jitter, but the jitter increases to 4.86-ps rms and 36-ps peak-to-peak if the dead zone is disabled [i.e., conventional binary PD mode, Fig. 19(b)]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "2.5–10-Gb/s CMOS Transceiver",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Recovered clock jitter histogram (a) when dead zone is enabled and (b) when dead zone is disabled",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 1,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

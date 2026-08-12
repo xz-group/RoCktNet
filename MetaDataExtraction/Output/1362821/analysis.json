@@ -1,0 +1,1185 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1362821.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1362821",
+  "generated_at": "2026-07-29T22:02:05",
+  "paper_metadata": {
+    "title": "A 21-mW 8-b 125-MSample/s ADC in 0.09-mm2 0.13-m CMOS",
+    "authors": [
+      "Jan Mulder",
+      "Christopher M. Ward",
+      "Chi-Hung Lin",
+      "David Kruse",
+      "Jan R. Westra",
+      "Marcel Lugthart",
+      "Erol Arslan",
+      "Rudy J. van de Plassche",
+      "Klaas Bult",
+      "Frank M. L. van der Goes"
+    ],
+    "abstract": "This paper presents an 8-b two-step subranging analog-to-digital (ADC) using interpolation, averaging, offset compensation, and pipelining techniques to accomplish an effective number of bits of 7.6 b at 125 MSample/s. The 0.13m CMOS ADC occupies 0.09 mm2 and consumes 21 mW.",
+    "keywords": [
+      "Analog-to-digital conversion",
+      "CMOS analog integrated circuits (ICs)",
+      "subranging analog-to-digital converter (ADC)"
+    ],
+    "doi": "10.1109/JSSC.2004.836235",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2004
+  },
+  "paper_circuit_context": {
+    "circuit_type": "21-mW 8-b 125-MSample/s ADC in 0.09-mm2 0.13-m CMOS",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "switch",
+      "clock / timing",
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "cross-coupled pair",
+      "current source",
+      "output buffer",
+      "differential pair",
+      "latch"
+    ],
+    "design_purpose": "",
+    "function_summary": "21-mW 8-b 125-MSample/s ADC in 0.09-mm2 0.13-m CMOS: This paper presents an 8-b two-step subranging analog-to-digital (ADC) using interpolation, averaging, offset compensation, and pipelining techniques to accomplish an effective number of bits of 7.6 b at 125 MSample/s.",
+    "key_specs": [
+      "21 mW",
+      "3981 AJ",
+      "50%",
+      "90%",
+      "8 MHz",
+      "100 MHz",
+      "68 dB",
+      "0.54 pJ",
+      "600 MHz",
+      "70 mW"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "A REA and power are important parameters for analog-todigital converters (ADCs) integrated on large digital ICs. This is especially true if several ADCs have to be implemented on the same die. These embedded ADCs necessarily have to be designed in state-of-the-art digital CMOS processes and, therefore, have to work at low supply voltages, while special process options, such as low-threshold device ..."
+    },
+    {
+      "number": "II",
+      "title": "ADC ARCHITECTURE",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "The ADC presented in this paper uses a two-step subranging architecture [24]–[28], shown in Fig. 1, comprising two ﬂash Manuscript received April 16, 2004; revised July 19, 2004. The authors are with Broadcom Netherlands, 3981 AJ Bunnik, The Netherlands (e-mail: jmulder@broadcom.com). Digital Object Identiﬁer 10.1109/JSSC.2004.836235 Fig. 1. Two-step subranging ADC architecture. ADCs, a reference  ..."
+    },
+    {
+      "number": "III",
+      "title": "COARSE ADC",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "to The subranging ADC uses 15 subranges of 32 LSB cover the complete 8 b output range. This requires 14 comparators in the CADC, which has been implemented as a full ﬂash ADC. The offset requirements for the CADC are greatly relaxed by the 50% overrange implemented in the FADC. Therefore, only a single ampliﬁer preceding each comparator is sufﬁcient to reduce the impact of random comparator offset ..."
+    },
+    {
+      "number": "IV",
+      "title": "FINE ADC",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "The FADC, shown in Fig. 4, is a 5-b ﬂash ADC comprising of an array of 33 comparators. It provides 50% of overrange, which enables the ADC to correct for inaccuracies of the CADC of up to 8 LSB without any impact on the overall ADC performance. The comparators are preceded by three arrays of , , and , respecdifferential-pair ampliﬁers, denoted by tively, which are required to suppress the random o ..."
+    },
+    {
+      "number": "V",
+      "title": "OFFSET COMPENSATION",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "The FADC uses offset compensation in all three ampliﬁer arrays. As a consequence, small devices can be used in the differential-pair ampliﬁers, allowing the use of lower bias currents, which helps to reduce the power consumption of the FADC. Fig. 4. Block diagram of the FADC. Fig. 5. Operation principle of the FADC. use a closed-loop auto-zero technique, The ampliﬁers in stage and identical to the ..."
+    },
+    {
+      "number": "VI",
+      "title": "PIPELINING",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "In ADCs comprising cascaded arrays of ampliﬁers, pipelining is often used to improve conversion speed [15], [20], [26], [31], [32]. In effect, conversion latency is traded against ampliﬁer speed and, hence, power consumption. Since, in this design, coupling capacitors between the ampliﬁer arrays are already implemented in the FADC for auto-zeroing purposes, they can be reused for pipelining. IEEE  ..."
+    },
+    {
+      "number": "VII",
+      "title": "INTERPOLATION",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "Interpolation is generally used to reduce the number of ampliﬁers required in an ADC [10], [12]–[17], [20], [21], [27]–[29], [33]–[37], thus decreasing layout complexity, which is imperative for achieving small die area and low-power operation. Moreover, interpolation reduces the number of reference voltages required, so less signals have to be routed in the layout. This helps to achieve a small a ..."
+    },
+    {
+      "number": "VIII",
+      "title": "AVERAGING",
+      "kind": "other",
+      "page": 4,
+      "text_preview": "Averaging is widely used in ﬂash ADCs [38]–[40], folding ADCs [16], [17], [35], [41]–[43], and subranging ADCs [26] to improve ADC performance. In an array of ampliﬁers, the contributions of random mismatch and noise to the output signals of neighboring ampliﬁers are mostly uncorrelated. Hence, when averaging the outputs of several ampliﬁers, the average output signal has a higher signal-to-noise  ..."
+    },
+    {
+      "number": "IX",
+      "title": "TIMING",
+      "kind": "other",
+      "page": 4,
+      "text_preview": "A crucial point in the design of a subranging ADC is the timing between the CADC and the FADC. The FADC needs to wait for the digital output of the CADC to become available before it can start to convert the input signal. Because it is difﬁcult MULDER et al.: A 21-mW 8-b 125-MSample/s ADC IN 0.09-mm 0.13m CMOS Distributed averaging topology, providing 4 and 2 averaging of Fig. 13. the ampliﬁers in ..."
+    },
+    {
+      "number": "X",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 5,
+      "text_preview": "The ADC was fabricated in a 0.13m CMOS process. A die microphotograph is shown in Fig. 15. The ADC occupies only m m mm , including the on-chip T/H and clock generator circuit. m-long conThe reference ladder is implemented as a 390tinuous strip of poly silicon. In order to ﬁt in the layout, the reference resistor had to be folded at least once. For symmetry with respect to the 17 reference taps, i ..."
+    },
+    {
+      "number": "XI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 7,
+      "text_preview": "The subranging ADC architecture uses simple differential-pair ampliﬁers, which makes it very suitable for low-voltage operation, required in state-of-the-art CMOS processes. The application of several techniques, such as active interpolation, pipelining, auto-zero offset compensation, and distributed capacitive averaging, resulted in an 8-b ADC design consuming only 21 mW, while sampling at 125 MS ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Two-step subranging ADC architecture.",
+      "caption_bbox": [
+        302.6,
+        306.0,
+        459.1,
+        313.9
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "ADC ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The ADC presented in this paper uses a two-step subranging architecture [24]–[28], shown in Fig. 1, comprising two ﬂash Manuscript received April 16, 2004; revised July 19, 2004."
+        },
+        {
+          "section_title": "ADC ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Digital Object Identiﬁer 10.1109/JSSC.2004.836235 Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Two-step subranging ADC architecture",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Architecture of the CADC.",
+      "caption_bbox": [
+        38.1,
+        179.3,
+        154.1,
+        187.3
+      ],
+      "section_title": "II. ADC ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ADC ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "MULDER et al.: A 21-mW 8-b 125-MSample/s ADC IN 0.09-mm 0.13m CMOS Fig. 2."
+        },
+        {
+          "section_title": "COARSE ADC",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "This is illustrated in Fig. 2."
+        },
+        {
+          "section_title": "COARSE ADC",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The reset switch, denoted by rectly to the positive supply in Fig. 2, is implemented by two single transistors."
+        },
+        {
+          "section_title": "COARSE ADC",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Since the charge the reset switches ( injection from the switches connecting to the T/H and the referin Fig. 2, is signal-depenand ence ladder, denoted by dent, bottom-plate sampling is used in the CADC to improve performance [21]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.6,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "section:proposed": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "switch"
+        ],
+        "design_purpose": "Since the charge the reset switches ( injection from the switches connecting to the T/H and the referin Fig. 2, is signal-depenand ence ladder, denoted by dent, bottom-plate sampling is used in the CADC to improve performance [21].",
+        "function_summary": "Architecture of the CADC. Since the charge the reset switches ( injection from the switches connecting to the T/H and the referin Fig. 2, is signal-depenand ence ladder, denoted by dent, bottom-plate sampling is used in the CADC to improve performance [21].",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.81,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Schematic of the ampliﬁer used in the CADC.",
+      "caption_bbox": [
+        301.1,
+        272.7,
+        477.9,
+        280.6
+      ],
+      "section_title": "III. COARSE ADC",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "COARSE ADC",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The ampliﬁer used in the CADC is implemented using a cascoded differential pair with resistive load, as shown in Fig. 3."
+        },
+        {
+          "section_title": "COARSE ADC",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "To auto-zero an ampliﬁer, the reset switch is closed for half a clock Fig. 3."
+        },
+        {
+          "section_title": "COARSE ADC",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "To increase the voltage gain of the ampliﬁer, current sources are used in parallel to the load resistors (Fig. 3)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.2,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "switch",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "resistor",
+          "current source",
+          "switch",
+          "differential pair"
+        ],
+        "design_purpose": "To increase the voltage gain of the ampliﬁer, current sources are used in parallel to the load resistors (Fig. 3).",
+        "function_summary": "Schematic of the ampliﬁer used in the CADC. To increase the voltage gain of the ampliﬁer, current sources are used in parallel to the load resistors (Fig. 3).",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.55,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Block diagram of the FADC.",
+      "caption_bbox": [
+        39.6,
+        289.4,
+        161.6,
+        297.3
+      ],
+      "section_title": "V. OFFSET COMPENSATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FINE ADC",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The FADC, shown in Fig. 4, is a 5-b ﬂash ADC comprising of an array of 33 comparators."
+        },
+        {
+          "section_title": "OFFSET COMPENSATION",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 4."
+        },
+        {
+          "section_title": "INTERPOLATION",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The interpolation implemented in the FADC (see Fig. 4) reduces 4 , from the required number of taps on the reference ladder by 4 256 to 64 taps."
+        },
+        {
+          "section_title": "INTERPOLATION",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "This brings the total number of ampliﬁers in each array to 9, 17, and 17, respectively (see Fig. 4)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.6,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the FADC",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.4,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Operation principle of the FADC.",
+      "caption_bbox": [
+        39.6,
+        384.2,
+        176.5,
+        392.1
+      ],
+      "section_title": "V. OFFSET COMPENSATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FINE ADC",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 5 illustrates the operation principle of the FADC."
+        },
+        {
+          "section_title": "OFFSET COMPENSATION",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 5."
+        },
+        {
+          "section_title": "PIPELINING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "In this design, row , while and are auto-zeroed during clock clock phase phase , as shown in Fig. 5. , , and , shown The ﬁnite on-resistance of switches in Fig. 6, is a major problem at high sampling rates."
+        },
+        {
+          "section_title": "INTERPOLATION",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Since the switch matrix represents a signiﬁcant capacitive , shown in Fig. 5) and the load to the T/H (through switch reference ladder, interpolation indirectly helps to reduce the power consumption of the T/H and the reference ladder."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.6,
+      "relevance_breakdown": {
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "switch",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "switch",
+          "clock / timing"
+        ],
+        "design_purpose": "Since the switch matrix represents a signiﬁcant capacitive , shown in Fig. 5) and the load to the T/H (through switch reference ladder, interpolation indirectly helps to reduce the power consumption of the T/H and the reference ladder.",
+        "function_summary": "Operation principle of the FADC. Since the switch matrix represents a signiﬁcant capacitive , shown in Fig. 5) and the load to the T/H (through switch reference ladder, interpolation indirectly helps to reduce the power consumption of the T/H and the reference ladder.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.08,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. FADC.",
+      "caption_bbox": [
+        302.6,
+        197.1,
+        325.3,
+        214.0
+      ],
+      "section_title": "V. OFFSET COMPENSATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "OFFSET COMPENSATION",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 6 shows the basic implementation of the reset switches in array and . is being reset during clock phase When an ampliﬁer in row , switch shorts the inputs of the differential pair, while and connect them to a dc bias voltage ."
+        },
+        {
+          "section_title": "PIPELINING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 12, DECEMBER 2004 Simpliﬁed schematic of the reset switches in array A and B of the Fig. 6."
+        },
+        {
+          "section_title": "PIPELINING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "In this design, row , while and are auto-zeroed during clock clock phase phase , as shown in Fig. 5. , , and , shown The ﬁnite on-resistance of switches in Fig. 6, is a major problem at high sampling rates."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "switch",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "switch",
+          "differential pair",
+          "clock / timing"
+        ],
+        "design_purpose": "",
+        "function_summary": "FADC",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 2,
+      "caption": "Fig. 7. Effect of ﬁnite on-resistance of the reset switches at high conversion rates.",
+      "caption_bbox": [
+        302.6,
+        368.4,
+        553.7,
+        385.3
+      ],
+      "section_title": "V. OFFSET COMPENSATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "PIPELINING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 7."
+        },
+        {
+          "section_title": "PIPELINING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "This is il- , ampliﬁer is in reset lustrated in Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "switch",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Effect of ﬁnite on-resistance of the reset switches at high conversion rates",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8.",
+      "caption_bbox": [
+        38.1,
+        198.0,
+        58.7,
+        206.0
+      ],
+      "section_title": "VI. PIPELINING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "PIPELINING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 8 shows an implementation of the reset switches in row and that signiﬁcantly improves the pipelining operation in the FADC at high conversion rates."
+        },
+        {
+          "section_title": "PIPELINING",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 8. voltage developing across the drain and source terminal of is not transferred to the gates of the differential-pair ampliﬁer."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "switch",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "switch",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 3,
+      "caption": "Fig. 9.",
+      "caption_bbox": [
+        301.1,
+        195.5,
+        321.8,
+        203.5
+      ],
+      "section_title": "VI. PIPELINING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTERPOLATION",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 9."
+        },
+        {
+          "section_title": "INTERPOLATION",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The ﬁrst interpolation technique, illustrated in Fig. 9, prointerpolation of the reference ladder."
+        },
+        {
+          "section_title": "INTERPOLATION",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "This can be done in two ways: either , which is depicted in Fig. 9, or can be used, both resulting in the same differential reference voltage."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "21-mW 8-b 125-MSample/s ADC in 0.09-mm2 0.13-m CMOS",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 3,
+      "caption": "Fig. 10. reference ladder voltages.",
+      "caption_bbox": [
+        301.1,
+        291.1,
+        383.7,
+        308.0
+      ],
+      "section_title": "VI. PIPELINING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTERPOLATION",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Implementation of another 2 capacitive interpolation of the Fig. 10. reference ladder voltages."
+        },
+        {
+          "section_title": "INTERPOLATION",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The second interpolation technique is shown in Fig. 10, where are reused to implement another the input capacitors in row capacitive interpolation."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "-reference": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "21-mW 8-b 125-MSample/s ADC in 0.09-mm2 0.13-m CMOS",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "reference ladder voltages",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 4,
+      "caption": "Fig. 11. interpolation.",
+      "caption_bbox": [
+        39.6,
+        206.7,
+        82.3,
+        223.6
+      ],
+      "section_title": "VII. INTERPOLATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTERPOLATION",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "FADC Interpolation The FADC uses active interpolation, implemented by the circuit shown in Fig. 11."
+        },
+        {
+          "section_title": "INTERPOLATION",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "By combining the output currents of two Simpliﬁed schematic of a differential-pair ampliﬁer providing 2 Fig. 11. interpolation. differential pairs, with input voltages and , respecis obtained that is proportional to tively, an output voltage the average of and , i.e., . active interpolation is used in the In this design, a total of 4 interpolation is implemented in the ampliFADC."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "21-mW 8-b 125-MSample/s ADC in 0.09-mm2 0.13-m CMOS",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "interpolation",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 4,
+      "caption": "Fig. 12.",
+      "caption_bbox": [
+        302.6,
+        163.3,
+        327.4,
+        171.3
+      ],
+      "section_title": "VII. INTERPOLATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "AVERAGING",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "As shown in Fig. 12, the input capacitors of row and are split into two equal halves, connecting to two different input voltages and ."
+        },
+        {
+          "section_title": "AVERAGING",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 12. and , respectively."
+        },
+        {
+          "section_title": "AVERAGING",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Therefore, it averaging of the ampliﬁers would be beneﬁcial if, e.g., 4 could be achieved, instead of the 2 provided by the circuit shown in Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "21-mW 8-b 125-MSample/s ADC in 0.09-mm2 0.13-m CMOS",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 5,
+      "caption": "Fig. 13. the ampliﬁers in array A and B, respectively.",
+      "caption_bbox": [
+        38.1,
+        307.6,
+        184.2,
+        324.5
+      ],
+      "section_title": "IX. TIMING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "AVERAGING",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Second, quite some signal routing would be required at the output of , again introducing more parasitic capacitance. array A solution was found in the distributed averaging topology shown in Fig. 13."
+        },
+        {
+          "section_title": "TIMING",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Because it is difﬁcult MULDER et al.: A 21-mW 8-b 125-MSample/s ADC IN 0.09-mm 0.13m CMOS Distributed averaging topology, providing 4 and 2 averaging of Fig. 13. the ampliﬁers in array A and B, respectively."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "the ampliﬁers in array A and B, respectively",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 5,
+      "caption": "Fig. 14. Timing diagram of the ADC.",
+      "caption_bbox": [
+        38.1,
+        500.6,
+        164.4,
+        508.5
+      ],
+      "section_title": "X. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "TIMING",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 14."
+        },
+        {
+          "section_title": "TIMING",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 14 illustrates the timing of the CADC and the FADC in this design."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Timing diagram of the ADC",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 5,
+      "caption": "Fig. 15. Microphotograph of the ADC.",
+      "caption_bbox": [
+        301.1,
+        265.6,
+        431.6,
+        273.6
+      ],
+      "section_title": "IX. TIMING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TIMING",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Note that, since the T/H output signal is only available for half a clock cycle, both the CADC and the FADC have to connect to the T/H during the same clock . phase Fig. 15."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "A die microphotograph is shown in Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -5.7,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Microphotograph of the ADC",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 6,
+      "caption": "Fig. 16. Measured histogram of FADC output codes.",
+      "caption_bbox": [
+        39.6,
+        438.9,
+        214.2,
+        446.8
+      ],
+      "section_title": "X. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 16 rors made by the CADC are smaller than 0.5 LSB TABLE I PERFORMANCE SUMMARY Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.6,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.4
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "21-mW 8-b 125-MSample/s ADC in 0.09-mm2 0.13-m CMOS",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured histogram of FADC output codes",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 6,
+      "caption": "Fig. 17. Measured INL and DNL.",
+      "caption_bbox": [
+        302.6,
+        254.1,
+        416.8,
+        262.0
+      ],
+      "section_title": "X. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 17 shows the measured differential nonlinearity (DNL) and integral nonlinearity (INL) curves of the ADC, measured at MS/s."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "The energy , per conversion step is often used as a ﬁgure of merit (FOM) deﬁned as ERBW , and, for this design, IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 12, DECEMBER 2004 Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured INL and DNL",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 6,
+      "caption": "Fig. 18. Measured ADC performance versus f",
+      "caption_bbox": [
+        302.6,
+        483.8,
+        456.2,
+        491.9
+      ],
+      "section_title": "X. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 18 shows a clock sweep using an 8-MHz input signal."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Measured INL and DNL. = 8 MHz. at f Fig. 18."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured ADC performance versus f",
+        "key_specs": [
+          "8 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 6,
+      "caption": "Fig. 19. Measured ADC performance versus f at f",
+      "caption_bbox": [
+        302.6,
+        713.4,
+        476.1,
+        721.5
+      ],
+      "section_title": "X. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 19 shows an input signal frequency sweep at 125 MS/s."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 19."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured ADC performance versus f at f",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 20,
+      "label": "Fig. 20",
+      "page": 7,
+      "caption": "Fig. 20. Measured output spectrum of the ADC.",
+      "caption_bbox": [
+        38.1,
+        272.9,
+        197.9,
+        280.9
+      ],
+      "section_title": "X. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "Fig. 20 shows the ADC output spectrum."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 5,
+          "sentence": "For comparison, Table II lists the area and FOM of this design together with a number of MULDER et al.: A 21-mW 8-b 125-MSample/s ADC IN 0.09-mm 0.13m CMOS Fig. 20."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured output spectrum of the ADC",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 2,
+  "warnings": []
+}

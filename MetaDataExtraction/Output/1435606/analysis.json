@@ -1,0 +1,810 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1435606.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1435606",
+  "generated_at": "2026-07-29T21:32:50",
+  "paper_metadata": {
+    "title": "A 1.8-V Operation 5-GHz-Band CMOS Frequency Doubler Using Current-Reuse Circuit Design Technique",
+    "authors": [
+      "Kazuya Yamamoto"
+    ],
+    "abstract": "This paper describes the circuit design and measurement results of a new CMOS frequency doubler proposed eration of 1.8 V in a traditional VCO-PLL architecture system, for 5-GHz-band wireless applications. The doubler, which can because their doublers except for the conventional GaAs MMIC operate at 1.8 V, was fabricated in a standard 0.18m bulk FET doublers adopt three transistor stacked configuration like CMOS technology which has no extra processing steps to enhance a Gilbert-cell core [13]–[17], or need a quadrature phase VCO RF performance. A current-reuse circuit-design technique is successfully incorporated into the doubler so as to realize both [9]. Thanks to advanced 90-nm SOI CMOS technologies, only on-chip input/output matching and adequate conversion gain with the CMOS doubler in [10] can offer an excellent performance low input power drive despite the utilization of the standard bulk with a 1.25-V low power supply at a very high frequency band CMOS technology. The doubler with a single input/output interof 26.5 to 28.5 GHz. face features a bypass resistor placed between common ground and a source node of the second stage FET in the current-reuse This paper reports on the circuit design and measuretopology, thereby improving both input power level and converment results of a 5-GHz-band new CMOS frequency dousion gain while saving waste current. bler fabricated in a standard 0.18m bulk CMOS techMeasurement results under the condition of 5.2 GHz and 1.8 V nology which has no extra processing steps to enhance RF reveal the following good performance: a 2.7-dB maximum converperformance. The doubler successfully utilizes current-reuse sion gain, a 0.3-dBm high output power, and a 9-mA low current dissipation are achieved with a 2.6-GHz, 3-dBm input power. topology, thereby improving both input power level and conWith a 7-mA low current dissipation and a 7-dBm low input version gain under a 1.8-V low supply voltage condition while power, the doubler can deliver conversion gain as high as 0 dB. saving waste current. These measurement results are good agreement with the simulated The organization of the paper is as follows. Section II gives ones. a brief description of nMOSFET characteristics and fabrication",
+    "keywords": [
+      "5 GHz",
+      "CMOS",
+      "electronic toll collection",
+      "fre-"
+    ],
+    "doi": "10.1109/JSSC.2005.848033",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2005
+  },
+  "paper_circuit_context": {
+    "circuit_type": "1.8-V Operation 5-GHz-Band CMOS Frequency Doubler",
+    "technology": "CMOS, BICMOS, GAAS, SOI, MMIC, 90-nm process",
+    "application_domain": "rf, wireless",
+    "sub_blocks": [
+      "inductor",
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "current source",
+      "output buffer",
+      "mixer",
+      "bias circuit",
+      "switch"
+    ],
+    "design_purpose": "The doubler with a single input/output interof 26.5 to 28.5 GHz. face features a bypass resistor placed between common ground and a source node of the second stage FET in the current-reuse This paper reports on the circuit design and measuretopology, thereby improving both input power level and converment results of a ...",
+    "function_summary": "1.8-V Operation 5-GHz-Band CMOS Frequency Doubler: The doubler with a single input/output interof 26.5 to 28.5 GHz. face features a bypass resistor placed between common ground and a source node of the second stage FET in the current-reuse This paper reports on the circuit design and measuretopology, thereby improving both input power level and converment ...",
+    "key_specs": [
+      "1.8 V",
+      "28.5 GHz",
+      "5.2 GHz",
+      "0 dB",
+      "5 GHz",
+      "6 GHz",
+      "-8641 J",
+      "2.4 GHz",
+      "5 dBm",
+      "1.1 nH"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "P ORTABLE wireless transceivers face relentless pressure for low cost, low power, and small size. Highly integrated GaAs, BiCMOS, and CMOS realizations are, therefore, of interest [1]–[8]. Nowadays, it is particularly being accepted that RF-CMOS circuits are suitable for short-range wireless communications such as Bluetooth, IEEE 802.11a/b/g, and Electronic Toll Collection systems in Japan (ETC) [ ..."
+    },
+    {
+      "number": "II",
+      "title": "DEVICE PERFORMANCE AND FABRICATION PROCESSES",
+      "kind": "results",
+      "page": 0,
+      "text_preview": "A 0.18m standard bulk CMOS technology was used for the doubler fabrication. The nMOSFET has the following typical DC characteristics: a 0.6-V threshold voltage, a 450-mS/mm peak transconductance, and a 1.8-V maximum drain-to-source or gate-to-drain operating voltage [18]. A 100m gate-width , nMOSFET exhibits a peak 49-GHz transition frequency a 18.7-dB maximum stable gain (MSG) at 2.4 GHz, a 15.1- ..."
+    },
+    {
+      "number": "III",
+      "title": "CIRCUIT DESIGN",
+      "kind": "design",
+      "page": 1,
+      "text_preview": "A. Consideration of Target Speciﬁcation As it is well known, the doubler speciﬁcation is strongly dependent on an RF front-end architecture. In this work, the target speciﬁcation was determined after the following speciﬁcation consideration. As examples for 5-GHz-band RF front-ends, block diagrams of a wireless LAN front-end and an ETC front-end are illustrated in Fig. 1(a) and (b) [1], [2]. Table ..."
+    },
+    {
+      "number": "IV",
+      "title": "MEASUREMENT RESULTS",
+      "kind": "results",
+      "page": 4,
+      "text_preview": "The chip micrograph for the fabricated doubler is shown in Fig. 9. The active area excluding bond pads is as small as about m. Fig. 10 shows the S-parameter measurement m results for the doubler under the condition of a 1.8-V supply voltage and a 5.1-mA quiescent current. An input return loss of 8 dB and a good output return loss of 11 dB are better than obtained at 2.6 and 5.2 GHz, respectively.  ..."
+    },
+    {
+      "number": "V",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 6,
+      "text_preview": "The circuit design and measurement results for the 1.8-V operation new CMOS frequency doubler for use in 5-GHz-band wireless applications have been successfully demonstrated. This doubler with 50input and output matching features a bypass resistor placed between common ground and a source node of the second stage FET in the current-reuse topology. The measurement shows that the doubler can deliver ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Block diagram examples: (a) wireless LAN RF front-end and (b) ETC RF front-end.",
+      "caption_bbox": [
+        38.1,
+        560.7,
+        289.2,
+        577.6
+      ],
+      "section_title": "II. DEVICE PERFORMANCE AND FABRICATION PROCESSES",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "DEVICE PERFORMANCE AND FABRICATION PROCESSES",
+          "section_kind": "results",
+          "page": 0,
+          "sentence": "Consequently, due to the low substrate resistivity and conductor thinness, spiral inductors fabricated on the substrate -factors) of 3 to 4 in the offer relatively low quality factors ( YAMAMOTO: A 1.8-V OPERATION 5-GHz-BAND CMOS FREQUENCY DOUBLER USING CURRENT-REUSE CIRCUIT DESIGN TECHNIQUE TABLE I ESTIMATED LEVEL DIAGRAM EXAMPLES: (a) WIRELESS LAN RF FRONT-END AND (b) ETC RF FRONT-END Fig. 1."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "As examples for 5-GHz-band RF front-ends, block diagrams of a wireless LAN front-end and an ETC front-end are illustrated in Fig. 1(a) and (b) [1], [2]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "frequency multiplier",
+        "technology": "CMOS, BICMOS, GAAS, SOI, MMIC, 90-nm process",
+        "application_domain": "rf, wireless",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram examples: (a) wireless LAN RF front-end and (b) ETC RF front-end",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 2,
+      "caption": "Fig. 2. Circuit schematic for proposed frequency doubler with current-reuse topology.",
+      "caption_bbox": [
+        39.6,
+        349.5,
+        290.7,
+        366.4
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "TABLE II TARGET SPECIFICATIONS FOR 5-GHz-BAND FREQUENCY DOUBLER Fig. 2."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Basic Operation of Proposed Doubler As shown in Fig. 2, the proposed frequency doubler is successfully implemented using the current-reuse topology."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "In Fig. 2, a gate-width of 200 and to provide easy matching and high was used for m was chosen to attain gain, where the unit gate-width of 5 and values."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "One of the simplest way to provide appropriate current for the buffer is to place a bypass resistor between common ground and a source node of the second stage FET in the current-reuse topology, as shown in Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 16.1,
+      "relevance_breakdown": {
+        "+topology": 2.5,
+        "+schematic": 3.0,
+        "+circuit schematic": 3.5,
+        "+proposed": 3.0,
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "frequency multiplier",
+        "technology": "CMOS, BICMOS, GAAS, SOI, MMIC, 90-nm process",
+        "application_domain": "rf, wireless",
+        "sub_blocks": [
+          "resistor",
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Circuit schematic for proposed frequency doubler with current-reuse topology",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 1.0,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Measured quality factors for a spiral inductor and an interdigitated capacitor.",
+      "caption_bbox": [
+        302.6,
+        245.8,
+        553.7,
+        262.7
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Thus, the successful combination of the current-reuse topology and the additional bypass resistor enables the doubler having a buffer amIEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 6, JUNE 2005 Fig. 3."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 3 -factors for the spiral inshows an example of the measured , and the interdigitated capacitor, ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "1.8-V Operation 5-GHz-Band CMOS Frequency Doubler",
+        "technology": "CMOS, BICMOS, GAAS, SOI, MMIC, 90-nm process",
+        "application_domain": "rf, wireless",
+        "sub_blocks": [
+          "inductor",
+          "capacitor",
+          "resistor",
+          "output buffer"
+        ],
+        "design_purpose": "Thus, the successful combination of the current-reuse topology and the additional bypass resistor enables the doubler having a buffer amIEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 6, JUNE 2005 Fig. 3.",
+        "function_summary": "Measured quality factors for a spiral inductor and an interdigitated capacitor. Thus, the successful combination of the current-reuse topology and the additional bypass resistor enables the doubler having a buffer amIEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 6, JUNE 2005 Fig. 3.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Simpliﬁed circuit schematic for calculating proposed frequency doubler behavior.",
+      "caption_bbox": [
+        302.6,
+        437.3,
+        553.7,
+        454.2
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 4."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 4 illustrates the simpliﬁed circuit schematic for calculating the proposed doubler behavior."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 12.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+circuit schematic": 3.5,
+        "+proposed": 3.0,
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "frequency multiplier",
+        "technology": "CMOS, BICMOS, GAAS, SOI, MMIC, 90-nm process",
+        "application_domain": "rf, wireless",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simpliﬁed circuit schematic for calculating proposed frequency doubler behavior",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 1.0,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Basic characteristics. (a) Calculated doubler core operation based on harmonics theory. (b) Simulated buffer operation.",
+      "caption_bbox": [
+        38.1,
+        440.2,
+        289.2,
+        457.1
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "In general, the harmonics theory of the drain current waveforms gives the following forYAMAMOTO: A 1.8-V OPERATION 5-GHz-BAND CMOS FREQUENCY DOUBLER USING CURRENT-REUSE CIRCUIT DESIGN TECHNIQUE Fig. 5."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 5(a) shows the doubler core characteristics calculated using the formulas of (3)–(6), where the constants, to , were determined from the simulated results of the core."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "An example of the simulated results for the buffer block is shown in Fig. 5(b)."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "As can be seen in , of the buffer block is greatly Fig. 5(b), the power gain, , and input power, . dependent on operating current, In particular, we should note that low operating current provides not gain but attenuation for the buffer."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Based on the results of Fig. 5(a) and (b), we can estimate overall conversion gain characteristics easily as a parameter of various quiescent currents for the buffer."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.0,
+      "relevance_breakdown": {
+        "+core": 0.5,
+        "-simulated": -3.0,
+        "-calculated": -2.0,
+        "section:design": 1.5,
+        "references": 2.0
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "frequency multiplier",
+        "technology": "CMOS, BICMOS, GAAS, SOI, MMIC, 90-nm process",
+        "application_domain": "rf, wireless",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Basic characteristics. (a) Calculated doubler core operation based on harmonics theory. (b) Simulated buffer operation",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Calculated doubler characteristic example.",
+      "caption_bbox": [
+        301.1,
+        265.1,
+        466.1,
+        273.1
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 6 shows an example of the calculated overall doubler output characteristics under the condition of a 3-mA quiescent current."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "As shown in Fig. 6, the 3-mA quiescent current biasing for the buffer gives both enhancement of conversion gain at lower input lower levels and improvement of peak conversion gain, as is implied above."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "-calculated": -2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "1.8-V Operation 5-GHz-Band CMOS Frequency Doubler",
+        "technology": "CMOS, BICMOS, GAAS, SOI, MMIC, 90-nm process",
+        "application_domain": "rf, wireless",
+        "sub_blocks": [
+          "output buffer",
+          "bias circuit"
+        ],
+        "design_purpose": "",
+        "function_summary": "Calculated doubler characteristic example",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. .",
+      "caption_bbox": [
+        39.6,
+        254.4,
+        271.0,
+        262.4
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Simulated conversion characteristics on bypass resistance, R Fig. 7. ."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 7 shows the simulated conversion characteristics on bypass resistance under the 7-mA operating current condition."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "1.8-V Operation 5-GHz-Band CMOS Frequency Doubler",
+        "technology": "CMOS, BICMOS, GAAS, SOI, MMIC, 90-nm process",
+        "application_domain": "rf, wireless",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Simulated output characteristic comparison between the doubler with and that without R R .",
+      "caption_bbox": [
+        39.6,
+        472.1,
+        290.6,
+        489.0
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "This calculation shows good agreement with the simulated results of Fig. 8, shown later."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 8."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 8 shows an example for the simulated output character- , istic comparison for the doubler with the bypass resistor, , where a of 300 was employed for and that without the proposed doubler."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.3,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "1.8-V Operation 5-GHz-Band CMOS Frequency Doubler",
+        "technology": "CMOS, BICMOS, GAAS, SOI, MMIC, 90-nm process",
+        "application_domain": "rf, wireless",
+        "sub_blocks": [
+          "resistor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simulated output characteristic comparison between the doubler with and that without R R",
+        "key_specs": [
+          "300 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. Chip micrograph for proposed CMOS frequency doubler.",
+      "caption_bbox": [
+        302.6,
+        223.0,
+        514.7,
+        231.0
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Based on the simulated of 300 was selected so that results, a bypass resistance the highest peak conversion gain could be achieved, and both of less than a conversion gain of more than 0 dB and a IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 6, JUNE 2005 Fig. 9."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The chip micrograph for the fabricated doubler is shown in Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "-micrograph": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "frequency multiplier",
+        "technology": "CMOS, BICMOS, GAAS, SOI, MMIC, 90-nm process",
+        "application_domain": "rf, wireless",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chip micrograph for proposed CMOS frequency doubler",
+        "key_specs": [
+          "300 w",
+          "0 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10.",
+      "caption_bbox": [
+        302.6,
+        429.3,
+        327.2,
+        437.3
+      ],
+      "section_title": "III. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 10. 20 dB could be obtained with an input power of less than 7 dBm."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 10 shows the S-parameter measurement m results for the doubler under the condition of a 1.8-V supply voltage and a 5.1-mA quiescent current."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "1.8-V Operation 5-GHz-Band CMOS Frequency Doubler",
+        "technology": "CMOS, BICMOS, GAAS, SOI, MMIC, 90-nm process",
+        "application_domain": "rf, wireless",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": [
+          "20 dB",
+          "7 dBm"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 5,
+      "caption": "Fig. 11. Measured output characteristics and their comparison with simulated results.",
+      "caption_bbox": [
+        38.1,
+        277.5,
+        289.2,
+        294.4
+      ],
+      "section_title": "IV. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "YAMAMOTO: A 1.8-V OPERATION 5-GHz-BAND CMOS FREQUENCY DOUBLER USING CURRENT-REUSE CIRCUIT DESIGN TECHNIQUE Fig. 11."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The measured output characteristics and their comparison with the simulated results are shown in Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -7.2,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "frequency multiplier",
+        "technology": "CMOS, BICMOS, GAAS, SOI, MMIC, 90-nm process",
+        "application_domain": "rf, wireless",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured output characteristics and their comparison with simulated results",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 5,
+      "caption": "Fig. 12. (a) Measured quiescent current dependence. (b) Measured input frequency dependence of output characteristics.",
+      "caption_bbox": [
+        301.1,
+        461.4,
+        552.2,
+        478.3
+      ],
+      "section_title": "IV. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 12(a) and (b) shows measured quiescent current dependence and measured input frequency dependence of output 7 dBm. characteristics, where the input power level was As shown in Fig. 12(a), larger quiescent current increases is gradually conversion gain and operating current, while degraded."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 12(b) indicates that over the input frequency range from 2.6 to 2.9 GHz, the proposed doubler can 1 dB and a of deliver a conversion gain of more than 17 dB while drawing 7 mA."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The excess phase noise over an input frequency range of 2.6 to 2.9 GHz ranges between 6.2 and 7.8 dBc/Hz, which are reasonable values close Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.8,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "1.8-V Operation 5-GHz-Band CMOS Frequency Doubler",
+        "technology": "CMOS, BICMOS, GAAS, SOI, MMIC, 90-nm process",
+        "application_domain": "rf, wireless",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Measured quiescent current dependence. (b) Measured input frequency dependence of output characteristics",
+        "key_specs": [
+          "7 dBm",
+          "2.9 GHz",
+          "1 dB",
+          "17 dB",
+          "7.8 dBc/Hz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 5,
+      "caption": "Fig. 13. Measured phase noise at different input frequencies.",
+      "caption_bbox": [
+        301.1,
+        664.6,
+        500.8,
+        672.6
+      ],
+      "section_title": "IV. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Measured excess phase noise characteristics are shown in Fig. 13."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -6.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-phase noise": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "1.8-V Operation 5-GHz-Band CMOS Frequency Doubler",
+        "technology": "CMOS, BICMOS, GAAS, SOI, MMIC, 90-nm process",
+        "application_domain": "rf, wireless",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured phase noise at different input frequencies",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 2,
+  "warnings": []
+}

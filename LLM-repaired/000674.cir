@@ -1,0 +1,12 @@
+M1 Vres phi2 N1 GND nmos
+M2 N1 phi2 N2 GND nmos
+M3 N2 phi2 Vres GND nmos
+M4 N4 VDD N1 VDD pmos
+M5 N3 phi2 N1 GND nmos
+M6 N4 phi2 N2 VDD pmos
+M7 N3 VDD N2 GND nmos
+C4 IN1 N1 CA
+C3 IN2 N2 CA
+C2 N5 OUT1 CB
+C1 N6 OUT2 CB
+A (N3 N4 N5 N6) amplifier

@@ -1,0 +1,962 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\953473.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\953473",
+  "generated_at": "2026-07-29T22:03:33",
+  "paper_metadata": {
+    "title": "A Supply-Noise-Insensitive CMOS PLL With a Voltage Regulator Using DC–DC Capacitive Converter",
+    "authors": [
+      "Chang-Hyeon Lee",
+      "Kelly McClellan",
+      "John Choma",
+      "Jr"
+    ],
+    "abstract": "A 500-MHz supply-noise-insensitive CMOS phaselocked loop (PLL) with a voltage regulator using a capacitive dc–dc PSNR recorded in these publications is only 20 dB. converter (VRCC) achieves a jitter level of 30-ps RMS for quiet This paper proposes a voltage regulator using a dc–dc casupply, and 42-ps RMS for 600-mV supply noise, with a locking pacitive converter (VRCC) to achieve a PSNR in the range of range of 110 to 850 MHz. The worst-case power supply noise rejec50 to 40 dB. The VRCC includes a wide bandwidth n-type tion (PSNR) using the VRCC shows 45 dB in the mid-frequency cascode output stage. Two problems encountered in a cascode band. The circuit is fabricated in a 0.35m 3.3-V standard digital CMOS process and occupies 2.3 mm2. The power consumption at topology are diminished headroom and threshold voltage in3.3 V including buffer is 42 mW at 500 MHz. creases precipitated by body effect. A straightforward solution to these problems entails boosting gate voltage, but, unfortu-",
+    "keywords": [
+      "Clock generator",
+      "CMOS phase-locked loop",
+      "dc–dc capacitive converter",
+      "voltage regulator"
+    ],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2001
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Supply-Noise-Insensitive CMOS PLL",
+    "technology": "CMOS",
+    "application_domain": "wireless, if",
+    "sub_blocks": [
+      "transistor/MOSFET",
+      "output buffer",
+      "bias circuit",
+      "clock / timing",
+      "capacitor",
+      "resistor",
+      "current source",
+      "transformer",
+      "switch",
+      "differential pair",
+      "op-amp",
+      "latch"
+    ],
+    "design_purpose": "A 500-MHz supply-noise-insensitive CMOS phaselocked loop (PLL) with a voltage regulator using a capacitive dc–dc PSNR recorded in these publications is only 20 dB. converter (VRCC) achieves a jitter level of 30-ps RMS for quiet This paper proposes a voltage regulator using a dc–dc casupply, and 42-ps RMS for 600-mV ...",
+    "function_summary": "Supply-Noise-Insensitive CMOS PLL: A 500-MHz supply-noise-insensitive CMOS phaselocked loop (PLL) with a voltage regulator using a capacitive dc–dc PSNR recorded in these publications is only 20 dB. converter (VRCC) achieves a jitter level of 30-ps RMS for quiet This paper proposes a voltage regulator using a dc–dc casupply, and 42-ps RMS for 600-mV ...",
+    "key_specs": [
+      "20 dB",
+      "850 MHz",
+      "40 dB",
+      "45 dB",
+      "3.3 V",
+      "42 mW",
+      "500 MHz",
+      "50 MHz",
+      "1.5 MHz",
+      "2.2 V"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "N UMEROUS papers have recently addressed the problems surrounding the design of a phase-locked loop (PLL) that is nominally insensitive to power supply noise [1]–[7]. The analog performance of a monolithic PLL suffers from noise almost unavoidably induced on power supply lines due to requisite switching of internal digital subcircuits. This supplyline noise appears as pulses having very steep risi ..."
+    },
+    {
+      "number": "III",
+      "title": "PLL BLOCKS",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "The PLL proposed in this work is comprised fundamentally of a phase frequency detector (PFD), differential charge pump – converter, replica bias cell, (DCP), voltage-to-current and a current-controlled oscillator (ICO). – Converter A. PFD, DCP, and A type-four PFD with D-type flip-flop and RS latch is incorporated in the design [8]. This detector monitors phase and frequency error between the refe ..."
+    },
+    {
+      "number": "IV",
+      "title": "VOLTAGE REGULATOR",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "Fig. 6 abstracts the block diagram of the VRCC, in which is embedded a low-dropout preregulator (LDOPR), a capacitive charge pump (CCP), a clock generator (CG), several operational amplifiers (OPs), and nMOS cascode output transistors. The supply voltage perturbations are regulated by the noise rejection-enhanced LDOPR, which establishes a constant voltage for the charge pump, the clock generator, ..."
+    },
+    {
+      "number": "V",
+      "title": "SIMULATION AND MEASUREMENT RESULTS",
+      "kind": "results",
+      "page": 8,
+      "text_preview": "The experimental prototype of the design proposal has m TSMC CMOS process. The been implemented in a 0.35SNI–PLL circuit, of which the photomicrograph is offered in Fig. 13, contains 580 transistors, 120 resistors, and 50 capacitors m . The chip that collectively consume an area of 1564 is packaged in a 44-pin leadless chip carrier. Table I summarizes the relevant performance indices of the PLL sy ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 9,
+      "text_preview": "The SNI–PLL described, analyzed, and designed in this m work has been implemented monolithically in a 0.35- . All CMOS process with a total chip area of about 2.3 mm experimental results corroborate well with corresponding analytical disclosures. The subject chip includes a type-four phase IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 10, OCTOBER 2001 frequency detector boasting small dead ba ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Block diagram of the supply-noise-insensitive phase-locked loop (SNI–PLL) with voltage regulated capacitive converter (VRCC).",
+      "caption_bbox": [
+        39.6,
+        245.9,
+        290.6,
+        265.5
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "In Fig. 1."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1 depicts the system level diagram of the SNI–PLL used , which in a 500-MHz clock generator.The radial frequency (50 MHz) in this application and serves as the reference is frequency for the phase frequency detector (PFD), derives from a quartz oscillator that is not shown in the diagram."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "PLL Dynamics , of the LF shown in The driving point impedance, say, Fig. 1 is (1) of the PLL follows as The loop gain (2) is the peak current of the charge pump and , in where units of radians/V-s, represents the combined gain of the VCO IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 10, OCTOBER 2001 Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the supply-noise-insensitive phase-locked loop (SNI–PLL) with voltage regulated capacitive converter (VRCC)",
+        "key_specs": [
+          "50 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Noise model of the PLL with all relevant noise sources incorporated.",
+      "caption_bbox": [
+        302.6,
+        189.9,
+        550.6,
+        200.5
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "PLL Dynamics , of the LF shown in The driving point impedance, say, Fig. 1 is (1) of the PLL follows as The loop gain (2) is the peak current of the charge pump and , in where units of radians/V-s, represents the combined gain of the VCO IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 10, OCTOBER 2001 Fig. 2."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "PLL Noise Analysis The PLL noise model, inclusive of supply noise phenomena, is shown in Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "-model": -1.5,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Noise model of the PLL with all relevant noise sources incorporated",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Supply noise sensitivity of the SNI–PLL, with and without the VRCC.",
+      "caption_bbox": [
+        301.1,
+        220.4,
+        552.2,
+        231.1
+      ],
+      "section_title": "III. PLL BLOCKS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The frequency spectrum of this supply noise, as shown in Fig. 3, has bandpass characteristics and, thus, both the lowand high-frequency noise components are attenuated."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Supply noise sensitivity of the SNI–PLL, with and without the VRCC",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 3,
+      "caption": "Fig. 4.",
+      "caption_bbox": [
+        39.6,
+        206.1,
+        60.2,
+        216.7
+      ],
+      "section_title": "III. PLL BLOCKS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "PLL BLOCKS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The charge / switching noise pump shown in Fig. 4(a) prevents from coupling into the loop filter through the incorporation of constant voltage sources at the input stages."
+        },
+        {
+          "section_title": "PLL BLOCKS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Because the regulated supply voltage can be as low as 2.2 V, – converter with a rail-to-rail differential input stage, as shown in Fig. 4(b), is required for sufficient common mode voltage."
+        },
+        {
+          "section_title": "PLL BLOCKS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "filter",
+        "key_specs": [
+          "2.2 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5.",
+      "caption_bbox": [
+        39.6,
+        409.1,
+        60.3,
+        419.8
+      ],
+      "section_title": "III. PLL BLOCKS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "PLL BLOCKS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 5. source for the center frequency when the difference voltage ap- – converter is zero. plied to the differential input stage of the This current source sets the center frequency of the PLL output to the frequency tuning range."
+        },
+        {
+          "section_title": "PLL BLOCKS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "In Fig. 5, variable resistances are implemented by the triode region biasing of transistor M3 [2]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "current source",
+          "bias circuit",
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "phase-locked loop (PLL)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "Fig. 6. A voltage regulator using a capacitive dc–dc converter.",
+      "caption_bbox": [
+        38.1,
+        261.1,
+        243.8,
+        271.7
+      ],
+      "section_title": "IV. VOLTAGE REGULATOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "VOLTAGE REGULATOR",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 6 abstracts the block diagram of the VRCC, in which is embedded a low-dropout preregulator (LDOPR), a capacitive charge pump (CCP), a clock generator (CG), several operational amplifiers (OPs), and nMOS cascode output transistors."
+        },
+        {
+          "section_title": "VOLTAGE REGULATOR",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The slow response time precipitated by several capacitors within both loops in Fig. 6 renders good regulation difficult for boosted voltages."
+        },
+        {
+          "section_title": "VOLTAGE REGULATOR",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Although both are connected in common-gate configuration, the nMOS provides a higher impedance, therefore better isolation to the supply than LEE et al.: SUPPLY-NOISE-INSENSITIVE CMOS PLL Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "DC-DC converter",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "capacitor",
+          "transistor/MOSFET",
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "A voltage regulator using a capacitive dc–dc converter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. Supply-noise-insensitive bandgap reference with RC lowpass filters.",
+      "caption_bbox": [
+        38.1,
+        552.8,
+        285.8,
+        563.4
+      ],
+      "section_title": "IV. VOLTAGE REGULATOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "VOLTAGE REGULATOR",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 7."
+        },
+        {
+          "section_title": "VOLTAGE REGULATOR",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Bandgap Reference – and – The RC passive filter comprised of the filter sections in Fig. 7 attenuate supply noise at frequencies larger than the response capability of the bandgap reference circuit."
+        },
+        {
+          "section_title": "VOLTAGE REGULATOR",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Biasing in the triode region constrains the source–drain voltage so that the drain output voltage of M12 is sufficiently large to switch off M15 through the two inverters shown in Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.2,
+      "relevance_breakdown": {
+        "-reference": -1.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "bandgap reference",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "bias circuit",
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Supply-noise-insensitive bandgap reference with RC lowpass filters",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 5,
+      "caption": "Fig. 8. output stage. (c) Simulated frequency response of the noise rejection system.",
+      "caption_bbox": [
+        39.6,
+        413.2,
+        286.9,
+        432.8
+      ],
+      "section_title": "IV. VOLTAGE REGULATOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "VOLTAGE REGULATOR",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "(b) Simplified small-signal model of the Fig. 8. output stage."
+        },
+        {
+          "section_title": "VOLTAGE REGULATOR",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Cascode Output Stage The stacked n-channel transistors (M1–M2) in the diagram of Fig. 8(a) establish robust power supply noise rejection by boosting the impedance with OP1 to the power supply with the and ."
+        },
+        {
+          "section_title": "VOLTAGE REGULATOR",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The resultant worst-case power supply noise rejection at 20 MHz is found 45 dB. to be Fig. 8(b) is the small-signal equivalent circuit for estimating the PSNR of the network offered in Fig. 8(a)."
+        },
+        {
+          "section_title": "VOLTAGE REGULATOR",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 8(c) displays the resultant PSNR frequency responses for the boosted voltages, the preregulator, and the clock generator."
+        },
+        {
+          "section_title": "VOLTAGE REGULATOR",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "A current that is used to bias OP1 as shown Ignoring the 1in Fig. 8(a), the capacitive charge pump establishes an output that can be approximated as voltage (15) IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 10, OCTOBER 2001 Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.0,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "references": 2.0
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "charge pump",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "output stage. (c) Simulated frequency response of the noise rejection system",
+        "key_specs": [
+          "20 MHz",
+          "45 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 6,
+      "caption": "Fig. 9. amplifier (OP2) and transconductance stage with enhanced power supply noise rejection.",
+      "caption_bbox": [
+        38.1,
+        245.8,
+        323.9,
+        265.4
+      ],
+      "section_title": "IV. VOLTAGE REGULATOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "VOLTAGE REGULATOR",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "(b) Schematic diagram of the operational Fig. 9. amplifier (OP2) and transconductance stage with enhanced power supply noise rejection."
+        },
+        {
+          "section_title": "VOLTAGE REGULATOR",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "LDO Preregulator (LDOPR) and Operational Amplifier The power supply rejection ratio in conventional operational amplifiers is improved through use of the grounded gate cascode compensation technique, as shown in Fig. 9(a) [13]–[15]."
+        },
+        {
+          "section_title": "VOLTAGE REGULATOR",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The operational amplifier in Fig. 9(b) also boasts operating efficiency with respect to dynamic power dissipation."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.3,
+      "relevance_breakdown": {
+        "-conductance": -1.5,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "amplifier (OP2) and transconductance stage with enhanced power supply noise rejection",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 6,
+      "caption": "Fig. 10. (a) Schematic diagram of the inverter delay cell used in the clock generator (CG) circuit for purposes of voltage boosting. (b) Schematic diagram of the differential clock generator circuit.",
+      "caption_bbox": [
+        301.1,
+        464.6,
+        552.2,
+        493.2
+      ],
+      "section_title": "IV. VOLTAGE REGULATOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "VOLTAGE REGULATOR",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 10."
+        },
+        {
+          "section_title": "VOLTAGE REGULATOR",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Clock Generator The clock generator consists of three inverters and a differential subcircuit having a regulated supply voltage, as is depicted in Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+circuit": 1.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "delay line / delay element",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Schematic diagram of the inverter delay cell used in the clock generator (CG) circuit for purposes of voltage boosting. (b) Schematic diagram of the differential clock generator circuit",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.65,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 7,
+      "caption": "Fig. 11. Proposed capacitive charge pump circuit.",
+      "caption_bbox": [
+        39.6,
+        152.6,
+        204.3,
+        163.2
+      ],
+      "section_title": "IV. VOLTAGE REGULATOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "VOLTAGE REGULATOR",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Since the Fig. 11."
+        },
+        {
+          "section_title": "VOLTAGE REGULATOR",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The performance of the proposed capacitive charge pump shown in Fig. 11 is optimized at an output voltage of 3.6 V, which is smaller than the nominal 4-V gate breakdown m CMOS process."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.8,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "+circuit": 1.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "charge pump",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Proposed capacitive charge pump circuit",
+        "key_specs": [
+          "3.6 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.69,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 7,
+      "caption": "Fig. 12. Simulated transient response of the voltage regulated charge pump in the face of a parasitic square-wave signal superimposed on the power supply line.",
+      "caption_bbox": [
+        302.6,
+        374.6,
+        553.7,
+        403.2
+      ],
+      "section_title": "IV. VOLTAGE REGULATOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "VOLTAGE REGULATOR",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "A current that is used to bias OP1 as shown Ignoring the 1in Fig. 8(a), the capacitive charge pump establishes an output that can be approximated as voltage (15) IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 10, OCTOBER 2001 Fig. 12."
+        },
+        {
+          "section_title": "VOLTAGE REGULATOR",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 14. tuations in the power line voltage is as good as is the power . supply noise regulation of the regulator voltage Fig. 12 depicts a worst-case time-domain simulation wherein noise in the form of a 600-mV peak-to-peak 20-MHz square wave is superimposed on the 3.3 V power line voltage."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "charge pump",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated transient response of the voltage regulated charge pump in the face of a parasitic square-wave signal superimposed on the power supply line",
+        "key_specs": [
+          "3.3 V"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 7,
+      "caption": "Fig. 13. Photomicrograph of the fabricated PLL chip.",
+      "caption_bbox": [
+        302.6,
+        629.3,
+        479.4,
+        639.9
+      ],
+      "section_title": "IV. VOLTAGE REGULATOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "VOLTAGE REGULATOR",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 13."
+        },
+        {
+          "section_title": "SIMULATION AND MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "The been implemented in a 0.35SNI–PLL circuit, of which the photomicrograph is offered in Fig. 13, contains 580 transistors, 120 resistors, and 50 capacitors m ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-micrograph": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "capacitor",
+          "resistor",
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Photomicrograph of the fabricated PLL chip",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 8,
+      "caption": "Fig. 14.",
+      "caption_bbox": [
+        38.1,
+        494.0,
+        62.7,
+        504.7
+      ],
+      "section_title": "IV. VOLTAGE REGULATOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "VOLTAGE REGULATOR",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 14. tuations in the power line voltage is as good as is the power . supply noise regulation of the regulator voltage Fig. 12 depicts a worst-case time-domain simulation wherein noise in the form of a 600-mV peak-to-peak 20-MHz square wave is superimposed on the 3.3 V power line voltage."
+        },
+        {
+          "section_title": "SIMULATION AND MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "Fig. 14 shows that the measured RMS cycle-to-cycle jitter 86 ps peak-to-peak) with a quiet supply and 43-ps is 30 ps ( 161 ps peak-to-peak) in the presence of a 600-mV RMS ( Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage regulator",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "voltage regulator",
+        "key_specs": [
+          "3.3 V",
+          "86 ps",
+          "30 ps",
+          "161 ps"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 9,
+      "caption": "Fig. 15. Simulated jitter for the case of a 600-mV 20-MHz, 1 ns rise/fall time square wave incident with the power bus.",
+      "caption_bbox": [
+        39.6,
+        275.8,
+        290.6,
+        295.4
+      ],
+      "section_title": "V. SIMULATION AND MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "SIMULATION AND MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "Fig. 14 shows that the measured RMS cycle-to-cycle jitter 86 ps peak-to-peak) with a quiet supply and 43-ps is 30 ps ( 161 ps peak-to-peak) in the presence of a 600-mV RMS ( Fig. 15."
+        },
+        {
+          "section_title": "SIMULATION AND MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "In contrast, the simulated cycle-to-cycle jitter due to a 600-mV step with 1-ns rise and fall 86 ps peak-to-peak with times imposed on the supply line is 230 ps peak-to-peak without the VRCC, as is the VRCC and depicted in Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Supply-Noise-Insensitive CMOS PLL",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Simulated jitter for the case of a 600-mV 20-MHz, 1 ns rise/fall time square wave incident with the power bus",
+        "key_specs": [
+          "86 ps",
+          "30 ps",
+          "161 ps",
+          "230 ps"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 9,
+      "caption": "Fig. 16. Measured locking time of the fabricated PLL.",
+      "caption_bbox": [
+        39.6,
+        525.9,
+        219.0,
+        536.5
+      ],
+      "section_title": "V. SIMULATION AND MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "SIMULATION AND MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "Fig. 16."
+        },
+        {
+          "section_title": "SIMULATION AND MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "When the reference clock is switched from s, as shown 30 to 50 MHz, the measured locking time is 10.8 in Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured locking time of the fabricated PLL",
+        "key_specs": [
+          "50 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 10,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

@@ -1,0 +1,970 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1214723.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1214723",
+  "generated_at": "2026-07-29T21:30:47",
+  "paper_metadata": {
+    "title": "A Single-Chip Tuner for DVB-T",
+    "authors": [
+      "Mark Dawkins",
+      "Alison Payne Burdett",
+      "Nick Cowley"
+    ],
+    "abstract": "A new architecture is presented for a single-chip tuner for digital terrestrial television, based on existing double circuit implementation issues for the analog and digital proconversion and direct conversion topologies. The new design forms cessing circuitry. Finally, experimental results are presented in part of a mixed-signal Digital Video Broadcasting–Terrestrial Section IX. (DVB-T) receiver system, employing digital signal processing at baseband to ensure minimal performance requirements for the analog circuitry. To evaluate the potential performance of this new",
+    "keywords": [],
+    "doi": "10.1109/JSSC.2003.814436",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "receiver",
+    "technology": "CMOS, BICMOS",
+    "application_domain": "rf, baseband, if",
+    "sub_blocks": [
+      "resistor",
+      "LC tank / resonator",
+      "mixer",
+      "differential pair",
+      "transistor/MOSFET"
+    ],
+    "design_purpose": "A new architecture is presented for a single-chip tuner for digital terrestrial television, based on existing double circuit implementation issues for the analog and digital proconversion and direct conversion topologies.",
+    "function_summary": "receiver: A new architecture is presented for a single-chip tuner for digital terrestrial television, based on existing double circuit implementation issues for the analog and digital proconversion and direct conversion topologies.",
+    "key_specs": [
+      "14 dB",
+      "116 dB",
+      "71.4 dB",
+      "3DB",
+      "35 dB",
+      "46 dB",
+      "930.5 MHz",
+      "5.2 GHz",
+      "2.6 GHz",
+      "0 Hz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "W ITH THE introduction of Digital Terrestrial Television (DTT) services in many countries over the last few years, there is a demand for cheaper, smaller, higher performance RF tuners for consumer digital television (TV) set top boxes, integrated digital TVs, and mobile devices. The European system for DTT broadcasting is known as Digital Video Broadcasting–Terrestrial (DVB-T) [1]. To improve on c ..."
+    },
+    {
+      "number": "II",
+      "title": "COFDM MODULATION AND TUNER SPECIFICATIONS",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "A. COFDM The COFDM modulation scheme used in DVB-T is well suited to the difficulties of a terrestrial transmission channel. Comprehensive details of the modulation may be found in [2] and [3]. COFDM is a multi-carrier modulation, with the digital bitstream to be transmitted being broken down from one high-rate stream into many lower rate streams, each of which is transmitted on a separate carrier ..."
+    },
+    {
+      "number": "III",
+      "title": "TUNER SOLUTIONS",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "Little innovation has yet been applied to the tuner for consumer products, and current designs are largely based on those used for decades in analog TV tuners. Two types of superheterodyne architecture are predominantly in use—single conversion and double conversion. Both of these architectures suffer from the well-known problem of the image channel, which must be suppressed by filtering at RF. Th ..."
+    },
+    {
+      "number": "IV",
+      "title": "DZIF TUNER",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "A. Design Concepts and Prior Art The concept of the single-chip tuner design presented in this paper is based on attempting to capture the advantages and eliminate the disadvantages of some existing architectures. The aim has been to exploit the suitability of zero-IF systems for full integration, but avoid or reduce the problems they experience IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 8 ..."
+    },
+    {
+      "number": "V",
+      "title": "SYSTEM-LEVEL SIMULATION",
+      "kind": "results",
+      "page": 3,
+      "text_preview": "Prior to fabrication of a test chip for the DZIF tuner, extensive simulations were carried out at the system level. These simulations allowed the design to be developed both through theoretical equations and also through simple evaluation of the effect of various tuner block parameter changes on the overall system performance. Therefore, at the completion of the design phase, high confidence was p ..."
+    },
+    {
+      "number": "VI",
+      "title": "ANALOG CIRCUIT REALIZATION",
+      "kind": "design",
+      "page": 3,
+      "text_preview": "This section describes the circuit implementation of the analog components in the DZIF tuner/receiver system of Fig. 2. All of the analog blocks are integrated onto a single chip, which requires only external ac coupling capacitors and LO tank circuitry. The digital circuitry for the prototype test receiver is implemented as a programmable logic device combined with an off-the-shelf COFDM demodula ..."
+    },
+    {
+      "number": "VII",
+      "title": "DIGITAL CIRCUIT REALIZATION",
+      "kind": "design",
+      "page": 5,
+      "text_preview": "Although for a final product the digital processing required in the DZIF system would be implemented on the same integrated circuit as the rest of the digital demodulation functions, for the prototype test receiver a separate “glue logic” board was DAWKINS et al.: SINGLE-CHIP TUNER FOR DVB-T Fig. 11. Block diagram of digital interface board FPGA functionality. Fig. 12. I/Q mismatch correct structu ..."
+    },
+    {
+      "number": "VIII",
+      "title": "TEST SYSTEM REALIZATION",
+      "kind": "design",
+      "page": 6,
+      "text_preview": "Fig. 13 shows a block diagram of the prototype DZIF receiver system that was built to allow experimental measurements to be taken. The receiver comprised an RF board including the analog tuner chip and associated external components, the FPGA board, and the ADC, DAC, and COFDM demodulator/decoder boards. Finally, a set top box was used to decode the MPEG-2 transport stream for display of the TV pr ..."
+    },
+    {
+      "number": "IX",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 6,
+      "text_preview": "The primary results of interest are the BER and SNR delivered by the receiver under various reception conditions—for example, at low and high signal levels, with a multipath transmission channel, and with various levels of unwanted interference. However, characterization of the analog chip in particular was also carried out to check how well the real silicon matched up to the design targets. A. An ..."
+    },
+    {
+      "number": "X",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 9,
+      "text_preview": "This paper has introduced a new type of DTT tuner aimed at allowing a very highly integrated solution for a DVB-T receiver front-end. The DZIF mixed-signal tuner receiver system DAWKINS et al.: SINGLE-CHIP TUNER FOR DVB-T has been proposed and designed at the system level, employing high-level simulations to determine initial block parameters and to evaluate the potential performance. The realizat ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Typical UHF spectrum in London, U.K.",
+      "caption_bbox": [
+        39.6,
+        394.0,
+        196.6,
+        404.7
+      ],
+      "section_title": "III. TUNER SOLUTIONS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "COFDM MODULATION AND TUNER SPECIFICATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 1 shows a typical TV spectrum, based on the off-air transmissions in London."
+        },
+        {
+          "section_title": "COFDM MODULATION AND TUNER SPECIFICATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "TABLE I SPECIFICATION FOR A U.K. 2K MODE DVB-T TUNER Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.7,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Typical UHF spectrum in London, U.K",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 2,
+      "caption": "Fig. 2. DZIF system architecture.",
+      "caption_bbox": [
+        38.1,
+        233.8,
+        151.3,
+        244.5
+      ],
+      "section_title": "IV. DZIF TUNER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DZIF TUNER",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 2 shows the proposed system."
+        },
+        {
+          "section_title": "DZIF TUNER",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The DAWKINS et al.: SINGLE-CHIP TUNER FOR DVB-T Fig. 2."
+        },
+        {
+          "section_title": "ANALOG CIRCUIT REALIZATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "This section describes the circuit implementation of the analog components in the DZIF tuner/receiver system of Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "DZIF system architecture",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.31,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Post-Viterbi BER for system simulations.",
+      "caption_bbox": [
+        301.1,
+        418.5,
+        462.7,
+        429.1
+      ],
+      "section_title": "IV. DZIF TUNER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DZIF TUNER",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "In order to Fig. 3."
+        },
+        {
+          "section_title": "SYSTEM-LEVEL SIMULATION",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "(For more details of the simulations and the models, refer to [15] and [16].) The results from these simulations for the signal-to-noise ratio (SNR) and BER are shown in Fig. 3."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "(b) Video output. at 4.571-MHz IF, for input to the demodulator board, and an error-free image on the monitor showing a standard picture from an MPEG-2 source used to modulate the test COFDM signal. 1) Receiver SNR: Fig. 17 shows measurements taken for comparison with the simulated results presented in Fig. 3, i.e., BER and SNR over a range of signal powers for a 64QAM, code rate 3/4, guard interval 1/32 COFDM signal (only this wanted signal is applied to the tuner input)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "In order to Fig. 3.",
+        "function_summary": "Post-Viterbi BER for system simulations. In order to Fig. 3.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 3,
+      "caption": "Fig. 4. Analog system implemented on chip.",
+      "caption_bbox": [
+        39.6,
+        229.5,
+        188.8,
+        240.1
+      ],
+      "section_title": "V. SYSTEM-LEVEL SIMULATION",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "DZIF TUNER",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 4."
+        },
+        {
+          "section_title": "ANALOG CIRCUIT REALIZATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 4 shows the complete system implemented on chip, indicating external control lines and components, many of which were included purely for testing purposes."
+        },
+        {
+          "section_title": "ANALOG CIRCUIT REALIZATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The AGC amplifiers shown in Fig. 4 are identical in structure to the fixed-gain versions, but with currentsteering long-tailed pairs (LTPs) in the load circuit (just as used for the LNA design)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Analog system implemented on chip",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Chip photo.",
+      "caption_bbox": [
+        302.6,
+        445.3,
+        369.6,
+        456.0
+      ],
+      "section_title": "VI. ANALOG CIRCUIT REALIZATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ANALOG CIRCUIT REALIZATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 5 shows a phom or tograph of the chip active area, which is 4220 ."
+        },
+        {
+          "section_title": "ANALOG CIRCUIT REALIZATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 8, AUGUST 2003 Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-chip photo": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chip photo",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. LNA simplified schematic.",
+      "caption_bbox": [
+        302.6,
+        654.8,
+        418.1,
+        665.4
+      ],
+      "section_title": "VI. ANALOG CIRCUIT REALIZATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ANALOG CIRCUIT REALIZATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 6."
+        },
+        {
+          "section_title": "ANALOG CIRCUIT REALIZATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Low Noise Amplifier Fig. 6 shows a simplified schematic of the LNA design (which also incorporates the RF AGC function)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "-simplified": -1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "LNA simplified schematic",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.57,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. Mixer schematic.",
+      "caption_bbox": [
+        38.1,
+        291.7,
+        122.5,
+        302.3
+      ],
+      "section_title": "VI. ANALOG CIRCUIT REALIZATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ANALOG CIRCUIT REALIZATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "This topology, rather than a standard differential pair, for example, is used due to its single-ended input, and because DAWKINS et al.: SINGLE-CHIP TUNER FOR DVB-T Fig. 7."
+        },
+        {
+          "section_title": "ANALOG CIRCUIT REALIZATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Mixers Fig. 7 shows the simplified schematic of the mixer topology employed for all the mixers in the chip."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [
+          "mixer",
+          "differential pair"
+        ],
+        "design_purpose": "",
+        "function_summary": "Mixer schematic",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.5,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Baseband amplifier schematic.",
+      "caption_bbox": [
+        38.1,
+        493.4,
+        165.3,
+        504.1
+      ],
+      "section_title": "VI. ANALOG CIRCUIT REALIZATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ANALOG CIRCUIT REALIZATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 8."
+        },
+        {
+          "section_title": "ANALOG CIRCUIT REALIZATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Baseband Amplifiers The baseband circuitry in the DZIF chip includes a number of fixed-gain differential-to-differential amplifiers (Fig. 8)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Baseband amplifier schematic",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.79,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. -C implementation of ladder filter. g",
+      "caption_bbox": [
+        301.1,
+        127.5,
+        452.1,
+        138.1
+      ],
+      "section_title": "VI. ANALOG CIRCUIT REALIZATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ANALOG CIRCUIT REALIZATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The phase noise of this LO dominates the 1.25 overall phase noise of the tuner, due to the fact that LO2 is a Fig. 9. -C implementation of ladder filter. g fixed-frequency oscillator and can therefore operate with much better phase noise."
+        },
+        {
+          "section_title": "ANALOG CIRCUIT REALIZATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The system specification calls for sixth-order Chebychev filters with 0.5-dB passband ripple and a nominal 4.1-MHz cutoff frequency, for which the prototype ladder component values may be readily obtained via suitable software design packages or filter lookup tables. 2) Filter Implementation: Fig. 9 shows a block diagram of - implementation of the ladder filter, using fully differthe ential circuitry and floating capacitors (in order to minimize the - total required capacitance and, hence, area)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "The system specification calls for sixth-order Chebychev filters with 0.5-dB passband ripple and a nominal 4.1-MHz cutoff frequency, for which the prototype ladder component values may be readily obtained via suitable software design packages or filter lookup tables. 2) Filter Implementation: Fig. 9 shows a block ...",
+        "function_summary": "-C implementation of ladder filter. g. The system specification calls for sixth-order Chebychev filters with 0.5-dB passband ripple and a nominal 4.1-MHz cutoff frequency, for which the prototype ladder component values may be readily obtained via suitable software design packages or filter lookup tables. 2) Filter ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10.",
+      "caption_bbox": [
+        39.6,
+        532.9,
+        64.3,
+        543.5
+      ],
+      "section_title": "VI. ANALOG CIRCUIT REALIZATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ANALOG CIRCUIT REALIZATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 10. to maximize the achievable filter dynamic range."
+        },
+        {
+          "section_title": "ANALOG CIRCUIT REALIZATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 10 shows inal values for - stage."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "Fig. 10. to maximize the achievable filter dynamic range.",
+        "function_summary": "filter. Fig. 10. to maximize the achievable filter dynamic range.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 6,
+      "caption": "Fig. 11. Block diagram of digital interface board FPGA functionality.",
+      "caption_bbox": [
+        38.1,
+        169.4,
+        267.5,
+        180.1
+      ],
+      "section_title": "VII. DIGITAL CIRCUIT REALIZATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DIGITAL CIRCUIT REALIZATION",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Although for a final product the digital processing required in the DZIF system would be implemented on the same integrated circuit as the rest of the digital demodulation functions, for the prototype test receiver a separate “glue logic” board was DAWKINS et al.: SINGLE-CHIP TUNER FOR DVB-T Fig. 11."
+        },
+        {
+          "section_title": "DIGITAL CIRCUIT REALIZATION",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Fig. 11 shows a block diagram of the digital functions which must be implemented by the two FPGAs (using more than one device allows maximum flexibility during testing)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "Fig. 11 shows a block diagram of the digital functions which must be implemented by the two FPGAs (using more than one device allows maximum flexibility during testing).",
+        "function_summary": "Block diagram of digital interface board FPGA functionality. Fig. 11 shows a block diagram of the digital functions which must be implemented by the two FPGAs (using more than one device allows maximum flexibility during testing).",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.57,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 6,
+      "caption": "Fig. 12. I/Q mismatch correct structure.",
+      "caption_bbox": [
+        38.1,
+        341.1,
+        173.9,
+        351.7
+      ],
+      "section_title": "VIII. TEST SYSTEM REALIZATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DIGITAL CIRCUIT REALIZATION",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Fig. 12."
+        },
+        {
+          "section_title": "DIGITAL CIRCUIT REALIZATION",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "Correction of such frequency-independent effects is straightforward using the structure shown in Fig. 12. 5) Complex Multiplier: The corrected / signal is now upconverted to the standard IF of 4.571 MHz, where the signal becomes purely real."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "frequency multiplier",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "I/Q mismatch correct structure",
+        "key_specs": [
+          "4.571 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 7,
+      "caption": "Fig. 13. Prototype receiver for DZIF system testing.",
+      "caption_bbox": [
+        39.6,
+        177.1,
+        212.8,
+        187.7
+      ],
+      "section_title": "IX. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "TEST SYSTEM REALIZATION",
+          "section_kind": "design",
+          "page": 6,
+          "sentence": "Fig. 13 shows a block diagram of the prototype DZIF receiver system that was built to allow experimental measurements to be taken."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The main discrepancy between the measured and simulated target values is that the system noise figure is 6 dB higher than expected, due to an Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Prototype receiver for DZIF system testing",
+        "key_specs": [
+          "6 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 7,
+      "caption": "Fig. 14. RF input port return loss (jS j).",
+      "caption_bbox": [
+        39.6,
+        403.4,
+        179.7,
+        414.0
+      ],
+      "section_title": "IX. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 14 shows the return loss of the RF input which is 16 dB, showing a good broad-band input match to better than ."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "RF input port return loss (jS j)",
+        "key_specs": [
+          "16 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 7,
+      "caption": "Fig. 15. Total gain across filter passband.",
+      "caption_bbox": [
+        39.6,
+        635.9,
+        177.6,
+        646.6
+      ],
+      "section_title": "IX. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 15 shows the measured chip gain across the baseband 75 frequencies, showing the Chebychev filter passband response in detail, which can be seen to match up very well with the designed sixth-order response."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Total gain across filter passband",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 8,
+      "caption": "Fig. 16. Photographs of outputs from receiver. (a) DAC output signal on spectrum analyzer. (b) Video output.",
+      "caption_bbox": [
+        38.1,
+        398.3,
+        289.2,
+        417.9
+      ],
+      "section_title": "IX. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 16 shows the output of the DAC, which contains a single COFDM channel DAWKINS et al.: SINGLE-CHIP TUNER FOR DVB-T (a) (b) Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -7.1,
+      "relevance_breakdown": {
+        "-photograph": -3.0,
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 0.4
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Photographs of outputs from receiver. (a) DAC output signal on spectrum analyzer. (b) Video output",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 8,
+      "caption": "Fig. 17. Receiver performance for a single DVB-T channel. (a) SNR prior to channel equalizer. (b) Post-Viterbi BER.",
+      "caption_bbox": [
+        301.1,
+        485.3,
+        552.2,
+        504.9
+      ],
+      "section_title": "IX. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "(b) Video output. at 4.571-MHz IF, for input to the demodulator board, and an error-free image on the monitor showing a standard picture from an MPEG-2 source used to modulate the test COFDM signal. 1) Receiver SNR: Fig. 17 shows measurements taken for comparison with the simulated results presented in Fig. 3, i.e., BER and SNR over a range of signal powers for a 64QAM, code rate 3/4, guard interval 1/32 COFDM signal (only this wanted signal is applied to the tuner input)."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "This value is somewhat lower than designed, mainly due to the effect of the test system construction whereby the signal is quantized twice in order to employ standard demodulation hardware. 2) PAL-I Adjacent Channel Protection Ratio: Measurement techniques recommended by the Digital Television Group (DTG) define the adjacent channel PAL-I protection ratio as the ratio of the wanted signal total power to the unwanted signal peak-sync power when the system BER is degraded to 25 dBm the QEF BER, and the PAL-I peak-sync power is 15 dBm was used in the DZIF at the tuner input (although (a) (b) Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.2,
+      "relevance_breakdown": {
+        "-prior": -2.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "This value is somewhat lower than designed, mainly due to the effect of the test system construction whereby the signal is quantized twice in order to employ standard demodulation hardware. 2) PAL-I Adjacent Channel Protection Ratio: Measurement techniques recommended by the Digital Television Group (DTG) define the ...",
+        "function_summary": "Receiver performance for a single DVB-T channel. (a) SNR prior to channel equalizer. (b) Post-Viterbi BER. This value is somewhat lower than designed, mainly due to the effect of the test system construction whereby the signal is quantized twice in order to employ standard demodulation hardware. 2) PAL-I Adjacent ...",
+        "key_specs": [
+          "25 dBm",
+          "15 dBm"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 7,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

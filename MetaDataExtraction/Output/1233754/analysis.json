@@ -1,0 +1,1020 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1233754.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1233754",
+  "generated_at": "2026-07-29T22:01:19",
+  "paper_metadata": {
+    "title": "A Low-Power High-PSRR Current-Mode Microphone Preamplifier",
+    "authors": [
+      "Michael W. Baker",
+      "Rahul Sarpeshkar"
+    ],
+    "abstract": "Bionic implants for the deaf require wide-dynamicrange low-power microphone preamplifiers with good wide-band nology. That is, peak signals of 110 dBSPL and a microphone rejection of the supply noise. Widely usedlow-cost implementations noise floor of 27 dBSPL make most hearing tasks possible. of such preamplifiers typically use the buffered voltage output In previous designs, high performance, low-power operation, of an electret capacitor with a built-in JFET source follower. and power-supply rejection have required a custom external We describe a design in which the JFET microphone buffer’s electret structure [4]–[7]. In this paper, we show how to obtain output current, rather than its output voltage, is transduced via high-performance specifications with ubiquitous noncustom a sense-amplifier topology allowing good in-band power-supply rejection. The design employs a low-frequency feedback loop JFET-buffered microphones. to subtract the dc bias current of the microphone and prevent The organization of this paper is as follows. In Section II, it from causing saturation. Wide-band power-supply rejection we discuss subminiature microphones. In Section III, we disis achieved by integrating a novel filter on all current-source cuss our sense-amplifier topology and its anticipated benefits. biasing. Our design exhibits 80 dB of dynamic range with less In Section IV, we discuss designs based on the sense-amplifier than 5 Vrms of input noise while operating from a 2.8 V supply. The power consumption is 96 W which includes 60 W for the approach. In Section V, we discuss experimental results. In Secmicrophone built-in buffer. The in-band power-supply rejection tion VI, we conclude by summarizing the main contributions of ratio varies from 50 to 90 dB while out-of-band supply attenuation this paper. is greater than 60 dB until 25 MHz. Fabrication was done in a 1.5m CMOS process with gain programmability for both microphone and auxiliary channel inputs.",
+    "keywords": [
+      "Current mode",
+      "electret microphone",
+      "low power"
+    ],
+    "doi": "10.1109/JSSC.2003.817255",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Low-Power High-PSRR Current-Mode Microphone Preamplifier",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "output buffer",
+      "bias circuit",
+      "op-amp",
+      "pre-amplifier",
+      "sense amplifier",
+      "inductor",
+      "transistor/MOSFET",
+      "current source",
+      "mixer"
+    ],
+    "design_purpose": "In this paper, we show how to obtain output current, rather than its output voltage, is transduced via high-performance specifications with ubiquitous noncustom a sense-amplifier topology allowing good in-band power-supply rejection.",
+    "function_summary": "Low-Power High-PSRR Current-Mode Microphone Preamplifier: In this paper, we show how to obtain output current, rather than its output voltage, is transduced via high-performance specifications with ubiquitous noncustom a sense-amplifier topology allowing good in-band power-supply rejection.",
+    "key_specs": [
+      "110 dB",
+      "27 dB",
+      "80 dB",
+      "5 V",
+      "2.8 V",
+      "96 W",
+      "60 W",
+      "90 dB",
+      "60 dB",
+      "25 MHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "H EARING impairment affects almost 10% of individuals in the industrialized world [1]. Individuals with profound deafness are in need of cochlear implants to listen to everyday sounds. Modern bionic implants are designed to fit neatly behind the ear, requiring small low-power wide-dynamic-range front-ends with a minimum of external components and good power-supply rejection. The microphone preampl ..."
+    },
+    {
+      "number": "II",
+      "title": "MICROPHONES FOR BIONIC IMPLANTS",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "Subminiature microphones for cochlear implants are typically self-biased MOS devices buffering the voltage from a moving electret capacitor. The output from the buffer is taken at the source of the MOS device, providing a relatively low-impedance voltage output. Fig. 1(a) illustrates the basic microphone circuit showing a depletion-mode MOSFET as the buffer device. Many manufacturers employ such a ..."
+    },
+    {
+      "number": "III",
+      "title": "SENSE-AMPLIFIER TOPOLOGY",
+      "kind": "proposed",
+      "page": 1,
+      "text_preview": "A conceptual solution to supply rejection problems is shown in Fig. 3. A self-biased microphone structure can be configured as the input to a sense amplifier allowing voltage regulation of the drain node. Essentially, we sense the current from the microphone, rather than its voltage, and convert this current . The larger the value of , to an output voltage through the larger the sensitivity of the ..."
+    },
+    {
+      "number": "IV",
+      "title": "POWER-SUPPLY REJECTION",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "For obvious reasons, rejection of power-supply noise is a major design constraint for low-noise systems. A variety of nonideal properties of signal processing systems can contribute to signal degradation. In an all-analog signal processor, rectification and distortion can increase in-band noise drastically through mixing of high-frequency power-supply noise [8]. In digital implementations, power-s ..."
+    },
+    {
+      "number": "V",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 4,
+      "text_preview": "Our pre-amplifier and microphone circuitry were fabricated m SCMOS process. Fig. 8 indicates on MOSIS AMI’s 1.5the two-stage topology of the operational amplifier and the overall pre-amplifier circuit. A 2.8-V supply provided power for the circuits and a Knowles Electronics FG-3329 microphone and was used. Fig. 8 also shows the resistive feedback supply decoupling structures in the drain circuits. ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 7,
+      "text_preview": "Cochlear implants with telemetry and mixed-signal processing require versatile low-power and broad-band W supply-resilient transduction for input signals. Our 9480-dB current-mode sense-amplifier topology addresses these needs by implementing pre-emphasis filtering and dc-biasing control, and achieving an in-band supply rejection of 50–90 dB. A simple power-supply filtering network makes broad-ban ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Subminiature electret circuit. (a) Low-noise depletion-mode FET device shown with source resistance R . A large gate resistance is also shown to indicate that the gate is incrementally grounded at low frequency. (b) Small-signal model of the internal structure of the microphone, including the active device and parasitic gate and source resistances.",
+      "caption_bbox": [
+        39.6,
+        430.0,
+        290.7,
+        476.5
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "MICROPHONES FOR BIONIC IMPLANTS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 1(a) illustrates the basic microphone circuit showing a depletion-mode MOSFET as the buffer device."
+        },
+        {
+          "section_title": "MICROPHONES FOR BIONIC IMPLANTS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 1(b) shows a small-signal model of the self-biased buffer structure indicating the output reof the MOS device as well as its transconductance sistance ."
+        },
+        {
+          "section_title": "MICROPHONES FOR BIONIC IMPLANTS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The block diagram in Fig. 2, constructed from the small-signal diagram of Fig. 1(b), shows the contributing mechanisms for power-supply feedthrough."
+        },
+        {
+          "section_title": "MICROPHONES FOR BIONIC IMPLANTS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The output These three terms determine (a) (b) Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.9,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-model": -1.5,
+        "-structure of": -1.5,
+        "section:intro": -0.5,
+        "references": 1.6
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "buffer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Subminiature electret circuit. (a) Low-noise depletion-mode FET device shown with source resistance R . A large gate resistance is also shown to indicate that the gate is incrementally grounded at low frequency. (b) Small-signal model of the internal structure of the microphone, including the active device and ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Conceptual block diagram of the power-supply noise feedthrough. The summer indicates the summing of currents contributing to the source node of the FET buffer.",
+      "caption_bbox": [
+        302.6,
+        159.7,
+        553.7,
+        188.3
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "MICROPHONES FOR BIONIC IMPLANTS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The block diagram in Fig. 2, constructed from the small-signal diagram of Fig. 1(b), shows the contributing mechanisms for power-supply feedthrough."
+        },
+        {
+          "section_title": "MICROPHONES FOR BIONIC IMPLANTS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Assuming is due to feedthrough from short-circuit current measured at , direct capacitive feedthrough, drain-to-source conductance and capacitive-divider and JFET transconductance interaction. , as shown in Fig. 2."
+        },
+        {
+          "section_title": "MICROPHONES FOR BIONIC IMPLANTS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Including the ignore the term of the dependent source adds a feedback block from as shown in Fig. 2."
+        },
+        {
+          "section_title": "MICROPHONES FOR BIONIC IMPLANTS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "While some designs do away with the IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 10, OCTOBER 2003 Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.1,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:intro": -0.5,
+        "references": 1.6
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "buffer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Conceptual block diagram of the power-supply noise feedthrough. The summer indicates the summing of currents contributing to the source node of the FET buffer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.29,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. A sense amplifier can be used to bias the drain of the buffer JFET as well as provide pre-amplification.",
+      "caption_bbox": [
+        302.6,
+        368.5,
+        553.6,
+        388.1
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "MICROPHONES FOR BIONIC IMPLANTS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 3."
+        },
+        {
+          "section_title": "SENSE-AMPLIFIER TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "A conceptual solution to supply rejection problems is shown in Fig. 3."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The supply coupling response normalized to 1-V rejection performance for various bypassing capacitances is shown. an in-band sensitivity of 17 mV per Pascal at the output in Fig. 3."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Power-Supply Rejection The PSRR for our system is the ratio of the voltage gain from to with respect to the voltage gain from to in is not explicitly shown in Fig. 3 but is used Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.1,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "output buffer",
+          "sense amplifier"
+        ],
+        "design_purpose": "",
+        "function_summary": "A sense amplifier can be used to bias the drain of the buffer JFET as well as provide pre-amplification",
+        "key_specs": [
+          "17 mV"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.05,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Sense amplifier topology employing split-frequency feedback. The dc voltage drop in the feedback load is proportional to the dc output current of the amplifier and is regulated to zero by canceling the microphone buffer’s dc . current with feedback dc current from M",
+      "caption_bbox": [
+        38.1,
+        319.3,
+        289.2,
+        356.8
+      ],
+      "section_title": "III. SENSE-AMPLIFIER TOPOLOGY",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "SENSE-AMPLIFIER TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "BAKER AND SARPESHKAR: A LOW-POWER HIGH-PSRR CURRENT-MODE MICROPHONE PREAMPLIFIER Fig. 4."
+        },
+        {
+          "section_title": "SENSE-AMPLIFIER TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 4 shows how this approach retains the benefit of our current-mode scheme."
+        },
+        {
+          "section_title": "SENSE-AMPLIFIER TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 4 shows that by driving the dc drop across the sense-amplifier resistor to zero with feedback, we can subtract the bias Fig. 5."
+        },
+        {
+          "section_title": "SENSE-AMPLIFIER TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Small-signal block diagram for the design presented in Fig. 4. current of the microphone and prevent it from causing saturation effects in the operational amplifier."
+        },
+        {
+          "section_title": "SENSE-AMPLIFIER TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "A feedback block diagram indicating both low-frequency and high-frequency loops in Fig. 4 is shown in Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.5,
+      "relevance_breakdown": {
+        "+topology": 2.5,
+        "section:proposed": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "resistor",
+          "output buffer",
+          "op-amp",
+          "pre-amplifier",
+          "sense amplifier"
+        ],
+        "design_purpose": "",
+        "function_summary": "Sense amplifier topology employing split-frequency feedback. The dc voltage drop in the feedback load is proportional to the dc output current of the amplifier and is regulated to zero by canceling the microphone buffer’s dc . current with feedback dc current from M",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.85,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Small-signal block diagram for the design presented in Fig. 4.",
+      "caption_bbox": [
+        301.1,
+        195.3,
+        527.4,
+        205.9
+      ],
+      "section_title": "III. SENSE-AMPLIFIER TOPOLOGY",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "SENSE-AMPLIFIER TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 4 shows that by driving the dc drop across the sense-amplifier resistor to zero with feedback, we can subtract the bias Fig. 5."
+        },
+        {
+          "section_title": "SENSE-AMPLIFIER TOPOLOGY",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "A feedback block diagram indicating both low-frequency and high-frequency loops in Fig. 4 is shown in Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "resistor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Small-signal block diagram for the design presented in Fig. 4",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.69,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Power-supply decoupling mechanism. (a) Explicit gate–source capacitors, C and C , and biasing of p-gates through high-impedance elements, z , make M and M behave as small-signal large resistances. (b) A bypass capacitance C filters the supply voltage before it can affect . the bias at i",
+      "caption_bbox": [
+        39.6,
+        184.4,
+        290.7,
+        231.0
+      ],
+      "section_title": "IV. POWER-SUPPLY REJECTION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "POWER-SUPPLY REJECTION",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Most filters of this type can be implemented with (a) (b) Fig. 6."
+        },
+        {
+          "section_title": "POWER-SUPPLY REJECTION",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Our approach to power-supply filtering is shown in Fig. 6(a), which illustrates how we build a supply-bypassing current is biased through the large source."
+        },
+        {
+          "section_title": "POWER-SUPPLY REJECTION",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The overall filter characteristic for the output current node can be approximated from (9) and Fig. 6(b)."
+        },
+        {
+          "section_title": "POWER-SUPPLY REJECTION",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "By choosing larger than the parasitic drain capacitances, the pole can be made to dominate at lower frequencies, reducing the supply sensitivity in Fig. 6."
+        },
+        {
+          "section_title": "POWER-SUPPLY REJECTION",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Due to the presence of a second saturation-region device in the current source of Fig. 6, its available output voltage range is reduced by our technique."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.0,
+      "relevance_breakdown": {
+        "-capacitance": -2.0,
+        "references": 2.0
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor",
+          "current source",
+          "bias circuit"
+        ],
+        "design_purpose": "",
+        "function_summary": "Power-supply decoupling mechanism. (a) Explicit gate–source capacitors, C and C , and biasing of p-gates through high-impedance elements, z , make M and M behave as small-signal large resistances. (b) A bypass capacitance C filters the supply voltage before it can affect . the bias at i",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Small-signal model of M in Fig. 10.",
+      "caption_bbox": [
+        302.6,
+        197.2,
+        452.3,
+        207.9
+      ],
+      "section_title": "IV. POWER-SUPPLY REJECTION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "POWER-SUPPLY REJECTION",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 7 outlines a block diagram showing a small signal ."
+        },
+        {
+          "section_title": "POWER-SUPPLY REJECTION",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Both the contribution to gate-to-drain and the bulk-to-drain capacitances contribute to IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 10, OCTOBER 2003 Fig. 7."
+        },
+        {
+          "section_title": "POWER-SUPPLY REJECTION",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "If the parasitic drain capacitances of both devices are (assuming included as in Fig. 7), a limit to the maximum supply rejection is observed from computing the overall supply coupling (13) Two zeros result from the feedthrough caused by the drain capacitances."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.3,
+      "relevance_breakdown": {
+        "-model": -1.5,
+        "references": 1.2
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "Low-Power High-PSRR Current-Mode Microphone Preamplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Small-signal model of M in Fig. 10",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8.",
+      "caption_bbox": [
+        38.1,
+        297.4,
+        58.7,
+        308.1
+      ],
+      "section_title": "IV. POWER-SUPPLY REJECTION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "POWER-SUPPLY REJECTION",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 8."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 8 indicates on MOSIS AMI’s 1.5the two-stage topology of the operational amplifier and the overall pre-amplifier circuit."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 8 also shows the resistive feedback supply decoupling structures in the drain circuits."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "pre-amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "op-amp",
+          "pre-amplifier"
+        ],
+        "design_purpose": "",
+        "function_summary": "pre-amplifier",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. Die photo of the current-mode pre-amplifier. The chip is a 2.2-mm 2.2-mm chip built in a 1.5-m process.",
+      "caption_bbox": [
+        301.1,
+        541.3,
+        552.2,
+        561.2
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 9 shows a die micrograph of the circuits."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.6,
+      "relevance_breakdown": {
+        "-die photo": -3.0,
+        "section:results": -2.0,
+        "references": 0.4
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "pre-amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "pre-amplifier"
+        ],
+        "design_purpose": "",
+        "function_summary": "Die photo of the current-mode pre-amplifier. The chip is a 2.2-mm 2.2-mm chip built in a 1.5-m process",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. Frequency response to acoustic excitation with the output supply variation of the supply. The supply coupling response normalized to 1-V rejection performance for various bypassing capacitances is shown.",
+      "caption_bbox": [
+        39.6,
+        278.3,
+        290.7,
+        306.9
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "POWER-SUPPLY REJECTION",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Small-signal model of M in Fig. 10. high-frequency feedthrough as the last term in (8) and (9)."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Gain The top curve in Fig. 10 shows the acoustic gain referenced to the in-band microphone-buffer sensitivity."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The FG-3329 has Fig. 10."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Thus, in the top curve of Fig. 10, a gain of 20 dB corresponds to 170 mV/pascal."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The voltage gain from the to the output is the sensitivity of the system to supply supply variations and is shown as the bottom curves of Fig. 10. to for The top curve of Fig. 10 is the voltage gain from the inband audio frequencies."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "At 300 Hz, curves of Fig. 10 for various values of 90 dB of PSRR is observed, and at 8 kHz, 50 dB of PSRR is observed."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.0,
+      "relevance_breakdown": {
+        "-capacitance": -2.0,
+        "section:results": -2.0,
+        "references": 2.0
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "buffer",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Frequency response to acoustic excitation with the output supply variation of the supply. The supply coupling response normalized to 1-V rejection performance for various bypassing capacitances is shown",
+        "key_specs": [
+          "20 dB",
+          "170 mV",
+          "300 Hz",
+          "90 dB",
+          "8 kHz",
+          "50 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 5,
+      "caption": "Fig. 11. Supply coupling for frequencies up to 26 MHz.",
+      "caption_bbox": [
+        302.6,
+        268.4,
+        487.2,
+        279.0
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "This high-frequency rejection data is shown in Fig. 11."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The key factor to note is that potential clock and telemetry frequencies, i.e., greater than 2 MHz, are reasonably of attenuated even with small capacitances, i.e., with IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 10, OCTOBER 2003 Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Low-Power High-PSRR Current-Mode Microphone Preamplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Supply coupling for frequencies up to 26 MHz",
+        "key_specs": [
+          "2 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 5,
+      "caption": "Fig. 12. High-frequency signals are filtered most effectively from the output in the presence of a large bypass capacitor. A static protection resistor in the",
+      "caption_bbox": [
+        302.6,
+        495.4,
+        553.7,
+        515.1
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Varying the bypass capacitance changes the attenuation ratio directly, as shown in Fig. 12."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Low-Power High-PSRR Current-Mode Microphone Preamplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor",
+          "resistor"
+        ],
+        "design_purpose": "",
+        "function_summary": "High-frequency signals are filtered most effectively from the output in the presence of a large bypass capacitor. A static protection resistor in the",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 6,
+      "caption": "Fig. 13. Without microphone noise, feedback and operational amplifier contribute 80–90 nV /sqrt(Hz). The microphone buffer noise dominates when audio input is on. The 1=f nature of the microphone-on characteristic is due in part to the 1=f noise of the dc biasing structure.",
+      "caption_bbox": [
+        38.1,
+        428.8,
+        289.2,
+        466.4
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Noise Performance Fig. 13 indicates the noise performance of the front-end with and without the microphone contribution."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "BAKER AND SARPESHKAR: A LOW-POWER HIGH-PSRR CURRENT-MODE MICROPHONE PREAMPLIFIER TABLE I NOISE AND LINEAR RANGE PERFORMANCE Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "output buffer",
+          "bias circuit",
+          "op-amp",
+          "pre-amplifier"
+        ],
+        "design_purpose": "",
+        "function_summary": "Without microphone noise, feedback and operational amplifier contribute 80–90 nV /sqrt(Hz). The microphone buffer noise dominates when audio input is on. The 1=f nature of the microphone-on characteristic is due in part to the 1=f noise of the dc biasing structure",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 6,
+      "caption": "Fig. 14. Distortion products for 1-kHz peak output with 1% distortion.",
+      "caption_bbox": [
+        301.1,
+        427.5,
+        531.7,
+        438.1
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "In Figs. 14 and 15, the transition between the well-behaved distortion characteristics and high-frequency effects are shown."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Low-Power High-PSRR Current-Mode Microphone Preamplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Distortion products for 1-kHz peak output with 1% distortion",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 6,
+      "caption": "Fig. 15. Distortion products for 3-kHz peak output with 1% distortion.",
+      "caption_bbox": [
+        301.1,
+        657.6,
+        531.7,
+        668.2
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.6,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.4
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Low-Power High-PSRR Current-Mode Microphone Preamplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Distortion products for 3-kHz peak output with 1% distortion",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 7,
+      "caption": "Fig. 16. Dynamic range versus frequency for acoustic inputs.",
+      "caption_bbox": [
+        39.6,
+        249.4,
+        240.6,
+        260.1
+      ],
+      "section_title": "V. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 16 indicates the dynamic range as a function of frequency for the microphone transduction system for 1% distortion limits V as a function of freand a minimum detectable signal of 5 quency."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Low-Power High-PSRR Current-Mode Microphone Preamplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Dynamic range versus frequency for acoustic inputs",
+        "key_specs": [
+          "1%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 4,
+  "warnings": []
+}

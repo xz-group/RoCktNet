@@ -1,0 +1,1103 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1522555.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1522555",
+  "generated_at": "2026-07-29T21:33:16",
+  "paper_metadata": {
+    "title": "A 2.4 GHz CMOS Sub-Sampling Mixer With Integrated Filtering",
+    "authors": [
+      "Holly Pekau",
+      "James W. Haslett"
+    ],
+    "abstract": "A sub-sampling mixer that incorporates sampling switches and hold capacitors into the parallel resonant LC load of an LNA is proposed. The noise figure of the proposed sub-sampling mixer is lower than that of a standard sampling circuit because the proposed mixer has narrow-band gain and input noise filtering properties. A novel level-shifting clock buffer with fast rise and fall times to drive the mixer sampling switches is presented. The mixer was fabricated in a 0.18 m CMOS process and measured results are presented for an RF input frequency of 2.42 GHz and a sampling frequency of 100 MHz. With a measured noise figure of 21.8 dB, the proposed circuit shows improved performance compared to other published sub-sampling mixers.",
+    "keywords": [
+      "Bandpass sampling",
+      "CMOS analog integrated circuits",
+      "communication circuits",
+      "integrated circuit noise",
+      "LC filters",
+      "noise aliasing",
+      "sub-sampling mixers",
+      "track-and-hold circuits"
+    ],
+    "doi": "10.1109/JSSC.2005.857364",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2005
+  },
+  "paper_circuit_context": {
+    "circuit_type": "GHz CMOS Sub-Sampling Mixer",
+    "technology": "CMOS",
+    "application_domain": "rf, radio frequency, if",
+    "sub_blocks": [
+      "inductor",
+      "capacitor",
+      "transistor/MOSFET",
+      "current source",
+      "LC tank / resonator",
+      "output buffer",
+      "mixer",
+      "switch",
+      "differential pair",
+      "clock / timing",
+      "balun",
+      "bias circuit"
+    ],
+    "design_purpose": "A sub-sampling mixer that incorporates sampling switches and hold capacitors into the parallel resonant LC load of an LNA is proposed.",
+    "function_summary": "GHz CMOS Sub-Sampling Mixer: A sub-sampling mixer that incorporates sampling switches and hold capacitors into the parallel resonant LC load of an LNA is proposed.",
+    "key_specs": [
+      "2.4 GHz",
+      "2.42 GHz",
+      "100 MHz",
+      "21.8 dB",
+      "1 GHz",
+      "50 v",
+      "20 MHz",
+      "20 GHz",
+      "17.6 dB",
+      "21.9 dB"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE NEED FOR highly integrated multi-standard communications systems in the GHz range has resulted in radio receiver architectures that perform analog to digital conversion closer to the antenna. One of these alternative architectures involves direct conversion by sub-sampling. The sub-sampling architecture offers high integration while allowing the analog-to-digital (A/D) converters to operate a ..."
+    },
+    {
+      "number": "II",
+      "title": "DESIGN THEORY",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "A basic differential sub-sampling mixer for noise ﬁgure measurements based on the work of Eriksson and Tenhunen [12] is shown in Fig. 2. This work describes an alternative implementation of a sub-sampling mixer as shown in Fig. 3. The sampling switch is incorporated into an LNA in order to lower the noise ﬁgure of the mixer. There are two main reasons why the noise ﬁgure of the proposed sampler is ..."
+    },
+    {
+      "number": "III",
+      "title": "DISCUSSION OF TRANSIENTS DUE TO CLOCK TRANSITIONS",
+      "kind": "results",
+      "page": 2,
+      "text_preview": "The preceding analysis shows that improvements in signal-tonoise ratio can be realized by using a resonant sampler. The use of a resonant sampler, however, causes some unwanted transients on the clock transitions. On the track-to-hold transition, a transient voltage is induced in the inductor due to the rapid change in signal current through the inductor, . A simulation was done to examine transie ..."
+    },
+    {
+      "number": "IV",
+      "title": "CIRCUIT IMPLEMENTATION",
+      "kind": "design",
+      "page": 3,
+      "text_preview": "The proposed sample and hold shown in Fig. 3 was implemented in a 0.18 m CMOS process. An on-chip clock buffer was included to provide low-jitter level-shifted clock signals to the sampling switches. The inductors , , and shown in Fig. 3 were integrated on chip and had values of 1.3, 3.5, and 2.3 nH, respectively. The sampling capacitors were also integrated on chip and had values of 1 pF. The inp ..."
+    },
+    {
+      "number": "V",
+      "title": "SIMULATION AND MEASUREMENT RESULTS",
+      "kind": "results",
+      "page": 4,
+      "text_preview": "A. Transient Response and Gain The simulated transient waveform of the sub-sampling mixer at the differential output of the buffers is shown in Fig. 12. The simulated sampled voltage gain of the mixer is 2.65 dB. The mixer gain is relatively low because the current to the differential pair is 0.5 mA. If low current consumption is not a priority then the gain can be increased by increasing the curr ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 6,
+      "text_preview": "A sub-sampling mixer in the form of an LNA with a sampling switch and hold capacitor incorporated into the parallel resonant LC load been designed and fabricated in a 0.18 m CMOS process. The mixer operates at an RF frequency of 2.4 GHz and a sampling frequency of 100 MHz. The measured noise ﬁgure of the circuit is 21.8 dB, an improvement over previously designed sub-sampling mixers which have dem ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Results of sub-sampling. (a) Aliasing of signal band to Nyquist band. (b) Noise aliasing to Nyquist band. (c) Noise aliasing when input is bandpass ﬁltered prior to sub-sampling.",
+      "caption_bbox": [
+        301.1,
+        418.9,
+        552.2,
+        444.8
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Sub-sampling mixers downconvert an RF signal by intentionally aliasing it from RF to the Nyquist band from as shown in DC to one half the sampling frequency Fig. 1(a)."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Noise ﬁgures reported for sub-sampling mixers are generally high because noise is folded from multiples of the sampling frequency to the Nyquist band as shown in Fig. 1(b), [1]."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "In order to reduce the noise folded to the Nyquist band , the signal is usually bandpass ﬁltered from multiples of before sub-sampling as shown in Fig. 1(c)."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Digital Object Identiﬁer 10.1109/JSSC.2005.857364 Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.9,
+      "relevance_breakdown": {
+        "-prior": -2.0,
+        "section:intro": -0.5,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "GHz CMOS Sub-Sampling Mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, if",
+        "sub_blocks": [],
+        "design_purpose": "In order to reduce the noise folded to the Nyquist band , the signal is usually bandpass ﬁltered from multiples of before sub-sampling as shown in Fig. 1(c).",
+        "function_summary": "Results of sub-sampling. (a) Aliasing of signal band to Nyquist band. (b) Noise aliasing to Nyquist band. (c) Noise aliasing when input is bandpass ﬁltered prior to sub-sampling. In order to reduce the noise folded to the Nyquist band , the signal is usually bandpass ﬁltered from multiples of before sub-sampling as ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Basic differential sub-sampling mixer.",
+      "caption_bbox": [
+        39.6,
+        251.5,
+        190.9,
+        259.5
+      ],
+      "section_title": "II. DESIGN THEORY",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "DESIGN THEORY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "A basic differential sub-sampling mixer for noise ﬁgure measurements based on the work of Eriksson and Tenhunen [12] is shown in Fig. 2."
+        },
+        {
+          "section_title": "DESIGN THEORY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "First, the LC input match and the parallel resonant LC load of the proposed sampler ﬁlter some of the thermal noise due to the resistance of the signal source used to drive the Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "type_match:mixer": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Basic differential sub-sampling mixer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.69,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Simpliﬁed schematic of proposed sub-sampling mixer.",
+      "caption_bbox": [
+        39.6,
+        456.5,
+        242.6,
+        464.4
+      ],
+      "section_title": "II. DESIGN THEORY",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "DESIGN THEORY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "This work describes an alternative implementation of a sub-sampling mixer as shown in Fig. 3."
+        },
+        {
+          "section_title": "DESIGN THEORY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 3."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The proposed sample and hold shown in Fig. 3 was implemented in a 0.18 m CMOS process."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The inductors , , and shown in Fig. 3 were integrated on chip and had values of 1.3, 3.5, and 2.3 nH, respectively."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 11.6,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+proposed": 3.0,
+        "section:proposed": 2.0,
+        "type_match:mixer": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simpliﬁed schematic of proposed sub-sampling mixer",
+        "key_specs": [
+          "3 w",
+          "2.3 nH"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 1.0,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 1,
+      "caption": "Fig. 4. Equivalent circuit for noise analysis of the basic sub-sampling mixer.",
+      "caption_bbox": [
+        302.6,
+        135.5,
+        551.2,
+        143.5
+      ],
+      "section_title": "II. DESIGN THEORY",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "DESIGN THEORY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The equivalent circuit used to calculate the noise contributions of the basic sampler is shown in Fig. 4."
+        },
+        {
+          "section_title": "DESIGN THEORY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 11, NOVEMBER 2005 Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.8,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-equivalent": -2.0,
+        "section:proposed": 2.0,
+        "type_match:mixer": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Equivalent circuit for noise analysis of the basic sub-sampling mixer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.45,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Equivalent circuit for noise analysis of the proposed sub-sampling mixer (Z )). + R )=(1=j!C + R (j!L",
+      "caption_bbox": [
+        38.1,
+        233.8,
+        303.5,
+        251.0
+      ],
+      "section_title": "II. DESIGN THEORY",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "DESIGN THEORY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The equivalent circuit used to calculate the noise contributions is shown in Fig. 5."
+        },
+        {
+          "section_title": "DESIGN THEORY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The total output noise including aliasing at an output frequency of 20 MHz is slightly higher for the proposed mixer due to the noise added by the transconductors and the PEKAU AND HASLETT: A 2.4 GHz CMOS SUB-SAMPLING MIXER WITH INTEGRATED FILTERING Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.8,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "+circuit": 1.0,
+        "-equivalent": -2.0,
+        "section:proposed": 2.0,
+        "type_match:mixer": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Equivalent circuit for noise analysis of the proposed sub-sampling mixer (Z )). + R )=(1=j!C + R (j!L",
+        "key_specs": [
+          "20 MHz",
+          "2.4 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.94,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. Proposed sampler and standard sampler output noise contributors versus frequency with L = 2:3 nH, C = 1:35 pF, R = 16 ; L = 1:3 nH, R = 3:5 nH, R 0:91 pF, = 2 ; L = 5 ; C = = 4:878 mS, R = 50 single-ended, R = 50 ; R = 100 g differential.",
+      "caption_bbox": [
+        38.1,
+        594.8,
+        289.3,
+        638.6
+      ],
+      "section_title": "III. DISCUSSION OF TRANSIENTS DUE TO CLOCK TRANSITIONS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "DESIGN THEORY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The output noise contributors described in Tables I and II are plotted over frequency in Fig. 6 using component values similar to those of the circuit that was fabricated (there are small differences in the inductance and capacitance values used because parasitic capacitances are not considered in this simpliﬁed theoretical analysis)."
+        },
+        {
+          "section_title": "DESIGN THEORY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The noise contributions are for a differential architecture, so the contributions in Tables I and II were multiplied by two to generate Fig. 6."
+        },
+        {
+          "section_title": "DESIGN THEORY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "For the purposes of the noise ﬁgure comparison it was assumed that the hold capacitors were followed by output buffers with unity gain, output impedance so that the inﬁnite input impedance and 50 voltage noise shown in Fig. 6 appeared across a matched 50 load impedance."
+        },
+        {
+          "section_title": "DESIGN THEORY",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Equivalent circuit for noise analysis of the proposed sub-sampling mixer (Z )). + R )=(1=j!C + R (j!L TABLE II OUTPUT NOISE CONTRIBUTORS FOR THE PROPOSED SAMPLER WHERE A(!) = Z (CONTRIBUTIONS ARE MULTIPLIED BY TWO FOR THE DIFFERENTIAL CIRCUIT) Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.6,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "section:results": -2.0,
+        "references": 1.6
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "For the purposes of the noise ﬁgure comparison it was assumed that the hold capacitors were followed by output buffers with unity gain, output impedance so that the inﬁnite input impedance and 50 voltage noise shown in Fig. 6 appeared across a matched 50 load impedance.",
+        "function_summary": "Proposed sampler and standard sampler output noise contributors versus frequency with L = 2:3 nH, C = 1:35 pF, R = 16 ; L = 1:3 nH, R = 3:5 nH, R 0:91 pF, = 2 ; L = 5 ; C = = 4:878 mS, R = 50 single-ended, R = 50 ; R = 100 g differential. For the purposes of the noise ﬁgure comparison it was assumed that the hold ...",
+        "key_specs": [
+          "50 v"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.2,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Simulated inductor transient voltage amplitude at transistor drain versus clock transition time with a 60 ﬁnger switch device with various inductor series resistances (L = 4:3 nH, C = 1 pF, W = 2:5 \u0016m, L = 0:18 \u0016m, = 1 mA, f = 100 MHz, f = 2:4 GHz). i",
+      "caption_bbox": [
+        39.6,
+        275.8,
+        290.7,
+        310.6
+      ],
+      "section_title": "III. DISCUSSION OF TRANSIENTS DUE TO CLOCK TRANSITIONS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "DISCUSSION OF TRANSIENTS DUE TO CLOCK TRANSITIONS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "The simulated magnitude of the worst case transient voltage across the inductor versus clock transition time is shown in Fig. 7."
+        },
+        {
+          "section_title": "DISCUSSION OF TRANSIENTS DUE TO CLOCK TRANSITIONS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "The settling time depends most strongly on the previously sampled Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "GHz CMOS Sub-Sampling Mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, if",
+        "sub_blocks": [
+          "inductor",
+          "transistor/MOSFET",
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simulated inductor transient voltage amplitude at transistor drain versus clock transition time with a 60 ﬁnger switch device with various inductor series resistances (L = 4:3 nH, C = 1 pF, W = 2:5 \u0016m, L = 0:18 \u0016m, = 1 mA, f = 100 MHz, f = 2:4 GHz). i",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. Worst case track mode settling times versus inductor series resistance = 1 pF, W = for various numbers of switch device ﬁngers (L = 4:3 nH, C = 10 ps, i = 1 mA, f = 100 MHz, 2:5 \u0016m, L = 0:18 \u0016m, t ; t = 2:413 GHz). f",
+      "caption_bbox": [
+        302.6,
+        277.5,
+        553.7,
+        312.4
+      ],
+      "section_title": "III. DISCUSSION OF TRANSIENTS DUE TO CLOCK TRANSITIONS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "DISCUSSION OF TRANSIENTS DUE TO CLOCK TRANSITIONS",
+          "section_kind": "results",
+          "page": 2,
+          "sentence": "Fig. 8 shows the simulated worst case time for the output to settle to within 10% of its ﬁnal amplitude for the circuit previously described in this section (the number of switch ﬁngers is now varied from 10 to 40 and the clock transition time is left at 10 ps)."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "(The of the tank load without the sampling switches is 10; when the sampling switches are added, the is reduced to 5; and when the buffers are added, the drops to 4.7.) However, the output buffers have less than unity gain and IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 11, NOVEMBER 2005 Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "GHz CMOS Sub-Sampling Mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, if",
+        "sub_blocks": [
+          "inductor",
+          "LC tank / resonator",
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Worst case track mode settling times versus inductor series resistance = 1 pF, W = for various numbers of switch device ﬁngers (L = 4:3 nH, C = 10 ps, i = 1 mA, f = 100 MHz, 2:5 \u0016m, L = 0:18 \u0016m, t ; t = 2:413 GHz). f",
+        "key_specs": [
+          "10%",
+          "10 ps"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. Clock buffer schematic.",
+      "caption_bbox": [
+        38.1,
+        230.8,
+        143.5,
+        238.8
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "A three stage clock buffer with a 5 V supply was used to generate the clock signals for the nMOS and pMOS switches. 3.3 V devices were used throughout the buffer in such a way that the PEKAU AND HASLETT: A 2.4 GHz CMOS SUB-SAMPLING MIXER WITH INTEGRATED FILTERING Fig. 9."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The schematic of the clock buffer is shown in Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "output buffer",
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Clock buffer schematic",
+        "key_specs": [
+          "5 V",
+          "3.3 V",
+          "2.4 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.79,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10. Clock buffer output signals.",
+      "caption_bbox": [
+        38.1,
+        401.6,
+        160.3,
+        409.6
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 10."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The simulated output waveforms of the clock buffer are shown in Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "GHz CMOS Sub-Sampling Mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Clock buffer output signals",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 4,
+      "caption": "Fig. 11. pads.",
+      "caption_bbox": [
+        301.1,
+        261.6,
+        326.6,
+        278.5
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "A chip microphotograph of the sub-sampling mixer including the clock buffer is shown in Fig. 11."
+        },
+        {
+          "section_title": "SIMULATION AND MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The simulated voltage loss of the buffers was 5.5 dB and the simulated power loss of the buffers Chip microphotograph (die size is 1200 \u0016m \u0002 1200 \u0016m including Fig. 11. pads."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, if",
+        "sub_blocks": [
+          "output buffer",
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "pads",
+        "key_specs": [
+          "5.5 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 4,
+      "caption": "Fig. 12. Simulated output of sub-sampling mixer.",
+      "caption_bbox": [
+        301.1,
+        450.7,
+        464.8,
+        458.7
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "SIMULATION AND MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Transient Response and Gain The simulated transient waveform of the sub-sampling mixer at the differential output of the buffers is shown in Fig. 12."
+        },
+        {
+          "section_title": "SIMULATION AND MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.3,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "section:design": 1.5,
+        "type_match:mixer": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simulated output of sub-sampling mixer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 4,
+      "caption": "Fig. 13. Measured output of sub-sampling mixer (contains sampling oscilloscope artifacts—see Fig. 14 and Section V).",
+      "caption_bbox": [
+        301.1,
+        672.6,
+        552.2,
+        689.6
+      ],
+      "section_title": "V. SIMULATION AND MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "SIMULATION AND MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 13."
+        },
+        {
+          "section_title": "SIMULATION AND MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The measured differential transient waveform at the output of the buffers is shown in Figs. 13 and 14."
+        },
+        {
+          "section_title": "SIMULATION AND MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "In Fig. 13, the output appears to go to zero during the track phase."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.8,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "type_match:mixer": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Measured output of sub-sampling mixer (contains sampling oscilloscope artifacts—see Fig. 14 and Section V)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 5,
+      "caption": "Fig. 14. Measured output of sub-sampling mixer.",
+      "caption_bbox": [
+        39.6,
+        274.3,
+        202.4,
+        282.3
+      ],
+      "section_title": "V. SIMULATION AND MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "SIMULATION AND MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Measured output of sub-sampling mixer (contains sampling oscilloscope artifacts—see Fig. 14 and Section V). was 3 dB."
+        },
+        {
+          "section_title": "SIMULATION AND MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "If a smaller time scale is used then the output Fig. 14."
+        },
+        {
+          "section_title": "SIMULATION AND MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Measured output of sub-sampling mixer. no longer appears to go to zero during the track phase, as shown in Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.8,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "type_match:mixer": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Measured output of sub-sampling mixer",
+        "key_specs": [
+          "3 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 5,
+      "caption": "Fig. 15. Measured output spectrum of sub-sampling mixer.",
+      "caption_bbox": [
+        302.6,
+        295.1,
+        496.4,
+        303.0
+      ],
+      "section_title": "V. SIMULATION AND MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "SIMULATION AND MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The measured output spectrum of the sub-sampling mixer is shown in Fig. 15."
+        },
+        {
+          "section_title": "SIMULATION AND MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 11, NOVEMBER 2005 Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "type_match:mixer": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Measured output spectrum of sub-sampling mixer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 5,
+      "caption": "Fig. 16. Simulated and measured S11 of sub-sampling mixer.",
+      "caption_bbox": [
+        302.6,
+        532.7,
+        504.2,
+        540.6
+      ],
+      "section_title": "V. SIMULATION AND MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "SIMULATION AND MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "S11 and S22 The simulated and measured input reﬂection coefﬁcients of the sub-sampling mixer are shown in Fig. 16."
+        },
+        {
+          "section_title": "SIMULATION AND MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -5.2,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "type_match:mixer": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simulated and measured S11 of sub-sampling mixer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 6,
+      "caption": "Fig. 17.",
+      "caption_bbox": [
+        301.1,
+        274.7,
+        325.7,
+        282.7
+      ],
+      "section_title": "V. SIMULATION AND MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "SIMULATION AND MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The measured and simulated and of the sub-sampling mixer are shown in Figs. 17 and 18 respectively."
+        },
+        {
+          "section_title": "SIMULATION AND MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "mixer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 6,
+      "caption": "Fig. 18. Measured and simulated 1 dB compression point of sub-sampling mixer.",
+      "caption_bbox": [
+        301.1,
+        503.9,
+        552.2,
+        520.8
+      ],
+      "section_title": "V. SIMULATION AND MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "SIMULATION AND MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 18."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -5.6,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "type_match:mixer": 2.0,
+        "references": 0.4
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS",
+        "application_domain": "rf, radio frequency, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Measured and simulated 1 dB compression point of sub-sampling mixer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 3,
+  "warnings": []
+}

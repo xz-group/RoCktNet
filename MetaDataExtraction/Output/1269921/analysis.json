@@ -1,0 +1,856 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1269921.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1269921",
+  "generated_at": "2026-07-29T22:01:34",
+  "paper_metadata": {
+    "title": "A 2.4-GHz Ring-Oscillator-Based CMOS Frequency Synthesizer With a Fractional Divider Dual-PLL Architecture",
+    "authors": [
+      "Zhinian Shu",
+      "Ka Lok Lee",
+      "Bosco H. Leung"
+    ],
+    "abstract": "A 2.4-GHz frequency synthesizer was designed that uses a fractional divider to drive a dual-phase-locked-loop (PLL) loop filter, which makes the filter significantly more complistructure, with both PLLs using only on-chip ring oscillators. The cated. A second issue with fractional division arises because first-stage narrow-band PLL acts as a spur filter while the secondthere can be large transient phase error. Once again, since stage wide-band PLL suppresses VCO phase noise so that simultraditional fractional division approaches have the fractional taneous suppression of phase noise and spur is achieved. A new divider embedded inside the PLL, such large phase error can low-power, low-noise, low-frequency ring oscillator is designed for this narrow-band PLL. The chip was designed in 0.35m CMOS temporarily put the PLL out of lock. technology and achieves a phase noise of 97 dBc/Hz at 1-MHz In this paper, an alternative fractional division approach offset and spurs of 55 dBc. The chip’s output frequency varies whose fractional divider is outside the PLL is adopted. This from 2.4 to 2.5 GHz; the chip consumes 15 mA from a 3.3-V supply approach is presented in Section II. We then show how the and occupies 3.7 mm . approach solves the above issues. The critical design issues",
+    "keywords": [
+      "Frequency synthesizer",
+      "jitter",
+      "phase-locked loop"
+    ],
+    "doi": "10.1109/JSSC.2003.822896",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2004
+  },
+  "paper_circuit_context": {
+    "circuit_type": "2.4-GHz Ring-Oscillator-Based CMOS Frequency Synthesizer",
+    "technology": "CMOS",
+    "application_domain": "wireless, if",
+    "sub_blocks": [
+      "transistor/MOSFET",
+      "cross-coupled pair",
+      "current source",
+      "switch",
+      "differential pair",
+      "latch"
+    ],
+    "design_purpose": "This from 2.4 to 2.5 GHz; the chip consumes 15 mA from a 3.3-V supply approach is presented in Section II.",
+    "function_summary": "2.4-GHz Ring-Oscillator-Based CMOS Frequency Synthesizer: This from 2.4 to 2.5 GHz; the chip consumes 15 mA from a 3.3-V supply approach is presented in Section II.",
+    "key_specs": [
+      "97 dBc/Hz",
+      "55 dBc",
+      "2.5 GHz",
+      "5J",
+      "256 MHz",
+      "1 MHz",
+      "150 MHz",
+      "2 kHz",
+      "62.5 kHz",
+      "4 MHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "W ITH THE advent of wireless LAN, there is a need for low-cost frequency synthesizers whose close-in phase noise requirement is less stringent than that required in more conventional standards such as GSM. Thus, frequency synthesizers using fully integrated voltage-controlled oscillators (VCOs), such as the ring oscillator, are becoming more attractive [1], [2]. The phase noise performance of a ri ..."
+    },
+    {
+      "number": "II",
+      "title": "ARCHITECTURE",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "A. Functional Description The proposed architecture is shown in Fig. 1(a). It starts with a fractional divider (FD) which is used to generate the reference frequencies of the channels. By the nature of the FD, these reference frequencies contain spurs. To remove/suppress these spurious tones, a variable center frequency filter implemented using a PLL is adopted. This PLL uses a narrow-band loop fi ..."
+    },
+    {
+      "number": "III",
+      "title": "DESIGN ISSUES",
+      "kind": "design",
+      "page": 1,
+      "text_preview": "Major design issues for this synthesizer—phase noise, spurs, and power consumption—will now be presented. First, an equation that relates the spurious and phase noise sources to the output spectrum via the two PLL transfer functions is given. A. Detailed Discussion of Advantage Over Conventional Architecture We will start by redrawing Fig. 1(a) using a linearized model for the two PLL stages. The  ..."
+    },
+    {
+      "number": "IV",
+      "title": "CIRCUIT IMPLEMENTATION",
+      "kind": "design",
+      "page": 4,
+      "text_preview": "Most of the components are implemented in a differential fashion to provide better immunity to supply and substrate noise. The functionality and implementation of each of the major building blocks are outlined below. A. Phase Frequency Detector The logic diagram of the implementation of the phase frequency detector (PFD) is shown in Fig. 6. Current mode logic (CML) is employed to take advantage of ..."
+    },
+    {
+      "number": "V",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 8,
+      "text_preview": "The synthesizer has been implemented in 0.35m CMOS technology. The chip microphotograph is shown in Fig. 11. The . The FD is on the left, the chip has an active area of 3.7 mm NBPLL in the middle, and the WBPLL on the right, all isolated by guard rings. Fig. 12 is the phase noise plot of the synthesizer for a 2.4-GHz output. Fig. 12(a) shows the phase noise measurement versus offset frequency at t ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 9,
+      "text_preview": "The design of a 2.4-GHz ring-oscillator-based CMOS frequency synthesizer using a fractional divider dual-PLL architecture is presented. The dual-loop architecture allows fractional division and uses only an on-chip ring oscillator. A new ring oscillator is designed for the narrow-band low-frequency PLL. 97 dBc/Hz at 1-MHz offset and spurs of A phase noise of 55 dBc is achieved. ACKNOWLEDGMENT The  ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1.",
+      "caption_bbox": [
+        38.1,
+        271.8,
+        58.5,
+        279.7
+      ],
+      "section_title": "II. ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Functional Description The proposed architecture is shown in Fig. 1(a)."
+        },
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Block-Level Design Fig. 1(b) shows the frequency planning for the architecture."
+        },
+        {
+          "section_title": "ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 1."
+        },
+        {
+          "section_title": "DESIGN ISSUES",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Detailed Discussion of Advantage Over Conventional Architecture We will start by redrawing Fig. 1(a) using a linearized model for the two PLL stages."
+        },
+        {
+          "section_title": "DESIGN ISSUES",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "For the synthesizer multiples of in Fig. 1(b), spurs will be at multiples of 62.5-kHz offset from 150 MHz."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.0,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "phase-locked loop (PLL)",
+        "key_specs": [
+          "150 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.5,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 2,
+      "caption": "Fig. 2.",
+      "caption_bbox": [
+        39.6,
+        441.6,
+        60.3,
+        449.5
+      ],
+      "section_title": "III. DESIGN ISSUES",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN ISSUES",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The resulting block diagram is shown in Fig. 2(a)."
+        },
+        {
+          "section_title": "DESIGN ISSUES",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "We now refer to Fig. 2(a) and present the design equation for phase noise and spurs at the output of the WBPLL: (5) where spectrum at the output of the WBPLL; reference transfer function of the WBPLL; reference transfer function of the NBPLL; spectrum at the output of the FD; VCO transfer function of the NBPLL; spectrum at the output of NBVCO; VCO transfer function of the WBPLL; spectrum at the output of WBVCO."
+        },
+        {
+          "section_title": "DESIGN ISSUES",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Using (5), the typically expected spectra at different nodes of the synthesizer can be obtained and are shown in Fig. 2(b)."
+        },
+        {
+          "section_title": "DESIGN ISSUES",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 2."
+        },
+        {
+          "section_title": "DESIGN ISSUES",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The spectrum at output of FD is shown in Fig. 2(b.i) where considerable spurs are expected."
+        },
+        {
+          "section_title": "DESIGN ISSUES",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "This is removed by the NBPLL, as shown in Fig. 2(b.ii)."
+        },
+        {
+          "section_title": "DESIGN ISSUES",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Meanwhile, the NBPLL output is fed to the WBPLL whose expected output spectrum is shown in Fig. 2(b.iii)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.5,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "voltage-controlled oscillator (VCO)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.38,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 3,
+      "caption": "Fig. 3. Saturated and unsaturated VCO output.",
+      "caption_bbox": [
+        301.1,
+        245.9,
+        456.2,
+        253.8
+      ],
+      "section_title": "III. DESIGN ISSUES",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN ISSUES",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Under the same power consumption, the following subsections explain two reasons that make the low-frequency VCO’s smaller than the high-frequency phase noise multiplied by VCO phase noise. 1) Saturated Versus Unsaturated Outputs [7], [8]: Fig. 3 shows output waveforms of the high-frequency and low-frequency VCOs."
+        },
+        {
+          "section_title": "DESIGN ISSUES",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "From [7], it is shown that phase noise of a delay cell is proportional to turn-on time Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Saturated and unsaturated VCO output",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 4,
+      "caption": "Fig. 4. Comparisons of the high-frequency unsaturated oscillator and the low-frequency saturated oscillator with the same noise level. Resolution bandwidth is 1 MHz. Noise is intentionally increased 1000 in simulations for both (a) and (b) to make the noise floor above the numerical floor. = 1 GHz. (b) Low-frequency (a) High-frequency unsaturated VCO, f = 1=16 GHz. For comparison, the PSD plot is scaled up in saturated VCO, f = 1 GHz. frequency by 16, so that f",
+      "caption_bbox": [
+        39.6,
+        434.9,
+        290.7,
+        496.8
+      ],
+      "section_title": "III. DESIGN ISSUES",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN ISSUES",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The results are shown in Fig. 4."
+        },
+        {
+          "section_title": "DESIGN ISSUES",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Therefore, according to (6), the phase noise of the high-frequency VCO is again more than that of the low-frequency VCO multiplied . by (a) (b) Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "type_match:oscillator": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Comparisons of the high-frequency unsaturated oscillator and the low-frequency saturated oscillator with the same noise level. Resolution bandwidth is 1 MHz. Noise is intentionally increased 1000 in simulations for both (a) and (b) to make the noise floor above the numerical floor. = 1 GHz. (b) Low-frequency (a) ...",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.48,
+      "warnings": [
+        "Recommended figure caption does not explicitly mention a schematic/topology/circuit; please confirm manually.",
+        "Recommended figure was classified as 'other', not a schematic; manual confirmation strongly recommended."
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 4,
+      "caption": "Fig. 5. Conventional source-coupled pair delay cell.",
+      "caption_bbox": [
+        302.6,
+        311.7,
+        474.3,
+        319.7
+      ],
+      "section_title": "III. DESIGN ISSUES",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN ISSUES",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "One approach of doing that is presented in Section IV-C. 2) Increased Slew Rate: The delay cell used in [5] has a form similar to the SCP shown in Fig. 5."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 3, MARCH 2004 Fig. 5."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The 2.4-GHz high-frequency VCO uses a three-stage ring oscillator with a conventional fully differential delay cell as shown in Fig. 5 [5]."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 8 shows the proposed delay cell for the three-stage VCO2. , ) is In this proposed delay cell, a cross-coupled circuit ( added to the differential delay cell shown in Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.1,
+      "relevance_breakdown": {
+        "-conventional": -3.0,
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "delay line / delay element",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "cross-coupled pair"
+        ],
+        "design_purpose": "Fig. 8 shows the proposed delay cell for the three-stage VCO2. , ) is In this proposed delay cell, a cross-coupled circuit ( added to the differential delay cell shown in Fig. 5.",
+        "function_summary": "Conventional source-coupled pair delay cell. Fig. 8 shows the proposed delay cell for the three-stage VCO2. , ) is In this proposed delay cell, a cross-coupled circuit ( added to the differential delay cell shown in Fig. 5.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "Fig. 6. Phase frequency detector.",
+      "caption_bbox": [
+        302.6,
+        527.8,
+        413.6,
+        535.8
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Phase Frequency Detector The logic diagram of the implementation of the phase frequency detector (PFD) is shown in Fig. 6."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "2.4-GHz Ring-Oscillator-Based CMOS Frequency Synthesizer",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Phase frequency detector",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 5,
+      "caption": "Fig. 7.",
+      "caption_bbox": [
+        38.1,
+        500.4,
+        58.8,
+        508.3
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Charge Pump and Loop Filter The charge-pump (CP) circuit is implemented as shown in Fig. 7 [10]."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The core of the CP is implemented as shown in Fig. 7(a)."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "This is done by generating the control voltage of Fig. 7(a) by the circuit shown in Fig. 7(b)."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The voltage in Fig. 7(b) sets the output common-mode voltage to . , , , and are the external biases set up for the charge-pump core and CMFB circuit."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 7. 150 dBc/Hz and 226 dBc/Hz at 1-MHz offset to the phase noise at the output of the two PLLs, respectively."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.5,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "phase-locked loop (PLL)",
+        "key_specs": [
+          "150 dBc/Hz",
+          "226 dBc/Hz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.38,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 6,
+      "caption": "Fig. 8. Novel delay cell for VCO2.",
+      "caption_bbox": [
+        39.6,
+        371.5,
+        158.2,
+        379.5
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Due to high-frequency operation, this VCO operates in an unsaturated mode. 2) Low-Frequency VCO2: The 150-MHz low-frequency VCO, VCO2, as discussed in Section III-B, needs to remain Fig. 8."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 8 shows the proposed delay cell for the three-stage VCO2. , ) is In this proposed delay cell, a cross-coupled circuit ( added to the differential delay cell shown in Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "delay line / delay element",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [
+          "cross-coupled pair"
+        ],
+        "design_purpose": "Fig. 8 shows the proposed delay cell for the three-stage VCO2. , ) is In this proposed delay cell, a cross-coupled circuit ( added to the differential delay cell shown in Fig. 5.",
+        "function_summary": "Novel delay cell for VCO2. Fig. 8 shows the proposed delay cell for the three-stage VCO2. , ) is In this proposed delay cell, a cross-coupled circuit ( added to the differential delay cell shown in Fig. 5.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 7,
+      "caption": "Fig. 9.",
+      "caption_bbox": [
+        38.1,
+        296.8,
+        59.0,
+        304.8
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "As shown in Fig. 9, this causes the low-to-high transition."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "To be precise, occurs when starts to decrease, as shown in Fig. 9."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The two different phases can be seen in Fig. 9."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 9. in a VCO2 with a different frequency of oscillation while main- , , taining the same phase noise."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.1,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "2.4-GHz Ring-Oscillator-Based CMOS Frequency Synthesizer",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": [
+          "2 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.29,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 8,
+      "caption": "Fig. 10. Digital fractional divider.",
+      "caption_bbox": [
+        39.6,
+        226.1,
+        153.6,
+        234.0
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The accumulator is shown in Fig. 10."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "The choice of used. is a tradeoff between designing digital hardware at 0.35m Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Digital fractional divider",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 8,
+      "caption": "Fig. 11. Chip microphotograph.",
+      "caption_bbox": [
+        39.6,
+        439.1,
+        147.1,
+        447.1
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 4,
+          "sentence": "Fig. 11."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "The chip microphotograph is shown in Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "2.4-GHz Ring-Oscillator-Based CMOS Frequency Synthesizer",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chip microphotograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 8,
+      "caption": "Fig. 12. Phase noise plot for a 2.4-GHz output. (a) NBPLL phase noise plot. (b) WBPLL phase noise plot.",
+      "caption_bbox": [
+        302.6,
+        427.2,
+        553.7,
+        444.1
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "Fig. 12 is the phase noise plot of the synthesizer for a 2.4-GHz output."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "Fig. 12(a) shows the phase noise measurement versus offset frequency at the NBPLL output."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "The WBPLL phase noise measurement is shown in Fig. 12(b) where the bandwidth of the WBPLL is at around 4 MHz."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "This output frequency gives the worst IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 3, MARCH 2004 (a) (b) Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.6,
+      "relevance_breakdown": {
+        "-phase noise": -2.5,
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "frequency synthesizer",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Phase noise plot for a 2.4-GHz output. (a) NBPLL phase noise plot. (b) WBPLL phase noise plot",
+        "key_specs": [
+          "4 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.03,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 9,
+      "caption": "Fig. 13. Worst case spur plot obtained at output of 2.439 GHz. (a) FD output",
+      "caption_bbox": [
+        38.1,
+        663.3,
+        289.2,
+        671.2
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "Fig. 13 shows the spur from the various nodes for a output frequency of 2.439 GHz."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "In Fig. 13(c), this worst case spur is seen 55 dBc and at an offset of 62.5 kHz."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "(c) WBPLL output showing spurs at 55 dBc Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.2,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "2.4-GHz Ring-Oscillator-Based CMOS Frequency Synthesizer",
+        "technology": "CMOS",
+        "application_domain": "wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Worst case spur plot obtained at output of 2.439 GHz. (a) FD output",
+        "key_specs": [
+          "2.439 GHz",
+          "55 dBc",
+          "62.5 kHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 4,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

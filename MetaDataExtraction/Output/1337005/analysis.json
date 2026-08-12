@@ -1,0 +1,799 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1337005.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1337005",
+  "generated_at": "2026-07-29T21:31:47",
+  "paper_metadata": {
+    "title": "A 5–6-GHz Bipolar Quadrature-Phase Generator",
+    "authors": [
+      "Aichin Chung",
+      "John R. Long"
+    ],
+    "abstract": "A wide-band fully monolithic quadrature-phase generator is implemented. It consists of a bipolar frequency doubler 40 dB (limited by phase and amplitude errors in a transceiver). with differential outputs and a regenerative divider with 5 mVrms This can be improved by increasing the number of filter stages, maximum sensitivity. Measured residual phase noise is 0.5 dB but comes at the cost of increased chip area and insertion loss. for offsets between 100 Hz and 100 kHz in the 5–6-GHz band, limAn I-Q VCO requires double the chip area and can more ited by the resolution of the measurement equipment. An electronic than double the power consumption of a single-stage oscilphase tuning circuit controls the I/Q phase error to 15 of tuning range with 0.033 mV sensitivity. Unwanted harmonics are suplator/buffer. More importantly, however, the power consumption pressed by over 40 dB within the working range of the multiplier. of quadrature oscillators cannot be optimized independent of 0.11 mm2, and The test circuit occupies an active area of 0.26 phase noise considerations [3]. In a properly designed differenconsumes 23 mW from a 2.7-V supply. tial Colpitts oscillator, an impulse of current is delivered to the",
+    "keywords": [
+      "Frequency division",
+      "frequency multiplication"
+    ],
+    "doi": "10.1109/JSSC.2004.833755",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2004
+  },
+  "paper_circuit_context": {
+    "circuit_type": "voltage-controlled oscillator (VCO)",
+    "technology": "CMOS, BICMOS, SIGE",
+    "application_domain": "rf, wireless, wlan",
+    "sub_blocks": [
+      "LC tank / resonator",
+      "output buffer",
+      "mixer",
+      "varactor",
+      "inductor",
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "current source",
+      "transmission line",
+      "balun",
+      "bias circuit",
+      "differential pair",
+      "latch"
+    ],
+    "design_purpose": "",
+    "function_summary": "voltage-controlled oscillator (VCO): A wide-band fully monolithic quadrature-phase generator is implemented.",
+    "key_specs": [
+      "40 dB",
+      "5 mV",
+      "0.5 dB",
+      "100 Hz",
+      "100 kHz",
+      "0.033 mV",
+      "0.26 ph",
+      "23 mW",
+      "300 MHz",
+      "83.5 MHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "W IRELESS local area networks (WLANs) are projected to steadily increase in number and in the data trafﬁc they handle over the coming decade. With products already operating in the congested 2.4-GHz ISM band, broadband WLAN development is now also aimed at operation in the 5–6-GHz band. In addition to higher data rates, the cumulatively larger available spectrum—300 MHz for IEEE 802.11a in the 5–6 ..."
+    },
+    {
+      "number": "II",
+      "title": "FREQUENCY MULTIPLIER",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "Frequency multipliers and dividers provide system design ﬂexibility on an RF IC by eliminating the need to redesign an existing local oscillator. For example, an oscillator designed for a portable handset at 900 MHz could be reused in a 1800-MHz 2 from 900 to design by doubling the original frequency ( 1800 MHz). For handheld devices, power consumption, spurious outputs, and chip area used to impl ..."
+    },
+    {
+      "number": "III",
+      "title": "MULTIPLIER SUPPLY DECOUPLING",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "Proper supply decoupling is important for the multiplier as there is little attenuation between the supply pins and the output. Without adequate decoupling, the double frequency component can couple via either power or ground supplies to other circuit blocks. Also, stray signals entering the core circuit may corrupt the balanced differential output. Despite the desire for large capacitance values  ..."
+    },
+    {
+      "number": "IV",
+      "title": "FREQUENCY DIVIDER",
+      "kind": "other",
+      "page": 4,
+      "text_preview": "Both digital dividers using sequential logic and analog circuits based on multiplication-with-feedback loops are commonly used for frequency division. A digital divide-by-two output requires a single D-type ﬂip-ﬂop with the inverting fed back to the D input. The ﬂip-ﬂop is typically implemented in a master/slave topology using current steering logic (such as emitter-coupled bipolar or source-coupl ..."
+    },
+    {
+      "number": "V",
+      "title": "INTEGRATED I/Q GENERATOR",
+      "kind": "other",
+      "page": 6,
+      "text_preview": "The frequency multiplier and divider cascade were integrated together to investigate the overall phase noise behavior. This design was also fabricated in IBM’s SiGe BiCMOS-7HP technology. The frequency multiplier and divider cascade, or quadrature phase generator, occupies an active chip area of 0.11 mm . A photomicrograph of the test chip showing 0.26 the multiplier and divider blocks appears in  ..."
+    },
+    {
+      "number": "VI",
+      "title": "SUMMARY",
+      "kind": "conclusion",
+      "page": 8,
+      "text_preview": "The cascade of a new wide-band frequency multiplier and a regenerative divide-by-2 with quadrature outputs exploits the high input sensitivity and low power properties of the analog divider. The cascade allows precise phase adjustment for maximum sideband suppression in a 5–6-GHz radio transceiver application and results in minimal residual phase noise at the output. The LO source chain presented  ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Quadrature phase generation in an upconverter.",
+      "caption_bbox": [
+        39.6,
+        216.2,
+        219.6,
+        224.1
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "A wide-band frequency multiplier and regenerative divider in cascade (see Fig. 1) is potentially a low-power, small chip area solution for generating quadrature signals in a wireless transceiver."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The potential for low-power operation was proven in [5], where a SiGe bipolar regenerative multiplier with quadrature Fig. 1."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "The test circuits (shown as the shaded blocks in Fig. 1) are designed m SiGe BiCMOS technology."
+        },
+        {
+          "section_title": "FREQUENCY MULTIPLIER",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fully Differential Wide-Band Multiplier The wide-band frequency multiplier shown in Fig. 2 was developed to generate a 10–12-GHz differential signal (as in Fig. 1) on-chip."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.1,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, wireless, wlan",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Quadrature phase generation in an upconverter",
+        "key_specs": [
+          "2 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.05,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Schematic of the differential frequency doubler with diode loads.",
+      "caption_bbox": [
+        302.6,
+        243.6,
+        538.9,
+        251.6
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "FREQUENCY MULTIPLIER",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Monolithic Multipliers Traditional methods of microwave frequency doubling apply energy to a nonlinear passive device such as a varactor or step recovery diode in order to generate harmonics that are then ﬁltered IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 10, OCTOBER 2004 Fig. 2."
+        },
+        {
+          "section_title": "FREQUENCY MULTIPLIER",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fully Differential Wide-Band Multiplier The wide-band frequency multiplier shown in Fig. 2 was developed to generate a 10–12-GHz differential signal (as in Fig. 1) on-chip."
+        },
+        {
+          "section_title": "FREQUENCY MULTIPLIER",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Differential pair , in Fig. 2 generates mainly even-order harmonics."
+        },
+        {
+          "section_title": "FREQUENCY MULTIPLIER",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "For a sinusoidal (differenconsisting of dc and ac components tial-mode) input voltage (i.e., ) across the base-emitter of eior in Fig. 2, the collector current is ther (1) is the dc bias current and is the ratio of peak input Here, to the transistor thermal voltage, . gives the collector Expansion of the exponential current for (2) are modiﬁed Bessel functions of the ﬁrst kind [13]. where The output at each harmonic is proportional to the dc bias cur- , since the ac differential output rent and input amplitude , is voltage (3) and is the timeThe resistance of the diode loads is varying part of (2). and ﬂow through each In Fig. 2, the dc currents of both diode load."
+        },
+        {
+          "section_title": "FREQUENCY MULTIPLIER",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "If 0.18m MOS devices were substituted for the transistors in the doubler circuit, the supply voltage range is approxof 0.3 V for the MOSFETs imately the same, assuming a , in Fig. 2)."
+        },
+        {
+          "section_title": "FREQUENCY MULTIPLIER",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Although the multiplier core can still generate doubled frequency outputs for inputs as low as 20 MHz and as high as 100 GHz, the output amplitude at these . frequencies is on the order of 15 mV The biasing circuit for the bases of transistors and is and form a current also shown in Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.5,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:intro": -0.5,
+        "references": 2.0
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "frequency multiplier",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, wireless, wlan",
+        "sub_blocks": [
+          "varactor",
+          "transistor/MOSFET",
+          "bias circuit",
+          "differential pair"
+        ],
+        "design_purpose": "Monolithic Multipliers Traditional methods of microwave frequency doubling apply energy to a nonlinear passive device such as a varactor or step recovery diode in order to generate harmonics that are then ﬁltered IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 10, OCTOBER 2004 Fig. 2.",
+        "function_summary": "Schematic of the differential frequency doubler with diode loads. Monolithic Multipliers Traditional methods of microwave frequency doubling apply energy to a nonlinear passive device such as a varactor or step recovery diode in order to generate harmonics that are then ﬁltered IEEE JOURNAL OF SOLID-STATE CIRCUITS, ...",
+        "key_specs": [
+          "2 w",
+          "0.3 V",
+          "20 MHz",
+          "100 GHz",
+          "15 mV"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.94,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 3,
+      "caption": "Fig. 3. Open-collector output buffer.",
+      "caption_bbox": [
+        39.6,
+        243.4,
+        161.8,
+        251.4
+      ],
+      "section_title": "II. FREQUENCY MULTIPLIER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FREQUENCY MULTIPLIER",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Diodes Fig. 3."
+        },
+        {
+          "section_title": "FREQUENCY MULTIPLIER",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "The open-collector output buffer (shown in Fig. 3) followed by an consists of differential pair buffer open-collector output pair ."
+        },
+        {
+          "section_title": "FREQUENCY DIVIDER",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "A standalone test circuit for the divider was built and tested. measuring inIn order to interface the divider outputs to 50struments, the open collector buffer stage of Fig. 3 is used."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, wireless, wlan",
+        "sub_blocks": [
+          "output buffer",
+          "differential pair"
+        ],
+        "design_purpose": "A standalone test circuit for the divider was built and tested. measuring inIn order to interface the divider outputs to 50struments, the open collector buffer stage of Fig. 3 is used.",
+        "function_summary": "Open-collector output buffer. A standalone test circuit for the divider was built and tested. measuring inIn order to interface the divider outputs to 50struments, the open collector buffer stage of Fig. 3 is used.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 3,
+      "caption": "Fig. 4. Measured phase noise of source at 2.75 and 5.5 GHz compared to multiplier output for 2.75-GHz input.",
+      "caption_bbox": [
+        302.6,
+        257.9,
+        553.7,
+        274.9
+      ],
+      "section_title": "II. FREQUENCY MULTIPLIER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FREQUENCY MULTIPLIER",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Measurements of the multiplier’s phase noise output at 5.5 GHz are plotted in Fig. 4 along with the noise of the input source at 2.75 and 5.5 GHz."
+        },
+        {
+          "section_title": "FREQUENCY MULTIPLIER",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 10, OCTOBER 2004 Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-phase noise": -2.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "frequency multiplier",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, wireless, wlan",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured phase noise of source at 2.75 and 5.5 GHz compared to multiplier output for 2.75-GHz input",
+        "key_specs": [
+          "5.5 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Differential output power versus input power in dBm for the standalone = 6:0 GHz. multiplier test circuit for f",
+      "caption_bbox": [
+        302.6,
+        480.4,
+        553.7,
+        497.3
+      ],
+      "section_title": "III. MULTIPLIER SUPPLY DECOUPLING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FREQUENCY MULTIPLIER",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 5 displays the strong harmonic suppression of the multiplier at 6-GHz input."
+        },
+        {
+          "section_title": "FREQUENCY MULTIPLIER",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-output power": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "frequency multiplier",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, wireless, wlan",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Differential output power versus input power in dBm for the standalone = 6:0 GHz. multiplier test circuit for f",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "Fig. 6.",
+      "caption_bbox": [
+        38.1,
+        155.9,
+        59.0,
+        163.9
+      ],
+      "section_title": "III. MULTIPLIER SUPPLY DECOUPLING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MULTIPLIER SUPPLY DECOUPLING",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "For example, decoupling the at 10 GHz 10–12-GHz doubled signal with a reactance of 1 m of chip area requires a 16-pF on-chip capacitor and 32 000 m . at a density of 0.5 fF As an alternative, the series LC ﬁlter shown in Fig. 6 was developed."
+        },
+        {
+          "section_title": "MULTIPLIER SUPPLY DECOUPLING",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 6."
+        },
+        {
+          "section_title": "MULTIPLIER SUPPLY DECOUPLING",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "For a 10–12-GHz application, the inductance value required when using a 0.5-pF capacitor is nH (7) GHz pF For space saving purposes, the inductance is implemented using betwo microstrip lines as shown in Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, wireless, wlan",
+        "sub_blocks": [
+          "capacitor",
+          "transmission line"
+        ],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": [
+          "10 GHz",
+          "0.5 fF",
+          "6 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. Regenerative frequency division.",
+      "caption_bbox": [
+        301.1,
+        330.5,
+        435.3,
+        338.4
+      ],
+      "section_title": "III. MULTIPLIER SUPPLY DECOUPLING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FREQUENCY DIVIDER",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "A divider using the multiplier-with-feedback scheme proposed by Miller and Fortescue is shown in Fig. 7(a) [17], [18]."
+        },
+        {
+          "section_title": "FREQUENCY DIVIDER",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Lowpass components at Fig. 7."
+        },
+        {
+          "section_title": "FREQUENCY DIVIDER",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Regenerative Frequency Divider With Quadrature Outputs An extension of the multiplier-with-feedback concept that implements a divide-by-2 with quadrature outputs is shown in Fig. 7(b) [5]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, wireless, wlan",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Regenerative frequency division",
+        "key_specs": [
+          "-2 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 5,
+      "caption": "Fig. 8. Quadrature regenerative divider.",
+      "caption_bbox": [
+        39.6,
+        261.0,
+        172.0,
+        269.0
+      ],
+      "section_title": "IV. FREQUENCY DIVIDER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FREQUENCY DIVIDER",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 8."
+        },
+        {
+          "section_title": "FREQUENCY DIVIDER",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "A schematic of the quadrature divider test circuit is shown in Fig. 8."
+        },
+        {
+          "section_title": "FREQUENCY DIVIDER",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "The output voltage swing of the divider in Fig. 8 is related to (through ) and load resistor the product of the current ."
+        },
+        {
+          "section_title": "FREQUENCY DIVIDER",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "This is done in a controlled way by modifying the , in dc bias currents of the input emitter-coupled pair, or Fig. 8."
+        },
+        {
+          "section_title": "FREQUENCY DIVIDER",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "In this way, the phase delay through one stage increases, while the delay through the other stages is reduced. and (see Fig. 8), are used as variable CMOS FETs, resistors for this purpose."
+        },
+        {
+          "section_title": "INTEGRATED I/Q GENERATOR",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "The externally variable phase noise measurement at and of Fig. 8) were grounded phase-tuning voltages ( for this measurement."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, wireless, wlan",
+        "sub_blocks": [
+          "resistor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Quadrature regenerative divider",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.12,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 5,
+      "caption": "Fig. 9. versus current density for IBM 7HP SiGe bipolar transistors.",
+      "caption_bbox": [
+        302.6,
+        431.3,
+        536.8,
+        439.2
+      ],
+      "section_title": "IV. FREQUENCY DIVIDER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FREQUENCY DIVIDER",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "As a result, the output amplitude decreasesat6dBperoctaveandthephaseshiftisaweakfunctionof . frequency close to 90 The design objectives for the divider stage are: total current consumption less than 2 mA, output voltage swing of IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 10, OCTOBER 2004 f Fig. 9. versus current density for IBM 7HP SiGe bipolar transistors. 100–200 mV (differential), and an input frequency range from 9.6–12.4 GHz (or 4.8–6.2 GHz at the output)."
+        },
+        {
+          "section_title": "FREQUENCY DIVIDER",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "This gives a transistor transit fre- ) of approximately 12 GHz for the 5m-long quency (i.e., devices selected for , and , ; this is well below the of 110 GHz shown in Fig. 9, but reduces power conpeak sumption."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, wireless, wlan",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "versus current density for IBM 7HP SiGe bipolar transistors",
+        "key_specs": [
+          "6dB",
+          "200 mV",
+          "12.4 GHz",
+          "6.2 GHz",
+          "12 GHz",
+          "110 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 6,
+      "caption": "Fig. 10. Measured minimum input power versus locking range of the packaged divider test circuit.",
+      "caption_bbox": [
+        301.1,
+        236.4,
+        552.2,
+        253.3
+      ],
+      "section_title": "IV. FREQUENCY DIVIDER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FREQUENCY DIVIDER",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Measurements of the divider’s input sensitivity (see Fig. 10) show that it divides properly 16 dBm amplitude (i.e., 50 mV ) input with a (max.) at frequencies above 6 GHz."
+        },
+        {
+          "section_title": "FREQUENCY DIVIDER",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "This high sensitivity enables the divider to reliably detect the relatively small output voltage swing from Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-measured": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, wireless, wlan",
+        "sub_blocks": [],
+        "design_purpose": "This high sensitivity enables the divider to reliably detect the relatively small output voltage swing from Fig. 10.",
+        "function_summary": "Measured minimum input power versus locking range of the packaged divider test circuit. This high sensitivity enables the divider to reliably detect the relatively small output voltage swing from Fig. 10.",
+        "key_specs": [
+          "16 dBm",
+          "50 mV",
+          "6 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 6,
+      "caption": "Fig. 11. Photomicrograph of the test chip.",
+      "caption_bbox": [
+        301.1,
+        510.6,
+        441.2,
+        518.5
+      ],
+      "section_title": "IV. FREQUENCY DIVIDER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "FREQUENCY DIVIDER",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 11."
+        },
+        {
+          "section_title": "INTEGRATED I/Q GENERATOR",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "A photomicrograph of the test chip showing 0.26 the multiplier and divider blocks appears in Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-micrograph": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, wireless, wlan",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Photomicrograph of the test chip",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 7,
+      "caption": "Fig. 12. Measured phase noise of multiplier/divider cascade for a 5.5-GHz input.",
+      "caption_bbox": [
+        302.6,
+        546.3,
+        553.7,
+        563.2
+      ],
+      "section_title": "V. INTEGRATED I/Q GENERATOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTEGRATED I/Q GENERATOR",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "The measured phase noise of the quadrature generator for a 5.5-GHz input as well as the phase noise of the 5.5-GHz IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 10, OCTOBER 2004 Fig. 12."
+        },
+        {
+          "section_title": "INTEGRATED I/Q GENERATOR",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "Measured phase noise of multiplier/divider cascade for a 5.5-GHz input. source alone are shown in Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "-phase noise": -2.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "frequency divider",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, wireless, wlan",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured phase noise of multiplier/divider cascade for a 5.5-GHz input",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 2,
+  "warnings": []
+}

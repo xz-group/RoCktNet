@@ -1,0 +1,1278 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1196226.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1196226",
+  "generated_at": "2026-07-29T21:30:26",
+  "paper_metadata": {
+    "title": "A Low-Power 200-MHz Receiver for Wireless Hearing Aid Devices",
+    "authors": [
+      "Armin Deiss",
+      "Qiuting Huang"
+    ],
+    "abstract": "The design of a low-power receiver for a wireless hearing aid system working in the 174–223-MHz range and its lower data rates than needed, e.g., [4] (2.7 mA at 2.4 kb/s) or implementation in a 0.8m BiCMOS technology is shown. The [5] (6 mA at 64 kb/s). chip comprises a low-noise amplifier, an RF mixer, a variable-gain The text is structured as follows. First, some system aspects IF amplifier, and a demodulator. The latter consists of a digital of the whole hearing aid earpiece are considered, followed by a phase shifter and I/Q IF mixers, fifth-order Bessel filters, and short derivation of the receiver specifications. Then, the design dc amplifiers. Measurements demonstrate that merely 667 A is consumed for the reception of an 8-ary phase-shift keying signal of all building blocks along the receiver chain is addressed. The with a data rate of 336 kb/s. The receiver works with different RF blocks are only mentioned briefly, as they were discussed in modulation formats, including those carrying information in the detail in [3]. Afterwards, the measurement results are presented, amplitude. and finally some conclusions are drawn. Additional information",
+    "keywords": [
+      "Bessel filter",
+      "demodulator",
+      "hearing aid system"
+    ],
+    "doi": "10.1109/JSSC.2003.810055",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Low-Power 200-MHz Receiver",
+    "technology": "BICMOS",
+    "application_domain": "rf, wireless, baseband, if",
+    "sub_blocks": [
+      "inductor",
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "output buffer",
+      "mixer",
+      "bias circuit",
+      "switch",
+      "op-amp"
+    ],
+    "design_purpose": "",
+    "function_summary": "Low-Power 200-MHz Receiver: The design of a low-power receiver for a wireless hearing aid system working in the 174–223-MHz range and its lower data rates than needed, e.g., [4] (2.7 mA at 2.4 kb/s) or implementation in a 0.8m BiCMOS technology is shown.",
+    "key_specs": [
+      "2 w",
+      "16 kHz",
+      "21.4 MHz",
+      "10.7 MHz",
+      "25.5 V",
+      "23 dB",
+      "10 dB",
+      "50 dB",
+      "44 dB",
+      "3 dB"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T ECHNOLOGICAL advances have changed hearing aids from passive to active, from mechanical to electric and later electronic devices, from bulky to small, from analog to digital, and from inflexible to individually configurable systems. However, one fundamental assumption has never been questioned up to now: the hearing aid system has always consisted of one single hearing aid device. However, a bin ..."
+    },
+    {
+      "number": "II",
+      "title": "SYSTEM LEVEL CONSIDERATIONS",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "Fig. 3 shows the building blocks of the transceiver in an earpiece. Analog or digital modulation may be feasible. However, the decision to employ time division multiplexing for its potential low-power implementation ruled out analog formats. The two RF links in one system as well as those of multiple users are separated by allocating different channels. Sampling a 7-kHz audio signal at 16 kHz at a ..."
+    },
+    {
+      "number": "III",
+      "title": "RECEIVER PLANNING",
+      "kind": "other",
+      "page": 1,
+      "text_preview": "Fig. 5 shows the implemented receiver of the earpieces again, with the on-chip blocks in dark grey and the off-chip blocks in light grey. The receiver planning accounted for an important part of this work, as there were no specifications generally available for this kind of service. The signal strength at the antenna input was estimated using [10], [11] (1) mW, the antenna gain with the transmit p ..."
+    },
+    {
+      "number": "IV",
+      "title": "CIRCUIT IMPLEMENTATION",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "Fig. 7 shows the schematic diagram of the antenna equivalent circuit, RF filter, and LNA [3]. The equivalent circuit of an electrically short antenna is a resistance in series with a capacitance. , capaciIt forms the RF filter together with shunt inductor , and the input impedance of the LNA. The latter is tance in Miller configuration for low-noise controlled by resistor contribution. A two-stage ..."
+    },
+    {
+      "number": "V",
+      "title": "MEASUREMENT RESULTS",
+      "kind": "results",
+      "page": 8,
+      "text_preview": "A microphotograph of the receiver chip is shown in Fig. 17. It comprises an LNA, RF mixer, IF amplifier, demodulator, and biasing circuit. The LNA and RF mixer were placed in a corner for maximum pin count within minimum distance. All highfrequency pins could be isolated by placing ac ground pads between them, hence, minimizing crosstalk. The complete receiver, including pads with electrostatic di ..."
+    },
+    {
+      "number": "V",
+      "title": "Blocking performance was measured by applying a 25-dB",
+      "kind": "results",
+      "page": 9,
+      "text_preview": "reference input signal along with a blocker signal that is swept through the neighboring channels for worst case performance. Its level is increased until a 1-dB drop of the reference signal is detected. Worst case performance is determined at 200.4 MHz, where the closest channel is located. IF filter performance is V is 2 dB higher than the still low there. The result of 69 dB V. See Fig. 21 for  ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 10,
+      "text_preview": "Thanks to optimization on different levels, the implemented 200-MHz receiver for high data rates of 336-kb/s drains merely A while excellent performance is preserved. This confirms that in terms of power and size, miniaturized wireless hearing aids are feasible. Together with the previously implemented prescaler and VCO with buffer [3], even an overall current consumption of receiver and synthesiz ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Noise reduction principle.",
+      "caption_bbox": [
+        39.6,
+        190.0,
+        152.4,
+        200.7
+      ],
+      "section_title": "II. SYSTEM LEVEL CONSIDERATIONS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Employing can be a configuration as shown in Fig. 1, noise from source due to their difference in separated from the signal of source to microphones M and M [1]–[3]. propagation delay The link between the two earpieces is most conveniently established wirelessly."
+        },
+        {
+          "section_title": "SYSTEM LEVEL CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Low-Power 200-MHz Receiver",
+        "technology": "BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Noise reduction principle",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. System configuration.",
+      "caption_bbox": [
+        39.6,
+        346.7,
+        139.0,
+        357.4
+      ],
+      "section_title": "II. SYSTEM LEVEL CONSIDERATIONS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "In order to achieve a low-power solution for the earpieces with contemporary technology, a direct ear-to-ear solution [3] was sacrificed for the configuration of Fig. 2 with additional body unit."
+        },
+        {
+          "section_title": "SYSTEM LEVEL CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Low-Power 200-MHz Receiver",
+        "technology": "BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "In order to achieve a low-power solution for the earpieces with contemporary technology, a direct ear-to-ear solution [3] was sacrificed for the configuration of Fig. 2 with additional body unit.",
+        "function_summary": "System configuration. In order to achieve a low-power solution for the earpieces with contemporary technology, a direct ear-to-ear solution [3] was sacrificed for the configuration of Fig. 2 with additional body unit.",
+        "key_specs": [
+          "2 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Building blocks of the transceiver.",
+      "caption_bbox": [
+        38.1,
+        335.5,
+        177.8,
+        346.2
+      ],
+      "section_title": "III. RECEIVER PLANNING",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SYSTEM LEVEL CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 3 shows the building blocks of the transceiver in an earpiece."
+        },
+        {
+          "section_title": "RECEIVER PLANNING",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "For third-order intermodulation, low-power devices and television transmitters were responsible for in-band interference; air naviation, UMTS, DECT, and DEISS AND HUANG: RECEIVER FOR WIRELESS HEARING AID DEVICES Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "transceiver",
+        "technology": "BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Building blocks of the transceiver",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Segmentation of a time slot.",
+      "caption_bbox": [
+        38.1,
+        669.5,
+        157.5,
+        680.2
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "SYSTEM LEVEL CONSIDERATIONS",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Allowing 0.5 ms of phase-locked loop (PLL) switching time between 2.5-ms receive and transmit time slots and some data overhead (see Table I and Fig. 4), a gross bit rate kb/s per channel results."
+        },
+        {
+          "section_title": "RECEIVER PLANNING",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "phase-locked loop (PLL)",
+        "technology": "BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Segmentation of a time slot",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Receiver block diagram.",
+      "caption_bbox": [
+        39.6,
+        185.7,
+        147.1,
+        196.3
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "RECEIVER PLANNING",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "Fig. 5 shows the implemented receiver of the earpieces again, with the on-chip blocks in dark grey and the off-chip blocks in light grey."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Noise of the LNA was reduced to a value Fig. 5."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The current consumption is 66 A each for the other stages. 30 The quadrature demodulator (see Fig. 5) splits the signal into an in-phase and a quadrature (I/Q) component, which differ idein phase."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.7,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Receiver block diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.67,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. SNR at A/D converter input.",
+      "caption_bbox": [
+        39.6,
+        341.3,
+        160.4,
+        351.9
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "RECEIVER PLANNING",
+          "section_kind": "other",
+          "page": 1,
+          "sentence": "With the aforementioned nominal signal 10 dB of the maximal range, the total strength of one third or dB signal-to-noise-plus-distortion ratio (SNDR) sums up to (see Fig. 6)."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Low-Power 200-MHz Receiver",
+        "technology": "BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "SNR at A/D converter input",
+        "key_specs": [
+          "10 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. Schematic of antenna, RF filter, and LNA.",
+      "caption_bbox": [
+        38.1,
+        216.5,
+        203.9,
+        227.2
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 7 shows the schematic diagram of the antenna equivalent circuit, RF filter, and LNA [3]."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 7."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "DEISS AND HUANG: RECEIVER FOR WIRELESS HEARING AID DEVICES Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.7,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Schematic of antenna, RF filter, and LNA",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.7,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Image filter and RF mixer schematic.",
+      "caption_bbox": [
+        38.1,
+        483.6,
+        187.6,
+        494.2
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The LNA consumes 110 Since local oscillator (LO) feedthrough will be suppressed by the IF filter, a single balanced mixer, shown in Fig. 8, is used to achieve a given conversion transconductance with the least current and only one pair of switching transistors (and the dominating noise current sources thereof)."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "The LNA consumes 110 Since local oscillator (LO) feedthrough will be suppressed by the IF filter, a single balanced mixer, shown in Fig. 8, is used to achieve a given conversion transconductance with the least current and only one pair of switching transistors (and the dominating noise current sources thereof).",
+        "function_summary": "Image filter and RF mixer schematic. The LNA consumes 110 Since local oscillator (LO) feedthrough will be suppressed by the IF filter, a single balanced mixer, shown in Fig. 8, is used to achieve a given conversion transconductance with the least current and only one pair of switching transistors (and the dominating ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.79,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 5,
+      "caption": "Fig. 9. IF amplifier block diagram.",
+      "caption_bbox": [
+        39.6,
+        269.6,
+        157.6,
+        280.2
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "On the other hand, concatenating stages increases both lin- ) and bandwidth specifications of the stages. earity (1 dBcP, The most power-efficient tradeoff was found with a three-stage design, which is ac coupled with digital gain setting as shown in Fig. 9."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Examination Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "IF amplifier block diagram",
+        "key_specs": [
+          "1 dBc"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.57,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. First-stage IF amplifier schematic diagram.",
+      "caption_bbox": [
+        39.6,
+        599.6,
+        211.6,
+        610.2
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The fully differential stages two and three provide 0–12-dB gain each, while the first stage, shown in Fig. 10, contributes 0–18 dB for best noise distribution and incorporates single-ended-to-differential conversion of the IF filter signal. could be used As noise is secondary at this stage, resistor for impedance matching as well as single-ended-to-differential conversion."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "resistor"
+        ],
+        "design_purpose": "",
+        "function_summary": "First-stage IF amplifier schematic diagram",
+        "key_specs": [
+          "18 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.79,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 6,
+      "caption": "Fig. 11. Phase shifter flip-flop schematic diagram.",
+      "caption_bbox": [
+        38.1,
+        325.4,
+        205.8,
+        336.0
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Its schematic in emitter-coupled logic (ECL) is depicted in Fig. 11."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The current consumption of the I/Q mixers becomes 12 A each. of an -ary phase-shift keying The power spectral density (MPSK) signal looks like [15] (9) DEISS AND HUANG: RECEIVER FOR WIRELESS HEARING AID DEVICES Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "phase shifter",
+        "technology": "BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Phase shifter flip-flop schematic diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.79,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 6,
+      "caption": "Fig. 12. IF mixer schematic diagram.",
+      "caption_bbox": [
+        38.1,
+        596.0,
+        163.2,
+        606.7
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "A doubly balanced Gilbert cell architecture with emitter degeneration is used to mix the IF signal to baseband (see Fig. 12)."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "IF mixer schematic diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.79,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 7,
+      "caption": "Fig. 13. Single ended representation of filter schematic.",
+      "caption_bbox": [
+        39.6,
+        178.4,
+        224.4,
+        189.0
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Associated with the latter is constant group Fig. 13."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The filter is composed of a secondand a third-order filter stage (see Fig. 13), followed by a small dc amplifier. , Its transfer characteristic is , , and are the transfer functions of where the secondand third-order filter stages and the dc amplifier, respectively."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Single ended representation of filter schematic",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.79,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 7,
+      "caption": "Fig. 14. Filter schematic diagram with common-collector buffers.",
+      "caption_bbox": [
+        39.6,
+        416.3,
+        255.9,
+        427.0
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 14."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The complete schematic of the two filter stages is shown in Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Filter schematic diagram with common-collector buffers",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.79,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 8,
+      "caption": "Fig. 15. DC amplifier schematic diagram.",
+      "caption_bbox": [
+        38.1,
+        313.2,
+        177.6,
+        323.8
+      ],
+      "section_title": "IV. CIRCUIT IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The schematic diagram is shown in Fig. 15."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "It needs to be PTAT to compensate for the negative temperature coefficient of the bipolar transistors’ transconductance. in the circuits is attained by a tranNormally, voltage gain to a resistive load , resulting in a gain sistor providing or at least a gain proportional to as in the DEISS AND HUANG: RECEIVER FOR WIRELESS HEARING AID DEVICES TABLE IV SUMMARY OF DC AMPLIFIER SPECIFICATIONS Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "DC amplifier schematic diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.79,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 9,
+      "caption": "Fig. 16. Schematic diagram of biasing circuit.",
+      "caption_bbox": [
+        39.6,
+        254.2,
+        193.2,
+        264.9
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Summing up the bias currents of all three filter blocks results in an overall current consumption of one A. filter of 51 A proportional-to-absolute-temperature (PTAT) biasing circuit with startup circuitry (Fig. 16) enables amplification independent of temperature and sheet resistance variation."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The transconductance is set by biasing the transistor with a current proportional to the reference current (21) and with the proportionality constant (see also Fig. 16)."
+        },
+        {
+          "section_title": "CIRCUIT IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Reference currents are provided to the reference resistor for the different building blocks as shown on the right side of Fig. 16."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "The curves match very well and the measurement shows Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.6,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+circuit": 1.0,
+        "section:results": -2.0,
+        "references": 1.6
+      },
+      "figure_role": "sub_block_schematic",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "resistor",
+          "transistor/MOSFET",
+          "bias circuit"
+        ],
+        "design_purpose": "Summing up the bias currents of all three filter blocks results in an overall current consumption of one A. filter of 51 A proportional-to-absolute-temperature (PTAT) biasing circuit with startup circuitry (Fig. 16) enables amplification independent of temperature and sheet resistance variation.",
+        "function_summary": "Schematic diagram of biasing circuit. Summing up the bias currents of all three filter blocks results in an overall current consumption of one A. filter of 51 A proportional-to-absolute-temperature (PTAT) biasing circuit with startup circuitry (Fig. 16) enables amplification independent of temperature and sheet ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.4,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 9,
+      "caption": "Fig. 17. Receiver chip microphotograph.",
+      "caption_bbox": [
+        39.6,
+        546.4,
+        175.4,
+        557.0
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "A microphotograph of the receiver chip is shown in Fig. 17."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "Fig. 17."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -7.7,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Receiver chip microphotograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 9,
+      "caption": "Fig. 18. Receiver test board photograph.",
+      "caption_bbox": [
+        302.6,
+        580.7,
+        437.6,
+        591.4
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "A photograph of the complete board used to characterize the receiver is shown in Fig. 18."
+        },
+        {
+          "section_title": "Blocking performance was measured by applying a 25-dB",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "See Fig. 21 for an illustration. necessary value of 67 dB IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 5, MAY 2003 Fig. 18."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-photograph": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Receiver test board photograph",
+        "key_specs": [
+          "67 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 10,
+      "caption": "Fig. 19. IF amplifier gain error.",
+      "caption_bbox": [
+        38.1,
+        272.1,
+        144.7,
+        282.7
+      ],
+      "section_title": "V. Blocking performance was measured by applying a 25-dB",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "The maximal gain error of the IF amplifier is 0.22 dB (see Fig. 19), its bandwidth is 27 MHz, and the noise figure is 15.0 dB."
+        },
+        {
+          "section_title": "Blocking performance was measured by applying a 25-dB",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "Biasing current consumption used for current mirrors or reference voltage generation was nominally subtracted from the measured values for better comparDEISS AND HUANG: RECEIVER FOR WIRELESS HEARING AID DEVICES Fig. 19."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "bias circuit"
+        ],
+        "design_purpose": "",
+        "function_summary": "IF amplifier gain error",
+        "key_specs": [
+          "0.22 dB",
+          "27 MHz",
+          "15.0 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 20,
+      "label": "Fig. 20",
+      "page": 10,
+      "caption": "Fig. 20. Bessel filter characteristic.",
+      "caption_bbox": [
+        38.1,
+        480.1,
+        156.1,
+        490.7
+      ],
+      "section_title": "V. Blocking performance was measured by applying a 25-dB",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "The unwanted sideband rejection ratio , , and [14] (USRR), hence, follows with (24) USRR dB. as USRR The characteristic of the fifth-order Bessel filter is shown in Fig. 20 together with a superimposed simulation transfer characteristic."
+        },
+        {
+          "section_title": "Blocking performance was measured by applying a 25-dB",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "Fig. 20."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Bessel filter characteristic",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 21,
+      "label": "Fig. 21",
+      "page": 10,
+      "caption": "Fig. 21. Blocking performance characteristic.",
+      "caption_bbox": [
+        301.1,
+        236.4,
+        452.2,
+        247.0
+      ],
+      "section_title": "V. Blocking performance was measured by applying a 25-dB",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "Blocking performance was measured by applying a 25-dB",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "See Fig. 21 for an illustration. necessary value of 67 dB IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 5, MAY 2003 Fig. 18."
+        },
+        {
+          "section_title": "Blocking performance was measured by applying a 25-dB",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "Fig. 21."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Low-Power 200-MHz Receiver",
+        "technology": "BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Blocking performance characteristic",
+        "key_specs": [
+          "67 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 22,
+      "label": "Fig. 22",
+      "page": 10,
+      "caption": "Fig. 22. EVM measurement for 8-ary PSK at minimum input signal level.",
+      "caption_bbox": [
+        301.1,
+        614.3,
+        542.1,
+        625.0
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "Blocking performance was measured by applying a 25-dB",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "Error vector magnitude (EVM) measurement for the complete receiver is shown in Fig. 22 for the minimum input signal V, modulated as an 8-ary PSK signal with nomof 25.5 dB inal symbol rate of 112 kbaud."
+        },
+        {
+          "section_title": "Blocking performance was measured by applying a 25-dB",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "TABLE VI CURRENT CONSUMPTION AND GAIN Fig. 22."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "EVM measurement for 8-ary PSK at minimum input signal level",
+        "key_specs": [
+          "25.5 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 23,
+      "label": "Fig. 23",
+      "page": 11,
+      "caption": "Fig. 23. EVM measurement for 32-ary QAM signal.",
+      "caption_bbox": [
+        39.6,
+        258.5,
+        213.0,
+        269.2
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "Blocking performance was measured by applying a 25-dB",
+          "section_kind": "results",
+          "page": 9,
+          "sentence": "To demonstrate functionality at a different modulation scheme where linear amplification is necessary, a 32-ary QAM signal was applied at the same symbol rate, translating to V and the 560 kb/s (see Fig. 23)."
+        },
+        {
+          "section_title": "CONCLUSION",
+          "section_kind": "conclusion",
+          "page": 10,
+          "sentence": "Fig. 23."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Low-Power 200-MHz Receiver",
+        "technology": "BICMOS",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "EVM measurement for 32-ary QAM signal",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 7,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

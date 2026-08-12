@@ -1,0 +1,60 @@
+# A 187.5μVrms-Read-Noise 51mW 1.4Mpixel CMOS Image Sensor with PMOSCAP Column CDS and 10b Self-Differential Offset-Cancelled Pipeline SAR-ADC Jun Deguchi1, Fumihiko Tachibana1, Makoto Morimoto1, Masayoshi Chiba1, Takeshi Miyaba2, Hideki Tanaka1, Kyoichi Takenaka2, Satoshi Funayama1, Kunihiko Amano1, Kazuhide Sugiura1, Ryuta Okamoto1, Shouhei Kousai1
+
+VENUE
+"2013"
+
+DOI
+"10.1109/JPROC.2011.2178569"
+
+FIGURE NUMBER
+"Figure 27.9.1 shows the architecture of the implemented image sensor. It comprises: a sensor core, test logic, and LVDS drivers. The sensor core is composed of a 1720(H) × 832(V) 2.2μm pixel array, PMOSCAP column CDS circuits, a PMOSCAP body terminal (Vbp) controller, a 2-stage PGA (PGA1, 2), a 10b selfdifferential offset-cancelled pipeline SAR-ADC, row/column decoders, and drivers. Since the column CDS circuits are composed of only 1.5V PMOSCAPs with switches, and the unit capacitance of PMOSCAPs is larger than that of linear capacitors, the capacitor area is reduced to half compared to that of linear capacitors. The body terminal-controlled PMOSCAP also works as a voltage level shifter so that it eliminates OBUFs or level-shifters in the column CDS circuits by adaptively adjusting the common-mode voltage of the column CDS circuits to that of signal-processing circuits. Thus, the linearity of the column CDS circuits is maintained, and 1.5V is brought in to the signal-processing circuits for lowpower operation. The proposed 10b pipeline SAR-ADC has 2 stages. The first stage is composed of a comparator, a 5b CDAC, and a gain stage. The second stage has a comparator and a 5b CDAC, with additional 1b for digitally correcting the inter-stage dynamic range. The pipeline SAR architecture reduces the CDAC area by a factor of 23.4. The differential-offset-controllable sampling scheme achieves self offset-cancelling for black-level correction without any additional DACs. In addition, it enables half Vfs reference, which further reduces the switching power and the area of CDACs to one fifth and half in both stages, respectively, compared with state-of-the-art SAR-ADCs [6, 7]."
+
+TYPE
+"187.5μVrms-Read-Noise 51mW 1.4Mpixel CMOS Image Sensor"
+
+TECHNOLOGY
+"CMOS, 2μm process"
+
+APPLICATION
+"if"
+
+SUB-BLOCKS
+[
+  "capacitor",
+  "transistor/MOSFET",
+  "output buffer",
+  "switch"
+]
+
+FUNCTION SUMMARY
+"187.5μVrms-Read-Noise 51mW 1.4Mpixel CMOS Image Sensor"
+
+METRICS
+[
+  "Supply voltage",
+  "Power consumption",
+  "Efficiency / ratio",
+  "Supply / voltage"
+]
+
+NUMERICAL PERFORMANCE
+[
+  "187.5μV",
+  "51mW",
+  "1.5V",
+  "80%",
+  "50%",
+  "51.0mW",
+  "2.2μm",
+  "0.75V",
+  "488mV",
+  "2.5V"
+]
+
+CONFIDENCE
+0.8
+
+WARNINGS
+[
+  "Recommended figure was classified as 'result_plot', not a schematic; manual confirmation strongly recommended."
+]

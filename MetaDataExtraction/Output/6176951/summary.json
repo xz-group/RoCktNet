@@ -1,0 +1,47 @@
+{
+  "title": "A 19Gb/s Serial Link Receiver with Both 4-Tap FFE and 5-Tap DFE Functions in 45nm SOI CMOS Ankur Agrawal, John Bulzacchelli, Timothy Dickson, Yong Liu, Jose Tierno, Daniel Friedman",
+  "bibliography": {
+    "authors": [],
+    "venue": "",
+    "year": 2012,
+    "doi": "",
+    "keywords": []
+  },
+  "figure_number": "Figure 7.3.1 shows a block diagram and timing diagram of the receiver with 2 post-cursor and 1 pre-cursor FFE taps in addition to 5 DFE taps. Four parallel T/Hs, clocked at quarter-rate, hold the incoming data for 3 UIs each. Source-follower buffers distribute each of the T/H outputs to all four quarter-rate slices, where current-integrating summers [3] sum up the signals along with five DFE feedback taps. The use of multi-phase T/Hs [4] avoids the need for analog delay lines. Because 3 out of the 4 data values are held stable at any instant, implementation of a 3-tap FFE is straightforward. A fourth FFE tap is introduced by having a 2UI integration interval and exploiting the inherent memory of currentintegrating summers. The FFE currents are integrated only when their input voltages are valid, and the integrator remembers their contribution to the summation so that the proper FFE-equalized voltage is sampled at the end of the integration period. The second post-cursor tap (C2) is active only during the first UI of integration, while the pre-cursor tap (C-1) is active only during the second UI. The first post-cursor (C1) value is valid for the entire duration of integration but is enabled only during the first UI in this design. The gating signals used to turn on and off the FFE taps also enable efficient implementation of FFE coefficient multiplication. Shifting the gating signal with respect to the integration interval realizes time-domain multiplication by varying the integration time of FFE signals as shown in Fig. 7.3.1. Digitally-controlled phase interpolators are used to adjust the phase shifts. Since modern CMOS technologies allow for easy and precise control of clock edges, this technique can be more linear than CMOS Gilbert-style multipliers and more area-efficient than multiplying current DACs (IDAC) [4].",
+  "type": "Serial Link Receiver",
+  "technology": "CMOS, SOI, 45nm process",
+  "application": "",
+  "sub_blocks": [
+    "capacitor",
+    "transistor/MOSFET",
+    "current source",
+    "output buffer",
+    "latch",
+    "clock / timing"
+  ],
+  "function_summary": "Serial Link Receiver",
+  "design_purpose": "",
+  "metrics": [
+    "Process node",
+    "Efficiency / ratio",
+    "Capacitance",
+    "Supply / voltage",
+    "Timing / delay",
+    "Gain",
+    "Operating / oscillation frequency"
+  ],
+  "numerical_performance": [
+    "45nm",
+    "3 FF",
+    "50%",
+    "50fF",
+    "200mV",
+    "53mV",
+    "3ps",
+    "25dB",
+    "9.5GHz",
+    "36%"
+  ],
+  "confidence": 0.85,
+  "warnings": []
+}

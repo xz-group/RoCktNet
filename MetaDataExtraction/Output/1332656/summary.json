@@ -1,0 +1,43 @@
+{
+  "title": "Quad-Band GSM/GPRS/EDGE Polar Loop Transmitter Tirdad Sowlati1, Dmitriy Rozenblit1, Evan MacCarthy1, Morten Damgaard1, Raja Pullela1, Dongsoo Koh1, David Ripley2",
+  "bibliography": {
+    "authors": [],
+    "venue": "",
+    "year": 2004,
+    "doi": "",
+    "keywords": []
+  },
+  "figure_number": "Figure 10.3.1 shows a simplified block diagram of the polar loop transmitter (several patents pending). Unlike previous approaches [1], the presented architecture has feedback control on both phase and amplitude. The phase and amplitude loops share a common path that includes a coupler, a down-converting mixer, and an IF variable gain amplifier (VGA). At this point the two loops separate. The phase loop is based on a translational loop with the IQ Modulator in its feedback path [2]. The UHF VCO, locked to a crystal oscillator by the fractional-N synthesizer (not shown) is divided down by M and M*N to create the LO1 signal and the reference IF signal, IFref. LO1 is used to down convert the portion of the PA output applied to the mixer via the coupler, RFf. The IF signal is amplified in the IFVGA. The amplitude variation of the feedback signal is removed in Limiter1, and the resulting signal is used as the up-converting LO2 for the IQ modulator. This signal is then modulated by the I and Q base-band signals. The output of the IQ modulator, IFm, has both amplitude and phase variation. The amplitude variation of IFm is removed by Limiter2, and the resulting signal is fed to the phase-frequency detector (PFD). The PFD extracts the phase error between the reference signal IFref and the feedback signal IFml. The charge pump (CP) and loop filter convert the phase error into a voltage, and close the phase loop by adjusting the control voltage of RF VCO. The output of the RF VCO is buffered and applied to the RF input of the PA. The output of the IQ modulator, IFm, is also applied to a bandpass filter, BPF2, which is then buffered, and the resulting signal’s envelope is extracted in detector D1. This envelope, Aref, serves as the reference for the amplitude loop. The envelope of the IFVGA output is extracted in detector D2 creating the feedback amplitude, Af. The feedback envelope is subtracted from the reference envelope, and the error signal is amplified by the base-band (BB) VGA. The signal is low-pass filtered in LPF2, buffered and applied to the gain control pin, Vcntrl, of the PA module. Finally, amplitude modulation is introduced at the PA output via the power control loop. The amplitude loop has a wide dynamic range with wide bandwidth and low noise. It is designed to have a loop gain of 40dB so",
+  "type": "Quad-Band GSM/GPRS/EDGE Polar Loop Transmitter Tirdad Sowlati1, Dmitriy Rozenblit1, Evan MacCarthy1, Morten Damgaard1, Raja Pullela1, Dongsoo Koh1, David Ripley2",
+  "technology": "BICMOS",
+  "application": "rf, if",
+  "sub_blocks": [
+    "output buffer",
+    "mixer",
+    "switch"
+  ],
+  "function_summary": "Quad-Band GSM/GPRS/EDGE Polar Loop Transmitter Tirdad Sowlati1, Dmitriy Rozenblit1, Evan MacCarthy1, Morten Damgaard1, Raja Pullela1, Dongsoo Koh1, David Ripley2",
+  "design_purpose": "",
+  "metrics": [
+    "Gain",
+    "Efficiency / ratio",
+    "Spurious / phase noise",
+    "Output power"
+  ],
+  "numerical_performance": [
+    "55dB",
+    "40dB",
+    "1%",
+    "40dBc",
+    "14dB",
+    "35dBm",
+    "-20dBm",
+    "29dBm",
+    "2dB",
+    "6dB"
+  ],
+  "confidence": 0.38,
+  "warnings": [
+    "Recommended figure was classified as 'result_plot', not a schematic; manual confirmation strongly recommended."
+  ]
+}

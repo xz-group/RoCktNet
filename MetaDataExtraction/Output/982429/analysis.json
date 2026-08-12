@@ -1,0 +1,700 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\982429.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\982429",
+  "generated_at": "2026-07-29T22:03:44",
+  "paper_metadata": {
+    "title": "A 32-Word by 32-Bit Three-Port Bipolar Register File Implemented Using a SiGe HBT BiCMOS Technology",
+    "authors": [
+      "Samuel A. Steidl",
+      "John F. McDonald"
+    ],
+    "abstract": "This paper describes a novel system level design for a 32-word by 32-bit bipolar register file with two read ports functional blocks. These are the memory cell array, the read and one write port. The register file is implemented using a SiGe address decoders and wordline drivers, the write address deHBT BiCMOS technology and emitter-coupled logic (ECL)-style coder and wordline drivers, the bitline drivers, the sense amcircuits. It has dimensions of 1.0 mm by 1.8 mm. The read access plifiers, the output latches, and the comparators. The memory time for the register file is between 340 and 350 ps using read port cell array is responsible for storing the 1024 bits of data. It is arA, while the read access time using read port B is between 360 and 380 ps. Read access times as low as 290 ps were measured ranged in a grid of 32 rows by 32 columns of memory cells. Each for some columns, however. The write access time for the register read address decoder is responsible for decoding a 5-bit address file is between 250 and 340 ps, using a write enable pulse with a to determine which of the 32 rows is selected for each read width between 130 and 170 ps. The estimated register file power operation. The 64 read wordline drivers drive the read worddissipation is 4.7 W using a 4.5-V supply. lines accordingly. The write enable circuit determines whether Terms—Bipolar memory integrated circuits, curIndex or not a write operation is to take place. If so, the 5-bit write rent-mode logic, emitter-coupled logic, SRAM chip. address is decoded to select the memory cell row in which new data will be written. The 32 write wordline drivers are respon-",
+    "keywords": [],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2002
+  },
+  "paper_circuit_context": {
+    "circuit_type": "32-Word by 32-Bit Three-Port Bipolar Register File Implemented",
+    "technology": "CMOS, BICMOS, SIGE, HBT",
+    "application_domain": "if",
+    "sub_blocks": [
+      "resistor",
+      "transistor/MOSFET",
+      "cross-coupled pair",
+      "current source",
+      "output buffer",
+      "bias circuit",
+      "switch",
+      "latch",
+      "sense amplifier",
+      "clock / timing"
+    ],
+    "design_purpose": "",
+    "function_summary": "32-Word by 32-Bit Three-Port Bipolar Register File Implemented: This paper describes a novel system level design for a 32-word by 32-bit bipolar register file with two read ports functional blocks.",
+    "key_specs": [
+      "350 ps",
+      "380 ps",
+      "290 ps",
+      "340 ps",
+      "170 ps",
+      "4.7 W",
+      "32 w",
+      "48 GHz",
+      "69 GHz",
+      "120 GHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE PURPOSE of this project was to design a memory circuit that could operate in a high-speed digital system such as a microprocessor. A SiGe heterojunction bipolar transistor (HBT) BiCMOS technology was chosen because it offered a bipolar device with significantly faster switching speeds of 48 GHz and an of 69 GHz) than were avail- (an able with CMOS and Si bipolar technologies [1]. In fact, mor ..."
+    },
+    {
+      "number": "II",
+      "title": "REGISTER FILE OVERVIEW",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "The register file has a size of 32 words by 32 bits that can be accessed simultaneously by two read ports and a single write port. A block diagram for the register file, shown in Fig. 1, ilManuscript received May 28, 2001; revised August 23, 2001. This work was supported in part by the Defense Advanced Research Project Agency (DARPA) under Contract N66001-96-8606 and Contract DAAH04-93-G-0477. S.  ..."
+    },
+    {
+      "number": "III",
+      "title": "MEMORY CELL DESIGN",
+      "kind": "design",
+      "page": 0,
+      "text_preview": "The memory cell, shown in Fig. 2, consists of four current switches and two collector resistors [3]. During a write operation, 17 mA of current flows through WW while no current flows through WWb. About 0.54 mA of the current flowing or , depending through WW is directed through either on the differential voltage applied between WB and WBb by the corresponding bitline driver. Each bitline driver i ..."
+    },
+    {
+      "number": "IV",
+      "title": "READ ADDRESS DECODER DESIGN",
+      "kind": "design",
+      "page": 1,
+      "text_preview": "The read address decoder, similar to the design used in a BiCMOS register file [4], is composed of two stages, as shown in Fig. 3. In the first stage, wired-OR techniques are used to separately decode the lower two bits and the upper three bits of the address. The 2-bit decoder uses two current-mode logic (CML) buffers to drive four wired-OR lines. The CML buffers drive the wired-OR lines for the  ..."
+    },
+    {
+      "number": "V",
+      "title": "READ WORDLINE DRIVER DESIGN",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "Each read wordline driver consists of a single large device capable of handling the current necessary to drive a read port in every memory cell for a single row. The base of each device is driven by the corresponding NOR gate from the second stage of the decoder. The emitters of all 32 read wordline driver devices for a given port are connected to a single current source, as illustrated in Fig. 3. ..."
+    },
+    {
+      "number": "VI",
+      "title": "WRITE ADDRESS DECODER AND WORDLINE",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "DRIVER DESIGN The write address decoder, illustrated in Fig. 4, operates in a manner similar to that of the read address decoder with two notable exceptions. The first is the addition of a write enable circuit, which prevents the decoder from selecting any of the rows of memory cells for a write operation unless the write enable signal is asserted. This circuit, shown in Fig. 4, consists of a CML  ..."
+    },
+    {
+      "number": "VII",
+      "title": "SENSE AMPLIFIER DESIGN",
+      "kind": "design",
+      "page": 3,
+      "text_preview": "An active sense amplifier is used to convert the differential current on a pair of read bitlines into an output differential voltage. Of course, this could have been accomplished simply by using a pair of pull-up resistors on the bitlines. However, since the bitlines must traverse the entire memory cell array and are connected to a number of devices, they have a large parasitic capacitance. This m ..."
+    },
+    {
+      "number": "VIII",
+      "title": "OUTPUT LATCH DESIGN",
+      "kind": "design",
+      "page": 4,
+      "text_preview": "Each read port contains a set of output latches to capture the register file output. Normally, this output comes from the sense amplifiers. However, when a write operation is occurring in a row that is also being read by one of the read ports, the normal read access is delayed while new data is written into the memory cells. This worst-case scenario will limit the read access time of the register  ..."
+    },
+    {
+      "number": "IX",
+      "title": "COMPARATOR",
+      "kind": "other",
+      "page": 4,
+      "text_preview": "To determine whether the data written into the output latches of a read port should come from the sense amplifiers of that port or from the bitline drivers, it is necessary to compare the read address of that port with the write address to determine whether or not they match. It is also necessary to check the write enable signal to determine whether or not a write operation is occurring. The circu ..."
+    },
+    {
+      "number": "X",
+      "title": "TEST CHIP DESIGN",
+      "kind": "design",
+      "page": 5,
+      "text_preview": "A test chip, similar to one designed to test a 2-Kb SRAM [10], was designed to test both the functionality and performance of the register file. A block diagram of the test chip is shown in Fig. 7. During normal operation, three 5-bit counters supply the register file with repeating patterns of sequential addresses for read and write operations. A linear feedback shift register (LFSR) supplies the ..."
+    },
+    {
+      "number": "XI",
+      "title": "PHYSICAL CHARACTERISTICS",
+      "kind": "other",
+      "page": 5,
+      "text_preview": "The dimensions of the register file memory cell are 20 m m. The large aspect ratio of the memory cell is due to by 37 the fact that the wordlines must conduct much larger currents Fig. 8. Register file test chip die micrograph. than the bitlines. Therefore, the wordlines must be made much wider than the bitlines to accommodate the larger current. The register file has overall dimensions of 1.0 mm  ..."
+    },
+    {
+      "number": "XII",
+      "title": "MEASURED RESULTS",
+      "kind": "results",
+      "page": 6,
+      "text_preview": "The register file test chip die were tested as bare die on a Tektronix probe station using two GGB Picoprobe Multi-Contact Wedge probes. Each probe contained six signal pins and two sets of power and ground pins. A clock signal was provided to the test chip by a Weinschel Engineering 430A Sweep Oscilcable. Test chip output signals were mealator through a 50sured using a Tektronix 11 801A Digital S ..."
+    },
+    {
+      "number": "XIII",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 7,
+      "text_preview": "This paper described a novel system level design for a 32-word by 32-bit three port bipolar register file designed using a SiGe HBT BiCMOS technology. It has dimensions of 1.0 mm by 1.8 mm. The on-chip read access time for this register file is between 340 and 350 ps using read port A, while the on-chip read access time using read port B is between 360 and 380 ps. The on-chip write access time is  ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Register file block diagram.",
+      "caption_bbox": [
+        38.1,
+        292.0,
+        156.9,
+        302.6
+      ],
+      "section_title": "II. REGISTER FILE OVERVIEW",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "REGISTER FILE OVERVIEW",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "A block diagram for the register file, shown in Fig. 1, ilManuscript received May 28, 2001; revised August 23, 2001."
+        },
+        {
+          "section_title": "MEMORY CELL DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "The positive or maintains the feedback configuration of the devices STEIDL AND MCDONALD: BIPOLAR REGISTER FILE USING SiGe HBT BiCMOS TECHNOLOGY Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "register file",
+        "technology": "CMOS, BICMOS, SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Register file block diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Three-port memory cell schematics.",
+      "caption_bbox": [
+        38.1,
+        500.2,
+        183.2,
+        510.9
+      ],
+      "section_title": "II. REGISTER FILE OVERVIEW",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MEMORY CELL DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "The memory cell, shown in Fig. 2, consists of four current switches and two collector resistors [3]."
+        },
+        {
+          "section_title": "MEMORY CELL DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "memory",
+        "technology": "CMOS, BICMOS, SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "resistor",
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Three-port memory cell schematics",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.45,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. drivers.",
+      "caption_bbox": [
+        39.6,
+        348.4,
+        63.4,
+        368.1
+      ],
+      "section_title": "IV. READ ADDRESS DECODER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "READ ADDRESS DECODER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The read address decoder, similar to the design used in a BiCMOS register file [4], is composed of two stages, as shown in Fig. 3."
+        },
+        {
+          "section_title": "READ ADDRESS DECODER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The CML buffers drive the wired-OR lines for the 2-bit decoder in a manner such that two wired-OR lines receive an inverted version and two wired-OR lines receive a noninverted version of each address bit, as Fig. 3 illustrates."
+        },
+        {
+          "section_title": "READ ADDRESS DECODER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Included is the stage-one 2-bit decoder, a portion of the stage-two decoder, and some of the read wordline Fig. 3. drivers."
+        },
+        {
+          "section_title": "READ ADDRESS DECODER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "This well-known NOR implementation is shown in Fig. 3 [5]–[7]."
+        },
+        {
+          "section_title": "READ ADDRESS DECODER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "One input of each NOR gate is connected to one of the set of four wired-OR lines from the stage-one 2-bit decoder while the other input is connected to one of the set of eight wired-OR lines from the stage-one 3-bit decoder, as illustrated in Fig. 3."
+        },
+        {
+          "section_title": "READ WORDLINE DRIVER DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The emitters of all 32 read wordline driver devices for a given port are connected to a single current source, as illustrated in Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.5,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "line / output driver",
+        "technology": "CMOS, BICMOS, SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "current source",
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "drivers",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.38,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 3,
+      "caption": "Fig. 4. drivers.",
+      "caption_bbox": [
+        38.1,
+        331.0,
+        61.9,
+        350.6
+      ],
+      "section_title": "V. READ WORDLINE DRIVER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "WRITE ADDRESS DECODER AND WORDLINE",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "DRIVER DESIGN The write address decoder, illustrated in Fig. 4, operates in a manner similar to that of the read address decoder with two notable exceptions."
+        },
+        {
+          "section_title": "WRITE ADDRESS DECODER AND WORDLINE",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "This circuit, shown in Fig. 4, consists of a CML buffer with differential inputs and a single-ended output that drives four additional input devices to the set of four wired-OR lines used in the stage-one 2-bit decoder."
+        },
+        {
+          "section_title": "WRITE ADDRESS DECODER AND WORDLINE",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Included is the stage-one 2-bit decoder, a portion of the stage-two decoder, and some of the write wordline Fig. 4. drivers."
+        },
+        {
+          "section_title": "WRITE ADDRESS DECODER AND WORDLINE",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Schematics for the write address decoder ECL NOR gate are shown in Fig. 4."
+        },
+        {
+          "section_title": "WRITE ADDRESS DECODER AND WORDLINE",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The write wordline driver, also shown in Fig. 4, consists of a pair of emitter-coupled devices with emitters attached to a current source."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.5,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "line / output driver",
+        "technology": "CMOS, BICMOS, SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "current source",
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "drivers",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.38,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Sense amplifier schematics.",
+      "caption_bbox": [
+        301.1,
+        544.0,
+        419.1,
+        554.7
+      ],
+      "section_title": "VII. SENSE AMPLIFIER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "SENSE AMPLIFIER DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "For this reason, a common-base sense amplifier, shown in Fig. 5, is often used [8]."
+        },
+        {
+          "section_title": "SENSE AMPLIFIER DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Most of this current also flows through the collector resistors, producing a differential voltage across O and Ob that is proportional to the difference in current Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, BICMOS, SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "resistor",
+          "sense amplifier"
+        ],
+        "design_purpose": "",
+        "function_summary": "Sense amplifier schematics",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.82,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "Fig. 6.",
+      "caption_bbox": [
+        39.6,
+        304.1,
+        59.9,
+        314.8
+      ],
+      "section_title": "VII. SENSE AMPLIFIER DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "SENSE AMPLIFIER DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "Fig. 6."
+        },
+        {
+          "section_title": "SENSE AMPLIFIER DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "This propagation delay, along with the read bitline voltage swing, as a function of the sense amplifier bias currents according to simulations, is shown in Fig. 6."
+        },
+        {
+          "section_title": "SENSE AMPLIFIER DESIGN",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "This directly correlates with the nonlinear decrease in the read bitline voltage swing as the sense amplifier bias currents are increased, as Fig. 6 illustrates."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, BICMOS, SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "sense amplifier"
+        ],
+        "design_purpose": "",
+        "function_summary": "amplifier",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 5,
+      "caption": "Fig. 7. Register file test chip block diagram.",
+      "caption_bbox": [
+        38.1,
+        418.1,
+        186.3,
+        428.7
+      ],
+      "section_title": "IX. COMPARATOR",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "COMPARATOR",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Three STEIDL AND MCDONALD: BIPOLAR REGISTER FILE USING SiGe HBT BiCMOS TECHNOLOGY Fig. 7."
+        },
+        {
+          "section_title": "TEST CHIP DESIGN",
+          "section_kind": "design",
+          "page": 5,
+          "sentence": "A block diagram of the test chip is shown in Fig. 7."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "This is illustrated by the measured waveforms in Fig. 9, which are generated at the “scope output” node on the test chip, shown in Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "register file",
+        "technology": "CMOS, BICMOS, SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Register file test chip block diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.31,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 6,
+      "caption": "Fig. 8. Register file test chip die micrograph.",
+      "caption_bbox": [
+        39.6,
+        354.9,
+        190.4,
+        365.5
+      ],
+      "section_title": "XI. PHYSICAL CHARACTERISTICS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "PHYSICAL CHARACTERISTICS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "The large aspect ratio of the memory cell is due to by 37 the fact that the wordlines must conduct much larger currents Fig. 8."
+        },
+        {
+          "section_title": "PHYSICAL CHARACTERISTICS",
+          "section_kind": "other",
+          "page": 5,
+          "sentence": "A die micrograph of the register file test chip is shown in Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-micrograph": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "register file",
+        "technology": "CMOS, BICMOS, SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Register file test chip die micrograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 7,
+      "caption": "Fig. 9.",
+      "caption_bbox": [
+        38.1,
+        234.5,
+        58.6,
+        245.2
+      ],
+      "section_title": "XII. MEASURED RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "This is illustrated by the measured waveforms in Fig. 9, which are generated at the “scope output” node on the test chip, shown in Fig. 7."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "One notes that the voltage is not constant in the test chip output waveforms over multiple clock cycle when the digital value remains constant, as Figs. 9 and 10 illustrate."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The left-hand scope plot indicates a correctly read 32-bit pattern from Fig. 9. one of the columns."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "32-Word by 32-Bit Three-Port Bipolar Register File Implemented",
+        "technology": "CMOS, BICMOS, SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 7,
+      "caption": "Fig. 10.",
+      "caption_bbox": [
+        38.1,
+        448.3,
+        62.6,
+        458.9
+      ],
+      "section_title": "XII. MEASURED RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "During a series of read after write operations, however, the entire 63-bit LFSR pattern is observed, as illustrated in Fig. 10, along with the corresponding match signal."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The left-hand scope plot is a 63 bit pattern read out of one of the columns through Fig. 10. read port A while in write mode."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "32-Word by 32-Bit Three-Port Bipolar Register File Implemented",
+        "technology": "CMOS, BICMOS, SIGE, HBT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 5,
+  "warnings": []
+}

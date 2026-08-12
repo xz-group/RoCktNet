@@ -1,0 +1,258 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\RNDatasetPapers\\6487638.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output_rerun_128\\6487638",
+  "generated_at": "2026-07-29T22:45:37",
+  "paper_metadata": {
+    "title": "A Resonant Regulating Rectifier (3R) Operating at 6.78 MHz for a 6W Wireless Charger with 86% Efficiency Jun-Han Choi1, Sung-Ku Yeo2, Chang-Byong Park1, Seho Park2, Jeong-Seok Lee2, Gyu-Hyeong Cho1",
+    "authors": [],
+    "abstract": "",
+    "keywords": [],
+    "doi": "",
+    "venue": "",
+    "year": 2013
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Resonant Regulating Rectifier (3R) Operating at 6.78 MHz",
+    "technology": "",
+    "application_domain": "wireless",
+    "sub_blocks": [
+      "inductor",
+      "capacitor",
+      "transistor/MOSFET",
+      "LC tank / resonator",
+      "switch"
+    ],
+    "design_purpose": "",
+    "function_summary": "Resonant Regulating Rectifier (3R) Operating at 6.78 MHz",
+    "key_specs": [
+      "6.78 MHz",
+      "6W",
+      "86%",
+      "5W",
+      "6.78MHz",
+      "13.56MHz",
+      "100V",
+      "2V",
+      "9V",
+      "1 w"
+    ]
+  },
+  "sections": [],
+  "figures": [
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 0,
+      "caption": "Figure 4.1.1 shows the basic 3R topology, where the receiver part is highlighted. Structurally, 3R consists of a full-bridge rectifier and three MOSFET switches, so it could be seen as another modification of the conventional RWPT receiver with two parts. However, 3R is analytically a one-step AC-DC converter that carries out regulation and rectification at once with the help of both side resonant tanks. The receiver input node, VIN, may be a good starting point to explain the detailed operation. Figure 4.1.2 (top left) shows the simplified circuit of 3R input part where a coil LRS and a capacitor CRS form a resonant tank at the receiver side. At the receiver input, CLM is introduced for lowering voltage stress for the chip and assuring stable operation while the power is regulated by the switch SW. Without CLM, VXH goes up more than 100V when the switch SW is open because of resonance. To judge the optimal value of CLM, I-V curves are introduced on the phase plane where the x-axis is VRS and the y-axes are IRT and IRS in Fig. 4.1.2 (right). For a well-matched resonant condition of maximum power transfer, the shape of a half oval should be kept securely by reducing CLM. On other hand, for lowering the stress of VXH, it is desirable to extend the area of buffered energy (EBUF) by increasing CLM. As can be seen here, the I-V curves depend on the value of CLM, where a compromise is necessary in choosing CLM. The key of the 3R’s switching sequence is to control VXH up and down in every eight resonant cycles with integral cycle mode, where on or off switching is determined within half of a resonant cycle [3]. Figure 4.1.3 shows the operations on continuous conduction mode (CCM) and discontinuous conduction mode (DCM), respectively, where the waveform of VXH is different for each of the two case. While on duty in CCM, both M1 and M3 are closed with M2 open, where CFL and COUT are connected in parallel, as shown in Fig. 4.1.3 (left). While off duty in CCM, both capacitors are stacked in series at opposite switch status, as shown in Fig. 4.1.3 (left). Therefore, the resonant current IRT charges parallel 2012. capacitors (COUT + CFL) or series capacitors (COUT || CFL) alternately while alternating VXH between VOUT and 2VOUT for each duty. While on duty in DCM, the switch statuses are the same as that in CCM, as shown in Fig. 4.1.3 (right). During off duty in DCM, however, IRT becomes zero by opening all three switches and VXH dramatically increases depending on CLM and the amount of IRS induced.",
+      "caption_bbox": [
+        28.0,
+        370.7,
+        309.8,
+        724.7
+      ],
+      "section_title": "",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 4.1.1 shows the basic 3R topology, where the receiver part is highlighted."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 4.1.2 (top left) shows the simplified circuit of 3R input part where a coil LRS and a capacitor CRS form a resonant tank at the receiver side."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "To judge the optimal value of CLM, I-V curves are introduced on the phase plane where the x-axis is VRS and the y-axes are IRT and IRS in Fig. 4.1.2 (right)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 4.1.3 shows the operations on continuous conduction mode (CCM) and discontinuous conduction mode (DCM), respectively, where the waveform of VXH is different for each of the two case."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "While on duty in CCM, both M1 and M3 are closed with M2 open, where CFL and COUT are connected in parallel, as shown in Fig. 4.1.3 (left)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "While off duty in CCM, both capacitors are stacked in series at opposite switch status, as shown in Fig. 4.1.3 (left)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "While on duty in DCM, the switch statuses are the same as that in CCM, as shown in Fig. 4.1.3 (right)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Zero current switching (ZCS) improves the efficiency as well as the switching noise, so it is crucial for on/off switching time to synchronize with IRS zerocrossing time, as shown in Fig. 4.1.3."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "There are two paths for syncs, as shown in the circuit of Fig. 4.1.4 (left top): one is a differential comparator sync and the other is an inverter sync."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "While off duty in DCM, however, CLM is charged by IRS in one direction, which keeps VIN+ and VINnodes floating, as shown in the waveforms of Fig. 4.1.4 (left bottom)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Then, CLK is used for the D-FF clock of Fig. 4.1.1 to accomplish ZCS."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The boost bias generator in Fig. 4.1.4 (right) is designed for driving the gates of M1 and M2 in Fig. 4.1.1."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The voltage formed by series of diodes with the diode-connected NM3 of Fig. 4.1.4 (right) acts as a reference voltage, and VG1 with edge-enhancement filter (EEF) stimulates NM1 to charge VB."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 4.1.5 (top) shows the measured waveform of VOUT, VXH, and rectifier current for both CCM and DCM with 2.5W and 0.5W POUT, respectively, at 6.78MHz."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "As can be seen in Fig. 4.1.5 (bottom left), the load regulation characteristic is measured."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The load change from 50mA to 1.2A is also tested in Fig. 4.1.5 (bottom middle) with the variable VDRN in our transmitter, controlled by MCU using 3bit duty signals, as illustrated in Figure 4.1.1."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "At the marked points by arrows where switching occurs in Fig. 4.1.5 (bottom right), VOUT noise with ZCS is eliminated compared to VOUT noise when tD is disabled, as indicated with dotted circles."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "In Fig. 4.1.6 (left), POUT level of dividing DCM and CCM is set for 1W and the efficiency is measured by varying POUT from 300mW to 6W at fRS=6.78MHz and VOUT=4.95V."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The comparison table in Fig. 4.1.6 (right) shows the 3R among recently reported RWPT’s [1-2]."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 4.1.7 shows the 3R receiver board and a chip micrograph."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Power Elecronics, vol. 5, no. 2, pp. 201-211, Apr. 1990. 978-1-4673-4516-3/13/$31.00 ©2013 IEEE Figure 4.1.1: Concept for resonant regulating rectifier (3R) for a wireless charger system using resonant type coils at 6.78MHz."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 4.1.3: Operation principle depending on CCM (left) and DCM (right)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 4.1.5: Operational waveform for CCM and DCM (top), load regulation under fixed VDRN (bottom left) or under controlled VDRN (bottom middle), and output noise elimination depending on ZCS (bottom right)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "ISSCC 2013 / February 18, 2013 / 1:30 PM 4 Figure 4.1.2: I-V curve relationship for resonant tank and simulated I-V curves with varying CLM."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 4.1.4: Timing controller (left) and boost bias generator (right)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 4.1.6: Power efficiency and comparison table. 65 DIGEST OF TECHNICAL PAPERS • ISSCC 2013 PAPER CONTINUATIONS Figure 4.1.7: Die micrograph fabricated in 0.35μm BCD (right) process with 3R receiver board (left). • 2013 IEEE International Solid-State Circuits Conference 978-1-4673-4516-3/13/$31.00 ©2013 IEEE"
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.5,
+      "relevance_breakdown": {
+        "+topology": 2.5,
+        "+circuit": 1.0,
+        "-conventional": -3.0,
+        "-simplified": -1.0,
+        "-waveform": -2.0,
+        "type_match:3r": 2.0,
+        "references": 2.0
+      },
+      "figure_role": "conventional",
+      "circuit_context": {
+        "circuit_type": "rectifier",
+        "technology": "",
+        "application_domain": "wireless",
+        "sub_blocks": [
+          "capacitor",
+          "transistor/MOSFET",
+          "LC tank / resonator",
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "1.1 shows the basic 3R topology, where the receiver part is highlighted. Structurally, 3R consists of a full-bridge rectifier and three MOSFET switches, so it could be seen as another modification of the conventional RWPT receiver with two parts. However, 3R is analytically a one-step AC-DC converter that carries out ...",
+        "key_specs": [
+          "1 w",
+          "2.5W",
+          "0.5W",
+          "6.78MHz",
+          "1W",
+          "300mW",
+          "6W",
+          "4.95V"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.38,
+      "warnings": [
+        "Recommended figure was classified as 'conventional', not a schematic; manual confirmation strongly recommended."
+      ]
+    }
+  ],
+  "recommended_figure_id": 4,
+  "warnings": []
+}

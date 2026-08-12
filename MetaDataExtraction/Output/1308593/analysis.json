@@ -1,0 +1,456 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1308593.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1308593",
+  "generated_at": "2026-07-29T22:01:45",
+  "paper_metadata": {
+    "title": "A CDMA2000 Zero-IF Receiver With Low-Leakage Integrated Front-End",
+    "authors": [
+      "H. Waite",
+      "P. Ta",
+      "J. Chen",
+      "H. Li",
+      "M. Gao",
+      "C. S. Chang",
+      "Y. S. Chang",
+      "W. Redman-White",
+      "O. Charlon",
+      "Y. Fan",
+      "R. Perkins",
+      "D. Brunel",
+      "E. Soudee",
+      "N. Lecacheur",
+      "S. Clamagirand"
+    ],
+    "abstract": "This paper describes a highly integrated CDMA 2000 US-CEL band (880-MHz) receiver. The single-chip zero-IF design incorporates all receiver signal-path functions including the low-noise amplifier (LNA) on a single die. The complete receiver design exceeds the stringent linearity and local oscillator (LO) leakage requirements for this standard arising from the coexistence with narrow-band FM signals. The integrated LNA achieves 1.0-dB noise figure with +9-dBm IIP3 at high gain, and by maintaining LO leakage to the antenna port well below Fig. 1. CDMA input frequency spectrum with FM (AMPS) interferer and 80 dBm at all gain settings, no external LNA is required. The recross-modulation spectrum. ceiver is fabricated in a 0.25m 40-GHz BICMOS technology, and occupies 3 mm2. A companion transmitter IC [6] also uses a direct conversion",
+    "keywords": [
+      "CDMA",
+      "I/Q",
+      "integrated channel filter",
+      "RF"
+    ],
+    "doi": "10.1109/JSSC.2004.829965",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2004
+  },
+  "paper_circuit_context": {
+    "circuit_type": "CDMA2000 Zero-IF Receiver",
+    "technology": "BICMOS",
+    "application_domain": "rf, baseband, if",
+    "sub_blocks": [
+      "capacitor",
+      "transistor/MOSFET",
+      "mixer",
+      "inductor",
+      "resistor",
+      "output buffer",
+      "op-amp"
+    ],
+    "design_purpose": "",
+    "function_summary": "CDMA2000 Zero-IF Receiver: This paper describes a highly integrated CDMA 2000 US-CEL band (880-MHz) receiver.",
+    "key_specs": [
+      "80 dBm",
+      "55 dB",
+      "9 dBm",
+      "40 dB",
+      "20 dB",
+      "5 dBm",
+      "7 dB",
+      "15 MHz",
+      "1250 kHz",
+      "48 dB"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "SYSTEM REQUIREMENTS",
+      "kind": "other",
+      "page": 0,
+      "text_preview": ""
+    },
+    {
+      "number": "I",
+      "title": "NCREASED levels of radio integration with low external",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "component count are essential for cellular handset manufacturers to achieve low product cost. These demands have led to the popularity of low and zero intermediate frequency (IF) architectures which eliminate IF surface acoustic wave (SAW) filters and their associated terminated interfaces in the radio. While practical implementations have been demonstrated for GSM and UMTS systems [2]–[4], the mu ..."
+    },
+    {
+      "number": "II",
+      "title": "ZIF RECEIVER ARCHITECTURE",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "The overall system architecture is shown in Fig. 2, and the key performance requirements are given in Tables I and II. The worst case interference scenario is presented in Fig. 1, where transmit leakage cross-modulates with a strong adjacent FM carrier. This situation tends to dictate the linearity performance specifications. In practical designs, the attenuation afforded at the input by commercia ..."
+    },
+    {
+      "number": "III",
+      "title": "LNA DESIGN",
+      "kind": "design",
+      "page": 0,
+      "text_preview": "Three gain settings are used to achieve the best overall gain 15-dB) and low ( 5-dB) gain setand linearity; only high ( tings are shown for clarity. The target here is to achieve 20-dB reverse isolation in all gain modes. To meet the overall leakage 80-dBm isolation requirements, the majority of the required is then achieved in the mixer core and its associated interfaces, and maintained with care ..."
+    },
+    {
+      "number": "IV",
+      "title": "MIXER",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "The linearity, noise figure, matching, and LO leakage requirements are also quite severe for the mixer. The input port now differential impedance to match the SAW filter presents a 200- (the latter performs the impedance and differential-to-singleended transformations). Fig. 4 shows the basic scheme. The design is based on a complex version of the ubiquitous current-steering bipolar form. Inductiv ..."
+    },
+    {
+      "number": "V",
+      "title": "FIRST IF AMPLIFIER",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "The noise level at the output of the mixer imposes a restriction on the impedance level at this point, and consequently on the size of the capacitors in the channel selection filter. Hence, an 16-dB gain is used at the input of the filter, amplifier with 0/ allowing the impedance of the filter to be raised with some area saving. Clearly, care is taken with the linearity behavior of this amplifier. ..."
+    },
+    {
+      "number": "VI",
+      "title": "LOCAL OSCILLATOR PATH",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "Meeting the very stringent phase noise requirements imposed by the AMPS system with an integrated oscillator is very difficult, and in this design an external oscillator is used. To minimize the LO leakage at the PCB level, the oscillator is run at twice the signal frequency followed by a conventional emittercoupled logic (ECL) digital divide-by-two quadrature circuit. Only a single pin is availab ..."
+    },
+    {
+      "number": "VII",
+      "title": "CHANNEL SELECTIVITY FILTERS",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "The specifications of the channel filters are set to complement the performance of the ADC (and subsequent digital signal processing in the baseband IC); clearly, with higher resolution and faster sample rate the filter requirements could be relaxed further. In this design, the selectivity needed is achieved with a fifth-order elliptic type response; the response is optimized to this application b ..."
+    },
+    {
+      "number": "VIII",
+      "title": "SILICON IMPLEMENTATION",
+      "kind": "design",
+      "page": 3,
+      "text_preview": "The circuit is implemented in a 40-GHz 0.25m BICMOS process [9]. In addition to the high-frequency and low-noise performance of the bipolar transistors, this technology has excellent passive components available; the high-density high-linIEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 7, JULY 2004 Fig. 6. Die microphotograph. earity MIM capacitors (5 fF m ) make the layout of the dual channel-s ..."
+    },
+    {
+      "number": "IX",
+      "title": "MEASUREMENTS AND RESULTS",
+      "kind": "results",
+      "page": 3,
+      "text_preview": "The front-end performance of this design was clearly critical to the success of the receiver. Because of the requirements for external filters at the RF ports, the LNA is easily available for measurement as a separate block. The key performance results are given in Tables I and II. Performance values given are typical from the initial characterization of 20 packaged devices. The LNA noise figure o ..."
+    },
+    {
+      "number": "X",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 3,
+      "text_preview": "A complete CDMA2000 receiver using a zero-IF architecture has been implemented in a silicon BiCMOS technology. Measurements confirm that the receiver can meet all requirements of noise, linearity, and LO leakage with an integrated LNA on the same die. Excellent front-end RF performance has been demonstrated in a pure silicon technology. IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 7, JULY 20 ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. CDMA input frequency spectrum with FM (AMPS) interferer and cross-modulation spectrum.",
+      "caption_bbox": [
+        301.1,
+        231.9,
+        552.2,
+        248.8
+      ],
+      "section_title": "",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "NCREASED levels of radio integration with low external",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "For the receiver alone, there is also the requirement to tolerate and indeed to work with legacy narrow-band FM analog systems (AMPS) in the same 880-MHz frequency spectrum [1] (Fig. 1), leading to several severe performance restrictions, in terms of input linearity, local oscillator (LO) leakage, and LO phase noise."
+        },
+        {
+          "section_title": "NCREASED levels of radio integration with low external",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 1."
+        },
+        {
+          "section_title": "ZIF RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The worst case interference scenario is presented in Fig. 1, where transmit leakage cross-modulates with a strong adjacent FM carrier."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.3,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "BICMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "The worst case interference scenario is presented in Fig. 1, where transmit leakage cross-modulates with a strong adjacent FM carrier.",
+        "function_summary": "CDMA input frequency spectrum with FM (AMPS) interferer and cross-modulation spectrum. The worst case interference scenario is presented in Fig. 1, where transmit leakage cross-modulates with a strong adjacent FM carrier.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Zero-IF receiver architecture.",
+      "caption_bbox": [
+        39.6,
+        293.9,
+        163.0,
+        301.8
+      ],
+      "section_title": "III. LNA DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "ZIF RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The overall system architecture is shown in Fig. 2, and the key performance requirements are given in Tables I and II."
+        },
+        {
+          "section_title": "LNA DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "However, the requirement in high gain mode to combine extremely low noise figure with Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "BICMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Zero-IF receiver architecture",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.84,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. (a) LNA showing high gain mode. (b) LNA showing low gain mode.",
+      "caption_bbox": [
+        302.6,
+        635.6,
+        549.9,
+        643.5
+      ],
+      "section_title": "III. LNA DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "LNA DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "TABLE I LNA TYPICAL MEASUREMENT RESULTS TABLE II MIXER AND BASEBAND TYPICAL MEASUREMENT RESULTS high IIP3 figures tends to rule out this configuration, and the design is based around a single transistor common emitter (CE) amplifier [Fig. 3(a)]."
+        },
+        {
+          "section_title": "LNA DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "An external load is used with a simple matching netIEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 7, JULY 2004 (a) (b) Fig. 3."
+        },
+        {
+          "section_title": "LNA DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "To be consistent with the zero-IF architecture’s requirements, an emitter follower is used, keeping the reverse isolation at around 20 dB while maintaining excellent linearity [Fig. 3(b)]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "BICMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "mixer"
+        ],
+        "design_purpose": "To be consistent with the zero-IF architecture’s requirements, an emitter follower is used, keeping the reverse isolation at around 20 dB while maintaining excellent linearity [Fig. 3(b)].",
+        "function_summary": "(a) LNA showing high gain mode. (b) LNA showing low gain mode. To be consistent with the zero-IF architecture’s requirements, an emitter follower is used, keeping the reverse isolation at around 20 dB while maintaining excellent linearity [Fig. 3(b)].",
+        "key_specs": [
+          "20 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Downconversion mixer.",
+      "caption_bbox": [
+        38.1,
+        261.0,
+        143.1,
+        268.9
+      ],
+      "section_title": "V. FIRST IF AMPLIFIER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "LNA DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 7, JULY 2004 Fig. 4."
+        },
+        {
+          "section_title": "MIXER",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 4 shows the basic scheme."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "BICMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Downconversion mixer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Measured channel filter response.",
+      "caption_bbox": [
+        39.6,
+        202.2,
+        177.1,
+        210.2
+      ],
+      "section_title": "VII. CHANNEL SELECTIVITY FILTERS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CHANNEL SELECTIVITY FILTERS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The overall response Fig. 5."
+        },
+        {
+          "section_title": "CHANNEL SELECTIVITY FILTERS",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Measured channel filter response. is shown in Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "BICMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured channel filter response",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Die microphotograph.",
+      "caption_bbox": [
+        302.6,
+        339.9,
+        402.2,
+        347.9
+      ],
+      "section_title": "VII. CHANNEL SELECTIVITY FILTERS",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SILICON IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "In addition to the high-frequency and low-noise performance of the bipolar transistors, this technology has excellent passive components available; the high-density high-linIEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 39, NO. 7, JULY 2004 Fig. 6."
+        },
+        {
+          "section_title": "SILICON IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 3,
+          "sentence": "The die photograph is shown in Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -5.7,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "CDMA2000 Zero-IF Receiver",
+        "technology": "BICMOS",
+        "application_domain": "rf, baseband, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Die microphotograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 2,
+  "warnings": []
+}

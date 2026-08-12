@@ -1,0 +1,224 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\RNDatasetPapers\\7063008.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output_rerun_128\\7063008",
+  "generated_at": "2026-07-29T22:45:50",
+  "paper_metadata": {
+    "title": "A Power-Management ASIC with Q-Modulation Capability for Efficient Inductive Power Transmission Mehdi Kiani1, Byunghun Lee2, Pyungwoo Yeon2, Maysam Ghovanloo2",
+    "authors": [],
+    "abstract": "",
+    "keywords": [],
+    "doi": "",
+    "venue": "",
+    "year": 2015
+  },
+  "paper_circuit_context": {
+    "circuit_type": "",
+    "technology": "CMOS",
+    "application_domain": "wireless, biomedical",
+    "sub_blocks": [
+      "inductor",
+      "capacitor",
+      "transistor/MOSFET",
+      "LC tank / resonator",
+      "switch"
+    ],
+    "design_purpose": "",
+    "function_summary": "circuit",
+    "key_specs": [
+      "34 v",
+      "10Ω",
+      "3V",
+      "2MHz",
+      "100nF",
+      "4.8V",
+      "100mV",
+      "31kHz",
+      "3 w",
+      "2 v"
+    ]
+  },
+  "sections": [],
+  "figures": [
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 0,
+      "caption": "Figure 12.7.3 shows the detailed schematic diagram of the ADCC block. A charge pump adjusts a variable voltage, VCP, to be used by a mono-stable pulse generator to generate the SC waveform with dynamic duty cycle. By default, a finite state machine (FSM) forces the charge pump to either charge or discharge its output capacitor (CCP) until the voltage envelope across the L3C3-tank (VENV) reduces by 100mV. Then, the charge/discharge state changes, which results in VENV to increase, until VENV reaches to its maximum while achieving the optimal RL condition and again reduces by 100mV by transitioning form the optimal condition. This up-and-down cycle ensures that VENV remains close to its peak value, which results in transformation of RL to the optimal load required for high PTE. In the ADCC, VENV is first detected by a passive rectifier, divided by 1.4, and then buffered before being sampled. Two non-overlapping clocks, CLKC and CLKS, are generated from a 31kHz (fp/64) signal inside a clock-recovery block. The first sampler, S1, always samples VENV at the rising edge of CLKS while S2",
+      "caption_bbox": [
+        28.0,
+        589.8,
+        281.7,
+        722.9
+      ],
+      "section_title": "",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "As shown in Fig. 12.7.1a, magnetic resonance-based power transmission in the form of a 3-coil link has been proposed to maximize PTE for any given RL by transforming it to an optimal load, using k34 variable [2,3]."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "In this paper, a technique called Q-modulation is introduced for automatic transformation of RL by adding a single switch to the Rx LC-tank of a 2-coil inductive link, as shown in Fig. 12.7.1b."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Therefore, the amount of transferred energy to RL can be controlled by the duty cycle of the switching waveform, i.e., D = 2Ton/Tp in Fig. 12.7.1b."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "As a design example, the PTE of the 3-coil link in Fig. 12.7.1c is only maximum at RL=10Ω where k34 is optimal, while the Q-modulated link can achieve maximum PTE for any RL by adjusting D."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 12.7.2 shows the QMPM block diagram, which includes a full-wave passive rectifier, a 3V low-dropout regulator (LDO), an automatic duty-cycle control (ADCC) to adaptively perform load transformation, and an over-voltage protection (OVP) circuitry."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 12.7.3 shows the detailed schematic diagram of the ADCC block."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 12.7.4a shows the schematic diagram of the full-wave passive rectifier, consisting of NMOS transistors (N1,2) for full-wave rectification and PMOS pass transistors equipped with Vth-cancellation circuit to reduce the dropout voltage of the main pass transistors, P1 and P4, and improve power conversion efficiency (PCE)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "It can be seen from Fig. 12.7.4c that the SC signal with D=50% has chopped the voltage across L3C3-tank (VIN1 and VIN2) by N3,4 in Fig. 12.7.4, which has resulted in higher VIN1 and VIN2 peak voltages (5.4V vs. 4.5V) and resulted in higher VREC (4.5V vs. 3.9V)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 12.7.5 shows the functionality of Q-modulation when RL and coils’ coupling distance (d23) were changed in our measurement."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Therefore, any variation in RL and d23 has resulted in non-optimal PTE in Fig. 12.7.5."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "As shown in Fig. 12.7.5, Q-modulation has increased the PTE for 45% and 14% at RL=100Ω (d23=3cm) and d23=5cm (RL=15Ω), respectively."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 12.7.6 shows the measured PCE of the rectifier vs. RL with VREC=3.3V, 4V, and 4.7V with the maximum output power (Pout) of 1.45W (RL=15Ω)."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "As RL increases, the current flowing through, and the voltage dropping across the rectifier pass transistors, P1,4 in Fig. 12.7.4, reduce."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The table in Fig. 12.7.6 benchmarks the QMPM ASIC among recently reported rectifiers [1,5,6]."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 12.7.7 shows the QMPM chip micrograph and specifications of the inductive link."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Papers, pp. 66-67, Feb. 2013. • 2015 IEEE International Solid-State Circuits Conference 978-1-4799-6224-2/15/$31.00 ©2015 IEEE Figure 12.7.1: (a) Conventional 3-coil inductive links, (b) Q-modulation 2-coil link with its key waveforms, and (c) a comparison between PTEs of 3-coil and Q-modulation 2-coil links."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 12.7.3: Schematic diagram for the automatic duty-cycle control (ADCC) block in the QMPM ASIC for adaptive adjustment of D to achieve the highest PTE for any RL."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 12.7.5: Measured efficiency of the 2-coil link plus rectifier with and without Q-modulation."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "ISSCC 2015 / February 24, 2015 / 4:30 PM Figure 12.7.2: Block diagram of the efficient and adaptive Q-modulation power-management (QMPM) ASIC. 12 Figure 12.7.4: Schematic diagram for the full-wave passive rectifier and measured input and output voltage waveforms in the rectifier with and without Q-modulation for RL=100Ω at fp=2MHz."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Figure 12.7.6: Rectifier measured PCE vs. RL for different VREC values."
+        },
+        {
+          "section_title": "",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "DIGEST OF TECHNICAL PAPERS • ISSCC 2015 PAPER CONTINUATIONS Figure 12.7.7: QMPM chip die micrograph and additional specifications of the Q-modulation link. • 2015 IEEE International Solid-State Circuits Conference 978-1-4799-6224-2/15/$31.00 ©2015 IEEE"
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.0,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "-waveform": -2.0,
+        "references": 2.0
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "rectifier",
+        "technology": "CMOS",
+        "application_domain": "wireless, biomedical",
+        "sub_blocks": [
+          "capacitor",
+          "transistor/MOSFET",
+          "LC tank / resonator",
+          "switch"
+        ],
+        "design_purpose": "Figure 12.7.4a shows the schematic diagram of the full-wave passive rectifier, consisting of NMOS transistors (N1,2) for full-wave rectification and PMOS pass transistors equipped with Vth-cancellation circuit to reduce the dropout voltage of the main pass transistors, P1 and P4, and improve power conversion ...",
+        "function_summary": "7.3 shows the detailed schematic diagram of the ADCC block. A charge pump adjusts a variable voltage, VCP, to be used by a mono-stable pulse generator to generate the SC waveform with dynamic duty cycle. By default, a finite state machine (FSM) forces the charge pump to either charge or discharge its output capacitor ...",
+        "key_specs": [
+          "34 v",
+          "10Ω",
+          "3V",
+          "50%",
+          "5.4V",
+          "4.5V",
+          "3.9V",
+          "45%"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.8,
+      "warnings": [
+        "Recommended figure was classified as 'result_plot', not a schematic; manual confirmation strongly recommended."
+      ]
+    }
+  ],
+  "recommended_figure_id": 12,
+  "warnings": []
+}

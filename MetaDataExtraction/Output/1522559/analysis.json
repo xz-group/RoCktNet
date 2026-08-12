@@ -1,0 +1,1131 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1522559.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1522559",
+  "generated_at": "2026-07-29T22:03:11",
+  "paper_metadata": {
+    "title": "Remotely Powered Addressable UHF RFID Integrated System",
+    "authors": [
+      "Jari-Pascal Curty",
+      "Norbert Joehl",
+      "Catherine Dehollain",
+      "Michel J. Declercq"
+    ],
+    "abstract": "This paper presents a fully integrated remotely powered and addressable radio frequency identification (RFID) and the antenna issues are discussed in Section VI. Finally, Sectransponder working at 2.45 GHz. The achieved operating range tion VII gives the experimental results and Section VIII conat 4 W effective isotropically radiated power (EIRP) base-station cludes this paper. transmit power is 12 m. The integrated circuit (IC) is implemented in a 0.5 m silicon-on-sapphire technology. A state-of-the-art",
+    "keywords": [
+      "Backscattering modulation",
+      "low power",
+      "low"
+    ],
+    "doi": "10.1109/JSSC.2005.857352",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2005
+  },
+  "paper_circuit_context": {
+    "circuit_type": "integrated circuit / system",
+    "technology": "CMOS, BICMOS, SOI",
+    "application_domain": "rf, radio frequency, wireless, if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "switch",
+      "mixer"
+    ],
+    "design_purpose": "",
+    "function_summary": "integrated circuit / system: This paper presents a fully integrated remotely powered and addressable radio frequency identification (RFID) and the antenna issues are discussed in Section VI.",
+    "key_specs": [
+      "2.45 GHz",
+      "4 W",
+      "37%",
+      "125 kHz",
+      "13.56 MHz",
+      "2.4 GHz",
+      "200 ns",
+      "400 ns",
+      "16 dBm",
+      "1 w"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "R ADIO FREQUENCY identiﬁcation (RFID) has become very popular in many areas such as purchasing and distribution logistics, manufacturing companies and even the wine industry, where it is used as an anti-fraud system [1]. Moreover, wireless sensing applications could also beneﬁt of this technology, in which an ultralow-power IC design, a wide system operating range, and a small transponder size are ..."
+    },
+    {
+      "number": "II",
+      "title": "OPERATIONAL PRINCIPLE",
+      "kind": "proposed",
+      "page": 0,
+      "text_preview": "The general application framework is described in Fig. 1. The concept is to address a group of hard-coded passive transponders in order to wake up only one of them. The reader -bit address (ID) and only the transponder that sends an contains this ID wakes up. All others switch into quiet mode. If a transponder with the emitted ID is found, it starts modulating its input impedance to enable backsca ..."
+    },
+    {
+      "number": "III",
+      "title": "TRANSPONDER ARCHITECTURE",
+      "kind": "proposed",
+      "page": 2,
+      "text_preview": "Fig. 4 shows a block diagram of the transponder IC. A folded dipole antenna is the only external component of the system. It is connected to the circuit using two bond wires. Such an antenna has been chosen, as will be described later, for its naturally high radiation resistance (300 ). Passive transponders retrieve their energy by rectifying the incoming electromagnetic RF wave. This energy is th ..."
+    },
+    {
+      "number": "IV",
+      "title": "TRANSPONDER BUILDING BLOCKS",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "A. Rectiﬁer and Limiter The rectiﬁer and the voltage limiter are shown in Fig. 5. The rectiﬁer consists of a three-stage full-wave voltage doubler cascade. The rectifying devices are diode-connected transistors with low threshold voltage, low reverse current, and low parasitic capacitance. The negative wave rectiﬁcation is made possible using a fully depleted silicon on insulator technology. This  ..."
+    },
+    {
+      "number": "V",
+      "title": "READER",
+      "kind": "other",
+      "page": 6,
+      "text_preview": "The complete description of the reader is beyond the scope of this paper. However, a simpliﬁed architecture is illustrated in Fig. 14. The RF oscillator signal is ampliﬁed and transmitted through the air to the transponder (RF_out). The backscattered signal RF_in returning from the transponder is mixed with the RF carrier to obtain the IF sub-carrier. The latter is ﬁnally demodulated to obtain the ..."
+    },
+    {
+      "number": "VI",
+      "title": "ANTENNA",
+      "kind": "other",
+      "page": 7,
+      "text_preview": "A. Transponder Input Impedance The transponder input impedance is mainly inﬂuenced by the rectiﬁer. Its impedance is composed of an imaginary part due to the parasitic capacitances and a real part that depends on the output current consumption. The other blocks of the RF front-end (the detector and the modulator) bring a small contribution (for the ASK case). As shown in [8] and Section IV-A, to o ..."
+    },
+    {
+      "number": "VII",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 8,
+      "text_preview": "A version of the circuit has been realized in a fully depleted silicon on sapphire technology [14]. This competitive process offers low threshold voltage CMOS transistors that is a clear advantage for remotely powered devices [15]. The isolated devices present a low parasitic capacitance compared to a standard bulk process. The chip microphotograph is shown in Fig. 18. As can be seen in this ﬁgure ..."
+    },
+    {
+      "number": "VIII",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 8,
+      "text_preview": "This paper presents a remotely powered addressable UHF RFID system. Using state-of-the-art analysis and design techniques, a SOS 0.5m CMOS technology and inductive matching between the antenna and the transponder, an operating range of 12 m with 4 W EIRP transmitted power was achieved. At this distance, the available power for the transponder is 2.7 W which means about 37% global efﬁciency for the ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Operational principle.",
+      "caption_bbox": [
+        39.6,
+        270.0,
+        138.9,
+        278.0
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "OPERATIONAL PRINCIPLE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The general application framework is described in Fig. 1."
+        },
+        {
+          "section_title": "OPERATIONAL PRINCIPLE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Like the interrupt duration, the gap between two successive interrupts is Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.3,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "integrated circuit / system",
+        "technology": "CMOS, BICMOS, SOI",
+        "application_domain": "rf, radio frequency, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Operational principle",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Complete datagram of a communication session.",
+      "caption_bbox": [
+        39.6,
+        480.6,
+        225.5,
+        488.6
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "OPERATIONAL PRINCIPLE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "It is the power-up mode during which a power-on-reset (POR, see Fig. 2) occurs that turns the transponders to the addressing mode. 2) Addressing Mode: During this mode, all the transponders that are within the reading range wait for the reader information."
+        },
+        {
+          "section_title": "OPERATIONAL PRINCIPLE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "To send a particular address, the reader generates a series of short RF interrupts, typically 200 ns (see Fig. 2)."
+        },
+        {
+          "section_title": "OPERATIONAL PRINCIPLE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 2."
+        },
+        {
+          "section_title": "OPERATIONAL PRINCIPLE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "A complete session example for a 3-bit transponder is shown in Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.1,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "integrated circuit / system",
+        "technology": "CMOS, BICMOS, SOI",
+        "application_domain": "rf, radio frequency, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Complete datagram of a communication session",
+        "key_specs": [
+          "200 ns"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.05,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. State chart of the decoder.",
+      "caption_bbox": [
+        39.6,
+        663.9,
+        152.6,
+        671.8
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "OPERATIONAL PRINCIPLE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "For the following bits, the reader sends two RF interrupts if the emitted bit has the same logical value as the preceding one and only one otherwise (see Fig. 3)."
+        },
+        {
+          "section_title": "OPERATIONAL PRINCIPLE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "Fig. 3."
+        },
+        {
+          "section_title": "TRANSPONDER BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The decoding process is ensured by the circuit of Fig. 8 following the state chart of Fig. 3."
+        },
+        {
+          "section_title": "TRANSPONDER BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The start bit has to be a 1 (see Fig. 3) so that one RF interrupt is sent and the Data_in signal toggles to 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.1,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "decoder",
+        "technology": "CMOS, BICMOS, SOI",
+        "application_domain": "rf, radio frequency, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "State chart of the decoder",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.05,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Architecture of the system.",
+      "caption_bbox": [
+        38.1,
+        337.4,
+        154.1,
+        345.3
+      ],
+      "section_title": "III. TRANSPONDER ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "OPERATIONAL PRINCIPLE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "The interrupts duration have to be short enough to avoid a power off of the circuit; there is a tradeoff between this value and the charging capacitors (see Fig. 4)."
+        },
+        {
+          "section_title": "OPERATIONAL PRINCIPLE",
+          "section_kind": "proposed",
+          "page": 0,
+          "sentence": "After sending CURTY et al.: REMOTELY POWERED ADDRESSABLE UHF RFID INTEGRATED SYSTEM Fig. 4."
+        },
+        {
+          "section_title": "TRANSPONDER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 2,
+          "sentence": "Fig. 4 shows a block diagram of the transponder IC."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.2,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "section:proposed": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "integrated circuit / system",
+        "technology": "CMOS, BICMOS, SOI",
+        "application_domain": "rf, radio frequency, wireless, if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Architecture of the system",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.77,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Rectiﬁer and limitation circuit schematic (all rectiﬁer transistors are identical).",
+      "caption_bbox": [
+        301.1,
+        343.1,
+        552.2,
+        360.0
+      ],
+      "section_title": "III. TRANSPONDER ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "TRANSPONDER BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Rectiﬁer and Limiter The rectiﬁer and the voltage limiter are shown in Fig. 5."
+        },
+        {
+          "section_title": "TRANSPONDER BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "In order to avoid a voltage over-drive, a limiter is added at the output of the rectiﬁer (Fig. 5)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 10.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+circuit schematic": 3.5,
+        "+circuit": 1.0,
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "integrated circuit / system",
+        "technology": "CMOS, BICMOS, SOI",
+        "application_domain": "rf, radio frequency, wireless, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "In order to avoid a voltage over-drive, a limiter is added at the output of the rectiﬁer (Fig. 5).",
+        "function_summary": "Rectiﬁer and limitation circuit schematic (all rectiﬁer transistors are identical). In order to avoid a voltage over-drive, a limiter is added at the output of the rectiﬁer (Fig. 5).",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.71,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Equivalent circuit for the rectiﬁer.",
+      "caption_bbox": [
+        39.6,
+        168.2,
+        177.1,
+        176.2
+      ],
+      "section_title": "IV. TRANSPONDER BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "TRANSPONDER BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "A thorough study is available in a preceding paper [8] in which the circuit of Fig. 6 models the rectiﬁer fabricated in a given technology as an input and output impedance as well as a voltage controlled voltage source."
+        },
+        {
+          "section_title": "TRANSPONDER BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The global rectiﬁer efﬁciency deﬁned as (2) as well as the conversion efﬁciency (3) Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-equivalent": -2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "integrated circuit / system",
+        "technology": "CMOS, BICMOS, SOI",
+        "application_domain": "rf, radio frequency, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Equivalent circuit for the rectiﬁer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Power-on-reset circuit schematic.",
+      "caption_bbox": [
+        302.6,
+        275.1,
+        438.4,
+        283.0
+      ],
+      "section_title": "IV. TRANSPONDER BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "TRANSPONDER BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Power-on-Reset The power-on-reset circuit in Fig. 7 is composed of a crosscoupled pair of transistors and a NOR gate."
+        },
+        {
+          "section_title": "TRANSPONDER BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "When Venv is higher than Vref, CK1 rises to V+ and the D-ﬂip-ﬂop IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 11, NOVEMBER 2005 Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 9.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+circuit schematic": 3.5,
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "integrated circuit / system",
+        "technology": "CMOS, BICMOS, SOI",
+        "application_domain": "rf, radio frequency, wireless, if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Power-on-reset circuit schematic",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 1.0,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Detector, data slicer and decoder schematic.",
+      "caption_bbox": [
+        38.1,
+        374.2,
+        208.9,
+        382.2
+      ],
+      "section_title": "IV. TRANSPONDER BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "TRANSPONDER BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Detector, Data Slicer, and Decoder The detector (Fig. 8) that consists of an envelope detector and an averaging ﬁlter, enables the reader-to-tag communication."
+        },
+        {
+          "section_title": "TRANSPONDER BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "When RF_in rises, the capacitor Ca charges to the RF envelope (see Fig. 8)."
+        },
+        {
+          "section_title": "TRANSPONDER BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The regeneration of signals Venv and Vref is realized by the data slicer in Fig. 8."
+        },
+        {
+          "section_title": "TRANSPONDER BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The decoding process is ensured by the circuit of Fig. 8 following the state chart of Fig. 3."
+        },
+        {
+          "section_title": "TRANSPONDER BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "A communication session can start and at each rising edge of CURTY et al.: REMOTELY POWERED ADDRESSABLE UHF RFID INTEGRATED SYSTEM Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.5,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 2.0
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "decoder",
+        "technology": "CMOS, BICMOS, SOI",
+        "application_domain": "rf, radio frequency, wireless, if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "Detector, Data Slicer, and Decoder The detector (Fig. 8) that consists of an envelope detector and an averaging ﬁlter, enables the reader-to-tag communication.",
+        "function_summary": "Detector, data slicer and decoder schematic. Detector, Data Slicer, and Decoder The detector (Fig. 8) that consists of an envelope detector and an averaging ﬁlter, enables the reader-to-tag communication.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.92,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. Control logic and shift register schematic.",
+      "caption_bbox": [
+        38.1,
+        623.0,
+        202.3,
+        631.0
+      ],
+      "section_title": "IV. TRANSPONDER BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "TRANSPONDER BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The signal G_n (generated by the control logic, see Fig. 9) is tied to Vduring addressing mode."
+        },
+        {
+          "section_title": "TRANSPONDER BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Shift Register and Logic The shift register (SR) of Fig. 9 is responsible for loading the received bit of information from the decoder (Data_in)."
+        },
+        {
+          "section_title": "TRANSPONDER BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.7,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "decoder",
+        "technology": "CMOS, BICMOS, SOI",
+        "application_domain": "rf, radio frequency, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Control logic and shift register schematic",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.85,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. IF oscillator schematic.",
+      "caption_bbox": [
+        39.6,
+        274.8,
+        147.6,
+        282.8
+      ],
+      "section_title": "IV. TRANSPONDER BUILDING BLOCKS",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "TRANSPONDER BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "IF Oscillator The IF oscillator schematic is presented in Fig. 10."
+        },
+        {
+          "section_title": "TRANSPONDER BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 5.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, BICMOS, SOI",
+        "application_domain": "rf, radio frequency, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "IF Oscillator The IF oscillator schematic is presented in Fig. 10.",
+        "function_summary": "IF oscillator schematic. IF Oscillator The IF oscillator schematic is presented in Fig. 10.",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.79,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 6,
+      "caption": "Fig. 11. Datagram for the IF oscillator.",
+      "caption_bbox": [
+        38.1,
+        303.9,
+        169.3,
+        311.9
+      ],
+      "section_title": "V. READER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TRANSPONDER BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "When IF_enable rises up to V+ (or logic 1, see the datagram in Fig. 11), T13 is switched off, T12, and T11 switch on and IF drops to V-."
+        },
+        {
+          "section_title": "TRANSPONDER BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "However, they occur CURTY et al.: REMOTELY POWERED ADDRESSABLE UHF RFID INTEGRATED SYSTEM Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "oscillator",
+        "technology": "CMOS, BICMOS, SOI",
+        "application_domain": "rf, radio frequency, wireless, if",
+        "sub_blocks": [
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Datagram for the IF oscillator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 6,
+      "caption": "Fig. 12. .",
+      "caption_bbox": [
+        38.1,
+        657.3,
+        289.2,
+        665.2
+      ],
+      "section_title": "V. READER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TRANSPONDER BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The average available input power for this case as a function of is shown in Fig. 12."
+        },
+        {
+          "section_title": "TRANSPONDER BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 12 shows that for low duty-cycle ASK modulation, the power-efﬁciency is improved compared to PSK."
+        },
+        {
+          "section_title": "TRANSPONDER BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "TABLE I INPUT IMPEDANCE FOR THE ASK AND PSK MODULATION TYPES TABLE II AVAILABLE INPUT POWER FOR THE ASK AND PSK MODULATION TYPES Average available input power as a function of DC normalized to P Fig. 12. . at a moment where the rectiﬁer cannot absorb any power since the goal is to reﬂect as much power as possible."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "integrated circuit / system",
+        "technology": "CMOS, BICMOS, SOI",
+        "application_domain": "rf, radio frequency, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 7,
+      "caption": "Fig. 13. Series and parallel modulator conﬁgurations.",
+      "caption_bbox": [
+        39.6,
+        166.5,
+        217.0,
+        174.4
+      ],
+      "section_title": "V. READER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "TRANSPONDER BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Two possible conﬁgurations are shown in Fig. 13."
+        },
+        {
+          "section_title": "TRANSPONDER BUILDING BLOCKS",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Total power reﬂection occurs in the series conﬁguration when the switch is open (left in Fig. 13) and in the parallel conﬁguration when it is shorted (right in Fig. 13)."
+        },
+        {
+          "section_title": "READER",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "A good Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS, BICMOS, SOI",
+        "application_domain": "rf, radio frequency, wireless, if",
+        "sub_blocks": [
+          "switch"
+        ],
+        "design_purpose": "",
+        "function_summary": "Series and parallel modulator conﬁgurations",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 7,
+      "caption": "Fig. 14. Reader architecture with two antennas.",
+      "caption_bbox": [
+        39.6,
+        336.5,
+        197.2,
+        344.5
+      ],
+      "section_title": "V. READER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "READER",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "However, a simpliﬁed architecture is illustrated in Fig. 14."
+        },
+        {
+          "section_title": "READER",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "The architecture in Fig. 14 uses two antennas."
+        },
+        {
+          "section_title": "READER",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "As seen in Figs. 14 and 15, the same RF carrier is used both for power transmission and detection."
+        },
+        {
+          "section_title": "READER",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.6,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "integrated circuit / system",
+        "technology": "CMOS, BICMOS, SOI",
+        "application_domain": "rf, radio frequency, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Reader architecture with two antennas",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.4,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 7,
+      "caption": "Fig. 15. Reader architecture with one antenna.",
+      "caption_bbox": [
+        39.6,
+        470.3,
+        193.8,
+        478.3
+      ],
+      "section_title": "V. READER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "READER",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "It is possible to use only one antenna at the cost of needing a circulator (see Fig. 15)."
+        },
+        {
+          "section_title": "READER",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "integrated circuit / system",
+        "technology": "CMOS, BICMOS, SOI",
+        "application_domain": "rf, radio frequency, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Reader architecture with one antenna",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 7,
+      "caption": "Fig. 16. System architecture and parasitic coupling that occurs.",
+      "caption_bbox": [
+        302.6,
+        310.2,
+        510.0,
+        318.2
+      ],
+      "section_title": "V. READER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "READER",
+          "section_kind": "other",
+          "page": 6,
+          "sentence": "IF Modulation Frequency As can be seen in Fig. 16, the carrier is multiplied by a sum of delayed signals of the same frequency."
+        },
+        {
+          "section_title": "ANTENNA",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 11, NOVEMBER 2005 Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "integrated circuit / system",
+        "technology": "CMOS, BICMOS, SOI",
+        "application_domain": "rf, radio frequency, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "System architecture and parasitic coupling that occurs",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 7,
+      "caption": "Fig. 17. Impedance matching for the transponder.",
+      "caption_bbox": [
+        302.6,
+        429.6,
+        466.9,
+        437.5
+      ],
+      "section_title": "V. READER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ANTENNA",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "Fig. 17."
+        },
+        {
+          "section_title": "ANTENNA",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "At low received power, inductive matching can be added to resonate with capacitance C (see Fig. 17)."
+        },
+        {
+          "section_title": "ANTENNA",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "TABLE III INPUT ADMITTANCE MEASUREMENT AT 2.45 GHz (SEE Fig. 17) used to raise this value."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "integrated circuit / system",
+        "technology": "CMOS, BICMOS, SOI",
+        "application_domain": "rf, radio frequency, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Impedance matching for the transponder",
+        "key_specs": [
+          "2.45 GHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 8,
+      "caption": "Fig. 18.",
+      "caption_bbox": [
+        38.1,
+        186.0,
+        62.3,
+        194.0
+      ],
+      "section_title": "VI. ANTENNA",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ANTENNA",
+          "section_kind": "other",
+          "page": 7,
+          "sentence": "Fig. 18."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "The chip microphotograph is shown in Fig. 18."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "integrated circuit / system",
+        "technology": "CMOS, BICMOS, SOI",
+        "application_domain": "rf, radio frequency, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 8,
+      "caption": "Fig. 19. Picture of the complete 2.45 GHz transponder.",
+      "caption_bbox": [
+        301.1,
+        123.2,
+        483.0,
+        131.2
+      ],
+      "section_title": "VI. ANTENNA",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "A complete transponder is shown in Fig. 19."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 8,
+          "sentence": "Fig. 19."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "integrated circuit / system",
+        "technology": "CMOS, BICMOS, SOI",
+        "application_domain": "rf, radio frequency, wireless, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Picture of the complete 2.45 GHz transponder",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 5,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

@@ -1,0 +1,921 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1088100.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1088100",
+  "generated_at": "2026-07-29T21:30:00",
+  "paper_metadata": {
+    "title": "A Fully Integrated Low-IF CMOS GPS Radio With On-Chip Analog Image Rejection",
+    "authors": [
+      "Farbod Behbahani",
+      "Hamid Firouzkouhi",
+      "Ramesh Chokkalingam",
+      "Siamak Delshadpour",
+      "Alireza Kheirkhahi",
+      "Mohammad Nariman",
+      "Matteo Conta",
+      "Saket Bhatia"
+    ],
+    "abstract": "A fully integrated Global Positioning System (GPS) radio is presented. Low-IF architecture was used for a high level of integration and low power consumption. An on-chip analog imagereject filter provides 18 dB of image-noise rejection to prevent noise figure (NF) degradation. With image rejection performed in the analog radio, a single-path (nonquadrature) output was used. The integrated synthesizer only requires an off-chip phase-locked loopfilter to function. Implemented in a 0.35m 2P4M CMOS process, the integrated radio has a chip area of 9.5 mm2. The radio operates over a wide range of voltage and temperature, from 2.2 to 3.6 V and from 40 C to +85 C and consumes 27 mW from a 2.2-V supply. The receiver has 4 dB NF.",
+    "keywords": [
+      "CMOS radio",
+      "Global Positioning System (GPS)",
+      "image rejection",
+      "receiver",
+      "VCO"
+    ],
+    "doi": "10.1109/JSSC.2002.804355",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2002
+  },
+  "paper_circuit_context": {
+    "circuit_type": "filter",
+    "technology": "CMOS, BICMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "inductor",
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "cross-coupled pair",
+      "current source",
+      "mixer",
+      "bias circuit",
+      "op-amp"
+    ],
+    "design_purpose": "A fully integrated Global Positioning System (GPS) radio is presented.",
+    "function_summary": "filter: A fully integrated Global Positioning System (GPS) radio is presented.",
+    "key_specs": [
+      "18 dB",
+      "3.6 V",
+      "27 mW",
+      "4 dB",
+      "1575.42 MHz",
+      "1227.6 MHz",
+      "193 dBm",
+      "1.023 MHz",
+      "1 MHz",
+      "20 MHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE MARKET for Global Positioning System (GPS) radios is rapidly growing. Soon, GPS radios will be standard equipment for cars. The FCC has mandated location finding for cell phones with GPS as the prevailing technology. Manufacturers of other portable devices, e.g., portable digital assistants, have plans to integrate GPS receivers in their systems. The main requirements for all these systems ar ..."
+    },
+    {
+      "number": "II",
+      "title": "GPS SYSTEM",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "The GPS is a satellite-based location/time finding system with 24 satellites orbiting the earth. It is a direct sequence Manuscript received May 7, 2002; revised June 29, 2002. F. Behbahani and H. Firouzkouhi were with Valence Semiconductor, Inc., Irvine, CA 92618 USA. They are now with SiART, Inc., Irvine, CA 92606 USA (e-mail: fbehbahani@siart.net). R. Chokkalingam, S. Delshadpour, A. Kheirkhahi ..."
+    },
+    {
+      "number": "III",
+      "title": "RECEIVER PATH",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "A. Architecture This radio was designed for the L1 band and C/A code. A low-IF architecture with 1.023 MHz IF was chosen for minimum off-chip components and low power consumption (Fig. 2). The choice of 1 MHz low-IF results in an image frequency within the P-code 20 MHz BW. Thermal noise dominates the 20 MHz P-code band (Fig. 1). With IF of 1 MHz, since the image frequency of the C/A code lies in  ..."
+    },
+    {
+      "number": "IV",
+      "title": "SYNTHESIZER",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "A. Structure The synthesizer is comprised of a crystal oscillator that generates the 18.414-MHz reference frequency using an off-chip crystal. Its output is divided by four and used as the comparison frequency. The VCO generates the quadrature local oscillator (LO) signals for the receiver mixers. The LO signal is divided by 342 and input to the PFD along with the comparison frequency. The PFD has ..."
+    },
+    {
+      "number": "V",
+      "title": "MEASUREMENT RESULTS",
+      "kind": "results",
+      "page": 4,
+      "text_preview": "This radio was implemented in 2P4M 0.35m CMOS with . A 48-pin TQFP package was used. a total chip area of 9.5 mm Fig. 10 shows the chip micrograph. Radio performance is summarized in Table I. This radio operates over a wide range of supply voltages, from 2.2 to 3.6 V and over a wide range of 40 C to 85 C. It drains 12.3 mA from a temperature from 2.2-V supply. It needs very few off-chip components ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 5,
+      "text_preview": "A low-IF GPS radio with very few off-chip components was m CMOS process consuming implemented in a pure 0.3527 mW from a 2.2-V supply. It comprises a complete receiver chain and a fully integrated synthesizer. Image noise is rejected using an on-chip analog image-reject filter. This filter was implemented by coupling two low-pass filters in the quadrature paths and converting them to a complex fil ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. GPS signals.",
+      "caption_bbox": [
+        301.1,
+        329.3,
+        371.2,
+        340.0
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "GPS SYSTEM",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 1."
+        },
+        {
+          "section_title": "GPS SYSTEM",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The original 50-b/s data is spread over a 2-MHz bandwidth (BW) for the C/A code (Fig. 1)."
+        },
+        {
+          "section_title": "RECEIVER PATH",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Thermal noise dominates the 20 MHz P-code band (Fig. 1)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.7,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "GPS signals",
+        "key_specs": [
+          "20 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Radio block diagram.",
+      "caption_bbox": [
+        39.6,
+        249.1,
+        137.9,
+        259.7
+      ],
+      "section_title": "II. GPS SYSTEM",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "RECEIVER PATH",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "A low-IF architecture with 1.023 MHz IF was chosen for minimum off-chip components and low power consumption (Fig. 2)."
+        },
+        {
+          "section_title": "RECEIVER PATH",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "With IF of 1 MHz, since the image frequency of the C/A code lies in the P-code band, no other strong signals are present in this band and only Fig. 2."
+        },
+        {
+          "section_title": "SYNTHESIZER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Here, an off-chip second-order filter was used (Fig. 2)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Radio block diagram",
+        "key_specs": [
+          "1.023 MHz",
+          "1 MHz"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.65,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Low-noise mixer.",
+      "caption_bbox": [
+        39.6,
+        485.6,
+        124.7,
+        496.2
+      ],
+      "section_title": "II. GPS SYSTEM",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "RECEIVER PATH",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 3."
+        },
+        {
+          "section_title": "RECEIVER PATH",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Low Noise Mixer Fig. 3 shows the low-noise mixer [4]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Low-noise mixer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 1,
+      "caption": "Fig. 4. Third-order Chebychev g =C implementation.",
+      "caption_bbox": [
+        302.6,
+        192.4,
+        484.1,
+        203.0
+      ],
+      "section_title": "II. GPS SYSTEM",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "RECEIVER PATH",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The voltage amplification in the matching IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 12, DECEMBER 2002 Fig. 4."
+        },
+        {
+          "section_title": "RECEIVER PATH",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "As shown in Fig. 4, the floating inductor in the LPF is replaced by a Gyrator block stages in feedback. and the resistors are implemented using The filter is fully scaled for amplitude and noise [6]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "inductor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Third-order Chebychev g =C implementation",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. (a) Conversion of a real LPF frequency response to a complex BPF by frequency shifting. (b) Capacitor transformation to implement frequency =C filter. shifting in an g",
+      "caption_bbox": [
+        38.1,
+        237.5,
+        289.2,
+        266.1
+      ],
+      "section_title": "II. GPS SYSTEM",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "RECEIVER PATH",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The frequency response of a real system is symmetric around dc, as shown in Fig. 5."
+        },
+        {
+          "section_title": "RECEIVER PATH",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "A complex frequency-shift operation converts a real low-pass function into the required complex function, as Fig. 5(a) shows [7]."
+        },
+        {
+          "section_title": "RECEIVER PATH",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "The shift frequency is (1) BEHBAHANI et al.: FULLY INTEGRATED LOW-IF CMOS GPS RADIO WITH ON-CHIP ANALOG IMAGE REJECTION (a) (b) Fig. 5."
+        },
+        {
+          "section_title": "RECEIVER PATH",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "This can In a quadrature system, both be easily implemented by adding a coupling transconductor of which the input is connected to the quadrature node, as shown in Fig. 5(b)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.6,
+      "relevance_breakdown": {
+        "type_match:filter": 2.0,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) Conversion of a real LPF frequency response to a complex BPF by frequency shifting. (b) Capacitor transformation to implement frequency =C filter. shifting in an g",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.4,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. (a) Implementation of the image-reject filter using two coupled fifth-order elliptic low-pass filters. (b) Complex frequency response.",
+      "caption_bbox": [
+        38.1,
+        548.1,
+        289.2,
+        567.7
+      ],
+      "section_title": "II. GPS SYSTEM",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "RECEIVER PATH",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "(b) Capacitor transformation to implement frequency =C filter. shifting in an g (a) (b) Fig. 6."
+        },
+        {
+          "section_title": "RECEIVER PATH",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 6 shows the image-reject filter."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "type_match:filter": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "(a) Implementation of the image-reject filter using two coupled fifth-order elliptic low-pass filters. (b) Complex frequency response",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 2,
+      "caption": "Fig. 7. VGA blocks and AGC loop.",
+      "caption_bbox": [
+        301.1,
+        262.4,
+        421.1,
+        273.0
+      ],
+      "section_title": "II. GPS SYSTEM",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "RECEIVER PATH",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Elliptic filters were used Fig. 7."
+        },
+        {
+          "section_title": "RECEIVER PATH",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Their gain is set by the automatic-gain-control (AGC) loop (Fig. 7)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "VGA blocks and AGC loop",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. The quadrature VCO.",
+      "caption_bbox": [
+        39.6,
+        195.8,
+        138.3,
+        206.4
+      ],
+      "section_title": "II. GPS SYSTEM",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "RECEIVER PATH",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "For 2-b operation, all three comparators Fig. 8."
+        },
+        {
+          "section_title": "SYNTHESIZER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "VCO Two coupled VCOs generate the quadrature LO (Fig. 8)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "The quadrature VCO",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 3,
+      "caption": "Fig. 9. The charge pump.",
+      "caption_bbox": [
+        302.6,
+        238.0,
+        389.8,
+        248.7
+      ],
+      "section_title": "II. GPS SYSTEM",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SYNTHESIZER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "One core MOSFET (M2) carrying all the tail current at its peak IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 12, DECEMBER 2002 Fig. 9."
+        },
+        {
+          "section_title": "SYNTHESIZER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Charge Pump Source switching current sources are used for the charge pump (Fig. 9)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "charge pump",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "current source"
+        ],
+        "design_purpose": "",
+        "function_summary": "The charge pump",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 3,
+      "caption": "Fig. 10. Chip micrograph.",
+      "caption_bbox": [
+        302.6,
+        490.6,
+        392.1,
+        501.2
+      ],
+      "section_title": "IV. SYNTHESIZER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "SYNTHESIZER",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 10."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "A 48-pin TQFP package was used. a total chip area of 9.5 mm Fig. 10 shows the chip micrograph."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.2,
+      "relevance_breakdown": {
+        "-micrograph": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chip micrograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 4,
+      "caption": "Fig. 11. NF of the RX excluding the quantizer.",
+      "caption_bbox": [
+        301.1,
+        202.4,
+        456.9,
+        213.0
+      ],
+      "section_title": "IV. SYNTHESIZER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The NF was calculated from the SNR using the following equation: dBm dBm/Hz dBHz NF SNR HzBW (3) Fig. 11."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 11 shows that the NF is about 4 dB and is fairly constant over the temperature and supply voltage range."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "NF of the RX excluding the quantizer",
+        "key_specs": [
+          "4 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 4,
+      "caption": "Fig. 12. SNR at the output of the 1-b quantizer.",
+      "caption_bbox": [
+        301.1,
+        364.7,
+        458.7,
+        375.3
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 12."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 12 shows that the SNR is about 27.7 dB."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "SNR at the output of the 1-b quantizer",
+        "key_specs": [
+          "27.7 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 4,
+      "caption": "Fig. 13. The 1-dB blocker desensitization level.",
+      "caption_bbox": [
+        301.1,
+        541.6,
+        459.2,
+        552.2
+      ],
+      "section_title": "V. MEASUREMENT RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 13."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 13 shows the results."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "The 1-dB blocker desensitization level",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 5,
+      "caption": "Fig. 14. Image-rejection response.",
+      "caption_bbox": [
+        39.6,
+        185.2,
+        155.0,
+        195.9
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The 1-dB desensitization of this radio was measured in the following way: the same desired Fig. 14."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The IIP3 of the radio 15 dBm. was measured using two tones at 8 and 14 MHz to be Fig. 14 shows the on-chip image rejection frequency response."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Image-rejection response",
+        "key_specs": [
+          "15 dBm",
+          "14 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 5,
+      "caption": "Fig. 15. IF chain frequency response.",
+      "caption_bbox": [
+        39.6,
+        335.3,
+        165.1,
+        345.9
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 15."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The IF filter section provides more than 60 dB of attenuation for out-of-band signals, as shown in Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "IF chain frequency response",
+        "key_specs": [
+          "60 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 5,
+      "caption": "Fig. 16. Phase noise and spurs at the output of the synthesizer.",
+      "caption_bbox": [
+        39.6,
+        587.2,
+        244.4,
+        597.9
+      ],
+      "section_title": "VI. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Fig. 16."
+        },
+        {
+          "section_title": "MEASUREMENT RESULTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "The VCO phase noise was a 1-MHz offset (Fig. 16)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.7,
+      "relevance_breakdown": {
+        "-phase noise": -2.5,
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "voltage-controlled oscillator (VCO)",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Phase noise and spurs at the output of the synthesizer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 2,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

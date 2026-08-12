@@ -1,0 +1,1085 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1015679.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1015679",
+  "generated_at": "2026-07-29T22:00:20",
+  "paper_metadata": {
+    "title": "A Low-Power 98-dB Multibit Audio DAC in a Standard 3.3-V 0.35-m CMOS Technology",
+    "authors": [
+      "Marzia Annovazzi",
+      "Vittorio Colonna",
+      "Gabriele Gandolfi",
+      "Fabrizio Stefani",
+      "Andrea Baschirotto"
+    ],
+    "abstract": "An oversampled digital-to-analog converter (DAC) is presented. The performance of this device has been achieved with plies no requirement for any external components and/or a careful tradeoff with power consumption. A digital modadditional filter); ulator has been optimized for the 96-dB target. In the switched- • use of standard scaled-down CMOS technology (this is in capacitor reconstruction filter (SCF), the input structure is emtradeoff with DAC performance due, for example, to the bedded in the feedback loop in order to reduce the output noise. impossibility of using low-threshold devices which would The order of the SCF is three, larger than in competitive solutions, allowing to achieve a lower out-of-band noise. Finally, the differgive small on-resistance switches [3]; in addition, the use ential-to-single-ended converter does not strongly limit the overall of scaled-down technology allows to use only a reduced DAC channel performance. The device has been realized in a stanpower supply which is detrimental for achieving a large dard 3.3-V CMOS technology. With a 28-mW-per-channel power DR); consumption the dynamic range is 98 dB, while the SNDR peak is • accurate in-band and out-of-band frequency response (this 86 dB. forces the use of a switched-capacitor (SC) filter, which however suffers for the folded-in-band noise, due to its",
+    "keywords": [],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2002
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Low-Power 98-dB Multibit Audio DAC in a Standard 3.3-V 0.35-m CMOS Technology",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "current source",
+      "switch",
+      "op-amp",
+      "output buffer",
+      "clock / timing"
+    ],
+    "design_purpose": "In the switched- • use of standard scaled-down CMOS technology (this is in capacitor reconstruction filter (SCF), the input structure is emtradeoff with DAC performance due, for example, to the bedded in the feedback loop in order to reduce the output noise. impossibility of using low-threshold devices which would The ...",
+    "function_summary": "Low-Power 98-dB Multibit Audio DAC in a Standard 3.3-V 0.35-m CMOS Technology: In the switched- • use of standard scaled-down CMOS technology (this is in capacitor reconstruction filter (SCF), the input structure is emtradeoff with DAC performance due, for example, to the bedded in the feedback loop in order to reduce the output noise. impossibility of ...",
+    "key_specs": [
+      "98 dB",
+      "86 dB",
+      "150 mW",
+      "96 dB",
+      "72 dB",
+      "20 Hz",
+      "20 kHz",
+      "28 mW",
+      "44.1 kHz",
+      "2.8224 MHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE DEVELOPMENT of a number of multimedia systems has increased the demand for an audio digital-to-analog converter (DAC). In [1], a 120-dB dynamic range was achieved, which is the state-of-the-art for DAC realizations. However, this was achieved at the cost of a large power consumption 150 mW per channel), limited out-of-band-noise reduction, ( and the use of differential output. These and other ..."
+    },
+    {
+      "number": "II",
+      "title": "OVERALL DAC ARCHITECTURE",
+      "kind": "proposed",
+      "page": 1,
+      "text_preview": "The overall adopted architecture for the proposed DAC is shown in Fig. 2. The input 24-b word at 44.1 kHz is interpolated . The resulting signal (24 b) is passed through by a factor 64 modulator ( M operating a third-order multibit digital at 2.8224 MHz), which feeds a 13-level bitstream to the thirdorder fully differential analog reconstruction filter. The differential-to-single-ended converter s ..."
+    },
+    {
+      "number": "III",
+      "title": "INTERPOLATOR AND MULTIBIT",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "DIGITAL MODULATOR The interpolator filter is used to increase the sampling frequency of the audio signal from the Nyquist frequency ( kHz) to , the working frequency of the modulator. The interpolation process can be realized in a single stage including one low-pass filter and one unit taking 64 samples for each coming from the filter input, but this solution requires a low-pass filter with a very ..."
+    },
+    {
+      "number": "IV",
+      "title": "DYNAMIC ELEMENT MATCHING BLOCK",
+      "kind": "other",
+      "page": 3,
+      "text_preview": "The randomizer used in the DAC channel, as shown in Fig. 2, avoids performance loss in terms of SNR and THD due to the mismatching errors in the capacitors used in the input structure of the analog reconstruction filter [3], [5]. Several randomizer algorithms and structures have been presented in the literature. The first-order randomizers, such as DWA [5], are the most popular ones due to their r ..."
+    },
+    {
+      "number": "V",
+      "title": "ANALOG SC RECONSTRUCTION FILTER",
+      "kind": "other",
+      "page": 4,
+      "text_preview": "The target of the analog filtering section is to smooth the digital bitstream and to reject the out-of-band noise, without compromising the signal purity achieved with the previous digital processing. An SC implementation has been chosen because it guarantees reduced sensitivity to the clock jitter. The use of a multibit input word implies a smaller amount of charge injected in the virtual ground  ..."
+    },
+    {
+      "number": "VI",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 7,
+      "text_preview": "The proposed DAC has been realized in a standard 0.35m double-poly five-metal CMOS technology. The chip photograph is shown in Fig. 15, where two (stereo) channels are realized. . The active area is 45% digital The total chip area is 2.9 mm and 54% analog. The DEM overhead is only 1% of the total die load. area. The device is able to drive a 10-pF//40-k All the performance parameters presented in  ..."
+    },
+    {
+      "number": "VII",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 8,
+      "text_preview": "In this paper, a 3.3-V voltage mode fully integrated DAC in a standard CMOS technology is reported. The high reconstruction filter order allows achieving an accurate in-band frequency response and a large out-of-band noise rejection without any external components. Relaxing the out-of-band noise rejection requirements can dramatically reduce the already significantly low power consumption. It is i ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Complex mixed-signal audio signal processing system under development.",
+      "caption_bbox": [
+        39.6,
+        328.8,
+        308.6,
+        339.4
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "For example, Fig. 1 shows the block diagram of a complete digital radio system."
+        },
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Section III gives details about the Fig. 1."
+        },
+        {
+          "section_title": "ANALOG SC RECONSTRUCTION FILTER",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "The differential-to-single-ended converter schematic was shown in Fig. 1 (it is the last circuit of the chain)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.7,
+      "relevance_breakdown": {
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "regulator / converter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Complex mixed-signal audio signal processing system under development",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Overall DAC architecture.",
+      "caption_bbox": [
+        39.6,
+        434.0,
+        152.9,
+        444.7
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 2."
+        },
+        {
+          "section_title": "OVERALL DAC ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The overall adopted architecture for the proposed DAC is shown in Fig. 2."
+        },
+        {
+          "section_title": "DYNAMIC ELEMENT MATCHING BLOCK",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The randomizer used in the DAC channel, as shown in Fig. 2, avoids performance loss in terms of SNR and THD due to the mismatching errors in the capacitors used in the input structure of the analog reconstruction filter [3], [5]."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Overall DAC architecture",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Digital interpolator. (a) Architecture. (b) Transfer function.",
+      "caption_bbox": [
+        301.1,
+        471.8,
+        520.2,
+        482.4
+      ],
+      "section_title": "III. INTERPOLATOR AND MULTIBIT",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTERPOLATOR AND MULTIBIT",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Instead, the filtering and oversampling processes are split into four cascade stages realized by three finite-impulse response (FIR) blocks and one SINC block, as shown in Fig. 3(a)."
+        },
+        {
+          "section_title": "INTERPOLATOR AND MULTIBIT",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The interpolator frequency response is shown in Fig. 3(b)."
+        },
+        {
+          "section_title": "INTERPOLATOR AND MULTIBIT",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "(a) (b) Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "Low-Power 98-dB Multibit Audio DAC in a Standard 3.3-V 0.35-m CMOS Technology",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Digital interpolator. (a) Architecture. (b) Transfer function",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.71,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 3,
+      "caption": "Fig. 4. Digital modulator.",
+      "caption_bbox": [
+        39.6,
+        170.5,
+        143.1,
+        181.1
+      ],
+      "section_title": "III. INTERPOLATOR AND MULTIBIT",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTERPOLATOR AND MULTIBIT",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "This structure, shown in Fig. 4, operates with a sampling frequency of 2.8224 MHz."
+        },
+        {
+          "section_title": "INTERPOLATOR AND MULTIBIT",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The sequence generated is periodical with Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Digital modulator",
+        "key_specs": [
+          "2.8224 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Dynamic range versus jNTFj .",
+      "caption_bbox": [
+        39.6,
+        357.6,
+        178.5,
+        368.2
+      ],
+      "section_title": "IV. DYNAMIC ELEMENT MATCHING BLOCK",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTERPOLATOR AND MULTIBIT",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 5, where the NTF , shows this tradeoff DR is given as a function of between DR and stability."
+        },
+        {
+          "section_title": "INTERPOLATOR AND MULTIBIT",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Low-Power 98-dB Multibit Audio DAC in a Standard 3.3-V 0.35-m CMOS Technology",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Dynamic range versus jNTFj",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Output noise spectra before and after the (1 + z ) block.",
+      "caption_bbox": [
+        39.6,
+        747.2,
+        257.1,
+        757.9
+      ],
+      "section_title": "IV. DYNAMIC ELEMENT MATCHING BLOCK",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTERPOLATOR AND MULTIBIT",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The output block are shown in Fig. 6. spectra before and after the The drawback of this output filter is the doubling of the output levels number."
+        },
+        {
+          "section_title": "INTERPOLATOR AND MULTIBIT",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "TABLE I COEFFICIENTS IN THE MODULATOR Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "delta-sigma modulator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Output noise spectra before and after the (1 + z ) block",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. Pseudorandom sequence generator.",
+      "caption_bbox": [
+        38.1,
+        186.2,
+        180.0,
+        196.9
+      ],
+      "section_title": "IV. DYNAMIC ELEMENT MATCHING BLOCK",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTERPOLATOR AND MULTIBIT",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The dither generator is realized with a pseudorandom sequence generator (PRSG), whose scheme is shown in Fig. 7."
+        },
+        {
+          "section_title": "DYNAMIC ELEMENT MATCHING BLOCK",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "As shown in Fig. 9(d), a repetitive sequence of “6” events does not result in a repetitive sequence of only two capacitor sets and a better randomizer action is realized, strongly reducing idle ANNOVAZZI et al.: A LOW-POWER 98-dB MULTIBIT AUDIO DAC Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Pseudorandom sequence generator",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Digital SDM SNR versus input signal amplitude.",
+      "caption_bbox": [
+        38.1,
+        380.2,
+        224.0,
+        390.8
+      ],
+      "section_title": "V. ANALOG SC RECONSTRUCTION FILTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTERPOLATOR AND MULTIBIT",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The effect of this dither (9-dB DR improvement) is shown in the plot of the SNR versus input signal amplitude given in Fig. 8."
+        },
+        {
+          "section_title": "DYNAMIC ELEMENT MATCHING BLOCK",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Low-Power 98-dB Multibit Audio DAC in a Standard 3.3-V 0.35-m CMOS Technology",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Digital SDM SNR versus input signal amplitude",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 5,
+      "caption": "Fig. 9. DWA and UDWA operations.",
+      "caption_bbox": [
+        39.6,
+        314.6,
+        163.8,
+        325.3
+      ],
+      "section_title": "V. ANALOG SC RECONSTRUCTION FILTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DYNAMIC ELEMENT MATCHING BLOCK",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "They use only a circular buffer fed by the digital output of the modulator to determine which capacitors have to be connected at every clock cycle [as shown in Fig. 9(a)]."
+        },
+        {
+          "section_title": "DYNAMIC ELEMENT MATCHING BLOCK",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "However, when a low dynamic signal is applied as an input to the modulator, the circular buffer enters a resonating situation, as shown in Fig. 9(c)."
+        },
+        {
+          "section_title": "DYNAMIC ELEMENT MATCHING BLOCK",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "The basic idea of this randomizer is not to apply the scrambling to the input capacitor connected to the MSB in the thermometer word, as shown in Fig. 9(b)."
+        },
+        {
+          "section_title": "DYNAMIC ELEMENT MATCHING BLOCK",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "As shown in Fig. 9(d), a repetitive sequence of “6” events does not result in a repetitive sequence of only two capacitor sets and a better randomizer action is realized, strongly reducing idle ANNOVAZZI et al.: A LOW-POWER 98-dB MULTIBIT AUDIO DAC Fig. 7."
+        },
+        {
+          "section_title": "ANALOG SC RECONSTRUCTION FILTER",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "In this case, the NTF of the input capacitors and of the first Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.0,
+      "relevance_breakdown": {
+        "references": 2.0
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor",
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "DWA and UDWA operations",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.12,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 5,
+      "caption": "Fig. 10. DAC characteristics for the DWA and for the UDWA algorithm.",
+      "caption_bbox": [
+        39.6,
+        501.2,
+        278.5,
+        511.8
+      ],
+      "section_title": "V. ANALOG SC RECONSTRUCTION FILTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DYNAMIC ELEMENT MATCHING BLOCK",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Fig. 10 shows the scrambling effect and the achievement of linearity."
+        },
+        {
+          "section_title": "ANALOG SC RECONSTRUCTION FILTER",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 10."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "DAC characteristics for the DWA and for the UDWA algorithm",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 5,
+      "caption": "Fig. 11. DAC level occurrency for a 0-dB input signal amplitude at 22 kHz.",
+      "caption_bbox": [
+        39.6,
+        673.4,
+        285.9,
+        684.0
+      ],
+      "section_title": "V. ANALOG SC RECONSTRUCTION FILTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "DYNAMIC ELEMENT MATCHING BLOCK",
+          "section_kind": "other",
+          "page": 3,
+          "sentence": "Statistical analyses show that in the realized case the “nonscrambled level” is chosen only 42 times over 65 536 (as shown in Fig. 11) with an input signal of 0-dB amplitude at 22 kHz."
+        },
+        {
+          "section_title": "ANALOG SC RECONSTRUCTION FILTER",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "Fig. 11."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "DAC level occurrency for a 0-dB input signal amplitude at 22 kHz",
+        "key_specs": [
+          "22 kHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 6,
+      "caption": "Fig. 12. Third-order SC reconstruction filter.",
+      "caption_bbox": [
+        38.1,
+        217.2,
+        186.9,
+        227.8
+      ],
+      "section_title": "V. ANALOG SC RECONSTRUCTION FILTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ANALOG SC RECONSTRUCTION FILTER",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "This transfer function has been implemented using the SC filter structure shown in Fig. 12 in its single-ended configuration (in the actual form, a differential structure is adopted to reduce THD and improve SNR)."
+        },
+        {
+          "section_title": "ANALOG SC RECONSTRUCTION FILTER",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "As shown in Fig. 12, an inverse-follow-the-leader-feedback form is utilized."
+        },
+        {
+          "section_title": "ANALOG SC RECONSTRUCTION FILTER",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "In this m m) and a large input case, a large input device ( ANNOVAZZI et al.: A LOW-POWER 98-dB MULTIBIT AUDIO DAC Fig. 12."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "This transfer function has been implemented using the SC filter structure shown in Fig. 12 in its single-ended configuration (in the actual form, a differential structure is adopted to reduce THD and improve SNR).",
+        "function_summary": "Third-order SC reconstruction filter. This transfer function has been implemented using the SC filter structure shown in Fig. 12 in its single-ended configuration (in the actual form, a differential structure is adopted to reduce THD and improve SNR).",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 13,
+      "label": "Fig. 13",
+      "page": 6,
+      "caption": "Fig. 13. Scheme of the first opamp in the SC filter.",
+      "caption_bbox": [
+        38.1,
+        479.8,
+        206.7,
+        490.5
+      ],
+      "section_title": "V. ANALOG SC RECONSTRUCTION FILTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ANALOG SC RECONSTRUCTION FILTER",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "A class-A folded cascode with gain-boosting opamp has been used as shown in Fig. 13."
+        },
+        {
+          "section_title": "ANALOG SC RECONSTRUCTION FILTER",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "TABLE III CAPACITOR VALUES (IN PICOFARADS) Fig. 13."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor",
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Scheme of the first opamp in the SC filter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 14,
+      "label": "Fig. 14",
+      "page": 6,
+      "caption": "Fig. 14. Scheme of the second and third opamps in the SC filter.",
+      "caption_bbox": [
+        301.1,
+        198.5,
+        512.2,
+        209.2
+      ],
+      "section_title": "V. ANALOG SC RECONSTRUCTION FILTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ANALOG SC RECONSTRUCTION FILTER",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "The two-stage class-AB structure shown in Fig. 14 has therefore is been used."
+        },
+        {
+          "section_title": "ANALOG SC RECONSTRUCTION FILTER",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "The distortion has been optimized by using a 4-phase clock scheme, while no advantage has been taken from the standard technology for the switch realization (low threshold devices are Fig. 14."
+        },
+        {
+          "section_title": "ANALOG SC RECONSTRUCTION FILTER",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "The opamp structure is the single-ended version of the class-AB opamp shown in Fig. 14."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "switch",
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Scheme of the second and third opamps in the SC filter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 7,
+      "caption": "Fig. 15. Chip photograph.",
+      "caption_bbox": [
+        39.6,
+        375.1,
+        128.6,
+        385.8
+      ],
+      "section_title": "V. ANALOG SC RECONSTRUCTION FILTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "ANALOG SC RECONSTRUCTION FILTER",
+          "section_kind": "other",
+          "page": 4,
+          "sentence": "They have been realized in poly layer because the nonlinear coefficient is lower with respect to that of other kinds TABLE V NOISE CONTRIBUTION EVALUATION Fig. 15."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "The chip photograph is shown in Fig. 15, where two (stereo) channels are realized. ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -5.2,
+      "relevance_breakdown": {
+        "-photograph": -3.0,
+        "-chip photo": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "Low-Power 98-dB Multibit Audio DAC in a Standard 3.3-V 0.35-m CMOS Technology",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chip photograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 7,
+      "caption": "Fig. 16. Frequency response.",
+      "caption_bbox": [
+        302.6,
+        213.2,
+        401.2,
+        223.9
+      ],
+      "section_title": "V. ANALOG SC RECONSTRUCTION FILTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 16 shows the overall DAC frequency response (a 10-dBFS input signal is applied)."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 37, NO. 7, JULY 2002 Fig. 16."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Frequency response",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 7,
+      "caption": "Fig. 17. window).",
+      "caption_bbox": [
+        302.6,
+        378.5,
+        332.8,
+        398.1
+      ],
+      "section_title": "V. ANALOG SC RECONSTRUCTION FILTER",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Output spectrum for 60 dBFS at 1 kHz (8196 point, with Blackman Fig. 17. window)."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "In Fig. 17, line A shows the output spectrum for a 60-dBFS input signal amplitude at 5 kHz."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 17 also demonstrates the effectiveness of the DEM."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.2,
+      "relevance_breakdown": {
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Low-Power 98-dB Multibit Audio DAC in a Standard 3.3-V 0.35-m CMOS Technology",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "window)",
+        "key_specs": [
+          "60 dB",
+          "1 kHz",
+          "5 kHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 18,
+      "label": "Fig. 18",
+      "page": 8,
+      "caption": "Fig. 18. SNDR versus input signal amplitude (at 1 kHz).",
+      "caption_bbox": [
+        38.1,
+        214.4,
+        224.7,
+        225.0
+      ],
+      "section_title": "VI. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 18 shows the A-weighted signal-to-noise-plus-distortion 130 dBFS to 0 dBFS for ratio (SNDR) versus input level from a 1-kHz input signal."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Notice that if a differential output were ANNOVAZZI et al.: A LOW-POWER 98-dB MULTIBIT AUDIO DAC Fig. 18."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "digital-to-analog converter (DAC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "SNDR versus input signal amplitude (at 1 kHz)",
+        "key_specs": [
+          "130 dB",
+          "0 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 19,
+      "label": "Fig. 19",
+      "page": 8,
+      "caption": "Fig. 19. Out-of-band noise spectrum.",
+      "caption_bbox": [
+        38.1,
+        392.7,
+        162.8,
+        403.3
+      ],
+      "section_title": "VI. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Finally, Fig. 19 shows the out-of-band noise spectrum."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 7,
+          "sentence": "Fig. 19."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Low-Power 98-dB Multibit Audio DAC in a Standard 3.3-V 0.35-m CMOS Technology",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Out-of-band noise spectrum",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 3,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

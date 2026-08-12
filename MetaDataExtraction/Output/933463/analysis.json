@@ -1,0 +1,495 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\933463.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\933463",
+  "generated_at": "2026-07-29T22:03:29",
+  "paper_metadata": {
+    "title": "Curvature-Compensated BiCMOS Bandgap with 1-V Supply Voltage",
+    "authors": [
+      "Piero Malcovati",
+      "Franco Maloberti",
+      "Carlo Fiocchi",
+      "Marcello Pruzzi"
+    ],
+    "abstract": "In this paper, we present a bandgap circuit capable of generating a reference voltage of 0.54 V. The circuit, implemented in a submicron BiCMOS technology, operates with a supply voltage of 1 V, consuming 92 W at room temperature. In the bandgap circuit proposed, we use a nonconventional operational amplifier which achieves virtually zero systematic offset, operating directly from the 1-V power supply. The bandgap architecture used allows a straightforward implementation of the curvature compensation method. The proposed circuit achieves 7.5 ppm/K of temperature coefficient and 212 ppm/V of supply voltage dependence, without requiring additional operational amplifiers or complex circuits for the curvature compensation.",
+    "keywords": [
+      "Analog integrated circuits",
+      "MiCMOS analog integrated circuits"
+    ],
+    "doi": "",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2001
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Curvature-Compensated BiCMOS Bandgap",
+    "technology": "CMOS, BICMOS, BJT",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "current source",
+      "current mirror",
+      "bias circuit",
+      "differential pair",
+      "op-amp"
+    ],
+    "design_purpose": "The bandgap architecture used allows a straightforward implementation of the curvature compensation method.",
+    "function_summary": "Curvature-Compensated BiCMOS Bandgap: The bandgap architecture used allows a straightforward implementation of the curvature compensation method.",
+    "key_specs": [
+      "0.54 V",
+      "1 V",
+      "92 W",
+      "10%",
+      "1.2 V",
+      "0.7 V",
+      "1.8 V",
+      "0.65 V",
+      "0.2 V",
+      "60 dB"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "S UPPLY voltage is scaling down because of reducing oxide thickness and increasing demand for low-power portable equipment. Currently, 1.8-V power supplies are commonly 10%) or less will be used; soon, circuits operating with 1.2 V ( introduced. The threshold voltage of MOS transistors, however, is not scaling down as much as the supply voltage. Therefore, this relatively high threshold calls for  ..."
+    },
+    {
+      "number": "II",
+      "title": "LOW-VOLTAGE BANDGAP",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "Two components build up the output voltage of a bandgap reference. One is the voltage across a directly biased diode ) and the other is a term proportional (base–emitter voltage to the absolute temperature (PTAT). The negative temperature coefficient of the former term compensates for the positive is used to temperature coefficient of the latter. If obtain a PTAT voltage, it is well known that we  ..."
+    },
+    {
+      "number": "III",
+      "title": "OPERATIONAL AMPLIFIER DESIGN",
+      "kind": "design",
+      "page": 1,
+      "text_preview": "The bandgap circuit needs an operational amplifier whose ). Moreinput common-mode voltage is around 0.65 V (the over, since the output node drives p-channel current sources, its . Asoutput quiescent voltage should be below V and V, the output voltage suming results as low as 0.15–0.2 V. Moreover, the gain of the operational amplifier must be around 60 dB without any bandwidth constraints. The abov ..."
+    },
+    {
+      "number": "IV",
+      "title": "STARTUP CIRCUIT",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "The proposed bandgap reference needs a more effective startup circuit than those usually adopted, consisting of simple pull-up or pull-down capacitors. In a conventional bandgap – relationships of a diode and an architecture the nonlinear times larger diode with a resistance in series have two well-defined crossing points. Therefore, a very small current flowing for a short period of time in the d ..."
+    },
+    {
+      "number": "V",
+      "title": "CURVATURE COMPENSATION",
+      "kind": "other",
+      "page": 2,
+      "text_preview": "The simple bandgap circuit in Fig. 1 compensates for the temperature dependences of the output voltage at the first order only. In fact, the voltage of a BJT does not change linearly with IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 7, JULY 2001 Fig. 3. Schematic of the startup circuit. the temperature but, according to the relationship proposed in [2], it is given by (6) depends on the bipo ..."
+    },
+    {
+      "number": "VI",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 3,
+      "text_preview": "The proposed circuit was integrated using a 0.8m BiCMOS technology. Since we were not sure of the simulation accuracy and the variations with the process of the temperature effects, , and using the resistive network we designed resistors Fig. 6. Micrograph of the chip including two versions of the proposed bandgap circuit (with and without curvature correction). shown in Fig. 5, to allow trimming  ..."
+    },
+    {
+      "number": "VII",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 5,
+      "text_preview": "This paper presented a BiCMOS bandgap reference circuit which produces an output voltage of 0.54 V, starting from a supply voltage as low as 1 V. The circuit operates in the current domain and includes a nonconventional operational amplifier with virtually zero systematic offset. Accurate compensation of the output voltage temperature dependence is obtained with a simple but very effective impleme ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Schematic of the bandgap circuit.",
+      "caption_bbox": [
+        302.6,
+        385.1,
+        439.2,
+        395.8
+      ],
+      "section_title": "II. LOW-VOLTAGE BANDGAP",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Publisher Item Identifier S 0018-9200(01)04511-5. 0018–9200/01$10.00 © 2001 IEEE Fig. 1."
+        },
+        {
+          "section_title": "LOW-VOLTAGE BANDGAP",
+          "section_kind": "other",
+          "page": 0,
+          "sentence": "Fig. 1 shows the schematic diagram of a circuit [1], which implements the described operation."
+        },
+        {
+          "section_title": "OPERATIONAL AMPLIFIER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The bias voltage cuit, is also obtained from the bandgap circuit by mirroring the (Fig. 1)."
+        },
+        {
+          "section_title": "CURVATURE COMPENSATION",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The simple bandgap circuit in Fig. 1 compensates for the temperature dependences of the output voltage at the first order only."
+        },
+        {
+          "section_title": "CURVATURE COMPENSATION",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "The simple bandgap architecture shown in Fig. 1 corrects the first term in (6) only, thus leading to a second-order temperature dependence."
+        },
+        {
+          "section_title": "CURVATURE COMPENSATION",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "By the inspection of the circuit in Fig. 1, we observe that the current and ) is PTAT ( ), while in the bipolar transistors ( the current in the p-channel MOS transistors is at first-order temperature independent."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.0,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+circuit": 1.0,
+        "references": 2.0
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "bandgap reference",
+        "technology": "CMOS, BICMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Schematic of the bandgap circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.88,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Schematic of the two-stage operational amplifier used.",
+      "caption_bbox": [
+        301.1,
+        180.8,
+        504.3,
+        191.4
+      ],
+      "section_title": "II. LOW-VOLTAGE BANDGAP",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "OPERATIONAL AMPLIFIER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 2."
+        },
+        {
+          "section_title": "OPERATIONAL AMPLIFIER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 2 shows the circuit schematic of the proposed two-stage operational amplifier."
+        },
+        {
+          "section_title": "OPERATIONAL AMPLIFIER DESIGN",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The circuit in Fig. 2 spares this component."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.2,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, BICMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Schematic of the two-stage operational amplifier used",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.55,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Schematic of the startup circuit.",
+      "caption_bbox": [
+        302.6,
+        257.1,
+        433.9,
+        267.7
+      ],
+      "section_title": "IV. STARTUP CIRCUIT",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "STARTUP CIRCUIT",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The startup circuit shown in Fig. 3 the resistors ( ensures that additional current is continuously provided to the diodes and the resistors until the bandgap circuit reaches the proper operating point. is zero, the current in is In particular, if the current in and ) zero as well, and the p-channel current sources ( is pulled down to ground, thus injecting are off."
+        },
+        {
+          "section_title": "CURVATURE COMPENSATION",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "In fact, the voltage of a BJT does not change linearly with IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 7, JULY 2001 Fig. 3."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 6.3,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "bandgap reference",
+        "technology": "CMOS, BICMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "resistor",
+          "current source"
+        ],
+        "design_purpose": "",
+        "function_summary": "Schematic of the startup circuit",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.69,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Schematic of the programmable resistive network.",
+      "caption_bbox": [
+        38.1,
+        412.9,
+        227.7,
+        423.6
+      ],
+      "section_title": "V. CURVATURE COMPENSATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "CURVATURE COMPENSATION",
+          "section_kind": "other",
+          "page": 2,
+          "sentence": "( Fig. 5."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Micrograph of the chip including two versions of the proposed bandgap circuit (with and without curvature correction). shown in Fig. 5, to allow trimming of the linear and logarithmic compensation coefficients. is connected in series with an In this circuit, a fixed term array of resistors whose value is a multiple of a given value k , k for resistor and k , k for resistor )."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.8,
+      "relevance_breakdown": {
+        "+schematic": 3.0,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "bandgap reference",
+        "technology": "CMOS, BICMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "resistor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Schematic of the programmable resistive network",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.45,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. Micrograph of the chip including two versions of the proposed bandgap circuit (with and without curvature correction).",
+      "caption_bbox": [
+        301.1,
+        302.9,
+        552.2,
+        322.5
+      ],
+      "section_title": "V. CURVATURE COMPENSATION",
+      "section_kind": "other",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Since we were not sure of the simulation accuracy and the variations with the process of the temperature effects, , and using the resistive network we designed resistors Fig. 6."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Fig. 6 shows the micrograph of the chip containing two versions of the proposed bandgap circuit, with and without curvature compensation."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.8,
+      "relevance_breakdown": {
+        "+proposed": 3.0,
+        "+circuit": 1.0,
+        "-micrograph": -3.0,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "bandgap reference",
+        "technology": "CMOS, BICMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "resistor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Micrograph of the chip including two versions of the proposed bandgap circuit (with and without curvature correction)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.1,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. Measured bandgap voltage as a function of temperature with and without curvature compensation.",
+      "caption_bbox": [
+        39.6,
+        698.1,
+        290.7,
+        717.7
+      ],
+      "section_title": "VI. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Fig. 7 shows the typical measured output voltage of the proposed bandgap circuit as a function of temperature with and without curvature compensation."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Fig. 7 demonment of the linear correction term (resistor strates the effectiveness of the proposed curvature correction TABLE II RESISTANCE VALUES AND TRANSISTOR DIMENSIONS USED IN THE PROPOSED BANDGAP CIRCUIT TABLE III PERFORMANCE SUMMARY OF THE PROPOSED BANDGAP CIRCUIT Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "bandgap reference",
+        "technology": "CMOS, BICMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [
+          "resistor",
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Measured bandgap voltage as a function of temperature with and without curvature compensation",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Measured bandgap voltage as a function of the power supply voltage.",
+      "caption_bbox": [
+        302.6,
+        646.1,
+        552.2,
+        656.8
+      ],
+      "section_title": "VI. EXPERIMENTAL RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 36, NO. 7, JULY 2001 Fig. 8."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "The generated bandgap voltage as a function of the used supply voltage is shown in Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "bandgap reference",
+        "technology": "CMOS, BICMOS, BJT",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Measured bandgap voltage as a function of the power supply voltage",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 3,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

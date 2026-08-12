@@ -1,0 +1,52 @@
+{
+  "title": "An Analog GFSK Modulator in 0.35µm CMOS Hooman Darabi, Brima Ibrahim, Ahmadreza Rofougaran",
+  "bibliography": {
+    "authors": [
+      "= ω + ∆ ω θ θ v t ACos t f d ( ) ( ( ) ) ω θ ω τ τ τ θ = v t v d d ( ) ( )( ( ) ( ) ) 0"
+    ],
+    "venue": "",
+    "year": 2004,
+    "doi": "",
+    "keywords": []
+  },
+  "figure_number": "Figure 10.2.2 shows the circuit implementation of the analog computer proposed in Fig. 10.2.1. Active-RC integrators are employed due to their superior dynamic range. An RC calibration circuit adjusts the integrator gain, which is proportional to the RC product, by tuning the capacitors in the op-amp feedback paths. The op-amps are implemented with two-stage differential amplifiers to drive the resistive load. Since each integrator has –90O phase shift, I and Q signals are available at the output of the integrators. The modulator is implemented at base-band to preclude image issues in the transmitter up-conversion path. In a Bluetooth implementation, the input of the modulator consists of a stream of random binary data shaped by a Gaussian filter. The linearity requirement of the multipliers is relaxed considering that a Gaussian function has the same mathematical form in time domain as its Fourier transform [4]. The multipliers, implemented as 4-FET switches, receive a digital clock at 1Mb/s as shown in Fig. 10.2.2. The data edges are first aligned with the 12MHz system clock, and a logic circuit produces complementary clock signals to drive the 4-FET switches. An analog Gaussian low-pass filter following the modulator serves two purposes. First, it produces the desired GFSK spectrum. Second, it removes the glitches created in the multipliers. The low-pass filter incorporates a 4th-order active–RC design with a 3-dB bandwidth of 500kHz. To meet the spectrum mask requirements, the modulator output swing must be well defined. Otherwise, the nonlinearity of the upconversion mixers as well as the distortion of the integrators create undesired inter-modulation terms. As illustrated in Fig. 10.2.3,",
+  "type": "Analog GFSK Modulator in 0.35µm CMOS Hooman Darabi, Brima Ibrahim, Ahmadreza Rofougaran",
+  "technology": "CMOS, 35µm process",
+  "application": "baseband",
+  "sub_blocks": [
+    "capacitor",
+    "resistor",
+    "transistor/MOSFET",
+    "current source",
+    "mixer",
+    "switch",
+    "op-amp",
+    "clock / timing"
+  ],
+  "function_summary": "Analog GFSK Modulator in 0.35µm CMOS Hooman Darabi, Brima Ibrahim, Ahmadreza Rofougaran",
+  "design_purpose": "",
+  "metrics": [
+    "Process node",
+    "Frequency",
+    "Operating / oscillation frequency",
+    "Spurious / phase noise",
+    "Efficiency / ratio",
+    "Supply voltage"
+  ],
+  "numerical_performance": [
+    "0.35µm",
+    "12MHz",
+    "500kHz",
+    "160kHz",
+    "2.45GHz",
+    "-35dBc",
+    "1%",
+    "3V",
+    "0.18µm",
+    "2.4GHz"
+  ],
+  "confidence": 0.8,
+  "warnings": [
+    "Recommended figure was classified as 'result_plot', not a schematic; manual confirmation strongly recommended."
+  ]
+}

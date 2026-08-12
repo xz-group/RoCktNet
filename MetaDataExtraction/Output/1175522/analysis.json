@@ -1,0 +1,602 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1175522.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1175522",
+  "generated_at": "2026-07-29T22:00:46",
+  "paper_metadata": {
+    "title": "A 10-b 30-MS/s Low-Power Pipelined CMOS A/D Converter Using a Pseudodifferential Architecture",
+    "authors": [
+      "Daisuke Miyazaki",
+      "Shoji Kawahito",
+      "Masanori Furuta"
+    ],
+    "abstract": "A 10–b 30–MS/s low-power CMOS pipelined analog-to-digital converter (ADC) is described. The ADC using a pseudodifferential architecture and a capacitor cross-coupled sample-and-hold stage consumes 16 mW with a single 2-V supply. The chip is fabricated in a standard 0.3m two-poly three-metal CMOS technology. The achieved low-power dissipation normalized by the sampling frequency of 0.52 mW/MHz is superior to other high-speed low-power ADCs reported. The ADC has a signal-to-noise-and-distortion ratio of 54 dB at an input frequency of 15 MHz. The maximum differential and integral nonlinearity are 0.4 and 0.5 LSB, respectively.",
+    "keywords": [
+      "Low power",
+      "low voltage",
+      "pipelined A/D converter",
+      "pseudodifferential",
+      "sample-and-hold circuit"
+    ],
+    "doi": "10.1109/JSSC.2002.807400",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "10-b 30-MS/s Low-Power Pipelined CMOS A/D Converter",
+    "technology": "CMOS",
+    "application_domain": "if",
+    "sub_blocks": [
+      "capacitor",
+      "transistor/MOSFET",
+      "cross-coupled pair",
+      "bias circuit",
+      "switch"
+    ],
+    "design_purpose": "",
+    "function_summary": "10-b 30-MS/s Low-Power Pipelined CMOS A/D Converter: A 10–b 30–MS/s low-power CMOS pipelined analog-to-digital converter (ADC) is described.",
+    "key_specs": [
+      "16 mW",
+      "0.52 mW",
+      "54 dB",
+      "15 MHz",
+      "2 V",
+      "60 MHz",
+      "17%",
+      "50%",
+      "40%",
+      "2 MHz"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "L OW-POWER design of high-speed analog-to-digital converters (ADCs) is a major objective in many applications such as battery-powered portable video devices. Pipeline schemes are becoming a dominant architecture for high-speed low-power ADCs [1]–[3]. Other architectures such as those using current-mode [4] and two-step flash techniques [5] have difficulty in providing low total harmonic distortion ..."
+    },
+    {
+      "number": "II",
+      "title": "DESIGN",
+      "kind": "design",
+      "page": 0,
+      "text_preview": "A. ADC Architecture The block diagram of the pseudodifferential pipelined ADC is shown in Fig. 1. The ADC uses a 1.5-b/stage pipeline architecture [7]. The pipeline begins with an S/H stage and is followed by cascaded multiply-by-two stages. Each stage consists of a 1.5-b sub-ADC, a 1.5-b digital-to-analog converter (DAC), bits are and multiply-by-two amplifiers. The resulting 1.5 bits at the outp ..."
+    },
+    {
+      "number": "III",
+      "title": "EXPERIMENTAL RESULTS",
+      "kind": "results",
+      "page": 3,
+      "text_preview": "The pipelined ADC chip is fabricated in a 0.3m two-poly three-metal CMOS technology. The chip photograph is shown in Fig. 7. The ADC core area including digital logic circuits is IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 2, FEBRUARY 2003 Fig. 7. Chip photograph. TABLE III LIST OF THE 10-b VIDEO-RATE LOW-POWER CMOS ADCS REPORTED Fig. 8. INL and DNL versus output code at 30 MS/s (f = 2 MHz) ..."
+    },
+    {
+      "number": "IV",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 4,
+      "text_preview": "This paper shows that the proposed pseudodifferential pipeline architecture and the capacitor cross-coupled S/H stage are useful for the low-power design of video-rate ADCs with sufficient dynamic performance when the supply voltage is at least 2 V. To overcome the problem of an uncontrolled common-mode signal level, two stages in the proposed ADC use a fully differential structure. For operations ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 0,
+      "caption": "Fig. 1. Block diagram of the pseudodifferential pipelined ADC. PD: pseudodifferential stage. D: differential stage. A: 1.5-b sub-ADC.",
+      "caption_bbox": [
+        301.1,
+        317.5,
+        552.2,
+        337.1
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 1."
+        },
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "ADC Architecture The block diagram of the pseudodifferential pipelined ADC is shown in Fig. 1."
+        },
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "(b) Comparators and logic. this problem, fully differential amplifiers are used for the third and the seventh multiply-by-two stages as shown in Fig. 1."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:intro": -0.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Block diagram of the pseudodifferential pipelined ADC. PD: pseudodifferential stage. D: differential stage. A: 1.5-b sub-ADC",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.4,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Pseudodifferential multiply-by-two stage. (a) Multiply-by-two amplifier. (b) Comparators and logic.",
+      "caption_bbox": [
+        39.6,
+        469.6,
+        290.7,
+        489.2
+      ],
+      "section_title": "II. DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "To avoid (a) (b) Fig. 2."
+        },
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Pseudodifferential Multiply-by-Two Stage The schematic of the pseudodifferential multiply-by-two stage is illustrated in Fig. 2."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "comparator",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Pseudodifferential multiply-by-two stage. (a) Multiply-by-two amplifier. (b) Comparators and logic",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Straightforward pseudodifferential S/H stage. (a) S/H circuits. (b) Equivalent circuits (sampling phase).",
+      "caption_bbox": [
+        302.6,
+        321.1,
+        553.7,
+        340.6
+      ],
+      "section_title": "II. DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 2, FEBRUARY 2003 (a) (b) Fig. 3."
+        },
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Wide-Band Pseudodifferential S/H Stage A straightforward design of the S/H stage using two cascode amplifiers is shown in Fig. 3(a) and its equivalent circuit during a sampling phase is shown in Fig. 3(b)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 1.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "-equivalent": -2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Straightforward pseudodifferential S/H stage. (a) S/H circuits. (b) Equivalent circuits (sampling phase)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.06,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4.",
+      "caption_bbox": [
+        38.1,
+        327.5,
+        58.7,
+        338.2
+      ],
+      "section_title": "II. DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Fig. 4(a) shows the improved pseudodifferential S/H stage."
+        },
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Fig. 4(b) and (c) shows equivalent circuits for the sampling phase and holding phase, respectively."
+        },
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "In Fig. 4, is not overlapping with , , or ."
+        },
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.1,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.6
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "10-b 30-MS/s Low-Power Pipelined CMOS A/D Converter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.29,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Simulated waveform plot of the difference of amplifier inputs (V s –V s ). (a) Without capacitor cross coupling. (b) With capacitor cross coupling.",
+      "caption_bbox": [
+        38.1,
+        558.7,
+        289.2,
+        587.3
+      ],
+      "section_title": "II. DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Fig. 5 shows the simulated waveform plot of the short cir- ) with and without the capacitor cross cuit voltages ( coupling."
+        },
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "Fig. 5."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.7,
+      "relevance_breakdown": {
+        "-simulated": -3.0,
+        "-waveform": -2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [
+          "capacitor"
+        ],
+        "design_purpose": "",
+        "function_summary": "Simulated waveform plot of the difference of amplifier inputs (V s –V s ). (a) Without capacitor cross coupling. (b) With capacitor cross coupling",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 2,
+      "caption": "Fig. 6. Gain-boosted cascode amplifier.",
+      "caption_bbox": [
+        301.1,
+        515.5,
+        433.1,
+        526.2
+      ],
+      "section_title": "II. DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "A cascode amplifier shown in Fig. 6 is useful for low-power low-voltage pipelined ADCs [8]."
+        },
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "In a half cycle of the pipeline clock period, the input of the amplifier is connected to the output to cancel the offset deviation Fig. 6."
+        },
+        {
+          "section_title": "DESIGN",
+          "section_kind": "design",
+          "page": 0,
+          "sentence": "The gain-boosting amplifiers for the fully differential amplifier [9] are the same as used in Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Gain-boosted cascode amplifier",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Chip photograph.",
+      "caption_bbox": [
+        302.6,
+        226.9,
+        387.6,
+        237.6
+      ],
+      "section_title": "II. DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "The chip photograph is shown in Fig. 7."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "The ADC core area including digital logic circuits is IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 2, FEBRUARY 2003 Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-photograph": -3.0,
+        "-chip photo": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Chip photograph",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 3,
+      "caption": "Fig. 8. INL and DNL versus output code at 30 MS/s (f = 2 MHz).",
+      "caption_bbox": [
+        302.6,
+        591.3,
+        528.9,
+        601.9
+      ],
+      "section_title": "II. DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "TABLE III LIST OF THE 10-b VIDEO-RATE LOW-POWER CMOS ADCS REPORTED Fig. 8."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "TABLE IV MEASURED PERFORMANCE Fig. 8 shows the linearity of the ADC at 30 MS/s and an input frequency of 2 MHz."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "analog-to-digital converter (ADC)",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "INL and DNL versus output code at 30 MS/s (f = 2 MHz)",
+        "key_specs": [
+          "2 MHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. 1024-point FFT spectrum at 30 MS/s and 6-MHz input frequency.",
+      "caption_bbox": [
+        38.1,
+        240.1,
+        277.4,
+        250.7
+      ],
+      "section_title": "IV. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 2, FEBRUARY 2003 Fig. 9. 1024-point FFT spectrum at 30 MS/s and 6-MHz input frequency."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "The FFT plot of 6.06-MHz input sampled at 30.03 MS/s is shown in Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -2.7,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "10-b 30-MS/s Low-Power Pipelined CMOS A/D Converter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "1024-point FFT spectrum at 30 MS/s and 6-MHz input frequency",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 4,
+      "caption": "Fig. 10. SFDR, SNR, and SNDR versus input frequency at 30 MS/s.",
+      "caption_bbox": [
+        38.1,
+        446.5,
+        262.2,
+        457.1
+      ],
+      "section_title": "IV. CONCLUSION",
+      "section_kind": "conclusion",
+      "references": [
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Fig. 10."
+        },
+        {
+          "section_title": "EXPERIMENTAL RESULTS",
+          "section_kind": "results",
+          "page": 3,
+          "sentence": "Fig. 10 shows the SNDR, signal-to-noise ratio (SNR), and SFDR measurements versus input frequency varied over twice the sampling frequency at the constant conversion rate of 30 MS/s."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.2,
+      "relevance_breakdown": {
+        "section:conclusion": -1.0,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "10-b 30-MS/s Low-Power Pipelined CMOS A/D Converter",
+        "technology": "CMOS",
+        "application_domain": "if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "SFDR, SNR, and SNDR versus input frequency at 30 MS/s",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 1,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}

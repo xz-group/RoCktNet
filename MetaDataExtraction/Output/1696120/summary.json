@@ -1,0 +1,46 @@
+{
+  "title": "A 30mW 12b 40MS/s Subranging ADC with a High-Gain Offset-Canceling Positive-Feedback Amplifier in 90nm Digital CMOS Yasuhide Shimizu, Shigemitsu Murayama, Kohhei Kudoh, Hiroaki Yatsuda, Akihide Ogawa",
+  "bibliography": {
+    "authors": [],
+    "venue": "",
+    "year": 2006,
+    "doi": "",
+    "keywords": []
+  },
+  "figure_number": "Fig. 12.3.3. The PFA operates in two non-overlapping phases of φ1 and φ2, the reset phase and the amplification phase. During the reset phase, the differential inputs are shorted to the same node, “Va”, by the switches designated as “S2,” and the gate and drain of the NMOSs “T3” and “T4” are connected by the switches designated as “S3”. The offset voltage of differential inputs is stored on C1 and C2. During the amplification phase, the opening of S3 switches change the configurations of T3 and T4 from diode-connected loads to current-source loads. There is no dc path for the positive feedback signals, thereby maintaining the offset canceling function. The PFA has a high gain as compared to the conventional offset-canceling amplifier without increasing power dissipation. Here, the capacitor C2 has three functions. First, it stores the offset of the PFA. Secondly, it transmits the input signal to T3 and T4 without dc, improving the gain of the PFA. Thirdly, it distributes the positive feedback in a manner expressed by the ratio of C1 over C2. The point is that the positive-feedback ratio is decided not by the absolute value of C1 but by the relative values of C1 and C2. This ensures the stability of the PFA independent of the variation of the capacitors. PFA gain increases in proportion to the increase of (gm1+gm2)A, decreasing the input-referred offset of the following comparator. Here, A is a function of the positive feedback ratio C1/C2 and the comparison time, gm1 is the transconductance of T1 and T2, and gm2 is the transconductance of T3 and T4. At the same time, the PFA itself decreases its inputreferred offset. The gain of the PFA is gm1/gm2 in reset phase. The input referred-offset of the PFA is decreased according to the ratio of the reset-phase gain and comparison-phase gain, that is, (gm1/gm2)/((gm1+gm2)A) =1/((gm2+gm2 2/gm1)A) [2]. Results comparing the conventional design and the PFA-utilizing design (Fig. 12.3.3) are shown in Fig. 12.3.4. As can be seen, the PFA-utilizing design improves gain and input-referred offset drastically. The gain of the PFA-utilizing design is approximately 200 with 10µA current draw and increases according to the comparison-time, while the gain of the conventional design is approximately 15. The ADC is fabricated in a 90nm digital CMOS process using no analog enhancements. The ADC can operate from a supply as low as 0.7V (excluding the T/Hs). The total power consumption of the ADC is 30mW at a sampling rate of 40MS/s. Figure 12.3.5 shows measured dynamic performance of the ADC and Fig. 12.3.6 shows a performance summary. Figure 12.3.7 shows the die micrograph of the ADC. The active area is 1.98×2.36mm2. References: [1] Y.T. Wang and B. Razavi, “An 8-bit 150-MHz CMOS A/D Converter,” IEEE J. Solid-State Circuits, vol. 35, no. 3, pp. 308-317, Mar., 2000. [2] K. Ono et al., “A 6bit 400Msps 70mW ADC Using Interpolated Parallel Scheme,” Symp. VLSI Circuits Dig. of Tech. Papers, pp. 324-325, June, 2002.",
+  "type": "12b 40MS/s Subranging ADC",
+  "technology": "CMOS, 90nm process",
+  "application": "if",
+  "sub_blocks": [
+    "capacitor",
+    "transistor/MOSFET",
+    "switch",
+    "pre-amplifier"
+  ],
+  "function_summary": "12b 40MS/s Subranging ADC",
+  "design_purpose": "",
+  "metrics": [
+    "Power consumption",
+    "Process node",
+    "Energy per operation",
+    "Frequency",
+    "Supply voltage"
+  ],
+  "numerical_performance": [
+    "30mW",
+    "90nm",
+    "10mW",
+    "0.69pJ",
+    "19.9MHz",
+    "0.44pJ",
+    "1MHz",
+    "0.7V",
+    "2.0V",
+    "4 w"
+  ],
+  "confidence": 0.2,
+  "warnings": [
+    "No figure scored positively as a proposed-circuit schematic; recommendation is low-confidence.",
+    "Recommended figure was classified as 'conventional', not a schematic; manual confirmation strongly recommended."
+  ]
+}

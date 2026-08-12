@@ -1,0 +1,555 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1183872.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1183872",
+  "generated_at": "2026-07-29T21:30:21",
+  "paper_metadata": {
+    "title": "A Direct-Conversion Receiver for the 3G WCDMA Standard",
+    "authors": [
+      "Ranjit Gharpurey",
+      "Naveen Yanduru",
+      "Francesco Dantoni",
+      "Petteri Litmanen",
+      "Guglielmo Sirna",
+      "Terry Mayhugh",
+      "Charles Lin",
+      "Irene Deng",
+      "Paul Fontaine",
+      "Fang Lin"
+    ],
+    "abstract": "A highly integrated direct-conversion receiver that satisfies requirements of the third-generation wide-band There are several unique attributes of the WCDMA standard code-division multiple-access mobile phone standard is described. The receiver integrated circuit includes the front-end low-noise that strongly impact RF and analog front-end dynamic range reamplifier, downconversion mixers, baseband variable-gain ampliquirements in addition to typical system considerations. A comfiers, channel-select filters, and the frequency synthesizer. External plete system analysis is beyond the scope of this paper. Howcomponents are limited to matching elements required for the ever, some important issues that relate to the noise and distortion low-noise amplifier and the mixers and two passive band-select performance of the receiver are addressed herein. Specifically, filters. The receiver is implemented in a SiGe BiCMOS process and consumes a total current of 46 mA from a 2.7-V supply. the problem of transmitter power leakage into the receiver is discussed in some detail.",
+    "keywords": [
+      "Channel-select filters",
+      "dc offsets",
+      "direct-conversion receiver",
+      "downconversion mixers",
+      "low-noise amplifier",
+      "phase-"
+    ],
+    "doi": "10.1109/JSSC.2002.808286",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2003
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Direct-Conversion Receiver",
+    "technology": "CMOS, BICMOS, SIGE",
+    "application_domain": "rf, wireless, baseband, if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "LC tank / resonator",
+      "mixer",
+      "differential pair"
+    ],
+    "design_purpose": "",
+    "function_summary": "Direct-Conversion Receiver: A highly integrated direct-conversion receiver that satisfies requirements of the third-generation wide-band There are several unique attributes of the WCDMA standard code-division multiple-access mobile phone standard is described.",
+    "key_specs": [
+      "2170 MHz",
+      "1980 MHz",
+      "117 dBm",
+      "1 MHz",
+      "12.75 GHz",
+      "15 dBm",
+      "24 dBm",
+      "120 dBm",
+      "6 dB",
+      "20 dBm"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "T HE wide-band code division multiple access (WCDMA) standard has been developed by the Third Generation Partnership Project as a standard for nextgeneration digital mobile phone applications [1]. A frequencydomain duplex (FDD) scheme is specified, with the transmitter and the receiver operational simultaneously. The receiver operates from 2110 to 2170 MHz and the transmitter from 1920 to 1980 MHz ..."
+    },
+    {
+      "number": "II",
+      "title": "SYSTEM CONSIDERATIONS",
+      "kind": "other",
+      "page": 0,
+      "text_preview": "There are several unique attributes of the WCDMA standard that strongly impact RF and analog front-end dynamic range requirements in addition to typical system considerations. A complete system analysis is beyond the scope of this paper. However, some important issues that relate to the noise and distortion performance of the receiver are addressed herein. Specifically, the problem of transmitter  ..."
+    },
+    {
+      "number": "III",
+      "title": "CHOICE OF RECEIVER ARCHITECTURE",
+      "kind": "proposed",
+      "page": 1,
+      "text_preview": "Several architectural alternatives were considered for the RF– analog front-end of the receiver. These included direct conversion and various types of heterodyne receivers. A classical implementation of a heterodyne receiver uses a passive external channel-select IF filter. This typically places the least burden on the dynamic range of the active baseband filters because the external filter provid ..."
+    },
+    {
+      "number": "IV",
+      "title": "IMPLEMENTATION",
+      "kind": "design",
+      "page": 1,
+      "text_preview": "The receiver (Fig. 1) includes an RF LNA, – downconversion mixers, baseband filters, VGAs, output buffers, and the frequency synthesizer. The synthesizer includes a fully integrated VCO, buffers, and the phase-locked loop (PLL) circuits. Two external passive filters are used: a front-end duplexer and an RF SAW filter between the LNA and the mixers. Analog-to-digital converters (ADCs) were not incl ..."
+    },
+    {
+      "number": "V",
+      "title": "MEASUREMENTS",
+      "kind": "results",
+      "page": 4,
+      "text_preview": "A die photo of the receiver is shown in Fig. 7. The receiver consumed a current of 46 mA at room temperature from a supply voltage of 2.7 V. The LO leakage was found to be insignificant 60 dBm in the receiver band, compared to the specification of 90 dBm). as per the standard (lower than The measured gain of the LNA was 21 dB, with a noise figure 0.65 dBm, and an out-of-band of 1.48 dB, in-band II ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Direct-conversion receiver block diagram.",
+      "caption_bbox": [
+        302.6,
+        180.4,
+        466.1,
+        191.0
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "CHOICE OF RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "However, since Fig. 1."
+        },
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The receiver (Fig. 1) includes an RF LNA, – downconversion mixers, baseband filters, VGAs, output buffers, and the frequency synthesizer."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:intro": -0.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Direct-conversion receiver block diagram",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Front-end LNA.",
+      "caption_bbox": [
+        302.6,
+        432.5,
+        383.3,
+        443.2
+      ],
+      "section_title": "III. CHOICE OF RECEIVER ARCHITECTURE",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "CHOICE OF RECEIVER ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Fig. 2."
+        },
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Front-End LNA A cascode common-emitter LNA is used (Fig. 2)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.8,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "low-noise amplifier (LNA)",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Front-end LNA",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.23,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 2,
+      "caption": "Fig. 3. Downconversion mixer.",
+      "caption_bbox": [
+        38.1,
+        296.5,
+        143.1,
+        307.2
+      ],
+      "section_title": "IV. IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The minimum m. channel length of the nMOS devices is 0.42 Fig. 3."
+        },
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Downconversion A current-switching double-balanced mixer topology is used and mixers (Fig. 3)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.3,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Downconversion mixer",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.15,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 2,
+      "caption": "Fig. 4. Baseband channel-select filter implementation block diagram.",
+      "caption_bbox": [
+        301.1,
+        199.1,
+        527.7,
+        209.8
+      ],
+      "section_title": "IV. IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The filter architecture (Fig. 4) is based on a leapfrog ladder realization of a passive LC filter."
+        },
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The ladder – structure using filter is implemented as a two-input IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 3, MARCH 2003 Fig. 4."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.3,
+      "relevance_breakdown": {
+        "+block diagram": 2.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Baseband channel-select filter implementation block diagram",
+        "key_specs": []
+      },
+      "is_recommended": true,
+      "confidence": 0.82,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 2,
+      "caption": "Fig. 5. Operational transconductance amplifier for filter.",
+      "caption_bbox": [
+        301.1,
+        358.7,
+        486.5,
+        369.4
+      ],
+      "section_title": "IV. IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 5."
+        },
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The OTA transconductance provides the resistive part of the filter time constant (Fig. 5)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.8,
+      "relevance_breakdown": {
+        "-conductance": -1.5,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Operational transconductance amplifier for filter",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 3,
+      "caption": "Fig. 6. VGA.",
+      "caption_bbox": [
+        39.6,
+        251.9,
+        87.7,
+        262.6
+      ],
+      "section_title": "IV. IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 38, NO. 3, MARCH 2003 Fig. 6."
+        },
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Each amplifier (Fig. 6) consists of an input transconductor that linearly converts an input voltage signal into a current."
+        },
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The transconductor output current is steered in a bipolar pair by the differenand (Fig. 6)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 2.7,
+      "relevance_breakdown": {
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "VGA",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.21,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 3,
+      "caption": "Fig. 7. Die photograph of direct-conversion receiver.",
+      "caption_bbox": [
+        302.6,
+        234.3,
+        476.6,
+        244.9
+      ],
+      "section_title": "IV. IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "The most harmful effects of offsets include receiver saturation, degradation of second-order distortion Fig. 7."
+        },
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "A die photo of the receiver is shown in Fig. 7."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -3.7,
+      "relevance_breakdown": {
+        "-photograph": -3.0,
+        "-die photo": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "receiver",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Die photograph of direct-conversion receiver",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 4,
+      "caption": "Fig. 8. Measured frequency response of a baseband filter.",
+      "caption_bbox": [
+        38.1,
+        221.5,
+        227.2,
+        232.1
+      ],
+      "section_title": "IV. IMPLEMENTATION",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 8."
+        },
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Measured filter 1.2 dB and the – demodulator frequency response is shown in Fig. 8 and (mixer and VGA) gain characteristic in Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.7,
+      "relevance_breakdown": {
+        "-measured": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "filter",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Measured frequency response of a baseband filter",
+        "key_specs": [
+          "1.2 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 4,
+      "caption": "Fig. 9. Gain control characteristics of the demodulator.",
+      "caption_bbox": [
+        38.1,
+        409.1,
+        219.4,
+        419.7
+      ],
+      "section_title": "V. MEASUREMENTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "IMPLEMENTATION",
+          "section_kind": "design",
+          "page": 1,
+          "sentence": "Fig. 9."
+        },
+        {
+          "section_title": "MEASUREMENTS",
+          "section_kind": "results",
+          "page": 4,
+          "sentence": "Measured filter 1.2 dB and the – demodulator frequency response is shown in Fig. 8 and (mixer and VGA) gain characteristic in Fig. 9."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "mixer",
+        "technology": "CMOS, BICMOS, SIGE",
+        "application_domain": "rf, wireless, baseband, if",
+        "sub_blocks": [
+          "mixer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Gain control characteristics of the demodulator",
+        "key_specs": [
+          "1.2 dB"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 4,
+  "warnings": []
+}

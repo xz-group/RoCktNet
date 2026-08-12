@@ -1,0 +1,1014 @@
+{
+  "pdf_path": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Data\\article_url_match_results\\papers\\1388630.pdf",
+  "output_dir": "D:\\InfoExtractPipeline\\MetaDataExtraction\\Output\\1388630",
+  "generated_at": "2026-07-29T22:02:19",
+  "paper_metadata": {
+    "title": "An Adaptive ENG Amplifier for Tripolar Cuff Electrodes",
+    "authors": [
+      "Andreas Demosthenous",
+      "Iasonas F. Triantis"
+    ],
+    "abstract": "Electroneurogram (ENG) recording from tripolar cuff electrodes is affected by interference signals, mostly genersiderably, making separation by means of filtering very diffiated by muscles nearby. Interference reduction may be achieved cult [7]; the ENG has an energy in the 500 Hz–10 kHz band by suitably designed amplifiers such as the true-tripole and with maximum power around 1 kHz, while the EMG lies in the quasi-tripole systems. However, in practice their performance is 1 Hz–3 kHz band and peaks at about 250 Hz [6]. Various ENG severely degraded by cuff imbalance, resulting in very low output amplifier configurations make use of the properties of the cuff signal-to-interference ratios. Although some improvement may be offered by post filtering, this considerably increases complexity, electrodes, mainly the linearization of the EMG potential field size and power dissipation, rendering the approach unsuitable for inside the cuff [8]. Improved performance in terms of EMG rethe development of a high-performance ENG recording system duction is offered by tripolar cuffs (i.e., cuffs with three equally which is fully implantable. This paper describes an integrated, spaced ring electrodes embedded in the inside wall [1]). Due fully implantable, adaptive ENG amplifier developed to autoto this linearization, the EMG potential differences between the matically compensate for cuff imbalance, and thus significantly improve the quality of the recorded ENG. Measured results central electrode and the outer electrodes are equal and opposite show that the adaptive ENG amplifier has a yield of 100%, a and can be cancelled by a differential amplifier arrangement. cuff imbalance correction range of more than 40%, and an By contrast, the ENG signal does not cancel in this way and output signal-to-interference ratio of about 2/1 (6 dB) even for can be recovered. The amplifiers used with tripolar cuffs are the 40% imbalance. The latter should be compared with an input quasi-tripole (QT) [1], [6] and true-tripole (TT) [9]. However, signal-to-interference ratio of 1/500 ( 54 dB). The circuit was fabricated in 0.8m BiCMOS technology, has a core area of EMG reduction in these systems is affected by the departure of 0.68 mm2, and dissipates 7.2 mW from 2.5 V power supplies. the cuff–tissue interface from its ideal model, caused by factors The adaptive ENG amplifier advances the state-of-the-art in like cuff asymmetry and tissue growth inside it after implantaimplantable tripolar nerve cuff electrode recording techniques. tion, resulting in cuff imbalance as explained in more detail in",
+    "keywords": [
+      "Analog integrated circuits",
+      "cuff imbalance",
+      "ENG"
+    ],
+    "doi": "10.1109/JSSC.2004.840957",
+    "venue": "IEEE JOURNAL OF SOLID-STATE CIRCUITS",
+    "year": 2005
+  },
+  "paper_circuit_context": {
+    "circuit_type": "Adaptive ENG Amplifier",
+    "technology": "CMOS, BICMOS",
+    "application_domain": "biomedical, if",
+    "sub_blocks": [
+      "capacitor",
+      "resistor",
+      "transistor/MOSFET",
+      "current source",
+      "current mirror",
+      "output buffer",
+      "bias circuit",
+      "differential pair",
+      "op-amp",
+      "transformer"
+    ],
+    "design_purpose": "Although some improvement may be offered by post filtering, this considerably increases complexity, electrodes, mainly the linearization of the EMG potential field size and power dissipation, rendering the approach unsuitable for inside the cuff [8].",
+    "function_summary": "Adaptive ENG Amplifier: Although some improvement may be offered by post filtering, this considerably increases complexity, electrodes, mainly the linearization of the EMG potential field size and power dissipation, rendering the approach unsuitable for inside the cuff [8].",
+    "key_specs": [
+      "500 Hz",
+      "10 kHz",
+      "1 kHz",
+      "1 Hz",
+      "3 kHz",
+      "250 Hz",
+      "100%",
+      "40%",
+      "6 dB",
+      "54 dB"
+    ]
+  },
+  "sections": [
+    {
+      "number": "I",
+      "title": "INTRODUCTION",
+      "kind": "intro",
+      "page": 0,
+      "text_preview": "E LECTRONEUROGRAM (ENG) recording techniques for peripheral nerves using cuff electrodes offer a noninvasive way of obtaining information regarding nerve operation [1]. In the case of spinal cord injury this information can be used for the improvement of implanted devices used for rehabilitation. Monitoring nerve operation allows some level of intervention by means of functional electrical stimula ..."
+    },
+    {
+      "number": "II",
+      "title": "PRINCIPLES OF TRIPOLAR CUFF ELECTRODE RECORDING",
+      "kind": "proposed",
+      "page": 1,
+      "text_preview": "The ENG signal results from the action potentials propagating along the nerve ﬁbers, which cause small action currents to ﬂow through the ﬁber membranes into the extrafascicular medium [5]. Conﬁnement within an insulating cuff causes the local impedance to be higher than outside the cuff, so that the action currents give rise to measurable potentials between the cuff electrodes. Simply stated, the ..."
+    },
+    {
+      "number": "III",
+      "title": "ADAPTIVE TRIPOLE ARCHITECTURE",
+      "kind": "proposed",
+      "page": 1,
+      "text_preview": "A. System Description The block diagram of the AT implementation described in this paper is shown in Fig. 3. The system consists of two , providing a very voltage preampliﬁers, each with a ﬁxed gain low-noise interface with the cuff electrodes. The preampliﬁers are followed by two operational transconductance ampliﬁers and , controlled by the (OTAs) with variable gains and . The control differenti ..."
+    },
+    {
+      "number": "IV",
+      "title": "CIRCUIT DESIGN",
+      "kind": "design",
+      "page": 2,
+      "text_preview": "A. Low-Noise Preampliﬁers The preampliﬁers, being the front-end interface with the cuff electrodes, are required to exhibit very low-noise performance and have reasonable voltage gain (about 40 dB), so that low noise is not a concern for the design of the subsequent system stages. The exact gain of the preampliﬁers is not important because any gain mismatch between them will be compensated for by  ..."
+    },
+    {
+      "number": "V",
+      "title": "MEASURED RESULTS",
+      "kind": "results",
+      "page": 6,
+      "text_preview": "The adaptive ENG ampliﬁer chip, shown in Fig. 10, was fabricated in the austriamicrosystems 0.8m BiCMOS process [23] which includes a high resistive layer. A second chip containing the control stage conﬁgured as test structures was also fabricated. The substrates of all transistors were connected to their respective power supply rail (i.e., nMOS to and pMOS to ), and the dc bias current sources (1 ..."
+    },
+    {
+      "number": "VI",
+      "title": "CONCLUSION",
+      "kind": "conclusion",
+      "page": 8,
+      "text_preview": "The design of an adaptive ENG ampliﬁer for interface to tripolar cuff electrodes has been described. The adaptive ENG ampliﬁer offers a fully implantable solution to the problem of cuff imbalance, thereby signiﬁcantly advancing the state-of-the-art in the ﬁeld. The described realization overcomes many of the limitations of a previous design in terms of reliability, cuff imbalance correction range, ..."
+    }
+  ],
+  "figures": [
+    {
+      "id": 1,
+      "label": "Fig. 1",
+      "page": 1,
+      "caption": "Fig. 1. Lumped-impedance model of the cuff and idealized ENG and EMG potentials inside the cuff [6], [12]. Typical impedance values: Z = 200 , Z = 1:25 k , Z = 1 k .",
+      "caption_bbox": [
+        38.1,
+        183.6,
+        289.3,
+        209.5
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "DEMOSTHENOUS AND TRIANTIS: ADAPTIVE ENG AMPLIFIER FOR TRIPOLAR CUFF ELECTRODES Fig. 1."
+        },
+        {
+          "section_title": "PRINCIPLES OF TRIPOLAR CUFF ELECTRODE RECORDING",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "This linearization effect is depicted in Fig. 1 in the basic electrical lumped-impedance model of the cuff [6], [12]."
+        },
+        {
+          "section_title": "PRINCIPLES OF TRIPOLAR CUFF ELECTRODE RECORDING",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "At the frequencies of interest, the impedances may be regarded as purely resistive with typical values listed in the caption of Fig. 1."
+        },
+        {
+          "section_title": "PRINCIPLES OF TRIPOLAR CUFF ELECTRODE RECORDING",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "The EMG potentials across nodes ab and cb in Fig. 1 appear as anti-phase while the respective ENG potentials appear in-phase."
+        },
+        {
+          "section_title": "ADAPTIVE TRIPOLE ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Assuming between the EMG sinusoidal signals and a phase shift relative to that in , then with reference to the term in , and are cuff model in Fig. 1 and for given by (3) (4) and are the voltage amplitudes of where and in Fig. 1, reand their respective frequencies."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "For comparison, Fig. 15(b) shows the mean improvement over the theoretical TT and QT ampliﬁer conﬁgurations as a function of imbalance (for the TT the input ampliﬁers were assumed to be matched, and for the QT the electrode impedance values listed in the caption of Fig. 1 versus (absolute) imbalance for all 20 chips."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.0,
+      "relevance_breakdown": {
+        "-model": -1.5,
+        "section:intro": -0.5,
+        "references": 2.0
+      },
+      "figure_role": "analysis_model",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Lumped-impedance model of the cuff and idealized ENG and EMG potentials inside the cuff [6], [12]. Typical impedance values: Z = 200 , Z = 1:25 k , Z = 1 k",
+        "key_specs": [
+          "1 v"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "label": "Fig. 2",
+      "page": 1,
+      "caption": "Fig. 2. Tripolar ENG ampliﬁer conﬁgurations. (a) Quasi-tripole (QT). (b) True-tripole (TT).",
+      "caption_bbox": [
+        38.1,
+        326.6,
+        289.2,
+        343.6
+      ],
+      "section_title": "II. PRINCIPLES OF TRIPOLAR CUFF ELECTRODE RECORDING",
+      "section_kind": "proposed",
+      "references": [
+        {
+          "section_title": "INTRODUCTION",
+          "section_kind": "intro",
+          "page": 0,
+          "sentence": "Fig. 2."
+        },
+        {
+          "section_title": "PRINCIPLES OF TRIPOLAR CUFF ELECTRODE RECORDING",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Given the linear gradient of the EMG potential inside the cuff and equally spaced tripolar electrodes, the residual EMG at the output from either the QT or TT ampliﬁer conﬁgurations (Fig. 2) will ideally be zero."
+        },
+        {
+          "section_title": "PRINCIPLES OF TRIPOLAR CUFF ELECTRODE RECORDING",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "In the case of very sensitive to mismatches in the TT, assuming unity gain for the output ampliﬁer ( ), the residual EMG at its output is [14] (2) and are the gains of the input differential ampliwhere ﬁers in Fig. 2(b)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.2,
+      "relevance_breakdown": {
+        "section:proposed": 2.0,
+        "references": 1.2
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Adaptive ENG Amplifier",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Tripolar ENG ampliﬁer conﬁgurations. (a) Quasi-tripole (QT). (b) True-tripole (TT)",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.31,
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "label": "Fig. 3",
+      "page": 1,
+      "caption": "Fig. 3. Adaptive-tripole (AT) architecture.",
+      "caption_bbox": [
+        301.1,
+        171.3,
+        441.4,
+        179.2
+      ],
+      "section_title": "I. INTRODUCTION",
+      "section_kind": "intro",
+      "references": [
+        {
+          "section_title": "PRINCIPLES OF TRIPOLAR CUFF ELECTRODE RECORDING",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "However, in and are subject to uneven variations which depractice stroy the tripolar cuff symmetry, resulting in cuff imbalance, deﬁned as (1) Fig. 3."
+        },
+        {
+          "section_title": "ADAPTIVE TRIPOLE ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "System Description The block diagram of the AT implementation described in this paper is shown in Fig. 3."
+        },
+        {
+          "section_title": "ADAPTIVE TRIPOLE ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Sensitivity to Phase Errors The AT achieves optimum artifact reduction when the EMG terms at the inputs of the output-stage ampliﬁer (Fig. 3) are exactly anti-phase."
+        },
+        {
+          "section_title": "ADAPTIVE TRIPOLE ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "However, the use of ac coupling2 in the preampliﬁers for dc offset cancellation (see Section IV-A) will, in the case of mismatched ﬁlters, introduce additional phase and in Fig. 3. shifts between the composite signals The phase shifts will be more pronounced on the EMG as its frequency spectrum peaks at much lower frequencies than the ENG [6]."
+        },
+        {
+          "section_title": "ADAPTIVE TRIPOLE ARCHITECTURE",
+          "section_kind": "proposed",
+          "page": 1,
+          "sentence": "Furtherspectively, and more, assuming that and in Fig. 3 have settled to , such that their ﬁnal values for a given (5) is the mean gain of each variable-gain OTA, the AT where output is given by (6) which using standard trigonometric identities modiﬁes to (7) where is the phase shift of the residual output EMG relative to the input EMG (i.e., seen at , the AT will (ideally) eliminate the electrodes)."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Full-Wave Current Rectiﬁers The two full-wave rectiﬁers shown in Fig. 3 were realized by the current-mode circuit in Fig. 6."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 16 shows the settling time of the feedback current in Fig. 3 for abrupt step-like changes in imbalance."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.5,
+      "relevance_breakdown": {
+        "+architecture": 2.0,
+        "section:intro": -0.5,
+        "references": 2.0
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Adaptive-tripole (AT) architecture",
+        "key_specs": [
+          "3 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.38,
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "label": "Fig. 4",
+      "page": 3,
+      "caption": "Fig. 4. Preampliﬁer circuit.",
+      "caption_bbox": [
+        38.1,
+        253.2,
+        131.3,
+        261.1
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Thus, a simple feedforward architecture was employed as depicted in Fig. 4, thereby avoiding the complexity and noise of feedback networks."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Noise optimization of the preampliﬁers was explicitly described in [16], where it was shown that in order to achieve the required noise speciﬁcation with minimum die area and power dissipation, the input differential pair transistors Q1 and Q2 in Fig. 4 should be bipolar."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The preampliﬁer circuit in Fig. 4 consists of a simple BiCMOS OTA (Q1, Q2, M1, and M2) terminated in the load (40 k , is a dc voltage source of 0.75 V), resistor followed by a ﬁrst-order bandpass ﬁlter, which restricts the bandwidth to about 100 Hz–10 kHz."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The ac coupling mechanism DEMOSTHENOUS AND TRIANTIS: ADAPTIVE ENG AMPLIFIER FOR TRIPOLAR CUFF ELECTRODES Fig. 4."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The dc bias voltages of 0.25% for a signal swing of M6 and M7 are provided by the diode-connected transistors M8 and M9, respectively, which are in turn biased by the dc current and . sources As the base current of Q1 and Q2 cannot be supplied by the input interface, this was generated on-chip as shown in Fig. 4."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The dc voltage source is the same as in Fig. 4 and the simulated dc gain of the OTA-C stage is about 73."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "A), in Figs. 4, 8, and 9, were realized by an on-chip bi- (50 asing circuitry (not described)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.5,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 2.0
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [
+          "resistor",
+          "transistor/MOSFET",
+          "differential pair"
+        ],
+        "design_purpose": "Noise optimization of the preampliﬁers was explicitly described in [16], where it was shown that in order to achieve the required noise speciﬁcation with minimum die area and power dissipation, the input differential pair transistors Q1 and Q2 in Fig. 4 should be bipolar.",
+        "function_summary": "Preampliﬁer circuit. Noise optimization of the preampliﬁers was explicitly described in [16], where it was shown that in order to achieve the required noise speciﬁcation with minimum die area and power dissipation, the input differential pair transistors Q1 and Q2 in Fig. 4 should be bipolar.",
+        "key_specs": [
+          "0.75 V",
+          "100 Hz",
+          "10 kHz",
+          "0.25%"
+        ]
+      },
+      "is_recommended": true,
+      "confidence": 0.65,
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "label": "Fig. 5",
+      "page": 3,
+      "caption": "Fig. 5. Variable-gain OTA circuit.",
+      "caption_bbox": [
+        301.1,
+        472.5,
+        415.1,
+        480.4
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The control stage is required to have sufﬁcient gain to amplify the ENG to a reasonable amplitude (i.e., 20 mV) and also sufﬁcient linearity to accommodate the EMG Fig. 5."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The variable-gain OTA was designed for operation in strong inversion and its simpliﬁed schematic is shown in Fig. 5."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Assuming matched transistors and neglecting channel length modulation, each output current of the OTA in Fig. 5 is given by [18] (10) is the input voltage, is the transconwhere ductance parameter, and are the channel width and length is the carrier mobility, and is of the input transistors, the gate oxide capacitance per unit area."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The relationship beand can be obtained by taking tween transconductance the derivative of (10) with respect to , yielding (11) For , the OTA transconductance simpliﬁes to (12) where is the small-signal transconductance of transistors M1 and M2 in Fig. 5 and is the mean (dc) value of ."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The second output branch from each variable-gain OTA (Fig. 5) is hardwired to resistor (50 k ) where the two composite and are summed up to form ."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 4.5,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 2.0
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "transconductor / OTA",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [
+          "resistor",
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Variable-gain OTA circuit",
+        "key_specs": [
+          "20 mV"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.62,
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "label": "Fig. 6",
+      "page": 4,
+      "caption": "Fig. 6. Two full-wave rectiﬁer circuits.",
+      "caption_bbox": [
+        39.6,
+        320.1,
+        169.5,
+        328.0
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Fig. 6."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Full-Wave Current Rectiﬁers The two full-wave rectiﬁers shown in Fig. 3 were realized by the current-mode circuit in Fig. 6."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The addition of the various drain currents is done at the input node of the current comparator, resulting in the output as indicated in Fig. 6."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.7,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "comparator",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Two full-wave rectiﬁer circuits",
+        "key_specs": [
+          "3 w"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.43,
+      "warnings": []
+    },
+    {
+      "id": 7,
+      "label": "Fig. 7",
+      "page": 4,
+      "caption": "Fig. 7. Comparator circuit.",
+      "caption_bbox": [
+        302.6,
+        191.6,
+        394.2,
+        199.5
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 2, FEBRUARY 2005 Fig. 7."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The comparator uses a shown in Fig. 7 to form current CMOS inverter (M3, M4) to apply negative feedback around a class-B voltage buffer (M1, M2)."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "comparator",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [
+          "output buffer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Comparator circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 8,
+      "label": "Fig. 8",
+      "page": 5,
+      "caption": "Fig. 8. Large time-constant integrator circuit.",
+      "caption_bbox": [
+        38.1,
+        266.3,
+        189.1,
+        274.3
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "DEMOSTHENOUS AND TRIANTIS: ADAPTIVE ENG AMPLIFIER FOR TRIPOLAR CUFF ELECTRODES Fig. 8."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The integrator schematic is shown in Fig. 8."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.3,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "amplifier",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "Large time-constant integrator circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.33,
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "label": "Fig. 9",
+      "page": 5,
+      "caption": "Fig. 9. Output-stage ampliﬁer circuit.",
+      "caption_bbox": [
+        301.1,
+        468.9,
+        426.8,
+        476.8
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Any possible dc offset voltages and resulting from transistor mismatches may across nodes Fig. 9."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "Output-Stage Ampliﬁer The schematic of the output stage ampliﬁer is shown in Fig. 9."
+        },
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The ampliis generated across ﬁer (M1–M9) in Fig. 9 is a standard two-stage op-amp conﬁgured as a noninverting ampliﬁer through the feedback resistive (90 k ) and (10 k )."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 3.7,
+      "relevance_breakdown": {
+        "+circuit": 1.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "proposed_schematic",
+      "circuit_context": {
+        "circuit_type": "Adaptive ENG Amplifier",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "op-amp"
+        ],
+        "design_purpose": "",
+        "function_summary": "Output-stage ampliﬁer circuit",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.43,
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "label": "Fig. 10",
+      "page": 6,
+      "caption": "Fig. 10. Chip microphotograph.",
+      "caption_bbox": [
+        39.6,
+        318.9,
+        147.1,
+        326.9
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "CIRCUIT DESIGN",
+          "section_kind": "design",
+          "page": 2,
+          "sentence": "The ampliﬁer employs network zero-pole compensation realized by the series combination of transistor M8 and capacitor (3.5 pF), and the circuit is biased Fig. 10."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The adaptive ENG ampliﬁer chip, shown in Fig. 10, was fabricated in the austriamicrosystems 0.8m BiCMOS process [23] which includes a high resistive layer."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -4.2,
+      "relevance_breakdown": {
+        "-microphotograph": -3.5,
+        "-photograph": -3.0,
+        "section:design": 1.5,
+        "references": 0.8
+      },
+      "figure_role": "layout_photo",
+      "circuit_context": {
+        "circuit_type": "Adaptive ENG Amplifier",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [
+          "capacitor",
+          "transistor/MOSFET"
+        ],
+        "design_purpose": "",
+        "function_summary": "Chip microphotograph",
+        "key_specs": [
+          "3.5 pF"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.0,
+      "warnings": []
+    },
+    {
+      "id": 11,
+      "label": "Fig. 11",
+      "page": 6,
+      "caption": "Fig. 11. Experimental setup.",
+      "caption_bbox": [
+        302.6,
+        193.6,
+        399.5,
+        201.6
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The substrates of all transistors were connected to their respective power supply rail (i.e., nMOS to and pMOS to ), and the dc bias current sources (150 A), (10 A), (10 A), (2 A), (10 nA), (200 A), and IEEE JOURNAL OF SOLID-STATE CIRCUITS, VOL. 40, NO. 2, FEBRUARY 2005 Fig. 11."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The input ac signals to the AT chip (DUT) were provided by and (A262A7E) as illustrated in two audio transformers Fig. 11."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Initially, the chips were tested with sinusoidal signals, (100 Hz) and (1 kHz), with nominal peak amplitudes across nodes ab (and bc) in Fig. 11 of mV and V, respectively."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.7,
+      "relevance_breakdown": {
+        "-setup": -2.0,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "on-chip transformer",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [
+          "transistor/MOSFET",
+          "current source",
+          "transformer"
+        ],
+        "design_purpose": "",
+        "function_summary": "Experimental setup",
+        "key_specs": [
+          "100 Hz",
+          "1 kHz"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.04,
+      "warnings": []
+    },
+    {
+      "id": 12,
+      "label": "Fig. 12",
+      "page": 6,
+      "caption": "Fig. 12. Frequency spectrum of the composite input signal. The spectrum of the band-limited white noise signal representing the EMG resembles that of the real EMG.",
+      "caption_bbox": [
+        302.6,
+        418.0,
+        553.7,
+        443.9
+      ],
+      "section_title": "IV. CIRCUIT DESIGN",
+      "section_kind": "design",
+      "references": [
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 12."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Subsequently, in order to model a more realistic test, was replaced by an arbitrary signal (generated from band-limited Gaussian noise) with the frequency spectrum plotted in Fig. 12 (measured across ac)."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "In Fig. 12, the ENG magnitude ( buried under the spectrum ﬂoor of the random EMG signal."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": 0.2,
+      "relevance_breakdown": {
+        "-spectrum": -2.5,
+        "section:design": 1.5,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Adaptive ENG Amplifier",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "Subsequently, in order to model a more realistic test, was replaced by an arbitrary signal (generated from band-limited Gaussian noise) with the frequency spectrum plotted in Fig. 12 (measured across ac).",
+        "function_summary": "Frequency spectrum of the composite input signal. The spectrum of the band-limited white noise signal representing the EMG resembles that of the real EMG. Subsequently, in order to model a more realistic test, was replaced by an arbitrary signal (generated from band-limited Gaussian noise) with the frequency spectrum ...",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.02,
+      "warnings": []
+    },
+    {
+      "id": 15,
+      "label": "Fig. 15",
+      "page": 7,
+      "caption": "Fig. 15. (a) Mean AT SIR improvement over the ideal TT and QT counterparts versus (b) SIR (absolute) imbalance.",
+      "caption_bbox": [
+        301.1,
+        263.2,
+        552.2,
+        289.1
+      ],
+      "section_title": "V. MEASURED RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "The average for all 20 (complete) AT chips as a function of imbalance is plotted in Fig. 15(a) (Matlab best linear-ﬁt), where it can be seen that even for extreme values of imbalance, the mean AT is better than 2 (6 dB)."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "For comparison, Fig. 15(b) shows the mean improvement over the theoretical TT and QT ampliﬁer conﬁgurations as a function of imbalance (for the TT the input ampliﬁers were assumed to be matched, and for the QT the electrode impedance values listed in the caption of Fig. 1 versus (absolute) imbalance for all 20 chips."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 15."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -0.8,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 1.2
+      },
+      "figure_role": "result_plot",
+      "circuit_context": {
+        "circuit_type": "Adaptive ENG Amplifier",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "(a) Mean AT SIR improvement over the ideal TT and QT counterparts versus (b) SIR (absolute) imbalance",
+        "key_specs": [
+          "6 dB",
+          "1 v"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 16,
+      "label": "Fig. 16",
+      "page": 7,
+      "caption": "Fig. 16. imbalance.",
+      "caption_bbox": [
+        301.1,
+        506.5,
+        335.9,
+        523.5
+      ],
+      "section_title": "V. MEASURED RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Settling time of feedback current I (t) for abrupt changes in Fig. 16. imbalance. were assumed)."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 16 shows the settling time of the feedback current in Fig. 3 for abrupt step-like changes in imbalance."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Adaptive ENG Amplifier",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "imbalance",
+        "key_specs": []
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    },
+    {
+      "id": 17,
+      "label": "Fig. 17",
+      "page": 8,
+      "caption": "Fig. 17. to phase shifts.",
+      "caption_bbox": [
+        39.6,
+        279.7,
+        203.6,
+        287.7
+      ],
+      "section_title": "V. MEASURED RESULTS",
+      "section_kind": "results",
+      "references": [
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Fig. 17 shows the as a function of phase shift for both measured and theoretical cases, the latter calculated from (9) and for 40% imbalance."
+        },
+        {
+          "section_title": "MEASURED RESULTS",
+          "section_kind": "results",
+          "page": 6,
+          "sentence": "Sensitivity of AT SIR Fig. 17. to phase shifts."
+        }
+      ],
+      "image_path": "",
+      "crop_bbox": [],
+      "relevance_score": -1.2,
+      "relevance_breakdown": {
+        "section:results": -2.0,
+        "references": 0.8
+      },
+      "figure_role": "other",
+      "circuit_context": {
+        "circuit_type": "Adaptive ENG Amplifier",
+        "technology": "CMOS, BICMOS",
+        "application_domain": "biomedical, if",
+        "sub_blocks": [],
+        "design_purpose": "",
+        "function_summary": "to phase shifts",
+        "key_specs": [
+          "40%"
+        ]
+      },
+      "is_recommended": false,
+      "confidence": 0.01,
+      "warnings": []
+    }
+  ],
+  "recommended_figure_id": 4,
+  "warnings": [
+    "Small score margin between the top figure candidates; manual confirmation recommended."
+  ]
+}
