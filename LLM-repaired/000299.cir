@@ -1,11 +1,11 @@
-I1 n2 GND
-M1 VDD n5 n0 GND nmos
-M2 n3 n4 n0 GND nmos
-M3 VDD n4 n1 GND nmos
-L1 VDD n3
-M4 n0 n2 n2 GND nmos
-M5 n0 label_net_1 n2 GND nmos
-M6 n1 label_net_2 n2 GND nmos
-M7 n1 label_net_3 n2 GND nmos
-M8 n3 n5 n1 GND nmos
-C1 n2 GND
+I1 VIF_Q_P GND
+M5 VDD VLO2_P N0 GND nmos
+M6 VRF VLO2_N N0 GND nmos
+M7 VDD VLO2_N N1 GND nmos
+Ld VDD VRF
+M3 N0 VIF_Q_P VIF_Q_P GND nmos
+M1 N0 VIF_I_P VIF_Q_P GND nmos
+M2 N1 VIF_I_N VIF_Q_P GND nmos
+M4 N1 VIF_Q_N VIF_Q_P GND nmos
+M8 VRF VLO2_P N1 GND nmos
+Cb VIF_Q_P GND

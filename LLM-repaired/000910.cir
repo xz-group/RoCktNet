@@ -21,17 +21,17 @@ MBP1 N_MBP1_D V_BP VDD VDD pmos
 MBP1C V_BP PMOS_CASCODE_BIAS N_MBP1_D VDD pmos
 MBP0 N_MBP0_D V_BP VDD VDD pmos
 MBP0C PMOS_CASCODE_BIAS PMOS_CASCODE_BIAS N_MBP0_D VDD pmos
-I1 V_BP GND
-I2 PMOS_CASCODE_BIAS GND
+IBIAS1 V_BP GND
+IBIAS2 PMOS_CASCODE_BIAS GND
 C3 N_C3_L N_C3_R
 C4 VO- V_CMFB
 C2 VO+ V_CMFB
 C1 N_C1_L N_C1_R
-S1 (VCM N_C3_L) switch_ideal
+S1 (V_CM N_C3_L) switch_ideal
 S2 (VO- N_C3_L) switch_ideal
 S3 (V_BN N_C3_R) switch_ideal
 S4 (V_CMFB N_C3_R) switch_ideal
 S5 (VO+ N_C1_L) switch_ideal
-S6 (VCM N_C1_L) switch_ideal
+S6 (V_CM N_C1_L) switch_ideal
 S7 (V_CMFB N_C1_R) switch_ideal
 S8 (V_BN N_C1_R) switch_ideal

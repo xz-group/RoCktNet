@@ -1,14 +1,14 @@
-C3 IN+ N1+
-C1 IN- N1-
-R8 N1+ N2-
-R1 N1- N2+
-R4 N1+ N4
-R6 N1- N4
-R3 N2+ VDD
-R2 N2- VDD
-Q1 N2+ N1+ N3+ npn
-Q2 N2- N1- N3- npn
-R5 N3+ GND
-R7 N3- GND
-C2 N3+ N3-
-V1 N4 GND
+Cin_plus nin_plus n1_plus
+Cin_minus nin_minus n1_minus
+R1_2 n1_plus n2_minus
+R1 n1_minus n2_plus
+R1_3 n1_plus n4
+R1_4 n1_minus n4
+R3 n2_plus VDD
+R3_2 n2_minus VDD
+T1 (n2_plus n1_plus n3_plus) npn
+T1_2 (n2_minus n1_minus n3_minus) npn
+R2 n3_plus GND
+R2_2 n3_minus GND
+C2 n3_plus n3_minus
+V1 n4 GND

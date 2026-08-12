@@ -1,12 +1,11 @@
-C1 n2 n3
-M1 n4 n5 n0 VDD pmos
-C2 n2 n4
-M2 n4 n4 n1 GND nmos
-C3 n2 n4
-M3 n0 label_net_1 label_net_0 VDD pmos
-M4 n2 n3 n0 VDD pmos
-C4 n4 n5
-M5 n2 n2 n1 GND nmos
-S1 n3 label_net_2 switch_ideal
-S2 n5 n5 switch_ideal
-
+C1 Vo_minus N3
+M1 Vo_plus N5 N0 VDD pmos
+C2 Vo_minus Vo_plus
+M2 Vo_plus Vo_plus VSS GND nmos
+C3 Vo_minus Vo_plus
+M3 N0 LABEL_NET_1 LABEL_NET_0 VDD pmos
+M4 Vo_minus N3 N0 VDD pmos
+C4 Vo_plus N5
+M5 Vo_minus Vo_minus VSS GND nmos
+S1 (N3 Va) switch_ideal
+S2 (N5 N5) switch_ideal

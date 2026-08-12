@@ -1,8 +1,8 @@
-I1 n1 GND
-R1 n2 n4
-C1 n1 GND
-M1 n3 n0 n1 GND nmos
-M2 n2 label_net_0 n3 GND nmos
-R2 n4 n2
-C2 n0 label_net_1
-M3 n4 label_net_2 n3 GND nmos
+I1 N1 GND
+R1 OUT_PLUS OUT_MINUS
+C2 N1 GND
+M1 N3 N0 N1 GND nmos
+M2 OUT_PLUS LO_PLUS N3 GND nmos
+R2 OUT_MINUS OUT_PLUS
+C1 N0 RF
+M3 OUT_MINUS LO_MINUS N3 GND nmos

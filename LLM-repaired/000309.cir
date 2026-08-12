@@ -1,10 +1,9 @@
-M1 n0 n0 VDD VDD pmos
-M2 n3 n3 n0 VDD pmos
-M3 n4 label_net_0 n1 GND nmos
-M4 n2 label_net_1 n1 GND nmos
-M5 n5 n0 VDD VDD pmos
-M6 n3 n2 n1 GND nmos
-M7 n4 n3 n5 VDD pmos
-C1 n1 n4
-R1 n2 label_net_2
-
+M1 N0 N0 VDD VDD pmos
+M3 N3 N3 N0 VDD pmos
+M7 VOUT Reset VSS GND nmos
+M6 N2 Step VSS GND nmos
+M2 N5 N0 VDD VDD pmos
+M5 N3 N2 VSS GND nmos
+M4 VOUT N3 N5 VDD pmos
+Cramp VSS VOUT
+R1 N2 Vctrl

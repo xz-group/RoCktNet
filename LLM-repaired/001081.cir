@@ -1,23 +1,22 @@
-M1 n10 n21 n13 GND nmos
-M2 n7 n21 n0 GND nmos
-M3 n15 n19 n11 VDD pmos
-M4 n8 n12 n15 VDD pmos
-M5 n4 n21 n14 GND nmos
-M6 n7 n12 n3 VDD pmos
-M7 n10 n12 n16 VDD pmos
-M8 n8 n21 n2 GND nmos
-M9 n14 label_net_2 n9 GND nmos
-M10 n0 n10 n1 GND nmos
-M11 n4 n12 n6 VDD pmos
-M12 n13 label_net_3 n9 GND nmos
-M13 n3 n19 n11 VDD pmos
-M14 n6 n19 n11 VDD pmos
-M15 n2 n4 n1 GND nmos
-M16 n16 n19 n11 VDD pmos
-M17 n9 label_net_5 n23 GND nmos
-C1 n5 n7
-M18 n1 label_net_6 n23 GND nmos
-M19 n26 n11 n4 GND nmos
-C2 n8 n26
-M20 n5 n11 n10 GND nmos
-
+M1 N10 Bias3 N13 GND nmos
+M2 Out_plus Bias3 N0 GND nmos
+M3 N15 Bias1 VDDA VDD pmos
+M4 Out_minus Bias2 N15 VDD pmos
+M5 N4 Bias3 N14 GND nmos
+M6 Out_plus Bias2 N3 VDD pmos
+M7 N10 Bias2 N16 VDD pmos
+M8 Out_minus Bias3 N2 GND nmos
+M9 N14 In_minus N9 GND nmos
+M10 N0 N10 N1 GND nmos
+M11 N4 Bias2 N6 VDD pmos
+M12 N13 In_plus N9 GND nmos
+M13 N3 Bias1 VDDA VDD pmos
+M14 N6 Bias1 VDDA VDD pmos
+M15 N2 N4 N1 GND nmos
+M16 N16 Bias1 VDDA VDD pmos
+M17 N9 CM_Bias1 VSSA GND nmos
+C1 N5 Out_plus
+M18 N1 CM_Bias2 VSSA GND nmos
+M19 N26 VDDA N4 GND nmos
+C2 Out_minus N26
+M20 N5 VDDA N10 GND nmos

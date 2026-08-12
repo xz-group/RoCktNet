@@ -1,12 +1,11 @@
-Q1 label_net_0 n5 n1 npn
-Q2 VDD n0 n6 npn
-Q3 n0 n4 n2 npn
-I1 VDD n0
-R1 n5 n6
-R2 n1 n3
-C1 n0 n4
-C2 n4 GND
-R3 n2 GND
-R4 n4 n5
-L1 n3 GND
-
+Q1 RF_out RF_in N1 npn
+Q3 VDD N0 N6 npn
+Q2 N0 N4 N2 npn
+I_ref VDD N0
+R3 RF_in N6
+RE_N N1 N3
+C_stab N0 N4
+C_F N4 GND
+RE_6 N2 GND
+beta_RE_6 (N4 RF_in) resistor
+L_E N3 GND

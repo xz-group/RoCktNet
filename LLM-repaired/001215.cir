@@ -1,10 +1,10 @@
-M1 n2 label_net_0 n5 VDD pmos
-M2 n5 n6 VDD VDD pmos
-M3 n0 n6 VDD VDD pmos
-M4 n3 n6 VDD VDD pmos
-M5 n1 label_net_1 VDD VDD pmos
-M6 label_net_2 n2 n1 VDD pmos
-M7 n2 label_net_3 GND GND nmos
-C1 n2 GND
-M8 label_net_4 n2 n3 VDD pmos
-M9 label_net_5 n2 n0 VDD pmos
+MCHG MEMTH BIAS N5 VDD pmos
+MSC N5 N6 VDD VDD pmos
+MFR N0 N6 VDD VDD pmos
+MPY N3 N6 VDD VDD pmos
+MPX N1 VTH VDD VDD pmos
+MSX PULSEX MEMTH N1 VDD pmos
+MRST MEMTH RESET GND GND nmos
+CSTRAY MEMTH GND
+MSY PULSEY MEMTH N3 VDD pmos
+MSF FREEZE MEMTH N0 VDD pmos

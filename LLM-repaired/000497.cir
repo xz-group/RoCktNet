@@ -1,11 +1,10 @@
-M1 n4 label_net_0 GND GND nmos
-M2 n0 n3 VDD VDD pmos
-M3 n4 n3 VDD VDD pmos
-M4 n0 label_net_1 GND GND nmos
-M5 n2 n0 n4 VDD pmos
-M6 n2 label_net_3 n0 VDD pmos
-M7 n2 n1 n0 VDD pmos
-R1 n2 GND
-M8 n2 n1 n4 VDD pmos
-R2 n2 GND
-
+M1 F_minus RFin_n GND GND nmos
+M2 F_plus N3 VDD VDD pmos
+M3 F_minus N3 VDD VDD pmos
+M4 F_plus RFin_p GND GND nmos
+M5 Out F_plus F_minus VDD pmos
+M6 Out LO_p F_plus VDD pmos
+M7 Out LO_n F_plus VDD pmos
+R1 Out GND
+M8 Out LO_n F_minus VDD pmos
+R2 Out GND

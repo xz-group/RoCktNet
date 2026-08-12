@@ -1,17 +1,16 @@
-M1 n3 n1 n0 VDD pmos
-M2 n7 n3 n0 VDD pmos
-M3 n2 n7 n0 VDD pmos
-M4 n1 n2 n0 VDD pmos
-M5 n4 n5 n2 VDD pmos
-M6 n11 n5 n3 VDD pmos
-M7 n8 n5 n7 VDD pmos
-M8 n6 n5 n1 VDD pmos
-M9 n4 label_net_1 GND GND nmos
-D1 GND n6 diode
-D2 GND n8 diode
-M10 n11 label_net_2 GND GND nmos
-D3 GND n4 diode
-D4 GND n11 diode
-M11 n6 label_net_3 GND GND nmos
-M12 n8 label_net_4 GND GND nmos
-
+M8 r_c p_c V_BOOT VDD pmos
+M13 d_c r_c V_BOOT VDD pmos
+M7 s_c d_c V_BOOT VDD pmos
+M14 p_c s_c V_BOOT VDD pmos
+M5 s_b V_OUT s_c VDD pmos
+M6 r_b V_OUT r_c VDD pmos
+M11 d_b V_OUT d_c VDD pmos
+M12 p_b V_OUT p_c VDD pmos
+M3 s_b set GND GND nmos
+D1 GND p_b
+D2 GND d_b
+M4 r_b reset GND GND nmos
+D3 GND s_b
+D4 GND r_b
+M10 p_b precharge GND GND nmos
+M9 d_b discharge GND GND nmos

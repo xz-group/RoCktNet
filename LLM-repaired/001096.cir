@@ -1,18 +1,18 @@
-X1 n5 n11 n10 GND amplifier
-I1 n2 n1
-M1 GND n0 VDD VDD pmos
-X2 n3 n9 label_net_0 amplifier
-M2 n10 n3 VDD VDD pmos
-X3 n8 n7 GND amplifier
-M3 n9 n3 VDD VDD pmos
-M4 n7 n0 VDD VDD pmos
-M5 n4 n8 n1 GND nmos
-R1 n7 GND
-R2 n5 n11
-Q1 GND label_net_1 n2 npn
-R3 n5 n6
-X4 n0 GND label_net_2 amplifier
-Q2 n10 GND n4 npn
-Q3 n7 n7 n4 npn
-Q4 n9 GND n2 npn
-C1 label_net_0 GND
+A1 (OUT N11 N10 GND) amplifier
+I0 N2 N1
+M1 GND N0 VDD VDD pmos
+A2 (N3 N9 LABEL_NET_0) amplifier
+M4 N10 N3 VDD VDD pmos
+A3 (N8 N7 GND) amplifier
+M3 N9 N3 VDD VDD pmos
+M2 N7 N0 VDD VDD pmos
+M5 N4 N8 N1 GND nmos
+R1 N7 GND
+R2 OUT N11
+Q3 GND VB N2 npn
+R3 OUT N6
+A4 (N0 GND LABEL_NET_2) amplifier
+Q2 N10 GND N4 npn
+Q1 N7 N7 N4 npn
+Q4 N9 GND N2 npn
+C1 LABEL_NET_0 GND

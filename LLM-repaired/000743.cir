@@ -1,11 +1,11 @@
-M1 VOP VGATE VDD VDD pmos
-M2 VON VGATE2 VDD VDD pmos
-M3 VOP VIN_D N_CS GND nmos
-M4 VON VIN_DBAR N_CS GND nmos
-M5 N_CS VBIAS GND GND nmos
-R1 VON VOCM
-R2 VOP VOCM
-S1 (VIN VGATE) switch_ideal
-S2 (VGATE2 VIN) switch_ideal
-S3 (VDD VGATE) switch_ideal
+M1 Vop Vgate VDD VDD pmos
+M2 Von VGATE2 VDD VDD pmos
+M3 Vop D N_CS GND nmos
+M4 Von D_bar N_CS GND nmos
+M5 N_CS Vbias GND GND nmos
+R1 Von Vocm
+R2 Vop Vocm
+S1 (V_ON Vgate) switch_ideal
+S2 (VGATE2 V_ON) switch_ideal
+S3 (VDD Vgate) switch_ideal
 S4 (VDD VGATE2) switch_ideal

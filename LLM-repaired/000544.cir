@@ -1,22 +1,22 @@
-I1 n8 GND
-I2 VDD n3
-I3 VDD n2
-I4 n1 GND
-I5 VDD n4
-I6 VDD n6
-M1 n4 n10 n1 GND nmos
-M2 n6 n6 n8 GND nmos
-M3 n2 n9 n8 GND nmos
-M4 n3 n0 n1 GND nmos
-R1 n7 n11
-R2 n5 n11
-C1 n7 label_net_0
-C2 n6 n11
-C3 n9 label_net_1
-C4 n6 n10
-C5 n5 label_net_2
-S1 n0 n3 switch_ideal
-S2 n2 n9 switch_ideal
-C6 n0 n2
-S3 n5 n11 switch_ideal
-S4 n4 n10 switch_ideal
+I1 N8 GND
+I2 VDD N3
+I3 VDD N2
+I4 N1 GND
+I5 VDD N4
+I6 VDD N6
+M1 N4 N10 N1 GND nmos
+M2 N6 N6 N8 GND nmos
+M3 N2 N9 N8 GND nmos
+M4 N3 N0 N1 GND nmos
+R1 N7 VREF
+R2 N5 VREF
+C1 N7 IN_PLUS
+C2 N6 VREF
+C3 N9 LABEL_NET_1
+C4 N6 N10
+C5 N5 IN_MINUS
+S1 (N0 N3) switch_ideal
+S2 (N2 N9) switch_ideal
+C6 N0 N2
+S3 (N5 VREF) switch_ideal
+S4 (N4 N10) switch_ideal

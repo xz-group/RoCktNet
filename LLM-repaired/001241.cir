@@ -1,24 +1,24 @@
-X1 n5 label_net_0 n7 amplifier
-D1 n11 n4 diode
-Q1 n16 n6 n5 npn
-C1 n6 n11
-I1 n5 n0
-C2 n0 n5
-L1 n6 n16
-Q2 n16 n8 n5 npn
-R1 n0 n12
-R2 n0 n17
-C3 n1 n6
-Q3 n6 n2 n13 npn
-C4 n3 n8
-C5 n13 n14
-C6 n2 n8
-Q4 n8 n1 n14 npn
-Q5 n14 n7 n12 npn
-Q6 n13 n7 n17 npn
-L2 n8 n8
-D2 n11 n15 diode
-R3 n2 n10
-R4 n1 n10
-D3 n3 n15 diode
-D4 n3 n4 diode
+A1 (N5 Vref N7) amplifier
+D1 N11 VCTX
+Q2 VCC N6 N5 npn
+C1 N6 N11
+I1 N5 VEE
+C2 VEE N5
+L1 N6 VCC
+Q1 VCC N8 N5 npn
+R1 VEE N12
+R2 VEE N17
+C6 N1 N6
+Q3 N6 N2 N13 npn
+C4 N3 N8
+C5 N13 N14
+C3 N2 N8
+Q4 N8 N1 N14 npn
+Q5 N14 N7 N12 npn
+Q6 N13 N7 N17 npn
+L2 N8 N8
+D2 N11 Vcf0
+R3 N2 VB
+R4 N1 VB
+D3 N3 Vcf0
+D4 N3 VCTX

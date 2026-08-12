@@ -1,14 +1,14 @@
-I1 n0 n4
-I2 n1 n4
-Q1 n6 label_net_0 n0 npn
-Q2 n2 n9 n5 npn
-Q3 n3 n8 n1 npn
-Q4 n2 n3 n7 npn
-Q5 n8 label_net_2 label_net_1 npn
-Q6 n9 n6 n10 npn
-R1 n2 n3
-R2 n7 n8
-R3 n2 n9
-R4 n5 n6
-R5 n1 n10
-R6 n0 label_net_1
+I1 N0 VEE
+I2 N1 VEE
+Q1 N6 INP N0 npn
+Q3 VCC OUTP N5 npn
+Q2 OUTN N8 N1 npn
+Q3 VCC OUTN N7 npn
+Q1 N8 INN LABEL_NET_1 npn
+Q2 OUTP N6 N10 npn
+RL2 VCC OUTN
+RL1 N7 N8
+RL2 VCC OUTP
+RL1 N5 N6
+RE2 N1 N10
+RE1 N0 LABEL_NET_1

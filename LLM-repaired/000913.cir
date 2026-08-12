@@ -1,16 +1,16 @@
-X1 n6 n0 n1 amplifier
-I1 n7 GND
-M1 n0 n8 GND GND nmos
-M2 n1 n7 VDD VDD pmos
-R1 n4 GND
-I2 n5 GND
-M3 n1 n8 GND GND nmos
-M4 n9 GND GND GND nmos
-M5 n7 n7 VDD VDD pmos
-M6 n1 GND n9 GND nmos
-R2 n2 GND
-M7 n0 n6 VDD VDD pmos
-M8 n0 GND GND GND nmos
-M9 n4 n10 VDD VDD pmos
-C1 n2 n5
-M10 n9 label_net_0 n5 GND nmos
+A1 (VC VA VB) amplifier
+I1 N7 GND
+MS3 VA VQ_bar GND GND nmos
+M1 VB N7 VDD VDD pmos
+RF VSEN GND
+IO VO GND
+MS2 VB VQ_bar GND GND nmos
+MN1 VI GND GND GND nmos
+M2 N7 N7 VDD VDD pmos
+MS1 VB GND VI GND nmos
+RESR N2 GND
+MR1 VA VC VDD VDD pmos
+MN2 VA GND GND GND nmos
+MR2 VSEN N10 VDD VDD pmos
+CO N2 VO
+MP1 VI VQ VO GND nmos

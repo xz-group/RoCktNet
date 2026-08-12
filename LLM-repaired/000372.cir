@@ -1,12 +1,11 @@
-M1 n5 n2 n1 GND nmos
-M2 n0 label_net_0 n2 GND nmos
-M3 label_net_1 label_net_2 n0 GND nmos
-M4 n0 label_net_3 n5 GND nmos
-M5 label_net_2 label_net_5 n0 GND nmos
-M6 n1 n1 label_net_6 GND nmos
-M7 n0 label_net_7 n4 VDD pmos
-M8 n4 label_net_8 VDD VDD pmos
-C1 n2 label_net_9
-C2 n3 GND
-M9 n2 label_net_10 n3 GND nmos
-
+MM2 N5 N2 N1 GND nmos
+MP1 N0 PHI1 N2 GND nmos
+MCn negative_sum positive_sum N0 GND nmos
+MM3 N0 Vcasn N5 GND nmos
+MCp positive_sum WR_C_plus N0 GND nmos
+MM1 N1 N1 Vss GND nmos
+MR2 N0 Vcasp N4 VDD pmos
+MR1 N4 Vbias VDD VDD pmos
+C2 N2 LABEL_NET_9
+C1 N3 GND
+MP2 N2 PHI2 N3 GND nmos

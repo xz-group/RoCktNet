@@ -1,9 +1,8 @@
-I1 n3 GND
-I2 n0 GND
-M1 n2 n1 label_net_0 VDD pmos
-M2 n1 label_net_1 n3 GND nmos
-M3 n1 n1 n2 VDD pmos
-M4 n1 label_net_3 n0 GND nmos
-M5 n2 label_net_4 n0 GND nmos
-M6 n2 label_net_5 n3 GND nmos
-
+I1 N3 GND
+I2 N0 GND
+M4 VOUT N1 VDD VDD pmos
+M1 N1 VIN N3 GND nmos
+M3 N1 N1 VOUT VDD pmos
+M5 N1 VDCB N0 GND nmos
+M6 VOUT VDC N0 GND nmos
+M2 VOUT LABEL_NET_5 N3 GND nmos

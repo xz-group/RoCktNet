@@ -1,13 +1,12 @@
-M1 n12 n0 n10 VDD pmos
-M2 n10 n11 VDD VDD pmos
-M3 n4 label_net_0 n5 GND nmos
-M4 n12 n2 n4 GND nmos
-M5 n5 n1 n8 GND nmos
-M6 n9 n2 n6 GND nmos
-M7 n7 n11 VDD VDD pmos
-M8 n9 n0 n7 VDD pmos
-M9 n3 label_net_1 GND GND nmos
-M10 n8 label_net_2 GND GND nmos
-M11 n6 label_net_3 n5 GND nmos
-M12 n5 n1 n3 GND nmos
-
+M1 outp bias2 N10 VDD pmos
+M2 N10 bias1 VDD VDD pmos
+M3 N4 inm N5 GND nmos
+M4 outp bias4 N4 GND nmos
+M5 N5 bias3 N8 GND nmos
+M6 outm bias4 N6 GND nmos
+M7 N7 bias1 VDD VDD pmos
+M8 outm bias2 N7 VDD pmos
+M9 N3 cmfb GND GND nmos
+M10 N8 cmref GND GND nmos
+M11 N6 inp N5 GND nmos
+M12 N5 bias3 N3 GND nmos

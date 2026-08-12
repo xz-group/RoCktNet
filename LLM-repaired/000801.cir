@@ -1,13 +1,13 @@
-M1 n8 n6 n2 GND nmos
-M2 n5 n4 n2 GND nmos
-R1 n3 n6
-R2 n3 n4
-R3 n1 n9
-R4 n0 n9
-M3 n5 n1 n2 GND nmos
-M4 n8 n0 n2 GND nmos
-C1 n6 n7
-C2 n0 n10
-C3 n4 n10
-C4 n2 label_net_0
-C5 n1 n7
+M2_N IF_N LOCN N2 GND nmos
+M1_N IF_P LON N2 GND nmos
+R1 VBLON LOCN
+R2 VBLON LON
+R3 N1 VBLOP
+R4 N0 VBLOP
+M1_P IF_P N1 N2 GND nmos
+M2_P IF_N N0 N2 GND nmos
+C1 LOCN loc
+C2 N0 lo
+C3 LON lo
+C4 N2 RF
+C5 N1 loc

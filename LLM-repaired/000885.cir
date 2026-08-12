@@ -1,13 +1,13 @@
-I1 n3 GND
-I2 n2 GND
-Q1 VDD label_net_0 n1 npn
-Q2 label_net_1 VDD n5 npn
-Q3 n6 n1 n3 npn
-Q4 VDD label_net_2 n0 npn
-Q5 n5 n0 n2 npn
-Q6 label_net_3 VDD n6 npn
-C1 n2 n3
-D1 n4 GND diode
-R1 n1 GND
-R2 n0 n4
-R3 n2 n3
+I1 N3 GND
+I2 N2 GND
+Q1 VDD IN_MINUS N1 npn
+Q3 OUT_MINUS VDD N5 npn
+Q2 N6 N1 N3 npn
+Q1 VDD IN_PLUS N0 npn
+Q2 N5 N0 N2 npn
+Q3 OUT_PLUS VDD N6 npn
+CE N2 N3
+D1 N4 GND
+R1 N1 GND
+R1 N0 N4
+RE N2 N3

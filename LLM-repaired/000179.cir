@@ -1,30 +1,30 @@
-M1 n1 n14 GND GND nmos
-Q1 n18 label_net_1 label_net_0 npn
-Q2 n10 label_net_2 n17 npn
-Q3 n5 n13 n6 npn
-Q4 n18 label_net_4 label_net_3 npn
-M2 n16 n0 GND GND nmos
-M3 n3 n14 GND GND nmos
-Q5 n18 n6 n5 npn
-M4 n8 n0 GND GND nmos
-Q6 n4 n18 n18 npn
-Q7 n6 n3 n11 npn
-Q8 n13 n6 n10 npn
-Q9 n6 n12 n1 npn
-M5 n12 n0 n3 GND nmos
-M6 n11 n14 n1 GND nmos
-Q10 n4 n18 n18 npn
-Q11 n4 n13 n18 npn
-Q12 n6 n4 n3 npn
-R1 n6 n13
-Q13 n4 n13 n18 npn
-R2 n6 n6
-R3 n4 n6
-Q14 n6 n4 n12 npn
-R4 n4 n6
-R5 n16 label_net_3
-R6 n16 label_net_0
-R7 n8 n17
-R8 n1 n2
-R9 n2 n11
-R10 n8 n6
+M1 N1 N14 GND GND nmos
+Q1 N18 BB_I_P LABEL_NET_0 npn
+Q2 N10 LO_I_P N17 npn
+Q3 N5 LO_I_N 3V npn
+Q4 N18 BB_I_N LABEL_NET_3 npn
+M2 N16 N0 GND GND nmos
+M3 N3 N14 GND GND nmos
+Q5 N18 3V N5 npn
+M4 N8 N0 GND GND nmos
+Q6 Op_Q_Mixer N18 N18 npn
+Q7 3V N3 N11 npn
+Q8 LO_I_N 3V N10 npn
+Q9 3V N12 N1 npn
+M5 N12 N0 N3 GND nmos
+M6 N11 N14 N1 GND nmos
+Q10 Op_Q_Mixer N18 N18 npn
+Q11 Op_Q_Mixer LO_I_N N18 npn
+Q12 3V Op_Q_Mixer N3 npn
+R1 3V LO_I_N
+Q13 Op_Q_Mixer LO_I_N N18 npn
+R2 3V 3V
+R3 Op_Q_Mixer 3V
+Q14 3V Op_Q_Mixer N12 npn
+R4 Op_Q_Mixer 3V
+R5 N16 LABEL_NET_3
+R6 N16 LABEL_NET_0
+R7 N8 N17
+R8 N1 V_OUT
+R9 V_OUT N11
+R10 N8 3V

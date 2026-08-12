@@ -1,10 +1,9 @@
-M1 n0 n6 n1 VDD pmos
-M2 n1 label_net_0 VDD VDD pmos
-M3 n0 n3 n8 GND nmos
-M4 n4 n6 n1 VDD pmos
-M5 n7 label_net_1 n2 GND nmos
-M6 n5 label_net_2 GND GND nmos
-M7 n2 label_net_3 n5 GND nmos
-M8 n8 label_net_4 n2 GND nmos
-M9 n4 n3 n7 GND nmos
-
+M5 Vo_n Vcf3 N1 VDD pmos
+S1 (N1 phi_bar VDD VDD) pmos
+M3 Vo_n VB3 N8 GND nmos
+M6 Vo_p Vcf3 N1 VDD pmos
+M4 N7 Vi_n N2 GND nmos
+M7 N5 VB2 GND GND nmos
+S2 (N2 phi N5 GND) nmos
+M1 N8 Vi_p N2 GND nmos
+M10 Vo_p VB3 N7 GND nmos

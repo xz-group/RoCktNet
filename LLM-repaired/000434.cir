@@ -1,15 +1,15 @@
-I1 GND n3
-V1 n4 GND
-C1 n1 n3
-C2 n0 n3
-C3 n1 GND
-I2 GND n0
-C4 n3 GND
-C5 n2 GND
-R1 n2 GND
-C6 n0 GND
-R2 n0 GND
-R3 n3 GND
-C7 n0 n2
-R4 n1 n4
-I3 n2 GND
+gm1 (GND Y2) current_source
+Vin vin GND
+Cgs1 Y1 Y2
+Cgs2 Y3 Y2
+Cgd1 Y1 GND
+gm2 (GND Y3) current_source
+Ct2 Y2 GND
+CL vout GND
+RL vout GND
+Ct3 Y3 GND
+Rds2 Y3 GND
+Rds1 Y2 GND
+Cgd3 Y3 vout
+RS Y1 vin
+gm3 (vout GND) current_source

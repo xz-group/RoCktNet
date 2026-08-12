@@ -1,6 +1,6 @@
-M1 n1 n4 GND GND nmos
-M2 n1 n3 label_net_0 VDD pmos
-R1 n1 n2
-X1 n4 n0 label_net_1 amplifier
-X2 n3 label_net_2 n0 amplifier
-C1 n2 GND
+M1 N1 N4 GND GND nmos
+M2 N1 N3 Vdd VDD pmos
+R1 N1 To_Phase_shifter
+A1 (N4 Threshold_voltage From_IF_mixer_bottom) amplifier
+A2 (N3 From_IF_mixer_top Threshold_voltage) amplifier
+C1 To_Phase_shifter GND

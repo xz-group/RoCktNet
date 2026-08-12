@@ -1,6 +1,5 @@
-I1 n0 GND
-M1 n2 label_net_0 n0 GND nmos
-M2 n1 n3 VDD VDD pmos
-M3 n2 n3 VDD VDD pmos
-M4 n1 label_net_2 n0 GND nmos
-
+Iss N0 GND
+N1 (Vout_plus Vin_plus N0 GND) nmos
+P2 (Vout_minus Vbias VDD VDD) pmos
+P1 (Vout_plus Vbias VDD VDD) pmos
+N2 (Vout_minus Vin_minus N0 GND) nmos

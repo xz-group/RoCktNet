@@ -1,9 +1,8 @@
-M1 n3 n1 VDD VDD pmos
-M2 n5 n1 VDD VDD pmos
-M3 n2 n4 n0 GND nmos
-M4 n0 label_net_0 GND GND nmos
-M5 n2 n4 VDD VDD pmos
-M6 n3 n5 n1 VDD pmos
-M7 n3 label_net_1 n2 GND nmos
-M8 n5 label_net_2 n2 GND nmos
-
+M5 outP clk_b VDD VDD pmos
+M6 outM clk_b VDD VDD pmos
+M3 tail clk N0 GND nmos
+M4 N0 bias GND GND nmos
+M1 tail clk VDD VDD pmos
+M2 outP outM clk_b VDD pmos
+M7 outP Vref tail GND nmos
+M8 outM inP tail GND nmos

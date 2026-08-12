@@ -1,18 +1,18 @@
-I1 label_net_0 n1
-M1 n4 n5 label_net_1 VDD pmos
-X1 n3 n4 n0 amplifier
-X2 n0 n8 n6 amplifier
-M2 n3 n5 label_net_3 VDD pmos
-M3 n7 n7 n4 VDD pmos
-M4 n1 n1 GND GND nmos
-M5 n0 n3 n3 VDD pmos
-M6 n7 n6 n6 GND nmos
-M7 n0 label_net_4 n8 GND nmos
-M8 n2 n9 GND GND nmos
-M9 n8 label_net_5 n2 GND nmos
-C1 n0 n9
-C2 n0 n0
-C3 n7 n9
-M10 n6 label_net_6 n2 GND nmos
-C4 n9 n9
-S1 n1 n9 switch_ideal
+I1 LABEL_NET_0 CM_Ref
+M1 N4 Vb4 LABEL_NET_1 VDD pmos
+A1 (N3 N4 Vo_plus) amplifier
+A2 (Vo_plus N8 N6) amplifier
+M2 N3 Vb4 LABEL_NET_3 VDD pmos
+M3 Vo_minus Vo_minus N4 VDD pmos
+M4 CM_Ref CM_Ref GND GND nmos
+M5 Vo_plus N3 N3 VDD pmos
+M6 Vo_minus N6 N6 GND nmos
+M7 Vo_plus Vb2 N8 GND nmos
+M8 N2 CMFB GND GND nmos
+M9 N8 Vin_minus N2 GND nmos
+C1 Vo_plus CMFB
+C2 Vo_plus Vo_plus
+C3 Vo_minus CMFB
+M10 N6 Vin_plus N2 GND nmos
+C4 CMFB CMFB
+S1 (CM_Ref CMFB) switch_ideal

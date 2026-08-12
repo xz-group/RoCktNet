@@ -1,22 +1,21 @@
-M1 n6 n11 n3 GND nmos
-R1 VDD n6
-R2 VDD n10
-R3 VDD n7
-R4 VDD n5
-M2 n0 VDD n3 GND nmos
-M3 n4 VDD n3 GND nmos
-M4 n1 VDD n4 GND nmos
-R5 VDD n1
-M5 n7 n9 n3 GND nmos
-M6 n5 label_net_0 n3 GND nmos
-R6 VDD n2
-M7 n10 VDD n3 GND nmos
-M8 n2 VDD n0 GND nmos
-M9 n2 label_net_2 n4 GND nmos
-M10 n1 n8 n0 GND nmos
-C1 n7 n8
-C2 n1 n2
-C3 n5 n11
-C4 n9 n10
-C5 VDD n6
-
+M1 N6 N11 GND GND nmos
+R1 VDD N6
+R2 VDD N10
+R3 VDD N7
+R4 VDD N5
+M2 N0 VDD GND GND nmos
+M3 N4 VDD GND GND nmos
+M4 IFY VDD N4 GND nmos
+R5 VDD IFY
+M5 N7 N9 GND GND nmos
+M6 N5 LOY GND GND nmos
+R6 VDD IFX
+M7 N10 VDD GND GND nmos
+M8 IFX VDD N0 GND nmos
+M9 IFX LABEL_NET_2 N4 GND nmos
+M10 IFY N8 N0 GND nmos
+C1 N7 N8
+C2 IFY IFX
+C3 N5 N11
+C4 N9 N10
+C5 VDD N6

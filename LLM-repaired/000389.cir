@@ -1,13 +1,13 @@
-X1 n10 n1 n6 amplifier
-M1 n1 n5 n4 VDD pmos
-X2 n5 n6 n1 amplifier
-M2 n1 n10 n9 GND nmos
-M3 n0 n5 n7 VDD pmos
-M4 n0 n10 n3 GND nmos
-R1 n1 GND
-R2 n0 n1
-R3 n2 n9
-R4 n0 GND
-R5 VDD n4
-R6 n2 n3
-R7 VDD n7
+OTA2 (N10 Vx Vi) amplifier
+M1 Vx N5 N4 VDD pmos
+OTA1 (N5 Vi Vx) amplifier
+M3 Vx N10 N9 GND nmos
+M2 Vo N5 N7 VDD pmos
+M4 Vo N10 N3 GND nmos
+nRnom (Vx GND) resistor
+n_plus_1_Rnom (Vo Vx) resistor
+Rs1_bot VSS N9
+RL Vo GND
+Rs1_top VDD N4
+Rs2_bot VSS N3
+Rs2_top VDD N7

@@ -1,17 +1,16 @@
-I1 GND n6
-M1 n4 n7 GND GND nmos
-I2 GND n4
-M2 n6 n0 GND GND nmos
-M3 n2 GND n4 GND nmos
-M4 n1 GND n6 GND nmos
-M5 n1 n5 n4 GND nmos
-M6 n2 n5 n6 GND nmos
-R1 n7 n9
-R2 VDD n2
-C1 VDD n1
-C2 n7 label_net_0
-C3 VDD n2
-R3 n0 n9
-R4 VDD n1
-C4 n0 label_net_1
-
+I1 GND N6
+M1 N4 N7 GND GND nmos
+I2 GND N4
+M2 N6 N0 GND GND nmos
+M3 IF_OUT_P GND N4 GND nmos
+M4 IF_OUT_N GND N6 GND nmos
+M5 IF_OUT_N RF_LO N4 GND nmos
+M6 IF_OUT_P RF_LO N6 GND nmos
+R1 N7 Bias
+R2 VDD IF_OUT_P
+C1 VDD IF_OUT_N
+C2 N7 RF_IN_P
+C3 VDD IF_OUT_P
+R3 N0 Bias
+R4 VDD IF_OUT_N
+C4 N0 RF_IN_N

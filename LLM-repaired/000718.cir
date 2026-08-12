@@ -1,20 +1,20 @@
-Q1 n12 n3 n13 npn
-C1 n7 GND
-Q2 n13 n0 n8 npn
-R1 n5 n6
-R2 n0 n4
-R3 n11 GND
-R4 n1 n4
-R5 n7 label_net_0
-R6 n6 n8
-C2 n0 GND
-C3 n4 GND
-Q3 n14 n3 n2 npn
-Q4 n6 n7 n11 npn
-Q5 n2 n1 n5 npn
-C4 n1 n9
-L1 n9 n10
-C5 n3 GND
-I1 n3 n14
-R7 n10 n10
-R8 n3 n12
+Q4 OUTP VCC N13 npn
+Cbyp3 N7 GND
+Q2 N13 N0 N8 npn
+TL3 (N5 N6) resistor
+R2 N0 BIAS1
+R3 N11 GND
+R1 N1 BIAS1
+R4 N7 BIAS2
+TL4 (N6 N8) resistor
+C2 N0 GND
+Cbyp2 BIAS1 GND
+Q3 OUTN VCC N2 npn
+Q5 N6 N7 N11 npn
+Q1 N2 N1 N5 npn
+C1 N1 N9
+L1 N9 IN
+Cbyp1 VCC GND
+TL1 (VCC OUTN) current_source
+TL5 (IN IN) resistor
+TL2 (VCC OUTP) resistor

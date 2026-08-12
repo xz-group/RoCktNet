@@ -1,17 +1,17 @@
-Q1 n5 n10 n9 npn
-Q2 n0 n5 n1 npn
-Q3 n7 n1 GND npn
-R1 n7 label_net_0
-Q4 n3 n4 GND npn
-R2 n1 n4
-R3 n3 n10
-R4 n0 n3
-R5 n0 n5
-R6 n9 GND
-C1 n2 label_net_1
-C2 n1 n8
-C3 n5 GND
-C4 n2 GND
-C5 n3 GND
-L1 n8 GND
-R7 n2 n6
+HBT3 (N5 N10 N9) npn
+HBT4 (Vreg N5 N1) npn
+HBT1 (N7 N1 GND) npn
+RFC N7 VCC
+HBT2 (N3 N4 GND) npn
+Rb N1 N4
+R3 N3 N10
+R2 Vreg N3
+R1 Vreg N5
+R4 N9 GND
+C1 N2 RFout
+C2 N1 RFin
+Cb N5 GND
+C4 N2 GND
+Cbypass N3 GND
+L1 RFin GND
+R7 N2 N6

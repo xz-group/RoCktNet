@@ -1,32 +1,31 @@
-M1 n11 n11 n12 VDD pmos
-M2 n3 n3 n10 VDD pmos
-M3 label_net_0 n1 n2 GND nmos
-M4 label_net_1 n0 n13 VDD pmos
-M5 n0 n6 n14 GND nmos
-M6 n6 n6 n15 VDD pmos
-M7 n5 n5 GND VDD pmos
-M8 n7 n7 n4 VDD pmos
-R1 n0 n13
-M9 n1 n4 n14 VDD pmos
-M10 GND GND n9 VDD pmos
-R2 n1 n2
-M11 n7 n4 n11 GND nmos
-M12 n9 n9 n3 GND nmos
-M13 n11 n12 n5 GND nmos
-C1 n2 GND
-C2 n6 GND
-C3 n4 GND
-M14 n10 n10 n6 GND nmos
-C4 n12 GND
-C5 n3 GND
-C6 n5 n8
-C7 n13 GND
-C8 n8 n9
-C9 n8 n11
-C10 n0 n1
-C11 n8 n10
-M15 n15 n15 n13 GND nmos
-C12 n8 n15
-M16 n2 n2 n7 GND nmos
-C13 n7 n8
-
+M1 N11 N11 N12 VDD pmos
+M2 N3 N3 N10 VDD pmos
+T4 (LABEL_NET_0 N1 V_MINUS GND) nmos
+T3 (LABEL_NET_1 N0 V_PLUS VDD) pmos
+T1 (N0 N6 N14 GND) nmos
+M6 N6 N6 N15 VDD pmos
+M7 N5 N5 GND VDD pmos
+M8 N7 N7 N4 VDD pmos
+R1 N0 V_PLUS
+T2 (N1 N4 N14 VDD) pmos
+M10 GND GND N9 VDD pmos
+R2 N1 V_MINUS
+M11 N7 N4 N11 GND nmos
+M12 N9 N9 N3 GND nmos
+M13 N11 N12 N5 GND nmos
+C1 V_MINUS GND
+C2 N6 GND
+C3 N4 GND
+M14 N10 N10 N6 GND nmos
+C4 N12 GND
+C5 N3 GND
+C6 N5 RF_in
+C7 V_PLUS GND
+C8 RF_in N9
+C9 RF_in N11
+CI N0 N1
+C11 RF_in N10
+M15 N15 N15 V_PLUS GND nmos
+C12 RF_in N15
+M16 V_MINUS V_MINUS N7 GND nmos
+C13 N7 RF_in

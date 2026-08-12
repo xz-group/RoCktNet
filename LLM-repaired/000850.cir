@@ -1,16 +1,16 @@
-I1 n3 GND
-M1 n7 n1 GND GND nmos
-M2 n1 n1 GND GND nmos
-M3 n7 n4 n2 VDD pmos
-M4 n2 label_net_0 n1 GND nmos
-M5 n5 n7 GND GND nmos
-R1 n4 GND
-C1 n6 GND
-C2 n5 GND
-M6 n2 n3 n8 VDD pmos
-C3 n6 GND
-R2 n4 n6
-M7 n8 n5 n6 GND nmos
-M8 n3 n3 n8 VDD pmos
-M9 n5 n0 n8 VDD pmos
-C4 n7 GND
+IBIAS N3 GND
+MD1_prime N7 N1 GND GND nmos
+MD1 N1 N1 GND GND nmos
+M1_prime N7 N4 N2 VDD pmos
+M1 N2 Vref N1 GND nmos
+M2 N5 N7 GND GND nmos
+R2 N4 GND
+CL Vout GND
+C2 N5 GND
+MB1 N2 N3 VCC VDD pmos
+COUT Vout GND
+R1 N4 Vout
+MN VCC N5 Vout GND nmos
+MB N3 N3 VCC VDD pmos
+MB2 N5 N0 VCC VDD pmos
+C1 N7 GND
