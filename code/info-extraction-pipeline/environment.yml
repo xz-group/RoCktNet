@@ -1,0 +1,42 @@
+# Conda environment for the schematic-to-netlist pipeline.
+# Create with your own environment name:
+#   conda env create -n <name> -f environment.yml
+#
+# The pip section installs the default PyTorch wheels, which are CPU-only on
+# Linux/Windows. For GPU inference install the CUDA build instead, e.g.
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - cython
+  - docopt
+  - easydict
+  - einops
+  - h5py
+  - matplotlib
+  - networkx
+  - numpy
+  - opencv
+  - pandas
+  - pillow
+  - pyclipper
+  - pyside6
+  - python-bidi
+  - python-json-logger
+  - pyyaml
+  - scikit-image
+  - scipy
+  - shapely
+  - tensorboardx
+  - tqdm
+  - yacs
+  - pip:
+      - easyocr
+      - schemdraw
+      - torch
+      - torchaudio
+      - torchvision
+      - ultralytics
