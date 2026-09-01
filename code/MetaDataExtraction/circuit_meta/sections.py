@@ -1,4 +1,3 @@
-"""Segment the paper body into logical sections (reading-order aware)."""
 from __future__ import annotations
 
 from typing import List
@@ -26,7 +25,6 @@ def _classify(title: str) -> str:
 
 
 def _is_header(line: Line) -> tuple[bool, str, str]:
-    """Return (is_header, number, title) for a candidate section-header line."""
     m = config.SECTION_RE.match(line.text)
     if not m:
         return False, "", ""
@@ -41,7 +39,6 @@ def _is_header(line: Line) -> tuple[bool, str, str]:
 
 
 def _looks_like_title(text: str) -> bool:
-    """A short, capitalised, non-sentence phrase that can be a section title."""
     t = text.strip()
     if not (3 <= len(t) <= 60):
         return False
@@ -53,7 +50,6 @@ def _looks_like_title(text: str) -> bool:
 
 
 def extract_sections(doc: PdfDocument) -> List[Section]:
-    """Walk the document in reading order, slicing text at section headers."""
     lines = doc.all_lines()
     sections: List[Section] = []
     current: Section | None = None
@@ -96,14 +92,6 @@ def extract_sections(doc: PdfDocument) -> List[Section]:
 
 def section_for_position(sections: List[Section], page: int,
                          y: float) -> Section | None:
-    """Find which section a caption at (page, y) belongs to.
-
-    A figure belongs to the last section whose header appears at or before the
-    caption position. Within the same page we compare the header's y-coordinate;
-    figures often appear at the column top *above* the header that introduces
-    them, so we accept a header up to ~60pt below the caption as still governing
-    it (typical column-top float placement).
-    """
     chosen = None
     for sec in sorted(sections, key=lambda s: (s.page, s.header_y)):
         if sec.page < page:

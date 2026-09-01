@@ -1,4 +1,3 @@
-"""Text cleaning and sentence utilities for noisy PDF-extracted text."""
 from __future__ import annotations
 
 import re
@@ -11,7 +10,6 @@ _CONTROL_RE = re.compile(r"[\x00-\x08\x0b-\x1f\x7f-\x9f]")
 
 
 def is_noise_line(text: str) -> bool:
-    """True if a line is page furniture (headers/footers/licensing banners)."""
     t = text.strip()
     if not t:
         return True
@@ -22,7 +20,6 @@ def is_noise_line(text: str) -> bool:
 
 
 def clean_text(text: str) -> str:
-    """Normalise whitespace and strip unicode artefacts from PDF extraction."""
     if not text:
         return ""
     # Drop the unicode replacement char (missing glyphs / math symbols).
@@ -42,14 +39,12 @@ def clean_text(text: str) -> str:
 
 
 def dehyphenate(text: str) -> str:
-    """Join words split across line breaks ("admit-\ntance" -> "admittance")."""
     text = re.sub(r"(\w)-\n(\w)", r"\1\2", text)
     text = re.sub(r"(\w)-\s+(\w)", r"\1\2", text)  # also "admit- tance"
     return text
 
 
 def flatten(text: str) -> str:
-    """Collapse a multi-line block into a single dehyphenated line."""
     text = _CONTROL_RE.sub("", dehyphenate(text))
     return re.sub(r"\s+", " ", text).strip()
 
@@ -58,7 +53,6 @@ _SENT_SPLIT = re.compile(r"(?<=[.!?])\s+(?=[A-Z(])")
 
 
 def split_sentences(text: str) -> List[str]:
-    """Lightweight sentence splitter tolerant of abbreviations like 'Fig.'."""
     text = flatten(text)
     if not text:
         return []
@@ -72,7 +66,6 @@ def split_sentences(text: str) -> List[str]:
 
 
 def sentence_containing(text: str, needle_regex: re.Pattern, fig_id: int) -> List[str]:
-    """Return sentences mentioning a figure number ``fig_id``."""
     out = []
     for sent in split_sentences(text):
         for m in needle_regex.finditer(sent):

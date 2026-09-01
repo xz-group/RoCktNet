@@ -1,10 +1,3 @@
-"""Structured data models for the paper-to-circuit-context module.
-
-These dataclasses describe the *contextual metadata* extracted from a circuit
-paper. They are intentionally JSON-friendly (``to_dict``) so the analysis result
-and the selected package can be handed to a downstream schematic-to-netlist
-pipeline without any code coupling.
-"""
 from __future__ import annotations
 
 from dataclasses import dataclass, field, asdict
@@ -13,7 +6,6 @@ from typing import Any, Dict, List, Optional
 
 @dataclass
 class PaperMetadata:
-    """Paper-level bibliographic metadata."""
     title: str = ""
     authors: List[str] = field(default_factory=list)
     abstract: str = ""
@@ -28,7 +20,6 @@ class PaperMetadata:
 
 @dataclass
 class Section:
-    """A logical section of the paper (Introduction, Proposed Topology, ...)."""
     number: str = ""          # e.g. "III"
     title: str = ""           # e.g. "PROPOSED TOPOLOGY OF VCO"
     kind: str = "other"       # intro | proposed | design | results | conclusion | other
@@ -49,7 +40,6 @@ class Section:
 
 @dataclass
 class FigureReference:
-    """One in-body mention of a figure, with surrounding sentence context."""
     section_title: str = ""
     section_kind: str = "other"
     page: int = 0
@@ -61,7 +51,6 @@ class FigureReference:
 
 @dataclass
 class CircuitContext:
-    """Circuit-level contextual metadata (paper-level or per-figure)."""
     circuit_type: str = ""
     technology: str = ""
     application_domain: str = ""
@@ -76,7 +65,6 @@ class CircuitContext:
 
 @dataclass
 class FigureCandidate:
-    """A figure detected in the paper plus its circuit-relevance assessment."""
     id: int = 0                       # figure number, e.g. 4
     label: str = ""                   # "Fig. 4"
     page: int = 0                     # 0-based page index of the caption
@@ -104,7 +92,6 @@ class FigureCandidate:
 
 @dataclass
 class AnalysisResult:
-    """Top-level result of analysing a paper."""
     pdf_path: str = ""
     output_dir: str = ""
     generated_at: str = ""

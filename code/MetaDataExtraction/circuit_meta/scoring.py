@@ -1,9 +1,3 @@
-"""Score each figure for how likely it is the proposed/main circuit schematic.
-
-The recommendation is deliberately conservative and fully explainable: every
-figure carries a ``relevance_breakdown`` so a human can see *why* a figure was
-ranked where it was before confirming it in the UI.
-"""
 from __future__ import annotations
 
 import re
@@ -92,7 +86,6 @@ def score_figure(fig: FigureCandidate, paper_ctx: CircuitContext) -> None:
 
 
 def _category_tokens(circuit_type: str) -> List[str]:
-    """Short tokens (e.g. 'vco') to look for in captions, from the circuit type."""
     toks = set()
     low = circuit_type.lower()
     for m in re.findall(r'\(([a-z0-9]{2,6})\)', low):  # acronyms in parentheses

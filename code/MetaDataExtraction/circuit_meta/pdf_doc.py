@@ -1,10 +1,3 @@
-"""Layout-aware access layer over a PDF (built on PyMuPDF).
-
-Academic circuit papers are almost always two-column. PyMuPDF returns text
-blocks in storage order, which interleaves the two columns and scrambles reading
-order. This module exposes lines with geometry, reconstructs column-aware reading
-order, and renders/crops page regions to PNG for figure extraction.
-"""
 from __future__ import annotations
 
 from dataclasses import dataclass, field
@@ -38,7 +31,6 @@ class Line:
 
 
 class PdfDocument:
-    """Wraps a fitz.Document and offers layout-aware helpers."""
 
     def __init__(self, path: str):
         self.path = path
@@ -53,7 +45,6 @@ class PdfDocument:
         return self.doc[pno].rect.width
 
     def lines(self, pno: int, drop_noise: bool = True) -> List[Line]:
-        """All text lines on a page, tagged with column, in reading order."""
         if pno in self._lines_by_page:
             lines = self._lines_by_page[pno]
         else:
@@ -94,12 +85,6 @@ class PdfDocument:
 
     @staticmethod
     def _reading_order(lines: List[Line], mid: float) -> List[Line]:
-        """Reconstruct two-column reading order.
-
-        Full-width lines (column == -1) act as horizontal separators: content is
-        read top-to-bottom, but within each horizontal band the left column is
-        read fully before the right column.
-        """
         # Sort full-width markers by y to create bands.
         seps = sorted([l for l in lines if l.column == -1], key=lambda l: l.y0)
         sep_ys = [l.y0 for l in seps] + [float("inf")]
@@ -130,14 +115,12 @@ class PdfDocument:
         return out
 
     def full_text(self) -> str:
-        """Whole-document text in reading order (newline-joined lines)."""
         return "\n".join(l.text for l in self.all_lines())
 
     # ------------------------------------------------------------------ #
     # Figure rendering
     # ------------------------------------------------------------------ #
     def column_bounds(self, pno: int) -> Tuple[float, float, float, float, float]:
-        """Return (page_x0, left_right_edge, right_left_edge, page_x1, mid)."""
         page = self.doc[pno]
         r = page.rect
         mid = r.width / 2.0
@@ -153,7 +136,6 @@ class PdfDocument:
 
     def render_clip(self, pno: int, bbox: Tuple[float, float, float, float],
                     out_path: str, dpi: int = config.RENDER_DPI) -> str:
-        """Render a rectangular region of a page to a PNG file."""
         page = self.doc[pno]
         clip = fitz.Rect(*bbox).intersect(page.rect)
         pix = page.get_pixmap(clip=clip, dpi=dpi, alpha=False)

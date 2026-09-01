@@ -1,4 +1,3 @@
-"""End-to-end orchestration: PDF -> analysis result (JSON + figure images)."""
 from __future__ import annotations
 
 import datetime as _dt
@@ -18,7 +17,6 @@ from .summary import write_summary
 
 def analyze_pdf(pdf_path: str, output_dir: Optional[str] = None,
                 save_figures: bool = True) -> AnalysisResult:
-    """Run the full paper-to-circuit-context extraction on a PDF."""
     if not os.path.isfile(pdf_path):
         raise FileNotFoundError(pdf_path)
     if output_dir is None:

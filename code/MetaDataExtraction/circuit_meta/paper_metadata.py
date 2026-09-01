@@ -1,4 +1,3 @@
-"""Extract paper-level bibliographic metadata from the first page."""
 from __future__ import annotations
 
 import re
@@ -54,11 +53,6 @@ def _page0_lines_by_y(doc: PdfDocument) -> List[Line]:
 
 
 def _extract_title(lines: List[Line]) -> tuple[str, List[Line]]:
-    """Title = the largest-font multi-char text in the top region of page 1.
-
-    Returns the title text and the lines it was built from, so the author band
-    can be anchored to the lines actually used as the title.
-    """
     top = [l for l in lines
            if l.y0 < 160 and len(l.text.strip()) > 3
            and not _BANNER_RE.match(l.text)]
@@ -90,17 +84,6 @@ def _extract_venue_year(lines: List[Line]) -> tuple[str, Optional[int]]:
 
 def _extract_authors(lines: List[Line], title_lines: List[Line],
                      abstract_y: float) -> List[str]:
-    """Author line sits between the title and the abstract.
-
-    The band is anchored to the *top* of the lowest title line, not its bottom: a
-    subscript or descender ("LiNbO3") inflates the bottom past the author line's
-    ``y0`` and would drop the authors entirely. The title lines themselves are
-    excluded by identity so anchoring that high cannot pull them in.
-
-    Deriving the anchor by substring-matching the title text (the previous
-    approach) also matched stray single glyphs elsewhere on the page — drop-caps
-    and dropped math symbols — pushing the band below the authors.
-    """
     if not title_lines:
         return []
     title_y = max(l.y0 for l in title_lines)
@@ -143,7 +126,6 @@ def _extract_authors(lines: List[Line], title_lines: List[Line],
 
 def _extract_block(lines: List[Line], start_re: re.Pattern,
                    stop_res: List[re.Pattern]) -> str:
-    """Collect text from the line matching ``start_re`` until a stop pattern."""
     collecting = False
     buf: List[str] = []
     for l in lines:
@@ -173,7 +155,6 @@ def extract_doi(doc: PdfDocument) -> str:
 
 
 def _copyright_year(doc: PdfDocument) -> Optional[int]:
-    """Year from the ISBN/copyright furniture line (conference papers)."""
     for pno in range(min(2, doc.page_count)):
         for l in doc.lines(pno, drop_noise=False):
             m = _COPYRIGHT_YEAR_RE.search(l.text)
@@ -183,9 +164,6 @@ def _copyright_year(doc: PdfDocument) -> Optional[int]:
 
 
 def extract_keywords(lines: List[Line]) -> List[str]:
-    """Keywords/Index-Terms list. The list is delimited by font size: it shares
-    the marker line's size and ends where body/header text (a different size)
-    begins, so we don't depend on a section header being recognised."""
     start = next((i for i, l in enumerate(lines) if _INDEX_RE.match(l.text)), None)
     if start is None:
         return []

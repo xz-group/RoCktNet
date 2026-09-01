@@ -362,7 +362,6 @@ def _dump_yaml(data: dict, path: Path) -> None:
 
 
 def ensure_session_config() -> dict:
-    """Return loaded session config dict, copying from the default on first use."""
     # One-shot migration: earlier builds placed the session yaml under result/,
     # which broke relative-path resolution in pipeline_common. Move any leftover
     # file from the old location so the user keeps their edits.
@@ -388,9 +387,6 @@ def reset_session_from_default() -> dict:
 
 
 def scan_red_flags(result_dir: Path) -> dict[str, list[tuple[str, list[str]]]]:
-    """Return {stem: [(component_name, [red_flag_strings]), ...]} for every
-    image whose incidence_matrix JSON has any non-empty per-component red_flags.
-    Stems with empty result are omitted."""
     out: dict[str, list[tuple[str, list[str]]]] = {}
     inc_dir = result_dir / "incidence_matrix"
     if not inc_dir.exists():
@@ -463,7 +459,6 @@ def find_image(images_dir: Path, stem: str) -> Path | None:
 
 
 def read_bbox_file(path: Path) -> list[dict]:
-    """Parse component_bbox/{stem}.txt → [{xyxy, class_id, confidence}]."""
     if not path.exists():
         return []
     out: list[dict] = []
@@ -519,9 +514,6 @@ def regenerate_masked_image(
     pad: int = 1,
     mask_color: str = "white",
 ) -> Path:
-    """Re-create masked_images/{stem}.jpg by painting bbox regions on the
-    original image. Also deletes masked_no_text_images/{stem}.jpg so that
-    extract_lines regenerates it from the new masked input."""
     src = find_image(images_dir, stem)
     if src is None:
         raise FileNotFoundError(
@@ -570,7 +562,7 @@ _NODE_COLORS: dict[int, QColor] = {}
 
 
 def node_color(node_id: int) -> QColor:
-    """Deterministic color for a node id; orphan (-1) is gray."""
+    
     if node_id < 0:
         return QColor("#7f8c8d")
     if node_id not in _NODE_COLORS:
@@ -585,12 +577,6 @@ def node_color(node_id: int) -> QColor:
 
 
 def read_nodes_data(npz_path: Path, json_path: Path) -> dict:
-    """Load nodes/data/{stem}.{npz,json} into an in-memory dict.
-
-    All arrays are np.ndarray copies so the caller can mutate freely.
-    The ``json_data`` entry holds the full parsed JSON; downstream serialization
-    overwrites only the fields it knows about.
-    """
     if not npz_path.exists() or not json_path.exists():
         raise FileNotFoundError(
             f"Missing nodes data for npz={npz_path} json={json_path}"
@@ -624,7 +610,7 @@ def _coerce_int(value, fallback: int = 0) -> int:
 
 
 def write_nodes_data(npz_path: Path, json_path: Path, state: dict) -> None:
-    """Persist the mutated state back to disk. Recomputes derived counts."""
+    
     lines = np.asarray(state["lines"], dtype=np.float32).reshape(-1, 2, 2)
     line_node_ids = np.asarray(state["line_node_ids"], dtype=np.int32)
     valid_anchor_indices = np.asarray(state["valid_anchor_indices"], dtype=np.int32)
@@ -676,7 +662,7 @@ def write_nodes_data(npz_path: Path, json_path: Path, state: dict) -> None:
 def add_line_to_state(
     state: dict, x1: float, y1: float, x2: float, y2: float, node_id: int
 ) -> int:
-    """Append a new line to state. Returns the new line's index."""
+    
     lines = np.asarray(state["lines"], dtype=np.float32).reshape(-1, 2, 2)
     new_line = np.array([[[x1, y1], [x2, y2]]], dtype=np.float32)
     state["lines"] = np.concatenate([lines, new_line], axis=0)
@@ -690,7 +676,7 @@ def add_line_to_state(
 
 
 def remove_line_from_state(state: dict, line_idx: int) -> bool:
-    """Remove a line and compact every index reference. Returns False on noop."""
+    
     n = int(state["lines"].shape[0])
     if not (0 <= line_idx < n):
         return False
@@ -771,13 +757,6 @@ def next_node_id(state: dict) -> int:
 
 
 def regenerate_nodes_vis(result_dir: Path, stem: str) -> Path | None:
-    """Re-render nodes/vis/{stem}.png from the current npz state.
-
-    Called after Mode 2 (line/node) commit — re-run from export_touches does
-    NOT regenerate this image (only generate_nodes does), so without this
-    helper the user would never see their newly-drawn lines reflected in
-    the read-only Nodes view.
-    """
     src = find_image(result_dir / "masked_images", stem)
     if src is None:
         src = find_image(result_dir / "images", stem)
@@ -884,7 +863,7 @@ def write_node_touches(result_dir: Path, stem: str, data: dict) -> Path:
 
 
 def find_or_make_node_entry(data: dict, node_id: int) -> dict:
-    """Return the dict for `node_id` in data['nodes']; create one if missing."""
+    
     nodes = data.setdefault("nodes", [])
     for n in nodes:
         if int(n.get("node_id", -1)) == int(node_id):
@@ -907,8 +886,6 @@ def next_touches_node_id(data: dict) -> int:
 def nearest_bbox_edge(
     click_xy: tuple[float, float], bboxes: list[dict]
 ) -> tuple[int, str, list[float], float] | None:
-    """Closest edge of any component bbox to the click point.
-    Returns (bbox_idx, edge_name, [cx, cy], dist) or None if no bboxes."""
     if not bboxes:
         return None
     cx, cy = float(click_xy[0]), float(click_xy[1])
@@ -931,8 +908,6 @@ def nearest_bbox_edge(
 def build_manual_touch(
     node_id: int, bbox_idx: int, bbox: dict, edge_name: str, contact_xy: list[float]
 ) -> dict:
-    """Build a touch dict with the schema fields downstream (build_incidence)
-    needs, plus enough metadata for the visualizer."""
     return {
         "node_id": int(node_id),
         "line_idx": -1,  # manual, not derived from a line
@@ -980,8 +955,6 @@ _JJ_MATCH_EPSILON = 0.75  # pixels — tolerance for matching override entries t
 
 
 def read_manual_jj_overrides(stem: str) -> dict:
-    """Returns a dict with added_jumps / added_junctions / added_x_jumps lists.
-    Missing fields default to empty lists (backward-compatible)."""
     p = MANUAL_JJ_OVERRIDES_DIR / f"{stem}.json"
     empty = {"added_jumps": [], "added_junctions": [], "added_x_jumps": []}
     if not p.exists():
@@ -1003,9 +976,6 @@ def write_manual_jj_overrides(
     added_junctions: list[list[float]],
     added_x_jumps: list[list[float]] | None = None,
 ) -> Path:
-    """Write the override file (creates dir if needed). Pass empty lists to
-    effectively reset; the file is left in place so the pipeline still
-    short-circuits to a no-op union."""
     MANUAL_JJ_OVERRIDES_DIR.mkdir(parents=True, exist_ok=True)
     out = MANUAL_JJ_OVERRIDES_DIR / f"{stem}.json"
     payload = {
@@ -1022,8 +992,6 @@ def _bbox_matches(a, b, eps: float = _JJ_MATCH_EPSILON) -> bool:
 
 
 def jj_source_lookup(stem: str, bboxes: np.ndarray, kind: str) -> list[str]:
-    """For each row in bboxes, return 'manual' if it appears in the override
-    file's added_<kind>s list, else 'yolo'. Used to tag canvas items."""
     overrides = read_manual_jj_overrides(stem)
     key = "added_jumps" if kind == "jump" else "added_junctions"
     refs = overrides.get(key, [])
@@ -1042,7 +1010,7 @@ def jj_source_lookup(stem: str, bboxes: np.ndarray, kind: str) -> list[str]:
 
 
 class StemListPanel(QWidget):
-    """Left panel: list of stems with red-flag indicator + filter toggle."""
+    
 
     def __init__(self, result_dir: Path, parent=None):
         super().__init__(parent)
@@ -1127,7 +1095,7 @@ class StemListPanel(QWidget):
 
 
 class ImageView(QScrollArea):
-    """Scrollable image display that fits the pixmap to the viewport width."""
+    
 
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -1169,10 +1137,6 @@ class ImageView(QScrollArea):
 
 
 class BboxRectItem(QGraphicsRectItem):
-    """Selectable bbox rect drawn on top of the source image. Color-coded by
-    class. Resizing is intentionally not supported — to change dimensions,
-    delete and redraw."""
-
     def __init__(
         self,
         x1: float,
@@ -1226,8 +1190,6 @@ class BboxRectItem(QGraphicsRectItem):
 
 
 class BboxCanvas(QGraphicsView):
-    """Interactive canvas for bbox CRUD. Holds one QGraphicsPixmapItem
-    (background image, z=-1) plus N BboxRectItems."""
 
     SELECT = 0
     DRAW = 1
@@ -1423,9 +1385,6 @@ class BboxCanvas(QGraphicsView):
 
 
 class BboxEditor(QWidget):
-    """Editable view of result/component_bbox/{stem}.txt overlaid on the
-    original schematic image. Provides a toolbar (Select/Draw + class
-    dropdown + Revert/Commit) and a BboxCanvas underneath."""
 
     def __init__(
         self, result_dir: Path, on_commit: Callable[[str, str], None], parent=None
@@ -1507,8 +1466,6 @@ class BboxEditor(QWidget):
         return self._dirty
 
     def load_stem(self, stem: str) -> None:
-        """Reload the canvas for `stem`. Clobbers any in-memory unsaved edits;
-        callers should warn the user first when self._dirty is True."""
         self._stem = stem
         image_path = find_image(self.result_dir / "images", stem)
         self.canvas.reset(image_path)
@@ -1635,8 +1592,6 @@ class BboxEditor(QWidget):
 
 
 class MaskedTab(QWidget):
-    """Wraps the Masked tab: read-only ImageView by default, switches to
-    BboxEditor when the "Edit bboxes" toggle is on."""
 
     def __init__(
         self, result_dir: Path, on_commit: Callable[[str, str], None], parent=None
@@ -1702,8 +1657,6 @@ class MaskedTab(QWidget):
 
 
 class OrientationBboxItem(QGraphicsRectItem):
-    """A component bbox rendered on the orientation canvas. Required-class
-    components carry a U/R/D/L letter overlay (or '?' if unset)."""
 
     def __init__(self, component: dict, required: bool):
         bx = component["bbox_xyxy"]
@@ -1768,7 +1721,7 @@ class OrientationBboxItem(QGraphicsRectItem):
 
 
 class OrientationCanvas(QGraphicsView):
-    """Image + component overlay canvas. Single-select; no draw/delete."""
+    
 
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -1837,8 +1790,6 @@ class OrientationCanvas(QGraphicsView):
 
 
 class OrientationEditor(QWidget):
-    """Editable view of result/orientation/{stem}.json overlaid on the
-    original image. Pick a required-class component → choose orientation."""
 
     def __init__(
         self, result_dir: Path, on_commit: Callable[[str, str], None], parent=None
@@ -2099,8 +2050,6 @@ class OrientationEditor(QWidget):
 
 
 class OrientationTab(QWidget):
-    """Wraps the Orientation tab: read-only annotated view by default,
-    switches to OrientationEditor when the edit toggle is on."""
 
     def __init__(
         self, result_dir: Path, on_commit: Callable[[str, str], None], parent=None
@@ -2166,7 +2115,7 @@ class OrientationTab(QWidget):
 
 
 class LineItem(QGraphicsLineItem):
-    """A single line segment from nodes/data, colored by its node_id."""
+    
 
     def __init__(
         self, x1: float, y1: float, x2: float, y2: float, node_id: int, line_idx: int
@@ -2207,8 +2156,6 @@ class LineItem(QGraphicsLineItem):
 
 
 class JumpItem(QGraphicsRectItem):
-    """Jump bbox (line jump-over) — yellow. source='yolo' is solid, 'manual'
-    uses a dashed outline so the user can tell which ones are theirs."""
 
     BASE_COLOR = QColor("#f1c40f")  # yellow
 
@@ -2248,7 +2195,7 @@ class JumpItem(QGraphicsRectItem):
 
 
 class JunctionItem(QGraphicsRectItem):
-    """Junction bbox (T/cross intersection) — green. source='manual' dashed."""
+    
 
     BASE_COLOR = QColor("#27ae60")
 
@@ -2288,8 +2235,6 @@ class JunctionItem(QGraphicsRectItem):
 
 
 class XJumpItem(QGraphicsRectItem):
-    """X-type jump bbox (diagonal crossover) — purple dashed with an 'X' label
-    in the center. Manual-only (no YOLO equivalent), so always dashed."""
 
     BASE_COLOR = QColor("#8e44ad")  # purple
 
@@ -2341,8 +2286,6 @@ class XJumpItem(QGraphicsRectItem):
 
 
 class NodesCanvas(QGraphicsView):
-    """Mode-aware canvas. Mode J_J = jumps/junctions/x-jumps interactive,
-    lines faint. Mode L_N = lines/nodes interactive, jumps/x-jumps faint."""
 
     MODE_JJ = "jumps_junctions"
     MODE_LN = "lines_nodes"
@@ -2625,10 +2568,6 @@ class NodesCanvas(QGraphicsView):
 
 
 class NodesEditor(QWidget):
-    """Two-sub-stage editor for nodes/data/{stem}.{npz,json}:
-      Mode 1: jumps + junctions → re-run from generate_nodes
-      Mode 2: lines + node assignment → re-run from export_touches
-    Each mode has its own dirty state and commit cycle."""
 
     def __init__(
         self, result_dir: Path, on_commit: Callable[[str, str], None], parent=None
@@ -3302,8 +3241,6 @@ class NodesEditor(QWidget):
 
 
 class NodesTab(QWidget):
-    """Wraps the Nodes tab: read-only nodes/vis image, switches to NodesEditor
-    when the edit toggle is on."""
 
     def __init__(
         self, result_dir: Path, on_commit: Callable[[str, str], None], parent=None
@@ -3367,8 +3304,6 @@ class NodesTab(QWidget):
 
 
 class TouchItem(QGraphicsEllipseItem):
-    """A touch point rendered as a colored dot at the contact_xy. Color comes
-    from node_id (matching the nodes view palette)."""
 
     RADIUS = 4.0  # scene-coords radius; cosmetic pen keeps it crisp at any zoom
 
@@ -3411,9 +3346,6 @@ class TouchItem(QGraphicsEllipseItem):
 
 
 class TouchesCanvas(QGraphicsView):
-    """Canvas for touches editor. Background = original image; component bbox
-    outlines drawn faint; touches as dots. Two tools: Select (rubber-band)
-    and Add (click on canvas, snaps to nearest bbox edge)."""
 
     TOOL_SELECT = 0
     TOOL_ADD = 1
@@ -3516,9 +3448,6 @@ class TouchesCanvas(QGraphicsView):
 
 
 class TouchesEditor(QWidget):
-    """Editable view of result/node_touches/{stem}.json overlaid on the
-    original image. Add a touch by clicking near a bbox edge (auto-snapped);
-    pick which node it belongs to in the toolbar. Delete via Delete key."""
 
     def __init__(
         self, result_dir: Path, on_commit: Callable[[str, str], None], parent=None
@@ -3822,8 +3751,6 @@ class TouchesEditor(QWidget):
 
 
 class TouchesTab(QWidget):
-    """Wraps the Touches tab: read-only touches vis by default, switches to
-    TouchesEditor when the edit toggle is on."""
 
     def __init__(
         self, result_dir: Path, on_commit: Callable[[str, str], None], parent=None
@@ -3886,7 +3813,7 @@ class TouchesTab(QWidget):
 
 
 class VisTabsPanel(QWidget):
-    """Center panel: header (stem + red flags) + per-step image tabs."""
+    
 
     def __init__(
         self, result_dir: Path, on_edit_commit: Callable[[str, str], None], parent=None
@@ -4018,7 +3945,7 @@ class VisTabsPanel(QWidget):
 
 
 class ParamPanel(QWidget):
-    """Right panel: parameter form grouped by step, with re-run buttons."""
+    
 
     def __init__(
         self,
@@ -4328,8 +4255,6 @@ class MainWindow(QMainWindow):
         self._launch_pipeline(from_step, stems)
 
     def _on_edit_committed(self, stem: str, from_step: str) -> None:
-        """Called by a per-stage editor (e.g. BboxEditor) after it has
-        persisted its edits to disk. Kicks off a scoped pipeline run."""
         if self.process is not None and self.process.state() != QProcess.NotRunning:
             QMessageBox.warning(
                 self,

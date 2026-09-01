@@ -1,11 +1,3 @@
-"""Build a concise, human-readable summary in the style of a hand-curated
-``info.txt`` — focused on the recommended (proposed-circuit) figure.
-
-The full ``analysis.json`` stays as the machine/downstream contract; this is the
-trimmed view meant for reading and for pasting into a paper. Only sections we can
-genuinely extract are emitted (no mechanism-level "function detail" and no
-"highlight metrics", since those require understanding rather than extraction).
-"""
 from __future__ import annotations
 
 import json
@@ -55,7 +47,6 @@ _UNIT_TO_METRIC = [
 
 
 def _dedup_terms(csv: str) -> str:
-    """Drop near-duplicate comma-separated terms (hyphen/space/case variants)."""
     seen, out = set(), []
     for term in (t.strip() for t in csv.split(",")):
         if not term:
@@ -68,7 +59,6 @@ def _dedup_terms(csv: str) -> str:
 
 
 def _metrics_from_specs(specs: List[str]) -> List[str]:
-    """Derive the named metric categories implied by the numeric spec values."""
     names: List[str] = []
     for spec in specs:
         # Units are ordered longest/most-specific first, so the first endswith
@@ -83,11 +73,6 @@ def _metrics_from_specs(specs: List[str]) -> List[str]:
 
 def build_summary(analysis: Dict[str, Any],
                   fig_id: Optional[int] = None) -> Dict[str, Any]:
-    """Assemble the concise summary dict from a full analysis dict.
-
-    Focuses on the recommended figure (or ``fig_id`` if given); falls back to
-    paper-level context for fields a single figure does not carry.
-    """
     if fig_id is None:
         fig_id = analysis.get("recommended_figure_id")
     fig = next((f for f in analysis.get("figures", []) if f.get("id") == fig_id), None)
@@ -139,7 +124,6 @@ def build_summary(analysis: Dict[str, Any],
 
 
 def render_summary_text(s: Dict[str, Any]) -> str:
-    """Render the summary in the plain ``info.txt`` section style."""
     def block(title: str, value: str) -> str:
         return f"{title}\n{value}\n"
 
@@ -187,7 +171,6 @@ def render_summary_text(s: Dict[str, Any]) -> str:
 
 def write_summary(analysis: Dict[str, Any], out_dir: str,
                   fig_id: Optional[int] = None) -> Dict[str, str]:
-    """Write summary.txt (info.txt style) and summary.json; return their paths."""
     os.makedirs(out_dir, exist_ok=True)
     s = build_summary(analysis, fig_id=fig_id)
     txt_path = os.path.join(out_dir, "summary.txt")

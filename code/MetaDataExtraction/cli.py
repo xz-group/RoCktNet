@@ -1,16 +1,4 @@
 #!/usr/bin/env python
-"""Command-line interface for the paper-to-circuit-context module.
-
-Two subcommands mirror the intended workflow:
-
-    analyze   PDF -> analysis.json + figures/*.png + recommendation
-    select    analysis.json + figure-id -> selected_package.json + image
-
-Examples
---------
-    python cli.py analyze Data/10.1109_tmtt.2007.903347.pdf
-    python cli.py select output/10.1109_tmtt.2007.903347/analysis.json --figure 4
-"""
 from __future__ import annotations
 
 import argparse

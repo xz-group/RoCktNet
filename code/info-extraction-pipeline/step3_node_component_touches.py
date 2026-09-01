@@ -375,30 +375,6 @@ def export_one(
         max_extend_px=extra_endpoint_extend_px,
     )
 
-    # raw_num_touches_before_aggregation = len(touches)
-    # touches = aggregate_touches(touches)
-    # raw_num_touches = len(touches)
-    # removed_single_bbox_node_ids = []
-    # if not keep_single_bbox_nodes:
-    #     touches, removed_single_bbox_node_ids = filter_single_bbox_nodes(touches)
-
-    # touches.sort(
-    #     key=lambda t: (
-    #         int(t["node_id"]),
-    #         int(t["component_bbox_idx"]),
-    #         str(t["edge"]),
-    #         int(t["line_idx"]),
-    #     )
-    # )
-
-    # removed_single_bbox_node_ids.sort(
-    #     key=lambda t: (
-    #         int(t["node_id"]),
-    #         int(t["component_bbox_idx"]),
-    #         str(t["edge"]),
-    #         int(t["line_idx"]),
-    #     )
-    # )
     raw_num_touches_before_aggregation = len(touches)
     touches = aggregate_touches(touches)
     raw_num_touches = len(touches)

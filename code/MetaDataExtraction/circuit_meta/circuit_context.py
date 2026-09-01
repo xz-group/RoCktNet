@@ -1,11 +1,3 @@
-"""Rule-based extraction of circuit-level contextual metadata.
-
-This is the primary deliverable of the module: figuring out *what circuit the
-paper is about* — its type, technology, building blocks, design purpose and a
-function summary — without any schematic/netlist analysis and without an LLM.
-Everything is derived from the paper's prose (title, abstract, index terms and
-the proposed/design sections) and from figure captions/references.
-"""
 from __future__ import annotations
 
 import re
@@ -44,12 +36,6 @@ _TITLE_TAIL_RE = re.compile(
 
 
 def _find_terms(text: str, vocab) -> List[str]:
-    """Return canonical vocab entries whose surface patterns occur in text.
-
-    ``vocab`` is either a dict canonical->patterns or a flat list of patterns.
-    Matching is word-boundary aware, case-insensitive and plural-tolerant, so a
-    singular pattern such as "inductor" also matches "Inductors".
-    """
     low = " " + re.sub(r"\s+", " ", text.lower()) + " "
     out: List[str] = []
     if isinstance(vocab, dict):
@@ -62,17 +48,11 @@ def _find_terms(text: str, vocab) -> List[str]:
 
 
 def _matches(pattern: str, low: str) -> bool:
-    """Word-boundary, plural-tolerant search for ``pattern`` in lowered text."""
     return re.search(r'\b' + re.escape(pattern.lower()) + r'(?:e?s)?\b',
                      low) is not None
 
 
 def detect_circuit_categories(text: str) -> List[str]:
-    """Canonical circuit-type categories present in the text (most specific first).
-
-    Broad-family categories are dropped whenever a specific one is also present,
-    so the first entry is the most informative type name available.
-    """
     cats = _find_terms(text, config.CIRCUIT_TYPES)
     specific = [c for c in cats if c not in config.GENERIC_CIRCUIT_TYPES]
     if specific:
@@ -81,7 +61,6 @@ def detect_circuit_categories(text: str) -> List[str]:
 
 
 def _circuit_type_phrase(title: str, abstract: str) -> str:
-    """Derive a human-readable circuit-type phrase, preferring the title."""
     if title:
         core = _ARTICLE_RE.sub("", title).strip()
         core = _TITLE_TAIL_RE.sub("", core).strip(" .,")
@@ -103,7 +82,6 @@ def _circuit_type_phrase(title: str, abstract: str) -> str:
 
 
 def extract_purpose(text: str) -> str:
-    """Pick the sentence(s) that best state the design purpose."""
     best = ""
     for sent in split_sentences(text):
         low = sent.lower()
@@ -127,7 +105,6 @@ def extract_key_specs(text: str, limit: int = 8) -> List[str]:
 
 
 def _context_text(metadata: PaperMetadata, sections: List[Section]) -> str:
-    """Concatenate the prose most likely to describe the proposed circuit."""
     parts = [metadata.title, metadata.abstract, " ".join(metadata.keywords)]
     for sec in sections:
         if sec.kind in config.CONTEXT_SECTION_KINDS:
@@ -204,7 +181,6 @@ def build_paper_context(metadata: PaperMetadata,
 
 def build_figure_context(fig: FigureCandidate,
                          paper_ctx: CircuitContext) -> CircuitContext:
-    """Per-figure circuit context, derived from caption + reference sentences."""
     ref_text = " ".join(r.sentence for r in fig.references)
     blob = fig.caption + " " + ref_text
 

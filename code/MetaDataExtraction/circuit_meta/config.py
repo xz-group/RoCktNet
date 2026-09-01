@@ -1,10 +1,3 @@
-"""Keyword dictionaries, regex patterns and scoring weights.
-
-This is the *knowledge base* of the offline, rule-based extractor. Everything
-domain-specific (which words signal a circuit type, which words signal a
-schematic vs. a result plot, how figures are scored) lives here so the heuristics
-can be tuned in one place without touching the pipeline code.
-"""
 from __future__ import annotations
 
 import re

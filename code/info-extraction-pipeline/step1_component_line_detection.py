@@ -135,13 +135,6 @@ def run_yolo_and_mask(args, device):
 # OCR text removal (called by run_combined_stage)                              #
 # --------------------------------------------------------------------------- #
 def run_ocr_text_removal(device, pad=2, conf_thresh=0.2, force=False, stems=None):
-    """For each YOLO-masked image, run EasyOCR and white-out every detected
-    text bbox. Cleaned images go to MASKED_NOTEXT_DIR, bbox metadata to
-    MASKED_NOTEXT_DIR/_text_bboxes/ so the cleanup stays inspectable.
-
-    Incremental by default: an image is skipped when both its cleaned image and
-    its bbox metadata already exist. force=True (run_pipeline --force-ocr) redoes
-    everything, e.g. after changing pad/conf."""
     import cv2
 
     images = sorted(
@@ -256,7 +249,6 @@ def run_ocr_text_removal(device, pad=2, conf_thresh=0.2, force=False, stems=None
 
 
 def _read_bbox_meta(stem):
-    """Load the YOLO bbox metadata persisted by run_yolo_and_mask."""
     path = MASKED_DIR / "_bboxes" / f"{stem}.txt"
     if not path.exists():
         return np.zeros((0, 5), dtype=np.float32)
@@ -299,8 +291,6 @@ def build_hawp(device):
 
 
 def run_hawp_on_image(model, im_gray, device, fixed_size=512):
-    """im_gray: HxW uint8. Returns (lines, scores) where lines is (N, 2, 2)
-    in original image pixel coordinates and scores is (N,)."""
     import cv2  # local: keep top-level imports light
 
     H, W = im_gray.shape[:2]
@@ -330,7 +320,6 @@ def run_hawp_on_image(model, im_gray, device, fixed_size=512):
 # Combined: HAWPv3 -> clip vs component bboxes -> drop lines near OCR text    #
 # --------------------------------------------------------------------------- #
 def _read_text_bboxes(stem):
-    """Read OCR text bboxes produced by run_ocr_text_removal."""
     path = MASKED_NOTEXT_DIR / "_text_bboxes" / f"{stem}.txt"
     if not path.exists():
         return np.zeros((0, 4), dtype=np.float32)
@@ -353,11 +342,6 @@ def _read_text_bboxes(stem):
 
 
 def _clip_lines_outside_bboxes(lines, bboxes, min_len=4.0):
-    """For each input line, subtract the union of all component bboxes.
-    A single input line may yield 0, 1, or more output sub-segments depending
-    on how it intersects the bboxes. Sub-segments shorter than `min_len` are
-    discarded. Returns (M, 2, 2) array of clipped sub-segments.
-    """
     from shapely.geometry import LineString, MultiLineString, box as shp_box
     from shapely.ops import unary_union
 
@@ -411,28 +395,6 @@ def _drop_lines_on_whitespace(
     fraction=0.8,
     min_len=4.0,
 ):
-    """
-    Cut away white/background portions of each line and keep non-white sub-segments.
-
-    Old behavior:
-        compute white_frac for the whole line;
-        if white_frac >= fraction, drop the whole line.
-
-    New behavior:
-        sample pixels along the line;
-        cut away sampled intervals whose pixels are white;
-        keep continuous non-white intervals as shorter line segments.
-
-    Notes:
-        fraction is kept only for backward compatibility with existing callers.
-        It is no longer used for whole-line dropping.
-
-    white_threshold:
-        pixels >= this value are considered white/background.
-
-    min_len:
-        discard output sub-segments shorter than this length.
-    """
     import numpy as np
 
     lines = np.asarray(lines, dtype=np.float32).reshape(-1, 2, 2)
@@ -547,9 +509,6 @@ def _ccw(a, b, c):
 
 
 def _segments_intersect(a, b, c, d):
-    """
-    Fast segment intersection test.
-    """
     a = tuple(a)
     b = tuple(b)
     c = tuple(c)
@@ -558,9 +517,6 @@ def _segments_intersect(a, b, c, d):
 
 
 def _segment_segment_distance(a, b, c, d):
-    """
-    Minimum distance between two 2D line segments.
-    """
     import numpy as np
 
     a = np.asarray(a, dtype=np.float32)
@@ -580,11 +536,6 @@ def _segment_segment_distance(a, b, c, d):
 
 
 def _segment_segment_closest_points(a, b, c, d):
-    """
-    Return (distance, contact_xy) where contact_xy is the midpoint of the
-    closest-point pair between the two segments ab and cd. If the segments
-    intersect, contact_xy is their intersection point.
-    """
     import numpy as np
 
     a = np.asarray(a, dtype=np.float32)
@@ -621,12 +572,6 @@ def _segment_segment_closest_points(a, b, c, d):
 
 
 def _segment_segment_closest_pair(a, b, c, d):
-    """
-    Like _segment_segment_closest_points but return (distance, p_on_ab,
-    p_on_cd): the two closest points themselves (one on each segment) rather
-    than their midpoint. Used to sample the gap between two near-collinear
-    broken wire fragments.
-    """
     import numpy as np
 
     a = np.asarray(a, dtype=np.float32)
@@ -657,12 +602,6 @@ def _segment_segment_closest_pair(a, b, c, d):
 
 
 def _segment_black_fill_fraction(im_bin, p1, p2, radius=1, black_threshold=128):
-    """
-    Fraction of sample points along the segment p1->p2 that sit on (or within
-    `radius` px of) a black pixel in the binary image (black = value <
-    black_threshold; background = 255). Used as pixel evidence that a real wire
-    spans the gap between two broken line fragments. Returns 0.0 on bad input.
-    """
     import numpy as np
 
     if im_bin is None:
@@ -693,11 +632,6 @@ def _segment_black_fill_fraction(im_bin, p1, p2, radius=1, black_threshold=128):
 
 
 def _segments_perpendicular_deviation(line_a, line_b):
-    """
-    Return |angle - 90 deg| in degrees, with angle in [0, 90]. Direction is
-    normalized via |cos|, so 0 deg and 180 deg both map to 0 deg deviation
-    from parallel.
-    """
     import math
     import numpy as np
 
@@ -730,12 +664,6 @@ def _point_in_any_bbox(pt, bboxes, pad=0.0):
 def _node_has_line_at_probe(
     node_line_indices, lines, probe, min_line_length, probe_tol
 ):
-    """
-    True iff the (preliminary) node contains at least one line of length
-    >= min_line_length whose segment is within `probe_tol` pixels of the
-    `probe` point. Used to ask: "does this node have any real wire at
-    this probe location?"
-    """
     import numpy as np
 
     probe = np.asarray(probe, dtype=np.float32)
@@ -763,13 +691,6 @@ def _node_extends_past_contact(
     probe_tol,
     min_line_length,
 ):
-    """
-    True iff the (preliminary) node has a long-enough line at both
-    probe points: contact +/- probe_dist along `line`'s direction.
-    Used to distinguish a real crossover from an L-corner or T-junction
-    when working at the node level (line segments may be broken at the
-    crossing).
-    """
     import numpy as np
 
     line = np.asarray(line, dtype=np.float32)
@@ -791,10 +712,6 @@ def _node_extends_past_contact(
 
 
 def _find_lines_touching_bbox(lines, bbox, pad=0.0):
-    """
-    Return indices of all line segments that intersect `bbox` (xyxy),
-    optionally padded outward by `pad` pixels.
-    """
     if pad > 0:
         padded = (
             float(bbox[0]) - pad,
@@ -813,15 +730,6 @@ def _find_lines_touching_bbox(lines, bbox, pad=0.0):
 
 
 def _bbox_edges_with_inward_normals(bbox):
-    """
-    bbox format: x1, y1, x2, y2
-
-    Return:
-        [
-            (edge_name, edge_start, edge_end, inward_normal),
-            ...
-        ]
-    """
     import numpy as np
 
     x1, y1, x2, y2 = [float(v) for v in bbox]
@@ -870,9 +778,6 @@ def _point_in_bbox(p, bbox, pad=0.0):
 
 
 def _segment_intersects_bbox(p1, p2, bbox):
-    """
-    True if segment touches or enters bbox.
-    """
     if _point_in_bbox(p1, bbox) or _point_in_bbox(p2, bbox):
         return True
 
@@ -891,12 +796,6 @@ def _has_black_pixels_inside_bbox_near_contact(
     inside_depth=4,
     patch_radius=1,
 ):
-    """
-    Check whether pixels slightly inside the bbox from the contact point are black.
-
-    im_bin should be binary or near-binary grayscale.
-    Black means pixel < black_threshold.
-    """
     import numpy as np
 
     h, w = im_bin.shape[:2]
@@ -928,13 +827,6 @@ def _select_nearest_lines_to_component_edges(
     comp_bboxes,
     max_anchor_dist=None,
 ):
-    """
-    For each bbox edge, select the nearest line.
-
-    Return:
-        dict:
-            line_idx -> best edge info
-    """
     import numpy as np
 
     selected = {}
@@ -989,13 +881,6 @@ def _extend_line_endpoint_toward_edge(
     max_extend_px=12.0,
     extra_into_bbox_px=2.0,
 ):
-    """
-    Extend the endpoint closest to the bbox edge toward that edge,
-    and slightly into the bbox.
-
-    Return:
-        extended_line, contact_point_on_edge
-    """
     import numpy as np
 
     ln = np.asarray(line, dtype=np.float32).copy()
@@ -1034,12 +919,6 @@ def _find_valid_component_anchor_lines(
     inside_depth=4,
     patch_radius=1,
 ):
-    """
-    Find valid anchor lines:
-    1. line is nearest to at least one bbox edge
-    2. after extension, it touches bbox
-    3. contact area inside bbox is black
-    """
     nearest = _select_nearest_lines_to_component_edges(
         lines,
         comp_bboxes,
@@ -1161,11 +1040,6 @@ _JJ_YOLO_MODELS = {}
 
 
 def _load_jj_yolo(weights):
-    """
-    Lazily load & cache a junction/jump YOLO model by weights path.
-    Returns None if `weights` is unset or the file does not exist (callers
-    treat a missing model as "that model contributes no detections").
-    """
     if weights is None:
         return None
     key = str(weights)
@@ -1190,13 +1064,6 @@ _JJ_MERGE_PAD = 2.0
 
 
 def _augment_missing(base_arr, base_conf, extra_boxes, extra_conf, exclude_boxes, pad=_JJ_MERGE_PAD):
-    """
-    Append boxes (and their confidences) from `extra_boxes` to `base_arr`,
-    keeping only those that do NOT overlap any box in `exclude_boxes`. Used to
-    union the 2-class model's junction/jump detections in to recover spots the
-    5-class model missed, while letting the 5-class model win every overlap
-    (duplicate or conflict). Returns (boxes, confs).
-    """
     import numpy as np
 
     keep = [i for i, b in enumerate(extra_boxes) if not _bbox_overlaps_any(b, exclude_boxes, pad=pad)]
@@ -1213,9 +1080,6 @@ def _augment_missing(base_arr, base_conf, extra_boxes, extra_conf, exclude_boxes
 
 
 def _run_jj_model(weights, img_path, num_classes, conf, device):
-    """Run one junction/jump YOLO model; return (boxes, confs) where each is a
-    list of `num_classes` arrays, one per class id 0..num_classes-1: boxes[c]
-    is (K, 4) float32 xyxy and confs[c] is (K,) float32 confidence."""
     import numpy as np
 
     out = [np.empty((0, 4), dtype=np.float32) for _ in range(num_classes)]
@@ -1240,29 +1104,7 @@ def _run_jj_model(weights, img_path, num_classes, conf, device):
 
 
 def _detect_junctions_and_jumps(img_path, conf=0.25, device=None, trust_yolo=False):
-    """
-    Detect junctions/jumps on a single image using BOTH trained YOLO models.
 
-    The 5-class model (JJ_YOLO_WEIGHTS) is authoritative and emits:
-        0: junction
-        1: jump              (explicit orthogonal crossover)
-        2: implicit_jump     (unmarked orthogonal crossing)
-        3: diag_jump         (explicit diagonal crossover)
-        4: diag_implicit_jump(unmarked diagonal crossing)
-
-    The older 2-class model (JJ_YOLO_WEIGHTS_2CLS) detects only junction/jump
-    but is more reliable on those two. Its boxes are unioned in: a 2-class
-    junction/jump is kept only when it does NOT overlap any 5-class box, so
-    every overlap (duplicate or class conflict) resolves in favor of the
-    5-class model, and the 2-class model only fills in basics the 5-class
-    model missed. If the 2-class weights are absent this is a no-op.
-
-    Returns each class as its own (K, 4) float32 xyxy array (empty (0, 4)):
-        (junction, jump, implicit_jump, diag_jump, diag_implicit_jump)
-
-    Interpretation (junction vs jump vs diagonal, validation, drop rules) is
-    decided later in _route_jj_detections, which needs the line geometry.
-    """
     import numpy as np
 
     b5, c5 = _run_jj_model(JJ_YOLO_WEIGHTS, img_path, 5, conf, device)
@@ -1318,12 +1160,7 @@ def _detect_junctions_and_jumps(img_path, conf=0.25, device=None, trust_yolo=Fal
 
 
 def _line_extends_outward_past_edge(line, edge_point, outward_normal, min_len):
-    """
-    True iff `line` reaches at least `min_len` px outside a bbox edge, measured
-    along `outward_normal` (the unit vector pointing away from the bbox) from
-    any point `edge_point` lying on that edge. Used to confirm a crossing wire
-    actually runs out through the edge rather than merely nicking the corner.
-    """
+
     import numpy as np
 
     p0 = np.asarray(line[0], dtype=np.float32)
@@ -1338,21 +1175,6 @@ def _line_extends_outward_past_edge(line, edge_point, outward_normal, min_len):
 def _implicit_jump_has_two_pairs(
     lines, bbox, min_line_len, comp_bboxes=None, comp_adjacent_px=0.0
 ):
-    """
-    Four-edge two-pairs validation for an orthogonal jump bbox (used for both
-    implicit_jump and explicit jump): each of the four edges
-    (left/right/top/bottom) must have at least one line that crosses it and
-    extends outward past it by >= min_line_len. That guarantees both a
-    horizontal through-wire (left & right) and a vertical through-wire
-    (top & bottom) -- i.e. the two node pairs of a real orthogonal crossover.
-    If any edge lacks such a line the bbox is likely a YOLO error (e.g. a
-    false-positive at a plain L-corner, which only has two arms).
-
-    An edge with no qualifying outward wire is ALSO accepted when it abuts a
-    component bbox within `comp_adjacent_px` (and comp_bboxes is given): the
-    crossing wire runs straight into a masked component there, so no outward
-    black wire is visible even though the arm really exists.
-    """
     x1, y1, x2, y2 = [float(v) for v in bbox]
     if x2 < x1:
         x1, x2 = x2, x1
@@ -1384,13 +1206,6 @@ def _implicit_jump_has_two_pairs(
 
 
 def _diag_jump_has_two_pairs(lines, bbox):
-    """
-    Validation for a diag_implicit_jump bbox: both diagonal directions must be
-    present among the lines crossing the bbox -- at least one "\\" line
-    (dx*dy > 0) and at least one "/" line (dx*dy < 0). Near-horizontal /
-    near-vertical lines (dx*dy ~ 0) are ignored, mirroring the x_jump grouping
-    rule. Tolerant of a non-ideal X (off-center crossing, unequal angles).
-    """
     has_pos = False
     has_neg = False
     for _edge_name, e1, e2, _inward in _bbox_edges_with_inward_normals(bbox):
@@ -1424,41 +1239,6 @@ def _route_jj_detections(
     comp_adjacent_px=0.0,
     trust_yolo=False,
 ):
-    """
-    Resolve the 5 raw YOLO classes into the three geometric categories the
-    node-grouping algorithm understands: junction (merge), jump (orthogonal
-    crossover), x_jump (diagonal crossover).
-
-    Routing rules:
-      junction (0)            -> junction, always.
-      jump (1, explicit)      -> jump iff it passes the four-edge two-pairs
-                                 validation at a *relaxed* threshold; a failing
-                                 bbox (e.g. a model false-positive at a plain
-                                 L-corner) is dropped. has_explicit_jump below
-                                 reflects only the kept explicit jumps.
-      implicit_jump (2)       -> junction iff there is an explicit jump but no
-                                 junction in the image (plain-crossing = connect
-                                 convention); otherwise jump, but only if it
-                                 passes the four-edge two-pairs validation --
-                                 a failing bbox is dropped so its lines fall
-                                 through to the generic probe logic.
-      diag_jump (3, explicit) -> x_jump, always (no validation).
-      diag_implicit_jump (4)  -> x_jump iff it passes the diagonal two-pairs
-                                 validation; otherwise dropped.
-
-    Both `implicit_min_extend_px` and `explicit_min_extend_px` are the minimum
-    outward extension (px) each edge's crossing wire must have for the four-edge
-    validation -- the explicit one is relaxed (lower) since the model is trusted
-    more there. Both are independent of the probe's `crossover_min_line_len`.
-
-    `comp_bboxes` / `comp_adjacent_px`: in the four-edge validation, an edge with
-    no outward wire still counts as satisfied when it abuts a component bbox
-    within `comp_adjacent_px` (the crossing arm runs straight into a masked
-    component, so no outward black wire is visible there).
-
-    Returns (junction_bboxes, jump_bboxes, x_jump_bboxes) as (K, 4) float32
-    arrays. Manual GUI overrides are merged by the caller afterwards.
-    """
     import numpy as np
 
     def _arr(rows):
@@ -1566,16 +1346,6 @@ def _route_jj_detections(
 
 
 def _apply_manual_jj_overrides(stem, junction_bboxes, jump_bboxes):
-    """If MANUAL_JJ_OVERRIDES_DIR is set and {stem}.json exists there, union
-    its added_jumps / added_junctions / added_x_jumps with the YOLO results.
-
-    Returns (junction_bboxes, jump_bboxes, x_jump_bboxes). x_jump_bboxes is
-    manual-only (never produced by YOLO), so when no override is present it
-    is an empty (0, 4) array. The override file is purely additive — entries
-    are appended after the YOLO detections, so the crossover-splitting logic
-    in _group_lines_into_nodes_by_anchor_union_find sees both sources.
-    A missing dir or missing file is a no-op.
-    """
     empty_x = np.empty((0, 4), dtype=np.float32)
     if MANUAL_JJ_OVERRIDES_DIR is None:
         return junction_bboxes, jump_bboxes, empty_x
@@ -1626,58 +1396,7 @@ def _group_lines_into_nodes_by_anchor_union_find(
     pixel_bridge_parallel_tol_deg=30.0,
     black_threshold=128,
 ):
-    """
-    Group lines into nodes with junction/jump-aware crossover splitting.
 
-    Three-pass algorithm:
-
-      Pass 1 (naive union-find + junction force-merge):
-        - For every pair of segments with segment-to-segment distance
-          <= node_union_dist, union them into a preliminary ("raw")
-          node regardless of angle, and record the pair along with its
-          contact point and perpendicular deviation in `close_pairs`
-          as (i, j, contact, dev).
-        - For every junction bbox, find all lines touching the bbox
-          (segment intersects bbox padded by bbox_pad) and union them
-          all into one raw node. Remember each such "touching group"
-          for Pass 3 so the force-merge survives split decisions.
-
-      Pass 2 (split decisions):
-        For each close pair, decide whether the pair should ultimately
-        be NOT merged (a "split" edge) using contact and dev:
-          - contact in any jump bbox -> SPLIT iff the angle between
-            the two segments is greater than `jump_parallel_tol_deg`.
-            Inside an explicit jump area we aggressively separate
-            anything not roughly going the same direction; no probe /
-            overhang check is applied (trust YOLO).
-          - has_jump but contact outside jump bbox -> no split.
-          - no jump bboxes, contact in any junction bbox -> no split
-            (Case 1 junction always merges).
-          - no jump bboxes, contact outside junction (implicit-jump
-            region): only pairs within perp_tol_deg of 90 degrees are
-            considered. For those, probe both line i's and line j's
-            raw nodes: offset `crossover_probe_dist` px in both +/-
-            directions along the line, and check whether the raw node
-            has any line of length >= crossover_min_line_len within
-            crossover_probe_tol of the probe point. SPLIT iff both
-            probes pass for line i AND both probes pass for line j.
-
-      Pass 3 (final union-find):
-        - Re-run union-find over all `close_pairs`, skipping any pair
-          marked SPLIT in Pass 2.
-        - Re-apply the junction force-merge groups from Pass 1, which
-          can override split decisions (lines touching the same
-          junction bbox always end up in the same final node).
-        - Re-apply jump bbox side-aware force-merge: for each jump
-          bbox, all lines touching the left or right side merge into
-          one node, and all lines touching the top or bottom side
-          merge into another node. This recovers wire fragments split
-          off by the in-jump angle rule when one wire's pieces touch
-          the same pair of opposing sides.
-        Components of this final UF are the final nodes.
-
-    Then keep only components that contain at least one valid anchor.
-    """
     import math
 
     import numpy as np
@@ -1995,10 +1714,6 @@ def _group_lines_into_nodes_by_anchor_union_find(
 
 
 def _node_color(node_id):
-    """
-    Deterministic bright color for visualization.
-    OpenCV uses BGR.
-    """
     import cv2
     import numpy as np
 
@@ -2134,11 +1849,6 @@ def _save_node_visualization(
 
 
 def _draw_bboxes_to_mask(mask, bboxes, pad=0):
-    """
-    Draw filled bboxes onto a mask.
-    mask: uint8, shape (H, W)
-    bboxes: (N, 4), x1 y1 x2 y2
-    """
     import cv2
     import numpy as np
 
@@ -2162,10 +1872,6 @@ def _draw_bboxes_to_mask(mask, bboxes, pad=0):
 
 
 def _skeletonize_mask(mask):
-    """
-    Thin a binary mask before Hough line extraction.
-    Uses cv2.ximgproc.thinning if available; otherwise uses a simple morphological skeleton.
-    """
     import cv2
     import numpy as np
 
@@ -2194,12 +1900,6 @@ def _skeletonize_mask(mask):
 
 
 def _long_hv_line_mask(black_mask, line_len):
-    """
-    Mask (255) of long horizontal/vertical runs in `black_mask` (255 = black /
-    wire). A wire keeps a contiguous run far longer than any text stroke, so
-    this isolates wires from text. Used to protect a wire that passes through a
-    text bbox from being erased along with the text.
-    """
     import cv2
     import numpy as np
 
@@ -2229,20 +1929,6 @@ def _add_black_pixel_lines(
     black_bridge_len=0,
     debug_path=None,
 ):
-    """
-    Keep existing lines unchanged, then add extra line segments detected from
-    remaining black pixels outside component bboxes and text bboxes.
-
-    Important:
-        This function only adds lines.
-        It does NOT modify, clip, shorten, merge, or delete existing lines.
-
-    Logic:
-        1. Get black pixels from binary image.
-        2. Remove component bbox and text bbox regions.
-        3. Run HoughLinesP only on the remaining black-pixel mask.
-        4. Append those new lines to the original input lines.
-    """
     import cv2
     import numpy as np
 
@@ -2350,8 +2036,6 @@ def _add_black_pixel_lines(
 def _save_combined_visualization(
     im, lines, comp_bboxes, text_bboxes, out_path, title=""
 ):
-    """Red wire segments + cyan endpoints, gray dotted component bboxes,
-    goldenrod dashed text bboxes."""
     fig, ax = plt.subplots(figsize=(10, 10))
     ax.imshow(im)
     ax.set_axis_off()
@@ -2409,16 +2093,6 @@ def _binarize_local_mean(
     blur_ksize=3,
     do_morph=False,
 ):
-    """
-    Convert the whole masked image into a binary black-white image.
-
-    Local mean adaptive threshold:
-        each pixel is compared with the mean intensity of its local neighborhood.
-
-    Output convention:
-        background = 255 white
-        wires/components/text = 0 black
-    """
     import cv2
     import numpy as np
 
@@ -2464,14 +2138,6 @@ def _binarize_local_mean(
 
 
 def run_combined_stage(device, args):
-    """HAWPv3 -> clip against component bboxes -> drop lines near OCR text.
-
-    Inputs per image:
-        MASKED_DIR/<name>                        text-intact -> HAWPv3 input
-        MASKED_DIR/_bboxes/<name>.txt            YOLO bboxes -> clipping
-        MASKED_NOTEXT_DIR/_text_bboxes/<name>.txt  text bboxes -> text filter
-                                                 (populated below on demand)
-    """
     import cv2
 
     if not HAWP_WEIGHTS.exists():
@@ -2606,13 +2272,6 @@ def run_combined_stage(device, args):
 
 
 def run_component_anchor_nodes(args):
-    """
-    Experiment 1:
-    Use final saved line segments.
-    Find component-edge-nearest anchor lines.
-    Validate anchors by extending them into component bboxes.
-    Then union-find nearby/dilated lines into nodes.
-    """
     import json
     import cv2
     import numpy as np

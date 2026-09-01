@@ -1,13 +1,3 @@
-"""Batch driver: run circuit_meta.analyze_pdf over every PDF in a directory.
-
-Per-file failures are caught and logged so one bad PDF doesn't abort the run.
-Figure cropping is skipped by default (text/caption-based metadata only);
-pass --save-figures to also crop and save the figure images.
-
-Two kinds of problems are recorded to <out>/_report/:
-  * hard failures  - analyze_pdf raised (no output produced at all)
-  * incomplete     - output produced, but critical fields came out empty
-"""
 from __future__ import annotations
 
 import argparse
@@ -26,7 +16,6 @@ CRITICAL_CHECKS = ("no_title", "no_sections", "no_figures", "no_circuit_type",
 
 
 def check_quality(result) -> list:
-    """Return a list of issue tags for an otherwise-successful extraction."""
     issues = []
     meta = result.paper_metadata
     ctx = result.paper_circuit_context

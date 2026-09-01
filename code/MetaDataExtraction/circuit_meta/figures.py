@@ -1,10 +1,3 @@
-"""Detect figure captions, gather in-body references, and crop figure regions.
-
-Schematics in IEEE-style papers are vector drawings, so embedded-image
-extraction does not recover them. Instead we locate each caption (small font,
-``Fig. N.`` prefix, sitting *below* its figure) and render the page region from
-the top of the figure's column down through the caption.
-"""
 from __future__ import annotations
 
 import os
@@ -22,7 +15,6 @@ _CAPTION_MAX_SIZE = 9.3
 
 
 def _is_caption_start(line: Line) -> int | None:
-    """Return the figure number if this line starts a real caption, else None."""
     if line.size > _CAPTION_MAX_SIZE:
         return None  # body-text reference like "Fig. 1(a) shows", not a caption
     m = config.CAPTION_RE.match(line.text)
@@ -32,7 +24,6 @@ def _is_caption_start(line: Line) -> int | None:
 
 
 def _collect_caption(lines: List[Line], start_idx: int) -> tuple[str, List[float]]:
-    """Gather a caption's text (it may wrap across several small-font lines)."""
     start = lines[start_idx]
     parts = [start.text]
     x0, y0, x1, y1 = start.x0, start.y0, start.x1, start.y1
@@ -59,7 +50,6 @@ def _collect_caption(lines: List[Line], start_idx: int) -> tuple[str, List[float
 
 
 def detect_captions(doc: PdfDocument) -> List[FigureCandidate]:
-    """Find one FigureCandidate per figure number (first occurrence wins)."""
     found: Dict[int, FigureCandidate] = {}
     for pno in range(doc.page_count):
         lines = doc.lines(pno)
@@ -82,7 +72,6 @@ def detect_captions(doc: PdfDocument) -> List[FigureCandidate]:
 
 
 def _crop_bbox(doc: PdfDocument, fig: FigureCandidate) -> List[float]:
-    """Compute the page region to render: figure column, top-of-figure to caption."""
     pno = fig.page
     cap_x0, cap_y0, cap_x1, cap_y1 = fig.caption_bbox
     left_x0, left_edge, right_edge, right_x1, mid = doc.column_bounds(pno)
@@ -115,7 +104,6 @@ def _crop_bbox(doc: PdfDocument, fig: FigureCandidate) -> List[float]:
 
 
 def crop_figure(doc: PdfDocument, fig: FigureCandidate, out_dir: str) -> str:
-    """Render the figure region to PNG and return the path (best-effort)."""
     os.makedirs(out_dir, exist_ok=True)
     fig.crop_bbox = _crop_bbox(doc, fig)
     out_path = os.path.join(out_dir, f"fig_{fig.id:02d}.png")
@@ -129,7 +117,6 @@ def crop_figure(doc: PdfDocument, fig: FigureCandidate, out_dir: str) -> str:
 
 def attach_references(fig: FigureCandidate, sections: List[Section],
                       full_text_fallback: str) -> None:
-    """Populate a figure's in-body reference contexts from section text."""
     refs: List[FigureReference] = []
     seen = set()
     for sec in sections:

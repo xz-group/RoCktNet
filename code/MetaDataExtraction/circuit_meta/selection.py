@@ -1,11 +1,3 @@
-"""Build the 'selected package' handed to the downstream schematic-to-netlist
-pipeline once a user confirms which figure is the target circuit.
-
-The package bundles the chosen figure image together with the circuit-level
-contextual metadata. It can be produced directly from an in-memory
-``AnalysisResult`` or, for a decoupled two-step UI flow, from a previously
-written ``analysis.json`` file.
-"""
 from __future__ import annotations
 
 import datetime as _dt
@@ -29,7 +21,6 @@ def _merge_unique(*lists) -> list:
 
 def _ensure_image(pdf_path: str, page: int, crop_bbox, src_image: str,
                   dst_image: str) -> str:
-    """Copy an existing crop, or render one from the PDF using crop_bbox."""
     if src_image and os.path.isfile(src_image):
         shutil.copyfile(src_image, dst_image)
         return dst_image
@@ -44,7 +35,6 @@ def _ensure_image(pdf_path: str, page: int, crop_bbox, src_image: str,
 
 
 def build_package_dict(analysis: Dict[str, Any], fig_id: int) -> Dict[str, Any]:
-    """Assemble the selected-package dict from an analysis dict + figure id."""
     fig = next((f for f in analysis.get("figures", []) if f.get("id") == fig_id), None)
     if fig is None:
         raise ValueError(f"Figure id {fig_id} not found in analysis "
