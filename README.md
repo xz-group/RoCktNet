@@ -154,7 +154,7 @@ rather than directly.
 
 ## Acknowledgements
 
-Our line detection is built on **HAWP** — the `extract_lines` step uses the
+Our line detection is built on HAWP — the `extract_lines` step uses the
 HAWPv3 wireframe parser and the authors' released checkpoint. We are grateful
 to Nan Xue and colleagues for making their code and models publicly available.
 
